@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-advanced",
-  "description": "GatsbyJS starter that includes examples for advanced use cases.",
+  "name": "gatsby-blog-template",
+  "description": "GatsbyJS Blog Template for blogging purpose.",
   "version": "1.1.0",
-  "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
+  "author": "Lam Pham <completejavascript.super@gmail.com>",
   "dependencies": {
     "gatsby": "^2.4.3",
     "gatsby-image": "^2.0.41",
