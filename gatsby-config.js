@@ -13,7 +13,7 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/logos/logo-512.png`,
+      )}/logos/logo-512x512.png`,
       copyright: config.copyright
     }
   },
@@ -69,7 +69,38 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
-    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: "sitemap.xml",
+        exclude: ["/category/*", "/tag/*"],
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+        }`,
+        serialize: ({ site, allSitePage }) => {
+          allSitePage.edges.map(edge => {
+            return {
+              url: site.siteMetadata.siteUrl + edge.node.path,
+              changefreq: "daily",
+              priority: 0.7,
+            }
+          })
+        }
+      }
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {

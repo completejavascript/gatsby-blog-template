@@ -2,7 +2,7 @@ const config = {
   siteTitle: "Gatsby Blog Template", // Site title.
   siteTitleShort: "GB Template", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Gatsby Blog Template", // Alternative site title for SEO.
-  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
+  siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://completejavascript.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-blog-template", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
