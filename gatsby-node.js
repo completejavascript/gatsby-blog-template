@@ -127,7 +127,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   tagSet.forEach(tag => {
     createPage({
-      path: `/tags/${_.kebabCase(tag)}/`,
+      path: `/tag/${_.kebabCase(tag)}/`,
       component: tagPage,
       context: {
         tag
@@ -136,7 +136,7 @@ exports.createPages = async ({ graphql, actions }) => {
   });
   categorySet.forEach(category => {
     createPage({
-      path: `/categories/${_.kebabCase(category)}/`,
+      path: `/category/${_.kebabCase(category)}/`,
       component: categoryPage,
       context: {
         category
