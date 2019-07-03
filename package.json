@@ -1,0 +1,79 @@
+{
+  "name": "gatsby-starter-advanced",
+  "description": "GatsbyJS starter that includes examples for advanced use cases.",
+  "version": "1.1.0",
+  "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.4.3",
+    "gatsby-image": "^2.0.41",
+    "gatsby-plugin-catch-links": "^2.0.13",
+    "gatsby-plugin-feed": "^2.2.0",
+    "gatsby-plugin-google-analytics": "^2.0.19",
+    "gatsby-plugin-lodash": "^3.0.5",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-nprogress": "^2.0.10",
+    "gatsby-plugin-offline": "^2.1.0",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.0.37",
+    "gatsby-plugin-sitemap": "^2.1.0",
+    "gatsby-plugin-twitter": "^2.0.13",
+    "gatsby-remark-autolink-headers": "^2.0.16",
+    "gatsby-remark-copy-linked-files": "^2.0.12",
+    "gatsby-remark-images": "^3.0.11",
+    "gatsby-remark-prismjs": "^3.2.9",
+    "gatsby-remark-responsive-iframe": "^2.1.1",
+    "gatsby-source-filesystem": "^2.0.33",
+    "gatsby-transformer-remark": "^2.3.12",
+    "gatsby-transformer-sharp": "^2.1.19",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "prismjs": "^1.16.0",
+    "react": "^16.8.6",
+    "react-disqus-comments": "^1.4.0",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-share": "^2.4.0",
+    "react-twitter-widgets": "^1.7.1",
+    "url-join": "^4.0.0"
+  },
+  "devDependencies": {
+    "cli-glob": "^0.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.17.0",
+    "remark-cli": "^6.0.1",
+    "remark-preset-lint-recommended": "^3.0.2",
+    "stylefmt": "^6.0.3",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "write-good": "^1.0.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "develop": "gatsby develop",
+    "dev": "npm run develop",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "build:pp": "gatsby build --prefix-paths",
+    "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
+    "clean": "rm -rf public && rm -rf .cache",
+    "lint:js": "eslint --ext .js,.jsx .",
+    "lint:md": "remark content/posts/",
+    "write-good": "write-good $(glob 'content/posts/**/*.md')",
+    "format:js": "prettier '**/*.{js,jsx}' --write"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
+  }
+}
