@@ -19,7 +19,6 @@ export default class MainLayout extends React.Component {
           links={siteConfig.navLinks} 
         />
         {children}
-        {children}
       </div>
     );
   }

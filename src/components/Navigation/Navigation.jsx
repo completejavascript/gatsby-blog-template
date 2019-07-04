@@ -21,7 +21,7 @@ export default class Navigation extends Component {
                 key={link.label}
                 to={link.link}
                 activeClassName="active"
-                className="margin-left"
+                className="item margin-left"
               >
                 {link.label}
               </Link>
