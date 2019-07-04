@@ -4,7 +4,7 @@ import "./Navigation.css";
 
 export default class Navigation extends Component {
   render() {
-    const { title, brand, links } = this.props;
+    const { brand, title, links } = this.props;
 
     return (
       <nav className="navigation flex align-items-center">

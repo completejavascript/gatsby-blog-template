@@ -38,6 +38,12 @@ const config = {
       iconClassName: "fa fa-envelope"
     }
   ],
+  // Use for navigation
+  navTitle: "GB Template",
+  navLinks: [
+    { label: "About", link: "/about" },
+    { label: "Contact", link: "/contact" },
+  ],
   copyright: "Copyright © 2019. Lam Pham", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF" // Used for setting manifest background color.

@@ -2,8 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Navigation from "../components/Navigation/Navigation";
 import siteConfig from "../../data/SiteConfig";
-import navConfig from "../../data/navigation/navConfig";
-import brand from "../../data/navigation/brand.png";
+import brand from "../../static/logos/logo-48x48.png";
 import "../styles/shiba.min.css";
 
 export default class MainLayout extends React.Component {
@@ -16,9 +15,10 @@ export default class MainLayout extends React.Component {
         </Helmet>
         <Navigation 
           brand={brand}
-          title={navConfig.title} 
-          links={navConfig.links} 
+          title={siteConfig.navTitle} 
+          links={siteConfig.navLinks} 
         />
+        {children}
         {children}
       </div>
     );
