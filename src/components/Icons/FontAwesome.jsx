@@ -10,7 +10,8 @@ import {
   faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faRss
+  faRss,
+  faAngleUp
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -23,4 +24,5 @@ library.add(
   faPinterest,
   faYoutube,
   faRss,
+  faAngleUp
 );

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const SocialLinks = ({ socials }) => (
+const SocialLinks = ({ socials, color }) => (
   <div className="social-links-container margin-half">
     {
       socials.map(social => {
@@ -15,7 +15,7 @@ const SocialLinks = ({ socials }) => (
             <FontAwesomeIcon 
               icon={social.iconClassName.split(" ")} 
               transform="grow-2"
-              style={{ color: "#FFF" }}
+              style={{ color }}
             />
           </Link>
         )

@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Navigation from "../components/Navigation/Navigation";
 import Footer from "../components/Footer/Footer";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import siteConfig from "../../data/SiteConfig";
 import brand from "../../static/logos/logo-48x48.png";
 import "../components/Icons/FontAwesome";
@@ -21,10 +22,15 @@ export default class MainLayout extends React.Component {
           links={siteConfig.navLinks} 
         />
         {children}
+        {children}
         <Footer 
           socials={siteConfig.socialLinks}
           links={siteConfig.footerLinks}
           copyright={siteConfig.copyright}
+        />
+        <ScrollToTop 
+          color="#FFF"
+          bgColor="grey-half"
         />
       </div>
     );
