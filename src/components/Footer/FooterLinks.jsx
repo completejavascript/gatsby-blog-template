@@ -1,16 +1,16 @@
 import React from "react";
-import { Link } from "gatsby";
+import AutoLink from "../AutoLink/AutoLink";
 
 const FooterLinks = ({ links }) => (
   <div className="footer-links-container margin-half">
     {links.map(link => (
-        <Link
+        <AutoLink
           key={link.label}
-          to={link.link}
+          to={link.url}
           className="item margin-left-half margin-right-half color-white"
         >
           {link.label}
-        </Link>
+        </AutoLink>
       ))}
   </div>
 )

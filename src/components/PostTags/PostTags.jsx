@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import _ from "lodash";
-import { Link } from "gatsby";
+import AutoLink from "../AutoLink/AutoLink";
 
 class PostTags extends Component {
   render() {
@@ -9,13 +9,13 @@ class PostTags extends Component {
       <div className="post-tag-container">
         {tags &&
           tags.map(tag => (
-            <Link
+            <AutoLink
               key={tag}
               style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
             >
               <button>{tag}</button>
-            </Link>
+            </AutoLink>
           ))}
       </div>
     );

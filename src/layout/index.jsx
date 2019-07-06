@@ -22,7 +22,6 @@ export default class MainLayout extends React.Component {
           links={siteConfig.navLinks} 
         />
         {children}
-        {children}
         <Footer 
           socials={siteConfig.socialLinks}
           links={siteConfig.footerLinks}

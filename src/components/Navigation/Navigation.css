@@ -17,3 +17,13 @@
 .navigation-container .links .item.active {
   color: #222;
 }
+
+.navigation-container .navbars {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .navigation-container .navbars {
+    display: block;
+  }
+} 

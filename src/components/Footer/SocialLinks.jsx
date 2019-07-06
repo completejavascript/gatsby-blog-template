@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "gatsby";
+import AutoLink from "../AutoLink/AutoLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SocialLinks = ({ socials, color }) => (
   <div className="social-links-container margin-half">
     {
       socials.map(social => {
-        if (social.link !== "") return (
-          <Link 
+        if (social.url !== "") return (
+          <AutoLink 
             className="margin-left-half margin-right-half" 
-            to={social.link} 
+            to={social.url} 
             key={social.label}
           >
             <FontAwesomeIcon 
@@ -17,7 +17,7 @@ const SocialLinks = ({ socials, color }) => (
               transform="grow-2"
               style={{ color }}
             />
-          </Link>
+          </AutoLink>
         )
         
         // Ignore

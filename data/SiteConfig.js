@@ -39,31 +39,31 @@ const config = {
     },
     { 
       label: "Facebook", 
-      link: "https://www.facebook.com/completejavascript/", 
+      url: "https://www.facebook.com/completejavascript/", 
       iconClassName: "fab facebook-f" 
     },
     { 
       label: "Linkedin", 
-      link: "https://www.linkedin.com/in/completejavascript/", 
+      url: "https://www.linkedin.com/in/completejavascript/", 
       iconClassName: "fab linkedin-in"
     },
   ],
   // Use for navigation
   navTitle: "GB Template",
   navLinks: [
-    { label: "About", link: "/about" },
-    { label: "Contact", link: "/contact" },
+    { label: "About", url: "/about" },
+    { label: "Contact", url: "/contact" },
   ],
   // Use for footer
   socialLinks: [
     { 
       label: "Codepen", 
-      link: "https://codepen.io/completejavascript/", 
+      url: "https://codepen.io/completejavascript/", 
       iconClassName: "fab codepen" 
     },
     { 
       label: "FreeCodeCamp", 
-      link: "", // Ignore 
+      url: "", // Ignore 
       iconClassName: "fab free-code-camp"
     },
     { 
@@ -73,12 +73,12 @@ const config = {
     },
     { 
       label: "Facebook", 
-      link: "https://www.facebook.com/completejavascript/", 
-      iconClassName: "fab facebook-f" 
+      url: "https://www.facebook.com/completejavascript/", 
+      iconClassName: "fab facebook-f"
     },
     { 
       label: "Linkedin", 
-      link: "https://www.linkedin.com/in/completejavascript/", 
+      url: "https://www.linkedin.com/in/completejavascript/", 
       iconClassName: "fab linkedin-in"
     },
     {
@@ -93,12 +93,12 @@ const config = {
     },
   ],
   footerLinks: [
-    { label: "Home", link: "/" },
-    { label: "About", link: "/about" },
-    { label: "Contact", link: "/contact" },
-    { label: "Terms of Use", link: "/terms" },
-    { label: "Privacy Policy", link: "/privacy" },
-    { label: "Sitemap", link: "/sitemap.xml" },
+    { label: "Home", url: "/" },
+    { label: "About", url: "/about" },
+    { label: "Contact", url: "/contact" },
+    { label: "Terms of Use", url: "/terms" },
+    { label: "Privacy Policy", url: "/privacy" },
+    { label: "Sitemap", url: "/sitemap.xml" },
   ],
   copyright: "Copyright © 2019 Lam Pham. All rights reserved.",
   // Use for manifest

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import AutoLink from "../AutoLink/AutoLink";
 
 class PostListing extends React.Component {
   getPostList() {
@@ -23,9 +23,9 @@ class PostListing extends React.Component {
       <div>
         {/* Your post list here. */
         postList.map(post => (
-          <Link to={post.path} key={post.title}>
+          <AutoLink to={post.path} key={post.title}>
             <h1>{post.title}</h1>
-          </Link>
+          </AutoLink>
         ))}
       </div>
     );

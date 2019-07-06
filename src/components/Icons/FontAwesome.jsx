@@ -11,7 +11,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faRss,
-  faAngleUp
+  faAngleUp,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -24,5 +25,6 @@ library.add(
   faPinterest,
   faYoutube,
   faRss,
-  faAngleUp
+  faAngleUp,
+  faBars
 );
