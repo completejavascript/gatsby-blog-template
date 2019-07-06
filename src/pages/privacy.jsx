@@ -8,7 +8,7 @@ class PrivacyPage extends Component {
   render() {
     return (
       <Layout>
-        <div className="privacy-policy-container">
+        <div className="privacy-page-container">
           <Helmet title={`Privacy Policy | ${config.siteTitle}`} />
           <Privacy />
         </div>
