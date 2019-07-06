@@ -69,6 +69,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
