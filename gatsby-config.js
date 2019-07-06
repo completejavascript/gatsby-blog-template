@@ -14,7 +14,7 @@ module.exports = {
         config.siteUrl,
         config.pathPrefix
       )}/logos/logo-512x512.png`,
-      copyright: config.copyright
+      copyright: config.copyright,
     }
   },
   plugins: [

@@ -16,9 +16,9 @@ import {
 } from "react-share";
 import urljoin from "url-join";
 import config from "../../../data/SiteConfig";
-import "./SocialLinks.css";
+import "./SocialShare.css";
 
-class SocialLinks extends Component {
+class SocialShare extends Component {
   render() {
     const { postNode, postPath, mobile } = this.props;
     const post = postNode.frontmatter;
@@ -30,7 +30,7 @@ class SocialLinks extends Component {
     );
 
     return (
-      <div className="social-links">
+      <div className="social-share">
         <RedditShareButton url={url} title={post.title}>
           <RedditIcon round size={iconSize} />
           <RedditShareCount url={url}>
@@ -64,4 +64,4 @@ class SocialLinks extends Component {
   }
 }
 
-export default SocialLinks;
+export default SocialShare;

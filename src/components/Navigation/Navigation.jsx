@@ -7,7 +7,7 @@ export default class Navigation extends Component {
     const { brand, title, links } = this.props;
 
     return (
-      <nav className="navigation flex align-items-center">
+      <nav className="navigation-container flex align-items-center">
         <div className="container flex align-items-center justify-content-space-between">
           <div className="brand">
             <Link className="flex align-items-center" to="/">

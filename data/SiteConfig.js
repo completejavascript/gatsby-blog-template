@@ -23,20 +23,30 @@ const config = {
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
-      label: "GitHub",
-      url: "https://github.com/completejavascript",
-      iconClassName: "fa fa-github"
+      label: "Email",
+      url: "mailto:completejavascript.super@gmail.com",
+      iconClassName: "far envelope"
+    },
+    {
+      label: "Website",
+      url: "https://completejavascript.com/",
+      iconClassName: "fas globe"
     },
     {
       label: "Twitter",
       url: "https://twitter.com/CmpltJavaScript",
-      iconClassName: "fa fa-twitter"
+      iconClassName: "fab twitter"
     },
-    {
-      label: "Email",
-      url: "mailto:completejavascript.super@gmail.com",
-      iconClassName: "fa fa-envelope"
-    }
+    { 
+      label: "Facebook", 
+      link: "https://www.facebook.com/completejavascript/", 
+      iconClassName: "fab facebook-f" 
+    },
+    { 
+      label: "Linkedin", 
+      link: "https://www.linkedin.com/in/completejavascript/", 
+      iconClassName: "fab linkedin-in"
+    },
   ],
   // Use for navigation
   navTitle: "GB Template",
@@ -44,7 +54,53 @@ const config = {
     { label: "About", link: "/about" },
     { label: "Contact", link: "/contact" },
   ],
-  copyright: "Copyright © 2019. Lam Pham", // Copyright string for the footer of the website and RSS feed.
+  // Use for footer
+  socialLinks: [
+    { 
+      label: "Codepen", 
+      link: "https://codepen.io/completejavascript/", 
+      iconClassName: "fab codepen" 
+    },
+    { 
+      label: "FreeCodeCamp", 
+      link: "", // Ignore 
+      iconClassName: "fab free-code-camp"
+    },
+    { 
+      label: "GitHub",
+      url: "https://github.com/completejavascript",
+      iconClassName: "fab github"
+    },
+    { 
+      label: "Facebook", 
+      link: "https://www.facebook.com/completejavascript/", 
+      iconClassName: "fab facebook-f" 
+    },
+    { 
+      label: "Linkedin", 
+      link: "https://www.linkedin.com/in/completejavascript/", 
+      iconClassName: "fab linkedin-in"
+    },
+    {
+      label: "Twitter",
+      url: "https://twitter.com/CmpltJavaScript",
+      iconClassName: "fab twitter"
+    },
+    {
+      label: "RSS",
+      url: "/rss.xml",
+      iconClassName: "fas rss"
+    },
+  ],
+  footerLinks: [
+    { label: "Home", link: "/" },
+    { label: "About", link: "/about" },
+    { label: "Contact", link: "/contact" },
+    { label: "Privacy Policy", link: "/privacy-policy" },
+    { label: "Sitemap", link: "/sitemap.xml" },
+  ],
+  copyright: "Copyright © 2019 Lam Pham. All rights reserved.",
+  // Use for manifest
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF" // Used for setting manifest background color.
 };

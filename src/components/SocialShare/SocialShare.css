@@ -1,4 +1,4 @@
-.social-links {
+.social-share {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -8,7 +8,7 @@
     margin: 15px 0;
 }
 
-.social-links > div {
+.social-share > div {
     margin: 5px 15px;
     cursor: pointer;
 }
