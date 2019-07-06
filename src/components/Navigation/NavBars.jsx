@@ -1,16 +1,12 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Hamburger from "./Hamburger";
 
-const NavBars = ({ color, handleClick }) => (
+const NavBars = ({ color, handleClick, openDropdown }) => (
   <div
     onClick={handleClick} 
     className="navbars cursor-pointer padding-top padding-bottom"
   >
-    <FontAwesomeIcon 
-      icon={["fas", "bars"]} 
-      style={{ color }}
-      size="lg"
-    />
+    <Hamburger open={openDropdown} />
   </div>
 )
 

@@ -12,7 +12,6 @@ import {
 import {
   faRss,
   faAngleUp,
-  faBars
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -26,5 +25,4 @@ library.add(
   faYoutube,
   faRss,
   faAngleUp,
-  faBars
 );
