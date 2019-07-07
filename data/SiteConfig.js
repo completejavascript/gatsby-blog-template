@@ -7,6 +7,7 @@ const config = {
   pathPrefix: "/gatsby-blog-template", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
+  siteLang: "en",
   siteFBAppID: "399626517562189", // FB Application ID for using app insights
   googleAnalyticsID: "UA-96543695-7", // GA tracking ID.
   disqusShortname: "gb-template", // Disqus shortname.
@@ -100,7 +101,7 @@ const config = {
     { label: "Privacy Policy", url: "/privacy" },
     { label: "Sitemap", url: "/sitemap.xml" },
   ],
-  copyright: "Copyright © 2019 Lam Pham. All rights reserved.",
+  copyright: "Copyright © 2019 Lam Pham. All code MIT license.",
   // Use for manifest
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF" // Used for setting manifest background color.
