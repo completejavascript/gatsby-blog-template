@@ -70,38 +70,7 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
     "gatsby-plugin-sass",
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output: "sitemap.xml",
-        exclude: ["/category/*", "/tag/*"],
-        query: `
-        {
-          site {
-            siteMetadata {
-              siteUrl
-            }
-          }
-
-          allSitePage {
-            edges {
-              node {
-                path
-              }
-            }
-          }
-        }`,
-        serialize: ({ site, allSitePage }) => {
-          allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.siteUrl + edge.node.path,
-              changefreq: "daily",
-              priority: 0.7,
-            }
-          })
-        }
-      }
-    },
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
