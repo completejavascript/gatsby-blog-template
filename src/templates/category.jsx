@@ -15,7 +15,10 @@ export default class CategoryTemplate extends React.Component {
           <Helmet
             title={`Posts in category "${category}" | ${config.siteTitle}`}
           />
-          <PostListing postEdges={postEdges} />
+          <PostListing 
+            postEdges={postEdges} 
+            hasThumbnail={true}
+          />
         </div>
       </Layout>
     );
@@ -44,8 +47,8 @@ export const pageQuery = graphql`
             tags
             cover {
               childImageSharp {
-                fluid(maxWidth: 660) {
-                  ...GatsbyImageSharpFluid
+                fixed(width: 300) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }

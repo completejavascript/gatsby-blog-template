@@ -5,6 +5,8 @@ const config = {
   siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://completejavascript.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-blog-template", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+  pathPrefixTag: "/tag", // Prefix path for tags
+  pathPrefixCategory: "/category", // Prefix path for category
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteLang: "en",
@@ -13,7 +15,7 @@ const config = {
   disqusShortname: "gb-template", // Disqus shortname.
   postDefaultCategoryID: "", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
-  dateFormat: "DD/MM/YYYY", // Date format for display.
+  dateFormat: "MMMM Do, YYYY", // Date format for display.
   userName: "Lam Pham", // Username to display in the author segment.
   userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed's author segment
   userTwitter: "CmpltJavaScript", // Optionally renders "Follow Me" in the UserInfo segment.

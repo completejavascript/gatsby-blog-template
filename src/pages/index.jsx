@@ -14,7 +14,10 @@ class Index extends React.Component {
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
-          <PostListing postEdges={postEdges} />
+          <PostListing 
+            postEdges={postEdges} 
+            hasThumbnail={true}
+          />
         </div>
       </Layout>
     );
@@ -41,10 +44,11 @@ export const pageQuery = graphql`
           frontmatter {
             title
             tags
+            category
             cover {
               childImageSharp {
-                fluid(maxWidth: 660) {
-                  ...GatsbyImageSharpFluid
+                fixed(width: 300) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }

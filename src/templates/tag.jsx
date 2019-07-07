@@ -13,7 +13,10 @@ export default class TagTemplate extends React.Component {
       <Layout>
         <div className="tag-container">
           <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
-          <PostListing postEdges={postEdges} />
+          <PostListing 
+            postEdges={postEdges} 
+            hasThumbnail={true}
+          />
         </div>
       </Layout>
     );
@@ -42,8 +45,8 @@ export const pageQuery = graphql`
             tags
             cover {
               childImageSharp {
-                fluid(maxWidth: 660) {
-                  ...GatsbyImageSharpFluid
+                fixed(width: 300) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }

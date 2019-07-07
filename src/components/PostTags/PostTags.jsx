@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import _ from "lodash";
 import AutoLink from "../AutoLink/AutoLink";
+import { getTagPath } from "../../utils/helpers";
 
 class PostTags extends Component {
   render() {
@@ -12,7 +12,7 @@ class PostTags extends Component {
             <AutoLink
               key={tag}
               style={{ textDecoration: "none" }}
-              to={`/tags/${_.kebabCase(tag)}`}
+              to={getTagPath(tag)}
             >
               <button>{tag}</button>
             </AutoLink>
