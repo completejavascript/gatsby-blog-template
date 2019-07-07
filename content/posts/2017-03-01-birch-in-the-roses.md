@@ -2,8 +2,8 @@
 title: "Birch in the Roses"
 cover: "../images/placeholder-660x400.png"
 date: "2017-03-01"
-category: "tech"
 slug: "birch-in-the-roses"
+category: "tech"
 tags:
     - tag
 ---

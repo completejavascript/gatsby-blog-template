@@ -1,9 +1,9 @@
 ---
 title: "The Butterfly of the Edge"
 cover: "../images/placeholder-660x400.png"
-category: "tech"
 date: "2017-03-17"
 slug: "the-butterfly-of-the-edge"
+category: "tech"
 tags:
     - programming
     - more tags

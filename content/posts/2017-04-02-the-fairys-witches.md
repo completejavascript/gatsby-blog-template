@@ -1,9 +1,9 @@
 ---
 title: "The Fairy's Witches"
 cover: "../images/placeholder-660x400.png"
-category: "something"
 date: "2017-04-02"
 slug: "the-fairys-witches"
+category: "something"
 ---
 # Eram mora tuas in inter ferens caterva
 

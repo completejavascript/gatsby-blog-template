@@ -1,9 +1,9 @@
 ---
 title: "Angels of Mist"
 cover: "../images/placeholder-660x400.png"
-category: "test3"
 date: "2017-03-01"
 slug: "angels-of-mist"
+category: "test3"
 tags:
     - cheese
     - other
