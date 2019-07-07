@@ -3,18 +3,24 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
+import { getPostList } from "../utils/helpers";
+import Header from "../components/Header/Header";
 import config from "../../data/SiteConfig";
 
 export default class TagTemplate extends React.Component {
   render() {
-    const { tag } = this.props.pageContext;
+    const { tag, tagList, categoryList } = this.props.pageContext;
     const postEdges = this.props.data.allMarkdownRemark.edges;
+    const postList = getPostList(postEdges);
     return (
       <Layout>
         <div className="tag-container">
-          <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
+          <Helmet title={`Posts tagged as "${tag}" - ${config.siteTitle}`} />
+          <Header title={`Posts tagged as "${tag}"`} />
           <PostListing 
-            postEdges={postEdges} 
+            postList={postList} 
+            categoryList={categoryList}
+            tagList={tagList}
             hasThumbnail={true}
           />
         </div>
@@ -43,6 +49,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             tags
+            category
             cover {
               childImageSharp {
                 fixed(width: 300) {

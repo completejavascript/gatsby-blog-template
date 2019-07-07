@@ -3,19 +3,27 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
+import Header from "../components/Header/Header";
 import SEO from "../components/SEO/SEO";
+import { getPostList, getTagCategoryList } from "../utils/helpers";
 import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
+    const postList = getPostList(postEdges);
+    const { tagList, categoryList } = getTagCategoryList(postList);
+
     return (
       <Layout>
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
+          <Header title={`${config.siteTitle} - Home`} />
           <PostListing 
-            postEdges={postEdges} 
+            postList={postList}
+            tagList={tagList}
+            categoryList={categoryList} 
             hasThumbnail={true}
           />
         </div>

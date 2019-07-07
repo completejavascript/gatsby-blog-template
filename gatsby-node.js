@@ -108,12 +108,17 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  tagSet.forEach(tag => {
+  const tagList = Array.from(tagSet);
+  const categoryList = Array.from(categorySet);
+
+  tagList.forEach(tag => {
     createPage({
       path: `${siteConfig.pathPrefixTag}/${kebabCase(tag)}/`,
       component: tagPage,
       context: {
-        tag
+        tag,
+        tagList,
+        categoryList
       }
     });
   });
@@ -122,7 +127,9 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `${siteConfig.pathPrefixCategory}/${kebabCase(category)}/`,
       component: categoryPage,
       context: {
-        category
+        category,
+        tagList,
+        categoryList
       }
     });
   });

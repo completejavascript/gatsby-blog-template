@@ -1,0 +1,27 @@
+$sidebar-width: 500px;
+
+.list-post-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+
+  .articles-wrapper {
+    width: calc(100% - $sidebar-width);
+  }
+  .sidebar-wrapper {
+    width: $sidebar-width;
+  }
+}
+
+@media (min-width: 1000px) {
+  .list-post-container { 
+    flex-direction: row;
+    .articles-wrapper {
+      padding-right: 3rem;
+      border-right: 1px solid #ececec;
+    }
+    .sidebar-wrapper {
+      padding-left: 3rem;
+    }
+  }
+} 
