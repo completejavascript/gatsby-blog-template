@@ -1,8 +1,9 @@
 ---
 title: "Angels of Mist"
-cover: "https://unsplash.it/400/300/?random?AngelsofMist"
+cover: "../images/placeholder-660x400.png"
 category: "test3"
-date: "01/03/2017"
+date: "2017-03-01"
+slug: "angels-of-mist"
 tags:
     - cheese
     - other

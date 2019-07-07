@@ -10,10 +10,7 @@ module.exports = {
       feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
       title: config.siteTitle,
       description: config.siteDescription,
-      image_url: `${urljoin(
-        config.siteUrl,
-        config.pathPrefix
-      )}/logos/logo-512x512.png`,
+      image_url: `${urljoin(config.siteUrl, config.pathPrefix)}/logos/logo-512x512.png`,
       copyright: config.copyright,
     }
   },
@@ -41,7 +38,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 690
+              maxWidth: 660
             }
           },
           {
@@ -102,7 +99,7 @@ module.exports = {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata;
           ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Advanced Starter";
+          ret.generator = "Gatsby Blog Template";
           return ret;
         },
         query: `

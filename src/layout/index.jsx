@@ -11,13 +11,9 @@ import "../styles/shiba.min.css";
 
 const MainLayout = ({ children }) => (
   <div>
-    <Helmet 
-      htmlAttributes={{ lang: siteConfig.siteLang }}
-      link={[
-        { rel: "shortcut icon", type: "image/x-icon", href: `${favicon}` },
-      ]}
-    >
+    <Helmet htmlAttributes={{ lang: siteConfig.siteLang }}>
       <meta name="description" content={siteConfig.siteDescription} />
+      <link rel="shortcut icon" type="image/png" href={favicon} />
     </Helmet>
     <Navigation 
       brand={brand}

@@ -1,8 +1,9 @@
 ---
 title: "The Fairy's Witches"
-cover: "https://unsplash.it/1152/300/?random?FaityWitch"
+cover: "../images/placeholder-660x400.png"
 category: "something"
-date: "02/04/2017"
+date: "2017-04-02"
+slug: "the-fairys-witches"
 ---
 # Eram mora tuas in inter ferens caterva
 
