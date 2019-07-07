@@ -1,4 +1,4 @@
-$sidebar-width: 500px;
+$sidebar-width: 300px;
 
 .list-post-container {
   display: flex;
@@ -6,7 +6,7 @@ $sidebar-width: 500px;
   flex-direction: column;
 
   .articles-wrapper {
-    width: calc(100% - $sidebar-width);
+    width: calc(100% - #{$sidebar-width});
   }
   .sidebar-wrapper {
     width: $sidebar-width;
