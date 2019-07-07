@@ -1,6 +1,6 @@
 ---
 title: "The Fallen Time"
-cover: "../images/placeholder-660x400.png"
+cover: "../images/placeholder-660x400-464662.png"
 date: "2017-02-01"
 slug: "the-fallen-time"
 category: "another one"
