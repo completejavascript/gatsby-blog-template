@@ -4,9 +4,9 @@ $menu-item-font-weight: 500;
 $menu-box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0,0,0,.1);
 
 .navigation-container {
-  height: 64px;
   box-shadow: $menu-box-shadow;
   .navigation-main {
+    height: 64px;
     .brand {
       a {
         color: $primary-text-color;
@@ -31,9 +31,6 @@ $menu-box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0,0,0,.1);
       color: $primary-text-color;
     }
   }
-}
-.navigation-dropdown-container {
-  box-shadow: $menu-box-shadow;
   .navigation-dropdown {
     .nav-links {
       .item {
@@ -58,8 +55,8 @@ $menu-box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0,0,0,.1);
         display: none;
       }
     }
-  }
-  .navigation-dropdown-container {
-    display: none;
+    .navigation-dropdown {
+      display: none;
+    }
   }
 } 

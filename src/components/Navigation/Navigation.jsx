@@ -17,29 +17,28 @@ class Navigation extends Component {
 
   render() {
     const { brand, title, links } = this.props;
+    const { openDropdown } = this.state;
 
     return (
       <>
-        <nav className="navigation-container flex align-items-center background-color-white">
+        <nav className="navigation-container background-color-white">
           <div className="navigation-main container flex align-items-center justify-content-space-between">
             <NavBrand brand={brand} title={title} />
             <NavLinks links={links} />
             <NavBars 
               color="#222" 
               handleClick={this.handleClick} 
-              openDropdown={this.state.openDropdown}
+              openDropdown={openDropdown}
             />
           </div>
-        </nav>
-        {
-          this.state.openDropdown ? (
-            <nav className="navigation-dropdown-container background-color-white">
+          {
+            openDropdown ? (
               <div className="navigation-dropdown container">
                 <NavLinks links={links} isDropdown={true} />
               </div>
-            </nav>
-          ) : null
-        }
+            ) : null
+          }
+        </nav>
       </>
     )
   }
