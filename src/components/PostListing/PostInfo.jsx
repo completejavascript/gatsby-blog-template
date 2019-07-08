@@ -1,6 +1,6 @@
 import React from "react";
 import AutoLink from "../AutoLink/AutoLink";
-import { formatDate } from "../../utils/helpers";
+import PostDate from "../Post/PostDate";
 
 const PostInfo = ({ post, extraClass }) => (
   <div className={extraClass}>
@@ -8,9 +8,7 @@ const PostInfo = ({ post, extraClass }) => (
       <h2><small>{post.title}</small></h2>
     </AutoLink> 
     <div className="margin-bottom-half">{post.excerpt}</div>
-    <div className="text-description">
-      <small>Posted on {formatDate(post.date)}</small>
-    </div>
+    <PostDate date={post.date} />
   </div>
 )
 

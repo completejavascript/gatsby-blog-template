@@ -74,11 +74,28 @@ exports.createPages = async ({ graphql, actions }) => {
     throw markdownQueryResult.errors;
   }
 
+  // Create tagList, categoryList
   const tagSet = new Set();
   const categorySet = new Set();
 
   const postsEdges = markdownQueryResult.data.allMarkdownRemark.edges;
 
+  postsEdges.forEach(edge => {
+    if (edge.node.frontmatter.tags) {
+      edge.node.frontmatter.tags.forEach(tag => {
+        tagSet.add(tag);
+      });
+    }
+
+    if (edge.node.frontmatter.category) {
+      categorySet.add(edge.node.frontmatter.category);
+    }
+  });
+
+  const tagList = Array.from(tagSet);
+  const categoryList = Array.from(categorySet);
+
+  // Create post page
   postsEdges.forEach((edge, index) => {
     if (edge.node.frontmatter.tags) {
       edge.node.frontmatter.tags.forEach(tag => {
@@ -103,14 +120,14 @@ exports.createPages = async ({ graphql, actions }) => {
         nexttitle: nextEdge.node.frontmatter.title,
         nextslug: nextEdge.node.fields.slug,
         prevtitle: prevEdge.node.frontmatter.title,
-        prevslug: prevEdge.node.fields.slug
+        prevslug: prevEdge.node.fields.slug,
+        tagList,
+        categoryList
       }
     });
   });
 
-  const tagList = Array.from(tagSet);
-  const categoryList = Array.from(categorySet);
-
+  // create tag page
   tagList.forEach(tag => {
     createPage({
       path: `${siteConfig.pathPrefixTag}/${kebabCase(tag)}/`,
@@ -122,6 +139,8 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     });
   });
+
+  // create category page
   categorySet.forEach(category => {
     createPage({
       path: `${siteConfig.pathPrefixCategory}/${kebabCase(category)}/`,
