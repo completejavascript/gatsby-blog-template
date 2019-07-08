@@ -1,0 +1,22 @@
+.post-container {
+  .meta-share-wrapper {
+    .share-wrapper {
+      padding-top: 1rem;
+      padding-bottom: 0.75rem;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .post-container {
+    .meta-share-wrapper {
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between;
+      .share-wrapper {
+        padding-top: unset;
+        padding-bottom: unset;
+      }
+    }
+  }
+} 
