@@ -10,6 +10,7 @@ const config = {
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteLang: "en",
+  numberLatestPost: 6,
   siteFBAppID: "399626517562189", // FB Application ID for using app insights
   googleAnalyticsID: "UA-96543695-7", // GA tracking ID.
   disqusShortname: "gb-template", // Disqus shortname.

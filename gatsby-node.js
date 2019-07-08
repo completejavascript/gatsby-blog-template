@@ -95,6 +95,11 @@ exports.createPages = async ({ graphql, actions }) => {
   const tagList = Array.from(tagSet);
   const categoryList = Array.from(categorySet);
 
+  // Get latest posts
+  const latestPostEdges = postsEdges.filter((_, index) => {
+    return index < siteConfig.numberLatestPost;
+  });
+
   // Create post page
   postsEdges.forEach((edge, index) => {
     if (edge.node.frontmatter.tags) {
@@ -122,7 +127,8 @@ exports.createPages = async ({ graphql, actions }) => {
         prevtitle: prevEdge.node.frontmatter.title,
         prevslug: prevEdge.node.fields.slug,
         tagList,
-        categoryList
+        categoryList,
+        latestPostEdges
       }
     });
   });

@@ -11,11 +11,16 @@ import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 
 const PostTemplate = ({ data, pageContext }) => {
-  const { slug, tagList, categoryList } = pageContext;
+  const { slug, tagList, categoryList, latestPostEdges } = pageContext;
   const postNode = data.markdownRemark;
   const title = postNode.frontmatter.title;
   const content = <Post postNode={postNode} config={config} slug={slug} />;
-  const sidebar = <Sidebar location="on_post" tagList={tagList} categoryList={categoryList} />;
+  const sidebar = <Sidebar 
+    location="on_post" 
+    tagList={tagList} 
+    categoryList={categoryList}
+    latestPostEdges={latestPostEdges} 
+  />;
 
   return (
     <Layout>
