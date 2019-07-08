@@ -1,4 +1,4 @@
-$sidebar-width: 300px;
+$sidebar-desktop-width: 300px;
 
 .list-post-container {
   display: flex;
@@ -6,10 +6,10 @@ $sidebar-width: 300px;
   flex-direction: column;
 
   .articles-wrapper {
-    width: calc(100% - #{$sidebar-width});
+    width: 100%;
   }
   .sidebar-wrapper {
-    width: $sidebar-width;
+    width: 100%;
   }
 }
 
@@ -19,9 +19,11 @@ $sidebar-width: 300px;
     .articles-wrapper {
       padding-right: 3rem;
       border-right: 1px solid #ececec;
+      width: calc(100% - #{$sidebar-desktop-width});
     }
     .sidebar-wrapper {
       padding-left: 3rem;
+      width: $sidebar-desktop-width;
     }
   }
 } 

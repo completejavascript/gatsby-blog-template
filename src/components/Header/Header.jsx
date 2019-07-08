@@ -4,7 +4,7 @@ const Header = ({ title }) => (
   <header className="border-bottom border-color-light-grey">
     <div className="container">
       <h1 className="text-center margin-none padding-top-2 padding-bottom-2">
-        <strong>{title}</strong>
+        {title}
       </h1>
     </div>
   </header>
