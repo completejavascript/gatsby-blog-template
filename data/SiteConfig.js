@@ -14,7 +14,7 @@ const config = {
   googleAnalyticsID: "UA-96543695-7", // GA tracking ID.
   disqusShortname: "gb-template", // Disqus shortname.
   postDefaultCategoryID: "", // Default category for posts.
-  dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
+  dateFromFormat: "YYYY-MM-DD HH:mm", // Date format used in the frontmatter.
   dateFormat: "MMMM Do, YYYY", // Date format for display.
   userName: "Lam Pham", // Username to display in the author segment.
   userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed's author segment

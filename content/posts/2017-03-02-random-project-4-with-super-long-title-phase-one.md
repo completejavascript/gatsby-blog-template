@@ -1,7 +1,7 @@
 ---
 title: "Random project 4 With Super Long Title Phase One"
 cover: "../images/placeholder-660x400-f6cd61.png"
-date: "2017-03-02"
+date: "2017-03-02 08:00"
 slug: "random-project-4-with-super-long-title-phase-one"
 category: "random"
 tags:

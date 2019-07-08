@@ -1,7 +1,7 @@
 ---
 title: "The Fairy's Witches"
 cover: "../images/placeholder-660x400-464662.png"
-date: "2017-04-02"
+date: "2017-04-02 08:00"
 slug: "the-fairys-witches"
 category: "something"
 ---

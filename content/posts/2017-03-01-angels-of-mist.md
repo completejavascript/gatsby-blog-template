@@ -1,7 +1,7 @@
 ---
 title: "Angels of Mist"
 cover: "../images/placeholder-660x400-34565f.png"
-date: "2017-03-01"
+date: "2017-03-01 20:00"
 slug: "angels-of-mist"
 category: "test3"
 tags:
