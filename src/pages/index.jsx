@@ -2,8 +2,10 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
-import PostListing from "../components/PostListing/PostListing";
 import Header from "../components/Header/Header";
+import MainContainer from "../components/MainContainer/MainContainer";
+import Sidebar from "../components/Sidebar/Sidebar";
+import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import { getPostList, getTagCategoryList } from "../utils/helpers";
 import config from "../../data/SiteConfig";
@@ -13,6 +15,8 @@ class Index extends React.Component {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const postList = getPostList(postEdges);
     const { tagList, categoryList } = getTagCategoryList(postList);
+    const content = <PostListing postList={postList} hasThumbnail={true} />;
+    const sidebar = <Sidebar location="on_list" tagList={tagList} categoryList={categoryList} />;
 
     return (
       <Layout>
@@ -20,12 +24,7 @@ class Index extends React.Component {
           <Helmet title={config.siteTitle} />
           <SEO />
           <Header title={`${config.siteTitle} - Home`} />
-          <PostListing 
-            postList={postList}
-            tagList={tagList}
-            categoryList={categoryList} 
-            hasThumbnail={true}
-          />
+          <MainContainer content={content} sidebar={sidebar} />
         </div>
       </Layout>
     );

@@ -1,11 +1,11 @@
 $sidebar-desktop-width: 300px;
 
-.list-post-container {
+.main-container {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
 
-  .articles-wrapper {
+  .content-wrapper {
     width: 100%;
   }
   .sidebar-wrapper {
@@ -14,9 +14,9 @@ $sidebar-desktop-width: 300px;
 }
 
 @media (min-width: 1000px) {
-  .list-post-container { 
+  .main-container { 
     flex-direction: row;
-    .articles-wrapper {
+    .content-wrapper {
       padding-right: 3rem;
       border-right: 1px solid #ececec;
       width: calc(100% - #{$sidebar-desktop-width});
