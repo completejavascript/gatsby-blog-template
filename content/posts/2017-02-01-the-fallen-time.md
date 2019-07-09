@@ -3,7 +3,10 @@ title: "The Fallen Time"
 cover: "../images/placeholder-660x400-464662.png"
 date: "2017-02-01 08:00"
 slug: "the-fallen-time"
-category: "another one"
+categories: 
+    - another one
+    - moar
+    - something
 tags:
     - test
     - something

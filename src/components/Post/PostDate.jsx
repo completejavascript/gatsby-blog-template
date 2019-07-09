@@ -1,9 +1,9 @@
 import React from "react";
 import { formatDate } from "../../utils/helpers";
 
-const PostDate = ({ date }) => (
-  <div className="text-description inline-block">
-    <small>Posted on {formatDate(date)}</small>
+const PostDate = ({ date, extraClass = "" }) => (
+  <div className={`text-description ${extraClass}`}>
+    Posted on {formatDate(date)}
   </div>
 )
 

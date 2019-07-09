@@ -9,7 +9,7 @@ export const getCategoryPath = category => `${config.pathPrefixCategory}/${kebab
 export const getPostList = postEdges => postEdges.map(postEdge => ({
   path: postEdge.node.fields.slug,
   tags: postEdge.node.frontmatter.tags,
-  category: postEdge.node.frontmatter.category,
+  categories: postEdge.node.frontmatter.categories,
   cover: postEdge.node.frontmatter.cover,
   title: postEdge.node.frontmatter.title,
   date: postEdge.node.fields.date,
@@ -22,9 +22,11 @@ export const getTagCategoryList = postList => {
   const tagSet = new Set();
   const categorySet = new Set();
   
-  postList.forEach(({ category, tags }) => {
-    if (category) {
-      categorySet.add(category);
+  postList.forEach(({ categories, tags }) => {
+    if (categories) {
+      categories.forEach(category => {
+        categorySet.add(category);
+      });
     }
 
     if (tags) {

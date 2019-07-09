@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
               frontmatter {
                 title
                 tags
-                category
+                categories
                 date
               }
             }
@@ -87,8 +87,10 @@ exports.createPages = async ({ graphql, actions }) => {
       });
     }
 
-    if (edge.node.frontmatter.category) {
-      categorySet.add(edge.node.frontmatter.category);
+    if (edge.node.frontmatter.categories) {
+      edge.node.frontmatter.categories.forEach(category => {
+        categorySet.add(category);
+      });
     }
   });
 
@@ -102,16 +104,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create post page
   postsEdges.forEach((edge, index) => {
-    if (edge.node.frontmatter.tags) {
-      edge.node.frontmatter.tags.forEach(tag => {
-        tagSet.add(tag);
-      });
-    }
-
-    if (edge.node.frontmatter.category) {
-      categorySet.add(edge.node.frontmatter.category);
-    }
-
     const nextID = index + 1 < postsEdges.length ? index + 1 : 0;
     const prevID = index - 1 >= 0 ? index - 1 : postsEdges.length - 1;
     const nextEdge = postsEdges[nextID];

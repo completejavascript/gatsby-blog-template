@@ -17,7 +17,7 @@ class SEO extends Component {
         ? postMeta.description
         : postNode.excerpt;
 
-      image = postMeta.cover.childImageSharp.fluid.src;
+      image = postMeta.cover.childImageSharp.fixed.src;
       postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
     } else {
       title = config.siteTitle;

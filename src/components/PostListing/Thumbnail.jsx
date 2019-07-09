@@ -2,7 +2,7 @@ import React from "react";
 import Img from "gatsby-image";
 import AutoLink from "../AutoLink/AutoLink";
 
-const Thumbnail = ({ post, extraClass }) => {
+const Thumbnail = ({ post, extraClass = "" }) => {
   const img = post.cover ? post.cover.childImageSharp.fluid : null;
   const thumbnail = img ? (
       <AutoLink 
