@@ -51,8 +51,8 @@ export const pageQuery = graphql`
             tags
             cover {
               childImageSharp {
-                fixed(width: 300) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 660) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

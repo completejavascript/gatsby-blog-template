@@ -3,14 +3,14 @@ import Img from "gatsby-image";
 import AutoLink from "../AutoLink/AutoLink";
 
 const Thumbnail = ({ post, extraClass }) => {
-  const imgFixed = post.cover ? post.cover.childImageSharp.fixed : null;
-  const thumbnail = imgFixed ? (
+  const img = post.cover ? post.cover.childImageSharp.fluid : null;
+  const thumbnail = img ? (
       <AutoLink 
         to={post.slug} 
         key={post.title} 
-        className={`line-height-reset ${extraClass}`}
+        className={`thumbnail-wrapper line-height-reset ${extraClass}`}
       >
-        <Img fixed={imgFixed} className="margin-right-2" />
+        <Img fluid={img} className="thumbnail-img margin-right-2" />
       </AutoLink> 
     ) : null;
   
