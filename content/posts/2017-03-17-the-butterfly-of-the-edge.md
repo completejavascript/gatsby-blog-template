@@ -1,4 +1,5 @@
 ---
+template: "post"
 title: "The Butterfly of the Edge"
 cover: "../images/placeholder-660x400-eeeeee.png"
 date: "2017-03-17 08:00"
