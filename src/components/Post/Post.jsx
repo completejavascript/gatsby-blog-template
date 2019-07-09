@@ -3,8 +3,8 @@ import UserInfo from "../UserInfo/UserInfo";
 import Disqus from "../Disqus/Disqus";
 import PostTags from "./PostTags";
 import PostShare from "./PostShare";
-import PostFeature from "./PostFeature";
 import PostMeta from "./PostMeta";
+import PostDivider from "./PostDivider";
 import "./Post.scss";
 
 const Post = ({ postNode, config, slug }) => {
@@ -18,11 +18,11 @@ const Post = ({ postNode, config, slug }) => {
 
   return (
     <div className="post-container">
-      <div className="meta-share-wrapper padding-top-half padding-bottom">
+      <div className="meta-share-wrapper padding-top padding-bottom">
         <PostMeta extraClass="meta-wrapper" post={post} />
         <PostShare extraClass="share-wrapper" postPath={slug} postNode={postNode} />
       </div>
-      <PostFeature post={post} />
+      <PostDivider />
       <div className="padding-top" dangerouslySetInnerHTML={{ __html: postNode.html }} />
       <div className="padding-top padding-bottom">
         <PostTags tags={post.tags} />

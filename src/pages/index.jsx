@@ -52,13 +52,6 @@ export const pageQuery = graphql`
             title
             tags
             category
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 660) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
             date
           }
         }
