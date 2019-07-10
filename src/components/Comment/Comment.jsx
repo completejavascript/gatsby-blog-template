@@ -3,7 +3,7 @@ import Disqus from "./Disqus";
 
 class Comment extends Component {
   state = {
-    isShow: false
+    isShow: !this.props.lazyload
   }
 
   handleClick = () => {

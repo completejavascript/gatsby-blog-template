@@ -35,7 +35,11 @@ const Post = ({ postNode, config, slug }) => {
         </small>
       </div>
       <PostDivider />
-      <Comment postNode={postNode} extraClass="padding-top" />
+      <Comment 
+        postNode={postNode} 
+        extraClass="padding-top" 
+        lazyload={config.lazyLoadComments} 
+      />
     </div>
   )
 }
