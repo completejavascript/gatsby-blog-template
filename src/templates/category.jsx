@@ -23,7 +23,7 @@ const CategoryTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <div className="category-container">
-        <Helmet title={`Posts in category "${category}" | ${config.siteTitle}`} />
+        <Helmet title={`Posts in category "${category}" - ${config.siteTitle}`} />
         <Header title={`Posts in category "${category}"`} />
         <MainContainer content={content} sidebar={sidebar} />
       </div>
