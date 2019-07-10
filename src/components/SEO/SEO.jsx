@@ -8,7 +8,7 @@ class SEO extends Component {
     const { postNode, postPath, postSEO } = this.props;
     let title;
     let description;
-    let image;
+    let image = "";
     let postURL;
     if (postSEO) {
       const postMeta = postNode.frontmatter;
@@ -17,7 +17,10 @@ class SEO extends Component {
         ? postMeta.description
         : postNode.excerpt;
 
-      image = postMeta.cover.childImageSharp.fixed.src;
+      if (postMeta.cover) {
+        image = postMeta.cover.childImageSharp.fixed.src;
+      }
+
       postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
     } else {
       title = config.siteTitle;

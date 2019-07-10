@@ -24,7 +24,10 @@ const Post = ({ postNode, config, slug }) => {
         <PostShare extraClass="share-wrapper" postPath={slug} postNode={postNode} />
       </div>
       <PostDivider />
-      <div className="padding-top padding-bottom" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+      <div 
+        className="padding-top padding-bottom" 
+        dangerouslySetInnerHTML={{ __html: postNode.html }} 
+      />
       <PostDivider />
       <div className="padding-top padding-bottom">
         <small>

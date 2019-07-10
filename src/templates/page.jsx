@@ -5,16 +5,16 @@ import Layout from "../layout";
 import Header from "../components/Header/Header";
 import MainContainer from "../components/MainContainer/MainContainer";
 import Sidebar from "../components/Sidebar/Sidebar";
-import Post from "../components/Post/Post";
+import Page from "../components/Page/Page";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 
-const PostTemplate = ({ data, pageContext }) => {
+const PageTemplate = ({ data, pageContext }) => {
   const { slug, tagList, categoryList, latestPostEdges } = pageContext;
   const postNode = data.markdownRemark;
   const title = postNode.frontmatter.title;
-  const content = <Post postNode={postNode} config={config} slug={slug} />;
+  const content = <Page postNode={postNode} slug={slug} />;
   const sidebar = <Sidebar 
     location="on_post" 
     tagList={tagList} 
@@ -34,36 +34,21 @@ const PostTemplate = ({ data, pageContext }) => {
   );
 }
 
-export default PostTemplate;
+export default PageTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPageBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
       excerpt
       frontmatter {
         title
-        date
-        categories
-        tags
         description
-        cover {
-          childImageSharp {
-            fixed(width: 660) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
       }
       fields {
-        nextTitle
-        nextSlug
-        prevTitle
-        prevSlug
         slug
-        date
       }
     }
   }

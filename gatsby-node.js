@@ -3,6 +3,52 @@ const kebabCase = require("lodash.kebabcase");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
 
+const postNodes = []
+
+function addSiblingNodes(createNodeField) {
+  postNodes.sort(({ frontmatter: { date: date1 } }, { frontmatter: { date: date2 } }) => {
+    const dateA = moment(date1, siteConfig.dateFromFormat);
+    const dateB = moment(date2, siteConfig.dateFromFormat);
+
+    if (dateA.isBefore(dateB)) return 1;
+    if (dateB.isBefore(dateA)) return -1;
+
+    return 0;
+  });
+
+  for (let i = 0; i < postNodes.length; i += 1) {
+    const nextID = i + 1 < postNodes.length ? i + 1 : 0;
+    const prevID = i - 1 >= 0 ? i - 1 : postNodes.length - 1;
+    const currNode = postNodes[i];
+    const nextNode = postNodes[nextID];
+    const prevNode = postNodes[prevID];
+
+    createNodeField({
+      node: currNode,
+      name: 'nextTitle',
+      value: nextNode.frontmatter.title,
+    });
+
+    createNodeField({
+      node: currNode,
+      name: 'nextSlug',
+      value: nextNode.fields.slug,
+    });
+
+    createNodeField({
+      node: currNode,
+      name: 'prevTitle',
+      value: prevNode.frontmatter.title,
+    });
+
+    createNodeField({
+      node: currNode,
+      name: 'prevSlug',
+      value: prevNode.fields.slug,
+    });
+  }
+}
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   let slug;
@@ -38,12 +84,22 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       }
     }
     createNodeField({ node, name: "slug", value: slug });
+    postNodes.push(node);
   }
 };
+
+exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
+  const { name } = type;
+  const { createNodeField } = actions;
+  if (name === 'MarkdownRemark') {
+    addSiblingNodes(createNodeField);
+  }
+}
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const postPage = path.resolve("src/templates/post.jsx");
+  const pagePage = path.resolve("src/templates/page.jsx");
   const tagPage = path.resolve("src/templates/tag.jsx");
   const categoryPage = path.resolve("src/templates/category.jsx");
 
@@ -99,27 +155,34 @@ exports.createPages = async ({ graphql, actions }) => {
   const categoryList = Array.from(categorySet);
 
   // Get latest posts
-  const latestPostEdges = postsEdges.filter((_, index) => {
-    return index < siteConfig.numberLatestPost;
+  const latestPostEdges = [];
+  postsEdges.forEach(edge => {
+    if (edge.node.frontmatter.template === "post" && latestPostEdges.length < 6) {
+      latestPostEdges.push(edge)
+    }
   });
 
   // Create post page
-  postsEdges.forEach((edge, index) => {
-    const nextID = index + 1 < postsEdges.length ? index + 1 : 0;
-    const prevID = index - 1 >= 0 ? index - 1 : postsEdges.length - 1;
-    const nextEdge = postsEdges[nextID];
-    const prevEdge = postsEdges[prevID];
-
-    if (edge.node.frontmatter.template === 'post') {
+  postsEdges.forEach(edge => {
+    if (edge.node.frontmatter.template === "post") {
       createPage({
         path: edge.node.fields.slug,
         component: postPage,
         context: {
           slug: edge.node.fields.slug,
-          nexttitle: nextEdge.node.frontmatter.title,
-          nextslug: nextEdge.node.fields.slug,
-          prevtitle: prevEdge.node.frontmatter.title,
-          prevslug: prevEdge.node.fields.slug,
+          tagList,
+          categoryList,
+          latestPostEdges
+        }
+      });
+    }
+    
+    if (edge.node.frontmatter.template === "page") {
+      createPage({
+        path: edge.node.fields.slug,
+        component: pagePage,
+        context: {
+          slug: edge.node.fields.slug,
           tagList,
           categoryList,
           latestPostEdges
