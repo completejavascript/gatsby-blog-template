@@ -199,7 +199,8 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         tag,
         tagList,
-        categoryList
+        categoryList,
+        latestPostEdges
       }
     });
   });
@@ -212,7 +213,8 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         category,
         tagList,
-        categoryList
+        categoryList,
+        latestPostEdges
       }
     });
   });

@@ -9,25 +9,29 @@ import PostListing from "../components/PostListing/PostListing";
 import { getPostList } from "../utils/helpers";
 import config from "../../data/SiteConfig";
 
-export default class CategoryTemplate extends React.Component {
-  render() {
-    const { category, categoryList, tagList } = this.props.pageContext;
-    const postEdges = this.props.data.allMarkdownRemark.edges;
-    const postList = getPostList(postEdges);
-    const content = <PostListing postList={postList} hasThumbnail={true} />;
-    const sidebar = <Sidebar location="on_list" tagList={tagList} categoryList={categoryList} />;
+const CategoryTemplate = ({ data, pageContext }) => {
+  const { category, categoryList, tagList, latestPostEdges } = pageContext;
+  const postEdges = data.allMarkdownRemark.edges;
+  const postList = getPostList(postEdges);
+  const content = <PostListing postList={postList} hasThumbnail={true} />;
+  const sidebar = <Sidebar 
+    tagList={tagList} 
+    categoryList={categoryList} 
+    latestPostEdges={latestPostEdges}
+  />;
 
-    return (
-      <Layout>
-        <div className="category-container">
-          <Helmet title={`Posts in category "${category}" | ${config.siteTitle}`} />
-          <Header title={`Posts in category "${category}"`} />
-          <MainContainer content={content} sidebar={sidebar} />
-        </div>
-      </Layout>
-    );
-  }
+  return (
+    <Layout>
+      <div className="category-container">
+        <Helmet title={`Posts in category "${category}" | ${config.siteTitle}`} />
+        <Header title={`Posts in category "${category}"`} />
+        <MainContainer content={content} sidebar={sidebar} />
+      </div>
+    </Layout>
+  );
 }
+
+export default CategoryTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`

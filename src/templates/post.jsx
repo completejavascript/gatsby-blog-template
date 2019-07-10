@@ -16,7 +16,6 @@ const PostTemplate = ({ data, pageContext }) => {
   const title = postNode.frontmatter.title;
   const content = <Post postNode={postNode} config={config} slug={slug} />;
   const sidebar = <Sidebar 
-    location="on_post" 
     tagList={tagList} 
     categoryList={categoryList}
     latestPostEdges={latestPostEdges} 

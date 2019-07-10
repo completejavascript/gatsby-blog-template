@@ -16,7 +16,7 @@ class Index extends React.Component {
     const postList = getPostList(postEdges);
     const { tagList, categoryList } = getTagCategoryList(postList);
     const content = <PostListing postList={postList} hasThumbnail={true} />;
-    const sidebar = <Sidebar location="on_list" tagList={tagList} categoryList={categoryList} />;
+    const sidebar = <Sidebar tagList={tagList} categoryList={categoryList} />;
 
     return (
       <Layout>
