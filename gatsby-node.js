@@ -1,7 +1,8 @@
 const path = require("path");
-const kebabCase = require("lodash.kebabcase");
+const slug = require("slug");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
+const slugify = text => slug(text).toLowerCase();
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -13,7 +14,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
     ) {
-      slug = `/${kebabCase(node.frontmatter.title)}`;
+      slug = `/${slugify(node.frontmatter.title)}`;
     } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
     } else if (parsedFilePath.dir === "") {
@@ -24,7 +25,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     if (Object.prototype.hasOwnProperty.call(node, "frontmatter")) {
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, "slug"))
-        slug = `/${kebabCase(node.frontmatter.slug)}`;
+        slug = `/${slugify(node.frontmatter.slug)}`;
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, "date")) {
         const date = moment(node.frontmatter.date, siteConfig.dateFromFormat);
         if (!date.isValid)
@@ -156,7 +157,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // create tag page
   tagList.forEach(tag => {
     createPage({
-      path: `${siteConfig.pathPrefixTag}/${kebabCase(tag)}/`,
+      path: `${siteConfig.pathPrefixTag}/${slugify(tag)}/`,
       component: tagPage,
       context: {
         tag,
@@ -170,7 +171,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // create category page
   categorySet.forEach(category => {
     createPage({
-      path: `${siteConfig.pathPrefixCategory}/${kebabCase(category)}/`,
+      path: `${siteConfig.pathPrefixCategory}/${slugify(category)}/`,
       component: categoryPage,
       context: {
         category,
