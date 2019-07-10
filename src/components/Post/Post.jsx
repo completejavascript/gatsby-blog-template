@@ -1,6 +1,5 @@
 import React from "react";
-import UserInfo from "../UserInfo/UserInfo";
-import Disqus from "../Disqus/Disqus";
+import Comment from "../Comment/Comment";
 import PostTags from "./PostTags";
 import PostShare from "./PostShare";
 import PostDate from "./PostDate";
@@ -36,10 +35,7 @@ const Post = ({ postNode, config, slug }) => {
         </small>
       </div>
       <PostDivider />
-      <div className="padding-top">
-        <UserInfo config={config} />
-      </div>
-      <Disqus postNode={postNode} />
+      <Comment postNode={postNode} extraClass="padding-top" />
     </div>
   )
 }
