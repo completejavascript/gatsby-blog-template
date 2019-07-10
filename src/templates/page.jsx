@@ -8,7 +8,6 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import Page from "../components/Page/Page";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
-import "./b16-tomorrow-dark.css";
 
 const PageTemplate = ({ data, pageContext }) => {
   const { slug, tagList, categoryList, latestPostEdges } = pageContext;
