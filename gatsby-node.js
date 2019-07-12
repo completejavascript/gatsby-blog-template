@@ -44,10 +44,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const postPage = path.resolve("src/templates/post.jsx");
-  const pagePage = path.resolve("src/templates/page.jsx");
-  const tagPage = path.resolve("src/templates/tag.jsx");
-  const categoryPage = path.resolve("src/templates/category.jsx");
+  const postPageTemplate = path.resolve("src/templates/post-template.jsx");
+  const pagePageTemplate = path.resolve("src/templates/page-template.jsx");
+  const tagPageTemplate = path.resolve("src/templates/tag-template.jsx");
+  const categoryPageTemplate = path.resolve("src/templates/category-template.jsx");
 
   const markdownQueryResult = await graphql(
     `
@@ -126,7 +126,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: edge.node.fields.slug,
-      component: postPage,
+      component: postPageTemplate,
       context: {
         slug: edge.node.fields.slug,
         nexttitle: nextEdge.node.frontmatter.title,
@@ -144,7 +144,7 @@ exports.createPages = async ({ graphql, actions }) => {
   pageEdges.forEach(edge => {
     createPage({
       path: edge.node.fields.slug,
-      component: pagePage,
+      component: pagePageTemplate,
       context: {
         slug: edge.node.fields.slug,
         tagList,
@@ -158,7 +158,7 @@ exports.createPages = async ({ graphql, actions }) => {
   tagList.forEach(tag => {
     createPage({
       path: `${siteConfig.pathPrefixTag}/${slugify(tag)}/`,
-      component: tagPage,
+      component: tagPageTemplate,
       context: {
         tag,
         tagList,
@@ -172,7 +172,7 @@ exports.createPages = async ({ graphql, actions }) => {
   categorySet.forEach(category => {
     createPage({
       path: `${siteConfig.pathPrefixCategory}/${slugify(category)}/`,
-      component: categoryPage,
+      component: categoryPageTemplate,
       context: {
         category,
         tagList,
