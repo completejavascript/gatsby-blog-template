@@ -35,9 +35,10 @@ export default CategoryTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query CategoryPage($category: String) {
+  query CategoryPage($category: String, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      limit: 1000
+      limit: $limit,
+      skip: $skip,
       sort: { 
         fields: [fields___date], 
         order: DESC 

@@ -8,10 +8,12 @@ categories:
     - another one
     - moar
     - something
+    - basic category
 tags:
     - test
     - something
     - tagging
+    - common tag
 ---
 
 Lorem markdownum huc suo ara, dubites celeri mihi bicolor. Secuti non? Suo opus

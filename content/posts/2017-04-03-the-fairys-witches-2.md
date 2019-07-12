@@ -1,11 +1,13 @@
 ---
 template: "post"
-title: "The Fairy's Witches"
+title: "The Fairy's Witches 2"
 cover: "../images/placeholder-660x400-464662.png"
-date: "2017-04-02 08:00"
-slug: "the-fairys-witches"
+date: "2017-04-03 08:00"
+slug: "the-fairys-witches-2"
 categories: 
     - something
+tags:
+    - common tag
 ---
 
 Lorem markdownum. Dedit caput, saxa lenis adhibere negarunt substiterat et ab

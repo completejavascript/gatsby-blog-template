@@ -1,12 +1,13 @@
 ---
 template: "post"
-title: "The Butterfly of the Edge"
+title: "The Butterfly of the Edge 2"
 cover: "../images/placeholder-660x400-eeeeee.png"
-date: "2017-03-17 08:00"
-slug: "the-butterfly-of-the-edge"
+date: "2017-03-18 08:00"
+slug: "the-butterfly-of-the-edge-2"
 categories: 
     - tech
     - test3
+    - basic category
 tags:
     - programming
     - more tags
@@ -14,6 +15,7 @@ tags:
     - another one
     - stuff
     - other
+    - common tag
 ---
 
 Lorem markdownum, quid fuerat Procne saxo asperitas variarum Iuno humili

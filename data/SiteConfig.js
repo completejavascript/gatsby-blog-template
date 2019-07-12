@@ -7,10 +7,12 @@ const config = {
   pathPrefix: "/gatsby-blog-template", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   pathPrefixTag: "/tag", // Prefix path for tags
   pathPrefixCategory: "/category", // Prefix path for category
+  pathPrefixPagination: "/page", // Prefix path for pagination
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteLang: "en",
   numberLatestPost: 6,
+  postsPerPage: 6,
   lazyLoadComments: true,
   siteFBAppID: "399626517562189", // FB Application ID for using app insights
   googleAnalyticsID: "UA-96543695-7", // GA tracking ID.

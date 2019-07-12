@@ -154,31 +154,59 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
+  // common config for pagination
+  const postsPerPage = siteConfig.postsPerPage;
+  const pathPrefixPagination = siteConfig.pathPrefixPagination;
+  
   // create tag page
   tagList.forEach(tag => {
-    createPage({
-      path: `${siteConfig.pathPrefixTag}/${slugify(tag)}/`,
-      component: tagPageTemplate,
-      context: {
-        tag,
-        tagList,
-        categoryList,
-        latestPostEdges
-      }
+    tagPosts = postEdges.filter(edge => {
+      return edge.node.frontmatter.tags.includes(tag);
     });
+
+    const numTagPages = Math.ceil(tagPosts.length / postsPerPage);
+    const basePath = `${siteConfig.pathPrefixTag}/${slugify(tag)}`;
+
+    for (let i = 0; i < numTagPages; i++) {
+      createPage({
+        path: i === 0 ? `${basePath}` : `${basePath}${pathPrefixPagination}/${i + 1}`,
+        component: tagPageTemplate,
+        context: {
+          tag,
+          tagList,
+          categoryList,
+          latestPostEdges,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          currentPage: i + 1,
+        }
+      });
+    }
   });
 
   // create category page
-  categorySet.forEach(category => {
-    createPage({
-      path: `${siteConfig.pathPrefixCategory}/${slugify(category)}/`,
-      component: categoryPageTemplate,
-      context: {
-        category,
-        tagList,
-        categoryList,
-        latestPostEdges
-      }
+  categoryList.forEach(category => {
+    categoryPosts = postEdges.filter(edge => {
+      return edge.node.frontmatter.categories.includes(category);
     });
+
+    const numCategoryPages = Math.ceil(categoryPosts.length / postsPerPage);
+    const basePath = `${siteConfig.pathPrefixCategory}/${slugify(category)}`;
+
+    for (let i = 0; i < numCategoryPages; i++) {
+      createPage({
+        path: i === 0 ? `${basePath}` : `${basePath}${pathPrefixPagination}/${i + 1}`,
+        component: categoryPageTemplate,
+        context: {
+          category,
+          tagList,
+          categoryList,
+          latestPostEdges,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          currentPage: i + 1,
+        }
+      });
+    }
   });
 };

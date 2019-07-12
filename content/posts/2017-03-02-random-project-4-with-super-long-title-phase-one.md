@@ -9,6 +9,7 @@ categories:
     - test3
 tags:
     - say hi
+    - common tag
 ---
 
 Lorem markdownum supplex. Care ferre nos praemia detestatur oderit vitatumque,

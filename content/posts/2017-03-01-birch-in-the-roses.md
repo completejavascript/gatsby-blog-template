@@ -6,8 +6,10 @@ date: "2017-03-01 08:00"
 slug: "birch-in-the-roses"
 categories: 
     - tech
+    - basic category
 tags:
     - tag
+    - common tag
 ---
 
 Lorem markdownum nunc fuerat vulgaris ipse. Profecisse Atridae flumen perit
