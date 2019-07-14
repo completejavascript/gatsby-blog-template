@@ -18,7 +18,7 @@ const TagTemplate = ({ data, pageContext}) => {
   const postList = getPostList(postEdges);
   const content = (
     <>
-      <PostListing postList={postList} hasThumbnail={true} />
+      <PostListing postList={postList} hasThumbnail={true} hasLoadmore={false} />
       <Pagination 
         extraClass="margin-top padding-top-half"
         currentPage={currentPage}
@@ -28,11 +28,13 @@ const TagTemplate = ({ data, pageContext}) => {
       />
     </>
   )
-  const sidebar = <Sidebar 
-    tagList={tagList} 
-    categoryList={categoryList} 
-    latestPostEdges={latestPostEdges}
-  />;
+  const sidebar = (
+    <Sidebar 
+      tagList={tagList} 
+      categoryList={categoryList} 
+      latestPostEdges={latestPostEdges}
+    />
+  );
 
   return (
     <Layout>

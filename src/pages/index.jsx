@@ -15,8 +15,18 @@ class Index extends React.Component {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const postList = getPostList(postEdges);
     const { tagList, categoryList } = getTagCategoryList(postList);
-    const content = <PostListing postList={postList} hasThumbnail={true} />;
-    const sidebar = <Sidebar tagList={tagList} categoryList={categoryList} />;
+    const content = (
+      <PostListing 
+        postList={postList} 
+        hasThumbnail={true} 
+        hasLoadmore={true} 
+        postsPerPage={config.postsPerPage}
+        numberLoadmore={config.numberLoadmore}
+      />
+    );
+    const sidebar = (
+      <Sidebar tagList={tagList} categoryList={categoryList} />
+    );
 
     return (
       <Layout>
