@@ -7,6 +7,7 @@ slug: "random-project-4-with-super-long-title-phase-one"
 categories: 
     - random
     - test3
+    - basic category
 tags:
     - say hi
     - common tag

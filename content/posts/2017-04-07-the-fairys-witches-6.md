@@ -1,9 +1,9 @@
 ---
 template: "post"
-title: "The Fairy's Witches 2"
+title: "The Fairy's Witches 6"
 cover: "../images/placeholder-660x400-464662.png"
-date: "2017-04-03 08:00"
-slug: "the-fairys-witches-2"
+date: "2017-04-05 08:00"
+slug: "the-fairys-witches-6"
 categories: 
     - something
     - basic category

@@ -6,9 +6,11 @@ date: "2017-03-01 20:00"
 slug: "angels-of-mist"
 categories: 
     - test3
+    - basic category
 tags:
     - cheese
     - other
+    - common tag
 ---
 
 Lorem markdownum alius, **non voluntas supremaque**: canes ager cingere quis;
