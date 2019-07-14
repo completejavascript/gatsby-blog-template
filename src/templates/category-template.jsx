@@ -6,14 +6,28 @@ import Header from "../components/Header/Header";
 import MainContainer from "../components/MainContainer/MainContainer";
 import Sidebar from "../components/Sidebar/Sidebar";
 import PostListing from "../components/PostListing/PostListing";
-import { getPostList } from "../utils/helpers";
+import Pagination from "../components/Pagination/Pagination";
+import { getPostList, getCategoryPath } from "../utils/helpers";
 import config from "../../data/SiteConfig";
 
 const CategoryTemplate = ({ data, pageContext }) => {
-  const { category, categoryList, tagList, latestPostEdges } = pageContext;
+  const { 
+    category, categoryList, tagList, latestPostEdges, currentPage, totalPages 
+  } = pageContext;
   const postEdges = data.allMarkdownRemark.edges;
   const postList = getPostList(postEdges);
-  const content = <PostListing postList={postList} hasThumbnail={true} />;
+  const content = (
+    <>
+      <PostListing postList={postList} hasThumbnail={true} />
+      <Pagination 
+        extraClass="margin-top padding-top-half"
+        currentPage={currentPage}
+        totalPages={totalPages}
+        pathPrefix={getCategoryPath(category)}
+        pathPrefixPagination={config.pathPrefixPagination}
+      />
+    </>
+  );
   const sidebar = <Sidebar 
     tagList={tagList} 
     categoryList={categoryList} 

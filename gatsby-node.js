@@ -179,6 +179,7 @@ exports.createPages = async ({ graphql, actions }) => {
           limit: postsPerPage,
           skip: i * postsPerPage,
           currentPage: i + 1,
+          totalPages: numTagPages
         }
       });
     }
@@ -205,6 +206,7 @@ exports.createPages = async ({ graphql, actions }) => {
           limit: postsPerPage,
           skip: i * postsPerPage,
           currentPage: i + 1,
+          totalPages: numCategoryPages
         }
       });
     }

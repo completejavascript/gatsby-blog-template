@@ -12,6 +12,8 @@ import {
 import {
   faRss,
   faAngleUp,
+  faAngleDoubleRight,
+  faAngleDoubleLeft
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -25,4 +27,6 @@ library.add(
   faYoutube,
   faRss,
   faAngleUp,
+  faAngleDoubleRight,
+  faAngleDoubleLeft
 );

@@ -1,0 +1,36 @@
+$border-style: 1px solid #dcdcdc;
+
+.pagination-container {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  .pagination-item {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    min-width: 4.8rem;
+    min-height: 4.5rem;
+    border-right: $border-style;
+    border-top: $border-style;
+    border-bottom: $border-style;
+    &:hover {
+      background-color: #f6f6f6;
+      cursor: pointer;
+    }
+    &:first-child{
+      border-left: $border-style;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+    &:last-child{
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+    &.active {
+      background-color: darken(#f6f6f6, 2.5%);
+    }
+  }
+}

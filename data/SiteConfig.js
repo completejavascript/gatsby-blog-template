@@ -11,8 +11,8 @@ const config = {
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteLang: "en",
-  numberLatestPost: 6,
-  postsPerPage: 6,
+  numberLatestPost: 8,
+  postsPerPage: 8,
   lazyLoadComments: true,
   siteFBAppID: "399626517562189", // FB Application ID for using app insights
   googleAnalyticsID: "UA-96543695-7", // GA tracking ID.
@@ -107,7 +107,7 @@ const config = {
     { label: "Privacy Policy", url: "/privacy" },
     { label: "Sitemap", url: "/sitemap.xml" },
   ],
-  copyright: "Copyright © 2019 Lam Pham. All code MIT license.",
+  copyright: "Copyright © 2019 Lam Pham. Unless otherwise noted, all code MIT license.",
   // Use for manifest
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF" // Used for setting manifest background color.
