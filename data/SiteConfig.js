@@ -12,7 +12,7 @@ const config = {
   siteRss: "/rss.xml", // Path to the RSS file.
   siteLang: "en",
   numberLatestPost: 8,
-  postsPerPage: 8,
+  postsPerPage: 6,
   lazyLoadComments: true,
   siteFBAppID: "399626517562189", // FB Application ID for using app insights
   googleAnalyticsID: "UA-96543695-7", // GA tracking ID.

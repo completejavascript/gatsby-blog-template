@@ -112,7 +112,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Get latest posts
   const latestPostEdges = [];
   postEdges.forEach(edge => {
-    if (latestPostEdges.length < 6) {
+    if (latestPostEdges.length < siteConfig.numberLatestPost) {
       latestPostEdges.push(edge)
     }
   });
