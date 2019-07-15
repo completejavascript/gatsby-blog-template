@@ -33,6 +33,9 @@ const config = {
   homeHeader: "Home",
   // Use for page
   pathPrefixPagination: "/page", // Prefix path for pagination
+  pageNotFoundTitle: "Page Not Found", // 
+  pageNotFoundBtn: "Back to our site",
+  pageNotFoundContent: "Looks like you've followed a broken link or entered a URL that doesn't exist on this site.",
   // Use for tag
   pathPrefixTag: "/tag", // Prefix path for tags
   tagHeader: "Posts tagged as", // use in header of tag-template page

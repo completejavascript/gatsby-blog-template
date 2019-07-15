@@ -9,7 +9,7 @@ import favicon from "../../content/images/favicon.ico";
 import "../components/Icons/FontAwesome";
 import "../styles/shiba.min.css";
 
-const MainLayout = ({ children }) => (
+const MainLayout = ({ children, hasFooter = true }) => (
   <div>
     <Helmet htmlAttributes={{ lang: siteConfig.siteLang }}>
       <meta name="description" content={siteConfig.siteDescription} />
@@ -21,11 +21,13 @@ const MainLayout = ({ children }) => (
       links={siteConfig.navLinks} 
     />
     {children}
-    <Footer 
-      socials={siteConfig.socialLinks}
-      links={siteConfig.footerLinks}
-      copyright={siteConfig.copyright}
-    />
+    {hasFooter && (
+      <Footer 
+        socials={siteConfig.socialLinks}
+        links={siteConfig.footerLinks}
+        copyright={siteConfig.copyright}
+      />
+    )}
     <ScrollToTop 
       color="#FFF"
       bgColor="grey-half"
