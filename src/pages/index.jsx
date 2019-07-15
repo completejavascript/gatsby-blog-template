@@ -18,10 +18,11 @@ class Index extends React.Component {
     const content = (
       <PostListing 
         postList={postList} 
-        hasThumbnail={true} 
-        hasLoadmore={true} 
+        hasThumbnail={config.homeHasThumbnail} 
+        hasLoadmore={config.homeHasLoadmore} 
         postsPerPage={config.postsPerPage}
         numberLoadmore={config.numberLoadmore}
+        btnLoadmore={config.btnLoadmore}
       />
     );
     const sidebar = (
@@ -33,7 +34,7 @@ class Index extends React.Component {
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
-          <Header title={`${config.siteTitle} - Home`} />
+          <Header title={`${config.siteTitle} - ${config.homeHeader}`} />
           <MainContainer content={content} sidebar={sidebar} />
         </div>
       </Layout>

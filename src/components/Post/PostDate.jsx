@@ -1,9 +1,10 @@
 import React from "react";
 import { formatDate } from "../../utils/helpers";
+import config from "../../../data/SiteConfig";
 
 const PostDate = ({ date, extraClass = "" }) => (
   <div className={`text-description ${extraClass}`}>
-    Posted on {formatDate(date)}
+    {config.postOnDate} {formatDate(date)}
   </div>
 )
 

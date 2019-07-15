@@ -39,6 +39,7 @@ const Post = ({ postNode, config, slug }) => {
         postNode={postNode} 
         extraClass="padding-top" 
         lazyload={config.lazyLoadComments} 
+        btnLoadComments={config.btnLoadComments}
       />
     </div>
   )

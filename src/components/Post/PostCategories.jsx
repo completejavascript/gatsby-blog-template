@@ -1,6 +1,7 @@
 import React from "react";
 import AutoLink from "../AutoLink/AutoLink";
 import { getCategoryPath } from "../../utils/helpers";
+import config from "../../../data/SiteConfig";
 
 const PostCategories = ({ categories, extraClass = "" }) => {
   const categoryLink = category => (
@@ -18,7 +19,7 @@ const PostCategories = ({ categories, extraClass = "" }) => {
       {categories && (
         <div className={`post-categories-container ${extraClass}`}>
           <b>
-            <span>POSTED IN </span>
+            <span>{config.postInCategories} </span>
             {
               categories.map((category, index) => (
                 <span key={category}>

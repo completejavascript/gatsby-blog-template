@@ -18,7 +18,11 @@ const CategoryTemplate = ({ data, pageContext }) => {
   const postList = getPostList(postEdges);
   const content = (
     <>
-      <PostListing postList={postList} hasThumbnail={true} hasLoadmore={false} />
+      <PostListing 
+        postList={postList} 
+        hasThumbnail={config.categoryHasThumbnail} 
+        hasLoadmore={false} 
+      />
       <Pagination 
         extraClass="margin-top padding-top-half"
         currentPage={currentPage}
@@ -39,8 +43,8 @@ const CategoryTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <div className="category-container">
-        <Helmet title={`Posts in category "${category}" - ${config.siteTitle}`} />
-        <Header title={`Posts in category "${category}"`} />
+        <Helmet title={`${config.categoryHeader} "${category}" - ${config.siteTitle}`} />
+        <Header title={`${config.categoryHeader} "${category}"`} />
         <MainContainer content={content} sidebar={sidebar} />
       </div>
     </Layout>

@@ -3,13 +3,14 @@ import AutoLink from "../AutoLink/AutoLink";
 import WidgetContainer from "./WidgetContainer";
 import WidgetTitle from "./WidgetTitle";
 import { getPostList } from "../../utils/helpers";
+import config from "../../../data/SiteConfig";
 
 const WidgetLatesPosts = ({ latestPostEdges }) => {
   const postList = getPostList(latestPostEdges);
 
   return (
     <WidgetContainer extraClass="latest-posts-container">
-      <WidgetTitle title="Latest Posts" />
+      <WidgetTitle title={config.latestPostsWidgetTitle} />
       <div>
         {
           postList.map(post => (

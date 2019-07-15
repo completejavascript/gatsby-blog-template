@@ -1,26 +1,51 @@
 const config = {
+  // Site info
   siteTitle: "Gatsby Blog Template", // Site title.
   siteTitleShort: "GB Template", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Gatsby Blog Template", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://completejavascript.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-blog-template", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  pathPrefixTag: "/tag", // Prefix path for tags
-  pathPrefixCategory: "/category", // Prefix path for category
-  pathPrefixPagination: "/page", // Prefix path for pagination
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteLang: "en",
-  numberLatestPost: 8,
-  postsPerPage: 6,
-  numberLoadmore: 6,
-  lazyLoadComments: true,
   siteFBAppID: "399626517562189", // FB Application ID for using app insights
   googleAnalyticsID: "UA-96543695-7", // GA tracking ID.
-  disqusShortname: "gb-template", // Disqus shortname.
   postDefaultCategoryID: "", // Default category for posts.
+  // Common for tag, category pages and widget
+  numberLatestPost: 8,
+  postsPerPage: 6,
+  // Use for post
   dateFromFormat: "YYYY-MM-DD HH:mm", // Date format used in the frontmatter.
   dateFormat: "MMMM Do, YYYY", // Date format for display.
+  postTagged: "TAGGED",
+  postInCategories: "POSTED IN",
+  postOnDate: "Posted on",
+  // Use for comment
+  lazyLoadComments: true,
+  disqusShortname: "gb-template", // Disqus shortname.
+  btnLoadComments: "Load comments",
+  // Use for home page
+  numberLoadmore: 6,
+  btnLoadmore: "Load more",
+  homeHasLoadmore: true,
+  homeHasThumbnail: true,
+  homeHeader: "Home",
+  // Use for page
+  pathPrefixPagination: "/page", // Prefix path for pagination
+  // Use for tag
+  pathPrefixTag: "/tag", // Prefix path for tags
+  tagHeader: "Posts tagged as", // use in header of tag-template page
+  tagHasThumbnail: true,
+  // Use for category
+  pathPrefixCategory: "/category", // Prefix path for category
+  categoryHeader: "Posts in category", // use in header of category-template page
+  categoryHasThumbnail: true,
+  // Use for widget
+  categoryWidgetTitle: "Categories",
+  tagWidgetTitle: "Tags",
+  latestPostsWidgetTitle: "Latest posts",
+  // Use for user info
   userName: "Lam Pham", // Username to display in the author segment.
   userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed's author segment
   userTwitter: "CmpltJavaScript", // Optionally renders "Follow Me" in the UserInfo segment.

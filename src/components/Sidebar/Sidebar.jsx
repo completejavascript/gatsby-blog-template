@@ -6,9 +6,17 @@ import WidgetLatestPosts from "./WidgetLatestPosts";
 const Sidebar = ({ tagList, categoryList, latestPostEdges }) => {
   return (
     <aside className="sidebar-container width-full">
-      {latestPostEdges && <WidgetLatestPosts latestPostEdges={latestPostEdges} />}
-      {categoryList && <WidgetCategory categoryList={categoryList} />}
-      {tagList && <WidgetTag tagList={tagList} />}
+      {latestPostEdges && (
+        <WidgetLatestPosts latestPostEdges={latestPostEdges} />
+      )}
+      
+      {categoryList && (
+        <WidgetCategory categoryList={categoryList} />
+      )}
+      
+      {tagList && (
+        <WidgetTag tagList={tagList} />
+      )}
     </aside>
   )
 }

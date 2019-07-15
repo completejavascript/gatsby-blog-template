@@ -18,7 +18,11 @@ const TagTemplate = ({ data, pageContext}) => {
   const postList = getPostList(postEdges);
   const content = (
     <>
-      <PostListing postList={postList} hasThumbnail={true} hasLoadmore={false} />
+      <PostListing 
+        postList={postList} 
+        hasThumbnail={config.tagHasThumbnail} 
+        hasLoadmore={false} 
+      />
       <Pagination 
         extraClass="margin-top padding-top-half"
         currentPage={currentPage}
@@ -39,8 +43,8 @@ const TagTemplate = ({ data, pageContext}) => {
   return (
     <Layout>
       <div className="tag-container">
-        <Helmet title={`Posts tagged as "${tag}" - ${config.siteTitle}`} />
-        <Header title={`Posts tagged as "${tag}"`} />
+        <Helmet title={`${config.tagHeader} "${tag}" - ${config.siteTitle}`} />
+        <Header title={`${config.tagHeader} "${tag}"`} />
         <MainContainer content={content} sidebar={sidebar} />
       </div>
     </Layout>

@@ -13,13 +13,13 @@ class Comment extends Component {
   }
 
   render() {
-    const { extraClass, postNode } = this.props;
+    const { extraClass, postNode, btnLoadComments } = this.props;
 
     return (
       <div className={`comment-container text-center ${extraClass}`}>
         {!this.state.isShow && (
           <button className="btn-primary" onClick={this.handleClick}>
-            Load comments
+            {btnLoadComments}
           </button>
         )}
 

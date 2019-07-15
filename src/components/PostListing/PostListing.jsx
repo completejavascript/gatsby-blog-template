@@ -3,7 +3,9 @@ import Article from "./Article";
 
 class PostListing extends Component {
   state = {
-    maxPosts: this.props.postsPerPage || this.props.postList.length
+    maxPosts: this.props.hasLoadmore && this.props.postsPerPage
+      ? this.props.postsPerPage
+      : this.props.postList.length
   }
 
   handleLoadmore = () => {
@@ -36,7 +38,7 @@ class PostListing extends Component {
             className="loadmore-wrapper margin-top padding-top-half text-center"
           >
             <button className="btn-primary" onClick={this.handleLoadmore}>
-              Load more
+              {this.props.btnLoadmore}
             </button>
           </div>
         )}
