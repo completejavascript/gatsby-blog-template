@@ -6,6 +6,7 @@ import PostDate from "./PostDate";
 import PostDivider from "./PostDivider";
 import PostCategories from "./PostCategories";
 import "./Post.scss";
+import "../../../content/styles/code-highlight.css";
 
 const Post = ({ postNode, config, slug }) => {
   const post = postNode.frontmatter;
