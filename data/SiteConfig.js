@@ -124,7 +124,7 @@ const config = {
     },
     {
       label: "RSS",
-      url: "/rss.xml",
+      url: "https://gb-template.netlify.com/rss.xml",
       iconClassName: "fas rss"
     },
   ],
@@ -134,7 +134,7 @@ const config = {
     { label: "Contact", url: "/contact" },
     { label: "Terms of Use", url: "/terms" },
     { label: "Privacy Policy", url: "/privacy" },
-    { label: "Sitemap", url: "/sitemap.xml" },
+    { label: "Sitemap", url: "https://gb-template.netlify.com/sitemap.xml" },
   ],
   copyright: "Copyright © 2019 Lam Pham. Unless otherwise noted, all code MIT license.",
   // Use for manifest

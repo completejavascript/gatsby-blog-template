@@ -47,8 +47,8 @@ const config = {
   siteTitleShort: "GB Template", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Gatsby Blog Template", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://completejavascript.github.io", // Domain of your website without pathPrefix.
-  pathPrefix: "/gatsby-blog-template", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+  siteUrl: "https://gb-template.netlify.com", // Domain of your website without pathPrefix.
+  pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteLang: "en",
@@ -167,7 +167,7 @@ const config = {
     },
     {
       label: "RSS",
-      url: "/rss.xml",
+      url: "https://gb-template.netlify.com/rss.xml",
       iconClassName: "fas rss"
     },
   ],
@@ -177,7 +177,7 @@ const config = {
     { label: "Contact", url: "/contact" },
     { label: "Terms of Use", url: "/terms" },
     { label: "Privacy Policy", url: "/privacy" },
-    { label: "Sitemap", url: "/sitemap.xml" },
+    { label: "Sitemap", url: "https://gb-template.netlify.com/sitemap.xml" },
   ],
   copyright: "Copyright © 2019 Lam Pham. Unless otherwise noted, all code MIT license.",
   // Use for manifest
