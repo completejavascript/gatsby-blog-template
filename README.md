@@ -4,13 +4,23 @@ A GatsbyJS Blog Template for blogging purpose.
 
 ## Installation
 
-Run local server:
+Install this template (assuming [Gatsby](https://github.com/gatsbyjs/gatsby/) is installed and updated) by running from your CLI:
 
 ```bash
-git clone https://github.com/completejavascript/gatsby-blog-template.git
-cd gatsby-blog-template
-yarn
-yarn run dev
+gatsby new YourProjectName https://github.com/completejavascript/gatsby-blog-template
+npm run develop # or gatsby develop
+```
+
+Or you can fork the project, make your changes there and merge new features when needed.
+
+Alternatively:
+
+```bash
+git clone https://github.com/completejavascript/gatsby-blog-template YourProjectName # Clone the project
+cd YourProjectname
+rm -rf .git # So you can have your own changes stored in VCS.
+npm install # or yarn install
+npm run develop # or gatsby develop 
 ```
 
 Navigate to localhost:8000.
