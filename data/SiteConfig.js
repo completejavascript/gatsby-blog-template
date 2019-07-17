@@ -18,8 +18,8 @@ const config = {
   // Use for post
   dateFromFormat: "YYYY-MM-DD HH:mm", // Date format used in the frontmatter.
   dateFormat: "MMMM Do, YYYY", // Date format for display.
-  postTagged: "TAGGED",
-  postInCategories: "POSTED IN",
+  postTagged: "",
+  postInCategories: "",
   postOnDate: "Posted on",
   // Use for comment
   lazyLoadComments: true,

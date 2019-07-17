@@ -31,8 +31,8 @@ const Post = ({ postNode, config, slug }) => {
       <PostDivider />
       <div className="padding-top padding-bottom">
         <small>
-          <PostCategories categories={post.categories} extraClass="block" />
-          <PostTags tags={post.tags} extraClass="block" />
+          <PostCategories categories={post.categories} extraClass="block" iconColor="#555" />
+          <PostTags tags={post.tags} extraClass="block padding-top-half" iconColor="#555" />
         </small>
       </div>
       <PostDivider />
