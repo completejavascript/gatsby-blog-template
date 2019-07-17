@@ -29,12 +29,16 @@ class Index extends React.Component {
       <Sidebar tagList={tagList} categoryList={categoryList} />
     );
 
+    const headerTitle = config.homeHeader 
+      ? `${config.siteTitle} - ${config.homeHeader}`
+      : `${config.siteTitle}`;
+
     return (
       <Layout>
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
-          <Header title={`${config.siteTitle} - ${config.homeHeader}`} />
+          <Header title={headerTitle} />
           <MainContainer content={content} sidebar={sidebar} />
         </div>
       </Layout>

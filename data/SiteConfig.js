@@ -145,7 +145,7 @@ const config = {
 // Validate
 
 // Make sure pathPrefix is empty if not needed
-if (config.pathPrefix === "/") {
+if (config.pathPrefix === "/" || config.pathPrefix === "") {
   config.pathPrefix = "";
 } else {
   // Make sure pathPrefix only contains the first forward slash
