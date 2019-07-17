@@ -1,17 +1,14 @@
 import React from "react";
 import {
   FacebookShareButton,
-  LinkedinShareButton,
   TwitterShareButton,
   TelegramShareButton,
   RedditShareButton,
   FacebookShareCount,
-  LinkedinShareCount,
   RedditShareCount,
   FacebookIcon,
   TwitterIcon,
   TelegramIcon,
-  LinkedinIcon,
   RedditIcon
 } from "react-share";
 import urljoin from "url-join";
@@ -45,18 +42,6 @@ const PostShare = ({ postNode, postPath, extraClass = "" }) => {
           {count => renderShareCount(count)}
         </FacebookShareCount>
       </FacebookShareButton>
-
-      <LinkedinShareButton 
-        className="cursor-pointer margin-right-half"
-        url={url}
-        title={post.title}
-        description={postNode.excerpt}
-      >
-        <LinkedinIcon round size={iconSize} />
-        <LinkedinShareCount url={url}>
-          {count => renderShareCount(count)}
-        </LinkedinShareCount>
-      </LinkedinShareButton>
 
       <TelegramShareButton className="cursor-pointer" url={url}>
         <TelegramIcon round size={iconSize} />
