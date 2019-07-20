@@ -49,7 +49,7 @@ export const pageQuery = graphql`
         description
         cover {
           childImageSharp {
-            fixed(width: 660) {
+            fixed(width: 660, quality: 100) {
               ...GatsbyImageSharpFixed
             }
           }
