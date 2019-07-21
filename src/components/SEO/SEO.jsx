@@ -8,6 +8,7 @@ class SEO extends Component {
     const { postNode, postPath, postSEO } = this.props;
     let title;
     let description;
+    let keywords;
     let image = "";
     let postURL;
     if (postSEO) {
@@ -16,6 +17,8 @@ class SEO extends Component {
       description = postMeta.description
         ? postMeta.description
         : postNode.excerpt;
+
+      keywords = postMeta.keywords
 
       if (postMeta.cover) {
         image = postMeta.cover.childImageSharp.fixed.src;
@@ -76,6 +79,7 @@ class SEO extends Component {
         {/* General tags */}
         <meta name="description" content={description} />
         <meta name="image" content={image} />
+        {keywords && <meta name="keywords" content={keywords} />}
 
         {/* Schema.org tags */}
         <script type="application/ld+json">
