@@ -161,7 +161,8 @@ exports.createPages = async ({ graphql, actions }) => {
   // create tag page
   tagList.forEach(tag => {
     tagPosts = postEdges.filter(edge => {
-      return edge.node.frontmatter.tags.includes(tag);
+      const tags = edge.node.frontmatter.tags;
+      return tags && tags.includes(tag);
     });
 
     const numTagPages = Math.ceil(tagPosts.length / postsPerPage);
@@ -188,7 +189,8 @@ exports.createPages = async ({ graphql, actions }) => {
   // create category page
   categoryList.forEach(category => {
     categoryPosts = postEdges.filter(edge => {
-      return edge.node.frontmatter.categories.includes(category);
+      const categories = edge.node.frontmatter.categories;
+      return categories && categories.includes(category);
     });
 
     const numCategoryPages = Math.ceil(categoryPosts.length / postsPerPage);
