@@ -26,7 +26,11 @@ class Index extends React.Component {
       />
     );
     const sidebar = (
-      <Sidebar tagList={tagList} categoryList={categoryList} />
+      <Sidebar 
+        tagList={tagList} 
+        categoryList={categoryList} 
+        links={config.sidebarLinks}
+      />
     );
 
     const headerTitle = config.homeHeader 

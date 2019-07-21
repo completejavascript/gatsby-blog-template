@@ -18,6 +18,7 @@ const PageTemplate = ({ data, pageContext }) => {
     tagList={tagList} 
     categoryList={categoryList}
     latestPostEdges={latestPostEdges} 
+    links={config.sidebarLinks}
   />;
 
   return (

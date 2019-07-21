@@ -37,6 +37,7 @@ const TagTemplate = ({ data, pageContext}) => {
       tagList={tagList} 
       categoryList={categoryList} 
       latestPostEdges={latestPostEdges}
+      friendLinks={config.sidebarLinks}
     />
   );
 

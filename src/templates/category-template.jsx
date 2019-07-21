@@ -37,6 +37,7 @@ const CategoryTemplate = ({ data, pageContext }) => {
       tagList={tagList} 
       categoryList={categoryList} 
       latestPostEdges={latestPostEdges}
+      links={config.sidebarLinks}
     />
   );
 

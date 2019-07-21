@@ -48,6 +48,22 @@ const config = {
   categoryWidgetTitle: "Categories",
   tagWidgetTitle: "Tags",
   latestPostsWidgetTitle: "Latest posts",
+  linksWidgetTitle: "Links",
+  // Use for links widget
+  sidebarLinks: [
+    {
+      label: "Complete JavaScript",
+      url: "https://completejavascript.com/"
+    },
+    {
+      label: "Lam Pham Blog",
+      url: "https://phamvanlam.com/"
+    },
+    {
+      label: "Lam Pham Portfolio",
+      url: "http://about.phamvanlam.com/"
+    },
+  ],
   // Use for user info
   userName: "Lam Pham", // Username to display in the author segment.
   userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed's author segment
