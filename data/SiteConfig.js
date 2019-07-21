@@ -16,7 +16,7 @@ const config = {
   numberLatestPost: 8,
   postsPerPage: 6,
   // Use for post
-  dateFromFormat: "YYYY-MM-DD HH:mm", // Date format used in the frontmatter.
+  dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
   dateFormat: "MMMM Do, YYYY", // Date format for display.
   postTagged: "",
   postInCategories: "",

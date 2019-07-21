@@ -2,7 +2,7 @@
 template: "post"
 title: "The Fairy's Witches 3"
 cover: "../images/placeholder-660x400-464662.png"
-date: "2017-04-04 08:00"
+date: "2017-04-04T08:00:00Z"
 slug: "the-fairys-witches-3"
 categories: 
     - something

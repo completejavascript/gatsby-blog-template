@@ -2,7 +2,7 @@
 template: "post"
 title: "The Fairy's Witches 8"
 cover: "../images/placeholder-660x400-464662.png"
-date: "2017-04-05 08:00"
+date: "2017-04-05T08:00:00Z"
 slug: "the-fairys-witches-8"
 categories: 
     - something

@@ -2,7 +2,7 @@
 template: "post"
 title: "The Butterfly of the Edge 2"
 cover: "../images/placeholder-660x400-eeeeee.png"
-date: "2017-03-18 08:00"
+date: "2017-03-18T08:00:00Z"
 slug: "the-butterfly-of-the-edge-2"
 categories: 
     - tech
