@@ -7,7 +7,7 @@ const FooterLinks = ({ links }) => (
         <AutoLink
           key={link.label}
           to={link.url}
-          className="item margin-left-half margin-right-half color-white"
+          className="item margin-left-half margin-right-half color-white inline-block"
         >
           {link.label}
         </AutoLink>
