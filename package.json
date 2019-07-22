@@ -1,6 +1,6 @@
 {
-  "name": "phamvanlam.com",
-  "description": "The source code for phamvanlam.com blog.",
+  "name": "gatsby-blog-template",
+  "description": "GatsbyJS Blog Template for blogging purpose.",
   "version": "1.1.0",
   "author": "Lam Pham <completejavascript.super@gmail.com>",
   "dependencies": {
