@@ -4,7 +4,7 @@ import Hamburger from "./Hamburger";
 const NavBars = ({ color, handleClick, openDropdown }) => (
   <div
     onClick={handleClick} 
-    className="navbars cursor-pointer padding-top padding-bottom"
+    className="navbars cursor-pointer padding"
   >
     <Hamburger open={openDropdown} />
   </div>
