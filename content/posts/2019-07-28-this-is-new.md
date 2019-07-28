@@ -1,0 +1,26 @@
+---
+title: This is new
+date: 2019-07-28T15:40:59.690Z
+description: This is description
+---
+Every day is a good day to be grateful for freedom from addiction, but Independence Day is a perfect day to reflect on the broader meaning of freedom—spiritual freedom. Spiritual freedom comes not from abstinence, but from the embrace of change to become people truly deserving of the freedoms we have been given.
+
+
+
+In his 1941 State of the Union Address, Franklin D. Roosevelt articulated four freedoms that are meaningful for all Americans, and all people, but which for those of us in recovery have a fuller, possibly more personal resonance.
+
+
+
+Freedom of Speech as a human right is not very practical to people in active addiction. Many of us would say anything to get what we needed, or justify our continued using, whether or not it was truthful, hurtful, harmful, or downright destructive. We learned through the steps about the damage our words have caused, and can continue to do, unless we learn how to use our words wisely. One of the ways we do that is by making amends whenever we say something to someone that harms them. Freedom of speech means that we can say whatever we want, but if we want to be better people, we also have to walk the walk of our talk all the way through.
+
+
+
+Freedom of Worship can mean very little when you have grown up in a community where there is a single way of acceptable belief (even if there are lots of steeples under which slightly different variations of the same belief system are practiced). Even though the tenets of Alcoholics Anonymous were based on evangelical ideas of Christian salvation via the Oxford Group (see “Not God: A History of Alcoholics Anonymous” by Ernest Kurtz), none of the concepts underlying them are strictly Christian; and, the founders of Alcoholics Anonymous recognized the barrier that a strictly Christian approach would present to them in trying to provide a universal solution to suffering alcoholics. From the beginning, atheists and agnostics have been welcomed into twelve-step programs, and have been free to worship, or not.
+
+
+
+Freedom from Want in recovery comes not from material abundance, but from an abundance of gratitude. We are freed from an insatiable desire for an ever-increasing need and increasingly-elusive satisfaction by the simple recognition of what we have acquired in recovery—relationships. Norman Rockwell’s seminal work, “Freedom from Want,” one of a series of paintings he did depicting Roosevelt’s four freedoms, is, very purposefully and pointedly, a painting of a Thanksgiving dinner. In the bottom right of the painting, a man looks out of the painting, returning the gaze of the painting’s viewer as if to ask What are you grateful for? In recovery, we ask ourselves that a lot, and the freedom from want is a natural result.
+
+
+
+Freedom from Fear is the greatest freedom of them all, because it allows the others to be possible. Maslow’s Hierarchy of Needs illustrated some basic truths of the human condition—it’s hard to improve your spiritual life when your house is burning down around you. And, that’s what active addiction can feel like. Moving from that place of fear to the realization that no matter what happens, we will be okay, and we never have to live in active addiction again, is a long journey, and a hard one. But the freedom from fear is the freedom for which we are most grateful, on Independence Day and every day.
