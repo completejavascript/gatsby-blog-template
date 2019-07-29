@@ -15,7 +15,8 @@ import {
   faAngleDoubleRight,
   faAngleDoubleLeft,
   faFolderOpen,
-  faTags
+  faTags,
+  faSearch
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -32,5 +33,6 @@ library.add(
   faAngleDoubleRight,
   faAngleDoubleLeft,
   faFolderOpen,
-  faTags
+  faTags,
+  faSearch
 );
