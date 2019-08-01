@@ -1,16 +1,16 @@
 const config = {
   // Site info
-  siteTitle: "Gatsby Blog Template", // Site title.
-  siteTitleShort: "GB Template", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Gatsby Blog Template", // Alternative site title for SEO.
+  siteTitle: "Complete JavaScript", // Site title.
+  siteTitleShort: "Complete JavaScript", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: "Complete JavaScript", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://gb-template.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://completejavascript.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Chia sẻ về JavaScript, lập trình JavaScript từ cơ bản đến nâng cao.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteLang: "en",
-  siteFBAppID: "399626517562189", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-96543695-7", // GA tracking ID.
+  siteFBAppID: "531084654023054", // FB Application ID for using app insights
+  googleAnalyticsID: "UA-96543695-5", // GA tracking ID.
   postDefaultCategoryID: "", // Default category for posts.
   // Common for tag, category pages and widget
   numberLatestPost: 8,
@@ -23,49 +23,49 @@ const config = {
   postOnDate: "Posted on",
   // Use for comment
   lazyLoadComments: true,
-  disqusShortname: "gb-template", // Disqus shortname.
-  btnLoadComments: "Load comments",
+  disqusShortname: "complete-javascript", // Disqus shortname.
+  btnLoadComments: "Xem bình luận",
   // Use for home page
   numberLoadmore: 6,
-  btnLoadmore: "Load more",
+  btnLoadmore: "Xem thêm",
   homeHasLoadmore: true,
   homeHasThumbnail: true,
-  homeHeader: "Home",
+  homeHeader: "Trang chủ",
   // Use for page
   pathPrefixPagination: "/page", // Prefix path for pagination
-  pageNotFoundTitle: "Page Not Found", // 
-  pageNotFoundBtn: "Back to our site",
-  pageNotFoundContent: "Looks like you've followed a broken link or entered a URL that doesn't exist on this site.",
+  pageNotFoundTitle: "Trang không tồn tại", // 
+  pageNotFoundBtn: "Quay về trang chủ",
+  pageNotFoundContent: "Rất tiếc, trang bạn đang tìm kiếm không tồn tại hoặc liên kết đã bị thay thế.",
   // Use for tag
   pathPrefixTag: "/tag", // Prefix path for tags
-  tagHeader: "Posts tagged as", // use in header of tag-template page
+  tagHeader: "Chủ đề", // use in header of tag-template page
   tagHasThumbnail: true,
   // Use for category
   pathPrefixCategory: "/category", // Prefix path for category
-  categoryHeader: "Posts in category", // use in header of category-template page
+  categoryHeader: "Chuyên mục", // use in header of category-template page
   categoryHasThumbnail: true,
   // Use for widget
-  categoryWidgetTitle: "Categories",
-  tagWidgetTitle: "Tags",
-  latestPostsWidgetTitle: "Latest posts",
-  linksWidgetTitle: "Links",
+  categoryWidgetTitle: 'Chuyên mục',
+  tagWidgetTitle: 'Chủ đề',
+  latestPostsWidgetTitle: 'Bài viết mới nhất',
+  linksWidgetTitle: 'Liên Kết',
   // Use for Google custom search
-  searchWidgetTitle: 'Looking for?',
-  searchWidgetPlaceHolder: 'Search',
+  searchWidgetTitle: 'Bạn đang tìm gì?',
+  searchWidgetPlaceHolder: 'Tìm kiếm tùy chỉnh',
   searchEngineID: '',
   hasSearch: false,
   // Use for links widget
   sidebarLinks: [
     {
-      label: "Complete JavaScript",
-      url: "https://completejavascript.com/"
+      label: "Blog Thuật toán",
+      url: "https://thuattoan.phamvanlam.com/"
     },
     {
       label: "Lam Pham Blog",
       url: "https://phamvanlam.com/"
     },
     {
-      label: "Lam Pham Portfolio",
+      label: "Portfolio",
       url: "http://about.phamvanlam.com/"
     },
   ],
@@ -106,10 +106,10 @@ const config = {
     },
   ],
   // Use for navigation
-  navTitle: "GB Template",
+  navTitle: "Complete JavaScript",
   navLinks: [
-    { label: "About", url: "/about" },
-    { label: "Contact", url: "/contact" },
+    { label: 'Giới thiệu', url: '/gioi-thieu' },
+    { label: 'Liên hệ', url: '/lien-he' }
   ],
   // Use for footer
   socialLinks: [
@@ -120,7 +120,7 @@ const config = {
     },
     { 
       label: "FreeCodeCamp", 
-      url: "", // Ignore 
+      url: "https://www.freecodecamp.org/completejavascript", // Ignore 
       iconClassName: "fab free-code-camp"
     },
     { 
@@ -145,19 +145,19 @@ const config = {
     },
     {
       label: "RSS",
-      url: "https://gb-template.netlify.com/rss.xml",
+      url: "https://completejavascript.netlify.com/rss.xml",
       iconClassName: "fas rss"
     },
   ],
   footerLinks: [
-    { label: "Home", url: "/" },
-    { label: "About", url: "/about" },
-    { label: "Contact", url: "/contact" },
-    { label: "Terms of Use", url: "/terms" },
-    { label: "Privacy Policy", url: "/privacy" },
-    { label: "Sitemap", url: "https://gb-template.netlify.com/sitemap.xml" },
+    { label: 'Trang chủ', url: '/' },
+    { label: 'Giới thiệu', url: '/gioi-thieu' },
+    { label: 'Liên hệ', url: '/lien-he' },
+    { label: 'Điều khoản sử dụng', url: '/dieu-khoan-su-dung' },
+    { label: 'Chính sách bảo mật', url: '/chinh-sach-bao-mat' },
+    { label: "Sitemap", url: "https://completejavascript.netlify.com/sitemap.xml" },
   ],
-  copyright: "Copyright © 2019 Lam Pham. Unless otherwise noted, all code MIT license.",
+  copyright: "Copyright © 2017-2019 Lam Pham. Unless otherwise noted, all code MIT license.",
   // Use for manifest
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF" // Used for setting manifest background color.
