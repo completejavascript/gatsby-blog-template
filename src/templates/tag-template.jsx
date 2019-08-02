@@ -44,8 +44,8 @@ const TagTemplate = ({ data, pageContext}) => {
   return (
     <Layout>
       <div className="tag-container">
-        <Helmet title={`${config.tagHeader} "${tag}" - ${config.siteTitle}`} />
-        <Header title={`${config.tagHeader} "${tag}"`} />
+        <Helmet title={`${config.tagHeader} ${tag} - ${config.siteTitle}`} />
+        <Header title={`${config.tagHeader} ${tag}`} />
         <MainContainer content={content} sidebar={sidebar} />
       </div>
     </Layout>

@@ -44,8 +44,8 @@ const CategoryTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <div className="category-container">
-        <Helmet title={`${config.categoryHeader} "${category}" - ${config.siteTitle}`} />
-        <Header title={`${config.categoryHeader} "${category}"`} />
+        <Helmet title={`${config.categoryHeader} ${category} - ${config.siteTitle}`} />
+        <Header title={`${config.categoryHeader} ${category}`} />
         <MainContainer content={content} sidebar={sidebar} />
       </div>
     </Layout>
