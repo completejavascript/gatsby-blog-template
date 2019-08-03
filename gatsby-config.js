@@ -44,6 +44,15 @@ module.exports = {
             }
           },
           {
+            resolve: 'gatsby-remark-embed-video',
+            options: {
+              width: 660,
+              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
+              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+              noIframeBorder: true //Optional: Disable insertion of <style> border: 0
+            }
+          },
+          {
             resolve: "gatsby-remark-responsive-iframe"
           },
           "gatsby-remark-prismjs",
@@ -51,6 +60,16 @@ module.exports = {
           "gatsby-remark-autolink-headers"
         ]
       }
+    },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          '/*.js': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.css': ['cache-control: public, max-age=31536000, immutable'],
+          '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],
+        },
+      },
     },
     {
       resolve: "gatsby-plugin-google-analytics",
