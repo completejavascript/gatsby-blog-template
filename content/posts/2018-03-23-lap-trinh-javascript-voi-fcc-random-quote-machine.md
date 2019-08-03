@@ -1,8 +1,8 @@
 ---
 date: "2018-03-23T00:00:56Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: lap-trinh-javascript-voi-fcc-random-quote-machine
 title: "Lập trình JavaScript với FCC - Random Quote Machine"
 categories:
@@ -71,15 +71,15 @@ Hướng dẫn sử dụng bạn có thể xem trên mạng, rất nhiều. Mìn
 
 Giao diện Random Quote Machine trên Mobile:
 
-![random quote machine trên mobile](https://completejavascript.com/wp-content/uploads/2018/03/pencil-mobile-random-quote-machine.png)
+![random quote machine trên mobile](/wp-content/uploads/2018/03/pencil-mobile-random-quote-machine.png)
 
 Giao diện trên Tablet:
 
-![random quote machine trên tablet](https://completejavascript.com/wp-content/uploads/2018/03/pencil-tablet-random-quote-machine.png)
+![random quote machine trên tablet](/wp-content/uploads/2018/03/pencil-tablet-random-quote-machine.png)
 
 Giao diện trên PC:
 
-![random quote machine trên pc](https://completejavascript.com/wp-content/uploads/2018/03/pencil-pc-random-quote-machine.png)
+![random quote machine trên pc](/wp-content/uploads/2018/03/pencil-pc-random-quote-machine.png)
 
 Thực tế, những thứ trên chỉ nên gọi là UX. Tuy nhiên, mình tạm hài lòng và dừng bước này tại đây. Việc thiết kế màu sắc, font chữ,... sẽ làm luôn trên CSS.
 
@@ -117,33 +117,39 @@ Bạn có thể tự đọc hướng dẫn trên trang chủ để triển khai.
 
 **Xây dựng URL để request**
 
-    <code>let requestURL = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?';</code>
+```
+let requestURL = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?';
+```
 
-Request này kiểu GET, với các tham số là phần phía sau dấu hỏi (?). Và kết quả trả về sẽ là một [JSON](https://completejavascript.com/tim-hieu-ve-json-trong-javascript/), với ngôn ngữ là tiếng anh.
+Request này kiểu GET, với các tham số là phần phía sau dấu hỏi (?). Và kết quả trả về sẽ là một [JSON](/tim-hieu-ve-json-trong-javascript/), với ngôn ngữ là tiếng anh.
 
 **Tiến hành request**
 
-Để thực hiện request lên server, bạn có thể sử dụng [XMLHttpRequest](https://completejavascript.com/xmlhttprequest-tao-http-request-den-server-trong-javascript/). Tuy nhiên, trong project này mình sử dụng jQuery, nên sử dụng luôn phương thức [getJSON](http://api.jquery.com/jquery.getjson/) của nó.
+Để thực hiện request lên server, bạn có thể sử dụng [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/). Tuy nhiên, trong project này mình sử dụng jQuery, nên sử dụng luôn phương thức [getJSON](http://api.jquery.com/jquery.getjson/) của nó.
 
-    <code>function requestRandomQoute() {
+```
+function requestRandomQoute() {
       $.getJSON(requestURL, function(data) {
         animateText("#quote-text", data.quoteText);
         animateText("#quote-name", '-- ' + data.quoteAuthor);
         animateText("#quote-symbol");
         updateShares(data.quoteText, data.quoteAuthor);
       });
-    }</code>
+    }
+```
 
 Sau khi thực hiện phương thức trên, kết quả thu được là data, gồm 2 trường thông tin quan trọng là **quoteText** và **quoteAuthor**. Sau đó, mình sử dụng nó để cập nhật lên giao diện.
 
 Ngoài ra, ở đây mình có thêm animation cho phần thay đổi nội dung text.
 
-    <code>function animateText(element, content) {
+```
+function animateText(element, content) {
       $(element).animate({opacity: 0}, 500, function() {
         $(this).animate({opacity: 1}, 500);
         if(content) $(this).text(content);
       });
-    }</code>
+    }
+```
 
 Hàm này có nhiệm vụ làm mờ (opacity = 0) phần nội dung cũ trong 500 ms. Sau đó, hiện nội dung mới (opacity = 1) cũng trong thời gian 500 ms.
 
@@ -151,7 +157,8 @@ Hàm này có nhiệm vụ làm mờ (opacity = 0) phần nội dung cũ trong 5
 
 Tư tưởng của phần này là thay thế giá trị thuộc tính **href** của các thẻ **a** tương ứng với share Twitter hay Tumblr. Nội dung link đã được quy định sẵn bởi Twitter hoặc Tumblr, bạn chỉ cần áp dụng đúng là được.
 
-    <code>let currentQuote = qoute || $("#quote-text").text();
+```
+let currentQuote = qoute || $("#quote-text").text();
     let currentAuthor = author || $("#quote-name").text();
 
     let twitterShareURL = 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' +
@@ -162,18 +169,19 @@ Tư tưởng của phần này là thay thế giá trị thuộc tính **href** 
                             encodeURIComponent(currentAuthor) + '&content=' +
                             encodeURIComponent(currentQuote) +
                             '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button';
-    $("#share-tumblr").attr("href", tumblrShareURL);</code>
+    $("#share-tumblr").attr("href", tumblrShareURL);
+```
 
 ## Kết luận
 
 Trên đây là quy trình các bước mình thực hiện để hoàn thành project Random Quote Machine. Hy vọng quy trình này có thể giúp bạn áp dụng vào các project của mình. Ngoài ra, nếu bạn có góp ý gì vui lòng để lại phần bình luận nhé.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/lap-trinh-javascript-voi-fcc-local-weather/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-local-weather/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

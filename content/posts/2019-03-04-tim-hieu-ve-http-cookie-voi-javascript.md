@@ -1,8 +1,8 @@
 ---
 date: "2019-03-04T23:00:08Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: tim-hieu-ve-http-cookie-voi-javascript
 title: "Tìm hiểu về HTTP Cookie với JavaScript"
 categories:
@@ -36,7 +36,7 @@ Cụ thể, các tác dụng chính của cookie là:
 
 - **Quản lý session**: trạng thái đăng nhập, thông tin giỏ hàng,...
 
-- **Lưu thông tin cài đặt của người dùng**: theme ([dark mode](https://completejavascript.com/tao-dark-theme-voi-css-variable/) hay light mode), ngôn ngữ (tiếng việt, tiếng anh), thông tin username/email trong mục bình luận,...
+- **Lưu thông tin cài đặt của người dùng**: theme ([dark mode](/tao-dark-theme-voi-css-variable/) hay light mode), ngôn ngữ (tiếng việt, tiếng anh), thông tin username/email trong mục bình luận,...
 
 - **Theo dõi và phân tích hành vi người dùng**: các trang đã truy cập, truy cập bao nhiêu lần,...
 
@@ -64,23 +64,26 @@ Tuy nhiên, do mình đang tập trung vào JavaScript nên sẽ giả định l
 
 Cách đơn giản nhất để tạo mới một cookie là:
 
-    <code>document.cookie = 'foo1=bar1'
-    </code>
+```
+document.cookie = 'foo1=bar1'
+```
 
 Đoạn code trên sẽ tạo thêm một cookie với **key** là _foo1_ và **value** là _bar1_.
 
 **Chú ý**: Tuy đoạn code trên thực hiện phép gán, nhưng thực tế, nó sẽ không ghi đè lên các cookies có sẵn mà chỉ tạo thêm giá trị mới. Nghĩa là nếu bạn muốn tạo thêm cookie với key là _foo2_ và value là _bar2_, bạn có thể viết tiếp:
 
-    <code>document.cookie = 'foo2=bar2'
-    </code>
+```
+document.cookie = 'foo2=bar2'
+```
 
 Lúc này, bạn sẽ có 2 cookie là: `'foo1=bar1; foo2=bar2'`.
 
 Ngoài ra, giá trị của cookie nên được encode với phương thức [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) để tránh các kí tự không hợp lệ như: dấu cách, dấu phẩy và dấu chấm phẩy. Ví dụ, nếu mình muốn thêm cookie với key là _name_ và value là _Lam Pham_, thì có thể làm như sau:
 
-    <code>const value = encodeURIComponent("Lam Pham");
+```
+const value = encodeURIComponent("Lam Pham");
     document.cookie = `name=${value}`;
-    </code>
+```
 
 Khi đó, giá trị cookie thu được là: `'foo1=bar1; foo2=bar2; name=Lam%20Pham'`.
 
@@ -88,30 +91,34 @@ Khi đó, giá trị cookie thu được là: `'foo1=bar1; foo2=bar2; name=Lam%2
 
 Nếu bạn không cài đặt thời gian hết hạn cho HTTP Cookie thì mặc định nó sẽ bị xoá khi trình duyệt đóng. Để tránh việc này, bạn có thể cài đặt thời điểm hết hạn cho cookie bằng cách khai báo thêm thuộc tính **expires** với giá trị thời gian ở định dạng UTC, ví dụ:
 
-    <code>document.cookie = 'foo1=bar1; expires=Thu, 04 Apr 2019 17:00:00 GMT';
-    </code>
+```
+document.cookie = 'foo1=bar1; expires=Thu, 04 Apr 2019 17:00:00 GMT';
+```
 
 Để thu được định dạng thời gian như trên, bạn có thể dùng phương thức [toUTCString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toUTCString):
 
-    <code>const d = new Date(2019, 03, 5).toUTCString();
+```
+const d = new Date(2019, 03, 5).toUTCString();
     console.log(d);
     // => Thu, 04 Apr 2019 17:00:00 GMT
-    </code>
+```
 
 #### Cài đặt thời gian hết hạn cookie (duration)
 
 Thay vì cài đặt thời điểm hết hạn cookie, bạn có thể cài đặt thời gian hết hạn cho nó. Hay nói cách khác là sau bao nhiêu lâu thì cookies sẽ bị hết hạn. Để làm việc này, bạn cài đặt thuộc tính **max-age** với giá trị là thời gian tính bằng đơn vị giây, ví dụ:
 
-    <code>document.cookie = 'foo1=bar1; max-age=3600'     // hết hạn sau 60 phút
+```
+document.cookie = 'foo1=bar1; max-age=3600'     // hết hạn sau 60 phút
     document.cookie = 'foo2=bar2; max-age=31536000' // hết hạn sau 1 năm
-    </code>
+```
 
 #### Cài đặt tên miền (domain) cho cookie
 
 Khi bạn không cài đặt thuộc tính **domain** cho cookie, mặc định, giá trị này được gán cho domain mà bạn sử dụng, giả sử là _domain.com_. Khi đó, cookies cũng được sử dụng cho các subdomain, ví dụ: _sub1.domain.com_, _sub2.domain.com_, _child.sub2.domain.com_... Tuy nhiên, bạn cũng có thể giới hạn domain sử dụng bằng cách cài đặt chính xác giá trị cho nó:
 
-    <code>document.cookie = 'foo1=bar1; domain="sub1.domain.com";'
-    </code>
+```
+document.cookie = 'foo1=bar1; domain="sub1.domain.com";'
+```
 
 Khi đó, cookies chỉ tồn tại ở domain _sub1.domain.com_ (mà không có ở _sub2.domain.com_) và các domain con của nó như _child1.sub1.domain.com_, _child2.sub1.domain.com_,...
 
@@ -119,38 +126,42 @@ Khi đó, cookies chỉ tồn tại ở domain _sub1.domain.com_ (mà không có
 
 Tương tự như domain, nếu bạn không cài đặt **path** thì mặc định, giá trị này sẽ là "/". Khi đó, cookies sẽ tồn tại ở trang chủ "/" và các trang con như: "/tag", "/category", "/category/cookie",... Ngoài ra, bạn cũng có thể xác định rõ giá trị cho nó:
 
-    <code>document.cookie = 'foo=bar; path="/category"'
-    </code>
+```
+document.cookie = 'foo=bar; path="/category"'
+```
 
 Khi đó, cookies sẽ có giá trị ở path _/category_ và các path con của nó như _/category/cookie_, _/category/session_,... mà không có ở các path khác như _/tag_,...
 
 **Chú ý:** trên đây mình chỉ ví dụ minh hoạ cho mỗi thuộc tính, thực tế bạn có thể kết hợp chúng lại với nhau:
 
-    <code>document.cookie = 'foo1=bar1; expires=Thu, 04 Apr 2019 17:00:00 GMT; domain="mysite.com"; path="/category"';
+```
+document.cookie = 'foo1=bar1; expires=Thu, 04 Apr 2019 17:00:00 GMT; domain="mysite.com"; path="/category"';
     document.cookie = 'foo2=bar2; max-age=3600; domain="sub.mysite.com"; path="/tag"';
-    </code>
+```
 
 ### Cập nhật một cookie
 
 Để cập nhật giá trị cho một cookie, bạn cũng sử dụng cú pháp như việc tạo mới một cookie. Chỉ khác là ở đây, tên của cookie đã tồn tại, nên giá trị của nó sẽ bị ghi đè:
 
-    <code>document.cookie = 'foo=bar1';
+```
+document.cookie = 'foo=bar1';
     console.log(document.cookie);
     // => foo=bar1
 
     document.cookie = 'foo=bar2; max-age=3600';
     console.log(document.cookie);
     // => foo=bar2
-    </code>
+```
 
 ### Đọc giá trị của cookie
 
 Để đọc giá trị của cookie, bạn sẽ lấy ra giá trị của _document.cookie_.
 
-    <code>const cookies = document.cookie;
+```
+const cookies = document.cookie;
     console.log(cookies);
     // => 'foo1=bar1; foo2=bar2; foo3=bar3'
-    </code>
+```
 
 Giá trị trả về sẽ là một đoạn string chứa tất cả các cookies. Với các cặp cookie có dạng **key=value** được phân cách nhau bởi một dấu chấm phẩy và một dấu cách theo sau (trừ cặp cuối cùng). Khi đó, để lấy ra giá trị tương ứng với một cookie cụ thể, bạn chỉ cần duyệt string trên để lấy ra giá trị của nó.
 
@@ -158,29 +169,32 @@ Giá trị trả về sẽ là một đoạn string chứa tất cả các cooki
 
 Để xoá một cookie, bạn cũng sử dụng cú pháp phần cập nhật cookie bên trên. Với **key** là tên của cookie bạn muốn xoá và **value** bạn bỏ trống, cùng với giá trị của **expires** là một thời điểm trong quá khứ. Ví dụ:
 
-    <code>document.cookie = 'foo=; expires=Wed, 27 Feb 2019 07:41:28 GMT;'
-    </code>
+```
+document.cookie = 'foo=; expires=Wed, 27 Feb 2019 07:41:28 GMT;'
+```
 
 ## Thao tác với Cookie từ Server
 
 Bên trên, mình đã tìm hiểu về việc thao tác với HTTP Cookie phía client sử dụng JavaScript. Phần này, mình sẽ tìm hiểu cơ bản về cách làm việc với cookie từ phía server.
 
-Khi server nhận được một [HTTP request](https://completejavascript.com/xmlhttprequest-tao-http-request-den-server-trong-javascript/) từ client, response trả về sẽ sử dụng header **Set-Cookie** để xác định những cookie được trình duyệt lưu lại, với cấu trúc đơn giản:
+Khi server nhận được một [HTTP request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/) từ client, response trả về sẽ sử dụng header **Set-Cookie** để xác định những cookie được trình duyệt lưu lại, với cấu trúc đơn giản:
 
-    <code>HTTP/2.0 200 OK
+```
+HTTP/2.0 200 OK
     Content-type: text/html
     Set-Cookie: foo1=bar1
     Set-Cookie: foo2=bar2
 
     [page content]
-    </code>
+```
 
 Và sau đó, với mỗi request đến server, trình duyệt sẽ sử dụng header **Cookie** để gửi lại các cookies lên server:
 
-    <code>GET /sample.html HTTP/2.0
+```
+GET /sample.html HTTP/2.0
     Host: www.example.org
     Cookie: foo1=bar1; foo2=bar2
-    </code>
+```
 
 Dĩ nhiên, bạn không cần phải làm việc trực tiếp với cấu trúc này. Vì mỗi ngôn ngữ lập trình đều có API riêng giúp bạn thao tác với cookies một cách đơn giản, ví dụ: [PHP](https://secure.php.net/manual/en/function.setcookie.php), [Node.JS](https://nodejs.org/dist/latest-v8.x/docs/api/http.html#http_response_setheader_name_value), [Python](https://docs.python.org/3/library/http.cookies.html), [Ruby on Rails](https://api.rubyonrails.org/classes/ActionDispatch/Cookies.html).
 
@@ -196,9 +210,10 @@ Ngoài ra, bạn cũng có thể cài đặt thêm các thuộc tính **Expires*
 
 Để kiểm tra giá trị của cookie trên trình duyệt, bạn có thể sử dụng thông qua Console của DevTools (được mở bằng cách nhấn _F12_ hoặc tổ hợp _Ctrl Shift I_). Tại console, bạn gõ lệnh `document.cookie`, khi đó kết quả thu được là:
 
-    <code>document.cookie
+```
+document.cookie
     // => "foo1=bar1; foo2=bar2"
-    </code>
+```
 
 Hoặc cũng trong DevTools, bạn vào tab _Application -> Storage -> Cookies_. Khi đó, thông tin chi tiết về các cookies sẽ được hiển thị.
 
@@ -226,8 +241,8 @@ Tham khảo:
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

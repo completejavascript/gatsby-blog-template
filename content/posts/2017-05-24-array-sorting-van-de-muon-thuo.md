@@ -1,8 +1,8 @@
 ---
 date: "2017-05-24T14:39:44Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: array-sorting-van-de-muon-thuo
 title: "Array Sorting - vấn đề muôn thuở"
 categories:
@@ -12,18 +12,20 @@ tags:
   - Thuật toán
 ---
 
-Từ xưa đến nay, sắp xếp giữ một vai trò vô cùng quan trọng. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc này giúp cho người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn. Do đó, trong bài viết này, mình sẽ cùng với bạn tìm hiểu về vấn đề [Array](https://completejavascript.com/javascript-array-co-ban/) Sorting trong JavaScript.
+Từ xưa đến nay, sắp xếp giữ một vai trò vô cùng quan trọng. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc này giúp cho người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn. Do đó, trong bài viết này, mình sẽ cùng với bạn tìm hiểu về vấn đề [Array](/javascript-array-co-ban/) Sorting trong JavaScript.
 
 Về sắp xếp nói chung, chúng ta có rất nhiều thuật toán với độ phức tạp khác nhau, có thể kể đến là: selection sort, insertion sort, binary insertion sort, interchange sort, bubble sort, shaker sort, quick sort, merge sort, heap sort,...
 
 _(Xem thêm hai bài tổng hợp về thuật toán sắp xếp trong C/C++: [phần 1](http://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-1/), [phần 2](http://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-2/))_
 
-Tuy nhiên, bạn không cần thiết phải implement lại những thuật toán sắp xếp này. Vì JavaScript hỗ trợ sẵn cho chúng ta một [function](https://completejavascript.com/tim-hieu-function-javascript/) để sắp xếp.
+Tuy nhiên, bạn không cần thiết phải implement lại những thuật toán sắp xếp này. Vì JavaScript hỗ trợ sẵn cho chúng ta một [function](/tim-hieu-function-javascript/) để sắp xếp.
 
 ## Cú pháp:
 
-    <code>arr.sort()
-    arr.sort(compareFunction)</code>
+```
+arr.sort()
+    arr.sort(compareFunction)
+```
 
 ### Tham số
 
@@ -33,11 +35,12 @@ Tuy nhiên, bạn không cần thiết phải implement lại những thuật to
 
 Mảng đã được sắp xếp (mảng ban đầu có bị thay đổi).
 
-    <code>var a = ['c', 'g', 'w', 'a'];
+```
+var a = ['c', 'g', 'w', 'a'];
     var b = a.sort();
     console.log(a); // => ["a", "c", "g", "w"]
-    console.log(b); // => ["a", "c", "g", "w"]</code>
-
+    console.log(b); // => ["a", "c", "g", "w"]
+```
 ## Tìm hiểu compareFunction
 
 Hàm* compareFunction* dùng để xác định thứ tự sắp xếp. Nếu a và b là hai phần tử dùng để so sánh thì:
@@ -50,43 +53,47 @@ Hàm* compareFunction* dùng để xác định thứ tự sắp xếp. Nếu a 
 
 ## Array sorting với numbers
 
-JavaScript hỗ trợ sắp xếp nhiều kiểu dữ liệu. Tuy nhiên, phổ biến nhất vẫn là [numbers](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/). Và như mình đã nói ở trên, mặc định hàm _sort_ sẽ so sánh theo kiểu string. Do đó, kết quả sẽ như thế này:
+JavaScript hỗ trợ sắp xếp nhiều kiểu dữ liệu. Tuy nhiên, phổ biến nhất vẫn là [numbers](/values-types-va-operators-trong-javascript-phan-1/). Và như mình đã nói ở trên, mặc định hàm _sort_ sẽ so sánh theo kiểu string. Do đó, kết quả sẽ như thế này:
 
-    <code>var a = [9, 100, 45, 33];
+```
+var a = [9, 100, 45, 33];
     console.log(a.sort());
-    // => [100, 33, 45, 9]</code>
-
+    // => [100, 33, 45, 9]
+```
 Bạn không nhìn lầm đâu. Kết quả trên là hoàn toàn chính xác. Vì khi so sánh theo kiểu string thì '1' < '3' < '4' < '9'. Vì vậy, để sắp xếp chúng theo kiểu numbers thì bạn cần phải sử dụng hàm _compareFunction_.
 
 ### Sử dụng hàm compareNumbers sắp xếp numbers theo thứ tự tăng dần
 
-    <code>function compareNumbers(a, b) {
+```
+function compareNumbers(a, b) {
       return a - b;
     }
     var a = [9, 100, 45, 33];
     console.log(a.sort(compareNumbers));
-    // => [9, 33, 45, 100]</code>
-
+    // => [9, 33, 45, 100]
+```
 Theo đúng mô tả của hàm _compareFunction_, khi a < b => a - b < 0 => a sẽ đứng trước b. Nghĩa là số bé hơn sẽ đứng trước. Áp dụng quy tắc này, ta được mảng các số sắp xếp theo thứ tự tăng dần.
 
-Ngoài cách viết hàm riêng như trên, bạn có thể áp dụng [JavaScript closures](https://completejavascript.com/tim-hieu-javascript-closures/):
+Ngoài cách viết hàm riêng như trên, bạn có thể áp dụng [JavaScript closures](/tim-hieu-javascript-closures/):
 
-    <code>var a = [9, 100, 45, 33];
+```
+var a = [9, 100, 45, 33];
     console.log(a.sort(function(a, b){
     	return a - b;
     }));
-    // => [9, 33, 45, 100]</code>
-
+    // => [9, 33, 45, 100]
+```
 ### Sắp xếp numbers theo thứ tự giảm dần
 
 Để sắp xếp mảng numbers theo thứ tự giảm dần thì bạn chỉ cần thay đổi nội dung hàm _compareNumbers_. Thay vì return a - b thì bây giờ mình sẽ return b - a.
 
-    <code>var a = [9, 100, 45, 33];
+```
+var a = [9, 100, 45, 33];
     console.log(a.sort(function(a, b){
     	return b - a;
     }));
-    // => [100, 45, 33, 9]</code>
-
+    // => [100, 45, 33, 9]
+```
 Bây giờ, khi a < b => b - a > 0 => a sẽ đứng sau b. Nghĩa là số nhỏ hơn sẽ đứng sau. Do đó, kết quả thu được là dãy số giảm dần như trên.
 
 Trên đây là cách sử dụng hàm _sort_ (mặc định) của JavaScript để sắp xếp mảng. Tuy nhiên, nếu như bạn không muốn sử dụng hàm mặc định này thì bạn vẫn có thể tự implement sử dụng một số thuật toán sắp xếp cơ bản.
@@ -117,7 +124,8 @@ Một số thuật toán cơ bản là:
 
 ### Array sorting với sắp xếp chọn trực tiếp - Selection Sort
 
-    <code>function selectionSort(array){
+```
+function selectionSort(array){
      for(let i = 0; i < array.length - 1; i++){
        let idmin = i;
        for(let j = i + 1; j < array.length; j++){
@@ -129,11 +137,13 @@ Một số thuật toán cơ bản là:
        array[i] = array[idmin];
        array[idmin] = t;
      }
-    }</code>
+    }
+```
 
 ### Sắp xếp chèn trực tiếp - Insertion Sort
 
-    <code>function insertionSort(array){
+```
+function insertionSort(array){
       let pos, x;
       for(let i = 1; i < array.length; i++){
         pos = i - 1;
@@ -144,11 +154,13 @@ Một số thuật toán cơ bản là:
         }
         array[pos + 1] = x;
       }
-    }</code>
+    }
+```
 
 ### Sắp xếp chèn trực tiếp dựa trên tìm kiếm nhị phân - Binary Insertion Sort
 
-    <code>function binaryInsertionSort(array){
+```
+function binaryInsertionSort(array){
      let l, r, m, x;
      for(let i = 1; i < array.length; i++){
        l = 0;
@@ -165,11 +177,13 @@ Một số thuật toán cơ bản là:
          array[j] = array[j - 1];
        array[l] = x;
      }
-    }</code>
+    }
+```
 
 ### Sắp xếp đổi chỗ trực tiếp - Interchange Sort
 
-    <code>function interChangeSort(array){
+```
+function interChangeSort(array){
      for(let i = 0; i < array.length - 1; i++){
        for(let j = i + 1; j < array.length; j++){
          if(array[j] < array[i]){
@@ -179,11 +193,13 @@ Một số thuật toán cơ bản là:
          }
        }
      }
-    }</code>
+    }
+```
 
 ### Sắp xếp nổi bọt - Bubble Sort
 
-    <code>function bubbleSort(array){
+```
+function bubbleSort(array){
      for(let i = 0; i < array.length - 1; i++){
        for(let j = array.length - 1; j > i; j--){
          if(array[j] < array[j-1]){
@@ -193,11 +209,13 @@ Một số thuật toán cơ bản là:
          }
        }
      }
-    }</code>
+    }
+```
 
 ### Thuật toán Shaker Sort
 
-    <code>function shakerSort(array){
+```
+function shakerSort(array){
         let left, right, k;
 
         left = 0;
@@ -230,11 +248,13 @@ Một số thuật toán cơ bản là:
             }
             right = k;
         }
-    }</code>
+    }
+```
 
 ### Sắp xếp nhanh - Quick Sort
 
-    <code>function quickSort(array, left, right){
+```
+function quickSort(array, left, right){
     	let l = left, r = right;
     	let m = Math.floor((l + r) / 2);
     	let pivot = array[m];
@@ -253,11 +273,13 @@ Một số thuật toán cơ bản là:
 
     	if(l < right) quickSort(array, l, right);
     	if(r > left) quickSort(array, left, r);
-    }</code>
+    }
+```
 
 ### Sắp xếp trộn - Merge Sort
 
-    <code>function merge(array, left, m, right){
+```
+function merge(array, left, m, right){
     	let l = left, r = m + 1;
     	let tmp = [];
 
@@ -280,11 +302,13 @@ Một số thuật toán cơ bản là:
     		mergeSort(array, m + 1, right);
     		merge(array, left, m, right);
     	}
-    }</code>
+    }
+```
 
 ### Sắp xếp vun đống - Heap Sort
 
-    <code>function heapify(array, N, i){
+```
+function heapify(array, N, i){
         let left = 2*i + 1, right = 2*i + 2, largest;
 
         if(left < N && array[left] > array[i]) largest = left;
@@ -316,11 +340,12 @@ Một số thuật toán cơ bản là:
 
             heapify(array, i, 0);
         }
-    }</code>
+    }
+```
 
 Trên đây là những vấn đề cơ bản về Array Sorting, cùng với một số thuật toán sắp xếp. Theo mình, đây là những kiến thức cơ bản và có thể được áp dụng rất nhiều.
 
-Cuối cùng, xin chào và hẹn gặp lại bạn ở [bài viết sau](https://completejavascript.com/javascript-object-last-but-not-least/), thân ái!
+Cuối cùng, xin chào và hẹn gặp lại bạn ở [bài viết sau](/javascript-object-last-but-not-least/), thân ái!
 
 ## Tham Khảo
 
@@ -328,8 +353,8 @@ Cuối cùng, xin chào và hẹn gặp lại bạn ở [bài viết sau](https:
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

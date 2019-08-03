@@ -1,8 +1,8 @@
 ---
 date: "2017-08-20T04:33:46Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: xmlhttprequest-tao-http-request-den-server-trong-javascript
 title: "XMLHttpRequest - Tạo HTTP request đến server trong JavaScript"
 categories:
@@ -13,11 +13,11 @@ tags:
   - JSON
 ---
 
-Có bao giờ bạn thắc mắc, chuyện gì thực sự diễn ra khi chúng ta gõ một địa chỉ trang web (ví dụ: [completejavascript.com](https://completejavascript.com/)) lên trình duyệt và nhấn **Enter**?
+Có bao giờ bạn thắc mắc, chuyện gì thực sự diễn ra khi chúng ta gõ một địa chỉ trang web (ví dụ: [completejavascript.com](/)) lên trình duyệt và nhấn **Enter**?
 
 Đầu tiên, trình duyệt sẽ tìm kiếm địa chỉ IP của server ứng với tên miền, sau đó là mở kết nối TCP đến server thông qua cổng 80 - cổng mặc định của giao thức HTTP. Nếu server tồn tại và chấp nhận kết nối, trình duyệt sẽ gửi yêu cầu dạng GET đến server để lấy thông tin trang web. Tiếp theo, server phản hồi lại trình duyệt theo đúng kết nối đó. Và cuối cùng, trình duyệt xử lý thông tin phản hồi và hiển thị nó lên trang web.
 
-Quá trình này được thực hiện hoàn toàn dựa trên trình duyệt. Tuy nhiên, bài viết này sẽ hướng dẫn bạn gửi yêu cầu HTTP đến server bằng JavaScript thông qua [đối tượng](https://completejavascript.com/javascript-object-last-but-not-least/) XMLHttpRequest. Nhưng trước khi đi vào tìm hiểu cách sử dụng XMLHttpRequest, chúng ta hãy lướt qua một chút về giao thức HTTP để biết nó là cái gì trước đã. OK?
+Quá trình này được thực hiện hoàn toàn dựa trên trình duyệt. Tuy nhiên, bài viết này sẽ hướng dẫn bạn gửi yêu cầu HTTP đến server bằng JavaScript thông qua [đối tượng](/javascript-object-last-but-not-least/) XMLHttpRequest. Nhưng trước khi đi vào tìm hiểu cách sử dụng XMLHttpRequest, chúng ta hãy lướt qua một chút về giao thức HTTP để biết nó là cái gì trước đã. OK?
 
 ## HTTP là gì?
 
@@ -65,15 +65,18 @@ Thông thường, vì lý do an toàn nên server sẽ chặn các request từ 
 
 Ví dụ sau gửi phương thức request dạng GET đến [https://httpbin.org/get](https://httpbin.org/get):
 
-    <code>var req = new XMLHttpRequest();
+```
+var req = new XMLHttpRequest();
     req.open("GET", "https://httpbin.org/get", false);
     req.send(null);
     console.log(req.status);
-    console.log(req.responseText);</code>
+    console.log(req.responseText);
+```
 
 Kết quả trả về là:
 
-    <code>200
+```
+200
     {
       "args": {},
       "headers": {
@@ -87,7 +90,8 @@ Kết quả trả về là:
       },
       "origin": "183.81.50.73",
       "url": "https://httpbin.org/get"
-    }</code>
+    }
+```
 
 ### Giải thích
 
@@ -99,7 +103,7 @@ Sau khi đã có đối tượng req, mình sử dụng phương thức _**open*
 
 - Thuộc tính tiếp theo là địa chỉ URL mà mình muốn gửi request đến.
 
-- Thuộc tính cuối cùng là đối số [kiểu bool](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/), với giá trị **_false_** ý nghĩa là request kiểu đồng bộ (đợi cho đến khi nhận được kết quả phản hồi response) và giá trị _**true**_ ý nghĩa là request kiểu bất đồng bộ (không đợi kết quả trả về mà sẽ tiếp tục thực hiện lệnh phía dưới, kết quả trả về sẽ được xử lý trong [hàm](https://completejavascript.com/tim-hieu-function-javascript/) callback).
+- Thuộc tính cuối cùng là đối số [kiểu bool](/values-types-va-operators-trong-javascript-phan-2/), với giá trị **_false_** ý nghĩa là request kiểu đồng bộ (đợi cho đến khi nhận được kết quả phản hồi response) và giá trị _**true**_ ý nghĩa là request kiểu bất đồng bộ (không đợi kết quả trả về mà sẽ tiếp tục thực hiện lệnh phía dưới, kết quả trả về sẽ được xử lý trong [hàm](/tim-hieu-function-javascript/) callback).
 
 Lúc này, request mới được cấu hình. Để gửi request này đến server, mình sẽ sử dụng phương thức _**send**_ với đối số là _**body**_ của request. Trong ví dụ này, mình gửi request kiểu _**GET**_ nên body chỉ cần là _**null**_.
 
@@ -107,21 +111,26 @@ Kết quả trả về có nhiều thuộc tính, nhưng quan trọng nhất là
 
 - _**status**_: chính là status-code. Kết quả trả về là 200, chứng tỏ request thành công.
 
-- _**responseText**_: là nội dung phản hồi từ server. Trong trường hợp này, kết quả trả về là một chuỗi [JSON](https://completejavascript.com/tim-hieu-ve-json-trong-javascript/).
+- _**responseText**_: là nội dung phản hồi từ server. Trong trường hợp này, kết quả trả về là một chuỗi [JSON](/tim-hieu-ve-json-trong-javascript/).
 
 Ngoài ra, nhiều trường hợp bạn phải chèn thêm header cho request thì server mới chấp nhận. Để làm được việc này, bạn có thể sử dụng phương thức [setRequestHeader](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/setRequestHeader) đơn giản như sau:
 
-    <code>XMLHttpRequest.setRequestHeader(header, value)</code>
+```
+XMLHttpRequest.setRequestHeader(header, value)
+```
 
 Ví dụ, để cấu hình request sử dụng body kiểu JSON, bạn có thể set header "Content-Type":
 
-    <code>req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");</code>
+```
+req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+```
 
 ### Sử dụng XMLHttpRequest với phương thức POST
 
 Ví dụ sau gửi phương thức request dạng POST đến https://httpbin.org/post:
 
-    <code>var req = new XMLHttpRequest();
+```
+var req = new XMLHttpRequest();
     req.open("POST", "https://httpbin.org/post", false);
     req.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
 
@@ -132,11 +141,13 @@ Ví dụ sau gửi phương thức request dạng POST đến https://httpbin.o
     req.send(jsonBody);
 
     console.log(req.status);
-    console.log(req.responseText);</code>
+    console.log(req.responseText);
+```
 
 Kết quả:
 
-    <code>200
+```
+200
     {
       "args": {},
       "data": "[object Object]",
@@ -156,7 +167,8 @@ Kết quả:
       "json": null,
       "origin": "183.81.50.73",
       "url": "https://httpbin.org/post"
-    }</code>
+    }
+```
 
 Phần này cũng tương tự như phần sử dụng phương thức GET. Chỉ khác là ở đây, mình sử dụng phương thức _**setRequestHeader**_ để cấu hình _**content-type**_ là JSON. Khi gửi request, thay vì gửi _**null**_ thì ở đây mình gửi đi một đối tượng JSON.
 
@@ -170,20 +182,23 @@ Nếu như server bị lỗi, hoặc việc xử lý request mất nhiều thờ
 
 Do đó, chỉ nên sử dụng request đồng bộ với những yêu cầu có thể xử lý nhanh. Nhìn chung, bạn nên sử dụng request bất đồng bộ.
 
-Như mình đã nói ở trên, để cấu hình request là bất đồng bộ, bạn chỉ cần truyền vào _**true**_ ở thuộc tính thứ 3 của phương thức _**open**_. Ngoài ra, bạn cần phải [đăng ký sự kiện](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/) **_load_** và truyền vào hàm callback - hàm này được thực hiện khi có thông tin phản hồi từ server.
+Như mình đã nói ở trên, để cấu hình request là bất đồng bộ, bạn chỉ cần truyền vào _**true**_ ở thuộc tính thứ 3 của phương thức _**open**_. Ngoài ra, bạn cần phải [đăng ký sự kiện](/xu-ly-mot-event-javascript-co-ban/) **_load_** và truyền vào hàm callback - hàm này được thực hiện khi có thông tin phản hồi từ server.
 
-    <code>var req = new XMLHttpRequest();
+```
+var req = new XMLHttpRequest();
     req.open("GET", "https://httpbin.org/get", true);
     req.addEventListener('load', function(){
       console.log(req.status);
       console.log(req.responseText);
     });
     req.send(null);
-    console.log('Sent');</code>
+    console.log('Sent');
+```
 
 Kết quả:
 
-    <code>Sent
+```
+Sent
     200
     {
       "args": {},
@@ -199,13 +214,14 @@ Kết quả:
       "origin": "183.81.50.73",
       "url": "https://httpbin.org/get"
     }
-    </code>
+```
 
 Kết quả cho thấy, dòng lệnh _**console.log('Sent')**_ được thực hiện ngay sau lệnh _**req.send(null)**_. Và 2 câu lệnh **_console.log(req.status); console.log(req.responseText);_** chỉ được thực hiện khi có thông tin phản hồi về từ server. Đó chính là cách thức hoạt động của XMLHttpRequest bất đồng bộ.
 
 Ngoài ra, bạn có thể đăng ký sự kiện _**error**_ để xử lý trường hợp request bị lỗi:
 
-    <code>var req = new XMLHttpRequest();
+```
+var req = new XMLHttpRequest();
     req.open("GET", "https://httpbin.org/get", true);
     req.addEventListener('load', function(){
       console.log(req.status);
@@ -215,7 +231,8 @@ Ngoài ra, bạn có thể đăng ký sự kiện _**error**_ để xử lý tr�
       console.log('Error occurred!');
     })
     req.send(null);
-    console.log('Sent');</code>
+    console.log('Sent');
+```
 
 ## Tổng kết
 
@@ -229,7 +246,7 @@ Trên đây là một số kiến thức cơ bản về HTTP và cách sử dụ
 
 Về HTTP và XMLHttpRequest còn rất nhiều thứ, bài viết này chỉ đưa ra những kiến thức cơ bản nhất. Bạn có thể tự tìm hiểu thêm trên Internet.
 
-Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo[,](https://completejavascript.com/category/javascript-co-ban/) thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo[,](/category/javascript-co-ban/) thân ái!
 
 ## Tham khảo
 
@@ -241,8 +258,8 @@ Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo[,](https://com
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

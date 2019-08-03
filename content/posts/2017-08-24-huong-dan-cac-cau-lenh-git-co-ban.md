@@ -1,8 +1,8 @@
 ---
 date: "2017-08-24T00:23:59Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: huong-dan-cac-cau-lenh-git-co-ban
 title: "Hướng dẫn các câu lệnh Git cơ bản"
 categories:
@@ -33,7 +33,7 @@ Git hỗ trợ Windows, Macs và Linux. Đối với Macs, tôi chưa dùng bao 
 
 - Linux: xem hướng dẫn tại [đây](https://git-scm.com/download/linux).
 
-Nếu bạn không quen sử dụng các câu lệnh thì có thể sử dụng TortoiseGit. Còn cá nhân, tôi sử dụng Git trên [Ubuntu](https://completejavascript.com/cac-cau-lenh-thuong-dung-tren-ubuntu-linux/).
+Nếu bạn không quen sử dụng các câu lệnh thì có thể sử dụng TortoiseGit. Còn cá nhân, tôi sử dụng Git trên [Ubuntu](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux/).
 
 Sau khi cài đặt Git xong, chúng ta bắt đầu tìm hiểu về Git.
 
@@ -63,19 +63,23 @@ Vì vậy, trước khi bắt đầu bạn hãy đăng ký một tài khoản tr
 
 Đầu tiên, bạn sẽ cần phải config username và email mà bạn đã đăng ký trên Github. Thực tế, Git hỗ trợ 3 tuỳ chọn là --global, --system, --local. Tuy nhiên, tôi thường chọn --global.
 
-    <code>$ git config --global user.name <username>
-    $ git config --global user.email <email></code>
+```
+$ git config --global user.name <username>
+    $ git config --global user.email <email>
+```
 
 Để kiểm tra lại thông tin mà bạn đã config, sử dụng câu lệnh Git sau:
 
-    <code>$ git config --list</code>
-
+```
+$ git config --list
+```
 ### Init
 
 Câu lệnh Git này dùng để tạo mới một project trên máy. Bạn có thể tạo ở bất kì đâu tuỳ thích.
 
-    <code>$ git init</code>
-
+```
+$ git init
+```
 Sau khi chạy câu lệnh này xong, một thư mục ẩn _**.git**_ sẽ xuất hiện. Thư mục này chứa thông tin cấu hình của project Git.
 
 ### Clone
@@ -84,31 +88,38 @@ Câu lệnh Git này dùng để copy 1 project từ Local Respository đến m�
 
 Để clone một project từ Local Respository trên máy:
 
-    <code>$ git clone /path/to/repository/</code>
+```
+$ git clone /path/to/repository/
+```
 
 Để clone một project trên server, bạn có thể sử dụng https hoặc ssh:
 
 - https:
 
 
-    <code>$ git clone username@serverAddress:/path/to/project</code>
-
+```
+$ git clone username@serverAddress:/path/to/project
+```
 - ssh:
 
 
-    <code>$ git clone ssh://username@serverAddress/path/to/project</code>
-
+```
+$ git clone ssh://username@serverAddress/path/to/project
+```
 ### Branch
 
 Khi sử dụng Git, bạn có thể tạo ra nhiều nhánh (branch) khác nhau. Câu lệnh Git này dùng để kiểm tra branch hiện tại:
 
-    <code>$ git branch</code>
-
+```
+$ git branch
+```
 Mặc định ban đầu bạn sẽ ở nhánh _**master**_ - nhánh chính.
 
 Để tạo mới một branch:
 
-    <code>$ git branch <name_branch></code>
+```
+$ git branch <name_branch>
+```
 
 ### Checkout
 
@@ -116,48 +127,62 @@ Trước khi muốn thay đổi source code, điều đầu tiên mà bạn cầ
 
 Để checkout một nhánh, bạn dùng câu lệnh Git sau:
 
-    <code>$ git checkout <name_branch></code>
+```
+$ git checkout <name_branch>
+```
 
 Để tạo mới một nhánh và checkout luôn nhánh đó thì bạn dùng câu lệnh:
 
-    <code>$ git checkout -b <name_branch></code>
+```
+$ git checkout -b <name_branch>
+```
 
 Ngoài ra, để quay lại nhánh master:
 
-    <code>$ git checkout master</code>
-
+```
+$ git checkout master
+```
 ### Add
 
 Sau khi bạn thay đổi source code: thêm mới, sửa, xoá files,... Bạn cần phải cập nhật lên Staging Area.
 
 Để cập nhật hết các files:
 
-    <code>$ git add .</code>
-
+```
+$ git add .
+```
 Cập nhật các files với đuôi xác định:
 
-    <code>$ git add .<tên đuôi></code>
+```
+$ git add .<tên đuôi>
+```
 
 Cập nhật các files dựa vào tên của chúng:
 
-    <code>$ git add <name_file_1> [<name_file_2> ... <name_file_n>]</code>
-
+```
+$ git add <name_file_1> [<name_file_2> ... <name_file_n>]
+```
 ### Commit
 
 Sau lệnh add, bạn cần sử dụng câu lệnh Commit để đây thông tin thay đổi lên Local Respository:
 
-    <code> git commit -am 'nội dung tuỳ thích'</code>
-
+```
+ git commit -am 'nội dung tuỳ thích'
+```
 ### Push
 
 Sau câu lệnh Commit, thông tin mới chỉ được cập nhật lên Local Repository. Nếu muốn cập nhật lên server thì bạn phải sử dụng câu lệnh push:
 
-    <code>$ git push origin <name_branch></code>
+```
+$ git push origin <name_branch>
+```
 
 Ngoài ra, nếu chưa tồn tại remote trên server thì bạn cần phải add mới một remote trước rồi mới push:
 
-    <code>git remote add origin <remote_url>
-    git push origin <name_branch></code>
+```
+git remote add origin <remote_url>
+    git push origin <name_branch>
+```
 
 **Chú ý**: <remote_url> ở đây cũng chính là link đến project trên server, như: https://github.com/user/repo.git
 
@@ -165,7 +190,9 @@ Ngoài ra, nếu chưa tồn tại remote trên server thì bạn cần phải a
 
 Câu lệnh Git này dùng để lấy source code từ server về Local Repository:
 
-    <code>$ git fetch <name_branch></code>
+```
+$ git fetch <name_branch>
+```
 
 ### Pull
 
@@ -173,12 +200,12 @@ Câu lệnh Git này dùng để lấy source code từ server về Working Spac
 
 Trong trường hợp bạn làm việc một mình thì hầu như sẽ chẳng có rắc rối gì xảy ra. Nhưng khi làm việc theo nhóm thì chuyện xung đột và giải quyết xung đột là điều không thể tránh khỏi. Phần này tôi sẽ giới thiệu với các bạn trong một bài viết khác sau.
 
-Bài viết này sẽ dừng lại tại đây, hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/phan-biet-var-va-let-trong-javascript/), thân ái!
+Bài viết này sẽ dừng lại tại đây, hẹn gặp lại bạn trong [bài viết tiếp theo](/phan-biet-var-va-let-trong-javascript/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

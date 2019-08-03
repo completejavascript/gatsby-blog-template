@@ -1,8 +1,8 @@
 ---
 date: "2018-10-30T22:30:09Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: hoc-react-qua-vi-du-2-slideshow-gallery
 title: "Học React qua ví dụ #2: Slideshow Gallery"
 categories:
@@ -14,7 +14,7 @@ tags:
   - React
 ---
 
-Xin chào bạn đến với Học React qua ví dụ #2. Bài trước mình đã thực hành React với [Slideshow](https://completejavascript.com/hoc-react-qua-vi-du-1-slideshow/) rồi. Vì vậy, bài viết này mình sẽ cải tiến nó một chút, trở thành Slideshow Gallery.
+Xin chào bạn đến với Học React qua ví dụ #2. Bài trước mình đã thực hành React với [Slideshow](/hoc-react-qua-vi-du-1-slideshow/) rồi. Vì vậy, bài viết này mình sẽ cải tiến nó một chút, trở thành Slideshow Gallery.
 
 Tuy nhiên, **Slideshow Gallery** lại tương đối giống với Slideshow. Do đó, nếu bạn đã hiểu cách tạo Slideshow rồi thì bài này sẽ vô cùng dễ hiểu.
 
@@ -24,15 +24,15 @@ Dưới đây là ví dụ demo:
 
 Trong ví dụ trên, mình cũng tạo ra hai Slideshow Gallery. Cái bên trên điều khiển thủ công thông qua việc click chuột. Còn cái bên dưới được điều khiển tự động, với mỗi ảnh cách nhau 3 giây (dĩ nhiên bạn vẫn có thể điều khiển thủ công được).
 
-**Bạn chú ý:** Trong series [học React qua ví dụ](https://completejavascript.com/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+**Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 Nếu không có vấn đề gì thì mình bắt đầu học React qua ví dụ #2 thôi nào!
 
 ## Khởi tạo Project
 
-Có nhiều cách để thực hiện demo Slideshow Gallery. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](https://completejavascript.com/tag/create-react-app/) để thực hành học React qua ví dụ #2 ngay trên máy tính của mình.
+Có nhiều cách để thực hiện demo Slideshow Gallery. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #2 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](https://completejavascript.com/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
@@ -40,7 +40,8 @@ Như đã nói ở bài viết trước, mình sẽ thực hiện các bài họ
 
 Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
 
-    <code>learn-react-by-example/
+```
+learn-react-by-example/
     --src/
     ----components/
     ------slideshow-gallery/
@@ -51,8 +52,8 @@ Như đã nói ở bài viết trước, mình sẽ thực hiện các bài họ
     ----App.js
     ----index.css
     ----index.js
-    ----serviceWorker.js</code>
-
+    ----serviceWorker.js
+```
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về Slideshow Gallery nên mình tạo thêm thư mục **slideshow-gallery** bên trong với 2 file **slideshow-gallery.js** và **slideshow-gallery.css** để định nghĩa cho component Slideshow Gallery (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
@@ -66,13 +67,14 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](https://completejavascript.com/tim-hieu-react-component-lifecycle/)
-- [Đăng ký và hủy bỏ event](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/) (_resize_).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (_resize_).
 - Cách sử dụng [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) để xây dựng vòng lặp.
 
 Còn nội dung chi tiết mình giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-    <code>import React from 'react';
+```
+import React from 'react';
     import ReactDOM from 'react-dom';
     import './slideshow-gallery.css';
 
@@ -261,7 +263,8 @@ Còn nội dung chi tiết mình giải thích trong phần comment code dưới
           </div>
         );
       }
-    }</code>
+    }
+```
 
 ### Nội dung file slideshow-gallery.css
 
@@ -269,7 +272,8 @@ File này dùng để xác định style cho Slideshow Gallery component. Bạn 
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-    <code>.lp-slideshow-gallery,
+```
+.lp-slideshow-gallery,
     .lp-slideshow-gallery * {
       box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -387,13 +391,15 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
     }
     .lp-slideshow-gallery>.container-bottom>.image:not(.active):hover{
       cursor: pointer;
-    }</code>
+    }
+```
 
 ## Sử dụng Slideshow Gallery component
 
 **./src/App.css**
 
-    <code>/* Không thay đổi */
+```
+/* Không thay đổi */
     .App,
     .App * {
       box-sizing: border-box;
@@ -409,11 +415,13 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
       padding: 15px;
       color: #222;
       font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }</code>
+    }
+```
 
 **./src/App.js**
 
-    <code>import React from 'react';
+```
+import React from 'react';
     import './App.css';
 
     import SlideshowGallery from './components/slideshow-gallery/slideshow-gallery';
@@ -452,17 +460,18 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 
             <div>
               Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-              Visit me at <a href="https://completejavascript.com/">completejavascript.com</a>.
+              Visit me at <a href="/">completejavascript.com</a>.
             </div>
           </div>
         );
       }
-    }</code>
+    }
+```
 
 Trong đó, component Slideshow Gallery có các thuộc tính là:
 
-- **input ([Array](https://completejavascript.com/javascript-array-co-ban/)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](https://completejavascript.com/javascript-object-last-but-not-least/)gồm src – đường dẫn ảnh và caption – tiêu đề ảnh.
-- **ratio ([String](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là “3:2”. Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/)gồm src – đường dẫn ảnh và caption – tiêu đề ảnh.
+- **ratio ([String](/values-types-va-operators-trong-javascript-phan-2/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là “3:2”. Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 - **mode (String):** kiểu chạy, có 2 giá trị là “manual” – thủ công và “automatic” – tự động. Riêng với trường hợp, chạy tự động thì bạn cần truyền thêm giá trị “timeout” – thời gian giữa các ảnh, mặc định là 5000 ms.
 
 ## Lời kết
@@ -479,8 +488,8 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

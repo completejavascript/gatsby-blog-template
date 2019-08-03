@@ -1,8 +1,8 @@
 ---
 date: "2018-10-24T22:30:40Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: tao-dark-theme-voi-css-variable
 title: "Tạo Dark Theme với CSS Variable"
 categories:
@@ -35,17 +35,21 @@ Mọi CSS variable đều bắt đầu bằng hai dấu gạch ngang (--) và ph
 
 Ví dụ phần khai báo CSS variable:
 
-    <code>element {
+```
+element {
       --main-bg-color: #000;
-    }</code>
+    }
+```
 
 Để dụng biến số này, bạn sử dụng function [var()](https://developer.mozilla.org/en-US/docs/Web/CSS/var) với tham số là CSS variable. Ví dụ:
 
-    <code>element {
+```
+element {
       background-color: var(--main-bg-color);
-    }</code>
+    }
+```
 
-Ngoài ra, nếu bạn muốn sử dụng CSS variable ở mọi nơi trên trang web, bạn có thể khai báo chúng ở `:root` - phần tử cấp cao nhất trong [DOM tree](https://completejavascript.com/co-ban-ve-dom-javascript/).
+Ngoài ra, nếu bạn muốn sử dụng CSS variable ở mọi nơi trên trang web, bạn có thể khai báo chúng ở `:root` - phần tử cấp cao nhất trong [DOM tree](/co-ban-ve-dom-javascript/).
 
 Để biết thêm về các tính chất của CSS variable bạn có thể tham khảo thêm tại các bài viết sau:
 
@@ -58,7 +62,8 @@ Ngoài ra, nếu bạn muốn sử dụng CSS variable ở mọi nơi trên tran
 
 Giả sử mình có một file _index.html_ với nội dung phần body như này:
 
-    <code><body>
+```
+<body>
       <div class="option">
         <span class="btn">Dark</span>
         <span class="btn active">Light</span>
@@ -73,21 +78,25 @@ Giả sử mình có một file _index.html_ với nội dung phần body như n
 
         <p>in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </main>
-    </body></code>
+    </body>
+```
 
 Giao diện mặc định ban đầu là kiểu **Light**.
 
 Để thay đổi giao diện sang kiểu **Dark**, mình sẽ thêm một class với tên "dark" vào _body_ - vì _body_ là cấp cao nhất chứa nội dung trang web.
 
-    <code><body class="dark">
+```
+<body class="dark">
       <!-- Nội dung không thay đổi -->
-    </body></code>
+    </body>
+```
 
 Dĩ nhiên, việc thêm hay không thêm _class_, mình áp dụng thông qua 2 button _Dark_, _Light_ - bên trên cùng của _body_.
 
 Ví dụ sử dụng jQuery:
 
-    <code>$(document).ready(function() {
+```
+$(document).ready(function() {
       const $body = $("body");
       const $btns = $(".btn");
 
@@ -96,7 +105,8 @@ Ví dụ sử dụng jQuery:
         $(this).addClass("active");
         $body.toggleClass("dark");
       });
-    });</code>
+    });
+```
 
 Tiếp theo là việc thay đổi style.
 
@@ -104,7 +114,8 @@ Tiếp theo là việc thay đổi style.
 
 Giả sử, giao diện Light theme ban đầu có style như sau:
 
-    <code>* { box-sizing: border-box;}
+```
+* { box-sizing: border-box;}
     body {
       margin: 0;
       padding: 15px;
@@ -131,11 +142,13 @@ Giả sử, giao diện Light theme ban đầu có style như sau:
       background-color: #222;
       color: #fff;
     }
-    .btn:not(.active):hover {cursor: pointer;}</code>
+    .btn:not(.active):hover {cursor: pointer;}
+```
 
 Với Dark theme, mình phải đặt tất cả element cần thay đổi vào bên trong class "dark" để tuỳ chỉnh:
 
-    <code>.dark {
+```
+.dark {
       color: #e8edec;
       background-color: #222;
     }
@@ -149,7 +162,8 @@ Với Dark theme, mình phải đặt tất cả element cần thay đổi vào 
     .dark .btn.active {
       background-color: #fff;
       color: #000;
-    }</code>
+    }
+```
 
 Rõ ràng là có bao nhiêu phần tử cần thay đổi thì mình cần phải đặt bấy nhiêu phần tử vào bên trong class _dark_ để tuỳ biến. Như vậy, vừa bị lặp code, mà mỗi khi muốn thay đổi thì sẽ rất vất vả.
 
@@ -166,7 +180,8 @@ _Nếu bạn đã từng hard-code thì sẽ hiểu điều này!!!_
 
 Đầu tiên, mình phải xác định những thành phần sẽ sử dụng làm biến số để định nghĩa nó trong _body_. Khi đó, thẻ _body_ được định nghĩa như sau:
 
-    <code>body {
+```
+body {
       --primary-color: #222;
       --primary-bg-color: #e8edec;
       --main-txt-color: #222;
@@ -180,35 +195,39 @@ _Nếu bạn đã từng hard-code thì sẽ hiểu điều này!!!_
       color: var(--primary-color);
       background-color: var(--primary-bg-color);
     }
-    </code>
+```
 
 Mình định nghĩa CSS variable ở ngay phần đầu của _body_ rồi sử dụng ngay _--primary-color_ và _--primary-bg-color_ phía dưới.
 
 Để tạo Dark Theme với CSS variable, mình định nghĩa lại giá trị của các biến số như sau:
 
-    <code>body.dark {
+```
+body.dark {
       --primary-color: #e8edec;
       --primary-bg-color: #222;
       --main-txt-color: #e8edec;
       --main-bg-color: #000;
       --active-txt-color: #000;
       --shadow-style: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
-    }</code>
+    }
+```
 
 Rõ ràng, tất cả các biến số đã tập trung ở một nơi. Khi cần thay đổi giao diện thì mình chỉ cần thay đổi giá trị của biến số ở đây là được.
 
 Rồi khi muốn thêm giao diện mới, mình chỉ cần định nghĩa thêm như sau:
 
-    <code>body.custom {
+```
+body.custom {
       /* Định nghĩa giá trị của biến số tại đây */
     }
-    </code>
+```
 
 **Bây giờ sử dụng biến số này thế nào?**
 
 Vì mình đã định nghĩa CSS variable rồi nên phần main không cần phải lặp lại nhiều nữa, mà chỉ cần sử dụng như sau:
 
-    <code>main {
+```
+main {
       width: 100%;
       max-width: 40rem;
       margin: 15px auto;
@@ -228,7 +247,8 @@ Vì mình đã định nghĩa CSS variable rồi nên phần main không cần p
       background-color: var(--primary-color);
       color: var(--active-txt-color);
     }
-    .btn:not(.active):hover {cursor: pointer;}</code>
+    .btn:not(.active):hover {cursor: pointer;}
+```
 
 ## Demo
 
@@ -250,8 +270,8 @@ Nếu có phần nào khó hiểu, hy vọng bạn góp ý lại với mình. C�
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

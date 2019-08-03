@@ -1,8 +1,8 @@
 ---
 date: "2018-03-15T18:19:49Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: gui-mail-bang-html-va-formspree-io
 title: "Gửi email bằng HTML và Formspree.io"
 categories:
@@ -12,7 +12,7 @@ tags:
   - HTML
 ---
 
-Xin chào các bạn! Gần đây, mình có làm một số website static (chỉ gồm HTML5, CSS3 và [JavaScript](https://completejavascript.com/category/javascript/javascript-co-ban/)). Trong đó, website có một phần là contact form** **(liên hệ). Sau một hồi tìm kiếm google, mình đã tìm ra một phương pháp rất hay giúp các bạn gửi email bằng HTML bằng cách sử dụng [**Formspree.io**](https://formspree.io/). Vậy cách này có những ưu điểm gì?
+Xin chào các bạn! Gần đây, mình có làm một số website static (chỉ gồm HTML5, CSS3 và [JavaScript](/category/javascript/javascript-co-ban/)). Trong đó, website có một phần là contact form** **(liên hệ). Sau một hồi tìm kiếm google, mình đã tìm ra một phương pháp rất hay giúp các bạn gửi email bằng HTML bằng cách sử dụng [**Formspree.io**](https://formspree.io/). Vậy cách này có những ưu điểm gì?
 
 ## Ưu điểm khi gửi email bằng HTML và Formspree.io
 
@@ -34,15 +34,17 @@ Việc đầu tiên cần làm là phải dùng thử xem nó hoạt động nh�
 
 Bạn thay đổi giá trị của thuộc tính **action** trong form thành dạng **https://formspree.io/your@email.com** với **your@email** là địa chỉ mà bạn muốn dùng để nhận mail. Ví dụ của mình là: https://formspree.io/lampv606.test@gmail.com.
 
-    <code><form method="POST" action="https://formspree.io/lampv606.test@gmail.com">
+```
+<form method="POST" action="https://formspree.io/lampv606.test@gmail.com">
       <input type="email" name="email" placeholder="Your email">
       <textarea name="abc" placeholder="Your message"></textarea>
       <button type="submit">Send</button>
-    </form></code>
+    </form>
+```
 
 Như vậy là đã hoàn thành phần cài đặt form.
 
-![](https://completejavascript.com/wp-content/uploads/2018/03/test-sending-email-testformspree.io_.png)
+![](/wp-content/uploads/2018/03/test-sending-email-testformspree.io_.png)
 
 ### **Bước 2: Nhập nội dung vào form**
 
@@ -52,7 +54,7 @@ Bạn sẽ nhập địa chỉ email vào mục _Your email_ (chú ý là phải
 
 Lúc này, trang web thông báo rằng bạn cần xác minh email.
 
-![xác minh email khi gửi mail bằng html và formspree](https://completejavascript.com/wp-content/uploads/2018/03/confirm-email-testformspree.png)
+![xác minh email khi gửi mail bằng html và formspree](/wp-content/uploads/2018/03/confirm-email-testformspree.png)
 
 ### **Bước 3: Xác minh email**
 
@@ -82,41 +84,55 @@ Ngoài những tính năng cơ bản như trên, formspree còn hỗ trợ một
 
 Trường này có thể dùng để thay thế cho phần email. Khi đó, bạn có thể reply trực tiếp cho người đã submit form này.
 
-    <code><input type="text" name="_replyto" placeholder="Your email" /></code>
+```
+<input type="text" name="_replyto" placeholder="Your email" />
+```
 
 ### **\_next**
 
 Mặc định, sau khi gửi thành công sẽ có một trang thông báo mặc định của Formspree. Tuy nhiên, bạn có thể thay thế nó bằng một trang khác của riêng bạn.
 
-    <code><input type="hidden" name="_next" value="//site.io/thanks.html" /></code>
+```
+<input type="hidden" name="_next" value="//site.io/thanks.html" />
+```
 
 ### **\_subject**
 
 Dùng để thêm vào tiêu đề mail. Qua đó, bạn có thể reply lại người gửi mà không cần sửa lại phần subject.
 
-    <code><input type="hidden" name="_subject" value="New submission!" /></code>
+```
+<input type="hidden" name="_subject" value="New submission!" />
+```
 
 ### \_cc
 
 Dùng để thêm địa chỉ email vào trường **cc**.
 
-    <code><input type="hidden" name="_cc" value="another@email.com" /></code>
+```
+<input type="hidden" name="_cc" value="another@email.com" />
+```
 
 Nếu bạn muốn mail này cc cho nhiều người thì có thể thêm vào nhiều email, phân cách nhau bởi dấu phẩy.
 
-    <code><input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" /></code>
+```
+<input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" />
+```
 
 ### \_format
 
 Phần này cho phép bạn nhận email dạng plain text.
 
-    <code><input type="hidden" name="_format" value="plain" /></code>
+```
+<input type="hidden" name="_format" value="plain" />
+```
 
 ### \_language
 
 Sau khi bạn nhấn gửi, sẽ có phần hiện reCAPTCHA để xác minh bằng tiếng anh. Bạn có thể thay đổi ngôn ngữ tùy thích bằng cách sử dụng thuộc tính này.
 
-    <code><input type="hidden" name="_language" value="es" /></code>
+```
+<input type="hidden" name="_language" value="es" />
+```
 
 Hiện tại, có nhiều ngôn ngữ được support, nhưng chưa có Tiếng Việt.
 
@@ -124,18 +140,20 @@ Hiện tại, có nhiều ngôn ngữ được support, nhưng chưa có Tiếng
 
 reCAPTCHA dùng để tránh spam. Tuy nhiên, bạn vẫn có thể sử dụng thuộc tính này để bỏ qua phần hiện reCAPTCHA.
 
-    <code><input type="text" name="_gotcha" style="display:none" /></code>
+```
+<input type="text" name="_gotcha" style="display:none" />
+```
 
 ## Kết luận
 
 Trên đây, mình đã trình bày cách gửi email bằng HTML sử dụng Formspree.io. Trước khi kết thúc bài viết, mình muốn nhấn mạnh lại là: **ứng với mỗi website triển khai form này, bạn cần phải xác minh một lần đầu tiên**. Hy vọng bài viết này có thể giúp bạn biết cách gửi email bằng HTML để có thể triển khai trên các website của mình.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/thiet-ke-website-responsive-voi-css-menu/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thiet-ke-website-responsive-voi-css-menu/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

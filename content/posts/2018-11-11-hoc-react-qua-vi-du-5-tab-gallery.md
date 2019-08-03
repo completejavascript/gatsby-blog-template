@@ -1,8 +1,8 @@
 ---
 date: "2018-11-11T22:30:50Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: hoc-react-qua-vi-du-5-tab-gallery
 title: "Học React qua ví dụ #5: Tab Gallery"
 categories:
@@ -21,19 +21,20 @@ Như bạn thấy đó, hình ảnh được xếp thành một dãy (dạng tab
 
 Bây giờ, mời bạn theo dõi cách giải quyết!
 
-**Bạn chú ý:** Trong series [học React qua ví dụ](https://completejavascript.com/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+**Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](https://completejavascript.com/tag/create-react-app/) để thực hành học React qua ví dụ #5 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #5 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](https://completejavascript.com/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
 Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
 
-    <code>learn-react-by-example/
+```
+learn-react-by-example/
     --src/
     ----components/
     ------tab-gallery/
@@ -44,8 +45,8 @@ Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-rea
     ----App.js
     ----index.css
     ----index.js
-    ----serviceWorker.js</code>
-
+    ----serviceWorker.js
+```
 Trong đó:
 
 - Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Tab Gallery** nên mình tạo thêm thư mục **tab-gallery** bên trong với 2 file **tab-gallery.js** và **tab-gallery.css** để định nghĩa cho component **Tab Gallery** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
@@ -59,8 +60,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](https://completejavascript.com/tim-hieu-react-component-lifecycle/)
-- [Đăng ký và hủy bỏ event](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
 
 Và ý tưởng chung để xây dựng Tab Gallery Component là:
 
@@ -69,7 +70,8 @@ Và ý tưởng chung để xây dựng Tab Gallery Component là:
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-    <code>import React from 'react';
+```
+import React from 'react';
     import ReactDOM from 'react-dom';
     import './tab-gallery.css';
 
@@ -218,7 +220,8 @@ Về nội dung chi tiết mình sẽ giải thích trong phần comment code d�
           </div>
         )
       }
-    }</code>
+    }
+```
 
 ### Nội dung file tab-gallery.css
 
@@ -226,7 +229,8 @@ File này dùng để xác định style cho Tab Gallery Component. Bạn chú �
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-    <code>.lp-tab-gallery,
+```
+.lp-tab-gallery,
     .lp-tab-gallery * {
       box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -313,13 +317,15 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
     .lp-tab-gallery>.container-bottom:hover>.close-btn:hover {
       cursor: pointer;
       background-color: rgba(0, 0, 0, 0.8);
-    }</code>
+    }
+```
 
 ## Sử dụng Tab Gallery component
 
 **./src/App.css**
 
-    <code>.App,
+```
+.App,
     .App * {
       box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -334,12 +340,14 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
       padding: 15px;
       color: #222;
       font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }</code>
+    }
+```
 
 **./src/App.js  
 **
 
-    <code>import React from 'react';
+```
+import React from 'react';
     import './App.css';
 
     import TabGallery from './components/tab-gallery/tab-gallery';
@@ -367,17 +375,18 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 
             <div>
               Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-              Visit me at <a href="https://completejavascript.com/">completejavascript.com</a>.
+              Visit me at <a href="/">completejavascript.com</a>.
             </div>
           </div>
         );
       }
-    }</code>
+    }
+```
 
 Trong đó, Tab Gallery Component có các thuộc tính là:
 
-- **input ([Array](https://completejavascript.com/javascript-array-co-ban/)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](https://completejavascript.com/javascript-object-last-but-not-least/)gồm _src_ – đường dẫn ảnh và _caption _– tiêu đề ảnh.
-- **ratio ([String](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là “3:2”. Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/)gồm _src_ – đường dẫn ảnh và _caption _– tiêu đề ảnh.
+- **ratio ([String](/values-types-va-operators-trong-javascript-phan-2/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là “3:2”. Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 
 ## Lời kết
 
@@ -391,8 +400,8 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

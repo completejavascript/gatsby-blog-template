@@ -1,8 +1,8 @@
 ---
 date: "2018-01-11T14:34:12Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: javascript-web-worker-javascript-o-background
 title: "JavaScript Web Worker - chạy JavaScript ở background"
 categories:
@@ -25,30 +25,34 @@ Vì vậy, khi áp dụng JavaScript Web Worker một cách chính xác và phù
 
 Để kiểm tra xem trình duyệt bạn đang sử dụng có hỗ trợ JavaScript Web Worker hay không, bạn có thể sử dụng **_typeof_**:
 
-    <code>if (typeof(Worker) !== "undefined") {
+```
+if (typeof(Worker) !== "undefined") {
         // Có hỗ trợ JavaScript Web Worker
     } else {
         // Không hỗ trợ JavaScript Web Worker
-    }</code>
+    }
+```
 
 ### Tạo file JavaScript cho Web Worker
 
 Một ví dụ đơn giản cho file JavaScript Web Worker:
 
-    <code>for(var i = 0; i < 10000000000; i++) {
+```
+for(var i = 0; i < 10000000000; i++) {
       if (i % 1000000000 == 0) postMessage(i);
     }
 
     self.onmessage = function(msg) {
       // Được gọi khi có message gửi từ luồng chính
     }
-    </code>
+```
 
 ### Khởi tạo Web Worker
 
 Giả sử bạn đã tạo một file **web_worker.js**. Để khởi tạo Web Worker, bạn làm như sau:
 
-    <code>var w;
+```
+var w;
 
     function startWorker() {
         // Kiểm tra xem trình duyệt có hỗ trợ JavaScript Web Worker
@@ -67,9 +71,10 @@ Giả sử bạn đã tạo một file **web_worker.js**. Để khởi tạo We
         } else {
            // Trình duyệt không hỗ trợ JavaScript Web Worker
         }
-    }</code>
+    }
+```
 
-Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](https://completejavascript.com/tim-hieu-function-javascript/) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/).
+Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/tim-hieu-function-javascript/) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban/).
 
 Trong đó, **Worker.onerror** được gọi khi có lỗi với Web Worker sau khi khởi tạo. Và **Worker.onmessage** được gọi khi có message từ Worker Thread lên giao diện chính.
 
@@ -77,7 +82,9 @@ Trong đó, **Worker.onerror** được gọi khi có lỗi với Web Worker sau
 
 Sau khi khởi tạo Web Worker thì code JavaScript ở background sẽ chạy. Để dừng Web Worker lại, bạn có thể sử dụng phương thức **terminate()**.
 
-    <code>w.terminate();</code>
+```
+w.terminate();
+```
 
 ### Giao tiếp giữa Web Worker ở luồng chính và background
 
@@ -91,23 +98,26 @@ Sau khi khởi tạo Web Worker thì code JavaScript ở background sẽ chạy.
 
 #### Truyền Message thông thường
 
-Trong phương pháp này, tham số truyền vào sẽ là một [object](https://completejavascript.com/javascript-object-last-but-not-least/). Dữ liệu sẽ được copy từ phía gửi sang phía nhận.
+Trong phương pháp này, tham số truyền vào sẽ là một [object](/javascript-object-last-but-not-least/). Dữ liệu sẽ được copy từ phía gửi sang phía nhận.
 
 Ví dụ như sau:
 
-    <code>function startWorker() {
+```
+function startWorker() {
       if(typeof(myWorker) != 'undefined') {
         myWorker.postMessage({cmd : 'start', msg : 'hello'});
       } else {
         console.log('[Main]', 'Worker is undefined.');
       }
-    }</code>
+    }
+```
 
-Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/), [String, Boolean](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/), [Array](https://completejavascript.com/javascript-array-co-ban/).
+Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number](/values-types-va-operators-trong-javascript-phan-1/), [String, Boolean](/values-types-va-operators-trong-javascript-phan-2/), [Array](/javascript-array-co-ban/).
 
 Và ở Worker Thread, hàm **onmessage** sẽ được gọi:
 
-    <code>self.onmessage = function(event) {
+```
+self.onmessage = function(event) {
       handleMessage(event);
     }
 
@@ -122,13 +132,15 @@ Và ở Worker Thread, hàm **onmessage** sẽ được gọi:
         postMessage({cmd : 'stop', msg: 'Good Bye!'});
         self.close();
       }
-    }</code>
+    }
+```
 
 Object nhận được từ phía giao diện chính sẽ được lấy từ **data** trong **event**.
 
-    <code>console.log('[Worker]', 'Worker Thread receives command: ', event.data.cmd, event.data.msg);
-    // => [Worker] Worker Thread receives command: start hello</code>
-
+```
+console.log('[Worker]', 'Worker Thread receives command: ', event.data.cmd, event.data.msg);
+    // => [Worker] Worker Thread receives command: start hello
+```
 Để test chức năng này, mình có chuẩn bị một ví dụ nhỏ trên [Github](https://github.com/completejavascript/web-worker-test) và [codepen](https://codepen.io/completejavascript/pen/vpRvgm) mà bạn có thể tham khảo.
 
 Cách này có một nhược điểm là nếu như bạn gửi dữ liệu lớn, chẳng hạn 500MB, thì sau khi gửi đi, nó sẽ được sao chép. Vì vậy, tổng dữ liệu chiếm sẽ là 500MB + 500MB = 1GB. Điều đó có thể dẫn đến hết bộ nhớ cho phép. Để khắc phục tình trạng này, ta có thể sử dụng Transferable Object như sau.
@@ -141,7 +153,8 @@ Khi sử dụng [Transferable Object](https://developer.mozilla.org/en-US/docs/W
 
 Phía Main Thread:
 
-    <code>function startWorker() {
+```
+function startWorker() {
       if(typeof(myWorker) != 'undefined') {
         var arrBuf1 = new ArrayBuffer(1000);
         var arrBuf2 = new ArrayBuffer(100000);
@@ -158,11 +171,13 @@ Phía Main Thread:
       } else {
         console.log('[Main]', 'Worker is undefined.');
       }
-    }</code>
+    }
+```
 
 Phía Worker Thread:
 
-    <code>self.onmessage = function(event) {
+```
+self.onmessage = function(event) {
       handleMessage(event);
     }
 
@@ -172,13 +187,15 @@ Phía Worker Thread:
         console.log('[Worker]', 'Length of Array Buffer 1:', event.data.buf1.byteLength);
         console.log('[Worker]', 'Length of Array Buffer 2:', event.data.buf2.byteLength);
       }
-    }</code>
+    }
+```
 
 Ở đây, Transferable Object là [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer).
 
 Kết quả:
 
-    <code>[Main] Init Web Worker
+```
+[Main] Init Web Worker
     [Main] Before Transfering:
     [Main] Length of Array Buffer 1: 1000
     [Main] Length of Array Buffer 2: 100000
@@ -189,8 +206,8 @@ Kết quả:
 
     [Worker] Worker Thread receives command: start
     [Worker] Length of Array Buffer 1: 1000
-    [Worker] Length of Array Buffer 2: 100000</code>
-
+    [Worker] Length of Array Buffer 2: 100000
+```
 **Chú ý:**
 
 - Việc thực hiện lệnh tại **onmessage** sẽ được thực hiện tuần tự. Nghĩa là khi bạn gửi 10 lệnh **postMessage**, thì ở phía nhận, nó sẽ thực hiện lần lượt từng lệnh một, hết lệnh này mới đến lệnh khác.
@@ -199,7 +216,7 @@ Kết quả:
 
 Bài viết hôm nay dừng lại tại đây. Để tìm hiểu thêm về JavaScript Web Worker thì bạn có thể tìm hiểu thêm ở những link phía dưới đây.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo,](https://completejavascript.com/javascript-service-worker-co-ban/) thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo,](/javascript-service-worker-co-ban/) thân ái!
 
 ## Xem thêm
 
@@ -217,8 +234,8 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo,](https://com
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -1,8 +1,8 @@
 ---
 date: "2018-09-27T12:30:31Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: trien-khai-lazy-loading-image-trong-react
 title: "Triển khai Lazy Loading Image trong React"
 categories:
@@ -22,8 +22,8 @@ Mời bạn theo dõi bài viết!
 Về cơ bản, phương pháp Lazy Loading Image gồm các bước sau:
 
 - **Bước 1**: Sử dụng ảnh đơn sắc, hoặc ảnh đã làm mờ đóng vai trò là _place holder_ (giữ chỗ). Vì những ảnh này có kích thước rất nhỏ (cỡ 200 byte là đủ) nên sẽ được load rất nhanh. Do đó, giao diện chương trình sẽ không bị vỡ.
-- **Bước 2**: Kiểm tra các phần tử [DOM](https://completejavascript.com/co-ban-ve-dom-javascript/) liên quan đến hình ảnh xem nó có ở trên viewport (phạm vi màn hình) hay không. Nếu có thì sẽ load ảnh gốc một cách bất đồng bộ. Sau khi load ảnh xong thì mới set lại ảnh gốc đó cho phần tử DOM.
-- **Bước 3**:Trong quá trình [scroll màn hình](https://completejavascript.com/smooth-scrolling-trang-web-voi-jquery/), thực hiện lại **Bước 2** cho đến khi tất cả các ảnh gốc được load hết thì thôi.
+- **Bước 2**: Kiểm tra các phần tử [DOM](/co-ban-ve-dom-javascript/) liên quan đến hình ảnh xem nó có ở trên viewport (phạm vi màn hình) hay không. Nếu có thì sẽ load ảnh gốc một cách bất đồng bộ. Sau khi load ảnh xong thì mới set lại ảnh gốc đó cho phần tử DOM.
+- **Bước 3**:Trong quá trình [scroll màn hình](/smooth-scrolling-trang-web-voi-jquery/), thực hiện lại **Bước 2** cho đến khi tất cả các ảnh gốc được load hết thì thôi.
 
 Tư tưởng chính là vậy. Bây giờ, mình sẽ bắt đầu triển khai Lazy Loading Image trong React.
 
@@ -43,7 +43,8 @@ Tiếp theo, bạn có thể vào trang [tinypng.com](https://tinypng.com) để
 
 **lazy-image.js**
 
-    <code>import React from 'react';
+```
+import React from 'react';
     import "./lazy-image.css";
 
     function elementInViewport(el) {
@@ -119,11 +120,13 @@ Tiếp theo, bạn có thể vào trang [tinypng.com](https://tinypng.com) để
           />
         )
       }
-    }</code>
+    }
+```
 
 **lazy-image.css**
 
-    <code>.lazy-image {
+```
+.lazy-image {
       opacity: 0;
       transition: opacity 0.1s ease-in-out;
       -webkit-transition: opacity 0.1s ease-in-out;
@@ -132,7 +135,8 @@ Tiếp theo, bạn có thể vào trang [tinypng.com](https://tinypng.com) để
 
     .lazy-image.opacity {
       opacity: 1;
-    }</code>
+    }
+```
 
 ### Giải thích cách triển khai Lazy Loading Image trong React
 
@@ -140,13 +144,17 @@ Tiếp theo, bạn có thể vào trang [tinypng.com](https://tinypng.com) để
 
 Khởi tạo biến state _loaded_. Biến này dùng để lưu trạng thái ảnh đã được load hay chưa. Ban đầu ảnh chưa được load nên giá trị này là _false_.
 
-    <code>this.state = {
+```
+this.state = {
       loaded: false
-    }</code>
+    }
+```
 
-[Bind](https://completejavascript.com/phan-biet-call-apply-va-bind-trong-javascript/) function _handleScroll_ với _this_. [Function](https://completejavascript.com/tim-hieu-function-javascript/) này dùng để xử lý [event](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/) khi scroll màn hình.
+[Bind](/phan-biet-call-apply-va-bind-trong-javascript/) function _handleScroll_ với _this_. [Function](/tim-hieu-function-javascript/) này dùng để xử lý [event](/xu-ly-mot-event-javascript-co-ban/) khi scroll màn hình.
 
-    <code>this.handleScroll = this.handleScroll.bind(this);</code>
+```
+this.handleScroll = this.handleScroll.bind(this);
+```
 
 #### Hàm render
 
@@ -154,8 +162,10 @@ Hàm này tương ứng với **Bước 1** mà mình đã nói phía trên. Tro
 
 Tính giá trị của _width_ và _height_. Nếu người dùng không truyền 2 thuộc tính này vào thì mặc định giá trị là `100%`
 
-    <code>const width = this.props.width || '100%';
-    const height = this.props.height || '100%';</code>
+```
+const width = this.props.width || '100%';
+    const height = this.props.height || '100%';
+```
 
 Component này khi render lên HTML sẽ đóng vai trò là một [thẻ img](https://www.w3schools.com/tags/tag_img.asp) với các thuộc tính là:
 
@@ -174,19 +184,24 @@ Hàm [componentDidMount](https://reactjs.org/docs/react-component.html#component
 - Đăng ký sự kiện scroll của màn hình Window - dùng để xử lý **Bước 3**.
 
 
-    <code>window.addEventListener('scroll', this.handleScroll);</code>
+```
+window.addEventListener('scroll', this.handleScroll);
+```
 
 #### Hàm componentWillUnmount
 
 Hàm [componentWillUnmount](https://reactjs.org/docs/react-component.html#componentwillunmount) dùng để xử lý trước khi component bị huỷ. Lúc này, mình phải huỷ sự kiện đã đăng ký ở phần trước, để tránh bị leak memory.
 
-    <code>window.removeEventListener('scroll', this.handleScroll);</code>
+```
+window.removeEventListener('scroll', this.handleScroll);
+```
 
 #### Hàm handleScroll
 
 Như mình đã nói ở trên, hàm này dùng để xử lý khi scroll màn hình. Trong hàm này, mình sẽ phải kiểm tra xem ảnh gốc đã được load hay chưa - thông qua biến _this.state.loaded_. Đồng thời kiểm tra xem phần tử DOM có đang nằm trong viewport hay không - thông qua hàm _elementInViewport_.
 
-    <code>function elementInViewport(el) {
+```
+function elementInViewport(el) {
       const rect = el.getBoundingClientRect();
 
       return (
@@ -194,17 +209,22 @@ Như mình đã nói ở trên, hàm này dùng để xử lý khi scroll màn h
         && rect.left >= 0
         && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
       )
-    }</code>
+    }
+```
 
 Rõ ràng, nếu ảnh đã được load hoặc nó không nằm trên viewport thì mình không cần thiết phải gọi phần xử lý load ảnh làm gì cả. Ngược lại, mình sẽ phải load ảnh gốc lên thông qua đối tượng [Image](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image).
 
 Đầu tiên, khởi tạo đối tượng _Image_:
 
-    <code>const imgLoader = new Image();</code>
+```
+const imgLoader = new Image();
+```
 
 Tiếp theo, gán thuộc tính _src_ với đường dẫn ảnh gốc cần tải:
 
-    <code>imgLoader.src = this.props.src;</code>
+```
+imgLoader.src = this.props.src;
+```
 
 Định nghĩa hàm _onload_ - hàm này được gọi khi ảnh đã được load hoàn toàn. Việc load ảnh là **bất đồng bộ** nên sẽ không ảnh hưởng đến hoạt động của trang web.
 
@@ -214,21 +234,27 @@ Tính tỉ lệ chiều rộng / chiều cao của ảnh thực tế `const rati
 
 Gán _src_ với đường dẫn ảnh gốc cần tải.
 
-    <code>this.imgElm.setAttribute(
+```
+this.imgElm.setAttribute(
       `src`,
       `${this.props.src}`
-    );</code>
+    );
+```
 
 Nếu người dùng muốn giữ nguyên tỉ lệ ảnh gốc thì mình sẽ điều chỉnh lại chiều cao của ảnh
 
-    <code>this.props.keepRatio && this.imgElm.setAttribute(
+```
+this.props.keepRatio && this.imgElm.setAttribute(
       `height`,
       `${this.props.width / ratioWH}`
-    )</code>
+    )
+```
 
 Về cơ bản, khi đến bước này thì ảnh đã sẵn sàng để hiển thị. Nhưng người dùng vẫn chưa nhìn thấy ảnh, vì _opacity: 0_. Do đó, mình sẽ thêm vào thuộc tính _class_ của ảnh giá trị _this.props.effect_. Mặc định, mình mới định nghĩa 1 effect là _opacity_.
 
-    <code>this.imgElm.classList.add(`${this.props.effect}`);</code>
+```
+this.imgElm.classList.add(`${this.props.effect}`);
+```
 
 
 
@@ -236,15 +262,19 @@ Về cơ bản, khi đến bước này thì ảnh đã sẵn sàng để hiển
 
 
 
-    <code>.lazy-image.opacity {
+```
+.lazy-image.opacity {
       opacity: 1;
-    }</code>
+    }
+```
 
 Đến đây thì ảnh hoàn toàn được hiện lên, công việc cuối cùng là thay đổi state _this.state.loaded_. Mục đích là khi mình scroll màn hình, phần xử lý này sẽ không được gọi nữa - đảm bảo chỉ gọi phần load ảnh đúng 1 lần.
 
-    <code>this.setState({
+```
+this.setState({
       loaded: true
-    });</code>
+    });
+```
 
 Như vậy, mình đã định nghĩa xong component _LazyImage_. Bây giờ, chỉ cần áp dụng nó thôi.
 
@@ -252,18 +282,20 @@ Như vậy, mình đã định nghĩa xong component _LazyImage_. Bây giờ, ch
 
 Mình có làm một ví dụ trên Github. Bạn có thể tham khảo source code tại [đây](https://github.com/completejavascript/lazy-loading-image-demo). Hoặc xem demo trực tiếp tại [đây](https://about.phamvanlam.com/lazy-loading-image-demo/).
 
-Ví dụ demo mình sử dụng [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html). Bạn có thể tham khảo thêm tại bài viết [Tạo và deploy ứng dụng React lên Github Pages](https://completejavascript.com/deploy-ung-dung-react-len-github-pages/) để biết cách tạo project và deploy lên Github Pages.
+Ví dụ demo mình sử dụng [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html). Bạn có thể tham khảo thêm tại bài viết [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/) để biết cách tạo project và deploy lên Github Pages.
 
 Trong _App.js_ mình đã sử dụng component LazyImage như sau:
 
-    <code><LazyImage
+```
+<LazyImage
       placeHolder={placeHolder}
       src={props.src}
       width={`100%`}
       height={`auto`}
       effect={"opacity"}
       alt={props.alt}
-    /></code>
+    />
+```
 
 Về chi tiết, bạn có thể tham khảo thêm trong project demo của mình. Có gì khó hiểu, bạn có thể để lại trong phần bình luận phía dưới, mình sẽ cố gắng giải đáp.
 
@@ -275,12 +307,12 @@ Tiếp theo, mình dự định sẽ tìm hiểu và chia sẻ tiếp về Lazy 
 
 [Xem code trên Github](https://github.com/completejavascript/lazy-loading-image-demo) [Xem Demo](https://about.phamvanlam.com/lazy-loading-image-demo/)
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/tao-trang-blog-voi-gatsby-js/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-trang-blog-voi-gatsby-js/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

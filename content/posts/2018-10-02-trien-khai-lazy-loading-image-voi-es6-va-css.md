@@ -1,8 +1,8 @@
 ---
 date: "2018-10-02T12:00:15Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: trien-khai-lazy-loading-image-voi-es6-va-css
 title: "Triển khai Lazy Loading Image với ES6 và CSS"
 categories:
@@ -14,7 +14,7 @@ tags:
   - Template
 ---
 
-Xin chào bạn! Trong bài viết [triển khai Lazy Loading Image trong React](https://completejavascript.com/trien-khai-lazy-loading-image-trong-react) mình đã giới thiệu với bạn tư tưởng chính của phương pháp Lazy Loading Image và cách mình triển khai nó trong React. Còn trong bài này, mình sẽ không sử dụng React nữa. Thay vào đó mình sẽ chỉ sử dụng ES6 và CSS thôi. Mời bạn theo dõi bài viết, xem mình đã triển khai Lazy Loading Image với ES6 và CSS như thế nào nhé!
+Xin chào bạn! Trong bài viết [triển khai Lazy Loading Image trong React](/trien-khai-lazy-loading-image-trong-react) mình đã giới thiệu với bạn tư tưởng chính của phương pháp Lazy Loading Image và cách mình triển khai nó trong React. Còn trong bài này, mình sẽ không sử dụng React nữa. Thay vào đó mình sẽ chỉ sử dụng ES6 và CSS thôi. Mời bạn theo dõi bài viết, xem mình đã triển khai Lazy Loading Image với ES6 và CSS như thế nào nhé!
 
 ## Triển khai Lazy Loading Image với ES6 và CSS
 
@@ -22,7 +22,8 @@ Xin chào bạn! Trong bài viết [triển khai Lazy Loading Image trong React]
 
 **main.js**
 
-    <code>document.addEventListener("DOMContentLoaded", function () {
+```
+document.addEventListener("DOMContentLoaded", function () {
       const gridContainer = document.querySelector(".grid");
 
       // Template for each cell in grid
@@ -79,11 +80,13 @@ Xin chào bạn! Trong bài viết [triển khai Lazy Loading Image trong React]
           && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
         )
       }
-    });</code>
+    });
+```
 
 **main.css**
 
-    <code>.app .grid .cell .lazy-image {
+```
+.app .grid .cell .lazy-image {
       background-image: url("images/place-holder.png");
       background-size: cover;
       background-repeat: no-repeat;
@@ -114,7 +117,8 @@ Xin chào bạn! Trong bài viết [triển khai Lazy Loading Image trong React]
     #image-15.visible { background-image: url("images/15.jpg"); }
     #image-16.visible { background-image: url("images/16.jpg"); }
     #image-17.visible { background-image: url("images/17.jpg"); }
-    #image-18.visible { background-image: url("images/18.jpg"); }</code>
+    #image-18.visible { background-image: url("images/18.jpg"); }
+```
 
 https://www.youtube.com/watch?v=6Y-fgdRyLUU
 
@@ -126,37 +130,46 @@ https://www.youtube.com/watch?v=6Y-fgdRyLUU
 
 Toàn bộ ảnh mình sẽ render bên trong thẻ _div_ với tên class là _grid_.
 
-    <code><div class="grid">
+```
+<div class="grid">
       <!-- Render each cell here from JavaScript -->
-    </div></code>
+    </div>
+```
 
 Do đó, mình sẽ phải tạo ra reference đến thẻ đó trước để làm container.
 
-    <code>const gridContainer = document.querySelector(".grid");</code>
+```
+const gridContainer = document.querySelector(".grid");
+```
 
-Sau đó, mình sẽ sử dụng [ES6 Template String](https://completejavascript.com/su-dung-es6-template-string-co-gi-hay/) để định nghĩa template cho mỗi cell (chứa ảnh và caption).
+Sau đó, mình sẽ sử dụng [ES6 Template String](/su-dung-es6-template-string-co-gi-hay/) để định nghĩa template cho mỗi cell (chứa ảnh và caption).
 
-    <code>const cellTemplate = id => `
+```
+const cellTemplate = id => `
       <div class="cell">
         <div class="lazy-image" id="${id}"></div>
         <div class="caption">${id.replace("-", " ")}</div>
       </div>
-    `;</code>
+    `;
+```
 
 Cuối cùng, mình sẽ render 18 _cell_ vào trong _gridContainer_.
 
-    <code>const NUMBER_IMAGE = 18;
+```
+const NUMBER_IMAGE = 18;
 
     for (let i = 1; i <= NUMBER_IMAGE; i++) {
       const id = `image-${i < 10 ? `0${i}` : i}`;
       const tmpl = cellTemplate(id);
       const frag = document.createRange().createContextualFragment(tmpl);
       gridContainer.appendChild(frag);
-    }</code>
+    }
+```
 
 Ở đây, mỗi ảnh được xác định trong thẻ _div_ với tên class là _lazy-image_ nên mặc định ảnh background sẽ là ảnh Place Holder. Phần này được định nghĩa trong _main.css_.
 
-    <code>.app .grid .cell .lazy-image {
+```
+.app .grid .cell .lazy-image {
       background-image: url("images/place-holder.png");
       background-size: cover;
       background-repeat: no-repeat;
@@ -167,19 +180,22 @@ Cuối cùng, mình sẽ render 18 _cell_ vào trong _gridContainer_.
       transition: opacity 0.2s ease-in-out;
       -webkit-transition: opacity 0.2s ease-in-out;
       -moz-transition: opacity 0.2s ease-in-out;
-    }</code>
+    }
+```
 
 Và id của mỗi ảnh lần lượt là: image-01, image-02, ..., image-18. Phần id này sẽ được dùng để xác định ảnh gốc được load ứng với mỗi _cell_.
 
-Như vậy là đến đây mình đã xây dựng được [cấu trúc DOM Tree](https://completejavascript.com/co-ban-ve-dom-javascript/). Tiếp theo mình sẽ xử lý việc load ảnh khi scroll màn hình.
+Như vậy là đến đây mình đã xây dựng được [cấu trúc DOM Tree](/co-ban-ve-dom-javascript/). Tiếp theo mình sẽ xử lý việc load ảnh khi scroll màn hình.
 
 #### Xử lý việc load ảnh khi scroll màn hình
 
 Trước tiên, mình sẽ query để lưu lại các phần tử DOM cần Lazy Loading Image vào một mảng để tiện xử lý sau này.
 
-    <code>let arrayImages = [].slice.call(document.querySelectorAll(".lazy-image"));</code>
+```
+let arrayImages = [].slice.call(document.querySelectorAll(".lazy-image"));
+```
 
-Ở đây phương thức [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) trả về [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) chứ không phải [Array](https://completejavascript.com/javascript-array-co-ban/). Nên mình sẽ phải convert NodeList sang Array. Bạn có thể tham khảo bài viết [Convert NodeList to Array](https://davidwalsh.name/nodelist-array) để biết thêm chi tiết.
+Ở đây phương thức [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) trả về [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) chứ không phải [Array](/javascript-array-co-ban/). Nên mình sẽ phải convert NodeList sang Array. Bạn có thể tham khảo bài viết [Convert NodeList to Array](https://davidwalsh.name/nodelist-array) để biết thêm chi tiết.
 
 **Mục đích của mình khi lưu các phần tử DOM này vào Array là gì?**
 
@@ -187,20 +203,23 @@ Khi scroll màn hình, mình sẽ duyệt mảng này để kiểm tra từng ph
 
 Cụ thể hàm _handleScroll_ là:
 
-    <code>function handleScroll() {
+```
+function handleScroll() {
       for (let i = arrayImages.length - 1; i >= 0; i--) {
         if (elementInViewport(arrayImages[i])) {
           arrayImages[i].classList.add("visible");
           arrayImages.splice(i, 1);
         }
       }
-    }</code>
+    }
+```
 
 Đọc đến đây có thể bạn sẽ thắc mắc tại sao mình lại duyệt từ phần tử **arrayImages.length - 1** về 0 mà không phải là ngược lại. Bởi lẽ, khi mình sử dụng phương thức [splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) thì số phần tử của mảng sẽ giảm đi. Tức giá trị **arrayImages.length** sẽ thay đổi. Dẫn đến việc duyệt mảng sẽ bị thiếu.
 
 Ngoài ra, hàm kiểm tra xem 1 phần tử có nằm trong viewport hay không vẫn không thay đổi so với bài viết trước:
 
-    <code>function elementInViewport(el) {
+```
+function elementInViewport(el) {
       const rect = el.getBoundingClientRect();
 
       return (
@@ -208,11 +227,13 @@ Ngoài ra, hàm kiểm tra xem 1 phần tử có nằm trong viewport hay không
         && rect.left >= 0
         && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
       )
-    }</code>
+    }
+```
 
 Và để ảnh gốc hiện lên, mình sẽ thêm vào _classList_ giá trị _visible_. Vì mình đã định nghĩa trong _main.css_:
 
-    <code>.app .grid .cell .lazy-image.visible { opacity: 1; }
+```
+.app .grid .cell .lazy-image.visible { opacity: 1; }
     #image-01.visible { background-image: url("images/01.jpg"); }
     #image-02.visible { background-image: url("images/02.jpg"); }
     #image-03.visible { background-image: url("images/03.jpg"); }
@@ -230,11 +251,13 @@ Và để ảnh gốc hiện lên, mình sẽ thêm vào _classList_ giá trị 
     #image-15.visible { background-image: url("images/15.jpg"); }
     #image-16.visible { background-image: url("images/16.jpg"); }
     #image-17.visible { background-image: url("images/17.jpg"); }
-    #image-18.visible { background-image: url("images/18.jpg"); }</code>
+    #image-18.visible { background-image: url("images/18.jpg"); }
+```
 
 Công việc cuối cùng là đăng ký sự kiện _scroll_ đối với _window_.
 
-    <code>let debounceTimer;
+```
+let debounceTimer;
     window.addEventListener("scroll", function () {
       if (debounceTimer) {
         window.clearTimeout(debounceTimer);
@@ -243,13 +266,16 @@ Công việc cuối cùng là đăng ký sự kiện _scroll_ đối với _wind
       debounceTimer = window.setTimeout(function () {
         handleScroll();
       }, 100);
-    });</code>
+    });
+```
 
 **Chú ý**: trong phần đăng ký sự kiện _scroll_ mình có sử dụng thêm _setTimeout_ để nâng cao performance cho trang web. Nghĩa là việc xử lý _handleScroll_ sẽ được thực hiện sau khi người dùng scroll màn hình xong khoảng _100 ms_.
 
 Nếu không cần quan tâm đến performance thì bạn chỉ cần viết ngắn gọn là:
 
-    <code>window.addEventListener('scroll', handleScroll);</code>
+```
+window.addEventListener('scroll', handleScroll);
+```
 
 ## Demo
 
@@ -261,12 +287,12 @@ Bạn có thể xem code đầy đủ và demo tại đây:
 
 Trên đây là cách mình triển khai Lazy Loading Image với ES6 và CSS. Nhìn chung, mình thấy cách này không khác nhiều so với cách sử dụng React. Nếu bạn có thắc mắc hay góp ý gì thì có thể hỏi mình bằng cách để lại trong phần bình luận phía dưới.
 
-Còn bây giờ thì xin chào và hẹn gặp lại trong [bài viết tiếp theo](https://completejavascript.com/chuyen-anh-dong-gif-thanh-video/), thân ái!
+Còn bây giờ thì xin chào và hẹn gặp lại trong [bài viết tiếp theo](/chuyen-anh-dong-gif-thanh-video/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

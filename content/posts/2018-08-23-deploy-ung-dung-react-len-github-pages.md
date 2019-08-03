@@ -1,8 +1,8 @@
 ---
 date: "2018-08-23T13:55:27Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: deploy-ung-dung-react-len-github-pages
 title: "Tạo và deploy ứng dụng React lên Github Pages"
 categories:
@@ -49,9 +49,9 @@ Ngoài ra, bạn cũng có 2 lựa chọn là tải bản Windows Installer (.ms
 
 Để đơn giản, mình sẽ chọn bản [Windows Installer (.msi) 64-bit](https://nodejs.org/dist/v8.11.4/node-v8.11.4-x64.msi). Phiên bản này là 8.11.4 đã bao gồm npm 5.6.0, nên thoả mãn yêu cầu của create-react-app là Node >= 6 and npm >= 5.2.
 
-![Tải nodejs](https://completejavascript.com/wp-content/uploads/2018/08/download-nodejs.png)Download Node.js cho Windows 64-bit trên trang chủ
+![Tải nodejs](/wp-content/uploads/2018/08/download-nodejs.png)Download Node.js cho Windows 64-bit trên trang chủ
 
-Các bước để cài đặt Node.js bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn tìm hiểu Node.js cơ bản](https://completejavascript.com/huong-dan-tim-hieu-node-js-co-ban/)
+Các bước để cài đặt Node.js bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban/)
 
 _Xem thêm về Node.js tại: [SERIES LƯỢC SỬ LẬP TRÌNH WEB PHẦN 3.2 – NODEJS LÀM LOẠN GIỚI FRONT-END](https://toidicodedao.com/2018/08/07/series-luoc-su-lap-trinh-web-phan-3-2-nodejs-lam-loan-gioi-front-end/)_
 
@@ -59,7 +59,7 @@ _Xem thêm về Node.js tại: [SERIES LƯỢC SỬ LẬP TRÌNH WEB PHẦN 3.2 
 
 Git giúp quản lý source code dễ dàng hơn và deploy ứng dụng React lên Github Pages sau khi code xong. Để cài đặt Git cho Windows, bạn có thể vào [trang download git](https://git-scm.com/download) và chọn phần Windows.
 
-![tải git](https://completejavascript.com/wp-content/uploads/2018/08/download-git.png)Download Git cho Windows
+![tải git](/wp-content/uploads/2018/08/download-git.png)Download Git cho Windows
 
 Việc cài đặt Git cũng khá đơn giản và bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn cài đặt và cấu hình Git trên Windows](https://o7planning.org/vi/11707/huong-dan-cai-dat-va-cau-hinh-git-tren-windows)
 
@@ -69,7 +69,7 @@ Visual Studio Code là một trong những code editor tốt nhất hiện nay. 
 
 Để tải Visual Studio Code, bạn có thể vào link: [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) và chọn bản 64-bit.
 
-![tải visual studio code](https://completejavascript.com/wp-content/uploads/2018/08/download-visual-studio-code.png)Download Visual Studio Code cho Windows
+![tải visual studio code](/wp-content/uploads/2018/08/download-visual-studio-code.png)Download Visual Studio Code cho Windows
 
 Việc cài đặt Visual Studio Code không có gì đặc biệt, bạn chỉ cần cài đặt theo mặc định hoặc tham khảo bài viết: [Cài Đặt Visual Studio Code Trên Môi Trường Windows](https://www.stdio.vn/articles/cai-dat-visual-studio-code-tren-moi-truong-windows-577)
 
@@ -83,39 +83,42 @@ Tạm thời xong về vấn đề cài đặt môi trường, tiếp theo mình
 
 Trước tiên, mình tạo một thư mục - coi như là workspace:
 
-    <code>D:\create-react-app</code>
-
+```
+D:\create-react-app
+```
 Sau đó, mình mở Visual Studio Code lên, chọn **File** \ **Open Folder...**. Chọn đến thư mục vừa tạo ra ở trên.
 
-![Màn hình mặc định của Visual Studio Code](https://completejavascript.com/wp-content/uploads/2018/08/visual-studio-code-1.png)Màn hình mặc định của Visual Studio Code sau khi mở thư mục tại D:\create-react-app
+![Màn hình mặc định của Visual Studio Code](/wp-content/uploads/2018/08/visual-studio-code-1.png)Màn hình mặc định của Visual Studio Code sau khi mở thư mục tại D:\create-react-app
 
 Tiếp theo, mở Terminal trên Visual Studio Code bằng cách chọn **View** \ **Terminal**
 
-![Màn hình Visual Studio Code sau khi mở Terminal](https://completejavascript.com/wp-content/uploads/2018/08/visual-studio-code-open-terminal.png)Màn hình Visual Studio Code sau khi mở Terminal
+![Màn hình Visual Studio Code sau khi mở Terminal](/wp-content/uploads/2018/08/visual-studio-code-open-terminal.png)Màn hình Visual Studio Code sau khi mở Terminal
 
-Đến đây, bạn đã có thể sử dụng [câu lệnh](https://completejavascript.com/cac-cau-lenh-thuong-dung-tren-cmd-windows/) ngay trên Visual Studio Code.
+Đến đây, bạn đã có thể sử dụng [câu lệnh](/cac-cau-lenh-thuong-dung-tren-cmd-windows/) ngay trên Visual Studio Code.
 
 ### Khởi tạo project
 
 Bạn có thể sử dụng câu lệnh sau để tạo mới một project create-react-app:
 
-    <code>npx create-react-app app-name</code>
-
+```
+npx create-react-app app-name
+```
 Trong đó, _app-name_ là tên project mà bạn muốn đặt. Kết quả của câu lệnh trên là bạn đã có một project mẫu.
 
-![Cấu trúc project React sử dụng create-react-app](https://completejavascript.com/wp-content/uploads/2018/08/create-react-app-init.png)Cấu trúc ứng dụng React sử dụng create-react-app
+![Cấu trúc project React sử dụng create-react-app](/wp-content/uploads/2018/08/create-react-app-init.png)Cấu trúc ứng dụng React sử dụng create-react-app
 
 Để xem nó hoạt động như nào, bạn chạy lệnh sau để test:
 
-    <code># Di chuyển đến vị trí bên trong thư mục chứa project
+```
+# Di chuyển đến vị trí bên trong thư mục chứa project
     cd app-name
 
     # Tạo server
-    yarn start</code>
-
+    yarn start
+```
 Sau đó, bạn vào địa chỉ **http://127.0.0.1:3000/** trên trình duyệt để kiểm tra kết quả. Nếu mọi thứ hoạt động bình thường thì bạn sẽ thu được màn hình như sau:
 
-![Ứng dụng React mặc định](https://completejavascript.com/wp-content/uploads/2018/08/create-react-app-default.png)Ứng dụng React mặc định khi sử dụng create-react-app
+![Ứng dụng React mặc định](/wp-content/uploads/2018/08/create-react-app-default.png)Ứng dụng React mặc định khi sử dụng create-react-app
 
 ## Tuỳ biến ứng dụng create-react-app
 
@@ -123,7 +126,7 @@ Sau đó, bạn vào địa chỉ **http://127.0.0.1:3000/** trên trình duyệ
 
 - File **package.json**: chứa thông tin cấu hình project, dependencies, scripts,...
 - Thư mục **src**: chứa các file mã nguồn của project mà bạn sẽ thao tác trực tiếp lên các file trong thư mục này.
-- Thư mục **public**: chứa file [html với template định sẵn](https://completejavascript.com/chuyen-html-template-sang-dom-node/), **favicon.ico** và **manifest.json**
+- Thư mục **public**: chứa file [html với template định sẵn](/chuyen-html-template-sang-dom-node/), **favicon.ico** và **manifest.json**
 
 Về lý thuyết, mọi thay đổi của ứng dụng, bạn sẽ thực hiện trong thư mục _src_. Và bạn không nên thay đổi nội dung trong thư mục _public_.
 
@@ -135,7 +138,8 @@ Tuy nhiên, có nhiều thứ mà mình thấy rằng nên thay đổi và việ
 
 Ví dụ file _index.html_ trong 1 project của mình:
 
-    <code><!DOCTYPE html>
+```
+<!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -189,7 +193,8 @@ Ví dụ file _index.html_ trong 1 project của mình:
       <script src="%PUBLIC_URL%/lib/codemirror-5.39.2/mode/markdown/markdown.js"></script>
     </body>
 
-    </html></code>
+    </html>
+```
 
 Bạn thấy rằng, nếu như css, js từ CDN thì bạn có thể sử dụng như bình thường. Nhưng khi include css, js - là thư viện bên thứ 3 mà bạn đặt trong thư mục _public_, thì bạn cần phải chèn thêm đoạn **_%PUBLIC_URL%_**.
 
@@ -205,7 +210,8 @@ Có 5 bước để deploy ứng dụng React lên Github Pages như sau:
 
 **Bước 2**: Đồng bộ ứng dụng React ở local lên Github repository thông qua các câu lệnh sau:
 
-    <code># Tạo mới git repository
+```
+# Tạo mới git repository
     git init
 
     # Thêm tất cả các file vào git
@@ -218,15 +224,17 @@ Có 5 bước để deploy ứng dụng React lên Github Pages như sau:
     git remote add origin https://github.com/completejavascript/app-name.git
 
     # Push các file lên Github
-    git push origin master</code>
-
+    git push origin master
+```
 **Bước 3**: Cài đặt gh-pages sử dụng npm
 
-    <code>npm install --save gh-pages</code>
-
+```
+npm install --save gh-pages
+```
 **Bước 4**: Sửa file _package.json_
 
-    <code>{
+```
+{
       "name": "app-name",
       "version": "0.1.0",
       "private": true,
@@ -245,7 +253,8 @@ Có 5 bước để deploy ứng dụng React lên Github Pages như sau:
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject"
       }
-    }</code>
+    }
+```
 
 Trong đó:
 
@@ -255,8 +264,9 @@ Trong đó:
 
 **Bước 5**: Chạy câu lệnh sau để deploy ứng dụng.
 
-    <code>npm run deploy</code>
-
+```
+npm run deploy
+```
 Sau khi deploy ứng dụng React thành công, bạn cần chờ một vài phút, rồi truy cập vào địa chỉ ứng với phần **homepage** (ví dụ: _https://completejavascript.github.io/app-name/_ ) để kiểm tra thành quả của mình.
 
 ## Lời kết
@@ -265,12 +275,12 @@ Trên đây là những bước cơ bản để tạo và deploy ứng dụng Re
 
 Tuy nhiên, nếu bạn sử dụng Windows 10 (hoặc cao hơn) thì có thể sẽ có lỗi xảy ra. Nếu bạn chưa thể tìm ra cách khắc phục, có thể để lại câu hỏi dưới phần bình luận, mình sẽ cố gắng tìm cách giải quyết giúp bạn.
 
-Cuối cùng, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/trien-khai-lazy-loading-image-trong-react/), thân ái!
+Cuối cùng, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/trien-khai-lazy-loading-image-trong-react/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

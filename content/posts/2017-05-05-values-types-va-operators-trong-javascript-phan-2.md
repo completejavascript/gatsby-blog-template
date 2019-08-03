@@ -1,15 +1,15 @@
 ---
 date: "2017-05-05T14:29:33Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: values-types-va-operators-trong-javascript-phan-2
 title: "Values, types và operators trong JavaScript - Phần 2"
 categories:
   - Javascript cơ bản
 ---
 
-Trong [bài viết trước](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/), mình đã giới thiệu với bạn cơ bản về giá trị (values) và kiểu dữ liệu (numbers). Hôm nay, mình sẽ tiếp tục giới thiệu về hai kiểu dữ liệu cơ bản khác đó là **strings** và **Booleans**, cùng với một số toán tử (**operators**) phổ biến.
+Trong [bài viết trước](/values-types-va-operators-trong-javascript-phan-1/), mình đã giới thiệu với bạn cơ bản về giá trị (values) và kiểu dữ liệu (numbers). Hôm nay, mình sẽ tiếp tục giới thiệu về hai kiểu dữ liệu cơ bản khác đó là **strings** và **Booleans**, cùng với một số toán tử (**operators**) phổ biến.
 
 ## Strings
 
@@ -27,9 +27,10 @@ Ví dụ:
 
 Đọc đến đây, có thể có bạn sẽ tò mò rằng: _nếu mình muốn đặt dấu " " vào trong string thì sao?_ Hãy xem ví dụ sau:
 
-    <code>var str = "Just say "thank you" more";
-    console.log(str); // => Uncaught SyntaxError: Unexpected identifier</code>
-
+```
+var str = "Just say "thank you" more";
+    console.log(str); // => Uncaught SyntaxError: Unexpected identifier
+```
 Đúng vậy, bạn sẽ nhận được thông báo lỗi như trên nếu như bạn khai báo string kiểu này. Theo như định nghĩa, string phải được đặt trong cặp dấu ngoặc đơn hay ngoặc kép. Do đó, vế phải của phép gán trên chứa 2 string là "Just say " và " more". Còn từ _thank you_ thì đứng bơ vơ nên lỗi là đúng rồi.
 
 Để hiển thị dấu _" "_ nói riêng và các kí tự đặc biệt nói chung trong string, chúng ta có 2 cách:
@@ -54,7 +55,8 @@ Ví dụ:
 
 Ví dụ:
 
-    <code>var x = 'It\'s six o\'clock now.';
+```
+var x = 'It\'s six o\'clock now.';
     console.log(x); // => It's six o'clock now.
     var y = "Call me \"JavaScripter\"";
     console.log(y); // => Call me "JavaScripter"
@@ -67,7 +69,8 @@ Ví dụ:
     /*
     * January
     * February
-    */</code>
+    */
+```
 
 Đây chỉ là những kí tự đặc biệt hay sử dụng. Còn nhiều kí tự đặc biệt khác nữa, bạn có thể tự tìm hiểu thêm.
 
@@ -75,21 +78,24 @@ Ví dụ:
 
 Trong ví dụ trên:
 
-    <code>var x = 'It\'s six o\'clock now.'</code>
-
+```
+var x = 'It\'s six o\'clock now.'
+```
 Thay vì sử dụng backslash để chèn kí tự _'_ vào trong string, mình có thể thay thế cặp dấu ngoặc đơn ở ngoài cùng bằng cặp dấu ngoặc kép.
 
-    <code>var x = "It's six o'clock now.";
-    console.log(x); => It's six o'clock now.</code>
-
+```
+var x = "It's six o'clock now.";
+    console.log(x); => It's six o'clock now.
+```
 Tư tưởng ở đây là: _nếu bạn muốn chèn kí tự ' trong string thì dùng cặp dấu ngoặc kép để đóng, mở string. Ngược lại, nếu bạn muốn chèn kí tự " vào trong string thì dùng cặp dấu ngoặc đơn để đóng, mở string._
 
-    <code>var y = 'Call me "JavaScripter"';
-    console.log(y); // => Call me "JavaScripter"</code>
-
+```
+var y = 'Call me "JavaScripter"';
+    console.log(y); // => Call me "JavaScripter"
+```
 Rõ ràng, việc sử dụng kết hợp dấu ngoặc đơn và ngoặc kép giúp cho việc viết string được ngắn gọn hơn và dễ theo dõi hơn.
 
-Sự linh động này trong việc biểu diễn string là rất đặc biệt trong JavaScript mà C/C++ hay Java không có. Một lần nữa, JavaScript lại tỏ ra khá hiệu quả trong vai trò [nâng cao hiệu suất làm việc](https://completejavascript.com/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) của lập trình viên.
+Sự linh động này trong việc biểu diễn string là rất đặc biệt trong JavaScript mà C/C++ hay Java không có. Một lần nữa, JavaScript lại tỏ ra khá hiệu quả trong vai trò [nâng cao hiệu suất làm việc](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) của lập trình viên.
 
 ### Biểu diễn string dài
 
@@ -103,7 +109,8 @@ Có hai cách để giải quyết vấn đề này.
 
 Ví dụ:
 
-    <code>var x = 'Both single and double quotes can be used to mark strings as
+```
+var x = 'Both single and double quotes can be used to mark strings as
     long as the quotes at the start and the end of the string match.';
     console.log(x); // => Uncaught SyntaxError: Invalid or unexpected token
 
@@ -113,8 +120,8 @@ Ví dụ:
 
     var z = 'Both single and double quotes can be used to mark strings as \
     long as the quotes at the start and the end of the string match.';
-    console.log(z) // OK</code>
-
+    console.log(z) // OK
+```
 Với riêng bản thân, mình hay sử dụng toán tử + để ghép nối string thay vì sử dụng dấu backslash (\). Cái này là tuỳ thuộc vào sở thích của bạn. Bạn có thể tuỳ ý chọn một trong hai cách.
 
 ### Thuộc tính (properties) và phương thức (methods) của strings
@@ -123,9 +130,10 @@ Strings có sẵn một số thuộc tính và phương phức. Qua đó, lập 
 
 Thuộc tính **length **dùng để xác định độ dài của string.
 
-    <code>var x = 'Just for laugh';
-    console.log(x.length); // => 14</code>
-
+```
+var x = 'Just for laugh';
+    console.log(x.length); // => 14
+```
 Các phương thức của strings bao gồm:
 
 - **toLowerCase()**: trả về string mới với tất cả các kí viết thường (số, kí tự không có tác dụng)
@@ -156,7 +164,8 @@ Các phương thức của strings bao gồm:
 
 Ví dụ:
 
-    <code>var x = 'JavaScript is a Object-Based Languague.';
+```
+var x = 'JavaScript is a Object-Based Languague.';
     console.log(x.toUpperCase()); // => JAVASCRIPT IS A OBJECT-BASED LANGUAGUE.
     console.log(x.toLowerCase()); // => javascript is a object-based languague.
 
@@ -193,9 +202,9 @@ Ví dụ:
     console.log(z.replace('love', 'hate')); // => We don't talk anymore, we don't hate anymore
 
     console.log(z.charAt(10));     // => a
-    console.log(z.charCodeAt(10)); // => 97</code>
-
-Trên đây là một số ví dụ cơ bản về các phương thức với strings. Để hiểu rõ và nhớ những phương thức này lâu hơn thì bạn nên [thực hành nhiều hơn](https://completejavascript.com/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon/) và thử các trường hợp có thể để hiểu rõ hoạt động của chúng.
+    console.log(z.charCodeAt(10)); // => 97
+```
+Trên đây là một số ví dụ cơ bản về các phương thức với strings. Để hiểu rõ và nhớ những phương thức này lâu hơn thì bạn nên [thực hành nhiều hơn](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon/) và thử các trường hợp có thể để hiểu rõ hoạt động của chúng.
 
 ## Booleans
 
@@ -203,9 +212,10 @@ Tiếp theo là một kiểu dữ liệu cơ bản và cũng khá phổ biến. 
 
 Boolean thường được sử dụng để lưu các trạng thái _on_ hay _off_, _yes_ hay _no_,*...* Bạn sẽ gặp kiểu dữ này nhiều trong phần điều kiện rẽ nhánh (ở các phần sau).
 
-    <code>var Friday = true;
+```
+var Friday = true;
     console.log(Friday); // => true;
-    </code>
+```
 
 ### Một số cách để sinh ra booleans
 
@@ -213,7 +223,8 @@ Boolean thường được sử dụng để lưu các trạng thái _on_ hay _o
 
 Các loại so sánh bao gồm: _>, <, >=, <=, ==, ===, _!=, !==. Và ta có thể áp dụng việc so sánh cho numbers, strings, booleans...
 
-    <code>console.log(6 > 4);    	          // => true
+```
+console.log(6 > 4);    	          // => true
     console.log(6 < 3);               // => false
     console.log(6 == 6);              // => true
     console.log(8 >= 6);              // => true
@@ -222,21 +233,22 @@ Các loại so sánh bao gồm: _>, <, >=, <=, ==, ===, _!=, !==. Và ta có th�
     console.log('olala' === 'olala'); // => true
     console.log('aaa' != 'aaa');      // => false
     console.log(true == true);        // => true
-    console.log(NaN == NaN);          // => false</code>
-
+    console.log(NaN == NaN);          // => false
+```
 #### Sử dụng toán tử logic (Logical Operators)
 
 Trong JavaScript có 3 toán tử logic là: _and_ (&&), _or_ (||), _not_ (!).
 
-    <code>console.log(true && true);   // => true
+```
+console.log(true && true);   // => true
     console.log(false && true);  // => false
 
     console.log(true || false);  // => true
     console.log(false || false); // => false
 
     console.log(!true);          // => false
-    console.log(!false);         // => true</code>
-
+    console.log(!false);         // => true
+```
 Theo mình, Booleans là một kiểu dữ liệu đơn giản nhất. Tuy nhiên, tầm quan trọng của nó thì không ít. Bạn sẽ tiếp tục thấy kiểu dữ liệu này ở trong các bài viết tiếp theo.
 
 ## Operators
@@ -251,25 +263,28 @@ Có rất nhiều loại toán tử. Sau đây, mình sẽ tập trung vào mộ
 
 Toán tử số học thực hiện các phép tính số học như: cộng (+), trừ (-), nhân (\*), chia (/), chia dư (%) và được áp dụng đối với numbers. Phần này hoàn toàn giống như kiến thức số học mà bạn đã học nên mình sẽ không giải thích gì thêm.
 
-    <code>console.log(3 + 5);    // => 8
+```
+console.log(3 + 5);    // => 8
     console.log(6 - 10.5); // => -4.5
     console.log(4 * 3);    // => 12
     console.log(10 / 3);   // => 3.3333333333333335
-    console.log(10 % 4);   // => 2</code>
-
+    console.log(10 % 4);   // => 2
+```
 Về độ ưu tiên, bạn chỉ cần nhớ câu _nhân chia trước, cộng trừ sau_. Nghĩa là phép nhân, phép chia, phép chia dư có cùng độ ưu tiên (I). Phép cộng, trừ có cùng độ ưu tiên (II). Độ ưu tiên của nhóm (I) lớn hơn độ ưu tiên của (II).
 
 Và cái nào có độ ưu tiên lớn hơn thì sẽ được thực hiện trước. Trong trường hợp các toán tử có cùng độ ưu tiên thì sẽ được thực hiện từ trái sang phải. (Khi viết đến đây, mình chợt nghĩ là không biết mấy nước mà chúng nó viết chữ từ phải sang trái thì sao nhỉ? Chắc là chúng nó cũng tính toán từ phải sang trái luôn. ???)
 
-    <code>console.log(1 + 2 * 3 - 8 / 4 + 5 % 3); // => 7
-    console.log(3 + 4 - 8 - 2 + 6); // => 3</code>
-
+```
+console.log(1 + 2 * 3 - 8 / 4 + 5 % 3); // => 7
+    console.log(3 + 4 - 8 - 2 + 6); // => 3
+```
 ### Toán tử ghép nối (Concatenation Operators)
 
 Toán tử ghép nối (+) chỉ được dùng với strings. Nó dùng để ghép nối 2 strings với nhau.
 
-    <code>console.log("I" + " " + "love " + 'you'); // => I love you</code>
-
+```
+console.log("I" + " " + "love " + 'you'); // => I love you
+```
 ### Toán tử logic (Logical Operators)
 
 Ở phần trên, mình đã nhắc tới toán tử logic trong việc tạo ra giá trị **Booleans**. Toán tử logic bao gồm: *and* (&&), _or_ (||), _not_ (!).
@@ -286,18 +301,21 @@ Trước khi bàn về toán tử này, mình muốn bạn chú ý rằng: các 
 
 Để tránh rắc rối này, bạn nên sử dụng toán tử nhóm (). Nghĩa là những thành phần nằm trong cặp dấu ngoặc đơn này sẽ được thực hiện trước.
 
-    <code>console.log((3 + 4) * 2 - 2); // => = 7 * 2 - 2 = 12</code>
-
+```
+console.log((3 + 4) * 2 - 2); // => = 7 * 2 - 2 = 12
+```
 **Toán tử gán (Assignement operator)**
 
 Tiếng anh hay nói là "last but not least" hay "last but certainly not least". Tức là _cuối cùng nhưng không kém phần quan trọng_. Toán tử gán được sử dụng khi bạn muốn gán dữ liệu cho một biến.
 
-    <code>var x = 10;
-    var y = "string";</code>
+```
+var x = 10;
+    var y = "string";
+```
 
 Trên đây là những kiến thức cơ bản về strings, booleans và operators. Thực tế, để đào sâu vào từng thành phần thì còn rất nhiều thứ. Nhưng nếu nói hết ở đây thì sau này còn gì để mà nói nữa.
 
-Do đó, hy vọng bạn sẽ tiếp tục theo dõi các [bài viết sau](https://completejavascript.com/cau-truc-chuong-trinh-trong-javascript/), thân ái!
+Do đó, hy vọng bạn sẽ tiếp tục theo dõi các [bài viết sau](/cau-truc-chuong-trinh-trong-javascript/), thân ái!
 
 ## Tham khảo
 
@@ -305,8 +323,8 @@ Do đó, hy vọng bạn sẽ tiếp tục theo dõi các [bài viết sau](http
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

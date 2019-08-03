@@ -1,8 +1,8 @@
 ---
 date: "2018-12-09T22:30:37Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: hoc-react-qua-vi-du-10-sticky-notes
 title: "Học React qua ví dụ #10: Sticky Notes"
 categories:
@@ -17,23 +17,24 @@ Xin chào bạn đến với Học React qua ví dụ #10. Bài này mình sẽ 
 
 [Xem Demo](https://about.phamvanlam.com/learn-react-by-example/#/sticky-notes/)
 
-Bạn thấy cái này quen không ạ? Nó chính là phần mềm Sticky Notes trên hệ điều hành Windows 7. Thực tế, mình đã xây dựng nó dựa trên [Draggable Note](https://completejavascript.com/hoc-react-qua-vi-du-9-draggable-note/), bằng cách thêm chức năng tạo note mới.
+Bạn thấy cái này quen không ạ? Nó chính là phần mềm Sticky Notes trên hệ điều hành Windows 7. Thực tế, mình đã xây dựng nó dựa trên [Draggable Note](/hoc-react-qua-vi-du-9-draggable-note/), bằng cách thêm chức năng tạo note mới.
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-**Bạn chú ý:** Trong series [học React qua ví dụ](https://completejavascript.com/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+**Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](https://completejavascript.com/tag/create-react-app/) để thực hành học React qua ví dụ #10 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #10 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](https://completejavascript.com/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
 Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
 
-    <code>learn-react-by-example/
+```
+learn-react-by-example/
     --src/
     ----components/
     ------sticky-notes/
@@ -44,8 +45,8 @@ Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-re
     ----App.js
     ----index.css
     ----index.js
-    ----serviceWorker.js</code>
-
+    ----serviceWorker.js
+```
 Trong đó:
 
 - Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Sticky Notes** nên mình tạo thêm thư mục **sticky-notes **bên trong với 2 file **sticky-notes\*\***.js** và **sticky-notes\***\*.css** để định nghĩa cho component **Sticky Notes **(bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
@@ -74,7 +75,8 @@ Trong phần này bạn cần phải chú ý đến một số kiến thức nh�
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-    <code class="language-jsx">import React from 'react';
+    ```jsx
+import React from 'react';
     import './sticky-notes.css';
     import DraggableNote from '../draggable-note/draggable-note';
 
@@ -294,7 +296,8 @@ Về nội dung chi tiết mình sẽ giải thích trong phần comment code d�
           </React.Fragment>
         )
       }
-    }</code>
+    }
+```
 
 ### Nội dung file sticky-notes.css
 
@@ -336,7 +339,8 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
     .lp-sticky-notes-header:hover>.remove:hover {
       color: #222;
       cursor: pointer;
-    }</code>
+    }
+```
 
 ## Sử dụng Sticky Notes component
 
@@ -357,11 +361,13 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
       padding: 15px;
       color: #222;
       font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }</code>
+    }
+```
 
 **./src/App.js**
 
-    <code class="language-jsx">import React from 'react';
+    ```jsx
+import React from 'react';
     import './App.css';
 
     import StickyNotes from './components/sticky-notes/sticky-notes';
@@ -373,7 +379,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
             <h2>Sticky Notes</h2>
             <div>
               Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-              Visit me at <a href="https://completejavascript.com/">completejavascript.com</a>.
+              Visit me at <a href="/">completejavascript.com</a>.
             </div>
 
             <StickyNotes
@@ -387,13 +393,14 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
           </div>
         );
       }
-    }</code>
+    }
+```
 
 Trong đó, Sticky Notes Component có các thuộc tính là:
 
-- **title ([String](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/)):** là title của component.
+- **title ([String](/values-types-va-operators-trong-javascript-phan-2/)):** là title của component.
 
-- **width, height (String hoặc [Number](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/)):** lần lượt là chiều rộng và chiều cao của phần tử.
+- **width, height (String hoặc [Number](/values-types-va-operators-trong-javascript-phan-1/)):** lần lượt là chiều rộng và chiều cao của phần tử.
 
 - **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
 
@@ -411,8 +418,8 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

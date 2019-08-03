@@ -1,8 +1,8 @@
 ---
 date: "2018-03-31T00:00:52Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: huong-dan-tim-hieu-ffmpeg-co-ban
 title: "Hướng dẫn tìm hiểu FFmpeg cơ bản"
 categories:
@@ -84,7 +84,7 @@ Một chương trình đơn giản giúp phân tích việc stream các tệp ti
 
 Các bạn có thể vào trang chủ để tải về phần mềm, tại [đây](https://ffmpeg.org/download.html). Có 3 nền tảng cho bạn lựa chọn là: Linux, Windows và Mac OS X. Ở đây mình chọn nền tảng Windows.
 
-![Tải cài đặt ffmpeg](https://completejavascript.com/wp-content/uploads/2018/03/tai-cai-dat-ffmpeg-phamvanlam-com.png)
+![Tải cài đặt ffmpeg](/wp-content/uploads/2018/03/tai-cai-dat-ffmpeg-phamvanlam-com.png)
 
 Sau đó bạn sẽ được chuyển đến trang để tải phần mềm về. Lúc này bạn có 3 lựa chọn để tải về:
 
@@ -112,15 +112,15 @@ Thực tế là đến lúc này bạn đã có thể sử dụng FFMPEG rồi m
 
 2) Cửa sổ hiện ra, bạn chọn **Advanced system settings.**
 
-![Cài đặt môi trường cho ffmpeg 1](https://completejavascript.com/wp-content/uploads/2018/03/cai-dat-moi-truong-1-phamvanlam-com.png)
+![Cài đặt môi trường cho ffmpeg 1](/wp-content/uploads/2018/03/cai-dat-moi-truong-1-phamvanlam-com.png)
 
 3. Cửa sổ tiếp theo hiện ra thì bạn chọn tab **Advanced** => **Enviroment Variables**
 
-![Cài đặt môi trường cho ffmpeg 2](https://completejavascript.com/wp-content/uploads/2018/03/cai-dat-moi-truong-2-phamvanlam-com.png)
+![Cài đặt môi trường cho ffmpeg 2](/wp-content/uploads/2018/03/cai-dat-moi-truong-2-phamvanlam-com.png)
 
 4. Cửa sổ tiếp theo hiện ra bạn chọn trong mục **System variables** => **Path** => **Edit**. Trong mục **variable value**, bạn thêm vào đường dẫn sau **C:\ffmpeg\bin là đường dẫn đến file chạy của ffmpeg.exe, ffplay.exe, ffprobe.exe**
 
-[![Cài đặt môi trường cho ffmpeg 3](https://completejavascript.com/wp-content/uploads/2018/03/cai-dat-moi-truong-3-phamvanlam-com.png)]()
+[![Cài đặt môi trường cho ffmpeg 3](/wp-content/uploads/2018/03/cai-dat-moi-truong-3-phamvanlam-com.png)]()
 
 Sau đó bạn chỉ cần lưu lại là xong. Đến đây bạn có thể sử dụng FFMPEG ở mọi thư mục trên máy tính.
 
@@ -148,24 +148,28 @@ Một chú ý nhỏ trước khi bắt đầu đó là: các ảnh, audio và vi
 
 #### Code FFmpeg hiển thị thông tin của file
 
-    <code>ffmpeg -i test.mp4</code>
-
+```
+ffmpeg -i test.mp4
+```
 #### Code FFmpeg chuyển đổi ảnh thành video
 
-    <code>ffmpeg -f image2 -i img%d.png video.mp4</code>
-
+```
+ffmpeg -f image2 -i img%d.png video.mp4
+```
 Trong đó, img%d.png là tất cả những ảnh đầu vào của bạn trong thư mục hiện tại và video.mp4 là tên video đầu ra. Ví dụ: bạn có các bức ảnh img1.png, img2.png,...,img100.png (định dạng có thể là png hoặc jpg,...) và bạn muốn tập hợp lại thành video có tên là video.mp4 (có thể là định dạng khác như .avi, .mpg,...). Thực tế thì chức năng này chỉ có ích khi bạn có rất nhiều bức ảnh là tập hợp các Frame của video. Và dĩ nhiên video này sẽ không có âm thanh.
 
 #### Code FFmpeg chuyển đổi video thành ảnh
 
-    <code>ffmpeg -i video.mp4 image%d.png</code>
-
+```
+ffmpeg -i video.mp4 image%d.png
+```
 Ở đây, đầu vào là file video có tên là video.mp4 và đầu ra là các ảnh có tên dạng image%d.png (image1.png, image2.png, image3.png,...)
 
 #### Code FFmpeg tách âm thanh từ video và lưu lại thành file mp3
 
-    <code>ffmpeg -i video.mp4 -vn -ar 44100 -ac 2 -ab 192k -f mp3 sound.mp3</code>
-
+```
+ffmpeg -i video.mp4 -vn -ar 44100 -ac 2 -ab 192k -f mp3 sound.mp3
+```
 Trong đó:
 
 - File video đầu vào có tên: video.mp4
@@ -176,8 +180,9 @@ Trong đó:
 
 #### Code FFmpeg chuyển đổi định dạng video
 
-    <code>ffmpeg -i video_input.xxx video_output.yyy</code>
-
+```
+ffmpeg -i video_input.xxx video_output.yyy
+```
 Trong đó:
 
 - File đầu vào là video_input.xxx với xxx là các định dạng video của file đầu vào: mp4, avi, mpg, flv,...
@@ -185,12 +190,14 @@ Trong đó:
 
 Ví dụ, mình muốn chuyển từ định dạng flv sang mp4, thì câu lệnh sẽ là:
 
-    <code>ffmpeg -i video_input.flv video_output.mp4</code>
-
+```
+ffmpeg -i video_input.flv video_output.mp4
+```
 #### Code FFmpeg chuyển video thành ảnh động .gif
 
-    <code>ffmpeg -i video.mp4 gif_anime.gif</code>
-
+```
+ffmpeg -i video.mp4 gif_anime.gif
+```
 Trong đó:
 
 - File video đầu vào là video.mp4
@@ -198,8 +205,9 @@ Trong đó:
 
 #### Code FFmpeg trộn video với một file âm thanh
 
-    <code>ffmpeg -i sound.mp3 -i video_input.mp4 video_output.mp4</code>
-
+```
+ffmpeg -i sound.mp3 -i video_input.mp4 video_output.mp4
+```
 Trong đó:
 
 - Tệp tin âm thanh đầu vào là sound.mp3
@@ -210,8 +218,9 @@ Chú ý là: độ dài video đầu ra sẽ là độ dài lớn hơn của m�
 
 #### Code FFmpeg tăng - giảm tốc độ video
 
-    <code>ffmpeg -i video.mp4 -vf "setpts=0.5*PTS" highspeed.mp4</code>
-
+```
+ffmpeg -i video.mp4 -vf "setpts=0.5*PTS" highspeed.mp4
+```
 Trong đó:
 
 - video.mp4 là video đầu vào
@@ -220,14 +229,16 @@ Trong đó:
 
 Nếu muốn giảm tốc độ đi 2 lần thì chỉ cần thay đổi thành:
 
-    <code>ffmpeg -i video.mp4 -vf "setpts=2*PTS" highspeed.mp4</code>
-
+```
+ffmpeg -i video.mp4 -vf "setpts=2*PTS" highspeed.mp4
+```
 Còn muốn tốc độ khác thì bạn tự suy luận ra nhé.
 
 #### Code FFmpeg thêm ảnh vào audio và xuất bản thành video
 
-    <code>ffmpeg -loop 1 -i image.png -i sound.mp3 -c:v libx264 -c:a aac -strict experimental -b:a 192k -shortest output.mp4</code>
-
+```
+ffmpeg -loop 1 -i image.png -i sound.mp3 -c:v libx264 -c:a aac -strict experimental -b:a 192k -shortest output.mp4
+```
 Trong đó:
 
 - File ảnh đầu vào là image.png
@@ -236,8 +247,9 @@ Trong đó:
 
 #### Code FFmpeg thêm phụ đề cho video
 
-    <code>ffmpeg -i video.mp4 -i subtitles.srt -map 0 -map 1 -c copy -c:v libx264 -crf 23 -preset veryfast video-output.mp4</code>
-
+```
+ffmpeg -i video.mp4 -i subtitles.srt -map 0 -map 1 -c copy -c:v libx264 -crf 23 -preset veryfast video-output.mp4
+```
 Trong đó:
 
 - File video đầu vào là video.mp4
@@ -246,8 +258,9 @@ Trong đó:
 
 #### Code FFmpeg cắt lấy một phần nhỏ của video
 
-    <code>ffmpeg -i video.mp4 -ss 00:00:50.0 -codec copy -t 20 output.mp4</code>
-
+```
+ffmpeg -i video.mp4 -ss 00:00:50.0 -codec copy -t 20 output.mp4
+```
 Trong đó:
 
 - File đầu vào là video.mp4
@@ -256,8 +269,9 @@ Trong đó:
 
 #### Code FFmpeg chia video ra thành nhiều phần
 
-    <code>ffmpeg -i video.mp4 -t 00:00:50 -c copy small-1.mp4 -ss 00:00:50 -codec copy small-2.mp4</code>
-
+```
+ffmpeg -i video.mp4 -t 00:00:50 -c copy small-1.mp4 -ss 00:00:50 -codec copy small-2.mp4
+```
 Trong đó:
 
 - File video đầu vào là video.mp4
@@ -265,22 +279,25 @@ Trong đó:
 
 #### Code FFmpeg ghép video từ những video nhỏ
 
-    <code>ffmpeg -f concat -i file-list.txt -c copy output.mp4</code>
-
+```
+ffmpeg -f concat -i file-list.txt -c copy output.mp4
+```
 Trong đó:
 
 - File đầu vào là file file-list.txt - chứa tên của các video cần ghép, ở cùng thư mục đang xét. Ví dụ nội dung file sẽ như sau:
 
 
-    <code>file 'small-1.mp4'
-    file 'small-2.mp4'</code>
-
+```
+file 'small-1.mp4'
+    file 'small-2.mp4'
+```
 - File đầu ra là output.mp4
 
 #### Code FFmpeg tắt âm thanh của video
 
-    <code>ffmpeg -i video.mp4 -an mute-video.mp4</code>
-
+```
+ffmpeg -i video.mp4 -an mute-video.mp4
+```
 Trong đó:
 
 - File đầu vào là video.mp4
@@ -291,8 +308,9 @@ Trong đó:
 
 Dùng để chạy, phát video. Câu lệnh đơn giản là:
 
-    <code>ffplay dir/video.mp4</code>
-
+```
+ffplay dir/video.mp4
+```
 Trong đó:
 
 - dir là đường dẫn đến tệp tin video
@@ -304,7 +322,7 @@ Trên đây là những gì mình tìm hiểu được về FFMPEG và những c
 
 Hy vọng, bài viết trên đây có thể giúp ích cho bạn. Nếu có gì thắc mắc bạn có thể để lại comment phía dưới hoặc gửi lại email cho mình.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/lay-anh-thumbnail-cua-video-tren-youtube/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lay-anh-thumbnail-cua-video-tren-youtube/), thân ái!
 
 Có thể bạn quan tâm:
 
@@ -326,8 +344,8 @@ Có thể bạn quan tâm:
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

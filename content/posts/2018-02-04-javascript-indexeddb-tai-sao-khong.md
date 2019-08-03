@@ -1,8 +1,8 @@
 ---
 date: "2018-02-04T14:02:31Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: javascript-indexeddb-tai-sao-khong
 title: "JavaScript IndexedDB - tại sao không?"
 categories:
@@ -24,21 +24,21 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 
 - IndexedDB sử dụng công nghệ [index](https://en.wikipedia.org/wiki/Database_index) để nâng cao hiệu quả tìm kiếm, giúp tìm kiếm dữ liệu nhanh hơn.
 
-- IndexedDB hoạt động theo kiểu bất đồng bộ (asynchronous) và còn hỗ trợ sử dụng trong [Web Worker](https://completejavascript.com/javascript-web-worker-javascript-o-background/), giúp tránh việc block [DOM](https://completejavascript.com/co-ban-ve-dom-javascript/). Qua đó, trình duyệt chạy sẽ mượt hơn.
+- IndexedDB hoạt động theo kiểu bất đồng bộ (asynchronous) và còn hỗ trợ sử dụng trong [Web Worker](/javascript-web-worker-javascript-o-background/), giúp tránh việc block [DOM](/co-ban-ve-dom-javascript/). Qua đó, trình duyệt chạy sẽ mượt hơn.
 
 - Trong khi LocalStorage chỉ hỗ trợ dung lượng tối đa là 5MB thì IndexedDB hỗ trợ lên đến 50MB. Và khi dùng [quá 50MB này](https://support.mozilla.org/en-US/questions/818987#answer-180011), trình duyệt sẽ yêu cầu permission từ người dùng để có thể tăng thêm dung lượng lưu trữ.
 
 ## Những khái niệm cơ bản trong JavaScript IndexedDB
 
-- IndexedDB lưu trữ dữ liệu theo kiểu **key-value**. Trong đó, value có thể là những object có cấu trúc phức tạp và key có thể là thuộc tính của object. Bạn có thể áp dụng **Indexes**, sử dụng bất kỳ thuộc tính nào của object để tìm kiếm nhanh hơn, cũng như là việc [sắp xếp](https://completejavascript.com/array-sorting-van-de-muon-thuo/).
+- IndexedDB lưu trữ dữ liệu theo kiểu **key-value**. Trong đó, value có thể là những object có cấu trúc phức tạp và key có thể là thuộc tính của object. Bạn có thể áp dụng **Indexes**, sử dụng bất kỳ thuộc tính nào của object để tìm kiếm nhanh hơn, cũng như là việc [sắp xếp](/array-sorting-van-de-muon-thuo/).
 
-- IndexedDB được xây dựng dựa trên [Transaction](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_transaction). IndexedDB API cung cấp nhiều [object](https://completejavascript.com/javascript-object-last-but-not-least/) như indexes, tables, cursors,... nhưng mỗi object phải được gắn liền với một transaction.
+- IndexedDB được xây dựng dựa trên [Transaction](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_transaction). IndexedDB API cung cấp nhiều [object](/javascript-object-last-but-not-least/) như indexes, tables, cursors,... nhưng mỗi object phải được gắn liền với một transaction.
 
-- IndexedDB API hầu hết là **bất đồng bộ (asynchronous)**. Các API không cung cấp dữ liệu bởi việc **return**, do đó, bạn cần phải truyền vào một hàm callback. Và việc của bạn cần làm là gửi đi request. Khi request được xử lý xong, IndexedDB sẽ trả lại kết quả thông qua hàm callback kia. Bạn sẽ biết được là request thành công hay thất bại. Và thành công thì dữ liệu nhận được là gì. Cơ chế hoạt động tương tự như [XMLHttpRequest](https://completejavascript.com/xmlhttprequest-tao-http-request-den-server-trong-javascript/).
+- IndexedDB API hầu hết là **bất đồng bộ (asynchronous)**. Các API không cung cấp dữ liệu bởi việc **return**, do đó, bạn cần phải truyền vào một hàm callback. Và việc của bạn cần làm là gửi đi request. Khi request được xử lý xong, IndexedDB sẽ trả lại kết quả thông qua hàm callback kia. Bạn sẽ biết được là request thành công hay thất bại. Và thành công thì dữ liệu nhận được là gì. Cơ chế hoạt động tương tự như [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/).
 
 - IndexedDB sử dụng nhiều **requests**. Requests là những đối tượng nhận sự kiện thành công hay thất bại của DOM. Chúng có các thuộc tính **onsuccess**, **onerror**. Bạn có thể gọi hàm **addEventListener()** và **removeEventListener()** với chúng.
 
-- IndexedDB là **[hướng đối tượng](https://completejavascript.com/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/)**. Vì vậy, IndexedDB không phải là dạng cơ sở dữ liệu quan hệ với bảng, dòng, cột,...
+- IndexedDB là **[hướng đối tượng](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/)**. Vì vậy, IndexedDB không phải là dạng cơ sở dữ liệu quan hệ với bảng, dòng, cột,...
 
 - IndexedDB là cơ sở dữ liệu dạng [NoSQL](https://en.wikipedia.org/wiki/NoSQL).
 
@@ -52,7 +52,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 
 - Mỗi database bắt buộc phải có 2 thông số là:
 
-  - Name (tên): xác định database ứng với mỗi origin. Name có thể là bất kỳ string nào, kể cả [string](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/) rỗng.
+  - Name (tên): xác định database ứng với mỗi origin. Name có thể là bất kỳ string nào, kể cả [string](/values-types-va-operators-trong-javascript-phan-2/) rỗng.
 
   * Current verion (phiên bản hiện tại): Khi database được tạo ra, nếu không chỉ rõ thì giá trị current version sẽ là 1. Và tại mỗi thời điểm, database version sẽ chỉ có một giá trị.
 
@@ -68,7 +68,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 
 - Khi một database được tạo ra, version của nó là 1.
 
-- Mỗi database sẽ chỉ có một version ở một thời điểm. Vì vậy, khi muốn nâng cấp database, thì bạn cần phải thay đổi giá trị của version bởi một số tự nhiên lớn hơn. Khi đó, transaction [versionchange](https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeRequest) bắt đầu và [event ](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/)**upgradeneeded** sẽ được gọi.
+- Mỗi database sẽ chỉ có một version ở một thời điểm. Vì vậy, khi muốn nâng cấp database, thì bạn cần phải thay đổi giá trị của version bởi một số tự nhiên lớn hơn. Khi đó, transaction [versionchange](https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeRequest) bắt đầu và [event ](/xu-ly-mot-event-javascript-co-ban/)**upgradeneeded** sẽ được gọi.
 
 ### Database connection
 
@@ -100,7 +100,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 
 - Key path xác định nơi mà trình duyệt lấy ra key ở trong một object store hay index.
 
-- Key path hợp lệ có thể là: một string rỗng, một định danh JavaScript, nhiều định danh JavaScript phân cách bởi dấu chấm hay là một [mảng](https://completejavascript.com/javascript-array-co-ban/) chứa các phần tử là một trong các kiểu kia. Và key path thì không được bao gồm dấu cách.
+- Key path hợp lệ có thể là: một string rỗng, một định danh JavaScript, nhiều định danh JavaScript phân cách bởi dấu chấm hay là một [mảng](/javascript-array-co-ban/) chứa các phần tử là một trong các kiểu kia. Và key path thì không được bao gồm dấu cách.
 
 ## Cách sử dụng JavaScript IndexedDB
 
@@ -110,7 +110,8 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 
 Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng có hỗ trợ IndexedDB hay không.
 
-    <code>//prefixes of implementation that we want to test
+```
+//prefixes of implementation that we want to test
     window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
 
     /**
@@ -123,22 +124,26 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
 
     if (!window.indexedDB) {
       window.alert("Your browser doesn't support a stable version of IndexedDB.");
-    }</code>
+    }
+```
 
 ### Open database
 
 - IndexedDB cung cấp 2 APIs để open database như sau:
 
 
-    <code>var IDBOpenDBRequest = indexedDB.open(name);
-    var IDBOpenDBRequest = indexedDB.open(name, version);</code>
+```
+var IDBOpenDBRequest = indexedDB.open(name);
+    var IDBOpenDBRequest = indexedDB.open(name, version);
+```
 
 - Sau đó, implement 3 hàm **onsuccess**, **onerror** và **onupgradeneeded** của IDBOpenDBRequest để lắng nghe các sự kiện tương ứng là **success** (mở database thành công), **error** (mở database bị lỗi),  **upgradeneeded** (mở database thành công nhưng cần phải cập nhật lại với version mới nhất hiện tại).
 
 - Ví dụ:
 
 
-    <code>// Implement in SimpleSindexedDB.js
+```
+// Implement in SimpleSindexedDB.js
     this.open = function(onsuccess, onerror, onupgradeneeded, objName, keyPath, objData) {
       this.objName = objName;
       this.request = window.indexedDB.open(this.dbName, this.dbVersionNumber);
@@ -189,7 +194,8 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
     }
     function openDBUpgradeNeeded() {
       console.log('open db upgradedneeded');
-    }</code>
+    }
+```
 
 ### Quét toàn bộ dữ liệu một object store trong database
 
@@ -198,7 +204,8 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
 - Ví dụ:
 
 
-    <code>// Implement in SimpleSindexedDB.js
+```
+// Implement in SimpleSindexedDB.js
     this.readAll = function (callback) {
       var objectStore = this.db.transaction(this.objName).objectStore(this.objName);
       objectStore.openCursor().onsuccess = function (event) {
@@ -218,7 +225,8 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
       simpleIndexedDb.readAll(function(cursor){
         console.log(cursor.key, cursor.value.name, cursor.value.email);
       });
-    }</code>
+    }
+```
 
 ### Lấy ra một bản ghi dựa vào key trong JavaScript IndexedDB
 
@@ -227,7 +235,8 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
 - Ví dụ:
 
 
-    <code>// Implement in SimpleSindexedDB.js
+```
+// Implement in SimpleSindexedDB.js
       this.read = function(id) {
       var transaction = this.db.transaction([this.objName]);
       var objectStore = transaction.objectStore(this.objName);
@@ -250,7 +259,8 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
         result => console.log('read success', result),
         event => console.log('read error', event)
       );
-    }</code>
+    }
+```
 
 ### Thêm một bản ghi vào object store database
 
@@ -259,7 +269,8 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
 - Ví dụ:
 
 
-    <code>// Implement in SimpleSindexedDB.js
+```
+// Implement in SimpleSindexedDB.js
     this.add = function (objData) {
       var transaction = this.db.transaction([this.objName], 'readwrite');
       var objectStore = transaction.objectStore(this.objName);
@@ -289,7 +300,8 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
         event => console.log('add success', event),
         error => console.log('add error', error)
       );
-    }</code>
+    }
+```
 
 ### Xoá đi một bản ghi trong object store database dựa vào key
 
@@ -298,7 +310,8 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
 - Ví dụ:
 
 
-    <code>// Implement in SimpleSindexedDB.js
+```
+// Implement in SimpleSindexedDB.js
     this.remove = function(id) {
       var transaction = this.db.transaction([this.objName], 'readwrite');
       var objectStore = transaction.objectStore(this.objName);
@@ -321,13 +334,14 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
         event => console.log('remove success', event),
         event => console.log('remove error', event)
       );
-    }</code>
+    }
+```
 
 ## Kết luận
 
 Trên đây, tôi đã giới thiệu với các bạn những kiến thức cơ bản cần nhớ về JavaScript IndexedDB. Tuy nhiên, để giải thích chi tiết thì thật sự tôi không biết phải giải thích với các bạn như thế nào. Vì vậy, nếu có phần nào bạn cảm thấy không hiểu thì có thể đặt câu hỏi trong phần bình luận.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/ke-thua-co-ban-trong-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/ke-thua-co-ban-trong-javascript/), thân ái!
 
 ## Tham khảo
 
@@ -343,8 +357,8 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://com
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

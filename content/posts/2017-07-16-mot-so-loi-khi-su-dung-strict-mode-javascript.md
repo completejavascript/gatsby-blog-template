@@ -1,8 +1,8 @@
 ---
 date: "2017-07-16T13:16:19Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: mot-so-loi-khi-su-dung-strict-mode-javascript
 title: "Một số lỗi khi sử dụng Strict mode JavaScript"
 categories:
@@ -12,27 +12,30 @@ tags:
   - Strict Mode
 ---
 
-Trong [bài viết trước](https://completejavascript.com/debug-javascript-de-hay-kho/), mình có đề cập tới việc sử dụng Strict mode trong việc giảm thiểu những lỗi ngớ ngẩn của lập trình viên khi lập trình JavaScript. Như đã hứa, mình sẽ đưa ra một số lỗi phổ biến khi sử dụng chế độ này.
+Trong [bài viết trước](/debug-javascript-de-hay-kho/), mình có đề cập tới việc sử dụng Strict mode trong việc giảm thiểu những lỗi ngớ ngẩn của lập trình viên khi lập trình JavaScript. Như đã hứa, mình sẽ đưa ra một số lỗi phổ biến khi sử dụng chế độ này.
 
 ## Sử dụng biến không khai báo
 
 Bình thường khi bạn đưa ra một biến mà không khai báo thì mặc định biến đó sẽ trở thành một thuộc tính của đối tượng global. Đối với browser thì đối tượng global đó chính là **window**.
 
-    <code>x = 10;
+```
+x = 10;
     console.log(window.x);
-    // => 10</code>
-
+    // => 10
+```
 Ở chế độ strict mode, bạn sẽ bị lỗi _x chưa được định nghĩa_: **Uncaught ReferenceError: x is not defined**
 
-    <code>x = 10;
+```
+x = 10;
     console.log(window.x);
-    // => Uncaught ReferenceError: x is not defined</code>
-
+    // => Uncaught ReferenceError: x is not defined
+```
 ## Gán giá trị cho biến global, thuộc tính chỉ đọc, thuộc tính getter
 
 Ở chế độ bình thường, việc gán giá trị cho biến Global như Infinity, NaN,... hay những thuộc tính chỉ đọc,... sẽ không có thông báo lỗi. Mặc dù việc gán giá trị này là hoàn toàn sai và không có ý nghĩa.
 
-    <code>var undefined = 5;
+```
+var undefined = 5;
     console.log(undefined);
     // => undefined
 
@@ -60,7 +63,7 @@ Bình thường khi bạn đưa ra một biến mà không khai báo thì mặc 
     fixed.x = 10;
     console.log(fixed.x);
     // => undefined
-    </code>
+```
 
 Khi ở strict mode, bạn chắc chắn sẽ nhận được lỗi như:
 
@@ -77,7 +80,8 @@ Khi ở strict mode, bạn chắc chắn sẽ nhận được lỗi như:
 - Uncaught TypeError: Cannot add property x, object is not extensible
 
 
-    <code>var undefined = 5;
+```
+var undefined = 5;
     console.log(undefined);
     // => Uncaught TypeError: Cannot assign to read only property 'undefined' of object '#<Window>'
 
@@ -104,17 +108,19 @@ Khi ở strict mode, bạn chắc chắn sẽ nhận được lỗi như:
     Object.preventExtensions(fixed);
     fixed.x = 10;
     console.log(fixed.x);
-    // => Uncaught TypeError: Cannot add property x, object is not extensible</code>
-
+    // => Uncaught TypeError: Cannot add property x, object is not extensible
+```
 ## Xoá thuộc tính của đối tượng Global
 
 Bình thường, bạn sẽ không thể xoá thuộc tính của một đối tượng Global, mặc dù không có thông báo lỗi nào. Khi ở strict mode, bạn sẽ bị lỗi nếu cố gắng xoá một thuộc tính của đối tượng Global:
 
 Ví dụ: Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
 
-    <code>'use strict';
+```
+'use strict';
     delete Object.prototype;
-    // Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }</code>
+    // Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
+```
 
 ## Tên tham số trùng nhau ở khai báo hàm
 
@@ -122,15 +128,16 @@ Strict mode yêu cầu các tham số phải có tên khác nhau. Ngược lại
 
 Uncaught SyntaxError: Duplicate parameter name not allowed in this context
 
-    <code>function sum(a, a, c){
+```
+function sum(a, a, c){
       'use strict'
       return a + b + c;
     }
-    // => Uncaught SyntaxError: Duplicate parameter name not allowed in this context</code>
-
+    // => Uncaught SyntaxError: Duplicate parameter name not allowed in this context
+```
 ## Thêm thuộc tính cho những giá trị nguyên thuỷ
 
-Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/), [string, boolean.](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/) Ngược lại, bạn sẽ bị lỗi như:
+Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](/values-types-va-operators-trong-javascript-phan-1/), [string, boolean.](/values-types-va-operators-trong-javascript-phan-2/) Ngược lại, bạn sẽ bị lỗi như:
 
 - Uncaught TypeError: Cannot create property 'true' on boolean 'false'
 
@@ -139,7 +146,8 @@ Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](https://co
 - Uncaught TypeError: Cannot create property 'you' on string 'with'
 
 
-    <code>'use strict';
+```
+'use strict';
     false.true = false;
     // => Uncaught TypeError: Cannot create property 'true' on boolean 'false'
 
@@ -147,40 +155,42 @@ Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](https://co
     // => Uncaught TypeError: Cannot create property 'sailing' on number '14'
 
     'with'.you = 'far away';
-    // => Uncaught TypeError: Cannot create property 'you' on string 'with'</code>
-
+    // => Uncaught TypeError: Cannot create property 'you' on string 'with'
+```
 ## Xoá một biến thông thường ở Strict mode
 
 Strict mode cấm bạn xoá tên biến. Ngược lại, bạn sẽ bị lỗi là:
 
 Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.
 
-    <code>'use strict';
+```
+'use strict';
 
     var x = 10;
     delete x;
-    // => Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.</code>
-
+    // => Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.
+```
 ## Đặt tên biến trùng với từ dự trữ
 
-Ngoài từ khoá, [JavaScript](https://completejavascript.com/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.
+Ngoài từ khoá, [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.
 
 Do đó, strict mode nghiêm cấm bạn đặt tên biến số trùng với những từ này. Nếu bạn đặt tên biến trùng với từ dự trữ thì bạn sẽ bị lỗi như sau:
 
 Uncaught SyntaxError: Unexpected strict mode reserved word
 
-    <code>'use strict';
+```
+'use strict';
     var implements = 10;
     <span class="console-message-text">// => Uncaught <span class="object-value-error source-code">SyntaxError: Unexpected strict mode reserved word</span></span> 
-    </code>
+```
 
 ## Kết luận
 
-Trên đây là một số lỗi thường gặp phải khi bạn sử dụng JavaScript ở strict mode. Nói vậy, không có nghĩa là mình khuyên bạn tránh sử dụng strict mode. Ngược lại, chế độ này giúp bạn dễ dàng [phát hiện lỗi](https://completejavascript.com/debug-javascript-de-hay-kho/). Và đây là sự đảm bảo cho code bạn không bị xung đột với những phiên bản JavaScript mới hơn sau này.
+Trên đây là một số lỗi thường gặp phải khi bạn sử dụng JavaScript ở strict mode. Nói vậy, không có nghĩa là mình khuyên bạn tránh sử dụng strict mode. Ngược lại, chế độ này giúp bạn dễ dàng [phát hiện lỗi](/debug-javascript-de-hay-kho/). Và đây là sự đảm bảo cho code bạn không bị xung đột với những phiên bản JavaScript mới hơn sau này.
 
 Bài viết này sẽ dừng lại ở đây.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/tim-hieu-regular-expression-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-regular-expression-javascript/), thân ái!
 
 ## Tham khảo
 
@@ -188,8 +198,8 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://comp
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

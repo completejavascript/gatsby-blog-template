@@ -1,17 +1,17 @@
 ---
 date: "2018-11-20T22:30:17Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: giao-tiep-voi-clipboard-su-dung-execcommand
 title: "Giao tiếp với clipboard sử dụng execCommand"
 categories:
   - Thủ thuật JavaScript
 ---
 
-Khi nói đến việc copy dữ liệu vào clipboard thì không thể không kể đến thư viện [clipboard.js](https://clipboardjs.com/) - với hơn [24000 star trên Github](https://github.com/zenorocha/clipboard.js/), dung lượng sau nén khoảng 3kb, không phụ thuộc vào Flash và bất kỳ một [framework](https://completejavascript.com/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) nào, thì đây đúng là một thư viện rất đáng để sử dụng. Tuy nhiên, bạn cũng vẫn có thể trực tiếp giao tiếp với clipboard sử dụng execCommand một cách đơn giản.
+Khi nói đến việc copy dữ liệu vào clipboard thì không thể không kể đến thư viện [clipboard.js](https://clipboardjs.com/) - với hơn [24000 star trên Github](https://github.com/zenorocha/clipboard.js/), dung lượng sau nén khoảng 3kb, không phụ thuộc vào Flash và bất kỳ một [framework](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) nào, thì đây đúng là một thư viện rất đáng để sử dụng. Tuy nhiên, bạn cũng vẫn có thể trực tiếp giao tiếp với clipboard sử dụng execCommand một cách đơn giản.
 
-Thực tế, [Document.execCommand()](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) hỗ trợ rất nhiều các [command](https://completejavascript.com/tag/command-line/) khác nhau như: _copy, cut, paste, bold, italic, createLink, fontName, fontSize,..._ Tuy nhiên, bài viết này mình sẽ chỉ đề cập vào 2 phương thức chính giao tiếp với clipboard là: _copy, cut_ (phương thức _paste_ hiện tại không support trên web nên mình sẽ không trình bày).
+Thực tế, [Document.execCommand()](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) hỗ trợ rất nhiều các [command](/tag/command-line/) khác nhau như: _copy, cut, paste, bold, italic, createLink, fontName, fontSize,..._ Tuy nhiên, bài viết này mình sẽ chỉ đề cập vào 2 phương thức chính giao tiếp với clipboard là: _copy, cut_ (phương thức _paste_ hiện tại không support trên web nên mình sẽ không trình bày).
 
 ## Ví dụ giao tiếp với clipboard sử dụng execCommand
 
@@ -30,25 +30,25 @@ Nội dung phần **html**:
     <code class="html language-html"><h3>Copy</h3>
     <p id="content-copy">This text will be inserted into the clipboard.</p>
     <button id="button-copy">Copy Text</button>
-    </code>
+```
 
 Trong đó, thẻ _p_ với id _content-copy_ là thành phần chứa nội dung mình muốn copy; button với id _button-copy_ để kích hoạt lệnh _copy_ khi người dùng click vào.
 
 **Chú ý**: bạn có thể copy dữ liệu từ hầu hết các phần tử như: _thẻ p, span, div, input, textarea,..._ Nhưng trong ví dụ này, mình chỉ demo với thẻ _p_.
 
-Tiếp theo, mình dùng [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) để lưu lại [DOM node](https://completejavascript.com/co-ban-ve-dom-javascript/) của các phần tử:
+Tiếp theo, mình dùng [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) để lưu lại [DOM node](/co-ban-ve-dom-javascript/) của các phần tử:
 
     <code class="js language-js">const $ = document.querySelector.bind(document);
     const contentCopyElm = $("#content-copy"),
           buttonCopyElm = $("#button-copy");
-    </code>
+```
 
-Sau đó, định nghĩa một [hàm số](https://completejavascript.com/tim-hieu-function-javascript/) để kiểm tra xem command mình sử dụng có được support hay không, thông qua phương thức [document.queryCommandSupported()](https://developer.mozilla.org/en-US/docs/Web/API/Document/queryCommandSupported):
+Sau đó, định nghĩa một [hàm số](/tim-hieu-function-javascript/) để kiểm tra xem command mình sử dụng có được support hay không, thông qua phương thức [document.queryCommandSupported()](https://developer.mozilla.org/en-US/docs/Web/API/Document/queryCommandSupported):
 
     <code class="js language-js">const isSupported = (cmd) => {
       return document.queryCommandSupported(cmd);
     }
-    </code>
+```
 
 Cuối cùng, xử lý khi người dùng click vào button **Copy Text**:
 
@@ -77,7 +77,7 @@ Cuối cùng, xử lý khi người dùng click vào button **Copy Text**:
       // Sau khi copy dữ liệu xong thì xoá bỏ các vùng chọn hiện tại
       selection.removeAllRanges();
     });
-    </code>
+```
 
 **Chú ý**: phần trên chỉ áp dụng cho các thẻ có text content như thẻ: _p, span, div,..._ Các thẻ không có text content như: _input, textarea,..._ sẽ được áp dụng giống như phần **cut dữ liệu vào clipboard** dưới đây.
 
@@ -90,7 +90,7 @@ Nội dung phần **html**:
     <code class="html language-html"><h3>Cut</h3>
     <input id="content-cut" type="text" value="This text will be cut, then inserted into the clipboard." />
     <button id="button-cut">Cut Text</button>
-    </code>
+```
 
 Tiếp theo là phần xử lý trong **js** khi người dùng click vào button **Cut Text**:
 
@@ -106,7 +106,7 @@ Tiếp theo là phần xử lý trong **js** khi người dùng click vào butto
         console.log(e);
       }
     });
-    </code>
+```
 
 Cách tạo vùng chọn trong phần này dễ hơn so với phần trước vì đối tượng DOM node ứng với **input** đã hỗ trợ sẵn phương thức **select()**.
 
@@ -138,8 +138,8 @@ Xem thêm:
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

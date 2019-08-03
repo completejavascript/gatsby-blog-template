@@ -1,19 +1,19 @@
 ---
 date: "2019-02-20T23:00:48Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: xu-ly-bat-dong-bo-callback-promise-async-await
 title: "Xử lý bất đồng bộ với callback, promise, async/await"
 categories:
   - Javascript cơ bản
 tags:
-  - async/await
+  - Async - Await
   - callback
   - Promise
 ---
 
-Khi lập trình JavaScript, bạn sẽ thường xuyên phải thực hiện các công việc mất thời gian như: request lên server, lấy dữ liệu từ [database](https://completejavascript.com/cai-dat-mongodb-tren-windows-moi-nhat/), đọc/ghi file,... Nếu bạn chỉ xử lý đồng bộ thôi thì chắc chắn sẽ rất mất thời gian. Để giải quyết vấn đề này, JavaScript cung cấp một số công cụ hỗ trợ bạn **xử lý bất đồng bộ** rất tốt như sử dụng **callback**, [**promise**](https://completejavascript.com/tag/promise/) hay **async/await**.
+Khi lập trình JavaScript, bạn sẽ thường xuyên phải thực hiện các công việc mất thời gian như: request lên server, lấy dữ liệu từ [database](/cai-dat-mongodb-tren-windows-moi-nhat/), đọc/ghi file,... Nếu bạn chỉ xử lý đồng bộ thôi thì chắc chắn sẽ rất mất thời gian. Để giải quyết vấn đề này, JavaScript cung cấp một số công cụ hỗ trợ bạn **xử lý bất đồng bộ** rất tốt như sử dụng **callback**, [**promise**](/tag/promise/) hay **async/await**.
 
 Trong bài viết này, mình sẽ cùng nhau tìm hiểu xem xử lý bất đồng bộ là gì? Tại sao phải xử lý bất đồng bộ? Và các cách để xử lý bất đồng bộ trong JavaScript. Mời bạn theo dõi bài viết!
 
@@ -23,23 +23,23 @@ Giả sử bạn có một nhiệm vụ bao gồm 2 công việc tốn thời gi
 
 ### Xử lý đồng bộ
 
-Đối với xử lý đồng bộ, bạn sẽ thực hiện công việc A; đợi A hoàn thành xong thì sẽ thực hiện B; rồi lại đợi B hoàn thành thì nhiệm vụ cuối cùng mới coi như xong.![Xử lý đồng bộ trong javascript](https://completejavascript.com/wp-content/uploads/2019/02/xu-ly-dong-bo-completejavascript.com_.png)
+Đối với xử lý đồng bộ, bạn sẽ thực hiện công việc A; đợi A hoàn thành xong thì sẽ thực hiện B; rồi lại đợi B hoàn thành thì nhiệm vụ cuối cùng mới coi như xong.![Xử lý đồng bộ trong javascript](/wp-content/uploads/2019/02/xu-ly-dong-bo-completejavascript.com_.png)
 
-Nghĩa là thời gian để hoàn thành nhiệm vụ là tổng của thời gian hoàn thành A và B. Hơn nữa, trong khoảng thời gian này bạn sẽ không thể thực hiện thêm 1 hành động nào khác (như bắt các [sự kiện](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/) với chuột và bàn phím của người dùng...). Điều này rõ ràng làm giảm hiệu năng và trải nghiệm người dùng đối với chương trình.
+Nghĩa là thời gian để hoàn thành nhiệm vụ là tổng của thời gian hoàn thành A và B. Hơn nữa, trong khoảng thời gian này bạn sẽ không thể thực hiện thêm 1 hành động nào khác (như bắt các [sự kiện](/xu-ly-mot-event-javascript-co-ban/) với chuột và bàn phím của người dùng...). Điều này rõ ràng làm giảm hiệu năng và trải nghiệm người dùng đối với chương trình.
 
 ### Xử lý đa luồng
 
 Để khắc phục tình trạng này, các ngôn ngữ lập trình như C/C++, Java,... sẽ sử dụng **cơ chế đa luồng (multi-thread)**. Nghĩa là mỗi công việc tốn thời gian sẽ được thực hiện trên một thread riêng biệt mà không can thiệp vào thread chính. Bạn vẫn có thể thực hiện các công việc tốn thời gian mà vẫn có thể bắt các sự kiện ở thread chính.
 
-![Xử lý đa luồng trong c/c++, java](https://completejavascript.com/wp-content/uploads/2019/02/xu-ly-da-luong-completejavascript.com_.png)
+![Xử lý đa luồng trong c/c++, java](/wp-content/uploads/2019/02/xu-ly-da-luong-completejavascript.com_.png)
 
 Với ví dụ trên, thời gian để hoàn thành nhiệm vụ sẽ chỉ bằng thời gian hoàn thành của A hoặc B. Cái nào thực hiện xong trước sẽ đợi cái còn lại hoàn thành thì nhiệm vụ sẽ kết thúc.
 
 ### Xử lý bất đồng bộ
 
-Tuy nhiên, JavaScript lại là một câu chuyện khác. Hai nền tảng quan trọng với JavaScript (trình duyệt và [Nodejs](https://completejavascript.com/huong-dan-tim-hieu-node-js-co-ban/)) đều là **single-thread**. Chính vì vậy, bạn không thể xử lý đa luồng với JavaScript được mà phải sử dụng cơ chế **xử lý bất đồng bộ**.
+Tuy nhiên, JavaScript lại là một câu chuyện khác. Hai nền tảng quan trọng với JavaScript (trình duyệt và [Nodejs](/huong-dan-tim-hieu-node-js-co-ban/)) đều là **single-thread**. Chính vì vậy, bạn không thể xử lý đa luồng với JavaScript được mà phải sử dụng cơ chế **xử lý bất đồng bộ**.
 
-![Xử lý bất đồng bộ trong javascript](https://completejavascript.com/wp-content/uploads/2019/02/xu-ly-bat-dong-bo-don-luong-completejavascript.com_.png)
+![Xử lý bất đồng bộ trong javascript](/wp-content/uploads/2019/02/xu-ly-bat-dong-bo-don-luong-completejavascript.com_.png)
 
 Với cách xử lý bất đồng bộ, khi A bắt đầu thực hiện, chương trình tiếp tục thực hiện B mà không đợi A kết thúc. Việc mà bạn cần làm ở đây là cung cấp một phương thức để chương trình thực hiện khi A hoặc B kết thúc.
 
@@ -47,11 +47,11 @@ Cơ chế giúp bạn thực hiện việc này trong JavaScript có thể là s
 
 ## Sử dụng Callback để xử lý bất đồng bộ
 
-**Sử dụng Callback** có thể nói là cách đầu tiên và dễ nhất giúp bạn xử lý bất đồng bộ. Khi định nghĩa một [function](https://completejavascript.com/tim-hieu-function-javascript/) thực hiện một nhiệm vụ tốn thời gian, bạn cần truyền thêm tham số vào hàm - đóng vai trò là **hàm callback**.
+**Sử dụng Callback** có thể nói là cách đầu tiên và dễ nhất giúp bạn xử lý bất đồng bộ. Khi định nghĩa một [function](/tim-hieu-function-javascript/) thực hiện một nhiệm vụ tốn thời gian, bạn cần truyền thêm tham số vào hàm - đóng vai trò là **hàm callback**.
 
 Khi hành động bắt đầu, rồi khi nó kết thúc, hàm callback sẽ được gọi ngay sau đó.
 
-Ví dụ dưới đây sẽ thực hiện một **GET** [request](https://completejavascript.com/xmlhttprequest-tao-http-request-den-server-trong-javascript/). Thông thường, việc này sẽ tốn thời gian (ít hay nhiều tuỳ thuộc vào tốc độ mạng):
+Ví dụ dưới đây sẽ thực hiện một **GET** [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/). Thông thường, việc này sẽ tốn thời gian (ít hay nhiều tuỳ thuộc vào tốc độ mạng):
 
     <code class="js language-js">function doAsync(url, onSuccess, onError) {
       const xhr = new XMLHttpRequest();
@@ -66,7 +66,7 @@ Ví dụ dưới đây sẽ thực hiện một **GET** [request](https://comple
     }, (error) => {
       // 'error' is corresponding with 'xhr.statusText'
     });
-    </code>
+```
 
 Ở đây, hàm **doAsync** là một hàm bất đồng bộ với 2 hàm callback là: **onSuccess** và **onError**. Khi request trên thành công thì hàm _onSuccess_ sẽ được gọi, ngược lại hàm _onError_ sẽ được gọi. Khá dễ hiểu và dễ triển khai phải không?
 
@@ -84,7 +84,7 @@ Tuy nhiên, thử tưởng tượng bạn phải thực hiện 2 request liên t
     }, (error) => {
       // 'error' is corresponding with 'xhr.statusText' (1)
     });
-    </code>
+```
 
 Bắt đầu phức tạp rồi nhỉ? Và nếu bạn phải thực hiện thêm vài request khác nữa thì kết quả chắc chắn sẽ còn kinh khủng hơn rất nhiều. Trường hợp này gọi là **Callback Hell**.
 
@@ -97,7 +97,7 @@ Cú pháp cơ bản của **Promise** là:
     <code class="js language-js">let promise = new Promise(function(resolve, reject) {
       // Code here
     });
-    </code>
+```
 
 Trong đó, hàm được truyền vào **new Promise** gọi là **executor**.
 
@@ -137,7 +137,7 @@ Khi sử dụng Promise, ví dụ phía trên sẽ trở thành:
     .catch(error => {
       // 'error' is corresponding with 'xhr.statusText'
     });
-    </code>
+```
 
 Và khi bạn muốn thực hiện 2 request liên tiếp:
 
@@ -162,9 +162,9 @@ Và khi bạn muốn thực hiện 2 request liên tiếp:
       * from either 'https://something.com' or 'https://other.com'
       */
     });
-    </code>
+```
 
-Rõ ràng, [cấu trúc chương trình](https://completejavascript.com/cau-truc-chuong-trinh-trong-javascript/) đã trở nên rõ ràng hơn. Không còn hiện tượng nhiều mức lồng nhau như khi sử dụng callback nữa rồi.
+Rõ ràng, [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript/) đã trở nên rõ ràng hơn. Không còn hiện tượng nhiều mức lồng nhau như khi sử dụng callback nữa rồi.
 
 ## Sử dụng Async/await để xử lý bất đồng bộ
 
@@ -198,7 +198,7 @@ Với ví dụ sử dụng Promise bên trên, mình có thể áp dụng async/
     }
 
     run();
-    </code>
+```
 
 Nếu xử lý theo cách này thì dù bạn có thực hiện thêm nhiều request nữa, cấu trúc chương trình vẫn rất rõ ràng và mạch lạc phải không?
 
@@ -226,8 +226,8 @@ Xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

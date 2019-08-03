@@ -1,8 +1,8 @@
 ---
 date: "2018-05-03T00:00:44Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: su-dung-es6-template-string-co-gi-hay
 title: "Sử dụng ES6 Template String có gì hay?"
 categories:
@@ -18,7 +18,7 @@ Có thể bạn thừa biết, phiên bản ES6 của JavaScript đã giới thi
 
 ## ES6 Template String là gì?
 
-ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong [string](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/). Trong đó, thay vì sử dụng cặp dấu ngoặc đơn ('') hay ngoặc kép (""), bạn sử dụng cặp dấu **backtick** hay **backqoute**, để biểu diễn string.
+ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong [string](/values-types-va-operators-trong-javascript-phan-2/). Trong đó, thay vì sử dụng cặp dấu ngoặc đơn ('') hay ngoặc kép (""), bạn sử dụng cặp dấu **backtick** hay **backqoute**, để biểu diễn string.
 
 Xin lỗi vì mình chưa tìm ra cách để hiển thị cặp dấu này ở wordpress, nên dùng tạm cái này:
 
@@ -28,12 +28,13 @@ Khi đó, biểu thức bên trong template string sẽ được biểu diễn v
 
 Ví dụ:
 
-    <code>let name = 'Lam Pham';
+```
+let name = 'Lam Pham';
     let greeting = `I'm ${name}`;
 
     console.log(greeting);
-    // => I'm Lam Pham</code>
-
+    // => I'm Lam Pham
+```
 Ở ví dụ này, _name_ biểu diễn string thông thường; _greeting_ biểu diễn template string.
 
 Đến đây có lẽ bạn đã mường tượng ra cách sử dụng của Template String rồi và đang tự hỏi: _vậy thì nó có ưu điểm gì hơn so với việc sử dụng string thông thường không?_
@@ -46,34 +47,37 @@ Thông thường để ghép nối string trong JavaScript bạn có thể sử 
 
 **Ví dụ sử dụng phương thức concat:**
 
-    <code>let intro = "Hello everyone, I'm";
+```
+let intro = "Hello everyone, I'm";
     let firstName = 'Lam';
     let lastName = 'Pham';
 
     let full1 = intro.concat(' ', firstName, ' ', lastName, '.');
     console.log(full1);
-    // => Hello everyone, I'm Lam Pham.</code>
-
+    // => Hello everyone, I'm Lam Pham.
+```
 **Ví dụ sử dụng toán tử +:**
 
-    <code>let intro = "Hello everyone, I'm";
+```
+let intro = "Hello everyone, I'm";
     let firstName = 'Lam';
     let lastName = 'Pham';
 
     let full2 = intro + ' ' + firstName + ' ' + lastName + '.';
     console.log(full2);
-    // => Hello everyone, I'm Lam Pham.</code>
-
+    // => Hello everyone, I'm Lam Pham.
+```
 Cả hai cách trên đều ra được kết quả như mong muốn. Tuy nhiên, cách viết lại không trực quan và đôi khi còn khó theo dõi. Trong khi đó, nếu sử dụng ES6 Template String thì bạn sẽ thấy cách viết **gọn gàng**, **dễ nhìn** và **đẹp hơn** **nhiều**.
 
-    <code>let intro = "Hello everyone, I'm";
+```
+let intro = "Hello everyone, I'm";
     let firstName = 'Lam';
     let lastName = 'Pham';
 
     let full3 = `${intro} ${firstName} ${lastName}.`;
     console.log(full3);
-    // => Hello everyone, I'm Lam Pham.</code>
-
+    // => Hello everyone, I'm Lam Pham.
+```
 _Nếu bạn đồng ý với nhận xét của mình thì có thể để lại bình luận ở phía dưới nhé, mình sẽ rất vui **lòng** !!!_
 
 ### Sử dụng đồng thời ngoặc đơn và ngoặc kép
@@ -82,37 +86,42 @@ _Nếu bạn đồng ý với nhận xét của mình thì có thể để lại
 
 Sử dụng kí tự backslash (\):
 
-    <code>let str = "I'm a \"JavaScript Lover\".";
+```
+let str = "I'm a \"JavaScript Lover\".";
     console.log(str);
-    // => I'm a "JavaScript Lover".</code>
-
+    // => I'm a "JavaScript Lover".
+```
 Nếu muốn hiển thị ngoặc đơn thì bạn có thể sử dụng ngoặc kép để biểu diễn string:
 
-    <code>let str = "I'm Lam Pham.";
+```
+let str = "I'm Lam Pham.";
     console.log(str);
-    // => I'm Lam Pham.</code>
-
+    // => I'm Lam Pham.
+```
 Nếu muốn hiển thị ngoặc kép thì bạn có thể sử dụng ngoặc đơn để biểu diễn string:
 
-    <code>let str = 'Call me "JavaScript Lover"';
+```
+let str = 'Call me "JavaScript Lover"';
     console.log(str);
-    // => Call me "JavaScript Lover"</code>
-
+    // => Call me "JavaScript Lover"
+```
 **Rõ ràng**, nếu so sánh với những ngôn ngữ khác thì việc JavaScript hỗ trợ sử dụng ngoặc đơn hoặc ngoặc kép để biểu diễn string đã tiện lợi hơn rất nhiều rồi.
 
 **Hơn nữa**, khi sử dụng ES6 Template String, bạn thậm chí chẳng cần phải quan tâm đến vấn đề này nữa, vì bạn đã có cặp dấu **backtick** rồi.
 
-    <code>let str = `I'm a "JavaScript Lover".`;
+```
+let str = `I'm a "JavaScript Lover".`;
     console.log(str);
-    // => I'm a "JavaScript Lover".</code>
-
+    // => I'm a "JavaScript Lover".
+```
 Bạn thấy đấy, bạn vừa có thể hiển thị dấu ngoặc đơn và dấu ngoặc kép mà không cần sử dụng đến kí tự \.
 
 ### Viết string trên nhiều dòng
 
 Với cách thông thường, để viết string trên nhiều dòng, bạn có thể sử dụng kí tự (\n) - **newline**.
 
-    <code>let str = 'Hello everyone!\n' +
+```
+let str = 'Hello everyone!\n' +
               'This is line 1 of multiline string example.\n' +
               'This is line 2 of multiline string example.';
 
@@ -121,11 +130,13 @@ Với cách thông thường, để viết string trên nhiều dòng, bạn có
     Hello everyone!
     This is line 1 of multiline string example.
     This is line 2 of multiline string example.
-    */</code>
+    */
+```
 
 Khi sử dụng ES6 Template String thì không cần dùng kí tự đó nữa:
 
-    <code>let str = `Hello everyone!
+```
+let str = `Hello everyone!
     This is line 1 of multiline string example.
     This is line 2 of multiline string example.`;
 
@@ -134,13 +145,15 @@ Khi sử dụng ES6 Template String thì không cần dùng kí tự đó nữa:
     Hello everyone!
     This is line 1 of multiline string example.
     This is line 2 of multiline string example.
-    */</code>
+    */
+```
 
 ### Viết biểu thức toán học hoặc hàm số ngay trong string
 
 Cách thông thường:
 
-    <code>let x = 1;
+```
+let x = 1;
     let y = 2;
     let sum = (x, y) => x + y;
 
@@ -148,11 +161,12 @@ Cách thông thường:
     // => Sum of x and y is: 3
 
     console.log('Sum of x and y is: ' + sum(x, y));
-    // => Sum of x and y is: 3</code>
-
+    // => Sum of x and y is: 3
+```
 Khi sử dụng ES6 Template String:
 
-    <code>let x = 1;
+```
+let x = 1;
     let y = 2;
     let sum = (x, y) => x + y;
 
@@ -160,17 +174,17 @@ Khi sử dụng ES6 Template String:
     // => Sum of x and y is: 3
 
     console.log(`Sum of x and y is: ${sum(x, y)}`);
-    // => Sum of x and y is: 3</code>
-
+    // => Sum of x and y is: 3
+```
 Trên đây là một số những tính năng mà mình thấy rất hữu ích của ES6 Template String. Ngoài ra, Template String còn hỗ trợ [Tagged Template Literals](https://wesbos.com/tagged-template-literals/). Bạn có thể đọc tham khảo và chia sẻ lại với mọi người - vì thực lòng là mình chưa sử dụng tính năng này bao giờ, nên không dám chém bừa.
 
 _**Vậy, với những ưu điểm như thế thì Template String có thể áp dụng được vào đâu nhỉ?**_
 
 Nghe tên có **Template** là mình nghĩ ngay đến việc sử dụng thằng này vào xây dựng HTML template. Vì mấy bài viết gần đây mình cũng có đề cập đến chủ đề này:
 
-- [HTML String sang DOM Node với DOMParser](https://completejavascript.com/html-string-sang-dom-node-voi-domparser/)
-- [HTML Template sang DOM Node](https://completejavascript.com/chuyen-html-template-sang-dom-node/)
-- [Mustache Template với jQuery](https://completejavascript.com/mustache-template-voi-jquery/)
+- [HTML String sang DOM Node với DOMParser](/html-string-sang-dom-node-voi-domparser/)
+- [HTML Template sang DOM Node](/chuyen-html-template-sang-dom-node/)
+- [Mustache Template với jQuery](/mustache-template-voi-jquery/)
 
 **_Liệu mình có thể xây dựng một thư viện tương đương như [Mustache.js](https://github.com/janl/mustache.js/) hay [Handlebars.js](https://handlebarsjs.com/)?_**
 
@@ -191,26 +205,29 @@ Nhưng dù sao thì cứ thử làm xem nó ra cái gì nào.
 
 Trước khi bắt đầu, mình nghĩ nên đưa ra một bài toán ví dụ để áp dụng cái này. Và như đã nói ở trên, mình có viết 3 bài về chủ đề này rồi, do đó, tốt nhất là lấy lại một ví dụ trong đấy.
 
-Mình quyết định sử dụng ví dụ trong bài viết **[HTML Template sang DOM Node](https://completejavascript.com/chuyen-html-template-sang-dom-node/):**
+Mình quyết định sử dụng ví dụ trong bài viết **[HTML Template sang DOM Node](/chuyen-html-template-sang-dom-node/):**
 
 [codepen_embed height="523" theme_id="0" slug_hash="MVyXyp" default_tab="js,result" user="completejavascript"]See the Pen <a href='https://codepen.io/completejavascript/pen/MVyXyp/'>HTML Template to DOM nodes Example</a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
 
-Bạn có thể đọc lại bài viết đó để hiểu rõ hơn. Nhưng túm gọn lại, bài toán này nhằm xây dựng template để hiển thị mục bình luận với dữ liệu được cung cấp dưới dạng [mảng](https://completejavascript.com/javascript-array-co-ban/).
+Bạn có thể đọc lại bài viết đó để hiểu rõ hơn. Nhưng túm gọn lại, bài toán này nhằm xây dựng template để hiển thị mục bình luận với dữ liệu được cung cấp dưới dạng [mảng](/javascript-array-co-ban/).
 
 Trong bài đó, mình sử dụng thẻ [template](https://developer.mozilla.org/en/docs/Web/HTML/Element/template) của HTML để khai báo html template:
 
-    <code><template id="my-temp">
+```
+<template id="my-temp">
       <div>
         <span class="name">a name</span>
       </div>
       <div>
         <span class="comment">a comment</span>
       </div>
-    </template></code>
+    </template>
+```
 
 Kết quả của phương pháp này là ta được [DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment), sau đó áp dụng [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) để thu được giá trị như mong muốn.
 
-    <code>let data = [
+```
+let data = [
      {name: "John", comment: "That is great"},
      {name: "Alex", comment: "It's helpful"},
      {name: "David", comment: "Thanks a lot"}
@@ -223,7 +240,8 @@ Kết quả của phương pháp này là ta được [DocumentFragment](https:/
         tmpl.querySelector('.comment').innerText = item.comment;
         container.appendChild(tmpl);
       });
-    });</code>
+    });
+```
 
 Tóm tắt lại như vậy thôi, sau đây mình sẽ sử dụng ES6 Template String vào bài toán này.
 
@@ -233,7 +251,8 @@ Tóm tắt lại như vậy thôi, sau đây mình sẽ sử dụng ES6 Template
 
 Trong ví dụ trên, mình cần thay thế a name và a comment thành giá trị thực tế định nghĩa trong mảng **data**. Vì vậy, mình sẽ đưa 2 thành phần này vào Template String. Khi đó, html template sẽ có dạng như sau:
 
-    <code>let itemTemplate = (data) => {
+```
+let itemTemplate = (data) => {
       return `
         <div>
           <span class="name">${data.name}</span>
@@ -242,7 +261,8 @@ Trong ví dụ trên, mình cần thay thế a name và a comment thành giá tr
           <span class="comment">${data.comment}</span>
         </div>
       `;
-    }</code>
+    }
+```
 
 Bạn có thể thấy là cách định nghĩa này rất giống với Mustache, chỉ khác ở chỗ là:
 
@@ -253,25 +273,31 @@ Bạn có thể thấy là cách định nghĩa này rất giống với Mustach
 
 #### Render template thành html
 
-Dưới đây là đoạn code [xử lý sự kiện](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/) khi người dùng click vào button **Add**:
+Dưới đây là đoạn code [xử lý sự kiện](/xu-ly-mot-event-javascript-co-ban/) khi người dùng click vào button **Add**:
 
-    <code>btnAdd.addEventListener("click", () => {
+```
+btnAdd.addEventListener("click", () => {
       data.forEach(item => {
         let tmpl = itemTemplate(item);
         let frag = document.createRange().createContextualFragment(tmpl);
         container.appendChild(frag);
       });
-    });</code>
+    });
+```
 
-Với mảng **data**, mình sử dụng [forEach](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/) để duyệt từng phần tử một - **item** và gọi [hàm](https://completejavascript.com/tim-hieu-function-javascript/):
+Với mảng **data**, mình sử dụng [forEach](/javascript-foreach-la-cai-quai-gi/) để duyệt từng phần tử một - **item** và gọi [hàm](/tim-hieu-function-javascript/):
 
-    <code>let tmpl = itemTemplate(item);</code>
+```
+let tmpl = itemTemplate(item);
+```
 
-Kết quả của câu lệnh trên là một html string. Tiếp theo, mình cần tạo ra [DOM](https://completejavascript.com/co-ban-ve-dom-javascript/) để chèn vào html.
+Kết quả của câu lệnh trên là một html string. Tiếp theo, mình cần tạo ra [DOM](/co-ban-ve-dom-javascript/) để chèn vào html.
 
 Cách đơn giản nhất là sử dụng DocumentFragment bằng cách:
 
-    <code>let frag = document.createRange().createContextualFragment(tmpl);</code>
+```
+let frag = document.createRange().createContextualFragment(tmpl);
+```
 
 _Tham khảo thêm:_
 
@@ -293,7 +319,8 @@ Trong ví dụ trên, mình định nghĩa HTML template là một item. Sau đ�
 
 Khi đó, mình định nghĩa template như sau:
 
-    <code>let itemTemplate = (item) => {
+```
+let itemTemplate = (item) => {
       return `
         <div>
           <span class="name">${item.name}</span>
@@ -306,7 +333,8 @@ Khi đó, mình định nghĩa template như sau:
 
     let htmlTemplate = (data) => {
       return `${data.map(item => itemTemplate(item)).join('')}`;
-    }</code>
+    }
+```
 
 Bạn chú ý:
 
@@ -333,7 +361,7 @@ Ngoài ra, nếu bạn biết ES6 Template String có thể ứng dụng vào đ
 
 Và nếu bạn có thắc mắc hay góp ý gì với bài viết của mình thì cũng vui lòng để lại dưới phần bình luận. Mình mong muốn nhận được góp ý của bạn để có thể viết được những bài viết chất lượng hơn sau này.
 
-Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](https://completejavascript.com/6-cach-loai-bo-phan-tu-lap-trong-mang/), thân ái!
+Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/6-cach-loai-bo-phan-tu-lap-trong-mang/), thân ái!
 
 **Tham khảo:**
 
@@ -343,8 +371,8 @@ Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](http
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

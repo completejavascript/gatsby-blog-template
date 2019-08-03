@@ -1,8 +1,8 @@
 ---
 date: "2018-03-07T13:59:55Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting
 title: "Lập trình JavaScript với FCC - Intermediate Algorithm Scripting"
 categories:
@@ -11,23 +11,23 @@ tags:
   - Lập trình JavaScript với FCC
 ---
 
-Bài viết trước tôi đã chia sẻ với các bạn các bài toán thuộc chủ đề [Basic Algorithm Scripting](https://completejavascript.com/lap-trinh-javascript-voi-fcc-basic-algorithm-scripting/). Nếu các bạn đã đọc qua thì có thể thấy rằng, đó đều là những bài toán khá dễ. Ngược lại, các bài toán hôm nay sẽ khó hơn một chút. Vì chúng thuộc chủ đề **Intermediate Algorithm Scripting**.
+Bài viết trước tôi đã chia sẻ với các bạn các bài toán thuộc chủ đề [Basic Algorithm Scripting](/lap-trinh-javascript-voi-fcc-basic-algorithm-scripting/). Nếu các bạn đã đọc qua thì có thể thấy rằng, đó đều là những bài toán khá dễ. Ngược lại, các bài toán hôm nay sẽ khó hơn một chút. Vì chúng thuộc chủ đề **Intermediate Algorithm Scripting**.
 
 Cũng như bài viết trước, tôi xin chia sẻ với các bạn các link bài viết hữu ích nên đọc trước khi đi vào lời giải các bài toán:
 
-- [Values, types và operators trong JavaScript – Phần 1](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/)
+- [Values, types và operators trong JavaScript – Phần 1](/values-types-va-operators-trong-javascript-phan-1/)
 
-- [Values, types và operators trong JavaScript – Phần 2](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/)
+- [Values, types và operators trong JavaScript – Phần 2](/values-types-va-operators-trong-javascript-phan-2/)
 
-- [JavaScript Array cơ bản,](https://completejavascript.com/javascript-array-co-ban/)
+- [JavaScript Array cơ bản,](/javascript-array-co-ban/)
 
-- [JavaScript forEach là cái quái gì?](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/)
+- [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
 
-- [Array Sorting – vấn đề muôn thuở](https://completejavascript.com/array-sorting-van-de-muon-thuo/)
+- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
 
-- [JavaScript Object – last but not least](https://completejavascript.com/javascript-object-last-but-not-least/)
+- [JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
 
-- [Tìm hiểu Regular Expression JavaScript](https://completejavascript.com/tim-hieu-regular-expression-javascript/)
+- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
 ## **Intermediate Algorithm Scripting - Sum All Numbers in a Range**
 
@@ -35,7 +35,8 @@ Tính tổng các số trong một khoảng cho trước.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/sum-all-numbers-in-a-range).
 
-    <code>function sumAll(arr) {
+```
+function sumAll(arr) {
       var min = Math.min(arr[0], arr[1]);
       var max = Math.max(arr[0], arr[1]);
       var ans = 0;
@@ -45,7 +46,8 @@ Tính tổng các số trong một khoảng cho trước.
       return ans;
     }
 
-    sumAll([1, 4]);</code>
+    sumAll([1, 4]);
+```
 
 Tham khảo:
 
@@ -59,7 +61,8 @@ Kiểm tra hai mảng cho trước và trả về mảng mới chứa những ph
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/diff-two-arrays).
 
-    <code>function diffArray(arr1, arr2) {
+```
+function diffArray(arr1, arr2) {
       function isExist(item, arr) {
         for(var i = 0; i < arr.length; i++) {
           if(arr[i] === item) return true;
@@ -77,7 +80,8 @@ Kiểm tra hai mảng cho trước và trả về mảng mới chứa những ph
       return newArr;
     }
 
-    diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);</code>
+    diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+```
 
 Tham khảo:
 
@@ -89,7 +93,8 @@ Convert số cho trước sang số La Mã.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/roman-numeral-converter).
 
-    <code>function convertToRoman(num) {
+```
+function convertToRoman(num) {
       var table = {
         "1000" : "M",
         "900" : "CM",
@@ -120,7 +125,8 @@ Convert số cho trước sang số La Mã.
       return ans;
     }
 
-    convertToRoman(36);</code>
+    convertToRoman(36);
+```
 
 Tham khảo:
 
@@ -132,11 +138,12 @@ Tham khảo:
 
 ## **Intermediate Algorithm Scripting - Wherefore art thou**
 
-Duyệt mảng của các [object](https://completejavascript.com/javascript-object-last-but-not-least/) và trả về một mảng bao gồm các object chứa thuộc tính trùng khớp với thành phần cho trước.
+Duyệt mảng của các [object](/javascript-object-last-but-not-least/) và trả về một mảng bao gồm các object chứa thuộc tính trùng khớp với thành phần cho trước.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/wherefore-art-thou).
 
-    <code>function whatIsInAName(collection, source) {
+```
+function whatIsInAName(collection, source) {
       var arr = [];
       collection.forEach(function(item) {
         for(var key in source) {
@@ -148,7 +155,8 @@ Duyệt mảng của các [object](https://completejavascript.com/javascript-obj
     }
 
     whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null },
-    { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });</code>
+    { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+```
 
 Tham khảo:
 
@@ -164,7 +172,8 @@ Thực hiện tìm và thay thế trên một string sử dụng tham số cho t
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/search-and-replace).
 
-    <code>function myReplace(str, before, after) {
+```
+function myReplace(str, before, after) {
       var beforeFirst = before.charAt(0);
       var afterChars = after.split("");
 
@@ -185,7 +194,8 @@ Thực hiện tìm và thay thế trên một string sử dụng tham số cho t
       return answer.join(" ");
     }
 
-    myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");</code>
+    myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+```
 
 Tham khảo:
 
@@ -207,7 +217,8 @@ Dịch string cho trước sang ngôn ngữ **Latin Lợn**.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/pig-latin).
 
-    <code>function translatePigLatin(str) {
+```
+function translatePigLatin(str) {
       var firstVowel = str.search(/[ueoai]/);
       if(firstVowel > 0) {
         var firstConsonant = str.substr(0, firstVowel);
@@ -217,11 +228,12 @@ Dịch string cho trước sang ngôn ngữ **Latin Lợn**.
       return str + "way";
     }
 
-    translatePigLatin("consonant");</code>
+    translatePigLatin("consonant");
+```
 
 Tham khảo:
 
-- [Tìm hiểu Regular Expression JavaScript](https://completejavascript.com/tim-hieu-regular-expression-javascript/)
+- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
 - [String.prototype.substr()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
 
@@ -231,7 +243,8 @@ Các DNA đang thiếu các thành phần tương ứng. Hãy tìm các kí tự
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/dna-pairing).
 
-    <code>function pairElement(str) {
+```
+function pairElement(str) {
       var ans = [];
       str.split("").forEach(function(val) {
         var tmp = [val];
@@ -254,7 +267,8 @@ Các DNA đang thiếu các thành phần tương ứng. Hãy tìm các kí tự
       return ans;
     }
 
-    pairElement("GCG");</code>
+    pairElement("GCG");
+```
 
 Tham khảo:
 
@@ -268,7 +282,8 @@ Tìm kí tự thiếu ở một chuỗi các kí tự cho trước. Nếu tất 
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/missing-letters).
 
-    <code>function fearNotLetter(str) {
+```
+function fearNotLetter(str) {
       for(var i = 1; i < str.length; i++) {
         var currCode = str.charCodeAt(i);
         var beforeCode = str.charCodeAt(i - 1);
@@ -277,7 +292,8 @@ Tìm kí tự thiếu ở một chuỗi các kí tự cho trước. Nếu tất 
       }
     }
 
-    fearNotLetter("abce");</code>
+    fearNotLetter("abce");
+```
 
 Tham khảo:
 
@@ -291,11 +307,13 @@ Kiểm tra xem nếu một giá trị cho trước là kiểu boolean, rồi tr�
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/boo-who).
 
-    <code>function booWho(bool) {
+```
+function booWho(bool) {
       return typeof bool == 'boolean';
     }
 
-    booWho(null);</code>
+    booWho(null);
+```
 
 Tham khảo:
 
@@ -303,11 +321,12 @@ Tham khảo:
 
 ## **Intermediate Algorithm Scripting - Sorted Union**
 
-Viết một [function](https://completejavascript.com/tim-hieu-function-javascript/) nhận đầu vào là 2 hay nhiều array. Trả về một array mới bao gồm các phần tử duy nhất, theo đúng thứ tự ban đầu.
+Viết một [function](/tim-hieu-function-javascript/) nhận đầu vào là 2 hay nhiều array. Trả về một array mới bao gồm các phần tử duy nhất, theo đúng thứ tự ban đầu.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/sorted-union).
 
-    <code>function uniteUnique(arr) {
+```
+function uniteUnique(arr) {
       var table = {};
       var ans = [];
       for(var i = 0; i < arguments.length; i++) {
@@ -322,7 +341,8 @@ Viết một [function](https://completejavascript.com/tim-hieu-function-javascr
       return ans;
     }
 
-    uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);</code>
+    uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+```
 
 Tham khảo:
 
@@ -336,7 +356,8 @@ Chuyển các kí tự &, <, >, " và ' ở một string cho trước sang d�
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/convert-html-entities).
 
-    <code>function convertHTML(str) {
+```
+function convertHTML(str) {
       var table = {
         "&" : "&amp;",
         "<" : "&lt;",
@@ -350,11 +371,12 @@ Chuyển các kí tự &, <, >, " và ' ở một string cho trước sang d�
       return str;
     }
 
-    convertHTML("Hamburgers < Pizza < Tacos");</code>
+    convertHTML("Hamburgers < Pizza < Tacos");
+```
 
 Tham khảo:
 
-- [Tìm hiểu Regular Expression JavaScript](https://completejavascript.com/tim-hieu-regular-expression-javascript/)
+- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
 - [String.prototype.replace() ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
@@ -364,7 +386,8 @@ Convert một string sang dạng **spinal case **- bao gồm các chữ cái th
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/spinal-tap-case).
 
-    <code>function spinalCase(str) {
+```
+function spinalCase(str) {
       var words = str.split(/[\s_-]/);
       words = words.map(function(word) {
         return word.replace(/[A-Z]/g, function(match, offset) {
@@ -375,7 +398,8 @@ Convert một string sang dạng **spinal case **- bao gồm các chữ cái th
       return words.join("-");
     }
 
-    spinalCase('This Is Spinal Tap');</code>
+    spinalCase('This Is Spinal Tap');
+```
 
 Tham khảo:
 
@@ -395,7 +419,8 @@ Cho trước một số nguyên dương, tính tổng các số Fibonacci lẻ n
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/sum-all-odd-fibonacci-numbers).
 
-    <code>function sumFibs(num) {
+```
+function sumFibs(num) {
       if (num == 0 || num == 1) return 0;
       if (num == 2) return 2;
 
@@ -413,7 +438,8 @@ Cho trước một số nguyên dương, tính tổng các số Fibonacci lẻ n
       return ans;
     }
 
-    sumFibs(75025);</code>
+    sumFibs(75025);
+```
 
 ## **Intermediate Algorithm Scripting - Sum All Primes**
 
@@ -421,7 +447,8 @@ Tính tổng các số nguyên tố nhỏ hơn hoặc bằng số cho trước.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/sum-all-primes).
 
-    <code>function sumPrimes(num) {
+```
+function sumPrimes(num) {
       function isPrime(val) {
         if (val == 0 || val == 1) return false;
         if (val == 2) return true;
@@ -438,7 +465,8 @@ Tính tổng các số nguyên tố nhỏ hơn hoặc bằng số cho trước.
       return sum;
     }
 
-    sumPrimes(10);</code>
+    sumPrimes(10);
+```
 
 ## **Intermediate Algorithm Scripting - Smallest Common Multiple**
 
@@ -446,7 +474,8 @@ Tìm bội số chung nhỏ nhất của các số trong một khoảng cho trư
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/smallest-common-multiple).
 
-    <code>function smallestCommons(arr) {
+```
+function smallestCommons(arr) {
       function isDivisibleBy(num, from, to) {
         for(var i = from; i <= to; i++) {
           if(num % i) return false;
@@ -464,7 +493,8 @@ Tìm bội số chung nhỏ nhất của các số trong một khoảng cho trư
       return mul;
     }
 
-    smallestCommons([1,5]);</code>
+    smallestCommons([1,5]);
+```
 
 Tham khảo:
 
@@ -478,14 +508,16 @@ Duyệt một mảng các số và tìm ra số đầu tiên thỏa mãn test.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/finders-keepers).
 
-    <code>function findElement(arr, func) {
+```
+function findElement(arr, func) {
       for(var i = 0; i < arr.length; i++) {
         var val = arr[i];
         if(func(val)) return val;
       }
     }
 
-    findElement([1, 3, 5, 8, 9, 10], function(num){ return num % 2 === 0; })</code>
+    findElement([1, 3, 5, 8, 9, 10], function(num){ return num % 2 === 0; })
+```
 
 ## **Intermediate Algorithm Scripting - Drop it**
 
@@ -493,7 +525,8 @@ Bỏ đi các số của một mảng, từ trái sang phải, cho đến khi th
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/drop-it).
 
-    <code>function dropElements(arr, func) {
+```
+function dropElements(arr, func) {
       while(arr.length > 0) {
         if(func(arr[0]) == false) arr.shift();
         else break;
@@ -501,7 +534,8 @@ Bỏ đi các số của một mảng, từ trái sang phải, cho đến khi th
       return arr;
     }
 
-    dropElements([1, 2, 3], function(n) {return n < 3; });</code>
+    dropElements([1, 2, 3], function(n) {return n < 3; });
+```
 
 Tham khảo:
 
@@ -513,7 +547,8 @@ San phẳng (chuyển về mảng một chiều) một mảng nhiều chiều ch
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/steamroller).
 
-    <code>function steamrollArray(arr) {
+```
+function steamrollArray(arr) {
       var ans = [];
       for(var i = 0; i < arr.length; i++) {
         var item = arr[i];
@@ -526,7 +561,8 @@ San phẳng (chuyển về mảng một chiều) một mảng nhiều chiều ch
       return ans;
     }
 
-    steamrollArray([1]);</code>
+    steamrollArray([1]);
+```
 
 Tham khảo:
 
@@ -540,7 +576,8 @@ Trả về một string bao gồm các kí tự tiếng anh từ chuỗi nhị p
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/binary-agents).
 
-    <code>function binaryAgent(str) {
+```
+function binaryAgent(str) {
       function bin2Dec(bin) {
         var binArr = bin.split("");
         return binArr.reduce(function(acc, cur, index){
@@ -557,7 +594,8 @@ Trả về một string bao gồm các kí tự tiếng anh từ chuỗi nhị p
     binaryAgent("01000001 01110010 01100101 01101110 00100111
     01110100 00100000 01100010 01101111 01101110 01100110
     01101001 01110010 01100101 01110011 00100000 01100110
-    01110101 01101110 00100001 00111111");</code>
+    01110101 01101110 00100001 00111111");
+```
 
 Tham khảo:
 
@@ -575,7 +613,8 @@ Kiểm tra xem tham số thứ 2 đưa vào hàm có tồn tại trong tất c�
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/everything-be-true).
 
-    <code>function truthCheck(collection, pre) {
+```
+function truthCheck(collection, pre) {
       for(var i = 0; i < collection.length; i++) {
         if(!collection[i].hasOwnProperty(pre) || !collection[i][pre]) return false;
       }
@@ -583,7 +622,8 @@ Kiểm tra xem tham số thứ 2 đưa vào hàm có tồn tại trong tất c�
     }
 
     truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"},
-    {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");</code>
+    {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
+```
 
 Tham khảo:
 
@@ -595,7 +635,8 @@ Viết một hàm số tính tổng 2 tham số. Nếu chỉ có một tham số
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/arguments-optional).
 
-    <code>function addTogether() {
+```
+function addTogether() {
       function isNumber(val) {
         if(typeof val === 'number') return true;
         return false;
@@ -612,11 +653,12 @@ Viết một hàm số tính tổng 2 tham số. Nếu chỉ có một tham số
       }
     }
 
-    addTogether(2, "3");</code>
+    addTogether(2, "3");
+```
 
 Tham khảo:
 
-- [Tìm hiểu JavaScript Closures](https://completejavascript.com/tim-hieu-javascript-closures/)
+- [Tìm hiểu JavaScript Closures](/tim-hieu-javascript-closures/)
 
 - [Arguments object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 
@@ -628,8 +670,8 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

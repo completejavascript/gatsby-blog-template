@@ -1,8 +1,8 @@
 ---
 date: "2019-01-18T02:00:26Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: ket-thuc-som-promise-chaining-trong-javascript
 title: "Kết thúc sớm Promise chaining trong JavaScript"
 categories:
@@ -17,7 +17,8 @@ Có thể bạn đã quen với việc sử dụng [Promise](https://developer.m
 
 Thử xét một bài toán thực tế khi mà việc kết thúc sớm Promise chaining là cần thiết. Đó là khi triển khai API để đăng ký User qua Email. Mình có thể tóm tắt lại các bước thực hiện như sau:
 
-    <code>Tìm kiếm User qua email
+```
+Tìm kiếm User qua email
     .then(
       Nếu email đã tồn tại thì sẽ kết thúc sớm Promise chaining.
       Ngược lại sẽ thực hiện bước tiếp theo.
@@ -31,7 +32,7 @@ Thử xét một bài toán thực tế khi mà việc kết thúc sớm Promise
     .catch(
       Xử lý khi có bất kỳ lỗi gì xảy ra.
     )
-    </code>
+```
 
 Bạn thấy đó, ngay tại bước _then_ đầu tiên, nếu email đã tồn tại thì mình sẽ kết thúc sớm Promise chaining. Có thể bạn sẽ triển khai API để đăng ký User qua Email theo cách khác của mình. Tuy nhiên, đây chỉ là một ví dụ dùng để minh hoạ mà thôi.
 
@@ -45,7 +46,8 @@ Dưới đây, mình sẽ xem xét một bài phi thực tế để biết cách
 
 Giả sử mình có đoạn code dưới đây:
 
-    <code>const increase = x => {
+```
+const increase = x => {
       console.log(x);
       return x + 1;
     }
@@ -59,22 +61,24 @@ Giả sử mình có đoạn code dưới đây:
         .then(res => increase(res))
         .catch(err => console.log('Catched: ' + err));
     }
-    </code>
+```
 
 Trong đó:
 
-- [Hàm](https://completejavascript.com/tim-hieu-function-javascript/) _increase_ sẽ trả về giá trị của đầu vào + 1.
+- [Hàm](/tim-hieu-function-javascript/) _increase_ sẽ trả về giá trị của đầu vào + 1.
 
 - Hàm _run_ sẽ thực hiện một Promise chaining, với mỗi mắt xích sẽ gọi hàm _increase_.
 
 Với hàm _run_ như trên thì với mọi giá trị của x, 3 cái _then_ trên luôn được thực hiện. Ví dụ với x = 4 thì kết quả thu được là:
 
-    <code>run(4);
+```
+run(4);
     /*
     * 4
     * 5
     * 6
-    */</code>
+    */
+```
 
 Nếu mình muốn kết thúc sớm Promise chaining ngay tại _then_ đầu tiên khi giá trị của _res_ lớn hơn 3 thì sao?
 
@@ -84,7 +88,8 @@ Có 2 cách để giải quyết bài toán này, đó là: **không thực hi�
 
 Bình thường, khi thực hiện _return_, giá trị _return_ sẽ được đưa đến mắt xích tiếp theo của chuỗi Promise để xử lý. Và nếu bạn không _return_ thì giá trị đó sẽ được hiểu là **undefined**. Dựa vào đặc điểm này, mình sẽ thay đổi đoạn code trên như sau:
 
-    <code>const increase = x => {
+```
+const increase = x => {
       console.log(x);
       return x + 1;
     }
@@ -114,7 +119,7 @@ Bình thường, khi thực hiện _return_, giá trị _return_ sẽ được �
 
     run(4);
     // Nothing
-    </code>
+```
 
 Với **x = 3**: giá trị của _res_ tại _then_ đầu tiên là 3, thoả mãn `res <= 3` nên đoạn code đó trả về `increase(res)`. Dẫn đến, giá trị của _res_ tại các _then_ tiếp theo lần lượt là 4, 5.
 
@@ -126,7 +131,8 @@ Tuy nhiên, nếu để ý kĩ thì bạn sẽ thấy cách này chỉ giải qu
 
 Đúng vậy, việc sử dụng _Promise.reject()_ sẽ giúp bạn kết thúc sớm Promise chaining bằng cách nhảy thẳng đến phần _catch_. Khi đó, đoạn code trên sẽ trở thành:
 
-    <code>const increase = x => {
+```
+const increase = x => {
       console.log(x);
       return x + 1;
     }
@@ -152,7 +158,7 @@ Tuy nhiên, nếu để ý kĩ thì bạn sẽ thấy cách này chỉ giải qu
     */
     run(4);
     // Catched: 4
-    </code>
+```
 
 Trong trường hợp này, mình chỉ cần thêm phần xử lý tại _then_ đầu tiên.
 
@@ -170,8 +176,8 @@ Xin chào và hẹn gặp lại!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -1,8 +1,8 @@
 ---
 date: "2018-12-12T22:30:23Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: quan-ly-state-react-voi-react-context-api
 title: "Quản lý state trong React với React Context API"
 categories:
@@ -35,7 +35,7 @@ Kể cả trong trường hợp component B không cần sử dụng đến các
 
 Ngược lại, khi cần cập nhật state từ C lên A, mình cũng cần phải cập nhật từ C lên B, rồi mới cập nhật từ B lên A được.
 
-![](https://completejavascript.com/wp-content/uploads/2018/12/react-context-api-quan-ly-state-theo-cach-thong-thuong-completejavascript.com_.png)Theo cách thông thường A và C muốn giao tiếp thì phải thông qua B
+![](/wp-content/uploads/2018/12/react-context-api-quan-ly-state-theo-cach-thong-thuong-completejavascript.com_.png)Theo cách thông thường A và C muốn giao tiếp thì phải thông qua B
 
 Thử tưởng tượng bạn đang có hàng chục component khác nhau. Nếu mà cứ truyền props với cập nhật state như thế này thì quả thật sẽ rất lằng nhằng và thừa code không cần thiết.
 
@@ -45,7 +45,7 @@ Thử tưởng tượng bạn đang có hàng chục component khác nhau. Nếu
 
 Ý tưởng của React Context API là nó sẽ tập trung dữ liệu vào một nơi. Sau đó, nó cung cấp cơ chế cho phép mỗi component có thể lấy state cũng như cập nhật state trực tiếp tại đó mà không cần qua các component trung gian.
 
-![](https://completejavascript.com/wp-content/uploads/2018/12/react-context-api-quan-ly-state-voi-react-context-api-completejavascript.com_.png)Với React Context API, số lượng phần tử bao nhiêu cũng không thành vấn đề
+![](/wp-content/uploads/2018/12/react-context-api-quan-ly-state-voi-react-context-api-completejavascript.com_.png)Với React Context API, số lượng phần tử bao nhiêu cũng không thành vấn đề
 
 So với cách quản lý state thông thường, mình thấy cách này có ưu, nhược điểm là:
 
@@ -58,15 +58,19 @@ Như vậy là mình đã tìm hiểu về cơ chế làm việc của React Con
 
 ### React.createContext
 
-    <code>const MyContext = React.createContext(defaultValue);</code>
+```
+const MyContext = React.createContext(defaultValue);
+```
 
-Đây là API đầu tiên **bắt buộc** phải sử dụng. API này sẽ tạo mới một [object](https://completejavascript.com/javascript-object-last-but-not-least/) đóng vai trò là Context. Và khi một component đăng ký sử dụng Context này thì nó sẽ đọc giá trị context từ **Provider** gần nhất.
+Đây là API đầu tiên **bắt buộc** phải sử dụng. API này sẽ tạo mới một [object](/javascript-object-last-but-not-least/) đóng vai trò là Context. Và khi một component đăng ký sử dụng Context này thì nó sẽ đọc giá trị context từ **Provider** gần nhất.
 
 Ngược lại, khi bên ngoài nó không có một **Provider** nào thì giá trị của context sẽ ứng với giá trị **defaultValue** bên trên.
 
 ### Context.Provider
 
-    <code><MyContext.Provider value={/* some value */}></code>
+```
+<MyContext.Provider value={/* some value */}>
+```
 
 Với mỗi một đối tượng Context sẽ tồn tại một đối tượng Provider. Đối tượng này có một property là **value**. Giá trị của **value** được hiểu là giá trị của Context.
 
@@ -74,7 +78,8 @@ Mỗi khi giá trị của **value **này thay đổi thì các thành phần b�
 
 ### Class.contextType
 
-    <code>class MyClass extends React.Component {
+```
+class MyClass extends React.Component {
       componentDidMount() {
         let value = this.context;
         /* perform a side-effect at mount using the value of MyContext */
@@ -92,19 +97,22 @@ Mỗi khi giá trị của **value **này thay đổi thì các thành phần b�
         /* render something based on the value of MyContext */
       }
     }
-    MyClass.contextType = MyContext;</code>
+    MyClass.contextType = MyContext;
+```
 
 Nếu như hai API trên là để khởi tạo Context và truyền giá trị cho Context thì API này dùng để sử dụng giá trị của Context.
 
 Ở đây, thuộc tính **contextType** được gán giá trị là **MyContext** - thành phần được khởi tạo bởi _React.createContext()_ bên trên.
 
-Sau đó, mình có thể truy cập đến giá trị của Context thông qua **this.context** ở bất kỳ phương thức nào thuộc [React Lifecycle](https://completejavascript.com/tim-hieu-react-component-lifecycle/) và cả phương thức **render()** nữa.
+Sau đó, mình có thể truy cập đến giá trị của Context thông qua **this.context** ở bất kỳ phương thức nào thuộc [React Lifecycle](/tim-hieu-react-component-lifecycle/) và cả phương thức **render()** nữa.
 
 ### Context.Consumer
 
-    <code><MyContext.Consumer>
+```
+<MyContext.Consumer>
       {value => /* render something based on the context value */}
-    </MyContext.Consumer></code>
+    </MyContext.Consumer>
+```
 
 Tương tự **Class.contextType**, API này giúp sử dụng giá trị của Context. Tuy nhiên hơi khác một chút là API này chỉ sử dụng ở phần JSX.
 
@@ -116,15 +124,16 @@ Trên đây là những thông tin cơ bản về các API của React Context. 
 
 ### Khởi tạo Project
 
-Ở đây mình sử dụng [CodeSanbox.io](https://codesandbox.io) để làm Demo. Tuy nhiên, bạn cũng có thể sử dụng [Create-react-app](https://completejavascript.com/tag/create-react-app/) để làm ví dụ ngay trên máy tính.
+Ở đây mình sử dụng [CodeSanbox.io](https://codesandbox.io) để làm Demo. Tuy nhiên, bạn cũng có thể sử dụng [Create-react-app](/tag/create-react-app/) để làm ví dụ ngay trên máy tính.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](https://completejavascript.com/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 **Chú ý**: React Context API chính thức được hỗ trợ trên phiên bản React 16.3. Vì vậy, bạn cần phải sử dụng phiên bản React >= 16.3. Để đơn giản, bạn có thể nâng cấp React lên phiên bản mới nhất luôn bằng câu lệnh sau:
 
-    <code>npm install --save react@latest
-    npm install --save react-dom@latest</code>
-
+```
+npm install --save react@latest
+    npm install --save react-dom@latest
+```
 [Xem Demo](https://vqlrp2xry3.codesandbox.io/) [Xem code](https://codesandbox.io/s/vqlrp2xry3)
 
 ### Kịch bản Demo
@@ -137,13 +146,16 @@ Với mỗi component, mình sẽ sử dụng một cách khác nhau để đọ
 
 ### Khởi tạo Context
 
-    <code>const AppContext = React.createContext();</code>
+```
+const AppContext = React.createContext();
+```
 
 Ở đây mình không sử dụng giá trị **defaultValue** vì mình luôn sử dụng Provider.
 
 ### Định nghĩa AppProvider
 
-    <code>class AppProvider extends React.Component {
+```
+class AppProvider extends React.Component {
       state = {
         number: 10,
         inc: () => {
@@ -161,7 +173,8 @@ Với mỗi component, mình sẽ sử dụng một cách khác nhau để đọ
           </AppContext.Provider>
         );
       }
-    }</code>
+    }
+```
 
 **AppProvider** chính là một [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) dùng để đóng gọi lại _AppContext.Provider_. Mà khi mình luôn sử dụng **Provider**, thì có nghĩa là \_AppProvider \_chính là Component lớn nhất chứa tất cả các Component còn lại. Do đó, mình sẽ định nghĩa state của App tại đây.
 
@@ -175,20 +188,23 @@ Cuối cùng, bên trong hàm _render(),_ mình truyền giá trị _this.state_
 
 ### Sử dụng AppProvider
 
-    <code>const App = () => (
+```
+const App = () => (
       <AppProvider>
         <Red />
       </AppProvider>
     );
 
     const rootElement = document.getElementById("root");
-    ReactDOM.render(<App />, rootElement);</code>
+    ReactDOM.render(<App />, rootElement);
+```
 
 Sử dụng AppProvider cũng không khác gì so với sử dụng các React Component khác nên mình sẽ để đây mà không giải thích gì thêm.
 
 ### Sử dụng contextType với component Red
 
-    <code>class Red extends React.Component {
+```
+class Red extends React.Component {
       render() {
         return (
           <div className="red">
@@ -198,7 +214,8 @@ Sử dụng AppProvider cũng không khác gì so với sử dụng các React C
         );
       }
     }
-    Red.contextType = AppContext;</code>
+    Red.contextType = AppContext;
+```
 
 Ở đây, mình sử dụng **Class.contextType** nên cần khai báo \_Red \_dạng class component. Và cách sử dụng thì khá đơn giản như mình đã đề cập ở trên.
 
@@ -206,7 +223,8 @@ Mình xin nhấn mạnh lại, **this.context** tương ứng với giá trị c
 
 ### Sử dụng consumer tại component Blue
 
-    <code>const Blue = () => (
+```
+const Blue = () => (
       <div className="blue">
         <AppContext.Consumer>
           {context => (
@@ -218,7 +236,8 @@ Mình xin nhấn mạnh lại, **this.context** tương ứng với giá trị c
         </AppContext.Consumer>
         <Green />
       </div>
-    );</code>
+    );
+```
 
 Ở component Blue, mình chỉ cần khai báo dạng Functional Component vì mình không sử dụng state cũng như các phương thức lifecycle tại đây.
 
@@ -228,7 +247,8 @@ Bên trong hàm render trên, mình sử dụng thẻ rỗng <>. Tuy nhiên, b�
 
 ### Sử dụng consumer tại component Green
 
-    <code>class Green extends React.Component {
+```
+class Green extends React.Component {
       render() {
         return (
           <div className="green">
@@ -238,7 +258,8 @@ Bên trong hàm render trên, mình sử dụng thẻ rỗng <>. Tuy nhiên, b�
           </div>
         );
       }
-    }</code>
+    }
+```
 
 Với mục đích demo, mình khai báo component Green dạng Class Component. Chứ thực tế là mình có thể khai báo nó dạng Functional Component.
 
@@ -261,8 +282,8 @@ Tham khảo:
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

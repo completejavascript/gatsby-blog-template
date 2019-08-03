@@ -1,8 +1,8 @@
 ---
 date: "2017-08-02T00:29:51Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: co-ban-ve-dom-javascript
 title: "Cơ bản về DOM JavaScript"
 categories:
@@ -13,7 +13,7 @@ tags:
   - HTML
 ---
 
-Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](https://completejavascript.com/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**.
+Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**.
 
 ## DOM là gì?
 
@@ -21,7 +21,8 @@ DOM là viết tắt của Document Object Model - một thành phần javascrip
 
 Hãy xem xét một ví dụ đơn giản sau:
 
-    <code><!doctype html>
+```
+<!doctype html>
     <html>
       <head>
         <title>My home page</title>
@@ -32,11 +33,12 @@ Hãy xem xét một ví dụ đơn giản sau:
         <p>I also wrote a book! Read it
           <a href="http://eloquentjavascript.net">here</a>.</p>
       </body>
-    </html></code>
+    </html>
+```
 
 Đây là cấu trúc đơn giản của một trang web.
 
-![Cơ bản về DOM JavaScript 1 - Complete JavaScript - completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-1-completejavascript.com_.png)
+![Cơ bản về DOM JavaScript 1 - Complete JavaScript - completejavascript.com](/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-1-completejavascript.com_.png)
 
 Ở đây, mỗi hình vuông cùng với nội dung bên trong nó chính là DOM.
 
@@ -54,13 +56,13 @@ Mỗi DOM node sẽ có thuộc tính *nodeType* - là một số nguyên - đ�
 
 Ví dụ trên được biểu diễn dạng cây:
 
-![Cơ bản về DOM JavaScript 2 - Complete JavaScript - completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-2-completejavascript.com_.png)
+![Cơ bản về DOM JavaScript 2 - Complete JavaScript - completejavascript.com](/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-2-completejavascript.com_.png)
 
 ## Liên kết giữa các DOM node trong cây
 
 Mỗi DOM node luôn chứa rất nhiều liên kết đến các DOM node khác.
 
-![Cơ bản về DOM JavaScript - Complete JavaScript - completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-3-completejavascript.com_.png)
+![Cơ bản về DOM JavaScript - Complete JavaScript - completejavascript.com](/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-3-completejavascript.com_.png)
 
 ### [Node.parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
 
@@ -72,11 +74,11 @@ Ví dụ: với mỗi node _p_ và _h1_ thì _parentNode_ là _body_.
 
 ### [Node.childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
 
-trỏ đến một [đối tượng](https://completejavascript.com/javascript-object-last-but-not-least/) gần giống với [array](https://completejavascript.com/javascript-array-co-ban/), chứa những node con của một node.
+trỏ đến một [đối tượng](/javascript-object-last-but-not-least/) gần giống với [array](/javascript-array-co-ban/), chứa những node con của một node.
 
 Tại sao lại là "gần giống với array" ?
 
-Vì đối tượng này không chứa các method như _slice, [forEach](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/)_.
+Vì đối tượng này không chứa các method như _slice, [forEach](/javascript-foreach-la-cai-quai-gi/)_.
 
 Ví dụ: với node _body_, _childNodes_ là một danh sách với các node con là _h1, p, p_.
 
@@ -152,7 +154,7 @@ Trả về node đầu tiên thoả mãn _selectors_. Trong đó, _selectors_ l�
 
 Trả về danh sách các node thoả mãn _selectors_, theo thứ tự sử dụng thuật toán DFS.
 
-![Perfect practice makes perfect - Complete JavaScript - completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/04/only-perfect-practice-makes-perfect-completejavascript.com_.png)
+![Perfect practice makes perfect - Complete JavaScript - completejavascript.com](/wp-content/uploads/2017/04/only-perfect-practice-makes-perfect-completejavascript.com_.png)
 
 ## Ví dụ sử dụng DOM
 
@@ -170,7 +172,7 @@ Tham khảo code tại [đây](https://github.com/completejavascript/practical-j
 
 Tham khảo code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/DOM_basic/cat_hat.completejavascript.com.js).
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xu-ly-mot-event-javascript-co-ban/), thân ái!
 
 ## Tham khảo
 
@@ -178,8 +180,8 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://co
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

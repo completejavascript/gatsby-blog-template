@@ -1,8 +1,8 @@
 ---
 date: "2017-09-19T23:19:32Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: phan-biet-var-va-let-trong-javascript
 title: "Phân biệt var và let trong JavaScript"
 categories:
@@ -11,23 +11,24 @@ tags:
   - ES6
 ---
 
-Từ trước tới giờ, có thể bạn đã quen dùng **var** để khai báo [biến](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/) trong JavaScript. Tuy nhiên, từ phiên bản ES6, bạn có thêm một sự lựa chọn nữa là **let**. Vậy **let** giống và khác **var** như thế nào? Bài viết này sẽ giúp bạn phân biệt **var** và **let** trong JavaScript. Qua đó, bạn biết cách sử dụng chúng sao cho phù hợp nhất.
+Từ trước tới giờ, có thể bạn đã quen dùng **var** để khai báo [biến](/values-types-va-operators-trong-javascript-phan-1/) trong JavaScript. Tuy nhiên, từ phiên bản ES6, bạn có thêm một sự lựa chọn nữa là **let**. Vậy **let** giống và khác **var** như thế nào? Bài viết này sẽ giúp bạn phân biệt **var** và **let** trong JavaScript. Qua đó, bạn biết cách sử dụng chúng sao cho phù hợp nhất.
 
 ## Giống nhau
 
 - **Var** và **let** đều là từ khoá - keyword.
 
-- **Var** và **let** cùng được dùng để khai báo biến trong [JavaScript](https://completejavascript.com/category/javascript/javascript-co-ban/)
+- **Var** và **let** cùng được dùng để khai báo biến trong [JavaScript](/category/javascript/javascript-co-ban/)
 
 ## Khác nhau
 
-- Phạm vi của biến số sử dụng **var** là phạm vi hàm số hoặc bên ngoài [hàm số](https://completejavascript.com/tim-hieu-function-javascript/), toàn cục.
+- Phạm vi của biến số sử dụng **var** là phạm vi hàm số hoặc bên ngoài [hàm số](/tim-hieu-function-javascript/), toàn cục.
 
 - Phạm vi của biến số sử dụng **let** là phạm vi một khối, xác định bởi cặp {}
 
 ### Ví dụ phân biệt var và let
 
-    <code>function varvslet() {
+```
+function varvslet() {
       console.log(i); // i is undefined due to hoisting
       console.log(j); // ReferenceError: j is not defined
 
@@ -45,7 +46,8 @@ Từ trước tới giờ, có thể bạn đã quen dùng **var** để khai b�
       console.log("i outside ", i); // 3
       console.log("j outside ", j); // ReferenceError: j is not defined
     }
-    varvslet();</code>
+    varvslet();
+```
 
 - **Let**: trong ví dụ trên biến j được khai báo sử dụng **let**. Bạn có thể thấy rằng biến j chỉ được phép sử dụng trong vòng lặp for. Nếu bạn gọi biến j ngoài vòng lặp for thì đều bị lỗi **ReferenceError: j is not defined**.
 
@@ -57,7 +59,7 @@ Câu trả lời là cả hai. Mặc dù, việc sử dụng **let** có vẻ gi
 
 Hy vọng qua bài viết ngắn gọn này bạn có thể phân biệt **var** và **let** trong JavaScript.
 
-Cuối cùng, hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/gui-mail-bang-html-va-formspree-io/), thân ái!
+Cuối cùng, hẹn gặp lại bạn trong [bài viết tiếp theo](/gui-mail-bang-html-va-formspree-io/), thân ái!
 
 ## Tham khảo
 
@@ -67,8 +69,8 @@ Cuối cùng, hẹn gặp lại bạn trong [bài viết tiếp theo](https://co
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

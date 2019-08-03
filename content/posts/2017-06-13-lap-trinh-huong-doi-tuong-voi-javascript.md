@@ -1,8 +1,8 @@
 ---
 date: "2017-06-13T23:33:08Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: lap-trinh-huong-doi-tuong-voi-javascript
 title: "Lập trình hướng đối tượng với JavaScript?"
 categories:
@@ -11,7 +11,7 @@ tags:
   - OOP
 ---
 
-Thực ra, nếu nói là "lập trình hướng đối tượng" (object-oriented) thì không chính xác lắm. Như mình đã nói, JavaScript là ngôn ngữ lập trình dựa trên đối tượng ([object-based](https://completejavascript.com/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/)). Nếu vậy thì ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng giống và khác nhau như thế nào?
+Thực ra, nếu nói là "lập trình hướng đối tượng" (object-oriented) thì không chính xác lắm. Như mình đã nói, JavaScript là ngôn ngữ lập trình dựa trên đối tượng ([object-based](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/)). Nếu vậy thì ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng giống và khác nhau như thế nào?
 
 ## Ngôn ngữ lập trình hướng đối tượng
 
@@ -25,13 +25,13 @@ Thực ra, nếu nói là "lập trình hướng đối tượng" (object-orient
 
 - Không hỗ trợ đầy đủ các đặc điểm của OOP như đa hình và kế thừa
 
-- Có sẵn kiểu dữ liệu [đối tượng](https://completejavascript.com/javascript-object-last-but-not-least/). Ví dụ: JavaScript có sẵn đối tượng window
+- Có sẵn kiểu dữ liệu [đối tượng](/javascript-object-last-but-not-least/). Ví dụ: JavaScript có sẵn đối tượng window
 
 - Một số ngôn ngữ lập trình: JavaScript, VB,...
 
 Trên đây là một số những điểm khác nhau giữa ngôn ngữ lập trình hướng đối tượng và ngôn ngữ lập trình dựa trên đối tượng. Hy vọng qua đây, bạn có thể phân biệt được hai loại ngôn ngữ lập trình này.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết sau](https://completejavascript.com/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết sau](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/), thân ái!
 
 ## Tham khảo
 
@@ -43,8 +43,8 @@ Xin chào và hẹn gặp lại bạn ở [bài viết sau](https://completejava
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -1,8 +1,8 @@
 ---
 date: "2018-04-06T00:00:47Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: js-pattern-4-pubsub-pattern
 title: "JS Pattern #4 - PubSub Pattern"
 categories:
@@ -16,7 +16,8 @@ JavaScript PubSub Pattern, hay Publish / Subscribe Pattern, hay Events Pattern, 
 
 ## Triển khai PubSub Pattern
 
-    <code>let Events = (() => {
+```
+let Events = (() => {
       let events = {};
       function on(eventName, fn) {
         events[eventName] = events[eventName] || [];
@@ -42,9 +43,10 @@ JavaScript PubSub Pattern, hay Publish / Subscribe Pattern, hay Events Pattern, 
         off: off,
         emit : emit
       };
-    })();</code>
+    })();
+```
 
-Trước tiên, bạn thấy rằng cách triển khai pattern này sử dụng [Revealing Module Pattern](https://completejavascript.com/js-pattern-2-module-pattern/), với 3 [function](https://completejavascript.com/tim-hieu-function-javascript/) được public là: **on**, **off** và **emit**.
+Trước tiên, bạn thấy rằng cách triển khai pattern này sử dụng [Revealing Module Pattern](/js-pattern-2-module-pattern/), với 3 [function](/tim-hieu-function-javascript/) được public là: **on**, **off** và **emit**.
 
 ### Đăng ký sự kiện với hàm on
 
@@ -55,19 +57,23 @@ Hàm **on** có 2 tham số đầu vào:
 
 Ví dụ:
 
-    <code>Events.on("addItem", onItemAdded);</code>
+```
+Events.on("addItem", onItemAdded);
+```
 
 Câu lệnh trên hiểu đơn giản là: khi có sự kiện **addItem** xảy ra thì sẽ gọi hàm **onItemAdded**.
 
 #### Giải thích cách triển khai
 
-    <code>let events = {};
+```
+let events = {};
     function on(eventName, fn) {
       events[eventName] = events[eventName] || [];
       events[eventName].push(fn);
-    }</code>
+    }
+```
 
-Bạn có thể thấy rằng, **events** là một [object](https://completejavascript.com/javascript-object-last-but-not-least/) rỗng. Sau này, mỗi thuộc tính (key) của events sẽ là tên của event được đăng ký. Giá trị của thuộc tính (value) là một [mảng](https://completejavascript.com/javascript-array-co-ban/) của các function.
+Bạn có thể thấy rằng, **events** là một [object](/javascript-object-last-but-not-least/) rỗng. Sau này, mỗi thuộc tính (key) của events sẽ là tên của event được đăng ký. Giá trị của thuộc tính (value) là một [mảng](/javascript-array-co-ban/) của các function.
 
 Ban đầu events[eventName] sẽ là **undefined**, nên ta sẽ khởi tạoevents[eventName] = [] - là một mảng rỗng. Ngược lại, khi thành phần này đã tồn tại thì chỉ cần [push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) hàm số mới vào mảng.
 
@@ -75,8 +81,10 @@ Ban đầu events[eventName] sẽ là **undefined**, nên ta sẽ khởi tạoev
 
 Giả sử, có 2 module khác cũng đăng ký sự kiện addItem:
 
-    <code>Events.on("addItem", updateItem1);
-    Events.on("addItem", updateItem2);</code>
+```
+Events.on("addItem", updateItem1);
+    Events.on("addItem", updateItem2);
+```
 
 Lúc này, events["addItem"] = [onItemAdded, updateItem1, updateItem2].
 
@@ -89,13 +97,16 @@ Hàm **off** có 2 tham số đầu vào:
 
 Ví dụ:
 
-    <code>Events.off("addItem", onItemAdded);</code>
+```
+Events.off("addItem", onItemAdded);
+```
 
 Câu lệnh trên sẽ bỏ đăng ký sự kiện **addItem** với hàm **onItemAdded**. Hay nói cách khác, khi có sự kiện này xảy ra thì sẽ không gọi hàm onItemAdded nữa.
 
 #### Giải thích cách triển khai
 
-    <code>function off(eventName, fn) {
+```
+function off(eventName, fn) {
       if (events[eventName]) {
         for (let i = 0; i < events[eventName].length; i++) {
           if (events[eventName][i] === fn) {
@@ -104,7 +115,8 @@ Câu lệnh trên sẽ bỏ đăng ký sự kiện **addItem** với hàm **onIt
           }
         };
       }
-    }</code>
+    }
+```
 
 Hàm số này sẽ duyệt mảng ứng với **eventName** và kiểm tra tất cả các hàm số thành phần trong mảng đó. Nếu gặp hàm số nào trùng với hàm số cần bỏ đăng ký thì sẽ bỏ hàm số đó ra khỏi mảng thông qua hàm [splice](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/splice).
 
@@ -115,26 +127,30 @@ Hàm số này sẽ duyệt mảng ứng với **eventName** và kiểm tra tấ
 Hàm **emit** có 2 tham số:
 
 - **eventName**: tên sự kiện
-- **data**: dữ liệu truyền cho các hàm đã đăng ký sự kiện, trong đó, data có thể là tất cả các kiểu dữ liệu: [number](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/), array, string hay object,...
+- **data**: dữ liệu truyền cho các hàm đã đăng ký sự kiện, trong đó, data có thể là tất cả các kiểu dữ liệu: [number](/values-types-va-operators-trong-javascript-phan-1/), array, string hay object,...
 
 Ví dụ:
 
-    <code>Events.emit("addItem", {
+```
+Events.emit("addItem", {
       name : "apple",
       quantity: 2
-    });</code>
+    });
+```
 
 Câu lệnh trên kích hoạt sự kiện addItem. Khi đó, tất cả những hàm số nào đã được đăng ký sự kiện với hàm **Events.on** ở trên, sẽ được gọi, với đối số là object **{name: "apple", quantity: 2}**;
 
 #### Giải thích cách triển khai
 
-    <code>function emit(eventName, data) {
+```
+function emit(eventName, data) {
       if (events[eventName]) {
         events[eventName].forEach((fn) => fn(data));
       }
-    }</code>
+    }
+```
 
-Hàm này sẽ duyệt toàn bộ mảng ứng với **eventName** sử dụng phương thức [forEach](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/). Sau đó, mỗi hàm số trong mảng sẽ được gọi và truyền vào đối số là data.
+Hàm này sẽ duyệt toàn bộ mảng ứng với **eventName** sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi/). Sau đó, mỗi hàm số trong mảng sẽ được gọi và truyền vào đối số là data.
 
 Trong ví dụ trên, events["addItem"] = [updateItem1, updateItem2]. Do đó, khi event addItem được kích hoạt, hàm số updateItem1({ name : "apple", quantity: 2 }) và updateItem2({ name : "apple", quantity: 2 }) sẽ được thực hiện.
 
@@ -157,8 +173,8 @@ Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

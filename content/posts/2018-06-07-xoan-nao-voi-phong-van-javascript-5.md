@@ -1,8 +1,8 @@
 ---
 date: "2018-06-07T12:00:14Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: xoan-nao-voi-phong-van-javascript-5
 title: "Xoắn não với phỏng vấn JavaScript 5"
 categories:
@@ -16,9 +16,11 @@ Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 
 
 ## Xoắn não với phỏng vấn JavaScript 5 - Câu 1
 
-    <code>let arr = [1, "hi", {x : 2}, [3, 4]];
+```
+let arr = [1, "hi", {x : 2}, [3, 4]];
     delete arr[1];
-    console.log(arr.length);</code>
+    console.log(arr.length);
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -34,16 +36,19 @@ Trong câu hỏi này, Array _arr_ có 4 thuộc tính là: _0_, _1_, _2_, _3_. 
 
 Tuy nhiên, xét trên khía cạnh của Array thì mảng arr vẫn có độ dài là 4.
 
-    <code>console.log(arr);
-    // => (4)[1, empty, {…}, Array(2)]</code>
-
+```
+console.log(arr);
+    // => (4)[1, empty, {…}, Array(2)]
+```
 ## Xoắn não với phỏng vấn JavaScript 5 - Câu 2
 
-    <code>let arr = [1, "hi", {x : 2}, [3, 4]];
+```
+let arr = [1, "hi", {x : 2}, [3, 4]];
     for(let i = 0; i < arr.length; i++) {
       if (arr[i] === "hi") arr.splice(i, 1);
       else console.log(arr[i]);
-    }</code>
+    }
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -51,9 +56,10 @@ Xem đáp án
 
 **Đáp án:**
 
-    <code>// 1
-    // [3, 4]</code>
-
+```
+// 1
+    // [3, 4]
+```
 **Giải thích:**
 
 Khác với **delete**, phương thức [splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) không những cho phép xoá bỏ phần tử của mảng mà còn làm thay đổi số phần tử của mảng.
@@ -73,7 +79,8 @@ Như bạn thấy, phần tử **{x : 2}** đã không được in ra. Nếu mì
 
 Đơn giản là bạn chỉ cần duyệt mảng theo thứ tự ngược lại:
 
-    <code>let arr = [1, "hi", {x : 2}, [3, 4]];
+```
+let arr = [1, "hi", {x : 2}, [3, 4]];
     for(let i = arr.length - 1; i >= 0; i--) {
       if (arr[i] === "hi") arr.splice(i, 1);
       else console.log(arr[i]);
@@ -82,16 +89,19 @@ Như bạn thấy, phần tử **{x : 2}** đã không được in ra. Nếu mì
     * [3, 4]
     * {x : 2}
     * 1
-    */</code>
+    */
+```
 
 Nếu muốn biết lý do tại sao thì bạn cứ phân tích như trên là sẽ hiểu.
 
 ## Xoắn não với phỏng vấn JavaScript 5 - Câu 3
 
-    <code>var x = 1;
+```
+var x = 1;
     var z = y + 3;
     var y = 2;
-    console.log(x, y, z);</code>
+    console.log(x, y, z);
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -103,11 +113,13 @@ Xem đáp án
 
 Nếu bạn sử dụng **var** để khai báo biến thì biến số đó sẽ được [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting). Do đó, đoạn code phía trên sẽ tương đương với:
 
-    <code>var x, y, z;
+```
+var x, y, z;
     x = 1;
     z = y + 3;
     y = 2;
-    console.log(x, y, z);</code>
+    console.log(x, y, z);
+```
 
 Sau câu lệnh đầu tiên, giá trị của x, y, z đều là **undefined**. Vì vậy, sau 3 phép toán tiếp theo, giá trị của chúng là:
 
@@ -117,21 +129,24 @@ Sau câu lệnh đầu tiên, giá trị của x, y, z đều là **undefined**.
 
 Ngược lại, nếu bạn thay var bằng let thì bạn sẽ nhận được lỗi: **ReferenceError: y is not defined**
 
-    <code>let x = 1;
+```
+let x = 1;
     let z = y + 3;
     let y = 2;
     console.log(x, y, z);
-    // => ReferenceError: y is not defined</code>
-
-_Xem thêm:_ _[Phân biệt var và let trong JavaScript](https://completejavascript.com/phan-biet-var-va-let-trong-javascript/)_
+    // => ReferenceError: y is not defined
+```
+_Xem thêm:_ _[Phân biệt var và let trong JavaScript](/phan-biet-var-va-let-trong-javascript/)_
 
 ## Xoắn não với phỏng vấn JavaScript 5 - Câu 4
 
-    <code>"use strict";
+```
+"use strict";
     function func() {
       return this;
     }
-    console.log(func());</code>
+    console.log(func());
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -141,7 +156,7 @@ Xem đáp án
 
 **Giải thích:**
 
-Vì trong [chế độ strict mode](https://completejavascript.com/mot-so-loi-khi-su-dung-strict-mode-javascript/), **this** sẽ không được bind với đối tượng **window**.
+Vì trong [chế độ strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript/), **this** sẽ không được bind với đối tượng **window**.
 
 _Xem thêm bài viết sau để hiểu thêm về chế độ strict mode:_
 
@@ -149,7 +164,8 @@ _Xem thêm bài viết sau để hiểu thêm về chế độ strict mode:_
 
 ## Xoắn não với phỏng vấn JavaScript 5 - Câu 5
 
-    <code>function Foo() {
+```
+function Foo() {
       this.bar = 10;
     }
     Foo.prototype.bar = 42;
@@ -158,7 +174,8 @@ _Xem thêm bài viết sau để hiểu thêm về chế độ strict mode:_
     console.log("1", foo.bar);
 
     delete foo.bar;
-    console.log("2", foo.bar);</code>
+    console.log("2", foo.bar);
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -166,9 +183,10 @@ Xem đáp án
 
 **Đáp án:**
 
-    <code>//1 10
-    //2 42</code>
-
+```
+//1 10
+    //2 42
+```
 **Giải thích:**
 
 Khi truy cập đến một thuộc tính nào đó của object, JavaScript sẽ tìm trực tiếp trong Object đó đầu tiên.
@@ -183,12 +201,14 @@ Nhưng sau khi **delete foo.bar**, đối tượng _foo_ không còn thuộc tí
 
 ## Xoắn não với phỏng vấn JavaScript 5 - Câu 6
 
-    <code>let a = (function(x, y, z){
+```
+let a = (function(x, y, z){
       delete x, delete y, delete z;
       return x + y + z;
     })(1, [2, 3], {x: 4});
 
-    console.log(a);</code>
+    console.log(a);
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -205,12 +225,12 @@ Xem đáp án
 
 Trên đây là 6 câu hỏi phỏng vấn JavaScript cũng rất hay. Nếu bạn có cùng nhận xét với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/xoan-nao-voi-phong-van-javascript-6/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-6/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

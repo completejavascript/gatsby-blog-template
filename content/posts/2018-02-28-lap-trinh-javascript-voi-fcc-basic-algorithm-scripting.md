@@ -1,8 +1,8 @@
 ---
 date: "2018-02-28T16:35:32Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: lap-trinh-javascript-voi-fcc-basic-algorithm-scripting
 title: "Lập trình JavaScript với FCC - Basic Algorithm Scripting"
 categories:
@@ -11,23 +11,23 @@ tags:
   - Lập trình JavaScript với FCC
 ---
 
-Trong lập trình nói chung và lập trình JavaScript nói riêng, việc học thuật toán vẫn luôn vô cùng quan trọng. Thuật toán giúp cho lập trình viên rèn luyện tư duy. Ngoài ra, khi thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn. Vì vậy, tiếp theo trong loạt bài [**Lập trình JavaScript với FCC**](https://completejavascript.com/tag/lap-trinh-javascript-voi-fcc/), hôm nay, tôi sẽ tổng hợp lại những bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp để các bạn tiện theo dõi và có thể tham khảo khi cần. Tuy nhiên, những bài toán này khá đơn giản nên tôi sẽ không giải thích cách làm. Nếu các bạn có thắc mắc hay góp ý thì có thể để lại ở phần bình luận phía dưới.
+Trong lập trình nói chung và lập trình JavaScript nói riêng, việc học thuật toán vẫn luôn vô cùng quan trọng. Thuật toán giúp cho lập trình viên rèn luyện tư duy. Ngoài ra, khi thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn. Vì vậy, tiếp theo trong loạt bài [**Lập trình JavaScript với FCC**](/tag/lap-trinh-javascript-voi-fcc/), hôm nay, tôi sẽ tổng hợp lại những bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp để các bạn tiện theo dõi và có thể tham khảo khi cần. Tuy nhiên, những bài toán này khá đơn giản nên tôi sẽ không giải thích cách làm. Nếu các bạn có thắc mắc hay góp ý thì có thể để lại ở phần bình luận phía dưới.
 
 Trước khi đi vào tìm hiểu các bài toán, các bạn có thể đọc trước các bài viết sau. Chúng khá hữu ích vì các thuật toán sau đây sẽ sử dụng đến những kiến thức trong đó.
 
-- [Values, types và operators trong JavaScript – Phần 1](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/)
+- [Values, types và operators trong JavaScript – Phần 1](/values-types-va-operators-trong-javascript-phan-1/)
 
-- [Values, types và operators trong JavaScript – Phần 2](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/)
+- [Values, types và operators trong JavaScript – Phần 2](/values-types-va-operators-trong-javascript-phan-2/)
 
-- [JavaScript Array cơ bản,](https://completejavascript.com/javascript-array-co-ban/)
+- [JavaScript Array cơ bản,](/javascript-array-co-ban/)
 
-- [Array Sorting – vấn đề muôn thuở](https://completejavascript.com/array-sorting-van-de-muon-thuo/)
+- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
 
-- [JavaScript forEach là cái quái gì?](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/)
+- [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
 
-- [JavaScript Object – last but not least](https://completejavascript.com/javascript-object-last-but-not-least/)
+- [JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
 
-- [Tìm hiểu Regular Expression JavaScript](https://completejavascript.com/tim-hieu-regular-expression-javascript/)
+- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
 ## Basic Algorithm Scripting - Reverse a String
 
@@ -35,11 +35,13 @@ Cho một string, nhiệm vụ của bạn là phải đảo ngược lại stri
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/reverse-a-string).
 
-    <code>function reverseString(str) {
+```
+function reverseString(str) {
       return str.split("").reverse().join("");
     }
 
-    reverseString("hello");</code>
+    reverseString("hello");
+```
 
 Tham khảo:
 
@@ -57,7 +59,8 @@ Tính giai thừa của một số tự nhiên n!. Ví dụ: **5! = 5 _ 4 _ 3 _2
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/factorialize-a-number).
 
-    <code>function factorialize(num) {
+```
+function factorialize(num) {
       if(num == 0) return 1;
 
       for(var i = num - 1; i >= 1; i--)
@@ -66,7 +69,8 @@ Tính giai thừa của một số tự nhiên n!. Ví dụ: **5! = 5 _ 4 _ 3 _2
       return num;
     }
 
-    factorialize(5);</code>
+    factorialize(5);
+```
 
 Tham khảo:
 
@@ -78,17 +82,19 @@ Kiểm tra xem một string có phải là **palindrome** hay không? (Một st
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/factorialize-a-number).
 
-    <code>function palindrome(str) {
+```
+function palindrome(str) {
       var newStr = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
       var newStrReverse = newStr.split("").reverse().join("");
       return newStr === newStrReverse;
     }
 
-    palindrome("eye");</code>
+    palindrome("eye");
+```
 
 Tham khảo:
 
-- [Tìm hiểu Regular Expression JavaScript](https://completejavascript.com/tim-hieu-regular-expression-javascript/)
+- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
 - [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
@@ -100,7 +106,8 @@ Tìm độ dài của từ dài nhất trong câu.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/find-the-longest-word-in-a-string).
 
-    <code>function findLongestWord(str) {
+```
+function findLongestWord(str) {
       var words = str.split(" ");
       var maxLength = words.reduce(function(acc, cur){
         return cur.length > acc ? cur.length : acc;
@@ -108,7 +115,8 @@ Tìm độ dài của từ dài nhất trong câu.
       return maxLength;
     }
 
-    findLongestWord("The quick brown fox jumped over the lazy dog");</code>
+    findLongestWord("The quick brown fox jumped over the lazy dog");
+```
 
 Tham khảo:
 
@@ -124,7 +132,8 @@ Trả về string với các từ có chữ cái đầu tiên viết hoa. Ví d�
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/title-case-a-sentence).
 
-    <code>function titleCase(str) {
+```
+function titleCase(str) {
       var words = str.split(" ");
 
       var newWords = words.map(function(word){
@@ -141,7 +150,8 @@ Trả về string với các từ có chữ cái đầu tiên viết hoa. Ví d�
       return newWords.join(" ");
     }
 
-    titleCase("I'm a little tea pot");</code>
+    titleCase("I'm a little tea pot");
+```
 
 Tham khảo:
 
@@ -159,7 +169,8 @@ Trả về một mảng gồm các số lớn nhất của mỗi sub-array.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/return-largest-numbers-in-arrays).
 
-    <code>function largestOfFour(arr) {
+```
+function largestOfFour(arr) {
       var answer = [];
       for(var i = 0; i < arr.length; i++) {
         var max = 0;
@@ -171,7 +182,8 @@ Trả về một mảng gồm các số lớn nhất của mỗi sub-array.
       return answer;
     }
 
-    largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);</code>
+    largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+```
 
 Tham khảo:
 
@@ -185,11 +197,13 @@ Kiểm tra xem một string có được kết thúc bởi một string khác.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/confirm-the-ending).
 
-    <code>function confirmEnding(str, target) {
+```
+function confirmEnding(str, target) {
       return target === str.substr(-target.length);
     }
 
-    confirmEnding("Bastian", "n");</code>
+    confirmEnding("Bastian", "n");
+```
 
 Tham khảo:
 
@@ -203,14 +217,16 @@ Lặp lại string với số lần cho trước.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/repeat-a-string-repeat-a-string).
 
-    <code>function repeatStringNumTimes(str, num) {
+```
+function repeatStringNumTimes(str, num) {
       var answer = "";
       for(var i = 0; i < num; i++)
         answer += str;
       return answer;
     }
 
-    repeatStringNumTimes("abc", 3);</code>
+    repeatStringNumTimes("abc", 3);
+```
 
 Tham khảo:
 
@@ -222,13 +238,15 @@ Rút gọn string nếu nó dài quá n kí tự.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/truncate-a-string).
 
-    <code>function truncateString(str, num) {
+```
+function truncateString(str, num) {
       if(str.length <= num) return str;
       if(num <= 3) return str.slice(0, num) + "...";
       return str.slice(0, num - 3) + "...";
     }
 
-    truncateString("A-tisket a-tasket A green and yellow basket", 11);</code>
+    truncateString("A-tisket a-tasket A green and yellow basket", 11);
+```
 
 Tham khảo:
 
@@ -240,7 +258,8 @@ Chia mảng thành các phần với độ dài n cho trước.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/chunky-monkey).
 
-    <code>function chunkArrayInGroups(arr, size) {
+```
+function chunkArrayInGroups(arr, size) {
       var answer = [];
       for(var i = 0; i < arr.length; i += size) {
         answer.push(arr.slice(i, i + size));
@@ -248,7 +267,8 @@ Chia mảng thành các phần với độ dài n cho trước.
       return answer;
     }
 
-    chunkArrayInGroups(["a", "b", "c", "d"], 2);</code>
+    chunkArrayInGroups(["a", "b", "c", "d"], 2);
+```
 
 Tham khảo:
 
@@ -262,12 +282,14 @@ Trả về những phần tử của mảng sau khi đã cắt đi n phần tử
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/slasher-flick).
 
-    <code>function slasher(arr, howMany) {
+```
+function slasher(arr, howMany) {
       arr.splice(0, howMany);
       return arr;
     }
 
-    slasher([1, 2, 3], 2);</code>
+    slasher([1, 2, 3], 2);
+```
 
 Tham khảo:
 
@@ -281,7 +303,8 @@ Kiểm tra xem trong 1 string có chứa tất cả các kí tự của string t
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/mutations).
 
-    <code>function mutation(arr) {
+```
+function mutation(arr) {
       arr[0] = arr[0].toLowerCase();
       arr[1] = arr[1].toLowerCase();
       for(var i = 0; i < arr[1].length; i++) {
@@ -290,7 +313,8 @@ Kiểm tra xem trong 1 string có chứa tất cả các kí tự của string t
       return true;
     }
 
-    mutation(["hello", "hey"]);</code>
+    mutation(["hello", "hey"]);
+```
 
 Tham khảo:
 
@@ -304,7 +328,8 @@ Bỏ đi tất cả các giá trị **falsy** khỏi một mảng (giá trị **
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/falsy-bouncer).
 
-    <code>function bouncer(arr) {
+```
+function bouncer(arr) {
       var answer = arr.filter(function(val) {
         return ((typeof(val) == 'string' && val != "") ||
                 (val != false && val != null && val != 0 && val != undefined && !isNaN(val)));
@@ -312,7 +337,8 @@ Bỏ đi tất cả các giá trị **falsy** khỏi một mảng (giá trị **
       return answer;
     }
 
-    bouncer([7, "ate", "", false, 9]);</code>
+    bouncer([7, "ate", "", false, 9]);
+```
 
 Tham khảo:
 
@@ -328,7 +354,8 @@ Bỏ đi tất cả các phần tử của mảng giống với tập cho trư�
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/seek-and-destroy).
 
-    <code>function destroyer(arr) {
+```
+function destroyer(arr) {
       var args = arguments;
       var answer = arr.filter(function(val){
         for(var i = 1; i < args.length; i++) {
@@ -339,7 +366,8 @@ Bỏ đi tất cả các phần tử của mảng giống với tập cho trư�
       return answer;
     }
 
-    destroyer([1, 2, 3, 1, 2, 3], 2, 3);</code>
+    destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+```
 
 Tham khảo:
 
@@ -353,7 +381,8 @@ Tìm ra vị trí có chỉ số nhỏ nhất phù hợp để chèn một số 
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/where-do-i-belong).
 
-    <code>function getIndexToIns(arr, num) {
+```
+function getIndexToIns(arr, num) {
       var newArr = arr.sort(function(a, b){
         return a - b;
       });
@@ -364,11 +393,12 @@ Tìm ra vị trí có chỉ số nhỏ nhất phù hợp để chèn một số 
       }
     }
 
-    getIndexToIns([40, 60], 50);</code>
+    getIndexToIns([40, 60], 50);
+```
 
 Tham khảo:
 
-- [Array Sorting – vấn đề muôn thuở](https://completejavascript.com/array-sorting-van-de-muon-thuo/)
+- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
 
 - [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
@@ -378,7 +408,8 @@ Giải mã string cho trước sử dụng **ROT13**.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/caesars-cipher).
 
-    <code>function rot13(str) { // LBH QVQ VG!
+```
+function rot13(str) { // LBH QVQ VG!
       var arr = str.split("");
       var code, delta;
       for(var i = 0; i < arr.length; i++) {
@@ -396,7 +427,8 @@ Giải mã string cho trước sử dụng **ROT13**.
     }
 
     // Change the inputs below to test
-    rot13("SERR PBQR PNZC");</code>
+    rot13("SERR PBQR PNZC");
+```
 
 Tham khảo:
 
@@ -408,12 +440,12 @@ Tham khảo:
 
 Trên đây là tổng hợp các bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp. Theo cá nhân tôi thấy thì các bài toán trên khá dễ. Nhưng lại rất hay ở chỗ, nó giúp ta áp dụng được kiến thức lý thuyết. Nếu các bạn có gì thắc mắc, góp ý hay cải tiến các thuật toán trên. Vui lòng để lại bình luận phía dưới nhé.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

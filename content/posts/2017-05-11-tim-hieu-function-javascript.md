@@ -1,37 +1,41 @@
 ---
 date: "2017-05-11T15:05:14Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: tim-hieu-function-javascript
 title: "Tìm hiểu function JavaScript"
 categories:
   - Javascript cơ bản
 ---
 
-Function JavaScript (hàm số) là một thành phần không thể thiếu trong [cấu trúc chương trình](https://completejavascript.com/cau-truc-chuong-trinh-trong-javascript/). Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm số. Nhờ vậy mà việc bảo trì phần mềm cũng dễ dàng hơn.
+Function JavaScript (hàm số) là một thành phần không thể thiếu trong [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript/). Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm số. Nhờ vậy mà việc bảo trì phần mềm cũng dễ dàng hơn.
 
 Ngoài ra, khi đã xây dựng được một hàm số tốt (độc lập và thực hiện một chức năng nhất định), bạn có thể tái sử dụng nó trong các project khác nhau. Điều này làm nâng cao hiệu suất công việc của bạn.
 
-Bài viết này, mình sẽ giới thiệu những [thành phần cơ bản](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/) của hàm số trong JavaScript. Qua đó, bạn sẽ biết cách xây dựng hàm số và ứng dụng vào các project của mình.
+Bài viết này, mình sẽ giới thiệu những [thành phần cơ bản](/values-types-va-operators-trong-javascript-phan-1/) của hàm số trong JavaScript. Qua đó, bạn sẽ biết cách xây dựng hàm số và ứng dụng vào các project của mình.
 
 ## Định nghĩa function JavaScript
 
 Để định nghĩa hàm trong JavaScript, bạn phải sử dụng từ khoá _function_. Cấu trúc chung của function là:
 
-    <code>function functionName([parameter1], [parameter2],...){
+```
+function functionName([parameter1], [parameter2],...){
       statement1;
       statement2;
       ...
-    }</code>
+    }
+```
 
 Hoặc bạn có thể sử dụng một biến và gán giá trị cho nó là nội dung function. Khi đó, tên biến số cũng chính là tên của hàm số.
 
-    <code>var param = function([parameter1], [parameter2],...){
+```
+var param = function([parameter1], [parameter2],...){
       statement1;
       statement2;
       ...
-    };</code>
+    };
+```
 
 Một số đặc điểm của function JavaScript là:
 
@@ -44,7 +48,8 @@ Một số đặc điểm của function JavaScript là:
 - Kiểu của tham số hay giá trị trả về trong hàm số là không được quy định. Do đó, bạn thường phải kiểm tra kiểu của giá trị truyền vào hàm. Nếu không, bạn sẽ rất dễ bị sai.
 
 
-    <code>var greet = function(name){
+```
+var greet = function(name){
       console.log("Hello " + name + '!');
     };
 
@@ -55,7 +60,7 @@ Một số đặc điểm của function JavaScript là:
     }
 
     console.log(min(3, 4)); // => 3
-    </code>
+```
 
 ## Tham số và phạm vi (scope)
 
@@ -63,7 +68,8 @@ Tham số của hàm giống như là một biến số với giá trị của n
 
 Một đặc điểm quan trọng của function JavaScript là tham số và biến số khởi tạo trong hàm số có phạm vi cục bộ (local). Nghĩa là nó chỉ có ý nghĩa và chỉ được truy cập ở trong hàm. Hãy xem ví dụ sau:
 
-    <code>function increase(number){
+```
+function increase(number){
       var x = 5;
       number += x;
       console.log('number inside function:' + number);
@@ -78,7 +84,7 @@ Một đặc điểm quan trọng của function JavaScript là tham số và bi
 
     console.log(x);
     // => Uncaught ReferenceError: x is not defined
-    </code>
+```
 
 Bạn có thể thấy rằng là: giá trị của number trong function là 8. Tuy nhiên, giá trị của nó ở bên ngoài hàm vẫn là 3. Và biến x được khai báo ở trong hàm, nhưng lại không được nhìn thấy phía ngoài hàm.
 
@@ -90,7 +96,8 @@ Ngoài biến số ra, bạn còn có thể khai báo function JavaScript ở tr
 
 Tương tự như biến số, nếu bạn sử dụng hàm *nested scope*, thì những hàm này cũng có phạm vi sử dụng cục bộ trong hàm chứa nó. Bạn không thể gọi những hàm này ở _global_.
 
-    <code>function displayMax(a, b, c, d){
+```
+function displayMax(a, b, c, d){
      var max = function(m, n){
       if(m > n) return m;
       return n;
@@ -105,13 +112,13 @@ Tương tự như biến số, nếu bạn sử dụng hàm *nested scope*, th�
 
     displayMax(3, 5, 4, 10); // => 10
 
-    var t = max(10, 11); // => Uncaught ReferenceError: max is not defined</code>
-
+    var t = max(10, 11); // => Uncaught ReferenceError: max is not defined
+```
 Ở ví dụ trên, hàm _displayMax_ chứa hàm _max_. Do đó, hàm _max_ có thể được gọi bên trong hàm _displayMax_. Nhưng khi mình gọi hàm _max_ ở phạm vi global thì nó báo lỗi hàm _max_ không được định nghĩa.
 
 ## Functions và values
 
-Như mình đã đề cập trong bài viết trước, _function \_JavaScript là một loại [\_value_](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/). Hay nói cách khác: tên hàm là biến số và nội dung hàm là giá trị của biến số.
+Như mình đã đề cập trong bài viết trước, _function \_JavaScript là một loại [\_value_](/values-types-va-operators-trong-javascript-phan-2/). Hay nói cách khác: tên hàm là biến số và nội dung hàm là giá trị của biến số.
 
 Nghĩa là bạn có thể gán giá trị khác cho biến số đó bằng cách:
 
@@ -120,7 +127,8 @@ Nghĩa là bạn có thể gán giá trị khác cho biến số đó bằng cá
 - Gán cho biến số đó một giá trị khác như: number, string, boolean...
 
 
-    <code>var minValue = function(a, b){
+```
+var minValue = function(a, b){
       if(a < b) return a;
       return b;
     }
@@ -139,11 +147,12 @@ Nghĩa là bạn có thể gán giá trị khác cho biến số đó bằng cá
     minValue = 0;
     console.log(minValue);
     // => 0
-    </code>
+```
 
 Hoặc bạn có thể sử dụng hàm số trong biểu thức (expression):
 
-    <code>function sum(a, b){
+```
+function sum(a, b){
       return a + b;
     }
 
@@ -159,8 +168,8 @@ Hoặc bạn có thể sử dụng hàm số trong biểu thức (expression):
     var z = hello();
     // => Hello
     console.log(z);
-    // => underfined</code>
-
+    // => underfined
+```
 Trường hợp, function JavaScript không có giá trị trả về thì mặc định giá trị trả về là _underfined _(hàm hello() ở ví dụ trên).
 
 ## Vị trí khai báo function JavaScript
@@ -169,12 +178,14 @@ Chú ý rằng: nếu bạn sử dụng hàm số theo ví dụ trên thì chư�
 
 Tuy nhiên, bạn có thể gọi hàm trước khi định nghĩa hàm số.
 
-    <code>console.log('Dog: ' + dog());
+```
+console.log('Dog: ' + dog());
     // => Dog: go go go
 
     function dog(){
       return "go go go";
-    }</code>
+    }
+```
 
 Khi thực hiện, trình duyệt sẽ đưa phần định nghĩa hàm số lên trên đầu của chương trình. Do đó, bạn có thể gọi hàm ở bất cứ đâu bạn muốn.
 
@@ -188,35 +199,39 @@ Có một vị trí khác để định nghĩa hàm số là ở trong block _if
 
 Hãy xem ví dụ:
 
-    <code>function greet(who) {
+```
+function greet(who) {
       console.log("Hello " + who);
     }
     greet("Harry");
-    console.log("Bye");</code>
+    console.log("Bye");
+```
 
 Khi đó, luồng chương trình có thể được biểu diễn đơn giản như sau:
 
-    <code>top
+```
+top
        greet
             console.log
        greet
     top
        console.log
-    top</code>
-
+    top
+```
 Lúc này, máy tính sẽ đưa những lời gọi hàm vào _stack_. Và thực hiện theo đúng nguyên lý của nó: _vào sau ra trước_. Cho đến khi stack rỗng thì chương trình kết thúc.
 
 Việc lưu lời gọi hàm vào stack sẽ tốn không gian bộ nhớ (memory). Do đó, trong trường hợp bạn thực hiện quá nhiều lời gọi hàm (đệ quy vô hạn) thì bạn sẽ bị lỗi *maximum call stack size exceed* hay *stack overflow*. Tức là tràn stack. Do đó, khi viết đệ quy bạn cần phải chú ý đến điều kiện dừng.
 
-    <code>function chicken() {
+```
+function chicken() {
       return egg();
     }
     function egg() {
       return chicken();
     }
     console.log(chicken() + " came first.");
-    // → Uncaught RangeError: Maximum call stack size exceeded</code>
-
+    // → Uncaught RangeError: Maximum call stack size exceeded
+```
 ## Truyền tham số vào function JavaScript
 
 Trong C/C++, chúng ta phải định nghĩa rõ ràng kiểu tham số, số lượng tham số của hàm. Và khi gọi hàm thì phải gọi đúng như vậy. Nếu muốn đa dạng các kiểu giá trị thì bạn có thể dùng _template_. Nếu không muốn truyền một tham số nào vào hàm thì bạn có thể dùng giá trị mặc định (_default_). Điều này giúp cho C/C++ trở nên rất chặt chẽ.
@@ -227,7 +242,8 @@ Nếu bạn đưa vào nhiều tham số hơn so với định nghĩa thì nó s
 
 Ví dụ về hàm tính luỹ thừa:
 
-    <code>function power(base, exponent) {
+```
+function power(base, exponent) {
       if (exponent == undefined)
         exponent = 2;
       var result = 1;
@@ -241,8 +257,8 @@ Ví dụ về hàm tính luỹ thừa:
     console.log(power(4, 3));
     // => 64
     console.log(power(3, 2, 1));
-    // => 9</code>
-
+    // => 9
+```
 Trường hợp bạn không truyền giá trị cho tham số _exponent_ thì mặc định _exponent \_bằng_ underfined\_. Khi đó, mình gán exponent bằng 2. Ngược lại, mình sẽ tính như bình thường.
 
 ## Closure
@@ -253,7 +269,8 @@ _Closure_ tạm dịch là _sự đóng kín_.
 
 Hãy xem ví dụ sau:
 
-    <code>function wrapValue(n) {
+```
+function wrapValue(n) {
       var localVariable = n;
       return function() { return localVariable; };
     }
@@ -263,8 +280,8 @@ Hãy xem ví dụ sau:
     console.log(wrap1());
     // => 1
     console.log(wrap2());
-    // => 2</code>
-
+    // => 2
+```
 Trong hàm _wrapValue_, mình có khởi tạo một biến số là _localVariable_. Khi mình gọi _wrapValue(1)_ thì kết quả trả về là 1. Tức là _localVariable_ = 1.  Và khi mình gọi _wrapValue(2)_ thì kết quả trả về là 2. Chứng tỏ, *localVariable* = 2.
 
 **Như vậy, sau khi hàm số được gọi thì biến số cục bộ sẽ ở đâu?**
@@ -273,7 +290,8 @@ Thực tế, bạn không cần quan tâm đến vấn đề này. Vì dù sao, 
 
 Tuy nhiên, JavaScript đã đưa ra khái niệm _closure, _giúp bạn không cần phải bận tâm đến vòng đời của những biến cục bộ nữa. Hơn nữa, \_closure_ còn mang đến cho bạn sự linh hoạt và sáng tạo khi sử dụng hàm số.
 
-    <code>function multiplier(factor) {
+```
+function multiplier(factor) {
       return function(number) {
         return number * factor;
       };
@@ -281,8 +299,8 @@ Tuy nhiên, JavaScript đã đưa ra khái niệm _closure, _giúp bạn không
 
     var twice = multiplier(2);
     console.log(twice(5));
-    // => 10</code>
-
+    // => 10
+```
 Đây là một ví dụ về hàm _closure_. Bạn có thể thấy hàm _multiplier_ không hề chứa một biến cục bộ nào. Như vậy, ta có thể hiểu _đóng kín_ tức là nó bao gói lấy biến cục bộ trong hàm.
 
 Khái niệm _closure_ là khá mới mẻ và trông cũng rất thú vị. Vì vậy, mình quyết định sẽ dành riêng một bài viết về hàm _closure_. Qua đó, bạn có thể hiểu rõ hơn về hàm này và những ứng dụng của nó.
@@ -293,7 +311,8 @@ _Recursion_ hay còn gọi là hàm đệ quy. Recursion cho phép một hàm s�
 
 Sau đây là một ví dụ về đệ quy:
 
-    <code>function power(base, exponent) {
+```
+function power(base, exponent) {
       if (exponent == 0)
         return 1;
       else
@@ -301,13 +320,14 @@ Sau đây là một ví dụ về đệ quy:
     }
 
     console.log(power(2, 3));
-    // => 8</code>
-
+    // => 8
+```
 Ví dụ trên miêu tả cách tính luỹ thừa sử dụng đệ quy. Và bạn có thể thấy rằng cách biểu diễn này rất gần với định nghĩa mà chúng ta đã học trong toán học.
 
-    <code>a^b = 1, nếu b = 0
-    a^b = a * a^(b-1), nếu b > 0</code>
-
+```
+a^b = 1, nếu b = 0
+    a^b = a * a^(b-1), nếu b > 0
+```
 Khi sử dụng _recursion_ trong một số bài toán, bạn chỉ cần chuyển từ công thức toán học sang ngôn ngữ lập trình một cách đơn giản. Do đó, sử dụng đệ quy thường ngắn gọn và dễ dàng hơn so với sử dụng vòng lặp.
 
 Nhưng trong JavaScript, việc sử dụng đệ quy sẽ chậm hơn khoảng 10 lần so với sử dụng vòng lặp. Do đó, bạn nên cân nhắc trước khi quyết định sử dụng phương án này.
@@ -344,25 +364,27 @@ _Pure_ function là hàm không phụ thuộc vào yếu tố bên ngoài (biế
 
 _None-pure_ function, ngược lại với _pure_ function, là hàm phụ thuộc vào biến toàn cục hay môi trường thực thi. Do đó, khi bạn gọi cùng một hàm số với cùng một đối số, nhưng kết quả lại khác nhau.
 
-    <code>// pure function
+```
+// pure function
     function f1(number, factor){
      return number * factor;
     }
-    console.log(f1(2, 10)); // => 20</code>
+    console.log(f1(2, 10)); // => 20
+```
 
 
 
 
-
-    <code>// non-pure function
+```
+// non-pure function
     var factor = 10;
     function f2(number){
      return number * factor;
     }
     console.log(f2(3)); // => 30
     factor = 11;
-    console.log(f2(3)); // => 33</code>
-
+    console.log(f2(3)); // => 33
+```
 Trong ví dụ trên, hàm f1 là _pure_ function. Còn hàm f2 là hàm _non-pure_ function (hai lần gọi f2(3), nhưng kết quả một lần là 30 và một lần là 33).
 
 Rõ ràng, hàm _non-pure_ function là khó để tái sử dụng. Nhưng trong rất nhiều trường hợp, mình vẫn phải sử dụng hàm này để đảm bảo hiệu năng chương trình hoặc đơn giản là nó dễ viết hơn.
@@ -399,7 +421,7 @@ Xem code tại [đây](https://github.com/completejavascript/practical-javascrip
 
 Chỉ có 2 bài đơn giản vậy thôi.
 
-Cuối cùng hẹn gặp lại bạn ở [bài viết sau](https://completejavascript.com/tim-hieu-javascript-closures/), thân ái!
+Cuối cùng hẹn gặp lại bạn ở [bài viết sau](/tim-hieu-javascript-closures/), thân ái!
 
 ## Tham khảo
 
@@ -411,8 +433,8 @@ Cuối cùng hẹn gặp lại bạn ở [bài viết sau](https://completejavas
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

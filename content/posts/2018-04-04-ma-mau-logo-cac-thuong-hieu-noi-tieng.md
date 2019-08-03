@@ -1,8 +1,8 @@
 ---
 date: "2018-04-04T00:00:52Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: ma-mau-logo-cac-thuong-hieu-noi-tieng
 title: "Mã màu logo các thương hiệu nổi tiếng"
 categories:
@@ -231,12 +231,12 @@ tags:
 
 Trên đây là mã màu của một số thương hiệu nổi tiếng. Nếu bạn muốn cập nhật thêm mã màu logo của thương hiệu nào thì vui lòng để lại bình luận nhé.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/cach-su-dung-hang-so-trong-es5-va-es6/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/cach-su-dung-hang-so-trong-es5-va-es6/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

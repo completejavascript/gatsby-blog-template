@@ -1,20 +1,20 @@
 ---
 date: "2019-05-12T23:00:52Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/xu-ly-bat-dong-bo-song-song-hay-tuan-tu-completejavascript.com_.png"
+keywords: "xử lý bất đồng bộ song song"
 slug: xu-ly-bat-dong-bo-song-song-tuan-tu
 title: "Xử lý bất đồng bộ song song hay tuần tự?"
 categories:
   - Thủ thuật JavaScript
 tags:
-  - async/await
+  - Async - Await
   - Destructuring Assignment
   - ES6
   - Promise
 ---
 
-Có thể bạn đã quen với việc [xử lý bất đồng bộ](https://completejavascript.com/xu-ly-bat-dong-bo-callback-promise-async-await/) trong JavaScript với [Promise](https://completejavascript.com/tag/promise) hoặc [async/await](https://completejavascript.com/tag/async-await/) rồi. Tuy nhiên, khi bạn có một chuỗi các hành động thì câu hỏi đặt ra là: bạn sẽ xử lý chúng như thế nào? Bạn quyết định xử lý bất đồng bộ song song hay tuần tự?
+Có thể bạn đã quen với việc [xử lý bất đồng bộ](/xu-ly-bat-dong-bo-callback-promise-async-await/) trong JavaScript với [Promise](/tag/promise) hoặc [Async/await](/tag/async-await/) rồi. Tuy nhiên, khi bạn có một chuỗi các hành động thì câu hỏi đặt ra là: bạn sẽ xử lý chúng như thế nào? Bạn quyết định xử lý bất đồng bộ song song hay tuần tự?
 
 Câu trả lời có lẽ sẽ phụ thuộc vào từng trường hợp. Tuy nhiên, để biết được nên lựa chọn cách nào thì bạn cần phải biết ý nghĩa và cách triển khai của từng trường hợp.
 
@@ -25,33 +25,33 @@ Bài viết này sẽ giới thiệu với bạn về 2 cách xử lý bất đ�
 Giả sử, mình có **một công việc** bất đồng bộ là: lấy thông tin bài viết (**getPost**). Công việc này bao gồm **3 hành động** bất đồng bộ là:
 
 - Lấy nội dung bài viết (**getContent**)
-
 - Lấy nội dung phần bình luận (**getComments**)
-
 - Lấy danh sách các bài viết liên quan (**getRelatedPosts**)
 
+```js
+const wait = (ms) => {
+  return new Promise(res => setTimeout(res, ms));
+}
 
-    <code class="language-javascript">const wait = (ms) => {
-      return new Promise(res => setTimeout(res, ms));
-    }
+const getContent = async () => {
+  await wait(1000);
+  return 'This is content';
+}
 
-    const getContent = async () => {
-      await wait(1000);
-      return 'This is content';
-    }
+const getComments = async () => {
+  await wait(1500);
+  return ['comment 1', 'comment 2'];
+}
 
-    const getComments = async () => {
-      await wait(1500);
-      return ['comment 1', 'comment 2'];
-    }
+const getRelatedPosts =  async () => {
+  await wait(2000);
+  return ['post 2', 'post 3', 'post 4'];
+}
 
-    const getRelatedPosts =  async () => {
-      await wait(2000);
-      return ['post 2', 'post 3', 'post 4'];
-    }
-
-    const getPost = async () => {
-      // TODO: Implement later</code> <code class="language-javascript">}</code>
+const getPost = async () => {
+  // TODO: Implement later
+}
+```
 
 Với công việc như trên, mình sẽ thử triển khai theo cách xử lý bất đồng bộ tuần tự và cách xử lý bất đồng bộ song song, sau đó sẽ kiểm tra xem cách nào tốt hơn nhé!
 
@@ -59,74 +59,82 @@ Với công việc như trên, mình sẽ thử triển khai theo cách xử lý
 
 Với cách này, 3 hành động **getContent**, **getComments** và **getRelatedPosts** sẽ thực hiện tuần tự nhau. Nếu sử dụng async/await thì kết quả sẽ như sau:
 
-    <code class="language-javascript">const getPost = async () => {
-      console.time('time');
+```js
+const getPost = async () => {
+  console.time('time');
 
-      const content = await getContent();
-      const comments = await getComments();
-      const relatedPosts = await getRelatedPosts();
+  const content = await getContent();
+  const comments = await getComments();
+  const relatedPosts = await getRelatedPosts();
 
-      console.log(`Post Info: `, {content, comments, relatedPosts});
-      console.timeEnd('time');
-    }
+  console.log(`Post Info: `, {content, comments, relatedPosts});
+  console.timeEnd('time');
+}
 
-    getPost();
-    /*
-    Post Info:
-    {
-      comments:  ["comment 1", "comment 2"]
-      content: "This is content"
-      relatedPosts: ["post 2", "post 3", "post 4"]
-    }
-    time: 4504.9638671875ms
-    */</code>
+getPost();
+/*
+Post Info:
+{
+  comments:  ["comment 1", "comment 2"]
+  content: "This is content"
+  relatedPosts: ["post 2", "post 3", "post 4"]
+}
+time: 4504.9638671875ms
+*/
+```
 
-Trong ví dụ trên, mình sử dụng [console.time và console.timeEnd](https://completejavascript.com/thu-thuat-su-dung-console-hieu-qua/) để tính toán thời gian thực hiện. Kết quả thu được cỡ **4500 ms**.  Đó chính là **tổng thời gian thực hiện của 3 hành động**.
+Trong ví dụ trên, mình sử dụng [console.time và console.timeEnd](/thu-thuat-su-dung-console-hieu-qua/) để tính toán thời gian thực hiện. Kết quả thu được cỡ **4500 ms**.  Đó chính là **tổng thời gian thực hiện của 3 hành động**.
 
 **Cụ thể:**
 
-    <code>time(getPost) = time(getContent) + time(getComments) + time(getRelatedPosts)
-    = 1000 + 1500 + 2000
-    = 4500 (ms)</code>
+```
+time(getPost) = time(getContent) + time(getComments) + time(getRelatedPosts)
+= 1000 + 1500 + 2000
+= 4500 (ms)
+```
 
 ## Xử lý bất đồng bộ song song
 
 Với cách này, 3 hành động **getContent**, **getComments** và **getRelatedPosts** sẽ thực hiện gần như là song song với nhau. Để thực hiện việc này, mình sẽ áp dụng [Promise.all](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) vào đây và kết quả thu được như sau:
 
-    <code class="language-javascript">const getPost = async () => {
-      console.time('time');
+```js
+const getPost = async () => {
+  console.time('time');
 
-      const [ content, comments, relatedPosts ] = await Promise.all([
-        getContent(),
-        getComments(),
-        getRelatedPosts()
-      ]);
+  const [ content, comments, relatedPosts ] = await Promise.all([
+    getContent(),
+    getComments(),
+    getRelatedPosts()
+  ]);
 
-      console.log(`Post Info: `, {content, comments, relatedPosts});
-      console.timeEnd('time');
-    }
+  console.log(`Post Info: `, {content, comments, relatedPosts});
+  console.timeEnd('time');
+}
 
-    /*
-    Post Info:
-    {
-      comments:  ["comment 1", "comment 2"]
-      content:  "This is content"
-      relatedPosts:  ["post 2", "post 3", "post 4"]
-    }
-    time: 2001.398193359375ms
-    */</code>
+/*
+Post Info:
+{
+  comments:  ["comment 1", "comment 2"]
+  content:  "This is content"
+  relatedPosts:  ["post 2", "post 3", "post 4"]
+}
+time: 2001.398193359375ms
+*/
+```
 
-Trong ví dụ trên, mình đưa 3 hành động bất đồng bộ vào một [mảng](https://completejavascript.com/javascript-array-co-ban/), rồi truyền nó vào Promise.all. Tiếp theo, mình thực hiện **await** với phương thức này để đợi kết quả trả về.
+Trong ví dụ trên, mình đưa 3 hành động bất đồng bộ vào một [mảng](/javascript-array-co-ban/), rồi truyền nó vào Promise.all. Tiếp theo, mình thực hiện **await** với phương thức này để đợi kết quả trả về.
 
-Sau khi hàm trên kết thúc, mình dùng [Destructuring Assignment](https://completejavascript.com/destructuring-assignment-trong-javascript/) để lấy ra kết quả như mong muốn, theo đúng thứ tự truyền vào của các hành động bên trong Promise.all.
+Sau khi hàm trên kết thúc, mình dùng [Destructuring Assignment](/destructuring-assignment-trong-javascript/) để lấy ra kết quả như mong muốn, theo đúng thứ tự truyền vào của các hành động bên trong Promise.all.
 
 Với cách này, thời gian thực hiện cỡ **2000 ms**. Đó chính là **thời gian thực hiện lớn nhất của 3 hành động**.
 
 **Cụ thể:**
 
-    <code>time(getPost) = Max of [time(getContent), time(getComments), time(getRelatedPosts)]
-    = Max of [1000, 1500, 2000]
-    = 2000</code>
+```
+time(getPost) = Max of [time(getContent), time(getComments), time(getRelatedPosts)]
+= Max of [1000, 1500, 2000]
+= 2000
+```
 
 ## Lời kết
 
@@ -138,8 +146,8 @@ Xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

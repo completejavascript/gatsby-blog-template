@@ -1,15 +1,15 @@
 ---
 date: "2017-05-30T00:10:29Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: javascript-object-last-but-not-least
 title: "JavaScript Object - last but not least"
 categories:
   - Javascript cơ bản
 ---
 
-Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/), [string, boolean](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/) và [array](https://completejavascript.com/javascript-array-co-ban/). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](https://completejavascript.com/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/)), nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn trở thành master trên con đường JavaScript học.
+Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number](/values-types-va-operators-trong-javascript-phan-1/), [string, boolean](/values-types-va-operators-trong-javascript-phan-2/) và [array](/javascript-array-co-ban/). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/)), nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn trở thành master trên con đường JavaScript học.
 
 Để hiểu JavaScript object là gì, mình xin đưa ra một ví dụ. Máy tính của mình có những đặc điểm sau:
 
@@ -41,18 +41,21 @@ _Object là một khái niệm trừu tượng dùng để biểu diễn một v
 
 JavaScript sử dụng cặp dấu ngoặc nhọn {} để biểu diễn object:
 
-    <code>{
+```
+{
       key1: value1,
       key2: value2,
       key3: value3,
       ...
-    }</code>
+    }
+```
 
-Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị tương ứng là *value1, value2, value3,...* Nếu value là một [function](https://completejavascript.com/tim-hieu-function-javascript/) thì đó chính là phương thức của object.
+Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị tương ứng là *value1, value2, value3,...* Nếu value là một [function](/tim-hieu-function-javascript/) thì đó chính là phương thức của object.
 
 Áp dụng cho ví dụ trên:
 
-    <code>var myComputer = {
+```
+var myComputer = {
       type: "laptop",
       brand: "Sony",
       os: "Windows 7",
@@ -61,7 +64,8 @@ Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị 
       sleep: {...},
       hibernate: {...},
       shutDown: {...}
-    };</code>
+    };
+```
 
 **Chú ý:**
 
@@ -79,7 +83,8 @@ Khi đã biểu diễn được object rồi thì vấn đề tiếp theo là l�
 
 Ví dụ sau đây mô tả cách sử dụng Object:
 
-    <code>var myComputer = {
+```
+var myComputer = {
      type: "laptop",
      brand: "Sony",
      "operating system": "Windows 7",
@@ -93,13 +98,14 @@ Ví dụ sau đây mô tả cách sử dụng Object:
     console.log(myComputer["brand"]);            // => Sony
     console.log(myComputer['operating system']); // => Windows 7
     console.log(myComputer["graphic card"]);     // => NVIDIA
-    </code>
+```
 
 ## Thay đổi giá trị của thuộc tính
 
 Để thay đổi giá trị thuộc tính của object, bạn chỉ cần sử dụng cách truy cập ở trên và gán giá trị mới cho thuộc tính đó.
 
-    <code>var myComputer = {
+```
+var myComputer = {
      type: "laptop",
      brand: "Sony",
      "operating system": "Windows 7",
@@ -112,15 +118,16 @@ Ví dụ sau đây mô tả cách sử dụng Object:
     myComputer['operating system'] = 'Ubuntu';
     console.log(myComputer.type);               // => desktop
     console.log(myComputer['operating system']);// => Ubuntu
-    </code>
+```
 
 ## Cách duyệt tất cả các thuộc tính của object
 
-Đối với array, bạn có thể sử dụng vòng lặp [_for, while, do/while_](https://completejavascript.com/cau-truc-chuong-trinh-trong-javascript/) với chỉ số là number để duyệt từng phần tử của mảng. Nhưng với object thì hơi khác một chút.
+Đối với array, bạn có thể sử dụng vòng lặp [_for, while, do/while_](/cau-truc-chuong-trinh-trong-javascript/) với chỉ số là number để duyệt từng phần tử của mảng. Nhưng với object thì hơi khác một chút.
 
 Để duyệt các thuộc tính của object, bạn có thể sử dụng vòng lặp _for_ với từ khoá \_in \_như ví dụ sau:
 
-    <code>var myComputer = {
+```
+var myComputer = {
      type: "laptop",
      brand: "Sony",
      "operating system": "Windows 7",
@@ -136,7 +143,8 @@ Ví dụ sau đây mô tả cách sử dụng Object:
     * brand Sony
     * operating system Windows 7
     * graphic card NVIDIA
-    */</code>
+    */
+```
 
 Khi đó biến _prop_ sẽ chạy hết tất cả các thuộc tính của object _myComputer_.
 
@@ -150,19 +158,21 @@ JavaScript cung cấp cho chúng ta 2 toán tử so sánh là == và ===. Trong 
 
 Hãy xem ví dụ sau để thấy sự khác biệt giữa hai toán tử
 
-    <code>var x = 1;
+```
+var x = 1;
     var y = true;
 
     console.log(x == y);  // => true
-    console.log(x === y); // => false</code>
-
+    console.log(x === y); // => false
+```
 Khi sử dụng ==, JavaScript sẽ convert x = 1 thành giá trị true, nên kết quả trả về là true. Ngược lại, khi sử dụng toán tử ===, kết quả trả về sẽ là false vì x có kiểu number và y có kiểu Boolean.
 
 ### Áp dụng toán tử == và === để so sánh object
 
 Bây giờ, mình sẽ thử áp dụng hai toán tử trên để so sánh object:
 
-    <code>var obj1 = {
+```
+var obj1 = {
      x: 10,
      y: 10
     };
@@ -178,15 +188,16 @@ Bây giờ, mình sẽ thử áp dụng hai toán tử trên để so sánh obje
     console.log(obj2 === obj1); // => false
 
     console.log(obj3 == obj1); // => true
-    console.log(obj3 === obj1); // => true</code>
-
+    console.log(obj3 === obj1); // => true
+```
 Qua ví dụ trên, bạn có thể thấy rằng: hai object bằng nhau khi và chỉ khi chúng trỏ vào cùng địa chỉ bộ nhớ (obj3 và obj1). Trường hợp obj1 và obj2, mặc dù các thuộc tính và giá trị hoàn toàn giống nhau nhưng hai object này không bằng nhau.
 
 ### Xây dựng hàm so sánh object
 
 Trường hợp, bạn muốn quy định obj1 và obj2 như trên là bằng nhau thì bạn có thể tự viết một hàm riêng để so sánh hai đối tượng này:
 
-    <code>function isEqual(obj1, obj2){
+```
+function isEqual(obj1, obj2){
      for(var prop in obj1){
        if(obj1[prop] !== obj2[prop]) return false;
      }
@@ -219,8 +230,8 @@ Trường hợp, bạn muốn quy định obj1 và obj2 như trên là bằng nh
 
     console.log(isEqual(obj2, obj1)); // => true
     console.log(isEqual(obj3, obj1)); // => false
-    console.log(isEqual(obj4, obj1)); // => false</code>
-
+    console.log(isEqual(obj4, obj1)); // => false
+```
 Hàm _isEqual_ trả về **true** khi và chỉ khi hai object **có các thuộc tính và giá trị của chúng giống nhau**, ngược lại thì trả về **false**.
 
 ## Một số đối tượng sẵn có trong JavaScript
@@ -235,7 +246,8 @@ Bởi lẽ, bạn có thể truyền vào nhiều hơn, hay ít hơn số lượ
 
 Ví dụ sau miêu tả cách sử dụng _arguments_ để xác định số lớn nhất trong tất cả các số truyền vào:
 
-    <code>function maxOf(){
+```
+function maxOf(){
       var max = -1;
       for(var i = 0; i < arguments.length; i++){
         if(arguments[i] > max)
@@ -248,8 +260,8 @@ Ví dụ sau miêu tả cách sử dụng _arguments_ để xác định số l�
     // => 2
 
     console.log(maxOf(1, 2, 3, 4, 5, 6, 7));
-    // => 7</code>
-
+    // => 7
+```
 Rõ ràng, hàm _maxOf_ của mình không chứa một tham số nào. Nhưng khi sử dụng, mình lại có thể truyền tham số với số lượng tuỳ ý.
 
 ### Đối tượng Math
@@ -264,12 +276,13 @@ Mình sẽ không giới thiệu nhiều về đối tượng này. Bạn có th
 
 Trong JavaScript, cụ thể là đối với browser, đối tượng lớn nhất chính là _window_. Mọi biến global đều thuộc đối tượng này.
 
-    <code>var x = 6;
+```
+var x = 6;
     console.log("x" in window);
     // => true
     console.log(window.x);
-    // => 6</code>
-
+    // => 6
+```
 Trên đây là một số kiến thức cơ bản về JavaScript object. Nếu bạn đã hiểu hết những nội dung ở trên, bạn có thể tìm hiểu sâu hơn về object. Còn bây giờ thì tạm dừng lại và thực hành một chút về những gì đã học được nhé.
 
 <blockquote>Dục tốc bất đạt.</blockquote>
@@ -278,7 +291,7 @@ Trên đây là một số kiến thức cơ bản về JavaScript object. Nếu
 
 Giả sử, ta định nghĩa cấu trúc dữ liệu dạng **List** như sau:
 
-![list - completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/05/list.png)
+![list - completejavascript.com](/wp-content/uploads/2017/05/list.png)
 
 Trong đó, value1, value2, value3 là những phần tử của mảng.
 
@@ -288,7 +301,7 @@ Cho mảng array = [1, 2, 3, 4, 5, 6].
 
 - Từ object dạng list trên, viết hàm **listToArray(list)** trả về array ban đầu. ([tham khảo](https://github.com/completejavascript/practical-javascript/blob/master/object/listToArray.js))
 
-Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết tiếp theo](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/), thân ái!
+Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết tiếp theo](/javascript-foreach-la-cai-quai-gi/), thân ái!
 
 ## Tham khảo
 
@@ -296,8 +309,8 @@ Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết tiếp
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

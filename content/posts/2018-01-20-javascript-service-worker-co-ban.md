@@ -1,8 +1,8 @@
 ---
 date: "2018-01-20T05:16:13Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: javascript-service-worker-co-ban
 title: "JavaScript Service Worker cơ bản"
 categories:
@@ -22,7 +22,7 @@ Service Worker có một số đặc điểm quan trọng là:
 
 - Không liên kết với một trang cụ thể
 
-- Không truy cập đến [DOM](https://completejavascript.com/co-ban-ve-dom-javascript/)
+- Không truy cập đến [DOM](/co-ban-ve-dom-javascript/)
 
 - Có thể dừng khi không sử dụng và chạy khi cần thiết.
 
@@ -40,21 +40,24 @@ Có lẽ đến đây thì bạn đã hiểu phần nào về JavaScript Service
 
 Giả sử, mình có một trang web đơn giản và cấu trúc các tệp tin như sau:
 
-    <code>index.html
+```
+index.html
     service_worker.js
     main.js
-    style.css</code>
-
+    style.css
+```
 Lúc này, mình sẽ đăng ký Service Worker trong file _**main.js**_:
 
-    <code>if ('serviceWorker' in navigator) {
+```
+if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service_worker.js')
       .then(reg => {
         console.log('Registered service worker');
       }).catch(err => {
         console.log('Register service worker failed', err);
       });
-    }</code>
+    }
+```
 
 Có một số lưu ý quan trọng khi đăng ký Service Worker là:
 
@@ -68,7 +71,8 @@ Có một số lưu ý quan trọng khi đăng ký Service Worker là:
 
 Mình có tham khảo được một ví dụ mẫu về cách triển khai JavaScript Service Worker như sau (mình không nhớ mình tham khảo được ở đâu, chỉ nhớ là của Google, nên mong tác giả của script thông cảm):
 
-    <code>/*
+```
+/*
     * Names of the two caches used in this version of the service worker.
     * Change to v2, etc. when you update any of the local resources, which will
     * in turn trigger the install event again.
@@ -134,7 +138,7 @@ Mình có tham khảo được một ví dụ mẫu về cách triển khai Java
       }
     });
 
-    </code>
+```
 
 Sau khi đăng ký thành công, Service Worker sẽ được download về phía client và thực hiện những việc sau đây.
 
@@ -142,7 +146,8 @@ Sau khi đăng ký thành công, Service Worker sẽ được download về phí
 
 Đoạn code dùng để install Service Worker:
 
-    <code>const PRECACHE = 'my-precache-v1';
+```
+const PRECACHE = 'my-precache-v1';
     const RUNTIME = 'my-runtime'; // A list of local resources we always want to be cached.
     const PRECACHE_URLS = [
       'index.html',
@@ -158,9 +163,10 @@ Sau khi đăng ký thành công, Service Worker sẽ được download về phí
           .then(cache => cache.addAll(PRECACHE_URLS))
           .then(self.skipWaiting())
       );
-    });</code>
+    });
+```
 
-Mục đích của của việc **install** là để lưu một số resources được định nghĩa ở [array](https://completejavascript.com/javascript-array-co-ban/) **\*PRECACHE_URLS** _vào bộ nhớ đệm **cache** với tên định nghĩa bởi \*\*\_PRECACHE\*. \*\*
+Mục đích của của việc **install** là để lưu một số resources được định nghĩa ở [array](/javascript-array-co-ban/) **\*PRECACHE_URLS** _vào bộ nhớ đệm **cache** với tên định nghĩa bởi \*\*\_PRECACHE\*. \*\*
 
 Sau khi lưu xong hết tất cả các resources cần thiết, hàm [self.skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) dùng để dừng công việc hiện tại lại và chuyển ngay sang công việc tiếp theo.
 
@@ -168,7 +174,8 @@ Sau khi lưu xong hết tất cả các resources cần thiết, hàm [self.skip
 
 Đoạn code dùng để active Service Worker là:
 
-    <code>// The activate handler takes care of cleaning up old caches.
+```
+// The activate handler takes care of cleaning up old caches.
     self.addEventListener('activate', event => {
       const currentCaches = [PRECACHE, RUNTIME];
       event.waitUntil(
@@ -180,7 +187,8 @@ Sau khi lưu xong hết tất cả các resources cần thiết, hàm [self.skip
           }));
         }).then(() => self.clients.claim())
       );
-    });</code>
+    });
+```
 
 Mục đích của công việc **activate** này là để xóa đi bộ nhớ đệm **cache** cũ, và giữ lại **cache** mới nhất, cuối cùng là kích hoạt Service Worker.
 
@@ -190,20 +198,24 @@ Làm sao để cập nhật được những resources mới này vào cache?
 
 Bạn cần thay đổi tên của _**PRECACHE**_, ví dụ là: **_my-precache-v2._** Lúc này **_currentCaches = ['my-precache-v2', RUNTIME]._** Bây giờ chỉ cần dùng [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) để lọc ra tên của cache không có trong _**currentCaches**_:
 
-    <code>cacheNames.filter(cacheName => !currentCaches.includes(cacheName));</code>
+```
+cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
+```
 
 Đó chính là **_my-precache-v1._** Tiếp theo, xóa cache này đi:
 
-    <code>.then(cachesToDelete => {
+```
+.then(cachesToDelete => {
           return Promise.all(cachesToDelete.map(cacheToDelete => {
             return caches.delete(cacheToDelete);
-          }));</code>
+          }));
+```
 
 Cuối cùng là kích hoạt Service Worker sử dụng [self.clients.claim()](https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim).
 
 Bạn có thể kiểm tra lại bằng cách nhấn **Ctrl Shift I** hoặc **F12 **(tùy thuộc trình duyệt) để vào phần Công cụ dành cho nhà phát triển:
 
-![Google Dev Tool - Check Service Worker](https://completejavascript.com/wp-content/uploads/2018/01/google-dev-tool-service-worker-check.png)
+![Google Dev Tool - Check Service Worker](/wp-content/uploads/2018/01/google-dev-tool-service-worker-check.png)
 
 Theo như hình trên thì bạn có thể thấy là Service Worker đã được kích hoạt (**activated**) và đang chạy (**running**).
 
@@ -211,7 +223,8 @@ Theo như hình trên thì bạn có thể thấy là Service Worker đã đư�
 
 Đoạn code xử lý lệnh fetch:
 
-    <code>/*
+```
+/*
     * The fetch handler serves responses for same-origin resources from a cache.
     * If no response is found, it populates the runtime cache with the response
     * from the network before returning it to the page.
@@ -236,7 +249,8 @@ Theo như hình trên thì bạn có thể thấy là Service Worker đã đư�
           })
         );
       }
-    });</code>
+    });
+```
 
 Đoạn code trên có thể mô tả thành lời như sau:
 
@@ -264,7 +278,7 @@ Trên đây là những kiến thức cơ bản về JavaScript Service Worker m
 
 Nếu bạn có **thắc mắc** gì, vui lòng để lại bình luận để mọi người có thể cùng trao đổi. Mình không hứa là sẽ giải đáp ngay cho bạn. Nhưng mình hứa sẽ tìm hiểu để giải quyết cùng bạn.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/anh-nine-patch-scale-khong-vo-trong-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/anh-nine-patch-scale-khong-vo-trong-javascript/), thân ái!
 
 ## Tham khảo
 
@@ -286,8 +300,8 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://co
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

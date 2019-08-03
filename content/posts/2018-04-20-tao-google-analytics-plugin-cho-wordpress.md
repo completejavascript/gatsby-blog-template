@@ -1,8 +1,8 @@
 ---
 date: "2018-04-20T00:00:22Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: tao-google-analytics-plugin-cho-wordpress
 title: "Tạo Google Analytics Plugin cho Wordpress"
 categories:
@@ -30,7 +30,8 @@ Kết quả của bạn cần thu được là **Google-Analytics-ID**, ví dụ
 
 **Bước 2**: Copy đoạn code của mình sau đây vào file vừa rồi
 
-    <code><?php
+```
+<?php
       // Plugin Name: Simple Google Analytics Plugin for Wordpress
       // Description: Adds a Google analytics tracking code to the <head> of your theme, by hooking to wp_head.
       // Author: LP Devs
@@ -47,7 +48,8 @@ Kết quả của bạn cần thu được là **Google-Analytics-ID**, ví dụ
       </script>
         <?php
       }
-      add_action( 'wp_head', 'wp_lpdevs_google_analytics');</code>
+      add_action( 'wp_head', 'wp_lpdevs_google_analytics');
+```
 
 **Bước 3: Tùy biến file plugin**
 
@@ -62,7 +64,7 @@ Kết quả của bạn cần thu được là **Google-Analytics-ID**, ví dụ
 - Copy file trên vào thư mục **/wp-content/plugins.**
 - Login vào trình quản lý Wordpress, rồi chọn mục Plugin. Nếu như các bước trên thực hiện đúng thì đến đây bạn sẽ nhìn thấy plugin của bạn. Giờ chỉ cần kích hoạt nó lên là xong rồi.
 
-[![simple google analytics plugin](https://completejavascript.com/wp-content/uploads/2018/04/tao-google-analytics-plugin-wordpress-completejavascript.com_.png)](https://completejavascript.com/)
+[![simple google analytics plugin](/wp-content/uploads/2018/04/tao-google-analytics-plugin-wordpress-completejavascript.com_.png)](/)
 
 Đây là kết quả khi sử dụng Google Analytics Plugin trên với trang web của mình:
 
@@ -70,7 +72,7 @@ Kết quả của bạn cần thu được là **Google-Analytics-ID**, ví dụ
 
 Trên đây là các bước mình tạo Google Analytics Plugin cho Wordpress. Nếu có góp ý hoặc thắc mắc gì, vui lòng để lại cho mình trong phần bình luận.
 
-Xin chào và hẹn gặp lại trong [bài viết tiếp theo](https://completejavascript.com/phan-biet-arrow-function-va-function-trong-javascript/), thân ái!
+Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/phan-biet-arrow-function-va-function-trong-javascript/), thân ái!
 
 ## Tham khảo
 
@@ -78,8 +80,8 @@ Xin chào và hẹn gặp lại trong [bài viết tiếp theo](https://complete
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

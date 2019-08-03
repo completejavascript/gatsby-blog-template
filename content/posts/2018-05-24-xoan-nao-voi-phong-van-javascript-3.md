@@ -1,8 +1,8 @@
 ---
 date: "2018-05-24T12:36:10Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: xoan-nao-voi-phong-van-javascript-3
 title: "Xoắn não với phỏng vấn JavaScript 3"
 categories:
@@ -16,7 +16,8 @@ Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 
 
 ## Xoắn não với phỏng vấn JavaScript 3 - Câu 1
 
-    <code>let a = {
+```
+let a = {
       x: 1,
       getX: function() {
         return this.x;
@@ -27,7 +28,8 @@ Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 
     b.x = 10;
 
     delete b.x;
-    console.log(b.getX());</code>
+    console.log(b.getX());
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -43,14 +45,16 @@ _The Object.create() method creates a new object, using an existing object to pr
 
 Tức là Object.create sẽ tạo ra một object mới, sử dụng object cho trước làm **proto** cho object mới tạo ra.
 
-Trong câu hỏi này, [object](https://completejavascript.com/javascript-object-last-but-not-least/) a sẽ được dùng làm **proto** cho object b.
+Trong câu hỏi này, [object](/javascript-object-last-but-not-least/) a sẽ được dùng làm **proto** cho object b.
 
 Giả sử không có câu lệnh _delete b.x_ thì bạn có thể đoán được kết quả sẽ trả về của phương thức _getX()_ là **this.x = b.x = 10**. Nhưng nếu _delete b.x_ thì JavaScript sẽ tìm đến thằng cha gần nhất của b, thông qua **proto**, và đó chính là object a. Vì vậy, kết quả **this.x = a.x = 1**.
 
 ## Xoắn não với phỏng vấn JavaScript 3 - Câu 2
 
-    <code>let a = [1, 'a', {x : 1}, {y : 2}, [1, 2], {x : 1}];
-    console.log(a.indexOf({x : 1}));</code>
+```
+let a = [1, 'a', {x : 1}, {y : 2}, [1, 2], {x : 1}];
+    console.log(a.indexOf({x : 1}));
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -66,9 +70,10 @@ _indexOf() compares searchElement to elements of the Array using strict equality
 
 Nghĩa là nó compare phần tử bằng dấu ===. Mà trong JavaScript, bạn không thể sử dụng toán tử này để so sánh 2 object. Ví dụ:
 
-    <code>console.log({x : 1} === {x : 1});
-    // => false</code>
-
+```
+console.log({x : 1} === {x : 1});
+    // => false
+```
 Về mặt trực quan, bạn sẽ thấy 2 object trên giống nhau nên chúng phải bằng nhau. Không phải, chúng là 2 object hoàn toàn khác nhau.
 
 _Vậy, nếu tôi vẫn muốn tìm vị trí của object có dạng {x : 1} thì sao?_
@@ -77,19 +82,23 @@ Bạn có thể sử dụng phương thức [findIndex](https://developer.mozill
 
 Ví dụ:
 
-    <code>[1, 'a', {x : 1}, {y : 2}, [1, 2], {x : 1}].findIndex(function(element) {
+```
+[1, 'a', {x : 1}, {y : 2}, [1, 2], {x : 1}].findIndex(function(element) {
       return typeof element === "object" &&
              Object.keys(element).length === 1 &&
              Object.keys(element)[0] === 'x' &&
              element.x === 1;
-    });</code>
+    });
+```
 
 ## Xoắn não với phỏng vấn JavaScript 3 - Câu 3
 
-    <code>(function() {
+```
+(function() {
       var x = y = 10;
     })();
-    console.log(y);</code>
+    console.log(y);
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -101,23 +110,27 @@ Xem đáp án
 
 Đoạn code trên thực chất có thể tách ra thành như sau:
 
-    <code>(function() {
+```
+(function() {
       y = 10;
       var x = y;
     })();
-    console.log(y);</code>
+    console.log(y);
+```
 
 Biến _y_ viết như vậy sẽ có phạm vi global, tức nó trở thành một thuộc tính của window. Do đó, **console.log(y) = 10**.
 
-Trong khi đó, nếu bạn in ra giá trị của x bằng console.log(x) thì kết quả báo lỗi **ReferenceError: x is not defined**. Bởi vì, biến _x_ kiểu [var sẽ có phạm vi là block](https://completejavascript.com/phan-biet-var-va-let-trong-javascript/), tức là chỉ nó chỉ tồn tại trong [function](https://completejavascript.com/tim-hieu-function-javascript/) trên.
+Trong khi đó, nếu bạn in ra giá trị của x bằng console.log(x) thì kết quả báo lỗi **ReferenceError: x is not defined**. Bởi vì, biến _x_ kiểu [var sẽ có phạm vi là block](/phan-biet-var-va-let-trong-javascript/), tức là chỉ nó chỉ tồn tại trong [function](/tim-hieu-function-javascript/) trên.
 
 ## Xoắn não với phỏng vấn JavaScript 3 - Câu 4
 
-    <code>let a = [1, 2, 3];
+```
+let a = [1, 2, 3];
     a[-1] = 4;
     a[10] = 5;
 
-    console.log(a[6], a.length);</code>
+    console.log(a[6], a.length);
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -129,21 +142,24 @@ Xem đáp án
 
 Như mình đã giải thích trong bài viết trước, bạn có thể sử dụng chỉ số âm trong mảng. Vì vậy, sau câu lệnh đầu tiên, mảng a trở thành:
 
-    <code>let a = [1, 2, 3];
+```
+let a = [1, 2, 3];
     a[-1] = 4;
-    //[1, 2, 3, -1: 4]</code>
-
+    //[1, 2, 3, -1: 4]
+```
 Tuy nhiên, cái này lại không ảnh hưởng đến độ dài của mảng, tức là a.length vẫn bằng 3.
 
 Khi thực hiện câu lệnh tiếp theo là _a[10] = 5_, vì 10 là số tự nhiên lớn hơn độ dài hiện tại của mảng nên JavaScript sẽ cấp phát thêm bộ nhớ cho mảng thành 11 phần tử để lưu a[10] tại vị trí cuối cùng của mảng.
 
-    <code>a = [1, 2, 3, , , , , , , , 5, -1: 4]</code>
-
+```
+a = [1, 2, 3, , , , , , , , 5, -1: 4]
+```
 Do đó, độ dài mảng a.length = 11
 
 ## Xoắn não với phỏng vấn JavaScript 3 - Câu 5
 
-    <code>let a = {},
+```
+let a = {},
         b = {x: 12},
         c = [1, 2],
         d = {m: 'a', n: 'b'};
@@ -152,7 +168,8 @@ Do đó, độ dài mảng a.length = 11
     a[c] = 56;
     a[d] = 78;
 
-    console.log(a[b], a[c], a[d]);</code>
+    console.log(a[b], a[c], a[d]);
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -162,23 +179,26 @@ Xem đáp án
 
 **Giải thích:**
 
-Ở đây, mình sử dụng object b, array c và object d làm giá trị key cho object a. Và đối với object trong JavaScript, vì key luôn luôn có [kiểu string](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/) nên object b, array c và object d sẽ được convert sang kiểu string. Khi đó, sẽ có một số trường hợp đặc biệt sau:
+Ở đây, mình sử dụng object b, array c và object d làm giá trị key cho object a. Và đối với object trong JavaScript, vì key luôn luôn có [kiểu string](/values-types-va-operators-trong-javascript-phan-2/) nên object b, array c và object d sẽ được convert sang kiểu string. Khi đó, sẽ có một số trường hợp đặc biệt sau:
 
 - Với mọi object khi convert sang kiểu string ta đều thu được string có dạng “**[object Object]**“;
 
 Ví dụ:
 
-    <code>console.log(({x : 12}).toString());      // => [object Object]
-    console.log(({x : 1, y: 2}).toString()); // => [object Object]</code>
-
+```
+console.log(({x : 12}).toString());      // => [object Object]
+    console.log(({x : 1, y: 2}).toString()); // => [object Object]
+```
 Array khi convert sang string sẽ thu được string có dạng _các phần tử cách nhau bởi dấu phẩy (,)_. Ví dụ:
 
-    <code>console.log([1, 2].toString());          // => 1, 2
-    console.log([1, {x : 1}].toString());    // => 1, [object Object]</code>
-
+```
+console.log([1, 2].toString());          // => 1, 2
+    console.log([1, {x : 1}].toString());    // => 1, [object Object]
+```
 Do đó, đoạn code trên sẽ tương đương với:
 
-    <code>let a = {},
+```
+let a = {},
         b = {x: 12},
         c = [1, 2],
         d = {m: 'a', n: 'b'};
@@ -187,15 +207,18 @@ Do đó, đoạn code trên sẽ tương đương với:
     a["1, 2"] = 56;
     a["[object Object]"] = 78;
 
-    console.log(a["[object Object]"], a["1, 2"], a["[object Object]"]);</code>
+    console.log(a["[object Object]"], a["1, 2"], a["[object Object]"]);
+```
 
 Như vậy, kết quả thu được sẽ phải là: 78, 56, 78
 
 ## Xoắn não với phỏng vấn JavaScript 3 - Câu 6
 
-    <code>var x = (x = 0, x++, x);
+```
+var x = (x = 0, x++, x);
     let y = (y = 0, y++, y);
-    console.log(x, y);</code>
+    console.log(x, y);
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -211,18 +234,24 @@ Khi sử dụng toán tử này, các biểu thức sẽ được thực hiện 
 
 **Xét câu lệnh thứ nhất:**
 
-    <code>var x = (x = 0, x++, x);</code>
+```
+var x = (x = 0, x++, x);
+```
 
 Biến x được khai báo kiểu var nên sẽ được hoisted. Do đó, câu lệnh này sẽ tương đương với:
 
-    <code>var x = undefined;
-    x = (x = 0, x++, x);</code>
+```
+var x = undefined;
+    x = (x = 0, x++, x);
+```
 
 Sau đó, _(x = 0, x++, x)_ sẽ thực hiện lần lượt thực hiện: x = 0, x++, x và trả về giá trị của biểu thức cuối cùng. Như vậy, x = 1;
 
 **Xét biểu thức thứ 2:**
 
-    <code>let y = (y = 0, y++, y);</code>
+```
+let y = (y = 0, y++, y);
+```
 
 Lần này, biến y được khai báo sử dụng let, nên nó sẽ không được hoisted. Vì vậy, khi _(y = 0, y++, y)_ thực hiện lần lượt các lệnh, thì ngay câu lệnh đầu tiên _y = 0_ sẽ báo lỗi ReferenceError: y is not defined. Bởi vì, biến y lúc này chưa được khai báo.
 
@@ -230,12 +259,12 @@ Lần này, biến y được khai báo sử dụng let, nên nó sẽ không đ
 
 Trên đây là 6 câu hỏi phỏng vấn JavaScript cũng rất hay. Nếu bạn có cùng nhận xét với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/xoan-nao-voi-phong-van-javascript-4/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-4/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

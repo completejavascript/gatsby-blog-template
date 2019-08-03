@@ -1,8 +1,8 @@
 ---
 date: "2017-12-23T01:22:31Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: thuc-day-som-khong-cam-thay-met-moi
 title: "Làm sao để thức dậy sớm mà không cảm thấy mệt mỏi"
 categories:
@@ -65,16 +65,16 @@ Những việc bạn làm khi thức dậy sớm là rất quan trọng. Nó quy
 
 - Xem lại kế hoạch đã viết ngày hôm trước và bắt tay ngay vào thực hiện công việc. Bởi lẽ, mục tiêu của bạn khi thức dậy sớm là để thực hiện công việc của mình. Vì vậy, hãy xem lại danh sách công việc, điều chỉnh cho hợp lý và bắt tay ngay vào làm thôi.
 
-- Hoặc nếu bạn có mong muốn học [lập trình JavaScript](https://completejavascript.com/category/javascript/javascript-co-ban/) thì có thể đọc các bài viết tại blog [CompleteJavaScript](https://completejavascript.com/).
+- Hoặc nếu bạn có mong muốn học [lập trình JavaScript](/category/javascript/javascript-co-ban/) thì có thể đọc các bài viết tại blog [CompleteJavaScript](/).
 
 Trên đây là những cách để giúp bạn thức dậy sớm mà không cảm thấy mệt mỏi. Mình rất vui nếu bạn đọc chia sẻ các phương pháp của bạn ở dưới phần bình luận.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/5-loi-ich-cua-viec-thuc-day-som/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/5-loi-ich-cua-viec-thuc-day-som/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

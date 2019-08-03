@@ -1,8 +1,8 @@
 ---
 date: "2018-05-23T13:23:59Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: lap-trinh-javascript-voi-fcc-twitch-tv-json-api
 title: "Lập trình JavaScript với FCC - Use the Twitch.tv JSON API"
 categories:
@@ -14,9 +14,9 @@ tags:
   - Template
 ---
 
-Tiếp tục với chủ đề [Lập trình JavaScript với FCC](https://completejavascript.com/tag/lap-trinh-javascript-voi-fcc/), bài viết này mình sẽ chia sẻ với bạn về project **Use the Twitch.tv [JSON](https://completejavascript.com/tim-hieu-ve-json-trong-javascript/) API** trên freeCodeCamp.
+Tiếp tục với chủ đề [Lập trình JavaScript với FCC](/tag/lap-trinh-javascript-voi-fcc/), bài viết này mình sẽ chia sẻ với bạn về project **Use the Twitch.tv [JSON](/tim-hieu-ve-json-trong-javascript/) API** trên freeCodeCamp.
 
-Trước tiên, project này cũng tương tự như các project trước, mình chỉ sử dụng HTML5, CSS3, JavaScript thuần và kết hợp thêm [jQuery](https://completejavascript.com/tag/jquery/). Vì vậy, nếu bạn đã theo dõi các project trước đây của mình thì sẽ thấy những kiến thức ở đây không có gì mới mẻ cả.
+Trước tiên, project này cũng tương tự như các project trước, mình chỉ sử dụng HTML5, CSS3, JavaScript thuần và kết hợp thêm [jQuery](/tag/jquery/). Vì vậy, nếu bạn đã theo dõi các project trước đây của mình thì sẽ thấy những kiến thức ở đây không có gì mới mẻ cả.
 
 Chỉ có một thứ mà mình muốn chia sẻ ở bài viết này. Đó là cách sử dụng [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage), để lưu lại những thông tin cài đặt của người dùng.
 
@@ -46,9 +46,9 @@ Bạn có thể nhập tên kênh mà bạn muốn vào phần input và nhấn 
 
 ### Xây dựng HTML Template
 
-Mặc dù trong project này sử dụng jQuery, nhưng phần [HTML Template](https://completejavascript.com/tag/template/) mình không sử dụng Mustache.js giống như trong bài viết [Mustache Template với jQuery](https://completejavascript.com/mustache-template-voi-jquery/). Ở đây, mình tiếp tục sử dụng [ES6 Template String](https://completejavascript.com/su-dung-es6-template-string-co-gi-hay/) để xây dựng HTML Template.
+Mặc dù trong project này sử dụng jQuery, nhưng phần [HTML Template](/tag/template/) mình không sử dụng Mustache.js giống như trong bài viết [Mustache Template với jQuery](/mustache-template-voi-jquery/). Ở đây, mình tiếp tục sử dụng [ES6 Template String](/su-dung-es6-template-string-co-gi-hay/) để xây dựng HTML Template.
 
-Bạn có thể xem thêm project [Lập trình JavaScript với FCC – Wikipedia Viewer](https://completejavascript.com/lap-trinh-javascript-voi-fcc-wikipedia-viewer/) để hiểu thêm về vấn đề này.
+Bạn có thể xem thêm project [Lập trình JavaScript với FCC – Wikipedia Viewer](/lap-trinh-javascript-voi-fcc-wikipedia-viewer/) để hiểu thêm về vấn đề này.
 
 ### Sử dụng Web Storage API
 
@@ -64,11 +64,12 @@ Storage trong JavaScript bao gồm 2 loại: [localStorage](https://developer.mo
 
 #### Cách sử dụng
 
-Về cách [sử dụng API](https://completejavascript.com/tag/api/) thì khá đơn giản và mình nghĩ bạn có thể dễ dàng hiểu được. Nên mình sẽ không giới thiệu lại phần này.
+Về cách [sử dụng API](/tag/api/) thì khá đơn giản và mình nghĩ bạn có thể dễ dàng hiểu được. Nên mình sẽ không giới thiệu lại phần này.
 
 Vấn đề quan trọng là: API của hai thằng này giống nhau nên mình sẽ xây dựng một class chung cho cả 2. Như vậy sẽ tiện sử dụng sau này.
 
-    <code>class AppStorage {
+```
+class AppStorage {
         constructor(type) {
           if (this._storageAvailable(type)) {
             this._appStorage = window[type];
@@ -117,19 +118,22 @@ Vấn đề quan trọng là: API của hai thằng này giống nhau nên mình
               storage.length !== 0;
           }
         }
-      }</code>
+      }
+```
 
-Ở đây mình [ứng dụng class](https://completejavascript.com/js-pattern-constructor-pattern/) để xây dựng một lớp chung cho localStorage và sessionStorage. Trong hàm khởi tạo constructor, mình cần phải kiểm tra xem trình duyệt hiện tại có hỗ trợ kiểu storage hay không?
+Ở đây mình [ứng dụng class](/js-pattern-constructor-pattern/) để xây dựng một lớp chung cho localStorage và sessionStorage. Trong hàm khởi tạo constructor, mình cần phải kiểm tra xem trình duyệt hiện tại có hỗ trợ kiểu storage hay không?
 
-    <code>constructor(type) {
+```
+constructor(type) {
       if (this._storageAvailable(type)) {
         this._appStorage = window[type];
       } else {
         console.log('app-storage', `Your browser doesn't support ${type}!`);
       }
-    }</code>
+    }
+```
 
-Với _type_ có thể là: "localStorage" hoặc "sessionStorage". Và hàm \__storageAvailable_ đơn giản là sẽ sử dụng thử một số API của nó. Nếu không có lỗi gì xảy ra thì [hàm](https://completejavascript.com/tim-hieu-function-javascript/) này sẽ trả về true, ngược lại kết quả sẽ là false.
+Với _type_ có thể là: "localStorage" hoặc "sessionStorage". Và hàm \__storageAvailable_ đơn giản là sẽ sử dụng thử một số API của nó. Nếu không có lỗi gì xảy ra thì [hàm](/tim-hieu-function-javascript/) này sẽ trả về true, ngược lại kết quả sẽ là false.
 
 Bạn có thể xem thêm bài này để hiểu rõ hơn: [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API).
 
@@ -143,8 +147,8 @@ Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

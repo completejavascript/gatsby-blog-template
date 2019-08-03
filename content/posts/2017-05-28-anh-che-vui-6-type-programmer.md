@@ -1,44 +1,44 @@
 ---
 date: "2017-05-28T11:40:41Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: anh-che-vui-6-type-programmer
 title: "Ảnh chế vui #6: A type of programmer"
 categories:
   - Ảnh chế vui
 ---
 
-![A type of programmer at completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/05/a-type-of-programmer-completejavascript.com_.png)
+![A type of programmer at completejavascript.com](/wp-content/uploads/2017/05/a-type-of-programmer-completejavascript.com_.png)
 
 ## A type of programmer
 
-There's a type of [programmer](https://completejavascript.com/anh-che-vui-4-people-life-vs-programmer-life/) who's always working late. And before sleeping, he always check his phone until tired.
+There's a type of [programmer](/anh-che-vui-4-people-life-vs-programmer-life/) who's always working late. And before sleeping, he always check his phone until tired.
 
-Actually, It's not [funny](https://completejavascript.com/category/anh-che-vui/). Don't like that, just:
+Actually, It's not [funny](/category/anh-che-vui/). Don't like that, just:
 
 <blockquote>Sleep earlier, code better.</blockquote>
 
-See you in the [next post](https://completejavascript.com/anh-che-vui-7-ip-man-4-phien-ban-lap-trinh-vien/) in the series, thank you,
+See you in the [next post](/anh-che-vui-7-ip-man-4-phien-ban-lap-trinh-vien/) in the series, thank you,
 
 ## Similar posts
 
-- [Ảnh chế vui #1: Cách lập trình viên chạy hằng ngày](https://completejavascript.com/anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay/)
+- [Ảnh chế vui #1: Cách lập trình viên chạy hằng ngày](/anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay/)
 
-- [Ảnh chế vui #2: Code anh không có bug, tất cả chỉ là tính năng](https://completejavascript.com/anh-che-vui-2-code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang/)
+- [Ảnh chế vui #2: Code anh không có bug, tất cả chỉ là tính năng](/anh-che-vui-2-code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang/)
 
-- [Ảnh chế vui #3: How I met JavaScript – Parody](https://completejavascript.com/anh-che-vui-3-how-i-met-javascript-parody/)
+- [Ảnh chế vui #3: How I met JavaScript – Parody](/anh-che-vui-3-how-i-met-javascript-parody/)
 
-- [Ảnh chế vui #4: People life vs Programmer life](https://completejavascript.com/anh-che-vui-4-people-life-vs-programmer-life/)
+- [Ảnh chế vui #4: People life vs Programmer life](/anh-che-vui-4-people-life-vs-programmer-life/)
 
-- [Ảnh chế vui #5: Specialist vs Generalist – who is the winner?](https://completejavascript.com/anh-che-vui-5-specialist-vs-generalist-winner/)
+- [Ảnh chế vui #5: Specialist vs Generalist – who is the winner?](/anh-che-vui-5-specialist-vs-generalist-winner/)
 
-- [Ảnh chế vui #7: IP man 4 phiên bản lập trình viên](https://completejavascript.com/anh-che-vui-7-ip-man-4-phien-ban-lap-trinh-vien/)
+- [Ảnh chế vui #7: IP man 4 phiên bản lập trình viên](/anh-che-vui-7-ip-man-4-phien-ban-lap-trinh-vien/)
 
 ---
 
-★ Follow [Lam Pham](https://completejavascript.com/gioi-thieu/) to receive a notification when having the lastest post:
+★ Follow [Lam Pham](/gioi-thieu/) to receive a notification when having the lastest post:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

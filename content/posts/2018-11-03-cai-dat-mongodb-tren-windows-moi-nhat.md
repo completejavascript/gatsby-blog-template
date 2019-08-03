@@ -1,8 +1,8 @@
 ---
 date: "2018-11-03T22:30:57Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: cai-dat-mongodb-tren-windows-moi-nhat
 title: "Cài đặt MongoDB trên Windows mới nhất"
 categories:
@@ -29,7 +29,7 @@ Còn bây giờ thì bắt đầu nào!
 
 Trong đó, phiên bản **MongoDB Community Server** là miễn phí (phù hợp cho developer), nên mình sẽ chọn bản này.
 
-![Tải MongoDB Community Server bản MSI](https://completejavascript.com/wp-content/uploads/2018/10/download-1.png)
+![Tải MongoDB Community Server bản MSI](/wp-content/uploads/2018/10/download-1.png)
 Tải MongoDB Community Server bản MSI
 
 Có một số tùy chọn dành cho bạn là:
@@ -44,17 +44,17 @@ Sau khi lựa chọn xong phiên bản cài đặt, bạn chỉ cần nhấn và
 
 Đầu tiên bạn nhấn vào file vừa tải. Rồi một cửa sổ hiện lên, bạn chỉ cần nhấn vào **Run** để bắt đầu cài đặt MongoDB trên Windows.
 
-![Nhấn Run để bắt đầu](https://completejavascript.com/wp-content/uploads/2018/10/install-1-1.png)
+![Nhấn Run để bắt đầu](/wp-content/uploads/2018/10/install-1-1.png)
 Nhấn Run để bắt đầu
 
 Tiếp theo, bạn nhấn vào **Next** để tiếp tục.
 
-![Nhấn Next để tiếp tục](https://completejavascript.com/wp-content/uploads/2018/10/install-2-1.png)
+![Nhấn Next để tiếp tục](/wp-content/uploads/2018/10/install-2-1.png)
 Nhấn Next để tiếp tục
 
 Sau đó, bạn nhấn vào **check box** để đồng ý các điều khoản sử dụng, rồi lại nhấn **Next** để tiếp tục.
 
-![Chấp nhận điều khoản sử dụng rồi nhấn Next](https://completejavascript.com/wp-content/uploads/2018/10/install-3-1.png)
+![Chấp nhận điều khoản sử dụng rồi nhấn Next](/wp-content/uploads/2018/10/install-3-1.png)
 Chấp nhận điều khoản sử dụng rồi nhấn Next
 
 ### Tùy chỉnh cài đặt
@@ -65,7 +65,7 @@ Bước kế tiếp, MongoDB sẽ cho phép bạn lựa chọn 2 cách cài đ�
 
 Mình không có yêu cầu gì đặc biệt thì cứ chọn cài đầy đủ, bằng cách nhấn vào **Complete**.
 
-![Nhấn vào Complete để cài đặt đầy đủ theo mặc định](https://completejavascript.com/wp-content/uploads/2018/10/install-4-1.png)
+![Nhấn vào Complete để cài đặt đầy đủ theo mặc định](/wp-content/uploads/2018/10/install-4-1.png)
 Nhấn vào Complete để cài đặt đầy đủ theo mặc định
 
 ### Cài đặt MongoDB trên Windows như service
@@ -80,7 +80,7 @@ Ngoài ra, bạn có thể thay đổi tên service (**service name**), vị tr�
 
 Lựa chọn xong thì bạn nhấn vào **Next** để tiếp tục.
 
-![Cài đặt MongoDB như service](https://completejavascript.com/wp-content/uploads/2018/10/install-5-1.png)
+![Cài đặt MongoDB như service](/wp-content/uploads/2018/10/install-5-1.png)
 Cài đặt MongoDB như service
 
 ### Tùy chỉnh cài đặt MongoDB Compass
@@ -93,28 +93,28 @@ _Ngoài ra, nếu bạn chỉ muốn sử dụng Command-line hoặc đơn giả
 
 Sau đó, bạn nhấn **Next** để tiếp tục.
 
-![](https://completejavascript.com/wp-content/uploads/2018/10/install-6-2.png)
+![](/wp-content/uploads/2018/10/install-6-2.png)
 Bạn có thể cài đặt MongoDB compass sau nếu muốn nhé
 
 Rồi bạn nhấn **Install** để bắt đầu cài đặt.
 
-![Nhấn Install để bắt đầu cài đặt](https://completejavascript.com/wp-content/uploads/2018/10/install-7-1.png)
+![Nhấn Install để bắt đầu cài đặt](/wp-content/uploads/2018/10/install-7-1.png)
 Nhấn Install để bắt đầu cài đặt
 
 Bây giờ, bạn có thể **đứng dậy đi WC** hay **uống một cốc nước** cho tỉnh táo. Đợi vài phút sau quay lại thì MongoDB sẽ cài đặt xong (nếu bạn lựa chọn cài đặt cả MongoDB Compass thì sẽ phải đợi khá lâu đó nhé - ráng đợi).
 
 Và cuối cùng là nhấn **Finish** để kết thúc.
 
-![Cài đặt kết thúc](https://completejavascript.com/wp-content/uploads/2018/10/install-8.png)
+![Cài đặt kết thúc](/wp-content/uploads/2018/10/install-8.png)
 Cài đặt kết thúc
 
 ### Kiểm tra cài đặt thành công
 
-Tương như như bài viết về [hướng dẫn tìm hiểu Node.js cơ bản](https://completejavascript.com/huong-dan-tim-hieu-node-js-co-ban/), mình cũng cần phải kiểm tra xem việc cài đặt MongoDB đã thực sự thành công hay chưa.
+Tương như như bài viết về [hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban/), mình cũng cần phải kiểm tra xem việc cài đặt MongoDB đã thực sự thành công hay chưa.
 
 Như phần trên, mình đã chọn **cài đặt MongoDB như một service** rồi. Nên bây giờ mình sẽ xem thử nó đã chạy hay chưa bằng cách mở **Windows Task Manager** và chọn tab **Services** (_tham khảo thêm bài viết [6 cách để mở Windows Task Manager)](https://ictnews.vn/the-gioi-so/thu-thuat/6-cach-de-mo-windows-task-manager-97595.ict)_.
 
-![Kiểm tra MongoDB trong Services](https://completejavascript.com/wp-content/uploads/2018/10/check.png)
+![Kiểm tra MongoDB trong Services](/wp-content/uploads/2018/10/check.png)
 Kiểm tra MongoDB trong Services
 
 Nếu bạn tìm thấy MongoDB xuất hiện trong phần này nghĩa là việc cài đặt đã hoàn toàn thành công rồi.
@@ -125,16 +125,17 @@ Nếu bạn tìm thấy MongoDB xuất hiện trong phần này nghĩa là việ
 
 Trước tiên bạn cần phải tìm đến vị trí thư mục cài đặt MongoDB. Mặc định, vị trí đó là: **C:\Program Files\MongoDB\Server\4.0\bin**
 
-Nếu nhìn vào thư mục đó, bạn sẽ thấy file **mongo.exe**. Đây chính là chương trình dùng để tương tác với MongoDB thông qua [CMD](https://completejavascript.com/cac-cau-lenh-thuong-dung-tren-cmd-windows/).
+Nếu nhìn vào thư mục đó, bạn sẽ thấy file **mongo.exe**. Đây chính là chương trình dùng để tương tác với MongoDB thông qua [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows/).
 
-Để biết cách cài đặt biến môi trường, bạn có thể tham khảo thêm tại bài viết [Hướng dẫn tìm hiểu FFmpeg cơ bản](https://completejavascript.com/huong-dan-tim-hieu-ffmpeg-co-ban/#Cai_dat_phan_mem) để biết thêm chi tiết.
+Để biết cách cài đặt biến môi trường, bạn có thể tham khảo thêm tại bài viết [Hướng dẫn tìm hiểu FFmpeg cơ bản](/huong-dan-tim-hieu-ffmpeg-co-ban/#Cai_dat_phan_mem) để biết thêm chi tiết.
 
 ### Các câu lệnh cơ bản
 
-Đầu tiên bạn mở **CMD** lên và gõ [câu lệnh](https://completejavascript.com/tag/command-line/):
+Đầu tiên bạn mở **CMD** lên và gõ [câu lệnh](/tag/command-line/):
 
-    <code>mongo</code>
-
+```
+mongo
+```
 Nếu không có lỗi gì xảy ra thì lúc này bạn có thể bắt đầu gõ câu lệnh cơ bản của MongoDB được rồi.
 
 Ví dụ:
@@ -159,8 +160,8 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

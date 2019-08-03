@@ -1,15 +1,15 @@
 ---
 date: "2017-04-28T15:46:25Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: values-types-va-operators-trong-javascript-phan-1
 title: "Values, types và operators trong JavaScript - Phần 1"
 categories:
   - Javascript cơ bản
 ---
 
-    			Trong ngôn ngữ lập trình nói chung và ngôn ngữ lập trình [JavaScript](https://completejavascript.com/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) nói riêng, những thành phần cơ bản, quan trọng cấu thành nên một chương trình là: values, types và operators. Hay trong tiếng việt, chúng ta gọi là: giá trị, kiểu dữ liệu và toán tử. Chúng giống như là những nguyên liệu để làm nên một món ăn. Và để làm nên một món ăn ngon, hoàn chỉnh, chúng ta cần phải hiểu rõ từng thành phần và cách sử dụng nó như thế nào. Vì vậy hôm nay, mình và bạn sẽ cùng tìm hiểu về **values, types** và **operators** trong JavaScript.
+Trong ngôn ngữ lập trình nói chung và ngôn ngữ lập trình [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) nói riêng, những thành phần cơ bản, quan trọng cấu thành nên một chương trình là: values, types và operators. Hay trong tiếng việt, chúng ta gọi là: giá trị, kiểu dữ liệu và toán tử. Chúng giống như là những nguyên liệu để làm nên một món ăn. Và để làm nên một món ăn ngon, hoàn chỉnh, chúng ta cần phải hiểu rõ từng thành phần và cách sử dụng nó như thế nào. Vì vậy hôm nay, mình và bạn sẽ cùng tìm hiểu về **values, types** và **operators** trong JavaScript.
 
 ## Values (giá trị)
 
@@ -17,7 +17,7 @@ Mình nhận thấy rằng là con người chúng ta rất hay nói chuyện th
 
 Nhưng với thế giới của máy tính, tất cả đều là dữ liệu được biểu diễn dưới dạng bit (0 và 1). Tức là chỉ có đúng (1) hoặc sai (0). Ví dụ số 13 sẽ được biểu diễn dưới dạng bit như sau:
 
-![number 13 respresent in values, types, operators post at completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/04/number-13-respresent-values-types-operators-completejavascript.com_-300x71.png)
+![number 13 respresent in values, types, operators post at completejavascript.com](/wp-content/uploads/2017/04/number-13-respresent-values-types-operators-completejavascript.com_-300x71.png)
 
 Như trên, số nhị phân 00001101 hay 8 + 4 + 1 = 13.
 
@@ -35,15 +35,16 @@ Numbers là những gía trị có thể được sử dụng trong các phép t
 
 Ví dụ một số loại số:
 
-    <code>var x = 66;     // positive integer
+```
+var x = 66;     // positive integer
     var x = -66;    // negative integer
     var x = 3.14;   // positve float
     var x = -3.14;  // negative float
     var x = 2e3;    // => 2*10^3 = 2000
     var x = 2e-3;   // => 2*10^(-3) = 0.002
     var x = 0xFF;   // hexadecimal: 15*16 + 15 = 255
-    var x = 067;    // octal: 6*8 + 7 = 55</code>
-
+    var x = 067;    // octal: 6*8 + 7 = 55
+```
 Đối với ngôn ngữ lập trình C/C++, numbers được chia ra nhiều kiểu như: int, long, float, double,...Mỗi kiểu sẽ sử dụng số lượng bit khác nhau để lưu numbers. Nhưng JavaScript lại chỉ sử dụng 64 bit để biểu diễn numbers theo chuẩn IEEE 754.
 
 Mỗi cách sẽ có những ưu, nhược điểm riêng. Theo quan điểm cá nhân thì mình thấy cách lưu trữ của JavaScript có ưu nhược điểm sau:
@@ -58,7 +59,7 @@ Mỗi cách sẽ có những ưu, nhược điểm riêng. Theo quan điểm cá
 
 - Không tối ưu cho phần bộ nhớ: rõ ràng nếu mình chỉ cần quan tâm các số từ 1 đến 100, thì chẳng lý do gì mình phải dùng 64 bit bộ nhớ để lưu.
 
-Nhưng dù sao, ưu điểm vẫn nhiều hơn nhược điểm. Đó là lý do mình lập nên website [CompleteJavaScript.com](https://completejavascript.com/) chứ không phải CompleteJava.com hay CompleteCPlusPlus.com.
+Nhưng dù sao, ưu điểm vẫn nhiều hơn nhược điểm. Đó là lý do mình lập nên website [CompleteJavaScript.com](/) chứ không phải CompleteJava.com hay CompleteCPlusPlus.com.
 
 #### Những số đặc biệt
 
@@ -67,7 +68,8 @@ Có 3 số đặc biệt trong JavaScript là **Infinity**, **-Infinity** và **
 - **Infinity** và **-Infinity**: tương ứng là số dương vô cùng và âm vô cùng trong toán học. Đây là những số ảo diệu nhất mà mình từng biết với một số tính chất như sau (không khác những kiến thức về dương vô cùng và âm vô cùng đã học ở cấp 3):
 
 
-    <code>var x = 4 / 0;
+```
+var x = 4 / 0;
     var y = -5 / 0;
     var z = 6 / 0;
     console.log(x);       // => Infinity
@@ -79,12 +81,13 @@ Có 3 số đặc biệt trong JavaScript là **Infinity**, **-Infinity** và **
     console.log(x == z);  // => Infinity == Infinity = true
     console.log(x > z);   // => Infinity > Infinity = false
     console.log(x == y);  // => Infinity == -Infinity = false
-    console.log(x > y);   // => Infinity > -Infinity = true</code>
-
+    console.log(x > y);   // => Infinity > -Infinity = true
+```
 - **NaN** viết tắt của _Not a Number_. Nó được dùng để biểu diễn cho kết quả một số phép tính như: Infinity - Infinity = NaN hay 0 / 0 = NaN hoặc 2 \* 'ba' = NaN... Một số ví dụ để bạn thấy:
 
 
-    <code>var x = 3 / 0;
+```
+var x = 3 / 0;
     var y = -4 / 0;
     var z = x + y;
     var t = 0 / 0;
@@ -93,13 +96,13 @@ Có 3 số đặc biệt trong JavaScript là **Infinity**, **-Infinity** và **
     console.log(y);   // => -Infinity
     console.log(z);   // => NaN
     console.log(t);   // => NaN
-    console.log(w);   // => NaN</code>
-
+    console.log(w);   // => NaN
+```
 #### Methods (phương thức) đối với numbers
 
-Trong các ngôn ngữ như C/C++, Java,...những kiểu dữ liệu cơ bản như int, long, float...sẽ không có thuộc tính hay phương thức kèm theo. Bởi chúng nó không phải đối tượng ([object](https://completejavascript.com/javascript-object-last-but-not-least/)).
+Trong các ngôn ngữ như C/C++, Java,...những kiểu dữ liệu cơ bản như int, long, float...sẽ không có thuộc tính hay phương thức kèm theo. Bởi chúng nó không phải đối tượng ([object](/javascript-object-last-but-not-least/)).
 
-Nhưng JavaScript thì khác, những kiểu dữ liệu cơ bản cũng có thuộc tính và phương thức giống như đối tượng (object). Đó, rõ ràng là JavaScript đã được tối ưu để [nâng cao hiệu suất](https://completejavascript.com/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) của lập trình viên.
+Nhưng JavaScript thì khác, những kiểu dữ liệu cơ bản cũng có thuộc tính và phương thức giống như đối tượng (object). Đó, rõ ràng là JavaScript đã được tối ưu để [nâng cao hiệu suất](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) của lập trình viên.
 
 Một số phương thức chính đối với numbers trong JavaScript là:
 
@@ -114,7 +117,8 @@ Một số phương thức chính đối với numbers trong JavaScript là:
 - **valueOf()**: trả về số như là một số (đối với trường hợp numbers thì phương thức này chỉ dùng để làm màu thôi, chứ mới đọc mình đã thấy nó chả có ý nghĩa gì).
 
 
-    <code>var x = 66;
+```
+var x = 66;
     console.log(x.toString());       // => 66
 
     var y = 69.9696;
@@ -133,7 +137,8 @@ Một số phương thức chính đối với numbers trong JavaScript là:
     console.log(l.toPrecision(4));   // => 99.70 : làm tròn
 
     var o = 1.234;
-    console.log(o.valueOf());        // => 1.234 : không làm gì (đặc biệt kết quả vẫn là number)</code>
+    console.log(o.valueOf());        // => 1.234 : không làm gì (đặc biệt kết quả vẫn là number)
+```
 
 #### Một số phương thức toàn cục (Global Methods)
 
@@ -146,7 +151,8 @@ Ngoài những phương thức gắn với bản thân numbers, JavaScript còn 
 - **parseFloat()**: cũng tương tự như **parseInt()** nhưng kết quả trả về sẽ là số thực.
 
 
-    <code>var x = true;
+```
+var x = true;
     var y = false;
     var z = new Date();
     var t = '69';
@@ -161,11 +167,11 @@ Ngoài những phương thức gắn với bản thân numbers, JavaScript còn 
     console.log(parseInt(u));   // => 100 => lấy phần nguyên
 
     console.log(parseFloat(t)); // => 69
-    console.log(parseFloat(u)); // => 101.01</code>
-
+    console.log(parseFloat(u)); // => 101.01
+```
 Trên đây là những kiến thức cơ bản về values, types. Theo dự kiến ban đầu thì mình định viết gộp cả phần **strings**, **booleans** và **operators** vào. Nhưng khi viết đến đây thì thấy dài quá. Một phần vì nghĩ dài quá bạn không đọc. Một phần cũng vì lười. Nên mình sẽ viết tiếp phần 2 sau.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/values-types-va-operators-trong-javascript-phan-2/), thân ái!
 
 ## Tham khảo
 
@@ -175,8 +181,8 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://comp
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

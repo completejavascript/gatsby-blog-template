@@ -1,8 +1,8 @@
 ---
 date: "2018-07-28T02:49:59Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: lam-tuong-tai-hai-ve-react
 title: "Lầm tưởng tai hại về React"
 categories:
@@ -11,7 +11,7 @@ tags:
   - React
 ---
 
-Xin chào bạn đến với bài viết **Lầm tưởng tai hại về React. **Nếu bạn theo dõi blog này từ lâu thì sẽ thấy rằng mình chủ yếu viết về [JavaScript thuần](https://completejavascript.com/category/javascript/javascript-co-ban/). Ngoài ra, thư viện JavaScript mình dùng chủ yếu cũng chỉ là [jQuery](https://completejavascript.com/tag/jquery/). Tuy nhiên, sau một thời gian suy nghĩ, mình quyết định sẽ học sâu một [framework hoặc thư viện JavaScript](https://completejavascript.com/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) (về front-end) để khỏi bị lạc hậu so với thế giới.
+Xin chào bạn đến với bài viết **Lầm tưởng tai hại về React. **Nếu bạn theo dõi blog này từ lâu thì sẽ thấy rằng mình chủ yếu viết về [JavaScript thuần](/category/javascript/javascript-co-ban/). Ngoài ra, thư viện JavaScript mình dùng chủ yếu cũng chỉ là [jQuery](/tag/jquery/). Tuy nhiên, sau một thời gian suy nghĩ, mình quyết định sẽ học sâu một [framework hoặc thư viện JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) (về front-end) để khỏi bị lạc hậu so với thế giới.
 
 ## Đôi điều suy nghĩ trước khi vào nội dung chính
 
@@ -35,7 +35,8 @@ Chả là từ trước đến giờ mình vẫn hay lên [Tutorialspoint](https
 
 Bài viết về [ReactJS - Home](https://www.tutorialspoint.com/reactjs/index.htm), [ReactJS - Overview](https://www.tutorialspoint.com/reactjs/reactjs_overview.htm) thì không nói làm gì. Đến [ReactJS - Environment Setup](https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm) thì mình phải cài NodeJS, sau đó là một loạt những thứ sau:
 
-    <code>npm install -g babel
+```
+npm install -g babel
     npm install -g babel-cli
     npm install webpack --save
     npm install webpack-dev-server --save
@@ -44,8 +45,8 @@ Bài viết về [ReactJS - Home](https://www.tutorialspoint.com/reactjs/index.h
     npm install babel-core
     npm install babel-loader
     npm install babel-preset-react
-    npm install babel-preset-es2015</code>
-
+    npm install babel-preset-es2015
+```
 Mình suy nghĩ trong đầu: _Mình chỉ cần React thôi mà, sao phải cài một đống thứ như thế này? Vai trò của từng cái là gì?_
 
 Không hề có một lời giải thích nào. Và đó là lí do chính dẫn đến lầm tưởng tai hại về React. Vì vậy, mình đã từ bỏ để quay về trang chủ của React và học theo nó.
@@ -65,9 +66,10 @@ Bạn thấy đấy, mình chỉ cần thêm 2 file .js là có thể lập trì
 
 Đối chiếu lại với phần cài đặt phía trên thì chúng tương đương với:
 
-    <code>npm install react --save
-    npm install react-dom --save</code>
-
+```
+npm install react --save
+    npm install react-dom --save
+```
 Vậy mấy cái _webpack_ với _babel_ để làm gì?
 
 ## Giác ngộ lần 2
@@ -89,13 +91,14 @@ Nghĩa là React hỗ trợ JSX. Mà nếu muốn trình duyệt hiểu được
 
 Đối chiếu lại với phần cài đặt phía trên xem nó tương đương với thằng nào:
 
-    <code>npm install -g babel
+```
+npm install -g babel
     npm install -g babel-cli
     npm install babel-core
     npm install babel-loader
     npm install babel-preset-react
-    npm install babel-preset-es2015</code>
-
+    npm install babel-preset-es2015
+```
 Mình đoán nó tương đương với _npm install -g babel_. Còn những thằng còn lại có nhiệm vụ như thế nào thì mình vẫn chưa rõ.
 
 Bạn có thể giải thích cho mình không?
@@ -128,12 +131,12 @@ Và mình có thể deploy nó trên Codepen.io, Github Pages,... mà không c�
 
 Nếu bạn có phần nào chưa rõ hoặc có gì muốn góp ý với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/deploy-ung-dung-react-len-github-pages/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/deploy-ung-dung-react-len-github-pages/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

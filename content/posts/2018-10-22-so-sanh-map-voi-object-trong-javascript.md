@@ -1,8 +1,8 @@
 ---
 date: "2018-10-22T22:30:12Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: so-sanh-map-voi-object-trong-javascript
 title: "So sánh Map với Object trong JavaScript"
 categories:
@@ -18,9 +18,9 @@ Mời bạn theo dõi bài viết!
 
 ## Nhắc lại khái niệm
 
-**[Object](https://completejavascript.com/javascript-object-last-but-not-least/)** là một khái niệm trừu tượng dùng để biểu diễn một vật thể (cụ thể). Trong đó, các thuộc tính dùng để miêu tả đặc điểm, tính chất của đối tượng. Và các phương thức dùng để chỉ các hoạt động của đối tượng.
+**[Object](/javascript-object-last-but-not-least/)** là một khái niệm trừu tượng dùng để biểu diễn một vật thể (cụ thể). Trong đó, các thuộc tính dùng để miêu tả đặc điểm, tính chất của đối tượng. Và các phương thức dùng để chỉ các hoạt động của đối tượng.
 
-**[Map](https://completejavascript.com/map-trong-javascript-thi-sao/)** là một cấu trúc dữ liệu cho phép lưu trữ dữ liệu theo kiểu **key-value**, tương tự như object.
+**[Map](/map-trong-javascript-thi-sao/)** là một cấu trúc dữ liệu cho phép lưu trữ dữ liệu theo kiểu **key-value**, tương tự như object.
 
 ## So sánh Map với Object trong JavaScript
 
@@ -37,20 +37,23 @@ Trước khi Map xuất hiện, người ta vẫn thường sử dụng Object c
 
 #### Kiểu dữ liệu của key
 
-Object chỉ cho phép lưu trữ **key** kiểu [String](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/) hoặc [Symbol](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
+Object chỉ cho phép lưu trữ **key** kiểu [String](/values-types-va-operators-trong-javascript-phan-2/) hoặc [Symbol](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
 
-    <code>const symbol1 = Symbol(1);
+```
+const symbol1 = Symbol(1);
     const obj = {
       x : 1,
       "a b" : 2,
       symbol1 : 3
     };
     console.log(obj);
-    // => {x: 1, a b: 2, symbol1: 3}</code>
+    // => {x: 1, a b: 2, symbol1: 3}
+```
 
-Trong khi đó, Map cho phép **mọi kiểu dữ liệu** có thể làm key, kể cả [Number](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/), NaN, [Function](https://completejavascript.com/tim-hieu-function-javascript/), Object,...
+Trong khi đó, Map cho phép **mọi kiểu dữ liệu** có thể làm key, kể cả [Number](/values-types-va-operators-trong-javascript-phan-1/), NaN, [Function](/tim-hieu-function-javascript/), Object,...
 
-    <code>const fun = function () {}
+```
+const fun = function () {}
     const set = new Set();
     const map = new Map();
     map.set(NaN, 1)
@@ -61,13 +64,15 @@ Trong khi đó, Map cho phép **mọi kiểu dữ liệu** có thể làm key, k
        .set(fun, 6)
        .set(set, 7);
 
-    // Map(7) {NaN => 1, 1 => 2, "a" => 3, [2] => 4, {x : 3} => 5, function() {} => 6, Set(0) => 7}</code>
+    // Map(7) {NaN => 1, 1 => 2, "a" => 3, [2] => 4, {x : 3} => 5, function() {} => 6, Set(0) => 7}
+```
 
 #### Thứ tự của key
 
 Map duy trì thứ tự của key giống như khi nó được thêm vào.
 
-    <code>const map = new Map();
+```
+const map = new Map();
     map.set('xyz', 1);
     map.set('b', 2);
     map.set('1', 4);
@@ -79,11 +84,13 @@ Map duy trì thứ tự của key giống như khi nó được thêm vào.
     * xyz
     * b
     * 1
-    */</code>
+    */
+```
 
 Object thì không đảm bảo thứ tự này.
 
-    <code>const obj = { xyz : 1 };
+```
+const obj = { xyz : 1 };
     obj.b = 2;
     obj['1'] = 4;
     for(const key in obj) {
@@ -93,25 +100,28 @@ Object thì không đảm bảo thứ tự này.
     * 1
     * xyz
     * b
-    */</code>
+    */
+```
 
 #### Xác định kích thước
 
 Bạn có thể lấy kích thước của Map thông qua thuộc tính _size_.
 
-    <code>const map = new Map();
+```
+const map = new Map();
     map.set('xyz', 1);
     map.set('b', 2);
     map.set('1', 4);
 
     console.log(map.size);
-    // => 3</code>
-
+    // => 3
+```
 Đối với Object, bạn phải đếm số lượng các thuộc tính thủ công. Hoặc bạn cũng có thể tính được số lượng này thông qua phương thức [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys).
 
-Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tính của Object. Lúc này, bạn chỉ cần sử dụng thuộc tính _length_ của [Array](https://completejavascript.com/javascript-array-co-ban/) là được.
+Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tính của Object. Lúc này, bạn chỉ cần sử dụng thuộc tính _length_ của [Array](/javascript-array-co-ban/) là được.
 
-    <code>const obj = { xyz : 1 };
+```
+const obj = { xyz : 1 };
     obj.b = 2;
     obj['1'] = 4;
 
@@ -121,23 +131,25 @@ Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tí
     // => 3
 
     console.log(Object.keys(obj).length);
-    // => 3</code>
-
+    // => 3
+```
 #### Kiểm tra tính tồn tại của key
 
 Để kiểm tra xem một key có tồn tại trong Map hay chưa, bạn có thể dùng phương thức có sẵn là _has_.
 
-    <code>const map = new Map([["a", 1], ["b", 2]]);
+```
+const map = new Map([["a", 1], ["b", 2]]);
     console.log(map.has("a")); // => true
-    console.log(map.has("c")); // => false</code>
-
+    console.log(map.has("c")); // => false
+```
 Còn đối với Object, bạn phải sử dụng gián tiếp thông qua phương thức _Object.keys()_ như bên trên.
 
-    <code>const obj = { "a" : 1, "b" : 2 };
+```
+const obj = { "a" : 1, "b" : 2 };
     const hasKey = (obj, key) => Object.keys(obj).indexOf(key) !== -1;
     console.log(hasKey(obj, "a")); // => true
-    console.log(hasKey(obj, "c")); // => false</code>
-
+    console.log(hasKey(obj, "c")); // => false
+```
 Trong đó, hàm _hasKey_ là do mình tự định nghĩa. Và bạn có thể thấy là `Object.keys(obj)` trả về một mảng chứa các property của _obj_.
 
 Tiếp theo, mình sử dụng phương thức [Array.prototype.indexOf()](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) để kiểm tra xem key đã tồn tại trong mảng hay chưa.
@@ -152,7 +164,8 @@ Bạn có thể duyệt qua các phần tử của Map (để lấy _key_, _valu
 
 _Entry là một phần tử của Map, có dạng mảng [key, value]_.
 
-    <code>const map = new Map([["a", 1], ["b", 2]]);
+```
+const map = new Map([["a", 1], ["b", 2]]);
     for (const key of map.keys()) {
       console.log(key);
     }
@@ -175,18 +188,21 @@ _Entry là một phần tử của Map, có dạng mảng [key, value]_.
     /*
     * a 1
     * b 2
-    */</code>
+    */
+```
 
 Ngược lại, với Object, bạn chỉ có thể duyệt qua các _key_, sau đó mới lấy _value_ thông qua _key_.
 
-    <code>const obj = { "a" : 1, "b" : 2 };
+```
+const obj = { "a" : 1, "b" : 2 };
     for (const key in obj) {
       console.log(key, obj[key]);
     }
     /*
     * a 1
     * b 2
-    */</code>
+    */
+```
 
 ## Lời kết
 
@@ -208,8 +224,8 @@ Xin chào và hẹn gặp lại!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

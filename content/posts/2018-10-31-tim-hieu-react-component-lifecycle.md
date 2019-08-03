@@ -1,8 +1,8 @@
 ---
 date: "2018-10-31T22:30:03Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: tim-hieu-react-component-lifecycle
 title: "Tìm hiểu React Component Lifecycle"
 categories:
@@ -25,12 +25,12 @@ Khi học và tìm hiểu về React Component, có lẽ bạn đã đôi lần 
 
 Các phương thức trong React Component Lifecycle có thể chia ra làm 3 pha chính là: **Mounting**, **Updating **và **Unmounting**.
 
-![Sơ đồ các phương thức chính của React Component Lifecycle](https://completejavascript.com/wp-content/uploads/2018/10/react-lifecycle-diagram.png)
+![Sơ đồ các phương thức chính của React Component Lifecycle](/wp-content/uploads/2018/10/react-lifecycle-diagram.png)
 Sơ đồ các phương thức chính của React Component Lifecycle (sưu tầm)
 
 ### Các phương thức trong pha Mounting
 
-Mounting là giai đoạn khi React Component được tạo ra và render lên trên [DOM](https://completejavascript.com/co-ban-ve-dom-javascript/) tree.
+Mounting là giai đoạn khi React Component được tạo ra và render lên trên [DOM](/co-ban-ve-dom-javascript/) tree.
 
 Các React lifecycle methods được gọi trong giai đoạn này lần lượt là:
 
@@ -48,23 +48,25 @@ Vì vậy, dưới đây mình sẽ chỉ trình bày về các React lifecycle 
 
 #### Phương thức constructor()
 
-Đối với class nói chung, **constructor()** luôn là phương thức được gọi đến **ĐẦU TIÊN** mỗi khi [khởi tạo](https://completejavascript.com/js-pattern-constructor-pattern/). Tuy nhiên, bạn chỉ nên sử dụng phương thức này với 2 mục đích:
+Đối với class nói chung, **constructor()** luôn là phương thức được gọi đến **ĐẦU TIÊN** mỗi khi [khởi tạo](/js-pattern-constructor-pattern/). Tuy nhiên, bạn chỉ nên sử dụng phương thức này với 2 mục đích:
 
 - Khởi tạo state cho React Component.
 
-* [Bind](https://completejavascript.com/phan-biet-call-apply-va-bind-trong-javascript/) method (xử lý event, sử dụng trong [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) hoặc [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)) với **this**.
+* [Bind](/phan-biet-call-apply-va-bind-trong-javascript/) method (xử lý event, sử dụng trong [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) hoặc [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)) với **this**.
 
 Ngược lại thì bạn có thể bỏ qua phương thức này, ví dụ:
 
-    <code>constructor(props) {
+```
+constructor(props) {
       super(props);
       this.state = { count: 0 };
       this.updateCounter = this.updateCounter.bind(this);
-    }</code>
+    }
+```
 
 Trong đó:
 
-- Component bạn khai báo [kế thừa](https://completejavascript.com/ke-thua-co-ban-trong-javascript/) từ React.Component, nên bạn cần phải gọi hàm *super(props)* để gọi đến hàm khởi tạo của thằng cha React.Component. Nếu thiếu thì *this.props* sẽ là **undefined**.
+- Component bạn khai báo [kế thừa](/ke-thua-co-ban-trong-javascript/) từ React.Component, nên bạn cần phải gọi hàm *super(props)* để gọi đến hàm khởi tạo của thằng cha React.Component. Nếu thiếu thì *this.props* sẽ là **undefined**.
 
 * `this.state = { count: 0 }`: khởi tạo biến thuộc state là: **count = 0**.
 
@@ -74,14 +76,16 @@ Trong đó:
 
 Đây là phương thức duy nhất **bắt buộc** phải có đối với React Component và có cấu trúc như sau:
 
-    <code>render() {
+```
+render() {
 
       return (
         /* Định nghĩa cấu trúc Component tại đây */
       )
-    }</code>
+    }
+```
 
-Phương thức này dùng để miêu tả cấu trúc của Component sau khi nó được chèn vào DOM tree. Nó bắt buộc được gọi lần đầu tiên để chèn Component vào [HTML](https://completejavascript.com/tag/html/), và có thể được gọi lại để cập nhật giao diện mỗi khi state của Component thay đổi.
+Phương thức này dùng để miêu tả cấu trúc của Component sau khi nó được chèn vào DOM tree. Nó bắt buộc được gọi lần đầu tiên để chèn Component vào [HTML](/tag/html/), và có thể được gọi lại để cập nhật giao diện mỗi khi state của Component thay đổi.
 
 Đặc biệt, bạn nên để phương thức này là **Pure Function** - nghĩa là nó không làm thay đổi state của Component, không tương tác với trình duyệt, không lấy dữ liệu từ server,...
 
@@ -89,7 +93,7 @@ Chỉ đơn giản là nó lấy data từ **this.props** và **this.state** đ�
 
 #### Phương thức componentDidMount()
 
-Phương thức *componentDidMount()* được gọi **một lần duy nhất** ngay sau khi Component được render xong. Và nếu để so sánh với [JavaScript thuần](https://completejavascript.com/category/javascript/javascript-co-ban/) thì mình thấy phương thức này khá giống với việc bạn đăng ký sự kiện [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
+Phương thức *componentDidMount()* được gọi **một lần duy nhất** ngay sau khi Component được render xong. Và nếu để so sánh với [JavaScript thuần](/category/javascript/javascript-co-ban/) thì mình thấy phương thức này khá giống với việc bạn đăng ký sự kiện [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
 
 Chính vì tính chỉ được gọi **một lần duy nhất** nên bên trong phương thức này, mình có thể:
 
@@ -99,7 +103,7 @@ Chính vì tính chỉ được gọi **một lần duy nhất** nên bên trong
 
 - Lấy thông tin liên quan đến DOM node như kích thước thực tế (width, height) - vì lúc này chúng đã được hiển thị lên màn hình.
 
-* Đăng ký [sự kiện](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/): *resize, scroll,...*
+* Đăng ký [sự kiện](/xu-ly-mot-event-javascript-co-ban/): *resize, scroll,...*
 
 Hết phương thức này, nghĩa là mình đã xử lý xong trong pha Mounting. Có 3 phương thức **quan trọng** mà bạn cần nhớ là:
 
@@ -111,7 +115,7 @@ Hết phương thức này, nghĩa là mình đã xử lý xong trong pha Mounti
 
 Tiếp theo, mình sẽ xử lý việc cập nhật giao diện trong pha Updating.
 
-![Sơ đồ đầy đủ các phương thức của React Component Lifecycle (sưu tầm)](https://completejavascript.com/wp-content/uploads/2018/10/react-lifecycle-diagram-full.png)
+![Sơ đồ đầy đủ các phương thức của React Component Lifecycle (sưu tầm)](/wp-content/uploads/2018/10/react-lifecycle-diagram-full.png)
 
 Sơ đồ đầy đủ các phương thức của React Component Lifecycle (sưu tầm)
 
@@ -143,33 +147,39 @@ Tuy nhiên, sẽ có trường hợp dù bạn gọi lại _this.setState_, như
 
 Trong ví dụ phía trên, giả sử bạn chủ động gọi hàm _this.setState_ để cập nhật giá trị của biến **count**, nhưng giá trị mới vẫn là 0 - bằng giá trị ban đầu.
 
-    <code>this.setState({
+```
+this.setState({
       count: 0
-    })</code>
+    })
+```
 
 Lúc này, phương thức _render()_ mặc định sẽ bị gọi lại, nhưng như vậy chẳng phải là vô nghĩa hay sao?
 
 Tuy nhiên, nếu bạn định nghĩa thêm phương thức _shouldComponentUpdate()_ như này:
 
-    <code>shouldComponentUpdate(nextProps, nextState) {
+```
+shouldComponentUpdate(nextProps, nextState) {
       return nextState.count !== this.state.count;
-    }</code>
+    }
+```
 
 thì phương thức _render()_ sẽ không bị gọi lại nữa.
 
 Bởi vì, _nextState.count_ và _this.state.count_ lúc này đều bằng 0, nên `nextState.count !== this.state.count` sẽ trả về **false**. Suy ra, hàm _render()_ sẽ không bị gọi lại. Hay nói tổng quát hơn là: phương thức _render()_ chỉ bị gọi lại khi **props** hoặc **state** mới **có giá trị khác** so với hiện tại.
 
-Tuy nhiên, nếu không quá quan trọng về [hiệu năng](https://completejavascript.com/tag/performance/) thì bạn có thể bỏ qua phương thức _shouldComponentUpdate()_.
+Tuy nhiên, nếu không quá quan trọng về [hiệu năng](/tag/performance/) thì bạn có thể bỏ qua phương thức _shouldComponentUpdate()_.
 
 #### Phương thức componentDidUpdate()
 
 Phương thức này được gọi sau khi việc update kết thúc - component với những dữ liệu mới đã được cập nhật xong lên giao diện. Trong phương thức này, bạn có thể xử lý việc lấy dữ liệu từ server, ví dụ:
 
-    <code>componentDidUpdate(prevProps) {
+```
+componentDidUpdate(prevProps) {
       if (this.props.userID !== prevProps.userID) {
         this.fetchData(this.props.userID);
       }
-    }</code>
+    }
+```
 
 Tức là nếu giá trị của props _userID_ thay đổi thì bạn sẽ lấy dữ liệu từ server xuống và làm một số thứ sau đó. Ở đây, bạn cần chú ý điều kiện trong _if_. Nếu không có điều kiện này thì việc _this.fetchData_ từ server xuống vẫn được thực hiện dù cho giá trị _userID_ không thay đổi.
 
@@ -195,13 +205,17 @@ Phương thức này tương ứng với phương thức _componentDidMount()_ t
 
 Giả sử mình khởi tạo Interval và đăng ký sự kiện **resize** bên trong _componentDidMount()_:
 
-    <code>this.counterInterval = setInterval(this.updateCounter, 1000);
-    window.addEventListener("resize", this.updateDimensions);</code>
+```
+this.counterInterval = setInterval(this.updateCounter, 1000);
+    window.addEventListener("resize", this.updateDimensions);
+```
 
 Thì sau đó, mình phải xoá interval và huỷ đăng ký sự kiện _resize_ trong _componentWillUnmount()_:
 
-    <code>window.removeEventListener("resize", this.updateDimensions);
-    clearInterval(this.counterInterval);</code>
+```
+window.removeEventListener("resize", this.updateDimensions);
+    clearInterval(this.counterInterval);
+```
 
 ## Ví dụ minh hoạ
 
@@ -213,7 +227,8 @@ Giả sử mình xây dựng **Counter Component** như sau.
 
 _index.html_
 
-    <code><!DOCTYPE html>
+```
+<!DOCTYPE html>
     <html lang="en">
 
     <head>
@@ -243,11 +258,13 @@ _index.html_
       <script src="main.js" type="text/babel"></script>
     </body>
 
-    </html></code>
+    </html>
+```
 
 _main.js_
 
-    <code>class Counter extends React.Component {
+```
+class Counter extends React.Component {
       /**
        * Hàm constructor - dùng để khai báo state và bind function
        */
@@ -344,13 +361,15 @@ _main.js_
     }
 
     // Render Counter Component lên DOM tree
-    ReactDOM.render(<Counter />, document.querySelector("#container"));</code>
+    ReactDOM.render(<Counter />, document.querySelector("#container"));
+```
 
 ### Kết quả
 
 Nếu bạn chạy ví dụ Demo và mở **console** trên **DevTool** lên (sử dụng phím tắt **Ctrl + Shift + I** hoặc **F12**), thì sẽ thấy kết quả hiển thị như sau:
 
-    <code>main.js:19 constructor
+```
+main.js:19 constructor
     main.js:56 render: count = 0
     main.js:40 componentDidMount
     main.js:56 render: count = 1
@@ -364,17 +383,20 @@ Nếu bạn chạy ví dụ Demo và mở **console** trên **DevTool** lên (s�
     main.js:56 render: count = 5
     main.js:44 componentDidUpdate: count from 4 to 5
     main.js:51 componentWillUnmount
-    </code>
+```
 
 Trong đó, pha Mounting ứng với 3 dòng đầu tiên. Suy ra, thứ tự các React lifecycle methods là:
 
-    <code>main.js:19 constructor                           # constructor()
+```
+main.js:19 constructor                           # constructor()
     main.js:56 render: count = 0                     # render()
-    main.js:40 componentDidMount                     # componentDidMount();</code>
+    main.js:40 componentDidMount                     # componentDidMount();
+```
 
 Tiếp theo, pha Updating:
 
-    <code>main.js:56 render: count = 1                     # render()
+```
+main.js:56 render: count = 1                     # render()
     main.js:44 componentDidUpdate: count from 0 to 1 # componentDidUpdate()
     main.js:56 render: count = 2                     # render()
     main.js:44 componentDidUpdate: count from 1 to 2 # componentDidUpdate()
@@ -383,11 +405,14 @@ Tiếp theo, pha Updating:
     main.js:56 render: count = 4                     # render()
     main.js:44 componentDidUpdate: count from 3 to 4 # componentDidUpdate()
     main.js:56 render: count = 5                     # render()
-    main.js:44 componentDidUpdate: count from 4 to 5 # componentDidUpdate()</code>
+    main.js:44 componentDidUpdate: count from 4 to 5 # componentDidUpdate()
+```
 
 Cuối cùng, pha Unmounting:
 
-    <code>main.js:51 componentWillUnmount                  # componentWillUnmount()</code>
+```
+main.js:51 componentWillUnmount                  # componentWillUnmount()
+```
 
 ## Lời kết
 
@@ -432,8 +457,8 @@ Nếu có phần nào khó hiểu, bạn có thể để lại bình luận xu�
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

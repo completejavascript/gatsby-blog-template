@@ -1,8 +1,8 @@
 ---
 date: "2018-04-01T00:00:07Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: thiet-ke-website-responsive-voi-css-menu
 title: "Thiết kế website responsive với CSS - Menu"
 categories:
@@ -22,11 +22,11 @@ Ví dụ: Bạn có thể tham khảo tại [đây](https://lpdevs.herokuapp.com
 
 Giao diện trang web trên desktop:
 
-![thiet-ke-website-responsive-voi-css-phan-1-menu-desktop](https://completejavascript.com/wp-content/uploads/2018/04/thiet-ke-website-responsive-voi-css-phan-1-menu-1024x594.png)
+![thiet-ke-website-responsive-voi-css-phan-1-menu-desktop](/wp-content/uploads/2018/04/thiet-ke-website-responsive-voi-css-phan-1-menu-1024x594.png)
 
 Giao diện trang web trên phone:
 
-![thiet-ke-website-responsive-voi-css-phan-1-menu-phone](https://completejavascript.com/wp-content/uploads/2018/04/thiet-ke-website-responsive-voi-css-phan-1-menu-2.png)
+![thiet-ke-website-responsive-voi-css-phan-1-menu-phone](/wp-content/uploads/2018/04/thiet-ke-website-responsive-voi-css-phan-1-menu-2.png)
 
 ## Các phương pháp thiết kế website responsive
 
@@ -62,7 +62,8 @@ Sau đây sẽ là các bước thực hiện thiết kế website responsive v�
 
 ### Bước 1: Code HTML (index.html)
 
-    <code><!DOCTYPE html>
+```
+<!DOCTYPE html>
     <html>
     <head>
       <title>Responsive website</title>
@@ -78,7 +79,8 @@ Sau đây sẽ là các bước thực hiện thiết kế website responsive v�
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
       </div>
     </body>
-    </html></code>
+    </html>
+```
 
 Phần **responsive.js** và **responsive.css **mình sẽ giới thiệu sau. Ở đây, Menu sẽ được đóng gói trong thẻ <div>. Mỗi mục của menu sẽ là một thẻ <a> (link). Ngoài ra, thẻ <a> với class="icon" dùng để đóng mở menu khi kích thước màn hình nhỏ.
 
@@ -86,11 +88,12 @@ Phần **responsive.js** và **responsive.css **mình sẽ giới thiệu sau. �
 
 Hiện tại, mình chưa thiết kế file** responsive.js** và **responsive.css** nên bạn có thể comment 2 dòng đó lại để xem kết quả hiện tại:
 
-![thiet-ke-website-responsive-phan-1-menu-add-html](https://completejavascript.com/wp-content/uploads/2018/04/thiet-ke-website-responsive-phan-1-menu-add-html.png)
+![thiet-ke-website-responsive-phan-1-menu-add-html](/wp-content/uploads/2018/04/thiet-ke-website-responsive-phan-1-menu-add-html.png)
 
 ### Bước 2: Thêm CSS (responsive.css)
 
-    <code>/* Add a black background color to the top navigation */
+```
+/* Add a black background color to the top navigation */
     .topnav {
         background-color: #333;
         overflow: hidden;
@@ -140,16 +143,19 @@ Hiện tại, mình chưa thiết kế file** responsive.js** và **responsive.c
         display: block;
         text-align: left;
       }
-    }</code>
+    }
+```
 
 Giải thích chi tiết từng đoạn code:
 
 #### **Cấu hình thanh menu:**
 
-    <code>.topnav {
+```
+.topnav {
         background-color: #333;
         overflow: hidden;
-    }</code>
+    }
+```
 
 - **topnav: **chính là class  ứng với thẻ <div> - chính là thanh menu
 
@@ -159,7 +165,8 @@ Giải thích chi tiết từng đoạn code:
 
 #### **Cấu hình các mục (link) trên thanh menu**
 
-    <code>.topnav a {
+```
+.topnav a {
         float: left;
         display: block;
         color: #f2f2f2;
@@ -167,7 +174,8 @@ Giải thích chi tiết từng đoạn code:
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
-    }</code>
+    }
+```
 
 - **float: left**: để dồn các mục về phía tay trái. Bạn cũng có thể dùng **float: right **để dồn menu về phía tay phải.
 
@@ -177,10 +185,12 @@ Giải thích chi tiết từng đoạn code:
 
 #### **Tạo hiệu ứng khi di chuyển chuột đến các mục của menu**
 
-    <code>.topnav a:hover {
+```
+.topnav a:hover {
         background-color: #ddd;
         color: black;
-    }</code>
+    }
+```
 
 - **a:hover : **dùng để cấu hình cho thẻ <a> khi chuột **hover**.
 
@@ -188,21 +198,25 @@ Giải thích chi tiết từng đoạn code:
 
 #### **Ẩn icon (đóng mở menu) khi ở màn hình rộng**
 
-    <code>.topnav .icon {
+```
+.topnav .icon {
         display: none;
-    }</code>
+    }
+```
 
 - **display: none**: để ẩn **class="icon"**
 
 #### **Ẩn các mục của menu khi màn hình nhỏ**
 
-    <code>@media screen and (max-width: 600px) {
+```
+@media screen and (max-width: 600px) {
       .topnav a:not(:first-child) {display: none;}
       .topnav a.icon {
         float: right;
         display: block;
       }
-    }</code>
+    }
+```
 
 - Ở bài này, mình thiết kế theo kiểu desktop trước.
 
@@ -216,7 +230,8 @@ Giải thích chi tiết từng đoạn code:
 
 #### ** Hiển thị menu khi người dùng nhấn vào icon phía bên phải**
 
-    <code>@media screen and (max-width: 600px) {
+```
+@media screen and (max-width: 600px) {
       .topnav.responsive {position: relative;}
       .topnav.responsive a.icon {
         position: absolute;
@@ -228,7 +243,8 @@ Giải thích chi tiết từng đoạn code:
         display: block;
         text-align: left;
       }
-    }</code>
+    }
+```
 
 - Mình vẫn dùng **@media screen and (max-width: 600px)** để cấu hình menu khi độ rộng màn hình tối đa là 600px. Vì trường hợp nhấn vào icon bên phải chỉ xảy ra với trường hợp màn hình nhỏ.
 
@@ -246,24 +262,26 @@ Giải thích chi tiết từng đoạn code:
 
 Giao diện trên máy tính:
 
-![thiet-ke-website-responsive-phan-1-menu-add-css-desktop](https://completejavascript.com/wp-content/uploads/2018/04/thiet-ke-website-responsive-phan-1-menu-add-css-desktop.png)
+![thiet-ke-website-responsive-phan-1-menu-add-css-desktop](/wp-content/uploads/2018/04/thiet-ke-website-responsive-phan-1-menu-add-css-desktop.png)
 
 Giao diện trên điện thoại:
 
-![thiet-ke-website-responsive-menu-giao-dien-dien-thoai.png](https://completejavascript.com/wp-content/uploads/2018/04/thiet-ke-website-responsive-menu-giao-dien-dien-thoai.png)
+![thiet-ke-website-responsive-menu-giao-dien-dien-thoai.png](/wp-content/uploads/2018/04/thiet-ke-website-responsive-menu-giao-dien-dien-thoai.png)
 
 Lúc này, nếu bạn nhấn vào icon phía bên phải thanh menu thì vẫn chưa có hiện tượng gì xảy ra. Tiếp theo mình sẽ thêm phần xử lý javascript.
 
 ### Bước 3: Xử lý Javascript (responsive.js)
 
-    <code>function myFunction() {
+```
+function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
         } else {
             x.className = "topnav";
         }
-    }</code>
+    }
+```
 
 - Trong phần HTML mình đã xét: `<a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>`
 
@@ -277,18 +295,18 @@ Lúc này, nếu bạn nhấn vào icon phía bên phải thanh menu thì vẫn 
 
 Kết quả khi nhấn vào icon:
 
-![thiet-ke-website-responsive-menu-giao-dien-phone-open](https://completejavascript.com/wp-content/uploads/2018/04/thiet-ke-website-responsive-menu-giao-dien-phone-open.png)
+![thiet-ke-website-responsive-menu-giao-dien-phone-open](/wp-content/uploads/2018/04/thiet-ke-website-responsive-menu-giao-dien-phone-open.png)
 
 ## Lời kết
 
 Trên đây là hướng dẫn thiết kế website responsive. Hy vọng bài viết này có thể giúp ích cho bạn.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/ma-mau-logo-cac-thuong-hieu-noi-tieng/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/ma-mau-logo-cac-thuong-hieu-noi-tieng/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

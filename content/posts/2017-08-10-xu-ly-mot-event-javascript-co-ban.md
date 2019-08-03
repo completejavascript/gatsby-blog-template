@@ -1,8 +1,8 @@
 ---
 date: "2017-08-10T00:25:12Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: xu-ly-mot-event-javascript-co-ban
 title: "Xử lý một số Event JavaScript cơ bản"
 categories:
@@ -18,9 +18,11 @@ tags:
 
 ### Đăng ký Event JavaScript
 
-Ở bài viết trước về [DOM](https://completejavascript.com/co-ban-ve-dom-javascript/), bạn biết rằng mỗi phần tử trên trang web là một node. Và chúng ta có thể đăng ký nhận sự kiện cho mỗi node này bằng cách sử dụng phương thức **_addEventListener_** như sau:
+Ở bài viết trước về [DOM](/co-ban-ve-dom-javascript/), bạn biết rằng mỗi phần tử trên trang web là một node. Và chúng ta có thể đăng ký nhận sự kiện cho mỗi node này bằng cách sử dụng phương thức **_addEventListener_** như sau:
 
-    <code>Node.addEventListener('tên sự kiện', hàm xử lý);</code>
+```
+Node.addEventListener('tên sự kiện', hàm xử lý);
+```
 
 Trong đó:
 
@@ -34,14 +36,16 @@ Trong đó:
 
 Ví dụ:
 
-    <code>function func1 () {
+```
+function func1 () {
       console.log('function 1');
     }
     function func2 () {
       console.log('function 2');
     }
     addEventListener('click', func1);
-    addEventListener('click', func2);</code>
+    addEventListener('click', func2);
+```
 
 Trong ví dụ trên, mình đã đăng kí sự kiện _click_ cho d*ocument* với hai hàm xử lý là _func1_ và _func2_. Từ nay, mỗi khi bạn click chuột trái vào trang web thì hàm _func1_ sẽ được gọi trước, sau đó đến hàm _func2_.
 
@@ -49,11 +53,14 @@ Trong ví dụ trên, mình đã đăng kí sự kiện _click_ cho d*ocument* 
 
 Tương tự, để huỷ sự kiện đã đăng ký bạn có thể sử dụng phương thức **_removeEventListener_** như sau:
 
-    <code>Node.removeEventListener('tên sự kiện', hàm xử lý);</code>
+```
+Node.removeEventListener('tên sự kiện', hàm xử lý);
+```
 
 Ví dụ:
 
-    <code>function func1 () {
+```
+function func1 () {
       console.log('function 1');
     }
     function func2 () {
@@ -62,7 +69,8 @@ Ví dụ:
     addEventListener('click', func1);
     addEventListener('click', func2);
 
-    removeEventListener('click', func1);</code>
+    removeEventListener('click', func1);
+```
 
 Tiếp theo ví dụ trên, nếu mình huỷ đăng ký sự kiện *click* trên _document_ với hàm _func1_ bằng phương thức sau:
 
@@ -72,11 +80,12 @@ Thì bây giờ, mỗi khi bạn click chuột trái vào trang web, chỉ có h
 
 ### Đăng ký event cho nhiều node dựa trên đối tượng event
 
-Bình thường để đăng ký sự kiện cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, thực tế bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](https://completejavascript.com/javascript-object-last-but-not-least/) event để phân biệt node được gọi.
+Bình thường để đăng ký sự kiện cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, thực tế bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/javascript-object-last-but-not-least/) event để phân biệt node được gọi.
 
 Hãy xem ví dụ sau:
 
-    <code><button>A</button>
+```
+<button>A</button>
     <button>B</button>
     <button>C</button>
     <p> Hello </p>
@@ -87,7 +96,8 @@ Hãy xem ví dụ sau:
        else if (event.target.nodeName == "P")
          console.log("Paragraph clicked", event.target.textContent);
      });
-    </script></code>
+    </script>
+```
 
 Trong ví dụ trên, mình chỉ cần gọi phương thức **_addEventListener_** một lần. Sau đó, mình chỉ cần sử dụng _event.target.nodeName_ để biết được node nào thật sự được _click_.
 
@@ -99,14 +109,16 @@ Tuy nhiên, nếu bạn không muốn thực hiện những hàm mặc định �
 
 Ví dụ:
 
-    <code><a href="https://developer.mozilla.org/">MDN</a>
+```
+<a href="https://developer.mozilla.org/">MDN</a>
     <script>
       var link = document.querySelector("a");
       link.addEventListener("click", function(event) {
         console.log("Nope.");
         event.preventDefault();
       });
-    </script></code>
+    </script>
+```
 
 Trong ví dụ trên, khi bạn nhấn vào link thì bạn sẽ không được chuyển đến trang https://developer.mozilla.org.
 
@@ -126,7 +138,8 @@ Key event là sự kiện khi bạn nhấn vào một key trên bàn phím. Có
 
 Ví dụ:
 
-    <code>addEventListener("keydown", function(event) {
+```
+addEventListener("keydown", function(event) {
      console.log("keydown", event.keyCode);
     });
     addEventListener("keyup", function(event) {
@@ -134,19 +147,22 @@ Ví dụ:
     });
     addEventListener("keypress", function(event) {
      console.log("keypress", event.keyCode);
-    });</code>
+    });
+```
 
 Trong ví dụ này, mình ghi ra giá trị _keyCode_ của phím được nhấn dựa vào đối tượng _event (keyEvent_ ở đây là giá trị số nguyên của từng phím trong bảng mã Unicode).
 
 **Chú ý:** với sự kiện _keydown_ và _keyup_ thì giá trị sẽ ứng với chữ cái thường, trong khi sự kiện _keypress_ thì ta sẽ có giá trị của chữ cái viết hoa. Tức là nếu bạn nhấn phím 'a' thì kết quả sẽ là:
 
-    <code>keydown 65
+```
+keydown 65
     keypress 97
-    keyup 65</code>
-
+    keyup 65
+```
 Ngoài ra bạn có thể xử lý việc nhấn tổ hợp phím như ví dụ sau:
 
-    <code>addEventListener("keydown", function(event) {
+```
+addEventListener("keydown", function(event) {
      if (event.ctrlKey)
        console.log("keydown", "ctrlKey", event.keyCode);
     );
@@ -157,7 +173,8 @@ Ngoài ra bạn có thể xử lý việc nhấn tổ hợp phím như ví dụ 
     addEventListener("keydown", function(event) {
       if (event.altKey)
         console.log("keydown", "altKey", event.keyCode);
-    });</code>
+    });
+```
 
 ### Mouse Event
 
@@ -191,7 +208,7 @@ Trên đây là một số cách xử lý Event JavaScript cơ bản. Mình có 
 
 - Một số sự kiện với mouse: click, dbclick, mousedown, mouseup, mousemove,...
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/xmlhttprequest-tao-http-request-den-server-trong-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xmlhttprequest-tao-http-request-den-server-trong-javascript/), thân ái!
 
 ## Tham khảo
 
@@ -201,8 +218,8 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://comp
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

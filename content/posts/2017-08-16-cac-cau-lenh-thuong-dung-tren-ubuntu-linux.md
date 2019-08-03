@@ -1,8 +1,8 @@
 ---
 date: "2017-08-16T14:28:19Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: cac-cau-lenh-thuong-dung-tren-ubuntu-linux
 title: "Các câu lệnh thường dùng trên Ubuntu - Linux"
 categories:
@@ -12,7 +12,7 @@ tags:
   - Ubuntu
 ---
 
-Ubuntu là một trong những phiên bản Linux phổ biến nhất. Vì vậy, hiện tại mình đang sử dụng hệ điều hành này. Theo mình, Ubuntu có những ưu điểm như: nhẹ, ổn định, an toàn, miễn phí và "nhanh". Từ "nhanh" ở đây mình đặt trong ngoặc kép vì nó không dùng để chỉ tốc độ xử lý phần cứng. Mà bởi vì, Ubuntu cung cấp rất nhiều các câu lệnh sử dụng trên Terminal giúp lập trình viên [làm việc nhanh chóng, đơn giản và hiệu quả](https://completejavascript.com/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon/). Tin mình đi, một khi bạn đã biết sử dụng Ubuntu, bạn sẽ không muốn quay trở lại Windows nữa đâu.
+Ubuntu là một trong những phiên bản Linux phổ biến nhất. Vì vậy, hiện tại mình đang sử dụng hệ điều hành này. Theo mình, Ubuntu có những ưu điểm như: nhẹ, ổn định, an toàn, miễn phí và "nhanh". Từ "nhanh" ở đây mình đặt trong ngoặc kép vì nó không dùng để chỉ tốc độ xử lý phần cứng. Mà bởi vì, Ubuntu cung cấp rất nhiều các câu lệnh sử dụng trên Terminal giúp lập trình viên [làm việc nhanh chóng, đơn giản và hiệu quả](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon/). Tin mình đi, một khi bạn đã biết sử dụng Ubuntu, bạn sẽ không muốn quay trở lại Windows nữa đâu.
 
 Dĩ nhiên, với phiên bản Ubuntu Desktop, bạn hoàn toàn có thể sử dụng Ubuntu theo cách mà bạn đang dùng trên Windows - với chuột và bàn phím. Nhưng sẽ là thiếu sót nếu như bạn không biết về những câu lệnh cơ bản, đơn giản mà lại hiệu quả sau đây.
 
@@ -26,11 +26,11 @@ Có hai cách để mở Terminal trên Ubuntu:
 
 Lúc này, Terminal sẽ hiện lên như sau:
 
-![Các câu lệnh thường dùng trên Ubuntu - Linux - Complete JavaScript - Completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/08/Cac-cau-lenh-thuong-dung-tren-ubuntu-linux-completejavascript.com_.png)
+![Các câu lệnh thường dùng trên Ubuntu - Linux - Complete JavaScript - Completejavascript.com](/wp-content/uploads/2017/08/Cac-cau-lenh-thuong-dung-tren-ubuntu-linux-completejavascript.com_.png)
 
 Để mở một Terminal mới bạn có thể sử dụng lại hai cách trên. Trường hợp bạn muốn mở Terminal mới nằm trong cửa sổ hiện tại thì bạn có thể sử dụng tổ hợp phím: **Ctrl Shift T**
 
-![Các câu lệnh thường dùng trên Ubuntu - Linux - 2 - Complete JavaScript - Completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/08/Cac-cau-lenh-thuong-dung-tren-ubuntu-linux-2-completejavascript.com_.png)
+![Các câu lệnh thường dùng trên Ubuntu - Linux - 2 - Complete JavaScript - Completejavascript.com](/wp-content/uploads/2017/08/Cac-cau-lenh-thuong-dung-tren-ubuntu-linux-2-completejavascript.com_.png)
 
 ## Danh sách các câu lệnh cơ bản trong Ubuntu
 
@@ -162,14 +162,14 @@ Nhiều câu lệnh trong Terminal cần phải có **sudo** phía trước. Khi
 
 ## Lời kết
 
-Trên đây là một số câu lệnh cơ bản trong Ubuntu - Linux mà mình thấy đơn giản, hiệu quả và hay được sử dụng. Dù bạn lập trình [JavaScript](https://completejavascript.com/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) hay một ngôn ngữ lập trình khác, hoặc thậm chí bạn chỉ sử dụng Ubuntu như là một hệ điều hành thay thế [Windows](https://completejavascript.com/cac-cau-lenh-thuong-dung-tren-cmd-windows/) thì những câu lệnh trên luôn vô cùng hữu ích.
+Trên đây là một số câu lệnh cơ bản trong Ubuntu - Linux mà mình thấy đơn giản, hiệu quả và hay được sử dụng. Dù bạn lập trình [JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) hay một ngôn ngữ lập trình khác, hoặc thậm chí bạn chỉ sử dụng Ubuntu như là một hệ điều hành thay thế [Windows](/cac-cau-lenh-thuong-dung-tren-cmd-windows/) thì những câu lệnh trên luôn vô cùng hữu ích.
 
-Bài viết này sẽ dừng lại tại đây. Xin chào và hẹn gặp lại bạn ở [bài viết sau](https://completejavascript.com/cach-cai-dat-va-go-mot-goi-phan-mem-tren-ubuntu/), thân ái!
+Bài viết này sẽ dừng lại tại đây. Xin chào và hẹn gặp lại bạn ở [bài viết sau](/cach-cai-dat-va-go-mot-goi-phan-mem-tren-ubuntu/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

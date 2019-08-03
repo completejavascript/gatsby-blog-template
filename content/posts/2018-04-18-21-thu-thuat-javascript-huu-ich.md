@@ -1,8 +1,8 @@
 ---
 date: "2018-04-18T00:00:31Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: 21-thu-thuat-javascript-huu-ich
 title: "3x7 = 21 thủ thuật JavaScript hữu ích"
 categories:
@@ -17,20 +17,24 @@ Trong bài viết này, mình sẽ chia sẻ với các bạn 21 thủ thuật J
 
 ## Tạo hàm query DOM ngắn gọn hơn với bind
 
-Có thể bạn thừa biết, JavaScript cung cấp phương thức [document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) cho phép bạn query [DOM](https://completejavascript.com/co-ban-ve-dom-javascript/) dựa trên selector. Tuy nhiên, việc sử dụng phương thức này khá dài dòng. Ví dụ:
+Có thể bạn thừa biết, JavaScript cung cấp phương thức [document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) cho phép bạn query [DOM](/co-ban-ve-dom-javascript/) dựa trên selector. Tuy nhiên, việc sử dụng phương thức này khá dài dòng. Ví dụ:
 
-    <code>let ele1 = document.querySelector("#id1");
+```
+let ele1 = document.querySelector("#id1");
     let ele2 = document.querySelector(".class2");
-    let ele3 = document.querySelector("div.user-panel.main input[name='login']");</code>
+    let ele3 = document.querySelector("div.user-panel.main input[name='login']");
+```
 
-Bạn có thể lợi dụng phương thức [bind](https://completejavascript.com/phan-biet-call-apply-va-bind-trong-javascript/) để rút gọn phương thức này:
+Bạn có thể lợi dụng phương thức [bind](/phan-biet-call-apply-va-bind-trong-javascript/) để rút gọn phương thức này:
 
-    <code>let $ = document.querySelector.bind(document);
+```
+let $ = document.querySelector.bind(document);
 
     // Usage
     let ele1 = $("#id1");
     let ele2 = $(".class2");
-    let ele3 = $("div.user-panel.main input[name='login']");</code>
+    let ele3 = $("div.user-panel.main input[name='login']");
+```
 
 Ở đây, mình đặt tên hàm mới là \$, nên bạn nhìn thấy nó giống với jQuery, nhưng nhớ rằng đây vẫn chỉ là JavaScript thuần mà thôi.
 
@@ -38,14 +42,16 @@ Bạn có thể lợi dụng phương thức [bind](https://completejavascript.c
 
 Tương tự như trên, bạn cũng có thể sử dụng bind để rút gọn phương thức console.log như sau:
 
-    <code>let log = console.log.bind(document);
-    log('hello'); // => hello</code>
-
+```
+let log = console.log.bind(document);
+    log('hello'); // => hello
+```
 ## Sao chép (clone) object
 
 Mời bạn xem ví dụ sau:
 
-    <code>let obj1 = {
+```
+let obj1 = {
       a: 1,
       b: 2
     };
@@ -55,33 +61,37 @@ Mời bạn xem ví dụ sau:
 
     obj2.a = 10;
     obj2.b = 20;
-    console.log(obj1.a, obj1.b); // => 10, 20</code>
-
+    console.log(obj1.a, obj1.b); // => 10, 20
+```
 Bạn có thể thấy là obj2 thực chất là tham chiếu của obj1. Khi obj2 thay đổi thì obj1 cũng sẽ bị thay đổi. Để có thể clone object, tạo ra một object hoàn toàn mới, bạn có thể làm theo 2 cách sau:
 
-    <code>// shallow clone an object
+```
+// shallow clone an object
     let newObj = Object.assign({}, obj);
 
     // deep clone an object
-    let newObj = JSON.parse(JSON.stringify(obj));</code>
+    let newObj = JSON.parse(JSON.stringify(obj));
+```
 
 ## Hoán đổi giá trị 2 số
 
 Để có thể hoán đổi giá trị 2 biến số trong JavaScript, bạn có thể làm như sau:
 
-    <code>let x = 1, y = 2;
+```
+let x = 1, y = 2;
     console.log(x, y); // 1, 2
 
     [x, y] = [y, x];
-    console.log(x, y); // 2, 1</code>
-
+    console.log(x, y); // 2, 1
+```
 ## Đặt giá trị mặc định cho tham số của hàm
 
 Có hai cách để làm việc này:
 
 **ES5: sử dụng toán tử ||**
 
-    <code>function Person(name, age) {
+```
+function Person(name, age) {
       this.name = name || "Alex";
       this.age = age || 20;
     }
@@ -91,11 +101,12 @@ Có hai cách để làm việc này:
 
     let p2 = new Person("John", 25);
     console.log(p2.name, p2.age) // => John, 25
-    </code>
+```
 
 **ES6: hỗ trợ trực tiếp**
 
-    <code>function Person(name = "Alex", age = 20) {
+```
+function Person(name = "Alex", age = 20) {
       this.name = name;
       this.age = age;
     }
@@ -104,181 +115,209 @@ Có hai cách để làm việc này:
     console.log(p1.name, p1.age) // => Alex, 20
 
     let p2 = new Person("John", 25);
-    console.log(p2.name, p2.age) // => John, 25</code>
-
+    console.log(p2.name, p2.age) // => John, 25
+```
 ## Lấy random trong một đoạn
 
 Hàm random sau trả về một số ngẫu nhiên trong đoạn từ min đến max:
 
-    <code>let random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+```
+let random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
     // Usage
-    let a = random(1, 100);</code>
+    let a = random(1, 100);
+```
 
 ## Loại bỏ kí tự trống (trim) 2 đầu string
 
 Bạn có thể sử dụng phương thức trim() hỗ trợ sẵn của string:
 
-    <code>let str = "       Hello World!        ";
+```
+let str = "       Hello World!        ";
     console.log(str)         // =>        Hello World!
-    console.log(str.trim()); // => Hello World!</code>
+    console.log(str.trim()); // => Hello World!
+```
+Trong trường hợp trình duyệt không hỗ trợ phương thức trên, bạn có thể sử dụng [Regex](/tim-hieu-regular-expression-javascript/):
 
-Trong trường hợp trình duyệt không hỗ trợ phương thức trên, bạn có thể sử dụng [Regex](https://completejavascript.com/tim-hieu-regular-expression-javascript/):
-
-    <code>function trim(x) {
+```
+function trim(x) {
       return x.replace(/^\s+|\s+$/gm,'');
     }
 
     let str = "       Hello World!        ";
     console.log(str)         // =>        Hello World!
-    console.log(trim(str));  // => Hello World!</code>
-
+    console.log(trim(str));  // => Hello World!
+```
 ## Chuyển đối tượng arguments thành array
 
-[Hàm số](https://completejavascript.com/tim-hieu-function-javascript/) trong JavaScript luôn có một đối tượng mặc định là [arguments](https://completejavascript.com/javascript-object-last-but-not-least/) để quản lý tham số của hàm. Tuy nhiên, đối tượng này không phải là [array](https://completejavascript.com/javascript-array-co-ban/) nên bạn không thể sử dụng các phương thức như [forEach](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/), map,...
+[Hàm số](/tim-hieu-function-javascript/) trong JavaScript luôn có một đối tượng mặc định là [arguments](/javascript-object-last-but-not-least/) để quản lý tham số của hàm. Tuy nhiên, đối tượng này không phải là [array](/javascript-array-co-ban/) nên bạn không thể sử dụng các phương thức như [forEach](/javascript-foreach-la-cai-quai-gi/), map,...
 
 Để chuyển đối tượng này thành array, bạn có thể sử dụng một trong các cách sau:
 
-    <code>let args = Array.prototype.slice.call(arguments);
+```
+let args = Array.prototype.slice.call(arguments);
     let args = [].slice.call(arguments);
 
     // ES2015
-    let args = Array.from(arguments);</code>
+    let args = Array.from(arguments);
+```
 
 ## Tìm max và min của các phần tử trong mảng
 
-    <code>let numbers = [1, 8 , 10 , -125 , 28 , 100 , 215, -85];
+```
+let numbers = [1, 8 , 10 , -125 , 28 , 100 , 215, -85];
     let maxInNumbers = Math.max.apply(Math, numbers);
     let minInNumbers = Math.min.apply(Math, numbers);
 
     console.log(maxInNumbers, minInNumbers);
-    // => 215 -125</code>
-
+    // => 215 -125
+```
 ## Đưa mảng về rỗng
 
 Nhiều bạn đưa mảng về rỗng bằng cách:
 
-    <code>let a = [1, 2, 3];
-    a = [];</code>
+```
+let a = [1, 2, 3];
+    a = [];
+```
 
 Khi đó, thực chất là bạn đã tạo thêm một mảng mới. Cách đơn giản để giải quyết vấn đề này là:
 
-    <code>let a = [1, 2, 3];
+```
+let a = [1, 2, 3];
     a.length = 0;
 
-    console.log(a); // => []</code>
-
+    console.log(a); // => []
+```
 ## Loại bỏ một phần tử ra khỏi mảng
 
 Bạn không nên sử dụng **delete** để loại bỏ một phần tử ra khỏi mảng. Hàm này không loại bỏ 1 phần tử ra khỏi mảng mà thay vào đó, nó làm cho giá trị của phần tử đó thành **undefined** và độ dài của mảng vẫn không thay đổi.
 
-    <code>let arr = ["a", 1, -5, "cde"];
+```
+let arr = ["a", 1, -5, "cde"];
     console.log(arr);        // => ["a", 1, -5, "cde"]
 
     delete arr[2];
     console.log(arr);        // => ["a", 1, undefined, "cde"]
-    console.log(arr.length); // => 4</code>
-
+    console.log(arr.length); // => 4
+```
 Thay vào đó, bạn có thể dùng hàm **splice**:
 
-    <code>let arr = ["a", 1, -5, "cde"];
+```
+let arr = ["a", 1, -5, "cde"];
     console.log(arr);        // => ["a", 1, -5, "cde"]
 
     arr.splice(2, 1);
     console.log(arr);        // => ["a", 1, "cde"]
-    console.log(arr.length); // => 3</code>
-
+    console.log(arr.length); // => 3
+```
 ## Sử dụng and (&&) và or (||) thay cho if
 
 Giả sử bạn có các câu điều kiện sử dụng if như sau:
 
-    <code>let a = 10;
+```
+let a = 10;
     if (a === 10) console.log("a === 10"); // => a === 10
-    if (a !== 5) console.log("a !== 5"); // => a !== 5</code>
-
+    if (a !== 5) console.log("a !== 5"); // => a !== 5
+```
 Khi đó, bạn có thể sử dụng toán tử **&&** và **||** để thay thế như sau:
 
-    <code>let a = 10;
+```
+let a = 10;
     a === 10 && console.log("a === 10"); // => a === 10
-    a === 5 || console.log("a !== 5");   // => a !== 5</code>
-
+    a === 5 || console.log("a !== 5");   // => a !== 5
+```
 Hoặc kết hợp cả hai toán tử, thay vì:
 
-    <code>// Hoặc kết hợp cả 2 toán tử
+```
+// Hoặc kết hợp cả 2 toán tử
     let a = 10;
     if (a === 5) console.log("a === 5");
-    else console.log("a !== 5");</code>
+    else console.log("a !== 5");
+```
 
 thì bạn có thể làm như sau:
 
-    <code>let a = 10;
-    a === 5 && console.log("a === 5") || console.log("a !== 5");</code>
+```
+let a = 10;
+    a === 5 && console.log("a === 5") || console.log("a !== 5");
+```
 
 ## Duyệt tất cả các properties của object sử dụng for-in loop
 
-    <code>for (let name in object) {
+```
+for (let name in object) {
         if (object.hasOwnProperty(name)) {
             // do something with name
         }
-    }</code>
+    }
+```
 
 ## Convert Object sang JSON và ngược lại
 
-    <code>let obj1 = {a: 1, b: 2};
+```
+let obj1 = {a: 1, b: 2};
 
     let strJSON = JSON.stringify(obj1); // Object => JSON string
     console.log(strJSON);               // => {"a":1,"b":2}
 
     let obj2 = JSON.parse(strJSON);     // JSON string => object
-    console.log(obj2);                  // => {a: 1, b: 2}</code>
+    console.log(obj2);                  // => {a: 1, b: 2}
+```
 
 ## Viết hàm ngắn hơn với arrow function
 
 Ví dụ sau sử dụng map để trả về mảng mới với mỗi phần tử là bình phương của mỗi phần tử trong mảng ban đầu:
 
-    <code>let a = [1, 2, 3, 4, 5];
+```
+let a = [1, 2, 3, 4, 5];
     let a2 = a.map(function(item) {
       return item * item;
     });
 
     console.log(a2);
-    // => [1, 4, 9, 16, 25]</code>
-
+    // => [1, 4, 9, 16, 25]
+```
 Nếu sử dụng arrow function thì sẽ thế này:
 
-    <code>let a = [1, 2, 3, 4, 5];
+```
+let a = [1, 2, 3, 4, 5];
     let a2 = a.map(item => item * item);
 
     console.log(a2);
-    // => [1, 4, 9, 16, 25]</code>
-
+    // => [1, 4, 9, 16, 25]
+```
 ## Sử dụng string template literals thay vì +
 
 Có phải bạn thường sử dụng toán tử **+** để cộng (ghép) string, ví dụ:
 
-    <code>let a = 10, b = 20;
+```
+let a = 10, b = 20;
     console.log("Sum of " + a + " and " + b + " is " + (a + b) + ".");
-    // => Sum of a and b is 30.</code>
-
+    // => Sum of a and b is 30.
+```
 Thay vào đó, bạn có thể sử dụng string template literals:
 
-    <code>let a = 10, b = 20;
+```
+let a = 10, b = 20;
     console.log(`Sum of ${a} and ${b} is ${a + b}.`);
-    // => Sum of 10 and 20 is 30.</code>
-
+    // => Sum of 10 and 20 is 30.
+```
 ## Sao chép (copy) mảng
 
-    <code>let a = [1, 2, 3];
+```
+let a = [1, 2, 3];
     let b = a.slice();
 
     console.log(b);       // => [1, 2, 3]
-    console.log(b === a); // => false</code>
-
+    console.log(b === a); // => false
+```
 ## Sử dụng Promise thay vì dùng callback
 
 Code khi sử dụng callback:
 
-    <code>func1(function (value1) {
+```
+func1(function (value1) {
         func2(value1, function (value2) {
             func3(value2, function (value3) {
                 func4(value3, function (value4) {
@@ -288,23 +327,27 @@ Code khi sử dụng callback:
                 });
             });
         });
-    });</code>
+    });
+```
 
 Code khi implement bằng Promise:
 
-    <code>func1(value1)
+```
+func1(value1)
         .then(func2)
         .then(func3)
         .then(func4)
         .then(func5, value5 => {
             // Do something with value 5
-        });</code>
+        });
+```
 
 ## Nối mảng
 
 Có 3 cách nối mảng như sau:
 
-    <code>let one = ['a', 'b', 'c']
+```
+let one = ['a', 'b', 'c']
     let two = ['d', 'e', 'f']
     let three = ['g', 'h', 'i']
 
@@ -318,52 +361,60 @@ Có 3 cách nối mảng như sau:
 
     const result3 = [...one, ...two, ...three]; // New
     console.log(result3);
-    // => ["a", "b", "c", "d", "e", "f", "g", "h", "i"]</code>
-
+    // => ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+```
 ## Clone object và array sử dụng Spread
 
 Clone object:
 
-    <code>let obj = {a: 1, b: 2};
+```
+let obj = {a: 1, b: 2};
     let obj2 = {...obj};
-    console.log(obj2); // => {a: 1, b: 2};</code>
+    console.log(obj2); // => {a: 1, b: 2};
+```
 
 Clone mảng:
 
-    <code>let arr = [1, 2];
+```
+let arr = [1, 2];
     let arr2 = [...arr];
-    console.log(arr2); // => [1, 2];</code>
+    console.log(arr2); // => [1, 2];
+```
 
 ## Set key của object một cách linh động
 
 Với cách thông thường:
 
-    <code>let myKey = 'key3';
+```
+let myKey = 'key3';
     let obj = {
         key1: 'One',
         key2: 'Two'
     };
     obj[myKey] = 'Three';
-    console.log(obj); // => {key1: "One", key2: "Two", variableKey: "Three"}</code>
+    console.log(obj); // => {key1: "One", key2: "Two", variableKey: "Three"}
+```
 
 Với cách ngắn gọn hơn sử dụng []:
 
-    <code>let myKey = 'variableKey';
+```
+let myKey = 'variableKey';
     let obj = {
         key1: 'One',
         key2: 'Two',
         [myKey]: 'Three'
     };
-    console.log(obj); // => {key1: "One", key2: "Two", variableKey: "Three"}</code>
+    console.log(obj); // => {key1: "One", key2: "Two", variableKey: "Three"}
+```
 
 Trên đây là 21 thủ thuật JavaScript hữu ích mà mình đã sưu tầm được. Hy vọng nó có thể giúp ích cho bạn. Ngoài ra, nếu bạn biết thêm các thủ thuật khác hay có góp ý gì thì vui lòng để lại bình luận cho mình.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/su-dung-es6-template-string-co-gi-hay/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/su-dung-es6-template-string-co-gi-hay/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

@@ -1,8 +1,8 @@
 ---
 date: "2019-01-23T02:00:43Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: xoan-nao-voi-phong-van-javascript-7
 title: "Xoắn não với phỏng vấn JavaScript 7"
 categories:
@@ -18,7 +18,8 @@ Mời bạn theo dõi bài viết!
 
 ## Xoắn não với phỏng vấn JavaScript 7 – Câu 1
 
-    <code>const map = new Map();
+```
+const map = new Map();
     map.set(1, 1).set("a", 2).set([1], 3)
        .set(1, 4).set("a", 5).set([1], 6);
 
@@ -26,7 +27,8 @@ Mời bạn theo dõi bài viết!
           b = map.get("a"),
           c = map.get([1]);
 
-    console.log(a, b, c);</code>
+    console.log(a, b, c);
+```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
 
@@ -44,25 +46,28 @@ Nếu *key* chưa tồn tại thì Map sẽ tạo mới phần tử với *key
 
 Mà ở đây, các \_key \_lần lượt là: **1, "a" và [1]** và ta có:
 
-    <code>1 === 1     // => true
+```
+1 === 1     // => true
     "a" === "a" // => true
-    [1] === [1] // => false</code>
-
+    [1] === [1] // => false
+```
 Do đó, key **1** và **"a"** coi như đã tồn tại, nên giá trị của nó được cập nhật với giá trị mới nhất lần lượt là: **4** và **5**.
 
 Trong khi đó, key **[1]** coi như chưa tồn tại. Và dĩ nhiên, khi lấy ra giá trị của nó thì kết quả sẽ là **undefined**.
 
-Để biết thêm về Map, mời bạn theo dõi bài viết: [Map trong JavaScript thì sao?](https://completejavascript.com/map-trong-javascript-thi-sao/)
+Để biết thêm về Map, mời bạn theo dõi bài viết: [Map trong JavaScript thì sao?](/map-trong-javascript-thi-sao/)
 
 ## Xoắn não với phỏng vấn JavaScript 7 – Câu 2
 
-    <code>0 == "0"         // true
+```
+0 == "0"         // true
     0 == []          // true
 
     "0" == []        // (1)
     "" == []         // (2)
     "1, 2" == [1, 2] // (3)
-    "1,2" == [1,2]   // (4)</code>
+    "1,2" == [1,2]   // (4)
+```
 
 Hỏi giá trị của (1), (2), (3), (4) là gì? Tại sao?
 
@@ -82,14 +87,16 @@ Cụ thể convert như thế nào thì mình không dám chắc. Mình chỉ d�
 
 Và ta có:
 
-    <code>[].toString()     // => ""
-    [1, 2].toString() // => "1,2"</code>
-
+```
+[].toString()     // => ""
+    [1, 2].toString() // => "1,2"
+```
 Vì vậy mà mình thu được kết quả như trên.
 
 ## Xoắn não với phỏng vấn JavaScript 7 – Câu 3
 
-    <code>const a = () => console.log('a');
+```
+const a = () => console.log('a');
     const b = () => console.log('b');
     const c = () => console.log('c');
     const d = () => {
@@ -98,7 +105,8 @@ Vì vậy mà mình thu được kết quả như trên.
       b();
       c();
     }
-    d();</code>
+    d();
+```
 
 Hỏi console in ra kết quả theo thứ tự như thế nào?
 
@@ -108,7 +116,7 @@ Xem đáp án
 
 **Giải thích:**
 
-Khi [function](https://completejavascript.com/tim-hieu-function-javascript/) **d()** được gọi, dĩ nhiên _d_ sẽ được in ra đầu tiên. Ngoài ra, function **b()** và **c()** là hàm xử lý đồng bộ nên chắc chắn _b_ sẽ in ra trước _c_. Vấn đề ở đây chỉ là _a_ mà thôi.
+Khi [function](/tim-hieu-function-javascript/) **d()** được gọi, dĩ nhiên _d_ sẽ được in ra đầu tiên. Ngoài ra, function **b()** và **c()** là hàm xử lý đồng bộ nên chắc chắn _b_ sẽ in ra trước _c_. Vấn đề ở đây chỉ là _a_ mà thôi.
 
 Ở đây, hàm **a()** được đặt trong hàm [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout). Mà khi được đặt trong hàm này, hàm _a()_ sẽ được thực hiện ngay sau một khoảng thời gian *timeout* cho trước.
 
@@ -116,7 +124,8 @@ Khi [function](https://completejavascript.com/tim-hieu-function-javascript/) **d
 
 ## Xoắn não với phỏng vấn JavaScript 7 – Câu 4
 
-    <code>const a = () => console.log('a');
+```
+const a = () => console.log('a');
     const b = () => console.log('b');
     const c = () => {
       console.log('c');
@@ -127,7 +136,8 @@ Khi [function](https://completejavascript.com/tim-hieu-function-javascript/) **d
         .catch(err => console.log(err));
       b();
     }
-    c();</code>
+    c();
+```
 
 Hỏi console in ra kết quả theo thứ tự như thế nào?
 
@@ -155,8 +165,8 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -1,8 +1,8 @@
 ---
 date: "2017-07-23T04:06:50Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: tim-hieu-regular-expression-javascript
 title: "Tìm hiểu Regular Expression JavaScript"
 categories:
@@ -21,13 +21,15 @@ Sau đây, chúng ta sẽ cùng tìm hiểu về Regular Expression trong JavaSc
 
 Có hai cách để tạo ra một Regular Expression là:
 
-- Sử dụng hàm khởi tạo của [đối tượng](https://completejavascript.com/javascript-object-last-but-not-least/) RegExp
+- Sử dụng hàm khởi tạo của [đối tượng](/javascript-object-last-but-not-least/) RegExp
 
 - Viết trực tiếp sử dụng cặp dấu "/ /"
 
 
-    <code>var re1 = new RegExp("abc");
-    var re2 = /abc/;</code>
+```
+var re1 = new RegExp("abc");
+    var re2 = /abc/;
+```
 
 Cả hai cách trên ta đều thu được một Regular Expression biểu diễn một string có dạng: _abc_.
 
@@ -37,13 +39,14 @@ Cả hai cách trên ta đều thu được một Regular Expression biểu di�
 
 Đây là phương thức đơn giản nhất dùng để kiểm tra xem một string có chứa khuôn mẫu đã định nghĩa hay không. Nếu có thì kết quả trả về là TRUE và ngược lại thì là FALSE.
 
-    <code>console.log(/abc/.test("abcde"));
+```
+console.log(/abc/.test("abcde"));
     // => true
     console.log(/abc/.test("12abcde"));
     // => true
     console.log(/abc/.test("abxcde"));
-    // => false</code>
-
+    // => false
+```
 Trong ví dụ trên, 2 string "abcde" và "12abcde" đều chứa "abc" nên kết quả trả về là true. String còn lại "abxcde" không chứa "abc" nên kết quả là false.
 
 #### Kiểm tra trùng khớp với tập hợp các kí tự
@@ -54,15 +57,16 @@ Tuy nhiên, với Regular Expression thì bạn có thể kiểm tra những m�
 
 **Ví dụ:**
 
-    <code>console.log(/[0123456789]/.test("in 1992"));
+```
+console.log(/[0123456789]/.test("in 1992"));
     // => true
     console.log(/[0-9]/.test("in 1992"));
     // => true
     console.log(/[0-9]/.test("Hello "));
     // => false
     console.log(/[0-5]/.test("Gold 9999"));
-    // => false</code>
-
+    // => false
+```
 Ví dụ 1, 2, 3 kiểm tra xem string có chứa bất kì chữ số nào từ 0 đến 9. Ví dụ cuối cùng kiểm tra xem string có chứa bất kì chữ số nào từ 0 đến 5.
 
 JavaScript sử dụng cặp dấu ngoặc vuông [] để biểu thị việc kiểm tra string có chứa bất kì kí tự nào có trong cặp dấu [] hay không. Trong đó, dấu "-" giữa hai kí tự dùng để chỉ 1 khoảng giữa hai kí tự đó.
@@ -89,24 +93,26 @@ Ngoài ra, JavaScript cung cấp sẵn một số cách biểu diễn một tậ
 
 Ví dụ kiểm tra ngày giờ có định dạng: **dd-mm-yyyy hh:mm**
 
-    <code>var dateTime = /\d\d-\d\d-\d\d\d\d \d\d:\d\d/;
+```
+var dateTime = /\d\d-\d\d-\d\d\d\d \d\d:\d\d/;
     console.log(dateTime.test("30-01-2003 15:20"));
     // => true
     console.log(dateTime.test("30-jan-2003 15:20"));
-    // => false</code>
-
+    // => false
+```
 #### Đảo ngược tập hợp các kí tự
 
 Trường hợp bạn muốn kiểm tra một string chứa bất kì kí tự nào không có trong tập hợp đã cho thì bạn có thể sử dụng kí tự "^".
 
 Ví dụ:
 
-    <code>var notBinary = /[^01]/;
+```
+var notBinary = /[^01]/;
     console.log(notBinary.test("1100100010100110"));
     // => false
     console.log(notBinary.test("1100100010200110"));
-    // => true</code>
-
+    // => true
+```
 #### Lặp lại khuôn mẫu
 
 Trong ví dụ về kiểm tra ngày giờ bên trên, "\d" xuất hiện lặp lại rất nhiều lần. Điều này gây nên sự khó theo dõi. Do đó, JavaScript cung cấp cách thức để biểu diễn sự lặp lại khuôn mẫu:
@@ -114,44 +120,49 @@ Trong ví dụ về kiểm tra ngày giờ bên trên, "\d" xuất hiện lặp 
 - "+": biểu thị phần tử xuất hiện >= 1 lần
 
 
-    <code>console.log(/'\d+'/.test("'123'"));
+```
+console.log(/'\d+'/.test("'123'"));
     // => true
     console.log(/'\d+'/.test("''"));
-    // => false</code>
-
+    // => false
+```
 - "\*": biểu thị phần tử xuất hiện >= 0 lần (có thể không xuất hiện)
 
 
-    <code>console.log(/'\d*'/.test("'123'"));
+```
+console.log(/'\d*'/.test("'123'"));
     // => true
     console.log(/'\d*'/.test("''"));
-    // => true</code>
-
+    // => true
+```
 - "?": biểu thị phần tử xuất hiện 0 hoặc 1 lần
 
 
-    <code>var neighbor = /neighbou?r/;
+```
+var neighbor = /neighbou?r/;
     console.log(neighbor.test("neighbour"));
     // => true
     console.log(neighbor.test("neighbor"));
     // => true
     console.log(neighbor.test("neighbouur"));
-    // => false</code>
-
+    // => false
+```
 - {n}: biểu thị phần tử xuất hiện đúng n lần
 
 
-    <code>console.log(/\d{4}/.test("1234"));
+```
+console.log(/\d{4}/.test("1234"));
     // => true
     console.log(/\d{4}/.test("12345"));
     // => true
     console.log(/\d{4}/.test("123"));
-    // => false</code>
-
+    // => false
+```
 - {x,y}: biểu thị phần tử xuất hiện từ x đến y lần
 
 
-    <code>console.log(/\d{2,4}/.test("12345"));
+```
+console.log(/\d{2,4}/.test("12345"));
     // => true
     console.log(/\d{2,4}/.test("1234"));
     // => true
@@ -160,51 +171,56 @@ Trong ví dụ về kiểm tra ngày giờ bên trên, "\d" xuất hiện lặp 
     console.log(/\d{2,4}/.test("12"));
     // => true
     console.log(/\d{2,4}/.test("1"));
-    // => false</code>
-
+    // => false
+```
 - {x, }: biểu thị phần tử xuất hiện >= x lần
 
 
-    <code>console.log(/\d{2,}/.test("12"));
+```
+console.log(/\d{2,}/.test("12"));
     // => true
     console.log(/\d{2,}/.test("1234"));
     // => true
     console.log(/\d{2,}/.test("1"));
-    // => false</code>
-
+    // => false
+```
 #### Nhóm các phần tử
 
 Trong nhiều trường hợp bạn muốn lặp lại cả một nhóm các phần tử. Khi đó, bạn phải nhóm các phần tử đó lại sử dụng cặp dấu ngoặc đơn "( )".
 
-    <code>var cartoonCrying = /boo+(hoo+)+/i;
+```
+var cartoonCrying = /boo+(hoo+)+/i;
     console.log(cartoonCrying.test("Boohoooohoohooo"));
-    // => true</code>
-
+    // => true
+```
 #### Lựa chọn khuôn mẫu
 
 Trường hợp bạn có nhiều khuôn mẫu và bạn cần kiểm tra xem string đưa ra chứa một trong các khuôn mẫu đó thì bạn có thể viết các Regular Expression tương ứng để kiểm tra. Hoặc sử dụng kí tự (|) để biểu diễn "hoặc":
 
-    <code>var animalCount = /\d+ (pig|cow|chicken)s?/;
+```
+var animalCount = /\d+ (pig|cow|chicken)s?/;
     console.log(animalCount.test("15 pigs"));
     // => true
     console.log(animalCount.test("15 pigchickens"));
-    // => false</code>
-
+    // => false
+```
 ### Phương thức Exec
 
 Nếu như phương thức **test** chỉ kiểm tra xem có tồn tại khuôn mẫu hay không thì phương thức **exec** sẽ trả về một đối tượng chứa thông tin thành phần trùng khớp với khuôn mẫu, ngược lại thì trả về null.
 
-    <code>var match = /\d+/.exec("one two 100 200");
+```
+var match = /\d+/.exec("one two 100 200");
     console.log(match);
     // => ["100", index: 8, input: "one two 100 200"]
     console.log(match.index);
-    // => 8</code>
-
+    // => 8
+```
 Ví dụ trên trả về thành phần thoả mãn khuôn mẫu đầu tiên là: "100". _Index_ là vị trí đầu tiên của string thoả mãn khuôn mẫu.
 
 Khi Regular Expression chứa group với cặp dấu ngoặc đơn thì phần tử đầu tiên trong kết quả sẽ là toàn bộ thành phần trùng khớp, thành phần tiếp theo là phần trùng khớp với group đầu tiên, thành phần tiếp theo là phần trùng khớp với group thứ 2,...
 
-    <code>var quotedText = /'([^']*)'/;
+```
+var quotedText = /'([^']*)'/;
     console.log(quotedText.exec("she said 'hello'"));
     // => ["'hello'", "hello", index: 9, input: "she said 'hello'"]
 
@@ -212,8 +228,8 @@ Khi Regular Expression chứa group với cặp dấu ngoặc đơn thì phần 
     // => ["bad", undefined, index: 0, input: "bad"]
 
     console.log(/(\d)+/.exec("123"));
-    // => ["123", "3", index: 0, input: "123"]</code>
-
+    // => ["123", "3", index: 0, input: "123"]
+```
 Đặc biệt nếu một group có nhiều thành phần trùng khớp thì chỉ lấy thành phần trùng khớp cuối cùng. Trong ví dụ trên, group **(\d)** có 3 thành phần trùng khớp là **1**, **2**, **3**. Nhưng chỉ thành phần trùng khớp cuối cùng là **3** xuất hiện trong kết quả.
 
 #### Trích xuất dữ liệu từ string
@@ -222,7 +238,8 @@ Phương thức này đặc biệt hữu ích khi bạn muốn lấy thông tin 
 
 Ví dụ sau đưa ra một string biểu diễn ngày, tháng, năm. Sau đó chúng ta sẽ trích xuất ra thông tin về ngày, tháng và năm ở trong đó:
 
-    <code>function findDate(string) {
+```
+function findDate(string) {
       var dateTime = /(\d{1,2})-(\d{1,2})-(\d{4})/;
       var match = dateTime.exec(string);
       return {
@@ -233,7 +250,8 @@ Ví dụ sau đưa ra một string biểu diễn ngày, tháng, năm. Sau đó c
     }
     var obj = findDate("30-1-2003");
     console.log(obj);
-    // => Object {day: "30", month: "1", year: "2003"}</code>
+    // => Object {day: "30", month: "1", year: "2003"}
+```
 
 #### Ranh giới của string
 
@@ -244,7 +262,8 @@ Regular Expression JavaScript cung cấp 2 cách để giải quyết vấn đ�
 - Sử dụng kí tự biểu diễn bắt đầu (^) và kết thúc (\$) string
 
 
-    <code>function findDate(string) {
+```
+function findDate(string) {
       var dateTime = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;
       var match = dateTime.exec(string);
       if(!match) return null;
@@ -264,12 +283,13 @@ Regular Expression JavaScript cung cấp 2 cách để giải quyết vấn đ�
 
     var obj3 = findDate("Hello 30-1-2003 Haha");
     console.log(obj3);
-    // => null</code>
-
+    // => null
+```
 - Sử dụng kí tự biên (\b)
 
 
-    <code>function findDate(string) {
+```
+function findDate(string) {
       var dateTime = /\b(\d{1,2})-(\d{1,2})-(\d{4})\b/;
       var match = dateTime.exec(string);
       if(!match) return null;
@@ -289,25 +309,27 @@ Regular Expression JavaScript cung cấp 2 cách để giải quyết vấn đ�
 
     var obj3 = findDate("Hello 30-1-2003 Haha");
     console.log(obj3);
-    // => Object {day: "30", month: "1", year: "2003"}</code>
+    // => Object {day: "30", month: "1", year: "2003"}
+```
 
 ## Tạo đối tượng RegExp một cách linh động
 
 Trong nhiều trường hợp, bạn muốn tạo ra một Regular Expression với nội dung chưa được biết trước. Bạn có thể sử dụng hàm khởi tạo của RegExp theo cách sau:
 
-    <code>var name = "lampv";
+```
+var name = "lampv";
     var text = "LamPV is a suspicious character.";
     var regexp = new RegExp("\\b(" + name + ")\\b", "gi");
     console.log(text.replace(regexp, "_$1_"));
-    // => _LamPV_ is a suspicious character.</code>
-
+    // => _LamPV_ is a suspicious character.
+```
 Trong đó:
 
 - tham số g: chỉ ra rằng khuôn mẫu áp dụng Global, nghĩa là nó áp dụng cho tất cả thành phần trùng khớp.
 
 - tham số i: chỉ ra rằng khuôn mẫu không phân biệt chữ hoa và chữ thường.
 
-Ngoài ra, ở đây mình có sử dụng phương thức _replace_ của [string](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/) - dùng để thay thế tất cả những thành phần trùng khớp với khuôn mẫu với "_\$1_".
+Ngoài ra, ở đây mình có sử dụng phương thức _replace_ của [string](/values-types-va-operators-trong-javascript-phan-2/) - dùng để thay thế tất cả những thành phần trùng khớp với khuôn mẫu với "_\$1_".
 
 Ở đây \$1 chính là nội dung của group thứ nhất.
 
@@ -351,7 +373,7 @@ Tóm tắt một số khuôn mẫu cơ bản của Regular Expression:
 
 - /\$/: kết thúc string
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/co-ban-ve-dom-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/co-ban-ve-dom-javascript/), thân ái!
 
 ## Tham khảo
 
@@ -361,8 +383,8 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://com
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

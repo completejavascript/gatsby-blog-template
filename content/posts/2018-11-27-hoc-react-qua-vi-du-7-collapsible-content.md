@@ -1,8 +1,8 @@
 ---
 date: "2018-11-27T22:30:49Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: hoc-react-qua-vi-du-7-collapsible-content
 title: "Học React qua ví dụ #7: Collapsible Content"
 categories:
@@ -21,19 +21,20 @@ Theo như từ điển anh việt thì Collapsible nghĩa là: "**có thể gậ
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-**Bạn chú ý:** Trong series [học React qua ví dụ](https://completejavascript.com/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+**Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](https://completejavascript.com/tag/create-react-app/) để thực hành học React qua ví dụ #7 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #7 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](https://completejavascript.com/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
 Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
 
-    <code>learn-react-by-example/
+```
+learn-react-by-example/
     --src/
     ----components/
     ------collapsible-content/
@@ -44,8 +45,8 @@ Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-re
     ----App.js
     ----index.css
     ----index.js
-    ----serviceWorker.js</code>
-
+    ----serviceWorker.js
+```
 Trong đó:
 
 - Thư mục **components**: chứa code của các Component. Bài này mình thực hành về  **Collapsible Content** nên mình tạo thêm thư mục **collapsible-content** bên trong với 2 file **collapsible\*\***-content.js** và **collapsible\***\*-content.css** để định nghĩa cho component **Collapsible Content** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
@@ -62,13 +63,14 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](https://completejavascript.com/tim-hieu-react-component-lifecycle/)
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
 
-- [Đăng ký và hủy bỏ event](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-    <code class="language-jsx">import React from 'react';
+    ```jsx
+import React from 'react';
     import ReactDOM from 'react-dom';
     import './collapsible-content.css';
 
@@ -166,7 +168,8 @@ Về nội dung chi tiết mình sẽ giải thích trong phần comment code d�
           </div>
         )
       }
-    }</code>
+    }
+```
 
 ### Nội dung file collapsible-content.css
 
@@ -174,7 +177,8 @@ File này dùng để xác định style cho Collapsible Content Component. Bạ
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2 **thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-    <code class="language-jsx">.lp-collapsible-content,
+    ```jsx
+.lp-collapsible-content,
     .lp-collapsible-content * {
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -238,7 +242,8 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
     .lp-collapsible-content>.title.active:after {
       content: "\2796";
       /* Unicode character for "minus" sign (-) */
-    }</code>
+    }
+```
 
 ## Sử dụng Collapsible Content component
 
@@ -259,13 +264,15 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
       padding: 15px;
       color: #222;
       font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }</code>
+    }
+```
 
 **./src/App.js**
 
-Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](https://completejavascript.com/hoc-react-qua-vi-du-1-slideshow/), [Modal Image](https://completejavascript.com/hoc-react-qua-vi-du-3-modal-image/) và [Lightbox](https://completejavascript.com/hoc-react-qua-vi-du-4-lightbox/).
+Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow/), [Modal Image](/hoc-react-qua-vi-du-3-modal-image/) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox/).
 
-    <code class="language-jsx">import React from 'react';
+    ```jsx
+import React from 'react';
     import './App.css';
     import CollapsibleContent from './components/collapsible-content/collapsible-content';
 
@@ -333,17 +340,18 @@ Trong đây, mình kết hợp Tab Content với các React Component khác mà 
             <div>
               <p>
                 Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-                Visit me at <a href="https://completejavascript.com/">completejavascript.com</a>.
+                Visit me at <a href="/">completejavascript.com</a>.
               </p>
             </div>
           </div>
         );
       }
-    }</code>
+    }
+```
 
 Trong đó, Collapsible Content Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
-- **title ([String](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/)):** là title của component
+- **title ([String](/values-types-va-operators-trong-javascript-phan-2/)):** là title của component
 
 - **isActive** (**Boolean**): là biến để xác định xem Component có được active hay không. Nếu **isActive** có giá trị **true** thì Component sẽ hiển thị nội dung dạng mở rộng.
 
@@ -359,8 +367,8 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

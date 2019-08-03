@@ -1,8 +1,8 @@
 ---
 date: "2018-10-28T22:30:40Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: trien-khai-stack-trong-javascript-voi-array-object-hay-map
 title: "Triển khai Stack trong JavaScript với Array, Object hay Map"
 categories:
@@ -25,9 +25,9 @@ Trước khi bắt đầu bài viết mình muốn nhấn mạnh về mục đí
 
 Và những kiến thức cơ bản mà bạn cần phải nắm vững:
 
-- [Array](https://completejavascript.com/javascript-array-co-ban/)
-- [Object](https://completejavascript.com/javascript-object-last-but-not-least/)
-- [Map](https://completejavascript.com/map-trong-javascript-thi-sao/)
+- [Array](/javascript-array-co-ban/)
+- [Object](/javascript-object-last-but-not-least/)
+- [Map](/map-trong-javascript-thi-sao/)
 
 Nếu bạn đã nắm vững kiến thức thì mình sẽ bắt đầu luôn nhé!
 
@@ -39,14 +39,14 @@ Stack là một kiểu cấu trúc dữ liệu tuyến tính, tuân theo quy lu�
 
 Ví dụ như khi bạn xếp sách thành một chồng. Rõ ràng, cuốn sách xếp trước sẽ ở dưới cùng, nên nó sẽ phải ra sau cùng. Và cuốn sách xếp cuối cùng thì ở trên cùng, nên nó sẽ được lấy ra đầu tiên.
 
-![Minh họa về Last In, First Out trong Stack](https://completejavascript.com/wp-content/uploads/2018/10/Capture-7-1.png)
+![Minh họa về Last In, First Out trong Stack](/wp-content/uploads/2018/10/Capture-7-1.png)
 Minh họa về Last In, First Out trong Stack
 
 ### Ứng dụng Stack trong lập trình
 
 Stack là một cấu trúc dữ liệu cơ bản nhưng được áp dụng khá nhiều trong lập trình:
 
-- [Triển khai thuật toán Undo-Redo](https://completejavascript.com/trien-khai-thuat-toan-undo-redo-trong-javascript/) cho các ứng dụng (soạn thảo văn bản, chỉnh sửa ảnh, video,...)
+- [Triển khai thuật toán Undo-Redo](/trien-khai-thuat-toan-undo-redo-trong-javascript/) cho các ứng dụng (soạn thảo văn bản, chỉnh sửa ảnh, video,...)
 - [Chuyển biểu thức trung tố thành biểu thức hậu tố](https://yinyangit.wordpress.com/2011/01/26/algorithm-chuy%E1%BB%83n-bi%E1%BB%83u-th%E1%BB%A9c-trung-t%E1%BB%91-sang-ti%E1%BB%81n-t%E1%BB%91-va-h%E1%BA%ADu-t%E1%BB%91-b%E1%BA%B1ng-stack/) cho việc tính toán giá trị biểu thức
 - Tính năng tiến, lùi trang trên trình duyệt web
 - Cấu trúc Call Stack trong một chương trình
@@ -67,7 +67,8 @@ Một số phép toán cơ bản có thể làm trên Stack là:
 
 ### Triển khai Stack trong JavaScript với Array
 
-    <code>class AStack {
+```
+class AStack {
       constructor(capability) {
         this.data = [];
         this.capability = capability;
@@ -101,11 +102,13 @@ Một số phép toán cơ bản có thể làm trên Stack là:
       clear() {
         this.data.length = 0;
       }
-    }</code>
+    }
+```
 
 ### Triển khai Stack trong JavaScript với Object
 
-    <code>class OStack {
+```
+class OStack {
       constructor(capability) {
         this.data = {};
         this.size = 0;
@@ -146,11 +149,13 @@ Một số phép toán cơ bản có thể làm trên Stack là:
         while(!this.isEmpty()) this.pop();
         this.size = 0;
       }
-    }</code>
+    }
+```
 
 ### Triển khai Stack trong JavaScript với Map
 
-    <code>class MStack {
+```
+class MStack {
       constructor(capability) {
         this.data = new Map();
         this.capability = capability;
@@ -187,7 +192,8 @@ Một số phép toán cơ bản có thể làm trên Stack là:
       clear() {
         this.data.clear();
       }
-    }</code>
+    }
+```
 
 ## So sánh hiệu năng 3 cách triển khai Stack trong JavaScript
 
@@ -195,7 +201,8 @@ Một số phép toán cơ bản có thể làm trên Stack là:
 
 Để test 3 cách triển khai Stack trong JavaScript với Array, Object và Map, mình viết một đoạn code như sau:
 
-    <code>const Capability = 50000000;
+```
+const Capability = 50000000;
     const TestCase = 10;
 
     // Test dành cho Array
@@ -224,7 +231,8 @@ Một số phép toán cơ bản có thể làm trên Stack là:
     const end = performance.now();
     const duration = (end - start) / TestCase;
 
-    console.log(`Duration: ${duration} ms`);</code>
+    console.log(`Duration: ${duration} ms`);
+```
 
 Ở đây, mình khởi tạo Stack với kích thước tối đa là **Capability = 50000000**. Kích thước này theo mình là hợp lý vì nếu kích thước Stack nhỏ quá thì kết quả có thể sẽ không chính xác lắm. Ngược lại, nếu kích thước tối đa mà quá lớn thì có thể làm cho trình duyệt hoặc máy bạn bị đơ vì thiếu bộ nhớ hoặc thời gian chạy quá lâu.
 
@@ -240,7 +248,7 @@ Mình thực hiện test trên Console của Google Chrome. Bạn có thể mở
 
 Nếu bạn test trên trình duyệt khác thì cũng tương tự.
 
-![](https://completejavascript.com/wp-content/uploads/2018/10/console.png)
+![](/wp-content/uploads/2018/10/console.png)
 Copy-paste code trực tiếp vào tab console trên DevTool Google Chrome
 
 Bạn chỉ cần copy-paste toàn bộ phần code (bao gồm code triển khai Stack và Code test) vào tab **Console** rồi nhấn Enter là được. Nhớ là nếu bạn test Stack với Array thì trong phần code test bạn phải khởi tạo Stack ứng với Array (**AStack**). Tương tự như Stack với Object (**OStack**) và Stack với Map (**MStack**).
@@ -273,8 +281,8 @@ Xin chào và hẹn gặp lại!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

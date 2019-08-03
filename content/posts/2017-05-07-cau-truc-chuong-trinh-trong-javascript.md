@@ -1,15 +1,15 @@
 ---
 date: "2017-05-07T04:50:40Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: cau-truc-chuong-trinh-trong-javascript
 title: "Cấu trúc chương trình trong JavaScript"
 categories:
   - Javascript cơ bản
 ---
 
-Trong các bài viết trước, mình đã giới thiệu với bạn những thành phần cơ bản của JavaScript ([values](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/), [types và operators](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/)). Nhưng đây mới chỉ là những nguyên liệu thô. Vậy làm thế nào để kết hợp những thành phần này thành một chương trình hoàn chỉnh. Để giải quyết vấn đề này, chúng ta sẽ cùng tìm hiểu về cấu trúc chương trình trong JavaScript.
+Trong các bài viết trước, mình đã giới thiệu với bạn những thành phần cơ bản của JavaScript ([values](/values-types-va-operators-trong-javascript-phan-1/), [types và operators](/values-types-va-operators-trong-javascript-phan-2/)). Nhưng đây mới chỉ là những nguyên liệu thô. Vậy làm thế nào để kết hợp những thành phần này thành một chương trình hoàn chỉnh. Để giải quyết vấn đề này, chúng ta sẽ cùng tìm hiểu về cấu trúc chương trình trong JavaScript.
 
 ## Biểu thức (expressions)
 
@@ -27,9 +27,11 @@ Trong hầu hết các ngôn ngữ lập trình, một câu lệnh thường đ�
 
 Theo mình, tốt nhất là chúng ta nên sử dụng dấu chấm phẩy để kết thúc một câu lệnh. Điều này đảm bảo rằng chương trình của chúng ta hoạt động theo đúng ý muốn.
 
-    <code>true;
+```
+true;
     1 + 2 * 4 % 3 - 6
-    'JavaScript ' + 'is ' + ' good';</code>
+    'JavaScript ' + 'is ' + ' good';
+```
 
 ## Biến số (variables)
 
@@ -39,25 +41,29 @@ Biến số dùng để lưu giữ giá trị. Qua đó, chúng ta có thể s�
 
 Cách sử dụng biến số: var <tên biến> = <biểu thức>;
 
-    <code>var isFriday = true;
+```
+var isFriday = true;
     var result = 1 + 2 * 4 % 3 - 6
-    var str = 'JavaScript ' + 'is ' + ' good';</code>
+    var str = 'JavaScript ' + 'is ' + ' good';
+```
 
 Trong ví dụ trên, mình sử dụng từ khoá (**keyword**) là _var_, theo sau là tên biến số (_isFriday_, _result_, _str_), toán tử gán (=) và cuối cùng là các biểu thức.
 
 Sau khi đã khai báo như trên, chúng ta có thể sử dụng biến số trong biểu thức thay vì dùng giá trị:
 
-    <code>var result = 1 + 2 * 4 % 3 - 6; // => result = -3;
+```
+var result = 1 + 2 * 4 % 3 - 6; // => result = -3;
     var t = result * result;
-    console.log(t); // => 9</code>
-
+    console.log(t); // => 9
+```
 Ngoài ra, sau khi bạn gán giá trị cho một biến số thì bạn vẫn có thể gán biến số đó với một giá trị khác.
 
-    <code>var x = 5;
+```
+var x = 5;
     console.log(x); // => 5
     x = 10;
-    console.log(x); // => 10</code>
-
+    console.log(x); // => 10
+```
 ### Từ khoá (keywords) và từ dự trữ (reserved words)
 
 Từ khoá (**keywords**) là những từ mang ý nghĩa đặc biệt. Từ _var_ là một từ khoá. Từ khoá _var_ theo sau nó sẽ là một biến số (_var_ là viết tắt của variable).
@@ -66,13 +72,14 @@ Từ dự trữ (**reserved words**) là những từ sẽ được dùng làm t
 
 Danh sách những từ khoá và những từ dự trữ:
 
-    <code>break case catch class const continue debugger
+```
+break case catch class const continue debugger
     default delete do else enum export extends false
     finally for function if implements import in
     instanceof interface let new null package private
     protected public return static super switch this
-    throw true try typeof var void while with yield</code>
-
+    throw true try typeof var void while with yield
+```
 Mỗi từ khoá sẽ mang một ý nghĩa khác nhau. Và mình sẽ giới thiệu chúng trong những bài viết sau.
 
 ### Cách đặt tên cho biến số
@@ -87,18 +94,21 @@ JavaScript có những quy tắc đặt tên cho biến số như sau:
 
 Ví dụ những tên hợp lệ:
 
-    <code>var temp = 100;
+```
+var temp = 100;
     var _result3 = 10;
     var $_$ = 'hehehe';
     var I_AM_HUNGRY = true;
-    var dientichao = 999;</code>
+    var dientichao = 999;
+```
 
 Ví dụ những tên không hợp lệ:
 
-    <code>var point% = 50;       // sử dụng kí tự đặc biệt %
+```
+var point% = 50;       // sử dụng kí tự đặc biệt %
     var 2you = 'passtion'; // bắt đầu bằng số
-    var null = 'oh no';    // sử dụng từ khoá</code>
-
+    var null = 'oh no';    // sử dụng từ khoá
+```
 Trong ví dụ về cách đặt tên hợp lệ, mình có một ví dụ là: var dientichao = 999. Về nguyên tắc, cách đặt tên này không sai. Tuy nhiên, khi nhìn vào tên này, có thể bạn sẽ phải mất vài giây để dịch ra ý nghĩa của nó là: diện tích ao. (ví dụ hơi không liên quan một tí)
 
 #### Chuẩn hoá cách đặt tên biến số
@@ -109,12 +119,14 @@ Vấn đề mình muốn đề cập ở đây là cách đặt tên làm sao đ
 
 - Sử dụng Camel Case (đơn giản là bạn viết hoa chữ cái đầu tiên của mỗi từ, trừ từ đầu tiên): dienTichAo
 
-![camel case tại completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/05/camel-case-completejavascript.com_.png)
+![camel case tại completejavascript.com](/wp-content/uploads/2017/05/camel-case-completejavascript.com_.png)
 
 Theo kinh nghiệm của bản thân, mình sẽ sử dụng kết hợp cả hai cách trên. Thường thì mình sẽ sử dụng cách thứ hai (Camel Case). Tuy nhiên, khi muốn sử dụng một biến số như là một hằng số thì mình sẽ sử dụng cách một. Vì lúc này, mình sẽ viết hoa tất cả các kí tự.
 
-    <code>var MAX_LENGTH = 100001;
-    var DEFAULT_TITLE = 'Hello World';</code>
+```
+var MAX_LENGTH = 100001;
+    var DEFAULT_TITLE = 'Hello World';
+```
 
 Việc đặt tên theo chuẩn giúp code của bạn giữ được tính thống nhất. Đặc biệt, trong một dự án gồm nhiều lập trình viên tham gia, thử tưởng tượng xem nếu mỗi người đặt tên theo một phong cách khác nhau thì sao? Trời ơi, mình sẽ không muốn đọc thứ code tạp nham đó!
 
@@ -134,11 +146,13 @@ Cú pháp: alert(message);
 
 Hàm này giúp đưa ra một thông báo tới người dùng. Ví dụ:
 
-    <code>alert('Say Hello from CompleteJavaScript.com');</code>
+```
+alert('Say Hello from CompleteJavaScript.com');
+```
 
 Kết quả:
 
-![Ví dụ hàm alert() tại completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-06-49-44-300x97.png)
+![Ví dụ hàm alert() tại completejavascript.com](/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-06-49-44-300x97.png)
 
 ### Hàm console.log
 
@@ -156,11 +170,13 @@ Tương tự như hàm _alert_, hàm _confirm_ cũng đưa ra một thông báo 
 
 Ví dụ:
 
-    <code>confirm('Bạn muốn tiếp tục sử dụng chương trình?');</code>
+```
+confirm('Bạn muốn tiếp tục sử dụng chương trình?');
+```
 
 Kết quả:
 
-![Ví dụ hàm prompt tại completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-01-29-300x95.png)
+![Ví dụ hàm prompt tại completejavascript.com](/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-01-29-300x95.png)
 
 ### Hàm prompt
 
@@ -168,13 +184,14 @@ Hàm _prompt_ cũng lại tương tự như hàm _confirm_ nhưng cho phép ngư
 
 Ví dụ:
 
-    <code>prompt('Nhập vào tên của bạn:');
+```
+prompt('Nhập vào tên của bạn:');
 
-    </code>
+```
 
 Kết quả:
 
-![Ví dụ hàm prompt tại completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-03-21-300x116.png)
+![Ví dụ hàm prompt tại completejavascript.com](/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-03-21-300x116.png)
 
 Hai hàm _confirm_ và _prompt_ thường không được sử dụng ở trên trình duyệt hiện đại. Bởi bạn không thể quyết định được giao diện của nó sẽ như thế nào. Tuy nhiên, với mục đích để kiểm tra hay trong một vài chương trình đơn giản thì bạn vẫn có thể sử dụng chúng.
 
@@ -184,12 +201,14 @@ Như mình đã nói ở trên, chương trình là tập hợp của những c�
 
 Ví dụ: chương trình sau yêu cầu người dùng nhập vào một số và sau đó hiển thị ra bình phương của số đó.
 
-    <code>var theNumber = Number(prompt("Nhập vào một số: "));
-    alert("Bình phương của số đó là: " + theNumber * theNumber);</code>
+```
+var theNumber = Number(prompt("Nhập vào một số: "));
+    alert("Bình phương của số đó là: " + theNumber * theNumber);
+```
 
 Chương trình sẽ thực hiện tuần tự từng câu lệnh. Và luồng điều khiển của chương trình sẽ như sau:
 
-![Luồng điều kiển tuần tự tại completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-11-44-300x60.png)
+![Luồng điều kiển tuần tự tại completejavascript.com](/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-11-44-300x60.png)
 
 ### Điều kiện rẽ nhánh (conditional execution)
 
@@ -201,32 +220,36 @@ Phương pháp hay được sử dụng nhất để rẽ nhánh trong JavaScrip
 
 Tiếp tục với ví dụ trên, nếu như bây giờ mình chỉ muốn hiển thị kết quả khi người dùng nhập số. Nếu người dùng nhập vào không phải là số thì mình sẽ không hiển thị thông báo.
 
-    <code>var theNumber = Number(prompt("Nhập vào một số: "));
+```
+var theNumber = Number(prompt("Nhập vào một số: "));
     if(!isNaN(theNumber)){
       alert("Bình phương của số đó là: " + theNumber * theNumber);
-    }</code>
+    }
+```
 
 Nếu người dùng nhập vào số thì hàm _isNaN(theNumber)_ sẽ trả về false. Sau đó !false => true. Tức là lúc này điều kiện được thoả mãn, nên hàm thông báo _alert_ được thực hiện, ngược lại sẽ không có thông báo nào.
 
 Lúc này luồng điểu khiển:
 
-![Luồng điều khiển rẽ nhánh tại completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-21-26-300x111.png)
+![Luồng điều khiển rẽ nhánh tại completejavascript.com](/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-21-26-300x111.png)
 
 #### Kết hợp if và else
 
 Trường hợp, mình vẫn muốn hiển thị thông báo khi người dùng không nhập số. Mình sẽ sử dụng thêm từ khoá _else_:
 
-    <code>var theNumber = Number(prompt("Nhập vào một số: "));
+```
+var theNumber = Number(prompt("Nhập vào một số: "));
     if(!isNaN(theNumber)){
       alert("Bình phương của số đó là: " + theNumber * theNumber);
     }else{
       alert("Bạn nhập vào không phải là số!");
     }
-    </code>
+```
 
 Nếu như mình có nhiều lựa chọn thì sao. Mình sẽ kết hợp nhiều cặp if/else.
 
-    <code>var theNumber = Number(prompt("Nhập vào một số: "));
+```
+var theNumber = Number(prompt("Nhập vào một số: "));
     if(!isNaN(theNumber)){
       if(theNumber < 10){
          alert('Small');
@@ -237,13 +260,14 @@ Nếu như mình có nhiều lựa chọn thì sao. Mình sẽ kết hợp nhi�
       }
     }else{
       alert("Bạn nhập vào không phải là số!");
-    }</code>
+    }
+```
 
 Nếu bạn không nhập vào số thì sẽ có một thông báo hiện lên: _Bạn nhập vào không phải là số_. Ngược lại nếu đó là số thì mình lại kiểm tra tiếp. Nếu số đó < 10 thì thông báo: _Small_. Nếu số đó >= 10 và < 100 thì thông báo: _Medium_. Còn nếu số đó >= 100 thì thông báo: _Big_.
 
 Lúc này luồng điểu khiển có thể được biểu diễn đơn giản như sau:
 
-![Luồng điều khiển rẽ nhánh nhiều đường tại completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-32-02-300x148.png)
+![Luồng điều khiển rẽ nhánh nhiều đường tại completejavascript.com](/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-32-02-300x148.png)
 
 #### Từ khoá switch
 
@@ -253,11 +277,13 @@ Ngoài sử dụng từ khoá _if/else_, chúng ta còn có thể sử dụng _s
 
 Một bài toán đặt ra là: mình muốn in ra các số từ 1 đến 100. Mình sẽ phải viết ra 100 câu lệnh:
 
-    <code>console.log(1);
+```
+console.log(1);
     console.log(2);
     console.log(3);
     ...
-    console.log(100);</code>
+    console.log(100);
+```
 
 _Nhanh mà, copy-paste một lúc là xong thôi._
 
@@ -269,17 +295,19 @@ Vòng lặp giúp giải quyết những bài toán có tính lặp lại theo q
 
 Luồng điều khiển lúc này sẽ là:
 
-![Vòng lặp điều khiển tại completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-57-24.png)
+![Vòng lặp điều khiển tại completejavascript.com](/wp-content/uploads/2017/05/Screenshot-from-2017-05-07-07-57-24.png)
 
 Như vậy, khi áp dụng vòng lặp thì bài toán trên sẽ giải quyết thế nào?
 
 #### Vòng lặp while
 
-    <code>var number = 1;
+```
+var number = 1;
     while(number <= 100){
       console.log(number);
       number = number + 1;
-    }</code>
+    }
+```
 
 Đoạn code trên có thể diễn tả bằng lời như sau: _Cho number = 1. Kiểm tra điều kiện nếu number <= 100 thì sẽ ghi ra log số number. Rồi sau đó, tăng number lên 1 đơn vị. Tiếp tục quá trình kiểm tra điều kiện, log, tăng number cho đến khi nào number > 100 thì dừng lại._
 
@@ -289,11 +317,13 @@ Như vậy, khi áp dụng vòng lặp thì bài toán trên sẽ giải quyết
 
 Vòng lặp _do/while_ cũng tương tự vòng lặp _while_. Chỉ khác là nó sẽ chắc chắn thực hiện ít nhất một lần.
 
-    <code>var number = 1;
+```
+var number = 1;
     do{
       console.log(number);
       number = number + 1;
-    }while(number <= 100);</code>
+    }while(number <= 100);
+```
 
 Nhìn chung, hai cách trên không khác nhau. Bạn có thể lựa chọn một trong hai cách trong từng trường hợp cụ thể sao cho hợp lý (còn riêng mình thì hầu như không sử dụng vòng lặp _do/while_).
 
@@ -309,19 +339,23 @@ Nếu để ý thì bạn sẽ thấy cấu trúc chung khi sử dụng vòng l�
 
 Để ngắn gọn, JavaScript sinh ra vòng lặp _for_.
 
-    <code>for(var number = 1; number <= 100; number = number + 1){
+```
+for(var number = 1; number <= 100; number = number + 1){
       console.log(number);
-    }</code>
+    }
+```
 
 Bạn có thể thấy là cấu trúc của vòng lặp vẫn được duy trì mà nhìn code gọn gàng hơn rất nhiều.
 
 Cấu trúc chung của vòng lặp for như sau:
 
-    <code>for([khởi tạo]; [điều kiện]; [cập nhật]){
+```
+for([khởi tạo]; [điều kiện]; [cập nhật]){
       statement1;
       statement2;
       ...
-    }</code>
+    }
+```
 
 - [Khởi tạo]: được thực hiện một lần lúc bắt đầu vòng lặp
 
@@ -339,12 +373,14 @@ Câu trả lời là: khi gặp điều kiện thoả mãn để kết thúc vò
 
 Ví dụ sau, mình sẽ tìm bội số nhỏ nhất của 7 bắt đầu từ 8:
 
-    <code>for(var number = 8; ; number++){
+```
+for(var number = 8; ; number++){
       if(number % 7 == 0){
         console.log(number); // => 14
         break;
       }
-    }</code>
+    }
+```
 
 Trong vòng lặp _for_ trên, mình bỏ qua phần điều kiện. Lúc này có thể hiểu là: sẽ không kiểm tra điều kiện trước khi thực hiện vòng lặp. Hay vòng lặp luôn luôn được thực hiện. Mỗi vòng lặp mình sẽ kiểm tra xem nếu số đó chia hết cho 7 (số dư khi chia cho 7 == 0) thì đó chính là số cần tìm. Cuối cùng, mình dùng *break* để thoát khỏi vòng lặp.
 
@@ -356,13 +392,15 @@ Có một từ khoá khác gần giống break cũng hay được sử dụng l�
 
 Ví dụ mình muốn tìm bội số nhỏ nhất của 7, bắt đầu từ 8 và là số lẻ.
 
-    <code>for(var number = 8; ; number++){
+```
+for(var number = 8; ; number++){
       if(number % 2 == 0) continue;
       if(number % 7 == 0) {
         console.log(number);  // => 21
         break;
       }
-    }</code>
+    }
+```
 
 Khác với ví dụ trước, ví dụ này cần phải tìm ra bội số là số lẻ. Do đó, trước tiên mình sẽ kiểm tra xem số hiện tại là chẵn hay lẻ. Nếu _number % 2 == 0_, suy ra đó là số chẵn. Chắc chắn trường hợp này không thoả mãn nên mình không cần phải chạy tiếp các câu lệnh tiếp theo, mà chuyển ngay sang lượt lặp tiếp theo.
 
@@ -404,14 +442,15 @@ Các cụ ta có câu: _Học đi đôi với hành_. Thực hành sẽ giúp b�
 
 Sử dụng _console.log_ để in ra hình tam giác như sau:
 
-    <code>#
+```
+#
     ##
     ###
     ####
     #####
     ######
-    #######</code>
-
+    #######
+```
 Xem code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/program_structure/program_structure_triangle_1.js).
 
 ### Bài 2:
@@ -428,8 +467,8 @@ Xem code tại [đây](https://github.com/completejavascript/practical-javascrip
    _#_#_#_# #_#_#_#_
    _#_#_#_# #_#_#_#_
    _#_#_#_# #_#_#_#_
-   _#_#_#_#</code>
-
+   _#_#_#_#
+```
 Xem code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/program_structure/program_structure_chess_board_3_1.js).
 
 2. Yêu cầu người dùng nhập vào một số **size (size > 0)**. Sau đó hiển thị ra hình bàn cờ vua như trên với kích thước là **size x size**.
@@ -444,11 +483,11 @@ Xem code tại [đây](https://github.com/completejavascript/practical-javascrip
 
 **Chú ý:**
 
-Bạn nên tự [thực hành](https://completejavascript.com/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon/) để giải quyết bài toán trước khi tham khảo code. Khi đấy bạn sẽ hiểu và nhớ kiến thức lâu hơn.
+Bạn nên tự [thực hành](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon/) để giải quyết bài toán trước khi tham khảo code. Khi đấy bạn sẽ hiểu và nhớ kiến thức lâu hơn.
 
 Nếu bạn đã giải quyết được hết những bài toán cơ bản này thì chúc mừng bạn đã nắm được những thành phần cơ bản trong cấu trúc chương trình JavaScript rồi.
 
-Hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/tim-hieu-function-javascript/), thân ái!
+Hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-function-javascript/), thân ái!
 
 ## Tham khảo
 
@@ -456,8 +495,8 @@ Hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

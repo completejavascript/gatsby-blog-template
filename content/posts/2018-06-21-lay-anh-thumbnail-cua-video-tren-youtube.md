@@ -1,8 +1,8 @@
 ---
 date: "2018-06-21T12:36:26Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: lay-anh-thumbnail-cua-video-tren-youtube
 title: "Hướng dẫn lấy ảnh thumbnail của video trên youtube"
 categories:
@@ -43,7 +43,7 @@ Trong đó: id_video là id của video mà bạn đã có được ở phía tr
 
 bạn sẽ thu được ảnh sau:
 
-![huong dan lay anh thumbnial youtube](https://completejavascript.com/wp-content/uploads/2018/06/huong-dan-lay-anh-thumbnail-video-youtube-phamvanlam-com-1.jpg)
+![huong dan lay anh thumbnial youtube](/wp-content/uploads/2018/06/huong-dan-lay-anh-thumbnail-video-youtube-phamvanlam-com-1.jpg)
 
 ### Cách 2
 
@@ -73,14 +73,14 @@ Với cách này bạn sẽ thu được ảnh thumbnail của video trên youtu
 
 Trên đây là 2 cách để lấy ảnh thumbnail của video trên youtube. Hy vọng nó giúp ích được cho bạn. Nếu bạn thấy hay thì không ngại để chia sẻ cho mọi người cùng biết nhé. Còn nếu bạn có thắc mắc gì thì vui lòng để lại bình luận phía dưới hoặc gửi mail cho mình. Mình sẽ cố gắng giải đáp giúp bạn.
 
-**Lưu ý**: cách này chỉ lấy được ảnh thumbnail của video. Nếu bạn muốn lấy ảnh từ video youtube (bất kỳ tại mọi thời điểm) thì có thể tải video đó về rồi sử dụng [code FFmpeg để chuyển video thành ảnh](https://completejavascript.com/huong-dan-tim-hieu-ffmpeg-co-ban/#Code_ffmpeg_chuyen_doi_video_thanh_anh).
+**Lưu ý**: cách này chỉ lấy được ảnh thumbnail của video. Nếu bạn muốn lấy ảnh từ video youtube (bất kỳ tại mọi thời điểm) thì có thể tải video đó về rồi sử dụng [code FFmpeg để chuyển video thành ảnh](/huong-dan-tim-hieu-ffmpeg-co-ban/#Code_ffmpeg_chuyen_doi_video_thanh_anh).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/cac-cau-lenh-thuong-dung-tren-cmd-windows/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/cac-cau-lenh-thuong-dung-tren-cmd-windows/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

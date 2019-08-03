@@ -1,8 +1,8 @@
 ---
 date: "2018-07-24T14:02:44Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: tim-hieu-ki-thuat-method-chaining-co-ban
 title: "Tìm hiểu kĩ thuật Method Chaining cơ bản"
 categories:
@@ -17,18 +17,22 @@ Kĩ thuật Method Chaining giúp code trở nên ngắn gọn, dễ theo dõi v
 
 Ví dụ: khi sử dụng jQuery, bạn có thể dễ dàng nhìn thấy những đoạn code như sau:
 
-    <code>$('.myClass').addClass('bird').show().animate({/* some animation */});</code>
+```
+$('.myClass').addClass('bird').show().animate({/* some animation */});
+```
 
 Nếu không sử dụng kĩ thuật Method Chaining thì đoạn code trên sẽ khá dài dòng:
 
-    <code>const $myClass = $('.myClass');
+```
+const $myClass = $('.myClass');
     $.addClass($myClass, 'bird');
     $.show($myClass);
-    $.animate($myClass, {/* some animation */})</code>
+    $.animate($myClass, {/* some animation */})
+```
 
 Bạn có thể thấy rằng, khi sử dụng Method Chaining, bạn hầu như chỉ cần viết các đoạn code trên cùng 1 dòng.
 
-Thực tế, kĩ thuật này đã và đang được sử dụng rất nhiều trong hầu hết các thư viện, [Framework JavaScript](https://completejavascript.com/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/).
+Thực tế, kĩ thuật này đã và đang được sử dụng rất nhiều trong hầu hết các thư viện, [Framework JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/).
 
 ## Cách sử dụng kĩ thuật Method Chaining cơ bản
 
@@ -36,7 +40,8 @@ Trong bài viết này, mình sẽ chỉ giới thiệu một cách cơ bản v�
 
 ### Ví dụ khi không sử dụng Method Chaining
 
-    <code>class Number {
+```
+class Number {
       constructor(value) {
         this.value = value;
       }
@@ -61,15 +66,16 @@ Trong bài viết này, mình sẽ chỉ giới thiệu một cách cơ bản v�
     num.div(8); // 24 / 8 => 3
 
     console.log(num.value);
-    // => 3</code>
-
+    // => 3
+```
 Ví dụ trên xây dựng class _Number_ với 4 phương thức _add_, _sub_, _mul_, _div_. Và bạn có thể thấy với mỗi phương thức được gọi, bạn phải lặp lại biến _num_ và mỗi câu lệnh thường viết trên 1 dòng.
 
 Như vậy khá dài dòng phải không bạn?
 
 ### Ví dụ khi sử dụng Method Chaining
 
-    <code>class Number {
+```
+class Number {
       constructor(value) {
         this.value = value;
       }
@@ -93,13 +99,14 @@ Như vậy khá dài dòng phải không bạn?
 
     let num = new Number(10);
     num.add(5).sub(3).mul(2).div(8);
-    console.log(num.value);</code>
+    console.log(num.value);
+```
 
 Trong đoạn code trên, mình đã triển khai các phương thức theo Method Chaining. Nhờ vậy mà mình có thể gọi liên tiếp các phương thức trên cùng 1 dòng.
 
 Cách thực hiện ở đây rất đơn giản là: mình chỉ cần thêm _**return this**_ vào cuối mỗi phương thức.
 
-_This_ ở đây đại diện cho [object](https://completejavascript.com/javascript-object-last-but-not-least/) được tạo ra (_num_) sau khi sử dụng từ khóa _new_.
+_This_ ở đây đại diện cho [object](/javascript-object-last-but-not-least/) được tạo ra (_num_) sau khi sử dụng từ khóa _new_.
 
 Rất dễ hiểu phải không bạn?
 
@@ -107,7 +114,7 @@ Rất dễ hiểu phải không bạn?
 
 Trên đây là những thông tin cơ bản về kĩ thuật Method Chaining. Để hiểu thêm về kĩ thuật này, bạn có thể đọc thêm trong các bài viết ở phần tham khảo dưới đây.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/lam-sach-website-wordpress-nhu-the-nao/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lam-sach-website-wordpress-nhu-the-nao/), thân ái!
 
 ## Tham khảo
 
@@ -117,8 +124,8 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://co
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

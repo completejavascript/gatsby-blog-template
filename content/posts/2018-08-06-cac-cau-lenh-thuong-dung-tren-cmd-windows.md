@@ -1,8 +1,8 @@
 ---
 date: "2018-08-06T14:33:35Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: cac-cau-lenh-thuong-dung-tren-cmd-windows
 title: "Các câu lệnh thường dùng trên CMD – Windows"
 categories:
@@ -12,7 +12,7 @@ tags:
   - Windows
 ---
 
-Trong bài viết [các câu lệnh thường dùng trên Ubuntu – Linux](https://completejavascript.com/cac-cau-lenh-thuong-dung-tren-ubuntu-linux/), mình đã giới thiệu với bạn những câu lệnh thường hay được sử dụng trên Terminal của Ubuntu. Việc thành thạo những câu lệnh này giúp bạn sử dụng Ubuntu một cách nhanh chóng và hiệu quả. Tuy nhiên, nếu bạn là người dùng Windows thì sao? Yên tâm đi, bạn cũng vẫn có thể sử dụng những câu lệnh tương đương trên CMD của Windows. Bạn sẽ sử dụng Windows theo cách "like a boss" và dễ dàng nhận được "sự ngưỡng mộ" từ những người xung quanh. Vì vậy, bài viết này mình sẽ giúp bạn tổng hợp lại những câu lệnh thường dùng trên CMD - Windows.
+Trong bài viết [các câu lệnh thường dùng trên Ubuntu – Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux/), mình đã giới thiệu với bạn những câu lệnh thường hay được sử dụng trên Terminal của Ubuntu. Việc thành thạo những câu lệnh này giúp bạn sử dụng Ubuntu một cách nhanh chóng và hiệu quả. Tuy nhiên, nếu bạn là người dùng Windows thì sao? Yên tâm đi, bạn cũng vẫn có thể sử dụng những câu lệnh tương đương trên CMD của Windows. Bạn sẽ sử dụng Windows theo cách "like a boss" và dễ dàng nhận được "sự ngưỡng mộ" từ những người xung quanh. Vì vậy, bài viết này mình sẽ giúp bạn tổng hợp lại những câu lệnh thường dùng trên CMD - Windows.
 
 Mời bạn theo dõi bài viết!
 
@@ -30,17 +30,17 @@ Khi bạn mở cửa sổ CMD, vị trí mặc định sẽ là: **_C:\Users\use
 
 Ví dụ đối với máy mình là: \_C:\Users\LamPV> \_thì kết quả thu được như sau:
 
-![Khởi động CMD windows 7](https://completejavascript.com/wp-content/uploads/2018/08/khoi-dong-cmd-windows-mac-dinh-completejavascript.com_.png)Cửa sổ CMD mặc định trên Windows 7 sau khi khởi động
+![Khởi động CMD windows 7](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-mac-dinh-completejavascript.com_.png)Cửa sổ CMD mặc định trên Windows 7 sau khi khởi động
 
 Có 2 cách để thực hiện là:
 
 - Cách 1: Bạn click chuột vào biểu tượng **Start** ở góc dưới bên trái màn hình. Sau đó, gõ **cmd** vào khu vực tìm kiếm. Windows sẽ tìm ra chương trình **cmd.exe** cho bạn. Bạn chỉ cần click vào nó là xong.
 
-![Cách mở CMD tại vị trí mặc định - cách 1](https://completejavascript.com/wp-content/uploads/2018/08/khoi-dong-cmd-windows-mac-dinh-cach-1-completejavascript.com_.png)Cách 1 để mở CMD tại vị trí mặc định
+![Cách mở CMD tại vị trí mặc định - cách 1](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-mac-dinh-cach-1-completejavascript.com_.png)Cách 1 để mở CMD tại vị trí mặc định
 
 - Cách 2: Bạn click chuột vào biểu tượng **Start** ở góc dưới bên trái màn hình. Sau đó, gõ **run** vào khu vực tìm kiếm và nhấn **Enter**. Cửa sổ **run** hiện lên, rồi bạn chỉ việc gõ **cmd** và nhấn **Enter** (hoặc click vào OK) là được.
 
-![Khởi động CMD windows 7 cách 2](https://completejavascript.com/wp-content/uploads/2018/08/khoi-dong-cmd-windows-mac-dinh-cach-2-completejavascript.com_.png)Cách 2 để mở CMD tại vị trí mặc định
+![Khởi động CMD windows 7 cách 2](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-mac-dinh-cach-2-completejavascript.com_.png)Cách 2 để mở CMD tại vị trí mặc định
 
 ### Mở cửa sổ CMD tại vị trí thư mục bất kỳ
 
@@ -48,17 +48,17 @@ Nhiều khi bạn muốn mở CMD tại vị trí thư mục chứa project mà 
 
 Ví dụ mình muốn mở CMD tại vị trí thư mục có đường dẫn: **_F:\cmd-demo\demo1_**
 
-![Khởi động CMD tại vị trí bất kỳ](https://completejavascript.com/wp-content/uploads/2018/08/khoi-dong-cmd-windows-bat-ky-completejavascript.com_.png)Cửa sổ CMD Windows 7 khi mở ở vị trí F:\cmd-demo\demo1
+![Khởi động CMD tại vị trí bất kỳ](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-bat-ky-completejavascript.com_.png)Cửa sổ CMD Windows 7 khi mở ở vị trí F:\cmd-demo\demo1
 
 Cũng có 2 cách để thực hiện là:
 
 - Cách 1: Bạn mở **Windows Explore** đến thư mục muốn mở CMD. Tại đó, bạn đồng thời nhấn **Shift** và click **chuột phải**. Lúc đó, sẽ có một context menu hiện lên, bạn chọn mục **Open command window here**.
 
-![khởi động cmd windows bất kỳ cách 1](https://completejavascript.com/wp-content/uploads/2018/08/khoi-dong-cmd-windows-bat-ky-cach-1-completejavascript.com_.png)Cách 1 để mở cmd windows ở vị trí bất kỳ
+![khởi động cmd windows bất kỳ cách 1](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-bat-ky-cach-1-completejavascript.com_.png)Cách 1 để mở cmd windows ở vị trí bất kỳ
 
 - Cách 2: Bạn cũng mở **Windows Explore** đến thư mục muốn mở CMD. Bạn tìm đến thanh địa chỉ và gõ **cmd**, rồi nhấn **Enter**.
 
-![khởi động cmd windows bất kỳ cách 2](https://completejavascript.com/wp-content/uploads/2018/08/khoi-dong-cmd-windows-bat-ky-cach-2-completejavascript.com_.png)Cách 2 để mở cmd windows ở vị trí bất kỳ
+![khởi động cmd windows bất kỳ cách 2](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-bat-ky-cach-2-completejavascript.com_.png)Cách 2 để mở cmd windows ở vị trí bất kỳ
 
 ### Mở cửa sổ CMD với quyền Admin
 
@@ -66,11 +66,11 @@ Cũng có 2 cách để thực hiện là:
 
 Sau đó, thay vì click vào **cmd.exe** thì bạn click **chuột phải** và chọn **Run as administrator, **rồi chọn** OK.**
 
-![Khởi động CMD windows với quyền admin](https://completejavascript.com/wp-content/uploads/2018/08/khoi-dong-cmd-windows-quyen-admin-completejavascript.com_.png)Cách để mở CMD windows với quyền admin
+![Khởi động CMD windows với quyền admin](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-quyen-admin-completejavascript.com_.png)Cách để mở CMD windows với quyền admin
 
 Kết quả là CMD hiện lên với vị trí mặc định là: _**C:\Windows\system32>**_
 
-![Kết quả khởi động CMD windows với quyền admin](https://completejavascript.com/wp-content/uploads/2018/08/khoi-dong-cmd-windows-quyen-admin-ket-qua-completejavascript.com_.png)Cửa sổ CMD windows sau khi mở với quyền admin
+![Kết quả khởi động CMD windows với quyền admin](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-quyen-admin-ket-qua-completejavascript.com_.png)Cửa sổ CMD windows sau khi mở với quyền admin
 
 Trên đây là một số cách để mở CMD trên Windows 7. Tiếp theo, mình sẽ giới thiệu với bạn các câu lệnh thường dùng trên CMD.
 
@@ -213,8 +213,8 @@ Cuối cùng, xin chào và hẹn gặp lại bạn trong bài viết tiếp the
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

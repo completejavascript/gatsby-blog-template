@@ -1,8 +1,8 @@
 ---
 date: "2018-11-13T22:30:10Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: localforage-giai-phap-hoan-hao-indexeddb
 title: "LocalForage: giải pháp hoàn hảo cho IndexedDB"
 categories:
@@ -11,7 +11,7 @@ tags:
   - IndexedDB
 ---
 
-[IndexedDB](https://completejavascript.com/javascript-indexeddb-tai-sao-khong/) là một local database dạng NoSQL cho phép lưu trữ dữ liệu ngay trên trình duyệt. Nó cho phép lưu trữ một lượng dữ liệu lớn với các kiểu dữ liệu khác nhau (bao gồm cả file/blob); hỗ trợ trên nhiều trình duyệt và cung cấp khả năng truy cập nhanh. Qua đó, IndexedDB giúp cho web app có khả năng hoạt động offline một cách mượt mà.
+[IndexedDB](/javascript-indexeddb-tai-sao-khong/) là một local database dạng NoSQL cho phép lưu trữ dữ liệu ngay trên trình duyệt. Nó cho phép lưu trữ một lượng dữ liệu lớn với các kiểu dữ liệu khác nhau (bao gồm cả file/blob); hỗ trợ trên nhiều trình duyệt và cung cấp khả năng truy cập nhanh. Qua đó, IndexedDB giúp cho web app có khả năng hoạt động offline một cách mượt mà.
 
 Tuy nhiên, IndexedDB lại có nhược điểm lớn là nó chỉ cung cấp API cấp thấp. Khi sử dụng IndexedDB bạn phải quan tâm đến những thứ như: transaction, objectStore, cursor,... và nó còn không hỗ trợ [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise). Điều này làm cho việc sử dụng IndexedDB trở nên khá khó khăn và phức tạp.
 
@@ -23,7 +23,7 @@ LocalForage là một thư viện JavaScript mã nguồn mở, giúp cho việc 
 
 - API gần giống với [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) bao gồm: _setItem()_, _getItem()_, _removeItem()_, _clear()_ và thêm một số API khác nữa.
 
-- Hỗ trợ [ES6](https://completejavascript.com/tag/es6/) Promise API
+- Hỗ trợ [ES6](/tag/es6/) Promise API
 
 - Hỗ trợ sử dụng IndexedDB và [Web SQL](https://en.wikipedia.org/wiki/Web_SQL_Database). Tuy nhiên, nếu browser không hỗ trợ thì localForage sẽ quay về sử dụng localStorage.
 
@@ -34,13 +34,13 @@ LocalForage là một thư viện JavaScript mã nguồn mở, giúp cho việc 
 Việc cài đặt localForage khá đơn giản. Bạn có thể sử dụng thông qua CDN và chèn thẳng vào HTML như sau:
 
     <code class="html language-html"><script src="https://unpkg.com/localforage@1.7.3/dist/localforage.min.js"></script>
-    </code>
+```
 
 Hoặc tải [phiên bản release mới nhất](https://github.com/mozilla/localForage/releases) trên Github về rồi sử dụng luôn:
 
     <code class="html language-html"><script src="localforage.js"></script>
     <script>console.log('localforage is: ', localforage);</script>
-    </code>
+```
 
 mà không cần phải **init** hay chờ các sự kiện như **onready**.
 
@@ -51,13 +51,13 @@ Ngoài ra, bạn cũng có thể cài đặt localForage thông qua npm hoặc b
 
     # Hoặc cài đặt qua bower:
     bower install localforage
-    </code>
+```
 
 Và sử dụng nó với các bundler (như Webpack) bằng cách:
 
     <code class="js language-js">import localforage from "localforage";
     localforage.setItem('key', 'value');
-    </code>
+```
 
 ## Cách sử dụng một số API của localForage
 
@@ -78,13 +78,13 @@ Cú pháp:
       // Xử lý khi việc lưu key-value bị lỗi
       console.log(err);
     });
-    </code>
+```
 
 Trong đó:
 
 - **key**: là string, phân biệt hoa-thường và được sử dụng để lấy giá trị ra sau này.
 
-- **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/), [string](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/), [array](https://completejavascript.com/javascript-array-co-ban/), [object](https://completejavascript.com/javascript-object-last-but-not-least/), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
+- **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number](/values-types-va-operators-trong-javascript-phan-1/), [string](/values-types-va-operators-trong-javascript-phan-2/), [array](/javascript-array-co-ban/), [object](/javascript-object-last-but-not-least/), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
 
 Ví dụ:
 
@@ -94,7 +94,7 @@ Ví dụ:
     }).catch(function(err) {
       console.log(err);
     });
-    </code>
+```
 
 **Chú ý**: nếu bạn sử dụng _setItem()_ lại một lần nữa với key đã tồn tại thì giá trị của nó sẽ bị ghi đè.
 
@@ -113,7 +113,7 @@ Sau khi sử dụng _setItem()_ để ghi dữ liệu, bạn có thể dùng _ge
       // Xử lý khi việc lấy giá trị với key bị lỗi
       console.log(err);
     });
-    </code>
+```
 
 Ví dụ:
 
@@ -123,7 +123,7 @@ Ví dụ:
     }).catch(function(err) {
       console.log(err);
     });
-    </code>
+```
 
 **Chú ý:** nếu bạn sử dụng _getItem()_ với key chưa tồn tại thì promise vẫn trả về trường hợp thành công, nhưng lúc này giá trị của value là **null**.
 
@@ -133,7 +133,7 @@ Ví dụ:
     }).catch(function(err) {
       console.log(err);
     });
-    </code>
+```
 
 ### removeItem()
 
@@ -152,7 +152,7 @@ Cú pháp:
         // Xử lý khi việc remove bị lỗi
         console.log(err);
     });
-    </code>
+```
 
 Ví dụ:
 
@@ -162,7 +162,7 @@ Ví dụ:
     }).catch(function(err) {
         console.log(err);
     });
-    </code>
+```
 
 **Chú ý**: nếu bạn _removeItem()_ với key không tồn tại, thì phương thức này vẫn coi như thành công.
 
@@ -172,7 +172,7 @@ Ví dụ:
     }).catch(function(err) {
         console.log(err);
     });
-    </code>
+```
 
 ### clear()
 
@@ -191,7 +191,7 @@ Cú pháp:
         // Xử lý khi việc xoá bị lỗi.
         console.log(err);
     });
-    </code>
+```
 
 **Chú ý:** khi sử dụng phương thức này đồng nghĩa với toàn bộ dữ liệu trong database sẽ bị xoá. Vì vậy, bạn cần phải cẩn trọng khi sử dụng phương thức này.
 
@@ -203,7 +203,7 @@ Ngoài 4 API giống với localStorage như trên ra, localForage còn hỗ tr�
 
 - keys(successCallback): trả về một mảng chứa các key trong database.
 
-- iterate(iteratorCallback, successCallback): dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/).
+- iterate(iteratorCallback, successCallback): dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](/javascript-foreach-la-cai-quai-gi/).
 
 - key(keyIndex, successCallback): trả về tên của key tương ứng với ID của nó.
 
@@ -223,7 +223,7 @@ Cú pháp của phương thức này là:
 
     // Hoặc
     setDriver([driverName, nextDriverName])
-    </code>
+```
 
 Trong đó, các tham số của phương thức nhận một trong 3 giá trị là:
 
@@ -240,7 +240,7 @@ Ví dụ:
 
     // Yêu cầu localForage ưu tiên sử dụng WebSQL rồi mới đến IndexedDB
     localforage.setDriver([localforage.WEBSQL, localforage.INDEXEDDB]);
-    </code>
+```
 
 ### config()
 
@@ -256,7 +256,7 @@ Cú pháp:
       version,
       description
     })
-    </code>
+```
 
 **Chú ý:** khác với hầu hết các API của localForage - là bất đồng bộ, thì phương thức _config()_ lại xử lý đồng bộ.
 
@@ -273,7 +273,7 @@ Ví dụ mình tạo ra 2 instance của localForage để lưu trữ toạ đ�
     let threeDStore = localforage.createInstance({
       name: "3-D"
     });
-    </code>
+```
 
 Khi đó dữ liệu ở mỗi instance sẽ không liên quan đến nhau (kể cả khi chúng có cùng key):
 
@@ -289,7 +289,7 @@ Khi đó dữ liệu ở mỗi instance sẽ không liên quan đến nhau (kể
       console.log(value);
       // => {x: 1, y: 2, z: 3}
     })
-    </code>
+```
 
 ## Lời kết
 
@@ -307,8 +307,8 @@ Xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

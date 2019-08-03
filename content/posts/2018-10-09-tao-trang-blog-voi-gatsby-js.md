@@ -1,8 +1,8 @@
 ---
 date: "2018-10-09T11:50:24Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: tao-trang-blog-voi-gatsby-js
 title: "Tạo trang blog với Gatsby.js"
 categories:
@@ -23,8 +23,8 @@ Mời bạn theo dõi bài viết!
 Trước khi bắt đầu tạo trang blog với Gatsby.js, có một số kiến thức cơ bản mà bạn cần phải nắm vững như:
 
 - [HTML](https://www.tutorialspoint.com/html/) và [CSS](https://www.tutorialspoint.com/css/).
-- [JavaScript cơ bản](https://completejavascript.com/category/javascript/javascript-co-ban/).
-- Một số đặc điểm cơ bản của [ES6](https://completejavascript.com/tag/es6/).
+- [JavaScript cơ bản](/category/javascript/javascript-co-ban/).
+- Một số đặc điểm cơ bản của [ES6](/tag/es6/).
 - Những tư tưởng chính của [React](https://www.taniarascia.com/getting-started-with-react/).
 - Cú pháp [Markdown](https://guides.github.com/features/mastering-markdown/) cơ bản
 - [Node.js và npm](https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/).
@@ -48,7 +48,7 @@ Bài viết này giúp bạn:
 
 - Gatsby.js là một framework khá nổi tiếng với hơn [25.000 stars trên Github](https://github.com/gatsbyjs/gatsby).
 - Gatsby.js là một [site generator](https://www.staticgen.com/) tương tự như [Jekyll](https://jekyllrb.com/), [Next.js](https://nextjs.org/), [Hugo](https://gohugo.io/),...
-- Gatsby.js sử dụng [ngôn ngữ JavaScript](https://completejavascript.com/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) với template là [React](https://completejavascript.com/lam-tuong-tai-hai-ve-react/).
+- Gatsby.js sử dụng [ngôn ngữ JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) với template là [React](/lam-tuong-tai-hai-ve-react/).
 - Gatsby.js có thể được sử dụng để xây dựng trang blog, [portfolio](https://about.phamvanlam.com/), trang thương mại điện tử, Static PWA (Progressive Web Apps),...
 - Gatsby.js hỗ trợ nhiều plugins giúp bạn xây dựng và deploy trang web một cách nhanh chóng mà không cần phải triển khai database, cài đặt server.
 - Gatsby.js có thể load dữ liệu từ nhiều nơi như: các file dạng Markdown, các CMS ([Contentful](https://www.contentful.com/), Wordpress), REST hay GraphQL API,...
@@ -59,7 +59,7 @@ Mục đích của Gatsby.js là build ra trang web dưới dạng các file tĩ
 
 ### Cài đặt Node.js
 
-Node.js là thứ không thể thiếu vì Gatsby được xây dựng dựa trên Node.js. Để cài đặt Node.js trên Windows, bạn có thể tham khảo bài viết [Hướng dẫn tìm hiểu Node.js cơ bản](https://completejavascript.com/huong-dan-tim-hieu-node-js-co-ban/).
+Node.js là thứ không thể thiếu vì Gatsby được xây dựng dựa trên Node.js. Để cài đặt Node.js trên Windows, bạn có thể tham khảo bài viết [Hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban/).
 
 ### Cài đặt Git
 
@@ -67,17 +67,19 @@ Git cũng là một thành phần không thể thiếu. Mình cần cài đặt 
 
 ### Cài đặt Gatsby CLI
 
-Gatsby CLI là công cụ cần thiết để tạo mới một trang blog với Gatsby.js, cũng như là chạy các câu lệnh phục vụ cho việc phát triển, [deploy](https://completejavascript.com/deploy-ung-dung-react-len-github-pages/) trang web. Để cài đặt Gatsby CLI bạn có thể sử dụng npm bằng [câu lệnh](https://completejavascript.com/tag/command-line/):
+Gatsby CLI là công cụ cần thiết để tạo mới một trang blog với Gatsby.js, cũng như là chạy các câu lệnh phục vụ cho việc phát triển, [deploy](/deploy-ung-dung-react-len-github-pages/) trang web. Để cài đặt Gatsby CLI bạn có thể sử dụng npm bằng [câu lệnh](/tag/command-line/):
 
-    <code>npm install --global gatsby-cli</code>
-
+```
+npm install --global gatsby-cli
+```
 _Câu lệnh trên cài đặt Gatsby CLI ở phạm vi global. Nghĩa là bạn có thể sử dụng Gatsby ở bất kỳ vị trí nào trên máy tính của bạn._
 
 Sau khi cài đặt Gatsby CLI, bạn có thể kiểm tra xem việc cài đặt có thành công hay chưa bằng 2 câu lệnh:
 
-    <code>gatsby --version
-    gatsby --help</code>
-
+```
+gatsby --version
+    gatsby --help
+```
 #### Kiểm tra Gatsby CLI sau khi cài đặt
 
 Nếu việc cài đặt thành công thì câu lệnh `gatsby --version` sẽ in ra phiên bản của Gatsby CLI và câu lệnh `gatsby --help` sẽ in ra những câu lệnh mà Gatsby CLI hỗ trợ bạn như:
@@ -88,36 +90,40 @@ Nếu việc cài đặt thành công thì câu lệnh `gatsby --version` sẽ i
 - `gatsby info`: lấy thông tin của môi trường.
 - `gatsby new [rootPath] [starter]`: tạo mới Gatsby project tại vị trí _rootPath_ bằng cách clone một project mẫu _starter_.
 
-![Kiểm tra cài đặt Gatsby CLI](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-check-installation.png)
+![Kiểm tra cài đặt Gatsby CLI](/wp-content/uploads/2018/10/gatsby-check-installation.png)
 Kiểm tra cài đặt Gatsby CLI
 
 ### Tạo trang blog với Gatsby.js cơ bản
 
 Như mình đã nói ở phần trên, Gatsby hỗ trợ bạn tạo mới Gatsby project từ một _starter_ thông qua câu lệnh:
 
-    <code>gatsby new [rootPath] [starter]</code>
-
-Trong đó, _starter_ là các project mẫu mà bạn có thể tham khảo tại [Gatsby Starters](https://www.gatsbyjs.org/starters/). Với khoảng trên 60 starters khác nhau bao gồm các loại như: blog cơ bản đến nâng cao, portfolio, hỗ trợ Contentful, [Wordpress](https://completejavascript.com/tag/wordpress/), Firebase,... Nhờ vậy, bạn có thể dễ dàng lựa chọn một mẫu starter phù hợp, sau đó nhanh chóng tuỳ chỉnh nó theo sở thích và yêu cầu của mình, tương tự như _theme_ của Wordpress hay _template_ của Blogger.
+```
+gatsby new [rootPath] [starter]
+```
+Trong đó, _starter_ là các project mẫu mà bạn có thể tham khảo tại [Gatsby Starters](https://www.gatsbyjs.org/starters/). Với khoảng trên 60 starters khác nhau bao gồm các loại như: blog cơ bản đến nâng cao, portfolio, hỗ trợ Contentful, [Wordpress](/tag/wordpress/), Firebase,... Nhờ vậy, bạn có thể dễ dàng lựa chọn một mẫu starter phù hợp, sau đó nhanh chóng tuỳ chỉnh nó theo sở thích và yêu cầu của mình, tương tự như _theme_ của Wordpress hay _template_ của Blogger.
 
 #### Tạo Gatsby project từ Hello-world starter
 
 Việc sử dụng các starter nâng cao chỉ phù hợp khi mình đã thành thạo và hiểu rõ Gatsby.js rồi. Còn đối với người mời bắt đầu như mình, cần hiểu rõ về quy trình xây dựng Gatsby project, thì mình sẽ lựa chọn starter _Hello World_ như sau:
 
-    <code>gatsby new gatsby-tutorial https://github.com/gatsbyjs/gatsby-starter-hello-world</code>
-
+```
+gatsby new gatsby-tutorial https://github.com/gatsbyjs/gatsby-starter-hello-world
+```
 Câu lệnh này sẽ tạo mới một thư mục tên là _gatsby-tutorial_. Sau đó, Gatsby CLI clone project từ Github tại địa chỉ: [https://github.com/gatsbyjs/gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world) và đưa vào thư mục vừa tạo ra.
 
 Sau khi lệnh trên hoàn thành, bạn đi vào thư mục mới tạo ra _gatsby-tutorial_:
 
-    <code>cd gatsby-tutorial</code>
-
+```
+cd gatsby-tutorial
+```
 rồi chạy lệnh sau để tạo server cho quá trình develop:
 
-    <code>gatsby develop</code>
-
+```
+gatsby develop
+```
 Đợi lệnh trên hoàn tất, bạn mở trình duyệt và đi đến địa chỉ: **_http://localhost:8000/_** thì sẽ thấy trang blog với Gatsby.js đã được tạo ra thành công.
 
-![Tạo mới Hello World Gatsby Project](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-hello-world.png)
+![Tạo mới Hello World Gatsby Project](/wp-content/uploads/2018/10/gatsby-hello-world.png)
 Tạo mới Hello World Gatsby Project
 
 #### Cấu trúc thư mục của Gatsby project
@@ -128,19 +134,23 @@ Lúc này, bạn chỉ cần quan tâm đến thư mục _/src_. Vì bạn sẽ 
 
 Để xem Gatsby project tự **rebuild** và **hot-loading** như thế nào, bạn mở file _/src/pages/index.js_ với nội dung ban đầu là:
 
-    <code>import React from "react"
+```
+import React from "react"
 
-    export default () => <div>Hello world!</div></code>
+    export default () => <div>Hello world!</div>
+```
 
 Bạn sửa file này thành:
 
-    <code>import React from "react"
+```
+import React from "react"
 
-    export default () => <div>Hello Gatsby!</div></code>
+    export default () => <div>Hello Gatsby!</div>
+```
 
 Sau khi nhấn _Save_, bạn sẽ thấy Gatsby project được build lại (xem ở giao diện dòng lệnh, nơi bạn chạy lệnh `gatsby develop` trước đó) và trình duyệt tự động reload.
 
-![Gatsby project tự động rebuild rồi reload](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-rebuild-hot-loading.png)
+![Gatsby project tự động rebuild rồi reload](/wp-content/uploads/2018/10/gatsby-rebuild-hot-loading.png)
 Gatsby project tự động rebuild rồi reload
 
 Nếu làm được đến đây thì có nghĩa là bạn đã cài đặt môi trường thành công để sử dụng Gatsby. Còn về mặt nội dung thì blog của mình vẫn trống rỗng, chưa có nội dung gì hết. Vì vậy, phần tiếp theo, mình sẽ bắt đầu xây dựng những thành phần cơ bản mà một trang blog cần phải có.
@@ -153,33 +163,37 @@ Mặc định, Gatsby sẽ lấy các file _.js_ được định nghĩa trong t
 
 **Chú ý**: các file này phải **export default** một [React Component](https://reactjs.org/docs/react-component.html) để Gatsby sử dụng. Ngược lại, sẽ bị lỗi.
 
-![Gatsby project compile bị lỗi](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-compile-failed.png)
+![Gatsby project compile bị lỗi](/wp-content/uploads/2018/10/gatsby-compile-failed.png)
 Gatsby project compile bị lỗi
 
 Để tạo thêm trang giới thiệu và liên hệ, mình tạo thêm 2 file mới trong thư mục này là _gioi-thieu.js_ và _lien-he.js_. Với nội dung tương tự như file _index.js_:
 
 **/src/pages/gioi-thieu.js**
 
-    <code>import React from "react"
+```
+import React from "react"
 
-    export default () => <div>Giới thiệu</div></code>
+    export default () => <div>Giới thiệu</div>
+```
 
 **/src/pages/lien-he.js**
 
-    <code>import React from "react"
+```
+import React from "react"
 
-    export default () => <div>Liên hệ</div></code>
+    export default () => <div>Liên hệ</div>
+```
 
 Sau khi lưu lại, bạn có thể vào 2 địa chỉ **_http://localhost:8000/gioi-thieu/ _**và **_http://localhost:8000/lien-he/_** sẽ thấy kết quả 2 trang lần lượt là:
 
 Kết quả trang giới thiệu:
 
-![Trang giới thiệu](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-gioi-thieu.png)
+![Trang giới thiệu](/wp-content/uploads/2018/10/gatsby-gioi-thieu.png)
 Trang giới thiệu
 
 Kết quả trang liên hệ:
 
-![Trang liên hệ](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-lien-he.png)
+![Trang liên hệ](/wp-content/uploads/2018/10/gatsby-lien-he.png)
 Trang liên hệ
 
 #### Cách xem các trang đang tồn tại từ trang 404 mặc định
@@ -188,7 +202,7 @@ Ngoài ra, nếu bạn chưa biết chắc trang blog với Gatsby.js hiện t�
 
 Ở chế độ phát triển, khi bạn vào một trang bất kỳ mà trang này không tồn tại thì Gatsby sẽ hiển thị ra một trang **404** mặc định, trong đó sẽ có thông tin về những trang đang tồn tại:
 
-![Trang 404 mặc định ở chế độ phát triển](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-404-default.png)
+![Trang 404 mặc định ở chế độ phát triển](/wp-content/uploads/2018/10/gatsby-404-default.png)
 Trang 404 mặc định ở chế độ phát triển
 
 Hình trên cho thấy blog của mình đang có 3 trang là:
@@ -219,7 +233,8 @@ Dĩ nhiên, bạn có thể định nghĩa nhiều loại Layout khác nhau đ�
 
 **/src/components/layout.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./layout.css";
     import Menu from "./menu";
 
@@ -230,11 +245,13 @@ Dĩ nhiên, bạn có thể định nghĩa nhiều loại Layout khác nhau đ�
           {children}
         </div>
       )
-    }</code>
+    }
+```
 
 **/src/components/layout.css**
 
-    <code>* {box-sizing: border-box;}
+```
+* {box-sizing: border-box;}
 
     body {
       padding: 0;
@@ -248,13 +265,15 @@ Dĩ nhiên, bạn có thể định nghĩa nhiều loại Layout khác nhau đ�
       margin: 0 auto;
       max-width: 992px;
       padding: 1.25rem 1rem;
-    }</code>
+    }
+```
 
 **Có thể bạn đang thắc mắc đối tượng *children* ở trên là cái gì?**
 
 Nếu đúng ra, mình cần phải viết code như này thì có thể bạn sẽ dễ hiểu hơn:
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./layout.css";
 
     export default (props) => {
@@ -265,13 +284,16 @@ Nếu đúng ra, mình cần phải viết code như này thì có thể bạn s
           {children}
         </div>
       )
-    }</code>
+    }
+```
 
 Thực ra, đối tượng *children* là mặc định, được truyền vào *props* khi bạn sử dụng component Layout. Giả sử bạn sử dụng Layout như sau:
 
-    <code><Layout>
+```
+<Layout>
       <div>This is children</div>
-    </Layout></code>
+    </Layout>
+```
 
 Khi đó giá trị *children* là :`<div>This is children</div>`.
 
@@ -279,7 +301,8 @@ Bây giờ, mình sẽ sử dụng Layout Component trong 3 trang mà mình đã
 
 **/src/pages/index.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import Layout from "../components/layout";
 
     export default () => {
@@ -288,11 +311,13 @@ Bây giờ, mình sẽ sử dụng Layout Component trong 3 trang mà mình đã
           <h1>Hello Gatsby!</h1>
         </Layout>
       )
-    }</code>
+    }
+```
 
 **/src/pages/gioi-thieu.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import Layout from "../components/layout";
 
     export default () => {
@@ -301,11 +326,13 @@ Bây giờ, mình sẽ sử dụng Layout Component trong 3 trang mà mình đã
           <h1>Giới thiệu</h1>
         </Layout>
       )
-    }</code>
+    }
+```
 
 **/src/pages/lien-he.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import Layout from "../components/layout";
 
     export default () => {
@@ -314,7 +341,8 @@ Bây giờ, mình sẽ sử dụng Layout Component trong 3 trang mà mình đã
           <h1>Liên hệ</h1>
         </Layout>
       )
-    }</code>
+    }
+```
 
 Cuối cùng lưu lại trang, bạn sẽ thấy sự khác biệt (cụ thể là: font chữ, màu chữ, background color đã thay đổi).
 
@@ -326,7 +354,8 @@ Mình sẽ tạo Menu dạng React Component. Trước tiên, mình tạo mới 
 
 **/src/components/menu.js**:
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./menu.css";
 
     export default () => {
@@ -340,11 +369,13 @@ Mình sẽ tạo Menu dạng React Component. Trước tiên, mình tạo mới 
           </ul>
         </header>
       )
-    }</code>
+    }
+```
 
 **/src/components/menu.css**:
 
-    <code>header {
+```
+header {
       display: flex;
       display: -webkit-flex;
       align-items: center;
@@ -369,7 +400,8 @@ Mình sẽ tạo Menu dạng React Component. Trước tiên, mình tạo mới 
 
     .nav-item a:hover {
       text-decoration: underline;
-    }</code>
+    }
+```
 
 Mình sẽ không giải thích nhiều về nội dung 2 file này, vì nó là kiến thức cơ bản của React, JavaScript, HTML, CSS.
 
@@ -377,7 +409,8 @@ Bây giờ, mình sẽ thêm Menu vào Layout:
 
 **/src/components/layout.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./layout.css";
     import Menu from "./menu";
 
@@ -388,11 +421,12 @@ Bây giờ, mình sẽ thêm Menu vào Layout:
           {children}
         </div>
       )
-    }</code>
+    }
+```
 
 Lưu lại, bạn sẽ thấy kết quả:
 
-![Thêm menu vào Gatsby Project](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-menu.png)
+![Thêm menu vào Gatsby Project](/wp-content/uploads/2018/10/gatsby-menu.png)
 Thêm menu vào Gatsby Project
 
 Bạn có thể thử nhấn vào mỗi Menu item thì sẽ thấy trang web có chuyển hướng đến các trang tương ứng.
@@ -405,7 +439,8 @@ Bạn mở file */src/components/menu.js* và sửa lại thành:
 
 **/src/components/menu.js**:
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./menu.css";
     import { Link } from "gatsby";
 
@@ -420,7 +455,8 @@ Bạn mở file */src/components/menu.js* và sửa lại thành:
           </ul>
         </header>
       )
-    }</code>
+    }
+```
 
 Trong đó, tất cả thẻ *a* đã được thay bằng *Link* component và thuộc tính _href_ được thay bằng *to*.
 
@@ -434,7 +470,8 @@ Hiện tại, mình chưa thêm bài viết nào, nên cũng chưa có chuyên m
 
 **/src/components/sidebar.js**:
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./sidebar.css";
 
     export default () => {
@@ -443,17 +480,21 @@ Hiện tại, mình chưa thêm bài viết nào, nên cũng chưa có chuyên m
           <div>This is Sidebar</div>
         </aside>
       )
-    }</code>
+    }
+```
 
 **/src/components/sidebar.css**:
 
-    <code>/* Tạm thời chưa có gì */</code>
+```
+/* Tạm thời chưa có gì */
+```
 
 Sau đó, thêm Sidebar vào layout:
 
 **/src/components/layout.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./layout.css";
     import Menu from "./menu";
     import Sidebar from "./sidebar";
@@ -468,13 +509,15 @@ Sau đó, thêm Sidebar vào layout:
           </div>
         </div>
       )
-    }</code>
+    }
+```
 
 Sửa lại giao diện layout một chút:
 
 **/src/components/layout.css**
 
-    <code>/*
+```
+/*
     * Mình chỉ trích dẫn phần thay đổi thôi nhé!
     */
 
@@ -489,13 +532,14 @@ Sửa lại giao diện layout một chút:
 
     .content {
       width: calc(100% - 280px);
-    }</code>
+    }
+```
 
 Trong bài demo này, mình không thiết kế giao diện Responsive. Phần này, nếu muốn, bạn phải tự xử lý thôi!
 
 Bây giờ lưu lại và kiểm tra giao diện một chút:
 
-![Thêm Sidebar vào Gatsby Blog](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-them-sidebar.png)
+![Thêm Sidebar vào Gatsby Blog](/wp-content/uploads/2018/10/gatsby-them-sidebar.png)
 Thêm Sidebar vào Gatsby Blog
 
 Mình nghĩ bạn có thể tưởng tượng được giao diện sau khi hoàn thiện sẽ như thế nào rồi phải không?
@@ -514,7 +558,8 @@ Còn nội dung từng bài viết thì sao?
 
 Ví dụ bài */src/posts/2015-05-01---hello-world*:
 
-    <code>---
+```
+---
     title: Hello World
     date: "2015-05-01T22:12:03.284Z"
     ---
@@ -534,7 +579,8 @@ Ví dụ bài */src/posts/2015-05-01---hello-world*:
     > salted duck eggs have a briny aroma, a gelatin-like egg white and a
     > firm-textured, round yolk that is bright orange-red in color.
 
-    ![Chinese Salty Egg](./salty_egg.jpg)</code>
+    ![Chinese Salty Egg](./salty_egg.jpg)
+```
 
 #### Cấu trúc bài viết trong file Markdown
 
@@ -548,31 +594,34 @@ Mỗi bài viết trong blog với Gatsby.js sẽ có 2 phần.
 
 **/src/posts/2015-05-01---hello-world**
 
-    <code>---
+```
+---
     title: Hello World
     date: "2015-05-01T22:12:03.284Z"
     categories: ["cat1"]
     tags: ["greeting", "egg"]
-    ---</code>
-
+    ---
+```
 **/src/posts/2015-05-06---my-second-post**
 
-    <code>---
+```
+---
     title: My Second Post!
     date: "2015-05-06T23:46:37.121Z"
     categories: ["cat2"]
     tags: ["egg", "wiki"]
-    ---</code>
-
+    ---
+```
 **/src/posts/2015-05-28---hi-folks**
 
-    <code>---
+```
+---
     title: New Beginnings
     date: "2015-05-28T22:40:32.169Z"
     categories: ["cat1"]
     tags: ["greeting"]
-    ---</code>
-
+    ---
+```
 Vì chuyên mục và thẻ có thể có nhiều nên mình để chúng vào một mảng cho tiện quản lý và sử dụng sau này. Đến đây, coi như mình đã có đầy đủ thông tin cần thiết về các bài viết. Tiếp theo, mình sẽ thiết kế template để hiển thị danh sách bài viết lên trang chủ.
 
 ### Tạo template hiển thị danh sách bài viết tại trang chủ
@@ -587,11 +636,13 @@ Trước tiên, thử một query đơn của GraphQL xem cách sử dụng nó 
 
 **/gatsby-config.js**
 
-    <code>module.exports = {
+```
+module.exports = {
       siteMetadata: {
         title: `Gatsby Blog Tutorial Demo`,
       },
-    }</code>
+    }
+```
 
 Trong đó, mình thêm thuộc tính *siteMetadata* vào để lưu những thông tin cần thiết của trang blog. Tiếp theo, mình định nghĩa *title* là tên của blog. Vì hiện tại tên blog đang là *Gatsby Blog Demo* nên mình sửa nó thành *Gatsby Blog Tutorial Demo* xem thế nào.
 
@@ -603,7 +654,8 @@ Nếu không dùng StaticQuery, mình sẽ phải query data trong 3 file  _/sr
 
 **/src/pages/index.js**:
 
-    <code>import React from "react";
+```
+import React from "react";
     import Layout from "../components/layout";
     import { graphql } from "gatsby";
 
@@ -623,11 +675,12 @@ Nếu không dùng StaticQuery, mình sẽ phải query data trong 3 file  _/sr
           }
         }
       }
-    `</code>
-
+    `
+```
 **/src/pages/gioi-thieu.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import Layout from "../components/layout";
     import { graphql } from "gatsby";
 
@@ -647,11 +700,12 @@ Nếu không dùng StaticQuery, mình sẽ phải query data trong 3 file  _/sr
           }
         }
       }
-    `</code>
-
+    `
+```
 **/src/pages/lien-he.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import Layout from "../components/layout";
     import { graphql } from "gatsby";
 
@@ -671,8 +725,8 @@ Nếu không dùng StaticQuery, mình sẽ phải query data trong 3 file  _/sr
           }
         }
       }
-    `</code>
-
+    `
+```
 Trong đó, mình đã import thêm *graphql* từ *gatsby*. Rồi viết câu lệnh query *title* ở phía dưới cùng. Ngoài ra, trong phần định nghĩa React Component, mình bổ sung thêm thuộc tính *data*. Thuộc tính này tương ứng với dữ liệu đã query ở phía dưới.
 
 Bạn thấy đó, code bị lặp lại ở cả 3 file. Điều này là không nên. Vì vậy, mình sẽ sử dụng StaticQuery.
@@ -683,7 +737,8 @@ Mình sẽ sửa lại file */src/components/layout.js*:
 
 **/src/components/layout.js**:
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./layout.css";
     import Menu from "./menu";
     import Sidebar from "./sidebar";
@@ -714,7 +769,8 @@ Mình sẽ sửa lại file */src/components/layout.js*:
           )}
         />
       )
-    }</code>
+    }
+```
 
 Tương tự như bên trên, nhưng bây giờ mình viết thẳng query của GraphQL bên trong StaticQuery luôn. Để truy cập đến giá trị *title* mình sử dụng  _data.site.siteMetadata.title_.
 
@@ -722,7 +778,8 @@ Rồi trong đó, mình lại truyền *title* đến Menu. Và để hiển t
 
 **/src/components/menu.js**:
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./menu.css";
     import { Link } from "gatsby";
 
@@ -739,33 +796,37 @@ Rồi trong đó, mình lại truyền *title* đến Menu. Và để hiển t
           </ul>
         </header>
       )
-    }</code>
+    }
+```
 
 Để xem kết quả như nào, lần này bạn phải **Restart** lại server. Nhớ là mỗi khi thay đổi file ngoài thư mục */src* như */gatsby-config.js* hay thay đổi cú pháp query trong phần *graphql* thì bạn phải **Restart** lại server. Kết quả là *title* mới đã được áp dụng:
 
-![Thay đổi title sử dụng GraphQL](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-thay-doi-title.png)
+![Thay đổi title sử dụng GraphQL](/wp-content/uploads/2018/10/gatsby-thay-doi-title.png)
 Thay đổi title sử dụng GraphQL
 
 #### Sử dụng công cụ đồ hoạ GraphiQL
 
 Ngoài ra, để biết kết quả câu lệnh query graphQL kia như thế nào, bạn có thể sử dụng công cụ GraphiQL bằng cách vào địa chỉ  \_http://localhost:8000/___graphql_ và copy-paste đoạn query trên vào:
 
-    <code>{
+```
+{
       site {
         siteMetadata {
           title
         }
       }
-    }</code>
+    }
+```
 
 Rồi nhấn vào nút Excute Query (hình tròn, có tam giác ở giữa) sẽ thấy kết quả:
 
-![Sử dụng GraphiQL](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-graphiql.png)
+![Sử dụng GraphiQL](/wp-content/uploads/2018/10/gatsby-graphiql.png)
 Sử dụng GraphiQL
 
 Kết quả trả về là một Object:
 
-    <code>{
+```
+{
       "data": {
         "site": {
           "siteMetadata": {
@@ -773,7 +834,8 @@ Kết quả trả về là một Object:
           }
         }
       }
-    }</code>
+    }
+```
 
 Điều này giải thích tại sao mình lại truy cập đến *title* bằng cách  *data.site.siteMetadata.title* như trên.
 
@@ -783,13 +845,15 @@ Như mình đã nói ở trên, Gatsby có thể lấy dữ liệu từ các fil
 
 Trước tiên, cài đặt plugin này bằng câu lệnh:
 
-    <code>npm install --save gatsby-source-filesystem</code>
-
+```
+npm install --save gatsby-source-filesystem
+```
 Sau khi cài đặt xong, bạn khai báo plugin này trong file */gatsby-config.js*:
 
 **/gatsby-config.js**:
 
-    <code>module.exports = {
+```
+module.exports = {
       siteMetadata: {
         title: `Gatsby Blog Tutorial Demo`,
       },
@@ -802,19 +866,22 @@ Sau khi cài đặt xong, bạn khai báo plugin này trong file */gatsby-confi
           },
         },
       ],
-    }</code>
+    }
+```
 
 Trong đó, phần *options.path*, mình khai báo giá trị của nó đến thư mục */src* (hay `${__dirname}/src/`). Vì các page, post của mình chỉ nằm trong thư mục này.
 
 Tuy nhiên, đến đây mình mới chỉ quét được hết các file trong thư mục */src*. Cái mình cần phải cụ thể hơn, đó là quét được các file Markdown. Vì các bài viết của mình được viết dưới dạng Markdown. Vì vậy, mình cài tiếp plugin *gatsby-transformer-remark* bằng câu lệnh:
 
-    <code>npm install --save gatsby-transformer-remark</code>
-
+```
+npm install --save gatsby-transformer-remark
+```
 Rồi lại add nó vào file */gatsby-config.js*:
 
 **/gatsby-config.js**
 
-    <code>module.exports = {
+```
+module.exports = {
       siteMetadata: {
         title: `Gatsby Blog Tutorial Demo`,
       },
@@ -828,11 +895,12 @@ Rồi lại add nó vào file */gatsby-config.js*:
         },
         `gatsby-transformer-remark`,
       ],
-    }</code>
+    }
+```
 
 Lưu lại và restart server rồi thử query các file Markdown trên GraphiQL xem sao:
 
-![Query Markdown file từ GraphiQL](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-query-markdown.png)
+![Query Markdown file từ GraphiQL](/wp-content/uploads/2018/10/gatsby-query-markdown.png)
 Query Markdown file từ GraphiQL
 
 Kết quả là mình tìm thấy 3 file Markdown - tương ứng với 3 bài viết mà mình đã copy-paste vào phía trên.
@@ -841,7 +909,8 @@ Bây giờ, mình sẽ sửa file */src/pages/index.js* để hiển thị dan
 
 **/src/pages/index.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import Layout from "../components/layout";
     import { graphql } from "gatsby";
 
@@ -877,11 +946,11 @@ Bây giờ, mình sẽ sửa file */src/pages/index.js* để hiển thị dan
           }
         }
       }
-    `</code>
-
+    `
+```
 Kết quả là mình đã thu được một danh sách các bài viết trên trang chủ:
 
-![Thêm bài viết lên trang chủ Gatsby](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-list-homepage.png)
+![Thêm bài viết lên trang chủ Gatsby](/wp-content/uploads/2018/10/gatsby-list-homepage.png)
 Thêm bài viết lên trang chủ Gatsby
 
 Tuy nhiên, hiện tại mình muốn click vào mỗi bài viết thì phải nhảy đến nội dung bài viết tương ứng thì lại chưa làm được. Vì vậy, mình cần phải tạo thêm *slug* cho mỗi bài viết.
@@ -892,7 +961,8 @@ Mình cần phải tạo slug cho mỗi bài viết để có thể link đến 
 
 **/gatsby-node.js**
 
-    <code>const path = require(`path`);
+```
+const path = require(`path`);
 
     exports.onCreateNode = ({ node, getNode, actions }) => {
       const { createNodeField } = actions;
@@ -912,7 +982,8 @@ Mình cần phải tạo slug cho mỗi bài viết để có thể link đến 
           value: fileNode.fields.slug,
         });
       }
-    };</code>
+    };
+```
 
 Trong đó, *onCreateNode* là một Gatsby API được gọi mỗi khi có một node mới thêm vào hay chỉnh sửa (mỗi node chính là một file). Mục đích của hàm này là mình sẽ tạo thêm trường *slug* cho mỗi node với *slug* có được bằng cách lấy tên thư mục và tách lấy phần bên phải của dấu (---).
 
@@ -922,7 +993,8 @@ Bây giờ mình sẽ sửa file */src/pages/index.js* thành:
 
 **/src/pages/index.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import Layout from "../components/layout";
     import { graphql, Link } from "gatsby";
 
@@ -964,16 +1036,16 @@ Bây giờ mình sẽ sửa file */src/pages/index.js* thành:
           }
         }
       }
-    `</code>
-
+    `
+```
 Bây giờ, *title* của mỗi bài viết đã được đặt trong *Link* component.
 
-![Tạo slug liên kết đến mỗi bài viết từ trang chủ](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-create-page-slug.png)
+![Tạo slug liên kết đến mỗi bài viết từ trang chủ](/wp-content/uploads/2018/10/gatsby-create-page-slug.png)
 Tạo slug liên kết đến mỗi bài viết từ trang chủ
 
 Lưu lại và restart server. Rồi sau đó bạn có thể nhấn thử vào *title* của mỗi bài viết để xem nó có nhảy đến đúng địa chỉ của mỗi bài viết không.
 
-![Nội dung bài viết chưa tồn tại](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-post-404.png)
+![Nội dung bài viết chưa tồn tại](/wp-content/uploads/2018/10/gatsby-post-404.png)
 Nội dung bài viết chưa tồn tại
 
 Đến đây thì bạn thấy rằng địa chỉ là đúng. Nhưng tiếc là Gatsby thông báo rằng trang này vẫn chưa tồn tại. Do đó, phần tiếp theo mình sẽ tạo ra các trang tương ứng với mỗi bài viết.
@@ -986,7 +1058,8 @@ Nội dung bài viết chưa tồn tại
 
 **/gatsby-node.js**
 
-    <code>/*
+```
+/*
     * phần trước không thay đổi, mình bổ sung thêm đoạn sau
     */
 
@@ -1018,7 +1091,8 @@ Nội dung bài viết chưa tồn tại
           resolve()
         })
       })
-    };</code>
+    };
+```
 
 Đoạn này có ý nghĩa là mình sẽ tạo ra các trang tương ứng với mỗi file Markdown, với đường dẫn *path* chính là *slug* của mỗi node, và nội dung được sử dụng dựa trên một template ở file */src/templates/blog-post.js*.
 
@@ -1030,7 +1104,8 @@ Dĩ nhiên, đến đây thì mọi thứ vẫn chưa có gì thay đổi. Vì m
 
 **/src/templates/blog-post.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import { graphql } from "gatsby";
     import Layout from "../components/layout";
 
@@ -1055,27 +1130,29 @@ Dĩ nhiên, đến đây thì mọi thứ vẫn chưa có gì thay đổi. Vì m
           }
         }
       }
-    `</code>
-
+    `
+```
 Câu lệnh query phần này có vẻ hơi khác so với phần trước. Đó là nó chứa tham số *\$slug*. Cũng đúng thôi, vì với mỗi bài viết khác nhau thì *slug* cũng khác. Vì vậy, mình cần thông tin này để query đúng bài viết tương ứng.
 
 Vấn đề là giá trị *\$slug* ở đây lấy ở đâu ra?
 
 Xem lại phần trước, chỗ *createPage*:
 
-    <code>createPage({
+```
+createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/blog-post.js`),
       context: {
         slug: node.fields.slug,
       },
-    })</code>
+    })
+```
 
 Ở đây, thuộc tính *slug* bên trong phần *context* sẽ được truyền sang template kia và đóng vai trò là *\$slug* trong câu lệnh GraphQL phía trên.
 
 Bây giờ, bạn lưu lại và restart server thì sẽ thấy kết quả:
 
-![Nội dung bài viết đã được hiển thị nhưng ảnh thị lỗi](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-post-ok.png)
+![Nội dung bài viết đã được hiển thị nhưng ảnh thị lỗi](/wp-content/uploads/2018/10/gatsby-post-ok.png)
 Nội dung bài viết đã được hiển thị nhưng ảnh thị lỗi
 
 Đợi chút, trong nội dung bài viết, phần hiển thị ảnh (dưới cùng) bị lỗi. Nghĩa là hiện tại mình mới chỉ xử lý được trường hợp nội dung bài viết dạng text. Còn có những dạng khác như ảnh, video, iframe,... mình vẫn chưa xử lý.
@@ -1086,13 +1163,15 @@ Trong demo này, mình sẽ chỉ xử lý thêm trường hợp nội dung bài
 
 Để xử lý phần hiển thị ảnh trong Markdown, mình cần cài thêm plugin *gatsby-remark-images* bằng câu lệnh:
 
-    <code>npm install --save gatsby-remark-images gatsby-plugin-sharp</code>
-
+```
+npm install --save gatsby-remark-images gatsby-plugin-sharp
+```
 _Ở đây mình có cài thêm plugin gatsby-plugin-sharp vì gatsby-remark-images cần sử dụng plugin này._
 
 Tiếp theo mình sửa lại file */gatsby-config.js*:
 
-    <code>module.exports = {
+```
+module.exports = {
       siteMetadata: {
         title: `Gatsby Blog Tutorial Demo`,
       },
@@ -1118,13 +1197,14 @@ Tiếp theo mình sửa lại file */gatsby-config.js*:
           },
         },
       ],
-    }</code>
+    }
+```
 
 Vì plugin *gatsby-remark-images* để xử lý ảnh sử dụng trong Markdown nên mình phải đặt nó trong phần *plugins* của *gatsby-transformer-remark*.
 
 Bây giờ, chạy lại server và bạn sẽ thấy kết quả như mong đợi:
 
-![Nội bung bài viết đã hiển thị được ảnh](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-post-image-ok.png)
+![Nội bung bài viết đã hiển thị được ảnh](/wp-content/uploads/2018/10/gatsby-post-image-ok.png)
 Nội bung bài viết đã hiển thị được ảnh
 
 Đúng ra, theo dự định ban đầu mình sẽ giới thiệu phần tích hợp bình luận và chia sẻ lên mạng xã hội. Tuy nhiên, phần này khá đơn giản vì có nhiều React Component hỗ trợ sẵn. Bạn cứ search Google thì sẽ ra. Còn nếu bạn không biết search kiểu gì thì để lại câu hỏi trong phần bình luận mình sẽ giải đáp sau.
@@ -1143,13 +1223,15 @@ Module này có hỗ trợ tiếng việt. Ví dụ: chuyên mục "Lập trình
 
 Câu lệnh cài đặt như sau:
 
-    <code>npm install --save slug</code>
-
+```
+npm install --save slug
+```
 Sau đó mình bắt đầu sửa file */src/components/layout.js*.
 
 **/src/components/layout.js**:
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./layout.css";
     import Menu from "./menu";
     import Sidebar from "./sidebar";
@@ -1194,7 +1276,8 @@ Sau đó mình bắt đầu sửa file */src/components/layout.js*.
           )}
         />
       )
-    }</code>
+    }
+```
 
 Trong phần query GraphQL, mình đã thêm vào phần duyệt tất cả file Markdown. Dữ liệu thu được mình sẽ truyền nó vào Sidebar.
 
@@ -1202,7 +1285,8 @@ Tiếp theo, sử dụng chúng trong Sidebar, bằng cách sửa file _/src/com
 
 **/src/components/sidebar.js**:
 
-    <code>import React from "react";
+```
+import React from "react";
     import "./sidebar.css";
     import slug from "slug";
     import { Link } from "gatsby";
@@ -1242,27 +1326,32 @@ Tiếp theo, sử dụng chúng trong Sidebar, bằng cách sửa file _/src/com
           </div>
         </aside>
       )
-    }</code>
+    }
+```
 
 **/src/components/sidebar.css**:
 
-    <code>aside {
+```
+aside {
       padding: 0 15px;
-    }</code>
+    }
+```
 
 Có một điều cần chú ý ở đây là các chuyên mục và thẻ có thể xuất hiện ở nhiều bài viết. Vì vậy, mình cần phải sử dụng kiểu dữ liệu [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) để tạo ra mảng các chuyên mục và thẻ với các phần tử là duy nhất.
 
-    <code>let tags = [];
+```
+let tags = [];
     let categories = [];
 
     edges.forEach(({ node }) => {
       tags = Array.from(new Set([...tags, ...node.frontmatter.tags]));
       categories = Array.from(new Set([...categories, ...node.frontmatter.categories]));
-    });</code>
+    });
+```
 
 Sau khi đã có mảng các chuyên mục và thẻ với các phần tử là duy nhất rồi, mình render chúng lên sidebar như bình thường. Kết quả mình thu được:
 
-![Liệt kê thẻ, chuyên mục lên sidebar](https://completejavascript.com/wp-content/uploads/2018/10/gatsby-liet-ke-chuyen-muc-the.png)
+![Liệt kê thẻ, chuyên mục lên sidebar](/wp-content/uploads/2018/10/gatsby-liet-ke-chuyen-muc-the.png)
 Liệt kê thẻ, chuyên mục lên sidebar
 
 Cũng tương tự như phần liệt kê danh sách cách bài viết tại trang chủ, lúc này mình mới chỉ liệt kê ra các thẻ với *Link* đến trang tương ứng mà chưa định nghĩa các trang đó. Phần tiếp theo mình sẽ thực hiện việc này.
@@ -1273,7 +1362,8 @@ Cũng tương tự như phần liệt kê danh sách cách bài viết tại tra
 
 **/gatsby-node.js**:
 
-    <code>const path = require(`path`);
+```
+const path = require(`path`);
     const slug = require(`slug`);
 
     /*
@@ -1342,7 +1432,8 @@ Cũng tương tự như phần liệt kê danh sách cách bài viết tại tra
             resolve()
           })
       })
-    };</code>
+    };
+```
 
 Trong phần query GraphQL mình cũng thêm phần query _categories_ và _tags_ để sử dụng trong phần *then*. Trong phần *then*, đầu tiên mình cũng thêm phần duyệt để tạo ra mảng các chuyên mục và thẻ với các phần tử là duy nhất bên trên.
 
@@ -1352,7 +1443,8 @@ Khi đó, các file template sẽ được triển khai như sau đây:
 
 **/src/templates/categories.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import Layout from "../components/layout";
     import { graphql, Link } from "gatsby";
 
@@ -1398,11 +1490,12 @@ Khi đó, các file template sẽ được triển khai như sau đây:
           }
         }
       }
-    `</code>
-
+    `
+```
 **/src/template/tags.js**
 
-    <code>import React from "react";
+```
+import React from "react";
     import Layout from "../components/layout";
     import { graphql, Link } from "gatsby";
 
@@ -1448,14 +1541,16 @@ Khi đó, các file template sẽ được triển khai như sau đây:
           }
         }
       }
-    `</code>
-
+    `
+```
 Thực ra, nội dung của 2 file này gần giống như */src/pages/index.js*, chỉ khác ở chỗ là mình không sử dụng tham số được truyền từ */gatsby-node.js* vào phần query GraphQL như phần *\$slug* ở phía trên. Lần này mình sử dụng nó trong phần React Component.
 
 Giá trị của các tham số *category* và *tag* được lấy từ đối tượng *pageContext*:
 
-    <code>const { category } = pageContext;
-    const categoryEdges = data.allMarkdownRemark.edges.filter(({node}) => node.frontmatter.categories.includes(category));</code>
+```
+const { category } = pageContext;
+    const categoryEdges = data.allMarkdownRemark.edges.filter(({node}) => node.frontmatter.categories.includes(category));
+```
 
 
 
@@ -1469,10 +1564,12 @@ Giá trị của các tham số *category* và *tag* được lấy từ đ�
 
 
 
-    <code>const { tag } = pageContext;
-    const tagEdges = data.allMarkdownRemark.edges.filter(({node}) => node.frontmatter.tags.includes(tag));</code>
+```
+const { tag } = pageContext;
+    const tagEdges = data.allMarkdownRemark.edges.filter(({node}) => node.frontmatter.tags.includes(tag));
+```
 
-Khi đã có được giá trị *category* hay *tag* hiện tại rồi, thì mình chỉ cần sử dụng phương thức [filter](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/) để lọc lấy những bài viết chứa *category* và những bài viết chứa *tag* hiện tại. Vì mục đích của mình là phân loại các bài viết theo chuyên mục và thẻ mà.
+Khi đã có được giá trị *category* hay *tag* hiện tại rồi, thì mình chỉ cần sử dụng phương thức [filter](/javascript-foreach-la-cai-quai-gi/) để lọc lấy những bài viết chứa *category* và những bài viết chứa *tag* hiện tại. Vì mục đích của mình là phân loại các bài viết theo chuyên mục và thẻ mà.
 
 Bây giờ, bạn lưu lại và restart server thì sẽ thấy mọi thứ hoạt động khá ổn định và đúng như mong đợi rồi. Công việc tiếp theo sẽ là deploy trang blog lên Netlify nữa là xong.
 
@@ -1502,23 +1599,24 @@ Không những thế, Netlify còn hỗ trợ cài đặt SSL miễn phí, tốc
 
 Trước tiên, mình sẽ tạo mới một respository trên Github với tên là *gatsby-tutorial*.
 
-![Tạo mới repository trên Github](https://completejavascript.com/wp-content/uploads/2018/10/github-tao-moi-repository.png)
+![Tạo mới repository trên Github](/wp-content/uploads/2018/10/github-tao-moi-repository.png)
 Tạo mới repository trên Github
 
 Sau khi nhấn vào button *Create repository* thì bạn sẽ được dẫn đến một gợi ý:
 
-![Commit project lên Github](https://completejavascript.com/wp-content/uploads/2018/10/github-commit-project.png)
+![Commit project lên Github](/wp-content/uploads/2018/10/github-commit-project.png)
 Commit project lên Github
 
 Đối với trường hợp này, mình sẽ lựa chọn cách thứ 2 (bôi vàng ở trên). Mình sẽ làm theo hướng dẫn để upload code lên github nhé. Tuy nhiên, vì project của mình đã có code rồi nên mình sẽ sửa lại một chút, như sau:
 
-    <code>echo "# gatsby-tutorial" >> README.md
+```
+echo "# gatsby-tutorial" >> README.md
     git init
     git add .
     git commit -m "first commit"
     git remote add origin https://github.com/completejavascript/gatsby-tutorial.git
-    git push -u origin master</code>
-
+    git push -u origin master
+```
 Sau khi việc upload code lên Github thành công. Mình bắt đầu deploy nó lên Netlify.
 
 ### Deploy lên Netlify
@@ -1527,7 +1625,7 @@ Sau khi việc upload code lên Github thành công. Mình bắt đầu deploy n
 
 Đầu tiên, bạn vào trang [create a new site](https://app.netlify.com/start).
 
-![Đăng nhập vào Netlify](https://completejavascript.com/wp-content/uploads/2018/10/netlify-create-new-site.png)
+![Đăng nhập vào Netlify](/wp-content/uploads/2018/10/netlify-create-new-site.png)
 Đăng nhập vào Netlify
 
 Netlify sẽ yêu cầu đăng nhập. Và bạn có thể lựa chọn bất kì cách nào. Tuy nhiên, mình đã upload code lên Github và deploy code ở Github lên Netlify. Do đó, mình sẽ chọn đăng nhập bằng Github.
@@ -1536,27 +1634,27 @@ Vì mình đang làm demo trên tab ẩn danh - tương đương với việc m�
 
 Sau khi đăng nhập thành công, bạn bắt đầu được chuyển đến trang để tạo mới một site.
 
-![Bắt đầu tạo trang mới](https://completejavascript.com/wp-content/uploads/2018/10/netlify-create-new-site-start.png)
+![Bắt đầu tạo trang mới](/wp-content/uploads/2018/10/netlify-create-new-site-start.png)
 Bắt đầu tạo trang mới
 
 Mình sẽ chọn mục *GitHub*. Sau đó, Netlify sẽ yêu cầu Authorize Github.
 
-![Netlify sẽ yêu cầu Authorize Github](https://completejavascript.com/wp-content/uploads/2018/10/netlify-authorize-github.png)
+![Netlify sẽ yêu cầu Authorize Github](/wp-content/uploads/2018/10/netlify-authorize-github.png)
 Netlify sẽ yêu cầu Authorize Github
 
 Bạn nhấn vào button màu xanh để đồng ý là OK.
 
-![](https://completejavascript.com/wp-content/uploads/2018/10/netlify-choose-project-1.png)
+![](/wp-content/uploads/2018/10/netlify-choose-project-1.png)
 Chọn repository để install
 
 Tiếp theo, mình chọn repository vừa upload lên github, rồi nhấn *Install*.
 
-![Bắt đầu deploy](https://completejavascript.com/wp-content/uploads/2018/10/netlify-bat-dau-cai-dat.png)
+![Bắt đầu deploy](/wp-content/uploads/2018/10/netlify-bat-dau-cai-dat.png)
 Bắt đầu deploy
 
 Tiếp theo, mình chọn vào phần gạch vàng như trong hình trên, rồi nhấn vào *Deploy Site*.
 
-![Chọn nhánh để deploy](https://completejavascript.com/wp-content/uploads/2018/10/netlify-deploy-site.png)
+![Chọn nhánh để deploy](/wp-content/uploads/2018/10/netlify-deploy-site.png)
 
 Chọn nhánh để deploy
 
@@ -1566,7 +1664,7 @@ Công việc cuối cùng là chờ đợi cho đến khi Netlify cài đặt xo
 
 Trong lúc chờ cài đặt thành công, mình sẽ thay đổi tên của blog mặc định. Bạn thấy đấy, tên mặc định khá xấu xí:
 
-![Tên mặc định của Netlify khá xấu](https://completejavascript.com/wp-content/uploads/2018/10/netlify-ten-mac-dinh.png)
+![Tên mặc định của Netlify khá xấu](/wp-content/uploads/2018/10/netlify-ten-mac-dinh.png)
 Tên mặc định của Netlify khá xấu
 
 Mình sẽ nhấn vào *Site settings* để thay đổi *Site name*. Phần tiếp theo khá đơn giản, bạn cứ làm theo hướng dẫn như trên giao diện là được.
@@ -1575,7 +1673,7 @@ Lúc đầu mình định lấy tên *gatsby-tutorial* nhưng tiếc là tên 
 
 Kết quả trang blog của mình bây giờ có địa chỉ: *[https://gatsby-tutorial-demo.netlify.com](https://gatsby-tutorial-demo.netlify.com)*.
 
-![Kết quả Gatsby blog sau khi deploy lên Netlify khá ngon lành](https://completejavascript.com/wp-content/uploads/2018/10/netlify-live.png)
+![Kết quả Gatsby blog sau khi deploy lên Netlify khá ngon lành](/wp-content/uploads/2018/10/netlify-live.png)
 Kết quả Gatsby blog sau khi deploy lên Netlify khá ngon lành
 
 Kết quả khá ngon lành phải không bạn (còn phần custom domain, bạn có thể tự nghiên cứu thêm, cũng khá đơn giản, nếu cần bạn có thể để lại bình luận, mình sẽ support).
@@ -1606,12 +1704,12 @@ Trên đây là cách để tạo trang blog với Gatsby.js mà mình đã đú
 
 [Xem code trên Github](https://github.com/completejavascript/gatsby-tutorial) [Xem Demo](https://gatsby-tutorial-demo.netlify.com/)
 
-Bài viết đến đây cũng khá dài rồi, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/mot-so-plugin-gatsby-js-hay-dung/), thân ái!
+Bài viết đến đây cũng khá dài rồi, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/mot-so-plugin-gatsby-js-hay-dung/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

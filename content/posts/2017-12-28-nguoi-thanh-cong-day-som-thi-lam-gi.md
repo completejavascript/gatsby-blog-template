@@ -1,8 +1,8 @@
 ---
 date: "2017-12-28T13:32:11Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: nguoi-thanh-cong-day-som-thi-lam-gi
 title: "Người thành công dậy sớm thì làm gì?"
 categories:
@@ -77,12 +77,12 @@ _—Dr. Nick Zyrowski, founder of [NuVision Health Center](http://nuvisionexcel
 
 Trên đây là những chia sẽ hữu ích của một số những người thành công trên thế giới. Mặc dù, việc dịch của tôi vẫn chưa được tốt lắm, nhưng mong rằng nó vẫn truyền tải được đầy đủ ý nghĩa của bài viết gốc. Hy vọng, bạn đọc phần nào biết được những người thành công dậy sớm thì làm gì.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/tac-hai-cua-ngoi-lau-va-giai-phap-cho-lap-trinh-vien/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tac-hai-cua-ngoi-lau-va-giai-phap-cho-lap-trinh-vien/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

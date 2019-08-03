@@ -1,8 +1,8 @@
 ---
 date: "2018-10-29T22:30:30Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: hoc-react-qua-vi-du-1-slideshow
 title: "Học React qua ví dụ #1: Slideshow"
 categories:
@@ -28,15 +28,16 @@ Nếu không có vấn đề gì thì mình bắt đầu học React qua ví d�
 
 ## Khởi tạo Project
 
-Có nhiều cách để thực hiện demo Slideshow. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](https://completejavascript.com/tag/create-react-app/) để thực hành học React qua ví dụ #1 ngay trên máy tính của mình.
+Có nhiều cách để thực hiện demo Slideshow. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #1 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](https://completejavascript.com/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
 Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
 
-    <code>learn-react-by-example/
+```
+learn-react-by-example/
     --src/
     ----components/
     ------slideshow/
@@ -47,8 +48,8 @@ Có nhiều cách để thực hiện demo Slideshow. Tuy nhiên, mình khuyến
     ----App.js
     ----index.css
     ----index.js
-    ----serviceWorker.js</code>
-
+    ----serviceWorker.js
+```
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về Slideshow nên mình tạo thêm thư mục **slideshow** bên trong với 2 file **slideshow.js** và **slideshow.css** để định nghĩa cho component Slideshow (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
@@ -60,7 +61,8 @@ Trong đó:
 
 ### Nội dung file slideshow.js
 
-    <code>import React from 'react';
+```
+import React from 'react';
     import ReactDOM from 'react-dom';
     import './slideshow.css';
 
@@ -238,7 +240,8 @@ Trong đó:
           </div>
         );
       }
-    }</code>
+    }
+```
 
 ### Nội dung file slideshow.css
 
@@ -246,7 +249,8 @@ File này dùng để xác định style cho Slideshow component. Bạn chú ý 
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì hiểu là style này được áp dụng cho **element2** là con trực tiếp của **element1** - không phải cháu, chắt,...
 
-    <code>.lp-slideshow,
+```
+.lp-slideshow,
     .lp-slideshow * {
       box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -367,13 +371,15 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 
     .lp-slideshow>.dot-container>.dot:not(.active):hover {
       cursor: pointer;
-    }</code>
+    }
+```
 
 ## Sử dụng Slideshow component
 
 **./src/App.css**
 
-    <code>/* Không thay đổi */
+```
+/* Không thay đổi */
     .App,
     .App * {
       box-sizing: border-box;
@@ -389,11 +395,13 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
       padding: 15px;
       color: #222;
       font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }</code>
+    }
+```
 
 **./src/App.js**
 
-    <code>import React from 'react';
+```
+import React from 'react';
     import './App.css';
 
     import Slideshow from './components/slideshow/slideshow';
@@ -432,17 +440,18 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 
             <div>
               Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-              Visit me at <a href="https://completejavascript.com/">completejavascript.com</a>.
+              Visit me at <a href="/">completejavascript.com</a>.
             </div>
           </div>
         );
       }
-    }</code>
+    }
+```
 
 Trong đó, component Slideshow có các thuộc tính là:
 
-- **input ([Array](https://completejavascript.com/javascript-array-co-ban/)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](https://completejavascript.com/javascript-object-last-but-not-least/)gồm src - đường dẫn ảnh và caption - tiêu đề ảnh.
-- **ratio ([String](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/)gồm src - đường dẫn ảnh và caption - tiêu đề ảnh.
+- **ratio ([String](/values-types-va-operators-trong-javascript-phan-2/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 - **mode (String):** kiểu chạy, có 2 giá trị là "manual" - thủ công và "automatic" - tự động. Riêng với trường hợp, chạy tự động thì bạn cần truyền thêm giá trị "timeout" - thời gian giữa các ảnh, mặc định là 5000 ms.
 
 ## Lời kết
@@ -459,8 +468,8 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

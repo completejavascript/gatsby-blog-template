@@ -1,8 +1,8 @@
 ---
 date: "2018-04-09T00:00:40Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: hai-cach-lay-vi-tri-nguoi-dung
 title: "Hai cách lấy vị trí người dùng với JavaScript"
 categories:
@@ -35,40 +35,47 @@ Với những đặc điểm trên, bạn có thể thấy rằng Geolocation AP
 
 Trước tiên, bạn cần kiểm tra xem trình duyệt có hỗ trợ Geolocation hay không:
 
-    <code>let geolocation = navigator.geolocation;
+```
+let geolocation = navigator.geolocation;
     if (geolocation) {
       // Có hỗ trợ geolocation
     } else {
       // Không hỗ trợ geolocation
-    }</code>
+    }
+```
 
 Sau khi đã chắc chắn rằng trình duyệt có hỗ trợ Geolocation, bạn có thể gọi phương thức [getCurrentPosition](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition) để lấy vị trí người dùng.
 
-    <code>let options = {
+```
+let options = {
       enableHighAccuracy: true,
       timeout: 5000,
       maximumAge: 0
     };
-    geolocation.getCurrentPosition(onGeoSuccess, onGeoError, options);</code>
+    geolocation.getCurrentPosition(onGeoSuccess, onGeoError, options);
+```
 
-[Hàm](https://completejavascript.com/tim-hieu-function-javascript/) này có 3 tham số đầu vào:
+[Hàm](/tim-hieu-function-javascript/) này có 3 tham số đầu vào:
 
 - **onGeoSuccess**: hàm callback được gọi khi việc lấy vị trí thành công
 - **onGeoError**: hàm callback được gọi khi việc lấy vị trí bị lỗi
-- **options**: là một [object](https://completejavascript.com/javascript-object-last-but-not-least/), chứa một số cài đặt kèm theo, như độ chính xác, timeout, thời gian position được cached (giá trị này = 0 nghĩa là không bao giờ cache position). Bạn có thể đọc thêm về các option trên tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions).
+- **options**: là một [object](/javascript-object-last-but-not-least/), chứa một số cài đặt kèm theo, như độ chính xác, timeout, thời gian position được cached (giá trị này = 0 nghĩa là không bao giờ cache position). Bạn có thể đọc thêm về các option trên tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions).
 
 #### Xử lý khi lấy vị trí người dùng thành công
 
-    <code>function onGeoSuccess(position) {
+```
+function onGeoSuccess(position) {
       $("#lat").innerHTML = position.coords.latitude;
       $("#lon").innerHTML = position.coords.longitude;
-    }</code>
+    }
+```
 
 Có 2 thông số quan trọng trong kết quả **position** trả về là vĩ độ (**position.coords.latitude**) và kinh độ (**position.coords.longitude**). Như vậy là bạn đã có được vị trí người dùng rồi, phải không?
 
 #### Xử lý lỗi
 
-    <code>function onGeoError(error) {
+```
+function onGeoError(error) {
       let detailError;
 
       if(error.code === error.PERMISSION_DENIED) {
@@ -85,7 +92,8 @@ Có 2 thông số quan trọng trong kết quả **position** trả về là vĩ
       }
 
       $("#error").innerHTML = `Error: ${detailError}`;
-    }</code>
+    }
+```
 
 Có nhiều trường hợp có thể xảy ra lỗi khi lấy vị trí người dùng, nhưng quan trọng nhất là 2 lỗi sau:
 
@@ -104,17 +112,21 @@ Với cách này bạn luôn có thể lấy được thông tin vị trí ngư�
 
 ### Cách sử dụng ipinfo.io API
 
-Bạn chỉ cần gửi một [request](https://completejavascript.com/xmlhttprequest-tao-http-request-den-server-trong-javascript/) dạng GET với kiểu dữ liệu là [JSON](https://completejavascript.com/tim-hieu-ve-json-trong-javascript/). Trong ví dụ trên, mình sử dụng jQuery, nên chỉ cần sử dụng phương thức [\$.getJSON](http://api.jquery.com/jquery.getjson/) là được.
+Bạn chỉ cần gửi một [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/) dạng GET với kiểu dữ liệu là [JSON](/tim-hieu-ve-json-trong-javascript/). Trong ví dụ trên, mình sử dụng jQuery, nên chỉ cần sử dụng phương thức [\$.getJSON](http://api.jquery.com/jquery.getjson/) là được.
 
-    <code>$.getJSON("https://ipinfo.io/", onLocationGot);</code>
+```
+$.getJSON("https://ipinfo.io/", onLocationGot);
+```
 
 Kết quả trả về sẽ là một object, qua đó bạn có thể lấy ra thông tin kinh độ và vĩ độ như sau:
 
-    <code>function onLocationGot(info) {
+```
+function onLocationGot(info) {
       let position = info.loc.split(",");
       $("#lat").text(position[0]);
       $("#lon").text(position[1]);
-    }</code>
+    }
+```
 
 ## Kết luận
 
@@ -130,12 +142,12 @@ Như vậy là mình đã giới thiệu xong với các bạn hai cách để l
   - Luôn luôn có thể lấy được vị trí người dùng
   - Có hỗ trợ http, có thể test trên localhost.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/21-thu-thuat-javascript-huu-ich/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/21-thu-thuat-javascript-huu-ich/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

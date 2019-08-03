@@ -1,8 +1,8 @@
 ---
 date: "2017-06-18T07:59:28Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript
 title: "Các khía cạnh lập trình hướng đối tượng trong JavaScript"
 categories:
@@ -11,7 +11,7 @@ tags:
   - OOP
 ---
 
-Trong bài viết [Lập trình hướng đối tượng với JavaScript?](https://completejavascript.com/lap-trinh-huong-doi-tuong-voi-javascript/), mình đã so sánh ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu sâu hơn về các khía cạnh liên quan đến lập trình hướng đối tượng của ngôn ngữ lập trình JavaScript.
+Trong bài viết [Lập trình hướng đối tượng với JavaScript?](/lap-trinh-huong-doi-tuong-voi-javascript/), mình đã so sánh ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu sâu hơn về các khía cạnh liên quan đến lập trình hướng đối tượng của ngôn ngữ lập trình JavaScript.
 
 ## Lịch sử object
 
@@ -19,27 +19,29 @@ Có một câu nói mang đầy tính triết học như này:
 
 <blockquote>Một vấn đề phức tạp có thể được quản lý bằng cách chia nó thành những phần nhỏ độc lập với nhau.</blockquote>
 
-Mỗi thành phần nhỏ ở đây chính là [**object**](https://completejavascript.com/javascript-object-last-but-not-least/). Object cung cấp cho chúng ta những phương thức để gọi mà không cần biết nội dung bên trong nó như thế nào. Sau khi xây dựng được những object hoạt động theo đúng yêu cầu, ta sẽ sử dụng chúng để giải quyết những bài toán lớn hơn một cách đơn giản. Đây cũng chính là tư tưởng **chia để trị**.
+Mỗi thành phần nhỏ ở đây chính là [**object**](/javascript-object-last-but-not-least/). Object cung cấp cho chúng ta những phương thức để gọi mà không cần biết nội dung bên trong nó như thế nào. Sau khi xây dựng được những object hoạt động theo đúng yêu cầu, ta sẽ sử dụng chúng để giải quyết những bài toán lớn hơn một cách đơn giản. Đây cũng chính là tư tưởng **chia để trị**.
 
 ## Method (phương thức)
 
 Method là một thành phần vô cùng quan trọng trong object. Đối với C++ hay Java, chúng ta chỉ có thể sử dụng được những method dạng public. Chúng ta sẽ sử dụng những method này để lấy giá trị hay thay đổi thông tin các thuộc tính của object.
 
-Trong JavaScript, method chính là một thuộc tính mà giá trị của nó là [function](https://completejavascript.com/tim-hieu-function-javascript/). Sau đây là một phương thức đơn giản:
+Trong JavaScript, method chính là một thuộc tính mà giá trị của nó là [function](/tim-hieu-function-javascript/). Sau đây là một phương thức đơn giản:
 
-    <code>var rabbit = {};
+```
+var rabbit = {};
     rabbit.speak = function(line) {
       console.log("The rabbit says '" + line + "'");
     };
 
     rabbit.speak("I'm alive.");
-    // => The rabbit says 'I'm alive.'</code>
-
+    // => The rabbit says 'I'm alive.'
+```
 Thông thường, một method sẽ làm một vài thứ với object gọi nó. Để biểu thị object đã gọi method, JavaScript cung cấp từ khoá **this** để chúng ta sử dụng bên trong method.
 
 Ví dụ trên có thể thay đổi như sau:
 
-    <code>function speak(line) {
+```
+function speak(line) {
       console.log("The " + this.type + " rabbit says '" + line + "'");
     }
     var whiteRabbit = {type: "white", speak: speak};
@@ -48,15 +50,16 @@ Ví dụ trên có thể thay đổi như sau:
     whiteRabbit.speak("I'm alive.");
     // => The white rabbit says 'I'm alive.'
     fatRabbit.speak("I'm alive.");
-    // => The fat rabbit says 'I'm alive.'</code>
-
+    // => The fat rabbit says 'I'm alive.'
+```
 Tư tưởng sử dụng từ khoá **this** này cũng được áp dụng trong C++ hay Java.
 
 ### Sự tương quan với bind, call, apply
 
-Nếu bạn chưa biết **bind**, **call** hay **apply** là gì thì bạn có thể tham khảo tại [đây](https://completejavascript.com/phan-biet-call-apply-va-bind-trong-javascript/). Khi gọi 3 hàm này, tham số đầu tiên chính là giá trị của con trỏ **this**.
+Nếu bạn chưa biết **bind**, **call** hay **apply** là gì thì bạn có thể tham khảo tại [đây](/phan-biet-call-apply-va-bind-trong-javascript/). Khi gọi 3 hàm này, tham số đầu tiên chính là giá trị của con trỏ **this**.
 
-    <code>function speak(line) {
+```
+function speak(line) {
       console.log("The " + this.type + " rabbit says '" + line + "'");
     }
     var whiteRabbit = {type: "white"};
@@ -71,29 +74,31 @@ Nếu bạn chưa biết **bind**, **call** hay **apply** là gì thì bạn có
 
     var sexyRabbitSpeak = speak.bind(sexyRabbit, "I'm alive.");
     sexyRabbitSpeak();
-    // => The sexy rabbit says 'I'm alive.'</code>
-
+    // => The sexy rabbit says 'I'm alive.'
+```
 ## Prototypes
 
 **Prototype** là khái niệm rất riêng của JavaScript. Không giống như C++, Java, một JavaScript Object luôn có sẵn ít nhất một thuộc tính bên trong nó, là prototype. Và prototype cũng chính là một object. Khi một object gọi đến một thuộc tính mà nó không có thì nó sẽ tìm trong prototype.
 
 Hãy xem ví dụ sau:
 
-    <code>var empty = {};
+```
+var empty = {};
     console.log(empty.toString);
     // => function toString() { [native code] }
     console.log(empty.toString());
-    // => [object Object]</code>
-
+    // => [object Object]
+```
 Rõ ràng, mình chỉ khai báo **empty** là một object mà không định nghĩa thêm thuộc tính nào. Tuy nhiên, ví dụ trên chỉ ra rằng thuộc tính **toString** tồn tại trong object **empty**. Đó là vì: **toString** là một thuộc tính của **prototype** mà một **object** thì luôn chứa thuộc tính **prototype**.
 
-    <code>var empty = {};
+```
+var empty = {};
 
     console.log(Object.getPrototypeOf(empty) == Object.prototype);
     // => true
     console.log(Object.getPrototypeOf(Object.prototype));
-    // => null</code>
-
+    // => null
+```
 ## Constructors (Hàm khởi tạo)
 
 Nếu bạn đã biết về lập trình hướng đối tượng thì bạn sẽ không còn xa lạ gì với **constructor**. Trong JavaScript, hàm khởi tạo constructor sẽ chứa từ khoá **this** để biểu thị object được tạo ra từ nó.
@@ -104,7 +109,8 @@ Bạn sẽ phải sử dụng từ khoá **new** đứng trước tên function 
 
 Sau đây là một ví dụ đơn giản về constructor:
 
-    <code>function Rabbit(type) {
+```
+function Rabbit(type) {
       this.type = type;
       this.greeting = function(){
         console.log(this.type + " rabbit" + " say Hello!");
@@ -122,11 +128,12 @@ Sau đây là một ví dụ đơn giản về constructor:
     // => killer
     killerRabbit.greeting();
     // => killer rabbit say Hello!
-    </code>
+```
 
 Lúc này, mỗi đối tượng được tạo ra từ constructor **Rabbit** sẽ có hai thuộc tính **type** và **greeting**. Tuy nhiên, bạn vẫn có thể tạo thêm thuộc tính cho nó thông qua **Object.prototype** như sau:
 
-    <code>function Rabbit(type) {
+```
+function Rabbit(type) {
       this.type = type;
       this.greeting = function(){
         console.log(this.type + " rabbit" + " say Hello!");
@@ -139,13 +146,14 @@ Lúc này, mỗi đối tượng được tạo ra từ constructor **Rabbit** s
 
     var blackRabbit = new Rabbit("black");
     blackRabbit.sayBye();
-    // => black rabbit say GoodBye!</code>
-
+    // => black rabbit say GoodBye!
+```
 ## Ghi đè thuộc tính
 
 Trong ví dụ trên, **Rabbit** chứa thuộc tính **type**. Đối với mỗi object được tạo ra từ constructor Rabbit, bạn có thể thay đổi giá trị thuộc tính của một object mà không làm ảnh hưởng tới các object khác.
 
-    <code>function Rabbit(type) {
+```
+function Rabbit(type) {
       this.type = type;
       this.greeting = function(){
       	console.log(this.type + " rabbit" + " say Hello!");
@@ -162,15 +170,16 @@ Trong ví dụ trên, **Rabbit** chứa thuộc tính **type**. Đối với m�
 
     killerRabbit.teeth = "long";
     console.log(blackRabbit.teeth);   // => small
-    console.log(killerRabbit.teeth);  // => long</code>
-
+    console.log(killerRabbit.teeth);  // => long
+```
 ## Tính chất đặc trưng của lập trình hướng đối tượng trong JavaScript
 
 ### Tính đóng gói (Encapsulation)
 
 Tính đóng gói: che giấu dữ liệu, không cho phép truy cập dữ liệu trực tiếp từ bên ngoài, mà phải thông qua các method được cung cấp.
 
-    <code>function Person(_name){
+```
+function Person(_name){
       var name = _name;
       this.setName = function(_name){
         name = _name;
@@ -185,15 +194,16 @@ Tính đóng gói: che giấu dữ liệu, không cho phép truy cập dữ li�
     console.log(person.getName());     // => LamPham
 
     person.setName("LP Devs");
-    console.log(person.getName());     // => LP Devs</code>
-
+    console.log(person.getName());     // => LP Devs
+```
 ### Tính kế thừa (inheritance)
 
 Tính kế thừa: đối tượng con sẽ kế thừa những thuộc tính của đối tượng cha mà không cần phải định nghĩa lại.
 
 Mặc dù, JavaScript không hỗ trợ trực tiếp tính kế thừa, tuy nhiên ta vẫn có thể tuỳ biến để áp dụng tính chất này trong JavaScript.
 
-    <code>function Person(_name){
+```
+function Person(_name){
       var name = _name;
       this.setName = function(_name){
         name = _name;
@@ -222,8 +232,8 @@ Mặc dù, JavaScript không hỗ trợ trực tiếp tính kế thừa, tuy nhi
     student.setName("Ronaldo");
 
     console.log(student.getName());    // => Ronaldo
-    console.log(student.getSchool());  // => NEU</code>
-
+    console.log(student.getSchool());  // => NEU
+```
 Ngoài ra, còn hai tính chất nữa là: tính **đa hình** và tính **trừu tượng**. Tuy nhiên, việc áp dụng hai tính chất này trong JavaScript là không rõ ràng. Do đó, mình sẽ không trình bày về chúng nữa.
 
 ## Kết luận
@@ -248,10 +258,12 @@ Việc áp dụng lập trình hướng đối tượng vào JavaScript là tư�
 
 Xây dựng constructor Vector biểu diễn một vector trong không gian hai chiều, có hai tham số đầu vào là x, y. Xây dựng 2 methods cho Vector prototype là **plus** và **minus **như ví dụ sau:
 
-    <code>console.log(new Vector(1, 2).plus(new Vector(2, 3)));
+```
+console.log(new Vector(1, 2).plus(new Vector(2, 3)));
     // => Vector{x: 3, y: 5}
     console.log(new Vector(1, 2).minus(new Vector(2, 3)));
-    // => Vector{x: -1, y: -1}</code>
+    // => Vector{x: -1, y: -1}
+```
 
 Tham khảo tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/OOP_javascript/vector_completejavascript.com.js).
 
@@ -261,7 +273,8 @@ Tham khảo tại [đây](https://github.com/completejavascript/practical-javasc
 
 Implement object kiểu **ArraySeg** với đầu vào là một mảng và một object khác kiểu **RangeSeq** với đầu vào là 2 số nguyên biểu diễn khoảng.
 
-    <code>// Your code here.
+```
+// Your code here.
 
     logFive(new ArraySeq([1, 2]));
     /*
@@ -275,11 +288,12 @@ Implement object kiểu **ArraySeg** với đầu vào là một mảng và mộ
     * 102
     * 103
     * 104
-    */</code>
+    */
+```
 
 Tham khảo code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/OOP_javascript/interface_completejavascript.com.js).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết sau](https://completejavascript.com/debug-javascript-de-hay-kho/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết sau](/debug-javascript-de-hay-kho/), thân ái!
 
 ## Tham khảo
 
@@ -289,8 +303,8 @@ Xin chào và hẹn gặp lại bạn ở [bài viết sau](https://completejav
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

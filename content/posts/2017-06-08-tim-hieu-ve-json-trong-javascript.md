@@ -1,8 +1,8 @@
 ---
 date: "2017-06-08T00:21:47Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: tim-hieu-ve-json-trong-javascript
 title: "Tìm hiểu về JSON trong JavaScript"
 categories:
@@ -17,14 +17,16 @@ Cách đây khoảng 3 - 4 năm, khi đang học về lập trình Android, mìn
 
 JSON viết tắt bởi **JavaScript Object Notation**. Dịch nôm na thì nó là "Kí hiệu object trong JavaScript".
 
-    <code>{
+```
+{
      "type": "laptop",
      "brand": "Sony",
      "operating system": "Windows 7",
      "graphic card": "NVIDIA"
-    }</code>
+    }
+```
 
-Nếu bạn đã biết về [JavaScript Object](https://completejavascript.com/javascript-object-last-but-not-least/) thì bạn có thể thấy rằng ví dụ trên cũng chính là biểu diễn cho một Object trong JavaScript. Trong đó, gồm có hai thành phần:
+Nếu bạn đã biết về [JavaScript Object](/javascript-object-last-but-not-least/) thì bạn có thể thấy rằng ví dụ trên cũng chính là biểu diễn cho một Object trong JavaScript. Trong đó, gồm có hai thành phần:
 
 - **keys**: _type, brand, operating system, graphic card_
 
@@ -34,16 +36,18 @@ Nếu bạn đã biết về [JavaScript Object](https://completejavascript.com/
 
 ## Ứng dụng
 
-JSON thường được dùng trong cơ sở dữ liệu NoSQL (ví dụ như [MongoDB](https://completejavascript.com/cai-dat-mongodb-tren-windows-moi-nhat/)) và là một chuẩn giao tiếp trên web.
+JSON thường được dùng trong cơ sở dữ liệu NoSQL (ví dụ như [MongoDB](/cai-dat-mongodb-tren-windows-moi-nhat/)) và là một chuẩn giao tiếp trên web.
 
-Khi một client gửi [request](https://completejavascript.com/xmlhttprequest-tao-http-request-den-server-trong-javascript/) lên server thì server có thể gửi kết quả trả về dạng JSON (hoặc XML). Client bóc tách kết quả đó và dựa vào **key** để lấy ra thông tin cần thiết. Việc sử dụng JSON thay vì XML giúp giảm thời gian truy xuất dữ liệu và giảm dung lượng gói tin.
+Khi một client gửi [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/) lên server thì server có thể gửi kết quả trả về dạng JSON (hoặc XML). Client bóc tách kết quả đó và dựa vào **key** để lấy ra thông tin cần thiết. Việc sử dụng JSON thay vì XML giúp giảm thời gian truy xuất dữ liệu và giảm dung lượng gói tin.
 
 Quay lại ví dụ trên, nếu mình dùng XML để biểu diễn thì nó sẽ như sau:
 
-    <code><type> laptop </type>
+```
+<type> laptop </type>
     <brand> Sony </brand>
     <operatin_system> Windows 7 </operating_system>
-    <graphic_card> NVIDIA </graphic_card></code>
+    <graphic_card> NVIDIA </graphic_card>
+```
 
 Rõ ràng, XML phức tạp hơn ở chỗ là XML cần phải có 2 thành phần **thẻ** **đóng** và **thẻ mở **để xác định một thuộc tính. Trong khi JSON chỉ cần 1 thành phần là **key**.
 
@@ -53,7 +57,7 @@ Mặc dù JSON rất giống JavaScript Object nhưng vẫn có một số giớ
 
 - **Key**: luôn luôn phải được đóng gói trong cặp dấu ngoặc kép, không phải ngoặc đơn, cũng không được phép là biến số (variable)
 
-- **Value**: Chỉ được phép là những dữ liệu cơ bản như [numbers](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/), [strings, Boolean](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/), [array](https://completejavascript.com/javascript-array-co-ban/), object, null, không được phép là [function](https://completejavascript.com/tim-hieu-function-javascript/), date, undefined hoặc là một biểu thức tính toán.
+- **Value**: Chỉ được phép là những dữ liệu cơ bản như [numbers](/values-types-va-operators-trong-javascript-phan-1/), [strings, Boolean](/values-types-va-operators-trong-javascript-phan-2/), [array](/javascript-array-co-ban/), object, null, không được phép là [function](/tim-hieu-function-javascript/), date, undefined hoặc là một biểu thức tính toán.
 
 - Không được phép tồn tại **dấu phẩy cuối cùng** như JavaScript Object.
 
@@ -63,7 +67,8 @@ Sau đây là ví dụ minh họa.
 
 ### **Ví dụ về JSON không hợp lệ**
 
-    <code class="language-javascript">// Key dạng biến số - không nằm trong cặp dầu ngoặc kép
+```js
+// Key dạng biến số - không nằm trong cặp dầu ngoặc kép
     const str1 = `{ text : "X", "number": 1990 }`;
 
     // Key đặt trong cặp dấu ngoặc đơn
@@ -88,11 +93,13 @@ Sau đây là ví dụ minh họa.
     const str8 = `{"text": "X", "number": 01990 }`;
 
     // Value là số thập phân nhưng sau dấu (.) không có chữ số nào
-    const str9 = `{"text": "X", "number": 1990. }`;</code>
+    const str9 = `{"text": "X", "number": 1990. }`;
+```
 
 ### Ví dụ về JSON hợp lệ
 
-    <code class="language-javascript">/**
+```js
+/**
     * Key đặt trong cặp dấu ngoặc kép,
     * không có dấu phẩy ở cuối cùng.
     *
@@ -110,7 +117,8 @@ Sau đây là ví dụ minh họa.
     const str4 = `{"text": "X", "number": true }`;
 
     // Value có thể là array
-    const str5 = `{"text": "X", "number": [1, 2] }`;</code>
+    const str5 = `{"text": "X", "number": [1, 2] }`;
+```
 
 ## Cách sử dụng
 
@@ -122,7 +130,8 @@ JavaScript cung cấp sẵn cho chúng ta hai hàm số là: [JSON.stringify](ht
 
 Hãy xem ví dụ sau:
 
-    <code>const string = JSON.stringify({name: "X", born: 1990});
+```
+const string = JSON.stringify({name: "X", born: 1990});
     console.log(string);
     // => {"name":"X","born":1990}
 
@@ -130,15 +139,15 @@ Hãy xem ví dụ sau:
     console.log(obj.name);
     // => X
     console.log(obj.born);
-    // => 1990</code>
-
+    // => 1990
+```
 Điều đó đồng nghĩa với việc nếu bạn muốn chỉnh sửa JSON thì có thể convert nó thành Object để sửa đổi các thuộc tính, giá trị. Sau đó convert JavaScript Object đó ngược lại thành JSON.
 
 ## Lời kết
 
 JSON là một thành phần quan trọng dùng để lưu trữ dữ liệu và là chuẩn giao tiếp giữa client và server. Hy vọng qua bài viết này bạn hiểu được JSON là gì và cách sử dụng nó. Vì chắc chắn là bạn sẽ phải sử dụng nó nhiều.
 
-Hẹn gặp lại bạn ở [bài viết sau](https://completejavascript.com/lap-trinh-huong-doi-tuong-voi-javascript/), thân ái!
+Hẹn gặp lại bạn ở [bài viết sau](/lap-trinh-huong-doi-tuong-voi-javascript/), thân ái!
 
 **Tham khảo**
 
@@ -148,8 +157,8 @@ Hẹn gặp lại bạn ở [bài viết sau](https://completejavascript.com/lap
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

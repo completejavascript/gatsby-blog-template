@@ -1,8 +1,8 @@
 ---
 date: "2018-03-22T00:00:21Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: smooth-scrolling-trang-web-voi-jquery
 title: "Smooth Scrolling trang web với jQuery"
 categories:
@@ -25,7 +25,8 @@ Dưới đây là một ví dụ demo. Bạn có thể nhấn thử vào các bu
 
 Để có thể di chuyển đến các mục khác nhau trên trang web, mỗi mục bạn cần phải xác định một id cho nó. Trong ví dụ trên, mình có 3 mục với 3 id lần lượt là: **sec1**, **sec2**, **sec3**.
 
-    <code><div id="sec1">
+```
+<div id="sec1">
       This is section 1
     </div>
     <div id="sec2">
@@ -33,35 +34,42 @@ Dưới đây là một ví dụ demo. Bạn có thể nhấn thử vào các bu
     </div>
     <div id="sec3">
       This is section 3
-    </div></code>
+    </div>
+```
 
 Tiếp theo là thanh menu (hay navigation), cho phép người dùng lựa chọn sẽ di chuyển tới đâu.
 
-    <code><div id="nav">
+```
+<div id="nav">
       <a href="#sec1">Section1</a>
       <a href="#sec2">Section2</a>
       <a href="#sec3">Section3</a>
-    </div></code>
+    </div>
+```
 
 Ở đây, mình sử dụng thẻ **a** với thuộc tính **href** là id của mỗi phần tương ứng.
 
 ## Smooth Scrolling trang web với jQuery
 
-Mặc định, khi người dùng nhấn vào thẻ a thì trang web sẽ nhảy đến vị trí có địa chỉ xác định trong thẻ href. Vì vậy, để có thể smooth scrolling trang web, bạn cần phải bắt sự kiện khi người dùng nhấn thẻ a vào và chặn lại [event](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/) mặc định.
+Mặc định, khi người dùng nhấn vào thẻ a thì trang web sẽ nhảy đến vị trí có địa chỉ xác định trong thẻ href. Vì vậy, để có thể smooth scrolling trang web, bạn cần phải bắt sự kiện khi người dùng nhấn thẻ a vào và chặn lại [event](/xu-ly-mot-event-javascript-co-ban/) mặc định.
 
-    <code>$("a[href*='#']:not([href='#])").click(function() {
+```
+$("a[href*='#']:not([href='#])").click(function() {
       let target = $(this).attr("href");
       $('html,body').stop().animate({
         scrollTop: $(target).offset().top
       }, 1000);
       event.preventDefault();
-    });</code>
+    });
+```
 
 Trong đó, đoạn code **\$("a[href*='#']:not([href='#])")** ý nghĩa là: lấy ra các thẻ a, với giá trị của thuộc tính href bắt đầu bằng **#** mà không phải là **#** (đôi khi người ta hay sử dụng **<a href="#"></a>** để biểu diễn việc link đến chính trang web hiện tại).
 
 Để chặn việc thực hiện các hoạt động mặc định, bạn có thể sử dụng phương thức preventDefault:
 
-    <code>event.preventDefault();</code>
+```
+event.preventDefault();
+```
 
 Tiếp theo, sử dụng jQuery để xác định đích đến - chính là id của section đó, hay giá trị của thẻ href. Khi đã có target rồi, bây giờ bạn chỉ cần thêm animation vào thông qua phương thức [animate](http://api.jquery.com/animate/) như trên.
 
@@ -75,7 +83,7 @@ Như vậy, phần thêm animation trên có thể diễn giải thành lời l�
 
 Trên đây là cách mà mình sử dụng để triển khai smooth scrolling trên trang web. Hy vọng nó hữu ích với bạn.
 
-Xin chào và hẹn gặp lại trong [bài viết tiếp theo](https://completejavascript.com/xmlhttprequest-voi-promise-javascript/), thân ái!
+Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/xmlhttprequest-voi-promise-javascript/), thân ái!
 
 ## Tham khảo
 
@@ -83,8 +91,8 @@ Xin chào và hẹn gặp lại trong [bài viết tiếp theo](https://complete
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

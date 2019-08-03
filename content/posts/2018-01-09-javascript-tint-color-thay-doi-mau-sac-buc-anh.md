@@ -1,8 +1,8 @@
 ---
 date: "2018-01-09T14:39:22Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: javascript-tint-color-thay-doi-mau-sac-buc-anh
 title: "JavaScript Tint Color - thay đổi màu sắc bức ảnh"
 categories:
@@ -18,7 +18,7 @@ Xin chào bạn. Hình như là đã lâu rồi mình chưa viết bài nào v�
 
 ## JavaScript Tint Color là gì?
 
-JavaScript Tint Color là việc sử dụng [JavaScript](https://completejavascript.com/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) ([Canvas](https://www.tutorialspoint.com/html5/html5_canvas.htm)) để thay đổi màu sắc của một bức ảnh. Bạn có thể thấy ở phía trên. Cùng là ảnh một ngôi sao nhưng màu sắc của chúng là khác nhau. Bình thường, bạn cần phải tạo ra những tệp tin ảnh tương ứng với mỗi màu. Nhưng khi áp dụng JavaScript Tint Color, chúng ta chỉ cần một bức ảnh ban đầu, sau đó có thể tạo ra vô số bức ảnh tương tự với màu sắc khác nhau.
+JavaScript Tint Color là việc sử dụng [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) ([Canvas](https://www.tutorialspoint.com/html5/html5_canvas.htm)) để thay đổi màu sắc của một bức ảnh. Bạn có thể thấy ở phía trên. Cùng là ảnh một ngôi sao nhưng màu sắc của chúng là khác nhau. Bình thường, bạn cần phải tạo ra những tệp tin ảnh tương ứng với mỗi màu. Nhưng khi áp dụng JavaScript Tint Color, chúng ta chỉ cần một bức ảnh ban đầu, sau đó có thể tạo ra vô số bức ảnh tương tự với màu sắc khác nhau.
 
 ## Những lợi ích của JavaScript Tint Color
 
@@ -34,7 +34,8 @@ Với mục đích tái sử dụng, mình đã viết thành một thư viện 
 
 ### TintColor.js
 
-    <code>class TintColor {
+```
+class TintColor {
       constructor(_srcImage, _tintColor) {
         this._srcImage = _srcImage;
         this._tintColorArray = this._getRGBAArray(_tintColor);
@@ -92,7 +93,8 @@ Với mục đích tái sử dụng, mình đã viết thành một thư viện 
           return [parseInt(m[1], 16), parseInt(m[2], 16) , parseInt(m[3], 16), 255];
         }
       }
-    }</code>
+    }
+```
 
 #### Hàm khởi tạo
 
@@ -100,7 +102,7 @@ Với mục đích tái sử dụng, mình đã viết thành một thư viện 
 
 Trong đó:
 
-- **srcImage**: ([string](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/)) là đường dẫn đến bức ảnh, có thể là đường dẫn tương đối đến một vị trí trên server hoặc đường dẫn tuyệt đối đến một host (cdn) lưu trữ ảnh.
+- **srcImage**: ([string](/values-types-va-operators-trong-javascript-phan-2/)) là đường dẫn đến bức ảnh, có thể là đường dẫn tương đối đến một vị trí trên server hoặc đường dẫn tuyệt đối đến một host (cdn) lưu trữ ảnh.
 
 - **tintColor: **(string) là mã màu mới dạng HEX hoặc RGB hay RGBA. Ví dụ: *#ff00ff* hoặc _rgb(255, 0, 255) hay rgba(255, 0, 255, 0.5)._
 
@@ -122,7 +124,8 @@ Hàm này là hàm quan trọng nhất. Nó sẽ load ảnh lên, sau đó thay 
 
 Trước tiên mình sẽ hiển thị ảnh gốc.
 
-    <code>let $ = document.querySelector.bind(document);
+```
+let $ = document.querySelector.bind(document);
     setImage($("#originImg"), srcImg, 150, 150);
 
     function setImage(divElement, srcURL, width, height) {
@@ -130,13 +133,15 @@ Trước tiên mình sẽ hiển thị ảnh gốc.
       divElement.style.height = height + "px";
       divElement.style.backgroundImage = "url('" + srcURL + "')";
       divElement.style.backgroundSize = "" + width + "px " + height + "px";
-    }</code>
+    }
+```
 
-Trong đó, hàm setImage() áp dụng [DOM](https://completejavascript.com/co-ban-ve-dom-javascript/) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
+Trong đó, hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript/) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
 
 Tiếp theo, mình sẽ sử dụng **TintColor.js** để thay đổi màu sắc của bức ảnh. Ở đây, mình thử với cả 3 loại mã màu khác nhau là: HEX, RGB và RGBA.
 
-    <code>new TintColor(srcImg, "#ff0000").run()
+```
+new TintColor(srcImg, "#ff0000").run()
     .then(result => setImage($("#newImg1"), result.url, 150, 150))
     .catch(err => console.log(err));
 
@@ -146,18 +151,19 @@ Tiếp theo, mình sẽ sử dụng **TintColor.js** để thay đổi màu sắ
 
     new TintColor(srcImg, "rgb(127, 127, 255)").run()
     .then(result => setImage($("#newImg3"), result.url, 150, 150))
-    .catch(err => console.log(err));</code>
+    .catch(err => console.log(err));
+```
 
 Bạn có thể thấy là cách sử dụng TintColor.js rất là đơn giản phải không ạ!
 
 Tuy nhiên, mình rất mong muốn nhận được phản hồi của bạn đọc để có thể cải tiến và hoàn thiện thư viện này. Vì vậy, mình sẽ vui khi nhận được phản hồi của bạn.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/javascript-web-worker-javascript-o-background/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-web-worker-javascript-o-background/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

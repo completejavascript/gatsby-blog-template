@@ -1,8 +1,8 @@
 ---
 date: "2017-08-06T09:25:42Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: phan-biet-coder-programmer-developer-va-software-engineer
 title: "Phân biệt coder, programmer, developer và software engineer"
 categories:
@@ -25,7 +25,7 @@ Coder đôi khi không thể thực hiện được hết tất cả các giai �
 
 ### Programmer
 
-Programmer là người có chuyên môn hơn một chút. Họ có thể tạo ra phần mềm máy tính ở bất kỳ ngôn ngữ lập trình máy tính cơ bản nào, như Java, Python, Lisp,... Programmer được cho là vượt xa Coder, họ có thể chỉ [chuyên môn trong một lĩnh vực](https://completejavascript.com/anh-che-vui-5-specialist-vs-generalist-winner/) hay thậm chí là viết hướng dẫn cho nhiều loại hệ thống khác nhau.
+Programmer là người có chuyên môn hơn một chút. Họ có thể tạo ra phần mềm máy tính ở bất kỳ ngôn ngữ lập trình máy tính cơ bản nào, như Java, Python, Lisp,... Programmer được cho là vượt xa Coder, họ có thể chỉ [chuyên môn trong một lĩnh vực](/anh-che-vui-5-specialist-vs-generalist-winner/) hay thậm chí là viết hướng dẫn cho nhiều loại hệ thống khác nhau.
 
 Programmer cũng am hiểu khá tốt về thuật toán. Họ cũng khá giống với Developer nhưng khác ở chỗ là Programmer chủ yếu chỉ triển khai hệ thống, trong khi Developer có thể thiết kế hoặc xây dựng một cấu trúc dữ liệu tốt trong phần mềm. Ngoài ra, Programmer sẽ quan tâm nhiều hơn vào chi tiết.
 
@@ -47,12 +47,12 @@ Một cách khác để hiểu được sự khác nhau giữa Coder, Programmer
 
 Nếu một vài công ty có sự chú ý đặc biệt tới tên chức danh của những nhân viên hoặc không, đây không phải là vấn đề lớn để quan tâm; vấn đề quan trọng là bạn biết những gì bạn có thể làm và có thể làm tốt đến mức nào.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/phan-biet-cac-loai-hacker-black-hat-grey-hat-va-white-hat/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/phan-biet-cac-loai-hacker-black-hat-grey-hat-va-white-hat/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

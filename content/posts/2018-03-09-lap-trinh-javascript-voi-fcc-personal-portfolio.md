@@ -1,8 +1,8 @@
 ---
 date: "2018-03-09T15:03:38Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: lap-trinh-javascript-voi-fcc-personal-portfolio
 title: "Lập trình JavaScript với FCC – Personal Portfolio"
 categories:
@@ -24,7 +24,7 @@ Tiếp tục series lập trình JavaScript với FCC, bài viết này mình s�
 
 ### Các thư viện sử dụng
 
-Đối với cách config thư viện sử dụng trên codepen, mình đã giới thiệu trong bài viết [Lập trình JavaScript với FCC - Build a Tribute Page](https://completejavascript.com/lap-trinh-javascript-voi-fcc-build-a-tribute-page/). Bạn có thể tham khảo lại để biết cách sử dụng.
+Đối với cách config thư viện sử dụng trên codepen, mình đã giới thiệu trong bài viết [Lập trình JavaScript với FCC - Build a Tribute Page](/lap-trinh-javascript-voi-fcc-build-a-tribute-page/). Bạn có thể tham khảo lại để biết cách sử dụng.
 
 Trong project này, mình sử dụng các công cụ như sau:
 
@@ -64,8 +64,8 @@ Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

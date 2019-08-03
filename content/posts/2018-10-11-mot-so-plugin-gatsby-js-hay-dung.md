@@ -1,8 +1,8 @@
 ---
 date: "2018-10-11T11:53:05Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: mot-so-plugin-gatsby-js-hay-dung
 title: "Một số plugin Gatsby.js hay dùng"
 categories:
@@ -13,7 +13,7 @@ tags:
   - Plugin
 ---
 
-Như mình đã nói trong bài viết về [Tạo trang blog với Gatsby.js](https://completejavascript.com/tao-trang-blog-voi-gatsby-js/), framework này hỗ trợ lập trình viên rất nhiều plugin hay. Trong đó, một số plugin là bắt buộc phải có, số còn lại sẽ hỗ trợ bạn trong một số nhiệm vụ như: hiển thị code, nhúng video, SEO,... Mà theo như thống kê tại trang chủ thì [số lượng plugin hiện tại](https://www.gatsbyjs.org/plugins/?=) đã hơn 450 rồi. Tuy nhiên, trong đó chỉ có một số plugin Gatsby.js là hay sử dụng. Vậy chúng là những plugin nào, tác dụng của mỗi plugin là gì? Mời bạn theo dõi bài viết để biết thêm chi tiết nhé!
+Như mình đã nói trong bài viết về [Tạo trang blog với Gatsby.js](/tao-trang-blog-voi-gatsby-js/), framework này hỗ trợ lập trình viên rất nhiều plugin hay. Trong đó, một số plugin là bắt buộc phải có, số còn lại sẽ hỗ trợ bạn trong một số nhiệm vụ như: hiển thị code, nhúng video, SEO,... Mà theo như thống kê tại trang chủ thì [số lượng plugin hiện tại](https://www.gatsbyjs.org/plugins/?=) đã hơn 450 rồi. Tuy nhiên, trong đó chỉ có một số plugin Gatsby.js là hay sử dụng. Vậy chúng là những plugin nào, tác dụng của mỗi plugin là gì? Mời bạn theo dõi bài viết để biết thêm chi tiết nhé!
 
 ## Tạo File node từ file hệ thống với gatsby-source-filesystem
 
@@ -142,8 +142,8 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

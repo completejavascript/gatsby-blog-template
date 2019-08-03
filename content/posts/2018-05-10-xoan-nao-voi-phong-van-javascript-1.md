@@ -1,8 +1,8 @@
 ---
 date: "2018-05-10T00:00:25Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: xoan-nao-voi-phong-van-javascript-1
 title: "Xoắn não với phỏng vấn JavaScript 1"
 categories:
@@ -24,9 +24,11 @@ Nào, bắt tay vào tìm hiểu thôi và nhớ là hãy suy nghĩ thật kĩ t
 
 ## Xoắn não với phỏng vấn JavaScript 1 - Câu 1
 
-    <code>const x = [1, 2, 3];
+```
+const x = [1, 2, 3];
     x[-1] = -1;
-    console.log(x[x.indexOf(10000)]);</code>
+    console.log(x[x.indexOf(10000)]);
+```
 
 Hỏi console in ra kết quả như thế nào?
 
@@ -50,59 +52,65 @@ _The** `const` declaration** creates a read-only reference to a value. It does *
 
 _**Nghĩa là sao? **_
 
-Nghĩa là chỉ có **địa chỉ** của biến số là không thay đổi. Còn **giá trị** của biến số vẫn có thể thay đổi. Bây giờ, mình sẽ xét 3 kiểu dữ liệu chính của biến số là: [Number](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/), [Object](https://completejavascript.com/javascript-object-last-but-not-least/) và [Array](https://completejavascript.com/javascript-array-co-ban/) (chú ý: String và Boolean sẽ giống với trường hợp của Number).
+Nghĩa là chỉ có **địa chỉ** của biến số là không thay đổi. Còn **giá trị** của biến số vẫn có thể thay đổi. Bây giờ, mình sẽ xét 3 kiểu dữ liệu chính của biến số là: [Number](/values-types-va-operators-trong-javascript-phan-1/), [Object](/javascript-object-last-but-not-least/) và [Array](/javascript-array-co-ban/) (chú ý: String và Boolean sẽ giống với trường hợp của Number).
 
 **Number**
 
-    <code>const x = 1;
+```
+const x = 1;
     x = 2;
-    // => TypeError: Assignment to constant variable.</code>
-
+    // => TypeError: Assignment to constant variable.
+```
 Trường hợp này, x là kiểu Number, mà bạn lại gán x cho một số khác. Thì thực chất bạn đã thay đổi địa chỉ của biến x rồi. Nên lỗi trên xảy ra là đương nhiên.
 
 **Object**
 
 **Trường hợp 1:**
 
-    <code>const a = { x: 1, y: 2 };
+```
+const a = { x: 1, y: 2 };
 
     a.x = 10;
     a.y = 20;
     a.z = 30;
     console.log(a);
-    // => {x: 10, y: 20, z: 30}</code>
+    // => {x: 10, y: 20, z: 30}
+```
 
 Trường hợp 1 đúng vì bạn chỉ thay đổi giá trị các thành phần bên trong object a. Bản thân object a vẫn giữ nguyên địa chỉ ban đầu.
 
 **Trường hợp 2:**
 
-    <code>const a = { x: 1, y: 2 };
+```
+const a = { x: 1, y: 2 };
 
     a = { x: 10, y: 20 };
-    // => TypeError: Assignment to constant variable.</code>
-
+    // => TypeError: Assignment to constant variable.
+```
 Trường hợp 2 bị lỗi trên vì bạn đã gán biến a cho một object hoàn toàn mới – địa chỉ khác với object ban đầu.
 
 **Array**
 
 **Trường hợp 1:**
 
-    <code>const a = [1, 2];
+```
+const a = [1, 2];
 
     a[0] = 10;
     a[1] = 20;
     a[2] = 30;
     console.log(a);
-    // => [10, 20, 30]</code>
-
+    // => [10, 20, 30]
+```
 Cũng tương tự như object, bạn chỉ thay đổi giá trị các thành phần bên trong array a. Bản thân địa chỉ array a vẫn không thay đổi.
 
 **Trường hợp 2:**
 
-    <code>const a = [1, 2];
+```
+const a = [1, 2];
     a = [10, 20, 30];
-    // => TypeError: Assignment to constant variable.</code>
-
+    // => TypeError: Assignment to constant variable.
+```
 Lại tương tự như object, bạn đã gán biến a cho một array hoàn toàn mới nên kết quả là bị lỗi như trên.
 
 **Quay lại với câu hỏi trên**, việc khai báo x là const kiểu mảng rồi thay đổi giá trị **x[-1] = -1** là hoàn toàn đúng so với định nghĩa về const.
@@ -119,7 +127,8 @@ Ví dụ: một array là a = [1, 2, 3] thì sẽ gần tương đương với o
 
 Nếu áp dụng điều này thì bạn có thể thấy chỉ số mảng có thể là số âm (-1) hay cũng có thể là string:
 
-    <code>const a = [1, 2, 3];
+```
+const a = [1, 2, 3];
     a[-1] = -1;
 
     console.log(a);
@@ -127,16 +136,17 @@ Nếu áp dụng điều này thì bạn có thể thấy chỉ số mảng có 
 
     a['x'] = 100;
     console.log(a);
-    // => [1, 2, 3, -1: -1, x: 100]</code>
-
+    // => [1, 2, 3, -1: -1, x: 100]
+```
 Như vậy, sau 2 câu lệnh đầu tiên trong câu hỏi, ta thu được:
 
-    <code>const x = [1, 2, 3];
+```
+const x = [1, 2, 3];
     x[-1] = -1;
 
     console.log(x);
-    // => [1, 2, 3, -1: -1]</code>
-
+    // => [1, 2, 3, -1: -1]
+```
 **3. Phương thức Array.prototype.indexOf()**
 
 Phương thức này đơn giản là tìm ra chỉ số của một giá trị cho trước trong mảng. Nếu không tìm thấy thì kết quả trả về là -1.
@@ -147,13 +157,14 @@ Các bạn thấy câu hỏi này thế nào? Rất hay phải không?
 
 ## Xoắn não với phỏng vấn JavaScript 1 - Câu 2
 
-    <code>//let i = ?
+```
+//let i = ?
 
     console.log(i * i); // => 0
     console.log(i + 1); // => 1
     console.log(i - 1); // => -1
-    console.log(i / i); // => 1</code>
-
+    console.log(i / i); // => 1
+```
 Tìm số i thỏa mãn đồng thời 4 câu lệnh trên?
 
 Xem đáp án
@@ -180,8 +191,10 @@ Cũng lập luận tương tự như vậy, bạn thử đoán xem nếu thay i 
 
 ## Xoắn não với phỏng vấn JavaScript 1 - Câu 3
 
-    <code>let a = [1, 2, 3] + [4, 5, 6];
-    console.log(a);</code>
+```
+let a = [1, 2, 3] + [4, 5, 6];
+    console.log(a);
+```
 
 Hỏi console in ra kết quả như thế nào?
 
@@ -197,23 +210,27 @@ Có thể bạn sẽ trả lời đáp án là: [1, 2, 3, 4, 5, 6]. Nhưng tiế
 
 **Phương thức [concat](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)**
 
-    <code>let a = [1, 2, 3].concat([4, 5, 6]);
+```
+let a = [1, 2, 3].concat([4, 5, 6]);
     console.log(a);
-    // => [1, 2, 3, 4, 5, 6]</code>
-
+    // => [1, 2, 3, 4, 5, 6]
+```
 **Sử dụng Array [Spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) với ES6**
 
-    <code>let a = [...[1, 2, 3], ...[4, 5, 6]];
+```
+let a = [...[1, 2, 3], ...[4, 5, 6]];
     console.log(a);
-    // => [1, 2, 3, 4, 5, 6]</code>
-
+    // => [1, 2, 3, 4, 5, 6]
+```
 ## Xoắn não với phỏng vấn JavaScript 1 - Câu 4
 
-    <code>(function() {
+```
+(function() {
       let x = 100;
     })();
 
-    console.log(x);</code>
+    console.log(x);
+```
 
 Hỏi console in ra kết quả như thế nào?
 
@@ -226,7 +243,7 @@ Xem đáp án
 Câu này có vẻ dễ hơn phải không? Bạn chỉ cần biết những điều sau thì sẽ trả lời được câu hỏi:
 
 - Cú pháp **(function() {/_code here_/})()**: gọi là **[IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) **(Immediately Invoked Function Expression) – tức là hàm số thực thi ngay sau khi nó được khai báo.
-- Biến x có phạm vi **block**, nên nó chỉ được tìm thấy ở bên trong [function](https://completejavascript.com/tim-hieu-function-javascript/) trên. Ra ngoài function thì biến x sẽ không được định nghĩa.
+- Biến x có phạm vi **block**, nên nó chỉ được tìm thấy ở bên trong [function](/tim-hieu-function-javascript/) trên. Ra ngoài function thì biến x sẽ không được định nghĩa.
 
 ## Kết luận
 
@@ -234,14 +251,14 @@ Trên đây là 4 câu hỏi phỏng vấn JavaScript rất hóc búa. Hy vọng
 
 Nếu bạn thích những bài viết kiểu như này và mong muốn được thử sức với những câu hỏi JavaScript khó hơn thì vui lòng bình luận **tôi muốn** xuống phía dưới.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](https://completejavascript.com/xoan-nao-voi-phong-van-javascript-2/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-2/), thân ái!
 
 _Nguồn: [Top Tricky JavaScript Interview Questions and Answers](https://www.youtube.com/watch?v=3qnrouysbG8)_
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

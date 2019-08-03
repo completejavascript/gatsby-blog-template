@@ -1,8 +1,8 @@
 ---
 date: "2018-12-02T22:30:04Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: hoc-react-qua-vi-du-8-draggable-element
 title: "Học React qua ví dụ #8: Draggable Element"
 categories:
@@ -27,19 +27,20 @@ Như bạn thấy đó, Draggable Element nghĩa là **phần tử có thể k
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-**Bạn chú ý:** Trong series [học React qua ví dụ](https://completejavascript.com/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+**Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](https://completejavascript.com/tag/create-react-app/) để thực hành học React qua ví dụ #8 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #8 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](https://completejavascript.com/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
 Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
 
-    <code>learn-react-by-example/
+```
+learn-react-by-example/
     --src/
     ----components/
     ------draggable-element/
@@ -50,8 +51,8 @@ Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-re
     ----App.js
     ----index.css
     ----index.js
-    ----serviceWorker.js</code>
-
+    ----serviceWorker.js
+```
 Trong đó:
 
 - Thư mục **components**: chứa code của các Component. Bài này mình thực hành về  **Draggable Element** nên mình tạo thêm thư mục **draggable-element **bên trong với 2 file **draggable-element\*\***.js** và **draggable-element\***\*.css** để định nghĩa cho component **Draggable Element** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
@@ -68,13 +69,14 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](https://completejavascript.com/tim-hieu-react-component-lifecycle/)
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
 
-- [Đăng ký và hủy bỏ event](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/) (**_mousedown, mouseup, mousemove_**).
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_mousedown, mouseup, mousemove_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-    <code class="language-jsx">import React from 'react';
+    ```jsx
+import React from 'react';
     import ReactDOM from 'react-dom';
     import './draggable-element.css';
 
@@ -279,7 +281,8 @@ Về nội dung chi tiết mình sẽ giải thích trong phần comment code d�
           </div>
         )
       }
-    }</code>
+    }
+```
 
 ### Nội dung file draggable-element.css
 
@@ -318,7 +321,8 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
     .lp-draggable-element>.content {
       padding: 15px;
-    }</code>
+    }
+```
 
 ## Sử dụng Draggable Element component
 
@@ -339,13 +343,15 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
       padding: 15px;
       color: #222;
       font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }</code>
+    }
+```
 
 **./src/App.js**
 
-Trong đây mình có kết hợp Draggable Element với các React Component khác mà mình đã làm như: [Modal Image](https://completejavascript.com/hoc-react-qua-vi-du-3-modal-image/), [Slideshow](https://completejavascript.com/hoc-react-qua-vi-du-1-slideshow/).
+Trong đây mình có kết hợp Draggable Element với các React Component khác mà mình đã làm như: [Modal Image](/hoc-react-qua-vi-du-3-modal-image/), [Slideshow](/hoc-react-qua-vi-du-1-slideshow/).
 
-    <code class="language-jsx">import React from 'react';
+    ```jsx
+import React from 'react';
     import './App.css';
 
     import DraggableElement from './components/draggable-element/draggable-element';
@@ -379,7 +385,7 @@ Trong đây mình có kết hợp Draggable Element với các React Component k
             <h2>Draggable Element</h2>
             <div>
               Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-              Visit me at <a href="https://completejavascript.com/">completejavascript.com</a>.
+              Visit me at <a href="/">completejavascript.com</a>.
             </div>
 
             <DraggableElement
@@ -427,13 +433,14 @@ Trong đây mình có kết hợp Draggable Element với các React Component k
           </div>
         );
       }
-    }</code>
+    }
+```
 
 Trong đó, Draggable Element Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
-- **title ([String](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-2/)):** là title của component.
+- **title ([String](/values-types-va-operators-trong-javascript-phan-2/)):** là title của component.
 
-- **width, height (String hoặc [Number](https://completejavascript.com/values-types-va-operators-trong-javascript-phan-1/)):** lần lượt là chiều rộng và chiều cao của phần tử.
+- **width, height (String hoặc [Number](/values-types-va-operators-trong-javascript-phan-1/)):** lần lượt là chiều rộng và chiều cao của phần tử.
 
 - **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
 
@@ -449,8 +456,8 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

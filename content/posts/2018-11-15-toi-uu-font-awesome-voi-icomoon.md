@@ -1,8 +1,8 @@
 ---
 date: "2018-11-15T22:30:34Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: toi-uu-font-awesome-voi-icomoon
 title: "Tối ưu Font Awesome với IcoMoon"
 categories:
@@ -66,7 +66,7 @@ Và quan trọng hơn cả, IcoMoon cho phép bạn lựa chọn icon mà mình 
 
 Trước tiên, bạn cần phải vào danh sách các [thư viện hỗ trợ](https://icomoon.io/app/#/select/library) của IcoMoon.
 
-[caption id="attachment_3061" align="aligncenter" width="660"]![Thêm font awesome vào icomoon](https://completejavascript.com/wp-content/uploads/2018/11/them-font-awesome-vao-icomoon.png) Thêm Font Awesome vào IcoMoon[/caption]
+[caption id="attachment_3061" align="aligncenter" width="660"]![Thêm font awesome vào icomoon](/wp-content/uploads/2018/11/them-font-awesome-vao-icomoon.png) Thêm Font Awesome vào IcoMoon[/caption]
 
 Trong đó, bạn tìm đến phần Font Awesome rồi nhấn vào nút **Add** để thêm thư viện này vào IcoMoon App.
 
@@ -74,7 +74,7 @@ Trong đó, bạn tìm đến phần Font Awesome rồi nhấn vào nút **Add**
 
 Bạn vào trang [Select](https://icomoon.io/app/#/select) để lựa chọn các icon font sử dụng, bằng cách click vào mỗi icon:
 
-[caption id="attachment_3063" align="aligncenter" width="660"]![Lựa chọn icon sử dụng trong Font Awesome](https://completejavascript.com/wp-content/uploads/2018/11/lua-chon-icon-su-dung-1.png) Lựa chọn icon sử dụng trong Font Awesome[/caption]
+[caption id="attachment_3063" align="aligncenter" width="660"]![Lựa chọn icon sử dụng trong Font Awesome](/wp-content/uploads/2018/11/lua-chon-icon-su-dung-1.png) Lựa chọn icon sử dụng trong Font Awesome[/caption]
 
 ### Bước 3: tuỳ chỉnh và tải về package
 
@@ -84,7 +84,7 @@ Nếu để ý phía dưới bên phải, bạn sẽ nhìn thấy button **Downl
 
 Tuy nhiên, mình khuyến khích bạn nhấn vào biểu tượng **bánh răng** bên cạnh để cài đặt một chút trước khi tải package về máy.
 
-[caption id="attachment_3064" align="aligncenter" width="612"]![Tùy chọn cài đặt trước khi tải icon font về máy](https://completejavascript.com/wp-content/uploads/2018/11/cai-dat-truoc-khi-tai-font-ve-may-1.png) Tùy chọn cài đặt trước khi tải icon font về máy[/caption]
+[caption id="attachment_3064" align="aligncenter" width="612"]![Tùy chọn cài đặt trước khi tải icon font về máy](/wp-content/uploads/2018/11/cai-dat-truoc-khi-tai-font-ve-may-1.png) Tùy chọn cài đặt trước khi tải icon font về máy[/caption]
 
 Trong đó:
 
@@ -104,7 +104,7 @@ Trong đó:
 
   - **Generate Sass, Less or Stylus variables**: sinh ra các biến số dành cho Sass, Less hoặc Stylus
 
-* **CSS Selector**: lựa chọn cách sử dụng font trong [CSS](https://completejavascript.com/tag/css/) với 3 loại CSS [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors).
+* **CSS Selector**: lựa chọn cách sử dụng font trong [CSS](/tag/css/) với 3 loại CSS [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors).
 
   - **Use i (for selecting <>)**: sử dụng thẻ _i_. Ví dụ: `<i class="icon-asterisk"></i>`
 
@@ -134,7 +134,7 @@ Khi sử dụng các font tuỳ chỉnh này, bạn cần phải copy thư mục
     <body>
     </body>
     </html>
-    </code>
+```
 
 Còn việc sử dụng các icon này trong HTML như thế nào thì bạn có thể tham khảo thêm trong file **demo.html** (trong package tải về).
 
@@ -150,8 +150,8 @@ Xin chào và hẹn gặp lại, thân ái!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

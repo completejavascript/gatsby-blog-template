@@ -1,8 +1,8 @@
 ---
 date: "2019-04-28T23:00:53Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/mot-so-ung-dung-cua-reduce-trong-javascript-completejavascript.com_.png"
+keywords: "ứng dụng của reduce"
 slug: ung-dung-cua-reduce-javascript
 title: "Một vài ứng dụng của Reduce trong JavaScript"
 categories:
@@ -11,7 +11,7 @@ tags:
   - Array
 ---
 
-Xin chào bạn, đã lâu rồi mình chưa viết thêm được bài nào. Không biết bạn đã bỏ mình đi hay chưa? À, nếu bạn đang đọc bài viết này, nghĩa là bạn vẫn còn theo dõi blog của mình. Cám ơn bạn vì điều đó nhé! Hôm nay, mình sẽ giới thiệu với bạn một số ứng dụng của **Reduce **trong JavaScript.
+Xin chào bạn, đã lâu rồi mình chưa viết thêm được bài nào. Không biết bạn đã bỏ mình đi hay chưa? À, nếu bạn đang đọc bài viết này, nghĩa là bạn vẫn còn theo dõi blog của mình. Cám ơn bạn vì điều đó nhé! Hôm nay, mình sẽ giới thiệu với bạn một số ứng dụng của **Reduce** trong JavaScript.
 
 Trước khi bắt đầu, mình muốn bạn hiểu tại sao mình lại viết về phương thức Reduce mà không phải là một cái nào khác. Bởi lẽ, Reduce là một trong 3 phương thức quan trọng hay sử dụng trong lập trình hàm, đó là [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) và [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce). Việc sử dụng Reduce sẽ giúp cho code của bạn trở nên sáng sủa và ngắn gọn hơn rất nhiều.
 
@@ -19,27 +19,23 @@ Dĩ nhiên, đây chỉ là quan điểm cá nhân của mình thôi. Nếu bạ
 
 ## Ôn lại cú pháp cơ bản của Reduce
 
-Về cơ bản, phương thức Reduce sẽ thực thi một [hàm](https://completejavascript.com/tim-hieu-function-javascript/) lên các phần tử của [mảng](https://completejavascript.com/javascript-array-co-ban/) (từ trái sang phải) với một biến tích lũy để thu về một giá trị duy nhất.
+Về cơ bản, phương thức Reduce sẽ thực thi một [hàm](/tim-hieu-function-javascript/) lên các phần tử của [mảng](/javascript-array-co-ban/) (từ trái sang phải) với một biến tích lũy để thu về một giá trị duy nhất.
 
 **Cú pháp:**
 
-    <code class="language-javascript">arr.reduce(callback[, initialValue])</code>
+```js
+arr.reduce(callback[, initialValue])
+```
 
 Trong đó:
 
 - **callback**: là hàm thực thi với từng phần tử của hàm, với 4 tham số là: accumulator, currentValue, currentIndex và array.
-
   - **accumulator**: biến tích lũy, được trả về sau mỗi lần gọi hàm callback.
-
-  * **currentValue**: phần tử của mảng đang được xử lý.
-
+  - **currentValue**: phần tử của mảng đang được xử lý.
   - **currentIndex**: chỉ số của phần tử trong mảng đang được xử lý.
-
-  * **array**: mảng hiện tại gọi hàm reduce().
-
-* **initialValue**: là giá trị cho tham số thứ nhất (accumulator) của hàm callback trong lần gọi hàm đầu tiên. Nếu giá trị này không được cung cấp thì giá trị phần tử đầu tiên của mảng sẽ được sử dụng.
-
-**Giá trị trả về**: chính là giá trị của accumulator sau lần gọi hàm callback cuối cùng.
+  - **array**: mảng hiện tại gọi hàm reduce().
+- **initialValue**: là giá trị cho tham số thứ nhất (accumulator) của hàm callback trong lần gọi hàm đầu tiên. Nếu giá trị này không được cung cấp thì giá trị phần tử đầu tiên của mảng sẽ được sử dụng.
+- **Giá trị trả về**: chính là giá trị của accumulator sau lần gọi hàm callback cuối cùng.
 
 Trên đây là giới thiệu cơ bản về hàm Reduce. Tiếp theo mình sẽ giới thiệu với bạn một số ứng dụng của Reduce trong JavaScript.
 
@@ -51,94 +47,101 @@ Trên đây là giới thiệu cơ bản về hàm Reduce. Tiếp theo mình s�
 
 Giả sử mình đang có một mảng các chủ đề trên blog, với mỗi chủ đề lại chứa một mảng các bài viết như sau:
 
-    <code class="language-javascript">const topics = [
-      {
-        topic: 'ReactJS',
-        posts: [
-          { postID: 'id1', title: 'title1' },
-          { postID: 'id2', title: 'title2' },
-        ]
-      },
-      {
-        topic: 'Vue.js',
-        posts: [
-          { postID: 'id3', title: 'title3' },
-          { postID: 'id4', title: 'title4' },
-        ]
-      }
-    ]</code>
-
+```js
+const topics = [
+  {
+    topic: 'ReactJS',
+    posts: [
+      { postID: 'id1', title: 'title1' },
+      { postID: 'id2', title: 'title2' },
+    ]
+  },
+  {
+    topic: 'Vue.js',
+    posts: [
+      { postID: 'id3', title: 'title3' },
+      { postID: 'id4', title: 'title4' },
+    ]
+  }
+]
+```
 Bây giờ, mình muốn có một mảng các bài viết để hiển thị chúng thành một danh sách. Vậy mình phải làm sao?
 
 #### Ứng dụng của Reduce để giải quyết vấn đề
 
 Nếu quay trở lại thời điểm vài năm trước, khi mới chuyển từ C/C++ sang JavaScript thì mình sẽ luôn sử dụng vòng lặp **for** mà không cần phải suy nghĩ nhiều.
 
-    <code class="language-javascript">const allPosts = [];
+```js
+const allPosts = [];
 
-    for (let t = 0, tl = topics.length; t < tl; t++) {
-      const posts = topics[t].posts;
+for (let t = 0, tl = topics.length; t < tl; t++) {
+  const posts = topics[t].posts;
 
-      for (let p = 0, pl = posts.length; p < pl; p++) {
-        const post = posts[p];
-        allPosts.push(post);
-      }
-    }
+  for (let p = 0, pl = posts.length; p < pl; p++) {
+    const post = posts[p];
+    allPosts.push(post);
+  }
+}
 
-    console.log(allPosts);
-    /*
-    [
-       { postID: "id1", title: "title1" },
-       { postID: "id2", title: "title2" },
-       { postID: "id3", title: "title3" },
-       { postID: "id4", title: "title4" }
-    ]
-    */</code>
+console.log(allPosts);
+/*
+[
+    { postID: "id1", title: "title1" },
+    { postID: "id2", title: "title2" },
+    { postID: "id3", title: "title3" },
+    { postID: "id4", title: "title4" }
+]
+*/
+```
 
-Thậm chí lúc đó, mình còn không biết cách sử dụng mấy phương thức của array như: [forEach](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/), map, filter,... nữa cơ. Nên bài toán nào mình cũng sử dụng vòng lặp for kiểu như trên.
+Thậm chí lúc đó, mình còn không biết cách sử dụng mấy phương thức của array như: [forEach](/javascript-foreach-la-cai-quai-gi/), map, filter,... nữa cơ. Nên bài toán nào mình cũng sử dụng vòng lặp for kiểu như trên.
 
 Tuy nhiên, sau một khoảng thời gian học hành, thực hành nhiều và tiếp cận với tư tưởng lập trình hàm, mình sẽ sử dụng phương thức Reduce để giải quyết bài toán trên:
 
-    <code class="language-javascript">const allPosts = topics.reduce((acc, cur) => {
-      return [...acc, ...cur.posts];
-    }, []);</code>
+```js
+const allPosts = topics.reduce((acc, cur) => {
+  return [...acc, ...cur.posts];
+}, []);
+```
 
 Trong đó, **initialValue** là một mảng rỗng **[]**. Và khi thực thi hàm callback với mỗi phần tử của mảng topics thì:
 
 - Với lượt đầu tiên: **acc** là **[]** và **cur** ứng với phần tử đầu tiên (về "ReactJS") nên:
 
-  <code class="language-javascript">acc = [];
-  cur.posts = [
+ ```js
+acc = [];
+cur.posts = [
   { postID: 'id1', title: 'title1' },
   { postID: 'id2', title: 'title2' },
-  ]
+]
 
-  // Kết quả
-  acc = [...acc, ...cur.posts] = [
+// Kết quả
+acc = [...acc, ...cur.posts] = [
   { postID: 'id1', title: 'title1' },
   { postID: 'id2', title: 'title2' },
-  ]</code>
-
+]
+```
 * Với lượt tiếp theo:
 
-  <code class="language-javascript">acc = [
+ ```js
+acc = [
   { postID: 'id1', title: 'title1' },
   { postID: 'id2', title: 'title2' },
-  ]
+]
 
-  cur.posts = [
+cur.posts = [
   { postID: 'id3', title: 'title3' },
   { postID: 'id4', title: 'title4' },
-  ]
+]
 
-  // Kết quả
-  acc = [...acc, ...cur.posts] => [
+// Kết quả
+acc = [...acc, ...cur.posts] => [
   { postID: 'id1', title: 'title1' },
   { postID: 'id2', title: 'title2' },
   { postID: 'id3', title: 'title3' },
   { postID: 'id4', title: 'title4' },
-  ]</code>
-
+]
+```
 Đó chính là cách mà mình vẫn đang sử dụng hằng ngày. Rõ ràng, nhờ ứng dụng của Reduce trong JavaScript mà code trở nên ngắn gọn hơn rất nhiều mà vẫn dễ hiểu phải không bạn?
 
 ### Chuyển array thành object theo giá trị của một thuộc tính
@@ -147,105 +150,117 @@ Trong đó, **initialValue** là một mảng rỗng **[]**. Và khi thực thi 
 
 Giả sử mình đang có danh sách các bài viết như trên. Bây giờ mình muốn lấy tiêu đề bài viết (**title**) ứng với giá trị của một **postID** nào đó.
 
-    <code class="language-javascript">const posts = [
-      { postID: 'id1', title: 'title1' },
-      { postID: 'id2', title: 'title2' },
-      { postID: 'id3', title: 'title3' },
-      { postID: 'id4', title: 'title4' },
-    ];
+```js
+const posts = [
+  { postID: 'id1', title: 'title1' },
+  { postID: 'id2', title: 'title2' },
+  { postID: 'id3', title: 'title3' },
+  { postID: 'id4', title: 'title4' },
+];
 
-    const getPost = (postID, posts) => {
-      // TODO: triển khai sau
-    }
+const getPost = (postID, posts) => {
+  // TODO: triển khai sau
+}
 
-    // Thực hiện truy vấn
-    getPost("id1", posts).title; // => title1
-    getPost("id2", posts).title; // => title2
-    getPost("id3", posts).title; // => title3
-    getPost("id4", posts).title; // => title4</code>
-
+// Thực hiện truy vấn
+getPost("id1", posts).title; // => title1
+getPost("id2", posts).title; // => title2
+getPost("id3", posts).title; // => title3
+getPost("id4", posts).title; // => title4
+```
 Vậy mình phải làm sao đây?
 
 #### Ứng dụng của Reduce để giải quyết vấn đề
 
 Cách suy nghĩ thông thường nhất là mình sẽ duyệt mảng trên. Với mỗi bài viết, mình sẽ so sánh giá trị **postID** của nó với cái mà mình đang tìm. Mình sẽ duyệt lần lượt từng phần tử cho đến khi tìm được đúng bài viết thì thôi.
 
-    <code class="language-javascript">const getPost = (postID, posts) => {
-      for(let p = 0, pl = posts.length; p < pl; p++) {
-        const post = posts[p];
+```js
+const getPost = (postID, posts) => {
+  for(let p = 0, pl = posts.length; p < pl; p++) {
+    const post = posts[p];
 
-        if (post.postID === postID) {
-          return post;
-        }
-      }
-    }</code>
+    if (post.postID === postID) {
+      return post;
+    }
+  }
+}
+```
 
 Theo mình thấy, đây cũng là một cách làm hay và dễ hiểu bởi cách suy nghĩ trực tiếp vào bài toán. Tuy nhiên, cách làm này có một vấn đề là: nếu mảng các bài viết không phải 4 phần tử mà là hàng nghìn, hàng triệu phần tử thì việc dùng vòng lặp for để duyệt mảng với mỗi lần truy vấn thật sự rất tốn thời gian - độ phức tạp thuật toán là O(N).
 
-Cách giải quyết cho vấn đề trên là mình sẽ xây dựng một [object](https://completejavascript.com/javascript-object-last-but-not-least/) để map mỗi **postID** với giá trị tương ứng của bài viết. Và khi đã có một object như vậy thì việc tìm kiếm sẽ vô cùng đơn giản - độ phức tạp thuật toán là O(1).
+Cách giải quyết cho vấn đề trên là mình sẽ xây dựng một [object](/javascript-object-last-but-not-least/) để map mỗi **postID** với giá trị tương ứng của bài viết. Và khi đã có một object như vậy thì việc tìm kiếm sẽ vô cùng đơn giản - độ phức tạp thuật toán là O(1).
 
-    <code class="language-javascript">// Object để map mỗi postID với mỗi post tương ứng
-    const dictionary = {
-      'id1': { postID: 'id1', title: 'title1' },
-      'id2': { postID: 'id2', title: 'title2' },
-      'id3': { postID: 'id3', title: 'title3' },
-      'id4': { postID: 'id4', title: 'title4' },
-    }
+```js
+// Object để map mỗi postID với mỗi post tương ứng
+const dictionary = {
+  'id1': { postID: 'id1', title: 'title1' },
+  'id2': { postID: 'id2', title: 'title2' },
+  'id3': { postID: 'id3', title: 'title3' },
+  'id4': { postID: 'id4', title: 'title4' },
+}
 
-    const getPost = (postID, dictionary) => {
-      return dictionary[postID];
-    }
+const getPost = (postID, dictionary) => {
+  return dictionary[postID];
+}
 
-    // Thực hiện truy vấn
-    getPost("id1", dictionary).title; // => title1
-    getPost("id2", dictionary).title; // => title2
-    getPost("id3", dictionary).title; // => title3
-    getPost("id4", dictionary).title; // => title4</code>
-
+// Thực hiện truy vấn
+getPost("id1", dictionary).title; // => title1
+getPost("id2", dictionary).title; // => title2
+getPost("id3", dictionary).title; // => title3
+getPost("id4", dictionary).title; // => title4
+```
 Vấn đề bây giờ chỉ là làm sao mình xây dựng được object **dictionary** như trên? Dĩ nhiên, mình có thể sử dụng vòng lặp for như sau:
 
-    <code class="language-javascript">const dictionary = {};
+```js
+const dictionary = {};
 
-    for (let p = 0, pl = posts.length; p < pl; p++) {
-      const post = posts[p];
-      const postID = post.postID;
-      dictionary[postID] = post;
-    }</code>
+for (let p = 0, pl = posts.length; p < pl; p++) {
+  const post = posts[p];
+  const postID = post.postID;
+  dictionary[postID] = post;
+}
+```
 
 Còn khi ứng dụng Reduce vào đây thì kết quả sẽ ngắn gọn hơn và **functional** hơn như sau:
 
-    <code class="language-javascript">const dictionary = posts.reduce((acc, cur) => {
-      const postID = cur.postID;
-      return { ...acc, [postID]: cur }
-    }, {});</code>
+```js
+const dictionary = posts.reduce((acc, cur) => {
+  const postID = cur.postID;
+  return { ...acc, [postID]: cur }
+}, {});
+```
 
 Trong đó, **initialValue** là một object rỗng **{}**. Và khi thực thi hàm callback với mỗi phần tử của mảng posts thì:
 
 - Với lượt đầu tiên: **acc** là **{}** và **cur** ứng với post đầu tiên nên:
 
-  <code class="language-javascript">acc = {};
-  cur = { postID: "id1", title: "title1" };
-  postID = cur.postID = "id1";
+ ```js
+acc = {};
+cur = { postID: "id1", title: "title1" };
+postID = cur.postID = "id1";
 
-  // kết quả
-  acc = {...acc, [postID]: cur } = {
+// kết quả
+acc = {...acc, [postID]: cur } = {
   'id1': { postID: 'id1', title: 'title1' }
-  }</code>
+}
+```
 
 * Với lần thứ 2:
 
-  <code class="language-javascript">acc = {
+ ```js
+acc = {
   'id1': { postID: 'id1', title: 'title1' }
-  };
+};
 
-  cur = { postID: "id2", title: "title2" };
-  postID = cur.postID = "id2";
+cur = { postID: "id2", title: "title2" };
+postID = cur.postID = "id2";
 
-  // kết quả
-  acc = {...acc, [postID]: cur } = {
+// kết quả
+acc = {...acc, [postID]: cur } = {
   'id1': { postID: 'id1', title: 'title1' },
   'id2': { postID: 'id2', title: 'title2' }
-  }</code>
+}
+```
 
 Cứ như vậy cho đến hết thì mình sẽ thu được kết quả như mong muốn.
 
@@ -254,7 +269,6 @@ Cứ như vậy cho đến hết thì mình sẽ thu được kết quả như m
 Trên đây là một số ứng dụng của Reduce trong JavaScript, cụ thể là:
 
 - Chuyển mảng 2 chiều thành mảng một chiều
-
 - Chuyển array thành object theo giá trị của một thuộc tính
 
 Hy vọng qua bài viết này, bạn hiểu hơn về Reduce và ứng dụng nó nhiều hơn trong các project của mình, giúp code trở nên rõ ràng, dễ hiểu hơn.
@@ -265,8 +279,8 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

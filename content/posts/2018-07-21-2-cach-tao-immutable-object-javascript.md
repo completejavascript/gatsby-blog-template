@@ -1,8 +1,8 @@
 ---
 date: "2018-07-21T02:57:04Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: 2-cach-tao-immutable-object-javascript
 title: "2 cách tạo immutable object trong JavaScript"
 categories:
@@ -11,7 +11,7 @@ tags:
   - ES6
 ---
 
-Thông thường, [object](https://completejavascript.com/javascript-object-last-but-not-least/) trong JavaScript là **mutable** - nghĩa là trạng thái của object có thể thay đổi được. Tuy nhiên, có nhiều trường hợp bạn mong muốn object đó là **immutable** - trạng thái không thể thay đổi được. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript.
+Thông thường, [object](/javascript-object-last-but-not-least/) trong JavaScript là **mutable** - nghĩa là trạng thái của object có thể thay đổi được. Tuy nhiên, có nhiều trường hợp bạn mong muốn object đó là **immutable** - trạng thái không thể thay đổi được. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript.
 
 ## Tạo immutable object sử dụng Object.defineProperty
 
@@ -19,39 +19,43 @@ Phương thức [Object.defineProperty()](https://developer.mozilla.org/en-US/do
 
 Để tạo immutable object sử dụng Object.defineProperty, bạn chỉ cần định nghĩa property với **writable** là false.
 
-    <code>let obj = {};
+```
+let obj = {};
     Object.defineProperty(obj, 'a', { value: 1, writable: false });
     obj.a = 2;
-    console.log(obj.a); // => 1</code>
-
+    console.log(obj.a); // => 1
+```
 Bạn có thể thấy giá trị của _obj.a_ vẫn không thay đổi so với giá trị ban đầu, là 1.
 
 Thực tế, giá trị mặc định của writable là false, nên bạn có thể bỏ qua thuộc tính này:
 
-    <code>let obj = {};
+```
+let obj = {};
     Object.defineProperty(obj, 'a', { value: 1 });
     obj.a = 2;
-    console.log(obj.a); // => 1</code>
-
+    console.log(obj.a); // => 1
+```
 **_Bây giờ, mình muốn thay đổi writable thành true có được không?_**
 
 Câu trả lời là **KHÔNG**.
 
 Vì theo mặc định, giá trị của \_**configurable** \_là false, nên bạn sẽ nhận được lỗi: **TypeError: Cannot redefine property: a**
 
-    <code>let obj = {};
+```
+let obj = {};
     Object.defineProperty(obj, 'a', { value: 1, writable: false });
     Object.defineProperty(obj, 'a', {writable: true });
-    // => TypeError: Cannot redefine property: a</code>
-
+    // => TypeError: Cannot redefine property: a
+```
 Để làm được điều này, bạn cần phải sửa _configurable_ thành true:
 
-    <code>let obj = {};
+```
+let obj = {};
     Object.defineProperty(obj, 'a', { value: 1, writable: false, configurable: true});
     Object.defineProperty(obj, 'a', {writable: true });
     obj.a = 2;
-    console.log(obj.a); // => 2</code>
-
+    console.log(obj.a); // => 2
+```
 Như vậy nghĩa là bạn có thể biến _immutable object_ thành _mutable object_ được bằng cách sử dụng phương thức này.
 
 ## Tạo immutable object sử dụng Object.freeze
@@ -60,14 +64,16 @@ Phương thức [Object.freeze()](https://developer.mozilla.org/en-US/docs/Web/J
 
 Chính vì vậy, phương thức này rất phù hợp để tạo immutable object:
 
-    <code>let obj = {
+```
+let obj = {
       a: 1
     };
 
     Object.freeze(obj);
     obj.a = 2;
     obj.b = 3;
-    console.log(obj); // => {a: 1}</code>
+    console.log(obj); // => {a: 1}
+```
 
 Bạn cũng có thể thấy rằng _obj_ vẫn không hề thay đổi.
 
@@ -81,12 +87,12 @@ Trên đây là 2 cách tạo immutable object trong JavaScript. Mỗi cách đ�
 
 Nếu có thắc mắc hay góp ý gì thì bạn có thể để lại cho mình trong phần bình luận phía dưới nhé!
 
-Xin chào và hẹn gặp lại trong [bài viết tiếp theo](https://completejavascript.com/trien-khai-thuat-toan-undo-redo-trong-javascript/), thân ái!
+Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/trien-khai-thuat-toan-undo-redo-trong-javascript/), thân ái!
 
 ---
 
-★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
 **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

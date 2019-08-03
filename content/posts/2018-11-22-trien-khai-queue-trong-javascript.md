@@ -1,8 +1,8 @@
 ---
 date: "2018-11-22T22:30:58Z"
 template: "post"
-cover: "../images/"
-keywords: ""
+cover: "../images/placeholder-660x400-344359.png"
+keywords: "lập trình JavaScript"
 slug: trien-khai-queue-trong-javascript
 title: "Triển khai Queue trong JavaScript"
 categories:
@@ -12,7 +12,7 @@ tags:
   - Thuật toán
 ---
 
-Tiếp tục ý tưởng từ bài viết [Triển khai Stack trong JavaScript với Array, Object hay Map](https://completejavascript.com/trien-khai-stack-trong-javascript-voi-array-object-hay-map/), bài viết này sẽ tiếp tục triển khai Queue trong JavaScript. Tuy nhiên, mình sẽ chỉ triển khai Queue với [Array](https://completejavascript.com/javascript-array-co-ban/) mà bỏ qua [Object](https://completejavascript.com/javascript-object-last-but-not-least/) và [Map](https://completejavascript.com/map-trong-javascript-thi-sao/). Thay vào đó, mình sẽ triển khai Queue theo hai cách là: **queue thông thường** và **queue vòng** (thực ra còn có cả [queue ưu tiên](http://voer.edu.vn/c/hang-uu-tien-priority-queue/c5e6dc01/2b75617e) nữa, nhưng cách triển khai khá phức tạp, nên mình sẽ không trình bày ở đây).
+Tiếp tục ý tưởng từ bài viết [Triển khai Stack trong JavaScript với Array, Object hay Map](/trien-khai-stack-trong-javascript-voi-array-object-hay-map/), bài viết này sẽ tiếp tục triển khai Queue trong JavaScript. Tuy nhiên, mình sẽ chỉ triển khai Queue với [Array](/javascript-array-co-ban/) mà bỏ qua [Object](/javascript-object-last-but-not-least/) và [Map](/map-trong-javascript-thi-sao/). Thay vào đó, mình sẽ triển khai Queue theo hai cách là: **queue thông thường** và **queue vòng** (thực ra còn có cả [queue ưu tiên](http://voer.edu.vn/c/hang-uu-tien-priority-queue/c5e6dc01/2b75617e) nữa, nhưng cách triển khai khá phức tạp, nên mình sẽ không trình bày ở đây).
 
 Trước khi bắt tay vào triển khai code, mình cần phải tìm hiểu xem nó là cái gì, ứng dụng và các phép toán cơ bản trước. Khi đó, bạn không những triển khai Queue trong JavaScript được, mà còn có thể triển khai nó với các ngôn ngữ khác.
 
@@ -28,7 +28,7 @@ Queue là một kiểu cấu trúc dữ liệu tuyến tính, tuân theo quy lu�
 
 Rõ ràng, cấu trúc dữ liệu này quá phổ biến và gần gũi với mọi người rồi. Vì đã là người văn minh thì khi đi đâu, làm gì thì cũng nên xếp hàng phải không?
 
-[caption id="attachment_3118" align="aligncenter" width="660"]![Hoạt động xếp hàng](https://completejavascript.com/wp-content/uploads/2018/11/line-up-1.png) Vector Designed By Andrea Panzetti from [pngtree.com](https://pngtree.com/freepng/vector-cartoon-bus-station-queue_2749406.html)[/caption]
+[caption id="attachment_3118" align="aligncenter" width="660"]![Hoạt động xếp hàng](/wp-content/uploads/2018/11/line-up-1.png) Vector Designed By Andrea Panzetti from [pngtree.com](https://pngtree.com/freepng/vector-cartoon-bus-station-queue_2749406.html)[/caption]
 
 ### Ứng dụng Queue trong lập trình
 
@@ -109,7 +109,7 @@ Một số phép toán cơ bản với Queue là:
         this.size = 0;
       }
     }
-    </code>
+```
 
 Cách triển khai Queue trong JavaScript cũng tương tự như triển khai Stack trong JavaScript vậy. Chỉ khác 3 chỗ là:
 
@@ -175,7 +175,7 @@ Cách triển khai Queue trong JavaScript cũng tương tự như triển khai S
         this.rear = 0;
       }
     }
-    </code>
+```
 
 Queue vòng cũng tương tự như Queue thông thường. Tuy nhiên, bạn cũng có thể thấy là mình không sử dụng phương thức **push()** hay **shift()** nữa.
 
@@ -187,7 +187,7 @@ Thực chất, khi mình **enqueue()** thì kích thước của Array tự mở
 
     console.log(a);
     // => (2) [1, 2]
-    </code>
+```
 
 Còn khi **dequeue()**, do mình không sử dụng **shift()** nên kích thước của array không thay đổi. Vì vậy, để quản lý các phần tử trong Queue, mình cần thêm 3 biến là: _size_, _front_ và _rear_.
 
@@ -206,7 +206,7 @@ Ngoài ra, để thể hiện **tính vòng của Queue** thì mình tận dụn
 
     // dequeue
     this.front = (this.front + 1) % this.capacity;
-    </code>
+```
 
 **Tại sao sử dụng như trên lại vòng được?**
 
@@ -221,7 +221,7 @@ Ngoài ra, cách trên có thể biểu diễn đơn giản nhưng dài dòng h�
     // dequeue
     this.front++;
     if (this.front >= this.capacity) this.front = 0;
-    </code>
+```
 
 ## So sánh hiệu năng 2 cách triển khai Queue trong JavaScript
 
@@ -256,7 +256,7 @@ Ngoài ra, cách trên có thể biểu diễn đơn giản nhưng dài dòng h�
     const duration = (end - start) / TestCase;
 
     console.log(`Duration: ${duration} ms`);
-    </code>
+```
 
 Cách test hoàn toàn tương tự như khi test với Stack nên mình sẽ không giải thích gì thêm.
 
@@ -286,8 +286,8 @@ Xin cám ơn và hẹn gặp lại!
 
 ---
 
-★ Nếu bạn thấy bài viết này hay thì hãy đăng ký nhận bài viết qua Email hoặc theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
-**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)
