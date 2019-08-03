@@ -47,7 +47,8 @@ mà không cần phải **init** hay chờ các sự kiện như **onready**.
 
 Ngoài ra, bạn cũng có thể cài đặt localForage thông qua npm hoặc bower như sau:
 
-    <code class="bash language-bash"># Cài đặt qua npm:
+```bash
+# Cài đặt qua npm:
     npm install localforage
 
     # Hoặc cài đặt qua bower:

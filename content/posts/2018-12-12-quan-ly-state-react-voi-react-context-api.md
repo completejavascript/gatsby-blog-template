@@ -1,8 +1,8 @@
 ---
 date: "2018-12-12T22:30:23Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/quan-ly-state-react-voi-react-context-api-completejavascript.com_.png"
+keywords: "react context api"
 slug: quan-ly-state-react-voi-react-context-api
 title: "Quản lý state trong React với React Context API"
 categories:
@@ -17,9 +17,7 @@ Bình thường bạn quản lý state trong React bằng cách nào? Đặt ch�
 
 Theo như thông tin [trang chủ Reactjs](https://reactjs.org/docs/context.html) thì:
 
-<blockquote>Context provides a way to pass data through the component tree without having to pass props down manually at every level.
-> 
-> </blockquote>
+> Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 
 Điều đó có nghĩa là bạn có thể truyền các props đến một Component bất kỳ mà không cần phải truyền thủ công tại mọi Component.
 
@@ -35,7 +33,7 @@ Kể cả trong trường hợp component B không cần sử dụng đến các
 
 Ngược lại, khi cần cập nhật state từ C lên A, mình cũng cần phải cập nhật từ C lên B, rồi mới cập nhật từ B lên A được.
 
-![](/wp-content/uploads/2018/12/react-context-api-quan-ly-state-theo-cach-thong-thuong-completejavascript.com_.png)Theo cách thông thường A và C muốn giao tiếp thì phải thông qua B
+![](../images/react-context-api-quan-ly-state-theo-cach-thong-thuong-completejavascript.com_.png)Theo cách thông thường A và C muốn giao tiếp thì phải thông qua B
 
 Thử tưởng tượng bạn đang có hàng chục component khác nhau. Nếu mà cứ truyền props với cập nhật state như thế này thì quả thật sẽ rất lằng nhằng và thừa code không cần thiết.
 
@@ -45,7 +43,7 @@ Thử tưởng tượng bạn đang có hàng chục component khác nhau. Nếu
 
 Ý tưởng của React Context API là nó sẽ tập trung dữ liệu vào một nơi. Sau đó, nó cung cấp cơ chế cho phép mỗi component có thể lấy state cũng như cập nhật state trực tiếp tại đó mà không cần qua các component trung gian.
 
-![](/wp-content/uploads/2018/12/react-context-api-quan-ly-state-voi-react-context-api-completejavascript.com_.png)Với React Context API, số lượng phần tử bao nhiêu cũng không thành vấn đề
+![](../images/react-context-api-quan-ly-state-voi-react-context-api-completejavascript.com_.png)Với React Context API, số lượng phần tử bao nhiêu cũng không thành vấn đề
 
 So với cách quản lý state thông thường, mình thấy cách này có ưu, nhược điểm là:
 
@@ -58,7 +56,7 @@ Như vậy là mình đã tìm hiểu về cơ chế làm việc của React Con
 
 ### React.createContext
 
-```
+```js
 const MyContext = React.createContext(defaultValue);
 ```
 
@@ -68,36 +66,37 @@ Ngược lại, khi bên ngoài nó không có một **Provider** nào thì giá
 
 ### Context.Provider
 
-```
+```js
 <MyContext.Provider value={/* some value */}>
 ```
 
 Với mỗi một đối tượng Context sẽ tồn tại một đối tượng Provider. Đối tượng này có một property là **value**. Giá trị của **value** được hiểu là giá trị của Context.
 
-Mỗi khi giá trị của **value **này thay đổi thì các thành phần bên trong Provider này sẽ bị render lại. Vì vậy, giá trị của **value** sẽ tương ứng là state của chương trình.
+Mỗi khi giá trị của **value** này thay đổi thì các thành phần bên trong Provider này sẽ bị render lại. Vì vậy, giá trị của **value** sẽ tương ứng là state của chương trình.
 
 ### Class.contextType
 
-```
+```js
 class MyClass extends React.Component {
-      componentDidMount() {
-        let value = this.context;
-        /* perform a side-effect at mount using the value of MyContext */
-      }
-      componentDidUpdate() {
-        let value = this.context;
-        /* ... */
-      }
-      componentWillUnmount() {
-        let value = this.context;
-        /* ... */
-      }
-      render() {
-        let value = this.context;
-        /* render something based on the value of MyContext */
-      }
-    }
-    MyClass.contextType = MyContext;
+  componentDidMount() {
+    let value = this.context;
+    /* perform a side-effect at mount using the value of MyContext */
+  }
+  componentDidUpdate() {
+    let value = this.context;
+    /* ... */
+  }
+  componentWillUnmount() {
+    let value = this.context;
+    /* ... */
+  }
+  render() {
+    let value = this.context;
+    /* render something based on the value of MyContext */
+  }
+}
+
+MyClass.contextType = MyContext;
 ```
 
 Nếu như hai API trên là để khởi tạo Context và truyền giá trị cho Context thì API này dùng để sử dụng giá trị của Context.
@@ -108,10 +107,10 @@ Sau đó, mình có thể truy cập đến giá trị của Context thông qua 
 
 ### Context.Consumer
 
-```
+```js
 <MyContext.Consumer>
-      {value => /* render something based on the context value */}
-    </MyContext.Consumer>
+  {value => /* render something based on the context value */}
+</MyContext.Consumer>
 ```
 
 Tương tự **Class.contextType**, API này giúp sử dụng giá trị của Context. Tuy nhiên hơi khác một chút là API này chỉ sử dụng ở phần JSX.
@@ -130,9 +129,9 @@ Trên đây là những thông tin cơ bản về các API của React Context. 
 
 **Chú ý**: React Context API chính thức được hỗ trợ trên phiên bản React 16.3. Vì vậy, bạn cần phải sử dụng phiên bản React >= 16.3. Để đơn giản, bạn có thể nâng cấp React lên phiên bản mới nhất luôn bằng câu lệnh sau:
 
-```
+```bash
 npm install --save react@latest
-    npm install --save react-dom@latest
+npm install --save react-dom@latest
 ```
 
 [Xem Demo](https://vqlrp2xry3.codesandbox.io/) [Xem code](https://codesandbox.io/s/vqlrp2xry3)
@@ -147,7 +146,7 @@ Với mỗi component, mình sẽ sử dụng một cách khác nhau để đọ
 
 ### Khởi tạo Context
 
-```
+```js
 const AppContext = React.createContext();
 ```
 
@@ -155,26 +154,26 @@ const AppContext = React.createContext();
 
 ### Định nghĩa AppProvider
 
-```
+```js
 class AppProvider extends React.Component {
-      state = {
-        number: 10,
-        inc: () => {
-          this.setState({ number: this.state.number + 1 });
-        },
-        dec: () => {
-          this.setState({ number: this.state.number - 1 });
-        }
-      };
-
-      render() {
-        return (
-          <AppContext.Provider value={this.state}>
-            {this.props.children}
-          </AppContext.Provider>
-        );
-      }
+  state = {
+    number: 10,
+    inc: () => {
+      this.setState({ number: this.state.number + 1 });
+    },
+    dec: () => {
+      this.setState({ number: this.state.number - 1 });
     }
+  };
+
+  render() {
+    return (
+      <AppContext.Provider value={this.state}>
+        {this.props.children}
+      </AppContext.Provider>
+    );
+  }
+}
 ```
 
 **AppProvider** chính là một [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) dùng để đóng gọi lại _AppContext.Provider_. Mà khi mình luôn sử dụng **Provider**, thì có nghĩa là \_AppProvider \_chính là Component lớn nhất chứa tất cả các Component còn lại. Do đó, mình sẽ định nghĩa state của App tại đây.
@@ -189,55 +188,56 @@ Cuối cùng, bên trong hàm _render(),_ mình truyền giá trị _this.state_
 
 ### Sử dụng AppProvider
 
-```
+```js
 const App = () => (
-      <AppProvider>
-        <Red />
-      </AppProvider>
-    );
+  <AppProvider>
+    <Red />
+  </AppProvider>
+);
 
-    const rootElement = document.getElementById("root");
-    ReactDOM.render(<App />, rootElement);
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ```
 
 Sử dụng AppProvider cũng không khác gì so với sử dụng các React Component khác nên mình sẽ để đây mà không giải thích gì thêm.
 
 ### Sử dụng contextType với component Red
 
-```
+```js
 class Red extends React.Component {
-      render() {
-        return (
-          <div className="red">
-            {this.context.number}
-            <Blue />
-          </div>
-        );
-      }
-    }
-    Red.contextType = AppContext;
+  render() {
+    return (
+      <div className="red">
+        {this.context.number}
+        <Blue />
+      </div>
+    );
+  }
+}
+
+Red.contextType = AppContext;
 ```
 
-Ở đây, mình sử dụng **Class.contextType** nên cần khai báo \_Red \_dạng class component. Và cách sử dụng thì khá đơn giản như mình đã đề cập ở trên.
+Ở đây, mình sử dụng **Class.contextType** nên cần khai báo _Red_ dạng class component. Và cách sử dụng thì khá đơn giản như mình đã đề cập ở trên.
 
 Mình xin nhấn mạnh lại, **this.context** tương ứng với giá trị của context tại Provider gần nhất. Đó chính là giá trị **this.state** mà mình truyền vào _AppContext.Provider_ bên trên.
 
 ### Sử dụng consumer tại component Blue
 
-```
+```js
 const Blue = () => (
-      <div className="blue">
-        <AppContext.Consumer>
-          {context => (
-            <>
-              <button onClick={context.inc}>INC</button>
-              <button onClick={context.dec}>DEC</button>
-            </>
-          )}
-        </AppContext.Consumer>
-        <Green />
-      </div>
-    );
+  <div className="blue">
+    <AppContext.Consumer>
+      {context => (
+        <>
+          <button onClick={context.inc}>INC</button>
+          <button onClick={context.dec}>DEC</button>
+        </>
+      )}
+    </AppContext.Consumer>
+    <Green />
+  </div>
+);
 ```
 
 Ở component Blue, mình chỉ cần khai báo dạng Functional Component vì mình không sử dụng state cũng như các phương thức lifecycle tại đây.
@@ -248,18 +248,18 @@ Bên trong hàm render trên, mình sử dụng thẻ rỗng <>. Tuy nhiên, b�
 
 ### Sử dụng consumer tại component Green
 
-```
+```js
 class Green extends React.Component {
-      render() {
-        return (
-          <div className="green">
-            <AppContext.Consumer>
-              {context => context.number}
-            </AppContext.Consumer>
-          </div>
-        );
-      }
-    }
+  render() {
+    return (
+      <div className="green">
+        <AppContext.Consumer>
+          {context => context.number}
+        </AppContext.Consumer>
+      </div>
+    );
+  }
+}
 ```
 
 Với mục đích demo, mình khai báo component Green dạng Class Component. Chứ thực tế là mình có thể khai báo nó dạng Functional Component.
@@ -286,5 +286,5 @@ Tham khảo:
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+- Portfoflio : [Lam Pham](http://about.phamvanlam.com/)

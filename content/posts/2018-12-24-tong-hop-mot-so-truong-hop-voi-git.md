@@ -1,8 +1,8 @@
 ---
 date: "2018-12-24T12:30:53Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/tong-hop-mot-so-truong-hop-voi-git-completejavascript.com_.png"
+keywords: "trường hợp với git"
 slug: tong-hop-mot-so-truong-hop-voi-git
 title: "Tổng hợp một số trường hợp với Git"
 categories:
@@ -26,19 +26,20 @@ Khi làm việc với Git, có thể bạn sẽ gặp trường hợp bạn đ�
 
 Nếu bạn đang ở trong nhánh muốn đổi tên:
 
-    <code class="bash language-bash">$ git branch -m new-name
-
+```bash
+$ git branch -m new-name
 ```
 
 Nếu bạn đang ở một nhánh khác:
 
-    <code class="bash language-bash">$ git branch -m old-name new-name
+```bash
+$ git branch -m old-name new-name
 ```
 
 **Bước 2**: Xoá nhánh với tên cũ ở remote và push nhánh với tên mới lên remote
 
-    <code class="bash language-bash">$ git push origin :old-name new-name
-
+```bash
+$ git push origin :old-name new-name
 ```
 
 Đến đây là bạn đã hoàn thành việc đổi tên nhánh ở Local và Remote trong Git.
@@ -53,29 +54,32 @@ Thông thường khi gặp một project hay trên Github, bạn thường **for
 
 **Bước 1:** Thêm Original Repo vào remote
 
-    <code class="bash language-bash">$ git remote add upstream https://github.com/[Original Owner Username]/[Original Repository].git
+```bash
+$ git remote add upstream https://github.com/[Original Owner Username]/[Original Repository].git
 ```
 
 **Bước 2:** Lấy về tất cả sự thay đổi từ Original Repo
 
-    <code class="bash language-bash">$ git fetch upstream
-
+```bash
+$ git fetch upstream
 ```
 
 **Bước 3:** Checkout nhánh bạn muốn đồng bộ, giả sử là **master**
 
-    <code class="bash language-bash">$ git checkout master
+```bash
+$ git checkout master
 ```
 
 **Bước 4:** Merge sự thay đổi từ upstream/master vào nhánh master ở local
 
-    <code class="bash language-bash">$ git merge upstream/master
-
+```bash
+$ git merge upstream/master
 ```
 
 **Bước 5:** Push nhánh hiện tại (đã được đồng bộ với Original Repo) lên Remote
 
-    <code class="bash language-bash">$ git push origin master
+```bash
+$ git push origin master
 ```
 
 Đến đây là bạn đã đồng bộ Git Fork với Original Repo ở nhánh master. Để đồng bộ các nhánh khác, bạn chỉ cần thay "master" trong các câu lệnh trên với tên nhánh cần đổi.
@@ -94,19 +98,20 @@ Bạn sẽ copy-paste phần code thay đổi ra một nơi khác. Sau đó, b�
 
 **Bước 1:** Lưu lại toàn bộ sự thay đổi
 
-    <code class="bash language-bash">$ git stash
-
+```bash
+$ git stash
 ```
 
 **Bước 2:** Di chuyển sang nhánh mà bạn mong muốn, giả sử là nhánh "dev"
 
-    <code class="bash language-bash">$ git checkout dev
+```bash
+$ git checkout dev
 ```
 
 **Bước 3:** Cập nhật sự thay đổi vào nhánh "dev"
 
-    <code class="bash language-bash">$ git stash pop
-
+```bash
+$ git stash pop
 ```
 
 Xong bước này nghĩa là bạn đã thành công trong việc di chuyển sự thay đổi ở một nhánh sang nhánh khác trong Git. Bây giờ, bạn chỉ cần commit rồi push chúng lên Remote thôi hoặc làm gì đó khác mà bạn thích.
@@ -121,13 +126,14 @@ Giả sử bạn đang code thử nghiệm một tính năng mới. Sau một lo
 
 **Bước 1:** Lấy toàn bộ code mới nhất trên remote
 
-    <code class="bash language-bash">$ git fetch --all
+```bash
+$ git fetch --all
 ```
 
 **Bước 2:** Reset lại Repo ở Local với nhánh mong muốn
 
-    <code class="bash language-bash">$ git reset --hard origin/master
-
+```bash
+$ git reset --hard origin/master
 ```
 
 Câu lệnh trên reset lại nhánh "master". Nếu bạn muốn reset lại nhánh khác thì có thể thay "master" bằng tên nhánh mong muốn.
@@ -146,50 +152,39 @@ Vậy tóm lại, vấn đề đặt ra là: làm sao thay thế hoàn toàn cod
 
 **Bước 1:** Đổi tên nhánh _master_ thành *temp-master* và đổi tên nhánh _deploy-zeit_ thành _master_.
 
-```
-
+```bash
 # Đổi tên nhánh master thành temp-master
+$ git branch -m master temp-master
 
-    $ git branch -m master temp-master
-
-    # Đổi tên nhánh deploy-zeit thành master
-    $ git branch -m deploy-zeit master
-
+# Đổi tên nhánh deploy-zeit thành master
+$ git branch -m deploy-zeit master
 ```
 
 **Bước 2:** Vì nhánh master hiện tại ở local đang chứa code của nhánh _deploy-zeit_, nên mình sẽ push nhánh master này lên remote.
 
-```
-
+```bash
 # Force push nhánh master lên remote
-
-    $ git push origin master -f
-
+$ git push origin master -f
 ```
 
 **Bước 3:** Tiếp theo, mình đổi lại tên nhánh như ban đầu trước khi thực hiện bước 1
 
-```
-
+```bash
 # Đổi tên nhánh master hiện tại thành deploy-zeit
+$ git branch -m master deploy-zeit
 
-    $ git branch -m master deploy-zeit
-
-    # Đổi tên nhánh temp-master từ bước 1 thành master
-    $ git branch -m temp-master master
-
+# Đổi tên nhánh temp-master từ bước 1 thành master
+$ git branch -m temp-master master
 ```
 
 **Bước 4:** Cập nhật local master với remote master
 
-```
-
+```bash
 # Fetch tất cả thông tin ở remote về local repo và không merge
+$ git fetch --all
 
-    $ git fetch --all
-
-    # Thay thế hoàn toàn local master với remote master
-    $ git reset --hard origin/master
+# Thay thế hoàn toàn local master với remote master
+$ git reset --hard origin/master
 
 ```
 
@@ -207,42 +202,33 @@ Giải pháp cho vấn đề này là: bạn sẽ thực hiện [**cherry-pick**
 
 **Bước 1:** Sử dụng **git log** để biết và lấy ra **hash-commit** ứng với commit mà bạn muốn thực hiện _cherry-pick_.
 
-```
-
+```bash
 # Checkout nhánh B
+$ git checkout B
 
-    $ git checkout B
-
-    # Hiển thị log
-    $ git log
-
+# Hiển thị log
+$ git log
 ```
 
 Câu lệnh trên sẽ liệt kê ra các commit mà bạn đã thực hiện. Bạn tìm trong đó và chọn ra _hash-commit_ mong muốn. Ví dụ log:
 
 ```
-
 commit 6d0b53753a795298192cbb8673b5e0d8fbaa5695
 ...
-
-    commit 4feaed3c967110777b1c706e91091cf90d78189f
-    ...
-
+commit 4feaed3c967110777b1c706e91091cf90d78189f
+...
 ```
 
 Giả sử mình muốn thực hiện _cherry-pick_ với commit có _hash-commit_ là: **4feaed3c967110777b1c706e91091cf90d78189f**.
 
 **Bước 2:** Apply commit trên vào nhánh A
 
-```
-
+```bash
 # Checkout nhánh A
+$ git checkout A
 
-    $ git checkout A
-
-    # Thực hiện cherry-pick
-    $ git cherry-pick 4feaed3c967110777b1c706e91091cf90d78189f
-
+# Thực hiện cherry-pick
+$ git cherry-pick 4feaed3c967110777b1c706e91091cf90d78189f
 ```
 
 Đến đây là bạn đã thực hiện xong việc apply một commit từ nhánh này sang nhánh khác.
@@ -260,13 +246,9 @@ Xin chào và hẹn gặp lại, thân ái!
 **Tham khảo:**
 
 - [Rename a local and remote branch in git](https://multiplestates.wordpress.com/2015/02/05/rename-a-local-and-remote-branch-in-git/)
-
 - [Sync your Git Fork to the Original Repo](https://digitaldrummerj.me/git-syncing-fork-with-original-repo/)
-
 - [Moving unstaged changes between branches in git using the stash command](https://maurobringolf.ch/2017/02/moving-unstaged-changes-between-branches-in-git-using-the-stash-command/)
-
 - [How to completely replace git branch code with another branch’s code](https://www.nickang.com/replace-git-branch-code/)
-
 - [Sử dụng git cherry-pick](https://kipalog.com/posts/Su-dung-git-cherry-pick)
 
 ---
@@ -276,4 +258,3 @@ Xin chào và hẹn gặp lại, thân ái!
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)
-```

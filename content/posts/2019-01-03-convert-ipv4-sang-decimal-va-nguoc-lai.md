@@ -1,8 +1,8 @@
 ---
 date: "2019-01-03T22:30:26Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/convert-ipv4-sang-decimal-va-nguoc-lai-completejavascript.com_.png"
+keywords: "convert IPv4 sang Decimal"
 slug: convert-ipv4-sang-decimal-va-nguoc-lai
 title: "Convert IPv4 sang Decimal và ngược lại"
 categories:
@@ -27,13 +27,9 @@ Thôi không lan man nữa, mời bạn theo dõi bài viết!
 Cách biểu diễn trên là cơ bản nhất. Ngoài ra, còn một số cách biểu diễn địa chỉ IPv4 khác như sau:
 
 - Octet ở hệ cơ số 16: **0xC0.0x00.0x02.0xEB**
-
 - Octet ở hệ cơ số 8: **0300.0000.0002.0353**
-
 - Hệ cơ số 16: **0xC00002EB**
-
 - Hệ cơ số 10: **3221226219**
-
 - Hệ cơ số 8: **030000001353**
 
 Trong phạm vi bài viết này, mình sẽ chia sẻ với bạn cách để convert IPv4 sang Decimal - tức địa chỉ **192.0.2.235** sang địa chỉ **3221226219** và ngược lại.
@@ -44,13 +40,13 @@ Trong phạm vi bài viết này, mình sẽ chia sẻ với bạn cách để c
 
 Như mình đã nói ở trên, mỗi octet sẽ gồm 8 bit - tương ứng với một byte. Vì vậy, mình sẽ chuyển đổi địa chỉ **192.0.2.235** như sau:
 
-[caption id="attachment_3273" align="aligncenter" width="590"]![Ý tưởng convert IPv4 sang Decimal](/wp-content/uploads/2019/01/nguyen-ly-1.png) Ý tưởng convert IPv4 sang Decimal[/caption]
+![Ý tưởng convert IPv4 sang Decimal](../images/nguyen-ly-1.png)
 
 Theo như hình trên, số 235 ở vị trí byte 0, số 2 ở vị trí byte 1, số 0 ở vị trí byte 2 và số 192 ở vị trí byte 3. Hay nói cách khác, số 235 vẫn giữ nguyên vị trí, số 2 dịch trái 1 byte, số 0 dịch trái 2 byte và số 192 dịch trái 3 byte. Khi đó, mình có thể mô phỏng lại bằng hình vẽ sau:
 
-[caption id="attachment_3274" align="aligncenter" width="470"]![Nguyên lý dịch bit](/wp-content/uploads/2019/01/nguyen-ly-dich-bit-1.png) Mô phỏng nguyên lý dịch bit[/caption]
+![Nguyên lý dịch bit](../images/nguyen-ly-dich-bit-1.png)
 
-Như vậy, ý tưởng đầu tiên để convert IPv4 sang Decimal đó là: **thực hiện phép dịch bit sang trái (<<) với các số 235, 2, 0, 192 lần lượt là 0, 8, 16, 24 bit. **Sau đó, sử dụng phép bitwise OR (|) để hợp chúng lại với nhau là thu được kết quả.
+Như vậy, ý tưởng đầu tiên để convert IPv4 sang Decimal đó là: **thực hiện phép dịch bit sang trái (<<) với các số 235, 2, 0, 192 lần lượt là 0, 8, 16, 24 bit.** Sau đó, sử dụng phép bitwise OR (|) để hợp chúng lại với nhau là thu được kết quả.
 
 ### Triển khai convert IPv4 sang Decimal theo lý thuyết
 
@@ -73,7 +69,7 @@ Tuy nhiên, như bạn có thể thấy kết quả phép dịch trái 24 bit ra
 
 Đơn giản, vì khi thực hiện phép dịch trái (<<), JavaScript sẽ hiểu kết quả thu được là dạng số nguyên 32 bit có dấu. Mà với số nguyên **32 bit có dấu**, [phạm vi biểu diễn](https://vi.wikipedia.org/wiki/32-bit) sẽ là: -2147483648 đến 2147483647. Với số nguyên **32 bit không dấu**, phạm vi biểu diễn là: 0 đến 4294967295.
 
-Trong khi, nếu đó là số nguyên không dấu thì ta có số **192 << 24** tương đương với **192 \* (2 ^ 24)** (tức 192 nhân với 2 mũ 24 - đây là kiến thức dịch bit căn bản) và bằng **3221225472 **- vượt quá phạm vi biểu diễn số nguyên có dấu. Do đó, mình không thể sử dụng cách này được. Phải nghĩ cách khác thôi.
+Trong khi, nếu đó là số nguyên không dấu thì ta có số **192 << 24** tương đương với **192 \* (2 ^ 24)** (tức 192 nhân với 2 mũ 24 - đây là kiến thức dịch bit căn bản) và bằng **3221225472** - vượt quá phạm vi biểu diễn số nguyên có dấu. Do đó, mình không thể sử dụng cách này được. Phải nghĩ cách khác thôi.
 
 ### Triển khai convert IPv4 sang Decimal cơ bản
 
@@ -81,27 +77,25 @@ Bạn để ý, mỗi octet là một byte nên có giá trị trong khoảng t�
 
 Khi đó, địa chỉ **192.0.2.235** có thể được viết là **(192)(0)(2)(235)** - mình cho mỗi số vào trong cặp dấu ngoặc đơn để hiểu đó là một chữ số trong hệ cơ số 256. Suy ra, giá trị trong hệ thập phân của nó là:
 
-    ```html
-
+```
 192 x (256)^3 + 0 x (256)^2 + 2 x (256)^1 + 235 x (256)^0
 = 3221225472 + 0 + 512 + 235
 = 3221226219
-
-````
+```
 Kết quả thu được đúng như mong đợi. Vậy code để convert IPv4 sang Decimal bây giờ là:
 
 ```js
 const ip = "192.0.2.235";
-    const octets = ip.split('.');
+const octets = ip.split('.');
 
-    const byte3 = octets[0] * Math.pow(2, 24);
-    const byte2 = octets[1] * Math.pow(2, 16);
-    const byte1 = octets[2] * Math.pow(2, 8);
-    const byte0 = octets[3] * Math.pow(2, 0);
+const byte3 = octets[0] * Math.pow(2, 24);
+const byte2 = octets[1] * Math.pow(2, 16);
+const byte1 = octets[2] * Math.pow(2, 8);
+const byte0 = octets[3] * Math.pow(2, 0);
 
-    const decimal = byte3 + byte2 + byte1 + byte0;
-    console.log(decimal); // => 3221226219
-````
+const decimal = byte3 + byte2 + byte1 + byte0;
+console.log(decimal); // => 3221226219
+```
 
 ### Triển khai convert IPv4 sang Decimal đầy đủ
 
@@ -159,37 +153,37 @@ Về cơ bản số, **3221226219** (hệ cơ số 10) sẽ tương ứng với
 
 Nói xuông thì hơi khó hiểu, mình sẽ minh họa lại như sau:
 
-3221226219 & 0x**FF**000000 = 0x**C0**0002EB & 0x**FF**000000 = 0x**C0**000000 (lấy byte 3)
-3221226219 & 0x00**FF**0000 = 0xC0**00**02EB & 0x00**FF**0000 = 0x00**00**0000 (lấy byte 2)
-3221226219 & 0x0000**FF**00 = 0xC000**02**EB & 0x0000**FF**00 = 0x0000**02**00 (lấy byte 1)
-3221226219 & 0x000000**FF** = 0xC00002**EB** & 0x000000**FF** = 0x000000**EB** (lấy byte 0)
+```
+3221226219 & 0xFF000000 = 0xC00002EB & 0xFF000000 = 0xC0000000 (lấy byte 3)
+3221226219 & 0x00FF0000 = 0xC00002EB & 0x00FF0000 = 0x00000000 (lấy byte 2)
+3221226219 & 0x0000FF00 = 0xC00002EB & 0x0000FF00 = 0x00000200 (lấy byte 1)
+3221226219 & 0x000000FF = 0xC00002EB & 0x000000FF = 0x000000EB (lấy byte 0)
+```
 
 **Bạn nhớ rằng**: số nào **AND** với 1 thì bằng chính nó, số nào **AND** với 0 thì được 0. Như vậy, giá trị ở những byte cần lấy đã được giữ nguyên, giá trị ở những byte còn lại mình đưa về 0 hết. Rồi tiếp theo, mình thực hiện dịch bit:
 
-    ```html
-
+```
 0xC0000000 >> 24 = 0xC0 = 192
 0x00000000 >> 16 = 0x00 = 0
 0x00000200 >> 8 = 0x02 = 2
 0x000000EB >> 0 = 0xEB = 235
-
-````
+```
 Như vậy là mình đã thu được 4 giá trị octet. Công việc còn lại là vô cùng đơn giản.
 
 ### Triển khai convert Decimal sang IPv4 theo lý thuyết
 
 Tuy nhiên, bên trên mới chỉ là lý thuyết thôi. Với phần dịch bit này, JavaScript sẽ ngầm định các số là số nguyên 32 bit có dấu. Do đó, kết quả trên sẽ trở thành:
 
-```js
+```
 0xC0000000 >> 24 // => -64
-    0x00000000 >> 16 // => 0
-    0x00000200 >> 8  // => 2
-    0x000000EB >> 0  // => 235
-````
+0x00000000 >> 16 // => 0
+0x00000200 >> 8  // => 2
+0x000000EB >> 0  // => 235
+```
 
 May thay, JavaScript có hỗ trợ [toán tử >>>](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#%3E%3E%3E_(Zero-fill_right_shift)>). Thực ra, mình đọc giải thích cũng thấy hơi loằng ngoằng, khó hiểu. Mình chỉ hiểu đơn giản là toán tử này cho phép dịch bit theo kiểu số nguyên không dấu. Khi đó, đoạn code trên trở thành:
 
-```js
+```
 0xc0000000 >>> 24; // => 192
 0x00000000 >>> 16; // => 0
 0x00000200 >>> 8; // => 2

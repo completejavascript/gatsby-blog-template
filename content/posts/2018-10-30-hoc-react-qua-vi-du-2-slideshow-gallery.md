@@ -493,4 +493,4 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

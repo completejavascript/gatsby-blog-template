@@ -96,4 +96,4 @@ Xin chào và hẹn gặp lại ở [bài viết tiếp theo](/js-pattern-2-modu
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -1,8 +1,8 @@
 ---
 date: "2018-12-26T06:00:07Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/remove-item-in-array-javascript-completejavascript.com_.png"
+keywords: "Remove item in Array JavaScript"
 slug: remove-item-in-array-javascript
 title: "Remove item in Array JavaScript"
 categories:
@@ -16,7 +16,6 @@ tags:
 Về cơ bản, các cách mà mình trình bày sau đây sẽ được chia ra làm 2 loại:
 
 - **Mutable ways**: làm thay đổi mảng gốc
-
 - **Immutable ways**: không làm thay đổi mảng gốc (phù hợp với **Functional Programming**)
 
 Về chi tiết, mời bạn theo dõi bài viết!
@@ -59,30 +58,26 @@ Thực tế, phương thức [splice()](https://developer.mozilla.org/en-US/docs
 
 Cú pháp sử dụng **splice()** để loại bỏ phần tử của Array Javascript là:
 
-    ```html
-
+```js
 array.splice(start, deleteCount)
-
-````
+```
 
 Trong đó:
 
 - **start**: đơn giản là vị trí phần tử bắt đầu bị loại bỏ khỏi mảng.
-
 - **deleteCount**: là số lượng phần tử bị loại bỏ.
-
 - **Giá trị trả về** chính là mảng các phần tử bị loại bỏ.
 
 Ví dụ:
 
 ```js
 const arr = ['a', 'b', 'c', 'd'];
-    console.log(arr);  // => (4) ["a", "b", "c", "d"]
+console.log(arr);  // => (4) ["a", "b", "c", "d"]
 
-    const removed = arr.splice(1, 2);
-    console.log(arr);  // => (2) ["a", "d"]
-    console.log(removed); // => (2) ["b", "c"]
-````
+const removed = arr.splice(1, 2);
+console.log(arr);  // => (2) ["a", "d"]
+console.log(removed); // => (2) ["b", "c"]
+```
 
 Trong đoạn code trên, câu lệnh **arr.splice(1, 2)** loại bỏ phần tử khỏi mảng bắt đầu từ vị trí có chỉ số là 1 (ứng với 'b') và số phần tử bị loại bỏ là 2. Do đó, 2 phần tử bị loại bỏ sẽ là 'b' và 'c'.
 
@@ -184,7 +179,6 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 **Tham khảo:**
 
 - [9 Ways to Remove Elements From A JavaScript Array](https://love2dev.com/blog/javascript-remove-from-array/)
-
 - [How to remove an item from an Array in JavaScript](https://flaviocopes.com/how-to-remove-item-from-array/)
 
 ---

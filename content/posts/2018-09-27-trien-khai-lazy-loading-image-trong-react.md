@@ -308,4 +308,4 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-trang
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

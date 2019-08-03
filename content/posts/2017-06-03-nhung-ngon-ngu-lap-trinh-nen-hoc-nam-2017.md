@@ -85,7 +85,9 @@ Nếu như bạn muốn lập trình web thì [JavaScript](/gioi-thieu-tong-quan
 
 ### Ngôn ngữ lập trình nên học dành cho những lập trình viên có kinh nghiệm
 
-[caption id="attachment_313" align="alignnone" width="760"]![JavaScript Everywhere - top ngôn ngữ lập trình nên học 2017 - completejavascript.com](/wp-content/uploads/2017/06/javascript-everywhere-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg) _Ảnh tham khảo tại https://github.com/vigetlabs/javascript-everywhere_[/caption]
+![JavaScript Everywhere - top ngôn ngữ lập trình nên học 2017 - completejavascript.com](../images/javascript-everywhere-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg) 
+
+_Ảnh tham khảo tại https://github.com/vigetlabs/javascript-everywhere_
 
 #### JavaScript
 
@@ -123,7 +125,9 @@ _Rust is really good. It’s this low level systems language. It’s more elegan
 
 Tức là, Rust là một ngôn ngữ lập trình mức thấp, có thể thay thế cho C/C++. Và chắc chắn Rust sẽ trở nên rất phổ biến (cái này phải cần thời gian để kiểm chứng - vì hiện tại có rất nhiều hệ thống đang chạy bằng C/C++).
 
-[caption id="attachment_312" align="alignnone" width="600"]![taylor swift - top những ngôn ngữ lập trình nên học năm 2017 - completejavascript.com](/wp-content/uploads/2017/06/taylor-swift-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg) _Ảnh tham khảo tại oportajgazetesi.com_[/caption]
+![taylor swift - top những ngôn ngữ lập trình nên học năm 2017 - completejavascript.com](../images/taylor-swift-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg) 
+
+_Ảnh tham khảo tại oportajgazetesi.com_
 
 #### Swift
 
