@@ -47,7 +47,6 @@ Một số đặc điểm của function JavaScript là:
 
 - Kiểu của tham số hay giá trị trả về trong hàm số là không được quy định. Do đó, bạn thường phải kiểm tra kiểu của giá trị truyền vào hàm. Nếu không, bạn sẽ rất dễ bị sai.
 
-
 ```
 var greet = function(name){
       console.log("Hello " + name + '!');
@@ -114,6 +113,7 @@ function displayMax(a, b, c, d){
 
     var t = max(10, 11); // => Uncaught ReferenceError: max is not defined
 ```
+
 Ở ví dụ trên, hàm _displayMax_ chứa hàm _max_. Do đó, hàm _max_ có thể được gọi bên trong hàm _displayMax_. Nhưng khi mình gọi hàm _max_ ở phạm vi global thì nó báo lỗi hàm _max_ không được định nghĩa.
 
 ## Functions và values
@@ -125,7 +125,6 @@ Nghĩa là bạn có thể gán giá trị khác cho biến số đó bằng cá
 - Định nghĩa lại hàm số khác (trường hợp này khiến mình liên tưởng đến con trỏ hàm trong C/C++)
 
 - Gán cho biến số đó một giá trị khác như: number, string, boolean...
-
 
 ```
 var minValue = function(a, b){
@@ -170,6 +169,7 @@ function sum(a, b){
     console.log(z);
     // => underfined
 ```
+
 Trường hợp, function JavaScript không có giá trị trả về thì mặc định giá trị trả về là _underfined _(hàm hello() ở ví dụ trên).
 
 ## Vị trí khai báo function JavaScript
@@ -218,6 +218,7 @@ top
        console.log
     top
 ```
+
 Lúc này, máy tính sẽ đưa những lời gọi hàm vào _stack_. Và thực hiện theo đúng nguyên lý của nó: _vào sau ra trước_. Cho đến khi stack rỗng thì chương trình kết thúc.
 
 Việc lưu lời gọi hàm vào stack sẽ tốn không gian bộ nhớ (memory). Do đó, trong trường hợp bạn thực hiện quá nhiều lời gọi hàm (đệ quy vô hạn) thì bạn sẽ bị lỗi *maximum call stack size exceed* hay *stack overflow*. Tức là tràn stack. Do đó, khi viết đệ quy bạn cần phải chú ý đến điều kiện dừng.
@@ -232,6 +233,7 @@ function chicken() {
     console.log(chicken() + " came first.");
     // → Uncaught RangeError: Maximum call stack size exceeded
 ```
+
 ## Truyền tham số vào function JavaScript
 
 Trong C/C++, chúng ta phải định nghĩa rõ ràng kiểu tham số, số lượng tham số của hàm. Và khi gọi hàm thì phải gọi đúng như vậy. Nếu muốn đa dạng các kiểu giá trị thì bạn có thể dùng _template_. Nếu không muốn truyền một tham số nào vào hàm thì bạn có thể dùng giá trị mặc định (_default_). Điều này giúp cho C/C++ trở nên rất chặt chẽ.
@@ -259,6 +261,7 @@ function power(base, exponent) {
     console.log(power(3, 2, 1));
     // => 9
 ```
+
 Trường hợp bạn không truyền giá trị cho tham số _exponent_ thì mặc định _exponent \_bằng_ underfined\_. Khi đó, mình gán exponent bằng 2. Ngược lại, mình sẽ tính như bình thường.
 
 ## Closure
@@ -282,6 +285,7 @@ function wrapValue(n) {
     console.log(wrap2());
     // => 2
 ```
+
 Trong hàm _wrapValue_, mình có khởi tạo một biến số là _localVariable_. Khi mình gọi _wrapValue(1)_ thì kết quả trả về là 1. Tức là _localVariable_ = 1.  Và khi mình gọi _wrapValue(2)_ thì kết quả trả về là 2. Chứng tỏ, *localVariable* = 2.
 
 **Như vậy, sau khi hàm số được gọi thì biến số cục bộ sẽ ở đâu?**
@@ -301,6 +305,7 @@ function multiplier(factor) {
     console.log(twice(5));
     // => 10
 ```
+
 Đây là một ví dụ về hàm _closure_. Bạn có thể thấy hàm _multiplier_ không hề chứa một biến cục bộ nào. Như vậy, ta có thể hiểu _đóng kín_ tức là nó bao gói lấy biến cục bộ trong hàm.
 
 Khái niệm _closure_ là khá mới mẻ và trông cũng rất thú vị. Vì vậy, mình quyết định sẽ dành riêng một bài viết về hàm _closure_. Qua đó, bạn có thể hiểu rõ hơn về hàm này và những ứng dụng của nó.
@@ -322,12 +327,14 @@ function power(base, exponent) {
     console.log(power(2, 3));
     // => 8
 ```
+
 Ví dụ trên miêu tả cách tính luỹ thừa sử dụng đệ quy. Và bạn có thể thấy rằng cách biểu diễn này rất gần với định nghĩa mà chúng ta đã học trong toán học.
 
 ```
 a^b = 1, nếu b = 0
     a^b = a * a^(b-1), nếu b > 0
 ```
+
 Khi sử dụng _recursion_ trong một số bài toán, bạn chỉ cần chuyển từ công thức toán học sang ngôn ngữ lập trình một cách đơn giản. Do đó, sử dụng đệ quy thường ngắn gọn và dễ dàng hơn so với sử dụng vòng lặp.
 
 Nhưng trong JavaScript, việc sử dụng đệ quy sẽ chậm hơn khoảng 10 lần so với sử dụng vòng lặp. Do đó, bạn nên cân nhắc trước khi quyết định sử dụng phương án này.
@@ -372,9 +379,6 @@ _None-pure_ function, ngược lại với _pure_ function, là hàm phụ thu�
     console.log(f1(2, 10)); // => 20
 ```
 
-
-
-
 ```
 // non-pure function
     var factor = 10;
@@ -385,6 +389,7 @@ _None-pure_ function, ngược lại với _pure_ function, là hàm phụ thu�
     factor = 11;
     console.log(f2(3)); // => 33
 ```
+
 Trong ví dụ trên, hàm f1 là _pure_ function. Còn hàm f2 là hàm _non-pure_ function (hai lần gọi f2(3), nhưng kết quả một lần là 30 và một lần là 33).
 
 Rõ ràng, hàm _non-pure_ function là khó để tái sử dụng. Nhưng trong rất nhiều trường hợp, mình vẫn phải sử dụng hàm này để đảm bảo hiệu năng chương trình hoặc đơn giản là nó dễ viết hơn.

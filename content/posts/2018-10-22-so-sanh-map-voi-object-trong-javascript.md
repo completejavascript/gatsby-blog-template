@@ -116,6 +116,7 @@ const map = new Map();
     console.log(map.size);
     // => 3
 ```
+
 Đối với Object, bạn phải đếm số lượng các thuộc tính thủ công. Hoặc bạn cũng có thể tính được số lượng này thông qua phương thức [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys).
 
 Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tính của Object. Lúc này, bạn chỉ cần sử dụng thuộc tính _length_ của [Array](/javascript-array-co-ban/) là được.
@@ -133,6 +134,7 @@ const obj = { xyz : 1 };
     console.log(Object.keys(obj).length);
     // => 3
 ```
+
 #### Kiểm tra tính tồn tại của key
 
 Để kiểm tra xem một key có tồn tại trong Map hay chưa, bạn có thể dùng phương thức có sẵn là _has_.
@@ -142,6 +144,7 @@ const map = new Map([["a", 1], ["b", 2]]);
     console.log(map.has("a")); // => true
     console.log(map.has("c")); // => false
 ```
+
 Còn đối với Object, bạn phải sử dụng gián tiếp thông qua phương thức _Object.keys()_ như bên trên.
 
 ```
@@ -150,6 +153,7 @@ const obj = { "a" : 1, "b" : 2 };
     console.log(hasKey(obj, "a")); // => true
     console.log(hasKey(obj, "c")); // => false
 ```
+
 Trong đó, hàm _hasKey_ là do mình tự định nghĩa. Và bạn có thể thấy là `Object.keys(obj)` trả về một mảng chứa các property của _obj_.
 
 Tiếp theo, mình sử dụng phương thức [Array.prototype.indexOf()](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) để kiểm tra xem key đã tồn tại trong mảng hay chưa.
@@ -226,6 +230,6 @@ Xin chào và hẹn gặp lại!
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

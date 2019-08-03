@@ -70,6 +70,7 @@ var arr = [1, 3, 5, 0];
     console.log(arr[-1]);  // => undefined
     console.log(arr[1.4]); // => undefined
 ```
+
 Trong ví dụ này, mảng arr có 4 phần tử, mà chỉ số bắt đầu từ 0 nên các chỉ số hợp lệ là: 0, 1, 2, 3. Khi truy cập vào những chỉ số không hợp lệ như 4, -1, 1.4 thì kết quả đều là undefined.
 
 ## Thuộc tính của JavaScript Array
@@ -93,6 +94,7 @@ var a = ['cat', 'dog', 'fish', 'chicken'];
     console.log(a[a.length - 1]);
     // => chicken
 ```
+
 ## Phương thức của array
 
 JavaScript cung cấp sẵn nhiều phương thức có thể sử dụng với array. Sau đây là một số phương thức phổ biến:
@@ -107,6 +109,7 @@ console.log(Array.isArray([1, 2, 3])); // => true
     console.log(Array.isArray('hehe'));    // => false
     console.log(Array.isArray({a:1, b:2}));// => false
 ```
+
 ### Array.of([e1], [e2], ...)
 
 Trả về một Array mới chứa các phần tử là e1, e2...
@@ -124,6 +127,7 @@ var a = Array.of();
     console.log(c);
     // => [1, 'hai', null, NaN]
 ```
+
 ### array.fill(value, [start], [end])
 
 Thay thế tất cả các phần tử trong mảng với chỉ số >= _start_ và < _end \_bởi giá trị là \_value_. Với _start_ mặc định là 0 và _end_ mặc định là độ dài _length_ của array.
@@ -148,6 +152,7 @@ var a = [2, 4, 5, 10];
     console.log(a);
     // => [5, 5, 2, 2]
 ```
+
 ### array.push([e1], [e2], ...)
 
 Thêm vào cuối của array giá trị *e1, e2,...* và trả về độ dài mới của mảng.
@@ -169,6 +174,7 @@ var a = [];
     console.log(len, a);
     // => 5 [10, 2, 3, [4, 1], 'hihi']
 ```
+
 ### array.pop()
 
 Bỏ đi phần tử cuối của mảng và trả về giá trị của phần tử đó. Nếu ban đầu mảng là rỗng thì kết quả trả về là _undefined_.
@@ -183,6 +189,7 @@ var a = ['one', 'two', 'three'];
     t = e.pop();
     console.log(t); // => undefinded
 ```
+
 ### array.reverse()
 
 Đảo ngược giá trị của mảng (phần tử cuối lên đầu và phần tử đầu tiên xuống cuối). Đồng thời trả về giá trị của mảng mới đã được reverse.
@@ -193,6 +200,7 @@ var b = [9, 10, 11, 12];
     console.log(b); // => [12, 11, 10, 9]
     console.log(r); // => [12, 11, 10, 9]
 ```
+
 ### array.shift()
 
 Bỏ đi phần tử đầu tiên của mảng và trả về giá trị của phần tử đó.
@@ -203,6 +211,7 @@ var s = ['car', 'bike', 'train'];
     console.log(e); // => car
     console.log(s); // => ['bike', 'train']
 ```
+
 ### array.unshift([e1], [e2], ...)
 
 Thêm một hay nhiều phần tử vào đầu tiên của mảng và độ dài mới của mảng.
@@ -213,6 +222,7 @@ var m = [1, 3, 5, 7];
     console.log(m);   // => [9, 8, NaN, 1, 3, 5, 7]
     console.log(len); // => 7
 ```
+
 ### array.splice(start, [deleteCount], [e1], [e2], ...)
 
 Bỏ đi số lượng phần tử là _deleteCount_ tại vị trí _start_ và sau đó thêm vào đó các phần tử _e1, e2_. Kết quả trả về là mảng các phần tử bị bỏ đi.
@@ -245,6 +255,7 @@ var a = [10, 11, 12, 13];
     console.log(a); // => [10, 11]
     console.log(f); // => [15, 17]
 ```
+
 ### array.concat([value1], [value2], ...)
 
 Trả về mảng mới bằng cách lấy mảng hiện tại nối với các phần tử value1, value2,...
@@ -263,6 +274,7 @@ var c = ['a', 'b', 'c'];
     var g = c.concat(['hello', 'hi'], 1);
     console.log(g); // => ['a', 'b', 'c', 'hello', 'hi', 1]
 ```
+
 ### array.includes(searchElement, [fromIndex])
 
 Kiểm tra xem trong mảng hiện tại tính từ _fromIndex_ có chứa phần tử _searchElement_ không. Nếu tồn tại thì trả về true, ngược lại thì trả về false.
@@ -278,6 +290,7 @@ var a = [0, 2, 4, 6, 8];
     console.log(a.includes(6,-2)); // => true
     console.log(a.includes(2,-2)); // => false
 ```
+
 ### array.indexOf(searchElement, [fromIndex])
 
 Trả về vị trí phần tử đầu tiên trong mảng có giá trị _searchElement_, tính từ vị trí _fromIndex_. Nếu không tìm thấy thì trả về -1.
@@ -291,6 +304,7 @@ var a = [0, 2, 3, 4];
     console.log(a.indexOf(3,-2)); // => 2
     console.log(a.indexOf(4, 10));// => -1
 ```
+
 ### array.lastIndexOf(searchElement, [fromIndex])
 
 Tương tự như _array.indexOf_, nhưng kết quả trả về sẽ là phần tử đầu tiên tìm được tính từ vị trí _fromIndex_ trở về đầu (tìm kiếm ngược lại so với _array.indexOf_).
@@ -301,6 +315,7 @@ var x = [1, 2, 3, 4, 3, 2, 1];
     console.log(x.lastIndexOf(3, 3));// => 2
     console.log(x.lastIndexOf(3, 5));// => 2
 ```
+
 ### array.toString()
 
 Convert tất cả các phần tử trong mảng thành string và ghép chúng thành một string mới. Nếu một phần tử là null hoặc undefined thì nó sẽ được convert thành string rỗng.
@@ -311,6 +326,7 @@ var a = [1, 2, [3, 4], 'hello', null, NaN, undefined];
     console.log(b);
     // => 1,2,3,4,hello,,NaN,
 ```
+
 ### array.join([seperator])
 
 Tương tự như _array.toString()_, tuy nhiên bạn có thể tuỳ biến thành phần phân cách. Lúc này các phần tử sẽ phân cách nhau bởi _seperator_. Nếu không được khai báo thì mặc định seperator là dấu phẩy ",".
@@ -325,6 +341,7 @@ var a = [1, 2, [3, 4], 'hello', null, NaN, undefined];
     console.log(c);
     // => 1-2-3,4-hello--NaN-
 ```
+
 ## Thực hành
 
 Cho một mảng các số. Hãy sắp xếp các số trong mảng theo thứ tự tăng dần bằng cách triển khai hàm sắp xếp theo những thuật toán sau:

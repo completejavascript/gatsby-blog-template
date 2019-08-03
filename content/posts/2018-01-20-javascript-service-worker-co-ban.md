@@ -46,6 +46,7 @@ index.html
     main.js
     style.css
 ```
+
 Lúc này, mình sẽ đăng ký Service Worker trong file _**main.js**_:
 
 ```

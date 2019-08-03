@@ -61,6 +61,7 @@ const x = 1;
     x = 2;
     // => TypeError: Assignment to constant variable.
 ```
+
 Trường hợp này, x là kiểu Number, mà bạn lại gán x cho một số khác. Thì thực chất bạn đã thay đổi địa chỉ của biến x rồi. Nên lỗi trên xảy ra là đương nhiên.
 
 **Object**
@@ -87,6 +88,7 @@ const a = { x: 1, y: 2 };
     a = { x: 10, y: 20 };
     // => TypeError: Assignment to constant variable.
 ```
+
 Trường hợp 2 bị lỗi trên vì bạn đã gán biến a cho một object hoàn toàn mới – địa chỉ khác với object ban đầu.
 
 **Array**
@@ -102,6 +104,7 @@ const a = [1, 2];
     console.log(a);
     // => [10, 20, 30]
 ```
+
 Cũng tương tự như object, bạn chỉ thay đổi giá trị các thành phần bên trong array a. Bản thân địa chỉ array a vẫn không thay đổi.
 
 **Trường hợp 2:**
@@ -111,6 +114,7 @@ const a = [1, 2];
     a = [10, 20, 30];
     // => TypeError: Assignment to constant variable.
 ```
+
 Lại tương tự như object, bạn đã gán biến a cho một array hoàn toàn mới nên kết quả là bị lỗi như trên.
 
 **Quay lại với câu hỏi trên**, việc khai báo x là const kiểu mảng rồi thay đổi giá trị **x[-1] = -1** là hoàn toàn đúng so với định nghĩa về const.
@@ -138,6 +142,7 @@ const a = [1, 2, 3];
     console.log(a);
     // => [1, 2, 3, -1: -1, x: 100]
 ```
+
 Như vậy, sau 2 câu lệnh đầu tiên trong câu hỏi, ta thu được:
 
 ```
@@ -147,6 +152,7 @@ const x = [1, 2, 3];
     console.log(x);
     // => [1, 2, 3, -1: -1]
 ```
+
 **3. Phương thức Array.prototype.indexOf()**
 
 Phương thức này đơn giản là tìm ra chỉ số của một giá trị cho trước trong mảng. Nếu không tìm thấy thì kết quả trả về là -1.
@@ -165,6 +171,7 @@ Các bạn thấy câu hỏi này thế nào? Rất hay phải không?
     console.log(i - 1); // => -1
     console.log(i / i); // => 1
 ```
+
 Tìm số i thỏa mãn đồng thời 4 câu lệnh trên?
 
 Xem đáp án
@@ -215,6 +222,7 @@ let a = [1, 2, 3].concat([4, 5, 6]);
     console.log(a);
     // => [1, 2, 3, 4, 5, 6]
 ```
+
 **Sử dụng Array [Spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) với ES6**
 
 ```
@@ -222,6 +230,7 @@ let a = [...[1, 2, 3], ...[4, 5, 6]];
     console.log(a);
     // => [1, 2, 3, 4, 5, 6]
 ```
+
 ## Xoắn não với phỏng vấn JavaScript 1 - Câu 4
 
 ```
@@ -259,6 +268,6 @@ _Nguồn: [Top Tricky JavaScript Interview Questions and Answers](https://www.yo
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

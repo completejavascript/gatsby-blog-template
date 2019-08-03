@@ -35,6 +35,7 @@ let name = 'Lam Pham';
     console.log(greeting);
     // => I'm Lam Pham
 ```
+
 Ở ví dụ này, _name_ biểu diễn string thông thường; _greeting_ biểu diễn template string.
 
 Đến đây có lẽ bạn đã mường tượng ra cách sử dụng của Template String rồi và đang tự hỏi: _vậy thì nó có ưu điểm gì hơn so với việc sử dụng string thông thường không?_
@@ -56,6 +57,7 @@ let intro = "Hello everyone, I'm";
     console.log(full1);
     // => Hello everyone, I'm Lam Pham.
 ```
+
 **Ví dụ sử dụng toán tử +:**
 
 ```
@@ -67,6 +69,7 @@ let intro = "Hello everyone, I'm";
     console.log(full2);
     // => Hello everyone, I'm Lam Pham.
 ```
+
 Cả hai cách trên đều ra được kết quả như mong muốn. Tuy nhiên, cách viết lại không trực quan và đôi khi còn khó theo dõi. Trong khi đó, nếu sử dụng ES6 Template String thì bạn sẽ thấy cách viết **gọn gàng**, **dễ nhìn** và **đẹp hơn** **nhiều**.
 
 ```
@@ -78,6 +81,7 @@ let intro = "Hello everyone, I'm";
     console.log(full3);
     // => Hello everyone, I'm Lam Pham.
 ```
+
 _Nếu bạn đồng ý với nhận xét của mình thì có thể để lại bình luận ở phía dưới nhé, mình sẽ rất vui **lòng** !!!_
 
 ### Sử dụng đồng thời ngoặc đơn và ngoặc kép
@@ -91,6 +95,7 @@ let str = "I'm a \"JavaScript Lover\".";
     console.log(str);
     // => I'm a "JavaScript Lover".
 ```
+
 Nếu muốn hiển thị ngoặc đơn thì bạn có thể sử dụng ngoặc kép để biểu diễn string:
 
 ```
@@ -98,6 +103,7 @@ let str = "I'm Lam Pham.";
     console.log(str);
     // => I'm Lam Pham.
 ```
+
 Nếu muốn hiển thị ngoặc kép thì bạn có thể sử dụng ngoặc đơn để biểu diễn string:
 
 ```
@@ -105,6 +111,7 @@ let str = 'Call me "JavaScript Lover"';
     console.log(str);
     // => Call me "JavaScript Lover"
 ```
+
 **Rõ ràng**, nếu so sánh với những ngôn ngữ khác thì việc JavaScript hỗ trợ sử dụng ngoặc đơn hoặc ngoặc kép để biểu diễn string đã tiện lợi hơn rất nhiều rồi.
 
 **Hơn nữa**, khi sử dụng ES6 Template String, bạn thậm chí chẳng cần phải quan tâm đến vấn đề này nữa, vì bạn đã có cặp dấu **backtick** rồi.
@@ -114,6 +121,7 @@ let str = `I'm a "JavaScript Lover".`;
     console.log(str);
     // => I'm a "JavaScript Lover".
 ```
+
 Bạn thấy đấy, bạn vừa có thể hiển thị dấu ngoặc đơn và dấu ngoặc kép mà không cần sử dụng đến kí tự \.
 
 ### Viết string trên nhiều dòng
@@ -163,6 +171,7 @@ let x = 1;
     console.log('Sum of x and y is: ' + sum(x, y));
     // => Sum of x and y is: 3
 ```
+
 Khi sử dụng ES6 Template String:
 
 ```
@@ -176,6 +185,7 @@ let x = 1;
     console.log(`Sum of x and y is: ${sum(x, y)}`);
     // => Sum of x and y is: 3
 ```
+
 Trên đây là một số những tính năng mà mình thấy rất hữu ích của ES6 Template String. Ngoài ra, Template String còn hỗ trợ [Tagged Template Literals](https://wesbos.com/tagged-template-literals/). Bạn có thể đọc tham khảo và chia sẻ lại với mọi người - vì thực lòng là mình chưa sử dụng tính năng này bao giờ, nên không dám chém bừa.
 
 _**Vậy, với những ưu điểm như thế thì Template String có thể áp dụng được vào đâu nhỉ?**_
@@ -373,6 +383,6 @@ Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/6-c
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

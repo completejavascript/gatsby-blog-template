@@ -375,6 +375,6 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -49,7 +49,7 @@ Nghĩa là dù bạn có tạo ra bao nhiêu Symbol với cùng description thì
 let myId1 = Symbol("id");
 let myId2 = Symbol("id");
 
-console.log(myId1 == myId2);  // => false
+console.log(myId1 == myId2); // => false
 console.log(myId1 === myId2); // => false
 ```
 
@@ -60,7 +60,7 @@ Hầu hết các kiểu dữ liệu trong JavaScript đều hỗ trợ tự đ�
 ```js
 let a = true;
 let b = [1, 2];
-let c = {x: 1, y: 2};
+let c = { x: 1, y: 2 };
 let d = Symbol();
 
 alert(a); // => true
@@ -82,15 +82,15 @@ Như mình đã nói ở trên, Symbol là unique dù cho bạn có tạo ra nhi
 let id1 = Symbol("id");
 
 /*
-* Tìm trong Global một Symbol với key là "id".
-* Nếu Symbol chưa tồn tại thì tạo mới một Symbol
-*/
+ * Tìm trong Global một Symbol với key là "id".
+ * Nếu Symbol chưa tồn tại thì tạo mới một Symbol
+ */
 let id2 = Symbol.for("id");
 
 /*
-* Tiếp tục tìm trong Global một Symbol với key là "id".
-* Lần này thì Symbol đã tồn tại rồi, nên sẽ trả về Symbol trên.
-*/
+ * Tiếp tục tìm trong Global một Symbol với key là "id".
+ * Lần này thì Symbol đã tồn tại rồi, nên sẽ trả về Symbol trên.
+ */
 let id3 = Symbol.for("id");
 
 // Kết quả
@@ -125,7 +125,7 @@ console.log("key2: ", key2); // => name
 const id = Symbol("id");
 const obj = {
   [id]: "abc123"
-}
+};
 
 console.log(obj);
 // => {Symbol(id): "abc123"}
@@ -139,18 +139,18 @@ const obj = {
   [id]: "abc123",
   x: 1,
   y: 2
-}
+};
 
 console.log(obj);
 // => {x: 1, y: 2, Symbol(id): "abc123"}
 
-for(let key in obj) {
+for (let key in obj) {
   console.log(key);
 }
 /*
-* x
-* y
-*/
+ * x
+ * y
+ */
 ```
 
 Để duyệt các thuộc tính với key là Symbol, bạn có thể sử dụng phương thức [Object.getOwnPropertySymbols()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols). Phương thức này trả về mảng của tất cả các thuộc tính có key là Symbol, ví dụ:
@@ -163,7 +163,7 @@ const obj = {
   [id]: "abc123",
   [name]: "obj",
   y: 2
-}
+};
 
 console.log(obj);
 // => {y: 2, Symbol(id): "abc123", Symbol(name): "obj"}
@@ -187,7 +187,7 @@ let module = {
   printId: function() {
     console.log("id in lib:", this.id);
   }
-}
+};
 
 export default module;
 ```
@@ -197,7 +197,7 @@ Khi một người khác sử dụng module của mình, do không biết nên n
 **main.js:**
 
 ```js
-import module from './lib.js';
+import module from "./lib.js";
 
 module.id = "123";
 module.printId();
@@ -221,7 +221,7 @@ let module = {
   printId: function() {
     console.log("id in lib:", this[id]);
   }
-}
+};
 
 export default module;
 ```
@@ -229,7 +229,7 @@ export default module;
 **main.js:**
 
 ```js
-import module from './lib.js';
+import module from "./lib.js";
 
 let id = Symbol("id");
 module[id] = "123";

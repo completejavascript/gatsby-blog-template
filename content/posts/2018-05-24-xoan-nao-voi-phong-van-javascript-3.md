@@ -74,6 +74,7 @@ Nghĩa là nó compare phần tử bằng dấu ===. Mà trong JavaScript, bạn
 console.log({x : 1} === {x : 1});
     // => false
 ```
+
 Về mặt trực quan, bạn sẽ thấy 2 object trên giống nhau nên chúng phải bằng nhau. Không phải, chúng là 2 object hoàn toàn khác nhau.
 
 _Vậy, nếu tôi vẫn muốn tìm vị trí của object có dạng {x : 1} thì sao?_
@@ -147,6 +148,7 @@ let a = [1, 2, 3];
     a[-1] = 4;
     //[1, 2, 3, -1: 4]
 ```
+
 Tuy nhiên, cái này lại không ảnh hưởng đến độ dài của mảng, tức là a.length vẫn bằng 3.
 
 Khi thực hiện câu lệnh tiếp theo là _a[10] = 5_, vì 10 là số tự nhiên lớn hơn độ dài hiện tại của mảng nên JavaScript sẽ cấp phát thêm bộ nhớ cho mảng thành 11 phần tử để lưu a[10] tại vị trí cuối cùng của mảng.
@@ -154,6 +156,7 @@ Khi thực hiện câu lệnh tiếp theo là _a[10] = 5_, vì 10 là số tự 
 ```
 a = [1, 2, 3, , , , , , , , 5, -1: 4]
 ```
+
 Do đó, độ dài mảng a.length = 11
 
 ## Xoắn não với phỏng vấn JavaScript 3 - Câu 5
@@ -189,12 +192,14 @@ Ví dụ:
 console.log(({x : 12}).toString());      // => [object Object]
     console.log(({x : 1, y: 2}).toString()); // => [object Object]
 ```
+
 Array khi convert sang string sẽ thu được string có dạng _các phần tử cách nhau bởi dấu phẩy (,)_. Ví dụ:
 
 ```
 console.log([1, 2].toString());          // => 1, 2
     console.log([1, {x : 1}].toString());    // => 1, [object Object]
 ```
+
 Do đó, đoạn code trên sẽ tương đương với:
 
 ```
@@ -265,6 +270,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

@@ -46,6 +46,7 @@ Tương tự như trên, bạn cũng có thể sử dụng bind để rút gọn
 let log = console.log.bind(document);
     log('hello'); // => hello
 ```
+
 ## Sao chép (clone) object
 
 Mời bạn xem ví dụ sau:
@@ -63,6 +64,7 @@ let obj1 = {
     obj2.b = 20;
     console.log(obj1.a, obj1.b); // => 10, 20
 ```
+
 Bạn có thể thấy là obj2 thực chất là tham chiếu của obj1. Khi obj2 thay đổi thì obj1 cũng sẽ bị thay đổi. Để có thể clone object, tạo ra một object hoàn toàn mới, bạn có thể làm theo 2 cách sau:
 
 ```
@@ -84,6 +86,7 @@ let x = 1, y = 2;
     [x, y] = [y, x];
     console.log(x, y); // 2, 1
 ```
+
 ## Đặt giá trị mặc định cho tham số của hàm
 
 Có hai cách để làm việc này:
@@ -117,6 +120,7 @@ function Person(name = "Alex", age = 20) {
     let p2 = new Person("John", 25);
     console.log(p2.name, p2.age) // => John, 25
 ```
+
 ## Lấy random trong một đoạn
 
 Hàm random sau trả về một số ngẫu nhiên trong đoạn từ min đến max:
@@ -137,6 +141,7 @@ let str = "       Hello World!        ";
     console.log(str)         // =>        Hello World!
     console.log(str.trim()); // => Hello World!
 ```
+
 Trong trường hợp trình duyệt không hỗ trợ phương thức trên, bạn có thể sử dụng [Regex](/tim-hieu-regular-expression-javascript/):
 
 ```
@@ -148,6 +153,7 @@ function trim(x) {
     console.log(str)         // =>        Hello World!
     console.log(trim(str));  // => Hello World!
 ```
+
 ## Chuyển đối tượng arguments thành array
 
 [Hàm số](/tim-hieu-function-javascript/) trong JavaScript luôn có một đối tượng mặc định là [arguments](/javascript-object-last-but-not-least/) để quản lý tham số của hàm. Tuy nhiên, đối tượng này không phải là [array](/javascript-array-co-ban/) nên bạn không thể sử dụng các phương thức như [forEach](/javascript-foreach-la-cai-quai-gi/), map,...
@@ -172,6 +178,7 @@ let numbers = [1, 8 , 10 , -125 , 28 , 100 , 215, -85];
     console.log(maxInNumbers, minInNumbers);
     // => 215 -125
 ```
+
 ## Đưa mảng về rỗng
 
 Nhiều bạn đưa mảng về rỗng bằng cách:
@@ -189,6 +196,7 @@ let a = [1, 2, 3];
 
     console.log(a); // => []
 ```
+
 ## Loại bỏ một phần tử ra khỏi mảng
 
 Bạn không nên sử dụng **delete** để loại bỏ một phần tử ra khỏi mảng. Hàm này không loại bỏ 1 phần tử ra khỏi mảng mà thay vào đó, nó làm cho giá trị của phần tử đó thành **undefined** và độ dài của mảng vẫn không thay đổi.
@@ -201,6 +209,7 @@ let arr = ["a", 1, -5, "cde"];
     console.log(arr);        // => ["a", 1, undefined, "cde"]
     console.log(arr.length); // => 4
 ```
+
 Thay vào đó, bạn có thể dùng hàm **splice**:
 
 ```
@@ -211,6 +220,7 @@ let arr = ["a", 1, -5, "cde"];
     console.log(arr);        // => ["a", 1, "cde"]
     console.log(arr.length); // => 3
 ```
+
 ## Sử dụng and (&&) và or (||) thay cho if
 
 Giả sử bạn có các câu điều kiện sử dụng if như sau:
@@ -220,6 +230,7 @@ let a = 10;
     if (a === 10) console.log("a === 10"); // => a === 10
     if (a !== 5) console.log("a !== 5"); // => a !== 5
 ```
+
 Khi đó, bạn có thể sử dụng toán tử **&&** và **||** để thay thế như sau:
 
 ```
@@ -227,6 +238,7 @@ let a = 10;
     a === 10 && console.log("a === 10"); // => a === 10
     a === 5 || console.log("a !== 5");   // => a !== 5
 ```
+
 Hoặc kết hợp cả hai toán tử, thay vì:
 
 ```
@@ -278,6 +290,7 @@ let a = [1, 2, 3, 4, 5];
     console.log(a2);
     // => [1, 4, 9, 16, 25]
 ```
+
 Nếu sử dụng arrow function thì sẽ thế này:
 
 ```
@@ -287,6 +300,7 @@ let a = [1, 2, 3, 4, 5];
     console.log(a2);
     // => [1, 4, 9, 16, 25]
 ```
+
 ## Sử dụng string template literals thay vì +
 
 Có phải bạn thường sử dụng toán tử **+** để cộng (ghép) string, ví dụ:
@@ -296,6 +310,7 @@ let a = 10, b = 20;
     console.log("Sum of " + a + " and " + b + " is " + (a + b) + ".");
     // => Sum of a and b is 30.
 ```
+
 Thay vào đó, bạn có thể sử dụng string template literals:
 
 ```
@@ -303,6 +318,7 @@ let a = 10, b = 20;
     console.log(`Sum of ${a} and ${b} is ${a + b}.`);
     // => Sum of 10 and 20 is 30.
 ```
+
 ## Sao chép (copy) mảng
 
 ```
@@ -312,6 +328,7 @@ let a = [1, 2, 3];
     console.log(b);       // => [1, 2, 3]
     console.log(b === a); // => false
 ```
+
 ## Sử dụng Promise thay vì dùng callback
 
 Code khi sử dụng callback:
@@ -363,6 +380,7 @@ let one = ['a', 'b', 'c']
     console.log(result3);
     // => ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
 ```
+
 ## Clone object và array sử dụng Spread
 
 Clone object:
@@ -415,6 +433,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/su-dung-e
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

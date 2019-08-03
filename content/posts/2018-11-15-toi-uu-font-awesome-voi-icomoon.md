@@ -134,6 +134,7 @@ Khi sử dụng các font tuỳ chỉnh này, bạn cần phải copy thư mục
     <body>
     </body>
     </html>
+
 ```
 
 Còn việc sử dụng các icon này trong HTML như thế nào thì bạn có thể tham khảo thêm trong file **demo.html** (trong package tải về).
@@ -155,3 +156,4 @@ Xin chào và hẹn gặp lại, thân ái!
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)
+```

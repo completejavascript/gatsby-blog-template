@@ -72,6 +72,7 @@ Gatsby CLI là công cụ cần thiết để tạo mới một trang blog với
 ```
 npm install --global gatsby-cli
 ```
+
 _Câu lệnh trên cài đặt Gatsby CLI ở phạm vi global. Nghĩa là bạn có thể sử dụng Gatsby ở bất kỳ vị trí nào trên máy tính của bạn._
 
 Sau khi cài đặt Gatsby CLI, bạn có thể kiểm tra xem việc cài đặt có thành công hay chưa bằng 2 câu lệnh:
@@ -80,6 +81,7 @@ Sau khi cài đặt Gatsby CLI, bạn có thể kiểm tra xem việc cài đặ
 gatsby --version
     gatsby --help
 ```
+
 #### Kiểm tra Gatsby CLI sau khi cài đặt
 
 Nếu việc cài đặt thành công thì câu lệnh `gatsby --version` sẽ in ra phiên bản của Gatsby CLI và câu lệnh `gatsby --help` sẽ in ra những câu lệnh mà Gatsby CLI hỗ trợ bạn như:
@@ -100,6 +102,7 @@ Như mình đã nói ở phần trên, Gatsby hỗ trợ bạn tạo mới Gatsb
 ```
 gatsby new [rootPath] [starter]
 ```
+
 Trong đó, _starter_ là các project mẫu mà bạn có thể tham khảo tại [Gatsby Starters](https://www.gatsbyjs.org/starters/). Với khoảng trên 60 starters khác nhau bao gồm các loại như: blog cơ bản đến nâng cao, portfolio, hỗ trợ Contentful, [Wordpress](/tag/wordpress/), Firebase,... Nhờ vậy, bạn có thể dễ dàng lựa chọn một mẫu starter phù hợp, sau đó nhanh chóng tuỳ chỉnh nó theo sở thích và yêu cầu của mình, tương tự như _theme_ của Wordpress hay _template_ của Blogger.
 
 #### Tạo Gatsby project từ Hello-world starter
@@ -109,6 +112,7 @@ Việc sử dụng các starter nâng cao chỉ phù hợp khi mình đã thành
 ```
 gatsby new gatsby-tutorial https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
+
 Câu lệnh này sẽ tạo mới một thư mục tên là _gatsby-tutorial_. Sau đó, Gatsby CLI clone project từ Github tại địa chỉ: [https://github.com/gatsbyjs/gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world) và đưa vào thư mục vừa tạo ra.
 
 Sau khi lệnh trên hoàn thành, bạn đi vào thư mục mới tạo ra _gatsby-tutorial_:
@@ -116,11 +120,13 @@ Sau khi lệnh trên hoàn thành, bạn đi vào thư mục mới tạo ra _gat
 ```
 cd gatsby-tutorial
 ```
+
 rồi chạy lệnh sau để tạo server cho quá trình develop:
 
 ```
 gatsby develop
 ```
+
 Đợi lệnh trên hoàn tất, bạn mở trình duyệt và đi đến địa chỉ: **_http://localhost:8000/_** thì sẽ thấy trang blog với Gatsby.js đã được tạo ra thành công.
 
 ![Tạo mới Hello World Gatsby Project](/wp-content/uploads/2018/10/gatsby-hello-world.png)
@@ -602,6 +608,7 @@ Mỗi bài viết trong blog với Gatsby.js sẽ có 2 phần.
     tags: ["greeting", "egg"]
     ---
 ```
+
 **/src/posts/2015-05-06---my-second-post**
 
 ```
@@ -612,6 +619,7 @@ Mỗi bài viết trong blog với Gatsby.js sẽ có 2 phần.
     tags: ["egg", "wiki"]
     ---
 ```
+
 **/src/posts/2015-05-28---hi-folks**
 
 ```
@@ -622,6 +630,7 @@ Mỗi bài viết trong blog với Gatsby.js sẽ có 2 phần.
     tags: ["greeting"]
     ---
 ```
+
 Vì chuyên mục và thẻ có thể có nhiều nên mình để chúng vào một mảng cho tiện quản lý và sử dụng sau này. Đến đây, coi như mình đã có đầy đủ thông tin cần thiết về các bài viết. Tiếp theo, mình sẽ thiết kế template để hiển thị danh sách bài viết lên trang chủ.
 
 ### Tạo template hiển thị danh sách bài viết tại trang chủ
@@ -677,6 +686,7 @@ import React from "react";
       }
     `
 ```
+
 **/src/pages/gioi-thieu.js**
 
 ```
@@ -702,6 +712,7 @@ import React from "react";
       }
     `
 ```
+
 **/src/pages/lien-he.js**
 
 ```
@@ -727,6 +738,7 @@ import React from "react";
       }
     `
 ```
+
 Trong đó, mình đã import thêm *graphql* từ *gatsby*. Rồi viết câu lệnh query *title* ở phía dưới cùng. Ngoài ra, trong phần định nghĩa React Component, mình bổ sung thêm thuộc tính *data*. Thuộc tính này tương ứng với dữ liệu đã query ở phía dưới.
 
 Bạn thấy đó, code bị lặp lại ở cả 3 file. Điều này là không nên. Vì vậy, mình sẽ sử dụng StaticQuery.
@@ -848,6 +860,7 @@ Trước tiên, cài đặt plugin này bằng câu lệnh:
 ```
 npm install --save gatsby-source-filesystem
 ```
+
 Sau khi cài đặt xong, bạn khai báo plugin này trong file */gatsby-config.js*:
 
 **/gatsby-config.js**:
@@ -876,6 +889,7 @@ Tuy nhiên, đến đây mình mới chỉ quét được hết các file trong 
 ```
 npm install --save gatsby-transformer-remark
 ```
+
 Rồi lại add nó vào file */gatsby-config.js*:
 
 **/gatsby-config.js**
@@ -948,6 +962,7 @@ import React from "react";
       }
     `
 ```
+
 Kết quả là mình đã thu được một danh sách các bài viết trên trang chủ:
 
 ![Thêm bài viết lên trang chủ Gatsby](/wp-content/uploads/2018/10/gatsby-list-homepage.png)
@@ -1038,6 +1053,7 @@ import React from "react";
       }
     `
 ```
+
 Bây giờ, *title* của mỗi bài viết đã được đặt trong *Link* component.
 
 ![Tạo slug liên kết đến mỗi bài viết từ trang chủ](/wp-content/uploads/2018/10/gatsby-create-page-slug.png)
@@ -1132,6 +1148,7 @@ import React from "react";
       }
     `
 ```
+
 Câu lệnh query phần này có vẻ hơi khác so với phần trước. Đó là nó chứa tham số *\$slug*. Cũng đúng thôi, vì với mỗi bài viết khác nhau thì *slug* cũng khác. Vì vậy, mình cần thông tin này để query đúng bài viết tương ứng.
 
 Vấn đề là giá trị *\$slug* ở đây lấy ở đâu ra?
@@ -1166,6 +1183,7 @@ Trong demo này, mình sẽ chỉ xử lý thêm trường hợp nội dung bài
 ```
 npm install --save gatsby-remark-images gatsby-plugin-sharp
 ```
+
 _Ở đây mình có cài thêm plugin gatsby-plugin-sharp vì gatsby-remark-images cần sử dụng plugin này._
 
 Tiếp theo mình sửa lại file */gatsby-config.js*:
@@ -1226,6 +1244,7 @@ Câu lệnh cài đặt như sau:
 ```
 npm install --save slug
 ```
+
 Sau đó mình bắt đầu sửa file */src/components/layout.js*.
 
 **/src/components/layout.js**:
@@ -1492,6 +1511,7 @@ import React from "react";
       }
     `
 ```
+
 **/src/template/tags.js**
 
 ```
@@ -1543,6 +1563,7 @@ import React from "react";
       }
     `
 ```
+
 Thực ra, nội dung của 2 file này gần giống như */src/pages/index.js*, chỉ khác ở chỗ là mình không sử dụng tham số được truyền từ */gatsby-node.js* vào phần query GraphQL như phần *\$slug* ở phía trên. Lần này mình sử dụng nó trong phần React Component.
 
 Giá trị của các tham số *category* và *tag* được lấy từ đối tượng *pageContext*:
@@ -1551,18 +1572,6 @@ Giá trị của các tham số *category* và *tag* được lấy từ đ�
 const { category } = pageContext;
     const categoryEdges = data.allMarkdownRemark.edges.filter(({node}) => node.frontmatter.categories.includes(category));
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 ```
 const { tag } = pageContext;
@@ -1617,6 +1626,7 @@ echo "# gatsby-tutorial" >> README.md
     git remote add origin https://github.com/completejavascript/gatsby-tutorial.git
     git push -u origin master
 ```
+
 Sau khi việc upload code lên Github thành công. Mình bắt đầu deploy nó lên Netlify.
 
 ### Deploy lên Netlify
@@ -1710,6 +1720,6 @@ Bài viết đến đây cũng khá dài rồi, xin chào và hẹn gặp lại 
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

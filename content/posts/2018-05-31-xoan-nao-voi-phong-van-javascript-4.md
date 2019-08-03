@@ -43,6 +43,7 @@ Xem đáp án
     // 5
     // 7
 ```
+
 **Giải thích:**
 
 Trước tiên, mình muốn nhấn mạnh rằng: về bản chất [Array](/javascript-array-co-ban/) được [kế thừa từ prototype](/ke-thua-co-ban-trong-javascript/) của [Object](/javascript-object-last-but-not-least/). Đoạn code sau có thể chứng minh điều đó.
@@ -55,6 +56,7 @@ let a = [];
     console.log(p1 === Array.prototype);  // => true
     console.log(p2 === Object.prototype); // => true
 ```
+
 Cụ thể, **Object.getPrototypeOf(a) **trả về prototype của a là p1 – Array.prototype. Tiếp theo, **Object.getPrototypeOf(p1)** trả về prototype của p1 là p2 – Object.prototype.
 
 Do đó, bạn hoàn toàn có thể thêm thuộc tính cho array giống trên object như các cách sau:
@@ -74,12 +76,14 @@ Vì vậy, nếu bạn hiển thị mảng a trên console thì sẽ thấy giá
 console.log(a);
     // => [3, 5, 7, x: "hello", z: undefined, y: undefined]
 ```
+
 Tuy nhiên, mảng a vẫn có độ dài là 3.
 
 ```
 console.log(a.length)
     // => 3
 ```
+
 Nghĩa là các phần tử của **mảng** a vẫn chỉ là: 3, 5, 7.
 
 Đó là lý do dẫn đến kết quả trên.
@@ -145,6 +149,7 @@ Xem đáp án
     // arrCustom
     // objCustom
 ```
+
 **Giải thích:**
 
 Câu 2 chỉ khác câu 1 ở chỗ là mình sử dụng **for in** thay vì **for of**. Vậy mà kết quả lại khác biệt như vậy, tại sao?
@@ -195,6 +200,7 @@ Xem đáp án
     // x
     // z
 ```
+
 **Giải thích:**
 
 Câu 3 khác với câu 2 ở chỗ có sử dụng thêm phương thức [Object.prototype.hasOwnProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty). Phương thức này kiểm tra xem object có chứa một thuộc tính cho trước hay không.
@@ -330,6 +336,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

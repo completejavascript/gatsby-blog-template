@@ -69,55 +69,55 @@ Sau đây là ví dụ minh họa.
 
 ```js
 // Key dạng biến số - không nằm trong cặp dầu ngoặc kép
-    const str1 = `{ text : "X", "number": 1990 }`;
+const str1 = `{ text : "X", "number": 1990 }`;
 
-    // Key đặt trong cặp dấu ngoặc đơn
-    const str2 = `{'text': "X", "number": 1990 }`;
+// Key đặt trong cặp dấu ngoặc đơn
+const str2 = `{'text': "X", "number": 1990 }`;
 
-    // Có dấu phẩy cuối cùng
-    const str3 = `{"text": "X", "number": 1990, }`;
+// Có dấu phẩy cuối cùng
+const str3 = `{"text": "X", "number": 1990, }`;
 
-    // Value là undefined
-    const str4 = `{"text": "X", "number": undefined }`;
+// Value là undefined
+const str4 = `{"text": "X", "number": undefined }`;
 
-    // Value chứa biểu thức tính toán
-    const str5 = `{"text": "X", "number": 1 + 1 }`;
+// Value chứa biểu thức tính toán
+const str5 = `{"text": "X", "number": 1 + 1 }`;
 
-    // Value là kiểu Date
-    const str6 = `{"text": "X", "number": new Date() }`;
+// Value là kiểu Date
+const str6 = `{"text": "X", "number": new Date() }`;
 
-    // Value là function
-    const str7 = `{"text": "X", "number": function () {} }`;
+// Value là function
+const str7 = `{"text": "X", "number": function () {} }`;
 
-    // Value là number nhưng tồn tại số 0 ở đầu
-    const str8 = `{"text": "X", "number": 01990 }`;
+// Value là number nhưng tồn tại số 0 ở đầu
+const str8 = `{"text": "X", "number": 01990 }`;
 
-    // Value là số thập phân nhưng sau dấu (.) không có chữ số nào
-    const str9 = `{"text": "X", "number": 1990. }`;
+// Value là số thập phân nhưng sau dấu (.) không có chữ số nào
+const str9 = `{"text": "X", "number": 1990. }`;
 ```
 
 ### Ví dụ về JSON hợp lệ
 
 ```js
 /**
-    * Key đặt trong cặp dấu ngoặc kép,
-    * không có dấu phẩy ở cuối cùng.
-    *
-    * Value là string hoặc number - không có chữ số 0 ở đầu
-    */
-    const str1 = `{"text": "X", "number": 1990 }`;
+ * Key đặt trong cặp dấu ngoặc kép,
+ * không có dấu phẩy ở cuối cùng.
+ *
+ * Value là string hoặc number - không có chữ số 0 ở đầu
+ */
+const str1 = `{"text": "X", "number": 1990 }`;
 
-    // Nếu value là số thập phân thì sau dấu (.) phải có số
-    const str2 = `{"text": "X", "number": 1990.2 }`;
+// Nếu value là số thập phân thì sau dấu (.) phải có số
+const str2 = `{"text": "X", "number": 1990.2 }`;
 
-    // Value có thể là null
-    const str3 = `{"text": "X", "number": null }`;
+// Value có thể là null
+const str3 = `{"text": "X", "number": null }`;
 
-    // Value có thể là boolean (true, false)
-    const str4 = `{"text": "X", "number": true }`;
+// Value có thể là boolean (true, false)
+const str4 = `{"text": "X", "number": true }`;
 
-    // Value có thể là array
-    const str5 = `{"text": "X", "number": [1, 2] }`;
+// Value có thể là array
+const str5 = `{"text": "X", "number": [1, 2] }`;
 ```
 
 ## Cách sử dụng
@@ -141,6 +141,7 @@ const string = JSON.stringify({name: "X", born: 1990});
     console.log(obj.born);
     // => 1990
 ```
+
 Điều đó đồng nghĩa với việc nếu bạn muốn chỉnh sửa JSON thì có thể convert nó thành Object để sửa đổi các thuộc tính, giá trị. Sau đó convert JavaScript Object đó ngược lại thành JSON.
 
 ## Lời kết

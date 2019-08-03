@@ -1,8 +1,8 @@
 ---
 date: "2019-01-23T02:00:43Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/xoan-nao-voi-phong-van-javascript-7-completejavascript.com_.png"
+keywords: "Xoắn não với phỏng vấn JavaScript 7"
 slug: xoan-nao-voi-phong-van-javascript-7
 title: "Xoắn não với phỏng vấn JavaScript 7"
 categories:
@@ -18,16 +18,21 @@ Mời bạn theo dõi bài viết!
 
 ## Xoắn não với phỏng vấn JavaScript 7 – Câu 1
 
-```
+```js
 const map = new Map();
-    map.set(1, 1).set("a", 2).set([1], 3)
-       .set(1, 4).set("a", 5).set([1], 6);
+map
+  .set(1, 1)
+  .set("a", 2)
+  .set([1], 3)
+  .set(1, 4)
+  .set("a", 5)
+  .set([1], 6);
 
-    const a = map.get(1),
-          b = map.get("a"),
-          c = map.get([1]);
+const a = map.get(1),
+  b = map.get("a"),
+  c = map.get([1]);
 
-    console.log(a, b, c);
+console.log(a, b, c);
 ```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
@@ -44,13 +49,14 @@ Nếu *key* chưa tồn tại thì Map sẽ tạo mới phần tử với *key
 
 **Và quan trọng là**: Map sử dụng thuật toán [SameValueZero](https://tc39.github.io/ecma262/#sec-samevaluezero) để so sánh giá trị của các key với nhau. Về cơ bản, thuật toán này sẽ tương đương với việc sử dụng toán tử "===" để so sánh.
 
-Mà ở đây, các \_key \_lần lượt là: **1, "a" và [1]** và ta có:
+Mà ở đây, các _key_ lần lượt là: **1, "a" và [1]** và ta có:
 
 ```
 1 === 1     // => true
-    "a" === "a" // => true
-    [1] === [1] // => false
+"a" === "a" // => true
+[1] === [1] // => false
 ```
+
 Do đó, key **1** và **"a"** coi như đã tồn tại, nên giá trị của nó được cập nhật với giá trị mới nhất lần lượt là: **4** và **5**.
 
 Trong khi đó, key **[1]** coi như chưa tồn tại. Và dĩ nhiên, khi lấy ra giá trị của nó thì kết quả sẽ là **undefined**.
@@ -61,12 +67,12 @@ Trong khi đó, key **[1]** coi như chưa tồn tại. Và dĩ nhiên, khi lấ
 
 ```
 0 == "0"         // true
-    0 == []          // true
+0 == []          // true
 
-    "0" == []        // (1)
-    "" == []         // (2)
-    "1, 2" == [1, 2] // (3)
-    "1,2" == [1,2]   // (4)
+"0" == []        // (1)
+"" == []         // (2)
+"1, 2" == [1, 2] // (3)
+"1,2" == [1,2]   // (4)
 ```
 
 Hỏi giá trị của (1), (2), (3), (4) là gì? Tại sao?
@@ -87,25 +93,26 @@ Cụ thể convert như thế nào thì mình không dám chắc. Mình chỉ d�
 
 Và ta có:
 
+```js
+[].toString();      // => ""
+[1, 2].toString();  // => "1,2"
 ```
-[].toString()     // => ""
-    [1, 2].toString() // => "1,2"
-```
+
 Vì vậy mà mình thu được kết quả như trên.
 
 ## Xoắn não với phỏng vấn JavaScript 7 – Câu 3
 
-```
-const a = () => console.log('a');
-    const b = () => console.log('b');
-    const c = () => console.log('c');
-    const d = () => {
-      console.log('d');
-      setTimeout(a, 0);
-      b();
-      c();
-    }
-    d();
+```js
+const a = () => console.log("a");
+const b = () => console.log("b");
+const c = () => console.log("c");
+const d = () => {
+  console.log("d");
+  setTimeout(a, 0);
+  b();
+  c();
+};
+d();
 ```
 
 Hỏi console in ra kết quả theo thứ tự như thế nào?
@@ -124,19 +131,20 @@ Khi [function](/tim-hieu-function-javascript/) **d()** được gọi, dĩ nhiê
 
 ## Xoắn não với phỏng vấn JavaScript 7 – Câu 4
 
-```
-const a = () => console.log('a');
-    const b = () => console.log('b');
-    const c = () => {
-      console.log('c');
-      setTimeout(a, 0);
-      new Promise((resolve, reject) => {
-        resolve('d');
-      }).then(res => console.log(res))
-        .catch(err => console.log(err));
-      b();
-    }
-    c();
+```js
+const a = () => console.log("a");
+const b = () => console.log("b");
+const c = () => {
+  console.log("c");
+  setTimeout(a, 0);
+  new Promise((resolve, reject) => {
+    resolve("d");
+  })
+    .then(res => console.log(res))
+    .catch(err => console.log(err));
+  b();
+};
+c();
 ```
 
 Hỏi console in ra kết quả theo thứ tự như thế nào?
@@ -167,6 +175,6 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

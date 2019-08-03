@@ -131,7 +131,6 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
 
 - IndexedDB cung cấp 2 APIs để open database như sau:
 
-
 ```
 var IDBOpenDBRequest = indexedDB.open(name);
     var IDBOpenDBRequest = indexedDB.open(name, version);
@@ -140,7 +139,6 @@ var IDBOpenDBRequest = indexedDB.open(name);
 - Sau đó, implement 3 hàm **onsuccess**, **onerror** và **onupgradeneeded** của IDBOpenDBRequest để lắng nghe các sự kiện tương ứng là **success** (mở database thành công), **error** (mở database bị lỗi),  **upgradeneeded** (mở database thành công nhưng cần phải cập nhật lại với version mới nhất hiện tại).
 
 - Ví dụ:
-
 
 ```
 // Implement in SimpleSindexedDB.js
@@ -203,7 +201,6 @@ var IDBOpenDBRequest = indexedDB.open(name);
 
 - Ví dụ:
 
-
 ```
 // Implement in SimpleSindexedDB.js
     this.readAll = function (callback) {
@@ -233,7 +230,6 @@ var IDBOpenDBRequest = indexedDB.open(name);
 - Để lấy ra một bản ghi trong object store của database, sử dụng phương thức **[get](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/get)**.
 
 - Ví dụ:
-
 
 ```
 // Implement in SimpleSindexedDB.js
@@ -267,7 +263,6 @@ var IDBOpenDBRequest = indexedDB.open(name);
 - Để thêm vào một bản ghi cho object store của database, sử dụng phương thức **[add](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add)**.
 
 - Ví dụ:
-
 
 ```
 // Implement in SimpleSindexedDB.js
@@ -308,7 +303,6 @@ var IDBOpenDBRequest = indexedDB.open(name);
 - Để xoá đi một bản ghi tỏng object store database, sử dụng phương thức **[delete](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/delete)**.
 
 - Ví dụ:
-
 
 ```
 // Implement in SimpleSindexedDB.js

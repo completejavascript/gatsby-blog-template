@@ -47,6 +47,7 @@ npm install -g babel
     npm install babel-preset-react
     npm install babel-preset-es2015
 ```
+
 Mình suy nghĩ trong đầu: _Mình chỉ cần React thôi mà, sao phải cài một đống thứ như thế này? Vai trò của từng cái là gì?_
 
 Không hề có một lời giải thích nào. Và đó là lí do chính dẫn đến lầm tưởng tai hại về React. Vì vậy, mình đã từ bỏ để quay về trang chủ của React và học theo nó.
@@ -70,6 +71,7 @@ Bạn thấy đấy, mình chỉ cần thêm 2 file .js là có thể lập trì
 npm install react --save
     npm install react-dom --save
 ```
+
 Vậy mấy cái _webpack_ với _babel_ để làm gì?
 
 ## Giác ngộ lần 2
@@ -99,6 +101,7 @@ npm install -g babel
     npm install babel-preset-react
     npm install babel-preset-es2015
 ```
+
 Mình đoán nó tương đương với _npm install -g babel_. Còn những thằng còn lại có nhiệm vụ như thế nào thì mình vẫn chưa rõ.
 
 Bạn có thể giải thích cho mình không?
@@ -137,6 +140,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/deploy-un
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

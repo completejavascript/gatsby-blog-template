@@ -30,7 +30,8 @@ Nội dung phần **html**:
     <code class="html language-html"><h3>Copy</h3>
     <p id="content-copy">This text will be inserted into the clipboard.</p>
     <button id="button-copy">Copy Text</button>
-```
+
+````
 
 Trong đó, thẻ _p_ với id _content-copy_ là thành phần chứa nội dung mình muốn copy; button với id _button-copy_ để kích hoạt lệnh _copy_ khi người dùng click vào.
 
@@ -38,45 +39,48 @@ Trong đó, thẻ _p_ với id _content-copy_ là thành phần chứa nội dun
 
 Tiếp theo, mình dùng [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) để lưu lại [DOM node](/co-ban-ve-dom-javascript/) của các phần tử:
 
-    <code class="js language-js">const $ = document.querySelector.bind(document);
-    const contentCopyElm = $("#content-copy"),
-          buttonCopyElm = $("#button-copy");
-```
+```js
+const $ = document.querySelector.bind(document);
+const contentCopyElm = $("#content-copy"),
+buttonCopyElm = $("#button-copy");
+````
 
 Sau đó, định nghĩa một [hàm số](/tim-hieu-function-javascript/) để kiểm tra xem command mình sử dụng có được support hay không, thông qua phương thức [document.queryCommandSupported()](https://developer.mozilla.org/en-US/docs/Web/API/Document/queryCommandSupported):
 
-    <code class="js language-js">const isSupported = (cmd) => {
-      return document.queryCommandSupported(cmd);
-    }
+```js
+const isSupported = cmd => {
+  return document.queryCommandSupported(cmd);
+};
 ```
 
 Cuối cùng, xử lý khi người dùng click vào button **Copy Text**:
 
-    <code class="js language-js">buttonCopyElm.addEventListener("click", () => {
-      // Khai báo đối tượng range và selection.
-      const range = document.createRange(),
-            selection = window.getSelection();
+```js
+buttonCopyElm.addEventListener("click", () => {
+  // Khai báo đối tượng range và selection.
+  const range = document.createRange(),
+    selection = window.getSelection();
 
-      // Xoá bỏ các vùng chọn hiện tại
-      selection.removeAllRanges();
+  // Xoá bỏ các vùng chọn hiện tại
+  selection.removeAllRanges();
 
-      // Mô phỏng việc select - bôi đen nội dung của phần tử contentCopyElm
-      range.selectNodeContents(contentCopyElm);
+  // Mô phỏng việc select - bôi đen nội dung của phần tử contentCopyElm
+  range.selectNodeContents(contentCopyElm);
 
-      // Thêm range trên vào selection
-      selection.addRange(range);
+  // Thêm range trên vào selection
+  selection.addRange(range);
 
-      // Thử lệnh copy
-      try {
-        if(isSupported("copy")) document.execCommand("copy");
-        else alert(`execCommand("copy") is not supported in your browser.`);
-      } catch(e) {
-        console.log(e);
-      }
+  // Thử lệnh copy
+  try {
+    if (isSupported("copy")) document.execCommand("copy");
+    else alert(`execCommand("copy") is not supported in your browser.`);
+  } catch (e) {
+    console.log(e);
+  }
 
-      // Sau khi copy dữ liệu xong thì xoá bỏ các vùng chọn hiện tại
-      selection.removeAllRanges();
-    });
+  // Sau khi copy dữ liệu xong thì xoá bỏ các vùng chọn hiện tại
+  selection.removeAllRanges();
+});
 ```
 
 **Chú ý**: phần trên chỉ áp dụng cho các thẻ có text content như thẻ: _p, span, div,..._ Các thẻ không có text content như: _input, textarea,..._ sẽ được áp dụng giống như phần **cut dữ liệu vào clipboard** dưới đây.
@@ -90,23 +94,25 @@ Nội dung phần **html**:
     <code class="html language-html"><h3>Cut</h3>
     <input id="content-cut" type="text" value="This text will be cut, then inserted into the clipboard." />
     <button id="button-cut">Cut Text</button>
-```
+
+````
 
 Tiếp theo là phần xử lý trong **js** khi người dùng click vào button **Cut Text**:
 
-    <code class="js language-js">buttonCutElm.addEventListener("click", () => {
-      // Tạo select nội dung của input
-      inputCutElm.select();
+```js
+buttonCutElm.addEventListener("click", () => {
+  // Tạo select nội dung của input
+  inputCutElm.select();
 
-      // Thử cut nội dung của input
-      try {
-        if (isSupported("cut")) document.execCommand("cut");
-        else alert(`execCommand("cut") is not supported in your browser.`);
-      } catch(e) {
-        console.log(e);
-      }
-    });
-```
+  // Thử cut nội dung của input
+  try {
+    if (isSupported("cut")) document.execCommand("cut");
+    else alert(`execCommand("cut") is not supported in your browser.`);
+  } catch(e) {
+    console.log(e);
+  }
+});
+````
 
 Cách tạo vùng chọn trong phần này dễ hơn so với phần trước vì đối tượng DOM node ứng với **input** đã hỗ trợ sẵn phương thức **select()**.
 

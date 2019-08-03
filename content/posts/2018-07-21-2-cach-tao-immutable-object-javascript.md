@@ -25,6 +25,7 @@ let obj = {};
     obj.a = 2;
     console.log(obj.a); // => 1
 ```
+
 Bạn có thể thấy giá trị của _obj.a_ vẫn không thay đổi so với giá trị ban đầu, là 1.
 
 Thực tế, giá trị mặc định của writable là false, nên bạn có thể bỏ qua thuộc tính này:
@@ -35,6 +36,7 @@ let obj = {};
     obj.a = 2;
     console.log(obj.a); // => 1
 ```
+
 **_Bây giờ, mình muốn thay đổi writable thành true có được không?_**
 
 Câu trả lời là **KHÔNG**.
@@ -47,6 +49,7 @@ let obj = {};
     Object.defineProperty(obj, 'a', {writable: true });
     // => TypeError: Cannot redefine property: a
 ```
+
 Để làm được điều này, bạn cần phải sửa _configurable_ thành true:
 
 ```
@@ -56,6 +59,7 @@ let obj = {};
     obj.a = 2;
     console.log(obj.a); // => 2
 ```
+
 Như vậy nghĩa là bạn có thể biến _immutable object_ thành _mutable object_ được bằng cách sử dụng phương thức này.
 
 ## Tạo immutable object sử dụng Object.freeze
@@ -93,6 +97,6 @@ Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/trien-khai-thua
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

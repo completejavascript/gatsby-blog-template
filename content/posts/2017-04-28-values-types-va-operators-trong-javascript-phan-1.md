@@ -45,6 +45,7 @@ var x = 66;     // positive integer
     var x = 0xFF;   // hexadecimal: 15*16 + 15 = 255
     var x = 067;    // octal: 6*8 + 7 = 55
 ```
+
 Đối với ngôn ngữ lập trình C/C++, numbers được chia ra nhiều kiểu như: int, long, float, double,...Mỗi kiểu sẽ sử dụng số lượng bit khác nhau để lưu numbers. Nhưng JavaScript lại chỉ sử dụng 64 bit để biểu diễn numbers theo chuẩn IEEE 754.
 
 Mỗi cách sẽ có những ưu, nhược điểm riêng. Theo quan điểm cá nhân thì mình thấy cách lưu trữ của JavaScript có ưu nhược điểm sau:
@@ -67,7 +68,6 @@ Có 3 số đặc biệt trong JavaScript là **Infinity**, **-Infinity** và **
 
 - **Infinity** và **-Infinity**: tương ứng là số dương vô cùng và âm vô cùng trong toán học. Đây là những số ảo diệu nhất mà mình từng biết với một số tính chất như sau (không khác những kiến thức về dương vô cùng và âm vô cùng đã học ở cấp 3):
 
-
 ```
 var x = 4 / 0;
     var y = -5 / 0;
@@ -83,8 +83,8 @@ var x = 4 / 0;
     console.log(x == y);  // => Infinity == -Infinity = false
     console.log(x > y);   // => Infinity > -Infinity = true
 ```
-- **NaN** viết tắt của _Not a Number_. Nó được dùng để biểu diễn cho kết quả một số phép tính như: Infinity - Infinity = NaN hay 0 / 0 = NaN hoặc 2 \* 'ba' = NaN... Một số ví dụ để bạn thấy:
 
+- **NaN** viết tắt của _Not a Number_. Nó được dùng để biểu diễn cho kết quả một số phép tính như: Infinity - Infinity = NaN hay 0 / 0 = NaN hoặc 2 \* 'ba' = NaN... Một số ví dụ để bạn thấy:
 
 ```
 var x = 3 / 0;
@@ -98,6 +98,7 @@ var x = 3 / 0;
     console.log(t);   // => NaN
     console.log(w);   // => NaN
 ```
+
 #### Methods (phương thức) đối với numbers
 
 Trong các ngôn ngữ như C/C++, Java,...những kiểu dữ liệu cơ bản như int, long, float...sẽ không có thuộc tính hay phương thức kèm theo. Bởi chúng nó không phải đối tượng ([object](/javascript-object-last-but-not-least/)).
@@ -115,7 +116,6 @@ Một số phương thức chính đối với numbers trong JavaScript là:
 - **toPrecision([number])**: trả về string với số lượng chữ số (phần nguyên và phần thập phân) là _number _(có làm tròn)
 
 - **valueOf()**: trả về số như là một số (đối với trường hợp numbers thì phương thức này chỉ dùng để làm màu thôi, chứ mới đọc mình đã thấy nó chả có ý nghĩa gì).
-
 
 ```
 var x = 66;
@@ -150,7 +150,6 @@ Ngoài những phương thức gắn với bản thân numbers, JavaScript còn 
 
 - **parseFloat()**: cũng tương tự như **parseInt()** nhưng kết quả trả về sẽ là số thực.
 
-
 ```
 var x = true;
     var y = false;
@@ -169,6 +168,7 @@ var x = true;
     console.log(parseFloat(t)); // => 69
     console.log(parseFloat(u)); // => 101.01
 ```
+
 Trên đây là những kiến thức cơ bản về values, types. Theo dự kiến ban đầu thì mình định viết gộp cả phần **strings**, **booleans** và **operators** vào. Nhưng khi viết đến đây thì thấy dài quá. Một phần vì nghĩ dài quá bạn không đọc. Một phần cũng vì lười. Nên mình sẽ viết tiếp phần 2 sau.
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/values-types-va-operators-trong-javascript-phan-2/), thân ái!

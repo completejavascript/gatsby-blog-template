@@ -92,6 +92,7 @@ function testVector() {
     console.log(testVector());
     // => everything ok
 ```
+
 Việc viết test như trên gọi là viết **unit test**. Tuy nhiên, thực tế chúng ta sẽ có những [framework](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) hỗ trợ viết unit test chuyên nghiệp hơn, nhanh gọn hơn.
 
 ## Debugging - Debug JavaScript
@@ -116,6 +117,7 @@ function numberToString(n, base) {
     console.log(numberToString(13, 10));
     // => 1.5e-3231.3e-3221.3e-3211.3e-3201.3e-3191.3e-3181.3…
 ```
+
 Rõ ràng là chương trình hoạt động không đúng mong đợi. Bây giờ ta sẽ phải tìm ra đoạn gây ra lỗi và sửa nó.
 
 Chiến lược hiệu quả trong trường hợp này là ta sẽ ghi ra log kết quả sau từng đoạn con của chương trình, để xem đoạn bắt đầu gây ra lỗi.
@@ -152,6 +154,7 @@ sign:
     result: 0.131.33
     ...
 ```
+
 Bạn đã thấy sự bất ổn chưa? Giá trị log thứ 3 cho thấy n /= base => 1.3. Trong khi giá trị mong đợi phải là 1. À thì ra JavaScript khác với C/C++ và Java. Nếu như trong C/C++, Java, 13/10 = 1 thì trong JavaScript 13/10=1.3. Do đó, ta phải sửa thành n = Math.floor(n/base). Chương trình sẽ hoạt động đúng.
 
 ```
@@ -170,6 +173,7 @@ function numberToString(n, base) {
     console.log(numberToString(13, 10));
     // => 13
 ```
+
 Đó chính là một cách mà mình thường làm khi debug JavaScript.
 
 Ngoài cách viết log, bạn cũng có thể set breakpoint giống như bạn debug trên IDE khi lập trình C/C++ hay Java. Đây cũng là một cách debug JavaScript khá hay mà mình mới biết, nên chắc chắn sẽ thử cách này.

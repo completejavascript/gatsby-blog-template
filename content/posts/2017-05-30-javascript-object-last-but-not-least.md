@@ -165,6 +165,7 @@ var x = 1;
     console.log(x == y);  // => true
     console.log(x === y); // => false
 ```
+
 Khi sử dụng ==, JavaScript sẽ convert x = 1 thành giá trị true, nên kết quả trả về là true. Ngược lại, khi sử dụng toán tử ===, kết quả trả về sẽ là false vì x có kiểu number và y có kiểu Boolean.
 
 ### Áp dụng toán tử == và === để so sánh object
@@ -190,6 +191,7 @@ var obj1 = {
     console.log(obj3 == obj1); // => true
     console.log(obj3 === obj1); // => true
 ```
+
 Qua ví dụ trên, bạn có thể thấy rằng: hai object bằng nhau khi và chỉ khi chúng trỏ vào cùng địa chỉ bộ nhớ (obj3 và obj1). Trường hợp obj1 và obj2, mặc dù các thuộc tính và giá trị hoàn toàn giống nhau nhưng hai object này không bằng nhau.
 
 ### Xây dựng hàm so sánh object
@@ -232,6 +234,7 @@ function isEqual(obj1, obj2){
     console.log(isEqual(obj3, obj1)); // => false
     console.log(isEqual(obj4, obj1)); // => false
 ```
+
 Hàm _isEqual_ trả về **true** khi và chỉ khi hai object **có các thuộc tính và giá trị của chúng giống nhau**, ngược lại thì trả về **false**.
 
 ## Một số đối tượng sẵn có trong JavaScript
@@ -262,6 +265,7 @@ function maxOf(){
     console.log(maxOf(1, 2, 3, 4, 5, 6, 7));
     // => 7
 ```
+
 Rõ ràng, hàm _maxOf_ của mình không chứa một tham số nào. Nhưng khi sử dụng, mình lại có thể truyền tham số với số lượng tuỳ ý.
 
 ### Đối tượng Math
@@ -283,6 +287,7 @@ var x = 6;
     console.log(window.x);
     // => 6
 ```
+
 Trên đây là một số kiến thức cơ bản về JavaScript object. Nếu bạn đã hiểu hết những nội dung ở trên, bạn có thể tìm hiểu sâu hơn về object. Còn bây giờ thì tạm dừng lại và thực hành một chút về những gì đã học được nhé.
 
 <blockquote>Dục tốc bất đạt.</blockquote>

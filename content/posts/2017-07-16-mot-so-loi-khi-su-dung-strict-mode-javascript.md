@@ -23,6 +23,7 @@ x = 10;
     console.log(window.x);
     // => 10
 ```
+
 Ở chế độ strict mode, bạn sẽ bị lỗi _x chưa được định nghĩa_: **Uncaught ReferenceError: x is not defined**
 
 ```
@@ -30,6 +31,7 @@ x = 10;
     console.log(window.x);
     // => Uncaught ReferenceError: x is not defined
 ```
+
 ## Gán giá trị cho biến global, thuộc tính chỉ đọc, thuộc tính getter
 
 Ở chế độ bình thường, việc gán giá trị cho biến Global như Infinity, NaN,... hay những thuộc tính chỉ đọc,... sẽ không có thông báo lỗi. Mặc dù việc gán giá trị này là hoàn toàn sai và không có ý nghĩa.
@@ -79,7 +81,6 @@ Khi ở strict mode, bạn chắc chắn sẽ nhận được lỗi như:
 
 - Uncaught TypeError: Cannot add property x, object is not extensible
 
-
 ```
 var undefined = 5;
     console.log(undefined);
@@ -110,6 +111,7 @@ var undefined = 5;
     console.log(fixed.x);
     // => Uncaught TypeError: Cannot add property x, object is not extensible
 ```
+
 ## Xoá thuộc tính của đối tượng Global
 
 Bình thường, bạn sẽ không thể xoá thuộc tính của một đối tượng Global, mặc dù không có thông báo lỗi nào. Khi ở strict mode, bạn sẽ bị lỗi nếu cố gắng xoá một thuộc tính của đối tượng Global:
@@ -135,6 +137,7 @@ function sum(a, a, c){
     }
     // => Uncaught SyntaxError: Duplicate parameter name not allowed in this context
 ```
+
 ## Thêm thuộc tính cho những giá trị nguyên thuỷ
 
 Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](/values-types-va-operators-trong-javascript-phan-1/), [string, boolean.](/values-types-va-operators-trong-javascript-phan-2/) Ngược lại, bạn sẽ bị lỗi như:
@@ -144,7 +147,6 @@ Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](/values-ty
 - Uncaught TypeError: Cannot create property 'sailing' on number '14'
 
 - Uncaught TypeError: Cannot create property 'you' on string 'with'
-
 
 ```
 'use strict';
@@ -157,6 +159,7 @@ Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](/values-ty
     'with'.you = 'far away';
     // => Uncaught TypeError: Cannot create property 'you' on string 'with'
 ```
+
 ## Xoá một biến thông thường ở Strict mode
 
 Strict mode cấm bạn xoá tên biến. Ngược lại, bạn sẽ bị lỗi là:
@@ -170,6 +173,7 @@ Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.
     delete x;
     // => Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.
 ```
+
 ## Đặt tên biến trùng với từ dự trữ
 
 Ngoài từ khoá, [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.

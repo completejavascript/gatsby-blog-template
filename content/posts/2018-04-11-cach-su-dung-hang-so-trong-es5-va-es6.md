@@ -41,6 +41,7 @@ Object.defineProperties(window, {
     myconst = 99;
     console.log(myconst); // => 10
 ```
+
 Trong ví dụ trên, mình định nghĩa **myconst** là một hằng số của window có giá trị value = 10. Sau đó, dù mình có thay đổi giá trị **myconst = 99**, thì giá trị của myconst vẫn không thay đổi so với giá trị gốc là 10.
 
 Tuy nhiên, bạn cũng thấy là dù việc thay đổi giá trị **myconst = 99 **không có ý nghĩa, nhưng vẫn không có hề có thông báo lỗi khi bạn cố tình thay đổi giá trị của hằng số.
@@ -108,6 +109,7 @@ function test() {
 
     console.log(myconst); // => myconst is not defined
 ```
+
 Bạn thấy đó, ở ngoài hàm **test**, myconst chưa được định nghĩa.
 
 ## Kết luận
@@ -120,6 +122,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-googl
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

@@ -30,6 +30,7 @@ function Animal(name, leg) {
     console.log(dog.about()); // => Dog has 4 legs
     console.log(bird.about());// => Bird has 2 legs
 ```
+
 Trong ví dụ trên, [đối tượng](/javascript-object-last-but-not-least/) sử dụng hàm khởi tạo **Animal** sẽ có 2 thuộc tính (_name_, _leg_) và 1 phương thức (_about_). Tuy nhiên, cách trên có nhược điểm là khó để kế thừa và phương thức _about_ sẽ phải định nghĩa lại đối với mỗi đối tượng. Để khắc phục nhược điểm trên, ta có cách thứ hai là sử dụng **Prototypes**.
 
 ## Constructor Pattern với Prototypes
@@ -51,6 +52,7 @@ function Animal(name, leg) {
     console.log(dog.about()); // => Dog has 4 legs
     console.log(bird.about());// => Bird has 2 legs
 ```
+
 ## Constructor Pattern với từ khoá **class**
 
 Từ khoá **class** thực chất là một hàm số đặc biệt. Sử dụng **class** cho phép khởi tạo đối tượng mới một cách trực quan, và gần với khái niệm _class_ trong các ngôn ngữ lập trình khác như C++, Java,...
@@ -75,6 +77,7 @@ class Animal {
     console.log(dog.about()); // => Dog has 4 legs
     console.log(bird.about());// => Bird has 2 legs
 ```
+
 Trong class, có một hàm duy nhất và đặc biệt là **constructor**, đây là hàm khởi tạo của class. Trong hàm này bạn có thể định nghĩa các thuộc tính (_name_, _leg_) giống như sử dụng function và phương thức (_about_). Ngoài ra, bạn có thể định nghĩa các **getter**, **setter** và các hàm **static**.
 
 Trên đây là một số Constructor Pattern cơ bản. Tiếp theo, mình sẽ giới thiệu với các bạn về Module Pattern.
@@ -93,4 +96,4 @@ Xin chào và hẹn gặp lại ở [bài viết tiếp theo](/js-pattern-2-modu
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

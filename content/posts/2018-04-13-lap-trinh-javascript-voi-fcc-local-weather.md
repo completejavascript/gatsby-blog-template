@@ -64,6 +64,7 @@ Mình mới chỉ hiểu đơn giản vậy thôi. Còn sâu xa hơn thì nhờ 
 ```
 `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${secretKey}/${lat},${lon}`
 ```
+
 Đến đây, bạn đã có thể hiển thị được thông tin thời tiết ở vị trí hiện tại của người dùng rồi. Tiếp theo, bạn cần hiển thị hình ảnh tương ứng với thông tin thời tiết đó.
 
 ### Hiển thị icon ứng với thông tin thời tiết
@@ -158,6 +159,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

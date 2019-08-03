@@ -141,6 +141,7 @@ Object nhận được từ phía giao diện chính sẽ được lấy từ **
 console.log('[Worker]', 'Worker Thread receives command: ', event.data.cmd, event.data.msg);
     // => [Worker] Worker Thread receives command: start hello
 ```
+
 Để test chức năng này, mình có chuẩn bị một ví dụ nhỏ trên [Github](https://github.com/completejavascript/web-worker-test) và [codepen](https://codepen.io/completejavascript/pen/vpRvgm) mà bạn có thể tham khảo.
 
 Cách này có một nhược điểm là nếu như bạn gửi dữ liệu lớn, chẳng hạn 500MB, thì sau khi gửi đi, nó sẽ được sao chép. Vì vậy, tổng dữ liệu chiếm sẽ là 500MB + 500MB = 1GB. Điều đó có thể dẫn đến hết bộ nhớ cho phép. Để khắc phục tình trạng này, ta có thể sử dụng Transferable Object như sau.
@@ -208,6 +209,7 @@ Kết quả:
     [Worker] Length of Array Buffer 1: 1000
     [Worker] Length of Array Buffer 2: 100000
 ```
+
 **Chú ý:**
 
 - Việc thực hiện lệnh tại **onmessage** sẽ được thực hiện tuần tự. Nghĩa là khi bạn gửi 10 lệnh **postMessage**, thì ở phía nhận, nó sẽ thực hiện lần lượt từng lệnh một, hết lệnh này mới đến lệnh khác.

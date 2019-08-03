@@ -45,6 +45,7 @@ function Animal(name) {
     myDog.sayType(); // => type: Dog
     myDog.sayName(); // => TypeError: myDog.sayName is not a function
 ```
+
 Lớp cha **Animal** có một thuộc tính là _type_, phương thức là _sayType_ và một phương thức khác được định nghĩa thêm trong prototype của Animal là _sayName_**.**
 
 Lớp con **Dog** kế thừa lớp cha Animal. Trong đó, mình gán **this.super\_ = Animal** để hiểu rằng lớp cha của Dog là Animal. Sau đó, gọi ra hàm khởi tạo của lớp cha ứng với đối tượng **this** là Dog (nếu bạn vẫn chưa biết ý nghĩa của hàm **call** thì có thể đọc bài viết [này](/phan-biet-call-apply-va-bind-trong-javascript/)).
@@ -100,6 +101,7 @@ function Animal(name) {
     myDog.sayType(); // => type: Dog
     myDog.sayName(); // => name: Rex
 ```
+
 Trong đó, mình có định nghĩa một [hàm số](/tim-hieu-function-javascript/) là **inherits**, với hai tham số đầu vào là child và parent, lần lượt là 2 hàm khởi tạo của lớp con và lớp cha. Ở đây, child là Dog và parent là Animal.
 
 Hàm này có nhiệm vụ là tạo ra một đối tượng mới từ prototype của lớp cha và gán nó cho prototype của lớp con. Vì vậy mà các đối tượng thuộc lớp con đã có thể truy cập đến các phương thức trong prototype của lớp cha (ví dụ: **sayName**).
@@ -141,6 +143,7 @@ class Animal {
     myDog.sayType(); // => type: Dog
     myDog.sayName(); // => name: Rex
 ```
+
 Bạn thấy đó, kết quả vẫn như vậy mà cách viết ngắn gọn và trực quan hơn rất nhiều. Đó chính là lợi ích rất lớn của việc sử dụng ES6 so với ES5.
 
 ## Kết luận
@@ -165,6 +168,6 @@ Hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

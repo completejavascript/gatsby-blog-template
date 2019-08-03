@@ -31,6 +31,7 @@ Ví dụ:
 var str = "Just say "thank you" more";
     console.log(str); // => Uncaught SyntaxError: Unexpected identifier
 ```
+
 Đúng vậy, bạn sẽ nhận được thông báo lỗi như trên nếu như bạn khai báo string kiểu này. Theo như định nghĩa, string phải được đặt trong cặp dấu ngoặc đơn hay ngoặc kép. Do đó, vế phải của phép gán trên chứa 2 string là "Just say " và " more". Còn từ _thank you_ thì đứng bơ vơ nên lỗi là đúng rồi.
 
 Để hiển thị dấu _" "_ nói riêng và các kí tự đặc biệt nói chung trong string, chúng ta có 2 cách:
@@ -81,18 +82,21 @@ Trong ví dụ trên:
 ```
 var x = 'It\'s six o\'clock now.'
 ```
+
 Thay vì sử dụng backslash để chèn kí tự _'_ vào trong string, mình có thể thay thế cặp dấu ngoặc đơn ở ngoài cùng bằng cặp dấu ngoặc kép.
 
 ```
 var x = "It's six o'clock now.";
     console.log(x); => It's six o'clock now.
 ```
+
 Tư tưởng ở đây là: _nếu bạn muốn chèn kí tự ' trong string thì dùng cặp dấu ngoặc kép để đóng, mở string. Ngược lại, nếu bạn muốn chèn kí tự " vào trong string thì dùng cặp dấu ngoặc đơn để đóng, mở string._
 
 ```
 var y = 'Call me "JavaScripter"';
     console.log(y); // => Call me "JavaScripter"
 ```
+
 Rõ ràng, việc sử dụng kết hợp dấu ngoặc đơn và ngoặc kép giúp cho việc viết string được ngắn gọn hơn và dễ theo dõi hơn.
 
 Sự linh động này trong việc biểu diễn string là rất đặc biệt trong JavaScript mà C/C++ hay Java không có. Một lần nữa, JavaScript lại tỏ ra khá hiệu quả trong vai trò [nâng cao hiệu suất làm việc](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) của lập trình viên.
@@ -122,6 +126,7 @@ var x = 'Both single and double quotes can be used to mark strings as
     long as the quotes at the start and the end of the string match.';
     console.log(z) // OK
 ```
+
 Với riêng bản thân, mình hay sử dụng toán tử + để ghép nối string thay vì sử dụng dấu backslash (\). Cái này là tuỳ thuộc vào sở thích của bạn. Bạn có thể tuỳ ý chọn một trong hai cách.
 
 ### Thuộc tính (properties) và phương thức (methods) của strings
@@ -134,6 +139,7 @@ Thuộc tính **length **dùng để xác định độ dài của string.
 var x = 'Just for laugh';
     console.log(x.length); // => 14
 ```
+
 Các phương thức của strings bao gồm:
 
 - **toLowerCase()**: trả về string mới với tất cả các kí viết thường (số, kí tự không có tác dụng)
@@ -204,6 +210,7 @@ var x = 'JavaScript is a Object-Based Languague.';
     console.log(z.charAt(10));     // => a
     console.log(z.charCodeAt(10)); // => 97
 ```
+
 Trên đây là một số ví dụ cơ bản về các phương thức với strings. Để hiểu rõ và nhớ những phương thức này lâu hơn thì bạn nên [thực hành nhiều hơn](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon/) và thử các trường hợp có thể để hiểu rõ hoạt động của chúng.
 
 ## Booleans
@@ -235,6 +242,7 @@ console.log(6 > 4);    	          // => true
     console.log(true == true);        // => true
     console.log(NaN == NaN);          // => false
 ```
+
 #### Sử dụng toán tử logic (Logical Operators)
 
 Trong JavaScript có 3 toán tử logic là: _and_ (&&), _or_ (||), _not_ (!).
@@ -249,6 +257,7 @@ console.log(true && true);   // => true
     console.log(!true);          // => false
     console.log(!false);         // => true
 ```
+
 Theo mình, Booleans là một kiểu dữ liệu đơn giản nhất. Tuy nhiên, tầm quan trọng của nó thì không ít. Bạn sẽ tiếp tục thấy kiểu dữ liệu này ở trong các bài viết tiếp theo.
 
 ## Operators
@@ -270,6 +279,7 @@ console.log(3 + 5);    // => 8
     console.log(10 / 3);   // => 3.3333333333333335
     console.log(10 % 4);   // => 2
 ```
+
 Về độ ưu tiên, bạn chỉ cần nhớ câu _nhân chia trước, cộng trừ sau_. Nghĩa là phép nhân, phép chia, phép chia dư có cùng độ ưu tiên (I). Phép cộng, trừ có cùng độ ưu tiên (II). Độ ưu tiên của nhóm (I) lớn hơn độ ưu tiên của (II).
 
 Và cái nào có độ ưu tiên lớn hơn thì sẽ được thực hiện trước. Trong trường hợp các toán tử có cùng độ ưu tiên thì sẽ được thực hiện từ trái sang phải. (Khi viết đến đây, mình chợt nghĩ là không biết mấy nước mà chúng nó viết chữ từ phải sang trái thì sao nhỉ? Chắc là chúng nó cũng tính toán từ phải sang trái luôn. ???)
@@ -278,6 +288,7 @@ Và cái nào có độ ưu tiên lớn hơn thì sẽ được thực hiện tr
 console.log(1 + 2 * 3 - 8 / 4 + 5 % 3); // => 7
     console.log(3 + 4 - 8 - 2 + 6); // => 3
 ```
+
 ### Toán tử ghép nối (Concatenation Operators)
 
 Toán tử ghép nối (+) chỉ được dùng với strings. Nó dùng để ghép nối 2 strings với nhau.
@@ -285,6 +296,7 @@ Toán tử ghép nối (+) chỉ được dùng với strings. Nó dùng để g
 ```
 console.log("I" + " " + "love " + 'you'); // => I love you
 ```
+
 ### Toán tử logic (Logical Operators)
 
 Ở phần trên, mình đã nhắc tới toán tử logic trong việc tạo ra giá trị **Booleans**. Toán tử logic bao gồm: *and* (&&), _or_ (||), _not_ (!).
@@ -304,6 +316,7 @@ Trước khi bàn về toán tử này, mình muốn bạn chú ý rằng: các 
 ```
 console.log((3 + 4) * 2 - 2); // => = 7 * 2 - 2 = 12
 ```
+
 **Toán tử gán (Assignement operator)**
 
 Tiếng anh hay nói là "last but not least" hay "last but certainly not least". Tức là _cuối cùng nhưng không kém phần quan trọng_. Toán tử gán được sử dụng khi bạn muốn gán dữ liệu cho một biến.

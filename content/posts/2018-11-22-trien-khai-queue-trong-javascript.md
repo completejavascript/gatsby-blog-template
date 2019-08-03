@@ -64,51 +64,52 @@ Một số phép toán cơ bản với Queue là:
 
 ### Triển khai Queue trong JavaScript với Array
 
-    <code class="js language-js">class AQueue {
-      constructor(capacity) {
-        this.data = [];
-        this.capacity = capacity;
-        this.size = 0;
-      }
+```js
+class AQueue {
+  constructor(capacity) {
+    this.data = [];
+    this.capacity = capacity;
+    this.size = 0;
+  }
 
-      isFull() {
-        return this.size === this.capacity;
-      }
+  isFull() {
+    return this.size === this.capacity;
+  }
 
-      isEmpty() {
-        return this.size === 0;
-      }
+  isEmpty() {
+    return this.size === 0;
+  }
 
-      enqueue(item) {
-        if (this.isFull()) return false;
+  enqueue(item) {
+    if (this.isFull()) return false;
 
-        this.data.push(item);
-        return true;
-      }
+    this.data.push(item);
+    return true;
+  }
 
-      dequeue() {
-        if (this.isEmpty()) return undefined;
+  dequeue() {
+    if (this.isEmpty()) return undefined;
 
-        return this.data.shift();
-      }
+    return this.data.shift();
+  }
 
-      front() {
-        if (this.isEmpty()) return undefined;
+  front() {
+    if (this.isEmpty()) return undefined;
 
-        return this.data[0];
-      }
+    return this.data[0];
+  }
 
-      rear() {
-        if (this.isEmpty()) return undefined;
+  rear() {
+    if (this.isEmpty()) return undefined;
 
-        return this.data[this.size - 1];
-      }
+    return this.data[this.size - 1];
+  }
 
-      clear() {
-        this.data.length = 0;
-        this.size = 0;
-      }
-    }
+  clear() {
+    this.data.length = 0;
+    this.size = 0;
+  }
+}
 ```
 
 Cách triển khai Queue trong JavaScript cũng tương tự như triển khai Stack trong JavaScript vậy. Chỉ khác 3 chỗ là:
@@ -121,72 +122,74 @@ Cách triển khai Queue trong JavaScript cũng tương tự như triển khai S
 
 ### Triển khai Queue vòng với Array
 
-    <code class="js language-js">class CQueue {
-      constructor(capacity) {
-        this.data = [];
-        this.capacity = capacity;
-        this.size = 0;
-        this.front = 0;
-        this.rear = 0;
-      }
+```js
+class CQueue {
+  constructor(capacity) {
+    this.data = [];
+    this.capacity = capacity;
+    this.size = 0;
+    this.front = 0;
+    this.rear = 0;
+  }
 
-      isFull() {
-        return this.size === this.capacity;
-      }
+  isFull() {
+    return this.size === this.capacity;
+  }
 
-      isEmpty() {
-        return this.size === 0;
-      }
+  isEmpty() {
+    return this.size === 0;
+  }
 
-      enqueue(item) {
-        if (this.isFull()) return false;
+  enqueue(item) {
+    if (this.isFull()) return false;
 
-        this.data[this.rear] = item;
-        this.rear = (this.rear + 1) % this.capacity;
-        this.size++;
-        return true;
-      }
+    this.data[this.rear] = item;
+    this.rear = (this.rear + 1) % this.capacity;
+    this.size++;
+    return true;
+  }
 
-      dequeue() {
-        if (this.isEmpty()) return undefined;
+  dequeue() {
+    if (this.isEmpty()) return undefined;
 
-        let item = this.data[this.front];
-        this.front = (this.front + 1) % this.capacity;
-        this.size--;
-        return item;
-      }
+    let item = this.data[this.front];
+    this.front = (this.front + 1) % this.capacity;
+    this.size--;
+    return item;
+  }
 
-      front() {
-        if (this.isEmpty()) return undefined;
+  front() {
+    if (this.isEmpty()) return undefined;
 
-        return this.data[0];
-      }
+    return this.data[0];
+  }
 
-      rear() {
-        if (this.isEmpty()) return undefined;
+  rear() {
+    if (this.isEmpty()) return undefined;
 
-        return this.data[this.size - 1];
-      }
+    return this.data[this.size - 1];
+  }
 
-      clear() {
-        this.data.length = 0;
-        this.size = 0;
-        this.front = 0;
-        this.rear = 0;
-      }
-    }
+  clear() {
+    this.data.length = 0;
+    this.size = 0;
+    this.front = 0;
+    this.rear = 0;
+  }
+}
 ```
 
 Queue vòng cũng tương tự như Queue thông thường. Tuy nhiên, bạn cũng có thể thấy là mình không sử dụng phương thức **push()** hay **shift()** nữa.
 
 Thực chất, khi mình **enqueue()** thì kích thước của Array tự mở rộng ra, ví dụ:
 
-    <code class="js language-js">const a = [];
-    a[0] = 1;
-    a[1] = 2;
+```js
+const a = [];
+a[0] = 1;
+a[1] = 2;
 
-    console.log(a);
-    // => (2) [1, 2]
+console.log(a);
+// => (2) [1, 2]
 ```
 
 Còn khi **dequeue()**, do mình không sử dụng **shift()** nên kích thước của array không thay đổi. Vì vậy, để quản lý các phần tử trong Queue, mình cần thêm 3 biến là: _size_, _front_ và _rear_.
@@ -201,11 +204,12 @@ Trong đó:
 
 Ngoài ra, để thể hiện **tính vòng của Queue** thì mình tận dụng chức năng của **phép chia dư**, cụ thể:
 
-    <code class="js language-js">// enqueue
-    this.rear = (this.rear + 1) % this.capacity;
+```js
+// enqueue
+this.rear = (this.rear + 1) % this.capacity;
 
-    // dequeue
-    this.front = (this.front + 1) % this.capacity;
+// dequeue
+this.front = (this.front + 1) % this.capacity;
 ```
 
 **Tại sao sử dụng như trên lại vòng được?**
@@ -214,13 +218,14 @@ Ngoài ra, để thể hiện **tính vòng của Queue** thì mình tận dụn
 
 Ngoài ra, cách trên có thể biểu diễn đơn giản nhưng dài dòng hơn là:
 
-    <code class="js language-js">// enqueue
-    this.rear++;
-    if (this.rear >= this.capacity) this.rear = 0;
+```js
+// enqueue
+this.rear++;
+if (this.rear >= this.capacity) this.rear = 0;
 
-    // dequeue
-    this.front++;
-    if (this.front >= this.capacity) this.front = 0;
+// dequeue
+this.front++;
+if (this.front >= this.capacity) this.front = 0;
 ```
 
 ## So sánh hiệu năng 2 cách triển khai Queue trong JavaScript
@@ -229,33 +234,34 @@ Ngoài ra, cách trên có thể biểu diễn đơn giản nhưng dài dòng h�
 
 Để test 2 cách triển khai Queue trong JavaScript với Queue thông thường và Queue vòng, mình viết một đoạn code như sau:
 
-    <code class="js language-js">const Capacity = 5000000;
-    const TestCase = 10;
+```js
+const Capacity = 5000000;
+const TestCase = 10;
 
-    // Test queue thông thường
-    const queue = new AQueue(Capacity);
+// Test queue thông thường
+const queue = new AQueue(Capacity);
 
-    /**
-     * // Test queue vòng
-     * const queue = new CQueue(Capacity);
-     */
+/**
+ * // Test queue vòng
+ * const queue = new CQueue(Capacity);
+ */
 
-    const start = performance.now();
+const start = performance.now();
 
-    for (let tc = 0; tc < TestCase; tc++) {
-      for (let i = 0; i < Capacity; i++) {
-        queue.enqueue(i);
-      }
+for (let tc = 0; tc < TestCase; tc++) {
+  for (let i = 0; i < Capacity; i++) {
+    queue.enqueue(i);
+  }
 
-      for (let i = 0; i < Capacity; i++) {
-        queue.dequeue();
-      }
-    }
+  for (let i = 0; i < Capacity; i++) {
+    queue.dequeue();
+  }
+}
 
-    const end = performance.now();
-    const duration = (end - start) / TestCase;
+const end = performance.now();
+const duration = (end - start) / TestCase;
 
-    console.log(`Duration: ${duration} ms`);
+console.log(`Duration: ${duration} ms`);
 ```
 
 Cách test hoàn toàn tương tự như khi test với Stack nên mình sẽ không giải thích gì thêm.

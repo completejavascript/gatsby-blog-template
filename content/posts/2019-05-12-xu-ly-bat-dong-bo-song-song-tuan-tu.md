@@ -29,28 +29,28 @@ Giả sử, mình có **một công việc** bất đồng bộ là: lấy thôn
 - Lấy danh sách các bài viết liên quan (**getRelatedPosts**)
 
 ```js
-const wait = (ms) => {
+const wait = ms => {
   return new Promise(res => setTimeout(res, ms));
-}
+};
 
 const getContent = async () => {
   await wait(1000);
-  return 'This is content';
-}
+  return "This is content";
+};
 
 const getComments = async () => {
   await wait(1500);
-  return ['comment 1', 'comment 2'];
-}
+  return ["comment 1", "comment 2"];
+};
 
-const getRelatedPosts =  async () => {
+const getRelatedPosts = async () => {
   await wait(2000);
-  return ['post 2', 'post 3', 'post 4'];
-}
+  return ["post 2", "post 3", "post 4"];
+};
 
 const getPost = async () => {
   // TODO: Implement later
-}
+};
 ```
 
 Với công việc như trên, mình sẽ thử triển khai theo cách xử lý bất đồng bộ tuần tự và cách xử lý bất đồng bộ song song, sau đó sẽ kiểm tra xem cách nào tốt hơn nhé!
@@ -61,15 +61,15 @@ Với cách này, 3 hành động **getContent**, **getComments** và **getRelat
 
 ```js
 const getPost = async () => {
-  console.time('time');
+  console.time("time");
 
   const content = await getContent();
   const comments = await getComments();
   const relatedPosts = await getRelatedPosts();
 
-  console.log(`Post Info: `, {content, comments, relatedPosts});
-  console.timeEnd('time');
-}
+  console.log(`Post Info: `, { content, comments, relatedPosts });
+  console.timeEnd("time");
+};
 
 getPost();
 /*
@@ -99,17 +99,17 @@ Với cách này, 3 hành động **getContent**, **getComments** và **getRelat
 
 ```js
 const getPost = async () => {
-  console.time('time');
+  console.time("time");
 
-  const [ content, comments, relatedPosts ] = await Promise.all([
+  const [content, comments, relatedPosts] = await Promise.all([
     getContent(),
     getComments(),
     getRelatedPosts()
   ]);
 
-  console.log(`Post Info: `, {content, comments, relatedPosts});
-  console.timeEnd('time');
-}
+  console.log(`Post Info: `, { content, comments, relatedPosts });
+  console.timeEnd("time");
+};
 
 /*
 Post Info:

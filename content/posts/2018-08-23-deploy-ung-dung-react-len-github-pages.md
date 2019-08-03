@@ -86,6 +86,7 @@ Trước tiên, mình tạo một thư mục - coi như là workspace:
 ```
 D:\create-react-app
 ```
+
 Sau đó, mình mở Visual Studio Code lên, chọn **File** \ **Open Folder...**. Chọn đến thư mục vừa tạo ra ở trên.
 
 ![Màn hình mặc định của Visual Studio Code](/wp-content/uploads/2018/08/visual-studio-code-1.png)Màn hình mặc định của Visual Studio Code sau khi mở thư mục tại D:\create-react-app
@@ -103,6 +104,7 @@ Bạn có thể sử dụng câu lệnh sau để tạo mới một project crea
 ```
 npx create-react-app app-name
 ```
+
 Trong đó, _app-name_ là tên project mà bạn muốn đặt. Kết quả của câu lệnh trên là bạn đã có một project mẫu.
 
 ![Cấu trúc project React sử dụng create-react-app](/wp-content/uploads/2018/08/create-react-app-init.png)Cấu trúc ứng dụng React sử dụng create-react-app
@@ -116,6 +118,7 @@ Trong đó, _app-name_ là tên project mà bạn muốn đặt. Kết quả c�
     # Tạo server
     yarn start
 ```
+
 Sau đó, bạn vào địa chỉ **http://127.0.0.1:3000/** trên trình duyệt để kiểm tra kết quả. Nếu mọi thứ hoạt động bình thường thì bạn sẽ thu được màn hình như sau:
 
 ![Ứng dụng React mặc định](/wp-content/uploads/2018/08/create-react-app-default.png)Ứng dụng React mặc định khi sử dụng create-react-app
@@ -226,11 +229,13 @@ Có 5 bước để deploy ứng dụng React lên Github Pages như sau:
     # Push các file lên Github
     git push origin master
 ```
+
 **Bước 3**: Cài đặt gh-pages sử dụng npm
 
 ```
 npm install --save gh-pages
 ```
+
 **Bước 4**: Sửa file _package.json_
 
 ```
@@ -267,6 +272,7 @@ Trong đó:
 ```
 npm run deploy
 ```
+
 Sau khi deploy ứng dụng React thành công, bạn cần chờ một vài phút, rồi truy cập vào địa chỉ ứng với phần **homepage** (ví dụ: _https://completejavascript.github.io/app-name/_ ) để kiểm tra thành quả của mình.
 
 ## Lời kết
@@ -281,6 +287,6 @@ Cuối cùng, xin chào và hẹn gặp lại bạn trong [bài viết tiếp th
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

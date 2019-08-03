@@ -62,6 +62,7 @@ var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
     say.call(person1, 'Hello', 'Good morning'); // => Hello,Good morning Jon Kuperman
     say.call(person2, 'Hello', 'Good morning'); // => Hello,Good morning Kelly King
 ```
+
 ### Hàm apply
 
 ```
@@ -75,6 +76,7 @@ var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
     say.apply(person1, ['Hello', 'Good moring']); // => Hello,Good moring Jon Kuperman
     say.apply(person2, ['Hello', 'Good moring']); // => Hello,Good moring Kelly King
 ```
+
 ### Hàm bind
 
 ```
@@ -91,6 +93,7 @@ var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
     sayHelloJon(); // => Hello,Good morning Jon Kuperman
     sayHelloKelly(); // => Hello,Good morning Kelly King
 ```
+
 ## Kết luận
 
 - Nhìn chung, hàm **call** và **apply** là gần giống nhau. Chúng đều gọi hàm trực tiếp. Chỉ khác ở cách truyền tham số vào (với **c**all thì đối số phân cách bởi dấu phẩy **c**omma và với **a**pply thì đối số cho bởi mảng **a**rray)

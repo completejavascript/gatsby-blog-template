@@ -28,6 +28,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     console.log(sum);
     // => 55
 ```
+
 Cách giải trên là khá dễ hiểu. Chúng ta lấy từng phần tử trong mảng ra theo chỉ số, rồi cộng với biến _sum_.
 
 Tuy nhiên có một vấn đề với cách này (cũng không hẳn là một vấn đề), đó là việc sử dụng chỉ số **i** có thể khiến bạn bị nhầm với một biến số trước đó. Dẫn đến những sai lầm không thể đoán trước.
@@ -58,6 +59,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     console.log(sum);
     // => 55
 ```
+
 Ta có thể diễn giải thuật toán trên bằng lới như sau: _Với mỗi phần tử trong mảng numbers, ta sẽ lấy nó ra và cộng dồn với biến sum. Kết quả thu được, sẽ ghi ra console._
 
 Nếu so sánh với cách trình bày ở trên thì cách này rõ ràng sẽ dài hơn. Tuy nhiên, đây chỉ là một ví dụ cơ bản, nên ta sẽ không bàn về độ dài, ngắn của code. Vấn đề mình và bạn quan tâm trước tiên đó là: **code-đọc-dễ-hiểu**.
@@ -127,6 +129,7 @@ function Counter() {
     console.log(obj.count); // => 3
     console.log(obj.sum);   // => 16
 ```
+
 ## Ưu, nhược điểm của việc sử dụng forEach
 
 Bất cứ thứ gì cũng có hai mặt của nó, **forEach** JavaScript cũng không ngoại lệ. Sau đây là một số ưu, nhược điểm của nó:
@@ -194,6 +197,7 @@ function isBigEnough(element, index, array) {
     console.log([12, 5, 8, 130, 44].every(isBigEnough)); // => false
     console.log([12, 54, 18, 130, 44].every(isBigEnough)); // => true
 ```
+
 ### [array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 Giống như cái tên của nó, phương thức này dùng để lọc ra các phần tử trong mảng thoả mãn một điều kiện cho trước. Và trả về một mảng mới chứa những phần tử đó.
@@ -215,6 +219,7 @@ function isBigEnough(value) {
     console.log(filtered);
     // [12, 130, 44]
 ```
+
 ### [array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
 Trả về giá trị của phần tử đầu tiên trong mảng thoả mãn điều kiện cho trước, nếu không tìm thấy thì trả về **undefined**.
@@ -270,6 +275,7 @@ const inventory = [
     console.log(inventory.findIndex(findCherries));
     // => 2
 ```
+
 ### [array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
 Trả về mảng mới với mỗi phần tử là kết quả của việc gọi hàm callback ứng với mỗi phần tử của mảng ban đầu.
@@ -290,6 +296,7 @@ const numbers = [1, 4, 9];
     console.log(numbers);
     // => [1, 4, 9]
 ```
+
 Những phương thức còn lại bạn có thể tham khảo thêm tại [đây](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array). Mình sẽ không trình bày thêm vì bài viết sẽ quá dài.
 
 ## Thực hành
@@ -326,6 +333,7 @@ console.log(every([NaN, NaN, NaN], isNaN));
     console.log(some([2, 3, 4], isNaN));
     // => false
 ```
+
 (tham khảo [every](https://github.com/completejavascript/practical-javascript/blob/master/iteration/every-prototype-completejavascript.com.js), [some](https://github.com/completejavascript/practical-javascript/blob/master/iteration/some-prototype-completejavascript.com.js)).
 
 Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết sau](/phan-biet-call-apply-va-bind-trong-javascript/)[,](/category/javascript-co-ban/) thân ái!

@@ -55,8 +55,8 @@ Ví dụ như mình viết một hàm bằng JavaScript thuần sau:
 
 ```js
 const func = (x, y) => {
-  return (x + y) (x - y);
-}
+  return (x + y)(x - y);
+};
 ```
 
 Hàm _func_ trên là một [arrow function](/phan-biet-arrow-function-va-function-trong-javascript/) - return đồng thời _(x + y)_ và _(x - y)_. Và dĩ nhiên là nó sẽ bị thông báo lỗi.
@@ -81,7 +81,7 @@ class App extends React.Component {
         <div> Type: Dog </div>
         <div> Type: Cat </div>
       </div>
-    )
+    );
   }
 }
 ```
@@ -157,10 +157,11 @@ Về cơ bản thì code đã hết lỗi rồi. Tuy nhiên, nó lại **nảy s
 ```html
 <div className="app">
   <p>Animals:</p>
-    <div> <!-- Thẻ div không mong muốn -->
-      <div>Type: Dog</div>
-      <div>Type: Cat</div>
-    </div>
+  <div>
+    <!-- Thẻ div không mong muốn -->
+    <div>Type: Dog</div>
+    <div>Type: Cat</div>
+  </div>
 </div>
 ```
 
@@ -224,10 +225,7 @@ Ngoài cách làm trên ra, mình mới biết thêm một cách làm khác có 
 
 ```jsx
 const Animals = () => {
-  return [
-    <div>Type: Dog</div>,
-    <div>Type: Cat</div>
-  ]
+  return [<div>Type: Dog</div>, <div>Type: Cat</div>];
 };
 
 class App extends React.Component {

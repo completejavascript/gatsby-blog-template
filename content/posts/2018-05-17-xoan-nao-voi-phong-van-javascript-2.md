@@ -343,16 +343,12 @@ Cách 1 bắt buộc phải có tên. Ngược lại, cách thứ 2 bạn có th
     function (){}               // Lỗi: SyntaxError: Unexpected token (
 ```
 
-
-
-
-
-
 ```
 // Function expression
     let name = function (){}    // Đúng
     let name = function a(){}   // Đúng
 ```
+
 Function declaration được **hoisted**. Function expression thì không. Và **[hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)** được hiểu nôm na là mọi biến, hàm được hoisted sẽ được _đưa lên_ vị trí đầu tiên trong block chứa nó.
 
 Do đó, nếu sử dụng cách 1, bạn có thể gọi hàm trước khi khai báo hàm. Ngược lại, khi sử dụng cách 2, bạn buộc phải định nghĩa hàm trước khi sử dụng nó.
@@ -403,6 +399,7 @@ let cat = function() {
     console.log(cat());
     // => undefined
 ```
+
 Vì vậy, đoạn code phía sau _return_ sẽ không bao giờ được chạy đến. Để sửa lại kết quả sao cho đúng thì bạn có thể làm như sau:
 
 ```
@@ -468,6 +465,7 @@ Xem đáp án
     0
     NaN
 ```
+
 **Giải thích:**
 
 Khi thực hiện [tính toán trong JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators) mà kiểu dữ liệu của các toán hạng là khác nhau thì JavaScript sẽ tự động convert chúng về cùng 1 kiểu dữ liệu.
@@ -481,6 +479,7 @@ Với toán tử + : JavaScript sẽ ưu tiên convert về string. Do đó:
 ```
 0 + '0' = '0' + '0' = '00'
 ```
+
 Với các toán tử còn lại (-, \*, /), JavaScript sẽ convert về number. Bởi lẽ, các toán tử này không áp dụng được với string. Do đó:
 
 ```
@@ -499,6 +498,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

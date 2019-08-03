@@ -46,6 +46,7 @@ Ví dụ:
 ```
 site:https://en.wikipedia.org Hồ Chí Minh
 ```
+
 Khi đó, kết quả tìm kiếm sẽ chỉ đến từ trang _https://en.wikipedia.org_ mà thôi. Bạn có thể xem kết quả ở [đây](https://www.google.com.vn/search?q=site%3Ahttps%3A%2F%2Fen.wikipedia.org+H%E1%BB%93+Ch%C3%AD+Minh&oq=site%3Ahttps%3A%2F%2Fen.wikipedia.org+H%E1%BB%93+Ch%C3%AD+Minh&aqs=chrome..69i57j69i58.347j0j4&sourceid=chrome&ie=UTF-8).
 
 Quay lại với nội dung chính của bài viết, đó là những bài học, kinh nghiệm và thủ thuật rút ra từ Wikipedia Viewer để áp dụng cho các project khác. Ngay sau đây, mình sẽ trình bày về vấn đề này.
@@ -296,6 +297,6 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-j
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

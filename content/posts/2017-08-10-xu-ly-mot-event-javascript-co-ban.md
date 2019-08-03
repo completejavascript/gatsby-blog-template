@@ -159,6 +159,7 @@ keydown 65
     keypress 97
     keyup 65
 ```
+
 Ngoài ra bạn có thể xử lý việc nhấn tổ hợp phím như ví dụ sau:
 
 ```

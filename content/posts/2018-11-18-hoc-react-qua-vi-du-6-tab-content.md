@@ -47,6 +47,7 @@ learn-react-by-example/
     ----index.js
     ----serviceWorker.js
 ```
+
 Trong đó:
 
 - Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Tab Content** nên mình tạo thêm thư mục **tab-content** bên trong với 2 file **tab-content.js** và **tab-content.css** để định nghĩa cho component **Tab Content** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
@@ -69,133 +70,125 @@ Trong phần này bạn cần phải chú ý đến một số kiến thức nh�
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-    ```jsx
-import React from 'react';
-    import './tab-content.css';
+```js
+x;
+import React from "react";
+import "./tab-content.css";
 
-    export default class TabContent extends React.Component {
-      constructor(props) {
-        super(props);
+export default class TabContent extends React.Component {
+  constructor(props) {
+    super(props);
 
-        // Tạo ra một mảng để lưu ref của các tab content
-        this.refTabContents = [];
-        this.props.input.forEach(_ => {
-          this.refTabContents.push(React.createRef());
-        });
+    // Tạo ra một mảng để lưu ref của các tab content
+    this.refTabContents = [];
+    this.props.input.forEach(_ => {
+      this.refTabContents.push(React.createRef());
+    });
 
-        // Mặc định sẽ hiển thị tab đầu tiên, nên this.state.tabIndex = 0
-        this.state = {
-          tabIndex: 0
-        }
+    // Mặc định sẽ hiển thị tab đầu tiên, nên this.state.tabIndex = 0
+    this.state = {
+      tabIndex: 0
+    };
 
-        this.changeTabIndex = this.changeTabIndex.bind(this);
-        this.updateTabContent = this.updateTabContent.bind(this);
+    this.changeTabIndex = this.changeTabIndex.bind(this);
+    this.updateTabContent = this.updateTabContent.bind(this);
+  }
+
+  /**
+   * Thay đổi tabIndex khi người dùng thay đổi tab
+   */
+  changeTabIndex(index) {
+    this.setState({
+      tabIndex: index
+    });
+  }
+
+  /**
+   * Cập nhật tab content
+   *
+   * Hàm này sẽ duyệt từng tab content,
+   *  + Nếu this.state.tabIndex trùng với index của tab => tab đó được active
+   *    => gán maxHeight cho nó bằng với giá trị scrollHeight - độ cao cần thiết
+   *    => và gán opacity = 1 để hiển thị nó
+   *  + Ngược lại, khi nó không được active
+   *    => gán maxHeight cho nó bằng 0.
+   *    => mà trong file css mình đã set overflow = hidden nên nó sẽ bị ẩn
+   *    => tuy nhiên nó vẫn có padding và border
+   *    => nên cần set opacity = 0 để ẩn nốt border đi
+   */
+  updateTabContent() {
+    this.refTabContents.forEach((refTab, index) => {
+      const elmTab = refTab.current;
+
+      if (this.state.tabIndex === index) {
+        elmTab.style.maxHeight = elmTab.scrollHeight + "px";
+        elmTab.style.opacity = "1";
+      } else {
+        elmTab.style.maxHeight = null;
+        elmTab.style.opacity = "0";
       }
+    });
+  }
 
-      /**
-       * Thay đổi tabIndex khi người dùng thay đổi tab
-       */
-      changeTabIndex(index) {
-        this.setState({
-          tabIndex: index
-        });
-      }
+  /**
+   * Hàm này được gọi khi TabContent được render xong.
+   * Khi đó mình sẽ cập nhật TabContent - updateTabContent lần đầu tiên.
+   * Sau đó, đăng ký sự kiện khi thay đổi kích thước màn hình,
+   * sẽ cập nhật lại TabContent,
+   * (thực chất là mình chỉ cập nhật lại maxHeight)
+   */
+  componentDidMount() {
+    this.updateTabContent();
+    window.addEventListener("resize", this.updateTabContent);
+  }
 
-      /**
-       * Cập nhật tab content
-       *
-       * Hàm này sẽ duyệt từng tab content,
-       *  + Nếu this.state.tabIndex trùng với index của tab => tab đó được active
-       *    => gán maxHeight cho nó bằng với giá trị scrollHeight - độ cao cần thiết
-       *    => và gán opacity = 1 để hiển thị nó
-       *  + Ngược lại, khi nó không được active
-       *    => gán maxHeight cho nó bằng 0.
-       *    => mà trong file css mình đã set overflow = hidden nên nó sẽ bị ẩn
-       *    => tuy nhiên nó vẫn có padding và border
-       *    => nên cần set opacity = 0 để ẩn nốt border đi
-       */
-      updateTabContent() {
-        this.refTabContents.forEach((refTab, index) => {
-          const elmTab = refTab.current;
+  /**
+   * Hàm này được gọi khi TabContent bị huỷ.
+   * Lúc này cần huỷ đăng ký sự kiện resize lúc trước để tránh leak memory
+   */
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateTabContent);
+  }
 
-          if (this.state.tabIndex === index) {
-            elmTab.style.maxHeight = elmTab.scrollHeight + "px";
-            elmTab.style.opacity = "1";
-          }
-          else {
-            elmTab.style.maxHeight = null;
-            elmTab.style.opacity = "0";
-          }
-        });
-      }
+  /**
+   * Hàm này được gọi mỗi khi this.state.tabIndex thay đổi.
+   * Tức là mình cần phải cập nhật lại nội dung của Tab content
+   * ứng với từng tab
+   */
+  componentDidUpdate() {
+    this.updateTabContent();
+  }
 
-      /**
-      * Hàm này được gọi khi TabContent được render xong.
-      * Khi đó mình sẽ cập nhật TabContent - updateTabContent lần đầu tiên.
-      * Sau đó, đăng ký sự kiện khi thay đổi kích thước màn hình,
-      * sẽ cập nhật lại TabContent,
-      * (thực chất là mình chỉ cập nhật lại maxHeight)
-      */
-      componentDidMount() {
-        this.updateTabContent();
-        window.addEventListener("resize", this.updateTabContent);
-      }
+  render() {
+    return (
+      <div className="lp-tab-content">
+        <div className="tab">
+          {this.props.input.map((tabContent, index) => {
+            return (
+              <button
+                key={index}
+                className={`tab-link ${this.state.tabIndex === index ? "active" : ""}`}
+                onClick={() => this.changeTabIndex(index)}
+              >
+                {tabContent.title}
+              </button>
+            );
+          })}
+        </div>
 
-      /**
-       * Hàm này được gọi khi TabContent bị huỷ.
-       * Lúc này cần huỷ đăng ký sự kiện resize lúc trước để tránh leak memory
-       */
-      componentWillUnmount() {
-        window.removeEventListener("resize", this.updateTabContent);
-      }
-
-      /**
-       * Hàm này được gọi mỗi khi this.state.tabIndex thay đổi.
-       * Tức là mình cần phải cập nhật lại nội dung của Tab content
-       * ứng với từng tab
-       */
-      componentDidUpdate() {
-        this.updateTabContent();
-      }
-
-      render() {
-        return (
-          <div className="lp-tab-content">
-            <div className="tab">
-              {
-                this.props.input.map((tabContent, index) => {
-                  return (
-                    <button
-                      key={index}
-                      className={`tab-link ${this.state.tabIndex === index ? "active" : ""}`}
-                      onClick={() => this.changeTabIndex(index)}
-                    >
-                      {tabContent.title}
-                    </button>
-                  )
-                })
-              }
-            </div>
-
-            <div className="tab-content-wrapper">
-              {
-                this.props.input.map((tabContent, index) => {
-                  return (
-                    <div
-                      ref={this.refTabContents[index]}
-                      key={index}
-                      className={`tab-content`}
-                    >
-                      {tabContent.content}
-                    </div>
-                  )
-                })
-              }
-            </div>
-          </div>
-        )
-      }
-    }
+        <div className="tab-content-wrapper">
+          {this.props.input.map((tabContent, index) => {
+            return (
+              <div ref={this.refTabContents[index]} key={index} className={`tab-content`}>
+                {tabContent.content}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+}
 ```
 
 ### Nội dung file tab-content.css
@@ -273,6 +266,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
       max-height: 0;
       overflow: hidden;
     }
+
 ```
 
 ## Sử dụng Tab Gallery component
@@ -301,98 +295,91 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow/), [Modal Image](/hoc-react-qua-vi-du-3-modal-image/) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox/).
 
-    ```jsx
-import React from 'react';
-    import './App.css';
-    import TabContent from './components/tab-content/tab-content';
+```js
+x;
+import React from "react";
+import "./App.css";
+import TabContent from "./components/tab-content/tab-content";
 
-    // Kết hợp Slideshow trong Tab Content
-    import Slideshow from './components/slideshow/slideshow';
-    import img1 from './images/01.jpg';
-    import img2 from './images/02.jpg';
-    import img3 from './images/03.jpg';
+// Kết hợp Slideshow trong Tab Content
+import Slideshow from "./components/slideshow/slideshow";
+import img1 from "./images/01.jpg";
+import img2 from "./images/02.jpg";
+import img3 from "./images/03.jpg";
 
-    // Kết hợp Modal Image trong Tab Content
-    import ModalImage from './components/modal-image/modal-image';
+// Kết hợp Modal Image trong Tab Content
+import ModalImage from "./components/modal-image/modal-image";
 
-    // Kết hợp Lightbox trong Tab Content
-    import LightBox from './components/lightbox/lightbox';
+// Kết hợp Lightbox trong Tab Content
+import LightBox from "./components/lightbox/lightbox";
 
-    const collection = [
-      { src: img1, caption: "Caption one" },
-      { src: img2, caption: "Caption two" },
-      { src: img3, caption: "Caption three" },
-    ];
+const collection = [
+  { src: img1, caption: "Caption one" },
+  { src: img2, caption: "Caption two" },
+  { src: img3, caption: "Caption three" }
+];
 
-    export default class App extends React.Component {
-      render() {
-        const contents = [
-          {
-            title: "Section1",
-            content:
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-          },
-          {
-            title: "Section2",
-            content:
-              <div>
-                <h2> Slideshow </h2>
-                <Slideshow
-                  input={collection}
-                  ratio={`3:2`}
-                  mode={`manual`}
-                />
-              </div>
-          },
-          {
-            title: "Section3",
-            content:
-              <div>
-                <h2>Image Modal</h2>
-                <p>Click the image below to show the modal.</p>
-                <ModalImage
-                  src={img2}
-                  alt={`This is one of beautiful girls`}
-                  ratio={`3:2`}
-                />
-              </div>
-          },
-          {
-            title: "Section 4",
-            content:
-              <div>
-                <h2>LightBox</h2>
-                <p>Click on each image below to show the modal.</p>
-
-                <LightBox
-                  input={collection}
-                  ratio={`3:2`}
-                />
-              </div>
-          }
-        ]
-        return (
-          <div className="App">
-            <h2>Tab Content</h2>
-            <p>Click on each section to change the tab's content</p>
-
-            <TabContent input={contents} />
-
-
-            <div>
-              <p>
-                Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-                Visit me at <a href="/">completejavascript.com</a>.
-              </p>
-            </div>
-
+export default class App extends React.Component {
+  render() {
+    const contents = [
+      {
+        title: "Section1",
+        content: (
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        )
+      },
+      {
+        title: "Section2",
+        content: (
+          <div>
+            <h2> Slideshow </h2>
+            <Slideshow input={collection} ratio={`3:2`} mode={`manual`} />
           </div>
-        );
+        )
+      },
+      {
+        title: "Section3",
+        content: (
+          <div>
+            <h2>Image Modal</h2>
+            <p>Click the image below to show the modal.</p>
+            <ModalImage src={img2} alt={`This is one of beautiful girls`} ratio={`3:2`} />
+          </div>
+        )
+      },
+      {
+        title: "Section 4",
+        content: (
+          <div>
+            <h2>LightBox</h2>
+            <p>Click on each image below to show the modal.</p>
+
+            <LightBox input={collection} ratio={`3:2`} />
+          </div>
+        )
       }
-    }
+    ];
+    return (
+      <div className="App">
+        <h2>Tab Content</h2>
+        <p>Click on each section to change the tab's content</p>
+
+        <TabContent input={contents} />
+
+        <div>
+          <p>
+            Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me at{" "}
+            <a href="/">completejavascript.com</a>.
+          </p>
+        </div>
+      </div>
+    );
+  }
+}
 ```
 
 Trong đó, Tab Content Component có các thuộc tính là:

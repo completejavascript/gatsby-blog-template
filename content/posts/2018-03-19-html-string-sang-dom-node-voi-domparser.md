@@ -56,6 +56,7 @@ let nodes = document.body.chidNodes;
 
     // => NodeList [div]
 ```
+
 Đến đây, bạn sẽ thu được một [mảng](/javascript-array-co-ban/) các node - NodeList. Và bây giờ, bạn hoàn toàn tự do sử dụng NodeList này để chèn vào bất cứ đâu trên trang HTML.
 
 ## Chuyển HTML String thành DOM và vẽ lên HTML
@@ -136,4 +137,4 @@ Hẹn gặp lại bạn ở [bài viết tiếp theo](/chuyen-html-template-sang
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

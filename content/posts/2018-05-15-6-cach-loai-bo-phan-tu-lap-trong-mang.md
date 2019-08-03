@@ -37,12 +37,14 @@ Về mặt trực quan, bạn sẽ thấy rằng mảng trên có phần tử l�
 console.log({x : 1} === {x : 1});
     // => false
 ```
+
 Tương tự với array:
 
 ```
 console.log([1, 2] === [1, 2]);
     // => false
 ```
+
 Với những phân tích và ràng buộc như vậy, sau đây mình sẽ xây dựng thuật toán.
 
 ### Thuật toán
@@ -204,6 +206,7 @@ Cách này có vẻ không theo logic của thuật toán phía trên, tuy nhiê
 ```
 (value, index, arr) => arr.indexOf(value) === index
 ```
+
 Trong đó, value là giá trị của mỗi phần tử trong mảng, index là chỉ số tương ứng và arr là mảng gốc ban đầu.
 
 Một phần tử trong mảng thoả mãn hàm test trên khi và chỉ khi nó là phần tử đầu tiên.
@@ -292,6 +295,6 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/2-cach-tao-
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

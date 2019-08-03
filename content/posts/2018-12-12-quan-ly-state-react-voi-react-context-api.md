@@ -134,6 +134,7 @@ Trên đây là những thông tin cơ bản về các API của React Context. 
 npm install --save react@latest
     npm install --save react-dom@latest
 ```
+
 [Xem Demo](https://vqlrp2xry3.codesandbox.io/) [Xem code](https://codesandbox.io/s/vqlrp2xry3)
 
 ### Kịch bản Demo
@@ -284,6 +285,6 @@ Tham khảo:
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

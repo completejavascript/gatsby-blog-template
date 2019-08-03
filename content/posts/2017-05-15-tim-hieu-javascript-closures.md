@@ -38,6 +38,7 @@ var YEAR = '2017';
     greet('Lam Pham');
     // => Hello Lam Pham in 2017
 ```
+
 Ở đây, hàm _sayHello_ là một hàm closures. Hàm này có thể sử dụng biến số ở toàn cục là _YEAR_, biến ở hàm chứa nó là _intro_ và _hello_.
 
 ## Một số đặc điểm quan trọng của JavaScript Closures
@@ -61,6 +62,7 @@ function adder(n){
     adder2(10);
     // => This answer is 12
 ```
+
 Trong ví dụ trên, hàm closures là một hàm số không tên _function(number)_. Hàm closures này sử dụng biến cục bộ *của outer function \_là _intro* và _local_.
 
 Khi mình gọi hàm _adder(2)_, hàm số này thực hiện và kết quả trả về được gán vào biến _adder2_. Khi gọi _adder2(10)_, kết quả trả về là _12_, chứng tỏ hàm closures vẫn có thể truy cập tới biến cục bộ của outer function khi hàm đó thực hiện xong.
@@ -87,6 +89,7 @@ function ObjId(){
     myObject.setId(10);
     console.log(myObject.getId());  // => 10
 ```
+
 Hàm _objId_ trả về một đối tượng bao gồm 2 hàm closures là _getId_ và _setId_. Các hàm closures này sử dụng chung một biến cục bộ là _id_.
 
 Ban đầu, mình gọi _myObject.getId()_ thì kết quả trả về là 1 (giá trị của biến cục bộ). Sau đó, mình gọi _myObject.setId(10)_. Nếu hàm closures chỉ lưu biến cục bộ theo giá trị thì nghĩa là giá trị của biến cục bộ id sẽ không thay đổi. Nhưng khi mình gọi tiếp _myObject.getId()_ thì giá trị trả về là 10. Chứng tỏ, hàm closures phải lưu biến cục bộ theo kiểu tham chiếu.
@@ -115,6 +118,7 @@ function ObjId(){
     myObject.setId(10);
     console.log(myObject.getId());  // => 10
 ```
+
 Kết quả trả về vẫn giống y hệt như trên. Tuy nhiên, cách nào sẽ chạy nhanh hơn? **Closures** hay **Prototype?**
 
 Dựa theo kết quả so sánh tại bài viết [_Performance of prototype vs closure code in JavaScript_](https://ssobczak.wordpress.com/2014/02/16/prototype-vs-closure-js/), mình tóm tắt lại như sau:

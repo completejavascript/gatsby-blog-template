@@ -41,6 +41,7 @@ var a = ['c', 'g', 'w', 'a'];
     console.log(a); // => ["a", "c", "g", "w"]
     console.log(b); // => ["a", "c", "g", "w"]
 ```
+
 ## Tìm hiểu compareFunction
 
 Hàm* compareFunction* dùng để xác định thứ tự sắp xếp. Nếu a và b là hai phần tử dùng để so sánh thì:
@@ -60,6 +61,7 @@ var a = [9, 100, 45, 33];
     console.log(a.sort());
     // => [100, 33, 45, 9]
 ```
+
 Bạn không nhìn lầm đâu. Kết quả trên là hoàn toàn chính xác. Vì khi so sánh theo kiểu string thì '1' < '3' < '4' < '9'. Vì vậy, để sắp xếp chúng theo kiểu numbers thì bạn cần phải sử dụng hàm _compareFunction_.
 
 ### Sử dụng hàm compareNumbers sắp xếp numbers theo thứ tự tăng dần
@@ -72,6 +74,7 @@ function compareNumbers(a, b) {
     console.log(a.sort(compareNumbers));
     // => [9, 33, 45, 100]
 ```
+
 Theo đúng mô tả của hàm _compareFunction_, khi a < b => a - b < 0 => a sẽ đứng trước b. Nghĩa là số bé hơn sẽ đứng trước. Áp dụng quy tắc này, ta được mảng các số sắp xếp theo thứ tự tăng dần.
 
 Ngoài cách viết hàm riêng như trên, bạn có thể áp dụng [JavaScript closures](/tim-hieu-javascript-closures/):
@@ -83,6 +86,7 @@ var a = [9, 100, 45, 33];
     }));
     // => [9, 33, 45, 100]
 ```
+
 ### Sắp xếp numbers theo thứ tự giảm dần
 
 Để sắp xếp mảng numbers theo thứ tự giảm dần thì bạn chỉ cần thay đổi nội dung hàm _compareNumbers_. Thay vì return a - b thì bây giờ mình sẽ return b - a.
@@ -94,6 +98,7 @@ var a = [9, 100, 45, 33];
     }));
     // => [100, 45, 33, 9]
 ```
+
 Bây giờ, khi a < b => b - a > 0 => a sẽ đứng sau b. Nghĩa là số nhỏ hơn sẽ đứng sau. Do đó, kết quả thu được là dãy số giảm dần như trên.
 
 Trên đây là cách sử dụng hàm _sort_ (mặc định) của JavaScript để sắp xếp mảng. Tuy nhiên, nếu như bạn không muốn sử dụng hàm mặc định này thì bạn vẫn có thể tự implement sử dụng một số thuật toán sắp xếp cơ bản.

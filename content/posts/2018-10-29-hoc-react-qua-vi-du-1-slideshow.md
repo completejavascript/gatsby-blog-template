@@ -50,6 +50,7 @@ learn-react-by-example/
     ----index.js
     ----serviceWorker.js
 ```
+
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về Slideshow nên mình tạo thêm thư mục **slideshow** bên trong với 2 file **slideshow.js** và **slideshow.css** để định nghĩa cho component Slideshow (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
@@ -470,6 +471,6 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

@@ -136,6 +136,7 @@ Nếu nhìn vào thư mục đó, bạn sẽ thấy file **mongo.exe**. Đây ch
 ```
 mongo
 ```
+
 Nếu không có lỗi gì xảy ra thì lúc này bạn có thể bắt đầu gõ câu lệnh cơ bản của MongoDB được rồi.
 
 Ví dụ:
@@ -162,6 +163,6 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

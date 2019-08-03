@@ -47,6 +47,7 @@ var countModule = (function(){
     countModule.decrease(); // increase 1
     countModule.reset();    // reset 0
 ```
+
 ### Giải thích
 
 Ví dụ trên định nghĩa một module tên là: **countModule**. Có thể bạn sẽ thắc mắc về cú pháp sau:
@@ -115,6 +116,7 @@ var countModule = (function(){
     countModule.decrease(); // increase 1
     countModule.reset();    // reset 0
 ```
+
 Bây giờ, ta có thể dễ dàng thấy rằng **countModule** có 3 phương thức được public là: **increase, decrease, reset**.
 
 Hy vọng với sự giải thích ngắn gọn trên, bạn có thể hiểu và áp dụng được Module Pattern.

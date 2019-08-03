@@ -123,6 +123,7 @@ Bạn mở [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows/) trên Windows lên
 node -v
     npm -v
 ```
+
 Nếu kết quả hiển thị như này là thành công:
 
 ![Kiểm tra version node và npm](/wp-content/uploads/2018/10/version.png)
@@ -197,6 +198,7 @@ server.listen(port, hostname, () => {
 ```
 node hello-world.js
 ```
+
 Nếu kết quả hiển thị ra _Server running at http://localhost:8000/_ là thành công.
 
 ![Chạy server để test](/wp-content/uploads/2018/10/run.png)
@@ -228,6 +230,6 @@ Xin chào và hẹn gặp lại trong bài viết tiếp theo, thân ái!
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

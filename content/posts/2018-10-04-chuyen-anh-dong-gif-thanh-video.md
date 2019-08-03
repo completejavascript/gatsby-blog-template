@@ -43,6 +43,7 @@ Nếu bạn search trên Google thì sẽ thấy có rất nhiều trang giúp c
 ```
 ffmpeg -i input.gif output.mp4
 ```
+
 Trong đó:
 
 - _ffmpeg_: tên của chương trình
@@ -60,6 +61,7 @@ Ngoài ra, ffmpeg còn hỗ trợ sử dụng một phương pháp mã hoá, đ�
 ```
 ffmpeg -i input.gif -b:v 0 -crf 25 output.mp4
 ```
+
 Lệnh này tương tự lệnh trên, chỉ khác ở chỗ:
 
 - _-b:v_: là cờ dùng để giới hạn bitrate của output. Vì mình đang sử dụng CRF, nên giá trị này phải đặt là 0
@@ -123,6 +125,6 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

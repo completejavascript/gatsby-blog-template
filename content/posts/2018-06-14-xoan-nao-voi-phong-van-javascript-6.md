@@ -81,6 +81,7 @@ let foo = function bar() {
     foo();                    // => function
     console.log(typeof bar);  // => undefined
 ```
+
 Tóm lại, đáp án của câu hỏi 1 là undefined.
 
 _Bạn có thể xem thêm tại [đây](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function#Named_function_expression) để hiểu rõ hơn về **Named function expression**_.
@@ -128,6 +129,7 @@ Ngoài ra, nếu bạn sử dụng code trên ở chế độ [strict mode](/mot
     console.log(person);
     // => TypeError: Cannot add property job, object is not extensible
 ```
+
 ## Xoắn não với phỏng vấn JavaScript 6 - Câu 3
 
 ```
@@ -262,6 +264,6 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

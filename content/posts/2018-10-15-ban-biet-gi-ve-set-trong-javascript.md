@@ -38,6 +38,7 @@ const set1 = new Set();
     console.log(typeof set1);
     // => object
 ```
+
 Xem thêm:[JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
 
 ### Dữ liệu trong Set là duy nhất, không trùng lặp
@@ -61,6 +62,7 @@ const obj1 = { x: 1, y: 2};
     console.log(set1.size);
     // => 2
 ```
+
 Ngoài ra, bạn cũng có thể lưu `NaN` và `undefined` vào Set trong JavaScript.
 
 ```
@@ -238,6 +240,7 @@ const set1 = new Set(["a", "b", "a"]);
     console.log(set1.size);
     // => 2
 ```
+
 ### Kiểm tra phần tử tồn tại trong Set
 
 Để kiểm tra xem một phần tử có tồn tại trong Set hay không, bạn có thể sử dụng phương thức _has_.
@@ -250,6 +253,7 @@ const set1 = new Set([1, "a", [1, 2]]);
     console.log(set1.has("b"));     // => false
     console.log(set1.has([1, 2]));  // => false
 ```
+
 Kết quả trên là hoàn toàn dễ hiểu phải không?
 
 Ở đây, mình chỉ muốn nhắc lại, Set sẽ sử dụng toán tử "===" để so sánh. Do đó:
@@ -260,6 +264,7 @@ console.log(1 === 1);           // => true
     console.log("a" === "a");       // => true
     console.log([1, 2] === [1, 2]); // => false
 ```
+
 ### Xoá một phần tử trong Set
 
 Bên trên là thêm phần tử vào Set, còn bây giờ là xóa phần tử khỏi Set trong JavaScript.
@@ -403,6 +408,7 @@ const set1 = new Set([1, 2, 3, 4, 5]);
     console.log(arr2);
     // => [1, 2, 3, 4, 5]
 ```
+
 Giả sử lúc này mình sử dụng phương thức [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) để lọc lấy những phần tử là số chẵn.
 
 ```
@@ -410,6 +416,7 @@ const arr3 = arr1.filter(x => x%2 === 0);
     console.log(arr3);
     // => (2) [2, 4]
 ```
+
 Bây giờ, mình chuyển Array này ngược lại thành Set - sử dụng công thức phần khởi tạo Set:
 
 ```
@@ -454,6 +461,7 @@ let arrTag = [];
     console.log(arrTag);
     // => (4) ["tag1", "tag2", "tag4", "tag3"]
 ```
+
 Giả sử, mình tạo thêm một bài viết mới với mảng các thẻ tag là:
 
 ```
@@ -466,6 +474,7 @@ const post3 = ["tag1", "tag3", "tag5"];
 arrTag =  Array.from(new Set([...arrTag, ...post3]));
     // => (5) ["tag1", "tag2", "tag4", "tag3", "tag5"]
 ```
+
 Rõ ràng, mỗi khi thêm một bài viết mới, mình chỉ cần làm như trên là có thể cập nhật được danh sách các thẻ của bài viết một cách không trùng lặp.
 
 Có thể còn rất nhiều ví dụ khác nữa sử dụng Set mà **mình rất muốn nghe ý kiến từ bạn!**
@@ -487,6 +496,6 @@ Còn bây giờ thì xin chào và hẹn gặp lại bạn trong bài viết ti�
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

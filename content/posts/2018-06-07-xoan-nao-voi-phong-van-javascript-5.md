@@ -40,6 +40,7 @@ Tuy nhiên, xét trên khía cạnh của Array thì mảng arr vẫn có độ 
 console.log(arr);
     // => (4)[1, empty, {…}, Array(2)]
 ```
+
 ## Xoắn não với phỏng vấn JavaScript 5 - Câu 2
 
 ```
@@ -60,6 +61,7 @@ Xem đáp án
 // 1
     // [3, 4]
 ```
+
 **Giải thích:**
 
 Khác với **delete**, phương thức [splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) không những cho phép xoá bỏ phần tử của mảng mà còn làm thay đổi số phần tử của mảng.
@@ -136,6 +138,7 @@ let x = 1;
     console.log(x, y, z);
     // => ReferenceError: y is not defined
 ```
+
 _Xem thêm:_ _[Phân biệt var và let trong JavaScript](/phan-biet-var-va-let-trong-javascript/)_
 
 ## Xoắn não với phỏng vấn JavaScript 5 - Câu 4
@@ -187,6 +190,7 @@ Xem đáp án
 //1 10
     //2 42
 ```
+
 **Giải thích:**
 
 Khi truy cập đến một thuộc tính nào đó của object, JavaScript sẽ tìm trực tiếp trong Object đó đầu tiên.
@@ -231,6 +235,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

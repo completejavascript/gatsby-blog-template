@@ -47,6 +47,7 @@ learn-react-by-example/
     ----index.js
     ----serviceWorker.js
 ```
+
 Trong đó:
 
 - Thư mục **components**: chứa code của các Component. Bài này mình thực hành về  **Collapsible Content** nên mình tạo thêm thư mục **collapsible-content** bên trong với 2 file **collapsible\*\***-content.js** và **collapsible\***\*-content.css** để định nghĩa cho component **Collapsible Content** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
@@ -69,106 +70,105 @@ Trong phần này bạn cần phải chú ý đến một số kiến thức nh�
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-    ```jsx
-import React from 'react';
-    import ReactDOM from 'react-dom';
-    import './collapsible-content.css';
+```js
+x;
+import React from "react";
+import ReactDOM from "react-dom";
+import "./collapsible-content.css";
 
-    export default class CollapsibleContent extends React.Component {
-      constructor(props) {
-        super(props);
+export default class CollapsibleContent extends React.Component {
+  constructor(props) {
+    super(props);
 
-        /*
-        * State isActive để quản lý xem CollapsibleContent có đang active không.
-        * Nếu Active thì content sẽ được hiển thị, ngược lại thì không.
-        * Nếu người dùng không truyền thuộc tính isActive vào,
-        * thì mặc định this.state.isActive là false
-        */
-        this.state = {
-          isActive: this.props.isActive || false
-        }
+    /*
+     * State isActive để quản lý xem CollapsibleContent có đang active không.
+     * Nếu Active thì content sẽ được hiển thị, ngược lại thì không.
+     * Nếu người dùng không truyền thuộc tính isActive vào,
+     * thì mặc định this.state.isActive là false
+     */
+    this.state = {
+      isActive: this.props.isActive || false
+    };
 
-        this.toggleCollapseContent = this.toggleCollapseContent.bind(this);
-        this.updateContentMaxHeight = this.updateContentMaxHeight.bind(this);
-      }
+    this.toggleCollapseContent = this.toggleCollapseContent.bind(this);
+    this.updateContentMaxHeight = this.updateContentMaxHeight.bind(this);
+  }
 
-      /**
-       * Hàm này được gọi khi người dùng click vào khu vực button title.
-       * Khi đó trạng thái của this.state.isActive sẽ bị lật ngược lại.
-       * Nếu nó là true => false,
-       * Nếu nó là false => true
-       */
-      toggleCollapseContent() {
-        this.setState({
-          isActive: !this.state.isActive
-        });
-      }
+  /**
+   * Hàm này được gọi khi người dùng click vào khu vực button title.
+   * Khi đó trạng thái của this.state.isActive sẽ bị lật ngược lại.
+   * Nếu nó là true => false,
+   * Nếu nó là false => true
+   */
+  toggleCollapseContent() {
+    this.setState({
+      isActive: !this.state.isActive
+    });
+  }
 
-      /**
-       * Cập nhật maxHeight của khu vực content,
-       * Nếu this.state.isActive là true thì khu vực content có maxHeight = giá trị thực tế nó cần.
-       * Nếu this.state.isActive là false thì khu vực content có maxHeight = 0 => content bị ẩn.
-       */
-      updateContentMaxHeight() {
-        if (this.state.isActive) {
-          this.panelContent.style.maxHeight = this.panelContent.scrollHeight + "px";
-        } else {
-          this.panelContent.style.maxHeight = null;
-        }
-      }
-
-      /**
-       * Hàm này được gọi sau khi Collapsible content được render lên.
-       * Trong này, mình sẽ lưu lại DOM node ứng với khu vực content là this.panelContent.
-       * Sau đó, cập nhật lại maxHeight cho nó, tuỳ thuộc vào giá trị this.state.isActive.
-       * Đồng thời, mình đăng ký sự kiện khi resize màn hình,
-       * để gọi hàm updateContentMaxHeight => cập nhật lại maxHeight cho content
-       */
-      componentDidMount() {
-        this.root = ReactDOM.findDOMNode(this);
-        this.panelContent = this.root.querySelector(".content");
-
-        this.updateContentMaxHeight();
-        window.addEventListener("resize", this.updateContentMaxHeight);
-      }
-
-      /**
-       * Hàm này được gọi khi Collapsible Content bị xoá.
-       * Khi đó, mình phải huỷ đăng ký sự kiện resize lúc trước.
-       */
-      componentWillUnmount() {
-        window.removeEventListener("resize", this.updateContentMaxHeight);
-      }
-
-      /**
-       * Hàm này được gọi mỗi khi this.state.isActive thay đổi.
-       * Trong này, mình phải gọi hàm this.updateContentMaxHeight(),
-       * để cập nhật lại maxHeight cho content, ứng với trường hợp đóng hoặc mở
-       */
-      componentDidUpdate() {
-        this.updateContentMaxHeight();
-      }
-
-      /**
-       * Giao diện cho Collapsible Content
-       */
-      render() {
-        return (
-          <div className="lp-collapsible-content">
-            <div
-              className={`title ${this.state.isActive ? "active" : ""}`}
-              onClick={this.toggleCollapseContent}
-            >
-              {this.props.title}
-            </div>
-
-            <div className="content">
-              {this.props.children}
-            </div>
-          </div>
-        )
-      }
+  /**
+   * Cập nhật maxHeight của khu vực content,
+   * Nếu this.state.isActive là true thì khu vực content có maxHeight = giá trị thực tế nó cần.
+   * Nếu this.state.isActive là false thì khu vực content có maxHeight = 0 => content bị ẩn.
+   */
+  updateContentMaxHeight() {
+    if (this.state.isActive) {
+      this.panelContent.style.maxHeight = this.panelContent.scrollHeight + "px";
+    } else {
+      this.panelContent.style.maxHeight = null;
     }
+  }
+
+  /**
+   * Hàm này được gọi sau khi Collapsible content được render lên.
+   * Trong này, mình sẽ lưu lại DOM node ứng với khu vực content là this.panelContent.
+   * Sau đó, cập nhật lại maxHeight cho nó, tuỳ thuộc vào giá trị this.state.isActive.
+   * Đồng thời, mình đăng ký sự kiện khi resize màn hình,
+   * để gọi hàm updateContentMaxHeight => cập nhật lại maxHeight cho content
+   */
+  componentDidMount() {
+    this.root = ReactDOM.findDOMNode(this);
+    this.panelContent = this.root.querySelector(".content");
+
+    this.updateContentMaxHeight();
+    window.addEventListener("resize", this.updateContentMaxHeight);
+  }
+
+  /**
+   * Hàm này được gọi khi Collapsible Content bị xoá.
+   * Khi đó, mình phải huỷ đăng ký sự kiện resize lúc trước.
+   */
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateContentMaxHeight);
+  }
+
+  /**
+   * Hàm này được gọi mỗi khi this.state.isActive thay đổi.
+   * Trong này, mình phải gọi hàm this.updateContentMaxHeight(),
+   * để cập nhật lại maxHeight cho content, ứng với trường hợp đóng hoặc mở
+   */
+  componentDidUpdate() {
+    this.updateContentMaxHeight();
+  }
+
+  /**
+   * Giao diện cho Collapsible Content
+   */
+  render() {
+    return (
+      <div className="lp-collapsible-content">
+        <div
+          className={`title ${this.state.isActive ? "active" : ""}`}
+          onClick={this.toggleCollapseContent}
+        >
+          {this.props.title}
+        </div>
+
+        <div className="content">{this.props.children}</div>
+      </div>
+    );
+  }
+}
 ```
 
 ### Nội dung file collapsible-content.css
@@ -177,7 +177,8 @@ File này dùng để xác định style cho Collapsible Content Component. Bạ
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2 **thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-    ```jsx
+```js
+x
 .lp-collapsible-content,
     .lp-collapsible-content * {
       box-sizing: border-box;
@@ -265,13 +266,15 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
       color: #222;
       font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
     }
-```
+
+````
 
 **./src/App.js**
 
 Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow/), [Modal Image](/hoc-react-qua-vi-du-3-modal-image/) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox/).
 
-    ```jsx
+```js
+x
 import React from 'react';
     import './App.css';
     import CollapsibleContent from './components/collapsible-content/collapsible-content';
@@ -347,7 +350,7 @@ import React from 'react';
         );
       }
     }
-```
+````
 
 Trong đó, Collapsible Content Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 

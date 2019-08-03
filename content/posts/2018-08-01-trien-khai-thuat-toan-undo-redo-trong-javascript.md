@@ -211,6 +211,7 @@ Khác với Undo Stack, trạng thái tại đỉnh của Redo Stack luôn là t
 ```
 this._redoStack.length >= 2
 ```
+
 Khi thực hiện Redo, trạng thái hiện tại phải được _pop_ khỏi Redo Stack.
 
 ```
@@ -254,8 +255,9 @@ Tiếp theo là xoá bỏ hết tất cả các trạng thái trong 2 Stack bằ
 
 ```
 this._undoStack.length = 0;
-    this._redoStack.length = 0; 
+    this._redoStack.length = 0;
 ```
+
 Cuối cùng lưu lại trạng thái hiện tại của ứng dụng vào Redo Stack - giống như mình đã làm trong phần khởi tạo.
 
 ```
@@ -338,6 +340,6 @@ Còn bây giờ thì xin chào và hẹn gặp lại bạn trong [bài viết ti
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

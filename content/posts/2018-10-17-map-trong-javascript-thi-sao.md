@@ -36,6 +36,7 @@ const map1 = new Map();
     console.log(typeof map1);
     // => object
 ```
+
 ## Các hoạt động có thể làm với Map trong JavaScript
 
 ### Khởi tạo Map
@@ -77,6 +78,7 @@ const map2 = new Map([[1, "a"], [2, "b"]]);
     const map3 = new Map([1, "a", 2, "b"]);
     // => Uncaught TypeError: Iterator value 1 is not an entry object
 ```
+
 #### Khởi tạo Map từ arguments
 
 ```
@@ -179,6 +181,7 @@ const map7 = new Map([["a", 1], ["b", 1]]);
     console.log(map7.get("a")); // => 1
     console.log(map7.get("c")); // => undefined
 ```
+
 Nếu _key_ tồn tại trong Map thì phương thức này trả về _value_ tương ứng. Ngược lại, nó sẽ trả về **undefined**.
 
 ### Lấy số lượng phần tử trong Map
@@ -194,6 +197,7 @@ const map8 = new Map();
     console.log(map8.size);
     // => 2
 ```
+
 ### Kiểm tra phần tử tồn tại trong Map
 
 Để kiểm tra xem một phần tử đã tồn tại trong Map hay chưa - thực chất là kiểm tra xem một giá trị _key_ đã tồn tại hay chưa, bạn có thể dùng phương thức _has_ như sau:
@@ -212,6 +216,7 @@ const map9 = new Map([["a", 1], [1, 2], [[2], 3], [NaN, 4]]);
     console.log(map9.has([2])); // => false
     console.log(map9.has(NaN)); // => true
 ```
+
 **Nhớ là Map sử dụng thuật toán _SameValueZero_ để so sánh nhé!**
 
 ### Xoá một phần tử trong Map
@@ -335,6 +340,7 @@ const map15 = new Map([[1, "a"], ["b", 2], [3, "c"]]);
     console.log(keys);
     // => [1, "b", 3]
 ```
+
 #### Chuyển Map Values thành Array
 
 ```
@@ -343,6 +349,7 @@ const map16 = new Map([[1, "a"], ["b", 2], [3, "c"]]);
     console.log(values);
     // => ["a", 2, "c"]
 ```
+
 ## Lời kết
 
 Trên đây là những kiến thức cơ bản về Map trong JavaScript. Hy vọng nó có thể giúp bạn hiểu hơn về kiểu dữ liệu này và có thể áp dụng vào các project thực tế của mình.
@@ -361,6 +368,6 @@ Xin chào và hẹn gặp lại trong bài viết tiếp theo, thân ái!
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

@@ -30,6 +30,7 @@ let sayHi = () => {
     sayHi();
     // => Hi
 ```
+
 Function sử dụng từ khoá **function**:
 
 ```
@@ -39,6 +40,7 @@ let sayHi = function() {
     sayHi();
     // => Hi
 ```
+
 ### Arrow function thường ngắn gọn hơn function
 
 Với hàm số có 1 tham số, arrow function có thể bỏ qua cặp dấu ngoặc đơn.
@@ -52,11 +54,6 @@ Với hàm số có 1 tham số, arrow function có thể bỏ qua cặp dấu n
     // => Hello, my name is Lam
 ```
 
-
-
-
-
-
 ```
 // Tương đương với function
     let greeting = function(name) {
@@ -65,6 +62,7 @@ Với hàm số có 1 tham số, arrow function có thể bỏ qua cặp dấu n
     greeting("Lam");
     // => Hello, my name is Lam
 ```
+
 Ngoài ra, arrow function cũng có thể bỏ qua từ khoá **return**.
 
 ```
@@ -73,11 +71,6 @@ Ngoài ra, arrow function cũng có thể bỏ qua từ khoá **return**.
     double(1); // 2
 ```
 
-
-
-
-
-
 ```
 // Tương đương với function
     let double = function(x) {
@@ -85,6 +78,7 @@ Ngoài ra, arrow function cũng có thể bỏ qua từ khoá **return**.
     }
     double(1); // 2
 ```
+
 Ví dụ sử dụng arrow function với các [higher-order functions](https://eloquentjavascript.net/05_higher_order.html), như: [forEach](/javascript-foreach-la-cai-quai-gi/), map, filter,...
 
 ```
@@ -97,11 +91,6 @@ let arr = [1, 2, 3, 4];
     console.log(square1); // => [1, 4, 9, 16]
 ```
 
-
-
-
-
-
 ```
 let arr = [1, 2, 3, 4];
 
@@ -109,6 +98,7 @@ let arr = [1, 2, 3, 4];
     let square2 = arr.map(e => e * e);
     console.log(square2); // => [1, 4, 9, 16]
 ```
+
 ### Arrow function không bind this
 
 Arrow function không định nghĩa giá trị **this** của riêng nó giống như function.
@@ -129,6 +119,7 @@ var x = 0;
     let p = new DelayPrint(1, 1000);
     // => The value is 0.
 ```
+
 Trong chế độ **none-strict**, function _print_ định nghĩa _this_ chính là đối tượng global (đối với trình duyệt thì đó là window). Do đó, _this.x_ tương đương với _window.x_ và bằng 0.
 
 Để đoạn code trên hoạt động theo đúng mong muốn thì bạn phải sửa lại như sau:
@@ -148,6 +139,7 @@ var x = 0;
     let p = new DelayPrint(1, 1000);
     // => The value is 1.
 ```
+
 Ví dụ sử dụng arrow function:
 
 ```
@@ -164,6 +156,7 @@ var x = 0;
     let p = new DelayPrint(1, 1000);
     // => The value is 1.
 ```
+
 Ngược lại với function, arrow function không định nghĩa lại _this_. Do đó, giá trị của _this_ sẽ ứng với ngữ cảnh gần nhất của nó. Vì vậy, trong đoạn code trên _this.x_ sẽ tương ứng với giá trị x được truyền vào và bằng 1.
 
 _Xem thêm: [Sự khác biệt giữa Arrow Function và Function thông thường](https://thienanblog.com/javascript/javascript-co-ban/su-khac-biet-giua-arrow-function-va-function-thong-thuong/)_
@@ -183,6 +176,7 @@ function sum() {
     console.log(sum(1, 2, 3));      // => 6
     console.log(sum(1, 2, 3, 4));   // => 10
 ```
+
 Đối với arrow function, sử dụng _arguments_ sẽ lỗi vì biến này không được định nghĩa ở arrow function.
 
 ```
@@ -193,6 +187,7 @@ let sum = () => {
     console.log(sum(1, 2));
     // Uncaught ReferenceError: arguments is not defined
 ```
+
 Tuy nhiên, bạn vẫn có thể sử dụng [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) để thay thế cho _arguments_.
 
 ```
@@ -204,6 +199,7 @@ let sum = (...args) => {
     console.log(sum(1, 2, 3));      // => 6
     console.log(sum(1, 2, 3, 4));   // => 10
 ```
+
 ### Arrow function không phù hợp làm _method_ cho object
 
 Chính vì arrow function không định nghĩa giá trị this của riêng nó, nên cũng không phù hợp là _method_ cho object.
@@ -237,6 +233,7 @@ function Dog(name, color) {
     console.log(myDog.name, myDog.color);
     // => Nick White
 ```
+
 Nếu thay đoạn code trên bằng arrow function thì bạn sẽ bị lỗi: **TypeError: Dog is not a constructor**.
 
 ```
@@ -249,6 +246,7 @@ let Dog = (name, color) => {
     console.log(myDog.name, myDog.color);
     // => TypeError: Dog is not a constructor
 ```
+
 ### Arrow function không có thuộc tính prototype
 
 Về cơ bản, mọi [đối tượng](/javascript-object-last-but-not-least/) trong JavaScript đều có thuộc tính prototype và [kế thừa](/ke-thua-co-ban-trong-javascript/) cũng theo prototype.
@@ -259,6 +257,7 @@ Tuy nhiên, nếu _arrow function_ không thể sử dụng làm constructor th�
 let Foo = () => {};
     console.log(Foo.prototype); // undefined
 ```
+
 ### Arrow function không được hoisted
 
 Để hiểu thêm về hoisting bạn có thể tham khảo thêm tại bài viết: [Understanding Hoisting in JavaScript](https://scotch.io/tutorials/understanding-hoisting-in-javascript).
@@ -303,6 +302,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tim-hieu-
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

@@ -73,6 +73,7 @@ $ git config --global user.name <username>
 ```
 $ git config --list
 ```
+
 ### Init
 
 Câu lệnh Git này dùng để tạo mới một project trên máy. Bạn có thể tạo ở bất kì đâu tuỳ thích.
@@ -80,6 +81,7 @@ Câu lệnh Git này dùng để tạo mới một project trên máy. Bạn có
 ```
 $ git init
 ```
+
 Sau khi chạy câu lệnh này xong, một thư mục ẩn _**.git**_ sẽ xuất hiện. Thư mục này chứa thông tin cấu hình của project Git.
 
 ### Clone
@@ -96,16 +98,16 @@ $ git clone /path/to/repository/
 
 - https:
 
-
 ```
 $ git clone username@serverAddress:/path/to/project
 ```
-- ssh:
 
+- ssh:
 
 ```
 $ git clone ssh://username@serverAddress/path/to/project
 ```
+
 ### Branch
 
 Khi sử dụng Git, bạn có thể tạo ra nhiều nhánh (branch) khác nhau. Câu lệnh Git này dùng để kiểm tra branch hiện tại:
@@ -113,6 +115,7 @@ Khi sử dụng Git, bạn có thể tạo ra nhiều nhánh (branch) khác nhau
 ```
 $ git branch
 ```
+
 Mặc định ban đầu bạn sẽ ở nhánh _**master**_ - nhánh chính.
 
 Để tạo mới một branch:
@@ -142,6 +145,7 @@ Ngoài ra, để quay lại nhánh master:
 ```
 $ git checkout master
 ```
+
 ### Add
 
 Sau khi bạn thay đổi source code: thêm mới, sửa, xoá files,... Bạn cần phải cập nhật lên Staging Area.
@@ -151,6 +155,7 @@ Sau khi bạn thay đổi source code: thêm mới, sửa, xoá files,... Bạn 
 ```
 $ git add .
 ```
+
 Cập nhật các files với đuôi xác định:
 
 ```
@@ -162,6 +167,7 @@ Cập nhật các files dựa vào tên của chúng:
 ```
 $ git add <name_file_1> [<name_file_2> ... <name_file_n>]
 ```
+
 ### Commit
 
 Sau lệnh add, bạn cần sử dụng câu lệnh Commit để đây thông tin thay đổi lên Local Respository:
@@ -169,6 +175,7 @@ Sau lệnh add, bạn cần sử dụng câu lệnh Commit để đây thông ti
 ```
  git commit -am 'nội dung tuỳ thích'
 ```
+
 ### Push
 
 Sau câu lệnh Commit, thông tin mới chỉ được cập nhật lên Local Repository. Nếu muốn cập nhật lên server thì bạn phải sử dụng câu lệnh push:

@@ -121,7 +121,6 @@ Có 3 thứ cần làm khi menu item được click:
 
 - Kích hoạt menu item được click (bỏ **active** với các menu item còn lại) thông qua class **_active_ **- xử lý bởi Bootstrap.
 
-
 ```
 function activateMenu(menuItem){
       $(menuItem).parent().children().removeClass("active");

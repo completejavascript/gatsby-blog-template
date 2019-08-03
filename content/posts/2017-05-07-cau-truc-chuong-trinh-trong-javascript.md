@@ -56,6 +56,7 @@ var result = 1 + 2 * 4 % 3 - 6; // => result = -3;
     var t = result * result;
     console.log(t); // => 9
 ```
+
 Ngoài ra, sau khi bạn gán giá trị cho một biến số thì bạn vẫn có thể gán biến số đó với một giá trị khác.
 
 ```
@@ -64,6 +65,7 @@ var x = 5;
     x = 10;
     console.log(x); // => 10
 ```
+
 ### Từ khoá (keywords) và từ dự trữ (reserved words)
 
 Từ khoá (**keywords**) là những từ mang ý nghĩa đặc biệt. Từ _var_ là một từ khoá. Từ khoá _var_ theo sau nó sẽ là một biến số (_var_ là viết tắt của variable).
@@ -80,6 +82,7 @@ break case catch class const continue debugger
     protected public return static super switch this
     throw true try typeof var void while with yield
 ```
+
 Mỗi từ khoá sẽ mang một ý nghĩa khác nhau. Và mình sẽ giới thiệu chúng trong những bài viết sau.
 
 ### Cách đặt tên cho biến số
@@ -109,6 +112,7 @@ var point% = 50;       // sử dụng kí tự đặc biệt %
     var 2you = 'passtion'; // bắt đầu bằng số
     var null = 'oh no';    // sử dụng từ khoá
 ```
+
 Trong ví dụ về cách đặt tên hợp lệ, mình có một ví dụ là: var dientichao = 999. Về nguyên tắc, cách đặt tên này không sai. Tuy nhiên, khi nhìn vào tên này, có thể bạn sẽ phải mất vài giây để dịch ra ý nghĩa của nó là: diện tích ao. (ví dụ hơi không liên quan một tí)
 
 #### Chuẩn hoá cách đặt tên biến số
@@ -451,6 +455,7 @@ Sử dụng _console.log_ để in ra hình tam giác như sau:
     ######
     #######
 ```
+
 Xem code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/program_structure/program_structure_triangle_1.js).
 
 ### Bài 2:
@@ -468,6 +473,7 @@ Xem code tại [đây](https://github.com/completejavascript/practical-javascrip
    _#_#_#_# #_#_#_#_
    _#_#_#_# #_#_#_#_
    _#_#_#_#
+
 ```
 Xem code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/program_structure/program_structure_chess_board_3_1.js).
 
@@ -500,3 +506,4 @@ Hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-function-javascr
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)
+```

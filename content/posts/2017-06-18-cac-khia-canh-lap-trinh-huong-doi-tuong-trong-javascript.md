@@ -36,6 +36,7 @@ var rabbit = {};
     rabbit.speak("I'm alive.");
     // => The rabbit says 'I'm alive.'
 ```
+
 Thông thường, một method sẽ làm một vài thứ với object gọi nó. Để biểu thị object đã gọi method, JavaScript cung cấp từ khoá **this** để chúng ta sử dụng bên trong method.
 
 Ví dụ trên có thể thay đổi như sau:
@@ -52,6 +53,7 @@ function speak(line) {
     fatRabbit.speak("I'm alive.");
     // => The fat rabbit says 'I'm alive.'
 ```
+
 Tư tưởng sử dụng từ khoá **this** này cũng được áp dụng trong C++ hay Java.
 
 ### Sự tương quan với bind, call, apply
@@ -76,6 +78,7 @@ function speak(line) {
     sexyRabbitSpeak();
     // => The sexy rabbit says 'I'm alive.'
 ```
+
 ## Prototypes
 
 **Prototype** là khái niệm rất riêng của JavaScript. Không giống như C++, Java, một JavaScript Object luôn có sẵn ít nhất một thuộc tính bên trong nó, là prototype. Và prototype cũng chính là một object. Khi một object gọi đến một thuộc tính mà nó không có thì nó sẽ tìm trong prototype.
@@ -89,6 +92,7 @@ var empty = {};
     console.log(empty.toString());
     // => [object Object]
 ```
+
 Rõ ràng, mình chỉ khai báo **empty** là một object mà không định nghĩa thêm thuộc tính nào. Tuy nhiên, ví dụ trên chỉ ra rằng thuộc tính **toString** tồn tại trong object **empty**. Đó là vì: **toString** là một thuộc tính của **prototype** mà một **object** thì luôn chứa thuộc tính **prototype**.
 
 ```
@@ -99,6 +103,7 @@ var empty = {};
     console.log(Object.getPrototypeOf(Object.prototype));
     // => null
 ```
+
 ## Constructors (Hàm khởi tạo)
 
 Nếu bạn đã biết về lập trình hướng đối tượng thì bạn sẽ không còn xa lạ gì với **constructor**. Trong JavaScript, hàm khởi tạo constructor sẽ chứa từ khoá **this** để biểu thị object được tạo ra từ nó.
@@ -148,6 +153,7 @@ function Rabbit(type) {
     blackRabbit.sayBye();
     // => black rabbit say GoodBye!
 ```
+
 ## Ghi đè thuộc tính
 
 Trong ví dụ trên, **Rabbit** chứa thuộc tính **type**. Đối với mỗi object được tạo ra từ constructor Rabbit, bạn có thể thay đổi giá trị thuộc tính của một object mà không làm ảnh hưởng tới các object khác.
@@ -172,6 +178,7 @@ function Rabbit(type) {
     console.log(blackRabbit.teeth);   // => small
     console.log(killerRabbit.teeth);  // => long
 ```
+
 ## Tính chất đặc trưng của lập trình hướng đối tượng trong JavaScript
 
 ### Tính đóng gói (Encapsulation)
@@ -196,6 +203,7 @@ function Person(_name){
     person.setName("LP Devs");
     console.log(person.getName());     // => LP Devs
 ```
+
 ### Tính kế thừa (inheritance)
 
 Tính kế thừa: đối tượng con sẽ kế thừa những thuộc tính của đối tượng cha mà không cần phải định nghĩa lại.
@@ -234,6 +242,7 @@ function Person(_name){
     console.log(student.getName());    // => Ronaldo
     console.log(student.getSchool());  // => NEU
 ```
+
 Ngoài ra, còn hai tính chất nữa là: tính **đa hình** và tính **trừu tượng**. Tuy nhiên, việc áp dụng hai tính chất này trong JavaScript là không rõ ràng. Do đó, mình sẽ không trình bày về chúng nữa.
 
 ## Kết luận

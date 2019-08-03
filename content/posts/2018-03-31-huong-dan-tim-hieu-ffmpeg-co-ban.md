@@ -151,11 +151,13 @@ Một chú ý nhỏ trước khi bắt đầu đó là: các ảnh, audio và vi
 ```
 ffmpeg -i test.mp4
 ```
+
 #### Code FFmpeg chuyển đổi ảnh thành video
 
 ```
 ffmpeg -f image2 -i img%d.png video.mp4
 ```
+
 Trong đó, img%d.png là tất cả những ảnh đầu vào của bạn trong thư mục hiện tại và video.mp4 là tên video đầu ra. Ví dụ: bạn có các bức ảnh img1.png, img2.png,...,img100.png (định dạng có thể là png hoặc jpg,...) và bạn muốn tập hợp lại thành video có tên là video.mp4 (có thể là định dạng khác như .avi, .mpg,...). Thực tế thì chức năng này chỉ có ích khi bạn có rất nhiều bức ảnh là tập hợp các Frame của video. Và dĩ nhiên video này sẽ không có âm thanh.
 
 #### Code FFmpeg chuyển đổi video thành ảnh
@@ -163,6 +165,7 @@ Trong đó, img%d.png là tất cả những ảnh đầu vào của bạn trong
 ```
 ffmpeg -i video.mp4 image%d.png
 ```
+
 Ở đây, đầu vào là file video có tên là video.mp4 và đầu ra là các ảnh có tên dạng image%d.png (image1.png, image2.png, image3.png,...)
 
 #### Code FFmpeg tách âm thanh từ video và lưu lại thành file mp3
@@ -170,6 +173,7 @@ ffmpeg -i video.mp4 image%d.png
 ```
 ffmpeg -i video.mp4 -vn -ar 44100 -ac 2 -ab 192k -f mp3 sound.mp3
 ```
+
 Trong đó:
 
 - File video đầu vào có tên: video.mp4
@@ -183,6 +187,7 @@ Trong đó:
 ```
 ffmpeg -i video_input.xxx video_output.yyy
 ```
+
 Trong đó:
 
 - File đầu vào là video_input.xxx với xxx là các định dạng video của file đầu vào: mp4, avi, mpg, flv,...
@@ -193,11 +198,13 @@ Ví dụ, mình muốn chuyển từ định dạng flv sang mp4, thì câu lệ
 ```
 ffmpeg -i video_input.flv video_output.mp4
 ```
+
 #### Code FFmpeg chuyển video thành ảnh động .gif
 
 ```
 ffmpeg -i video.mp4 gif_anime.gif
 ```
+
 Trong đó:
 
 - File video đầu vào là video.mp4
@@ -208,6 +215,7 @@ Trong đó:
 ```
 ffmpeg -i sound.mp3 -i video_input.mp4 video_output.mp4
 ```
+
 Trong đó:
 
 - Tệp tin âm thanh đầu vào là sound.mp3
@@ -221,6 +229,7 @@ Chú ý là: độ dài video đầu ra sẽ là độ dài lớn hơn của m�
 ```
 ffmpeg -i video.mp4 -vf "setpts=0.5*PTS" highspeed.mp4
 ```
+
 Trong đó:
 
 - video.mp4 là video đầu vào
@@ -232,6 +241,7 @@ Nếu muốn giảm tốc độ đi 2 lần thì chỉ cần thay đổi thành:
 ```
 ffmpeg -i video.mp4 -vf "setpts=2*PTS" highspeed.mp4
 ```
+
 Còn muốn tốc độ khác thì bạn tự suy luận ra nhé.
 
 #### Code FFmpeg thêm ảnh vào audio và xuất bản thành video
@@ -239,6 +249,7 @@ Còn muốn tốc độ khác thì bạn tự suy luận ra nhé.
 ```
 ffmpeg -loop 1 -i image.png -i sound.mp3 -c:v libx264 -c:a aac -strict experimental -b:a 192k -shortest output.mp4
 ```
+
 Trong đó:
 
 - File ảnh đầu vào là image.png
@@ -250,6 +261,7 @@ Trong đó:
 ```
 ffmpeg -i video.mp4 -i subtitles.srt -map 0 -map 1 -c copy -c:v libx264 -crf 23 -preset veryfast video-output.mp4
 ```
+
 Trong đó:
 
 - File video đầu vào là video.mp4
@@ -261,6 +273,7 @@ Trong đó:
 ```
 ffmpeg -i video.mp4 -ss 00:00:50.0 -codec copy -t 20 output.mp4
 ```
+
 Trong đó:
 
 - File đầu vào là video.mp4
@@ -272,6 +285,7 @@ Trong đó:
 ```
 ffmpeg -i video.mp4 -t 00:00:50 -c copy small-1.mp4 -ss 00:00:50 -codec copy small-2.mp4
 ```
+
 Trong đó:
 
 - File video đầu vào là video.mp4
@@ -282,15 +296,16 @@ Trong đó:
 ```
 ffmpeg -f concat -i file-list.txt -c copy output.mp4
 ```
+
 Trong đó:
 
 - File đầu vào là file file-list.txt - chứa tên của các video cần ghép, ở cùng thư mục đang xét. Ví dụ nội dung file sẽ như sau:
-
 
 ```
 file 'small-1.mp4'
     file 'small-2.mp4'
 ```
+
 - File đầu ra là output.mp4
 
 #### Code FFmpeg tắt âm thanh của video
@@ -298,6 +313,7 @@ file 'small-1.mp4'
 ```
 ffmpeg -i video.mp4 -an mute-video.mp4
 ```
+
 Trong đó:
 
 - File đầu vào là video.mp4
@@ -311,6 +327,7 @@ Dùng để chạy, phát video. Câu lệnh đơn giản là:
 ```
 ffplay dir/video.mp4
 ```
+
 Trong đó:
 
 - dir là đường dẫn đến tệp tin video
@@ -346,6 +363,6 @@ Có thể bạn quan tâm:
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

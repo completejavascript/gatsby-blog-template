@@ -68,6 +68,7 @@ class Number {
     console.log(num.value);
     // => 3
 ```
+
 Ví dụ trên xây dựng class _Number_ với 4 phương thức _add_, _sub_, _mul_, _div_. Và bạn có thể thấy với mỗi phương thức được gọi, bạn phải lặp lại biến _num_ và mỗi câu lệnh thường viết trên 1 dòng.
 
 Như vậy khá dài dòng phải không bạn?
@@ -126,6 +127,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lam-sach-
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

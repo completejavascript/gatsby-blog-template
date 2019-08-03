@@ -59,7 +59,7 @@ Tuy nhiên, do mình đang tập trung vào JavaScript nên sẽ giả định l
 Cách đơn giản nhất để tạo mới một cookie là:
 
 ```js
-document.cookie = 'foo1=bar1'
+document.cookie = "foo1=bar1";
 ```
 
 Đoạn code trên sẽ tạo thêm một cookie với **key** là _foo1_ và **value** là _bar1_.
@@ -67,7 +67,7 @@ document.cookie = 'foo1=bar1'
 **Chú ý**: Tuy đoạn code trên thực hiện phép gán, nhưng thực tế, nó sẽ không ghi đè lên các cookies có sẵn mà chỉ tạo thêm giá trị mới. Nghĩa là nếu bạn muốn tạo thêm cookie với key là _foo2_ và value là _bar2_, bạn có thể viết tiếp:
 
 ```js
-document.cookie = 'foo2=bar2'
+document.cookie = "foo2=bar2";
 ```
 
 Lúc này, bạn sẽ có 2 cookie là: <code>'foo1=bar1; foo2=bar2'</code>.
@@ -86,7 +86,7 @@ Khi đó, giá trị cookie thu được là: <code>'foo1=bar1; foo2=bar2; name=
 Nếu bạn không cài đặt thời gian hết hạn cho HTTP Cookie thì mặc định nó sẽ bị xoá khi trình duyệt đóng. Để tránh việc này, bạn có thể cài đặt thời điểm hết hạn cho cookie bằng cách khai báo thêm thuộc tính **expires** với giá trị thời gian ở định dạng UTC, ví dụ:
 
 ```js
-document.cookie = 'foo1=bar1; expires=Thu, 04 Apr 2019 17:00:00 GMT';
+document.cookie = "foo1=bar1; expires=Thu, 04 Apr 2019 17:00:00 GMT";
 ```
 
 Để thu được định dạng thời gian như trên, bạn có thể dùng phương thức [toUTCString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toUTCString):
@@ -102,8 +102,8 @@ console.log(d);
 Thay vì cài đặt thời điểm hết hạn cookie, bạn có thể cài đặt thời gian hết hạn cho nó. Hay nói cách khác là sau bao nhiêu lâu thì cookies sẽ bị hết hạn. Để làm việc này, bạn cài đặt thuộc tính **max-age** với giá trị là thời gian tính bằng đơn vị giây, ví dụ:
 
 ```js
-document.cookie = 'foo1=bar1; max-age=3600'     // hết hạn sau 60 phút
-document.cookie = 'foo2=bar2; max-age=31536000' // hết hạn sau 1 năm
+document.cookie = "foo1=bar1; max-age=3600"; // hết hạn sau 60 phút
+document.cookie = "foo2=bar2; max-age=31536000"; // hết hạn sau 1 năm
 ```
 
 #### Cài đặt tên miền (domain) cho cookie
@@ -111,7 +111,7 @@ document.cookie = 'foo2=bar2; max-age=31536000' // hết hạn sau 1 năm
 Khi bạn không cài đặt thuộc tính **domain** cho cookie, mặc định, giá trị này được gán cho domain mà bạn sử dụng, giả sử là _domain.com_. Khi đó, cookies cũng được sử dụng cho các subdomain, ví dụ: _sub1.domain.com_, _sub2.domain.com_, _child.sub2.domain.com_... Tuy nhiên, bạn cũng có thể giới hạn domain sử dụng bằng cách cài đặt chính xác giá trị cho nó:
 
 ```js
-document.cookie = 'foo1=bar1; domain="sub1.domain.com";'
+document.cookie = 'foo1=bar1; domain="sub1.domain.com";';
 ```
 
 Khi đó, cookies chỉ tồn tại ở domain _sub1.domain.com_ (mà không có ở _sub2.domain.com_) và các domain con của nó như _child1.sub1.domain.com_, _child2.sub1.domain.com_,...
@@ -121,7 +121,7 @@ Khi đó, cookies chỉ tồn tại ở domain _sub1.domain.com_ (mà không có
 Tương tự như domain, nếu bạn không cài đặt **path** thì mặc định, giá trị này sẽ là "/". Khi đó, cookies sẽ tồn tại ở trang chủ "/" và các trang con như: "/tag", "/category", "/category/cookie",... Ngoài ra, bạn cũng có thể xác định rõ giá trị cho nó:
 
 ```js
-document.cookie = 'foo=bar; path="/category"'
+document.cookie = 'foo=bar; path="/category"';
 ```
 
 Khi đó, cookies sẽ có giá trị ở path _/category_ và các path con của nó như _/category/cookie_, _/category/session_,... mà không có ở các path khác như _/tag_,...
@@ -129,7 +129,8 @@ Khi đó, cookies sẽ có giá trị ở path _/category_ và các path con c�
 **Chú ý:** trên đây mình chỉ ví dụ minh hoạ cho mỗi thuộc tính, thực tế bạn có thể kết hợp chúng lại với nhau:
 
 ```js
-document.cookie = 'foo1=bar1; expires=Thu, 04 Apr 2019 17:00:00 GMT; domain="mysite.com"; path="/category"';
+document.cookie =
+  'foo1=bar1; expires=Thu, 04 Apr 2019 17:00:00 GMT; domain="mysite.com"; path="/category"';
 document.cookie = 'foo2=bar2; max-age=3600; domain="sub.mysite.com"; path="/tag"';
 ```
 
@@ -138,11 +139,11 @@ document.cookie = 'foo2=bar2; max-age=3600; domain="sub.mysite.com"; path="/tag"
 Để cập nhật giá trị cho một cookie, bạn cũng sử dụng cú pháp như việc tạo mới một cookie. Chỉ khác là ở đây, tên của cookie đã tồn tại, nên giá trị của nó sẽ bị ghi đè:
 
 ```js
-document.cookie = 'foo=bar1';
+document.cookie = "foo=bar1";
 console.log(document.cookie);
 // => foo=bar1
 
-document.cookie = 'foo=bar2; max-age=3600';
+document.cookie = "foo=bar2; max-age=3600";
 console.log(document.cookie);
 // => foo=bar2
 ```
@@ -164,7 +165,7 @@ Giá trị trả về sẽ là một đoạn string chứa tất cả các cooki
 Để xoá một cookie, bạn cũng sử dụng cú pháp phần cập nhật cookie bên trên. Với **key** là tên của cookie bạn muốn xoá và **value** bạn bỏ trống, cùng với giá trị của **expires** là một thời điểm trong quá khứ. Ví dụ:
 
 ```js
-document.cookie = 'foo=; expires=Wed, 27 Feb 2019 07:41:28 GMT;'
+document.cookie = "foo=; expires=Wed, 27 Feb 2019 07:41:28 GMT;";
 ```
 
 ## Thao tác với Cookie từ Server
@@ -203,7 +204,7 @@ Ngoài ra, bạn cũng có thể cài đặt thêm các thuộc tính **Expires*
 Để kiểm tra giá trị của cookie trên trình duyệt, bạn có thể sử dụng thông qua Console của DevTools (được mở bằng cách nhấn _F12_ hoặc tổ hợp _Ctrl Shift I_). Tại console, bạn gõ lệnh <code>document.cookie</code>, khi đó kết quả thu được là:
 
 ```js
-document.cookie
+document.cookie;
 // => "foo1=bar1; foo2=bar2"
 ```
 

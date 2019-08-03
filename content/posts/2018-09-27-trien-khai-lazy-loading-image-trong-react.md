@@ -183,7 +183,6 @@ Hàm [componentDidMount](https://reactjs.org/docs/react-component.html#component
 - Kiểm tra xem component có đang nằm trong viewport hay không (nếu có thì mình sẽ load ảnh gốc lên) bằng cách gọi hàm _this.handleScroll()_ - tương ứng với **Bước 2**.
 - Đăng ký sự kiện scroll của màn hình Window - dùng để xử lý **Bước 3**.
 
-
 ```
 window.addEventListener('scroll', this.handleScroll);
 ```
@@ -256,12 +255,6 @@ Về cơ bản, khi đến bước này thì ảnh đã sẵn sàng để hiển
 this.imgElm.classList.add(`${this.props.effect}`);
 ```
 
-
-
-
-
-
-
 ```
 .lazy-image.opacity {
       opacity: 1;
@@ -313,6 +306,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-trang
 
 ★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
-**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
+  **☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
