@@ -1,0 +1,185 @@
+---
+date: "2017-08-02T00:29:51Z"
+template: "post"
+cover: "../images/"
+keywords: ""
+slug: co-ban-ve-dom-javascript
+title: "Cơ bản về DOM JavaScript"
+categories:
+  - Javascript cơ bản
+tags:
+  - CSS
+  - DOM
+  - HTML
+---
+
+Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](https://completejavascript.com/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**.
+
+## DOM là gì?
+
+DOM là viết tắt của Document Object Model - một thành phần javascript cơ bản. Hiểu đơn giản thì DOM chính là những phần tử biểu diễn cấu trúc dữ liệu của một trang web.
+
+Hãy xem xét một ví dụ đơn giản sau:
+
+    <code><!doctype html>
+    <html>
+      <head>
+        <title>My home page</title>
+      </head>
+      <body>
+        <h1>My home page</h1>
+        <p>Hello, I am Marijn and this is my home page.</p>
+        <p>I also wrote a book! Read it
+          <a href="http://eloquentjavascript.net">here</a>.</p>
+      </body>
+    </html></code>
+
+Đây là cấu trúc đơn giản của một trang web.
+
+![Cơ bản về DOM JavaScript 1 - Complete JavaScript - completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-1-completejavascript.com_.png)
+
+Ở đây, mỗi hình vuông cùng với nội dung bên trong nó chính là DOM.
+
+## Cấu trúc biểu diễn DOM
+
+Thực tế, cấu trúc dữ liệu của một trang web được biểu diễn dạng cây (tree). Trong đó, mỗi node sẽ tương ứng với một DOM.
+
+Mỗi DOM node sẽ có thuộc tính *nodeType* - là một số nguyên - để biểu diễn kiểu của node, với giá trị như sau:
+
+- document.ELEMENT\*NODE (1) : node thông thường như **\*html, head, body, title, h1, p,...**\_
+
+- document.TEXT_NODE (3) : thành phần text trên trang web
+
+- document.COMMENT_NODE (8) : thành phần comment.
+
+Ví dụ trên được biểu diễn dạng cây:
+
+![Cơ bản về DOM JavaScript 2 - Complete JavaScript - completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-2-completejavascript.com_.png)
+
+## Liên kết giữa các DOM node trong cây
+
+Mỗi DOM node luôn chứa rất nhiều liên kết đến các DOM node khác.
+
+![Cơ bản về DOM JavaScript - Complete JavaScript - completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-3-completejavascript.com_.png)
+
+### [Node.parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
+
+trỏ đến node cha của một node.
+
+Nếu một node không có node cha (_document_) thì parentNode là null.
+
+Ví dụ: với mỗi node _p_ và _h1_ thì _parentNode_ là _body_.
+
+### [Node.childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
+
+trỏ đến một [đối tượng](https://completejavascript.com/javascript-object-last-but-not-least/) gần giống với [array](https://completejavascript.com/javascript-array-co-ban/), chứa những node con của một node.
+
+Tại sao lại là "gần giống với array" ?
+
+Vì đối tượng này không chứa các method như _slice, [forEach](https://completejavascript.com/javascript-foreach-la-cai-quai-gi/)_.
+
+Ví dụ: với node _body_, _childNodes_ là một danh sách với các node con là _h1, p, p_.
+
+### [Node.firstChild](https://developer.mozilla.org/en/docs/Web/API/Node/firstChild)
+
+trỏ đến node con đầu tiên của một node trong _childNodes_.
+
+Ví dụ: với node _body_, _firstChild_ là _h1_.
+
+### [Node.lastChild](https://developer.mozilla.org/en/docs/Web/API/Node/lastChild)
+
+trỏ đến node con cuối cùng của một node trong _childNodes_.
+
+Ví dụ: với node _body_, _lastChild_ là _p_ (thứ 2).
+
+### [Node.previousSibling](https://developer.mozilla.org/en/docs/Web/API/Node/previousSibling)
+
+trỏ đến node liền kề phía trước (có cùng _parentNode_).
+
+Ví dụ: với node _p_ (thứ nhất), _previousSibling_ là _h1_.
+
+### [Node.nextSibling](https://developer.mozilla.org/en/docs/Web/API/Node/nextSibling)
+
+trỏ đến node liền kề phía sau (có cùng _parentNode_).
+
+Ví dụ: với node _p_ (thứ nhất), *nextSibling* là _p _(thứ 2).
+
+## Một số phương thức phổ biến khi sử dụng DOM
+
+### [Node.getElementsByTagName('tagName')](https://developer.mozilla.org/en/docs/Web/API/Document/getElementsByTagName)
+
+trả về một danh sách các node con, cháu của một node với tag là 'tagName'.
+
+Ở đây, *tagName* có thể là _body, h1, p, img, ..._
+
+### [Node.getElementsByClassName('className')](https://developer.mozilla.org/en/docs/Web/API/Document/getElementsByClassName)
+
+Tương tự như phương thức trên, phương phức này trả về một danh sách các node con, cháu của một node với thuộc tính class = 'className'.
+
+### [Node.getElementById('id')](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+
+trả về node có thuộc tính id = 'id'.
+
+### [Node.removeChild(child)](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
+
+bỏ đi node _child_ của một node và trả về node bị bỏ đi.
+
+### [Node.appendChild(child)](https://developer.mozilla.org/en/docs/Web/API/Node/appendChild)
+
+thêm node _child_ vào cuối danh sách _childNodes_ của một node.
+
+### [Node.insertBefore(newNode, referenceNode)](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
+
+chèn thêm node _newNode_ vào phía trước node _referenceNode_.
+
+### [Node.replaceChild(newChild, oldChild)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild)
+
+thay thế node _oldChild_ bằng node _newChild_.
+
+### [Document.createTextNode(data)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode)
+
+Tạo ra một node kiểu text với giá trị text là _data_.
+
+### [Document.createElement(tagName)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+
+Tạo ra một node mới có kiểu là *tagName* (_h1, h2, p, img, div,..._)
+
+### [Document.querySelector(selectors)](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+
+Trả về node đầu tiên thoả mãn _selectors_. Trong đó, _selectors_ là một string chứa một hay nhiều [CSS-selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors) phân cách nhau bằng dấu phẩy.
+
+### [Document.querySelectorAll(selectors)](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
+
+Trả về danh sách các node thoả mãn _selectors_, theo thứ tự sử dụng thuật toán DFS.
+
+![Perfect practice makes perfect - Complete JavaScript - completejavascript.com](https://completejavascript.com/wp-content/uploads/2017/04/only-perfect-practice-makes-perfect-completejavascript.com_.png)
+
+## Ví dụ sử dụng DOM
+
+"Cách học tốt nhất là học từ thực hành". Sau đây là một số bài tập thực hành sử dụng DOM và các phương thức trên mà mình đã thực hiện (phần đề bài ở trang mà mình đã tham khảo, xem phía dưới).
+
+### Build a table
+
+Tham khảo code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/DOM_basic/build_a_table_completejavascript.com.js).
+
+### Elements by Tag Name
+
+Tham khảo code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/DOM_basic/elements_by_tag_name_completejavascript.com.js).
+
+### The cat's hat
+
+Tham khảo code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/DOM_basic/cat_hat.completejavascript.com.js).
+
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/xu-ly-mot-event-javascript-co-ban/), thân ái!
+
+## Tham khảo
+
+- [The Document Object Model](http://eloquentjavascript.net/14_dom.html)
+
+---
+
+★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+
+**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)
+**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
+**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)

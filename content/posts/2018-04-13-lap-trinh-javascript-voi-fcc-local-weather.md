@@ -1,0 +1,148 @@
+---
+date: "2018-04-13T00:00:40Z"
+template: "post"
+cover: "../images/"
+keywords: ""
+slug: lap-trinh-javascript-voi-fcc-local-weather
+title: "Lập trình JavaScript với FCC - Local Weather"
+categories:
+  - JavaScript Tutorial
+tags:
+  - API
+  - Canvas
+  - CORS
+  - CSS
+  - jQuery
+  - Lập trình JavaScript với FCC
+---
+
+Tiếp tục series[ lập trình JavaScript với FCC](https://completejavascript.com/tag/lap-trinh-javascript-voi-fcc/), hôm nay mình sẽ giới thiệu một project là **Show the Local Weather. **Dưới đây là demo trên codepen. Ngoài ra, bạn có thể xem bản đầy đủ tại [đây](http://about.phamvanlam.com/fcc-local-weather/).
+
+[codepen_embed height="590" theme_id="0" slug_hash="JLeEao" default_tab="result" user="completejavascript"]See the Pen [[FCC] Show Local Weather](https://codepen.io/completejavascript/pen/JLeEao/) by Lam Pham ([@completejavascript](https://codepen.io/completejavascript)) on [CodePen](https://codepen.io).[/codepen_embed]
+
+## Yêu cầu bài toán Show the Local Weather
+
+Ứng dụng này sẽ bao gồm 3 yêu cầu chính:
+
+- Hiển thị thông tin thời tiết ở vị trí hiện tại của người dùng
+- Có những hình ảnh khác nhau biểu thị trạng thái thời tiết (mưa, nắng, tuyết,...).
+- Có thể chuyển đổi đơn vị nhiệt độ giữa độ F và độ C.
+
+Về cách thiết kế UX/UI cho ứng dụng, bạn có thể xem tại [đây](https://completejavascript.com/lap-trinh-javascript-voi-fcc-random-quote-machine/). Còn trong bài viết này, mình sẽ giới thiệu một số thủ thuật JavaScript cần thiết để giải quyết bài toán.
+
+## Giải quyết bài toán
+
+### Lấy vị trí người dùng
+
+Đúng vậy, để lấy được thông tin thời tiết ở vị trí hiện tại của người dùng, bạn phải lấy được tọa độ (kinh độ, vĩ độ) của họ. Trong bài viết [Hai cách lấy vị trí người dùng với JavaScript](https://completejavascript.com/hai-cach-lay-vi-tri-nguoi-dung/), mình đã hướng dẫn các bạn rồi đó. Còn cụ thể trong project này, mình sử dụng phương pháp thứ hai, đó là dùng **ipinfo.io API**.
+
+### Lấy thông tin thời tiết tại một vị trí xác định
+
+Sau khi đã có tọa độ của người dùng, mình sử dụng [Dark Sky API](https://darksky.net/dev/) để lấy thông tin thời tiết. Bạn chỉ cần vào trang chủ, đăng ký, đăng nhập rồi lấy ra **DarkSky API Key** và gửi request lên server để lấy thông tin thời tiết.
+
+    <code>let secretKey = "yourDarkSkyAPIKey";
+    let requestURL = `https://api.darksky.net/forecast/${secretKey}/${lat},${lon}`;
+
+    $.getJSON(requestURL, info => {
+      // Cập nhật thông tin thời tiết dựa vào info
+    });</code>
+
+Kết quả trả về sẽ là [object](https://completejavascript.com/javascript-object-last-but-not-least/) **info**, với đầy đủ những thông tin cần thiết như nhiệt độ, độ ẩm, tốc độ gió,... ứng với thời điểm hiện tại, 48 giờ tới và 7 ngày tới.
+
+Về lý thuyết thì đến đây là xong, vì bạn đã có được thông tin thời tiết rồi. Nhưng thực tế thì khi bạn chỉ làm như trên bạn sẽ bị lỗi:
+
+No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'https://s.codepen.io' is therefore not allowed access.
+
+Đó là vì domain thực hiện request và domain của server là khác nhau. Để khắc phục tình trạng này, mình sử dụng [CORS Anywhere](https://github.com/Rob--W/cors-anywhere/), đóng vai trò như là một proxy cho phép thực hiện **request cross-origin**.
+
+Theo mình hiểu, **cơ chế hoạt động** sẽ là: thay vì bạn gửi [request](https://completejavascript.com/xmlhttprequest-tao-http-request-den-server-trong-javascript/) trực tiếp lên server Darksky từ ứng dụng web, bạn sẽ gửi request lên server CORS Anywhere. Server này sẽ thực hiện request giúp bạn. Sau khi có kết quả trả về từ Darksky thì CORS Anywhere sẽ trả lại cho bạn.
+
+Mình mới chỉ hiểu đơn giản vậy thôi. Còn sâu xa hơn thì nhờ bạn nào có kinh nghiệm giải thích hộ nhé. Còn cách code thì đơn giản là bạn sẽ ghép thêm vào đầu request trên địa chỉ server của CORS Anywhere như sau:
+
+    <code>`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${secretKey}/${lat},${lon}`</code>
+
+Đến đây, bạn đã có thể hiển thị được thông tin thời tiết ở vị trí hiện tại của người dùng rồi. Tiếp theo, bạn cần hiển thị hình ảnh tương ứng với thông tin thời tiết đó.
+
+### Hiển thị icon ứng với thông tin thời tiết
+
+Có nhiều thư viện để bạn có thể thực hiện việc này như sau:
+
+**Animated Weather Icons **by [Josh Bader](https://codepen.io/joshbader) - cách này bạn chỉ cần dùng thuần CSS3.
+
+[codepen_embed height="486" theme_id="0" slug_hash="EjXgqr" default_tab="result" user="joshbader"]See the Pen [Animated Weather Icons](https://codepen.io/joshbader/pen/EjXgqr/) by Josh Bader ([@joshbader](https://codepen.io/joshbader)) on [CodePen](https://codepen.io).[/codepen_embed]
+
+Hoặc **weather-icon** tại [đây](https://erikflowers.github.io/weather-icons/). Cách này sử dụng sẽ gần giống với **font-awesome**.
+
+Còn với project này, mình sử dụng [Skycons](https://darkskyapp.github.io/skycons/) - vẽ icon dựa trên canvas.
+
+#### Cách sử dụng Skycons
+
+[codepen_embed height="300" theme_id="0" slug_hash="EEOJrZ" default_tab="result" user="completejavascript"]See the Pen [Using Skycons Example](https://codepen.io/completejavascript/pen/EEOJrZ/) by Lam Pham ([@completejavascript](https://codepen.io/completejavascript)) on [CodePen](https://codepen.io).[/codepen_embed]
+
+Để sử dụng thư viện này, bạn cần khai báo script của Skycons vào file html:
+
+    <code><script src="https://rawgit.com/darkskyapp/skycons/master/skycons.js"></script></code>
+
+Tiếp theo, bạn khai báo một thẻ canvas (với mỗi icon). Mỗi thẻ canvas này cần có id, chiều rộng (width) và chiều dài (height).
+
+    <code><canvas id="icon1" width="128" height="128"></canvas></code>
+
+Trong file script, bạn khai báo đối tượng Skycons, với thuộc tính color là màu sắc của icon.
+
+    <code>let skycons = new Skycons({"color": "#3da4ab"});</code>
+
+Để add icon vào một canvas bạn có thể sử dụng một trong hai cách: id hoặc [DOM](https://completejavascript.com/co-ban-ve-dom-javascript/).
+
+    <code>// Thêm icon theo id
+    skycons.add("icon1", Skycons.PARTLY_CLOUDY_DAY);
+
+    // Them icon theo DOM
+    skycons.add(document.getElementById("icon2"), Skycons.RAIN);</code>
+
+Với thông tin thứ 2, chính là kiểu icon - ứng với thời tiết và có các loại như sau:
+
+- Skycons.CLEAR_DAY
+- Skycons.CLEAR_NIGHT
+- Skycons.RAIN
+- Skycons.SNOW
+- Skycons.WIND
+- Skycons.SLEET
+- Skycons.FOG
+- Skycons.CLOUDY
+- Skycons.PARTLY_CLOUDY_DAY
+- Skycons.PARTLY_CLOUDY_NIGHT
+
+Đến đây là bạn đã có được icon rồi, tiếp theo là thêm hiệu ứng animation cho nó:
+
+    <code>// start animation!
+    skycons.play();</code>
+
+Ngoài ra, còn một số API khác như:
+
+- skycons.pause() : dừng hiệu ứng animation
+- skycons.remove("icon2"): bỏ đi icon2
+- skycons.set("icon", Skycons.SNOW): thay đổi kiểu icon cho một canvas hiện tại.
+
+### Chuyển đổi đơn vị giữa độ F và độ C
+
+Đơn giản lắm, chỉ có 2 công thức như này:
+
+    <code>// Hàm convert từ độ F sang độ C
+    let F2C = F => ((F - 32) * 5 / 9).toFixed();
+
+    // Hàm convert từ độ C sang độ F
+    let C2F = C => (C * 9 / 5 + 32).toFixed();</code>
+
+## Kết luận
+
+Trên đây là cách giải quyết bài toán Show the Local Weather. Nếu có phần nào mình giải thích chưa rõ, thì bạn có thể đặt câu hỏi ở phần bình luận.
+
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](https://completejavascript.com/lap-trinh-javascript-voi-fcc-wikipedia-viewer/), thân ái!
+
+---
+
+★ Theo dõi [Lam Pham](https://completejavascript.com/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+
+**☛ Facebook Fanpage:** [Complete JavaScript](https://www.facebook.com/completejavascript/)  
+**☛ Facebook Group:** [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+**☛ Portfoflio** : [Lam Pham](http://about.phamvanlam.com/)
