@@ -33,13 +33,15 @@ LocalForage là một thư viện JavaScript mã nguồn mở, giúp cho việc 
 
 Việc cài đặt localForage khá đơn giản. Bạn có thể sử dụng thông qua CDN và chèn thẳng vào HTML như sau:
 
-    <code class="html language-html"><script src="https://unpkg.com/localforage@1.7.3/dist/localforage.min.js"></script>
+```html
+<script src="https://unpkg.com/localforage@1.7.3/dist/localforage.min.js"></script>
 
 ```
 
 Hoặc tải [phiên bản release mới nhất](https://github.com/mozilla/localForage/releases) trên Github về rồi sử dụng luôn:
 
-    <code class="html language-html"><script src="localforage.js"></script>
+```html
+<script src="localforage.js"></script>
     <script>console.log('localforage is: ', localforage);</script>
 ```
 
@@ -54,14 +56,14 @@ Ngoài ra, bạn cũng có thể cài đặt localForage thông qua npm hoặc b
     # Hoặc cài đặt qua bower:
     bower install localforage
 
-````
+```
 
 Và sử dụng nó với các bundler (như Webpack) bằng cách:
 
 ```js
 import localforage from "localforage";
 localforage.setItem('key', 'value');
-````
+```
 
 ## Cách sử dụng một số API của localForage
 

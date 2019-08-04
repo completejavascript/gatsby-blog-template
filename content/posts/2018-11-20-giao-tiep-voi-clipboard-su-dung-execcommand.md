@@ -1,8 +1,8 @@
 ---
 date: "2018-11-20T22:30:17Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/giao-tiep-voi-clipboard-su-dung-execcommand-completejavascript.com_.png"
+keywords: "giao tiếp với clipboard sử dụng execCommand"
 slug: giao-tiep-voi-clipboard-su-dung-execcommand
 title: "Giao tiếp với clipboard sử dụng execCommand"
 categories:
@@ -15,7 +15,7 @@ Thực tế, [Document.execCommand()](https://developer.mozilla.org/en-US/docs/W
 
 ## Ví dụ giao tiếp với clipboard sử dụng execCommand
 
-[codepen_embed height="820" theme_id="0" slug_hash="mQWJWj" default_tab="result" user="completejavascript" preview="true" data-preview="true"]See the Pen <a href='https://codepen.io/completejavascript/pen/mQWJWj/'>Clipboard with JavaScript Demo</a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+https://codepen.io/completejavascript/pen/mQWJWj
 
 Trong ví dụ trên, bạn có thể copy dữ liệu bằng cách nhấn vào button **Copy Text**. Sau đó, nội dung dòng text sẽ được copy vào clipboard. Tiếp theo bạn có thể test bằng cách nhấn tổ hợp **Ctrl + V** vào bất cứ chỗ nào cho phép gõ text như: phần textarea trong demo, thanh ghi địa chỉ address của trình duyệt, notepad,...
 
@@ -27,15 +27,15 @@ Sau khi đã chạy thử demo xong, dưới đây là phần giải thích chi 
 
 Nội dung phần **html**:
 
-    <code class="html language-html"><h3>Copy</h3>
-    <p id="content-copy">This text will be inserted into the clipboard.</p>
-    <button id="button-copy">Copy Text</button>
-
-````
+```html
+<h3>Copy</h3>
+<p id="content-copy">This text will be inserted into the clipboard.</p>
+<button id="button-copy">Copy Text</button>
+```
 
 Trong đó, thẻ _p_ với id _content-copy_ là thành phần chứa nội dung mình muốn copy; button với id _button-copy_ để kích hoạt lệnh _copy_ khi người dùng click vào.
 
-**Chú ý**: bạn có thể copy dữ liệu từ hầu hết các phần tử như: _thẻ p, span, div, input, textarea,..._ Nhưng trong ví dụ này, mình chỉ demo với thẻ _p_.
+> **Chú ý**: bạn có thể copy dữ liệu từ hầu hết các phần tử như: _thẻ p, span, div, input, textarea,..._ Nhưng trong ví dụ này, mình chỉ demo với thẻ _p_.
 
 Tiếp theo, mình dùng [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) để lưu lại [DOM node](/co-ban-ve-dom-javascript/) của các phần tử:
 
@@ -43,7 +43,7 @@ Tiếp theo, mình dùng [querySelector](https://developer.mozilla.org/en-US/doc
 const $ = document.querySelector.bind(document);
 const contentCopyElm = $("#content-copy"),
 buttonCopyElm = $("#button-copy");
-````
+```
 
 Sau đó, định nghĩa một [hàm số](/tim-hieu-function-javascript/) để kiểm tra xem command mình sử dụng có được support hay không, thông qua phương thức [document.queryCommandSupported()](https://developer.mozilla.org/en-US/docs/Web/API/Document/queryCommandSupported):
 
@@ -83,7 +83,7 @@ buttonCopyElm.addEventListener("click", () => {
 });
 ```
 
-**Chú ý**: phần trên chỉ áp dụng cho các thẻ có text content như thẻ: _p, span, div,..._ Các thẻ không có text content như: _input, textarea,..._ sẽ được áp dụng giống như phần **cut dữ liệu vào clipboard** dưới đây.
+> **Chú ý**: phần trên chỉ áp dụng cho các thẻ có text content như thẻ: _p, span, div,..._ Các thẻ không có text content như: _input, textarea,..._ sẽ được áp dụng giống như phần **cut dữ liệu vào clipboard** dưới đây.
 
 ## Cut dữ liệu vào Clipboard
 
@@ -91,11 +91,11 @@ Khác với **copy** (có thể copy dữ liệu trong nhiều loại phần t�
 
 Nội dung phần **html**:
 
-    <code class="html language-html"><h3>Cut</h3>
-    <input id="content-cut" type="text" value="This text will be cut, then inserted into the clipboard." />
-    <button id="button-cut">Cut Text</button>
-
-````
+```html
+<h3>Cut</h3>
+<input id="content-cut" type="text" value="This text will be cut, then inserted into the clipboard." />
+<button id="button-cut">Cut Text</button>
+```
 
 Tiếp theo là phần xử lý trong **js** khi người dùng click vào button **Cut Text**:
 
@@ -112,7 +112,7 @@ buttonCutElm.addEventListener("click", () => {
     console.log(e);
   }
 });
-````
+```
 
 Cách tạo vùng chọn trong phần này dễ hơn so với phần trước vì đối tượng DOM node ứng với **input** đã hỗ trợ sẵn phương thức **select()**.
 
@@ -122,7 +122,7 @@ Như mình đã nói ở trên, _document.execCommand()_ cho phép bạn thực 
 
 Dưới đây là một demo đơn giản sử dụng _document.execCommand()_ để chỉnh sửa nội dung - tương tự như một **Text Editor**:
 
-[codepen_embed height="680" theme_id="0" slug_hash="ZmKKwW" default_tab="result" user="completejavascript" preview="true" data-preview="true"]See the Pen <a href='https://codepen.io/completejavascript/pen/ZmKKwW/'>More Fun With execCommand</a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+https://codepen.io/completejavascript/pen/ZmKKwW
 
 Trong ví dụ trên, bạn có thể thử bôi đen text, sau đó nhấn vào các button để test các chức năng của nó. Dĩ nhiên, các chức năng mình lấy ra làm ví dụ vẫn chưa đầy đủ hết so với khả năng hỗ trợ của _document.execCommand()_. Nhưng nó cũng phần nào giúp bạn thấy được khả năng của phương thức này.
 
@@ -135,11 +135,8 @@ Xin chào và hẹn gặp lại, thân ái!
 Xem thêm:
 
 - [Interact with the clipboard](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Interact_with_the_clipboard)
-
 - [Copying to Clipboard Using Vanilla JavaScript](https://alligator.io/js/copying-to-clipboard/)
-
 - [Quick Tip: Accessing The Clipboard With JavaScript](https://tutorialzine.com/2016/10/quick-tip-accessing-the-clipboard-with-javascript)
-
 - [Use execCommands to edit HTML content in your browser](https://codepen.io/chrisdavidmills/full/gzYjag/)
 
 <hr class="border-color-light-grey" />

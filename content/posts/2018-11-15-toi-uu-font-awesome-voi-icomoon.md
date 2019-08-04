@@ -126,7 +126,8 @@ Bên trong package này, bạn sẽ thấy hai phần quan trọng như:
 
 Khi sử dụng các font tuỳ chỉnh này, bạn cần phải copy thư mục **fonts** và tệp tin **style.css** vào project, rồi cấu hình file **html** như bình thường:
 
-    <code class="html language-html"><!doctype html>
+```html
+<!doctype html>
     <html>
     <head>
       <link rel="stylesheet" href="style.css">

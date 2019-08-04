@@ -14,7 +14,7 @@ tags:
 
 Chào bạn! Năm mới 2019, mình chúc bạn mạnh khỏe và đạt được tất cả các mục tiêu đã đặt ra... Trong năm 2019, mình cố gắng tìm hiểu, giải quyết và tổng hợp lại những thủ thuật JavaScript hay dùng. Và bài đầu tiên hôm nay, mình sẽ viết về cách convert IPv4 sang Decimal và sau đó là convert ngược lại từ Decimal sang IPv4.
 
-Trước khi bắt đầu, mình muốn giới thiệu với bạn [link của project](https://github.com/jscenter/vanilla-js-snippets) này trên Github. Mình rất trân trọng nếu bạn có thể đóng góp chút ít cho project mã nguồn mở này. Một cách đơn giản nhất là bạn vào phần [Issues](https://github.com/jscenter/vanilla-js-snippets/issues). Sau đó, bạn nhấn vào phần [New issue](https://github.com/jscenter/vanilla-js-snippets/issues/new). Tại đây bạn có thể đưa ra ý tưởng về thủ thuật JavaScript nào đó mà bạn cảm thấy hữu ích. Bất kể thứ gì, dù đơn giản hay phúc tạp cũng được nhé! Mình sẽ cố gắng giải quyết hoặc tìm kiếm giải pháp trên Google, rồi cập nhật vào project. Mình tin rằng đây sẽ là một nguồn tài liệu quý giá cho bạn, cho mình và người khác sau này.
+> Trước khi bắt đầu, mình muốn giới thiệu với bạn [link của project](https://github.com/jscenter/vanilla-js-snippets) này trên Github. Mình rất trân trọng nếu bạn có thể đóng góp chút ít cho project mã nguồn mở này. Một cách đơn giản nhất là bạn vào phần [Issues](https://github.com/jscenter/vanilla-js-snippets/issues). Sau đó, bạn nhấn vào phần [New issue](https://github.com/jscenter/vanilla-js-snippets/issues/new). Tại đây bạn có thể đưa ra ý tưởng về thủ thuật JavaScript nào đó mà bạn cảm thấy hữu ích. Bất kể thứ gì, dù đơn giản hay phúc tạp cũng được nhé! Mình sẽ cố gắng giải quyết hoặc tìm kiếm giải pháp trên Google, rồi cập nhật vào project. Mình tin rằng đây sẽ là một nguồn tài liệu quý giá cho bạn, cho mình và người khác sau này.
 
 <a href="https://github.com/jscenter/vanilla-js-snippets" class="btn btn-primary margin-bottom">
   Xem code trên Github
@@ -232,7 +232,7 @@ Trong đó, mình có kiểm tra điều kiện cơ bản của số Decimal đ�
 
 Trên đây là cách mình convert IPv4 sang Decimal và ngược lại, convert Decimal sang IPv4. Theo bạn, cách giải thích của mình có dễ hiểu không? Code trên đã tối ưu hay chưa? Mình rất mong nhận được sự góp ý của bạn để hoàn thiện các giải pháp trên.
 
-Ngoài ra, mình rất trân trọng sự đóng góp của bạn vào [project mã nguồn mở](https://github.com/jscenter/vanilla-js-snippets) này trên Github. Vì mình tin rằng project này sẽ đem lại lợi ích to lớn cho bạn và mọi người sau này.
+> Ngoài ra, mình rất trân trọng sự đóng góp của bạn vào [project mã nguồn mở](https://github.com/jscenter/vanilla-js-snippets) này trên Github. Vì mình tin rằng project này sẽ đem lại lợi ích to lớn cho bạn và mọi người sau này.
 
 Cuối cùng, xin chào và hẹn gặp lại, thân ái!
 

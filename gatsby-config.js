@@ -55,6 +55,13 @@ module.exports = {
           {
             resolve: "gatsby-remark-responsive-iframe"
           },
+          {
+            resolve:"@weknow/gatsby-remark-codepen",
+            options: {
+              theme: "dark",
+              height: 500
+            }
+          },
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-autolink-headers"

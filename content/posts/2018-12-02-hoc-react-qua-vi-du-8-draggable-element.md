@@ -1,8 +1,8 @@
 ---
 date: "2018-12-02T22:30:04Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/hoc-react-qua-vi-du-8-draggable-element-completejavascript.com_.png"
+keywords: "draggable element"
 slug: hoc-react-qua-vi-du-8-draggable-element
 title: "Học React qua ví dụ #8: Draggable Element"
 categories:
@@ -15,19 +15,19 @@ tags:
 
 Xin chào bạn đến với Học React qua ví dụ #8. Bài này mình sẽ thực hành React thông qua việc tạo Draggable Element. Trước khi bắt đầu, mời bạn theo dõi ví dụ minh họa:
 
-[Xem Demo Draggable Element](https://about.phamvanlam.com/learn-react-by-example/#/draggable-element/)
+<a href="https://about.phamvanlam.com/learn-react-by-example/#/draggable-element/" class="btn btn-primary margin-bottom">
+  Xem Demo Draggable Element
+</a>
 
 Như bạn thấy đó, Draggable Element nghĩa là **phần tử có thể kéo đi, thay đổi vị trí được**. Như vậy, ý tưởng để giải quyết bài toán này rất đơn giản, đó là:
 
 - Bắt sự kiện click chuột vào phần tử
-
 - Tính toán khoảng cách khi người dùng di chuột
-
 - Cập nhật lại vị trí của phần tử dựa vào tính toán trên
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-**Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
@@ -56,12 +56,9 @@ learn-react-by-example/
 
 Trong đó:
 
-- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về  **Draggable Element** nên mình tạo thêm thư mục **draggable-element **bên trong với 2 file **draggable-element\*\***.js** và **draggable-element\***\*.css** để định nghĩa cho component **Draggable Element** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-
+- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về  **Draggable Element** nên mình tạo thêm thư mục **draggable-element** bên trong với 2 file **draggable-element.js** và **draggable-element.css** để định nghĩa cho component **Draggable Element** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
 - Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
-
-- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Draggable Element **ở trên.
-
+- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Draggable Element** ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
 ## Xây dựng Draggable Element Component
@@ -71,13 +68,11 @@ Trong đó:
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
 - [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
-
 - [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_mousedown, mouseup, mousemove_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-```js
-x;
+```jsx
 import React from "react";
 import ReactDOM from "react-dom";
 import "./draggable-element.css";
@@ -112,7 +107,9 @@ const addScrollbarYIfNeeded = elm => {
  * ở trong phạm vi màn hình
  */
 const maxWidth =
-  window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  window.innerWidth || 
+  document.documentElement.clientWidth || 
+  document.body.clientWidth;
 
 /**
  * Cross-browser để xác định clientHeight cho IE8 trở về trước
@@ -120,7 +117,9 @@ const maxWidth =
  * ở trong phạm vi màn hình
  */
 const maxHeight =
-  window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  window.innerHeight || 
+  document.documentElement.clientHeight || 
+  document.body.clientHeight;
 
 /**
  * React Component cho phép di chuyển 1 phần tử
@@ -234,7 +233,12 @@ export default class DraggableElement extends React.Component {
      * component có nằm trong chiều rộng màn hình không,
      * Nếu có, thì mới cập nhật vị trí mới
      */
-    if (newLeft >= 0 && newLeft <= maxWidth && newRight >= 0 && newRight <= maxWidth) {
+    if (
+      newLeft >= 0 && 
+      newLeft <= maxWidth && 
+      newRight >= 0 && 
+      newRight <= maxWidth
+    ) {
       this.startX = e.clientX;
       this.root.style.left = `${newLeft}px`;
     }
@@ -244,7 +248,12 @@ export default class DraggableElement extends React.Component {
      * component có nằm trong chiều cao màn hình không,
      * Nếu có, thì mới cập nhật vị trí mới
      */
-    if (newTop >= 0 && newTop <= maxHeight && newBottom >= 0 && newBottom <= maxHeight) {
+    if (
+      newTop >= 0 && 
+      newTop <= maxHeight && 
+      newBottom >= 0 && 
+      newBottom <= maxHeight
+    ) {
       this.startY = e.clientY;
       this.root.style.top = `${newTop}px`;
     }
@@ -280,73 +289,73 @@ export default class DraggableElement extends React.Component {
 
 ### Nội dung file draggable-element.css
 
-File này dùng để xác định style cho Draggable Element Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-draggable-element **để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
+File này dùng để xác định style cho Draggable Element Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-draggable-element** để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
 
-Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2 **thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
+Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-    <code class="language-css">.lp-draggable-element,
-    .lp-draggable-element * {
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
+```css
+.lp-draggable-element,
+.lp-draggable-element * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 
-    /*
-     * Thuộc tính quan trọng là ```position: absolute```;
-     * Để có thể xét vị trí tuyệt đối khi di chuyển
-     */
-    .lp-draggable-element {
-      position: absolute;
-      z-index: 9;
-      background-color: #f1f1f1;
-      border: 1px solid #d3d3d3;
-      text-align: center;
-      max-width: 100%;
-      max-height: 100%;
-    }
+/*
+* Thuộc tính quan trọng là ```position: absolute```;
+* Để có thể xét vị trí tuyệt đối khi di chuyển
+*/
+.lp-draggable-element {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+}
 
-    .lp-draggable-element>.header {
-      padding: 10px;
-      cursor: move;
-      z-index: 10;
-      background-color: #2196F3;
-      color: #fff;
-    }
+.lp-draggable-element>.header {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
 
-    .lp-draggable-element>.content {
-      padding: 15px;
-    }
-
+.lp-draggable-element>.content {
+  padding: 15px;
+}
 ```
 
 ## Sử dụng Draggable Element component
 
 **./src/App.css**
 
-    <code class="language-css">.App,
-    .App * {
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-    }
+```css
+.App,
+.App * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
-    .App {
-      text-align: center;
-      width: 100%;
-      max-width: 780px;
-      margin: auto;
-      padding: 15px;
-      color: #222;
-      font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 780px;
+  margin: auto;
+  padding: 15px;
+  color: #222;
+  font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+}
 ```
 
 **./src/App.js**
 
 Trong đây mình có kết hợp Draggable Element với các React Component khác mà mình đã làm như: [Modal Image](/hoc-react-qua-vi-du-3-modal-image/), [Slideshow](/hoc-react-qua-vi-du-1-slideshow/).
 
-```js
-x;
+```jsx
 import React from "react";
 import "./App.css";
 
@@ -380,7 +389,8 @@ export default class App extends React.Component {
       <div className="App">
         <h2>Draggable Element</h2>
         <div>
-          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me at{" "}
+          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. 
+          {" "}Visit me at{" "}
           <a href="/">completejavascript.com</a>.
         </div>
 
@@ -392,9 +402,10 @@ export default class App extends React.Component {
           left={`200`}
         >
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris,
+            nisi ut aliquip ex ea commodo consequat.
           </p>
         </DraggableElement>
 
@@ -417,7 +428,11 @@ export default class App extends React.Component {
           left={`800`}
         >
           <h3>Modal Image</h3>
-          <ModalImage src={img6} alt={`This is one of beautiful girls`} ratio={`3:2`} />
+          <ModalImage 
+            src={img6} 
+            alt={`This is one of beautiful girls`} 
+            ratio={`3:2`} 
+          />
         </DraggableElement>
       </div>
     );
@@ -428,9 +443,7 @@ export default class App extends React.Component {
 Trong đó, Draggable Element Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
 - **title ([String](/values-types-va-operators-trong-javascript-phan-2/)):** là title của component.
-
 - **width, height (String hoặc [Number](/values-types-va-operators-trong-javascript-phan-1/)):** lần lượt là chiều rộng và chiều cao của phần tử.
-
 - **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
 
 ## Lời kết

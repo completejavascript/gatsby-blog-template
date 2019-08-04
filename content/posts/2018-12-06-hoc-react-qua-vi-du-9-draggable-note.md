@@ -1,8 +1,8 @@
 ---
 date: "2018-12-06T22:30:43Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/hoc-react-qua-vi-du-9-draggable-note-completejavascript.com_.png"
+keywords: "draggable note"
 slug: hoc-react-qua-vi-du-9-draggable-note
 title: "Học React qua ví dụ #9: Draggable Note"
 categories:
@@ -23,7 +23,7 @@ Thực tế, Draggable Note được phát triển lên từ [Draggable Element]
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-**Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
@@ -52,12 +52,10 @@ learn-react-by-example/
 
 Trong đó:
 
-- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về  **Draggable Note** nên mình tạo thêm thư mục **draggable-note **bên trong với 2 file **draggable-note\*\***.js** và **draggable-note\***\*.css** để định nghĩa cho component **Draggable Note **(bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
+- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về  **Draggable Note** nên mình tạo thêm thư mục **draggable-note** bên trong với 2 file **draggable-note.js** và **draggable-note.css** để định nghĩa cho component **Draggable Note** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
 
 - Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
-
-- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Draggable Note **ở trên.
-
+- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Draggable Note** ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
 ## Xây dựng Draggable Note Component
@@ -67,13 +65,11 @@ Trong đó:
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
 - [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
-
 - [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_mousedown, mouseup, mousemove_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-```js
-x;
+```jsx
 import React from "react";
 import ReactDOM from "react-dom";
 import "./draggable-note.css";
@@ -84,7 +80,9 @@ import "./draggable-note.css";
  * ở trong phạm vi màn hình
  */
 const maxWidth =
-  window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  window.innerWidth || 
+  document.documentElement.clientWidth || 
+  document.body.clientWidth;
 
 /**
  * Cross-browser để xác định clientHeight cho IE8 trở về trước
@@ -92,7 +90,9 @@ const maxWidth =
  * ở trong phạm vi màn hình
  */
 const maxHeight =
-  window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  window.innerHeight || 
+  document.documentElement.clientHeight || 
+  document.body.clientHeight;
 
 /**
  * React Component cho phép di chuyển 1 phần tử
@@ -230,7 +230,12 @@ export default class DraggableNote extends React.Component {
      * component có nằm trong chiều rộng màn hình không,
      * Nếu có, thì mới cập nhật vị trí mới
      */
-    if (newLeft >= 0 && newLeft <= maxWidth && newRight >= 0 && newRight <= maxWidth) {
+    if (
+      newLeft >= 0 && 
+      newLeft <= maxWidth && 
+      newRight >= 0 && 
+      newRight <= maxWidth
+    ) {
       this.startX = e.clientX;
       left = newLeft;
     }
@@ -240,7 +245,12 @@ export default class DraggableNote extends React.Component {
      * component có nằm trong chiều cao màn hình không,
      * Nếu có, thì mới cập nhật vị trí mới
      */
-    if (newTop >= 0 && newTop <= maxHeight && newBottom >= 0 && newBottom <= maxHeight) {
+    if (
+      newTop >= 0 && 
+      newTop <= maxHeight && 
+      newBottom >= 0 && 
+      newBottom <= maxHeight
+    ) {
       this.startY = e.clientY;
       top = newTop;
     }
@@ -253,7 +263,9 @@ export default class DraggableNote extends React.Component {
      * Nếu người dùng truyền vào hàm handleDataChange,
      * thì mình sẽ gọi để update state ở thằng cha nó
      */
-    if (this.props.handleDataChange) this.props.handleDataChange(this.props.id, { left, top });
+    if (this.props.handleDataChange) {
+      this.props.handleDataChange(this.props.id, { left, top });
+    }
   }
 
   /**
@@ -288,7 +300,9 @@ export default class DraggableNote extends React.Component {
      * Nếu người dùng truyền vào hàm handleDataChange,
      * thì mình sẽ gọi để update state ở thằng cha nó
      */
-    if (this.props.handleDataChange) this.props.handleDataChange(this.props.id, { width, height });
+    if (this.props.handleDataChange) {
+      this.props.handleDataChange(this.props.id, { width, height });
+    }
   }
 
   /**
@@ -342,7 +356,11 @@ export default class DraggableNote extends React.Component {
             onChange={this.contentChange}
           />
         ) : (
-          <textarea className="content" defaultValue={this.props.content} spellCheck="false" />
+          <textarea 
+            className="content" 
+            defaultValue={this.props.content} 
+            spellCheck="false" 
+          />
         )}
       </div>
     );
@@ -352,82 +370,82 @@ export default class DraggableNote extends React.Component {
 
 ### Nội dung file draggable-note.css
 
-File này dùng để xác định style cho Draggable Note Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-draggable-note **để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
+File này dùng để xác định style cho Draggable Note Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-draggable-note** để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
 
-Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2 **thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
+Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-    <code class="language-css">.lp-draggable-note,
-    .lp-draggable-note * {
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
+```css
+.lp-draggable-note,
+.lp-draggable-note * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 
-    /*
-     * Thuộc tính quan trọng là ```position: absolute```;
-     * Để có thể xét vị trí tuyệt đối khi di chuyển
-     */
-    .lp-draggable-note {
-      position: absolute;
-      z-index: 9;
-      background-color: #f1f1f1;
-      border: none;
-      text-align: center;
-      max-width: 100%;
-      max-height: 100%;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    }
+/*
+  * Thuộc tính quan trọng là ```position: absolute```;
+  * Để có thể xét vị trí tuyệt đối khi di chuyển
+  */
+.lp-draggable-note {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: none;
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
-    .lp-draggable-note>.header {
-      padding: 10px;
-      cursor: move;
-      z-index: 10;
-      background-color: #F8F7B6;
-      color: #222;
-    }
+.lp-draggable-note>.header {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #F8F7B6;
+  color: #222;
+}
 
-    .lp-draggable-note>.content {
-      padding: 15px;
-      background-color: #fdfccf;
-      border: none;
-      font: normal normal normal 0.9rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }
+.lp-draggable-note>.content {
+  padding: 15px;
+  background-color: #fdfccf;
+  border: none;
+  font: normal normal normal 0.9rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+}
 
-    .lp-draggable-note>.content:focus {
-      border: none;
-      outline: none;
-    }
-
+.lp-draggable-note>.content:focus {
+  border: none;
+  outline: none;
+}
 ```
 
 ## Sử dụng Draggable Note component
 
 **./src/App.css**
 
-    <code class="language-css">.App,
-    .App * {
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-    }
+```css
+.App,
+.App * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
-    .App {
-      text-align: center;
-      width: 100%;
-      max-width: 780px;
-      margin: auto;
-      padding: 15px;
-      color: #222;
-      font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 780px;
+  margin: auto;
+  padding: 15px;
+  color: #222;
+  font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+}
 ```
 
 **./src/App.js**
 
-```js
-x;
+```jsx
 import React from "react";
 import "./App.css";
 
@@ -439,7 +457,8 @@ export default class App extends React.Component {
       <div className="App">
         <h2>Draggable Note</h2>
         <div>
-          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me at{" "}
+          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. 
+          {" "}Visit me at{" "}
           <a href="/">completejavascript.com</a>.
         </div>
 
@@ -460,11 +479,8 @@ export default class App extends React.Component {
 Trong đó, Draggable Note Component có các thuộc tính là:
 
 - **title ([String](/values-types-va-operators-trong-javascript-phan-2/)):** là title của component.
-
 - **width, height (String hoặc [Number](/values-types-va-operators-trong-javascript-phan-1/)):** lần lượt là chiều rộng và chiều cao của phần tử.
-
 - **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
-
 - **content (String)**: nội dung mặc định của Draggable Note.
 
 ## Lời kết

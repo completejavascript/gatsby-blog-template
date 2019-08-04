@@ -127,7 +127,7 @@ Trên đây là những thông tin cơ bản về các API của React Context. 
 
 Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
-**Chú ý**: React Context API chính thức được hỗ trợ trên phiên bản React 16.3. Vì vậy, bạn cần phải sử dụng phiên bản React >= 16.3. Để đơn giản, bạn có thể nâng cấp React lên phiên bản mới nhất luôn bằng câu lệnh sau:
+> **Chú ý**: React Context API chính thức được hỗ trợ trên phiên bản React 16.3. Vì vậy, bạn cần phải sử dụng phiên bản React >= 16.3. Để đơn giản, bạn có thể nâng cấp React lên phiên bản mới nhất luôn bằng câu lệnh sau:
 
 ```bash
 npm install --save react@latest

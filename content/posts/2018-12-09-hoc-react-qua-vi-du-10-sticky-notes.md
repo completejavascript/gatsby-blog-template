@@ -1,8 +1,8 @@
 ---
 date: "2018-12-09T22:30:37Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/hoc-react-qua-vi-du-10-sticky-notes-completejavascript.com_.png"
+keywords: "sticky notes"
 slug: hoc-react-qua-vi-du-10-sticky-notes
 title: "Học React qua ví dụ #10: Sticky Notes"
 categories:
@@ -23,7 +23,7 @@ Bạn thấy cái này quen không ạ? Nó chính là phần mềm Sticky Notes
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-**Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
@@ -52,12 +52,9 @@ learn-react-by-example/
 
 Trong đó:
 
-- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Sticky Notes** nên mình tạo thêm thư mục **sticky-notes **bên trong với 2 file **sticky-notes\*\***.js** và **sticky-notes\***\*.css** để định nghĩa cho component **Sticky Notes **(bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-
+- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Sticky Notes** nên mình tạo thêm thư mục **sticky-notes** bên trong với 2 file **sticky-notes.js** và **sticky-notes.css** để định nghĩa cho component **Sticky Notes** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
 - Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
-
-- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Sticky Notes **ở trên.
-
+- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Sticky Notes** ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
 ## Xây dựng Sticky Note Component
@@ -67,19 +64,12 @@ Trong đó:
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
 - [React.Fragment](https://reactjs.org/docs/fragments.html)
-
--
-
-[Event.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
-
--
-
-[Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+- [Event.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
+- [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-```js
-x;
+```jsx
 import React from "react";
 import "./sticky-notes.css";
 import DraggableNote from "../draggable-note/draggable-note";
@@ -299,74 +289,74 @@ export default class StickyNotes extends React.Component {
 
 ### Nội dung file sticky-notes.css
 
-File này dùng để xác định style cho Sticky Notes Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-sticky-notes **để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
+File này dùng để xác định style cho Sticky Notes Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-sticky-notes** để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
 
-Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2 **thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
+Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-    <code class="language-css">.lp-sticky-notes-header,
-    .lp-sticky-notes-header * {
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
+```css
+.lp-sticky-notes-header,
+.lp-sticky-notes-header * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 
-    .lp-sticky-notes-header {
-      display: flex;
-      display: -webkit-flex;
-      justify-content: space-between;
-    }
+.lp-sticky-notes-header {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
 
-    .lp-sticky-notes-header>.add,
-    .lp-sticky-notes-header>.remove{
-      font-size: 1.1rem;
-      opacity: 0.2;
-      padding: 0 5px;
-      color: #404040;
-      transition: opacity 0.6s ease, color 0.6s ease;
-      -webkit-transition: opacity 0.6s ease, color 0.6s ease;
-      -moz-transition: opacity 0.6s ease, color 0.6s ease;
-      -o-transition: opacity 0.6s ease, color 0.6s ease;
-    }
+.lp-sticky-notes-header>.add,
+.lp-sticky-notes-header>.remove{
+  font-size: 1.1rem;
+  opacity: 0.2;
+  padding: 0 5px;
+  color: #404040;
+  transition: opacity 0.6s ease, color 0.6s ease;
+  -webkit-transition: opacity 0.6s ease, color 0.6s ease;
+  -moz-transition: opacity 0.6s ease, color 0.6s ease;
+  -o-transition: opacity 0.6s ease, color 0.6s ease;
+}
 
-    .lp-sticky-notes-header:hover>.add,
-    .lp-sticky-notes-header:hover>.remove{
-      opacity: 1;
-    }
+.lp-sticky-notes-header:hover>.add,
+.lp-sticky-notes-header:hover>.remove{
+  opacity: 1;
+}
 
-    .lp-sticky-notes-header:hover>.add:hover,
-    .lp-sticky-notes-header:hover>.remove:hover {
-      color: #222;
-      cursor: pointer;
-    }
-
+.lp-sticky-notes-header:hover>.add:hover,
+.lp-sticky-notes-header:hover>.remove:hover {
+  color: #222;
+  cursor: pointer;
+}
 ```
 
 ## Sử dụng Sticky Notes component
 
 **./src/App.css**
 
-    <code class="language-css">.App,
-    .App * {
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-    }
+```css
+.App,
+.App * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
-    .App {
-      text-align: center;
-      width: 100%;
-      max-width: 780px;
-      margin: auto;
-      padding: 15px;
-      color: #222;
-      font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 780px;
+  margin: auto;
+  padding: 15px;
+  color: #222;
+  font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+}
 ```
 
 **./src/App.js**
 
-```js
-x;
+```jsx
 import React from "react";
 import "./App.css";
 
@@ -378,7 +368,8 @@ export default class App extends React.Component {
       <div className="App">
         <h2>Sticky Notes</h2>
         <div>
-          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me at{" "}
+          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. 
+          {" "}Visit me at{" "}
           <a href="/">completejavascript.com</a>.
         </div>
 
@@ -399,11 +390,8 @@ export default class App extends React.Component {
 Trong đó, Sticky Notes Component có các thuộc tính là:
 
 - **title ([String](/values-types-va-operators-trong-javascript-phan-2/)):** là title của component.
-
 - **width, height (String hoặc [Number](/values-types-va-operators-trong-javascript-phan-1/)):** lần lượt là chiều rộng và chiều cao của phần tử.
-
 - **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
-
 - **content (String)**: nội dung mặc định của Sticky Notes đầu tiên.
 
 ## Lời kết
