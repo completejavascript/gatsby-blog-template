@@ -68,9 +68,9 @@ Khác với **delete**, phương thức [splice](https://developer.mozilla.org/e
 
 Vì vậy, vòng lặp trên sẽ hoạt động như sau:
 
-- (i = 0, arr.length = 4, arr[i] = 1) => (arr[i] === “hi”) trả về **false** => console.log(arr[i]) thực hiện => log: 1
-- (i = 1, arr.length = 4, arr[i] = “hi”) => (arr[i] === “hi”) trả về **true** => arr.splice(i, 1) thực hiện => arr = [1, {x : 2}, [3, 4]] (không có log được ghi)
-- (i = 2, arr.length = 3, arr[2] = [3, 4]) => (arr[i] === “hi”) trả về **false** => console.log(arr[i]) thực hiện => log: [3, 4]
+- (i = 0, arr.length = 4, arr[i] = 1) => (arr[i] === "hi") trả về **false** => console.log(arr[i]) thực hiện => log: 1
+- (i = 1, arr.length = 4, arr[i] = "hi") => (arr[i] === "hi") trả về **true** => arr.splice(i, 1) thực hiện => arr = [1, {x : 2}, [3, 4]] (không có log được ghi)
+- (i = 2, arr.length = 3, arr[2] = [3, 4]) => (arr[i] === "hi") trả về **false** => console.log(arr[i]) thực hiện => log: [3, 4]
 - (i = 3, arr.length = 3) không thoả mãn điều kiện i < arr.length nên vòng lặp dừng lại
 
 Do đó, mình thu được kết quả như trên.
@@ -223,7 +223,7 @@ Xem đáp án
 **Giải thích:**
 
 - Toán tử **delete** chỉ xoá bỏ thuộc tính của object mà không có tác dụng đối với biến số thông thường. Vì vậy, 3 câu lệnh **delete** trên là vô tác dụng.
-- Câu hỏi trên sử dụng [IIFE (Immediately Invoked Function Expression)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE), nên giá trị của x, y, z lần lượt là 1, [2, 3], {x: 4}. Khi cộng 3 giá trị này lại với nhau, thự tự phép tính là từ trái sang phải. Trước tiên, **1 + [2, 3] = “12,3”** do [2, 3] được chuyển đổi sang string thành **“2, 3”**. Tiếp theo, **“12,3” + {x: 4} = “12,3[object Object]”**, do mọi object khi convert sang string thì đều trở thành **“[object Object]”**.
+- Câu hỏi trên sử dụng [IIFE (Immediately Invoked Function Expression)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE), nên giá trị của x, y, z lần lượt là 1, [2, 3], {x: 4}. Khi cộng 3 giá trị này lại với nhau, thự tự phép tính là từ trái sang phải. Trước tiên, **1 + [2, 3] = "12,3"** do [2, 3] được chuyển đổi sang string thành **"2, 3"**. Tiếp theo, **"12,3" + {x: 4} = "12,3[object Object]"**, do mọi object khi convert sang string thì đều trở thành **"[object Object]"**.
 
 ## Kết luận
 

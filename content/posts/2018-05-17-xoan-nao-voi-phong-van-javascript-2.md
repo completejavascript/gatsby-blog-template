@@ -281,7 +281,7 @@ let person = {
 
 Cụ thể, mình đã bind hàm callback trên với this – person. Vì vậy, _this_ bên trong hàm callback sẽ tương ứng với _person_.
 
-➤ Với các đoạn code còn lại, tại sao kết quả không phải là “I’m undefined” mà chỉ là “I’m”. Bởi vì, đối tượng window có sẵn một thuộc tính là “name”. Khi bạn chưa set giá trị cho nó thì mặc định name là một string rỗng “”, chứ không phải **undefined**. Điều đó giải thích cho kết quả phía trên.
+➤ Với các đoạn code còn lại, tại sao kết quả không phải là "I’m undefined" mà chỉ là "I’m". Bởi vì, đối tượng window có sẵn một thuộc tính là "name". Khi bạn chưa set giá trị cho nó thì mặc định name là một string rỗng "", chứ không phải **undefined**. Điều đó giải thích cho kết quả phía trên.
 
 Trên đây là lời giải thích khá chi tiết cho câu hỏi số 1. Mời bạn đến với câu số 2.
 
@@ -313,9 +313,9 @@ Với câu hỏi này, bạn cần quan tâm đến 2 vấn đề:
 
 Trong đó, _parameter_ sẽ tương ứng với _p_.Quay lại với câu hỏi, _foo_ chính là [array](/javascript-array-co-ban/) [1, 2, 3].
 
-**Toán tử [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)** sẽ trả về string biểu diễn kiểu dữ liệu của toán hạng tương ứng. Tuy nhiên, bạn cần chú ý là **typeof (array)** luôn trả về “object” chứ không phải “array”.
+**Toán tử [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)** sẽ trả về string biểu diễn kiểu dữ liệu của toán hạng tương ứng. Tuy nhiên, bạn cần chú ý là **typeof (array)** luôn trả về "object" chứ không phải "array".
 
-Như vậy, đáp án cho câu hỏi này phải là: “object”.
+Như vậy, đáp án cho câu hỏi này phải là: "object".
 
 ## Xoắn não với phỏng vấn JavaScript 2 – Câu 3
 

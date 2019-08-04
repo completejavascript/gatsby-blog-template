@@ -1,8 +1,8 @@
 ---
 date: "2018-11-13T22:30:10Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/localforage-giai-phap-hoan-hao-cho-indexeddb-completejavascript.com-2.png"
+keywords: "localForage"
 slug: localforage-giai-phap-hoan-hao-indexeddb
 title: "LocalForage: giải pháp hoàn hảo cho IndexedDB"
 categories:
@@ -22,11 +22,8 @@ May mắn thay, [localForage](https://localforage.github.io/localForage/) đã r
 LocalForage là một thư viện JavaScript mã nguồn mở, giúp cho việc giao tiếp với database trên trình duyệt (đặc biệt là IndexedDB) trở nên đơn giản hơn và tiện lợi hơn với những đặc điểm:
 
 - API gần giống với [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) bao gồm: _setItem()_, _getItem()_, _removeItem()_, _clear()_ và thêm một số API khác nữa.
-
 - Hỗ trợ [ES6](/tag/es6/) Promise API
-
 - Hỗ trợ sử dụng IndexedDB và [Web SQL](https://en.wikipedia.org/wiki/Web_SQL_Database). Tuy nhiên, nếu browser không hỗ trợ thì localForage sẽ quay về sử dụng localStorage.
-
 - [Hỗ trợ trên nhiều trình duyệt khác nhau](https://caniuse.com/#feat=indexeddb) như: Chrome, Firefox, IE, và Safari (bao gồm cả Safari Mobile).
 
 ## Cài đặt
@@ -35,14 +32,13 @@ Việc cài đặt localForage khá đơn giản. Bạn có thể sử dụng th
 
 ```html
 <script src="https://unpkg.com/localforage@1.7.3/dist/localforage.min.js"></script>
-
 ```
 
 Hoặc tải [phiên bản release mới nhất](https://github.com/mozilla/localForage/releases) trên Github về rồi sử dụng luôn:
 
 ```html
 <script src="localforage.js"></script>
-    <script>console.log('localforage is: ', localforage);</script>
+<script>console.log('localforage is: ', localforage);</script>
 ```
 
 mà không cần phải **init** hay chờ các sự kiện như **onready**.
@@ -51,11 +47,10 @@ Ngoài ra, bạn cũng có thể cài đặt localForage thông qua npm hoặc b
 
 ```bash
 # Cài đặt qua npm:
-    npm install localforage
+npm install localforage
 
-    # Hoặc cài đặt qua bower:
-    bower install localforage
-
+# Hoặc cài đặt qua bower:
+bower install localforage
 ```
 
 Và sử dụng nó với các bundler (như Webpack) bằng cách:
@@ -93,7 +88,6 @@ localforage
 Trong đó:
 
 - **key**: là string, phân biệt hoa-thường và được sử dụng để lấy giá trị ra sau này.
-
 - **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number](/values-types-va-operators-trong-javascript-phan-1/), [string](/values-types-va-operators-trong-javascript-phan-2/), [array](/javascript-array-co-ban/), [object](/javascript-object-last-but-not-least/), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
 
 Ví dụ:
@@ -242,11 +236,8 @@ localforage
 Ngoài 4 API giống với localStorage như trên ra, localForage còn hỗ trợ một số API khác như:
 
 - length(successCallback): trả về số lượng cặp key-value trong database.
-
 - keys(successCallback): trả về một mảng chứa các key trong database.
-
 - iterate(iteratorCallback, successCallback): dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](/javascript-foreach-la-cai-quai-gi/).
-
 - key(keyIndex, successCallback): trả về tên của key tương ứng với ID của nó.
 
 ## Cấu hình localForage
@@ -271,9 +262,7 @@ setDriver([driverName, nextDriverName]);
 Trong đó, các tham số của phương thức nhận một trong 3 giá trị là:
 
 - _localforage.INDEXEDDB_
-
 - _localforage.WEBSQL_
-
 - _localforage.LOCALSTORAGE_
 
 Ví dụ:
@@ -347,7 +336,6 @@ Còn theo bạn, việc sử dụng localForage là dễ hay khó? Và bạn th�
 Để xem thêm các API khác của localForage, bạn có thể xem thêm tại:
 
 - [Trang chủ](https://localforage.github.io/localForage/).
-
 - [localForage trên Github](https://github.com/localForage/localForage).
 
 Xin chào và hẹn gặp lại, thân ái!

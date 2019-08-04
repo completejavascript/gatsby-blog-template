@@ -1,8 +1,8 @@
 ---
 date: "2018-11-18T22:30:53Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/hoc-react-qua-vi-du-6-tab-content-completejavascript.com_.png"
+keywords: "tab content"
 slug: hoc-react-qua-vi-du-6-tab-content
 title: "Học React qua ví dụ #6: Tab Content"
 categories:
@@ -15,13 +15,15 @@ tags:
 
 Xin chào bạn đến với Học React qua ví dụ #6. Bài này mình sẽ thực hành React thông qua việc tạo Tab Content. Trước khi bắt đầu, mời bạn theo dõi ví dụ minh họa:
 
-[Xem Demo Tab Content](https://about.phamvanlam.com/learn-react-by-example/#/tab-content/)
+<a href="https://about.phamvanlam.com/learn-react-by-example/#/tab-content/" class="btn btn-primary margin-bottom">
+  Xem Demo Tab Content
+</a>
 
 Về cơ bản thì phần này khá giống với Tab Gallery, chỉ khác ở chỗ là nội dung ứng với mỗi tab là bất kỳ chứ không phải chỉ mỗi ảnh. Vì vậy, nếu bạn đã theo dõi bài viết về [Tab Gallery](/hoc-react-qua-vi-du-5-tab-gallery/) thì bài này sẽ rất đơn giản. Vì nó hoàn toàn tương tự.
 
 Sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-**Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
@@ -53,9 +55,7 @@ Trong đó:
 - Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Tab Content** nên mình tạo thêm thư mục **tab-content** bên trong với 2 file **tab-content.js** và **tab-content.css** để định nghĩa cho component **Tab Content** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
 
 - Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
-
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Tab Content** ở trên.
-
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
 ## Xây dựng Tab Content Component
@@ -65,7 +65,6 @@ Trong đó:
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
 - [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
-
 - [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
@@ -166,7 +165,9 @@ export default class TabContent extends React.Component {
             return (
               <button
                 key={index}
-                className={`tab-link ${this.state.tabIndex === index ? "active" : ""}`}
+                className={
+                  `tab-link ${this.state.tabIndex === index ? "active" : ""}`
+                }
                 onClick={() => this.changeTabIndex(index)}
               >
                 {tabContent.title}
@@ -178,7 +179,11 @@ export default class TabContent extends React.Component {
         <div className="tab-content-wrapper">
           {this.props.input.map((tabContent, index) => {
             return (
-              <div ref={this.refTabContents[index]} key={index} className={`tab-content`}>
+              <div 
+                ref={this.refTabContents[index]} 
+                key={index} 
+                className={`tab-content`}
+              >
                 {tabContent.content}
               </div>
             );
@@ -192,81 +197,80 @@ export default class TabContent extends React.Component {
 
 ### Nội dung file tab-content.css
 
-File này dùng để xác định style cho Tab Content Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-tab-content **để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
+File này dùng để xác định style cho Tab Content Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-tab-content** để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
 
-Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2**thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
+Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
 ```css
 .lp-tab-content,
-    .lp-tab-content * {
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
+.lp-tab-content * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 
-    .lp-tab-content {
-      width: 100%;
-    }
+.lp-tab-content {
+  width: 100%;
+}
 
-    /* Style the tab */
+/* Style the tab */
 
-    .lp-tab-content>.tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
-    }
+.lp-tab-content>.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
 
-    /* Style the buttons that are used to open the tab content */
+/* Style the buttons that are used to open the tab content */
 
-    .lp-tab-content>.tab>.tab-link {
-      background-color: inherit;
-      font-size: 1.05rem;
-      float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      color: #444;
-      border-radius: 0;
-      margin: 0;
-      padding: 14px 16px;
-      transition: background-color 0.3s ease;
-      -webkit-transition: background-color 0.3s ease;
-      -moz-transition: background-color 0.3s ease;
-      -o-transition: background-color 0.3s ease;
-    }
+.lp-tab-content>.tab>.tab-link {
+  background-color: inherit;
+  font-size: 1.05rem;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #444;
+  border-radius: 0;
+  margin: 0;
+  padding: 14px 16px;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
 
-    /* Change background color of buttons on hover */
+/* Change background color of buttons on hover */
 
-    .lp-tab-content>.tab>.tab-link:hover {
-      background-color: #ddd;
-    }
+.lp-tab-content>.tab>.tab-link:hover {
+  background-color: #ddd;
+}
 
-    /* Create an active/current tablink class */
+/* Create an active/current tablink class */
 
-    .lp-tab-content>.tab>.tab-link.active {
-      background-color: #ccc;
-    }
+.lp-tab-content>.tab>.tab-link.active {
+  background-color: #ccc;
+}
 
-    .lp-tab-content>.tab-content-wrapper{
-      position: relative;
-      width: 100%;
-    }
+.lp-tab-content>.tab-content-wrapper{
+  position: relative;
+  width: 100%;
+}
 
-    /* Style the tab content */
+/* Style the tab content */
 
-    .lp-tab-content>.tab-content-wrapper>.tab-content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 6px 12px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-top: none;
-      max-height: 0;
-      overflow: hidden;
-    }
-
+.lp-tab-content>.tab-content-wrapper>.tab-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 0;
+  overflow: hidden;
+}
 ```
 
 ## Sử dụng Tab Gallery component
@@ -275,21 +279,21 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 ```css
 .App,
-    .App * {
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-    }
+.App * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
-    .App {
-      text-align: center;
-      width: 100%;
-      max-width: 780px;
-      margin: auto;
-      padding: 15px;
-      color: #222;
-      font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-    }
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 780px;
+  margin: auto;
+  padding: 15px;
+  color: #222;
+  font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+}
 ```
 
 **./src/App.js**
@@ -326,9 +330,10 @@ export default class App extends React.Component {
         title: "Section1",
         content: (
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris,
+            nisi ut aliquip ex ea commodo consequat.
           </p>
         )
       },
@@ -337,7 +342,11 @@ export default class App extends React.Component {
         content: (
           <div>
             <h2> Slideshow </h2>
-            <Slideshow input={collection} ratio={`3:2`} mode={`manual`} />
+            <Slideshow 
+              input={collection} 
+              ratio={`3:2`} 
+              mode={`manual`} 
+            />
           </div>
         )
       },
@@ -347,7 +356,11 @@ export default class App extends React.Component {
           <div>
             <h2>Image Modal</h2>
             <p>Click the image below to show the modal.</p>
-            <ModalImage src={img2} alt={`This is one of beautiful girls`} ratio={`3:2`} />
+            <ModalImage 
+              src={img2} 
+              alt={`This is one of beautiful girls`} 
+              ratio={`3:2`} 
+            />
           </div>
         )
       },
@@ -372,7 +385,8 @@ export default class App extends React.Component {
 
         <div>
           <p>
-            Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me at{" "}
+            Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. 
+            {" "}Visit me at{" "}
             <a href="/">completejavascript.com</a>.
           </p>
         </div>
@@ -384,7 +398,7 @@ export default class App extends React.Component {
 
 Trong đó, Tab Content Component có các thuộc tính là:
 
-- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các tab, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/)gồm **title** - tên của tab và **content** - là một react element được viết theo JSX để miêu tả nội dung phần content.
+- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các tab, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/) gồm **title** - tên của tab và **content** - là một react element được viết theo JSX để miêu tả nội dung phần content.
 
 ## Lời kết
 

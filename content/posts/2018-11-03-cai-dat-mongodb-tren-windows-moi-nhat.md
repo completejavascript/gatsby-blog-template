@@ -1,8 +1,8 @@
 ---
 date: "2018-11-03T22:30:57Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/cai-dat-mongo-db-tren-windows-moi-nhat-completejavascript.com_.png"
+keywords: "cài đặt mongodb trên windows"
 slug: cai-dat-mongodb-tren-windows-moi-nhat
 title: "Cài đặt MongoDB trên Windows mới nhất"
 categories:
@@ -29,8 +29,7 @@ Còn bây giờ thì bắt đầu nào!
 
 Trong đó, phiên bản **MongoDB Community Server** là miễn phí (phù hợp cho developer), nên mình sẽ chọn bản này.
 
-![Tải MongoDB Community Server bản MSI](/wp-content/uploads/2018/10/download-1.png)
-Tải MongoDB Community Server bản MSI
+![Tải MongoDB Community Server bản MSI](../images/download-1.png)
 
 Có một số tùy chọn dành cho bạn là:
 
@@ -44,18 +43,15 @@ Sau khi lựa chọn xong phiên bản cài đặt, bạn chỉ cần nhấn và
 
 Đầu tiên bạn nhấn vào file vừa tải. Rồi một cửa sổ hiện lên, bạn chỉ cần nhấn vào **Run** để bắt đầu cài đặt MongoDB trên Windows.
 
-![Nhấn Run để bắt đầu](/wp-content/uploads/2018/10/install-1-1.png)
-Nhấn Run để bắt đầu
+![Nhấn Run để bắt đầu](../images/install-1-1.png)
 
 Tiếp theo, bạn nhấn vào **Next** để tiếp tục.
 
-![Nhấn Next để tiếp tục](/wp-content/uploads/2018/10/install-2-1.png)
-Nhấn Next để tiếp tục
+![Nhấn Next để tiếp tục](../images/install-2-1.png)
 
 Sau đó, bạn nhấn vào **check box** để đồng ý các điều khoản sử dụng, rồi lại nhấn **Next** để tiếp tục.
 
-![Chấp nhận điều khoản sử dụng rồi nhấn Next](/wp-content/uploads/2018/10/install-3-1.png)
-Chấp nhận điều khoản sử dụng rồi nhấn Next
+![Chấp nhận điều khoản sử dụng rồi nhấn Next](../images/install-3-1.png)
 
 ### Tùy chỉnh cài đặt
 
@@ -65,8 +61,7 @@ Bước kế tiếp, MongoDB sẽ cho phép bạn lựa chọn 2 cách cài đ�
 
 Mình không có yêu cầu gì đặc biệt thì cứ chọn cài đầy đủ, bằng cách nhấn vào **Complete**.
 
-![Nhấn vào Complete để cài đặt đầy đủ theo mặc định](/wp-content/uploads/2018/10/install-4-1.png)
-Nhấn vào Complete để cài đặt đầy đủ theo mặc định
+![Nhấn vào Complete để cài đặt đầy đủ theo mặc định](../images/install-4-1.png)
 
 ### Cài đặt MongoDB trên Windows như service
 
@@ -80,8 +75,7 @@ Ngoài ra, bạn có thể thay đổi tên service (**service name**), vị tr�
 
 Lựa chọn xong thì bạn nhấn vào **Next** để tiếp tục.
 
-![Cài đặt MongoDB như service](/wp-content/uploads/2018/10/install-5-1.png)
-Cài đặt MongoDB như service
+![Cài đặt MongoDB như service](../images/install-5-1.png)
 
 ### Tùy chỉnh cài đặt MongoDB Compass
 
@@ -89,24 +83,21 @@ Tiếp theo, bạn sẽ được hỏi có muốn cài đặt **[MongoDB Compass
 
 Đây là công cụ kiểu GUI giúp việc quản lý MongoDB dễ dàng hơn nên **có thể** mình sẽ cài. Tuy nhiên, nếu cài đặt MongoDB ngay bây giờ thì nó sẽ tự động download MongoDB Compass về để cài đặt. **Việc này khá mất thời gian**, nên bạn có thể bỏ check lúc này.
 
-_Ngoài ra, nếu bạn chỉ muốn sử dụng Command-line hoặc đơn giản là bạn muốn sử dụng công cụ quản lý khác (như [Robo 3T](https://robomongo.org/)) thì cũng có thể bỏ chọn. _
+_Ngoài ra, nếu bạn chỉ muốn sử dụng Command-line hoặc đơn giản là bạn muốn sử dụng công cụ quản lý khác (như [Robo 3T](https://robomongo.org/)) thì cũng có thể bỏ chọn._
 
-Sau đó, bạn nhấn **Next** để tiếp tục.
+Sau đó, bạn nhấn **Next** để tiếp tục (bạn có thể cài đặt MongoDB compass sau nếu muốn nhé).
 
-![](/wp-content/uploads/2018/10/install-6-2.png)
-Bạn có thể cài đặt MongoDB compass sau nếu muốn nhé
+![Bạn có thể cài đặt MongoDB compass sau nếu muốn nhé](../images/install-6-2.png)
 
 Rồi bạn nhấn **Install** để bắt đầu cài đặt.
 
-![Nhấn Install để bắt đầu cài đặt](/wp-content/uploads/2018/10/install-7-1.png)
-Nhấn Install để bắt đầu cài đặt
+![Nhấn Install để bắt đầu cài đặt](../images/install-7-1.png)
 
 Bây giờ, bạn có thể **đứng dậy đi WC** hay **uống một cốc nước** cho tỉnh táo. Đợi vài phút sau quay lại thì MongoDB sẽ cài đặt xong (nếu bạn lựa chọn cài đặt cả MongoDB Compass thì sẽ phải đợi khá lâu đó nhé - ráng đợi).
 
 Và cuối cùng là nhấn **Finish** để kết thúc.
 
-![Cài đặt kết thúc](/wp-content/uploads/2018/10/install-8.png)
-Cài đặt kết thúc
+![Cài đặt kết thúc](../images/install-8.png)
 
 ### Kiểm tra cài đặt thành công
 
@@ -114,8 +105,7 @@ Tương như như bài viết về [hướng dẫn tìm hiểu Node.js cơ bản
 
 Như phần trên, mình đã chọn **cài đặt MongoDB như một service** rồi. Nên bây giờ mình sẽ xem thử nó đã chạy hay chưa bằng cách mở **Windows Task Manager** và chọn tab **Services** (_tham khảo thêm bài viết [6 cách để mở Windows Task Manager)](https://ictnews.vn/the-gioi-so/thu-thuat/6-cach-de-mo-windows-task-manager-97595.ict)_.
 
-![Kiểm tra MongoDB trong Services](/wp-content/uploads/2018/10/check.png)
-Kiểm tra MongoDB trong Services
+![Kiểm tra MongoDB trong Services](../images/check.png)
 
 Nếu bạn tìm thấy MongoDB xuất hiện trong phần này nghĩa là việc cài đặt đã hoàn toàn thành công rồi.
 
@@ -133,7 +123,7 @@ Nếu nhìn vào thư mục đó, bạn sẽ thấy file **mongo.exe**. Đây ch
 
 Đầu tiên bạn mở **CMD** lên và gõ [câu lệnh](/tag/command-line/):
 
-```
+```bash
 mongo
 ```
 
@@ -141,14 +131,14 @@ Nếu không có lỗi gì xảy ra thì lúc này bạn có thể bắt đầu 
 
 Ví dụ:
 
-- `show dbs`: dùng để hiển thị danh sách các database đang tồn tại. Mặc định ban đầu sẽ có 3 database của hệ thống là: **admin, config** và **local**.
-- `db`: hiển thị danh sách database đang sử dụng. Vì bạn chưa có database nào nên mặc định database mặc định cho bạn sẽ là **test**.
-- `use DATABASE_NAME`: chuyển sang sử dụng database với tên là _DATABASE_NAME_ (tên này tùy bạn chọn).
-- `db.dropDatabase()`: dùng để xóa database hiện tại
-- `[db.createCollection(name, options)](https://docs.mongodb.com/manual/reference/method/db.createCollection/)`: dùng để tạo mới một **Collection** trong MongoDB (cái này tương tự như **Table** trong MySQL).
-- `show collections`: hiển thị các collection đang tồn tại
-- `db.COLLECTION_NAME.insert(document)`: thêm mới một **Document** vào MongoDB (cái này tương như như **Row** trong MySQL)
-- `db.COLLECTION_NAME.save(document)`: thêm mới hoặc cập nhật một document trong collection
+- <code>show dbs</code>: dùng để hiển thị danh sách các database đang tồn tại. Mặc định ban đầu sẽ có 3 database của hệ thống là: **admin, config** và **local**.
+- <code>db</code>: hiển thị danh sách database đang sử dụng. Vì bạn chưa có database nào nên mặc định database mặc định cho bạn sẽ là **test**.
+- <code>use DATABASE\_NAME</code>: chuyển sang sử dụng database với tên là DATABASE\_NAME (tên này tùy bạn chọn).
+- <code>db.dropDatabase()</code>: dùng để xóa database hiện tại
+- <code>[db.createCollection(name, options)](https://docs.mongodb.com/manual/reference/method/db.createCollection/)</code>: dùng để tạo mới một **Collection** trong MongoDB (cái này tương tự như **Table** trong MySQL).
+- <code>show collections</code>: hiển thị các collection đang tồn tại
+- <code>db.COLLECTION_NAME.insert(document)</code>: thêm mới một **Document** vào MongoDB (cái này tương như như **Row** trong MySQL)
+- <code>db.COLLECTION_NAME.save(document)</code>: thêm mới hoặc cập nhật một document trong collection
 - ...
 
 Còn rất nhiều phương thức khác nữa mà mình không thể kể hết tại đây. Để biết thêm chi tiết bạn có thể theo dõi tại [trang chủ](https://docs.mongodb.com/manual/reference/method/).

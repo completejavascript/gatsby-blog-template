@@ -124,7 +124,7 @@ Các tùy chọn chúng ta cung cấp cho tar được mô tả bên dưới:
 
 - -x để bung các file
 
-- -v cho “verbose”, để chúng ta có thể thấy danh sách các file đang bung
+- -v cho "verbose", để chúng ta có thể thấy danh sách các file đang bung
 
 - -f để lệnh cho tar rằng chúng ta đang làm việc với một file
 

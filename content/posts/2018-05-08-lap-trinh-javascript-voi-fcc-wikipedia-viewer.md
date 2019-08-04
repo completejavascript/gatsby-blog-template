@@ -283,7 +283,7 @@ Trên đây là những bài học mà mình rút ra được sau khi hoàn thà
 - Sử dụng event DOMContentLoaded hay load?
 - Sử dụng querySelector
 - Chỉ Query DOM một lần giúp nâng cao hiệu năng
-- Hai sự kiện quan trọng với input[type=”search”]
+- Hai sự kiện quan trọng với input[type="search"]
 - Sử dụng Fetch API thay vì XMLHttpRequest
 - Sử dụng ES6 String Template để tạo HTML Template
 - Hiển thị loading với Pure CSS Loaders

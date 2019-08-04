@@ -105,13 +105,13 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 Xem đáp án
 
-**Đáp án:** {name: “bar”}
+**Đáp án:** {name: "bar"}
 
 **Giải thích:**
 
 [Object.preventExtensions](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions) ngăn chặn việc thêm thuộc tính vào [object](/javascript-object-last-but-not-least/).
 
-Do đó, việc thêm thuộc tính **person.job = “teacher”** sẽ không có ý nghĩa. Vì vậy, kết quả của câu hỏi sẽ là: **{name: “bar”}**.
+Do đó, việc thêm thuộc tính **person.job = "teacher"** sẽ không có ý nghĩa. Vì vậy, kết quả của câu hỏi sẽ là: **{name: "bar"}**.
 
 Ngoài ra, nếu bạn sử dụng code trên ở chế độ [strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript/) thì bạn sẽ nhận được thông báo lỗi: **TypeError: Cannot add property job, object is not extensible**.
 
@@ -180,7 +180,7 @@ Xem đáp án
 
 Một đặc điểm quan trọng nữa của **Object.preventExtensions()** là: nó làm cho **\*\*\_proto\*\***\_ trở thành \*\*immutable\*\* – tức là bạn có thể thay đổi giá trị của nó, nhưng không thể gán nó cho một object mới.
 
-Trong khi đó, câu lệnh _person.**\*\*proto**\*\* = { job: “teacher” }_ đã gán object mới cho **\_\*\*proto**\*\*\_của person.
+Trong khi đó, câu lệnh _person.**\*\*proto**\*\* = { job: "teacher" }_ đã gán object mới cho **\_\*\*proto**\*\*\_của person.
 
 Vì vậy, bạn sẽ nhận được lỗi như trên.
 

@@ -1,8 +1,8 @@
 ---
 date: "2018-11-15T22:30:34Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/toi-uu-font-awesome-voi-icomoon-completejavascript.com_.png"
+keywords: "tối tưu Font Awesome với IcoMoon"
 slug: toi-uu-font-awesome-voi-icomoon
 title: "Tối ưu Font Awesome với IcoMoon"
 categories:
@@ -19,43 +19,24 @@ tags:
 [IcoMoon](https://icomoon.io) thực chất là một ứng dụng cho phép bạn **tuỳ chỉnh icon font**, **import SVG để tạo ra font riêng, convert font sang SVG, PDF, XAML, CSH,**... Và IcoMoon cung cấp hơn 5000 icon free bằng cách tối ưu các thư viện miễn phí như:
 
 - [IcoMoon - Free](https://icomoon.io/#icons)
-
 - [Brands](https://simpleicons.org/)
-
 - [Zondicons](http://www.zondicons.com/)
-
 - [Hawcons](http://hawcons.com/)
-
 - [Linecons](http://designmodo.com/linecons-free/)
-
 - [Broccolidry](http://dribbble.com/shots/587469-Free-16px-Broccolidryiconsaniconsetitisfullof-icons)
-
 - [60 Vicons](https://dribbble.com/shots/1663443-60-Vicons-Free-Icon-Set)
-
 - [Steadysets](http://dribbble.com/shots/929153-Steady-set-of-icons)
-
 - [Entypo+](http://www.entypo.com/)
-
 - [Feather](https://feathericons.com/)
-
 - [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
-
 - [Material Icons](https://www.google.com/design/icons/)
-
 - [Typicons](http://typicons.com/)
-
 - [Brankic 1979](http://brankic1979.com/icons/)
-
 - [Eighty Shades](http://dribbble.com/shots/928458-80-Shades-of-White-Icons)
-
 - [Meteocons](http://www.alessioatzeni.com/meteocons/)
-
 - [wpzoom](http://www.wpzoom.com/wpzoom/new-freebie-wpzoom-developer-icon-set-154-free-icons/)
-
 - [Iconic](https://github.com/somerandomdude/Iconic)
-
 - [Elegant Themes - Line Icons](http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
-
 - [Afiado](http://www.toicon.com/series/afiado)
 
 Và quan trọng hơn cả, IcoMoon cho phép bạn lựa chọn icon mà mình sẽ sử dụng và chỉ tải về style cho những icon đó. Vì vậy, bạn sẽ tối ưu được dung lượng file icon tải về cho trang web của mình.
@@ -66,7 +47,7 @@ Và quan trọng hơn cả, IcoMoon cho phép bạn lựa chọn icon mà mình 
 
 Trước tiên, bạn cần phải vào danh sách các [thư viện hỗ trợ](https://icomoon.io/app/#/select/library) của IcoMoon.
 
-[caption id="attachment_3061" align="aligncenter" width="660"]![Thêm font awesome vào icomoon](/wp-content/uploads/2018/11/them-font-awesome-vao-icomoon.png) Thêm Font Awesome vào IcoMoon[/caption]
+![Thêm font awesome vào icomoon](../images/them-font-awesome-vao-icomoon.png)
 
 Trong đó, bạn tìm đến phần Font Awesome rồi nhấn vào nút **Add** để thêm thư viện này vào IcoMoon App.
 
@@ -74,7 +55,7 @@ Trong đó, bạn tìm đến phần Font Awesome rồi nhấn vào nút **Add**
 
 Bạn vào trang [Select](https://icomoon.io/app/#/select) để lựa chọn các icon font sử dụng, bằng cách click vào mỗi icon:
 
-[caption id="attachment_3063" align="aligncenter" width="660"]![Lựa chọn icon sử dụng trong Font Awesome](/wp-content/uploads/2018/11/lua-chon-icon-su-dung-1.png) Lựa chọn icon sử dụng trong Font Awesome[/caption]
+![Lựa chọn icon sử dụng trong Font Awesome](../images/lua-chon-icon-su-dung-1.png)
 
 ### Bước 3: tuỳ chỉnh và tải về package
 
@@ -84,34 +65,22 @@ Nếu để ý phía dưới bên phải, bạn sẽ nhìn thấy button **Downl
 
 Tuy nhiên, mình khuyến khích bạn nhấn vào biểu tượng **bánh răng** bên cạnh để cài đặt một chút trước khi tải package về máy.
 
-[caption id="attachment_3064" align="aligncenter" width="612"]![Tùy chọn cài đặt trước khi tải icon font về máy](/wp-content/uploads/2018/11/cai-dat-truoc-khi-tai-font-ve-may-1.png) Tùy chọn cài đặt trước khi tải icon font về máy[/caption]
+![Tùy chọn cài đặt trước khi tải icon font về máy](../images/cai-dat-truoc-khi-tai-font-ve-may-1.png)
 
 Trong đó:
 
 - **Font Name**: tên package sẽ được tải về. Mặc định là _icomoon_.
-
 - **Class Prefix** và **Class Suffix**: thêm tiền tố và hậu tố vào tên class của icon. Bạn có thể tuỳ chọn giá trị này nếu cần thiết để tránh xung đột về tên class với các thành phần khác. Mặc định, tiền tố là _icon-_ và hậu tố để trống.
-
 - Tiếp theo là các tuỳ chọn:
-
   - **Support IE 8**: hỗ trợ IE8
-
-  * **Support IE 7 và IE6**: hỗ trợ IE 7 và IE 6
-
+  - **Support IE 7 và IE6**: hỗ trợ IE 7 và IE 6
   - **Include metadata in fonts**: thêm metadata vào fonts
-
-  * **Encode & embed font in CSS**: chỉ hỗ trợ gói Premium
-
+  - **Encode & embed font in CSS**: chỉ hỗ trợ gói Premium
   - **Generate Sass, Less or Stylus variables**: sinh ra các biến số dành cho Sass, Less hoặc Stylus
-
-* **CSS Selector**: lựa chọn cách sử dụng font trong [CSS](/tag/css/) với 3 loại CSS [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors).
-
-  - **Use i (for selecting <>)**: sử dụng thẻ _i_. Ví dụ: `<i class="icon-asterisk"></i>`
-
-  * **Use attribute selectors. **Ví dụ: `<span class="icon-asterisk"></span>`
-
-  - **Use a class**. Ví dụ: `<span class="icon icon-asterisk"></span>`
-
+- **CSS Selector**: lựa chọn cách sử dụng font trong [CSS](/tag/css/) với 3 loại CSS [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors).
+  - **Use i (for selecting <>)**: sử dụng thẻ _i_. Ví dụ: <code>&lt;i class="icon-asterisk"&gt;&lt;/i&gt;</code>
+  - **Use attribute selectors**. Ví dụ: <code>&lt;span class="icon-asterisk"&gt;&lt;/span&gt;</code>
+  - **Use a class**. Ví dụ: <code>&lt;span class="icon icon-asterisk"&gt;&lt;/span&gt;</code>
 - **Font metrics**, **Metadata** và **Version**: điều chỉnh kích thước cho font, thêm metadata và thông tin version (cái này mình để mặc định).
 
 Sau khi tuỳ chỉnh xong các cài đặt, bạn tắt cửa sổ này đi và nhấn vào button **Download** như mình đã nói ở trên để tải về package của font.
@@ -121,26 +90,24 @@ Sau khi tuỳ chỉnh xong các cài đặt, bạn tắt cửa sổ này đi và
 Bên trong package này, bạn sẽ thấy hai phần quan trọng như:
 
 - **fonts**: thư mục chứa font.
-
 - **style.css**: tệp tin khai báo và cài đặt cho các font sử dụng.
 
 Khi sử dụng các font tuỳ chỉnh này, bạn cần phải copy thư mục **fonts** và tệp tin **style.css** vào project, rồi cấu hình file **html** như bình thường:
 
 ```html
 <!doctype html>
-    <html>
-    <head>
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    </body>
-    </html>
-
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body>
+</html>
 ```
 
 Còn việc sử dụng các icon này trong HTML như thế nào thì bạn có thể tham khảo thêm trong file **demo.html** (trong package tải về).
 
-**Bạn chú ý**: với mỗi cách sử dụng **CSS Selector** khác nhau thì cách sử dụng sẽ khác nhau (như mình đã nói ở bước 3).
+> **Bạn chú ý**: với mỗi cách sử dụng **CSS Selector** khác nhau thì cách sử dụng sẽ khác nhau (như mình đã nói ở bước 3).
 
 ## Lời kết
 
@@ -157,4 +124,3 @@ Xin chào và hẹn gặp lại, thân ái!
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)
-```
