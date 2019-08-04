@@ -362,13 +362,15 @@ Trong đó, Collapsible Content Component là một [**Higher-Order Components**
 
 Trên đây là kết quả sau khi mình học React qua ví dụ #7 – Collapsible Content. Nếu bạn thấy hay thì có thể thực hành làm thử và tùy biến theo ý thích của bạn.
 
-[Xem Demo](https://about.phamvanlam.com/learn-react-by-example/#/collapsible-content/)
+<a href="https://about.phamvanlam.com/learn-react-by-example/#/collapsible-content/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a>
 
 Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
 
 Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

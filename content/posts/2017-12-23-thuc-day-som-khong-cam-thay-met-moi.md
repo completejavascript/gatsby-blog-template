@@ -71,7 +71,7 @@ Trên đây là những cách để giúp bạn thức dậy sớm mà không c�
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/5-loi-ich-cua-viec-thuc-day-som/), thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

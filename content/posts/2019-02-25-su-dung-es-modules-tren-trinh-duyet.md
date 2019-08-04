@@ -374,7 +374,7 @@ Tham khảo:
 - [Using JavaScript modules on the web](https://developers.google.com/web/fundamentals/primers/modules)
 - [Introduction to ES Modules](https://flaviocopes.com/es-modules/)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

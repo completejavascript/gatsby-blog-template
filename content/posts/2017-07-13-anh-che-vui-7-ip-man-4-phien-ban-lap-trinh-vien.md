@@ -33,7 +33,7 @@ Xin chào và hẹn gặp lại bạn ở bài viết tiếp, thân ái!
 
 - [Ảnh chế vui #6: A type of programmer](/anh-che-vui-6-type-programmer/)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

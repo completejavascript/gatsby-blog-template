@@ -455,7 +455,7 @@ Nếu có phần nào khó hiểu, bạn có thể để lại bình luận xu�
 
 - [The Component Lifecycle](https://www.kirupa.com/react/component_lifecycle.htm)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

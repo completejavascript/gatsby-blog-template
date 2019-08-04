@@ -211,9 +211,9 @@ Cuối cùng, xin chào và hẹn gặp lại bạn trong bài viết tiếp the
 - [An A-Z Index of the Windows CMD command line](https://ss64.com/nt/)
 - [Tổng hợp những lệnh Run CMD thông dụng](https://quantrimang.com/nhung-lenh-dos-pho-bien-trong-cmd-118351)
 
----
+<hr class="border-color-light-grey" />
 
-★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  

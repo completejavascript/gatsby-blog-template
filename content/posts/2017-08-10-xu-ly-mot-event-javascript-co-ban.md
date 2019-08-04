@@ -217,7 +217,7 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xmlhttprequ
 
 - Bài tập thực hành: [Censored keyboard](https://github.com/completejavascript/practical-javascript/blob/master/handling-events/censored_keyboard_completejavascript.com.js), [tabs](https://github.com/completejavascript/practical-javascript/blob/master/handling-events/tabs_completejavascript.com.js).
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

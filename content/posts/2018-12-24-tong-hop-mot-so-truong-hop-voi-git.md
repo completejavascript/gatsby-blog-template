@@ -251,7 +251,7 @@ Xin chào và hẹn gặp lại, thân ái!
 - [How to completely replace git branch code with another branch’s code](https://www.nickang.com/replace-git-branch-code/)
 - [Sử dụng git cherry-pick](https://kipalog.com/posts/Su-dung-git-cherry-pick)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

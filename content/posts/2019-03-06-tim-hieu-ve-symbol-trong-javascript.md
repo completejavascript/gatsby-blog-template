@@ -257,7 +257,7 @@ Tham khảo:
 - [Symbol type - javascript.info](https://javascript.info/symbol)
 - [A quick overview of JavaScript symbols](https://medium.freecodecamp.org/how-did-i-miss-javascript-symbols-c1f1c0e1874a)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

@@ -342,7 +342,7 @@ Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết sau](/p
 
 - [Higher-Order Functions](http://eloquentjavascript.net/05_higher_order.html)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

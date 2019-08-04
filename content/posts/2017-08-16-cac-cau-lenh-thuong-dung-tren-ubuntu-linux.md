@@ -166,7 +166,7 @@ Trên đây là một số câu lệnh cơ bản trong Ubuntu - Linux mà mình 
 
 Bài viết này sẽ dừng lại tại đây. Xin chào và hẹn gặp lại bạn ở [bài viết sau](/cach-cai-dat-va-go-mot-goi-phan-mem-tren-ubuntu/), thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

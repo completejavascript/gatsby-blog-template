@@ -156,7 +156,7 @@ Hẹn gặp lại bạn ở [bài viết sau](/lap-trinh-huong-doi-tuong-voi-jav
 
 - [JavaScript and JSON differences](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#JavaScript_and_JSON_differences)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

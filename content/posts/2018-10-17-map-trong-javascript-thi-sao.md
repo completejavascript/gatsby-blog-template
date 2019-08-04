@@ -364,9 +364,9 @@ Xin chào và hẹn gặp lại trong bài viết tiếp theo, thân ái!
 - [Map, Map, WeakMap and WeakSet](https://javascript.info/map-set-weakmap-weakset)
 - [The Map JavaScript Data Structure](https://flaviocopes.com/javascript-data-structures-map/)
 
----
+<hr class="border-color-light-grey" />
 
-★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  

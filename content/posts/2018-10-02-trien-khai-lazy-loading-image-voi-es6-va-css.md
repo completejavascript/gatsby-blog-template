@@ -122,7 +122,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 https://www.youtube.com/watch?v=6Y-fgdRyLUU
 
-[Xem code trên Github](https://github.com/completejavascript/lazy-loading-image-es6-css-demo) [Xem Demo](http://about.phamvanlam.com/lazy-loading-image-es6-css-demo)
+<a href="https://github.com/completejavascript/lazy-loading-image-es6-css-demo" class="btn btn-primary margin-bottom">
+  Xem code trên Github
+</a>  
+
+<a href="http://about.phamvanlam.com/lazy-loading-image-es6-css-demo" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a> 
 
 ### Giải thích cách triển khai Lazy Loading Image với ES6 và CSS
 
@@ -281,7 +287,13 @@ window.addEventListener('scroll', handleScroll);
 
 Bạn có thể xem code đầy đủ và demo tại đây:
 
-[Xem code trên Github](https://github.com/completejavascript/lazy-loading-image-es6-css-demo) [Xem Demo](http://about.phamvanlam.com/lazy-loading-image-es6-css-demo)
+<a href="https://github.com/completejavascript/lazy-loading-image-es6-css-demo" class="btn btn-primary margin-bottom">
+  Xem code trên Github
+</a> 
+
+<a href="http://about.phamvanlam.com/lazy-loading-image-es6-css-demo" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a> 
 
 ## Lời kết
 
@@ -289,9 +301,9 @@ Trên đây là cách mình triển khai Lazy Loading Image với ES6 và CSS. N
 
 Còn bây giờ thì xin chào và hẹn gặp lại trong [bài viết tiếp theo](/chuyen-anh-dong-gif-thanh-video/), thân ái!
 
----
+<hr class="border-color-light-grey" />
 
-★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  

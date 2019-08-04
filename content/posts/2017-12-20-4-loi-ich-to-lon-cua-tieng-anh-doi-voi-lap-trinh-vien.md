@@ -49,7 +49,7 @@ Trên đây là 4 lợi ích to lớn của Tiếng Anh đối với lập trìn
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thuc-day-som-khong-cam-thay-met-moi/), thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

@@ -15,7 +15,9 @@ tags:
 
 Xin chào bạn đến với Học React qua ví dụ #10. Bài này mình sẽ thực hành React thông qua việc tạo Sticky Notes. Trước khi bắt đầu, mời bạn theo dõi ví dụ minh họa:
 
-[Xem Demo](https://about.phamvanlam.com/learn-react-by-example/#/sticky-notes/)
+<a href="https://about.phamvanlam.com/learn-react-by-example/#/sticky-notes/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a>
 
 Bạn thấy cái này quen không ạ? Nó chính là phần mềm Sticky Notes trên hệ điều hành Windows 7. Thực tế, mình đã xây dựng nó dựa trên [Draggable Note](/hoc-react-qua-vi-du-9-draggable-note/), bằng cách thêm chức năng tạo note mới.
 
@@ -408,13 +410,15 @@ Trong đó, Sticky Notes Component có các thuộc tính là:
 
 Trên đây là kết quả sau khi mình học React qua ví dụ #10 – Sticky Notes. Nếu bạn thấy hay thì có thể thực hành làm thử và tùy biến theo ý thích của bạn.
 
-[Xem Demo](https://about.phamvanlam.com/learn-react-by-example/#/sticky-notes/)
+<a href="https://about.phamvanlam.com/learn-react-by-example/#/sticky-notes/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a>
 
 Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
 
 Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

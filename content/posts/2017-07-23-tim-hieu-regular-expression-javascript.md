@@ -388,7 +388,7 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/co-ban-ve-
 
 - Bài thực hành của mình: [Regexp Golf](https://github.com/completejavascript/practical-javascript/blob/master/regular_expression/regexp_golf_completejavascript.com.js), [Quoting style](https://github.com/completejavascript/practical-javascript/blob/master/regular_expression/quoting_style_completejavascript.com.js), [Numbers again](https://github.com/completejavascript/practical-javascript/blob/master/regular_expression/numbers_again_completejavascript.com.js).
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

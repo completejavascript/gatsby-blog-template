@@ -359,7 +359,7 @@ Có thể bạn quan tâm:
 
 * [[FFmpeg Tutorial] Cut video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-cut-video-voi-ffmpeg/)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

@@ -16,7 +16,9 @@ Chào bạn! Năm mới 2019, mình chúc bạn mạnh khỏe và đạt đượ
 
 Trước khi bắt đầu, mình muốn giới thiệu với bạn [link của project](https://github.com/jscenter/vanilla-js-snippets) này trên Github. Mình rất trân trọng nếu bạn có thể đóng góp chút ít cho project mã nguồn mở này. Một cách đơn giản nhất là bạn vào phần [Issues](https://github.com/jscenter/vanilla-js-snippets/issues). Sau đó, bạn nhấn vào phần [New issue](https://github.com/jscenter/vanilla-js-snippets/issues/new). Tại đây bạn có thể đưa ra ý tưởng về thủ thuật JavaScript nào đó mà bạn cảm thấy hữu ích. Bất kể thứ gì, dù đơn giản hay phúc tạp cũng được nhé! Mình sẽ cố gắng giải quyết hoặc tìm kiếm giải pháp trên Google, rồi cập nhật vào project. Mình tin rằng đây sẽ là một nguồn tài liệu quý giá cho bạn, cho mình và người khác sau này.
 
-[Xem code trên Github](https://github.com/jscenter/vanilla-js-snippets)
+<a href="https://github.com/jscenter/vanilla-js-snippets" class="btn btn-primary margin-bottom">
+  Xem code trên Github
+</a>
 
 Thôi không lan man nữa, mời bạn theo dõi bài viết!
 
@@ -234,7 +236,7 @@ Ngoài ra, mình rất trân trọng sự đóng góp của bạn vào [project 
 
 Cuối cùng, xin chào và hẹn gặp lại, thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

@@ -127,7 +127,7 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/neu-ban-co-
 
 _(Bài viết được dịch từ [Sitepoint.com](https://www.sitepoint.com/mind-tricks-to-learn-javascript-faster/))_
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

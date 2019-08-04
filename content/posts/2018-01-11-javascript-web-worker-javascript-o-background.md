@@ -234,7 +234,7 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo,](/javascript
 
 - [Web Worker using Transferable Object.](https://github.com/completejavascript/web-worker-transferable-object)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

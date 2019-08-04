@@ -164,9 +164,9 @@ Hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 - [Object.create() - JavaScript | MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 - [Class Extends trong JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
 
----
+<hr class="border-color-light-grey" />
 
-★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  

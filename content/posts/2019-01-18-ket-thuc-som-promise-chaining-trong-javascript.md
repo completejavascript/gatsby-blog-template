@@ -173,7 +173,7 @@ Như vậy là mình đã giới thiệu với bạn 2 cách để kết thúc s
 
 Xin chào và hẹn gặp lại!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

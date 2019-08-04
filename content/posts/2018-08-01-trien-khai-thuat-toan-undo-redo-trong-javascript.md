@@ -336,9 +336,9 @@ Còn bây giờ thì xin chào và hẹn gặp lại bạn trong [bài viết ti
 - [Part 2: Undo/Redo Implementation in C# using Command Pattern](https://www.codeproject.com/Articles/33384/Multilevel-Undo-and-Redo-Implementation-in-Cshar-2)
 - [Part 3: Undo/Redo Implementation in C# using Memento Pattern](https://www.codeproject.com/Articles/33397/Multilevel-Undo-and-Redo-Implementation-in-Csharp)
 
----
+<hr class="border-color-light-grey" />
 
-★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  

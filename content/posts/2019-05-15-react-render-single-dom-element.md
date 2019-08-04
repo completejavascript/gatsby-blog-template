@@ -253,7 +253,7 @@ Ngoài các cách làm trên, bạn còn biết cách nào khác nữa không? N
 
 Xin chào và hẹn gặp lại, thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

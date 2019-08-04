@@ -163,7 +163,7 @@ Có nhiều ý kiến khác nhau về việc lựa chọn ngôn ngữ lập trì
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/danh-ngon-lap-trinh-javascript-phan-1/), thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

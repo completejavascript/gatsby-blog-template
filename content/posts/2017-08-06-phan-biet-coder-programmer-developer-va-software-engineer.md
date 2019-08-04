@@ -49,7 +49,7 @@ Nếu một vài công ty có sự chú ý đặc biệt tới tên chức danh 
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/phan-biet-cac-loai-hacker-black-hat-grey-hat-va-white-hat/), thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

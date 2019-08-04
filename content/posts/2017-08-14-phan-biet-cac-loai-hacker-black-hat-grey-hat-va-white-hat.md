@@ -31,7 +31,7 @@ Một cách tổng quát, hacker được chia ra làm ba loại là: black hat,
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/), thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

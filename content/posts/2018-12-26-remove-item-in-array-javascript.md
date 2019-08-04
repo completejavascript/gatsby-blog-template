@@ -181,7 +181,7 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 - [9 Ways to Remove Elements From A JavaScript Array](https://love2dev.com/blog/javascript-remove-from-array/)
 - [How to remove an item from an Array in JavaScript](https://flaviocopes.com/how-to-remove-item-from-array/)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

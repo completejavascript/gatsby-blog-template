@@ -142,7 +142,7 @@ Xem thêm:
 
 - [Use execCommands to edit HTML content in your browser](https://codepen.io/chrisdavidmills/full/gzYjag/)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

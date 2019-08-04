@@ -38,7 +38,13 @@ Bài viết này giúp bạn:
 - Xây dựng được trang blog với Gatsby.js dạng static website bao gồm: trang chủ (liệt kê danh sách bài viết), trang giới thiệu, trang liên hệ, phân loại bài viết theo chuyên mục, thẻ và hiển thị nội dung mỗi bài viết...
 - Deploy blog lên Netlify.
 
-[Xem code trên Github](https://github.com/completejavascript/gatsby-tutorial) [Xem Demo](https://gatsby-tutorial-demo.netlify.com/)
+<a href="https://github.com/completejavascript/gatsby-tutorial" class="btn btn-primary margin-bottom">
+  Xem code trên Github
+</a> 
+
+<a href="https://gatsby-tutorial-demo.netlify.com/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a> 
 
 ## Cách theo dõi bài viết tốt nhất
 
@@ -1712,11 +1718,17 @@ Cái gì thì cũng có ưu nhược điểm của nó. Đối Gatsby.js thì sa
 
 Trên đây là cách để tạo trang blog với Gatsby.js mà mình đã đúc kết lại được sau khi thực hành nó một thời gian. Dĩ nhiên, còn nhiều thứ mà mình chưa đề cập đến ở đây như: phần bình luận, chia sẻ mạng xã hội, tìm kiếm trên trang web, SEO,... Nhưng dù sao thì mình tin rằng, với những thứ mình trình bày ở đây, bạn có thể tạo cho mình một trang blog đơn giản. Sau đó, nếu cần thêm các chức năng phức tạp hơn thì công việc sẽ đơn giản hơn rất nhiều.
 
-[Xem code trên Github](https://github.com/completejavascript/gatsby-tutorial) [Xem Demo](https://gatsby-tutorial-demo.netlify.com/)
+<a href="https://github.com/completejavascript/gatsby-tutorial" class="btn btn-primary margin-bottom">
+  Xem code trên Github
+</a> 
+
+<a href="https://gatsby-tutorial-demo.netlify.com/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a> 
 
 Bài viết đến đây cũng khá dài rồi, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/mot-so-plugin-gatsby-js-hay-dung/), thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

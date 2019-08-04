@@ -33,7 +33,7 @@ Kể cả trong trường hợp component B không cần sử dụng đến các
 
 Ngược lại, khi cần cập nhật state từ C lên A, mình cũng cần phải cập nhật từ C lên B, rồi mới cập nhật từ B lên A được.
 
-![](../images/react-context-api-quan-ly-state-theo-cach-thong-thuong-completejavascript.com_.png)Theo cách thông thường A và C muốn giao tiếp thì phải thông qua B
+![Theo cách thông thường A và C muốn giao tiếp thì phải thông qua B](../images/react-context-api-quan-ly-state-theo-cach-thong-thuong-completejavascript.com_.png)
 
 Thử tưởng tượng bạn đang có hàng chục component khác nhau. Nếu mà cứ truyền props với cập nhật state như thế này thì quả thật sẽ rất lằng nhằng và thừa code không cần thiết.
 
@@ -43,7 +43,7 @@ Thử tưởng tượng bạn đang có hàng chục component khác nhau. Nếu
 
 Ý tưởng của React Context API là nó sẽ tập trung dữ liệu vào một nơi. Sau đó, nó cung cấp cơ chế cho phép mỗi component có thể lấy state cũng như cập nhật state trực tiếp tại đó mà không cần qua các component trung gian.
 
-![](../images/react-context-api-quan-ly-state-voi-react-context-api-completejavascript.com_.png)Với React Context API, số lượng phần tử bao nhiêu cũng không thành vấn đề
+![Với React Context API, số lượng phần tử bao nhiêu cũng không thành vấn đề](../images/react-context-api-quan-ly-state-voi-react-context-api-completejavascript.com_.png)
 
 So với cách quản lý state thông thường, mình thấy cách này có ưu, nhược điểm là:
 
@@ -134,7 +134,13 @@ npm install --save react@latest
 npm install --save react-dom@latest
 ```
 
-[Xem Demo](https://vqlrp2xry3.codesandbox.io/) [Xem code](https://codesandbox.io/s/vqlrp2xry3)
+<a href="https://vqlrp2xry3.codesandbox.io/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a>
+
+<a href="https://codesandbox.io/s/vqlrp2xry3" class="btn btn-primary margin-bottom">
+  Xem code
+</a>
 
 ### Kịch bản Demo
 
@@ -176,7 +182,7 @@ class AppProvider extends React.Component {
 }
 ```
 
-**AppProvider** chính là một [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) dùng để đóng gọi lại _AppContext.Provider_. Mà khi mình luôn sử dụng **Provider**, thì có nghĩa là \_AppProvider \_chính là Component lớn nhất chứa tất cả các Component còn lại. Do đó, mình sẽ định nghĩa state của App tại đây.
+**AppProvider** chính là một [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) dùng để đóng gọi lại _AppContext.Provider_. Mà khi mình luôn sử dụng **Provider**, thì có nghĩa là _AppProvider_ chính là Component lớn nhất chứa tất cả các Component còn lại. Do đó, mình sẽ định nghĩa state của App tại đây.
 
 Như bạn thấy, **state** bao gồm:
 
@@ -270,7 +276,13 @@ Về cách sử dụng Context thì hoàn toàn giống bên trên rồi nhỉ?
 
 Như vậy là mình đã tìm hiểu và làm Demo xong về React Context API. Dĩ nhiên, đây mới chỉ là một ví dụ đơn giản. Nên chưa thể khẳng định rằng mình có thể sử dụng React Context để thay thế hoàn toàn cho Redux. Tuy nhiên, tại thời điểm hiện tại mình thấy React Context API vẫn rất ổn.
 
-[Xem Demo](https://vqlrp2xry3.codesandbox.io/) [Xem code](https://codesandbox.io/s/vqlrp2xry3)
+<a href="https://vqlrp2xry3.codesandbox.io/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a>
+
+<a href="https://codesandbox.io/s/vqlrp2xry3" class="btn btn-primary margin-bottom">
+  Xem code
+</a>
 
 Bạn thấy React Context API thế nào? Liệu nó có thể thay thế hoàn toàn cho các thư viện quản lý State trong React được không? Chia sẻ với mình nhé!
 
@@ -281,7 +293,7 @@ Tham khảo:
 - [How to use the new React context API](https://hackernoon.com/how-to-use-the-new-react-context-api-fce011e7d87)
 - [Context](https://reactjs.org/docs/context.html)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

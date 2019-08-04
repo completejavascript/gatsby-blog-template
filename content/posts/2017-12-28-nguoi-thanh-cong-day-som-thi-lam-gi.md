@@ -79,7 +79,7 @@ Trên đây là những chia sẽ hữu ích của một số những người t
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tac-hai-cua-ngoi-lau-va-giai-phap-cho-lap-trinh-vien/), thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

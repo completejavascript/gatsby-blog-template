@@ -15,7 +15,9 @@ tags:
 
 Xin chào bạn đến với Học React qua ví dụ #9. Bài này mình sẽ thực hành React thông qua việc tạo Draggable Note. Trước khi bắt đầu, mời bạn theo dõi ví dụ minh họa:
 
-[Xem Demo](https://about.phamvanlam.com/learn-react-by-example/#/draggable-note/)
+<a href="https://about.phamvanlam.com/learn-react-by-example/#/draggable-note/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a>
 
 Thực tế, Draggable Note được phát triển lên từ [Draggable Element](/hoc-react-qua-vi-du-8-draggable-element/). Nghĩa là React Component này cũng có thể di chuyển, thay đổi vị trí được. Ngoài ra, vì là **note**, nên bạn có thể viết text lên đó.
 
@@ -469,13 +471,15 @@ Trong đó, Draggable Note Component có các thuộc tính là:
 
 Trên đây là kết quả sau khi mình học React qua ví dụ #9 – Draggable Note. Nếu bạn thấy hay thì có thể thực hành làm thử và tùy biến theo ý thích của bạn.
 
-[Xem Demo](https://about.phamvanlam.com/learn-react-by-example/#/draggable-note/)
+<a href="https://about.phamvanlam.com/learn-react-by-example/#/draggable-note/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a>
 
 Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
 
 Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

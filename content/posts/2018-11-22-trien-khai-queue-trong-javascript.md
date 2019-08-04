@@ -290,7 +290,7 @@ _Bình thường, bạn có hay sử dụng và triển khai Queue chưa? Nếu 
 
 Xin cám ơn và hẹn gặp lại!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

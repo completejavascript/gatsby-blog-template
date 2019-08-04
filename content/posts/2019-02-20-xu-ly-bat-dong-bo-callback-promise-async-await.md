@@ -9,7 +9,7 @@ categories:
   - Javascript cơ bản
 tags:
   - Async - Await
-  - callback
+  - Callback
   - Promise
 ---
 
@@ -232,7 +232,7 @@ Trên đây là một số kiến thức cơ bản về xử lý bất đồng b
 
 Xin chào và hẹn gặp lại, thân ái!
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

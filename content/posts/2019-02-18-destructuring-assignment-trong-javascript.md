@@ -167,7 +167,7 @@ console.log(b); // => [1, 2]
 console.log(b === a); // => true
 ```
 
-Nếu mình muốn **b** vẫn có giá trị như trên nhưng `b === a` có giá trị **false**, thì mình phải làm như sau:
+Nếu mình muốn **b** vẫn có giá trị như trên nhưng <code>b === a</code> có giá trị **false**, thì mình phải làm như sau:
 
 ```js
 const a = [1, 2];
@@ -427,7 +427,7 @@ Tham khảo:
 - [Aliases with JavaScript Destructuring - DavidWalsh](https://davidwalsh.name/destructuring-alias)
 - [Array Destructuring - DavidWalsh](https://davidwalsh.name/array-destructuring)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

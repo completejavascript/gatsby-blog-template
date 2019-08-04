@@ -143,7 +143,7 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript
 
 - [JavaScript Tint Color – thay đổi màu sắc bức ảnh](/javascript-tint-color-thay-doi-mau-sac-buc-anh/)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

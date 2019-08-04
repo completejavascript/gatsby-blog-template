@@ -237,9 +237,9 @@ Thân ái,
 - [Malware là gì? Làm gì khi website bị nhiễm Malware?](https://www.webico.vn/malware-la-gi-lam-gi-khi-website-bi-nhiem-malware/)
 - [Series: Bảo mật Wordpress](https://thachpham.com/series/bao-mat-wordpress-serie)
 
----
+<hr class="border-color-light-grey" />
 
-★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  

@@ -37,7 +37,13 @@ Bạn có thể sử dụng bất kì công cụ chỉnh sửa ảnh nào để 
 
 Tiếp theo, bạn có thể vào trang [tinypng.com](https://tinypng.com) để giảm dung lượng ảnh lại. Ảnh sau optimize sẽ có dung lượng cỡ **126 B** thôi. Như vậy là đủ nhỏ rồi phải không bạn?
 
-[Xem code trên Github](https://github.com/completejavascript/lazy-loading-image-demo) [Xem Demo](https://about.phamvanlam.com/lazy-loading-image-demo/)
+<a href="https://github.com/completejavascript/lazy-loading-image-demo" class="btn btn-primary margin-bottom">
+  Xem code trên Github
+</a>  
+
+<a href="https://about.phamvanlam.com/lazy-loading-image-demo/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a> 
 
 ### Code toàn bộ component Lazy Loading Image
 
@@ -298,13 +304,19 @@ Trên đây là cách mà mình đã triển khai Lazy Loading Image trong React
 
 Tiếp theo, mình dự định sẽ tìm hiểu và chia sẻ tiếp về Lazy Loading Video, Lazy Loading JavaScript,... Rất mong bạn sẽ theo dõi blog của mình thường xuyên. Và nếu bạn thấy bài viết này hay thì có thể cho mình đánh giá ở phần dưới.
 
-[Xem code trên Github](https://github.com/completejavascript/lazy-loading-image-demo) [Xem Demo](https://about.phamvanlam.com/lazy-loading-image-demo/)
+<a href="https://github.com/completejavascript/lazy-loading-image-demo" class="btn btn-primary margin-bottom">
+  Xem code trên Github
+</a>  
+
+<a href="https://about.phamvanlam.com/lazy-loading-image-demo/" class="btn btn-primary margin-bottom">
+  Xem Demo
+</a> 
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-trang-blog-voi-gatsby-js/), thân ái!
 
----
+<hr class="border-color-light-grey" />
 
-★ Theo dõi [Lam Pham](/gioi-thieu/) để nhận được thông báo khi có bài viết mới nhất:
+★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  

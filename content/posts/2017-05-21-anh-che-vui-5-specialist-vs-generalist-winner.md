@@ -41,7 +41,7 @@ See you in the [next post,](/anh-che-vui-6-type-programmer/) thank you!
 
 - [Ảnh chế vui #7: IP man 4 phiên bản lập trình viên](/anh-che-vui-7-ip-man-4-phien-ban-lap-trinh-vien/)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Follow [Lam Pham](/gioi-thieu/) to receive a notification when having the lastest post:
 

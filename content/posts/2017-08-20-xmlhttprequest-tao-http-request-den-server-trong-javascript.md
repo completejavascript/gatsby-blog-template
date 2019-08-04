@@ -256,7 +256,7 @@ Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo[,](/category/j
 
 - [HTTP - Status Codes](https://www.tutorialspoint.com/http/http_status_codes.htm)
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 

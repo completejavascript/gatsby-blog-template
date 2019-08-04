@@ -37,7 +37,7 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/cach-hoc-la
 
 _(Bài viết được dịch từ Blog [Lifehack.org](http://www.lifehack.org/539113/you-tend-overthink-and-worry-lot-this-what-you-should))_
 
----
+<hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
