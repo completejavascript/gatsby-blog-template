@@ -1,8 +1,8 @@
 ---
 date: "2018-07-24T14:02:44Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/tim-hieu-ki-thuat-method-chaining-completejavascript.com_.png"
+keywords: "method chaining"
 slug: tim-hieu-ki-thuat-method-chaining-co-ban
 title: "Tìm hiểu kĩ thuật Method Chaining cơ bản"
 categories:
@@ -17,17 +17,17 @@ Kĩ thuật Method Chaining giúp code trở nên ngắn gọn, dễ theo dõi v
 
 Ví dụ: khi sử dụng jQuery, bạn có thể dễ dàng nhìn thấy những đoạn code như sau:
 
-```
+```js
 $('.myClass').addClass('bird').show().animate({/* some animation */});
 ```
 
 Nếu không sử dụng kĩ thuật Method Chaining thì đoạn code trên sẽ khá dài dòng:
 
-```
+```js
 const $myClass = $('.myClass');
-    $.addClass($myClass, 'bird');
-    $.show($myClass);
-    $.animate($myClass, {/* some animation */})
+$.addClass($myClass, 'bird');
+$.show($myClass);
+$.animate($myClass, {/* some animation */})
 ```
 
 Bạn có thể thấy rằng, khi sử dụng Method Chaining, bạn hầu như chỉ cần viết các đoạn code trên cùng 1 dòng.
@@ -40,33 +40,33 @@ Trong bài viết này, mình sẽ chỉ giới thiệu một cách cơ bản v�
 
 ### Ví dụ khi không sử dụng Method Chaining
 
-```
+```js
 class Number {
-      constructor(value) {
-        this.value = value;
-      }
-      add(value) {
-        this.value += value;
-      }
-      sub(value) {
-        this.value -= value;
-      }
-      mul(value) {
-        this.value *= value;
-      }
-      div(value) {
-        this.value /= value;
-      }
-    }
+  constructor(value) {
+    this.value = value;
+  }
+  add(value) {
+    this.value += value;
+  }
+  sub(value) {
+    this.value -= value;
+  }
+  mul(value) {
+    this.value *= value;
+  }
+  div(value) {
+    this.value /= value;
+  }
+}
 
-    let num = new Number(10);
-    num.add(5); // 10 + 5 => 15
-    num.sub(3); // 15 - 3 => 12
-    num.mul(2); // 12 * 2 => 24
-    num.div(8); // 24 / 8 => 3
+let num = new Number(10);
+num.add(5); // 10 + 5 => 15
+num.sub(3); // 15 - 3 => 12
+num.mul(2); // 12 * 2 => 24
+num.div(8); // 24 / 8 => 3
 
-    console.log(num.value);
-    // => 3
+console.log(num.value);
+// => 3
 ```
 
 Ví dụ trên xây dựng class _Number_ với 4 phương thức _add_, _sub_, _mul_, _div_. Và bạn có thể thấy với mỗi phương thức được gọi, bạn phải lặp lại biến _num_ và mỗi câu lệnh thường viết trên 1 dòng.
@@ -75,32 +75,32 @@ Như vậy khá dài dòng phải không bạn?
 
 ### Ví dụ khi sử dụng Method Chaining
 
-```
+```js
 class Number {
-      constructor(value) {
-        this.value = value;
-      }
-      add(value) {
-        this.value += value;
-        return this;
-      }
-      sub(value) {
-        this.value -= value;
-        return this;
-      }
-      mul(value) {
-        this.value *= value;
-        return this;
-      }
-      div(value) {
-        this.value /= value;
-        return this;
-      }
-    }
+  constructor(value) {
+    this.value = value;
+  }
+  add(value) {
+    this.value += value;
+    return this;
+  }
+  sub(value) {
+    this.value -= value;
+    return this;
+  }
+  mul(value) {
+    this.value *= value;
+    return this;
+  }
+  div(value) {
+    this.value /= value;
+    return this;
+  }
+}
 
-    let num = new Number(10);
-    num.add(5).sub(3).mul(2).div(8);
-    console.log(num.value);
+let num = new Number(10);
+num.add(5).sub(3).mul(2).div(8);
+console.log(num.value);
 ```
 
 Trong đoạn code trên, mình đã triển khai các phương thức theo Method Chaining. Nhờ vậy mà mình có thể gọi liên tiếp các phương thức trên cùng 1 dòng.

@@ -1,8 +1,8 @@
 ---
 date: "2018-08-01T12:00:10Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/trien-khai-thuat-toan-undo-redo-javascript-completejavascript.com_.png"
+keywords: "triển khai thuật toán undo-redo"
 slug: trien-khai-thuat-toan-undo-redo-trong-javascript
 title: "Triển khai thuật toán Undo-Redo trong JavaScript"
 categories:
@@ -33,13 +33,13 @@ Trong đó:
 
 **Undo** là hoạt động đưa ứng dụng về trạng thái cũ hơn với bước nhảy là 1: S[n] → S[n-1] → ... → S[1] → S[0]. Nghĩa là bạn chỉ có thể thực hiện Undo khi bạn đang ở trạng thái S[i] với i > 0.
 
-![Cách thức hoạt động của Undo](/wp-content/uploads/2018/08/cach-thuc-hoat-dong-undo-completejavascript.com_.png)Cách thức hoạt động của Undo
+![Cách thức hoạt động của Undo](../images/cach-thuc-hoat-dong-undo-completejavascript.com_.png)
 
 ### Cách thức hoạt động của Redo
 
 Ngược lại với Undo, **Redo** là hoạt động đưa ứng dụng về trạng thái mới hơn với bước nhảy là 1: S[0] → S[1] → ... → S[n-1] → S[n]. Nghĩa là bạn chỉ có thể thực hiện Redo khi bạn đang ở trạng thái thứ S[i] với i < n.
 
-![Cách thức hoạt động của Redo](/wp-content/uploads/2018/08/cach-thuc-hoat-dong-redo-completejavascript.com_.png)Cách thức hoạt động của Redo
+![Cách thức hoạt động của Redo](../images/cach-thuc-hoat-dong-redo-completejavascript.com_.png)
 
 ### Cách thức hoạt động của phần Thêm trạng thái
 
@@ -47,11 +47,11 @@ Khi có một trạng thái mới được thêm vào tập các trạng thái c
 
 - Ứng dụng đang ở trạng thái mới nhất S[n]: Trường hợp này đơn giản, bạn chỉ cần thêm trạng thái S[n + 1] vào sau trạng thái S[n]. Khi đó, tập trạng thái của ứng dụng là: S[0], S[1], S[2],..., S[n-1], S[n], S[n+1].
 
-![Thêm trạng thái vào Undo-Redo trường hợp 1](/wp-content/uploads/2018/08/them-trang-thai-th1-completejavascript.com_.png)Thêm trạng thái vào Undo-Redo khi ứng dụng đang ở trạng thái S[n]
+![Thêm trạng thái vào Undo-Redo trường hợp 1](../images/them-trang-thai-th1-completejavascript.com_.png)
 
 - Ứng dụng đang ở trạng thái cũ S[i] với i < n: Trường hợp này xảy ra khi bạn đã thực hiện ít nhất một lần Undo. Lúc này, bạn phải xoá đi toàn bộ các trạng thái từ S[i+1] đến S[n]. Sau đó, mới thêm trạng thái S'[i+1] vào sau S[i]. Khi đó, tập trạng thái của ứng dụng là: S[0], S[1], S[2],..., S[i], S'[i+1]. Điều đó cũng có nghĩa là bạn sẽ không thể đưa ứng dụng tới các trạng thái S[i+1], S[i+2],..., S[n], sau khi đã chèn trạng thái S'[i+1] vào.
 
-![Thêm trạng thái vào Undo-Redo trường hợp 2](/wp-content/uploads/2018/08/them-trang-thai-th2-completejavascript.com_.png)Thêm trạng thái vào Undo-Redo khi ứng dụng đang ở trạng thái S[i]
+![Thêm trạng thái vào Undo-Redo trường hợp 2](../images/them-trang-thai-th2-completejavascript.com_.png)
 
 _Chú ý: Trạng thái S'[i+1] khác với S[i+1] và S'[i+1] đang là trạng thái mới nhất hiện tại._
 
@@ -61,214 +61,214 @@ Dựa vào cách thức hoạt động của Undo-Redo đã trình bày phía tr
 
 Dưới đây là code mình triển khai thuật toán Undo-Redo trong JavaScript (các ngôn ngữ khác cũng tương tự):
 
-```
+```js
 class UndoRedoHandler {
-      constructor(currentstate) {
-        this._undoStack = [];
-        this._redoStack = [];
-        this._redoStack.push(currentstate);
-      }
+  constructor(currentstate) {
+    this._undoStack = [];
+    this._redoStack = [];
+    this._redoStack.push(currentstate);
+  }
 
-      insert(state) {
-        this._undoStack.push(this._redoStack.pop());
-        this._redoStack.length = 0;
-        this._redoStack.push(state);
-      }
+  insert(state) {
+    this._undoStack.push(this._redoStack.pop());
+    this._redoStack.length = 0;
+    this._redoStack.push(state);
+  }
 
-      getPrevState() {
-        if (this._undoStack.length >= 1) {
-          let state = this._undoStack.pop();
-          this._redoStack.push(state);
-          return state;
-        }
-      }
-
-      getNextState() {
-        if (this._redoStack.length >= 2) {
-          let state = this._redoStack.pop();
-          this._undoStack.push(state);
-          return this._redoStack[this._redoStack.length - 1];
-        }
-      }
-
-      clear() {
-        if (this._redoStack.length >= 1) {
-          let state = this._redoStack.pop();
-          this._undoStack.length = 0;
-          this._redoStack.length = 0;
-          this._redoStack.push(state);
-        }
-      }
+  getPrevState() {
+    if (this._undoStack.length >= 1) {
+      let state = this._undoStack.pop();
+      this._redoStack.push(state);
+      return state;
     }
+  }
+
+  getNextState() {
+    if (this._redoStack.length >= 2) {
+      let state = this._redoStack.pop();
+      this._undoStack.push(state);
+      return this._redoStack[this._redoStack.length - 1];
+    }
+  }
+
+  clear() {
+    if (this._redoStack.length >= 1) {
+      let state = this._redoStack.pop();
+      this._undoStack.length = 0;
+      this._redoStack.length = 0;
+      this._redoStack.push(state);
+    }
+  }
+}
 ```
 
 ### Triển khai phần Khởi tạo
 
-```
+```js
 constructor(currentstate) {
-      this._undoStack = [];
-      this._redoStack = [];
-      this._redoStack.push(currentstate);
-    }
+  this._undoStack = [];
+  this._redoStack = [];
+  this._redoStack.push(currentstate);
+}
 ```
 
-Thực chất, [array trong JavaScript](/javascript-array-co-ban/) có thể đóng vai trò là Stack, với sự hỗ trợ của các phương thức _push_, _pop_. Do đó, mình khởi tạo Undo Stack - _this.\_undoStack_ và Redo Stack - _this.\_redoStack_ là các mảng rỗng. Sau đó, _push_ trạng thái hiện tại của ứng dụng _currentstate_ vào _this.\_redoStack_.
+Thực chất, [array trong JavaScript](/javascript-array-co-ban/) có thể đóng vai trò là Stack, với sự hỗ trợ của các phương thức _push_, _pop_. Do đó, mình khởi tạo Undo Stack - *this._undoStack* và Redo Stack - *this._redoStack* là các mảng rỗng. Sau đó, _push_ trạng thái hiện tại của ứng dụng _currentstate_ vào *this._redoStack*.
 
-![Khởi tạo Undo, Redo Stack](/wp-content/uploads/2018/08/khoi-tao-completejavascript.com_.png)Trạng thái của Undo, Redo Stack sau khi khởi tạo
+![Khởi tạo Undo, Redo Stack](../images/khoi-tao-completejavascript.com_.png)
 
 **Mục đích: mình sẽ sử dụng đỉnh của Redo Stack để lưu giá trị hiện tại của ứng dụng.**
 
-Nghĩa là: một cách tổng quát, _this.\_undoStack_ sẽ lưu các trạng thái từ S[0] đến S[i-1] và _this.\_redoStack_ sẽ lưu các trạng thái từ S[i] đến S[n]. Với S[i] là giá trị hiện tại của ứng dụng, nằm tại đỉnh của _this.\_redoStack_.
+Nghĩa là: một cách tổng quát, *this._undoStack* sẽ lưu các trạng thái từ S[0] đến S[i-1] và *this._redoStack* sẽ lưu các trạng thái từ S[i] đến S[n]. Với S[i] là giá trị hiện tại của ứng dụng, nằm tại đỉnh của *this._redoStack*.
 
-![Trạng thái tổng quát của Undo, Redo Stack](/wp-content/uploads/2018/08/trang-thai-undo-redo-stack-completejavascript.com_.png)Trạng thái tổng quát của Undo, Redo Stack
+![Trạng thái tổng quát của Undo, Redo Stack](../images/trang-thai-undo-redo-stack-completejavascript.com_.png)
 
-Dĩ nhiên, bạn có thể cho trạng thái hiện tại vào _this.\_undoStack_ hoặc tạo thêm một biến để lưu trạng thái này. Khi đó, bạn chỉ cần sửa lại code một chút. Về cơ bản, chúng vẫn giống nhau, nên bạn có thể làm theo cách của mình.
+Dĩ nhiên, bạn có thể cho trạng thái hiện tại vào *this._undoStack* hoặc tạo thêm một biến để lưu trạng thái này. Khi đó, bạn chỉ cần sửa lại code một chút. Về cơ bản, chúng vẫn giống nhau, nên bạn có thể làm theo cách của mình.
 
 ### Triển khai phần Thêm trạng thái
 
-```
+```js
 insert(state) {
-      this._undoStack.push(this._redoStack.pop());
-      this._redoStack.length = 0;
-      this._redoStack.push(state);
-    }
+  this._undoStack.push(this._redoStack.pop());
+  this._redoStack.length = 0;
+  this._redoStack.push(state);
+}
 ```
 
 Khi thêm một trạng mới vào ứng dụng thì trạng thái hiện tại phải được đưa vào Undo Stack. Do đó mình phải _pop_ state S[i] tại đỉnh của Redo Stack (là giá trị hiện tại của ứng dụng), để _push_ vào Undo Stack:
 
-```
+```js
 this._undoStack.push(this._redoStack.pop());
 ```
 
-Sau đó, toàn bộ trạng thái S[i+1] đến S[n] bị xoá đi. Tức là _this.\_redoStack_ phải bị xoá đi:
+Sau đó, toàn bộ trạng thái S[i+1] đến S[n] bị xoá đi. Tức là *this._redoStack* phải bị xoá đi:
 
-```
+```js
 this._redoStack.length = 0;
 ```
 
-Cuối cùng trạng thái _state_ mới nhất sẽ được đưa vào _this.\_redoStack_:
+Cuối cùng trạng thái _state_ mới nhất sẽ được đưa vào *this._redoStack*:
 
-```
+```js
 this._redoStack.push(state);
 ```
 
-![Trạng thái của Undo, Redo Stack sau khi thêm trạng thái](/wp-content/uploads/2018/08/trang-thai-undo-redo-stack-sau-khi-them-trang-thai-completejavascript.com_.png)Trạng thái của Undo, Redo Stack sau khi thêm trạng thái S'[i+1]
+![Trạng thái của Undo, Redo Stack sau khi thêm trạng thái](../images/trang-thai-undo-redo-stack-sau-khi-them-trang-thai-completejavascript.com_.png)
 
 ### Triển khai phần Undo
 
-```
+```js
 getPrevState() {
-      if (this._undoStack.length >= 1) {
-        let state = this._undoStack.pop();
-        this._redoStack.push(state);
-        return state;
-      }
-    }
+  if (this._undoStack.length >= 1) {
+    let state = this._undoStack.pop();
+    this._redoStack.push(state);
+    return state;
+  }
+}
 ```
 
-Undo tức là quay trở về trạng thái cũ. Nghĩa là trạng thái cũ phải tồn tại thì bạn mới thực hiện Undo được. Ở đây, điều kiện Undo được là _this.\_undoStack_ phải khác rỗng hay _this.\_undoStack.length >= 1_.
+Undo tức là quay trở về trạng thái cũ. Nghĩa là trạng thái cũ phải tồn tại thì bạn mới thực hiện Undo được. Ở đây, điều kiện Undo được là *this._undoStack* phải khác rỗng hay *this._undoStack.length >= 1*.
 
 Khi điều kiện Undo thoả mãn, bạn có thể thực hiện những thứ sau đây.
 
 Bạn nhớ rằng, trạng thái hiện tại của ứng dụng là S[i]. Undo sẽ đưa ứng dụng về trạng thái S[i-1].
 
-Nghĩa là bạn phải _pop_ trạng thái S[i-1] từ _this.\_undoStack_.
+Nghĩa là bạn phải _pop_ trạng thái S[i-1] từ *this._undoStack*.
 
-```
+```js
 let state = this._undoStack.pop();
 ```
 
-Trạng thái S[i-1] này sẽ được _push_ vào _this.\_redoStack_.
+Trạng thái S[i-1] này sẽ được _push_ vào *this._redoStack*.
 
-```
+```js
 this._redoStack.push(state);
 ```
 
 Và _return_ để sử dụng cho việc thay đổi trạng thái ứng dụng.
 
-```
+```js
 return state;
 ```
 
-![Trạng thái của Undo, Redo Stack sau khi Undo](/wp-content/uploads/2018/08/trang-thai-undo-redo-stack-sau-khi-undo-completejavascript.com_.png)Trạng thái của Undo, Redo Stack sau khi Undo
+![Trạng thái của Undo, Redo Stack sau khi Undo](../images/trang-thai-undo-redo-stack-sau-khi-undo-completejavascript.com_.png)
 
 ### Triển khai phần Redo
 
-```
+```js
 getNextState() {
-      if (this._redoStack.length >= 2) {
-        let state = this._redoStack.pop();
-        this._undoStack.push(state);
-        return this._redoStack[this._redoStack.length - 1];
-      }
-    }
+  if (this._redoStack.length >= 2) {
+    let state = this._redoStack.pop();
+    this._undoStack.push(state);
+    return this._redoStack[this._redoStack.length - 1];
+  }
+}
 ```
 
 Redo tức là đưa về trạng thái mới hơn. Mà trạng thái mới hơn lại được lưu trữ tại Redo Stack.
 
 Khác với Undo Stack, trạng thái tại đỉnh của Redo Stack luôn là trạng thái hiện tại của ứng dụng. Do đó, để thực hiện Redo thì trong Redo Stack phải có ít nhất 2 phần tử (1 là trạng thái hiện tại, 1 là trạng thái mới hơn).
 
-```
+```js
 this._redoStack.length >= 2
 ```
 
 Khi thực hiện Redo, trạng thái hiện tại phải được _pop_ khỏi Redo Stack.
 
-```
+```js
 let state = this._redoStack.pop();
 ```
 
 Sau đó, trạng thái này được _push_ ngược lại vào Undo Stack.
 
-```
+```js
 this._undoStack.push(state);
 ```
 
 Lúc này trạng thái mới hơn (cần di chuyển đến) đang nằm ở đỉnh của Redo Stack. Mình cần phải _return_ lại giá trị này để sử dụng cho việc thay đổi trạng thái ứng dụng:
 
-```
+```js
 return this._redoStack[this._redoStack.length - 1];
 ```
 
-![Trạng thái của Undo, Redo Stack sau khi redo](/wp-content/uploads/2018/08/trang-thai-undo-redo-stack-sau-khi-redo-completejavascript.com_.png)Trạng thái của Undo, Redo Stack sau khi redo
+![Trạng thái của Undo, Redo Stack sau khi redo](../images/trang-thai-undo-redo-stack-sau-khi-redo-completejavascript.com_.png)
 
 ### Triển khai phần Clear
 
-```
+```js
 clear() {
-      if (this._redoStack.length >= 1) {
-        let state = this._redoStack.pop();
-        this._undoStack.length = 0;
-        this._redoStack.length = 0;
-        this._redoStack.push(state);
-      }
-    }
+  if (this._redoStack.length >= 1) {
+    let state = this._redoStack.pop();
+    this._undoStack.length = 0;
+    this._redoStack.length = 0;
+    this._redoStack.push(state);
+  }
+}
 ```
 
 Đây là phần mình thêm vào. Phương thức _clear_ này sẽ giữ lại trạng thái hiện tại của ứng dụng, bằng cách _pop_ trạng thái tại đỉnh của Redo Stack:
 
-```
+```js
 let state = this._redoStack.pop();
 ```
 
 Tiếp theo là xoá bỏ hết tất cả các trạng thái trong 2 Stack bằng cách gán _length_ của chúng bằng 0:
 
-```
+```js
 this._undoStack.length = 0;
     this._redoStack.length = 0;
 ```
 
 Cuối cùng lưu lại trạng thái hiện tại của ứng dụng vào Redo Stack - giống như mình đã làm trong phần khởi tạo.
 
-```
+```js
 this._redoStack.push(state);
 ```
 
-![Trạng thái của Undo, Redo Stack sau khi clear](/wp-content/uploads/2018/08/trang-thai-undo-redo-stack-sau-khi-clear-completejavascript.com_.png)Trạng thái của Undo, Redo Stack sau khi clear
+![Trạng thái của Undo, Redo Stack sau khi clear](../images/trang-thai-undo-redo-stack-sau-khi-clear-completejavascript.com_.png)
 
 ## Demo sử dụng thuật toán Undo-Redo
 
-[codepen_embed height="415" theme_id="0" slug_hash="EpoKZo" default_tab="js,result" user="completejavascript"]See the Pen <a href='https://codepen.io/completejavascript/pen/EpoKZo/'>Undo-Redo Example</a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+https://codepen.io/completejavascript/pen/EpoKZo
 
 Đây là một ứng dụng demo đơn giản sử dụng thuật toán Undo-Redo. Ứng dụng này có khả năng thay đổi **nội dung** và **màu sắc** của chữ _UNDO-REDO_.
 
@@ -278,45 +278,45 @@ Cụ thể:
 
 **Phần khởi tạo**:
 
-```
+```js
 const undoRedoHandler = new UndoRedoHandler({
-      text: textDefault,
-      color: colorDefault
-    });
+  text: textDefault,
+  color: colorDefault
+});
 ```
 
 **Phần thêm trạng thái**:
 
-```
+```js
 undoRedoHandler.insert({
-      text: _content.value,
-      color: _color.value
-    });
+  text: _content.value,
+  color: _color.value
+});
 ```
 
 **Phần Undo**:
 
-```
+```js
 const state = undoRedoHandler.getPrevState();
 
-    if (state) {
-      applyPreview(state.text, state.color);
-    }
+if (state) {
+  applyPreview(state.text, state.color);
+}
 ```
 
 **Phần Redo**:
 
-```
+```js
 const state = undoRedoHandler.getNextState();
 
-    if (state) {
-      applyPreview(state.text, state.color);
-    }
+if (state) {
+  applyPreview(state.text, state.color);
+}
 ```
 
 **Phần clear**:
 
-```
+```js
 undoRedoHandler.clear();
 ```
 

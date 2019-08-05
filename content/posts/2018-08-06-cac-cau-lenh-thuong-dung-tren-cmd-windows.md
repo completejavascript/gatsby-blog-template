@@ -1,8 +1,8 @@
 ---
 date: "2018-08-06T14:33:35Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/cac-cau-lenh-thuong-dung-cmd-windows-completejavascript.com_.png"
+keywords: "câu lệnh thường dùng trên cmd"
 slug: cac-cau-lenh-thuong-dung-tren-cmd-windows
 title: "Các câu lệnh thường dùng trên CMD – Windows"
 categories:
@@ -26,21 +26,21 @@ Sau đây là một số cách mở CMD trên hệ điều hành Windows 7.
 
 ### Mở cửa sổ CMD tại vị trí thư mục mặc định
 
-Khi bạn mở cửa sổ CMD, vị trí mặc định sẽ là: **_C:\Users\user-name>_**.
+Khi bạn mở cửa sổ CMD, vị trí mặc định sẽ là: **_C:\Users\user-name_**.
 
-Ví dụ đối với máy mình là: \_C:\Users\LamPV> \_thì kết quả thu được như sau:
+Ví dụ đối với máy mình là: _C:\Users\LamPV_ thì kết quả thu được như sau:
 
-![Khởi động CMD windows 7](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-mac-dinh-completejavascript.com_.png)Cửa sổ CMD mặc định trên Windows 7 sau khi khởi động
+![Khởi động CMD windows 7](../images/khoi-dong-cmd-windows-mac-dinh-completejavascript.com_.png)
 
 Có 2 cách để thực hiện là:
 
 - Cách 1: Bạn click chuột vào biểu tượng **Start** ở góc dưới bên trái màn hình. Sau đó, gõ **cmd** vào khu vực tìm kiếm. Windows sẽ tìm ra chương trình **cmd.exe** cho bạn. Bạn chỉ cần click vào nó là xong.
 
-![Cách mở CMD tại vị trí mặc định - cách 1](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-mac-dinh-cach-1-completejavascript.com_.png)Cách 1 để mở CMD tại vị trí mặc định
+![Cách mở CMD tại vị trí mặc định - cách 1](../images/khoi-dong-cmd-windows-mac-dinh-cach-1-completejavascript.com_.png)
 
 - Cách 2: Bạn click chuột vào biểu tượng **Start** ở góc dưới bên trái màn hình. Sau đó, gõ **run** vào khu vực tìm kiếm và nhấn **Enter**. Cửa sổ **run** hiện lên, rồi bạn chỉ việc gõ **cmd** và nhấn **Enter** (hoặc click vào OK) là được.
 
-![Khởi động CMD windows 7 cách 2](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-mac-dinh-cach-2-completejavascript.com_.png)Cách 2 để mở CMD tại vị trí mặc định
+![Khởi động CMD windows 7 cách 2](../images/khoi-dong-cmd-windows-mac-dinh-cach-2-completejavascript.com_.png)
 
 ### Mở cửa sổ CMD tại vị trí thư mục bất kỳ
 
@@ -48,29 +48,29 @@ Nhiều khi bạn muốn mở CMD tại vị trí thư mục chứa project mà 
 
 Ví dụ mình muốn mở CMD tại vị trí thư mục có đường dẫn: **_F:\cmd-demo\demo1_**
 
-![Khởi động CMD tại vị trí bất kỳ](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-bat-ky-completejavascript.com_.png)Cửa sổ CMD Windows 7 khi mở ở vị trí F:\cmd-demo\demo1
+![Khởi động CMD tại vị trí bất kỳ](../images/khoi-dong-cmd-windows-bat-ky-completejavascript.com_.png)
 
 Cũng có 2 cách để thực hiện là:
 
 - Cách 1: Bạn mở **Windows Explore** đến thư mục muốn mở CMD. Tại đó, bạn đồng thời nhấn **Shift** và click **chuột phải**. Lúc đó, sẽ có một context menu hiện lên, bạn chọn mục **Open command window here**.
 
-![khởi động cmd windows bất kỳ cách 1](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-bat-ky-cach-1-completejavascript.com_.png)Cách 1 để mở cmd windows ở vị trí bất kỳ
+![khởi động cmd windows bất kỳ cách 1](../images/khoi-dong-cmd-windows-bat-ky-cach-1-completejavascript.com_.png)
 
 - Cách 2: Bạn cũng mở **Windows Explore** đến thư mục muốn mở CMD. Bạn tìm đến thanh địa chỉ và gõ **cmd**, rồi nhấn **Enter**.
 
-![khởi động cmd windows bất kỳ cách 2](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-bat-ky-cach-2-completejavascript.com_.png)Cách 2 để mở cmd windows ở vị trí bất kỳ
+![khởi động cmd windows bất kỳ cách 2](../images/khoi-dong-cmd-windows-bat-ky-cach-2-completejavascript.com_.png)
 
 ### Mở cửa sổ CMD với quyền Admin
 
 Để mở cửa sổ CMD với quyền Admin, đầu tiên bạn làm giống **cách 1** của phần **Mở cửa sổ CMD tại vị trí thư mục gốc**.
 
-Sau đó, thay vì click vào **cmd.exe** thì bạn click **chuột phải** và chọn **Run as administrator, **rồi chọn** OK.**
+Sau đó, thay vì click vào **cmd.exe** thì bạn click **chuột phải** và chọn **Run as administrator**, rồi chọn **OK**.
 
-![Khởi động CMD windows với quyền admin](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-quyen-admin-completejavascript.com_.png)Cách để mở CMD windows với quyền admin
+![Khởi động CMD windows với quyền admin](../images/khoi-dong-cmd-windows-quyen-admin-completejavascript.com_.png)
 
-Kết quả là CMD hiện lên với vị trí mặc định là: _**C:\Windows\system32>**_
+Kết quả là CMD hiện lên với vị trí mặc định là: _**C:\Windows\system32**_
 
-![Kết quả khởi động CMD windows với quyền admin](/wp-content/uploads/2018/08/khoi-dong-cmd-windows-quyen-admin-ket-qua-completejavascript.com_.png)Cửa sổ CMD windows sau khi mở với quyền admin
+![Kết quả khởi động CMD windows với quyền admin](../images/khoi-dong-cmd-windows-quyen-admin-ket-qua-completejavascript.com_.png)
 
 Trên đây là một số cách để mở CMD trên Windows 7. Tiếp theo, mình sẽ giới thiệu với bạn các câu lệnh thường dùng trên CMD.
 
@@ -108,22 +108,22 @@ Tương tự như trên Ubuntu, câu lệnh này dùng để thay đổi vị tr
 - **cd .** : đứng nguyên ở thư mục hiện tại
 - **cd ..** : di chuyển đến thư mục cha của thư mục hiện tại
 - **cd /**: di chuyển đến thư mục gốc của ố đĩa hiện tại (ví dụ: C:\ hoặc D:\,...)
-- **cd <tên thư mục con>** : di chuyển đến thư mục con bên trong thư mục hiện tại
-- **cd <đường dẫn đến thư mục>** : di chuyển đến thư mục với đường dẫn là đường dẫn cho trước.
+- **cd &lt;tên thư mục con&gt;** : di chuyển đến thư mục con bên trong thư mục hiện tại
+- **cd &lt;đường dẫn đến thư mục&gt;** : di chuyển đến thư mục với đường dẫn là đường dẫn cho trước.
 
 **Chú ý:**
 
-- Để thay đổi vị trí đến ổ đĩa khác với hiện tại thì bạn cần thêm tuỳ chọn **/D** phía trước đường dẫn muốn tới. Ví dụ: bạn đang ở một vị trí trên ổ C và muốn đến một vị trí khác trên ổ D thì bạn có thể dùng câu lệnh: **cd /D D:\<đường-dẫn-thư-mục-bất-kì>**.
-- Ngoài ra, để di chuyển sang root của một ổ đĩa, bạn có thể sử dụng câu lệnh **<Chữ-cái-tên-ổ-đĩa>:**. Ví dụ: **E:**
+- Để thay đổi vị trí đến ổ đĩa khác với hiện tại thì bạn cần thêm tuỳ chọn **/D** phía trước đường dẫn muốn tới. Ví dụ: bạn đang ở một vị trí trên ổ C và muốn đến một vị trí khác trên ổ D thì bạn có thể dùng câu lệnh: **cd /D D:\<đường-dẫn-thư-mục-bất-kì&gt;**.
+- Ngoài ra, để di chuyển sang root của một ổ đĩa, bạn có thể sử dụng câu lệnh **&lt;Chữ-cái-tên-ổ-đĩa&gt;:**. Ví dụ: **E:**
 
 #### copy
 
 Dùng để sao chép tập tin hay thư mục đến một vị trí bất kỳ.
 
-- **copy <tên file nguồn> <tên file đích>**: tạo file đích là bản copy của file nguồn trong cùng một thư mục (tên file đích phải khác tên file nguồn).
-- **copy <tên file nguồn> <tên thư mục>**: dùng để copy một tập tin vào một thư mục
-- **copy <tên file nguồn 1> + <tên file nguồn 2> + ... + <tên file nguồn n> <tên thư mục đích>**: copy các file nguồn 1, file nguồn 2,..., file nguồn n vào thư mục đích
-- **copy <tên thư mục nguồn> <tên thư mục đích>**: copy toàn bộ file trong thư mục nguồn đến thư mục đích
+- **copy &lt;tên file nguồn&gt; &lt;tên file đích&gt;**: tạo file đích là bản copy của file nguồn trong cùng một thư mục (tên file đích phải khác tên file nguồn).
+- **copy &lt;tên file nguồn&gt; &lt;tên thư mục&gt;**: dùng để copy một tập tin vào một thư mục
+- **copy &lt;tên file nguồn 1&gt; + &lt;tên file nguồn 2&gt; + ... + &lt;tên file nguồn n&gt; &lt;tên thư mục đích&gt;**: copy các file nguồn 1, file nguồn 2,..., file nguồn n vào thư mục đích
+- **copy &lt;tên thư mục nguồn&gt; &lt;tên thư mục đích&gt;**: copy toàn bộ file trong thư mục nguồn đến thư mục đích
 
 **Chú ý:**
 
@@ -133,42 +133,42 @@ Dùng để sao chép tập tin hay thư mục đến một vị trí bất kỳ
 
 Dùng để di chuyển tập tin đến một thư mục mới và có thể đổi tên tập tin đó.
 
-- **move <tên file nguồn> <tên thư mục đích \ tên file đích>**: di chuyển file nguồn đến thư mục đích đồng thời đổi tên file nguồn.
-- **move <tên file nguồn> <tên thư mục đích>** : di chuyển tập tin đến thư mục đích và không đổi tên.
+- **move &lt;tên file nguồn&gt; &lt;tên thư mục đích \ tên file đích&gt;**: di chuyển file nguồn đến thư mục đích đồng thời đổi tên file nguồn.
+- **move &lt;tên file nguồn&gt; &lt;tên thư mục đích&gt;** : di chuyển tập tin đến thư mục đích và không đổi tên.
 
 #### del (delete)
 
 Dùng để xoá một hay nhiều file
 
-- **del <tên file 1> <tên file 2> <tên file 3> ... <tên file n>**: xoá file 1, file 2, file 3,..., file n trong thư mục hiện tại
-- **del <tên thư mục đích>**: xoá tất cả các file trong thư mục đích (thư mục đích không bị xoá)
-- **del <đường dẫn file 1> <đường dẫn file 2> ... <đường dẫn file n>**: xoá các file tương ứng với các đường dẫn cho trước
+- **del &lt;tên file 1&gt; &lt;tên file 2&gt; &lt;tên file 3&gt; ... &lt;tên file n&gt;**: xoá file 1, file 2, file 3,..., file n trong thư mục hiện tại
+- **del &lt;tên thư mục đích&gt;**: xoá tất cả các file trong thư mục đích (thư mục đích không bị xoá)
+- **del &lt;đường dẫn file 1&gt; &lt;đường dẫn file 2&gt; ... &lt;đường dẫn file n&gt;**: xoá các file tương ứng với các đường dẫn cho trước
 
 #### rd (remove directory)
 
 Dùng để xoá một hay nhiều thư mục, kể cả các file và thư mục con.
 
-- **rd <tên thư mục 1> <tên thư mục 2> ... <tên thư mục n>**: xoá các thư mục rỗng 1, 2, ..., n
-- **rd /S <tên thư mục 1> <tên thư mục 2> ... <tên thư mục n>**: xoá các thư mục 1, 2, ..., n, kể cả các file và thư mục con.
+- **rd &lt;tên thư mục 1&gt; &lt;tên thư mục 2&gt; ... &lt;tên thư mục n&gt;**: xoá các thư mục rỗng 1, 2, ..., n
+- **rd /S &lt;tên thư mục 1&gt; &lt;tên thư mục 2&gt; ... &lt;tên thư mục n&gt;**: xoá các thư mục 1, 2, ..., n, kể cả các file và thư mục con.
 
 #### md (make directory)
 
 Dùng để tạo mới một hay nhiều thư mục.
 
-- **md <tên thư mục 1> <tên thư mục 2> ... <tên thư mục n>**: tạo mới thư mục rỗng 1, 2, ..., n
+- **md &lt;tên thư mục 1&gt; &lt;tên thư mục 2&gt; ... &lt;tên thư mục n&gt;**: tạo mới thư mục rỗng 1, 2, ..., n
 
 #### Tạo file mới
 
 Để tạo file mới bằng CMD bạn có thể làm theo một trong hai các cách sau:
 
-- **type nul > <tên file>**
-- **echo nul > <tên file>**
+- **type nul &gt; &lt;tên file&gt;**
+- **echo nul &gt; &lt;tên file&gt;**
 
 Hai câu lệnh trên thực chất là để ghi giá trị _nul_ vào file mới. Nhưng vì file mới này chưa tồn tại nên Windows sẽ tự động tạo file này.
 
 #### help
 
-Dùng để hiển thị hướng dẫn các câu lệnh: **help <tên câu lệnh>**, tương tự như lệnh _man_ trên Ubuntu.
+Dùng để hiển thị hướng dẫn các câu lệnh: **help &lt;tên câu lệnh&gt;**, tương tự như lệnh _man_ trên Ubuntu.
 
 Ví dụ: _help copy_, _help md_,…
 
@@ -186,10 +186,10 @@ Hiển thị host name của máy.
 
 Kiểm tra tình trạng kết nối của mạng.
 
-- **ping <địa chỉ host đích>**: thông thường nhất là ping đến google, khi đó câu lệnh sẽ là: **ping google.com**
-- **ping -t <địa chỉ host đích>**: ping cho đến khi mạng bị đứt kết nối thì mới dừng lại
+- **ping &lt;địa chỉ host đích&gt;**: thông thường nhất là ping đến google, khi đó câu lệnh sẽ là: **ping google.com**
+- **ping -t &lt;địa chỉ host đích&gt;**: ping cho đến khi mạng bị đứt kết nối thì mới dừng lại
 - **ping 127.0.0.1**: kiểm tra xem TCP/IP đã được cài đặt và configure chính xác hay chưa
-- **ping <địa chỉ ip của máy tính>**: kiểm tra xem máy tính đã kết nối vào mạng local hay chưa
+- **ping &lt;địa chỉ ip của máy tính&gt;**: kiểm tra xem máy tính đã kết nối vào mạng local hay chưa
 
 #### shutdown
 

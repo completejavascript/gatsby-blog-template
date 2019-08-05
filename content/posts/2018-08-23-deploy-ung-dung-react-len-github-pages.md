@@ -1,8 +1,8 @@
 ---
 date: "2018-08-23T13:55:27Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/tao-va-deploy-ung-dung-react-len-github-pages-create-react-app-completejavascript.com_.png"
+keywords: "deploy ứng dụng react"
 slug: deploy-ung-dung-react-len-github-pages
 title: "Tạo và deploy ứng dụng React lên Github Pages"
 categories:
@@ -49,7 +49,7 @@ Ngoài ra, bạn cũng có 2 lựa chọn là tải bản Windows Installer (.ms
 
 Để đơn giản, mình sẽ chọn bản [Windows Installer (.msi) 64-bit](https://nodejs.org/dist/v8.11.4/node-v8.11.4-x64.msi). Phiên bản này là 8.11.4 đã bao gồm npm 5.6.0, nên thoả mãn yêu cầu của create-react-app là Node >= 6 and npm >= 5.2.
 
-![Tải nodejs](/wp-content/uploads/2018/08/download-nodejs.png)Download Node.js cho Windows 64-bit trên trang chủ
+![Tải nodejs](../images/download-nodejs.png)
 
 Các bước để cài đặt Node.js bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban/)
 
@@ -59,7 +59,7 @@ _Xem thêm về Node.js tại: [SERIES LƯỢC SỬ LẬP TRÌNH WEB PHẦN 3.2 
 
 Git giúp quản lý source code dễ dàng hơn và deploy ứng dụng React lên Github Pages sau khi code xong. Để cài đặt Git cho Windows, bạn có thể vào [trang download git](https://git-scm.com/download) và chọn phần Windows.
 
-![tải git](/wp-content/uploads/2018/08/download-git.png)Download Git cho Windows
+![tải git](../images/download-git.png)
 
 Việc cài đặt Git cũng khá đơn giản và bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn cài đặt và cấu hình Git trên Windows](https://o7planning.org/vi/11707/huong-dan-cai-dat-va-cau-hinh-git-tren-windows)
 
@@ -69,7 +69,7 @@ Visual Studio Code là một trong những code editor tốt nhất hiện nay. 
 
 Để tải Visual Studio Code, bạn có thể vào link: [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) và chọn bản 64-bit.
 
-![tải visual studio code](/wp-content/uploads/2018/08/download-visual-studio-code.png)Download Visual Studio Code cho Windows
+![tải visual studio code](../images/download-visual-studio-code.png)
 
 Việc cài đặt Visual Studio Code không có gì đặc biệt, bạn chỉ cần cài đặt theo mặc định hoặc tham khảo bài viết: [Cài Đặt Visual Studio Code Trên Môi Trường Windows](https://www.stdio.vn/articles/cai-dat-visual-studio-code-tren-moi-truong-windows-577)
 
@@ -89,11 +89,11 @@ D:\create-react-app
 
 Sau đó, mình mở Visual Studio Code lên, chọn **File** \ **Open Folder...**. Chọn đến thư mục vừa tạo ra ở trên.
 
-![Màn hình mặc định của Visual Studio Code](/wp-content/uploads/2018/08/visual-studio-code-1.png)Màn hình mặc định của Visual Studio Code sau khi mở thư mục tại D:\create-react-app
+![Màn hình mặc định của Visual Studio Code](../images/visual-studio-code-1.png)
 
 Tiếp theo, mở Terminal trên Visual Studio Code bằng cách chọn **View** \ **Terminal**
 
-![Màn hình Visual Studio Code sau khi mở Terminal](/wp-content/uploads/2018/08/visual-studio-code-open-terminal.png)Màn hình Visual Studio Code sau khi mở Terminal
+![Màn hình Visual Studio Code sau khi mở Terminal](../images/visual-studio-code-open-terminal.png)
 
 Đến đây, bạn đã có thể sử dụng [câu lệnh](/cac-cau-lenh-thuong-dung-tren-cmd-windows/) ngay trên Visual Studio Code.
 
@@ -101,27 +101,27 @@ Tiếp theo, mở Terminal trên Visual Studio Code bằng cách chọn **View**
 
 Bạn có thể sử dụng câu lệnh sau để tạo mới một project create-react-app:
 
-```
+```bash
 npx create-react-app app-name
 ```
 
 Trong đó, _app-name_ là tên project mà bạn muốn đặt. Kết quả của câu lệnh trên là bạn đã có một project mẫu.
 
-![Cấu trúc project React sử dụng create-react-app](/wp-content/uploads/2018/08/create-react-app-init.png)Cấu trúc ứng dụng React sử dụng create-react-app
+![Cấu trúc project React sử dụng create-react-app](../images/create-react-app-init.png)
 
 Để xem nó hoạt động như nào, bạn chạy lệnh sau để test:
 
-```
+```bash
 # Di chuyển đến vị trí bên trong thư mục chứa project
-    cd app-name
+cd app-name
 
-    # Tạo server
-    yarn start
+# Tạo server
+yarn start
 ```
 
-Sau đó, bạn vào địa chỉ **http://127.0.0.1:3000/** trên trình duyệt để kiểm tra kết quả. Nếu mọi thứ hoạt động bình thường thì bạn sẽ thu được màn hình như sau:
+Sau đó, bạn vào địa chỉ **http:\/\/127.0.0.1:3000\/** trên trình duyệt để kiểm tra kết quả. Nếu mọi thứ hoạt động bình thường thì bạn sẽ thu được màn hình như sau:
 
-![Ứng dụng React mặc định](/wp-content/uploads/2018/08/create-react-app-default.png)Ứng dụng React mặc định khi sử dụng create-react-app
+![Ứng dụng React mặc định](../images/create-react-app-default.png)
 
 ## Tuỳ biến ứng dụng create-react-app
 
@@ -141,62 +141,62 @@ Tuy nhiên, có nhiều thứ mà mình thấy rằng nên thay đổi và việ
 
 Ví dụ file _index.html_ trong 1 project của mình:
 
-```
+```html
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="theme-color" content="#000000">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="A very simple but useful Markdown Previewer and Markdown Editor with CodeMirror">
-      <meta name="keywords" content="markdown, previewer, markdown previewer, codemirror, markdown editor, editor">
-      <!--
-          manifest.json provides metadata used when your web app is added to the
-          homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-        -->
-      <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-      <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-      <!--
-          Notice the use of %PUBLIC_URL% in the tags above.
-          It will be replaced with the URL of the `public` folder during the build.
-          Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="A very simple but useful Markdown Previewer and Markdown Editor with CodeMirror">
+  <meta name="keywords" content="markdown, previewer, markdown previewer, codemirror, markdown editor, editor">
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-          Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-          work correctly both with client-side routing and a non-root public URL.
-          Learn how to configure a non-root public URL by running `npm run build`.
-        -->
-      <title>Markdown Editor by Lam Pham</title>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Markdown Editor by Lam Pham</title>
 
-      <link href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" rel="stylesheet" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
-        crossorigin="anonymous">
-      <link href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" rel="stylesheet" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
-        crossorigin="anonymous">
-      <link rel="stylesheet" href="%PUBLIC_URL%/lib/codemirror-5.39.2/lib/codemirror.css">
-    </head>
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" rel="stylesheet" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
+    crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" rel="stylesheet" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="%PUBLIC_URL%/lib/codemirror-5.39.2/lib/codemirror.css">
+</head>
 
-    <body>
-      <noscript>
-        You need to enable JavaScript to run this app.
-      </noscript>
-      <div id="root"></div>
-      <!--
-          This HTML file is a template.
-          If you open it directly in the browser, you will see an empty page.
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-          You can add webfonts, meta tags, or analytics to this file.
-          The build step will place the bundled scripts into the <body> tag.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-          To begin the development, run `npm start` or `yarn start`.
-          To create a production bundle, use `npm run build` or `yarn build`.
-        -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.4.0/marked.min.js"></script>
-      <script src="%PUBLIC_URL%/lib/codemirror-5.39.2/lib/codemirror.js"></script>
-      <script src="%PUBLIC_URL%/lib/codemirror-5.39.2/mode/markdown/markdown.js"></script>
-    </body>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.4.0/marked.min.js"></script>
+  <script src="%PUBLIC_URL%/lib/codemirror-5.39.2/lib/codemirror.js"></script>
+  <script src="%PUBLIC_URL%/lib/codemirror-5.39.2/mode/markdown/markdown.js"></script>
+</body>
 
-    </html>
+</html>
 ```
 
 Bạn thấy rằng, nếu như css, js từ CDN thì bạn có thể sử dụng như bình thường. Nhưng khi include css, js - là thư viện bên thứ 3 mà bạn đặt trong thư mục _public_, thì bạn cần phải chèn thêm đoạn **_%PUBLIC_URL%_**.
@@ -209,71 +209,71 @@ Sau khi đã tuỳ biến ứng dụng React theo ý mình, tiếp theo là bư�
 
 Có 5 bước để deploy ứng dụng React lên Github Pages như sau:
 
-**Bước 1**: Tạo Github Repository trên Github. Giả sử đường dẫn của nó là: _https://github.com/completejavascript/app-name.git_
+**Bước 1**: Tạo Github Repository trên Github. Giả sử đường dẫn của nó là: _https:\/\/github.com\/completejavascript\/app-name.git_
 
 **Bước 2**: Đồng bộ ứng dụng React ở local lên Github repository thông qua các câu lệnh sau:
 
-```
+```bash
 # Tạo mới git repository
-    git init
+git init
 
-    # Thêm tất cả các file vào git
-    git add .
+# Thêm tất cả các file vào git
+git add .
 
-    # Commit sự thay đổi
-    git commit -m 'initial commit'
+# Commit sự thay đổi
+git commit -m 'initial commit'
 
-    # Add remote đến Github Repository mà bạn đã tạo
-    git remote add origin https://github.com/completejavascript/app-name.git
+# Add remote đến Github Repository mà bạn đã tạo
+git remote add origin https://github.com/completejavascript/app-name.git
 
-    # Push các file lên Github
-    git push origin master
+# Push các file lên Github
+git push origin master
 ```
 
 **Bước 3**: Cài đặt gh-pages sử dụng npm
 
-```
+```bash
 npm install --save gh-pages
 ```
 
 **Bước 4**: Sửa file _package.json_
 
-```
+```json
 {
-      "name": "app-name",
-      "version": "0.1.0",
-      "private": true,
-      "homepage": "https://completejavascript.github.io/app-name/",
-      "dependencies": {
-        "gh-pages": "^2.0.1",
-        "react": "^16.4.2",
-        "react-dom": "^16.4.2",
-        "react-scripts": "1.1.5"
-      },
-      "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
-      }
-    }
+  "name": "app-name",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://completejavascript.github.io/app-name/",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
 ```
 
 Trong đó:
 
-- **homepage**: Là địa chỉ của ứng dụng sau khi được deploy, có dạng: _https://[your-user-name].github.io/[your-repo-name]/_
+- **homepage**: Là địa chỉ của ứng dụng sau khi được deploy, có dạng: _https:\/\/[your-user-name].github.io\/[your-repo-name]\/_
 - **predeploy**: xác định câu lệnh để build ứng dụng trước khi deploy
 - **deploy**: Xác định câu lệnh để deploy ứng dụng.
 
 **Bước 5**: Chạy câu lệnh sau để deploy ứng dụng.
 
-```
+```bash
 npm run deploy
 ```
 
-Sau khi deploy ứng dụng React thành công, bạn cần chờ một vài phút, rồi truy cập vào địa chỉ ứng với phần **homepage** (ví dụ: _https://completejavascript.github.io/app-name/_ ) để kiểm tra thành quả của mình.
+Sau khi deploy ứng dụng React thành công, bạn cần chờ một vài phút, rồi truy cập vào địa chỉ ứng với phần **homepage** (ví dụ: _https:\/\/completejavascript.github.io\/app-name\/_ ) để kiểm tra thành quả của mình.
 
 ## Lời kết
 
