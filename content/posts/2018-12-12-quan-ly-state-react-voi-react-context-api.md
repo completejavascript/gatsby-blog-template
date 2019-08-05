@@ -3,6 +3,7 @@ date: "2018-12-12T22:30:23Z"
 template: "post"
 cover: "../images/quan-ly-state-react-voi-react-context-api-completejavascript.com_.png"
 keywords: "react context api"
+description: "React Context API có thể thay thế Redux để quản lý State của ứng dụng React một cách dễ dàng. Cụ thể thế nào, mời bạn theo dõi bài viết!"
 slug: quan-ly-state-react-voi-react-context-api
 title: "Quản lý state trong React với React Context API"
 categories:

@@ -3,6 +3,7 @@ date: "2018-10-04T11:45:05Z"
 template: "post"
 cover: "../images/chuyen-anh-dong-gif-thanh-video-completejavascript.com_.png"
 keywords: "chuyển ảnh động GIF thành video"
+description: "Ảnh động GIF thường nặng hơn video. Vì vậy, mình sẽ giới thiệu với bạn cách chuyển ảnh động GIF thành video và sử dụng video tương tự như ảnh động GIF."
 slug: chuyen-anh-dong-gif-thanh-video
 title: "Chuyển ảnh động GIF thành video"
 categories:

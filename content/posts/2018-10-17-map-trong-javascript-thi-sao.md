@@ -3,6 +3,7 @@ date: "2018-10-17T22:30:56Z"
 template: "post"
 cover: "../images/map-trong-javascript-thi-sao-completejavascript.com_.png"
 keywords: "map trong javascript"
+description: "Map trong JavaScript là một loại object cho phép lưu trữ dữ liệu theo kiểu key-value, tương tự như object. Sau đây mình sẽ cùng nhau tìm hiểu về nó nhé!"
 slug: map-trong-javascript-thi-sao
 title: "Map trong JavaScript thì sao?"
 categories:

@@ -3,6 +3,7 @@ date: "2018-09-25T12:30:04Z"
 template: "post"
 cover: "../images/minh-da-lam-sach-website-wordpress-nhu-the-nao-completejavascript.com_.png"
 keywords: "làm sạch website wordpress"
+description: "Website bị dính mã độc là điều không ai mong muốn. Bài viết này mình sẽ chia sẻ với bạn các bước mà mình đã thực hiện để làm sạch website Wordpress."
 slug: lam-sach-website-wordpress-nhu-the-nao
 title: "Mình đã làm sạch website Wordpress như thế nào?"
 categories:

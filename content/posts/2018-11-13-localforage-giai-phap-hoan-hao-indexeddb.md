@@ -3,6 +3,7 @@ date: "2018-11-13T22:30:10Z"
 template: "post"
 cover: "../images/localforage-giai-phap-hoan-hao-cho-indexeddb-completejavascript.com-2.png"
 keywords: "localForage"
+description: "IndexedDB là một công cụ mạnh mẽ để quản lý database phía server nhưng sử dụng lại quá khó. Vì vậy, localForage chính là một giải pháp hoàn hảo."
 slug: localforage-giai-phap-hoan-hao-indexeddb
 title: "LocalForage: giải pháp hoàn hảo cho IndexedDB"
 categories:

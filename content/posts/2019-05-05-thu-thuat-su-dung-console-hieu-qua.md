@@ -3,6 +3,7 @@ date: "2019-05-05T23:00:42Z"
 template: "post"
 cover: "../images/mot-so-thu-thuat-su-dung-console-hieu-qua-completejavascript.com_.png"
 keywords: "thủ thuật sử dụng console"
+description: "Console.log là hàm khá phổ biến.Tuy nhiên, không phải ai cũng biết cách sử dụng. Bài viết này sẽ chia sẻ với bạn một số thủ thuật sử dụng console hiệu quả."
 slug: thu-thuat-su-dung-console-hieu-qua
 title: "Một số thủ thuật sử dụng console hiệu quả"
 categories:

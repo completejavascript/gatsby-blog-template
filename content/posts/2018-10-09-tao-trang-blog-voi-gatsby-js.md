@@ -3,6 +3,7 @@ date: "2018-10-09T11:50:24Z"
 template: "post"
 cover: "../images/tao-blog-voi-gatsby.js-completejavascript.com_.png"
 keywords: "blog với gatsby.js"
+description: "Mình sẽ tổng hợp lại những kiến thức tích luỹ được, qua đó giúp bạn biết cách tạo trang blog với Gatsby.js và thậm chí là nhiều static website khác nữa."
 slug: tao-trang-blog-voi-gatsby-js
 title: "Tạo trang blog với Gatsby.js"
 categories:

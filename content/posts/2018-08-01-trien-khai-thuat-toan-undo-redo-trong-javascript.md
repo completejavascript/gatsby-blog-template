@@ -3,6 +3,7 @@ date: "2018-08-01T12:00:10Z"
 template: "post"
 cover: "../images/trien-khai-thuat-toan-undo-redo-javascript-completejavascript.com_.png"
 keywords: "triển khai thuật toán undo-redo"
+description: "Đối với hầu hết các ứng dụng (text editor, sửa ảnh,...) việc triển khai thuật toán Undo-Redo là thật sự cần thiết. Dưới đây là một cách triển khai đơn giản."
 slug: trien-khai-thuat-toan-undo-redo-trong-javascript
 title: "Triển khai thuật toán Undo-Redo trong JavaScript"
 categories:

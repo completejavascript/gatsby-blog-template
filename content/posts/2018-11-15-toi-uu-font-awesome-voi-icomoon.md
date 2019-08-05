@@ -3,6 +3,7 @@ date: "2018-11-15T22:30:34Z"
 template: "post"
 cover: "../images/toi-uu-font-awesome-voi-icomoon-completejavascript.com_.png"
 keywords: "tối tưu Font Awesome với IcoMoon"
+description: "Font Awesome là một trong những icon font phổ biến nhất hiện nay. Bài này mình sẽ hướng dẫn bạn tối tưu Font Awesome với IcoMoon hiệu quả nhất."
 slug: toi-uu-font-awesome-voi-icomoon
 title: "Tối ưu Font Awesome với IcoMoon"
 categories:

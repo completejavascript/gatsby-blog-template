@@ -3,6 +3,7 @@ date: "2018-10-17T15:45:34Z"
 template: "post"
 cover: "../images/tao-bo-tu-dien-dang-text-tu-stardict-completejavascript.com_.png"
 keywords: "tạo bộ dữ liệu từ điển dạng text"
+description: "Có thể bạn chưa biết, cách đơn giản để tạo bộ dữ liệu từ điển dạng text là sử dụng bộ từ điển của StarDict cùng với StarDict Editor là xong."
 slug: tao-bo-du-lieu-tu-dien-dang-text-tu-stardict
 title: "Tạo bộ dữ liệu từ điển dạng text từ StarDict"
 categories:

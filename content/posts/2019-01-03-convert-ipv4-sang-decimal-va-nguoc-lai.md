@@ -3,6 +3,7 @@ date: "2019-01-03T22:30:26Z"
 template: "post"
 cover: "../images/convert-ipv4-sang-decimal-va-nguoc-lai-completejavascript.com_.png"
 keywords: "convert IPv4 sang Decimal"
+description: "Bài viết đầu tiên, mình sẽ trình bày về cách convert IPv4 sang Decimal và sau đó là convert ngược lại từ Decimal sang IPv4."
 slug: convert-ipv4-sang-decimal-va-nguoc-lai
 title: "Convert IPv4 sang Decimal và ngược lại"
 categories:

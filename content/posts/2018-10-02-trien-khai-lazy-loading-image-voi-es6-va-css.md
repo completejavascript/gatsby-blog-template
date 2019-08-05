@@ -3,6 +3,7 @@ date: "2018-10-02T12:00:15Z"
 template: "post"
 cover: "../images/trien-khai-lazy-loading-image-voi-es6-css-completejavascript.com_.png"
 keywords: "lazy loading image với es6 và css"
+description: "Triển khai Lazy Loading Image với ES6 và CSS khác với việc triển khai Lazy Loading Image trong React như thế nào? Mời bạn theo dõi để biết thêm chi tiết."
 slug: trien-khai-lazy-loading-image-voi-es6-va-css
 title: "Triển khai Lazy Loading Image với ES6 và CSS"
 categories:

@@ -3,6 +3,7 @@ date: "2018-08-06T14:33:35Z"
 template: "post"
 cover: "../images/cac-cau-lenh-thuong-dung-cmd-windows-completejavascript.com_.png"
 keywords: "câu lệnh thường dùng trên cmd"
+description: "Nếu bạn muốn sử dụng Windows like a boss thì chắc chắn phải thành thạo các câu lệnh thường dùng trên CMD của Windows sau đây."
 slug: cac-cau-lenh-thuong-dung-tren-cmd-windows
 title: "Các câu lệnh thường dùng trên CMD – Windows"
 categories:

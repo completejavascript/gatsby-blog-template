@@ -3,6 +3,7 @@ date: "2018-11-27T22:30:49Z"
 template: "post"
 cover: "../images/hoc-react-qua-vi-du-7-collapsible-content-completejavascript.com_.png"
 keywords: "collapsible content"
+description: "Xin chào bạn đến với Học React qua ví dụ #7. Bài này mình sẽ thực hành React thông qua việc tạo Collapsible Content. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-7-collapsible-content
 title: "Học React qua ví dụ #7: Collapsible Content"
 categories:

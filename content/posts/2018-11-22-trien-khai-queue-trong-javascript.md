@@ -3,6 +3,7 @@ date: "2018-11-22T22:30:58Z"
 template: "post"
 cover: "../images/trien-khai-queue-trong-javascript-completejavascript.com-1.png"
 keywords: "triển khai Queue trong JavaScript"
+description: "Tiếp tục ý tưởng từ bài viết Triển khai Stack trong JavaScript với Array, Object hay Map, bài viết này sẽ tiếp tục triển khai Queue trong JavaScript."
 slug: trien-khai-queue-trong-javascript
 title: "Triển khai Queue trong JavaScript"
 categories:

@@ -3,6 +3,7 @@ date: "2018-07-28T02:49:59Z"
 template: "post"
 cover: "../images/lam-tuong-tai-hai-ve-react-completejavascript.com_.png"
 keywords: "lầm tưởng tai hại về React"
+description: "Một lầm tưởng tai hại về React là: trước khi học React phải biết về Nodejs và muốn deploy ứng dụng sử dụng React thì phải kiếm server hỗ trợ Nodejs."
 slug: lam-tuong-tai-hai-ve-react
 title: "Lầm tưởng tai hại về React"
 categories:

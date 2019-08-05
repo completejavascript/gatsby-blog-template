@@ -3,6 +3,7 @@ date: "2019-05-12T23:00:52Z"
 template: "post"
 cover: "../images/xu-ly-bat-dong-bo-song-song-hay-tuan-tu-completejavascript.com_.png"
 keywords: "xử lý bất đồng bộ song song"
+description: "Khi bạn có một chuỗi các hành động thì câu hỏi đặt ra là: bạn sẽ xử lý chúng như thế nào? Bạn quyết định xử lý bất đồng bộ song song hay tuần tự?"
 slug: xu-ly-bat-dong-bo-song-song-tuan-tu
 title: "Xử lý bất đồng bộ song song hay tuần tự?"
 categories:

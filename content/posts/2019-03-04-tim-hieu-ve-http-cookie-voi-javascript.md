@@ -3,6 +3,7 @@ date: "2019-03-04T23:00:08Z"
 template: "post"
 cover: "../images/tim-hieu-http-cookie-voi-javascript-completejavascript.com_.png"
 keywords: "HTTP Cookie"
+description: "Bài viết này mình sẽ tìm hiểu về HTTP Cookie, cách thao tác với Cookie từ client và server, một số cài đặt giúp cho HTTP Cookie trở nên an toàn hơn."
 slug: tim-hieu-ve-http-cookie-voi-javascript
 title: "Tìm hiểu về HTTP Cookie với JavaScript"
 categories:

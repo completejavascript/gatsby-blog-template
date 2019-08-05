@@ -3,6 +3,7 @@ date: "2018-11-03T22:30:57Z"
 template: "post"
 cover: "../images/cai-dat-mongo-db-tren-windows-moi-nhat-completejavascript.com_.png"
 keywords: "cài đặt mongodb trên windows"
+description: "Bài viết này mình sẽ không đi vào giải thích chi tiết về MongoDB. Mà chỉ đơn giản là sẽ chia sẻ cách cài đặt MongoDB trên Windows mới nhất năm 2018."
 slug: cai-dat-mongodb-tren-windows-moi-nhat
 title: "Cài đặt MongoDB trên Windows mới nhất"
 categories:

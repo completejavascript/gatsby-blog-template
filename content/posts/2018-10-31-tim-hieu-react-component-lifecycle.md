@@ -3,6 +3,7 @@ date: "2018-10-31T22:30:03Z"
 template: "post"
 cover: "../images/tim-hieu-react-component-lifecycle-completejavascript.com_.png"
 keywords: "react component lifecycle"
+description: "Bạn có biết các phương thức trong React Component Lifecycle hay chưa? Chúng được gọi khi nào và chúng được sử dụng để làm gì?"
 slug: tim-hieu-react-component-lifecycle
 title: "Tìm hiểu React Component Lifecycle"
 categories:

@@ -3,6 +3,7 @@ date: "2018-09-27T12:30:31Z"
 template: "post"
 cover: "../images/trien-khai-lazy-loading-image-trong-react-completejavascript.com_-1.png"
 keywords: "triển khai Lazy Loading Image trong React"
+description: "Lazy Loading Image là một phương pháp rất hay. Vì vậy, bài viết này sẽ giúp bạn hiểu được tư tưởng chính và cách triển khai Lazy Loading Image trong React."
 slug: trien-khai-lazy-loading-image-trong-react
 title: "Triển khai Lazy Loading Image trong React"
 categories:

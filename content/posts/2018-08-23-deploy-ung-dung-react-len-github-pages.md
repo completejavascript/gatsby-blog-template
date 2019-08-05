@@ -3,6 +3,7 @@ date: "2018-08-23T13:55:27Z"
 template: "post"
 cover: "../images/tao-va-deploy-ung-dung-react-len-github-pages-create-react-app-completejavascript.com_.png"
 keywords: "deploy ứng dụng react"
+description: "Các bước cơ bản và đơn giản để tạo và deploy ứng dụng React lên Github Pages. Bạn chỉ cần làm theo đảm bảo sẽ deploy ứng dụng React thành công."
 slug: deploy-ung-dung-react-len-github-pages
 title: "Tạo và deploy ứng dụng React lên Github Pages"
 categories:
