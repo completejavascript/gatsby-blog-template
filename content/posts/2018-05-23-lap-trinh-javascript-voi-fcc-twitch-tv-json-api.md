@@ -7,10 +7,10 @@ slug: lap-trinh-javascript-voi-fcc-twitch-tv-json-api
 title: "Lập trình JavaScript với FCC - Use the Twitch.tv JSON API"
 categories:
   - JavaScript Tutorial
+  - Lập trình JavaScript với FCC
 tags:
   - API
   - ES6
-  - Lập trình JavaScript với FCC
   - Template
 ---
 

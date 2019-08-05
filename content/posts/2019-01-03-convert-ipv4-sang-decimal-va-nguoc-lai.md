@@ -7,9 +7,9 @@ slug: convert-ipv4-sang-decimal-va-nguoc-lai
 title: "Convert IPv4 sang Decimal và ngược lại"
 categories:
   - Thủ thuật JavaScript
+  - Vanilla Js Snippets
 tags:
   - ES6
-  - Vanilla Js Snippets
 ---
 
 Chào bạn! Năm mới 2019, mình chúc bạn mạnh khỏe và đạt được tất cả các mục tiêu đã đặt ra... Trong năm 2019, mình cố gắng tìm hiểu, giải quyết và tổng hợp lại những thủ thuật JavaScript hay dùng. Và bài đầu tiên hôm nay, mình sẽ viết về cách convert IPv4 sang Decimal và sau đó là convert ngược lại từ Decimal sang IPv4.

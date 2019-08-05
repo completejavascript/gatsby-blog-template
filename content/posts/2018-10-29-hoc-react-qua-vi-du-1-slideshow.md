@@ -7,10 +7,10 @@ slug: hoc-react-qua-vi-du-1-slideshow
 title: "Học React qua ví dụ #1: Slideshow"
 categories:
   - Thư viện và Framework JavaScript
+  - Học React qua ví dụ
 tags:
   - Create-react-app
   - Event
-  - Học React qua ví dụ
   - React
 ---
 

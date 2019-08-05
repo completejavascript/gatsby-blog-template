@@ -7,9 +7,9 @@ slug: hoc-react-qua-vi-du-9-draggable-note
 title: "Học React qua ví dụ #9: Draggable Note"
 categories:
   - Thư viện và Framework JavaScript
+  - Học React qua ví dụ
 tags:
   - Create-react-app
-  - Học React qua ví dụ
   - React
 ---
 

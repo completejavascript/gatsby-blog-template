@@ -7,10 +7,10 @@ slug: lap-trinh-javascript-voi-fcc-build-a-tribute-page
 title: "Lập trình JavaScript với FCC - Build a Tribute Page"
 categories:
   - JavaScript Tutorial
+  - Lập trình JavaScript với FCC
 tags:
   - Event
   - jQuery
-  - Lập trình JavaScript với FCC
 ---
 
 Có thể bạn đã nghe thấy câu **_practice makes perfect_** rồi. Tuy nhiên, có một câu mà mình thấy đúng hơn cả. Đó là **_perfect practice makes perfect_**. Câu đó nói rằng, nếu bạn có một chiến thuật thực hành hoàn hảo, thì bạn sẽ trở nên hoàn hảo. Vì vậy, gần đây mình đã tìm và thấy một trang web rất hay, là [freecodecamp.org](https://www.freecodecamp.org/). Mình đang thực hành và sẽ chia sẻ lại với bạn. Bài viết này nói về project đầu tiên **_Build a tribute page_** thuộc chuyên mục **Basic Front End**.

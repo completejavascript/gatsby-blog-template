@@ -7,9 +7,9 @@ slug: hoc-react-qua-vi-du-6-tab-content
 title: "Học React qua ví dụ #6: Tab Content"
 categories:
   - Thư viện và Framework JavaScript
+  - Học React qua ví dụ
 tags:
   - Create-react-app
-  - Học React qua ví dụ
   - React
 ---
 

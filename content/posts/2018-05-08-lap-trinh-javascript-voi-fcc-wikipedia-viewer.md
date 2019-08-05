@@ -7,6 +7,7 @@ slug: lap-trinh-javascript-voi-fcc-wikipedia-viewer
 title: "Lập trình JavaScript với FCC - Wikipedia Viewer"
 categories:
   - JavaScript Tutorial
+  - Lập trình JavaScript với FCC
 tags:
   - AJAX
   - CORS
@@ -14,7 +15,6 @@ tags:
   - DOM
   - ES6
   - Event
-  - Lập trình JavaScript với FCC
   - Template
 ---
 

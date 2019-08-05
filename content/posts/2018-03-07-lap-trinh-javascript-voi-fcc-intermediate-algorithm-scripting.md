@@ -7,7 +7,6 @@ slug: lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting
 title: "Lập trình JavaScript với FCC - Intermediate Algorithm Scripting"
 categories:
   - Thủ thuật JavaScript
-tags:
   - Lập trình JavaScript với FCC
 ---
 

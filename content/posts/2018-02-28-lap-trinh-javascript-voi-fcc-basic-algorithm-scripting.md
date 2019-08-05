@@ -7,7 +7,6 @@ slug: lap-trinh-javascript-voi-fcc-basic-algorithm-scripting
 title: "Lập trình JavaScript với FCC - Basic Algorithm Scripting"
 categories:
   - Thủ thuật JavaScript
-tags:
   - Lập trình JavaScript với FCC
 ---
 

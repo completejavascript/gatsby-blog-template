@@ -7,9 +7,9 @@ slug: hoc-react-qua-vi-du-7-collapsible-content
 title: "Học React qua ví dụ #7: Collapsible Content"
 categories:
   - Thư viện và Framework JavaScript
+  - Học React qua ví dụ
 tags:
   - Create-react-app
-  - Học React qua ví dụ
   - React
 ---
 

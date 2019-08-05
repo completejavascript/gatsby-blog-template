@@ -1,0 +1,5 @@
+# Redirects from what the browser requests to what we serve
+# https://www.netlify.com/docs/redirects/
+/tag/hoc-react-qua-vi-du/                        /category/hoc-react-qua-vi-du/
+/tag/lap-trinh-javascript-voi-fcc/               /category/lap-trinh-javascript-voi-fcc/
+/tag/vanilla-js-snippets/                        /category/vanilla-js-snippets/

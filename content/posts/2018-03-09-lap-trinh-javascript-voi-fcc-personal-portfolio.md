@@ -7,9 +7,9 @@ slug: lap-trinh-javascript-voi-fcc-personal-portfolio
 title: "Lập trình JavaScript với FCC – Personal Portfolio"
 categories:
   - JavaScript Tutorial
+  - Lập trình JavaScript với FCC
 tags:
   - jQuery
-  - Lập trình JavaScript với FCC
   - Mustache.js
   - Template
 ---

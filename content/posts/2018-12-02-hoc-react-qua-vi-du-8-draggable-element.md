@@ -7,9 +7,9 @@ slug: hoc-react-qua-vi-du-8-draggable-element
 title: "Học React qua ví dụ #8: Draggable Element"
 categories:
   - Thư viện và Framework JavaScript
+  - Học React qua ví dụ
 tags:
   - Create-react-app
-  - Học React qua ví dụ
   - React
 ---
 

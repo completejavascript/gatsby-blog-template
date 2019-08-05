@@ -7,10 +7,10 @@ slug: hoc-react-qua-vi-du-2-slideshow-gallery
 title: "Học React qua ví dụ #2: Slideshow Gallery"
 categories:
   - Thư viện và Framework JavaScript
+  - Học React qua ví dụ
 tags:
   - Create-react-app
   - Event
-  - Học React qua ví dụ
   - React
 ---
 

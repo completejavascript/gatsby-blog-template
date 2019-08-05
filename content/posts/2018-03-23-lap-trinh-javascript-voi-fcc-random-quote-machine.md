@@ -7,12 +7,12 @@ slug: lap-trinh-javascript-voi-fcc-random-quote-machine
 title: "Lập trình JavaScript với FCC - Random Quote Machine"
 categories:
   - JavaScript Tutorial
+  - Lập trình JavaScript với FCC
 tags:
   - AJAX
   - API
   - CSS
   - jQuery
-  - Lập trình JavaScript với FCC
 ---
 
 Tiếp tục series lập trình JavaScript với FCC, hôm nay mình sẽ giới thiệu một project thuộc chuyên mục Intermediate Front-End là **Random Quote Machine**. Nhưng khác các bài viết trước, lần này mình muốn chia sẻ quy trình từng bước thực hiện, bắt đầu từ phân tích yêu cầu bài toán, thiết kế UX/UI và xử lý logic trong JavaScript.

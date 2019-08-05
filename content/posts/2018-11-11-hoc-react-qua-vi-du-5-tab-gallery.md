@@ -7,9 +7,9 @@ slug: hoc-react-qua-vi-du-5-tab-gallery
 title: "Học React qua ví dụ #5: Tab Gallery"
 categories:
   - Thư viện và Framework JavaScript
+  - Học React qua ví dụ
 tags:
   - Create-react-app
-  - Học React qua ví dụ
   - React
 ---
 
