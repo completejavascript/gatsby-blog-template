@@ -1,8 +1,8 @@
 ---
 date: "2018-10-24T22:30:40Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/tao-dark-theme-voi-css-variable-completejavascript.com_.png"
+keywords: "tạo dark theme với css variable"
 slug: tao-dark-theme-voi-css-variable
 title: "Tạo Dark Theme với CSS Variable"
 categories:
@@ -31,25 +31,25 @@ Việc sử dụng biến số có những ưu điểm là bạn có thể đị
 
 ### Cách sử dụng cơ bản
 
-Mọi CSS variable đều bắt đầu bằng hai dấu gạch ngang (--) và phải đặt trong một **element** nào đó. Ví dụ: _body, div, .class_bat_ky,..._
+Mọi CSS variable đều bắt đầu bằng hai dấu gạch ngang (--) và phải đặt trong một **element** nào đó. Ví dụ: *body, div, .class\_bat\_ky,...*
 
 Ví dụ phần khai báo CSS variable:
 
-```
+```css
 element {
-      --main-bg-color: #000;
-    }
+  --main-bg-color: #000;
+}
 ```
 
 Để dụng biến số này, bạn sử dụng function [var()](https://developer.mozilla.org/en-US/docs/Web/CSS/var) với tham số là CSS variable. Ví dụ:
 
-```
+```css
 element {
-      background-color: var(--main-bg-color);
-    }
+  background-color: var(--main-bg-color);
+}
 ```
 
-Ngoài ra, nếu bạn muốn sử dụng CSS variable ở mọi nơi trên trang web, bạn có thể khai báo chúng ở `:root` - phần tử cấp cao nhất trong [DOM tree](/co-ban-ve-dom-javascript/).
+Ngoài ra, nếu bạn muốn sử dụng CSS variable ở mọi nơi trên trang web, bạn có thể khai báo chúng ở <code>:root</code> - phần tử cấp cao nhất trong [DOM tree](/co-ban-ve-dom-javascript/).
 
 Để biết thêm về các tính chất của CSS variable bạn có thể tham khảo thêm tại các bài viết sau:
 
@@ -62,50 +62,55 @@ Ngoài ra, nếu bạn muốn sử dụng CSS variable ở mọi nơi trên tran
 
 Giả sử mình có một file _index.html_ với nội dung phần body như này:
 
-```
+```html
 <body>
-      <div class="option">
-        <span class="btn">Dark</span>
-        <span class="btn active">Light</span>
-      </div>
+  <div class="option">
+    <span class="btn">Dark</span>
+    <span class="btn active">Light</span>
+  </div>
 
-      <main>
-        <header>
-          <h1>Exercitation ullamco laboris nisi ut aliquip commodo.
-        </header>
+  <main>
+    <header>
+      <h1>Exercitation ullamco laboris nisi ut aliquip commodo.
+    </header>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris,
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
 
-        <p>in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </main>
-    </body>
+    <p>in reprehenderit in voluptate velit esse cillum dolore eu,
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </main>
+</body>
 ```
 
 Giao diện mặc định ban đầu là kiểu **Light**.
 
 Để thay đổi giao diện sang kiểu **Dark**, mình sẽ thêm một class với tên "dark" vào _body_ - vì _body_ là cấp cao nhất chứa nội dung trang web.
 
-```
+```html
 <body class="dark">
-      <!-- Nội dung không thay đổi -->
-    </body>
+  <!-- Nội dung không thay đổi -->
+</body>
 ```
 
 Dĩ nhiên, việc thêm hay không thêm _class_, mình áp dụng thông qua 2 button _Dark_, _Light_ - bên trên cùng của _body_.
 
 Ví dụ sử dụng jQuery:
 
-```
+```js
 $(document).ready(function() {
-      const $body = $("body");
-      const $btns = $(".btn");
+  const $body = $("body");
+  const $btns = $(".btn");
 
-      $btns.on("click", function() {
-        $btns.removeClass("active");
-        $(this).addClass("active");
-        $body.toggleClass("dark");
-      });
-    });
+  $btns.on("click", function() {
+    $btns.removeClass("active");
+    $(this).addClass("active");
+    $body.toggleClass("dark");
+  });
+});
 ```
 
 Tiếp theo là việc thay đổi style.
@@ -114,55 +119,55 @@ Tiếp theo là việc thay đổi style.
 
 Giả sử, giao diện Light theme ban đầu có style như sau:
 
-```
+```css
 * { box-sizing: border-box;}
-    body {
-      margin: 0;
-      padding: 15px;
-      font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-      color: #222;
-      background-color: #e8edec;
-    }
-    main {
-      width: 100%;
-      max-width: 40rem;
-      margin: 15px auto;
-      padding: 15px;
-      background-color: #fff;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    }
-    .option {font-size: 0.8rem;}
-    .btn {
-      padding: 5px 10px;
-      background-color: #e8edec;
-    }
-    .btn.active {
-      background-color: #222;
-      color: #fff;
-    }
-    .btn:not(.active):hover {cursor: pointer;}
+body {
+  margin: 0;
+  padding: 15px;
+  font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+  color: #222;
+  background-color: #e8edec;
+}
+main {
+  width: 100%;
+  max-width: 40rem;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.option {font-size: 0.8rem;}
+.btn {
+  padding: 5px 10px;
+  background-color: #e8edec;
+}
+.btn.active {
+  background-color: #222;
+  color: #fff;
+}
+.btn:not(.active):hover {cursor: pointer;}
 ```
 
 Với Dark theme, mình phải đặt tất cả element cần thay đổi vào bên trong class "dark" để tuỳ chỉnh:
 
-```
+```css
 .dark {
-      color: #e8edec;
-      background-color: #222;
-    }
-    .dark main {
-      background-color: #000;
-      box-shadow: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
-      -webkit-box-shadow: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
-      -moz-box-shadow: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
-    }
-    .dark .btn {background-color: #222;}
-    .dark .btn.active {
-      background-color: #fff;
-      color: #000;
-    }
+  color: #e8edec;
+  background-color: #222;
+}
+.dark main {
+  background-color: #000;
+  box-shadow: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
+}
+.dark .btn {background-color: #222;}
+.dark .btn.active {
+  background-color: #fff;
+  color: #000;
+}
 ```
 
 Rõ ràng là có bao nhiêu phần tử cần thay đổi thì mình cần phải đặt bấy nhiêu phần tử vào bên trong class _dark_ để tuỳ biến. Như vậy, vừa bị lặp code, mà mỗi khi muốn thay đổi thì sẽ rất vất vả.
@@ -180,85 +185,85 @@ _Nếu bạn đã từng hard-code thì sẽ hiểu điều này!!!_
 
 Đầu tiên, mình phải xác định những thành phần sẽ sử dụng làm biến số để định nghĩa nó trong _body_. Khi đó, thẻ _body_ được định nghĩa như sau:
 
-```
+```css
 body {
-      --primary-color: #222;
-      --primary-bg-color: #e8edec;
-      --main-txt-color: #222;
-      --main-bg-color: #fff;
-      --active-txt-color: #fff;
-      --shadow-style: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --primary-color: #222;
+  --primary-bg-color: #e8edec;
+  --main-txt-color: #222;
+  --main-bg-color: #fff;
+  --active-txt-color: #fff;
+  --shadow-style: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
-      margin: 0;
-      padding: 15px;
-      font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
-      color: var(--primary-color);
-      background-color: var(--primary-bg-color);
-    }
+  margin: 0;
+  padding: 15px;
+  font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+  color: var(--primary-color);
+  background-color: var(--primary-bg-color);
+}
 ```
 
 Mình định nghĩa CSS variable ở ngay phần đầu của _body_ rồi sử dụng ngay _--primary-color_ và _--primary-bg-color_ phía dưới.
 
 Để tạo Dark Theme với CSS variable, mình định nghĩa lại giá trị của các biến số như sau:
 
-```
+```css
 body.dark {
-      --primary-color: #e8edec;
-      --primary-bg-color: #222;
-      --main-txt-color: #e8edec;
-      --main-bg-color: #000;
-      --active-txt-color: #000;
-      --shadow-style: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
-    }
+  --primary-color: #e8edec;
+  --primary-bg-color: #222;
+  --main-txt-color: #e8edec;
+  --main-bg-color: #000;
+  --active-txt-color: #000;
+  --shadow-style: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
+}
 ```
 
 Rõ ràng, tất cả các biến số đã tập trung ở một nơi. Khi cần thay đổi giao diện thì mình chỉ cần thay đổi giá trị của biến số ở đây là được.
 
 Rồi khi muốn thêm giao diện mới, mình chỉ cần định nghĩa thêm như sau:
 
-```
+```css
 body.custom {
-      /* Định nghĩa giá trị của biến số tại đây */
-    }
+  /* Định nghĩa giá trị của biến số tại đây */
+}
 ```
 
 **Bây giờ sử dụng biến số này thế nào?**
 
 Vì mình đã định nghĩa CSS variable rồi nên phần main không cần phải lặp lại nhiều nữa, mà chỉ cần sử dụng như sau:
 
-```
+```css
 main {
-      width: 100%;
-      max-width: 40rem;
-      margin: 15px auto;
-      padding: 15px;
-      background-color: var(--main-bg-color);
-      color: var(--main-txt-color);
-      box-shadow: var(--shadow-style);
-      -webkit-box-shadow: var(--shadow-style);
-      -moz-box-shadow: var(--shadow-style);
-    }
-    .option {font-size: 0.8rem;}
-    .btn {
-      padding: 5px 10px;
-      background-color: var(--primary-bg-color);
-    }
-    .btn.active {
-      background-color: var(--primary-color);
-      color: var(--active-txt-color);
-    }
-    .btn:not(.active):hover {cursor: pointer;}
+  width: 100%;
+  max-width: 40rem;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  box-shadow: var(--shadow-style);
+  -webkit-box-shadow: var(--shadow-style);
+  -moz-box-shadow: var(--shadow-style);
+}
+.option {font-size: 0.8rem;}
+.btn {
+  padding: 5px 10px;
+  background-color: var(--primary-bg-color);
+}
+.btn.active {
+  background-color: var(--primary-color);
+  color: var(--active-txt-color);
+}
+.btn:not(.active):hover {cursor: pointer;}
 ```
 
 ## Demo
 
 ### Demo tạo dark theme không sử dụng css variable
 
-[codepen_embed height="500" theme_id="0" slug_hash="bmYVjR" default_tab="css,result" user="completejavascript"]See the Pen [Switch Dark / Light Mode WITHOUT CSS variable](https://codepen.io/completejavascript/pen/bmYVjR/) by Lam Pham ([@completejavascript](https://codepen.io/completejavascript)) on [CodePen](https://codepen.io).[/codepen_embed]
+https://codepen.io/completejavascript/pen/bmYVjR
 
 ### Demo tạo dark theme với css variable
 
-[codepen_embed height="500" theme_id="0" slug_hash="PyONOg" default_tab="css,result" user="completejavascript"]See the Pen [Switch Dark / Light Mode WITH CSS variable](https://codepen.io/completejavascript/pen/PyONOg/) by Lam Pham ([@completejavascript](https://codepen.io/completejavascript)) on [CodePen](https://codepen.io).[/codepen_embed]
+https://codepen.io/completejavascript/pen/PyONOg
 
 ## Lời kết
 

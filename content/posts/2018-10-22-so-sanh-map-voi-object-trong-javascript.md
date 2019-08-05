@@ -1,8 +1,8 @@
 ---
 date: "2018-10-22T22:30:12Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/so-sanh-map-voi-object-trong-javascript.png"
+keywords: "so sánh map với object"
 slug: so-sanh-map-voi-object-trong-javascript
 title: "So sánh Map với Object trong JavaScript"
 categories:
@@ -39,122 +39,124 @@ Trước khi Map xuất hiện, người ta vẫn thường sử dụng Object c
 
 Object chỉ cho phép lưu trữ **key** kiểu [String](/values-types-va-operators-trong-javascript-phan-2/) hoặc [Symbol](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
 
-```
+```js
 const symbol1 = Symbol(1);
-    const obj = {
-      x : 1,
-      "a b" : 2,
-      symbol1 : 3
-    };
-    console.log(obj);
-    // => {x: 1, a b: 2, symbol1: 3}
+const obj = {
+  x : 1,
+  "a b" : 2,
+  symbol1 : 3
+};
+console.log(obj);
+// => {x: 1, a b: 2, symbol1: 3}
 ```
 
 Trong khi đó, Map cho phép **mọi kiểu dữ liệu** có thể làm key, kể cả [Number](/values-types-va-operators-trong-javascript-phan-1/), NaN, [Function](/tim-hieu-function-javascript/), Object,...
 
-```
+```js
 const fun = function () {}
-    const set = new Set();
-    const map = new Map();
-    map.set(NaN, 1)
-       .set(1, 2)
-       .set("a", 3)
-       .set([2], 4)
-       .set({x : 3}, 5)
-       .set(fun, 6)
-       .set(set, 7);
+const set = new Set();
+const map = new Map();
+map.set(NaN, 1)
+    .set(1, 2)
+    .set("a", 3)
+    .set([2], 4)
+    .set({x : 3}, 5)
+    .set(fun, 6)
+    .set(set, 7);
 
-    // Map(7) {NaN => 1, 1 => 2, "a" => 3, [2] => 4, {x : 3} => 5, function() {} => 6, Set(0) => 7}
+// Map(7) {
+//  NaN => 1, 1 => 2, "a" => 3, [2] => 4, {x : 3} => 5, function() {} => 6, Set(0) => 7
+// }
 ```
 
 #### Thứ tự của key
 
 Map duy trì thứ tự của key giống như khi nó được thêm vào.
 
-```
+```js
 const map = new Map();
-    map.set('xyz', 1);
-    map.set('b', 2);
-    map.set('1', 4);
+map.set('xyz', 1);
+map.set('b', 2);
+map.set('1', 4);
 
-    for(const key of map.keys()) {
-      console.log(key);
-    }
-    /*
-    * xyz
-    * b
-    * 1
-    */
+for(const key of map.keys()) {
+  console.log(key);
+}
+/*
+* xyz
+* b
+* 1
+*/
 ```
 
 Object thì không đảm bảo thứ tự này.
 
-```
+```js
 const obj = { xyz : 1 };
-    obj.b = 2;
-    obj['1'] = 4;
-    for(const key in obj) {
-      console.log(key);
-    }
-    /*
-    * 1
-    * xyz
-    * b
-    */
+obj.b = 2;
+obj['1'] = 4;
+for(const key in obj) {
+  console.log(key);
+}
+/*
+* 1
+* xyz
+* b
+*/
 ```
 
 #### Xác định kích thước
 
 Bạn có thể lấy kích thước của Map thông qua thuộc tính _size_.
 
-```
+```js
 const map = new Map();
-    map.set('xyz', 1);
-    map.set('b', 2);
-    map.set('1', 4);
+map.set('xyz', 1);
+map.set('b', 2);
+map.set('1', 4);
 
-    console.log(map.size);
-    // => 3
+console.log(map.size);
+// => 3
 ```
 
 Đối với Object, bạn phải đếm số lượng các thuộc tính thủ công. Hoặc bạn cũng có thể tính được số lượng này thông qua phương thức [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys).
 
 Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tính của Object. Lúc này, bạn chỉ cần sử dụng thuộc tính _length_ của [Array](/javascript-array-co-ban/) là được.
 
-```
+```js
 const obj = { xyz : 1 };
-    obj.b = 2;
-    obj['1'] = 4;
+obj.b = 2;
+obj['1'] = 4;
 
-    let size = 0;
-    for (const key in obj) size++;
-    console.log(size);
-    // => 3
+let size = 0;
+for (const key in obj) size++;
+console.log(size);
+// => 3
 
-    console.log(Object.keys(obj).length);
-    // => 3
+console.log(Object.keys(obj).length);
+// => 3
 ```
 
 #### Kiểm tra tính tồn tại của key
 
 Để kiểm tra xem một key có tồn tại trong Map hay chưa, bạn có thể dùng phương thức có sẵn là _has_.
 
-```
+```js
 const map = new Map([["a", 1], ["b", 2]]);
-    console.log(map.has("a")); // => true
-    console.log(map.has("c")); // => false
+console.log(map.has("a")); // => true
+console.log(map.has("c")); // => false
 ```
 
 Còn đối với Object, bạn phải sử dụng gián tiếp thông qua phương thức _Object.keys()_ như bên trên.
 
-```
+```js
 const obj = { "a" : 1, "b" : 2 };
-    const hasKey = (obj, key) => Object.keys(obj).indexOf(key) !== -1;
-    console.log(hasKey(obj, "a")); // => true
-    console.log(hasKey(obj, "c")); // => false
+const hasKey = (obj, key) => Object.keys(obj).indexOf(key) !== -1;
+console.log(hasKey(obj, "a")); // => true
+console.log(hasKey(obj, "c")); // => false
 ```
 
-Trong đó, hàm _hasKey_ là do mình tự định nghĩa. Và bạn có thể thấy là `Object.keys(obj)` trả về một mảng chứa các property của _obj_.
+Trong đó, hàm _hasKey_ là do mình tự định nghĩa. Và bạn có thể thấy là <code>Object.keys(obj)</code> trả về một mảng chứa các property của _obj_.
 
 Tiếp theo, mình sử dụng phương thức [Array.prototype.indexOf()](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) để kiểm tra xem key đã tồn tại trong mảng hay chưa.
 
@@ -164,48 +166,48 @@ Hay nói cách khác, nếu index tìm được mà khác -1 thì key đang tìm
 
 #### Duyệt qua các phần tử
 
-Bạn có thể duyệt qua các phần tử của Map (để lấy _key_, _value_ hoặc _entry_) một cách trực tiếp thông qua `for...of`.
+Bạn có thể duyệt qua các phần tử của Map (để lấy _key_, _value_ hoặc _entry_) một cách trực tiếp thông qua <code>for...of</code>.
 
 _Entry là một phần tử của Map, có dạng mảng [key, value]_.
 
-```
+```js
 const map = new Map([["a", 1], ["b", 2]]);
-    for (const key of map.keys()) {
-      console.log(key);
-    }
-    /*
-    * a
-    * b
-    */
+for (const key of map.keys()) {
+  console.log(key);
+}
+/*
+* a
+* b
+*/
 
-    for (const value of map.values()) {
-      console.log(value);
-    }
-    /*
-    * 1
-    * 2
-    */
+for (const value of map.values()) {
+  console.log(value);
+}
+/*
+* 1
+* 2
+*/
 
-    for (const [key, value] of map) {
-      console.log(key, value);
-    }
-    /*
-    * a 1
-    * b 2
-    */
+for (const [key, value] of map) {
+  console.log(key, value);
+}
+/*
+* a 1
+* b 2
+*/
 ```
 
 Ngược lại, với Object, bạn chỉ có thể duyệt qua các _key_, sau đó mới lấy _value_ thông qua _key_.
 
-```
+```js
 const obj = { "a" : 1, "b" : 2 };
-    for (const key in obj) {
-      console.log(key, obj[key]);
-    }
-    /*
-    * a 1
-    * b 2
-    */
+for (const key in obj) {
+  console.log(key, obj[key]);
+}
+/*
+* a 1
+* b 2
+*/
 ```
 
 ## Lời kết

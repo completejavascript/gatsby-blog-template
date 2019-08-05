@@ -1,8 +1,8 @@
 ---
 date: "2018-10-28T22:30:40Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/trien-khai-stack-voi-array-object-map-completejavascript.com_.png"
+keywords: "triển khai stack trong javascript"
 slug: trien-khai-stack-trong-javascript-voi-array-object-hay-map
 title: "Triển khai Stack trong JavaScript với Array, Object hay Map"
 categories:
@@ -39,8 +39,7 @@ Stack là một kiểu cấu trúc dữ liệu tuyến tính, tuân theo quy lu�
 
 Ví dụ như khi bạn xếp sách thành một chồng. Rõ ràng, cuốn sách xếp trước sẽ ở dưới cùng, nên nó sẽ phải ra sau cùng. Và cuốn sách xếp cuối cùng thì ở trên cùng, nên nó sẽ được lấy ra đầu tiên.
 
-![Minh họa về Last In, First Out trong Stack](/wp-content/uploads/2018/10/Capture-7-1.png)
-Minh họa về Last In, First Out trong Stack
+![Minh họa về Last In, First Out trong Stack](../images/Capture-7-1.png)
 
 ### Ứng dụng Stack trong lập trình
 
@@ -67,132 +66,132 @@ Một số phép toán cơ bản có thể làm trên Stack là:
 
 ### Triển khai Stack trong JavaScript với Array
 
-```
+```js
 class AStack {
-      constructor(capability) {
-        this.data = [];
-        this.capability = capability;
-      }
+  constructor(capability) {
+    this.data = [];
+    this.capability = capability;
+  }
 
-      isEmpty() {
-        return this.data.length === 0;
-      }
+  isEmpty() {
+    return this.data.length === 0;
+  }
 
-      isFull() {
-        return this.data.length === this.capability;
-      }
+  isFull() {
+    return this.data.length === this.capability;
+  }
 
-      push(item) {
-        if (this.isFull()) return false;
+  push(item) {
+    if (this.isFull()) return false;
 
-        this.data.push(item);
-        return true;
-      }
+    this.data.push(item);
+    return true;
+  }
 
-      pop() {
-        if (this.isEmpty()) return undefined;
-        return this.data.pop();
-      }
+  pop() {
+    if (this.isEmpty()) return undefined;
+    return this.data.pop();
+  }
 
-      peek() {
-        if (this.isEmpty()) return undefined;
-        return this.data[this.data.length - 1];
-      }
+  peek() {
+    if (this.isEmpty()) return undefined;
+    return this.data[this.data.length - 1];
+  }
 
-      clear() {
-        this.data.length = 0;
-      }
-    }
+  clear() {
+    this.data.length = 0;
+  }
+}
 ```
 
 ### Triển khai Stack trong JavaScript với Object
 
-```
+```js
 class OStack {
-      constructor(capability) {
-        this.data = {};
-        this.size = 0;
-        this.capability = capability;
-      }
+  constructor(capability) {
+    this.data = {};
+    this.size = 0;
+    this.capability = capability;
+  }
 
-      isEmpty() {
-        return this.size === 0;
-      }
+  isEmpty() {
+    return this.size === 0;
+  }
 
-      isFull() {
-        return this.size === this.capability;
-      }
+  isFull() {
+    return this.size === this.capability;
+  }
 
-      push(item) {
-        if (this.isFull()) return false;
+  push(item) {
+    if (this.isFull()) return false;
 
-        this.data[this.size] = item;
-        this.size++;
-        return true;
-      }
+    this.data[this.size] = item;
+    this.size++;
+    return true;
+  }
 
-      pop() {
-        if (this.isEmpty()) return undefined;
+  pop() {
+    if (this.isEmpty()) return undefined;
 
-        let item = this.data[this.size - 1];
-        delete this.data[this.size - 1];
-        this.size--;
-        return item;
-      }
+    let item = this.data[this.size - 1];
+    delete this.data[this.size - 1];
+    this.size--;
+    return item;
+  }
 
-      peek() {
-        if (this.isEmpty()) return undefined;
-        return this.data[this.size - 1];
-      }
+  peek() {
+    if (this.isEmpty()) return undefined;
+    return this.data[this.size - 1];
+  }
 
-      clear() {
-        while(!this.isEmpty()) this.pop();
-        this.size = 0;
-      }
-    }
+  clear() {
+    while(!this.isEmpty()) this.pop();
+    this.size = 0;
+  }
+}
 ```
 
 ### Triển khai Stack trong JavaScript với Map
 
-```
+```js
 class MStack {
-      constructor(capability) {
-        this.data = new Map();
-        this.capability = capability;
-      }
+  constructor(capability) {
+    this.data = new Map();
+    this.capability = capability;
+  }
 
-      isEmpty() {
-        return this.data.size === 0;
-      }
+  isEmpty() {
+    return this.data.size === 0;
+  }
 
-      isFull() {
-        return this.data.size === this.capability;
-      }
+  isFull() {
+    return this.data.size === this.capability;
+  }
 
-      push(item) {
-        if (this.isFull()) return false;
+  push(item) {
+    if (this.isFull()) return false;
 
-        this.data.set(this.data.size, item);
-        return true;
-      }
+    this.data.set(this.data.size, item);
+    return true;
+  }
 
-      pop() {
-        if (this.isEmpty()) return undefined;
+  pop() {
+    if (this.isEmpty()) return undefined;
 
-        let item = this.data.get(this.data.size - 1);
-        this.data.delete(this.data.size - 1);
-        return item;
-      }
+    let item = this.data.get(this.data.size - 1);
+    this.data.delete(this.data.size - 1);
+    return item;
+  }
 
-      peek() {
-        if (this.isEmpty()) return undefined;
-        return this.data.get(this.data.size - 1);
-      }
+  peek() {
+    if (this.isEmpty()) return undefined;
+    return this.data.get(this.data.size - 1);
+  }
 
-      clear() {
-        this.data.clear();
-      }
-    }
+  clear() {
+    this.data.clear();
+  }
+}
 ```
 
 ## So sánh hiệu năng 3 cách triển khai Stack trong JavaScript
@@ -201,37 +200,37 @@ class MStack {
 
 Để test 3 cách triển khai Stack trong JavaScript với Array, Object và Map, mình viết một đoạn code như sau:
 
-```
+```js
 const Capability = 50000000;
-    const TestCase = 10;
+const TestCase = 10;
 
-    // Test dành cho Array
-    const st = new AStack(Capability);
+// Test dành cho Array
+const st = new AStack(Capability);
 
-    /*
-    * // Test dành cho Object
-    * const st = new OStack(Capability);
-    *
-    * // Test dành cho Map
-    * const st = new MStack(Capability);
-    */
+/*
+* // Test dành cho Object
+* const st = new OStack(Capability);
+*
+* // Test dành cho Map
+* const st = new MStack(Capability);
+*/
 
-    const start = performance.now();
+const start = performance.now();
 
-    for (let tc = 0; tc < TestCase; tc++) {
-      for (let i = 0; i < Capability; i++) {
-        st.push(i);
-      }
+for (let tc = 0; tc < TestCase; tc++) {
+  for (let i = 0; i < Capability; i++) {
+    st.push(i);
+  }
 
-      for (let i = 0; i < Capability; i++) {
-        st.pop();
-      }
-    }
+  for (let i = 0; i < Capability; i++) {
+    st.pop();
+  }
+}
 
-    const end = performance.now();
-    const duration = (end - start) / TestCase;
+const end = performance.now();
+const duration = (end - start) / TestCase;
 
-    console.log(`Duration: ${duration} ms`);
+console.log(`Duration: ${duration} ms`);
 ```
 
 Ở đây, mình khởi tạo Stack với kích thước tối đa là **Capability = 50000000**. Kích thước này theo mình là hợp lý vì nếu kích thước Stack nhỏ quá thì kết quả có thể sẽ không chính xác lắm. Ngược lại, nếu kích thước tối đa mà quá lớn thì có thể làm cho trình duyệt hoặc máy bạn bị đơ vì thiếu bộ nhớ hoặc thời gian chạy quá lâu.
@@ -248,8 +247,7 @@ Mình thực hiện test trên Console của Google Chrome. Bạn có thể mở
 
 Nếu bạn test trên trình duyệt khác thì cũng tương tự.
 
-![](/wp-content/uploads/2018/10/console.png)
-Copy-paste code trực tiếp vào tab console trên DevTool Google Chrome
+![copy-paste code trực tiếp vào tab console](../images/console.png)
 
 Bạn chỉ cần copy-paste toàn bộ phần code (bao gồm code triển khai Stack và Code test) vào tab **Console** rồi nhấn Enter là được. Nhớ là nếu bạn test Stack với Array thì trong phần code test bạn phải khởi tạo Stack ứng với Array (**AStack**). Tương tự như Stack với Object (**OStack**) và Stack với Map (**MStack**).
 
