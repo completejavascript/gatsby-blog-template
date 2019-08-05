@@ -51,9 +51,9 @@ const config = {
   linksWidgetTitle: 'Liên Kết',
   // Use for Google custom search
   searchWidgetTitle: 'Bạn đang tìm gì?',
-  searchWidgetPlaceHolder: 'Tìm kiếm tùy chỉnh',
-  searchEngineID: '',
-  hasSearch: false,
+  searchWidgetPlaceHolder: 'Nhập từ khóa',
+  searchEngineID: 'partner-pub-7260245524211186:4187549499',
+  hasSearch: true,
   // Use for links widget
   sidebarLinks: [
     {
