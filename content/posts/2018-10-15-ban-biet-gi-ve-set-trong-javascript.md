@@ -1,8 +1,8 @@
 ---
 date: "2018-10-15T22:30:13Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/ban-biet-gi-ve-set-javascript-completejavascript.com_.png"
+keywords: "set trong javascript"
 slug: ban-biet-gi-ve-set-trong-javascript
 title: "Bạn biết gì về Set trong JavaScript?"
 categories:
@@ -13,7 +13,7 @@ tags:
 
 Set trong Javascript là một loại object cho phép bạn lưu trữ dữ liệu một cách duy nhất, không trùng lặp.
 
-"**Nói vậy thì ai chẳng nói được**". Có phải bạn đang suy nghĩ như vậy không?
+**Nói vậy thì ai chẳng nói được**. Có phải bạn đang suy nghĩ như vậy không?
 
 Dù có hay không thì mình tin chắc rằng có một số thứ bạn chưa hiểu rõ hết về Set trong JavaScript, cũng như những thứ bạn có thể làm với nó.
 
@@ -25,25 +25,27 @@ Tin mình đi và bắt đầu nhé!
 
 ## Set trong JavaScript là gì?
 
-Mình xin nhắc lại: "Set trong Javascript là một loại object cho phép bạn lưu trữ dữ liệu một cách duy nhất, không trùng lặp."
+Mình xin nhắc lại:
+
+> Set trong Javascript là một loại object cho phép bạn lưu trữ dữ liệu một cách duy nhất, không trùng lặp.
 
 Có 2 điều bạn cần chú ý ở đây.
 
 ### Set là một loại object
 
-Vì vậy mà `typeof <Set>` sẽ trả về `object` (cái này không phải ai cũng biết đâu nhé !!!).
+Vì vậy mà <code>typeof &lt;Set&gt;</code> sẽ trả về <code>object</code> (cái này không phải ai cũng biết đâu nhé !!!).
 
-```
+```js
 const set1 = new Set();
-    console.log(typeof set1);
-    // => object
+console.log(typeof set1);
+// => object
 ```
 
 Xem thêm:[JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
 
 ### Dữ liệu trong Set là duy nhất, không trùng lặp
 
-Vậy hiểu thế nào là _**duy nhất, không trùng lặp**_.
+Vậy hiểu thế nào là **duy nhất, không trùng lặp**.
 
 Nói nôm na thì nghĩa là "giá trị" của các phần tử không được giống nhau. Nhưng thực chất, Set sử dụng thuật toán [SameValueZero](https://tc39.github.io/ecma262/#sec-samevaluezero) để so sánh giá trị của các phần tử.
 
@@ -51,24 +53,24 @@ Thuật toán này cũng tương tự như việc sử dụng toán tử "===" �
 
 Vì vậy, cái mà mình nói ở trên chỉ đúng với [Number](/values-types-va-operators-trong-javascript-phan-1/) và [String](/values-types-va-operators-trong-javascript-phan-2/). Còn đối với Object thì khác. Bởi 2 object nhìn giống nhau nhưng rõ ràng chúng không bằng nhau:
 
-```
+```js
 const obj1 = { x: 1, y: 2};
-    const obj2 = { x: 1, y: 2};
+const obj2 = { x: 1, y: 2};
 
-    console.log(obj1 === obj2);
-    // => false
+console.log(obj1 === obj2);
+// => false
 
-    const set1 = new Set([obj1, obj2]);
-    console.log(set1.size);
-    // => 2
+const set1 = new Set([obj1, obj2]);
+console.log(set1.size);
+// => 2
 ```
 
-Ngoài ra, bạn cũng có thể lưu `NaN` và `undefined` vào Set trong JavaScript.
+Ngoài ra, bạn cũng có thể lưu <code>NaN</code> và <code>undefined</code> vào Set trong JavaScript.
 
-```
+```js
 const set2 = new Set([NaN, undefined, NaN]);
-    console.log(set2);
-    // => Set(2) {NaN, undefined}
+console.log(set2);
+// => Set(2) {NaN, undefined}
 ```
 
 Đọc đến đây thì chắc bạn đã hiểu Set là gì rồi phải không?
@@ -83,7 +85,7 @@ Khởi tạo Set là điều đầu tiên mà bạn cần làm nếu muốn sử
 
 Cú pháp khởi tạo Set trong Javascript là:
 
-```
+```js
 new Set([iterable]);
 ```
 
@@ -102,37 +104,37 @@ Mời bạn xem các ví dụ khởi tạo Set trong JavaScript.
 
 #### Khởi tạo Set rỗng
 
-```
+```js
 const set1 = new Set();
-    console.log(set1);
-    // => Set(0) {}
+console.log(set1);
+// => Set(0) {}
 ```
 
 #### Khởi tạo Set từ Array
 
-```
+```js
 const set2 = new Set([1, 2, "a", "b", 1]);
-    console.log(set2);
-    // => Set(4) {1, 2, "a", "b"}
+console.log(set2);
+// => Set(4) {1, 2, "a", "b"}
 ```
 
 #### Khởi tạo Set từ String
 
-```
+```js
 const set3 = new Set("abcba");
-    console.log(set3);
-    // => Set(3) {"a", "b", "c"}
+console.log(set3);
+// => Set(3) {"a", "b", "c"}
 ```
 
 #### Khởi tạo Set từ arguments
 
-```
+```js
 function func4() {
-      const set4 = new Set(arguments);
-      console.log(set4);
-    }
-    func4("a", "b", "c", "b", 0, 1);
-    // => Set(5) {"a", "b", "c", 0, 1}
+    const set4 = new Set(arguments);
+    console.log(set4);
+}
+func4("a", "b", "c", "b", 0, 1);
+// => Set(5) {"a", "b", "c", 0, 1}
 ```
 
 #### Khởi tạo Set từ NodeList
@@ -141,11 +143,11 @@ Kết quả của các phương thức liên quan đến DOM như [document.quer
 
 Ví dụ luôn tại console của trình duyệt:
 
-```
+```js
 const head = document.querySelectorAll("head");
-    const set1 = new Set(head);
-    console.log(set1);
-    // => Set(1) {head}
+const set1 = new Set(head);
+console.log(set1);
+// => Set(1) {head}
 ```
 
 #### Khởi tạo Set từ TypedArray
@@ -154,43 +156,43 @@ TypedArray là một kiểu object tương tự như Array.
 
 Và bạn cũng có thể sử dụng TypedArray để khởi tạo Set như sau:
 
-```
+```js
 const typedArray1 = new Int8Array(2);
-    typedArray1[0] = 12;
-    typedArray1[1] = 34;
+typedArray1[0] = 12;
+typedArray1[1] = 34;
 
-    const set1 = new Set(typedArray1);
-    console.log(set1);
-    // => Set(2) {12, 34}
+const set1 = new Set(typedArray1);
+console.log(set1);
+// => Set(2) {12, 34}
 ```
 
 #### Khởi tạo Set từ Map
 
-```
+```js
 const map1 = new Map();
-    map1.set("one", 1);
-    map1.set("two", 2);
+map1.set("one", 1);
+map1.set("two", 2);
 
-    const set1 = new Set(map1);
-    console.log(set1);
-    // => Set(2) {Array(2), Array(2)}
+const set1 = new Set(map1);
+console.log(set1);
+// => Set(2) {Array(2), Array(2)}
 
-    for (const x of set1) {
-      console.log(x);
-    }
-    /*
-    * ["one", 1]
-    * ["two", 2]
-    */
+for (const x of set1) {
+    console.log(x);
+}
+/*
+* ["one", 1]
+* ["two", 2]
+*/
 ```
 
 #### Khởi tạo Set từ Set
 
-```
+```js
 const set1 = new Set([1, 2]);
-    const set2 = new Set(set1);
-    console.log(set2);
-    // => Set(2) {1, 2}
+const set2 = new Set(set1);
+console.log(set2);
+// => Set(2) {1, 2}
 ```
 
 Trên đây là một số cách để khởi tạo Set.
@@ -201,7 +203,7 @@ Trên đây là một số cách để khởi tạo Set.
 
 Để thêm phần tử vào Set, bạn có thể sử dụng phương thức _add_ như sau:
 
-```
+```js
 Set.prototype.add(value)
 ```
 
@@ -212,19 +214,19 @@ Trong đó:
 
 Ví dụ:
 
-```
+```js
 const set1 = new Set();
-    set1.add(1);
-    console.log(set1);
-    // => Set(1) {1}
+set1.add(1);
+console.log(set1);
+// => Set(1) {1}
 
-    set1.add(2);
-    console.log(set1);
-    // => Set(2) {1, 2}
+set1.add(2);
+console.log(set1);
+// => Set(2) {1, 2}
 
-    set1.add(1).add(2).add(3);
-    console.log(set1);
-    // => Set(3) {1, 2, 3}
+set1.add(1).add(2).add(3);
+console.log(set1);
+// => Set(3) {1, 2, 3}
 ```
 
 Rõ ràng, việc trả về chính đối tượng Set sau khi _add_ giúp code trở trên ngắn gọn hơn nhiều.
@@ -235,34 +237,34 @@ Xem thêm: [Tìm hiểu kĩ thuật Method Chaining cơ bản](/tim-hieu-ki-thua
 
 Để lấy được số phần tử của Set trong JavaScript, bạn có thể sử dụng thuộc tính _size_.
 
-```
+```js
 const set1 = new Set(["a", "b", "a"]);
-    console.log(set1.size);
-    // => 2
+console.log(set1.size);
+// => 2
 ```
 
 ### Kiểm tra phần tử tồn tại trong Set
 
 Để kiểm tra xem một phần tử có tồn tại trong Set hay không, bạn có thể sử dụng phương thức _has_.
 
-```
+```js
 const set1 = new Set([1, "a", [1, 2]]);
-    console.log(set1.has(1));       // => true
-    console.log(set1.has("1"));     // => false
-    console.log(set1.has("a"));     // => true
-    console.log(set1.has("b"));     // => false
-    console.log(set1.has([1, 2]));  // => false
+console.log(set1.has(1));       // => true
+console.log(set1.has("1"));     // => false
+console.log(set1.has("a"));     // => true
+console.log(set1.has("b"));     // => false
+console.log(set1.has([1, 2]));  // => false
 ```
 
 Kết quả trên là hoàn toàn dễ hiểu phải không?
 
 Ở đây, mình chỉ muốn nhắc lại, Set sẽ sử dụng toán tử "===" để so sánh. Do đó:
 
-```
+```js
 console.log(1 === 1);           // => true
-    console.log(1 === "1");         // => false
-    console.log("a" === "a");       // => true
-    console.log([1, 2] === [1, 2]); // => false
+console.log(1 === "1");         // => false
+console.log("a" === "a");       // => true
+console.log([1, 2] === [1, 2]); // => false
 ```
 
 ### Xoá một phần tử trong Set
@@ -271,27 +273,27 @@ Bên trên là thêm phần tử vào Set, còn bây giờ là xóa phần tử 
 
 Ở đây, bạn có thể sử dụng phương thức _delete_.
 
-```
+```js
 const set1 = new Set("abcdcba");
-    console.log(set1); // => Set(4) {a, b, c, d}
+console.log(set1); // => Set(4) {a, b, c, d}
 
-    set1.delete("a");
-    console.log(set1); // => Set(4) {b, c, d}
+set1.delete("a");
+console.log(set1); // => Set(4) {b, c, d}
 
-    set1.delete("d");
-    console.log(set1); // => Set(2) {b, c}
+set1.delete("d");
+console.log(set1); // => Set(2) {b, c}
 ```
 
 ### Xoá tất cả phần tử trong Set
 
 Để xóa tất cả các phần tử trong Set, bạn có thể sử dụng phương thức _clear_. Khi đó, Set sẽ trở thành rỗng.
 
-```
+```js
 const set1 = new Set([1, 2, 3]);
-    console.log(set1);  // => Set(3) {1, 2, 3}
+console.log(set1);  // => Set(3) {1, 2, 3}
 
-    set1.clear();
-    console.log(set1);  // => Set(0) {}
+set1.clear();
+console.log(set1);  // => Set(0) {}
 ```
 
 ### Duyệt qua các phần tử trong Set
@@ -300,39 +302,39 @@ Việc duyệt qua các phần tử trong Set là cần thiết. Và Set có h�
 
 #### Sử dụng for of
 
-Như trong ví dụ phần định nghĩa Set, mình đã sử dụng `for of` để duyệt qua và liệt kê các phần tử trong Set.
+Như trong ví dụ phần định nghĩa Set, mình đã sử dụng <code>for of</code> để duyệt qua và liệt kê các phần tử trong Set.
 
-Nhắc lại ví dụ về `for of`:
+Nhắc lại ví dụ về <code>for of</code>:
 
-```
+```js
 const set1 = new Set(["a", { x : 1}, 1]);
-    for(const x of set1) {
-      console.log(x);
-    }
-    /*
-    * a
-    * { x : 1}
-    * 1
-    */
+for(const x of set1) {
+    console.log(x);
+}
+/*
+* a
+* { x : 1}
+* 1
+*/
 ```
 
 #### Sử dụng forEach
 
 Sử dụng _forEach_ trong Set cũng tương tự như [forEach trong Array](/javascript-foreach-la-cai-quai-gi/).
 
-```
+```js
 const set1 = new Set(["a", "b", "c"]);
-    console.log(set1);
-    // => Set(3) {"a", "b", "c"}
+console.log(set1);
+// => Set(3) {"a", "b", "c"}
 
-    set1.forEach(function(value) {
-      console.log(value);
-    });
-    /*
-    * a
-    * b
-    * c
-    */
+set1.forEach(function(value) {
+    console.log(value);
+});
+/*
+* a
+* b
+* c
+*/
 ```
 
 #### Sử dụng phương thức keys(), value(), entries()
@@ -343,44 +345,44 @@ Vì 3 phương thức này đều trả về iterable object, với mỗi phần
 
 Mà mình thấy cách sử dụng cũng tương tự như 2 phần trên.
 
-```
+```js
 const set1 = new Set(["a", { x : 1}, 1]);
 
-    for(const x of set1) {
-      console.log(x);
-    }
-    /*
-    * a
-    * { x : 1}
-    * 1
-    */
+for(const x of set1) {
+    console.log(x);
+}
+/*
+* a
+* { x : 1}
+* 1
+*/
 
-    for(const x of set1.keys()) {
-      console.log(x);
-    }
-    /*
-    * a
-    * { x : 1}
-    * 1
-    */
+for(const x of set1.keys()) {
+    console.log(x);
+}
+/*
+* a
+* { x : 1}
+* 1
+*/
 
-    for(const x of set1.values()) {
-      console.log(x);
-    }
-    /*
-    * a
-    * { x : 1}
-    * 1
-    */
+for(const x of set1.values()) {
+    console.log(x);
+}
+/*
+* a
+* { x : 1}
+* 1
+*/
 
-    for(const x of set1.entries()) {
-      console.log(x);
-    }
-    /*
-    * ["a", "a"]
-    * [{ x : 1}, { x : 1}]
-    * [1, 1]
-    */
+for(const x of set1.entries()) {
+    console.log(x);
+}
+/*
+* ["a", "a"]
+* [{ x : 1}, { x : 1}]
+* [1, 1]
+*/
 ```
 
 Có mỗi phần _entries()_ hơi khác một chút. Mỗi phần tử trong iterable object là một mảng gồm 2 phần tử giống nhau.
@@ -397,44 +399,44 @@ Thực tế, Set không hỗ trợ những phương thức này. Nhưng bạn ho
 
 Ví dụ:
 
-```
+```js
 const set1 = new Set([1, 2, 3, 4, 5]);
 
-    const arr1 = Array.from(set1);
-    console.log(arr1);
-    // => [1, 2, 3, 4, 5]
+const arr1 = Array.from(set1);
+console.log(arr1);
+// => [1, 2, 3, 4, 5]
 
-    const arr2 = [...set1];
-    console.log(arr2);
-    // => [1, 2, 3, 4, 5]
+const arr2 = [...set1];
+console.log(arr2);
+// => [1, 2, 3, 4, 5]
 ```
 
 Giả sử lúc này mình sử dụng phương thức [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) để lọc lấy những phần tử là số chẵn.
 
-```
+```js
 const arr3 = arr1.filter(x => x%2 === 0);
-    console.log(arr3);
-    // => (2) [2, 4]
+console.log(arr3);
+// => (2) [2, 4]
 ```
 
 Bây giờ, mình chuyển Array này ngược lại thành Set - sử dụng công thức phần khởi tạo Set:
 
-```
+```js
 const set2 = new Set(arr3);
-    console.log(set2);
-    // => Set(2) {2, 4}
+console.log(set2);
+// => Set(2) {2, 4}
 ```
 
 Toàn bộ quá trình trên có thể viết gọn lại thành:
 
-```
+```js
 const set1 = new Set([1, 2, 3, 4, 5]);
-    console.log(set1);
-    // => Set(5) {1, 2, 3, 4, 5}
+console.log(set1);
+// => Set(5) {1, 2, 3, 4, 5}
 
-    const set2 = new Set([...set1].filter(x => x%2 == 0));
-    console.log(set2);
-    // => Set(2) {2, 4}
+const set2 = new Set([...set1].filter(x => x%2 == 0));
+console.log(set2);
+// => Set(2) {2, 4}
 ```
 
 Dĩ nhiên, khi đã chuyển Set thành Array rồi thì bạn có thể sử dụng bất kể [phương thức](/javascript-foreach-la-cai-quai-gi/) nào mà Array hỗ trợ, tùy thích!
@@ -447,32 +449,32 @@ Trong bài viết về [Tạo blog với Gatsby.js](/tao-trang-blog-voi-gatsby-j
 
 Ví dụ: mỗi bài viết của mình sẽ có một mảng lưu các thẻ tag.
 
-```
+```js
 const post1 = ["tag1", "tag2", "tag4"];
-    const post2 = ["tag3", "tag4"];
+const post2 = ["tag3", "tag4"];
 ```
 
 Khi đó, mảng các thẻ tag với các phần tử duy nhất có thể được tạo bằng cách:
 
-```
+```js
 let arrTag = [];
-    arrTag = Array.from(new Set([...arrTag, ...post1]));
-    arrTag = Array.from(new Set([...arrTag, ...post2]));
-    console.log(arrTag);
-    // => (4) ["tag1", "tag2", "tag4", "tag3"]
+arrTag = Array.from(new Set([...arrTag, ...post1]));
+arrTag = Array.from(new Set([...arrTag, ...post2]));
+console.log(arrTag);
+// => (4) ["tag1", "tag2", "tag4", "tag3"]
 ```
 
 Giả sử, mình tạo thêm một bài viết mới với mảng các thẻ tag là:
 
-```
+```js
 const post3 = ["tag1", "tag3", "tag5"];
 ```
 
 Để cập nhật danh sách thẻ tag mình có thể làm như sau:
 
-```
+```js
 arrTag =  Array.from(new Set([...arrTag, ...post3]));
-    // => (5) ["tag1", "tag2", "tag4", "tag3", "tag5"]
+// => (5) ["tag1", "tag2", "tag4", "tag3", "tag5"]
 ```
 
 Rõ ràng, mỗi khi thêm một bài viết mới, mình chỉ cần làm như trên là có thể cập nhật được danh sách các thẻ của bài viết một cách không trùng lặp.

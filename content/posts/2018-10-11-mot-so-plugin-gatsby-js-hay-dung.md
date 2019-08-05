@@ -1,8 +1,8 @@
 ---
 date: "2018-10-11T11:53:05Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/mot-so-plugin-gatsby.js-hay-dung-completejavascript.com_.png"
+keywords: "một số plugin gatsby.js"
 slug: mot-so-plugin-gatsby-js-hay-dung
 title: "Một số plugin Gatsby.js hay dùng"
 categories:
@@ -20,7 +20,7 @@ Như mình đã nói trong bài viết về [Tạo trang blog với Gatsby.js](
 Plugin này giúp bạn quét tất cả những file trong project và biến chúng thành File node. Những File node này, sau đó sẽ được sử dụng bởi các plugin khác. Ví dụ như plugin _gatsby-transformer-remark_ sẽ biến File node được tạo từ file Markdown thành _MarkdownRemark_ node. Mà thông qua đó bạn có thể lấy được dữ liệu trong file Markdown bao gồm _frontmatter_ (chứa title, date, chuyên mục, thẻ,...) và nội dung bài viết.
 
 - Mức độ: cần thiết
-- Cài đặt: `npm install --save gatsby-source-filesystem`
+- Cài đặt: <code>npm install --save gatsby-source-filesystem</code>
 - Cách sử dụng: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/?=gatsby-source-filesystem#how-to-use).
 
 ## Parse file Markdown sử dụng gatsby-transformer-remark
@@ -28,7 +28,7 @@ Plugin này giúp bạn quét tất cả những file trong project và biến c
 Như mình đã nói ở trên, plugin này giúp bạn parse file Markdown (sử dụng Remark) thành _MarkdownRemark_ node. Qua đó, bạn có thể lấy được data từ file Markdown.
 
 - Mức độ: cần thiết
-- Cài đặt: `npm install --save gatsby-transformer-remark`
+- Cài đặt: <code>npm install --save gatsby-transformer-remark</code>
 - Cách sử dụng cơ bản: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/?=gatsby-transformer-remark#how-to-use).
 
 ## Xử lý ảnh trong file Markdown với gatsby-remark-images
@@ -45,7 +45,7 @@ Plugin này có những đặc điểm:
 
 - Mức độ: tuỳ chọn (nếu sử dụng hình ảnh trong Markdown)
 - Phụ thuộc vào các plugin: _gatsby-plugin-sharp_, _gatsby-transformer-remark_
-- Cài đặt: `npm install --save gatsby-remark-images gatsby-plugin-sharp`
+- Cài đặt: <code>npm install --save gatsby-remark-images gatsby-plugin-sharp</code>
 - Cách sử dụng: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-remark-images/?=gatsby-remark-images#how-to-use).
 
 ## Nhúng video vào file Markdown với gatsby-remark-embed-video
@@ -54,7 +54,7 @@ Plugin này có những đặc điểm:
 
 - Mức độ: tuỳ chọn
 - Phụ thuộc vào plugin: _gatsby-transformer-remark_
-- Cài đặt: `npm install --save gatsby-remark-embed-video`
+- Cài đặt: <code>npm install --save gatsby-remark-embed-video</code>
 - Cách sử dụng cơ bản: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-remark-embed-video/?=gatsby-remark-embed-video).
 
 ## Sử dụng iframe trong Markdown với gatsby-remark-responsive-iframe
@@ -63,7 +63,7 @@ Plugin này sẽ wrap iframe bên trong file Markdown, đảm bảo cho iframe g
 
 - Mức độ: tuỳ chọn
 - Phụ thuộc vào plugin: _gatsby-transformer-remark_
-- Cài đặt: `npm install --save gatsby-remark-responsive-iframe`
+- Cài đặt: <code>npm install --save gatsby-remark-responsive-iframe</code>
 - Cách sử dụng: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-remark-responsive-iframe/?=gatsby-remark-responsive-iframe#how-to-use).
 
 ## Hiển thị code trong Markdown với gatsby-remark-prismjs
@@ -72,7 +72,7 @@ Plugin này sẽ wrap iframe bên trong file Markdown, đảm bảo cho iframe g
 
 - Mức độ: tuỳ chọn
 - Phụ thuộc vào plugin: _gatsby-transformer-remark_
-- Cài đặt: `npm install --save gatsby-transformer-remark gatsby-remark-prismjs prismjs`
+- Cài đặt: <code>npm install --save gatsby-transformer-remark gatsby-remark-prismjs prismjs</code>
 - Cách sử dụng: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/?=gatsby-remark-prismjs#how-to-use).
 
 ## Hiển thị code trên Gist với gatsby-remark-embed-gist
@@ -81,7 +81,7 @@ Nếu bạn cần hiển thị code được lưu trên [Gist](https://gist.gith
 
 - Mức độ: tuỳ chọn
 - Phụ thuộc vào plugin: _gatsby-transformer-remark_
-- Cài đặt: `npm install --save gatsby-remark-embed-gist`
+- Cài đặt: <code>npm install --save gatsby-remark-embed-gist</code>
 - Cách sử dụng: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-remark-embed-gist/?=gatsby-remark-embed-gist#getting-started)
 
 ## Thêm Google Analytics vào trang web với gatsby-plugin-google-analytics
@@ -91,7 +91,7 @@ Nếu bạn đã từng làm web thì có thể sẽ không còn xa lạ gì v�
 Dĩ nhiên, khi đăng ký Google Analytics thì bạn sẽ nhận được một đoạn _script_ để thêm vào trang web. Đối với trang web tĩnh thì việc này khá đơn giản, bạn chỉ cần copy-paste đoạn script đó vào bên trong thẻ _head_ là được. Còn đối với trang Gatsby, việc sử dụng plugin này là đơn giản hơn cả.
 
 - Mức độ: tuỳ chọn
-- Cài đặt: `npm install --save gatsby-plugin-google-analytics`
+- Cài đặt: <code>npm install --save gatsby-plugin-google-analytics</code>
 - Cách sử dụng: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/?=gatsby-plugin-google-analytics#how-to-use).
 
 ## Tạo sitemap cho trang web với gatsby-plugin-sitemap
@@ -101,7 +101,7 @@ Dĩ nhiên, khi đăng ký Google Analytics thì bạn sẽ nhận được mộ
 Sitemap là một file có cấu trúc mà bạn hoàn toàn có thể tạo thủ công và cập nhật mỗi khi có một bài viết mới được tạo ra. Tuy nhiên, nếu sử dụng plugin này thì mọi tiến trình sẽ được thực hiện tự động.
 
 - Mức độ: tuỳ chọn
-- Cài đặt: `npm install --save gatsby-plugin-sitemap`
+- Cài đặt: <code>npm install --save gatsby-plugin-sitemap</code>
 - Cách sử dụng: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/?=gatsby-plugin-sitemap#how-to-use).
 
 ## Tạo file robots.txt với gatsby-plugin-robots-txt
@@ -111,7 +111,7 @@ Mặc định, khi search engine quét trang web của bạn để index thì n�
 Vì vậy, plugin này sẽ giúp bạn tạo file robots.txt cho trang Gatsby.
 
 - Mức độ: tuỳ chọn
-- Cài đặt: `npm install --save gatsby-plugin-robots-txt`
+- Cài đặt: <code>npm install --save gatsby-plugin-robots-txt</code>
 - Cách sử dụng: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-plugin-robots-txt/?=gatsby-plugin-robots-txt#how-to-use).
 
 ## Thêm metadata vào trang web với gatsby-plugin-react-helmet
@@ -121,7 +121,7 @@ Vì vậy, plugin này sẽ giúp bạn tạo file robots.txt cho trang Gatsby.
 Plugin _gatsby-plugin-react-helmet_ sẽ giúp bạn dễ dàng thêm những thông tin cần thiết vào thẻ _head_ của mỗi trang.
 
 - Mức độ: tuỳ chọn
-- Cài đặt: `npm install --save gatsby-plugin-react-helmet react-helmet`
+- Cài đặt: <code>npm install --save gatsby-plugin-react-helmet react-helmet</code>
 - Cách sử dụng: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet#how-to-use).
 
 ## Không reload trang khi di chuyển giữa các trang nội bộ với gatsby-plugin-catch-links
@@ -131,7 +131,7 @@ Như trong bài viết trước, mình cũng đã trình bày về tác dụng c
 Tuy nhiên, bạn sẽ không thể sử dụng _Link_ component trong file Markdown được. Do đó, plugin này sẽ làm nhiệm vụ tự động tìm kiếm những link nội bộ trong file Markdown và giúp chúng hoạt động tương tự như khi bạn sử dụng _Link_ component vậy.
 
 - Mức độ: tuỳ chọn
-- Cài đặt: `npm install --save gatsby-plugin-catch-links`
+- Cài đặt: <code>npm install --save gatsby-plugin-catch-links</code>
 - Cách sử dụng: xem tại [đây](https://www.gatsbyjs.org/packages/gatsby-plugin-catch-links/?=gatsby-plugin-catch-links#how-to-use)
 
 ## Lời kết

@@ -1,8 +1,8 @@
 ---
 date: "2018-10-17T15:45:34Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/tao-bo-tu-dien-dang-text-tu-stardict-completejavascript.com_.png"
+keywords: "tạo bộ dữ liệu từ điển dạng text"
 slug: tao-bo-du-lieu-tu-dien-dang-text-tu-stardict
 title: "Tạo bộ dữ liệu từ điển dạng text từ StarDict"
 categories:
@@ -17,7 +17,9 @@ Gần đây, trên diễn đàn nổi tiếng **DayNhauHoc**, có một bạn h�
 
 À, lúc đó mình đang học về [Node.js](https://nodejs.org/en/) nên cũng mày mò làm cho được một cái Dictionary trên web.
 
-[Xem thử Dictionary](https://lpdevs.herokuapp.com/dictionary/)
+<a href="https://lpdevs.herokuapp.com/dictionary/" class="btn btn-primary margin-bottom">
+  Xem thử Dictionary
+</a>
 
 Mà cơ sở dữ liệu cho Node.js thì mình lại dùng [MongoDB](https://www.mongodb.com/), nên mình phải convert cái database của StarDict thành dạng text.
 
@@ -37,15 +39,13 @@ Tại trang download, bạn sẽ thấy có rất nhiều loại từ điền kh
 
 Giả sử mình tải bộ từ điển Anh Việt về. Rồi sau khi giải nén xong, mình thu được 3 tệp tin như sau:
 
-![Sau khi giải nén bộ từ điển Anh-Việt](/wp-content/uploads/2018/10/Capture.png)
-Sau khi giải nén bộ từ điển Anh-Việt
+![Sau khi giải nén bộ từ điển Anh-Việt](../images/Capture.png)
 
 Tiếp theo, mình sử dụng [7zip](https://www.7-zip.org/) để giải nén **en_vi.dict.dz** để thu được **en_vi.dict**.
 
 Kết quả:
 
-![Sau khi giải nén en_vi.dict.dz](/wp-content/uploads/2018/10/Capture-3.png)
-Sau khi giải nén en_vi.dict.dz
+![Sau khi giải nén en_vi.dict.dz](../images/Capture-3.png)
 
 ### Download công cụ chuyển đổi
 
@@ -60,15 +60,13 @@ _Vì hai tệp tin này mình tải từ rất lâu rồi, nên không còn nh�
 
 Kết quả mình có những công cụ như sau:
 
-![Sau khi tải 2 công cụ gtk2-runtime và stardict-editor](/wp-content/uploads/2018/10/Capture-2.png)
-Sau khi tải 2 công cụ gtk2-runtime và stardict-editor
+![Sau khi tải 2 công cụ gtk2-runtime và stardict-editor](../images/Capture-2.png)
 
 ## Cài đặt môi trường
 
 Đầu tiên bạn chạy **gtk2-runtime**. Cài đặt dễ lắm. Bạn chỉ cần chú ý là có một bước như này:
 
-![Nhấn thêm 2 tùy chọn để cho thằng stardict-editor chạy được](/wp-content/uploads/2018/10/gtk-3.png)
-Nhấn thêm 2 tùy chọn để cho thằng stardict-editor chạy được
+![Nhấn thêm 2 tùy chọn để cho thằng stardict-editor chạy được](../images/gtk-3.png)
 
 Bạn phải **nhấn vào 2 checkbox** phía trên, rồi nhấn **Next**. Sau đó, bạn cứ chọn **Next**, hoặc **Install**,... cho đến khi **Finish** là cài đặt xong.
 
@@ -78,18 +76,15 @@ Bạn phải **nhấn vào 2 checkbox** phía trên, rồi nhấn **Next**. Sau 
 
 Sau khi chương trình xuất hiện, bạn chọn vào tab **DeCompile** như hình dưới.
 
-![](/wp-content/uploads/2018/10/stardict-1.png)
-Chọn DeCompile để chuyển database thành dạng text
+![Chọn DeCompile để chuyển database thành dạng text](../images/stardict-1.png)
 
 Tiếp theo là nhấn vào **Browse** và chọn đến file **en_vi.ifo** ở bên trong thư mục chứa bộ dữ liệu từ điển mà mình tải về lúc đầu rồi nhấn **Open**.
 
-![Nhớ chọn vào file en_vi.info nhé](/wp-content/uploads/2018/10/Untitled.png)
-Nhớ chọn vào file en_vi.info nhé
+![Nhớ chọn vào file en_vi.info nhé](../images/Untitled.png)
 
 Sau đó, bạn chỉ cần nhấn vào **Decompile**.
 
-![Nhấn vào Decompile để bắt đầu chuyển đổi](/wp-content/uploads/2018/10/stardict-3-1.png)
-Nhấn vào Decompile để bắt đầu chuyển đổi
+![Nhấn vào Decompile để bắt đầu chuyển đổi](../images/stardict-3-1.png)
 
 Nếu bạn thấy thông báo **Done!**, thì nghĩa là bạn đã tạo bộ dữ liệu từ điển dạng text thành công.
 
@@ -97,8 +92,7 @@ Nếu cẩn thận hơn thì bạn có thể nhấn thêm vào **Verify** để 
 
 Kết quả là mình đã có bộ dữ liệu từ điển dạng text rồi!
 
-![Kết quả thu được file en_vi.txt](/wp-content/uploads/2018/10/Capture-6.png)
-Kết quả thu được file en_vi.txt
+![Kết quả thu được file en_vi.txt](../images/Capture-6.png)
 
 ## Lời kết
 

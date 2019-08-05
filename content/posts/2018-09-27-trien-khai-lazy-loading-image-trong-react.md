@@ -1,8 +1,8 @@
 ---
 date: "2018-09-27T12:30:31Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/trien-khai-lazy-loading-image-trong-react-completejavascript.com_-1.png"
+keywords: "triển khai Lazy Loading Image trong React"
 slug: trien-khai-lazy-loading-image-trong-react
 title: "Triển khai Lazy Loading Image trong React"
 categories:
@@ -27,7 +27,7 @@ Về cơ bản, phương pháp Lazy Loading Image gồm các bước sau:
 
 Tư tưởng chính là vậy. Bây giờ, mình sẽ bắt đầu triển khai Lazy Loading Image trong React.
 
-https://www.youtube.com/watch?v=zOn-8mazuJ8
+`youtube: zOn-8mazuJ8`
 
 ## Triển khai Lazy Loading Image trong React
 
@@ -49,99 +49,101 @@ Tiếp theo, bạn có thể vào trang [tinypng.com](https://tinypng.com) để
 
 **lazy-image.js**
 
-```
+```jsx
 import React from 'react';
-    import "./lazy-image.css";
+import "./lazy-image.css";
 
-    function elementInViewport(el) {
-      const rect = el.getBoundingClientRect();
+function elementInViewport(el) {
+  const rect = el.getBoundingClientRect();
 
-      return (
-        rect.top >= 0
-        && rect.left >= 0
-        && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
-      )
+  return (
+    rect.top >= 0
+    && rect.left >= 0
+    && rect.top <= (
+      window.innerHeight || document.documentElement.clientHeight
+    )
+  )
+}
+
+export default class LazyImage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loaded: false
     }
 
-    export default class LazyImage extends React.Component {
-      constructor(props) {
-        super(props);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
 
-        this.state = {
-          loaded: false
-        }
+  componentDidMount() {
+    this.handleScroll();
 
-        this.handleScroll = this.handleScroll.bind(this);
-      }
+    window.addEventListener('scroll', this.handleScroll);
+  }
 
-      componentDidMount() {
-        this.handleScroll();
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
-        window.addEventListener('scroll', this.handleScroll);
-      }
+  handleScroll() {
+    if (!this.state.loaded && elementInViewport(this.imgElm)) {
+      // Load real image
+      const imgLoader = new Image();
+      imgLoader.src = this.props.src;
+      imgLoader.onload = () => {
+        const ratioWH = imgLoader.width / imgLoader.height;
 
-      componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-      }
+        this.imgElm.setAttribute(
+          `src`,
+          `${this.props.src}`
+        );
 
-      handleScroll() {
-        if (!this.state.loaded && elementInViewport(this.imgElm)) {
-          // Load real image
-          const imgLoader = new Image();
-          imgLoader.src = this.props.src;
-          imgLoader.onload = () => {
-            const ratioWH = imgLoader.width / imgLoader.height;
-
-            this.imgElm.setAttribute(
-              `src`,
-              `${this.props.src}`
-            );
-
-            this.props.keepRatio && this.imgElm.setAttribute(
-              `height`,
-              `${this.props.width / ratioWH}`
-            )
-
-            this.imgElm.classList.add(`${this.props.effect}`);
-
-            this.setState({
-              loaded: true
-            });
-          }
-        }
-      }
-
-      render() {
-        const width = this.props.width || '100%';
-        const height = this.props.height || '100%';
-
-        return (
-          <img
-            src={this.props.placeHolder}
-            width={width}
-            height={height}
-            ref={imgElm => this.imgElm = imgElm}
-            className="lazy-image"
-            alt={this.props.alt}
-          />
+        this.props.keepRatio && this.imgElm.setAttribute(
+          `height`,
+          `${this.props.width / ratioWH}`
         )
+
+        this.imgElm.classList.add(`${this.props.effect}`);
+
+        this.setState({
+          loaded: true
+        });
       }
     }
+  }
+
+  render() {
+    const width = this.props.width || '100%';
+    const height = this.props.height || '100%';
+
+    return (
+      <img
+        src={this.props.placeHolder}
+        width={width}
+        height={height}
+        ref={imgElm => this.imgElm = imgElm}
+        className="lazy-image"
+        alt={this.props.alt}
+      />
+    )
+  }
+}
 ```
 
 **lazy-image.css**
 
-```
+```css
 .lazy-image {
-      opacity: 0;
-      transition: opacity 0.1s ease-in-out;
-      -webkit-transition: opacity 0.1s ease-in-out;
-      -moz-transition: opacity 0.1s ease-in-out;
-    }
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+}
 
-    .lazy-image.opacity {
-      opacity: 1;
-    }
+.lazy-image.opacity {
+  opacity: 1;
+}
 ```
 
 ### Giải thích cách triển khai Lazy Loading Image trong React
@@ -150,15 +152,15 @@ import React from 'react';
 
 Khởi tạo biến state _loaded_. Biến này dùng để lưu trạng thái ảnh đã được load hay chưa. Ban đầu ảnh chưa được load nên giá trị này là _false_.
 
-```
+```jsx
 this.state = {
-      loaded: false
-    }
+  loaded: false
+}
 ```
 
 [Bind](/phan-biet-call-apply-va-bind-trong-javascript/) function _handleScroll_ với _this_. [Function](/tim-hieu-function-javascript/) này dùng để xử lý [event](/xu-ly-mot-event-javascript-co-ban/) khi scroll màn hình.
 
-```
+```jsx
 this.handleScroll = this.handleScroll.bind(this);
 ```
 
@@ -166,21 +168,21 @@ this.handleScroll = this.handleScroll.bind(this);
 
 Hàm này tương ứng với **Bước 1** mà mình đã nói phía trên. Trong hàm này, mình thực hiện các công việc sau đây.
 
-Tính giá trị của _width_ và _height_. Nếu người dùng không truyền 2 thuộc tính này vào thì mặc định giá trị là `100%`
+Tính giá trị của _width_ và _height_. Nếu người dùng không truyền 2 thuộc tính này vào thì mặc định giá trị là **100%**
 
-```
+```jsx
 const width = this.props.width || '100%';
-    const height = this.props.height || '100%';
+const height = this.props.height || '100%';
 ```
 
 Component này khi render lên HTML sẽ đóng vai trò là một [thẻ img](https://www.w3schools.com/tags/tag_img.asp) với các thuộc tính là:
 
-- `src={this.props.placeHolder}` : ban đầu gán _src_ của ảnh là ảnh Place Holder mà mình đã tải ở phần trước.
-- `width={width}`: xác định chiều rộng ảnh
-- `height={height}`: xác định chiều cao ảnh
-- `ref={imgElm => this.imgElm = imgElm}`: định nghĩa biến _this.imgElm_ chính là reference đến phần tử DOM
-- `className="lazy-image"`: định nghĩa tên class, dùng để tuỳ biến style trong file _lazy-image.css_. Mình đang để mặc định _opacity: 0_ - nghĩa là ảnh ban đầu sẽ bị ẩn đi. Khi nào ảnh gốc được load xong mình sẽ gán _opacity: 1_ để tạo hiệu ứng xuất hiện. Bạn có thể tuỳ biến tuỳ theo ý thích.
-- `alt={this.props.alt}`: định nghĩa thuộc tính _alt_ dùng để hiển thị khi không tải được ảnh
+- <code>src={this.props.placeHolder}</code> : ban đầu gán _src_ của ảnh là ảnh Place Holder mà mình đã tải ở phần trước.
+- <code>width={width}</code>: xác định chiều rộng ảnh
+- <code>height={height}</code>: xác định chiều cao ảnh
+- <code>ref={imgElm => this.imgElm = imgElm}</code>: định nghĩa biến _this.imgElm_ chính là reference đến phần tử DOM
+- <code>className="lazy-image"</code>: định nghĩa tên class, dùng để tuỳ biến style trong file _lazy-image.css_. Mình đang để mặc định _opacity: 0_ - nghĩa là ảnh ban đầu sẽ bị ẩn đi. Khi nào ảnh gốc được load xong mình sẽ gán _opacity: 1_ để tạo hiệu ứng xuất hiện. Bạn có thể tuỳ biến tuỳ theo ý thích.
+- <code>alt={this.props.alt}</code>: định nghĩa thuộc tính _alt_ dùng để hiển thị khi không tải được ảnh
 
 #### Hàm componentDidMount
 
@@ -189,7 +191,7 @@ Hàm [componentDidMount](https://reactjs.org/docs/react-component.html#component
 - Kiểm tra xem component có đang nằm trong viewport hay không (nếu có thì mình sẽ load ảnh gốc lên) bằng cách gọi hàm _this.handleScroll()_ - tương ứng với **Bước 2**.
 - Đăng ký sự kiện scroll của màn hình Window - dùng để xử lý **Bước 3**.
 
-```
+```jsx
 window.addEventListener('scroll', this.handleScroll);
 ```
 
@@ -197,7 +199,7 @@ window.addEventListener('scroll', this.handleScroll);
 
 Hàm [componentWillUnmount](https://reactjs.org/docs/react-component.html#componentwillunmount) dùng để xử lý trước khi component bị huỷ. Lúc này, mình phải huỷ sự kiện đã đăng ký ở phần trước, để tránh bị leak memory.
 
-```
+```jsx
 window.removeEventListener('scroll', this.handleScroll);
 ```
 
@@ -205,29 +207,29 @@ window.removeEventListener('scroll', this.handleScroll);
 
 Như mình đã nói ở trên, hàm này dùng để xử lý khi scroll màn hình. Trong hàm này, mình sẽ phải kiểm tra xem ảnh gốc đã được load hay chưa - thông qua biến _this.state.loaded_. Đồng thời kiểm tra xem phần tử DOM có đang nằm trong viewport hay không - thông qua hàm _elementInViewport_.
 
-```
+```jsx
 function elementInViewport(el) {
-      const rect = el.getBoundingClientRect();
+  const rect = el.getBoundingClientRect();
 
-      return (
-        rect.top >= 0
-        && rect.left >= 0
-        && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
-      )
-    }
+  return (
+    rect.top >= 0
+    && rect.left >= 0
+    && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+  )
+}
 ```
 
 Rõ ràng, nếu ảnh đã được load hoặc nó không nằm trên viewport thì mình không cần thiết phải gọi phần xử lý load ảnh làm gì cả. Ngược lại, mình sẽ phải load ảnh gốc lên thông qua đối tượng [Image](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image).
 
 Đầu tiên, khởi tạo đối tượng _Image_:
 
-```
+```jsx
 const imgLoader = new Image();
 ```
 
 Tiếp theo, gán thuộc tính _src_ với đường dẫn ảnh gốc cần tải:
 
-```
+```jsx
 imgLoader.src = this.props.src;
 ```
 
@@ -235,44 +237,46 @@ imgLoader.src = this.props.src;
 
 **Trong hàm _onload_ mình thực hiện các công việc đó là:**
 
-Tính tỉ lệ chiều rộng / chiều cao của ảnh thực tế `const ratioWH = imgLoader.width / imgLoader.height`. Mục đích là để điều chỉnh lại tỉ lệ chiều rộng / chiều cao nếu cần thiết.
+Tính tỉ lệ chiều rộng / chiều cao của ảnh thực tế <code>const ratioWH = imgLoader.width / imgLoader.height</code>. Mục đích là để điều chỉnh lại tỉ lệ chiều rộng / chiều cao nếu cần thiết.
 
 Gán _src_ với đường dẫn ảnh gốc cần tải.
 
-```
+```jsx
 this.imgElm.setAttribute(
-      `src`,
-      `${this.props.src}`
-    );
+  `src`,
+  `${this.props.src}`
+);
 ```
 
 Nếu người dùng muốn giữ nguyên tỉ lệ ảnh gốc thì mình sẽ điều chỉnh lại chiều cao của ảnh
 
-```
+```jsx
 this.props.keepRatio && this.imgElm.setAttribute(
-      `height`,
-      `${this.props.width / ratioWH}`
-    )
+  `height`,
+  `${this.props.width / ratioWH}`
+)
 ```
 
 Về cơ bản, khi đến bước này thì ảnh đã sẵn sàng để hiển thị. Nhưng người dùng vẫn chưa nhìn thấy ảnh, vì _opacity: 0_. Do đó, mình sẽ thêm vào thuộc tính _class_ của ảnh giá trị _this.props.effect_. Mặc định, mình mới định nghĩa 1 effect là _opacity_.
 
-```
+```jsx
 this.imgElm.classList.add(`${this.props.effect}`);
 ```
 
-```
+Định nghĩa trong css:
+
+```css
 .lazy-image.opacity {
-      opacity: 1;
-    }
+  opacity: 1;
+}
 ```
 
 Đến đây thì ảnh hoàn toàn được hiện lên, công việc cuối cùng là thay đổi state _this.state.loaded_. Mục đích là khi mình scroll màn hình, phần xử lý này sẽ không được gọi nữa - đảm bảo chỉ gọi phần load ảnh đúng 1 lần.
 
-```
+```jsx
 this.setState({
-      loaded: true
-    });
+  loaded: true
+});
 ```
 
 Như vậy, mình đã định nghĩa xong component _LazyImage_. Bây giờ, chỉ cần áp dụng nó thôi.
@@ -285,15 +289,15 @@ Ví dụ demo mình sử dụng [create-react-app](https://reactjs.org/docs/crea
 
 Trong _App.js_ mình đã sử dụng component LazyImage như sau:
 
-```
+```jsx
 <LazyImage
-      placeHolder={placeHolder}
-      src={props.src}
-      width={`100%`}
-      height={`auto`}
-      effect={"opacity"}
-      alt={props.alt}
-    />
+  placeHolder={placeHolder}
+  src={props.src}
+  width={`100%`}
+  height={`auto`}
+  effect={"opacity"}
+  alt={props.alt}
+/>
 ```
 
 Về chi tiết, bạn có thể tham khảo thêm trong project demo của mình. Có gì khó hiểu, bạn có thể để lại trong phần bình luận phía dưới, mình sẽ cố gắng giải đáp.

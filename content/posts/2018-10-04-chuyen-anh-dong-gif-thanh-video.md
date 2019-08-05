@@ -1,8 +1,8 @@
 ---
 date: "2018-10-04T11:45:05Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/chuyen-anh-dong-gif-thanh-video-completejavascript.com_.png"
+keywords: "chuyển ảnh động GIF thành video"
 slug: chuyen-anh-dong-gif-thanh-video
 title: "Chuyển ảnh động GIF thành video"
 categories:
@@ -40,7 +40,7 @@ Nếu bạn search trên Google thì sẽ thấy có rất nhiều trang giúp c
 
 Để chuyển ảnh động GIF thành video bạn sử dụng câu lệnh sau:
 
-```
+```bash
 ffmpeg -i input.gif output.mp4
 ```
 
@@ -51,14 +51,13 @@ Trong đó:
 - _iniput.gif_: tên ảnh động GIF đầu vào
 - _output.mp4_: tên video đầu ra với định dạng MPEG-4
 
-![](/wp-content/uploads/2018/09/gif_to_mp4.png)
-Dung lượng của video giảm đáng kể so với ảnh động GIF
+![Dung lượng của video giảm đáng kể so với ảnh động GIF](../images/gif_to_mp4.png)
 
 ### Sử dụng phương pháp CRF
 
 Ngoài ra, ffmpeg còn hỗ trợ sử dụng một phương pháp mã hoá, được gọi là [Constant Rate Factor](https://trac.ffmpeg.org/wiki/Encode/H.264#crf) (hay CRF). CRF giúp bạn dễ dàng điều chỉnh được chất lượng của video đầu ra. Câu lệnh là:
 
-```
+```bash
 ffmpeg -i input.gif -b:v 0 -crf 25 output.mp4
 ```
 
@@ -67,27 +66,26 @@ Lệnh này tương tự lệnh trên, chỉ khác ở chỗ:
 - _-b:v_: là cờ dùng để giới hạn bitrate của output. Vì mình đang sử dụng CRF, nên giá trị này phải đặt là 0
 - _-crf_: là cờ dùng để xác định hệ số của CRF. Giá trị này nằm trong khoảng từ 0 đến 51. Hệ số CRF càng thấp sẽ cho video chất lượng càng cao, nhưng càng nặng. Ngược lại, hệ số CRF càng cao sẽ cho video chất lượng càng thấp nhưng càng nhẹ.
 
-![](/wp-content/uploads/2018/09/gif_to_mp4_crf.png)
-Sử dụng CRF với các giá trị khác nhau sẽ cho ra chất lượng video khác nhau
+![Sử dụng CRF với các giá trị khác nhau sẽ cho ra chất lượng video khác nhau](../images/gif_to_mp4_crf.png)
 
 Với kết quả thử nghiệm trên, mình thấy rằng sử dụng hệ số CRF bằng 25 là hợp lý nhất. Vì dung lượng giảm đi đáng kể mà chất lượng hình ảnh gần như không đổi.
 
 Như vậy là mình đã chuyển ảnh động GIF thành video xong rồi. Tiếp theo, làm sao có thể sử dụng video tương tự như việc sử dụng ảnh động GIF?
 
-## Sử dụng thẻ <video> thay cho thẻ <img>
+## Sử dụng thẻ &lt;video&gt; thay cho thẻ &lt;img&gt;
 
 Trước tiên, để sử dụng ảnh GIF, mình phải sử dụng thẻ <img> (giống các loại ảnh khác), như sau:
 
-```
+```html
 <img src="input.gif" />
 ```
 
-Nhưng khi đã chuyển ảnh động GIF thành video thì mình phải chuyển sang sử dụng thẻ <video>. Cơ bản là như này:
+Nhưng khi đã chuyển ảnh động GIF thành video thì mình phải chuyển sang sử dụng thẻ &lt;video&gt;. Cơ bản là như này:
 
-```
+```html
 <video>
-      <source src="input.mp4" type="video/mp4">
-    </video>
+  <source src="input.mp4" type="video/mp4">
+</video>
 ```
 
 Tuy nhiên, nếu chỉ dừng lại như trên thì video sẽ không giống với ảnh động GIF. Vì ảnh động GIF có 3 đặc điểm quan trọng là:
@@ -98,10 +96,10 @@ Tuy nhiên, nếu chỉ dừng lại như trên thì video sẽ không giống v
 
 Vì vậy, đoạn code trên sửa thành:
 
-```
+```html
 <video autoplay loop muted playsinline>
-      <source src="input.mp4" type="video/mp4">
-    </video>
+  <source src="input.mp4" type="video/mp4">
+</video>
 ```
 
 ## Ví dụ minh hoạ
