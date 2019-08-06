@@ -45,14 +45,14 @@ const config = {
   categoryHeader: "Chuyên mục", // use in header of category-template page
   categoryHasThumbnail: true,
   // Use for widget
-  categoryWidgetTitle: 'Chuyên mục',
-  tagWidgetTitle: 'Chủ đề',
-  latestPostsWidgetTitle: 'Bài viết mới nhất',
-  linksWidgetTitle: 'Liên Kết',
+  categoryWidgetTitle: "Chuyên mục",
+  tagWidgetTitle: "Chủ đề",
+  latestPostsWidgetTitle: "Bài viết mới nhất",
+  linksWidgetTitle: "Liên Kết",
   // Use for Google custom search
-  searchWidgetTitle: 'Bạn đang tìm gì?',
-  searchWidgetPlaceHolder: 'Nhập từ khóa',
-  searchEngineID: 'partner-pub-7260245524211186:4187549499',
+  searchWidgetTitle: "Bạn đang tìm gì?",
+  searchWidgetPlaceHolder: "Nhập từ khóa",
+  searchEngineID: "partner-pub-7260245524211186:4187549499",
   hasSearch: true,
   // Use for links widget
   sidebarLinks: [
@@ -108,8 +108,9 @@ const config = {
   // Use for navigation
   navTitle: "Complete JavaScript",
   navLinks: [
-    { label: 'Giới thiệu', url: '/gioi-thieu' },
-    { label: 'Liên hệ', url: '/lien-he' }
+    { label: "Wiki", url: "/wiki" },
+    { label: "Giới thiệu", url: "/gioi-thieu" },
+    { label: "Liên hệ", url: "/lien-he" }
   ],
   // Use for footer
   socialLinks: [
@@ -150,11 +151,11 @@ const config = {
     },
   ],
   footerLinks: [
-    { label: 'Trang chủ', url: '/' },
-    { label: 'Giới thiệu', url: '/gioi-thieu' },
-    { label: 'Liên hệ', url: '/lien-he' },
-    { label: 'Điều khoản sử dụng', url: '/dieu-khoan-su-dung' },
-    { label: 'Chính sách bảo mật', url: '/chinh-sach-bao-mat' },
+    { label: "Trang chủ", url: "/" },
+    { label: "Giới thiệu", url: "/gioi-thieu" },
+    { label: "Liên hệ", url: "/lien-he" },
+    { label: "Điều khoản sử dụng", url: "/dieu-khoan-su-dung" },
+    { label: "Chính sách bảo mật", url: "/chinh-sach-bao-mat" },
     { label: "Sitemap", url: "https://completejavascript.netlify.com/sitemap.xml" },
   ],
   copyright: "Copyright © 2017-2019 Lam Pham. Unless otherwise noted, all code MIT license.",
