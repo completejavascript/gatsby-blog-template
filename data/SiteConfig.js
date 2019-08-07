@@ -50,10 +50,10 @@ const config = {
   latestPostsWidgetTitle: "Latest posts",
   linksWidgetTitle: "Links",
   // Use for Google custom search
-  searchWidgetTitle: 'Looking for?',
-  searchWidgetPlaceHolder: 'Search',
-  searchEngineID: '',
-  hasSearch: false,
+  searchWidgetTitle: "Looking for?",
+  searchWidgetPlaceHolder: "Enter keyword",
+  searchEngineID: "008548374781244864787:9ybvtnkbt7o",
+  hasSearch: true,
   // Use for links widget
   sidebarLinks: [
     {
@@ -71,7 +71,7 @@ const config = {
   ],
   // Use for user info
   userName: "Lam Pham", // Username to display in the author segment.
-  userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed's author segment
+  userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed"s author segment
   userTwitter: "CmpltJavaScript", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Hanoi, Vietnam", // User location to display in the author segment.
   userAvatar: "https://www.gravatar.com/avatar/42fd3d526fde1ef76d5002e4ebd303e9.jpg?s=300", // User avatar to display in the author segment.
