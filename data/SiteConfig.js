@@ -13,7 +13,7 @@ const config = {
   googleAnalyticsID: "UA-96543695-5", // GA tracking ID.
   postDefaultCategoryID: "", // Default category for posts.
   // Common for tag, category pages and widget
-  numberLatestPost: 8,
+  numberLatestPost: 6,
   postsPerPage: 8,
   // Use for post
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
@@ -55,6 +55,7 @@ const config = {
   searchEngineID: "partner-pub-7260245524211186:4187549499",
   hasSearch: true,
   // Use for links widget
+  sidebarSticky: true,
   sidebarLinks: [
     {
       label: "Blog Thuật toán",
