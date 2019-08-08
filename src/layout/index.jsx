@@ -7,7 +7,7 @@ import siteConfig from "../../data/SiteConfig";
 import brand from "../../content/images/brand.png";
 import "../components/Icons/FontAwesome";
 import "../styles/shiba.min.css";
-import "../../content/styles/customize.css";
+import "../../content/styles/customize.scss";
 
 const MainLayout = ({ children, hasFooter = true }) => (
   <div>
