@@ -55,6 +55,7 @@ const config = {
   searchEngineID: "008548374781244864787:9ybvtnkbt7o",
   hasSearch: true,
   // Use for links widget
+  sidebarSticky: true,
   sidebarLinks: [
     {
       label: "Complete JavaScript",
