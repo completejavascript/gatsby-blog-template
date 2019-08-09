@@ -377,7 +377,7 @@ Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/6-c
 
 - [Getting Literal With ES6 Template Strings](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings)
 - [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-- [Easy Creation of HTML with JavaScript’s Template Strings](https://wesbos.com/template-strings-html/)
+- [Easy Creation of HTML with JavaScript's Template Strings](https://wesbos.com/template-strings-html/)
 
 <hr class="border-color-light-grey" />
 

@@ -249,7 +249,7 @@ Xin chào và hẹn gặp lại, thân ái!
 - [Rename a local and remote branch in git](https://multiplestates.wordpress.com/2015/02/05/rename-a-local-and-remote-branch-in-git/)
 - [Sync your Git Fork to the Original Repo](https://digitaldrummerj.me/git-syncing-fork-with-original-repo/)
 - [Moving unstaged changes between branches in git using the stash command](https://maurobringolf.ch/2017/02/moving-unstaged-changes-between-branches-in-git-using-the-stash-command/)
-- [How to completely replace git branch code with another branch’s code](https://www.nickang.com/replace-git-branch-code/)
+- [How to completely replace git branch code with another branch's code](https://www.nickang.com/replace-git-branch-code/)
 - [Sử dụng git cherry-pick](https://kipalog.com/posts/Su-dung-git-cherry-pick)
 
 <hr class="border-color-light-grey" />

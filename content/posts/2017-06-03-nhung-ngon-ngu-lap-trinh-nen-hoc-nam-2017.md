@@ -121,7 +121,7 @@ Nhưng nếu bạn đã là một lập trình viên có kinh nghiệm thì nh�
 
 Đây lại là một ngôn ngữ lập trình mà tôi không biết, nên không dám chém bừa.
 
-_Rust is really good. It’s this low level systems language. It’s more elegant, more refined than C and C++ and is a good replacement for those languages and it just keeps on picking up steam. I think this is going to be a really popular language. I think it’s going to replace some of these legacy programming languages and some systems._
+_Rust is really good. It's this low level systems language. It's more elegant, more refined than C and C++ and is a good replacement for those languages and it just keeps on picking up steam. I think this is going to be a really popular language. I think it's going to replace some of these legacy programming languages and some systems._
 
 Tức là, Rust là một ngôn ngữ lập trình mức thấp, có thể thay thế cho C/C++. Và chắc chắn Rust sẽ trở nên rất phổ biến (cái này phải cần thời gian để kiểm chứng - vì hiện tại có rất nhiều hệ thống đang chạy bằng C/C++).
 

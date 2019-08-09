@@ -25,7 +25,7 @@ Sau khi tốt nghiệp, mình làm việc như một lập trình viên phần m
 
 ## Chuyện gì phải đến cũng sẽ đến
 
-Mình có theo dõi blog của anh John Sonmez – founder của SimpleProgrammer.com và tác giả của [Soft Skills: The Software Developer’s Life Manual](https://simpleprogrammer.com/softskills). Mình đã đọc và học được rất nhiều thứ. Và một ngày đẹp trời, mình đã mua một khoá học ở đây. Đó là _Blogging Course Workbook_. John Sonmez khuyên rằng: _chúng ta nên trở thành một con cá lớn trong một cái ao nhỏ, thay vì trở thành một con cá nhỏ trong một cái ao lớn. Đúng vậy, mình sẽ trở thành một con cá lớn trong một cái ao nhỏ_.
+Mình có theo dõi blog của anh John Sonmez – founder của SimpleProgrammer.com và tác giả của [Soft Skills: The Software Developer's Life Manual](https://simpleprogrammer.com/softskills). Mình đã đọc và học được rất nhiều thứ. Và một ngày đẹp trời, mình đã mua một khoá học ở đây. Đó là _Blogging Course Workbook_. John Sonmez khuyên rằng: _chúng ta nên trở thành một con cá lớn trong một cái ao nhỏ, thay vì trở thành một con cá nhỏ trong một cái ao lớn. Đúng vậy, mình sẽ trở thành một con cá lớn trong một cái ao nhỏ_.
 
 Điều đó đồng nghĩa với việc mình sẽ phải tập trung vào một thứ thay vì học dàn trải nhiều thứ. Sau nhiều ngày suy nghĩ, mình quyết định chọn JavaScript. Một ngôn ngữ mà theo mình nó rất mạnh, cú pháp tự do và cộng đồng JavaScript cũng phát triển rất mạnh với nhiều các Frameworks khác nhau (JQuery, NodeJS, AngularJS, Reactjs,…).
 
