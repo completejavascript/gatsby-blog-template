@@ -1,8 +1,9 @@
 ---
 date: "2018-06-21T12:36:26Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/huong-dan-lay-anh-thumbnail-video-youtube-completejavascript.com_.png"
+keywords: "lấy ảnh thumbnail của video trên youtube"
+description: "Mình sẽ chia sẻ với các bạn một số cách để lấy ảnh thumbnail của video trên youtube. Đầu tiên, các bạn phải có được ID của video trên youtube."
 slug: lay-anh-thumbnail-cua-video-tren-youtube
 title: "Hướng dẫn lấy ảnh thumbnail của video trên youtube"
 categories:
@@ -15,59 +16,39 @@ Xin chào bạn, gần đây mình có thử làm chơi một video tên là [K 
 
 Hôm nay mình sẽ chia sẻ với bạn một số cách để lấy được ảnh thumbnail đó. Đầu tiên, bạn phải có được ID của video trên youtube. Thật đơn giản, khi bạn nhấn vào một video thì video đó sẽ có link, ví dụ như sau:
 
-<blockquote>
+> https:\/\/www.youtube.com/watch?v=**id_video**
 
-> https://www.youtube.com/watch?v=id_video
-
-</blockquote>
-
-Phần bôi đỏ id_video chính là ID của video trên youtube. bạn copy lại ID đó và tiếp tục với bước tiếp theo mà mình sẽ trình bày ngay sau đây.
+Phần **id_video** bên trên chính là ID của video trên youtube. Bạn copy lại ID đó và tiếp tục với bước tiếp theo mà mình sẽ trình bày ngay sau đây.
 
 ### Cách 1
 
-Với cách này bạn sẽ thu được ảnh thumbnail với độ phân giải lớn nhất. bạn chỉ cần copy link sau lên trình duyệt:
+Với cách này bạn sẽ thu được ảnh thumbnail với độ phân giải lớn nhất. Bạn chỉ cần copy link sau lên trình duyệt:
 
-<blockquote>
 
-> https://i.ytimg.com/vi/id_video/maxresdefault.jpg
+> https:\/\/i.ytimg.com/vi/id_video/maxresdefault.jpg
 
-</blockquote>
 
 Trong đó: id_video là id của video mà bạn đã có được ở phía trên. Ví dụ với link sau:
 
-<blockquote>
+> https:\/\/i.ytimg.com/vi/dSs3ya1ppp4/maxresdefault.jpg
 
-> https://i.ytimg.com/vi/dSs3ya1ppp4/maxresdefault.jpg
+Bạn sẽ thu được ảnh sau:
 
-</blockquote>
-
-bạn sẽ thu được ảnh sau:
-
-![huong dan lay anh thumbnial youtube](/wp-content/uploads/2018/06/huong-dan-lay-anh-thumbnail-video-youtube-phamvanlam-com-1.jpg)
+![huong dan lay anh thumbnial youtube](../images/huong-dan-lay-anh-thumbnail-video-youtube-phamvanlam-com-1.jpg)
 
 ### Cách 2
 
 Với cách này bạn sẽ thu được ảnh thumbnail của video trên youtube với các độ phân giải khác nhau.
 
-1. Ảnh thumbnail kích thước 480x360
+**Ảnh thumbnail kích thước 480x360**
 
-<blockquote>
+- img.youtube.com/vi/id_video/0.jpg
 
-> img.youtube.com/vi/id_video/0.jpg
+**Một số ảnh thumbnail khác kích thước 120x90**
 
-</blockquote>
-
-2. Một số ảnh thumbnail khác kích thước 120x90
-
-<blockquote>
-
-> img.youtube.com/vi/id_video/1.jpg
-
-> img.youtube.com/vi/id_video/2.jpg
-
-> img.youtube.com/vi/id_video/3.jpg
-
-</blockquote>
+- img.youtube.com/vi/id_video/1.jpg
+- img.youtube.com/vi/id_video/2.jpg
+- img.youtube.com/vi/id_video/3.jpg
 
 ## Lời kết
 

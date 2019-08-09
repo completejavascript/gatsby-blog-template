@@ -133,7 +133,7 @@ rồi chạy lệnh sau để tạo server cho quá trình develop:
 gatsby develop
 ```
 
-Đợi lệnh trên hoàn tất, bạn mở trình duyệt và đi đến địa chỉ: **_http:\/\/localhost:8000\/_** thì sẽ thấy trang blog với Gatsby.js đã được tạo ra thành công.
+Đợi lệnh trên hoàn tất, bạn mở trình duyệt và đi đến địa chỉ: **_http:\/\/localhost:8000/_** thì sẽ thấy trang blog với Gatsby.js đã được tạo ra thành công.
 
 ![Tạo mới Hello World Gatsby Project](../images/gatsby-hello-world.png)
 
@@ -193,7 +193,7 @@ import React from "react"
 export default () => <div>Liên hệ</div>
 ```
 
-Sau khi lưu lại, bạn có thể vào 2 địa chỉ **_http:\/\/localhost:8000\/gioi-thieu\/ _**và **_http:\/\/localhost:8000\/lien-he\/_** sẽ thấy kết quả 2 trang lần lượt là:
+Sau khi lưu lại, bạn có thể vào 2 địa chỉ **_http:\/\/localhost:8000/gioi-thieu/ _**và **_http:\/\/localhost:8000/lien-he/_** sẽ thấy kết quả 2 trang lần lượt là:
 
 Kết quả trang giới thiệu:
 
@@ -205,7 +205,7 @@ Kết quả trang liên hệ:
 
 #### Cách xem các trang đang tồn tại từ trang 404 mặc định
 
-Ngoài ra, nếu bạn chưa biết chắc trang blog với Gatsby.js hiện tại gồm những trang nào thì bạn có thể vào 1 địa chỉ bất kì, ví dụ **_http:\/\/localhost:8000\/abc\/_** (*abc* là giá trị bất kỳ nhé).
+Ngoài ra, nếu bạn chưa biết chắc trang blog với Gatsby.js hiện tại gồm những trang nào thì bạn có thể vào 1 địa chỉ bất kì, ví dụ **_http:\/\/localhost:8000/abc/_** (*abc* là giá trị bất kỳ nhé).
 
 Ở chế độ phát triển, khi bạn vào một trang bất kỳ mà trang này không tồn tại thì Gatsby sẽ hiển thị ra một trang **404** mặc định, trong đó sẽ có thông tin về những trang đang tồn tại:
 
@@ -818,7 +818,7 @@ export default (props) => {
 
 #### Sử dụng công cụ đồ hoạ GraphiQL
 
-Ngoài ra, để biết kết quả câu lệnh query graphQL kia như thế nào, bạn có thể sử dụng công cụ GraphiQL bằng cách vào địa chỉ  \_http:\/\/localhost:8000\/___graphql_ và copy-paste đoạn query trên vào:
+Ngoài ra, để biết kết quả câu lệnh query graphQL kia như thế nào, bạn có thể sử dụng công cụ GraphiQL bằng cách vào địa chỉ  *http:\/\/localhost:8000/___graphql* và copy-paste đoạn query trên vào:
 
 ```jsx
 {
@@ -1001,7 +1001,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 Trong đó, *onCreateNode* là một Gatsby API được gọi mỗi khi có một node mới thêm vào hay chỉnh sửa (mỗi node chính là một file). Mục đích của hàm này là mình sẽ tạo thêm trường *slug* cho mỗi node với *slug* có được bằng cách lấy tên thư mục và tách lấy phần bên phải của dấu (---).
 
-Ví dụ bài viết ứng với thư mục *2015-05-01---hello-world*, mình sẽ lấy thành phần bên phải dấu (---) làm *slug* cho bài viết. Do đó, bài viết ứng với thư mục này sẽ có địa chỉ là **_http:\/\/localhost:8000\/hello-world\/_** (tương tự với các bài viết khác).
+Ví dụ bài viết ứng với thư mục *2015-05-01---hello-world*, mình sẽ lấy thành phần bên phải dấu (---) làm *slug* cho bài viết. Do đó, bài viết ứng với thư mục này sẽ có địa chỉ là **_http:\/\/localhost:8000/hello-world/_** (tương tự với các bài viết khác).
 
 Bây giờ mình sẽ sửa file */src/pages/index.js* thành:
 
@@ -1618,7 +1618,7 @@ Tuy nhiên, sau khi đọc qua thì mình thấy chỉ có Netlify và Github Pa
 
 Nhưng bạn biết đấy, với mỗi tài khoản Github thì mình chỉ có thể tạo ra một trang chính thôi. Ví dụ: tài khoản của mình là *username*. Khi đó, trang chính của mình sẽ là **_username.github.io_**.
 
-Bây giờ, nếu mình deploy một project *gatsby-tutorial* lên thì địa chỉ trang web tương ứng với nó sẽ là **_username.github.io\/gatsby-tutorial\/_**. Tuy nhiên, nếu mình muốn custom domain thành *gatsby-tutorial.phamvanlam.com* (vì [phamvanlam.com](https://phamvanlam.com) là tên miền của mình), thì lại không được.
+Bây giờ, nếu mình deploy một project *gatsby-tutorial* lên thì địa chỉ trang web tương ứng với nó sẽ là **_username.github.io/gatsby-tutorial/_**. Tuy nhiên, nếu mình muốn custom domain thành *gatsby-tutorial.phamvanlam.com* (vì [phamvanlam.com](https://phamvanlam.com) là tên miền của mình), thì lại không được.
 
 Không lẽ mình phải tạo mới một tài khoản Github với tên *gatsby-tutorial*. Khi đó, địa chỉ trang blog là *gatsby-tutorial.github.io*. Lúc này, mình có thể custom domain được. Nhưng làm như vậy thì quá mất công.
 

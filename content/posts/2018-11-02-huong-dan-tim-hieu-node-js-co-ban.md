@@ -190,11 +190,11 @@ server.listen(port, hostname, () => {
 node hello-world.js
 ```
 
-Nếu kết quả hiển thị ra _Server running at http:\/\/localhost:8000\/_ là thành công.
+Nếu kết quả hiển thị ra _Server running at http:\/\/localhost:8000/_ là thành công.
 
 ![Chạy server để test](../images/run.png)
 
-Cuối cùng bạn gõ địa chỉ **http:\/\/localhost:8000\/** lên trình duyệt để kiểm tra lại:
+Cuối cùng bạn gõ địa chỉ **http:\/\/localhost:8000/** lên trình duyệt để kiểm tra lại:
 
 ![Kiểm tra server bằng trình duyệt](../images/test.png)
 
