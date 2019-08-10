@@ -1,8 +1,9 @@
 ---
 date: "2018-05-23T13:23:59Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/lap-trinh-javascript-voi-fcc-use-the-twitchtv-json-api-completejavascript.com_.png"
+keywords: "use the twitch.tv json api"
+description: "Tiếp tục với chủ đề Lập trình JavaScript với FCC, bài viết này mình sẽ chia sẻ với bạn về project Use the Twitch.tv JSON API trên freeCodeCamp."
 slug: lap-trinh-javascript-voi-fcc-twitch-tv-json-api
 title: "Lập trình JavaScript với FCC - Use the Twitch.tv JSON API"
 categories:
@@ -38,7 +39,7 @@ Ngoài ra, mình còn tự đưa thêm các yêu cầu khác như:
 
 ## Demo project Use the Twitch.tv JSON API
 
-[codepen_embed height="446" theme_id="0" slug_hash="aGKjGQ" default_tab="js,result" user="completejavascript"]See the Pen <a href='https://codepen.io/completejavascript/pen/aGKjGQ/'>[FCC] TwitchTV JSON API</a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+https://codepen.io/completejavascript/pen/aGKjGQ
 
 Bạn có thể nhập tên kênh mà bạn muốn vào phần input và nhấn **ADD** để thêm vào danh sách kênh. Dữ liệu này sẽ không bị mất đi kể cả khi bạn đóng trình duyệt.
 
@@ -56,11 +57,13 @@ Storage trong JavaScript bao gồm 2 loại: [localStorage](https://developer.mo
 
 #### localStorage và sessionStorage giống và khác nhau thế nào?
 
-- Giống:
-  - Đều cho phép lưu trữ dữ liệu của trang web tương ứng với địa chỉ của trang. Nghĩa là dữ liệu của trang abc.com không thể truy cập đến dữ liệu của trang xyz.com được.
-  - Đều [giới hạn dung lượng cho phép](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Browser_storage_limits_and_eviction_criteria), trong khoảng 5MB đến 8MB.
-  - Đều lưu trữ và quản lý dữ liệu theo kiểu key - value, với các API giống nhau là: Storage.key(), Storage.getItem(), Storage.setItem(), Storage.removeItem(), Storage.clear().
-- Khác: Dữ liệu lưu bằng sessionStorage sẽ bị xoá khi trang web bị đóng hoặc khi người dùng đóng trình duyệt. Trong khi, localStorage cho phép bạn lưu dữ liệu mãi mãi.
+**Giống nhau:**
+
+- Đều cho phép lưu trữ dữ liệu của trang web tương ứng với địa chỉ của trang. Nghĩa là dữ liệu của trang abc.com không thể truy cập đến dữ liệu của trang xyz.com được.
+- Đều [giới hạn dung lượng cho phép](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Browser_storage_limits_and_eviction_criteria), trong khoảng 5MB đến 8MB.
+- Đều lưu trữ và quản lý dữ liệu theo kiểu key - value, với các API giống nhau là: Storage.key(), Storage.getItem(), Storage.setItem(), Storage.removeItem(), Storage.clear().
+
+**Khác nhau:** Dữ liệu lưu bằng sessionStorage sẽ bị xoá khi trang web bị đóng hoặc khi người dùng đóng trình duyệt. Trong khi, localStorage cho phép bạn lưu dữ liệu mãi mãi.
 
 #### Cách sử dụng
 
@@ -68,72 +71,72 @@ Về cách [sử dụng API](/tag/api/) thì khá đơn giản và mình nghĩ b
 
 Vấn đề quan trọng là: API của hai thằng này giống nhau nên mình sẽ xây dựng một class chung cho cả 2. Như vậy sẽ tiện sử dụng sau này.
 
-```
+```js
 class AppStorage {
-        constructor(type) {
-          if (this._storageAvailable(type)) {
-            this._appStorage = window[type];
-          } else {
-            console.log('app-storage', `Your browser doesn't support ${type}!`);
-          }
-        }
-        set(key, value) {
-          if (this._appStorage) {
-            this._appStorage.setItem(key, value);
-          }
-        }
-        get(key) {
-          if (this._appStorage) {
-            return this._appStorage.getItem(key);
-          }
-        }
-        remove(key) {
-          if (this._appStorage) {
-            this._appStorage.removeItem(key);
-          }
-        }
-        _storageAvailable(type) {
-          try {
-            let storage = window[type],
-              x = '__storage_test__';
-            storage.setItem(x, x);
-            storage.removeItem(x);
-            return true;
-          }
-          catch (e) {
-            console.log('app-storage', e);
-            return e instanceof DOMException && (
-              // everything except Firefox
-              e.code === 22 ||
-              // Firefox
-              e.code === 1014 ||
-              /**
-               * test name field too, because code might not be present
-               * everything except Firefox
-               */
-              e.name === 'QuotaExceededError' ||
-              // Firefox
-              e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-              // acknowledge QuotaExceededError only if there's something already stored
-              storage.length !== 0;
-          }
-        }
-      }
+  constructor(type) {
+    if (this._storageAvailable(type)) {
+      this._appStorage = window[type];
+    } else {
+      console.log('app-storage', `Your browser doesn't support ${type}!`);
+    }
+  }
+  set(key, value) {
+    if (this._appStorage) {
+      this._appStorage.setItem(key, value);
+    }
+  }
+  get(key) {
+    if (this._appStorage) {
+      return this._appStorage.getItem(key);
+    }
+  }
+  remove(key) {
+    if (this._appStorage) {
+      this._appStorage.removeItem(key);
+    }
+  }
+  _storageAvailable(type) {
+    try {
+      let storage = window[type],
+        x = '__storage_test__';
+      storage.setItem(x, x);
+      storage.removeItem(x);
+      return true;
+    }
+    catch (e) {
+      console.log('app-storage', e);
+      return e instanceof DOMException && (
+        // everything except Firefox
+        e.code === 22 ||
+        // Firefox
+        e.code === 1014 ||
+        /**
+          * test name field too, because code might not be present
+          * everything except Firefox
+          */
+        e.name === 'QuotaExceededError' ||
+        // Firefox
+        e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+        // acknowledge QuotaExceededError only if there's something already stored
+        storage.length !== 0;
+    }
+  }
+}
 ```
 
 Ở đây mình [ứng dụng class](/js-pattern-constructor-pattern/) để xây dựng một lớp chung cho localStorage và sessionStorage. Trong hàm khởi tạo constructor, mình cần phải kiểm tra xem trình duyệt hiện tại có hỗ trợ kiểu storage hay không?
 
-```
+```js
 constructor(type) {
-      if (this._storageAvailable(type)) {
-        this._appStorage = window[type];
-      } else {
-        console.log('app-storage', `Your browser doesn't support ${type}!`);
-      }
-    }
+  if (this._storageAvailable(type)) {
+    this._appStorage = window[type];
+  } else {
+    console.log('app-storage', `Your browser doesn't support ${type}!`);
+  }
+}
 ```
 
-Với _type_ có thể là: "localStorage" hoặc "sessionStorage". Và hàm \__storageAvailable_ đơn giản là sẽ sử dụng thử một số API của nó. Nếu không có lỗi gì xảy ra thì [hàm](/tim-hieu-function-javascript/) này sẽ trả về true, ngược lại kết quả sẽ là false.
+Với _type_ có thể là: "localStorage" hoặc "sessionStorage". Và hàm *\_storageAvailable* đơn giản là sẽ sử dụng thử một số API của nó. Nếu không có lỗi gì xảy ra thì [hàm](/tim-hieu-function-javascript/) này sẽ trả về true, ngược lại kết quả sẽ là false.
 
 Bạn có thể xem thêm bài này để hiểu rõ hơn: [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API).
 
