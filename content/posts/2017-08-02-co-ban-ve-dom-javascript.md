@@ -1,8 +1,9 @@
 ---
 date: "2017-08-02T00:29:51Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/co-ban-ve-dom-javascript-completejavascript.com_.png"
+keywords: "DOM"
+description: "Bài viết này tôi sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà tôi muốn nói đến, chính là DOM."
 slug: co-ban-ve-dom-javascript
 title: "Cơ bản về DOM JavaScript"
 categories:
@@ -21,24 +22,24 @@ DOM là viết tắt của Document Object Model - một thành phần javascrip
 
 Hãy xem xét một ví dụ đơn giản sau:
 
-```
+```html
 <!doctype html>
-    <html>
-      <head>
-        <title>My home page</title>
-      </head>
-      <body>
-        <h1>My home page</h1>
-        <p>Hello, I am Marijn and this is my home page.</p>
-        <p>I also wrote a book! Read it
-          <a href="http://eloquentjavascript.net">here</a>.</p>
-      </body>
-    </html>
+<html>
+  <head>
+    <title>My home page</title>
+  </head>
+  <body>
+    <h1>My home page</h1>
+    <p>Hello, I am Marijn and this is my home page.</p>
+    <p>I also wrote a book! Read it
+      <a href="http://eloquentjavascript.net">here</a>.</p>
+  </body>
+</html>
 ```
 
 Đây là cấu trúc đơn giản của một trang web.
 
-![Cơ bản về DOM JavaScript 1 - Complete JavaScript - completejavascript.com](/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-1-completejavascript.com_.png)
+![Cơ bản về DOM JavaScript 1 - Complete JavaScript - completejavascript.com](../images/Co-ban-ve-DOM-JavaScript-1-completejavascript.com_.png)
 
 Ở đây, mỗi hình vuông cùng với nội dung bên trong nó chính là DOM.
 
@@ -48,21 +49,19 @@ Thực tế, cấu trúc dữ liệu của một trang web được biểu diễ
 
 Mỗi DOM node sẽ có thuộc tính *nodeType* - là một số nguyên - để biểu diễn kiểu của node, với giá trị như sau:
 
-- document.ELEMENT\*NODE (1) : node thông thường như **\*html, head, body, title, h1, p,...**\_
-
-- document.TEXT_NODE (3) : thành phần text trên trang web
-
-- document.COMMENT_NODE (8) : thành phần comment.
+- document.ELEMENT\_NODE (1) : node thông thường như **html, head, body, title, h1, p,...**
+- document.TEXT\_NODE (3) : thành phần text trên trang web
+- document.COMMENT\_NODE (8) : thành phần comment.
 
 Ví dụ trên được biểu diễn dạng cây:
 
-![Cơ bản về DOM JavaScript 2 - Complete JavaScript - completejavascript.com](/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-2-completejavascript.com_.png)
+![Cơ bản về DOM JavaScript 2 - Complete JavaScript - completejavascript.com](../images/Co-ban-ve-DOM-JavaScript-2-completejavascript.com_.png)
 
 ## Liên kết giữa các DOM node trong cây
 
 Mỗi DOM node luôn chứa rất nhiều liên kết đến các DOM node khác.
 
-![Cơ bản về DOM JavaScript - Complete JavaScript - completejavascript.com](/wp-content/uploads/2017/08/Co-ban-ve-DOM-JavaScript-3-completejavascript.com_.png)
+![Cơ bản về DOM JavaScript - Complete JavaScript - completejavascript.com](../images/Co-ban-ve-DOM-JavaScript-3-completejavascript.com_.png)
 
 ### [Node.parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
 
@@ -154,7 +153,7 @@ Trả về node đầu tiên thoả mãn _selectors_. Trong đó, _selectors_ l�
 
 Trả về danh sách các node thoả mãn _selectors_, theo thứ tự sử dụng thuật toán DFS.
 
-![Perfect practice makes perfect - Complete JavaScript - completejavascript.com](/wp-content/uploads/2017/04/only-perfect-practice-makes-perfect-completejavascript.com_.png)
+![Perfect practice makes perfect - Complete JavaScript - completejavascript.com](../images/only-perfect-practice-makes-perfect-completejavascript.com_.png)
 
 ## Ví dụ sử dụng DOM
 
@@ -176,7 +175,7 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xu-ly-mot
 
 ## Tham khảo
 
-- [The Document Object Model](http://eloquentjavascript.net/14_dom.html)
+[The Document Object Model](http://eloquentjavascript.net/14_dom.html)
 
 <hr class="border-color-light-grey" />
 

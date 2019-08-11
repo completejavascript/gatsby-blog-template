@@ -1,8 +1,9 @@
 ---
 date: "2017-08-06T09:25:42Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/phan-biet-coder-developer-programmer-va-software-engineer-completejavascript.com_.png"
+keywords: "programmer"
+description: "Bài viết được dịch từ website Technotification của tác giả Vicky Singh Rao về cách phân biệt giữa Coder, Programmer, Developer và Software Engineer."
 slug: phan-biet-coder-programmer-developer-va-software-engineer
 title: "Phân biệt coder, programmer, developer và software engineer"
 categories:

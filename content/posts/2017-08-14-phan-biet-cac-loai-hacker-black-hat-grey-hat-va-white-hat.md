@@ -1,8 +1,9 @@
 ---
 date: "2017-08-14T15:11:38Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/phan-biet-cac-loai-hacker-black-hat-grey-hat-white-hat-completejavascript.com_.png"
+keywords: "hacker"
+description: "Bài viết được dịch từ Technotification của Jagadesh siddhartha về cách phân biệt giữa các loại hacker như hacker mũ đen, hacker mũ xám và hacker mũ trắng."
 slug: phan-biet-cac-loai-hacker-black-hat-grey-hat-va-white-hat
 title: "Phân biệt các loại hacker - black hat, grey hat và white hat"
 categories:

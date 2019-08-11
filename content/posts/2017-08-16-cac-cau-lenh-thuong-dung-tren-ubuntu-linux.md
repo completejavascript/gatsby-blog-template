@@ -1,8 +1,9 @@
 ---
 date: "2017-08-16T14:28:19Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/cac-cau-lenh-thuong-dung-ubuntu-linux-completejavascript.com_.png"
+keywords: "câu lệnh"
+description: "Ubuntu cung cấp rất nhiều các câu lệnh sử dụng trên Terminal giúp lập trình viên làm việc nhanh chóng, đơn giản và hiệu quả."
 slug: cac-cau-lenh-thuong-dung-tren-ubuntu-linux
 title: "Các câu lệnh thường dùng trên Ubuntu - Linux"
 categories:
@@ -21,16 +22,15 @@ Dĩ nhiên, với phiên bản Ubuntu Desktop, bạn hoàn toàn có thể sử 
 Có hai cách để mở Terminal trên Ubuntu:
 
 - Cách 1: Nhấn phím cửa sổ, sau đó gõ Terminal, biểu tượng Terminal sẽ hiện ra. Bạn chỉ cần click chuột vào để mở nó.
-
 - Cách 2: Sử dụng phím tắt: **Ctrl Alt T**
 
 Lúc này, Terminal sẽ hiện lên như sau:
 
-![Các câu lệnh thường dùng trên Ubuntu - Linux - Complete JavaScript - Completejavascript.com](/wp-content/uploads/2017/08/Cac-cau-lenh-thuong-dung-tren-ubuntu-linux-completejavascript.com_.png)
+![Các câu lệnh thường dùng trên Ubuntu - Linux - Complete JavaScript - Completejavascript.com](../images/Cac-cau-lenh-thuong-dung-tren-ubuntu-linux-completejavascript.com_.png)
 
 Để mở một Terminal mới bạn có thể sử dụng lại hai cách trên. Trường hợp bạn muốn mở Terminal mới nằm trong cửa sổ hiện tại thì bạn có thể sử dụng tổ hợp phím: **Ctrl Shift T**
 
-![Các câu lệnh thường dùng trên Ubuntu - Linux - 2 - Complete JavaScript - Completejavascript.com](/wp-content/uploads/2017/08/Cac-cau-lenh-thuong-dung-tren-ubuntu-linux-2-completejavascript.com_.png)
+![Các câu lệnh thường dùng trên Ubuntu - Linux - 2 - Complete JavaScript - Completejavascript.com](../images/Cac-cau-lenh-thuong-dung-tren-ubuntu-linux-2-completejavascript.com_.png)
 
 ## Danh sách các câu lệnh cơ bản trong Ubuntu
 
@@ -50,57 +50,47 @@ Câu lệnh trở thành: **ls -a**
 
 Thay đổi vị trí thư mục hiện tại - di chuyển đến vị trí thư mục khác. Một số cách khác nhau khi sử dụng lệnh **cd** là:
 
-- **cd . **: đứng nguyên ở thư mục hiện tại
-
+- **cd .**: đứng nguyên ở thư mục hiện tại
 - **cd ..** : di chuyển đến thư mục cha của thư mục hiện tại
-
 - **cd -** : di chuyển đến thư mục trước khi di chuyển đến thư mục hiện tại
-
 - **cd** hoặc **cd ~**: di chuyển đến thư mục **/home/username** (ví dụ với mình là: /home/lampv). Đây là vị trí thư mục mặc định mỗi khi bạn mở Terminal. Và bạn có toàn quyền đối với thư mục này.
-
 - **cd /** : di chuyển đến thư mục root - thư mục gốc chứa mọi thư mục, trong đó có home/username
-
-- **cd <tên thư mục con> **: di chuyển đến thư mục con bên trong thư mục hiện tại
-
-- **cd <đường dẫn đến thư mục>** : di chuyển đến thư mục với đường dẫn là đường dẫn cứng. Đường dẫn cứng có thể ví dụ như: **/home/lampv/Documents, ~/Documents/abc**, ...
+- **cd &lt;tên thư mục con&gt;**: di chuyển đến thư mục con bên trong thư mục hiện tại
+- **cd &lt;đường dẫn đến thư mục&gt;** : di chuyển đến thư mục với đường dẫn là đường dẫn cứng. Đường dẫn cứng có thể ví dụ như: **/home/lampv/Documents, ~/Documents/abc**, ...
 
 #### cp (copy)
 
 Dùng để sao chép tập tin hay thư mục đến một thư mục khác.
 
-- **cp <tên tập tin> <tên thư mục>** : dùng để copy một tập tin vào một thư mục
-
-- **cp -r <tên thư mục nguồn> <tên thư mục đích>** : dùng để copy thư mục nguồn vào thư mục đích
+- **cp &lt;tên tập tin&gt; &lt;tên thư mục&gt;** : dùng để copy một tập tin vào một thư mục
+- **cp -r &lt;tên thư mục nguồn&gt; &lt;tên thư mục đích&gt;** : dùng để copy thư mục nguồn vào thư mục đích
 
 #### mv (move)
 
 Dùng để di chuyển tập tin đến một thư mục mới đồng thời đổi tên tập tin đó.
 
-- **mv <tên tập tin cũ> <tên thư mục đích / tên tập tin mới>**: di chuyển một tập tin đến thư mục mới đồng thời đổi tên tập tin.
-
-- **mv <tên tập tin cũ> <tên thư mục đích> **: di chuyển tập tin đến thư mục đích và không đổi tên.
+- **mv &lt;tên tập tin cũ&gt; &lt;tên thư mục đích / tên tập tin mới&gt;**: di chuyển một tập tin đến thư mục mới đồng thời đổi tên tập tin.
+- **mv &lt;tên tập tin cũ&gt; &lt;tên thư mục đích&gt; **: di chuyển tập tin đến thư mục đích và không đổi tên.
 
 #### rm (remove)
 
 Dùng để xoá tập tin hay thư mục.
 
-- **rm <tên tập tin> **: dùng để xoá tập tin
-
-- **rm <tên thư mục>** : dùng để xoá một thư mục rỗng
-
-- **rm -r <tên thư mục>** : xoá bất kỳ thư mục nào
+- **rm &lt;tên tập tin&gt;**: dùng để xoá tập tin
+- **rm &lt;tên thư mục&gt;** : dùng để xoá một thư mục rỗng
+- **rm -r &lt;tên thư mục&gt;** : xoá bất kỳ thư mục nào
 
 #### mkdir (make directory)
 
-Dùng để tạo thư mục mới : **mkdir <tên thư mục>**
+Dùng để tạo thư mục mới : **mkdir &lt;tên thư mục&gt;**
 
 #### touch
 
-Dùng để tạo file mới : **touch <tên tập tin>**
+Dùng để tạo file mới : **touch &lt;tên tập tin&gt;**
 
 #### man
 
-Dùng để hiển thị hướng dẫn các câu lệnh: **man <tên câu lệnh>**. Ví dụ: **man touch, man mkdir**,...
+Dùng để hiển thị hướng dẫn các câu lệnh: **man &lt;tên câu lệnh&gt;**. Ví dụ: **man touch, man mkdir**,...
 
 ### Các câu lệnh về thông tin hệ thống
 
@@ -112,19 +102,16 @@ Hiển thị mức độ chiếm dụng không gian đĩa cứng của tập tin
 
 Hiển thị mức chiếm dụng không gian đĩa cứng ở thư mục hiện tại và các thư mục con. Có một số tuỳ chọn mà bạn có thể sử dụng:
 
-- **-h** : (human-readable) kết quả hiển thị sử dụng đơn vị là KB, MB hay GB
-
-- **-s** : (summary) hiển thị tổng dung lượng
+- **-h**: (human-readable) kết quả hiển thị sử dụng đơn vị là KB, MB hay GB
+- **-s**: (summary) hiển thị tổng dung lượng
 
 #### free
 
 Hiển thị dung lượng bộ nhớ RAM còn trống và đang được sử dụng với một số tuỳ chọn:
 
-- **-h** : (human-readable) hiển thị cách dễ đọc với con người
-
-- **-g** : hiển thị đơn vị dạng GB
-
-- **-m** : hiển thị đơn vị dạng MB
+- **-h**: (human-readable) hiển thị cách dễ đọc với con người
+- **-g**: hiển thị đơn vị dạng GB
+- **-m**: hiển thị đơn vị dạng MB
 
 #### top
 
@@ -144,11 +131,11 @@ Hiển thị danh sách các thiết bị mạng trên máy tính. Qua đó, b�
 
 #### adduser
 
-Dùng để thêm một user mới cho máy: **adduser <tên user mới>**
+Dùng để thêm một user mới cho máy: **adduser &lt;tên user mới&gt;**
 
 #### passwd
 
-Dùng để thêm password cho người dùng mới: **passwd <tên user mới>**
+Dùng để thêm password cho người dùng mới: **passwd &lt;tên user mới&gt;**
 
 #### sudo
 
@@ -157,7 +144,6 @@ Nhiều câu lệnh trong Terminal cần phải có **sudo** phía trước. Khi
 Để thực thi được câu lệnh này, bạn bắt buộc phải nhập mật khẩu. Một số lệnh bắt buộc phải dùng sudo như:
 
 - **sudo shutdown -h now**: tắt máy tính ngay lập tức
-
 - **sudo reboot** : khởi động lại máy tính
 
 ## Lời kết
