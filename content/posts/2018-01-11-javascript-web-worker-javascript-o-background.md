@@ -1,8 +1,9 @@
 ---
 date: "2018-01-11T14:34:12Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/javascript-web-worker-chay-javascript-code-background-completejavascript-completejavascript.com_.png"
+keywords: "javascript web worker"
+description: "Có thể bạn thừa biết, JavaScript là một ngôn ngữ chạy đơn luồng. Điều đó có nghĩa là nếu bạn thực hiện một tác vụ quá lớn trên giao diện chính thì khả năng cao là giao diện sẽ bị đơ. Để giải quyết vấn đề này, JavaScript đã đưa ra một khái niệm là JavaScript Web Worker."
 slug: javascript-web-worker-javascript-o-background
 title: "JavaScript Web Worker - chạy JavaScript ở background"
 categories:
@@ -23,55 +24,55 @@ Vì vậy, khi áp dụng JavaScript Web Worker một cách chính xác và phù
 
 ### Kiểm tra trình duyệt có hỗ trợ Web Worker hay không
 
-Để kiểm tra xem trình duyệt bạn đang sử dụng có hỗ trợ JavaScript Web Worker hay không, bạn có thể sử dụng **_typeof_**:
+Để kiểm tra xem trình duyệt bạn đang sử dụng có hỗ trợ JavaScript Web Worker hay không, bạn có thể sử dụng **typeof**:
 
-```
+```js
 if (typeof(Worker) !== "undefined") {
-        // Có hỗ trợ JavaScript Web Worker
-    } else {
-        // Không hỗ trợ JavaScript Web Worker
-    }
+    // Có hỗ trợ JavaScript Web Worker
+} else {
+    // Không hỗ trợ JavaScript Web Worker
+}
 ```
 
 ### Tạo file JavaScript cho Web Worker
 
 Một ví dụ đơn giản cho file JavaScript Web Worker:
 
-```
+```js
 for(var i = 0; i < 10000000000; i++) {
-      if (i % 1000000000 == 0) postMessage(i);
-    }
+  if (i % 1000000000 == 0) postMessage(i);
+}
 
-    self.onmessage = function(msg) {
-      // Được gọi khi có message gửi từ luồng chính
-    }
+self.onmessage = function(msg) {
+  // Được gọi khi có message gửi từ luồng chính
+}
 ```
 
 ### Khởi tạo Web Worker
 
 Giả sử bạn đã tạo một file **web_worker.js**. Để khởi tạo Web Worker, bạn làm như sau:
 
-```
+```js
 var w;
 
-    function startWorker() {
-        // Kiểm tra xem trình duyệt có hỗ trợ JavaScript Web Worker
-        if(typeof(Worker) !== "undefined") {
-            // Kiểm tra đối tượng Web Worker đã được khởi tạo hay chưa
-            if(typeof(w) == "undefined") {
-                // Khởi tạo Web Worker
-                w = new Worker("web_worker.js");
-            }
-            w.onmessage = function(event) {
-                // Được gọi khi có message từ Web Worker gửi đến
-            };
-            w.onerror = function() {
-                // Khi có lỗi xảy ra với Web Worker
-            };
-        } else {
-           // Trình duyệt không hỗ trợ JavaScript Web Worker
+function startWorker() {
+    // Kiểm tra xem trình duyệt có hỗ trợ JavaScript Web Worker
+    if(typeof(Worker) !== "undefined") {
+        // Kiểm tra đối tượng Web Worker đã được khởi tạo hay chưa
+        if(typeof(w) == "undefined") {
+            // Khởi tạo Web Worker
+            w = new Worker("web_worker.js");
         }
+        w.onmessage = function(event) {
+            // Được gọi khi có message từ Web Worker gửi đến
+        };
+        w.onerror = function() {
+            // Khi có lỗi xảy ra với Web Worker
+        };
+    } else {
+        // Trình duyệt không hỗ trợ JavaScript Web Worker
     }
+}
 ```
 
 Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/tim-hieu-function-javascript/) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban/).
@@ -82,7 +83,7 @@ Trong đó, **Worker.onerror** được gọi khi có lỗi với Web Worker sau
 
 Sau khi khởi tạo Web Worker thì code JavaScript ở background sẽ chạy. Để dừng Web Worker lại, bạn có thể sử dụng phương thức **terminate()**.
 
-```
+```js
 w.terminate();
 ```
 
@@ -93,7 +94,6 @@ w.terminate();
 Đối với hàm **postMessage()** sẽ có hai cách sử dụng:
 
 - Truyền đi message thông thường.
-
 - Sử dụng Transferable Object
 
 #### Truyền Message thông thường
@@ -102,44 +102,50 @@ Trong phương pháp này, tham số truyền vào sẽ là một [object](/java
 
 Ví dụ như sau:
 
-```
+```js
 function startWorker() {
-      if(typeof(myWorker) != 'undefined') {
-        myWorker.postMessage({cmd : 'start', msg : 'hello'});
-      } else {
-        console.log('[Main]', 'Worker is undefined.');
-      }
-    }
+  if(typeof(myWorker) != 'undefined') {
+    myWorker.postMessage({cmd : 'start', msg : 'hello'});
+  } else {
+    console.log('[Main]', 'Worker is undefined.');
+  }
+}
 ```
 
 Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number](/values-types-va-operators-trong-javascript-phan-1/), [String, Boolean](/values-types-va-operators-trong-javascript-phan-2/), [Array](/javascript-array-co-ban/).
 
 Và ở Worker Thread, hàm **onmessage** sẽ được gọi:
 
-```
+```js
 self.onmessage = function(event) {
-      handleMessage(event);
-    }
+  handleMessage(event);
+}
 
-    function handleMessage(event) {
-      console.log('[Worker]', 'Worker Thread receives command: ', event.data.cmd, event.data.msg);
-      if(event.data.cmd == 'start') {
-        for(var i = 0; i <= 10000000000; i++) {
-          if(i % 1000000000 == 0) postMessage({cmd : 'resp', msg: i});
-        }
-      }
-      else if(event.data.cmd == 'stop') {
-        postMessage({cmd : 'stop', msg: 'Good Bye!'});
-        self.close();
-      }
+function handleMessage(event) {
+  console.log(
+    '[Worker]', 
+    'Worker Thread receives command: ', event.data.cmd, event.data.msg
+  );
+  if(event.data.cmd == 'start') {
+    for(var i = 0; i <= 10000000000; i++) {
+      if(i % 1000000000 == 0) postMessage({cmd : 'resp', msg: i});
     }
+  }
+  else if(event.data.cmd == 'stop') {
+    postMessage({cmd : 'stop', msg: 'Good Bye!'});
+    self.close();
+  }
+}
 ```
 
 Object nhận được từ phía giao diện chính sẽ được lấy từ **data** trong **event**.
 
-```
-console.log('[Worker]', 'Worker Thread receives command: ', event.data.cmd, event.data.msg);
-    // => [Worker] Worker Thread receives command: start hello
+```js
+console.log(
+  '[Worker]', 
+  'Worker Thread receives command: ', event.data.cmd, event.data.msg
+);
+// => [Worker] Worker Thread receives command: start hello
 ```
 
 Để test chức năng này, mình có chuẩn bị một ví dụ nhỏ trên [Github](https://github.com/completejavascript/web-worker-test) và [codepen](https://codepen.io/completejavascript/pen/vpRvgm) mà bạn có thể tham khảo.
@@ -154,66 +160,77 @@ Khi sử dụng [Transferable Object](https://developer.mozilla.org/en-US/docs/W
 
 Phía Main Thread:
 
-```
+```js
 function startWorker() {
-      if(typeof(myWorker) != 'undefined') {
-        var arrBuf1 = new ArrayBuffer(1000);
-        var arrBuf2 = new ArrayBuffer(100000);
+  if(typeof(myWorker) != 'undefined') {
+    var arrBuf1 = new ArrayBuffer(1000);
+    var arrBuf2 = new ArrayBuffer(100000);
 
-        console.log('[Main]', 'Before Transfering:');
-        console.log('[Main]', 'Length of Array Buffer 1:', arrBuf1.byteLength);
-        console.log('[Main]', 'Length of Array Buffer 2:', arrBuf2.byteLength);
+    console.log('[Main]', 'Before Transfering:');
+    console.log('[Main]', 'Length of Array Buffer 1:', arrBuf1.byteLength);
+    console.log('[Main]', 'Length of Array Buffer 2:', arrBuf2.byteLength);
 
-        myWorker.postMessage({cmd : 'start', buf1 : arrBuf1, buf2 : arrBuf2}, [arrBuf1, arrBuf2]);
+    myWorker.postMessage(
+      { cmd : 'start', buf1 : arrBuf1, buf2 : arrBuf2 }, 
+      [arrBuf1, arrBuf2]
+    );
 
-        console.log('[Main]', 'After Transfering:');
-        console.log('[Main]', 'Length of Array Buffer 1:', arrBuf1.byteLength);
-        console.log('[Main]', 'Length of Array Buffer 2:', arrBuf2.byteLength);
-      } else {
-        console.log('[Main]', 'Worker is undefined.');
-      }
-    }
+    console.log('[Main]', 'After Transfering:');
+    console.log('[Main]', 'Length of Array Buffer 1:', arrBuf1.byteLength);
+    console.log('[Main]', 'Length of Array Buffer 2:', arrBuf2.byteLength);
+  } else {
+    console.log('[Main]', 'Worker is undefined.');
+  }
+}
 ```
 
 Phía Worker Thread:
 
-```
+```js
 self.onmessage = function(event) {
-      handleMessage(event);
-    }
+  handleMessage(event);
+}
 
-    function handleMessage(event) {
-      console.log('[Worker]', 'Worker Thread receives command: ', event.data.cmd);
-      if(event.data.cmd == 'start') {
-        console.log('[Worker]', 'Length of Array Buffer 1:', event.data.buf1.byteLength);
-        console.log('[Worker]', 'Length of Array Buffer 2:', event.data.buf2.byteLength);
-      }
-    }
+function handleMessage(event) {
+  console.log(
+    '[Worker]', 'Worker Thread receives command: ', event.data.cmd
+  );
+
+  if(event.data.cmd == 'start') {
+    console.log(
+      '[Worker]', 'Length of Array Buffer 1:', event.data.buf1.byteLength
+    );
+
+    console.log(
+      '[Worker]', 'Length of Array Buffer 2:', event.data.buf2.byteLength
+    );
+  }
+}
 ```
 
 Ở đây, Transferable Object là [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer).
 
 Kết quả:
 
-```
+```js
 [Main] Init Web Worker
-    [Main] Before Transfering:
-    [Main] Length of Array Buffer 1: 1000
-    [Main] Length of Array Buffer 2: 100000
-    [Main] After Transfering:
-    [Main] Length of Array Buffer 1: 0
-    [Main] Length of Array Buffer 2: 0
-    // Độ dài của Array Buffer sau khi gửi sẽ là 0 vì nó được chuyển sang phía Worker Thread.
+[Main] Before Transfering:
+[Main] Length of Array Buffer 1: 1000
+[Main] Length of Array Buffer 2: 100000
+[Main] After Transfering:
+[Main] Length of Array Buffer 1: 0
+[Main] Length of Array Buffer 2: 0
+// Độ dài của Array Buffer sau khi gửi sẽ là 0 
+// vì nó được chuyển sang phía Worker Thread.
 
-    [Worker] Worker Thread receives command: start
-    [Worker] Length of Array Buffer 1: 1000
-    [Worker] Length of Array Buffer 2: 100000
+[Worker] Worker Thread receives command: start
+[Worker] Length of Array Buffer 1: 1000
+[Worker] Length of Array Buffer 2: 100000
 ```
 
 **Chú ý:**
 
 - Việc thực hiện lệnh tại **onmessage** sẽ được thực hiện tuần tự. Nghĩa là khi bạn gửi 10 lệnh **postMessage**, thì ở phía nhận, nó sẽ thực hiện lần lượt từng lệnh một, hết lệnh này mới đến lệnh khác.
-
 - Worker Thread có thể tự đóng nó bằng cách gọi: **self.close()**.
 
 Bài viết hôm nay dừng lại tại đây. Để tìm hiểu thêm về JavaScript Web Worker thì bạn có thể tìm hiểu thêm ở những link phía dưới đây.
@@ -223,15 +240,10 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo,](/javascript
 ## Xem thêm
 
 - [HTML5 Web Worker](https://www.w3schools.com/html/html5_webworkers.asp)
-
 - [Using Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
-
 - [The basics of Web Worker](https://www.html5rocks.com/en/tutorials/workers/basics/)
-
 - [Web Worker Test](https://github.com/completejavascript/web-worker-test)
-
 - [Inline Web Worker](https://github.com/completejavascript/inline-web-worker)
-
 - [Web Worker using Transferable Object.](https://github.com/completejavascript/web-worker-transferable-object)
 
 <hr class="border-color-light-grey" />

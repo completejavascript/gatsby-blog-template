@@ -1,8 +1,9 @@
 ---
 date: "2017-12-23T01:22:31Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/lam-sao-de-thuc-day-som-ma-khong-cam-thay-met-moi-completejavascript-com.png"
+keywords: "thức dậy sớm"
+description: "Bạn có quá nhiều việc phải làm. Bạn chăm chỉ, cố gắng để biến ước mơ trở thành hiện thực. Nhưng một ngày thì vẫn chỉ có 24 giờ. Vậy làm thế nào để bạn có thêm một đến hai giờ làm việc hiệu quả mỗi ngày? Câu trả lời là: Hãy thức dậy sớm."
 slug: thuc-day-som-khong-cam-thay-met-moi
 title: "Làm sao để thức dậy sớm mà không cảm thấy mệt mỏi"
 categories:
@@ -38,15 +39,10 @@ Sau khi đã xác định được thời lượng, thời điểm dành cho gi�
 Một giấc ngủ ngon sẽ giúp cơ thể tái tạo lại năng lượng đã mất, giúp cơ thể sảng khoái và hoạt động hiệu quả trong ngày hôm sau. Để ngủ ngon, bạn có thể thực hiện một số việc sau đây mà mình cảm thấy khá hiệu quả:
 
 - Xem lại danh sách công việc của bạn trong ngày hôm đó. Những việc nào đã được hoàn thành, những việc nào còn dang dở. Mục đích là giúp bạn không còn cảm thấy vướng bận việc gì trước khi đi ngủ.
-
 - Lên kế hoạch cho những việc sẽ làm trong ngày hôm sau. Tốt nhất là hãy ghi ra và quên nó cho đến khi thức dậy. Bạn sẽ không muốn việc vừa nằm ngủ và vừa nghĩ đến công việc của ngày hôm sau.
-
 - Rời xa thiết bị điện tử, công nghệ (ti vi, điện thoại, máy tính,…) ít nhất 30 phút trước khi đi ngủ. Đây quả thật là việc khó trong thời điểm hiện tại. Khi mà công nghệ đang chiếm một vị trí quan trọng trong cuộc sống của chúng ta. Đơn giản là hãy sống chậm lại, tắt điện thoại, máy tính đi và NGỦ.
-
 - Đọc sách: đọc sách giấy là một cách giúp bạn tránh xa thiết bị điện tử. Hơn nữa, đọc sách còn cung cấp tri thức cho chúng ta.
-
 - Nghe những bản nhạc nhẹ nhàng. Cách này giúp bạn cảm thấy yên bình, tĩnh tâm hơn.
-
 - Tắt đèn, giữ cho không gian ngủ yên tĩnh. Chắc chắn là bạn sẽ không thể ngủ được nếu như đèn thì chiếu thẳng vào mắt, hay khi quá ồn ào, trừ khi bạn quá mệt mỏi.
 
 Đó là những việc bạn có thể làm để chuẩn bị cho một giấc ngủ ngon. Vậy khi thức dậy thì sao?
@@ -56,15 +52,10 @@ Một giấc ngủ ngon sẽ giúp cơ thể tái tạo lại năng lượng đ�
 Những việc bạn làm khi thức dậy sớm là rất quan trọng. Nó quyết định đến năng suất công việc và chất lượng cuộc sống của bạn ngày hôm đó. Những hoạt động sau đây có thể giúp bạn có một ngày hoạt động hiệu quả.
 
 - Rửa mặt: Rửa mặt giúp bạn tỉnh táo và đánh tan cơn buồn ngủ ngay lập tức.
-
 - Uống một cốc nước: Sau một đêm, cơ thể bạn thường thiếu nước, việc bổ sung nước giúp thanh lọc cơ thể. Bạn sẽ cảm thấy sảng khoái hơn.
-
 - Tập thể dục nhẹ nhàng khoảng 15 phút. Việc này giúp khởi động cơ thể, tuần hoàn máu tốt hơn, tái tạo nhiều năng lượng cho cơ thể.
-
 - Nghe những bạn nhạc vui tươi, tạo động lực.
-
 - Xem lại kế hoạch đã viết ngày hôm trước và bắt tay ngay vào thực hiện công việc. Bởi lẽ, mục tiêu của bạn khi thức dậy sớm là để thực hiện công việc của mình. Vì vậy, hãy xem lại danh sách công việc, điều chỉnh cho hợp lý và bắt tay ngay vào làm thôi.
-
 - Hoặc nếu bạn có mong muốn học [lập trình JavaScript](/category/javascript/javascript-co-ban/) thì có thể đọc các bài viết tại blog [CompleteJavaScript](/).
 
 Trên đây là những cách để giúp bạn thức dậy sớm mà không cảm thấy mệt mỏi. Mình rất vui nếu bạn đọc chia sẻ các phương pháp của bạn ở dưới phần bình luận.
