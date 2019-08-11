@@ -1,8 +1,9 @@
 ---
 date: "2018-03-15T18:19:49Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/gui-email-bang-html-va-formspree.io-completejavascript.com_.png"
+keywords: "gửi email bằng html"
+description: "Phương pháp cực kì đơn giản và hiệu quả giúp bạn gửi email bằng HTML sử dụng formspree.io. Tất cả công việc bạn cần phải làm là cấu hình form trong HTML sử dụng email cá nhân của bạn,..."
 slug: gui-mail-bang-html-va-formspree-io
 title: "Gửi email bằng HTML và Formspree.io"
 categories:
@@ -12,16 +13,14 @@ tags:
   - HTML
 ---
 
-Xin chào các bạn! Gần đây, mình có làm một số website static (chỉ gồm HTML5, CSS3 và [JavaScript](/category/javascript/javascript-co-ban/)). Trong đó, website có một phần là contact form\*\* **(liên hệ). Sau một hồi tìm kiếm google, mình đã tìm ra một phương pháp rất hay giúp các bạn gửi email bằng HTML bằng cách sử dụng [**Formspree.io\*\*](https://formspree.io/). Vậy cách này có những ưu điểm gì?
+Xin chào bạn! Gần đây, mình có làm một số website static (chỉ gồm HTML5, CSS3 và [JavaScript](/category/javascript/javascript-co-ban/)). Trong đó, website có một phần là contact form (liên hệ). Sau một hồi tìm kiếm google, mình đã tìm ra một phương pháp rất hay giúp bạn gửi email bằng HTML bằng cách sử dụng [Formspree.io](https://formspree.io/). Vậy cách này có những ưu điểm gì?
 
 ## Ưu điểm khi gửi email bằng HTML và Formspree.io
 
 Mình xin liệt kê ra một vài ưu điểm như sau:
 
 - Chỉ cần triển khai form trên HTML
-
 - Không cần xử lý trong JavaScript, PHP,...
-
 - Không cần đăng ký tài khoản
 
 Với những ưu điểm trên mình quyết định dùng nó ngay mà không cần tìm kiếm google thêm xem còn cách nào khác nữa hay không.
@@ -30,39 +29,39 @@ Với những ưu điểm trên mình quyết định dùng nó ngay mà không 
 
 Việc đầu tiên cần làm là phải dùng thử xem nó hoạt động như thế nào. Để dùng thử, bạn vào trang [testformspree](http://testformspree.com/) và làm theo hướng dẫn sau:
 
-### **Bước 1: Sửa nội dung form**
+### Bước 1: Sửa nội dung form
 
-Bạn thay đổi giá trị của thuộc tính **action** trong form thành dạng **https://formspree.io/your@email.com** với **your@email** là địa chỉ mà bạn muốn dùng để nhận mail. Ví dụ của mình là: https://formspree.io/lampv606.test@gmail.com.
+Bạn thay đổi giá trị của thuộc tính **action** trong form thành dạng **https:\/\/formspree.io/your@email.com** với **your@email** là địa chỉ mà bạn muốn dùng để nhận mail. Ví dụ của mình là: https:\/\/formspree.io/lampv606.test@gmail.com.
 
-```
+```html
 <form method="POST" action="https://formspree.io/lampv606.test@gmail.com">
-      <input type="email" name="email" placeholder="Your email">
-      <textarea name="abc" placeholder="Your message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <input type="email" name="email" placeholder="Your email">
+  <textarea name="abc" placeholder="Your message"></textarea>
+  <button type="submit">Send</button>
+</form>
 ```
 
 Như vậy là đã hoàn thành phần cài đặt form.
 
-![](/wp-content/uploads/2018/03/test-sending-email-testformspree.io_.png)
+![cài đặt form](../images/test-sending-email-testformspree.io_.png)
 
-### **Bước 2: Nhập nội dung vào form**
+### Bước 2: Nhập nội dung vào form
 
 Trong bước này, bạn sẽ đóng vai trò là người gửi email đến địa chỉ đã cấu hình trong form ở bước 1.
 
-Bạn sẽ nhập địa chỉ email vào mục _Your email_ (chú ý là phải đúng chuẩn, có chữ @) và nội dung mà bạn muốn gửi vào phần _Your message_. Nhập xong, các bạn chọn _Send_ để gửi.
+Bạn sẽ nhập địa chỉ email vào mục _Your email_ (chú ý là phải đúng chuẩn, có chữ @) và nội dung mà bạn muốn gửi vào phần _Your message_. Nhập xong, bạn chọn _Send_ để gửi.
 
 Lúc này, trang web thông báo rằng bạn cần xác minh email.
 
-![xác minh email khi gửi mail bằng html và formspree](/wp-content/uploads/2018/03/confirm-email-testformspree.png)
+![xác minh email khi gửi mail bằng html và formspree](../images/confirm-email-testformspree.png)
 
-### **Bước 3: Xác minh email**
+### Bước 3: Xác minh email
 
 Bạn sẽ cần vào email mà bạn muốn nhận (email đã cài đặt trong form ở bước 1, không phải email vừa nhập ở bước 2) để xác nhận. Bạn nhấn vào button **Confirm Form** là hoàn thành.
 
 Từ nay về sau, mọi người có thể gửi email trực tiếp cho bạn thông qua form này mà không cần xác nhận nữa.
 
-**Chú ý**: với mỗi địa chỉ trang web chứa form (ví dụ ở đây là http://testformspree.com/), bạn cần phải test thử để xác minh một lần đầu tiên. Nghĩa là việc xác minh dựa trên địa chỉ trang web, không phải theo địa chỉ email. Vậy nên, khi bạn sử dụng form ở một địa chỉ khác (http://abc.com), với cùng email như trên, thì bạn vẫn cần phải xác minh lại.
+> **Chú ý**: với mỗi địa chỉ trang web chứa form (ví dụ ở đây là http://testformspree.com/), bạn cần phải test thử để xác minh một lần đầu tiên. Nghĩa là việc xác minh dựa trên địa chỉ trang web, không phải theo địa chỉ email. Vậy nên, khi bạn sử dụng form ở một địa chỉ khác (http:\/\/abc.com), với cùng email như trên, thì bạn vẫn cần phải xác minh lại.
 
 ## Triển khai gửi email bằng HTML
 
@@ -72,7 +71,7 @@ Giải pháp là bạn có thể sử dụng **github.io** hoặc **codepen.io**
 
 Demo đây nhé:
 
-[codepen_embed height="270" theme_id="0" slug_hash="yKOpLd" default_tab="html,result" user="completejavascript"]See the Pen [Sending Email Using HTML5 + Formspree.io](https://codepen.io/completejavascript/pen/yKOpLd/) by Lam Pham ([@completejavascript](https://codepen.io/completejavascript)) on [CodePen](https://codepen.io).[/codepen_embed]
+https://codepen.io/completejavascript/pen/yKOpLd
 
 So với ví dụ trên, mình chỉ thêm phần _Name_ để ghi họ tên, còn lại thì hoàn toàn không khác gì hết. Về cơ bản, đến đây, bạn đã hoàn thành được nhiệm vụ gửi email bằng HTML. Sau đây, là một số tính năng nâng cao khác mà bạn có thể xem xét thêm vào.
 
@@ -80,27 +79,27 @@ So với ví dụ trên, mình chỉ thêm phần _Name_ để ghi họ tên, c�
 
 Ngoài những tính năng cơ bản như trên, formspree còn hỗ trợ một vài các tính năng nâng cao khác như:
 
-### **\_replyto**
+### \_replyto
 
 Trường này có thể dùng để thay thế cho phần email. Khi đó, bạn có thể reply trực tiếp cho người đã submit form này.
 
-```
+```html
 <input type="text" name="_replyto" placeholder="Your email" />
 ```
 
-### **\_next**
+### \_next
 
 Mặc định, sau khi gửi thành công sẽ có một trang thông báo mặc định của Formspree. Tuy nhiên, bạn có thể thay thế nó bằng một trang khác của riêng bạn.
 
-```
+```html
 <input type="hidden" name="_next" value="//site.io/thanks.html" />
 ```
 
-### **\_subject**
+### \_subject
 
 Dùng để thêm vào tiêu đề mail. Qua đó, bạn có thể reply lại người gửi mà không cần sửa lại phần subject.
 
-```
+```html
 <input type="hidden" name="_subject" value="New submission!" />
 ```
 
@@ -108,13 +107,13 @@ Dùng để thêm vào tiêu đề mail. Qua đó, bạn có thể reply lại n
 
 Dùng để thêm địa chỉ email vào trường **cc**.
 
-```
+```html
 <input type="hidden" name="_cc" value="another@email.com" />
 ```
 
 Nếu bạn muốn mail này cc cho nhiều người thì có thể thêm vào nhiều email, phân cách nhau bởi dấu phẩy.
 
-```
+```html
 <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" />
 ```
 
@@ -122,7 +121,7 @@ Nếu bạn muốn mail này cc cho nhiều người thì có thể thêm vào n
 
 Phần này cho phép bạn nhận email dạng plain text.
 
-```
+```html
 <input type="hidden" name="_format" value="plain" />
 ```
 
@@ -130,7 +129,7 @@ Phần này cho phép bạn nhận email dạng plain text.
 
 Sau khi bạn nhấn gửi, sẽ có phần hiện reCAPTCHA để xác minh bằng tiếng anh. Bạn có thể thay đổi ngôn ngữ tùy thích bằng cách sử dụng thuộc tính này.
 
-```
+```html
 <input type="hidden" name="_language" value="es" />
 ```
 
@@ -140,7 +139,7 @@ Hiện tại, có nhiều ngôn ngữ được support, nhưng chưa có Tiếng
 
 reCAPTCHA dùng để tránh spam. Tuy nhiên, bạn vẫn có thể sử dụng thuộc tính này để bỏ qua phần hiện reCAPTCHA.
 
-```
+```html
 <input type="text" name="_gotcha" style="display:none" />
 ```
 

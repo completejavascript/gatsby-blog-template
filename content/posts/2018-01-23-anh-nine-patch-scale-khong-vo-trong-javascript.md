@@ -1,8 +1,9 @@
 ---
 date: "2018-01-23T13:34:08Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/anh-nine-patch-scale-khong-vo-trong-javascript-completejavascript.com_.png"
+keywords: "ảnh nine-patch"
+description: "Có một loại ảnh cho phép kéo dãn mà không vỡ ảnh, chính là ảnh nine-patch (hay 9patch). Vậy ảnh nine-patch là gì? Cách sử dụng ảnh nine-patch trong JavaScript như thế nào? Bài viết này sẽ giúp bạn tìm hiểu về xử lý ảnh nine-patch trong JavaScript."
 slug: anh-nine-patch-scale-khong-vo-trong-javascript
 title: "Ảnh nine-patch - Scale không vỡ trong JavaScript"
 categories:
@@ -30,20 +31,17 @@ Theo định nghĩa ở trên, ảnh nine-patch sẽ sử dụng border có đ�
 
 Trong đó, phần co dãn được xác định bởi 2 đường kẻ màu đen ở phía trên (**top**) và phía bên trái (**left**), những pixel còn lại ở top và left phải để transparent hoặc màu trắng hoàn toàn.
 
-![nine-patch button stretchable 0- complete javascript - completejavascript.com](/wp-content/uploads/2018/01/nine-patch-button-stretchable-0.jpg)
+![nine-patch button stretchable 0- complete javascript - completejavascript.com](../images/nine-patch-button-stretchable-0.jpg)
 
 Hai đường kẻ này chia bức ảnh thành 9 phần như sau:
 
-![nine-patch button stretchable 2- complete javascript - completejavascript.com](/wp-content/uploads/2018/01/nine-patch-button-stretchable-2.jpg)
+![nine-patch button stretchable 2- complete javascript - completejavascript.com](../images/nine-patch-button-stretchable-2.jpg)
 
 Trong 9 phần đó:
 
 - Số 1, 3, 7 và 9 là các phần cố định
-
 - Số 2 và 8 là các phần được kéo dãn theo chiều ngang (horizontal)
-
 - Số 4 và 6 là các phần được kéo dãn theo chiều dọc (vertical)
-
 - Số 5 là phần được kéo dãn theo 2 chiều (cả ngang và dọc)
 
 ### Phần chứa nội dung
@@ -52,7 +50,7 @@ Ngoài việc định nghĩa phần co dãn và phần cố định của ảnh,
 
 Phần này được xác định bởi 2 đường kẻ màu đen ở phía bên phải (**right**) và phía dưới (**bottom**).
 
-![nine-patch button stretchable 3- complete javascript - completejavascript.com](/wp-content/uploads/2018/01/nine-patch-button-stretchable-3.jpg)
+![nine-patch button stretchable 3- complete javascript - completejavascript.com](../images/nine-patch-button-stretchable-3.jpg)
 
 Nghĩa là chỉ có hình chữ nhật màu hồng được phép chứa nội dung. Nếu nội dung lớn hơn vùng này thì ảnh nine-patch sẽ được kéo dãn ra để chứa đủ nội dung đó.
 
@@ -66,16 +64,13 @@ Ngoài ra, bạn cũng có thể dùng các công cụ chuyên biệt như [WYSI
 
 Để đơn giản, ta sẽ không quan tâm đến padding (padding = 0), nghĩa là phần đường kẻ màu đen phía dưới và bên phải kéo dài đến hết bức ảnh (trừ đi 1 pixel là border).
 
-![nine-patch image demo - complete javascript - completejavascript.com](/wp-content/uploads/2018/01/demo_normal.9.png)
+![nine-patch image demo - complete javascript - completejavascript.com](../images/demo_normal.9.png)
 
 Để scale ảnh nine-patch, mình sẽ xử dụng Canvas với ý tưởng chung như sau:
 
 - Sử dụng canvas để xác định đường kẻ màu đen phía trên và bên trái,
-
 - Từ đó, suy ra phần cố định và phần được co dãn,
-
 - Vẽ lại ảnh lên 1 canvas khác,
-
 - Chuyển canvas thành dạng **dataURL** để sử dụng.
 
 Sau một thời gian nghiên cứu, mình đã viết lại thành một thư viện đơn giản là [NinePatch.js](https://github.com/completejavascript/nine-patch-js). Tuy nhiên, thư viện này vẫn chưa hoàn thiện và chỉ có thể xử lý được những ảnh nine-patch có cấu tạo đơn giản.
@@ -86,7 +81,7 @@ Các API mà bạn có thể áp dụng:
 
 Hàm này trả về một Promise. Trong trường hợp thành công thì kết quả là một [object](/javascript-object-last-but-not-least/) với 3 thông số là url, width, height của bức ảnh gốc, như sau:
 
-```
+```js
 {url: dataUrl, width: image.width, height: image.height}
 ```
 
@@ -98,33 +93,35 @@ Cũng tương tự như hàm **getSize** nhưng hàm này sẽ trả về object
 
 ### Ví dụ sử dụng NinePatch.js
 
-[codepen_embed height="476" theme_id="0" slug_hash="opOvaP" default_tab="js,result" user="completejavascript"]See the Pen <a href='https://codepen.io/completejavascript/pen/opOvaP/'>Scale Nine-patch Image Using NinePatch.js </a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+https://codepen.io/completejavascript/pen/opOvaP
 
 Trước tiên, mình sẽ hiển thị ảnh gốc, bằng cách áp dụng hàm getSize:
 
-```
+```js
 new NinePatch().getSize(srcImg)
-    .then(result => setImage($('#ninePatchImg'), result.url, result.width, result.height))
-    .catch(error => console.log(error));
+  .then(
+    result => setImage($('#ninePatchImg'), result.url, result.width, result.height)
+  )
+  .catch(error => console.log(error));
 ```
 
 Hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript/) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
 
-```
+```js
 function setImage(divElement, srcURL, width, height) {
-      divElement.style.width = width + 'px';
-      divElement.style.height = height + 'px';
-      divElement.style.backgroundSize = '' + width + 'px ' + height + 'px';
-      divElement.style.backgroundImage = "url('" + srcURL + "')";
-    }
+  divElement.style.width = width + 'px';
+  divElement.style.height = height + 'px';
+  divElement.style.backgroundSize = '' + width + 'px ' + height + 'px';
+  divElement.style.backgroundImage = "url('" + srcURL + "')";
+}
 ```
 
 Tiếp theo, sử dụng hàm scaleImage để scale bức ảnh:
 
-```
+```js
 new NinePatch().scaleImage(srcImg, WIDTH, HEIGHT)
-    .then(result => setImage($('#normalImg'), result, WIDTH, HEIGHT))
-    .catch(error => console.log(error));
+  .then(result => setImage($('#normalImg'), result, WIDTH, HEIGHT))
+  .catch(error => console.log(error));
 ```
 
 Trên đây là những kiến thức cơ bản về ảnh nine-path, cũng như cách xử lý ảnh nine-patch trong JavaScript. Tuy nhiên, còn rất nhiều thứ cần phải cải tiến. Vì vậy, mình rất mong nhận được sự góp ý từ bạn.
@@ -134,13 +131,9 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript
 ## Tham khảo
 
 - [NinePatch drawables](https://developer.android.com/guide/topics/graphics/2d-graphics.html#nine-patch)
-
 - [Create Resizable Bitmaps (9-Patch files)](https://developer.android.com/studio/write/draw9patch.html)
-
 - [What are 9-patch images ?](https://viblo.asia/p/what-are-9-patch-images-MLzkObPoepq)
-
 - [Android Bài 21: Sử Dụng Drawable – Ảnh 9-Patch & Ảnh Vector](https://yellowcodebooks.com/2017/06/21/android-bai-21-su-dung-drawable-anh-9-patch-anh-vector/)
-
 - [JavaScript Tint Color – thay đổi màu sắc bức ảnh](/javascript-tint-color-thay-doi-mau-sac-buc-anh/)
 
 <hr class="border-color-light-grey" />

@@ -1,8 +1,9 @@
 ---
 date: "2018-03-09T15:03:38Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/lap-trinh-voi-fcc-build-a-personal-portfolio-completejavascript-completejavascript.com_.png"
+keywords: "personal portfolio"
+description: "Tiếp tục series lập trình JavaScript với FCC, bài viết này tôi sẽ chia sẻ với các bạn project thứ hai mà tôi đã làm trên freeCodeCamp đó là Build a personal portfolio webpage, thuộc chuyên mục Basic Front End."
 slug: lap-trinh-javascript-voi-fcc-personal-portfolio
 title: "Lập trình JavaScript với FCC – Personal Portfolio"
 categories:
@@ -14,11 +15,11 @@ tags:
   - Template
 ---
 
-Tiếp tục series lập trình JavaScript với FCC, bài viết này mình sẽ chia sẻ với bạn project thứ hai mà mình đã làm trên freeCodeCamp đó là **Build a personal portfolio webpage, **thuộc chuyên mục **Basic Front End**.
+Tiếp tục series lập trình JavaScript với FCC, bài viết này mình sẽ chia sẻ với bạn project thứ hai mà mình đã làm trên freeCodeCamp đó là **Build a personal portfolio webpage** thuộc chuyên mục **Basic Front End**.
 
-## **Build a personal portfolio webpage** trên codepen
+## Build a personal portfolio webpage trên codepen
 
-[codepen_embed height="622" theme_id="0" slug_hash="QmwLQY" default_tab="html,result" user="completejavascript"]See the Pen [[FCC] Personal Portfolio Webpage](https://codepen.io/completejavascript/pen/QmwLQY/) by Lam Pham ([@completejavascript](https://codepen.io/completejavascript)) on [CodePen](https://codepen.io).[/codepen_embed]
+https://codepen.io/completejavascript/pen/QmwLQY
 
 ## Một số điểm cần ghi nhớ
 
@@ -28,12 +29,9 @@ Tiếp tục series lập trình JavaScript với FCC, bài viết này mình s�
 
 Trong project này, mình sử dụng các công cụ như sau:
 
-- HTML5
-
-- CSS3
-
-- JQuery
-
+- [HTML5](/tag/html)
+- [CSS3](/tag/css)
+- [JQuery](/tag/jquery)
 - [Mustache.js](https://github.com/janl/mustache.js/)
 
 Như vậy, so với project, mình đã không sử dụng Bootstrap nữa mà thay vào đó, mình tự triển khai **design website responsive** trong main.css. Ngoài ra, mình còn sử dụng thêm thư viện Mustache.js để xử lý **template** trong HTML.
@@ -43,11 +41,8 @@ Như vậy, so với project, mình đã không sử dụng Bootstrap nữa mà 
 Theo mình, một Personal Portfolio cần phải có các mục sau:
 
 - Navigation bar: dùng để điều hướng tới các mục trên trang web.
-
 - About: dùng để giới thiệu cho mọi người biết bạn là ai, một chút thông tin về học tập, bằng cấp hay kinh nghiệm làm việc.
-
 - Work (Projects hay Portfolio): dùng để show ra các project mà bạn đã làm. Vì hiện tại mình chưa làm được nhiều các web project nên mục này hầu như vẫn là "comming soon".
-
 - Contact: giúp người đọc có thể dễ dàng liên lạc với bạn nếu muốn.
 
 Đó, về cơ bản, một personal portfolio sẽ gồm các thông tin như vậy.

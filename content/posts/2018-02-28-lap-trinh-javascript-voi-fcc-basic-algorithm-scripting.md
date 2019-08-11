@@ -1,8 +1,9 @@
 ---
 date: "2018-02-28T16:35:32Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/lap-trinh-javascript-voi-basic-algorithm-scripting-completejavascript-completejavascript.com_.png"
+keywords: "basic algorithm scripting"
+description: "Thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn. Vì vậy, tiếp theo trong loạt bài Lập trình JavaScript với FCC, hôm nay, tôi sẽ tổng hợp lại những bài toán thuộc chủ đề Basic Algorithm Scripting trên freeCodeCamp."
 slug: lap-trinh-javascript-voi-fcc-basic-algorithm-scripting
 title: "Lập trình JavaScript với FCC - Basic Algorithm Scripting"
 categories:
@@ -15,17 +16,11 @@ Trong lập trình nói chung và lập trình JavaScript nói riêng, việc h�
 Trước khi đi vào tìm hiểu các bài toán, các bạn có thể đọc trước các bài viết sau. Chúng khá hữu ích vì các thuật toán sau đây sẽ sử dụng đến những kiến thức trong đó.
 
 - [Values, types và operators trong JavaScript – Phần 1](/values-types-va-operators-trong-javascript-phan-1/)
-
 - [Values, types và operators trong JavaScript – Phần 2](/values-types-va-operators-trong-javascript-phan-2/)
-
 - [JavaScript Array cơ bản,](/javascript-array-co-ban/)
-
 - [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
-
 - [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
-
 - [JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
-
 - [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
 ## Basic Algorithm Scripting - Reverse a String
@@ -34,41 +29,38 @@ Cho một string, nhiệm vụ của bạn là phải đảo ngược lại stri
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/reverse-a-string).
 
-```
+```js
 function reverseString(str) {
-      return str.split("").reverse().join("");
-    }
+  return str.split("").reverse().join("");
+}
 
-    reverseString("hello");
+reverseString("hello");
 ```
 
 Tham khảo:
 
 - [Global String Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-
 - [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
-
 - [Array.prototype.reverse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
-
 - [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
 ## Basic Algorithm Scripting - Factorialize a Number
 
-Tính giai thừa của một số tự nhiên n!. Ví dụ: **5! = 5 _ 4 _ 3 _2 _ 1**.
+Tính giai thừa của một số tự nhiên n!. Ví dụ: **5! = 5 \* 4 \* 3 \* 2 \* 1**.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/factorialize-a-number).
 
-```
+```js
 function factorialize(num) {
-      if(num == 0) return 1;
+  if(num == 0) return 1;
 
-      for(var i = num - 1; i >= 1; i--)
-        num *= i;
+  for(var i = num - 1; i >= 1; i--)
+    num *= i;
 
-      return num;
-    }
+  return num;
+}
 
-    factorialize(5);
+factorialize(5);
 ```
 
 Tham khảo:
@@ -81,22 +73,20 @@ Kiểm tra xem một string có phải là **palindrome** hay không? (Một st
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/factorialize-a-number).
 
-```
+```js
 function palindrome(str) {
-      var newStr = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
-      var newStrReverse = newStr.split("").reverse().join("");
-      return newStr === newStrReverse;
-    }
+  var newStr = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+  var newStrReverse = newStr.split("").reverse().join("");
+  return newStr === newStrReverse;
+}
 
-    palindrome("eye");
+palindrome("eye");
 ```
 
 Tham khảo:
 
 - [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
-
 - [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
-
 - [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 
 ## Basic Algorithm Scripting - Find the Longest Word in a String
@@ -105,24 +95,22 @@ Tìm độ dài của từ dài nhất trong câu.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/find-the-longest-word-in-a-string).
 
-```
+```js
 function findLongestWord(str) {
-      var words = str.split(" ");
-      var maxLength = words.reduce(function(acc, cur){
-        return cur.length > acc ? cur.length : acc;
-      }, 0);
-      return maxLength;
-    }
+  var words = str.split(" ");
+  var maxLength = words.reduce(function(acc, cur){
+    return cur.length > acc ? cur.length : acc;
+  }, 0);
+  return maxLength;
+}
 
-    findLongestWord("The quick brown fox jumped over the lazy dog");
+findLongestWord("The quick brown fox jumped over the lazy dog");
 ```
 
 Tham khảo:
 
 - [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
-
 - [String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
-
 - [Array.prototype.reduce()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
 ## Basic Algorithm Scripting - Title Case a Sentence
@@ -131,35 +119,32 @@ Trả về string với các từ có chữ cái đầu tiên viết hoa. Ví d�
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/title-case-a-sentence).
 
-```
+```js
 function titleCase(str) {
-      var words = str.split(" ");
+  var words = str.split(" ");
 
-      var newWords = words.map(function(word){
-        var chars = word.split("");
+  var newWords = words.map(function(word){
+    var chars = word.split("");
 
-        chars[0] = chars[0].toUpperCase();
-        for(var i = 1; i < chars.length; i++) {
-          chars[i] = chars[i].toLowerCase();
-        }
-
-        return chars.join("");
-      });
-
-      return newWords.join(" ");
+    chars[0] = chars[0].toUpperCase();
+    for(var i = 1; i < chars.length; i++) {
+      chars[i] = chars[i].toLowerCase();
     }
 
-    titleCase("I'm a little tea pot");
+    return chars.join("");
+  });
+
+  return newWords.join(" ");
+}
+
+titleCase("I'm a little tea pot");
 ```
 
 Tham khảo:
 
 - [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
-
 - [String.prototype.toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
-
 - [String.prototype.toLowerCase()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
-
 - [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
 ## Basic Algorithm Scripting - Return Largest Numbers in Arrays
@@ -168,26 +153,25 @@ Trả về một mảng gồm các số lớn nhất của mỗi sub-array.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/return-largest-numbers-in-arrays).
 
-```
+```js
 function largestOfFour(arr) {
-      var answer = [];
-      for(var i = 0; i < arr.length; i++) {
-        var max = 0;
-        for(var j = 0; j < arr[i].length; j++) {
-          if (arr[i][j] > max) max = arr[i][j];
-        }
-        answer.push(max);
-      }
-      return answer;
+  var answer = [];
+  for(var i = 0; i < arr.length; i++) {
+    var max = 0;
+    for(var j = 0; j < arr[i].length; j++) {
+      if (arr[i][j] > max) max = arr[i][j];
     }
+    answer.push(max);
+  }
+  return answer;
+}
 
-    largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 ```
 
 Tham khảo:
 
 - [Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
-
 - [Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
 ## Basic Algorithm Scripting - Confirm the Ending
@@ -196,18 +180,17 @@ Kiểm tra xem một string có được kết thúc bởi một string khác.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/confirm-the-ending).
 
-```
+```js
 function confirmEnding(str, target) {
-      return target === str.substr(-target.length);
-    }
+  return target === str.substr(-target.length);
+}
 
-    confirmEnding("Bastian", "n");
+confirmEnding("Bastian", "n");
 ```
 
 Tham khảo:
 
 - [String.prototype.substr()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
-
 - [String.prototype.substring()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
 
 ## Basic Algorithm Scripting - Repeat a string repeat a string
@@ -216,15 +199,15 @@ Lặp lại string với số lần cho trước.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/repeat-a-string-repeat-a-string).
 
-```
+```js
 function repeatStringNumTimes(str, num) {
-      var answer = "";
-      for(var i = 0; i < num; i++)
-        answer += str;
-      return answer;
-    }
+  var answer = "";
+  for(var i = 0; i < num; i++)
+    answer += str;
+  return answer;
+}
 
-    repeatStringNumTimes("abc", 3);
+repeatStringNumTimes("abc", 3);
 ```
 
 Tham khảo:
@@ -237,14 +220,14 @@ Rút gọn string nếu nó dài quá n kí tự.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/truncate-a-string).
 
-```
+```js
 function truncateString(str, num) {
-      if(str.length <= num) return str;
-      if(num <= 3) return str.slice(0, num) + "...";
-      return str.slice(0, num - 3) + "...";
-    }
+  if(str.length <= num) return str;
+  if(num <= 3) return str.slice(0, num) + "...";
+  return str.slice(0, num - 3) + "...";
+}
 
-    truncateString("A-tisket a-tasket A green and yellow basket", 11);
+truncateString("A-tisket a-tasket A green and yellow basket", 11);
 ```
 
 Tham khảo:
@@ -257,22 +240,21 @@ Chia mảng thành các phần với độ dài n cho trước.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/chunky-monkey).
 
-```
+```js
 function chunkArrayInGroups(arr, size) {
-      var answer = [];
-      for(var i = 0; i < arr.length; i += size) {
-        answer.push(arr.slice(i, i + size));
-      }
-      return answer;
-    }
+  var answer = [];
+  for(var i = 0; i < arr.length; i += size) {
+    answer.push(arr.slice(i, i + size));
+  }
+  return answer;
+}
 
-    chunkArrayInGroups(["a", "b", "c", "d"], 2);
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
 ```
 
 Tham khảo:
 
 - [Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
-
 - [Array.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
 ## Basic Algorithm Scripting - Slasher Flick
@@ -281,19 +263,18 @@ Trả về những phần tử của mảng sau khi đã cắt đi n phần tử
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/slasher-flick).
 
-```
+```js
 function slasher(arr, howMany) {
-      arr.splice(0, howMany);
-      return arr;
-    }
+  arr.splice(0, howMany);
+  return arr;
+}
 
-    slasher([1, 2, 3], 2);
+slasher([1, 2, 3], 2);
 ```
 
 Tham khảo:
 
 - [Array.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
-
 - [Array.prototype.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
 ## Basic Algorithm Scripting - Mutations
@@ -302,23 +283,22 @@ Kiểm tra xem trong 1 string có chứa tất cả các kí tự của string t
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/mutations).
 
-```
+```js
 function mutation(arr) {
-      arr[0] = arr[0].toLowerCase();
-      arr[1] = arr[1].toLowerCase();
-      for(var i = 0; i < arr[1].length; i++) {
-        if(arr[0].indexOf(arr[1][i]) < 0) return false;
-      }
-      return true;
-    }
+  arr[0] = arr[0].toLowerCase();
+  arr[1] = arr[1].toLowerCase();
+  for(var i = 0; i < arr[1].length; i++) {
+    if(arr[0].indexOf(arr[1][i]) < 0) return false;
+  }
+  return true;
+}
 
-    mutation(["hello", "hey"]);
+mutation(["hello", "hey"]);
 ```
 
 Tham khảo:
 
 - [String.prototype.indexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
-
 - [String.prototype.toLowerCase()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 
 ## Basic Algorithm Scripting - Falsy Bouncer
@@ -327,24 +307,22 @@ Bỏ đi tất cả các giá trị **falsy** khỏi một mảng (giá trị **
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/falsy-bouncer).
 
-```
+```js
 function bouncer(arr) {
-      var answer = arr.filter(function(val) {
-        return ((typeof(val) == 'string' && val != "") ||
-                (val != false && val != null && val != 0 && val != undefined && !isNaN(val)));
-      });
-      return answer;
-    }
+  var answer = arr.filter(function(val) {
+    return ((typeof(val) == 'string' && val != "") ||
+            (val != false && val != null && val != 0 && val != undefined && !isNaN(val)));
+  });
+  return answer;
+}
 
-    bouncer([7, "ate", "", false, 9]);
+bouncer([7, "ate", "", false, 9]);
 ```
 
 Tham khảo:
 
 - [Boolean Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
-
 - [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-
 - [isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
 
 ## Basic Algorithm Scripting - Seek and Destroy
@@ -353,25 +331,24 @@ Bỏ đi tất cả các phần tử của mảng giống với tập cho trư�
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/seek-and-destroy).
 
-```
+```js
 function destroyer(arr) {
-      var args = arguments;
-      var answer = arr.filter(function(val){
-        for(var i = 1; i < args.length; i++) {
-          if(val === args[i]) return false;
-        }
-        return true;
-      });
-      return answer;
+  var args = arguments;
+  var answer = arr.filter(function(val){
+    for(var i = 1; i < args.length; i++) {
+      if(val === args[i]) return false;
     }
+    return true;
+  });
+  return answer;
+}
 
-    destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 ```
 
 Tham khảo:
 
 - [Arguments object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
-
 - [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 ## Basic Algorithm Scripting - Where do I belong
@@ -380,25 +357,24 @@ Tìm ra vị trí có chỉ số nhỏ nhất phù hợp để chèn một số 
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/where-do-i-belong).
 
-```
+```js
 function getIndexToIns(arr, num) {
-      var newArr = arr.sort(function(a, b){
-        return a - b;
-      });
-      var index = 0;
-      while(true) {
-        if(index == newArr.length || newArr[index] >= num) return index;
-        index++;
-      }
-    }
+  var newArr = arr.sort(function(a, b){
+    return a - b;
+  });
+  var index = 0;
+  while(true) {
+    if(index == newArr.length || newArr[index] >= num) return index;
+    index++;
+  }
+}
 
-    getIndexToIns([40, 60], 50);
+getIndexToIns([40, 60], 50);
 ```
 
 Tham khảo:
 
 - [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
-
 - [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 ## Basic Algorithm Scripting - Caesars Cipher
@@ -407,32 +383,31 @@ Giải mã string cho trước sử dụng **ROT13**.
 
 Đề bài tại [đây](https://www.freecodecamp.org/challenges/caesars-cipher).
 
-```
+```js
 function rot13(str) { // LBH QVQ VG!
-      var arr = str.split("");
-      var code, delta;
-      for(var i = 0; i < arr.length; i++) {
-        code = arr[i].charCodeAt(0) - 13;
+  var arr = str.split("");
+  var code, delta;
+  for(var i = 0; i < arr.length; i++) {
+    code = arr[i].charCodeAt(0) - 13;
 
-        if (arr[i] >= "A" && arr[i] < "N") {
-          delta = "A".charCodeAt(0) - code;
-          code = "Z".charCodeAt(0) - delta + 1;
-          arr[i] = String.fromCharCode(code);
-        } else if (arr[i] >= "N" && arr[i] <= "Z") {
-          arr[i] = String.fromCharCode(code);
-        }
-      }
-      return arr.join("");
+    if (arr[i] >= "A" && arr[i] < "N") {
+      delta = "A".charCodeAt(0) - code;
+      code = "Z".charCodeAt(0) - delta + 1;
+      arr[i] = String.fromCharCode(code);
+    } else if (arr[i] >= "N" && arr[i] <= "Z") {
+      arr[i] = String.fromCharCode(code);
     }
+  }
+  return arr.join("");
+}
 
-    // Change the inputs below to test
-    rot13("SERR PBQR PNZC");
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
 ```
 
 Tham khảo:
 
 - [String.prototype.charCodeAt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
-
 - [String.fromCharCode()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
 
 ## Kết luận
