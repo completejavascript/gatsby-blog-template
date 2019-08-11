@@ -1,8 +1,9 @@
 ---
 date: "2017-06-03T00:41:10Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/nhung-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.png"
+keywords: "ngôn ngữ lập trình"
+description: "Bài viết sau được dịch từ simpleprogrammer.com bởi tác giả John Sonmez về top những ngôn ngữ lập trình nên học năm 2017."
 slug: nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017
 title: "Những ngôn ngữ lập trình nên học năm 2017"
 categories:
@@ -13,7 +14,7 @@ tags:
 
 Bài viết sau được dịch từ [simpleprogrammer.com](http://simpleprogrammer.com/) bởi tác giả [John Sonmez](https://simpleprogrammer.com/about-simple-programmer/) về top những ngôn ngữ lập trình nên học năm 2017. Bạn có thể đọc bản gốc bài viết bằng tiếng anh tại [đây](https://simpleprogrammer.com/2016/10/18/top-programming-languages-learn-2017/). Trong trường hợp, tiếng anh của bạn chưa đủ hoặc đơn giản là bạn ngại mở máy tính để tra từ điển thì xin mời đọc bản dịch của tôi sau đây.
 
-Chú ý: Sau đây, "tôi" chính là John Sonmez, không phải [tác giả](/gioi-thieu/) blog [Complete JavaScript](/).
+**Chú ý**: Sau đây, "tôi" chính là John Sonmez, không phải [tác giả](/gioi-thieu/) blog [Complete JavaScript](/).
 
 Rất nhiều người hỏi tôi về ngôn ngữ lập trình mà họ nên học. Tôi cảm thấy hơi bí vì đây là một câu hỏi rất khó để trả lời. Có nhiều thứ quan trọng cần phải cân nhắc trước khi đưa ra quyết định. Đặc biệt là liên quan đến ngôn ngữ lập trình mà bạn nên học.
 
@@ -24,18 +25,14 @@ Vậy, bạn biết như thế nào về ngôn ngữ lập trình được mong 
 Dựa theo nghiên cứu của tôi, sau đây là những ngôn ngữ lập trình bạn nên tập trung trong năm 2017:
 
 - JavaScript
-
 - Python
-
 - Elixir
-
 - Rust
-
 - Swift
 
 Bạn có đồng ý với tôi không? Suy nghĩ của bạn là gì? Hãy để lại bình luận dưới video sau:
 
-https://www.youtube.com/watch?v=R4hNmWvFcxo
+`youtube: R4hNmWvFcxo`
 
 ## Góc bình luận
 
@@ -121,7 +118,7 @@ Nhưng nếu bạn đã là một lập trình viên có kinh nghiệm thì nh�
 
 Đây lại là một ngôn ngữ lập trình mà tôi không biết, nên không dám chém bừa.
 
-_Rust is really good. It's this low level systems language. It's more elegant, more refined than C and C++ and is a good replacement for those languages and it just keeps on picking up steam. I think this is going to be a really popular language. I think it's going to replace some of these legacy programming languages and some systems._
+> Rust is really good. It's this low level systems language. It's more elegant, more refined than C and C++ and is a good replacement for those languages and it just keeps on picking up steam. I think this is going to be a really popular language. I think it's going to replace some of these legacy programming languages and some systems.
 
 Tức là, Rust là một ngôn ngữ lập trình mức thấp, có thể thay thế cho C/C++. Và chắc chắn Rust sẽ trở nên rất phổ biến (cái này phải cần thời gian để kiểm chứng - vì hiện tại có rất nhiều hệ thống đang chạy bằng C/C++).
 
@@ -140,23 +137,16 @@ Nếu bạn là fan hâm mộ của Taylor Swift thì nên thử học ngôn ng�
 Nếu bạn là một người mới bước chân vào thế giới của lập trình viên thì bạn có thể lựa chọn học:
 
 - Java
-
 - C#
-
 - C++
-
 - JavaScript
 
 Ngược lại, bạn là một lập trình viên có kinh nghiệm và mong muốn thử thách bản thân với một ngôn ngữ lập trình mới thì có thể thử học:
 
 - JavaScript
-
 - Python
-
 - Elixir
-
 - Rust
-
 - Swift
 
 Có nhiều ý kiến khác nhau về việc lựa chọn ngôn ngữ lập trình nên học năm 2017. Riêng tôi thì tôi rất đồng ý với anh John Sonmez. Còn bạn thì nghĩ sao về vấn đề này? Tôi rất mong để biết được suy nghĩ của bạn (mặc dù bây giờ đã là giữa năm 2017 rồi, hehe).

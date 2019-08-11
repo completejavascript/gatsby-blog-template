@@ -1,8 +1,9 @@
 ---
 date: "2017-07-08T04:03:17Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/Debug-javascript-de-hay-kho-completejavascript.com_.png"
+keywords: "debug javascript"
+description: "Với mọi ngôn ngữ lập trình, debug là một hoạt động khó và mất nhiều thời gian nhất. Trong đó, debug JavaScript là khó khăn hơn cả. Tại sao vậy?"
 slug: debug-javascript-de-hay-kho
 title: "Debug JavaScript - dễ hay khó?"
 categories:
@@ -19,12 +20,11 @@ Với mọi ngôn ngữ lập trình, debug là một hoạt động khó và m�
 Bug là lỗi của chương trình. Nhìn chung, chúng ta có 2 loại bug: lỗi **ngữ pháp** và lỗi **ngữ nghĩa**.
 
 - Lỗi ngữ pháp: nghĩa là bạn viết sai cú pháp, sai kiểu dữ liệu hay thậm chí là sai chính tả... Đối với những ngôn ngữ lập trình như C/C++ hay Java, bạn sẽ dễ dàng phát hiện và sửa lỗi này vì IDE và trình biên dịch sẽ chỉ ra vị trí lỗi để bạn sửa. Còn đối với JavaScript, bạn sẽ chỉ được thông báo lỗi khi chương trình chạy đến phần đó - vì JavaScript là ngôn ngữ kịch bản, không biên dịch.
-
 - Lỗi ngữ nghĩa: có thể hiểu là bạn sai về logic, thuật toán hay bị lỗi khi tương tác với hệ thống dẫn đến kết quả bị sai khác so với mong đợi. Lỗi này thì luôn luôn khó phát hiện và bạn sẽ phải kiểm tra lại thật kĩ từng phần trong code để tìm ra vị trí mắc lỗi.
 
 Nếu như bug là lỗi thì debug hay debugging chính là quá trình tìm ra bug.
 
-<blockquote>Debugging khó gấp 2 lần việc bạn viết ra code. Nếu viết code thông minh quá mức, bạn sẽ không đủ thông minh để debug nó - Brian Kernighan và P.J. Plauger, The Elements of Programming Style.</blockquote>
+> Debugging khó gấp 2 lần việc bạn viết ra code. Nếu viết code thông minh quá mức, bạn sẽ không đủ thông minh để debug nó - Brian Kernighan và P.J. Plauger, The Elements of Programming Style.
 
 ## Strict mode trong JavaScript
 
@@ -34,22 +34,22 @@ Tuy nhiên, JavaScript có cung cấp cho lập trình viên chế độ "use st
 
 Ví dụ 1: Không sử dụng strict mode
 
-```
+```js
 x = 10;
-    var Infinity = 10;
-    delete Object.prototype;
+var Infinity = 10;
+delete Object.prototype;
 ```
 
 Ví dụ 2: Sử dụng strict mode
 
-```
+```js
 'use strict'
-    x = 10;
-    // Uncaught ReferenceError: x is not defined
-    var Infinity = 10;
-    // Uncaught TypeError: Cannot assign to read only property 'Infinity' of object '#<Window>'
-    delete Object.prototype;
-    // Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
+x = 10;
+// Uncaught ReferenceError: x is not defined
+var Infinity = 10;
+// Uncaught TypeError: Cannot assign to read only property 'Infinity' of object '#<Window>'
+delete Object.prototype;
+// Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
 ```
 
 Qua hai ví dụ trên, ta thấy rằng: khi sử dụng 'use strict', bạn sẽ không thể sử dụng [biến](/values-types-va-operators-trong-javascript-phan-1/) mà không cần khai báo, không thể gán giá trị cho thuộc tính read-only, không thể delete thuộc tính [prototype](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/) của đối tượng [object](/javascript-object-last-but-not-least/). Và còn nhiều cái **KHÔNG** nữa. Vì vậy, mình quyết định sẽ viết một bài chi tiết hơn về strict mode sau.
@@ -64,33 +64,33 @@ Và để tránh phát sinh lỗi khi chương trình mở rộng ra, bạn nên
 
 Giả sử mình có đoạn chương trình sau:
 
-```
+```js
 function Vector(x, y) {
-      this.x = x;
-      this.y = y;
-    }
-    Vector.prototype.plus = function(other) {
-      return new Vector(this.x + other.x, this.y + other.y);
-    };
+  this.x = x;
+  this.y = y;
+}
+Vector.prototype.plus = function(other) {
+  return new Vector(this.x + other.x, this.y + other.y);
+};
 ```
 
 Bây giờ mình sẽ viết một đoạn chương trình khác để kiểm tra xem đối tượng Vector có hoạt động đúng như mong đợi hay không:
 
-```
+```js
 function testVector() {
-      var p1 = new Vector(10, 20);
-      var p2 = new Vector(-10, 5);
-      var p3 = p1.plus(p2);
+  var p1 = new Vector(10, 20);
+  var p2 = new Vector(-10, 5);
+  var p3 = p1.plus(p2);
 
-      if (p1.x !== 10) return "fail: x property";
-      if (p1.y !== 20) return "fail: y property";
-      if (p2.x !== -10) return "fail: negative x property";
-      if (p3.x !== 0) return "fail: x from plus";
-      if (p3.y !== 25) return "fail: y from plus";
-      return "everything ok";
-    }
-    console.log(testVector());
-    // => everything ok
+  if (p1.x !== 10) return "fail: x property";
+  if (p1.y !== 20) return "fail: y property";
+  if (p2.x !== -10) return "fail: negative x property";
+  if (p3.x !== 0) return "fail: x from plus";
+  if (p3.y !== 25) return "fail: y from plus";
+  return "everything ok";
+}
+console.log(testVector());
+// => everything ok
 ```
 
 Việc viết test như trên gọi là viết **unit test**. Tuy nhiên, thực tế chúng ta sẽ có những [framework](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) hỗ trợ viết unit test chuyên nghiệp hơn, nhanh gọn hơn.
@@ -101,77 +101,77 @@ Một khi đã xác định được chương trình có bug, công việc tiế
 
 Ví dụ chương trình sau sẽ chuyển một số _n_, cơ số _base_ thành [string](/values-types-va-operators-trong-javascript-phan-2/):
 
-```
+```js
 function numberToString(n, base) {
-      var result = "", sign = "";
-      if (n < 0) {
-        sign = "-";
-        n = -n;
-      }
-      do {
-        result = String(n % base) + result;
-        n /= base;
-      } while (n > 0);
-      return sign + result;
-    }
-    console.log(numberToString(13, 10));
-    // => 1.5e-3231.3e-3221.3e-3211.3e-3201.3e-3191.3e-3181.3…
+  var result = "", sign = "";
+  if (n < 0) {
+    sign = "-";
+    n = -n;
+  }
+  do {
+    result = String(n % base) + result;
+    n /= base;
+  } while (n > 0);
+  return sign + result;
+}
+console.log(numberToString(13, 10));
+// => 1.5e-3231.3e-3221.3e-3211.3e-3201.3e-3191.3e-3181.3…
 ```
 
 Rõ ràng là chương trình hoạt động không đúng mong đợi. Bây giờ ta sẽ phải tìm ra đoạn gây ra lỗi và sửa nó.
 
 Chiến lược hiệu quả trong trường hợp này là ta sẽ ghi ra log kết quả sau từng đoạn con của chương trình, để xem đoạn bắt đầu gây ra lỗi.
 
-```
+```js
 function numberToString(n, base) {
-      var result = "", sign = "";
-      if (n < 0) {
-        sign = "-";
-        n = -n;
-      }
-      console.log("sign:", sign);
-      console.log("n:", n);
-      do {
-        result = String(n % base) + result;
-        console.log("result:", result);
-        n /= base;
-        console.log("n", n);
-      } while (n > 0);
-      return sign + result;
-    }
-    console.log(numberToString(13, 10));
+  var result = "", sign = "";
+  if (n < 0) {
+    sign = "-";
+    n = -n;
+  }
+  console.log("sign:", sign);
+  console.log("n:", n);
+  do {
+    result = String(n % base) + result;
+    console.log("result:", result);
+    n /= base;
+    console.log("n", n);
+  } while (n > 0);
+  return sign + result;
+}
+console.log(numberToString(13, 10));
 ```
 
 Kết quả ta có log như sau:
 
 ```
 sign:
-    n: 13
-    result: 3
-    n 1.3
-    result: 1.33
-    n 0.13
-    result: 0.131.33
-    ...
+n: 13
+result: 3
+n 1.3
+result: 1.33
+n 0.13
+result: 0.131.33
+...
 ```
 
 Bạn đã thấy sự bất ổn chưa? Giá trị log thứ 3 cho thấy n /= base => 1.3. Trong khi giá trị mong đợi phải là 1. À thì ra JavaScript khác với C/C++ và Java. Nếu như trong C/C++, Java, 13/10 = 1 thì trong JavaScript 13/10=1.3. Do đó, ta phải sửa thành n = Math.floor(n/base). Chương trình sẽ hoạt động đúng.
 
-```
+```js
 function numberToString(n, base) {
-      var result = "", sign = "";
-      if (n < 0) {
-        sign = "-";
-        n = -n;
-      }
-      do {
-        result = String(n % base) + result;
-        n = Math.floor(n/base);
-      } while (n > 0);
-      return sign + result;
-    }
-    console.log(numberToString(13, 10));
-    // => 13
+  var result = "", sign = "";
+  if (n < 0) {
+    sign = "-";
+    n = -n;
+  }
+  do {
+    result = String(n % base) + result;
+    n = Math.floor(n/base);
+  } while (n > 0);
+  return sign + result;
+}
+console.log(numberToString(13, 10));
+// => 13
 ```
 
 Đó chính là một cách mà mình thường làm khi debug JavaScript.
@@ -183,9 +183,7 @@ Ngoài cách viết log, bạn cũng có thể set breakpoint giống như bạn
 Trên đây là một số cách giúp bạn debug JavaScript. Mình có thể tóm tắt ngắn ngọn như sau:
 
 - Sử dụng strict mode giúp giảm thiểu những lỗi không mong muốn.
-
 - Testing - unit test giúp kiểm tra từng thành phần trong chương trình.
-
 - Debugging bằng cách ghi ra log hoặc set breakpoint giúp bạn xác định chính xác vị trí lỗi và sửa nó.
 
 Hy vọng qua bài viết này bạn sẽ thấy rằng debug JavaScript không phải là một công việc quá khó khăn. Nó cũng chỉ giống như mọi ngôn ngữ lập trình khác thôi.
@@ -195,7 +193,6 @@ Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/mot
 ## Tham khảo
 
 - [Bugs and Errors](http://eloquentjavascript.net/08_error.html)
-
 - [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
 <hr class="border-color-light-grey" />

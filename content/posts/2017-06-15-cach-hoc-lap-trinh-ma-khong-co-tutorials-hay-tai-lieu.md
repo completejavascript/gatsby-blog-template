@@ -1,8 +1,9 @@
 ---
 date: "2017-06-15T23:20:38Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/hoc-lap-trinh-ma-khong-co-tutorials-va-tai-lieu-completejavascript.com_.png"
+keywords: "học lập trình"
+description: "Bài viết sau lấy ý tưởng từ simpleprogrammer.com, bởi tác giả John Sonmez về cách học lập trình mà không có tutorials. Bạn có thể xem bản gốc tại đây."
 slug: cach-hoc-lap-trinh-ma-khong-co-tutorials-hay-tai-lieu
 title: "Cách học lập trình mà không có tutorials hay tài liệu"
 categories:
@@ -14,15 +15,15 @@ tags:
 
 Bài viết sau lấy ý tưởng từ [simpleprogrammer.com,](http://simpleprogrammer.com) bởi tác giả John Sonmez về cách học lập trình mà không có tutorials. Bạn có thể xem bản gốc tại [đây](https://simpleprogrammer.com/2017/06/08/learn-programming-without-tutorials/).
 
-_Hầu hết mọi người khi muốn học những thứ mới, đặc biệt là lập trình viên, những nhà phát triển phần mềm, đều tìm kiếm tutorials, sách và các bài viết về chủ đề cần học... Sau đó, họ thực hiện theo từng bước mà người trước đã viết lại. Đây là cách dễ nhất để học lập trình.  _
+_Hầu hết mọi người khi muốn học những thứ mới, đặc biệt là lập trình viên, những nhà phát triển phần mềm, đều tìm kiếm tutorials, sách và các bài viết về chủ đề cần học... Sau đó, họ thực hiện theo từng bước mà người trước đã viết lại. Đây là cách dễ nhất để học lập trình._
 
-_Tuy nhiên, trong ngành lập trình, mọi thứ không phải luôn luôn hoạt động suôn sẻ như vậy. Có một vài trường hợp, đặc biệt là với những thứ open source và công nghệ mới, sẽ không có tutorials cho bạn tham khảo. _
+_Tuy nhiên, trong ngành lập trình, mọi thứ không phải luôn luôn hoạt động suôn sẻ như vậy. Có một vài trường hợp, đặc biệt là với những thứ open source và công nghệ mới, sẽ không có tutorials cho bạn tham khảo._
 
 _Bạn sẽ làm gì? Bạn từ bỏ ư?_
 
 _Sau đây là cách để học lập trình mà không có tutorials. Hãy xem video sau:_
 
-https://www.youtube.com/watch?v=AkxP16P1dZI
+`youtube: AkxP16P1dZI`
 
 ## Tóm tắt về hai cách học lập trình mà không có tutorials
 
