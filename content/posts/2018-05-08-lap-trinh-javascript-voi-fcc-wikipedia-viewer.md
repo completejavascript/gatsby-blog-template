@@ -1,8 +1,9 @@
 ---
 date: "2018-05-08T12:00:02Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/lap-trinh-javascript-voi-fcc-wikipedia-viewer-completejavascript.com_.png"
+keywords: "Wikipedia Viewer"
+description: "Tiếp tục với chủ đề Lập trình JavaScript với FCC, bài viết này mình sẽ tổng hợp lại những bài học kinh nghiệm, thủ thuật rút ra được từ project Wikipedia Viewer. Hy vọng nó có thể giúp ích cho bạn trong các project của mình."
 slug: lap-trinh-javascript-voi-fcc-wikipedia-viewer
 title: "Lập trình JavaScript với FCC - Wikipedia Viewer"
 categories:
@@ -31,7 +32,7 @@ Nếu đọc đến đây, nghĩa là bạn đã có kiến thức về JavaScri
 
 ## Demo Wikipedia Viewer
 
-[codepen_embed height="600" theme_id="0" slug_hash="WJxwgy" default_tab="css,result" user="completejavascript" preview="true" data-preview="true"]See the Pen <a href='https://codepen.io/completejavascript/pen/WJxwgy/'>[FCC] Build a Wikipedia Viewer</a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+https://codepen.io/completejavascript/pen/WJxwgy
 
 ## **Wikipedia Viewer có tác dụng gì?**
 
@@ -68,10 +69,10 @@ Do đó, sự kiện **DOMContentLoaded** sẽ được sử dụng khi bạn mu
 
 Vì vậy, mình sử dụng event **DOMContentLoaded** trong project này:
 
-```
+```js
 document.addEventListener("DOMContentLoaded", () => {
-      // Toàn bộ code sẽ ở trong đoạn này.
-    });
+  // Toàn bộ code sẽ ở trong đoạn này.
+});
 ```
 
 ### Sử dụng querySelector
@@ -87,26 +88,26 @@ Vì khi sử dụng phương thức này, bạn không chỉ lấy được Elem
 
 Thay vì:
 
-```
+```js
 let ele1 = document.querySelector("#id1");
-    let ele2 = document.querySelector(".class2");
-    let ele3 = document.querySelector("div.user-panel.main input[name='login']");
+let ele2 = document.querySelector(".class2");
+let ele3 = document.querySelector("div.user-panel.main input[name='login']");
 ```
 
 Bạn có thể:
 
-```
+```js
 let $ = document.querySelector.bind(document);
 
-    // Usage
-    let ele1 = $("#id1");
-    let ele2 = $(".class2");
-    let ele3 = $("div.user-panel.main input[name='login']");
+// Usage
+let ele1 = $("#id1");
+let ele2 = $(".class2");
+let ele3 = $("div.user-panel.main input[name='login']");
 ```
 
 Nhìn chả khác gì jQuery phải không bạn?
 
-![tăng tốc độ website - wikipedia viewer](/wp-content/uploads/2018/05/airplain-speed.jpg)
+![tăng tốc độ website - wikipedia viewer](../images/airplain-speed.jpg)
 
 ### Chỉ Query DOM một lần giúp nâng cao hiệu năng
 
@@ -114,19 +115,19 @@ Về nguyên tắc, việc query DOM sẽ tốn thời gian. Vì vậy, bạn ch
 
 Ví dụ như trong project này, những phần tử nào được sử dụng nhiều hơn một lần thì mình sẽ lưu lại:
 
-```
+```js
 let $ = document.querySelector.bind(document);
-    let _input = $("#inp-search");
-    let _searchWrapper = $(".search-wrapper");
-    let _header = $("header");
-    let _resultWrapper = $(".result");
-    let _loading = $(".loading");
-    let _title = $("header");
+let _input = $("#inp-search");
+let _searchWrapper = $(".search-wrapper");
+let _header = $("header");
+let _resultWrapper = $(".result");
+let _loading = $(".loading");
+let _title = $("header");
 ```
 
-Ngoài ra, mình sử dụng \_ đằng trước biến số, để quy định rằng đây là đại diện cho DOM chứ không phải biến số thông thường.
+Ngoài ra, mình sử dụng kí tự \_ đằng trước biến số, để quy định rằng đây là đại diện cho DOM chứ không phải biến số thông thường.
 
-Cái này là tự mình quy định thôi nhé, để tránh nhầm lẫn với jQuery. Nếu như sử dụng jQuery thì mình hay sử dụng kí tự $, ví dụ: **$input, \$searchWrapper\*\*,...
+Cái này là tự mình quy định thôi nhé, để tránh nhầm lẫn với jQuery. Nếu như sử dụng jQuery thì mình hay sử dụng kí tự $, ví dụ: *$input, $searchWrapper*,...
 
 ### Hai sự kiện quan trọng với input[type="search"]
 
@@ -134,56 +135,57 @@ Trong project Wikipedia Viewer này mình sử dụng [input[type="search"]](htt
 
 Sự kiện **search**: xảy ra khi người dùng nhấn phím Enter để bắt đầu tìm kiếm
 
-```
+```js
 _input.addEventListener("search", event => {
-      let _target = event.target;
-      let searchText = _target.value;
-      if (searchText !== '') search(searchText);
-      else resetViewResult();
-    });
+  let _target = event.target;
+  let searchText = _target.value;
+  if (searchText !== '') search(searchText);
+  else resetViewResult();
+});
 ```
 
-Sự kiện **input**: được gọi **trong khi** nội dung input thay đổi - nghĩa là chỉ cần bạn nhập vào 1 chữ cái hay xóa đi một chữ cái thôi thì sự kiện này cũng sẽ được gọi. Mình cần xử lý sự kiện này khi người dùng xóa hết sạch nội dung trong input. Khi đó, mình sẽ reset lại kết quả tìm kiếm trước đó, để trở về giao diện như ban đầu.
+Sự kiện **input**: được gọi trong khi nội dung input thay đổi - nghĩa là chỉ cần bạn nhập vào 1 chữ cái hay xóa đi một chữ cái thôi thì sự kiện này cũng sẽ được gọi. Mình cần xử lý sự kiện này khi người dùng xóa hết sạch nội dung trong input. Khi đó, mình sẽ reset lại kết quả tìm kiếm trước đó, để trở về giao diện như ban đầu.
 
-```
+```js
 _input.addEventListener("input", event => {
-      let _target = event.target;
-      let searchText = _target.value;
-      if (searchText === '') resetViewResult();
-    });
+  let _target = event.target;
+  let searchText = _target.value;
+  if (searchText === '') resetViewResult();
+});
 ```
 
 ### Sử dụng Fetch API thay vì XMLHttpRequest
 
 Trong project này mình không sử dụng thằng [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/). Thay vào đó, mình sử dụng [Fetch API](https://davidwalsh.name/fetch). Bởi vì, Fetch API được implement dưới dạng [Promises](https://davidwalsh.name/promises) nên sử dụng rất gọn.
 
-```
+```js
 let api = 'https://en.wikipedia.org/w/api.php?format=json&action=query&' +
-              'generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&' +
-              'pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=';
-    let cors = 'https://cors-anywhere.herokuapp.com/';
+          'generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&' +
+          'pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=';
+let cors = 'https://cors-anywhere.herokuapp.com/';
 
-    function search(text) {
-      showLoading(true);
+function search(text) {
+  showLoading(true);
 
-      fetch(cors + api + text)
-      .then(response => response.json())
-      .then(json => viewResult(json))
-      .catch(error => onSearchError());
-    }
+  fetch(cors + api + text)
+  .then(response => response.json())
+  .then(json => viewResult(json))
+  .catch(error => onSearchError());
+}
 ```
 
 Trong đó:
 
 - _cors + api + text_ : chính là địa chỉ URL để request (kiểu mặc định là GET).
-- Khi có kết quả trả về thành công, mình sẽ xử lý tiếp _.then(response => response.json()) _- tức là parse response thành [JSON](/tim-hieu-ve-json-trong-javascript/).
+- Khi có kết quả trả về thành công, mình sẽ xử lý tiếp *.then(response => response.json())* - tức là parse response thành [JSON](/tim-hieu-ve-json-trong-javascript/).
 - May mắn thay, hàm _json()_ cũng trả về Promises nên mình có thể xử lý tiếp _.then(json => viewResult(json))_ - tức là hiển thị kết quả tìm kiếm. Hàm _viewResult_ là do mình tự định nghĩa.
-- Cuối cùng là xử lý khi có bất kì lỗi nào xảy ra với _.catch(error => onSearchError())_**.**
+- Cuối cùng là xử lý khi có bất kì lỗi nào xảy ra với _.catch(error => onSearchError())_.
 
 Rõ ràng, khi sử dụng Fetch API thì code trở nên rõ ràng và sáng sủa hơn rất nhiều.
 
-![fetch vs xmlhttprequest - wikipedia viewer](/wp-content/uploads/2018/05/fetch-vs-xmlhttprequest-wikipedia-viewer-completejavascript.com_.png)
-ANTONIO GUILLEM/SHUTTERSTOCK
+![fetch vs xmlhttprequest - wikipedia viewer](../images/fetch-vs-xmlhttprequest-wikipedia-viewer-completejavascript.com_.png)
+
+*Ảnh tham khảo: ANTONIO GUILLEM/SHUTTERSTOCK*
 
 ### Sử dụng ES6 Template String để tạo HTML Template
 
@@ -191,24 +193,24 @@ Trong bài viết [Sử dụng ES6 Template String có gì hay?](/su-dung-es6-te
 
 Ở đây mình thực hiện như sau:
 
-```
+```js
 function itemHTMLTemplate(title, description, pageid) {
-      let linkTarget = `${wikiPage}${pageid}`;
+  let linkTarget = `${wikiPage}${pageid}`;
 
-      return `<div class="result-item my-transition" target="${linkTarget}">\n` +
-                `<div class="content">\n` +
-                  `<h2><a href="${linkTarget}" target="_blank">${title}</a></h2>\n` +
-                  `<p>${description}</p>\n` +
-                `</div>\n` +
-              `</div>\n`;
-    }
+  return `<div class="result-item my-transition" target="${linkTarget}">\n` +
+            `<div class="content">\n` +
+              `<h2><a href="${linkTarget}" target="_blank">${title}</a></h2>\n` +
+              `<p>${description}</p>\n` +
+            `</div>\n` +
+          `</div>\n`;
+}
 
-    function htmlToElement(html) {
-      let template = document.createElement('template');
-      html = html.trim(); // Never return a text node of whitespace as the result
-      template.innerHTML = html;
-      return template.content.firstChild;
-    }
+function htmlToElement(html) {
+  let template = document.createElement('template');
+  html = html.trim(); // Never return a text node of whitespace as the result
+  template.innerHTML = html;
+  return template.content.firstChild;
+}
 ```
 
 Trong đó:
@@ -218,26 +220,26 @@ Trong đó:
 
 Qua đó, mình có thể sử dụng 2 [hàm số](/tim-hieu-function-javascript/) này để hiển thị kết quả tìm kiếm:
 
-```
+```js
 function viewResult(result) {
-      showLoading(false);
-      resetViewResult();
+  showLoading(false);
+  resetViewResult();
 
-      if (result.query) {
-        _searchWrapper.classList.add("view-result");
-        _header.classList.add("view-result");
+  if (result.query) {
+    _searchWrapper.classList.add("view-result");
+    _header.classList.add("view-result");
 
-        let pages = result.query.pages;
+    let pages = result.query.pages;
 
-        for (let key in pages) {
-          let page = pages[key];
-          let html = itemHTMLTemplate(page.title, page.extract, page.pageid);
-          let _resultItem = htmlToElement(html);
-          _resultWrapper.appendChild(_resultItem);
-          _resultItem.addEventListener("click", onResultItemClicked);
-        }
-      }
+    for (let key in pages) {
+      let page = pages[key];
+      let html = itemHTMLTemplate(page.title, page.extract, page.pageid);
+      let _resultItem = htmlToElement(html);
+      _resultWrapper.appendChild(_resultItem);
+      _resultItem.addEventListener("click", onResultItemClicked);
     }
+  }
+}
 ```
 
 ### Hiển thị loading với Pure CSS Loaders
@@ -250,20 +252,20 @@ Bạn có thể tìm kiếm rất nhiều hướng dẫn trên mạng về chủ
 
 Về cách sử dụng: bạn chỉ cần copy đoạn HTML và đoạn CSS về rồi nhét vào project là xong. Ví dụ:
 
-[codepen_embed height="265" theme_id="0" slug_hash="xjXwRr" default_tab="css,result" user="completejavascript" preview="true" data-preview="true"]See the Pen <a href='https://codepen.io/completejavascript/pen/xjXwRr/'>Pure CSS Loaders by loading.io</a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+https://codepen.io/completejavascript/pen/xjXwRr
 
 ### Sử dụng Gradient CSS
 
-```
+```css
 .main-app {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      min-height: 100%;
-      text-align: center;
-      background: linear-gradient(to bottom right, rgb(115, 237, 241), rgb(81, 81, 229));
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  background: linear-gradient(to bottom right, rgb(115, 237, 241), rgb(81, 81, 229));
+}
 ```
 
 Phần này mình sẽ không giải thích nhiều. Thay vào đó, bạn có thể đọc thêm ở các trang mình để dưới đây.

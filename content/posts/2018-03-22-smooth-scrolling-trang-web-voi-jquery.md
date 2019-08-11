@@ -1,8 +1,9 @@
 ---
 date: "2018-03-22T00:00:21Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/smooth-scolling-trang-web-voi-jquery-completejavascript.com_.png"
+keywords: "smooth scrolling trang web"
+description: "Đối với các trang web dạng Landing Page, việc di chuyển giữa các mục trên trang là chắc chắn phải có. Tuy nhiên làm sao để hoạt động này diễn ra mượt và tự nhiên nhất. Bài viết này sẽ hướng dẫn bạn một cách đơn giản mà hiệu quả để có thể smooth scrolling trang web với jQuery."
 slug: smooth-scrolling-trang-web-voi-jquery
 title: "Smooth Scrolling trang web với jQuery"
 categories:
@@ -19,32 +20,32 @@ tags:
 
 Dưới đây là một ví dụ demo. Bạn có thể nhấn thử vào các button **section 1**, **section 2** và **section 3** để thấy sự chuyển động mượt mà của nó.
 
-[codepen_embed height="389" theme_id="0" slug_hash="MVyPqr" default_tab="css,result" user="completejavascript"]See the Pen <a href='https://codepen.io/completejavascript/pen/MVyPqr/'>Smooth Scrolling Page using JQuery Example</a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+https://codepen.io/completejavascript/pen/MVyPqr
 
 ## Cấu trúc trang web với HTML
 
 Để có thể di chuyển đến các mục khác nhau trên trang web, mỗi mục bạn cần phải xác định một id cho nó. Trong ví dụ trên, mình có 3 mục với 3 id lần lượt là: **sec1**, **sec2**, **sec3**.
 
-```
+```html
 <div id="sec1">
-      This is section 1
-    </div>
-    <div id="sec2">
-      This is section 2
-    </div>
-    <div id="sec3">
-      This is section 3
-    </div>
+  This is section 1
+</div>
+<div id="sec2">
+  This is section 2
+</div>
+<div id="sec3">
+  This is section 3
+</div>
 ```
 
 Tiếp theo là thanh menu (hay navigation), cho phép người dùng lựa chọn sẽ di chuyển tới đâu.
 
-```
+```html
 <div id="nav">
-      <a href="#sec1">Section1</a>
-      <a href="#sec2">Section2</a>
-      <a href="#sec3">Section3</a>
-    </div>
+  <a href="#sec1">Section1</a>
+  <a href="#sec2">Section2</a>
+  <a href="#sec3">Section3</a>
+</div>
 ```
 
 Ở đây, mình sử dụng thẻ **a** với thuộc tính **href** là id của mỗi phần tương ứng.
@@ -53,21 +54,21 @@ Tiếp theo là thanh menu (hay navigation), cho phép người dùng lựa ch�
 
 Mặc định, khi người dùng nhấn vào thẻ a thì trang web sẽ nhảy đến vị trí có địa chỉ xác định trong thẻ href. Vì vậy, để có thể smooth scrolling trang web, bạn cần phải bắt sự kiện khi người dùng nhấn thẻ a vào và chặn lại [event](/xu-ly-mot-event-javascript-co-ban/) mặc định.
 
-```
+```js
 $("a[href*='#']:not([href='#])").click(function() {
-      let target = $(this).attr("href");
-      $('html,body').stop().animate({
-        scrollTop: $(target).offset().top
-      }, 1000);
-      event.preventDefault();
-    });
+  let target = $(this).attr("href");
+  $('html,body').stop().animate({
+    scrollTop: $(target).offset().top
+  }, 1000);
+  event.preventDefault();
+});
 ```
 
-Trong đó, đoạn code **\$("a[href*='#']:not([href='#])")** ý nghĩa là: lấy ra các thẻ a, với giá trị của thuộc tính href bắt đầu bằng **#** mà không phải là **#** (đôi khi người ta hay sử dụng **<a href="#"></a>** để biểu diễn việc link đến chính trang web hiện tại).
+Trong đó, đoạn code **\$("a[href*='#']:not([href='#])")** ý nghĩa là: lấy ra các thẻ a, với giá trị của thuộc tính href bắt đầu bằng **#** mà không phải là **#** (đôi khi người ta hay sử dụng **&lt;a href="#"&gt;&lt;/a&gt;** để biểu diễn việc link đến chính trang web hiện tại).
 
 Để chặn việc thực hiện các hoạt động mặc định, bạn có thể sử dụng phương thức preventDefault:
 
-```
+```js
 event.preventDefault();
 ```
 

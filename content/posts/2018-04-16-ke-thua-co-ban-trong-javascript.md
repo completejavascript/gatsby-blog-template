@@ -1,8 +1,9 @@
 ---
 date: "2018-04-16T00:00:54Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/cac-cach-ke-thua-co-ban-javascript-completejavascript.com_.png"
+keywords: "kế thừa cơ bản trong JavaScript"
+description: "Khi lập trình, việc kế thừa là cần thiết nếu bạn muốn giảm lượng code phải viết và quản lý code dễ dàng hơn. Vậy triển khai kế thừa trong JavaScript như thế nào? Bài viết này, mình sẽ giới thiệu với các bạn các cách triển khai kế thừa cơ bản trong JavaScript."
 slug: ke-thua-co-ban-trong-javascript
 title: "Các cách kế thừa cơ bản trong JavaScript"
 categories:
@@ -18,41 +19,42 @@ Khi lập trình, việc kế thừa là cần thiết nếu bạn muốn giảm
 
 Mời bạn xem ví dụ sau:
 
-```
+```js
 function Animal(name) {
-      this.type = "Animal";
-      this.name = name;
-      this.sayType = function() {
-        console.log("type: " + this.type);
-      }
-    }
-    Animal.prototype.sayName = function() {
-      console.log("name: " + this.name);
-    }
+  this.type = "Animal";
+  this.name = name;
+  this.sayType = function() {
+    console.log("type: " + this.type);
+  }
+}
 
-    function Dog(name) {
-      this.super_ = Animal;
-      this.super_.call(this, name);
+Animal.prototype.sayName = function() {
+  console.log("name: " + this.name);
+}
 
-      this.type  = "Dog";
-      this.shout = function() {
-        console.log("shout: " + "Go Go Go !!!");
-      }
-    }
+function Dog(name) {
+  this.super_ = Animal;
+  this.super_.call(this, name);
 
-    let myDog = new Dog("Rex");
-    myDog.shout(); // => shout: Go Go Go !!!
-    myDog.sayType(); // => type: Dog
-    myDog.sayName(); // => TypeError: myDog.sayName is not a function
+  this.type  = "Dog";
+  this.shout = function() {
+    console.log("shout: " + "Go Go Go !!!");
+  }
+}
+
+let myDog = new Dog("Rex");
+myDog.shout(); // => shout: Go Go Go !!!
+myDog.sayType(); // => type: Dog
+myDog.sayName(); // => TypeError: myDog.sayName is not a function
 ```
 
-Lớp cha **Animal** có một thuộc tính là _type_, phương thức là _sayType_ và một phương thức khác được định nghĩa thêm trong prototype của Animal là _sayName_**.**
+Lớp cha **Animal** có một thuộc tính là _type_, phương thức là _sayType_ và một phương thức khác được định nghĩa thêm trong prototype của Animal là _sayName_.
 
 Lớp con **Dog** kế thừa lớp cha Animal. Trong đó, mình gán **this.super\_ = Animal** để hiểu rằng lớp cha của Dog là Animal. Sau đó, gọi ra hàm khởi tạo của lớp cha ứng với đối tượng **this** là Dog (nếu bạn vẫn chưa biết ý nghĩa của hàm **call** thì có thể đọc bài viết [này](/phan-biet-call-apply-va-bind-trong-javascript/)).
 
 Việc tiếp theo là ghi đè thuộc tính type của lớp cha **this.type = "Dog"**, và định nghĩa thêm một phương thức khác là **shout**.
 
-Cuối cùng, để test thử, mình có tạo mới một [object](/javascript-object-last-but-not-least/) _myDog \_kiểu Dog và gọi ra các phương thức của nó với các phương thức của lớp cha Animal. Bạn có thể thấy rằng việc gọi ra phương thức \_shout()_ và _sayType()_ đã thành công. Tuy nhiên, phương thức _sayName()_ thì bị lỗi:
+Cuối cùng, để test thử, mình có tạo mới một [object](/javascript-object-last-but-not-least/) _myDog_ kiểu Dog và gọi ra các phương thức của nó với các phương thức của lớp cha Animal. Bạn có thể thấy rằng việc gọi ra phương thức _shout()_ và _sayType()_ đã thành công. Tuy nhiên, phương thức _sayName()_ thì bị lỗi:
 
 **TypeError: myDog.sayName is not a function**
 
@@ -62,44 +64,44 @@ Cuối cùng, để test thử, mình có tạo mới một [object](/javascript
 
 Để kế thừa được prototype, mình đã sửa lại đoạn code phía trên như sau:
 
-```
+```js
 function Animal(name) {
-      this.type = "Animal";
-      this.name = name;
-      this.sayType = function() {
-        console.log("type: " + this.type);
-      }
+  this.type = "Animal";
+  this.name = name;
+  this.sayType = function() {
+    console.log("type: " + this.type);
+  }
+}
+Animal.prototype.sayName = function() {
+  console.log("name: " + this.name);
+}
+
+function Dog(name) {
+  this.super_ = Animal;
+  this.super_.call(this, name);
+  this.type  = "Dog";
+  this.shout = function() {
+    console.log("shout: " + "Go Go Go !!!");
+  }
+}
+
+inherits(Dog, Animal);
+
+function inherits(child, parent) {
+  child.prototype = Object.create(parent.prototype, {
+    constructor: {
+      value: child,
+      enumerable: false,
+      writable: true,
+      configurable: true
     }
-    Animal.prototype.sayName = function() {
-      console.log("name: " + this.name);
-    }
+  });
+};
 
-    function Dog(name) {
-      this.super_ = Animal;
-      this.super_.call(this, name);
-      this.type  = "Dog";
-      this.shout = function() {
-        console.log("shout: " + "Go Go Go !!!");
-      }
-    }
-
-    inherits(Dog, Animal);
-
-    function inherits(child, parent) {
-      child.prototype = Object.create(parent.prototype, {
-        constructor: {
-          value: child,
-          enumerable: false,
-          writable: true,
-          configurable: true
-        }
-      });
-    };
-
-    let myDog = new Dog("Rex");
-    myDog.shout();   // => shout: Go Go Go !!!
-    myDog.sayType(); // => type: Dog
-    myDog.sayName(); // => name: Rex
+let myDog = new Dog("Rex");
+myDog.shout();   // => shout: Go Go Go !!!
+myDog.sayType(); // => type: Dog
+myDog.sayName(); // => name: Rex
 ```
 
 Trong đó, mình có định nghĩa một [hàm số](/tim-hieu-function-javascript/) là **inherits**, với hai tham số đầu vào là child và parent, lần lượt là 2 hàm khởi tạo của lớp con và lớp cha. Ở đây, child là Dog và parent là Animal.
@@ -114,34 +116,34 @@ JavaScript ES6 cung cấp từ khóa **class** với **extends** cho phép tri�
 
 Áp dụng class, extends cho ví dụ trên:
 
-```
+```js
 class Animal {
-      constructor(name) {
-        this.type = "Animal";
-        this.name = name;
-      }
-      sayType() {
-        console.log("type: " + this.type);
-      }
-      sayName() {
-        console.log("name: " + this.name);
-      }
-    }
+  constructor(name) {
+    this.type = "Animal";
+    this.name = name;
+  }
+  sayType() {
+    console.log("type: " + this.type);
+  }
+  sayName() {
+    console.log("name: " + this.name);
+  }
+}
 
-    class Dog extends Animal{
-      constructor(name) {
-        super(name);
-        this.type  = "Dog";
-      }
-      shout() {
-        console.log("shout: " + "Go Go Go !!!");
-      }
-    }
+class Dog extends Animal{
+  constructor(name) {
+    super(name);
+    this.type  = "Dog";
+  }
+  shout() {
+    console.log("shout: " + "Go Go Go !!!");
+  }
+}
 
-    let myDog = new Dog("Rex");
-    myDog.shout();   // => shout: Go Go Go !!!
-    myDog.sayType(); // => type: Dog
-    myDog.sayName(); // => name: Rex
+let myDog = new Dog("Rex");
+myDog.shout();   // => shout: Go Go Go !!!
+myDog.sayType(); // => type: Dog
+myDog.sayName(); // => name: Rex
 ```
 
 Bạn thấy đó, kết quả vẫn như vậy mà cách viết ngắn gọn và trực quan hơn rất nhiều. Đó chính là lợi ích rất lớn của việc sử dụng ES6 so với ES5.

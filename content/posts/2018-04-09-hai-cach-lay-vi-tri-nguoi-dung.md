@@ -1,8 +1,9 @@
 ---
 date: "2018-04-09T00:00:40Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/hai-cach-lay-vi-tri-nguoi-dung-trong-javascript-completejavascript.com_.png"
+keywords: "vị trí người dùng"
+description: "Trong nhiều trường hợp, việc xác định vị trí (kinh độ, vĩ độ) là vô cùng cần thiết, ví dụ như: chỉ đường, hiển thị thông tin thời tiết,... Bài viết này mình sẽ hướng dẫn các bạn hai cách lấy vị trí người dùng vô cùng đơn giản. Đó là sử dụng Geolocation API và ipinfo.io API."
 slug: hai-cach-lay-vi-tri-nguoi-dung
 title: "Hai cách lấy vị trí người dùng với JavaScript"
 categories:
@@ -29,30 +30,30 @@ Với những đặc điểm trên, bạn có thể thấy rằng Geolocation AP
 
 Đây là ví dụ mà mình đã làm:
 
-[codepen_embed height="407" theme_id="0" slug_hash="PRxxNz" default_tab="js,result" user="completejavascript"]See the Pen <a href='https://codepen.io/completejavascript/pen/PRxxNz/'>Get User Location Using GeoLocation Example</a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+https://codepen.io/completejavascript/pen/PRxxNz
 
 ### Cách sử dụng Geolocation API
 
 Trước tiên, bạn cần kiểm tra xem trình duyệt có hỗ trợ Geolocation hay không:
 
-```
+```js
 let geolocation = navigator.geolocation;
-    if (geolocation) {
-      // Có hỗ trợ geolocation
-    } else {
-      // Không hỗ trợ geolocation
-    }
+if (geolocation) {
+  // Có hỗ trợ geolocation
+} else {
+  // Không hỗ trợ geolocation
+}
 ```
 
 Sau khi đã chắc chắn rằng trình duyệt có hỗ trợ Geolocation, bạn có thể gọi phương thức [getCurrentPosition](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition) để lấy vị trí người dùng.
 
-```
+```js
 let options = {
-      enableHighAccuracy: true,
-      timeout: 5000,
-      maximumAge: 0
-    };
-    geolocation.getCurrentPosition(onGeoSuccess, onGeoError, options);
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
+};
+geolocation.getCurrentPosition(onGeoSuccess, onGeoError, options);
 ```
 
 [Hàm](/tim-hieu-function-javascript/) này có 3 tham số đầu vào:
@@ -63,36 +64,36 @@ let options = {
 
 #### Xử lý khi lấy vị trí người dùng thành công
 
-```
+```js
 function onGeoSuccess(position) {
-      $("#lat").innerHTML = position.coords.latitude;
-      $("#lon").innerHTML = position.coords.longitude;
-    }
+  $("#lat").innerHTML = position.coords.latitude;
+  $("#lon").innerHTML = position.coords.longitude;
+}
 ```
 
 Có 2 thông số quan trọng trong kết quả **position** trả về là vĩ độ (**position.coords.latitude**) và kinh độ (**position.coords.longitude**). Như vậy là bạn đã có được vị trí người dùng rồi, phải không?
 
 #### Xử lý lỗi
 
-```
+```js
 function onGeoError(error) {
-      let detailError;
+  let detailError;
 
-      if(error.code === error.PERMISSION_DENIED) {
-        detailError = "User denied the request for Geolocation.";
-      }
-      else if(error.code === error.POSITION_UNAVAILABLE) {
-        detailError = "Location information is unavailable.";
-      }
-      else if(error.code === error.TIMEOUT) {
-        detailError = "The request to get user location timed out."
-      }
-      else if(error.code === error.UNKNOWN_ERROR) {
-        detailError = "An unknown error occurred."
-      }
+  if(error.code === error.PERMISSION_DENIED) {
+    detailError = "User denied the request for Geolocation.";
+  }
+  else if(error.code === error.POSITION_UNAVAILABLE) {
+    detailError = "Location information is unavailable.";
+  }
+  else if(error.code === error.TIMEOUT) {
+    detailError = "The request to get user location timed out."
+  }
+  else if(error.code === error.UNKNOWN_ERROR) {
+    detailError = "An unknown error occurred."
+  }
 
-      $("#error").innerHTML = `Error: ${detailError}`;
-    }
+  $("#error").innerHTML = `Error: ${detailError}`;
+}
 ```
 
 Có nhiều trường hợp có thể xảy ra lỗi khi lấy vị trí người dùng, nhưng quan trọng nhất là 2 lỗi sau:
@@ -108,24 +109,24 @@ Trên đây là cách sử dụng cơ bản của [Geolocation API](https://deve
 
 Với cách này bạn luôn có thể lấy được thông tin vị trí người dùng. Ngoài ra, cách này còn cho phép bạn test trên localhost. Nếu không tin thì bạn có thể lấy code của mình về chạy thử.
 
-[codepen_embed height="350" theme_id="0" slug_hash="Ovaajp" default_tab="js,result" user="completejavascript"]See the Pen <a href='https://codepen.io/completejavascript/pen/Ovaajp/'>Get User Location Using ipinfo.io Example</a> by Lam Pham (<a href='https://codepen.io/completejavascript'>@completejavascript</a>) on <a href='https://codepen.io'>CodePen</a>.[/codepen_embed]
+https://codepen.io/completejavascript/pen/Ovaajp
 
 ### Cách sử dụng ipinfo.io API
 
 Bạn chỉ cần gửi một [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/) dạng GET với kiểu dữ liệu là [JSON](/tim-hieu-ve-json-trong-javascript/). Trong ví dụ trên, mình sử dụng jQuery, nên chỉ cần sử dụng phương thức [\$.getJSON](http://api.jquery.com/jquery.getjson/) là được.
 
-```
+```js
 $.getJSON("https://ipinfo.io/", onLocationGot);
 ```
 
 Kết quả trả về sẽ là một object, qua đó bạn có thể lấy ra thông tin kinh độ và vĩ độ như sau:
 
-```
+```js
 function onLocationGot(info) {
-      let position = info.loc.split(",");
-      $("#lat").text(position[0]);
-      $("#lon").text(position[1]);
-    }
+  let position = info.loc.split(",");
+  $("#lat").text(position[0]);
+  $("#lon").text(position[1]);
+}
 ```
 
 ## Kết luận
@@ -133,12 +134,9 @@ function onLocationGot(info) {
 Như vậy là mình đã giới thiệu xong với các bạn hai cách để lấy vị trí người dùng thông qua Geolocation API và ipinfo.io API. Tóm tắt lại đặc điểm của 2 cách như sau:
 
 - Geolocation API:
-
   - Hỏi người dùng xem có cho phép lấy vị trí hay không.
   - Chỉ hỗ trợ https.
-
-* ipinfo.io API
-
+- ipinfo.io API
   - Luôn luôn có thể lấy được vị trí người dùng
   - Có hỗ trợ http, có thể test trên localhost.
 

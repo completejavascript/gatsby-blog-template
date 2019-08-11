@@ -1,8 +1,9 @@
 ---
 date: "2018-04-13T00:00:40Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/lap-trinh-javascript-voi-fcc-local-weather-completejavascript.com_.png"
+keywords: "local weather"
+description: "Tiếp tục series lập trình JavaScript với FCC, hôm nay mình sẽ giới thiệu một project thuộc chủ đề Intermediate Front-End là Show the Local Weather. Dưới đây là demo trên codepen. Ngoài ra, bạn có thể xem bản đầy đủ tại đây."
 slug: lap-trinh-javascript-voi-fcc-local-weather
 title: "Lập trình JavaScript với FCC - Local Weather"
 categories:
@@ -16,9 +17,9 @@ tags:
   - jQuery
 ---
 
-Tiếp tục series[ lập trình JavaScript với FCC](/tag/lap-trinh-javascript-voi-fcc/), hôm nay mình sẽ giới thiệu một project là **Show the Local Weather. **Dưới đây là demo trên codepen. Ngoài ra, bạn có thể xem bản đầy đủ tại [đây](http://about.phamvanlam.com/fcc-local-weather/).
+Tiếp tục series[ lập trình JavaScript với FCC](/tag/lap-trinh-javascript-voi-fcc/), hôm nay mình sẽ giới thiệu một project là **Show the Local Weather**. Dưới đây là demo trên codepen. Ngoài ra, bạn có thể xem bản đầy đủ tại [đây](http://about.phamvanlam.com/fcc-local-weather/).
 
-[codepen_embed height="590" theme_id="0" slug_hash="JLeEao" default_tab="result" user="completejavascript"]See the Pen [[FCC] Show Local Weather](https://codepen.io/completejavascript/pen/JLeEao/) by Lam Pham ([@completejavascript](https://codepen.io/completejavascript)) on [CodePen](https://codepen.io).[/codepen_embed]
+https://codepen.io/completejavascript/pen/JLeEao
 
 ## Yêu cầu bài toán Show the Local Weather
 
@@ -40,13 +41,13 @@ Về cách thiết kế UX/UI cho ứng dụng, bạn có thể xem tại [đây
 
 Sau khi đã có tọa độ của người dùng, mình sử dụng [Dark Sky API](https://darksky.net/dev/) để lấy thông tin thời tiết. Bạn chỉ cần vào trang chủ, đăng ký, đăng nhập rồi lấy ra **DarkSky API Key** và gửi request lên server để lấy thông tin thời tiết.
 
-```
+```js
 let secretKey = "yourDarkSkyAPIKey";
-    let requestURL = `https://api.darksky.net/forecast/${secretKey}/${lat},${lon}`;
+let requestURL = `https://api.darksky.net/forecast/${secretKey}/${lat},${lon}`;
 
-    $.getJSON(requestURL, info => {
-      // Cập nhật thông tin thời tiết dựa vào info
-    });
+$.getJSON(requestURL, info => {
+  // Cập nhật thông tin thời tiết dựa vào info
+});
 ```
 
 Kết quả trả về sẽ là [object](/javascript-object-last-but-not-least/) **info**, với đầy đủ những thông tin cần thiết như nhiệt độ, độ ẩm, tốc độ gió,... ứng với thời điểm hiện tại, 48 giờ tới và 7 ngày tới.
@@ -61,7 +62,7 @@ Theo mình hiểu, **cơ chế hoạt động** sẽ là: thay vì bạn gửi [
 
 Mình mới chỉ hiểu đơn giản vậy thôi. Còn sâu xa hơn thì nhờ bạn nào có kinh nghiệm giải thích hộ nhé. Còn cách code thì đơn giản là bạn sẽ ghép thêm vào đầu request trên địa chỉ server của CORS Anywhere như sau:
 
-```
+```js
 `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${secretKey}/${lat},${lon}`
 ```
 
@@ -71,9 +72,9 @@ Mình mới chỉ hiểu đơn giản vậy thôi. Còn sâu xa hơn thì nhờ 
 
 Có nhiều thư viện để bạn có thể thực hiện việc này như sau:
 
-**Animated Weather Icons **by [Josh Bader](https://codepen.io/joshbader) - cách này bạn chỉ cần dùng thuần CSS3.
+**Animated Weather Icons** by [Josh Bader](https://codepen.io/joshbader) - cách này bạn chỉ cần dùng thuần CSS3.
 
-[codepen_embed height="486" theme_id="0" slug_hash="EjXgqr" default_tab="result" user="joshbader"]See the Pen [Animated Weather Icons](https://codepen.io/joshbader/pen/EjXgqr/) by Josh Bader ([@joshbader](https://codepen.io/joshbader)) on [CodePen](https://codepen.io).[/codepen_embed]
+https://codepen.io/joshbader/pen/EjXgqr
 
 Hoặc **weather-icon** tại [đây](https://erikflowers.github.io/weather-icons/). Cách này sử dụng sẽ gần giống với **font-awesome**.
 
@@ -81,34 +82,34 @@ Còn với project này, mình sử dụng [Skycons](https://darkskyapp.github.i
 
 #### Cách sử dụng Skycons
 
-[codepen_embed height="300" theme_id="0" slug_hash="EEOJrZ" default_tab="result" user="completejavascript"]See the Pen [Using Skycons Example](https://codepen.io/completejavascript/pen/EEOJrZ/) by Lam Pham ([@completejavascript](https://codepen.io/completejavascript)) on [CodePen](https://codepen.io).[/codepen_embed]
+https://codepen.io/completejavascript/pen/EEOJrZ
 
 Để sử dụng thư viện này, bạn cần khai báo script của Skycons vào file html:
 
-```
+```html
 <script src="https://rawgit.com/darkskyapp/skycons/master/skycons.js"></script>
 ```
 
 Tiếp theo, bạn khai báo một thẻ canvas (với mỗi icon). Mỗi thẻ canvas này cần có id, chiều rộng (width) và chiều dài (height).
 
-```
+```html
 <canvas id="icon1" width="128" height="128"></canvas>
 ```
 
 Trong file script, bạn khai báo đối tượng Skycons, với thuộc tính color là màu sắc của icon.
 
-```
+```js
 let skycons = new Skycons({"color": "#3da4ab"});
 ```
 
 Để add icon vào một canvas bạn có thể sử dụng một trong hai cách: id hoặc [DOM](/co-ban-ve-dom-javascript/).
 
-```
+```js
 // Thêm icon theo id
-    skycons.add("icon1", Skycons.PARTLY_CLOUDY_DAY);
+skycons.add("icon1", Skycons.PARTLY_CLOUDY_DAY);
 
-    // Them icon theo DOM
-    skycons.add(document.getElementById("icon2"), Skycons.RAIN);
+// Them icon theo DOM
+skycons.add(document.getElementById("icon2"), Skycons.RAIN);
 ```
 
 Với thông tin thứ 2, chính là kiểu icon - ứng với thời tiết và có các loại như sau:
@@ -126,9 +127,9 @@ Với thông tin thứ 2, chính là kiểu icon - ứng với thời tiết và
 
 Đến đây là bạn đã có được icon rồi, tiếp theo là thêm hiệu ứng animation cho nó:
 
-```
+```js
 // start animation!
-    skycons.play();
+skycons.play();
 ```
 
 Ngoài ra, còn một số API khác như:
@@ -141,12 +142,12 @@ Ngoài ra, còn một số API khác như:
 
 Đơn giản lắm, chỉ có 2 công thức như này:
 
-```
+```js
 // Hàm convert từ độ F sang độ C
-    let F2C = F => ((F - 32) * 5 / 9).toFixed();
+let F2C = F => ((F - 32) * 5 / 9).toFixed();
 
-    // Hàm convert từ độ C sang độ F
-    let C2F = C => (C * 9 / 5 + 32).toFixed();
+// Hàm convert từ độ C sang độ F
+let C2F = C => (C * 9 / 5 + 32).toFixed();
 ```
 
 ## Kết luận

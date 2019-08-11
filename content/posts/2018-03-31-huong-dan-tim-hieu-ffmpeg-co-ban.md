@@ -1,8 +1,9 @@
 ---
 date: "2018-03-31T00:00:52Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/huong-dan-tim-hieu-ffmpeg-co-ban-completejavascript.com_.png"
+keywords: "tìm hiểu ffmpeg"
+description: "Sau quá trình học tập và làm việc với FFMPEG, mình phải khẳng định rằng FFMPEG là một phần mềm xử lý audio, video đơn giản, miễn phí và hiệu quả. Vì vậy, bài viết này sẽ hướng dẫn tìm hiểu FFmpeg cơ bản."
 slug: huong-dan-tim-hieu-ffmpeg-co-ban
 title: "Hướng dẫn tìm hiểu FFmpeg cơ bản"
 categories:
@@ -15,22 +16,15 @@ tags:
 Sau quá trình học tập và làm việc với FFMPEG, mình phải khẳng định rằng FFMPEG là một phần mềm xử lý audio, video đơn giản, miễn phí và hiệu quả. Vì vậy, bài viết này sẽ hướng dẫn tìm hiểu FFmpeg cơ bản.
 
 Tuy nhiên, trước khi bắt đầu đọc bài viết này, mình mong bạn hiểu rõ về vấn đề, đó là:
-
-★ FFMPEG là hoàn toàn miễn phí, mã nguồn mở. Do đó bạn hoàn toàn yên tâm sử dụng nó ở bất kì đầu mà không sợ vi phạm bản quyền.
-
-★ Sử dụng FFMPEG để xử lý audio, video - nghĩa là bạn phải sử dụng dòng lệnh thông qua Command line (cmd). Nếu bạn cảm thấy mình lười trong việc sử dụng câu lệnh và mong muốn có một giao diện để xử lý audio, video thì mình xin lỗi rằng bài viết này không dành cho bạn. Mình xin cám ơn và hẹn gặp lại bạn ở các bài viết khác.
-
-★ Nếu bạn đọc đến đây thì có nghĩa là bạn tò mò và sẵn sàng sử dụng FFMPEG. Có thể bạn cũng đang hướng tới sự tự do và đơn giản. Cũng giống như một triết lý nổi tiếng của Lý Tiểu Long đó là:
-
-<blockquote>
+- FFMPEG là hoàn toàn miễn phí, mã nguồn mở. Do đó bạn hoàn toàn yên tâm sử dụng nó ở bất kì đầu mà không sợ vi phạm bản quyền.
+- Sử dụng FFMPEG để xử lý audio, video - nghĩa là bạn phải sử dụng dòng lệnh thông qua Command line (cmd). Nếu bạn cảm thấy mình lười trong việc sử dụng câu lệnh và mong muốn có một giao diện để xử lý audio, video thì mình xin lỗi rằng bài viết này không dành cho bạn. Mình xin cám ơn và hẹn gặp lại bạn ở các bài viết khác.
+- Nếu bạn đọc đến đây thì có nghĩa là bạn tò mò và sẵn sàng sử dụng FFMPEG. Có thể bạn cũng đang hướng tới sự tự do và đơn giản. Cũng giống như một triết lý nổi tiếng của Lý Tiểu Long đó là:
 
 > Cảnh giới cao nhất trong võ thuật là lấy vô chiêu thắng hữu chiêu. Không có chiêu thức chính là chiêu thức tối thượng.
 
-</blockquote>
-
 Không làm mất thời gian của bạn nữa, sau đây chúng ta sẽ cùng tìm hiểu FFMPEG. Rốt cuộc nó là cái gì, nó có sức mạnh lớn đến mức nào.
 
-## **Tìm hiểu FFMPEG cơ bản**
+## Tìm hiểu FFMPEG cơ bản
 
 ### Tổng quan
 
@@ -78,13 +72,13 @@ Một chương trình đơn giản giúp phân tích việc stream các tệp ti
 
 **libswresample**: là thư viện cho việc tối ưu hóa về việc lấy mẫu lại audio,...
 
-## **Hướng dẫn tải và cài đặt FFMPEG**
+## Hướng dẫn tải và cài đặt FFMPEG
 
 ### Tải phần mềm
 
 Các bạn có thể vào trang chủ để tải về phần mềm, tại [đây](https://ffmpeg.org/download.html). Có 3 nền tảng cho bạn lựa chọn là: Linux, Windows và Mac OS X. Ở đây mình chọn nền tảng Windows.
 
-![Tải cài đặt ffmpeg](/wp-content/uploads/2018/03/tai-cai-dat-ffmpeg-phamvanlam-com.png)
+![Tải cài đặt ffmpeg](../images/tai-cai-dat-ffmpeg-phamvanlam-com.png)
 
 Sau đó bạn sẽ được chuyển đến trang để tải phần mềm về. Lúc này bạn có 3 lựa chọn để tải về:
 
@@ -94,11 +88,11 @@ Sau đó bạn sẽ được chuyển đến trang để tải phần mềm về
 
 **Dev**: chứa những tệp tin như trên cộng thêm các tệp tin header, lib,...
 
-★ Nếu bạn là người dùng bình thường thì bạn có thể chỉ cần tải về dạng **Static**
+Có 2 trường hợp:
+- Nếu bạn là người dùng bình thường thì bạn có thể chỉ cần tải về dạng **Static**
+- Nếu bạn là lập trình viên và muốn phát triển ứng dụng cho riêng mình thì có thể tải về dạng **Shared** hoặc **Dev**
 
-★ Nếu bạn là lập trình viên và muốn phát triển ứng dụng cho riêng mình thì có thể tải về dạng **Shared** hoặc **Dev**
-
-★ Sau đây, mình sẽ chỉ nói về việc sử dụng FFMPEG như là một người dùng bình thường mà không phải là một lập trình viên.
+Sau đây, mình sẽ chỉ nói về việc sử dụng FFMPEG như là một người dùng bình thường mà không phải là một lập trình viên.
 
 ### Cài đặt phần mềm
 
@@ -108,25 +102,25 @@ Thực tế là đến lúc này bạn đã có thể sử dụng FFMPEG rồi m
 
 Để cài đặt biến môi trường cho phần mềm FFMPEG bạn làm theo những bước sau:
 
-1. Nhấn chuột phải vào **My Computer** và chọn **Properties**
+Bước 1: Nhấn chuột phải vào **My Computer** và chọn **Properties**
 
-2) Cửa sổ hiện ra, bạn chọn **Advanced system settings.**
+Bước 2: Cửa sổ hiện ra, bạn chọn **Advanced system settings.**
 
-![Cài đặt môi trường cho ffmpeg 1](/wp-content/uploads/2018/03/cai-dat-moi-truong-1-phamvanlam-com.png)
+![Cài đặt môi trường cho ffmpeg 1](../images/cai-dat-moi-truong-1-phamvanlam-com.png)
 
-3. Cửa sổ tiếp theo hiện ra thì bạn chọn tab **Advanced** => **Enviroment Variables**
+Bước 3: Cửa sổ tiếp theo hiện ra thì bạn chọn tab **Advanced** => **Enviroment Variables**
 
-![Cài đặt môi trường cho ffmpeg 2](/wp-content/uploads/2018/03/cai-dat-moi-truong-2-phamvanlam-com.png)
+![Cài đặt môi trường cho ffmpeg 2](../images/cai-dat-moi-truong-2-phamvanlam-com.png)
 
-4. Cửa sổ tiếp theo hiện ra bạn chọn trong mục **System variables** => **Path** => **Edit**. Trong mục **variable value**, bạn thêm vào đường dẫn sau **C:\ffmpeg\bin là đường dẫn đến file chạy của ffmpeg.exe, ffplay.exe, ffprobe.exe**
+Bước 4: Cửa sổ tiếp theo hiện ra bạn chọn trong mục **System variables** => **Path** => **Edit**. Trong mục **variable value**, bạn thêm vào đường dẫn sau **C:\ffmpeg\bin** - là đường dẫn đến file chạy của **ffmpeg.exe, ffplay.exe, ffprobe.exe**.
 
-[![Cài đặt môi trường cho ffmpeg 3](/wp-content/uploads/2018/03/cai-dat-moi-truong-3-phamvanlam-com.png)]()
+![Cài đặt môi trường cho ffmpeg 3](../images/cai-dat-moi-truong-3-phamvanlam-com.png)
 
 Sau đó bạn chỉ cần lưu lại là xong. Đến đây bạn có thể sử dụng FFMPEG ở mọi thư mục trên máy tính.
 
-Tiếp theo, phần quan trọng nhất trong bài viết ngày hôm nay (tiếng anh nó gọi là **last but not least **hoặc đôi khi là **last and certainly not least **- tức là cuối cùng nhưng không phải ít quan trọng), đó là các câu lệnh để sử dụng FFMPEG.
+Tiếp theo, phần quan trọng nhất trong bài viết ngày hôm nay (tiếng anh nó gọi là **last but not least** hoặc đôi khi là **last and certainly not least** - tức là cuối cùng nhưng không phải ít quan trọng), đó là các câu lệnh để sử dụng FFMPEG.
 
-## **Hướng dẫn sử dụng FFMPEG Tools**
+## Hướng dẫn sử dụng FFMPEG Tools
 
 Để hiểu rõ hơn, cũng như biết nhiều hơn về các câu lệnh của FFMPEG, bạn có thể vào trang chủ của nó, tại [đây](https://ffmpeg.org/documentation.html). Sau đây, mình sẽ tóm tắt lại một số những câu lệnh mà theo mình nó phù hợp với những người sử dụng bình thường và dĩ nhiên nó rất hiệu quả.
 
@@ -148,13 +142,13 @@ Một chú ý nhỏ trước khi bắt đầu đó là: các ảnh, audio và vi
 
 #### Code FFmpeg hiển thị thông tin của file
 
-```
+```bash
 ffmpeg -i test.mp4
 ```
 
 #### Code FFmpeg chuyển đổi ảnh thành video
 
-```
+```bash
 ffmpeg -f image2 -i img%d.png video.mp4
 ```
 
@@ -162,7 +156,7 @@ Trong đó, img%d.png là tất cả những ảnh đầu vào của bạn trong
 
 #### Code FFmpeg chuyển đổi video thành ảnh
 
-```
+```bash
 ffmpeg -i video.mp4 image%d.png
 ```
 
@@ -170,7 +164,7 @@ ffmpeg -i video.mp4 image%d.png
 
 #### Code FFmpeg tách âm thanh từ video và lưu lại thành file mp3
 
-```
+```bash
 ffmpeg -i video.mp4 -vn -ar 44100 -ac 2 -ab 192k -f mp3 sound.mp3
 ```
 
@@ -184,7 +178,7 @@ Trong đó:
 
 #### Code FFmpeg chuyển đổi định dạng video
 
-```
+```bash
 ffmpeg -i video_input.xxx video_output.yyy
 ```
 
@@ -195,13 +189,13 @@ Trong đó:
 
 Ví dụ, mình muốn chuyển từ định dạng flv sang mp4, thì câu lệnh sẽ là:
 
-```
+```bash
 ffmpeg -i video_input.flv video_output.mp4
 ```
 
 #### Code FFmpeg chuyển video thành ảnh động .gif
 
-```
+```bash
 ffmpeg -i video.mp4 gif_anime.gif
 ```
 
@@ -212,7 +206,7 @@ Trong đó:
 
 #### Code FFmpeg trộn video với một file âm thanh
 
-```
+```bash
 ffmpeg -i sound.mp3 -i video_input.mp4 video_output.mp4
 ```
 
@@ -226,7 +220,7 @@ Chú ý là: độ dài video đầu ra sẽ là độ dài lớn hơn của m�
 
 #### Code FFmpeg tăng - giảm tốc độ video
 
-```
+```bash
 ffmpeg -i video.mp4 -vf "setpts=0.5*PTS" highspeed.mp4
 ```
 
@@ -238,7 +232,7 @@ Trong đó:
 
 Nếu muốn giảm tốc độ đi 2 lần thì chỉ cần thay đổi thành:
 
-```
+```bash
 ffmpeg -i video.mp4 -vf "setpts=2*PTS" highspeed.mp4
 ```
 
@@ -246,7 +240,7 @@ Còn muốn tốc độ khác thì bạn tự suy luận ra nhé.
 
 #### Code FFmpeg thêm ảnh vào audio và xuất bản thành video
 
-```
+```bash
 ffmpeg -loop 1 -i image.png -i sound.mp3 -c:v libx264 -c:a aac -strict experimental -b:a 192k -shortest output.mp4
 ```
 
@@ -258,7 +252,7 @@ Trong đó:
 
 #### Code FFmpeg thêm phụ đề cho video
 
-```
+```bash
 ffmpeg -i video.mp4 -i subtitles.srt -map 0 -map 1 -c copy -c:v libx264 -crf 23 -preset veryfast video-output.mp4
 ```
 
@@ -270,7 +264,7 @@ Trong đó:
 
 #### Code FFmpeg cắt lấy một phần nhỏ của video
 
-```
+```bash
 ffmpeg -i video.mp4 -ss 00:00:50.0 -codec copy -t 20 output.mp4
 ```
 
@@ -282,7 +276,7 @@ Trong đó:
 
 #### Code FFmpeg chia video ra thành nhiều phần
 
-```
+```bash
 ffmpeg -i video.mp4 -t 00:00:50 -c copy small-1.mp4 -ss 00:00:50 -codec copy small-2.mp4
 ```
 
@@ -293,7 +287,7 @@ Trong đó:
 
 #### Code FFmpeg ghép video từ những video nhỏ
 
-```
+```bash
 ffmpeg -f concat -i file-list.txt -c copy output.mp4
 ```
 
@@ -301,30 +295,30 @@ Trong đó:
 
 - File đầu vào là file file-list.txt - chứa tên của các video cần ghép, ở cùng thư mục đang xét. Ví dụ nội dung file sẽ như sau:
 
-```
+```bash
 file 'small-1.mp4'
-    file 'small-2.mp4'
+file 'small-2.mp4'
 ```
 
 - File đầu ra là output.mp4
 
 #### Code FFmpeg tắt âm thanh của video
 
-```
+```bash
 ffmpeg -i video.mp4 -an mute-video.mp4
 ```
 
 Trong đó:
 
 - File đầu vào là video.mp4
-- Option **an **là để tắt âm thanh video
+- Option **an** là để tắt âm thanh video
 - File đầu ra là mute-video.mp4
 
 ### Công cụ ffplay
 
 Dùng để chạy, phát video. Câu lệnh đơn giản là:
 
-```
+```bash
 ffplay dir/video.mp4
 ```
 
@@ -344,20 +338,13 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lay-anh-th
 Có thể bạn quan tâm:
 
 - [[FFmpeg tutorial] Những câu lệnh FFmpeg xử lý video](https://phamvanlam.com/ffmpeg-tutorial-nhung-cau-lenh-ffmpeg-xu-ly-video/)
-
-* [[FFmpeg Tutorial] Lấy thông tin video bằng FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-lay-thong-tin-video-bang-ffmpeg/)
-
+- [[FFmpeg Tutorial] Lấy thông tin video bằng FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-lay-thong-tin-video-bang-ffmpeg/)
 - [[FFmpeg Tutorial] Lấy ảnh từ video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-lay-anh-tu-video-voi-ffmpeg/)
-
-* [[FFmpeg Tutorial] Chuyển video thành ảnh động GIF](https://phamvanlam.com/ffmpeg-tutorial-chuyen-video-thanh-anh-dong-gif/)
-
+- [[FFmpeg Tutorial] Chuyển video thành ảnh động GIF](https://phamvanlam.com/ffmpeg-tutorial-chuyen-video-thanh-anh-dong-gif/)
 - [[FFmpeg Tutorial] Convert video thành MP4 với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-convert-video-thanh-mp4-voi-ffmpeg/)
-
-* [[FFmpeg Tutorial] Convert video thành WEBM với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-convert-video-thanh-webm-voi-ffmpeg/)
-
+- [[FFmpeg Tutorial] Convert video thành WEBM với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-convert-video-thanh-webm-voi-ffmpeg/)
 - [[FFmpeg Tutorial] Crop video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-crop-video-voi-ffmpeg/)
-
-* [[FFmpeg Tutorial] Cut video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-cut-video-voi-ffmpeg/)
+- [[FFmpeg Tutorial] Cut video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-cut-video-voi-ffmpeg/)
 
 <hr class="border-color-light-grey" />
 

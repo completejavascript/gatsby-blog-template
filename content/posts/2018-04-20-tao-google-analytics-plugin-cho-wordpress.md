@@ -1,8 +1,9 @@
 ---
 date: "2018-04-20T00:00:22Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/tao-google-analytics-plugin-cho-wordpress-completejavascript.com_.png"
+keywords: "tạo google analytics plugin cho wordpress"
+description: "Đối với mỗi trang web, việc tìm hiểu và phân tích hành vi người dùng là vô cùng quan trọng. Trong đó, Google Analytics là một công cụ miễn phí nhưng khá tốt để giúp bạn làm được việc này. Bài viết hôm nay, mình sẽ chia sẻ với các bạn cách tạo Google Analytics Plugin cho Wordpress."
 slug: tao-google-analytics-plugin-cho-wordpress
 title: "Tạo Google Analytics Plugin cho Wordpress"
 categories:
@@ -30,25 +31,25 @@ Kết quả của bạn cần thu được là **Google-Analytics-ID**, ví dụ
 
 **Bước 2**: Copy đoạn code của mình sau đây vào file vừa rồi
 
-```
+```php
 <?php
-      // Plugin Name: Simple Google Analytics Plugin for Wordpress
-      // Description: Adds a Google analytics tracking code to the <head> of your theme, by hooking to wp_head.
-      // Author: LP Devs
-      // Version: 1.0
-      function wp_lpdevs_google_analytics() {
-        ?>
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'Google-Analytics-ID', 'auto');
-        ga('send', 'pageview');
-      </script>
-        <?php
-      }
-      add_action( 'wp_head', 'wp_lpdevs_google_analytics');
+// Plugin Name: Simple Google Analytics Plugin for Wordpress
+// Description: Adds a Google analytics tracking code to the <head> of your theme, by hooking to wp_head.
+// Author: LP Devs
+// Version: 1.0
+function wp_lpdevs_google_analytics() {
+  ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'Google-Analytics-ID', 'auto');
+  ga('send', 'pageview');
+</script>
+  <?php
+}
+add_action( 'wp_head', 'wp_lpdevs_google_analytics');
 ```
 
 **Bước 3: Tùy biến file plugin**
@@ -64,7 +65,7 @@ Kết quả của bạn cần thu được là **Google-Analytics-ID**, ví dụ
 - Copy file trên vào thư mục **/wp-content/plugins.**
 - Login vào trình quản lý Wordpress, rồi chọn mục Plugin. Nếu như các bước trên thực hiện đúng thì đến đây bạn sẽ nhìn thấy plugin của bạn. Giờ chỉ cần kích hoạt nó lên là xong rồi.
 
-[![simple google analytics plugin](/wp-content/uploads/2018/04/tao-google-analytics-plugin-wordpress-completejavascript.com_.png)](/)
+![simple google analytics plugin](../images/tao-google-analytics-plugin-wordpress-completejavascript.com_.png)
 
 Đây là kết quả khi sử dụng Google Analytics Plugin trên với trang web của mình:
 

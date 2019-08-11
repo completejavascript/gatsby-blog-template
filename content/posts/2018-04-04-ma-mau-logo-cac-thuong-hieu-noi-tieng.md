@@ -1,8 +1,9 @@
 ---
 date: "2018-04-04T00:00:52Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/ma-mau-logo-cac-thuong-hieu-noi-tieng-completejavascript.com_.png"
+keywords: "mã màu logo"
+description: "Đã bao giờ bạn rơi vào trường hợp không biết lựa chọn, sử dụng hay phối hợp màu sắc sao cho hợp lý chưa? ... Bạn chỉ cần tải logo của họ về, sử dụng bất kỳ một công cụ chỉnh sửa hình ảnh là có thể lấy ra mã màu ở đó. Hoặc là bạn có thể theo dõi bài viết này. Mình sẽ lấy mã màu logo các thương hiệu nổi tiếng giúp bạn."
 slug: ma-mau-logo-cac-thuong-hieu-noi-tieng
 title: "Mã màu logo các thương hiệu nổi tiếng"
 categories:
@@ -15,219 +16,171 @@ tags:
 
 ## Google
 
-#4285F4
-
-#FBBC05
-
-#34A853
-
-#EA4335
+<div style="background-color: #4285f4; color: #fff; padding: 15px;">#4285F4</div>
+<div style="background-color: #fbbc05; color: #fff; padding: 15px;">#FBBC05</div>
+<div style="background-color: #34a853; color: #fff; padding: 15px;">#34A853</div>
+<div style="background-color: #ea4335; color: #fff; padding: 15px;">#EA4335</div>
+<div class="margin-bottom"></div>
 
 ## Facebook
 
-#3B5998
-
-#4267b2
-
-#E9EBEE
-
-#365899
-
-#F6F7F9
+<div style="background-color: #3b5998; color: #fff; padding: 15px;">#3B5998</div>
+<div style="background-color: #4267b2; color: #fff; padding: 15px;">#4267b2</div>
+<div style="background-color: #e9ebee; color: #222; padding: 15px;">#E9EBEE</div>
+<div style="background-color: #365899; color: #fff; padding: 15px;">#365899</div>
+<div style="background-color: #f6f7f9; color: #222; padding: 15px;">#F6F7F9</div>
+<div class="margin-bottom"></div>
 
 ## Twitter
 
-#1DA1F2
-
-#14171A
-
-#AAB8C2
-
-#E1E8ED
-
-#F5F8FA
+<div style="background-color: #1da1f2; color: #fff; padding: 15px;">#1DA1F2</div>
+<div style="background-color: #14171a; color: #fff; padding: 15px;">#14171A</div>
+<div style="background-color: #aab8c2; color: #fff; padding: 15px;">#AAB8C2</div>
+<div style="background-color: #e1e8ed; color: #222; padding: 15px;">#E1E8ED</div>
+<div style="background-color: #f5f8fa; color: #222; padding: 15px;">#F5F8FA</div>
+<div class="margin-bottom"></div>
 
 ## Microsoft
 
-#F35022
-
-#80BB03
-
-#03A5F0
-
-#FFB903
+<div style="background-color: #f35022; color: #fff; padding: 15px;">#F35022</div>
+<div style="background-color: #80bb03; color: #fff; padding: 15px;">#80BB03</div>
+<div style="background-color: #03a5f0; color: #fff; padding: 15px;">#03A5F0</div>
+<div style="background-color: #ffb903; color: #fff; padding: 15px;">#FFB903</div>
+<div class="margin-bottom"></div>
 
 ## Amazon
 
-#FF9900
-
-#146EB4
-
-#000000
-
-#232F3E
-
-#F2F2F2
+<div style="background-color: #ff9900; color: #fff; padding: 15px;">#FF9900</div>
+<div style="background-color: #146eb4; color: #fff; padding: 15px;">#146EB4</div>
+<div style="background-color: #000000; color: #fff; padding: 15px;">#000000</div>
+<div style="background-color: #232f3e; color: #fff; padding: 15px;">#232F3E</div>
+<div style="background-color: #f2f2f2; color: #222; padding: 15px;">#F2F2F2</div>
+<div class="margin-bottom"></div>
 
 ## Netflix
 
-#221F1F
-
-#E50914
+<div style="background-color: #221f1f; color: #fff; padding: 15px;">#221F1F</div>
+<div style="background-color: #e50914; color: #fff; padding: 15px;">#E50914</div>
+<div class="margin-bottom"></div>
 
 ## Linkedin
 
-#0077B5
-
-#000000
-
-#FFFFFF
-
-#00A0DC
+<div style="background-color: #0077b5; color: #fff; padding: 15px;">#0077B5</div>
+<div style="background-color: #000000; color: #fff; padding: 15px;">#000000</div>
+<div style="background-color: #ffffff; color: #222; padding: 15px;">#FFFFFF</div>
+<div style="background-color: #00a0dc; color: #fff; padding: 15px;">#00A0DC</div>
+<div class="margin-bottom"></div>
 
 ## Snapchat
 
-#FFFC00
-
-#FFFFFF
-
-#000000
+<div style="background-color: #fffc00; color: #222; padding: 15px;">#FFFC00</div>
+<div style="background-color: #ffffff; color: #222; padding: 15px;">#FFFFFF</div>
+<div style="background-color: #000000; color: #fff; padding: 15px;">#000000</div>
+<div class="margin-bottom"></div>
 
 ## WhatsApp
 
-#25D366
-
-#075E54
-
-#128C7E
-
-#DCF8C6
-
-#34B7F1
+<div style="background-color: #25d366; color: #222; padding: 15px;">#25D366</div>
+<div style="background-color: #075e54; color: #fff; padding: 15px;">#075E54</div>
+<div style="background-color: #128c7e; color: #fff; padding: 15px;">#128C7E</div>
+<div style="background-color: #dcf8c6; color: #222; padding: 15px;">#DCF8C6</div>
+<div style="background-color: #34b7f1; color: #fff; padding: 15px;">#34B7F1</div>
+<div class="margin-bottom"></div>
 
 ## Spotify
 
-#1ED760
-
-#1DB954
-
-#FFFFFF
-
-#191414
+<div style="background-color: #1ed760; color: #222; padding: 15px;">#1ED760</div>
+<div style="background-color: #1db954; color: #fff; padding: 15px;">#1DB954</div>
+<div style="background-color: #ffffff; color: #222; padding: 15px;">#FFFFFF</div>
+<div style="background-color: #191414; color: #fff; padding: 15px;">#191414</div>
+<div class="margin-bottom"></div>
 
 ## Apple
 
-#A6B1B7
-
-#000000
-
-#333333
-
-#BBBBBB
-
-#FFFFFF
+<div style="background-color: #a6b1b7; color: #222; padding: 15px;">#A6B1B7</div>
+<div style="background-color: #000000; color: #fff; padding: 15px;">#000000</div>
+<div style="background-color: #333333; color: #fff; padding: 15px;">#333333</div>
+<div style="background-color: #bbbbbb; color: #222; padding: 15px;">#BBBBBB</div>
+<div style="background-color: #ffffff; color: #222; padding: 15px;">#FFFFFF</div>
+<div class="margin-bottom"></div>
 
 ## Medium
 
-#02B875
-
-#12100E
-
-#FFFFFF
-
-#E8F3EC
-
-#00AB6B
+<div style="background-color: #02b875; color: #222; padding: 15px;">#02B875</div>
+<div style="background-color: #12100e; color: #fff; padding: 15px;">#12100E</div>
+<div style="background-color: #ffffff; color: #222; padding: 15px;">#FFFFFF</div>
+<div style="background-color: #e8f3ec; color: #222; padding: 15px;">#E8F3EC</div>
+<div style="background-color: #00ab6b; color: #222; padding: 15px;">#00AB6B</div>
+<div class="margin-bottom"></div>
 
 ## Vimeo
 
-#1AB7EA
-
-#162221
-
-#FFFFFF
-
-#000000
+<div style="background-color: #1ab7ea; color: #222; padding: 15px;">#1AB7EA</div>
+<div style="background-color: #162221; color: #fff; padding: 15px;">#162221</div>
+<div style="background-color: #ffffff; color: #222; padding: 15px;">#FFFFFF</div>
+<div style="background-color: #000000; color: #fff; padding: 15px;">#000000</div>
+<div class="margin-bottom"></div>
 
 ## Skype
 
-#00AFF0
-
-#0078D7
+<div style="background-color: #00aff0; color: #fff; padding: 15px;">#00AFF0</div>
+<div style="background-color: #0078d7; color: #fff; padding: 15px;">#0078D7</div>
+<div class="margin-bottom"></div>
 
 ## Android
 
-#A4C639
-
-#90BE4E
-
-#A4CA39
+<div style="background-color: #a4c639; color: #fff; padding: 15px;">#A4C639</div>
+<div style="background-color: #90be4e; color: #fff; padding: 15px;">#90BE4E</div>
+<div style="background-color: #a4ca39; color: #fff; padding: 15px;">#A4CA39</div>
+<div class="margin-bottom"></div>
 
 ## Quora
 
-#AA2200
-
-#FFFFFF
-
-#2B6DAD
+<div style="background-color: #aa2200; color: #222; padding: 15px;">#AA2200</div>
+<div style="background-color: #ffffff; color: #222; padding: 15px;">#FFFFFF</div>
+<div style="background-color: #2b6dad; color: #fff; padding: 15px;">#2B6DAD</div>
+<div class="margin-bottom"></div>
 
 ## Dribbble
 
-#EA4C89
-
-#C32361
-
-#444444
-
-#9BA5A8
+<div style="background-color: #ea4c89; color: #222; padding: 15px;">#EA4C89</div>
+<div style="background-color: #c32361; color: #222; padding: 15px;">#C32361</div>
+<div style="background-color: #444444; color: #fff; padding: 15px;">#444444</div>
+<div style="background-color: #9ba5a8; color: #fff; padding: 15px;">#9BA5A8</div>
+<div class="margin-bottom"></div>
 
 ## Slack
 
-#4D394B
-
-#3B434B
-
-#70CADB
-
-#3EB890
-
-#E01765
-
-#E8A723
-
-#1A937D
-
-#472A49
-
-#65863A
-
-#CC2027
-
-#56B68B
+<div style="background-color: #4d394b; color: #fff; padding: 15px;">#4D394B</div>
+<div style="background-color: #3b434b; color: #fff; padding: 15px;">#3B434B</div>
+<div style="background-color: #70cadb; color: #fff; padding: 15px;">#70CADB</div>
+<div style="background-color: #3eb890; color: #fff; padding: 15px;">#3EB890</div>
+<div style="background-color: #e01765; color: #222; padding: 15px;">#E01765</div>
+<div style="background-color: #e8a723; color: #222; padding: 15px;">#E8A723</div>
+<div style="background-color: #1a937d; color: #fff; padding: 15px;">#1A937D</div>
+<div style="background-color: #472a49; color: #fff; padding: 15px;">#472A49</div>
+<div style="background-color: #65863a; color: #222; padding: 15px;">#65863A</div>
+<div style="background-color: #cc2027; color: #fff; padding: 15px;">#CC2027</div>
+<div style="background-color: #56b68b; color: #fff; padding: 15px;">#56B68B</div>
+<div class="margin-bottom"></div>
 
 ## StumbleUpon
 
-#E94826
-
-#EB4924
-
-#E4E5E7
-
-#000000
+<div style="background-color: #e94826; color: #222; padding: 15px;">#E94826</div>
+<div style="background-color: #e4e5e7; color: #222; padding: 15px;">#E4E5E7</div>
+<div style="background-color: #eb4924; color: #222; padding: 15px;">#EB4924</div>
+<div style="background-color: #000000; color: #fff; padding: 15px;">#000000</div>
+<div class="margin-bottom"></div>
 
 ## Flickr
 
-#F40083
-
-#006ADD
-
-#FF1981
-
-#177FFF
-
-#FF0084
-
-#246DD6
+<div style="background-color: #f40083; color: #fff; padding: 15px;">#F40083</div>
+<div style="background-color: #006add; color: #fff; padding: 15px;">#006ADD</div>
+<div style="background-color: #ff1981; color: #fff; padding: 15px;">#FF1981</div>
+<div style="background-color: #177fff; color: #fff; padding: 15px;">#177FFF</div>
+<div style="background-color: #ff0084; color: #fff; padding: 15px;">#FF0084</div>
+<div style="background-color: #246dd6; color: #fff; padding: 15px;">#246DD6</div>
+<div class="margin-bottom"></div>
 
 Trên đây là mã màu của một số thương hiệu nổi tiếng. Nếu bạn muốn cập nhật thêm mã màu logo của thương hiệu nào thì vui lòng để lại bình luận nhé.
 

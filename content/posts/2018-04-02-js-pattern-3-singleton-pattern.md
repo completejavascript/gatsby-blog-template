@@ -1,8 +1,9 @@
 ---
 date: "2018-04-02T00:00:37Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/js-pattern-3-singleton-pattern-completejavascript.com_.png"
+keywords: "singleton pattern"
+description: "Có thể bạn đã nghe quen về Singleton. Singleton Pattern giới hạn số lượng instance của một class là một. Trong JavaScript, bạn có thể triển khai Singleton Pattern theo cách sau."
 slug: js-pattern-3-singleton-pattern
 title: "JS Pattern #3 -  Singleton Pattern"
 categories:
@@ -15,38 +16,38 @@ Có thể bạn đã nghe quen về Singleton. Singleton Pattern giới hạn s�
 
 ## Singleton Pattern cơ bản
 
-```
+```js
 var mySingleton = (function() {
-      var instance;
-      function init() {
-        var number = 0;
-        return {
-          setNumber : function(x) {
-            number = x;
-          },
-          getNumber : function() {
-            return number;
-          }
-        };
+  var instance;
+  function init() {
+    var number = 0;
+    return {
+      setNumber : function(x) {
+        number = x;
+      },
+      getNumber : function() {
+        return number;
       }
+    };
+  }
 
-      return {
-        getInstance : function() {
-          if (!instance) instance = init();
-          return instance;
-        }
-      }
-    })();
+  return {
+    getInstance : function() {
+      if (!instance) instance = init();
+      return instance;
+    }
+  }
+})();
 
-    var instA = mySingleton.getInstance();
-    console.log("instance A: ", instA.getNumber()); // instance A: 0
-    instA.setNumber(10);
-    console.log("instance A: ", instA.getNumber()); // instance A: 10
+var instA = mySingleton.getInstance();
+console.log("instance A: ", instA.getNumber()); // instance A: 0
+instA.setNumber(10);
+console.log("instance A: ", instA.getNumber()); // instance A: 10
 
-    var instB = mySingleton.getInstance();
-    console.log("instance B: ", instB.getNumber()); // instance B: 10
+var instB = mySingleton.getInstance();
+console.log("instance B: ", instB.getNumber()); // instance B: 10
 
-    console.log(instA === instB);                   // true
+console.log(instA === instB);                   // true
 ```
 
 ### Giải thích
@@ -59,33 +60,33 @@ Như ví dụ trên, instA khi mới tạo ra thì getNumber sẽ trả về 0. 
 
 ## Singleton with a cached static property
 
-```
+```js
 function User() {
-      // do we have an existing instance?
-      if (typeof User.instance === 'object') {
-          return User.instance;
-      }
+  // do we have an existing instance?
+  if (typeof User.instance === 'object') {
+      return User.instance;
+  }
 
-      // proceed as normal
-      this.firstName = 'John';
-      this.lastName = 'Doe';
+  // proceed as normal
+  this.firstName = 'John';
+  this.lastName = 'Doe';
 
-      // cache
-      User.instance = this;
+  // cache
+  User.instance = this;
 
-      /**
-       * // implicit return
-       * return this;
-       */
-    }
+  /**
+    * // implicit return
+    * return this;
+    */
+}
 
-    // Usage:
-    var curUser = new User();
-    console.log(curUser.firstName, curUser.lastName); // John Doe
+// Usage:
+var curUser = new User();
+console.log(curUser.firstName, curUser.lastName); // John Doe
 
-    var other = new User();
-    console.log(other.firstName, other.lastName);     // John Doe
-    console.log(other === curUser);                   // true
+var other = new User();
+console.log(other.firstName, other.lastName);     // John Doe
+console.log(other === curUser);                   // true
 ```
 
 Cách này khi mới đọc thì sẽ thấy hơi ảo, ở chỗ là, trong hàm User ta lại sử dụng User.instance. Nhưng nếu nhìn theo khía cạnh, function cũng chính là một [object](/javascript-object-last-but-not-least/) thì mọi chuyện sẽ trở nên đơn giản.
