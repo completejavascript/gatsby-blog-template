@@ -3,7 +3,7 @@ date: "2017-07-23T13:03:46Z"
 template: "post"
 cover: "../images/always-bet-on-javascript-completejavascript.com_.png"
 keywords: "danh ngôn lập trình"
-description: "Danh ngôn lập trình - đơn giản là "phát ngôn" của những danh nhân (người nổi tiếng) về lập trình - là những kinh nghiệm qua quá trình học tập, lao động,..."
+description: "Danh ngôn lập trình - đơn giản là \"phát ngôn\" của những danh nhân (người nổi tiếng) về lập trình - là những kinh nghiệm qua quá trình học tập, lao động,..."
 slug: danh-ngon-lap-trinh-javascript-phan-1
 title: "Danh ngôn lập trình JavaScript - Phần 1"
 categories:
