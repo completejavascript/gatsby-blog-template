@@ -28,15 +28,22 @@ const Post = ({ postNode, config, slug }) => {
           postNode={postNode}
         />
       </div>
-      <PostDivider />
 
-      {config.hasAdsense && <AdSense.Google {...config.adsenseUnits.postTop} />}
+      <PostDivider />
+      {config.hasAdsense && config.adsenseUnits.postTop && (
+        <AdSense.Google {...config.adsenseUnits.postTop} />
+      )}
 
       <div
         className="padding-top padding-bottom"
         dangerouslySetInnerHTML={{ __html: postNode.html }}
       />
+
+      {config.hasAdsense && config.adsenseUnits.postBottom && (
+        <AdSense.Google {...config.adsenseUnits.postBottom} />
+      )}
       <PostDivider />
+
       <div className="padding-top padding-bottom">
         <small>
           <PostCategories
@@ -53,8 +60,8 @@ const Post = ({ postNode, config, slug }) => {
       </div>
       <PostDivider />
 
-      {config.hasAdsense && (
-        <AdSense.Google {...config.adsenseUnits.postBottom} />
+      {config.hasAdsense && config.adsenseUnits.matchedPostBottom && (
+        <AdSense.Google {...config.adsenseUnits.matchedPostBottom} />
       )}
 
       <Comment

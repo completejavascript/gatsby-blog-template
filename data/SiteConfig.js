@@ -77,7 +77,14 @@ const config = {
       style: { display: "block" },
       format: "auto",
       responsive: "true",
-    }
+    },
+    matchedPostBottom: {
+      client: "ca-pub-7260245524211186",
+      slot: "2249007243",
+      style: { display: "block" },
+      format: "autorelaxed",
+      responsive: "true",
+    },
   },
   // Use for links widget
   sidebarSticky: true,

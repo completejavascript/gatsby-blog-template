@@ -26,7 +26,7 @@ const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
 
       {links && <WidgetLinks links={links} />}
 
-      {config.hasAdsense && (
+      {config.hasAdsense && config.adsenseUnits.sidebarBottom && (
         <div className="position-sticky top-zero">
           <AdSense.Google {...config.adsenseUnits.sidebarBottom} />
         </div>
