@@ -5,11 +5,11 @@ description: "Nội dung chi tiết về các chính sách bảo mật"
 slug: "chinh-sach-bao-mat"
 ---
 
-Complete JavaScript là blog cá nhân chuyên chia sẻ về Linux và phần mềm mã nguồn mở. Tên miền chính của Complete JavaScript là completejavascript.netlify.com. Khi đến với Complete JavaScript, bạn phải tuân thủ mọi quy định và chính sách mà chúng tôi đã đề ra. Những chính sách này cũng được áp dụng cho các trang phụ liên quan đến Complete JavaScript và toàn bộ các subdomain.
+Complete JavaScript là blog cá nhân chuyên chia sẻ về Linux và phần mềm mã nguồn mở. Tên miền chính của Complete JavaScript là completejavascript.com. Khi đến với Complete JavaScript, bạn phải tuân thủ mọi quy định và chính sách mà chúng tôi đã đề ra. Những chính sách này cũng được áp dụng cho các trang phụ liên quan đến Complete JavaScript và toàn bộ các subdomain.
 
 ## Chúng tôi là ai?
 
-Địa chỉ các website của chúng tôi là: https://completejavascript.netlify.com.
+Địa chỉ các website của chúng tôi là: https://completejavascript.com.
 
 ## Complete JavaScript thu thập dữ liệu cá nhân nào và lý do chúng tôi thu thập chúng?
 

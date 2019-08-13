@@ -4,7 +4,7 @@ const config = {
   siteTitleShort: "Complete JavaScript", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Complete JavaScript", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://completejavascript.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://completejavascript.com", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "Chia sẻ về JavaScript, lập trình JavaScript từ cơ bản đến nâng cao.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
@@ -147,7 +147,7 @@ const config = {
     },
     {
       label: "RSS",
-      url: "https://completejavascript.netlify.com/rss.xml",
+      url: "https://completejavascript.com/rss.xml",
       iconClassName: "fas rss"
     },
   ],
@@ -157,7 +157,7 @@ const config = {
     { label: "Liên hệ", url: "/lien-he" },
     { label: "Điều khoản sử dụng", url: "/dieu-khoan-su-dung" },
     { label: "Chính sách bảo mật", url: "/chinh-sach-bao-mat" },
-    { label: "Sitemap", url: "https://completejavascript.netlify.com/sitemap.xml" },
+    { label: "Sitemap", url: "https://completejavascript.com/sitemap.xml" },
   ],
   copyright: "Copyright © 2017-2019 Lam Pham. Unless otherwise noted, all code MIT license.",
   // Use for manifest

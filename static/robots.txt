@@ -1,3 +1,3 @@
 User-agent: *
 
-sitemap: https://completejavascript.netlify.com/sitemap.xml
+sitemap: https://completejavascript.com/sitemap.xml
