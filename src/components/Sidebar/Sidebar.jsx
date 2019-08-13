@@ -5,6 +5,7 @@ import WidgetLatestPosts from './WidgetLatestPosts';
 import WidgetLinks from './WidgetLinks';
 import WidgetSearch from './WidgetSearch';
 import config from '../../../data/SiteConfig';
+import AdSense from 'react-adsense';
 
 const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
   return (
@@ -23,9 +24,11 @@ const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
 
       {tagList && <WidgetTag tagList={tagList} />}
 
-      {links && (
+      {links && <WidgetLinks links={links} />}
+
+      {config.hasAdsense && (
         <div className="position-sticky top-zero">
-          <WidgetLinks links={links} />
+          <AdSense.Google {...config.adsenseUnits.sidebarBottom} />
         </div>
       )}
     </aside>

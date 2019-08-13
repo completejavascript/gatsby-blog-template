@@ -54,6 +54,31 @@ const config = {
   searchWidgetPlaceHolder: "Nhập từ khóa",
   searchEngineID: "partner-pub-7260245524211186:4187549499",
   hasSearch: true,
+  // Set up for google adsense
+  hasAdsense: true,
+  adsenseUnits: {
+    sidebarBottom: {
+      client: "ca-pub-7260245524211186",
+      slot: "5714088466",
+      style: { display: "block" },
+      format: "auto",
+      responsive: "true",
+    },
+    postTop: {
+      client: "ca-pub-7260245524211186",
+      slot: "5797848941",
+      style: { display: "block" },
+      format: "auto",
+      responsive: "true",
+    },
+    postBottom: {
+      client: "ca-pub-7260245524211186",
+      slot: "5905660151",
+      style: { display: "block" },
+      format: "auto",
+      responsive: "true",
+    }
+  },
   // Use for links widget
   sidebarSticky: true,
   sidebarLinks: [
