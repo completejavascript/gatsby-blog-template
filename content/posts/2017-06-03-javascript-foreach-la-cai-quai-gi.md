@@ -69,7 +69,7 @@ Theo quan điểm cá nhân mình thì việc sử dụng hàm **forEach** giú
 
 ## Giới thiệu hàm forEach trong JavaScript
 
-[JavaScript](/category/javascript-co-ban/) cung cấp sẵn phương thức **forEach **- là một phương thức có sẵn của [array](/array-sorting-van-de-muon-thuo/), để thực hiện hành động với mỗi phần tử của mảng.
+[JavaScript](/category/javascript-co-ban/) cung cấp sẵn phương thức **forEach** - là một phương thức có sẵn của [array](/array-sorting-van-de-muon-thuo/), để thực hiện hành động với mỗi phần tử của mảng.
 
 ### Cú pháp
 
