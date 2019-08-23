@@ -2,7 +2,8 @@
 date: "2017-04-24T15:38:46Z"
 template: "post"
 cover: "../images/gioi-thieu-tong-quan-ngon-ngu-lap-trinh-javascript-featured-image-1-completejavascript.com_.png"
-keywords: "lập trình JavaScript"
+keywords: "ngôn ngữ lập trình javascript"
+description: "Bài viết này giới thiệu tổng quan về ngôn ngữ lập trình javascript. Qua đó, bạn nắm được những kiến thức cơ bản nhất của ngôn ngữ này."
 slug: gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript
 title: "Giới thiệu tổng quan về ngôn ngữ lập trình JavaScript"
 categories:
@@ -26,18 +27,16 @@ Trong các bài viết sau, mình sẽ chủ yếu giới thiệu với bạn nh
 ## Đặc điểm chung của JavaScript
 
 - Là ngôn ngữ lập trình bậc cao (high-level) giống như: C/C++, Java, Python, Ruby,... Nó rất gần với ngôn ngữ tự nhiên của con người. Trong khi ngôn ngữ lập trình bậc thấp (low-level) như: Assembly... sẽ gần với máy tính hơn.
-
 - Là ngôn ngữ lập trình động (dynamic programming language): như Python, Ruby, Perl,... Chúng được tối ưu hoá nhằm nâng cao hiệu suất cho lập trình viên. Trong khi ngôn ngữ lập trình tĩnh (static programming language): như C/C++,... lại được tối ưu hoá để nâng cao hiệu suất cho phần cứng máy tính.
-
 - Là ngôn ngữ lập trình kịch bản (scripting language): nghĩa là không cần biên dịch (compile) hay liên kết (linked) giống như ngôn ngữ lập trình biên dịch (C/C++, Java,...) mà nó sẽ được dịch tại thời điểm chạy.
-
 - Là ngôn ngữ [dựa trên đối tượng](/lap-trinh-huong-doi-tuong-voi-javascript/) (object-based): tức nó gần giống như ngôn ngữ lập trình hướng đối tượng, ngoại trừ JavaScript không hỗ trợ tính kế thừa và đa hình.
-
 - Là ngôn ngữ dựa trên nguyên mẫu (prototype-based): là một kiểu của [lập trình hướng đối tượng](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/), trong đó các hành vi của đối tượng được sử dụng lại.
 
 ## Ứng dụng của JavaScript
 
-[![JavaScript Everywhere - top ngôn ngữ lập trình nên học 2017 - completejavascript.com](../images/javascript-everywhere-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg)](https://github.com/vigetlabs/javascript-everywhere)
+![JavaScript Everywhere](../images/javascript-everywhere-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg)
+
+*Tham khảo: https://github.com/vigetlabs/javascript-everywhere*
 
 JavaScript có rất nhiều ứng dụng trên nhiều môi trường và nền tảng khác khau:
 

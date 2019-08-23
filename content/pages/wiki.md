@@ -35,7 +35,7 @@ Dưới đây, mình liệt kê và phân loại các bài viết trên trang we
 > **[JavaScript cơ bản](/category/javascript-co-ban)**
 
 - [Giới thiệu tổng quan về ngôn ngữ lập trình JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/)
-- [Values, types và operators trong JavaScript – Phần 1](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/)
+- [Values, types và operators trong JavaScript – Phần 1](/values-types-va-operators-trong-javascript-phan-1/)
 - [Values, types và operators trong JavaScript – Phần 2](/values-types-va-operators-trong-javascript-phan-2/)
 - [Cấu trúc chương trình trong JavaScript](/cau-truc-chuong-trinh-trong-javascript/)
 - [Tìm hiểu function JavaScript](/tim-hieu-function-javascript/)

@@ -1,8 +1,9 @@
 ---
 date: "2017-05-02T00:04:18Z"
 template: "post"
-cover: "../images/placeholder-660x400-344359.png"
-keywords: "lập trình JavaScript"
+cover: "../images/neu-ban-suy-nghi-va-lo-lang-qua-nhieu-thi-day-la-thu-ban-nen-lam-completejavascript.com_.png"
+keywords: "suy nghĩ và lo lắng"
+description: "Suy nghĩ và lo lắng quá nhiều sẽ ảnh hưởng tiêu cực đến chất lượng cuộc sống. Bài viết này sẽ giúp bạn tìm ra giải pháp cho vấn đề này."
 slug: neu-ban-co-xu-huong-suy-nghi-va-lo-lang-qua-nhieu-day-la-thu-ma-ban-nen-lam
 title: "Nếu bạn có xu hướng suy nghĩ và lo lắng quá nhiều, đây là thứ mà bạn nên làm"
 categories:
@@ -25,7 +26,7 @@ Thực sự, điều này đã được chứng minh bởi các nhà khoa học.
 
 Để giảm bớt sự lo lắng, điều đầu tiên bạn có thể làm là tập trung vào những thành công nhỏ mỗi ngày. Nếu như sự thiếu thông tin phản hồi làm cho bạn lo lắng, thì hãy cung cấp thông tin phản hồi mà bộ não cần để vượt qua một tình huống. Khi bộ não nhận được thông tin phản hồi, những điều không chắc chắn sẽ giảm bớt tính không chắc chắn. Đồng thời, những sự lo âu cũng sẽ giảm bớt. Tốt hơn nữa, khi bạn tập trung vào những thông tin phản hồi tích cực mỗi ngày, bạn không chỉ làm giảm bớt điều không chắc chắn, mà bạn còn tạo ra động lực và niềm [hạnh phúc](/category/anh-che-vui/) cho bản thân.
 
-![Loại bỏ lo lắng để thành công nhỏ mỗi ngày - completejavascript.com](/wp-content/uploads/2017/05/small-success-everyday-loai-bo-lo-lang-completejavascript.com_.png)
+![Loại bỏ lo lắng để thành công nhỏ mỗi ngày - completejavascript.com](../images/small-success-everyday-loai-bo-lo-lang-completejavascript.com_.png)
 
 ## Dịch chuyển sự tập trung
 
