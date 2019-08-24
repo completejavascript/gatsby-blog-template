@@ -57,7 +57,7 @@ Tiếp theo mình tải 2 công cụ về, bao gồm:
 
 Trong đó, **gtk2-runtime** sẽ cài đặt một số **dll** cần thiết để cho thằng **stardict-editor** chạy. Và thằng stardict-editor này chính là thằng sẽ tạo bộ dữ liệu từ điển dạng text cho mình.
 
-_Vì hai tệp tin này mình tải từ rất lâu rồi, nên không còn nhớ link gốc ở đâu nữa. _
+_Vì hai tệp tin này mình tải từ rất lâu rồi, nên không còn nhớ link gốc ở đâu nữa._
 
 Kết quả mình có những công cụ như sau:
 

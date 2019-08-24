@@ -112,7 +112,7 @@ sayHelloKelly(); // => Hello,Good morning Kelly King
 - Nhìn chung, hàm **call** và **apply** là gần giống nhau. Chúng đều gọi hàm trực tiếp. Chỉ khác ở cách truyền tham số vào (với **c**all thì đối số phân cách bởi dấu phẩy **c**omma và với **a**pply thì đối số cho bởi mảng **a**rray)
 - Hàm **bind** thì hơi khác hơn một chút. Hàm này không gọi hàm trực tiếp mà nó sẽ trả về một hàm mới. Và bạn có thể sử dụng hàm số mới này sau. Về cách truyền tham số vào thì nó giống với hàm **call**.
 
-Trên đây là một số sự khác nhau giữa **call**, **apply** và **bind **trong JavaScript. Mình nghĩ đến đây là đã đủ để bạn thấy được sự khác nhau giữa chúng và cách sử dụng chúng như thế nào.
+Trên đây là một số sự khác nhau giữa **call**, **apply** và **bind** trong JavaScript. Mình nghĩ đến đây là đã đủ để bạn thấy được sự khác nhau giữa chúng và cách sử dụng chúng như thế nào.
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-ve-json-trong-javascript/), thân ái!
 

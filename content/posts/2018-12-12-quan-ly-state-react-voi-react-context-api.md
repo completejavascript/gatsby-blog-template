@@ -116,7 +116,7 @@ Sau đó, mình có thể truy cập đến giá trị của Context thông qua 
 
 Tương tự **Class.contextType**, API này giúp sử dụng giá trị của Context. Tuy nhiên hơi khác một chút là API này chỉ sử dụng ở phần JSX.
 
-Trong đó, **value** chính là giá trị của Context. Và dĩ nhiên, khi bên ngoài component hiện tại không có Provider nào thì **value **chính là **defaultValue**.
+Trong đó, **value** chính là giá trị của Context. Và dĩ nhiên, khi bên ngoài component hiện tại không có Provider nào thì **value** chính là **defaultValue**.
 
 Trên đây là những thông tin cơ bản về các API của React Context. Tiếp theo, mình sẽ làm một ví dụ cụ thể để demo cho các API này.
 

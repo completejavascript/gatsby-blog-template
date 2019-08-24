@@ -139,11 +139,11 @@ gatsby develop
 
 #### Cấu trúc thư mục của Gatsby project
 
-Nếu bạn nhìn vào thư mục _gatsby-tutorial_ vừa mới tạo ra thì sẽ thấy các thư mục: _/src, /.cache, /node_modules, /public_ và các tệp tin: _.gitignore, package.json, package-lock.json, yarn.lock, README.md, LICENSE_.
+Nếu bạn nhìn vào thư mục **gatsby-tutorial** vừa mới tạo ra thì sẽ thấy các thư mục: **/src, /.cache, /node_modules, /public** và các tệp tin: **.gitignore, package.json, package-lock.json, yarn.lock, README.md, LICENSE**.
 
-Lúc này, bạn chỉ cần quan tâm đến thư mục _/src_. Vì bạn sẽ cần phải thêm file hay tuỳ chỉnh các file có trong thư mục này để tuỳ chỉnh giao diện trang blog với Gatsby.js.
+Lúc này, bạn chỉ cần quan tâm đến thư mục /src. Vì bạn sẽ cần phải thêm file hay tuỳ chỉnh các file có trong thư mục này để tuỳ chỉnh giao diện trang blog với Gatsby.js.
 
-Để xem Gatsby project tự **rebuild** và **hot-loading** như thế nào, bạn mở file _/src/pages/index.js_ với nội dung ban đầu là:
+Để xem Gatsby project tự **rebuild** và **hot-loading** như thế nào, bạn mở file **/src/pages/index.js** với nội dung ban đầu là:
 
 ```jsx
 import React from "react"
@@ -193,7 +193,7 @@ import React from "react"
 export default () => <div>Liên hệ</div>
 ```
 
-Sau khi lưu lại, bạn có thể vào 2 địa chỉ **_http:\/\/localhost:8000/gioi-thieu/ _**và **_http:\/\/localhost:8000/lien-he/_** sẽ thấy kết quả 2 trang lần lượt là:
+Sau khi lưu lại, bạn có thể vào 2 địa chỉ **http:\/\/localhost:8000/gioi-thieu/** và **http:\/\/localhost:8000/lien-he/** sẽ thấy kết quả 2 trang lần lượt là:
 
 Kết quả trang giới thiệu:
 
@@ -214,9 +214,7 @@ Ngoài ra, nếu bạn chưa biết chắc trang blog với Gatsby.js hiện t�
 Hình trên cho thấy blog của mình đang có 3 trang là:
 
 - _/_: trang chủ
-
-* _/gioi-thieu/_: trang giới thiệu
-
+- _/gioi-thieu/_: trang giới thiệu
 - _/lien-he/_: trang liên hệ
 
 > **Chú ý:** Trang này chỉ tồn tại ở chế độ phát triển, khi deploy ra thực tế, bạn cần phải implement trang này. Hay nói cách khác là bạn phải tạo thêm 1 file *404.js* trong thư mục */src/pages/*. Tạm thời mình chưa quan tâm đến trang này vội.

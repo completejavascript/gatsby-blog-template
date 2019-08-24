@@ -54,7 +54,7 @@ Kết quả trả về sẽ là [object](/javascript-object-last-but-not-least/)
 
 Về lý thuyết thì đến đây là xong, vì bạn đã có được thông tin thời tiết rồi. Nhưng thực tế thì khi bạn chỉ làm như trên bạn sẽ bị lỗi:
 
-No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'https://s.codepen.io' is therefore not allowed access.
+No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'https:\/\/s.codepen.io' is therefore not allowed access.
 
 Đó là vì domain thực hiện request và domain của server là khác nhau. Để khắc phục tình trạng này, mình sử dụng [CORS Anywhere](https://github.com/Rob--W/cors-anywhere/), đóng vai trò như là một proxy cho phép thực hiện **request cross-origin**.
 
