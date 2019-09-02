@@ -14,6 +14,10 @@ const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
         config.sidebarSticky ? 'height-full' : ''
       }`}
     >
+      {config.hasAdsense && config.adsenseUnits.sidebarTop && (
+        <AdSense.Google {...config.adsenseUnits.sidebarTop} />
+      )}
+
       <WidgetSearch />
 
       {latestPostEdges && (

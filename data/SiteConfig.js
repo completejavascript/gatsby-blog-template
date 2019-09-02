@@ -14,7 +14,7 @@ const config = {
   postDefaultCategoryID: "", // Default category for posts.
   // Common for tag, category pages and widget
   numberLatestPost: 6,
-  postsPerPage: 10,
+  postsPerPage: 12,
   // Use for post
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
   dateFormat: "MMMM Do, YYYY", // Date format for display.
@@ -57,6 +57,13 @@ const config = {
   // Set up for google adsense
   hasAdsense: true,
   adsenseUnits: {
+    sidebarTop: {
+      client: "ca-pub-7260245524211186",
+      slot: "6206746745",
+      style: { display: "block" },
+      format: "auto",
+      responsive: "true",
+    },
     sidebarBottom: {
       client: "ca-pub-7260245524211186",
       slot: "5714088466",
