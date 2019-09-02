@@ -5,7 +5,7 @@ description: "Nội dung chi tiết về các chính sách bảo mật"
 slug: "chinh-sach-bao-mat"
 ---
 
-Complete JavaScript là blog cá nhân chuyên chia sẻ về Linux và phần mềm mã nguồn mở. Tên miền chính của Complete JavaScript là completejavascript.com. Khi đến với Complete JavaScript, bạn phải tuân thủ mọi quy định và chính sách mà chúng tôi đã đề ra. Những chính sách này cũng được áp dụng cho các trang phụ liên quan đến Complete JavaScript và toàn bộ các subdomain.
+Complete JavaScript là blog cá nhân chuyên chia sẻ về JavaScript, lập trình JavaScript và lập trình cơ bản. Tên miền chính của Complete JavaScript là completejavascript.com. Khi đến với Complete JavaScript, bạn phải tuân thủ mọi quy định và chính sách mà chúng tôi đã đề ra. Những chính sách này cũng được áp dụng cho các trang phụ liên quan đến Complete JavaScript và toàn bộ các subdomain.
 
 ## Chúng tôi là ai?
 
