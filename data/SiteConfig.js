@@ -60,9 +60,8 @@ const config = {
     sidebarTop: {
       client: "ca-pub-7260245524211186",
       slot: "6206746745",
-      style: { display: "block" },
-      format: "auto",
-      responsive: "true",
+      style: { display: "inline-block", width: "300px", height: "250px" },
+      format: ""
     },
     sidebarBottom: {
       client: "ca-pub-7260245524211186",
