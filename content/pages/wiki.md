@@ -75,6 +75,7 @@ Dưới đây, mình liệt kê và phân loại các bài viết trên trang we
 - [Một vài ứng dụng của Reduce trong JavaScript](/ung-dung-cua-reduce-javascript/)
 - [Một số thủ thuật sử dụng console hiệu quả](/ung-dung-cua-reduce-javascript/)
 - [Xử lý bất đồng bộ song song hay tuần tự?](/xu-ly-bat-dong-bo-song-song-tuan-tu/)
+- [Tạo số ngẫu nhiên trong JavaScript](/tao-so-ngau-nhien-trong-javascript)
 
 > **[Lập trình cơ bản](/category/lap-trinh-co-ban)**
 
