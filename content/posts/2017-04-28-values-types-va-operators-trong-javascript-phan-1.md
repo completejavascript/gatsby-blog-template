@@ -108,9 +108,9 @@ Nhưng JavaScript thì khác, những kiểu dữ liệu cơ bản cũng có thu
 Một số phương thức chính đối với numbers trong JavaScript là:
 
 - **toString()**: trả về một số biểu diễn dạng string (mình sẽ nói về _string_ ở bài sau)
-- **toExponential([number])**: trả về string biểu diễn số dạng số mũ (exponential), với số lượng chữ số thập phân là _number _(có làm tròn). Chú ý: số chữ số phần nguyên luôn là 1.
-- **toFixed(number)**: trả về string biểu diễn số với số lượng của chữ số thập phân là _number _(có làm tròn)
-- **toPrecision([number])**: trả về string với số lượng chữ số (phần nguyên và phần thập phân) là _number _(có làm tròn)
+- **toExponential([number])**: trả về string biểu diễn số dạng số mũ (exponential), với số lượng chữ số thập phân là _number_ (có làm tròn). Chú ý: số chữ số phần nguyên luôn là 1.
+- **toFixed(number)**: trả về string biểu diễn số với số lượng của chữ số thập phân là _number_ (có làm tròn)
+- **toPrecision([number])**: trả về string với số lượng chữ số (phần nguyên và phần thập phân) là _number_ (có làm tròn)
 - **valueOf()**: trả về số như là một số (đối với trường hợp numbers thì phương thức này chỉ dùng để làm màu thôi, chứ mới đọc mình đã thấy nó chả có ý nghĩa gì).
 
 ```js
