@@ -77,6 +77,7 @@ Dưới đây, mình liệt kê và phân loại các bài viết trên trang we
 - [Xử lý bất đồng bộ song song hay tuần tự?](/xu-ly-bat-dong-bo-song-song-tuan-tu/)
 - [Tạo số ngẫu nhiên trong JavaScript](/tao-so-ngau-nhien-trong-javascript)
 - [Sắp xếp Tiếng Việt trong JavaScript](/sap-xep-tieng-viet-javascript)
+- [Cách kiểm tra empty object trong JavaScript](/kiem-tra-empty-object-trong-javascript)
 
 > **[Lập trình cơ bản](/category/lap-trinh-co-ban)**
 
