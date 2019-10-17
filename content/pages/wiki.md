@@ -44,6 +44,7 @@ Dưới đây, mình liệt kê và phân loại các bài viết trên trang we
 - [Sử dụng ES Modules trên trình duyệt](/su-dung-es-modules-tren-trinh-duyet/)
 - [Tìm hiểu về HTTP Cookie với JavaScript](/tim-hieu-ve-http-cookie-voi-javascript/)
 - [Tìm hiểu về Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript/)
+- [Tagged template ES6 là gì?](/tagged-template-es6-la-gi)
 
 > **[Thủ thuật JavaScript](/category/thu-thuat-javascript)**
 
