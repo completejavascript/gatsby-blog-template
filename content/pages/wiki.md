@@ -79,6 +79,7 @@ Dưới đây, mình liệt kê và phân loại các bài viết trên trang we
 - [Tạo số ngẫu nhiên trong JavaScript](/tao-so-ngau-nhien-trong-javascript)
 - [Sắp xếp Tiếng Việt trong JavaScript](/sap-xep-tieng-viet-javascript)
 - [Cách kiểm tra empty object trong JavaScript](/kiem-tra-empty-object-trong-javascript)
+- [Làm sao để bắt buộc truyền tham số vào hàm?](/lam-sao-bat-buoc-truyen-tham-so-vao-ham)
 
 > **[Lập trình cơ bản](/category/lap-trinh-co-ban)**
 
