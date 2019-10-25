@@ -25,9 +25,9 @@ Mình xin liệt kê ra một vài ưu điểm như sau:
 
 Với những ưu điểm trên mình quyết định dùng nó ngay mà không cần tìm kiếm google thêm xem còn cách nào khác nữa hay không.
 
-## Test thử trên testformspree.com
+## Test thử trên test.formspree.io
 
-Việc đầu tiên cần làm là phải dùng thử xem nó hoạt động như thế nào. Để dùng thử, bạn vào trang [testformspree](http://testformspree.com/) và làm theo hướng dẫn sau:
+Việc đầu tiên cần làm là phải dùng thử xem nó hoạt động như thế nào. Để dùng thử, bạn vào trang [test.formspree.io](http://test.formspree.io/) và làm theo hướng dẫn sau:
 
 ### Bước 1: Sửa nội dung form
 
@@ -61,7 +61,7 @@ Bạn sẽ cần vào email mà bạn muốn nhận (email đã cài đặt tron
 
 Từ nay về sau, mọi người có thể gửi email trực tiếp cho bạn thông qua form này mà không cần xác nhận nữa.
 
-> **Chú ý**: với mỗi địa chỉ trang web chứa form (ví dụ ở đây là http://testformspree.com/), bạn cần phải test thử để xác minh một lần đầu tiên. Nghĩa là việc xác minh dựa trên địa chỉ trang web, không phải theo địa chỉ email. Vậy nên, khi bạn sử dụng form ở một địa chỉ khác (http:\/\/abc.com), với cùng email như trên, thì bạn vẫn cần phải xác minh lại.
+> **Chú ý**: với mỗi địa chỉ trang web chứa form (ví dụ ở đây là http://test.formspree.io/), bạn cần phải test thử để xác minh một lần đầu tiên. Nghĩa là việc xác minh dựa trên địa chỉ trang web, không phải theo địa chỉ email. Vậy nên, khi bạn sử dụng form ở một địa chỉ khác (http:\/\/abc.com), với cùng email như trên, thì bạn vẫn cần phải xác minh lại.
 
 ## Triển khai gửi email bằng HTML
 
