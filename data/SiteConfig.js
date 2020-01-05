@@ -197,7 +197,7 @@ const config = {
     { label: "Chính sách bảo mật", url: "/chinh-sach-bao-mat" },
     { label: "Sitemap", url: "https://completejavascript.com/sitemap.xml" },
   ],
-  copyright: "Copyright © 2017-2019 Lam Pham. Unless otherwise noted, all code MIT license.",
+  copyright: "Copyright © 2017-2020 Lam Pham. Unless otherwise noted, all code MIT license.",
   // Use for manifest
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF" // Used for setting manifest background color.
