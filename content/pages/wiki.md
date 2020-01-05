@@ -130,6 +130,7 @@ Dưới đây, mình liệt kê và phân loại các bài viết trên trang we
 - [Học React qua ví dụ #10: Sticky Notes](/hoc-react-qua-vi-du-9-draggable-note/)
 - [Quản lý state trong React với React Context API](/quan-ly-state-react-voi-react-context-api/)
 - [Tại sao React yêu cầu render single DOM element?](/quan-ly-state-react-voi-react-context-api/)
+- [Sử dụng SASS với create-react-app](/su-dung-sass-voi-create-react-app)
 
 > **[Vanilla Js Snippets](/category/vanilla-js-snippets)**
 
