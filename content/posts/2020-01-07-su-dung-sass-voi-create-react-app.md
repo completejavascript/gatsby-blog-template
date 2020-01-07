@@ -11,6 +11,7 @@ categories:
 tags:
   - React
   - Create-react-app
+  - CSS
 ---
 
 Có nhiều cách để style component trong ứng dụng React. Tuy nhiên, cách mà mình thấy cơ bản và hiệu quả nhất, đó là dùng SASS. Bài viết này sẽ giới thiệu với bạn cách đơn giản để sử dụng SASS với create-react-app.
