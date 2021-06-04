@@ -163,7 +163,7 @@ module.exports = {
             {
               allMarkdownRemark(
                 limit: 1000,
-                sort: { order: DESC, fields: [fields___date] },
+                sort: { order: DESC, fields: [frontmatter___date] },
                 filter: { 
                   frontmatter: { 
                     template: { eq: "post" } 
