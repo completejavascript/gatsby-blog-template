@@ -32,7 +32,7 @@ Dựa theo nghiên cứu của tôi, sau đây là những ngôn ngữ lập tr�
 
 Bạn có đồng ý với tôi không? Suy nghĩ của bạn là gì? Hãy để lại bình luận dưới video sau:
 
-`youtube: R4hNmWvFcxo`
+`youtube: https://www.youtube.com/watch?v=R4hNmWvFcxo`
 
 ## Góc bình luận
 

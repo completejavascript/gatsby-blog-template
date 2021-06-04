@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
 #image-18.visible { background-image: url("images/18.jpg"); }
 ```
 
-`youtube: 6Y-fgdRyLUU`
+`youtube: https://www.youtube.com/watch?v=6Y-fgdRyLUU`
 
 <a href="https://github.com/completejavascript/lazy-loading-image-es6-css-demo" class="btn btn-primary margin-bottom">
   Xem code trên Github

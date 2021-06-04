@@ -23,7 +23,7 @@ _Bạn sẽ làm gì? Bạn từ bỏ ư?_
 
 _Sau đây là cách để học lập trình mà không có tutorials. Hãy xem video sau:_
 
-`youtube: AkxP16P1dZI`
+`youtube: https://www.youtube.com/watch?v=AkxP16P1dZI`
 
 ## Tóm tắt về hai cách học lập trình mà không có tutorials
 

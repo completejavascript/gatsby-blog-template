@@ -28,7 +28,7 @@ Về cơ bản, phương pháp Lazy Loading Image gồm các bước sau:
 
 Tư tưởng chính là vậy. Bây giờ, mình sẽ bắt đầu triển khai Lazy Loading Image trong React.
 
-`youtube: zOn-8mazuJ8`
+`youtube: https://www.youtube.com/watch?v=zOn-8mazuJ8`
 
 ## Triển khai Lazy Loading Image trong React
 
