@@ -1,16 +1,15 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import AutoLink from "../AutoLink/AutoLink";
 
 const Thumbnail = ({ post, extraClass = "" }) => {
-  const img = post.cover ? post.cover.childImageSharp.fluid : null;
-  const thumbnail = img ? (
+  const thumbnail = post.cover ? (
     <AutoLink
       to={post.slug}
       key={post.title}
       className={`thumbnail-wrapper line-height-reset ${extraClass}`}
     >
-      <Img fluid={img} className="thumbnail-img margin-right-2" />
+      <GatsbyImage image={getImage(post.cover)} className="thumbnail-img margin-right-2" alt="" />
     </AutoLink>
   ) : null;
 

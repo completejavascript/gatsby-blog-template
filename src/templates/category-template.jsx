@@ -62,42 +62,34 @@ const CategoryTemplate = ({ data, pageContext }) => {
 export default CategoryTemplate;
 
 /* eslint no-undef: "off" */
-export const pageQuery = graphql`
-  query CategoryPage($category: String, $skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      limit: $limit
-      skip: $skip
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: {
-        frontmatter: {
-          categories: { in: [$category] }
-          template: { eq: "post" }
+export const pageQuery = graphql`query CategoryPage($category: String, $skip: Int!, $limit: Int!) {
+  allMarkdownRemark(
+    limit: $limit
+    skip: $skip
+    sort: {fields: [frontmatter___date], order: DESC}
+    filter: {frontmatter: {categories: {in: [$category]}, template: {eq: "post"}}}
+  ) {
+    totalCount
+    edges {
+      node {
+        fields {
+          slug
+          date
         }
-      }
-    ) {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 660, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+        excerpt
+        timeToRead
+        frontmatter {
+          title
+          tags
+          cover {
+            childImageSharp {
+              gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
             }
-            date
           }
+          date
         }
       }
     }
   }
+}
 `;

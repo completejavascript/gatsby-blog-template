@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { getSrc } from "gatsby-plugin-image";
 import Helmet from "react-helmet";
 import urljoin from "url-join";
 import config from "../../../data/SiteConfig";
@@ -21,7 +22,7 @@ class SEO extends Component {
       keywords = postMeta.keywords;
 
       if (postMeta.cover) {
-        image = postMeta.cover.childImageSharp.fixed.src;
+        image = getSrc(postMeta.cover);
       }
 
       postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);

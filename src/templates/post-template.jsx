@@ -38,31 +38,28 @@ const PostTemplate = ({ data, pageContext }) => {
 export default PostTemplate;
 
 /* eslint no-undef: "off" */
-export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      timeToRead
-      excerpt
-      frontmatter {
-        title
-        date
-        categories
-        tags
-        description
-        keywords
-        cover {
-          childImageSharp {
-            fixed(width: 660, quality: 100) {
-              ...GatsbyImageSharpFixed
-            }
-          }
+export const pageQuery = graphql`query BlogPostBySlug($slug: String!) {
+  markdownRemark(fields: {slug: {eq: $slug}}) {
+    html
+    timeToRead
+    excerpt
+    frontmatter {
+      title
+      date
+      categories
+      tags
+      description
+      keywords
+      cover {
+        childImageSharp {
+          gatsbyImageData(width: 660, quality: 100, layout: FIXED)
         }
       }
-      fields {
-        slug
-        date
-      }
+    }
+    fields {
+      slug
+      date
     }
   }
+}
 `;
