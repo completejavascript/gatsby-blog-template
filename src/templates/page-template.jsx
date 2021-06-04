@@ -14,12 +14,14 @@ const PageTemplate = ({ data, pageContext }) => {
   const postNode = data.markdownRemark;
   const title = postNode.frontmatter.title;
   const content = <Page postNode={postNode} slug={slug} />;
-  const sidebar = <Sidebar 
-    tagList={tagList} 
-    categoryList={categoryList}
-    latestPostEdges={latestPostEdges} 
-    links={config.sidebarLinks}
-  />;
+  const sidebar = (
+    <Sidebar
+      tagList={tagList}
+      categoryList={categoryList}
+      latestPostEdges={latestPostEdges}
+      links={config.sidebarLinks}
+    />
+  );
 
   return (
     <Layout>
@@ -31,7 +33,7 @@ const PageTemplate = ({ data, pageContext }) => {
       <MainContainer content={content} sidebar={sidebar} />
     </Layout>
   );
-}
+};
 
 export default PageTemplate;
 

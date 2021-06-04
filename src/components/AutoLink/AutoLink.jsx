@@ -5,14 +5,13 @@ import { isInteralLink } from "../../utils/helpers";
 
 const AutoLink = (props) => (
   <>
-  {
-    isInteralLink(props.to) ? (
+    {isInteralLink(props.to) ? (
       <Link
         key={props.label}
         to={props.to}
         activeClassName={props.activeClassName}
         className={props.className}
-        style={{...props.style}}
+        style={{ ...props.style }}
       >
         {props.children}
       </Link>
@@ -24,8 +23,7 @@ const AutoLink = (props) => (
       >
         {props.children}
       </ExternalLink>
-    )
-  }
+    )}
   </>
 );
 

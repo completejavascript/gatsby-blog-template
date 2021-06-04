@@ -3,14 +3,14 @@ import Disqus from "./Disqus";
 
 class Comment extends Component {
   state = {
-    isShow: !this.props.lazyload
-  }
+    isShow: !this.props.lazyload,
+  };
 
   handleClick = () => {
-    this.setState(prevState => ({
-      isShow: !prevState.isShow
+    this.setState((prevState) => ({
+      isShow: !prevState.isShow,
     }));
-  }
+  };
 
   render() {
     const { extraClass, postNode, btnLoadComments } = this.props;
@@ -23,11 +23,9 @@ class Comment extends Component {
           </button>
         )}
 
-        {this.state.isShow && (
-          <Disqus postNode={postNode} />
-        )}
+        {this.state.isShow && <Disqus postNode={postNode} />}
       </div>
-    )
+    );
   }
 }
 

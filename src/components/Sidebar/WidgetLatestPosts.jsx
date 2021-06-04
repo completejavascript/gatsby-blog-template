@@ -12,20 +12,18 @@ const WidgetLatesPosts = ({ latestPostEdges }) => {
     <WidgetContainer extraClass="latest-posts-container">
       <WidgetTitle title={config.latestPostsWidgetTitle} />
       <div>
-        {
-          postList.map(post => (
-            <AutoLink
-              key={post.title}
-              to={post.slug}
-              className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half"
-            >
-              <span>{post.title}</span>
-            </AutoLink>
-          ))
-        }
+        {postList.map((post) => (
+          <AutoLink
+            key={post.title}
+            to={post.slug}
+            className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half"
+          >
+            <span>{post.title}</span>
+          </AutoLink>
+        ))}
       </div>
     </WidgetContainer>
-  )
-}
+  );
+};
 
 export default WidgetLatesPosts;

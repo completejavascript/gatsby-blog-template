@@ -10,6 +10,6 @@ const MainContainer = ({ content, sidebar }) => (
       {sidebar}
     </div>
   </section>
-)
+);
 
 export default MainContainer;

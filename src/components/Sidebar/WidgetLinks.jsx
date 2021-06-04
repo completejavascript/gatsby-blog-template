@@ -1,8 +1,8 @@
-import React from 'react';
-import AutoLink from '../AutoLink/AutoLink';
-import WidgetContainer from './WidgetContainer';
-import WidgetTitle from './WidgetTitle';
-import config from '../../../data/SiteConfig';
+import React from "react";
+import AutoLink from "../AutoLink/AutoLink";
+import WidgetContainer from "./WidgetContainer";
+import WidgetTitle from "./WidgetTitle";
+import config from "../../../data/SiteConfig";
 
 const WidgetLinks = ({ links }) => (
   <>
@@ -10,7 +10,7 @@ const WidgetLinks = ({ links }) => (
       <WidgetContainer extraClass="categories-container">
         <WidgetTitle title={config.linksWidgetTitle} />
         <div>
-          {links.map(link => (
+          {links.map((link) => (
             <AutoLink
               key={link.label}
               to={link.url}

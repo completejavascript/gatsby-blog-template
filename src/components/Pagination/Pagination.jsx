@@ -16,17 +16,21 @@ const MAX_PAGINATION_ITEMS = 7;
 // 1, 0, 5, 6, 7, [8], 9
 // 1, 0, 5, 6, 7, 8, [9]
 const Pagination = (props) => {
-  const { 
-    currentPage, totalPages, pathPrefix, pathPrefixPagination, extraClass 
+  const {
+    currentPage,
+    totalPages,
+    pathPrefix,
+    pathPrefixPagination,
+    extraClass,
   } = props;
 
   const respArr = [];
   if (totalPages <= MAX_PAGINATION_ITEMS) {
-    for(let i = 1; i <= totalPages; i++) {
+    for (let i = 1; i <= totalPages; i++) {
       respArr.push(i);
     }
   } else if (currentPage <= 4) {
-    for(let i = 1; i <= MAX_PAGINATION_ITEMS - 2; i++) {
+    for (let i = 1; i <= MAX_PAGINATION_ITEMS - 2; i++) {
       respArr.push(i);
     }
     respArr.push(0, totalPages);
@@ -36,29 +40,35 @@ const Pagination = (props) => {
       respArr.push(i);
     }
   } else {
-    respArr.push(1, 0, currentPage - 1, currentPage, currentPage + 1, 0, totalPages);
+    respArr.push(
+      1,
+      0,
+      currentPage - 1,
+      currentPage,
+      currentPage + 1,
+      0,
+      totalPages
+    );
   }
-  
+
   return (
     <>
-    {totalPages >= 2 && (
-      <div className={`pagination-container ${extraClass}`}>
-        {
-          respArr.map((value, index) => (
-            <PaginationItem 
-              key={`${pathPrefix}-${index}`} 
-              value={value} 
+      {totalPages >= 2 && (
+        <div className={`pagination-container ${extraClass}`}>
+          {respArr.map((value, index) => (
+            <PaginationItem
+              key={`${pathPrefix}-${index}`}
+              value={value}
               index={index}
               currentPage={currentPage}
               pathPrefix={pathPrefix}
               pathPrefixPagination={pathPrefixPagination}
             />
-          ))
-        }
-      </div>
-    )}
+          ))}
+        </div>
+      )}
     </>
-  )
-}
+  );
+};
 
 export default Pagination;

@@ -8,12 +8,12 @@ const Page = ({ postNode, slug }) => {
 
   return (
     <div className="page-container">
-      <div 
-        className="padding-top padding-bottom" 
-        dangerouslySetInnerHTML={{ __html: postNode.html }} 
+      <div
+        className="padding-top padding-bottom"
+        dangerouslySetInnerHTML={{ __html: postNode.html }}
       />
     </div>
-  )
-}
+  );
+};
 
 export default Page;

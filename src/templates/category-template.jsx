@@ -11,19 +11,24 @@ import { getPostList, getCategoryPath } from "../utils/helpers";
 import config from "../../data/SiteConfig";
 
 const CategoryTemplate = ({ data, pageContext }) => {
-  const { 
-    category, categoryList, tagList, latestPostEdges, currentPage, totalPages 
+  const {
+    category,
+    categoryList,
+    tagList,
+    latestPostEdges,
+    currentPage,
+    totalPages,
   } = pageContext;
   const postEdges = data.allMarkdownRemark.edges;
   const postList = getPostList(postEdges);
   const content = (
     <>
-      <PostListing 
-        postList={postList} 
-        hasThumbnail={config.categoryHasThumbnail} 
-        hasLoadmore={false} 
+      <PostListing
+        postList={postList}
+        hasThumbnail={config.categoryHasThumbnail}
+        hasLoadmore={false}
       />
-      <Pagination 
+      <Pagination
         extraClass="margin-top padding-top-half"
         currentPage={currentPage}
         totalPages={totalPages}
@@ -33,9 +38,9 @@ const CategoryTemplate = ({ data, pageContext }) => {
     </>
   );
   const sidebar = (
-    <Sidebar 
-      tagList={tagList} 
-      categoryList={categoryList} 
+    <Sidebar
+      tagList={tagList}
+      categoryList={categoryList}
       latestPostEdges={latestPostEdges}
       links={config.sidebarLinks}
     />
@@ -44,13 +49,15 @@ const CategoryTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <div className="category-container">
-        <Helmet title={`${config.categoryHeader} ${category} - ${config.siteTitle}`} />
+        <Helmet
+          title={`${config.categoryHeader} ${category} - ${config.siteTitle}`}
+        />
         <Header title={`${config.categoryHeader} ${category}`} />
         <MainContainer content={content} sidebar={sidebar} />
       </div>
     </Layout>
   );
-}
+};
 
 export default CategoryTemplate;
 
@@ -58,17 +65,14 @@ export default CategoryTemplate;
 export const pageQuery = graphql`
   query CategoryPage($category: String, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      limit: $limit,
-      skip: $skip,
-      sort: { 
-        fields: [fields___date], 
-        order: DESC 
-      }
-      filter: { 
-        frontmatter: { 
-          categories: { in: [$category] }, 
-          template: { eq: "post" } 
-        } 
+      limit: $limit
+      skip: $skip
+      sort: { fields: [fields___date], order: DESC }
+      filter: {
+        frontmatter: {
+          categories: { in: [$category] }
+          template: { eq: "post" }
+        }
       }
     ) {
       totalCount
