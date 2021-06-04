@@ -16,24 +16,24 @@ class Index extends React.Component {
     const postList = getPostList(postEdges);
     const { tagList, categoryList } = getTagCategoryList(postList);
     const content = (
-      <PostListing 
-        postList={postList} 
-        hasThumbnail={config.homeHasThumbnail} 
-        hasLoadmore={config.homeHasLoadmore} 
+      <PostListing
+        postList={postList}
+        hasThumbnail={config.homeHasThumbnail}
+        hasLoadmore={config.homeHasLoadmore}
         postsPerPage={config.postsPerPage}
         numberLoadmore={config.numberLoadmore}
         btnLoadmore={config.btnLoadmore}
       />
     );
     const sidebar = (
-      <Sidebar 
-        tagList={tagList} 
-        categoryList={categoryList} 
+      <Sidebar
+        tagList={tagList}
+        categoryList={categoryList}
         links={config.sidebarLinks}
       />
     );
 
-    const headerTitle = config.homeHeader 
+    const headerTitle = config.homeHeader
       ? `${config.siteTitle} - ${config.homeHeader}`
       : `${config.siteTitle}`;
 
@@ -57,15 +57,8 @@ export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       limit: 2000
-      sort: { 
-        fields: [fields___date], 
-        order: DESC 
-      }
-      filter: { 
-        frontmatter: { 
-          template: { eq: "post" } 
-        } 
-      }
+      sort: { fields: [fields___date], order: DESC }
+      filter: { frontmatter: { template: { eq: "post" } } }
     ) {
       edges {
         node {

@@ -6,10 +6,10 @@ const ExternalLink = ({ className, to, children, style }) => (
     href={to}
     target="_blank"
     rel="noopener noreferrer"
-    style={{...style}}
+    style={{ ...style }}
   >
     {children}
   </a>
-)
+);
 
 export default ExternalLink;

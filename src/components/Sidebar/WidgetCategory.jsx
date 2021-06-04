@@ -9,19 +9,17 @@ const WidgetCategory = ({ categoryList }) => (
   <WidgetContainer extraClass="categories-container">
     <WidgetTitle title={config.categoryWidgetTitle} />
     <div>
-      {
-        categoryList.map(category => (
-          <AutoLink 
-            key={category} 
-            to={getCategoryPath(category)}
-            className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half"
-          >
-            <span>{category}</span>
-          </AutoLink>
-        ))
-      }
+      {categoryList.map((category) => (
+        <AutoLink
+          key={category}
+          to={getCategoryPath(category)}
+          className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half"
+        >
+          <span>{category}</span>
+        </AutoLink>
+      ))}
     </div>
   </WidgetContainer>
-)
+);
 
 export default WidgetCategory;

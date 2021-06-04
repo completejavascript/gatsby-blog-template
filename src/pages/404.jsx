@@ -12,9 +12,7 @@ const PageNotFound = () => (
       <Helmet title={`${config.pageNotFoundTitle} - ${config.siteTitle}`} />
       <SEO />
       <Header title={`${config.pageNotFoundTitle}`} />
-      <div 
-        className="main-content container padding-top-3 padding-bottom-3 margin-top-3 margin-bottom-3"
-      >
+      <div className="main-content container padding-top-3 padding-bottom-3 margin-top-3 margin-bottom-3">
         <p>{config.pageNotFoundContent}</p>
         <AutoLink to="/" className="btn btn-primary">
           {config.pageNotFoundBtn}
@@ -22,6 +20,6 @@ const PageNotFound = () => (
       </div>
     </div>
   </Layout>
-)
+);
 
 export default PageNotFound;

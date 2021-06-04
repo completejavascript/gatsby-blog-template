@@ -1,13 +1,13 @@
-import React from 'react';
-import Comment from '../Comment/Comment';
-import PostTags from './PostTags';
-import PostShare from './PostShare';
-import PostDate from './PostDate';
-import PostDivider from './PostDivider';
-import PostCategories from './PostCategories';
-import AdSense from 'react-adsense';
-import './Post.scss';
-import '../../../content/styles/code-highlight.scss';
+import React from "react";
+import Comment from "../Comment/Comment";
+import PostTags from "./PostTags";
+import PostShare from "./PostShare";
+import PostDate from "./PostDate";
+import PostDivider from "./PostDivider";
+import PostCategories from "./PostCategories";
+import AdSense from "react-adsense";
+import "./Post.scss";
+import "../../../content/styles/code-highlight.scss";
 
 const Post = ({ postNode, config, slug }) => {
   const post = postNode.frontmatter;

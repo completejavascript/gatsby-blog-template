@@ -2,7 +2,7 @@ const path = require("path");
 const slug = require("slug");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
-const slugify = text => slug(text).toLowerCase();
+const slugify = (text) => slug(text).toLowerCase();
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -34,7 +34,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         createNodeField({
           node,
           name: "date",
-          value: date.toISOString()
+          value: date.toISOString(),
         });
       }
     }
@@ -47,12 +47,14 @@ exports.createPages = async ({ graphql, actions }) => {
   const postPageTemplate = path.resolve("src/templates/post-template.jsx");
   const pagePageTemplate = path.resolve("src/templates/page-template.jsx");
   const tagPageTemplate = path.resolve("src/templates/tag-template.jsx");
-  const categoryPageTemplate = path.resolve("src/templates/category-template.jsx");
+  const categoryPageTemplate = path.resolve(
+    "src/templates/category-template.jsx"
+  );
 
   const markdownQueryResult = await graphql(
     `
       {
-        allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
           edges {
             node {
               fields {
@@ -82,16 +84,16 @@ exports.createPages = async ({ graphql, actions }) => {
   const categorySet = new Set();
   const postEdges = [];
   const pageEdges = [];
-  
-  markdownQueryResult.data.allMarkdownRemark.edges.forEach(edge => {
+
+  markdownQueryResult.data.allMarkdownRemark.edges.forEach((edge) => {
     if (edge.node.frontmatter.tags) {
-      edge.node.frontmatter.tags.forEach(tag => {
+      edge.node.frontmatter.tags.forEach((tag) => {
         tagSet.add(tag);
       });
     }
 
     if (edge.node.frontmatter.categories) {
-      edge.node.frontmatter.categories.forEach(category => {
+      edge.node.frontmatter.categories.forEach((category) => {
         categorySet.add(category);
       });
     }
@@ -104,16 +106,16 @@ exports.createPages = async ({ graphql, actions }) => {
       pageEdges.push(edge);
     }
   });
-  
+
   // Create tagList, categoryList
   const tagList = Array.from(tagSet);
   const categoryList = Array.from(categorySet);
 
   // Get latest posts
   const latestPostEdges = [];
-  postEdges.forEach(edge => {
+  postEdges.forEach((edge) => {
     if (latestPostEdges.length < siteConfig.numberLatestPost) {
-      latestPostEdges.push(edge)
+      latestPostEdges.push(edge);
     }
   });
 
@@ -135,13 +137,13 @@ exports.createPages = async ({ graphql, actions }) => {
         prevslug: prevEdge.node.fields.slug,
         tagList,
         categoryList,
-        latestPostEdges
-      }
+        latestPostEdges,
+      },
     });
   });
 
   // create page page
-  pageEdges.forEach(edge => {
+  pageEdges.forEach((edge) => {
     createPage({
       path: edge.node.fields.slug,
       component: pagePageTemplate,
@@ -149,18 +151,18 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: edge.node.fields.slug,
         tagList,
         categoryList,
-        latestPostEdges
-      }
+        latestPostEdges,
+      },
     });
   });
 
   // common config for pagination
   const postsPerPage = siteConfig.postsPerPage;
   const pathPrefixPagination = siteConfig.pathPrefixPagination;
-  
+
   // create tag page
-  tagList.forEach(tag => {
-    tagPosts = postEdges.filter(edge => {
+  tagList.forEach((tag) => {
+    tagPosts = postEdges.filter((edge) => {
       const tags = edge.node.frontmatter.tags;
       return tags && tags.includes(tag);
     });
@@ -170,7 +172,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
     for (let i = 0; i < numTagPages; i++) {
       createPage({
-        path: i === 0 ? `${basePath}` : `${basePath}${pathPrefixPagination}/${i + 1}`,
+        path:
+          i === 0
+            ? `${basePath}`
+            : `${basePath}${pathPrefixPagination}/${i + 1}`,
         component: tagPageTemplate,
         context: {
           tag,
@@ -180,15 +185,15 @@ exports.createPages = async ({ graphql, actions }) => {
           limit: postsPerPage,
           skip: i * postsPerPage,
           currentPage: i + 1,
-          totalPages: numTagPages
-        }
+          totalPages: numTagPages,
+        },
       });
     }
   });
 
   // create category page
-  categoryList.forEach(category => {
-    categoryPosts = postEdges.filter(edge => {
+  categoryList.forEach((category) => {
+    categoryPosts = postEdges.filter((edge) => {
       const categories = edge.node.frontmatter.categories;
       return categories && categories.includes(category);
     });
@@ -198,7 +203,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
     for (let i = 0; i < numCategoryPages; i++) {
       createPage({
-        path: i === 0 ? `${basePath}` : `${basePath}${pathPrefixPagination}/${i + 1}`,
+        path:
+          i === 0
+            ? `${basePath}`
+            : `${basePath}${pathPrefixPagination}/${i + 1}`,
         component: categoryPageTemplate,
         context: {
           category,
@@ -208,8 +216,8 @@ exports.createPages = async ({ graphql, actions }) => {
           limit: postsPerPage,
           skip: i * postsPerPage,
           currentPage: i + 1,
-          totalPages: numCategoryPages
-        }
+          totalPages: numCategoryPages,
+        },
       });
     }
   });

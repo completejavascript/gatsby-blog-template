@@ -1,5 +1,5 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { 
+import {
   faCodepen,
   faFreeCodeCamp,
   faGithub,
@@ -7,7 +7,7 @@ import {
   faLinkedinIn,
   faTwitter,
   faPinterest,
-  faYoutube
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faRss,
@@ -16,7 +16,7 @@ import {
   faAngleDoubleLeft,
   faFolderOpen,
   faTags,
-  faSearch
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(

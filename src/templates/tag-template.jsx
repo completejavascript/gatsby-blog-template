@@ -10,20 +10,25 @@ import Pagination from "../components/Pagination/Pagination";
 import { getPostList, getTagPath } from "../utils/helpers";
 import config from "../../data/SiteConfig";
 
-const TagTemplate = ({ data, pageContext}) => {
-  const { 
-    tag, tagList, categoryList, latestPostEdges, currentPage, totalPages 
+const TagTemplate = ({ data, pageContext }) => {
+  const {
+    tag,
+    tagList,
+    categoryList,
+    latestPostEdges,
+    currentPage,
+    totalPages,
   } = pageContext;
   const postEdges = data.allMarkdownRemark.edges;
   const postList = getPostList(postEdges);
   const content = (
     <>
-      <PostListing 
-        postList={postList} 
-        hasThumbnail={config.tagHasThumbnail} 
-        hasLoadmore={false} 
+      <PostListing
+        postList={postList}
+        hasThumbnail={config.tagHasThumbnail}
+        hasLoadmore={false}
       />
-      <Pagination 
+      <Pagination
         extraClass="margin-top padding-top-half"
         currentPage={currentPage}
         totalPages={totalPages}
@@ -31,11 +36,11 @@ const TagTemplate = ({ data, pageContext}) => {
         pathPrefixPagination={config.pathPrefixPagination}
       />
     </>
-  )
+  );
   const sidebar = (
-    <Sidebar 
-      tagList={tagList} 
-      categoryList={categoryList} 
+    <Sidebar
+      tagList={tagList}
+      categoryList={categoryList}
       latestPostEdges={latestPostEdges}
       links={config.sidebarLinks}
     />
@@ -50,7 +55,7 @@ const TagTemplate = ({ data, pageContext}) => {
       </div>
     </Layout>
   );
-}
+};
 
 export default TagTemplate;
 
@@ -60,15 +65,9 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: $limit
       skip: $skip
-      sort: { 
-        fields: [fields___date], 
-        order: DESC 
-      }
-      filter: { 
-        frontmatter: { 
-          tags: { in: [$tag] }, 
-          template: { eq: "post" } 
-        } 
+      sort: { fields: [fields___date], order: DESC }
+      filter: {
+        frontmatter: { tags: { in: [$tag] }, template: { eq: "post" } }
       }
     ) {
       totalCount

@@ -6,6 +6,6 @@ const PostDate = ({ date, extraClass = "" }) => (
   <div className={`text-description ${extraClass}`}>
     {config.postOnDate} {formatDate(date)}
   </div>
-)
+);
 
 export default PostDate;

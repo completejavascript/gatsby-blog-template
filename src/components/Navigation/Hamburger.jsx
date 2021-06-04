@@ -8,6 +8,6 @@ const Hamburger = ({ open }) => (
     <span></span>
     <span></span>
   </div>
-)
+);
 
 export default Hamburger;
