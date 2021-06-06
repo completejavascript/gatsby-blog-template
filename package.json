@@ -44,6 +44,7 @@
     "react-helmet": "^6.1.0",
     "react-share": "^4.4.0",
     "react-twitter-widgets": "^1.10.0",
+    "shiba-css": "^1.0.2",
     "slug": "^5.0.1",
     "url-join": "^4.0.1"
   },

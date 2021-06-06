@@ -14048,6 +14048,11 @@ shell-quote@1.7.2:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
+shiba-css@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/shiba-css/-/shiba-css-1.0.2.tgz#5ccaf9ed339231bbb2937125e4519963d046a29f"
+  integrity sha512-a8EzDz1Sx387Liuu2csAM94HbbxSRGUT611cEvgQ9Xo1AJJUag000fgHnVOArPdfFi+67StipvyilWldux0zzg==
+
 side-channel@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/side-channel/-/side-channel-1.0.4.tgz#efce5c8fdc104ee751b25c58d4290011fa5ea2cf"
