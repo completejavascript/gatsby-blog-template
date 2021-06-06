@@ -6,7 +6,7 @@ import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import siteConfig from "../../data/SiteConfig";
 import brand from "../../content/images/brand.png";
 import "../components/Icons/FontAwesome";
-import "../styles/shiba.min.css";
+import "shiba-css/docs/css/shiba.min.css";
 import "../../content/styles/customize.scss";
 
 const MainLayout = ({ children, hasFooter = true }) => (
