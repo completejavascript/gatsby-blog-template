@@ -60,6 +60,7 @@
     "prettier": "^2.3.0",
     "remark-cli": "^9.0.0",
     "remark-preset-lint-recommended": "^5.0.0",
+    "standard-version": "^9.3.0",
     "stylefmt": "^6.0.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
@@ -81,7 +82,9 @@
     "lint:js": "eslint --ext .js,.jsx .",
     "lint:md": "remark content/posts/",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
-    "format:js": "prettier --write \"**/*.{js,jsx,ts,tsx}\""
+    "format:js": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "first-release": "standard-version --first-release",
+    "prerelease": "standard-version"
   },
   "remarkConfig": {
     "plugins": [
