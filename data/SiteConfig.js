@@ -32,6 +32,9 @@ const config = {
   homeHasLoadmore: true,
   homeHasThumbnail: true,
   homeHeader: "Trang chủ",
+  blogHeader: "Blog",
+  jsGroupUrl: "https://www.facebook.com/groups/HoiDapJavascriptVN",
+  blogPageUrl: "/blog",
   // Use for page
   pathPrefixPagination: "/page", // Prefix path for pagination
   pageNotFoundTitle: "Trang không tồn tại", //
@@ -150,6 +153,7 @@ const config = {
   // Use for navigation
   navTitle: "Complete JavaScript",
   navLinks: [
+    { label: "Blog", url: "/blog" },
     { label: "Wiki", url: "/wiki" },
     { label: "Giới thiệu", url: "/gioi-thieu" },
     { label: "Liên hệ", url: "/lien-he" },
