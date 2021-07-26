@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 import Navigation from "../components/Navigation/Navigation";
 import Footer from "../components/Footer/Footer";
 import SEO from "../components/SEO/SEO";
-import BrowserAnimation from "../components/BrowserAnimation/BrowserAnimation";
+import MacWindow from "../components/MacWindow/MacWindow";
 import AutoLink from "../components/AutoLink/AutoLink";
 import Thumbnail from "../components/PostListing/Thumbnail";
 
@@ -58,7 +58,7 @@ const WelcomeSection = () => (
         </div>
       </div>
       <div className="right">
-        <BrowserAnimation />
+        <MacWindow />
       </div>
     </div>
   </section>
@@ -111,6 +111,34 @@ const LatestPostsSection = ({ postList = [] }) => (
   </section>
 );
 
+const CommunitySection = () => (
+  <section className="community-section background-color-light-blue">
+    <div className="container">
+      <div className="left">
+        <MacWindow />
+      </div>
+      <div className="right color-white">
+        <h3>
+          <b className="color-dark-grey">👨🏻‍💻👩🏻‍💻</b> Hỏi đáp JavaScript VN
+        </h3>
+        <blockquote>
+          The best way to learn is to ask.
+          <cite>- Anonymous</cite>
+        </blockquote>
+        <p>
+          Tham gia ngay để học JavaScript và tiến bộ mỗi ngày cùng với hơn{" "}
+          <b>10K lập trình viên!</b>
+        </p>
+        <div>
+          <AutoLink className="color-yellow" to={config.jsGroupUrl}>
+            ⚡ Cộng đồng JavaScript 🚀
+          </AutoLink>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
 const ServiceSection = () => (
   <section className="service-section background-color-white">
     <div className="container"></div>
@@ -126,6 +154,7 @@ function Index({ data }) {
       <main className="index-container background-color-white">
         <WelcomeSection />
         <LatestPostsSection postList={postList} />
+        <CommunitySection />
         <ServiceSection />
       </main>
     </IndexLayout>

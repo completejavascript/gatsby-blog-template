@@ -18,8 +18,8 @@
     align-items: center;
     .container {
       display: grid;
-      grid-template-columns: 1fr 0;
-      grid-gap: 1.5rem;
+      grid-template-columns: 1fr;
+      grid-gap: 6rem;
       .left {
         display: flex;
         flex-direction: column;
@@ -56,7 +56,7 @@
       .latestposts-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 3rem;
+        grid-gap: 1.5rem;
         article {
           position: relative;
           background-color: white;
@@ -85,8 +85,46 @@
       }
     }
   }
+  .community-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 6rem;
+      .left {
+        align-items: center;
+        display: none;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        a {
+          position: relative;
+          text-decoration: none;
+          font-size: 2rem;
+        }
+        a::after {
+          content: "";
+          position: absolute;
+          background-color: white;
+          height: 3px;
+          width: 0;
+          left: 0;
+          bottom: -10px;
+          transition: 0.3s ease-in-out;
+        }
+        a:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
   .service-section {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
@@ -114,8 +152,16 @@
   .index-container {
     .welcome-section {
       .container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.1fr;
         .right {
+          display: unset;
+        }
+      }
+    }
+    .community-section {
+      .container {
+        grid-template-columns: 1.1fr 1fr;
+        .left {
           display: unset;
         }
       }
