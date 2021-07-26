@@ -6,6 +6,7 @@ $menu-item-font-weight: 500;
   --nav-box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0, 0, 0, 0.1);
   --nav-height: 64px;
 
+  z-index: 999;
   transition: all 0.3s;
   &.hideOnScroll {
     position: fixed;
