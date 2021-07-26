@@ -8,6 +8,7 @@ import SEO from "../components/SEO/SEO";
 import MacWindow from "../components/MacWindow/MacWindow";
 import AutoLink from "../components/AutoLink/AutoLink";
 import Thumbnail from "../components/PostListing/Thumbnail";
+import AskAnswerAnimation from "../components/MacWindow/AskAnswerAnimation";
 
 import { getPostList, getTagPath } from "../utils/helpers";
 import config from "../../data/SiteConfig";
@@ -58,7 +59,7 @@ const WelcomeSection = () => (
         </div>
       </div>
       <div className="right">
-        <MacWindow />
+        <MacWindow dark />
       </div>
     </div>
   </section>
@@ -115,7 +116,9 @@ const CommunitySection = () => (
   <section className="community-section background-color-light-blue">
     <div className="container">
       <div className="left">
-        <MacWindow />
+        <MacWindow>
+          <AskAnswerAnimation />
+        </MacWindow>
       </div>
       <div className="right color-white">
         <h3>
