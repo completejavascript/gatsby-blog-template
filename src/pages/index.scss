@@ -1,0 +1,124 @@
+.index-container {
+  /* Common */
+  .section-title {
+    display: inline-block;
+    margin-bottom: 0;
+    &::after {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 3px;
+      margin: 0.7rem auto;
+      background-color: #222222;
+    }
+  }
+  .welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 0;
+      grid-gap: 1.5rem;
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        .btn-group {
+          display: flex;
+          gap: 1.5rem;
+        }
+      }
+      .right {
+        align-items: center;
+        display: none;
+      }
+    }
+    .txt-welcome {
+      font-size: 3rem;
+      font-weight: 500;
+      .txt-highlight {
+        font-weight: 700;
+      }
+    }
+  }
+  .latestposts-section {
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1e9f2;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .latestposts-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 3rem;
+        article {
+          position: relative;
+          background-color: white;
+          box-shadow: 0 0 0 1px rgba($color: #000000, $alpha: 0.05);
+          transition: all 0.15s ease-in;
+          &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba($color: #000000, $alpha: 0.25);
+          }
+          h3 {
+            margin: 1rem 2rem 5rem;
+            line-height: 0.85;
+            a {
+              color: #444444;
+              font-weight: 400;
+              font-size: 1.7rem;
+            }
+          }
+          .tag-container {
+            margin: 1rem 2rem;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .service-section {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 400px) {
+  .index-container {
+    .welcome-section {
+      .txt-welcome {
+        font-size: 3.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .index-container {
+    .welcome-section {
+      .txt-welcome {
+        font-size: 4.7rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .index-container {
+    .welcome-section {
+      .container {
+        grid-template-columns: 1fr 1fr;
+        .right {
+          display: unset;
+        }
+      }
+    }
+  }
+}

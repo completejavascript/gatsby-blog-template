@@ -1,0 +1,34 @@
+.browser-animation {
+  width: 100%;
+  background-color: #2a373a;
+  padding-bottom: 66.66%;
+  border-radius: 6px;
+  box-shadow: 0 0 1px rgba($color: #000000, $alpha: 0.1),
+    0 0 1px rgba($color: #000000, $alpha: 0.06),
+    0 2px 2px rgba($color: #000000, $alpha: 0.06),
+    0 4px 4px rgba($color: #000000, $alpha: 0.06),
+    0 8px 8px rgba($color: #000000, $alpha: 0.06),
+    0 16px 18px rgba($color: #000000, $alpha: 0.06);
+
+  .menubar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+    .mac-btn {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      &.one {
+        background-color: #fc6767;
+      }
+      &.two {
+        background-color: #fdd973;
+      }
+      &.three {
+        background-color: #b3e07a;
+      }
+    }
+  }
+}
