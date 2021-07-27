@@ -16,13 +16,21 @@ function AskAnswerAnimation() {
         </div>
       </div>
       <div className="content" />
-      <div className="answer">
-        <div className="avatar" />
-        <div className="detail" />
+      <div className="answer answer-1">
+        <div className="avatar">
+          <div className="status" />
+        </div>
+        <div className="detail">
+          <div className="love" />
+        </div>
       </div>
-      <div className="answer">
-        <div className="avatar" />
-        <div className="detail" />
+      <div className="answer answer-2">
+        <div className="avatar">
+          <div className="status" />
+        </div>
+        <div className="detail">
+          <div className="love" />
+        </div>
       </div>
     </div>
   );
