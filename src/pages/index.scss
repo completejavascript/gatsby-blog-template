@@ -12,6 +12,10 @@
       background-color: #222222;
     }
   }
+  .section-subtitle {
+    font-size: 2rem;
+    color: #444444;
+  }
   .welcome-section {
     height: 100vh;
     display: flex;
@@ -125,6 +129,16 @@
   }
   .service-section {
     min-height: 100vh;
+    .service-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 1.5rem;
+      .service-item {
+        border: 1px solid #cdcdce;
+        border-radius: 6px;
+        padding: 3rem;
+      }
+    }
   }
 }
 
