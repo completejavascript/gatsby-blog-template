@@ -60,7 +60,7 @@
       .latestposts-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 1.5rem;
+        grid-gap: 2rem;
         article {
           position: relative;
           background-color: white;
@@ -132,11 +132,17 @@
     .service-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 1.5rem;
+      grid-gap: 2rem;
       .service-item {
-        border: 1px solid #cdcdce;
-        border-radius: 6px;
+        border-radius: 4px;
         padding: 3rem;
+        box-shadow: 0 0 0 1px #e2e9ed;
+        transition: 0.2s all;
+        &:hover {
+          box-shadow: 0 8px 50px rgba($color: #000000, $alpha: 0.2);
+          transform: scale(1.03);
+          cursor: default;
+        }
       }
     }
   }
