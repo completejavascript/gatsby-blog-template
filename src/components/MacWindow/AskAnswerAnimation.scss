@@ -1,6 +1,7 @@
 $bg-color: #daeaf7;
 
 .ask-answer-animation-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -55,7 +56,7 @@ $bg-color: #daeaf7;
     .info {
       display: flex;
       flex-direction: column;
-      width: 200px;
+      width: 150px;
       gap: 15px;
       .name {
         background-color: $bg-color;
@@ -164,6 +165,7 @@ $bg-color: #daeaf7;
       }
     }
     .detail {
+      margin-right: 15px;
       width: 80%;
       height: 68px;
       border-radius: 24px;
@@ -198,6 +200,16 @@ $bg-color: #daeaf7;
           right: 5px;
           z-index: 1;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .ask-answer-animation-container {
+    .asker {
+      .info {
+        width: 200px;
       }
     }
   }

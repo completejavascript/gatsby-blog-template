@@ -4,12 +4,14 @@ import "./MacWindow.scss";
 function MacWindow({ children, dark }) {
   return (
     <div className={`mac-window ${dark ? "dark" : ""}`}>
-      <div className="menubar">
-        <div className="mac-btn one"></div>
-        <div className="mac-btn two"></div>
-        <div className="mac-btn three"></div>
+      <div className="main">
+        <div className="menubar">
+          <div className="mac-btn one"></div>
+          <div className="mac-btn two"></div>
+          <div className="mac-btn three"></div>
+        </div>
+        <div className="main-content">{children}</div>
       </div>
-      <div className="content padding-2">{children}</div>
     </div>
   );
 }

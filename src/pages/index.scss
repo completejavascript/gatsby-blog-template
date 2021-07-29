@@ -17,13 +17,12 @@
     color: #444444;
   }
   .welcome-section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     .container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 6rem;
       .left {
         display: flex;
         flex-direction: column;
@@ -35,8 +34,7 @@
         }
       }
       .right {
-        align-items: center;
-        display: none;
+        margin-top: 3rem;
       }
     }
     .txt-welcome {
@@ -93,19 +91,15 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     .container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 6rem;
-      .left {
-        align-items: center;
-        display: none;
-      }
       .right {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 1.5rem;
+        margin-top: 3rem;
         a {
           position: relative;
           text-decoration: none;
@@ -168,21 +162,19 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .index-container {
-    .welcome-section {
-      .container {
-        grid-template-columns: 1fr 1.1fr;
-        .right {
-          display: unset;
-        }
-      }
-    }
+    .welcome-section,
     .community-section {
       .container {
-        grid-template-columns: 1.1fr 1fr;
+        display: flex;
+        align-items: center;
         .left {
-          display: unset;
+          padding-right: 3rem;
+        }
+        .right {
+          padding-left: 3rem;
+          margin-top: 0;
         }
       }
     }

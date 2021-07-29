@@ -1,40 +1,51 @@
 .mac-window {
-  &.dark {
-    background-color: #2a373a;
-  }
-  background-color: #ffffff;
   width: 100%;
   height: 450px;
-  border-radius: 3px;
-  box-shadow: 0 0 1px rgba($color: #000000, $alpha: 0.1),
-    0 0 1px rgba($color: #000000, $alpha: 0.06),
-    0 2px 2px rgba($color: #000000, $alpha: 0.06),
-    0 4px 4px rgba($color: #000000, $alpha: 0.06),
-    0 8px 8px rgba($color: #000000, $alpha: 0.06),
-    0 16px 18px rgba($color: #000000, $alpha: 0.06);
-
-  .menubar {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-left: 15px;
-    background-color: #2a373a;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    .mac-btn {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      &.one {
-        background-color: #fc6767;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  .main {
+    &.dark {
+      background-color: #2a373a;
+    }
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 0 1px rgba($color: #000000, $alpha: 0.1),
+      0 0 1px rgba($color: #000000, $alpha: 0.06),
+      0 2px 2px rgba($color: #000000, $alpha: 0.06),
+      0 4px 4px rgba($color: #000000, $alpha: 0.06),
+      0 8px 8px rgba($color: #000000, $alpha: 0.06),
+      0 16px 18px rgba($color: #000000, $alpha: 0.06);
+    width: 100%;
+    max-width: 600px;
+    .menubar {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-left: 15px;
+      background-color: #2a373a;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      .mac-btn {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        &.one {
+          background-color: #fc6767;
+        }
+        &.two {
+          background-color: #fdd973;
+        }
+        &.three {
+          background-color: #b3e07a;
+        }
       }
-      &.two {
-        background-color: #fdd973;
-      }
-      &.three {
-        background-color: #b3e07a;
-      }
+    }
+    .main-content {
+      height: 410px;
     }
   }
 }

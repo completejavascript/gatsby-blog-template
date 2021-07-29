@@ -3,7 +3,7 @@ import "./AskAnswerAnimation.scss";
 
 function AskAnswerAnimation() {
   return (
-    <div className="ask-answer-animation-container">
+    <div className="ask-answer-animation-container padding-2">
       <div className="asker">
         <div className="avatar">
           <div className="status" />

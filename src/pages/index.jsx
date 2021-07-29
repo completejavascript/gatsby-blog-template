@@ -9,6 +9,7 @@ import MacWindow from "../components/MacWindow/MacWindow";
 import AutoLink from "../components/AutoLink/AutoLink";
 import Thumbnail from "../components/PostListing/Thumbnail";
 import AskAnswerAnimation from "../components/MacWindow/AskAnswerAnimation";
+import TipTrickWindow from "../components/MacWindow/TipTrickWindow";
 
 import { getPostList, getTagPath } from "../utils/helpers";
 import config from "../../data/SiteConfig";
@@ -40,7 +41,7 @@ const IndexLayout = ({ children }) => (
 const WelcomeSection = () => (
   <section className="welcome-section background-color-white">
     <div className="container">
-      <div className="left">
+      <div className="left col-xs-12 col-lg-6">
         <h1 className="txt-welcome color-black">
           Welcome to
           <br />
@@ -58,8 +59,10 @@ const WelcomeSection = () => (
           </AutoLink>
         </div>
       </div>
-      <div className="right">
-        <MacWindow dark />
+      <div className="right col-xs-12 col-lg-6">
+        <MacWindow dark>
+          <TipTrickWindow />
+        </MacWindow>
       </div>
     </div>
   </section>
@@ -115,12 +118,12 @@ const LatestPostsSection = ({ postList = [] }) => (
 const CommunitySection = () => (
   <section className="community-section background-color-light-blue">
     <div className="container">
-      <div className="left">
+      <div className="left col-xs-12 col-lg-6">
         <MacWindow>
           <AskAnswerAnimation />
         </MacWindow>
       </div>
-      <div className="right color-white">
+      <div className="right color-white col-xs-12 col-lg-6">
         <h3>
           <b className="color-dark-grey">👨🏻‍💻👩🏻‍💻</b> Hỏi đáp JavaScript VN
         </h3>
@@ -179,7 +182,7 @@ const ServiceSection = () => {
   return (
     <section className="service-section background-color-white">
       <div className="container margin-top-3 margin-bottom-3">
-        <div className="text-center margin-bottom-3 margin-top-2">
+        <div className="text-center padding-bottom-3 padding-top-3">
           <h2 className="section-title margin-bottom-1">Dịch vụ</h2>
           <p className="section-subtitle margin-top-half">
             Ngoài công việc full-time và viết blog ra thì mình còn làm{" "}
