@@ -1,11 +1,11 @@
 ---
-date: '2019-10-16T06:00:00Z'
-template: 'post'
-title: 'Cách kiểm tra empty object trong JavaScript'
+date: "2019-10-16T06:00:00Z"
+template: "post"
+title: "Cách kiểm tra empty object trong JavaScript"
 slug: kiem-tra-empty-object-trong-javascript
-keywords: 'kiểm tra empty object'
-description: 'Bạn đã biết cách kiểm tra empty object trong JavaScript hay chưa? Bài viết này sẽ giới thiệu với bạn cách đơn giản để kiểm tra empty object.'
-cover: '../images/kiem-tra-empty-object-trong-javascript-completejavascript.com.png'
+keywords: "kiểm tra empty object"
+description: "Bạn đã biết cách kiểm tra empty object trong JavaScript hay chưa? Bài viết này sẽ giới thiệu với bạn cách đơn giản để kiểm tra empty object."
+cover: "../images/kiem-tra-empty-object-trong-javascript-completejavascript.com.png"
 categories:
   - Thủ thuật JavaScript
 tags:
@@ -37,7 +37,7 @@ Ví dụ:
 
 ```js
 const a = 1,
-  b = 'hello',
+  b = "hello",
   c = [1, 2],
   d = { x: 6 },
   e = () => {};
@@ -52,7 +52,7 @@ console.log(e.constructor); // Function
 Như vậy, mình sẽ viết hàm check object như sau:
 
 ```js
-const isObject = v => {
+const isObject = (v) => {
   return !!v && v.constructor === Object;
 };
 ```
@@ -61,7 +61,7 @@ Thử kiểm tra lại xem sao:
 
 ```js
 const a = 1,
-  b = 'hello',
+  b = "hello",
   c = [1, 2],
   d = { x: 6 },
   e = () => {},
@@ -90,7 +90,7 @@ Ví dụ:
 ```js
 const a = {},
   b = { x: 1 },
-  c = { m: 'a', n: 'b' };
+  c = { m: "a", n: "b" };
 
 console.log(Object.keys(a)); // []
 console.log(Object.keys(b)); // ["x"]
@@ -100,7 +100,7 @@ console.log(Object.keys(c)); // ["m", "n"]
 Bây giờ, mình sẽ viết hàm kiểm tra object có empty hay không như sau:
 
 ```js
-const isEmpty = v => {
+const isEmpty = (v) => {
   return Object.keys(v).length === 0;
 };
 ```
@@ -110,7 +110,7 @@ Kiểm tra lại phương thức trên:
 ```js
 const a = {},
   b = { x: 1 },
-  c = { m: 'a', n: 'b' };
+  c = { m: "a", n: "b" };
 
 console.log(isEmpty(a)); // true
 console.log(isEmpty(b)); // false
@@ -124,7 +124,7 @@ Kết quả lần này lại đúng như mong đợi.
 Kết hợp 2 đoạn kiểm tra trên, mình suy ra [hàm](/tim-hieu-function-javascript/) để kiểm tra empty object trong JavaScript là:
 
 ```js
-const isEmptyObject = v => {
+const isEmptyObject = (v) => {
   return !!v && v.constructor === Object && Object.keys(v).length === 0;
 };
 ```
@@ -133,22 +133,22 @@ Ví dụ:
 
 ```js
 const a = 1,
-  b = 'hello',
+  b = "hello",
   c = [1, 2],
   d = {},
   e = () => {},
   f = null,
   g = undefined,
-  h = { a: 1, b: 2, c: '3' };
+  h = { a: 1, b: 2, c: "3" };
 
-console.log(isEmpty(a)); // false
-console.log(isEmpty(b)); // false
-console.log(isEmpty(c)); // false
-console.log(isEmpty(d)); // true
-console.log(isEmpty(e)); // false
-console.log(isEmpty(f)); // false
-console.log(isEmpty(g)); // false
-console.log(isEmpty(h)); // false
+console.log(isEmptyObject(a)); // false
+console.log(isEmptyObject(b)); // false
+console.log(isEmptyObject(c)); // false
+console.log(isEmptyObject(d)); // true
+console.log(isEmptyObject(e)); // false
+console.log(isEmptyObject(f)); // false
+console.log(isEmptyObject(g)); // false
+console.log(isEmptyObject(h)); // false
 ```
 
 ## Lời kết
