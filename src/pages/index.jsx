@@ -10,10 +10,12 @@ import AutoLink from "../components/AutoLink/AutoLink";
 import Thumbnail from "../components/PostListing/Thumbnail";
 import AskAnswerAnimation from "../components/MacWindow/AskAnswerAnimation";
 import TipTrickWindow from "../components/MacWindow/TipTrickWindow";
+import "../components/Icons/FontAwesome";
 
 import { getPostList, getTagPath } from "../utils/helpers";
 import config from "../../data/SiteConfig";
 import brand from "../../content/images/brand.png";
+import "shiba-css/docs/css/shiba.min.css";
 import "./index.scss";
 
 const IndexLayout = ({ children }) => (
