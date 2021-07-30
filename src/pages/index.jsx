@@ -40,7 +40,7 @@ const IndexLayout = ({ children }) => (
 
 const WelcomeSection = () => (
   <section className="welcome-section background-color-white">
-    <div className="container">
+    <div className="container padding">
       <div className="left col-xs-12 col-lg-6">
         <h1 className="txt-welcome color-black">
           Welcome to
@@ -97,7 +97,7 @@ const PostArticle = ({ post }) => (
 
 const LatestPostsSection = ({ postList = [] }) => (
   <section className="latestposts-section">
-    <div className="container margin-top-3 margin-bottom-3">
+    <div className="container padding margin-top-3 margin-bottom-3">
       <div className="text-center margin-bottom-3 margin-top-2">
         <h2 className="section-title">Bài viết mới nhất</h2>
       </div>
@@ -117,7 +117,7 @@ const LatestPostsSection = ({ postList = [] }) => (
 
 const CommunitySection = () => (
   <section className="community-section background-color-light-blue">
-    <div className="container">
+    <div className="container padding">
       <div className="left col-xs-12 col-lg-6">
         <MacWindow>
           <AskAnswerAnimation />
@@ -181,7 +181,7 @@ const ServiceSection = () => {
 
   return (
     <section className="service-section background-color-white">
-      <div className="container margin-top-3 margin-bottom-3">
+      <div className="container margin-top-3 margin-bottom-3 padding">
         <div className="text-center padding-bottom-3 padding-top-3">
           <h2 className="section-title margin-bottom-1">Dịch vụ</h2>
           <p className="section-subtitle margin-top-half">
@@ -202,7 +202,7 @@ const ServiceSection = () => {
           với mình qua{" "}
           <b>
             <a
-              href="mailto:completejavascript.super@gmail.com"
+              href={`mailto:${config.serviceEmail}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -212,7 +212,7 @@ const ServiceSection = () => {
           hoặc hợp tác với mình trên{" "}
           <b>
             <a
-              href="https://www.upwork.com/freelancers/~015218a85e68b18cf6"
+              href={config.freeLancerLink}
               target="_blank"
               rel="noopener noreferrer"
             >

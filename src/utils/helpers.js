@@ -47,3 +47,16 @@ export const getTagCategoryList = (postList) => {
 
 export const getRandom = (min, max) =>
   Math.floor(Math.random() * (max - min)) + min;
+
+export const getRandomExclude = (min, max, currentValue, numRetry = 10) => {
+  let randomValue = currentValue;
+
+  for (let i = 0; i < numRetry; i++) {
+    randomValue = Math.floor(Math.random() * (max - min)) + min;
+    if (randomValue != currentValue) {
+      return randomValue;
+    }
+  }
+
+  return (randomValue + 1) % max;
+};

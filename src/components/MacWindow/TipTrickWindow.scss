@@ -6,9 +6,20 @@ $scrollbar-thumb-color: rgba(255, 255, 255, 0.3);
   width: 100%;
   height: 100%;
   position: relative;
+  .description {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: -40px;
+    left: 0;
+    font-size: 1.45rem;
+    font-style: italic;
+    user-select: none;
+  }
 }
 
-@media (min-width: 600px) {
+/* you're on a device with a mouse or trackpad */
+@media (hover: hover) and (pointer: fine) {
   .tiptrick-window-container {
     /* Custom for mozilla */
     scrollbar-color: $scrollbar-thumb-color #334246;
