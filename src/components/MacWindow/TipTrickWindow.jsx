@@ -1,10 +1,9 @@
 import React, { useEffect, useState, useCallback, useRef } from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { PrismAsync as SyntaxHighlighter } from "react-syntax-highlighter";
 import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import AutoLink from "../AutoLink/AutoLink";
 
-import codeSnippets from "../../../data/js-snippets";
 import { getRandomExclude } from "../../utils/helpers";
 
 import "./TipTrickWindow.scss";
@@ -12,27 +11,35 @@ import "./TipTrickWindow.scss";
 function TipTrickWindow() {
   const [index, setIndex] = useState(-1);
   const [snippet, setSnippet] = useState(null);
+
+  const codeSnippets = useRef([]);
   const lastIndex = useRef(-1);
 
-  const chooseRandomIndex = useCallback(() => {
+  const chooseRandomIndex = useCallback(async () => {
     const randomIdx = getRandomExclude(
       0,
-      codeSnippets.length,
+      codeSnippets.current.length,
       lastIndex.current
     );
     setIndex(randomIdx);
   }, []);
 
   useEffect(() => {
-    chooseRandomIndex();
-  }, [chooseRandomIndex]);
-
-  useEffect(() => {
-    if (index >= 0 && index < codeSnippets.length) {
-      setSnippet(codeSnippets[index]);
+    if (index >= 0 && index < codeSnippets.current.length) {
+      setSnippet(codeSnippets.current[index]);
       lastIndex.current = index;
     }
   }, [index]);
+
+  useEffect(() => {
+    async function fetchSnippets() {
+      const data = await import("../../../data/js-snippets");
+      codeSnippets.current = data.default;
+      chooseRandomIndex();
+    }
+
+    fetchSnippets();
+  }, []);
 
   return (
     <div className="tiptrick-window-container">
