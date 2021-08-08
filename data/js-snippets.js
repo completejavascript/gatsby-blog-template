@@ -455,6 +455,194 @@ window.addEventListener("scroll", function () {
 });
 `,
   },
+
+  {
+    link: "/tim-hieu-ki-thuat-method-chaining-co-ban",
+    data: `
+/**
+ * Kỹ thuật method-chaining giúp việc sử dụng code 
+ * trở trên gọn gàng hơn
+ */
+
+class Number {
+  constructor(value) {
+    this.value = value;
+  }
+  add(value) {
+    this.value += value;
+    return this;
+  }
+  sub(value) {
+    this.value -= value;
+    return this;
+  }
+  mul(value) {
+    this.value *= value;
+    return this;
+  }
+  div(value) {
+    this.value /= value;
+    return this;
+  }
+}
+
+let num = new Number(10);
+num.add(5).sub(3).mul(2).div(8);
+console.log(num.value);
+// 3
+    `,
+  },
+
+  {
+    link: "/2-cach-tao-immutable-object-javascript",
+    data: `
+/**
+ * Tạo immutable object sử dụng Object.defineProperty
+ */
+
+let obj = {};
+
+Object.defineProperty(obj, "a", {
+  value: 1,
+  writable: false,
+});
+
+obj.a = 2;
+
+console.log(obj.a); // => 1
+    `,
+  },
+
+  {
+    link: "/2-cach-tao-immutable-object-javascript",
+    data: `
+/**
+ * Tạo immutable object sử dụng Object.freeze
+ */
+
+let obj = {
+  a: 1,
+};
+
+Object.freeze(obj);
+
+obj.a = 2;
+obj.b = 3;
+
+console.log(obj); // => {a: 1}
+    `,
+  },
+
+  {
+    link: "/phan-biet-arrow-function-va-function-trong-javascript",
+    data: `
+/**
+ * Bạn đã thực sự hiểu về arrow function?
+ */
+
+let obj = {
+  a: 1,
+  b: () => console.log(this.a, this),
+  c: function () {
+    console.log(this.a, this);
+  },
+};
+
+obj.b(); 
+// prints undefined, Window {...} (or the global object)
+
+obj.c(); 
+// prints 1, Object {...}
+    `,
+  },
+
+  {
+    link: "/6-cach-loai-bo-phan-tu-lap-trong-mang",
+    data: `
+/**
+ * Cách để loại bỏ phần tử lặp trong mảng
+ */
+
+let arr = [1, 5, "a", 3, "f", "3", 5, 3, "b", "e", "f"];
+let ans = deduplicate(arr);
+
+console.log(ans);
+// Expected output: [1, 5, "a", 3, "f", "3", "b", "e"]
+
+function deduplicate(arr) {
+  let set = new Set(arr);
+  return [...set];
+}
+    `,
+  },
+
+  {
+    link: "/su-dung-es6-template-string-co-gi-hay",
+    data: `
+/**
+ * Template String trong ES6 có gì hay?
+ */
+
+let x = 1;
+let y = 2;
+let sum = (x, y) => x + y;
+
+console.log(\`Sum of x and y is: \${x + y}\`);
+// => Sum of x and y is: 3
+
+console.log(\`Sum of x and y is: \${sum(x, y)}\`);
+// => Sum of x and y is: 3
+    `,
+  },
+
+  {
+    link: "/21-thu-thuat-javascript-huu-ich",
+    data: `
+/**
+ * 21 thủ thuật JavaScript hữu ích
+ */
+
+// Hoán đổi 2 số
+let x = 1;
+let y = 2;
+console.log(x, y); // 1, 2
+
+[x, y] = [y, x];
+console.log(x, y); // 2, 1
+
+// Còn nhiều thủ thuật hay nữa...
+    `,
+  },
+
+  {
+    link: "/cach-su-dung-hang-so-trong-es5-va-es6",
+    data: `
+/**
+ * Cách khai báo hằng số trong ES5 và ES6
+ */
+
+// ES5
+Object.defineProperties(window, {
+  myconst: {
+    value: 10,
+    enumerable: true,
+  },
+});
+
+console.log(myconst); // => 10
+myconst = 99;
+console.log(myconst); // => 10
+
+// ES6
+const myconst = 10;
+console.log(myconst); // => 10
+
+myconst = 99;
+// => TypeError: Assignment to constant variable.
+
+console.log(myconst);
+    `,
+  },
 ];
 
 export default codeSnippets;
