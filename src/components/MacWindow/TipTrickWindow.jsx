@@ -4,7 +4,7 @@ import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import AutoLink from "../AutoLink/AutoLink";
 
-import { getRandomExclude } from "../../utils/helpers";
+import { getRandom } from "../../utils/helpers";
 
 import "./TipTrickWindow.scss";
 
@@ -15,13 +15,25 @@ function TipTrickWindow() {
   const codeSnippets = useRef([]);
   const lastIndex = useRef(-1);
 
+  /**
+   * Arrays are used to get random index
+   */
+  let randomArr = useRef([]);
+  let buffArr = useRef([]);
+
   const chooseRandomIndex = useCallback(async () => {
-    const randomIdx = getRandomExclude(
-      0,
-      codeSnippets.current.length,
-      lastIndex.current
-    );
-    setIndex(randomIdx);
+    if (randomArr.current.length == 0) {
+      randomArr.current = [...buffArr.current];
+      buffArr.current = [];
+    }
+
+    const randomIdx = getRandom(0, randomArr.current.length);
+    const randomIdxValue = randomArr.current[randomIdx];
+
+    randomArr.current.splice(randomIdx, 1);
+    buffArr.current.push(randomIdxValue);
+
+    setIndex(randomIdxValue);
   }, []);
 
   useEffect(() => {
@@ -35,6 +47,12 @@ function TipTrickWindow() {
     async function fetchSnippets() {
       const data = await import("../../../data/js-snippets");
       codeSnippets.current = data.default;
+
+      // fill data for random array
+      randomArr.current = Array.from(Array(codeSnippets.current.length).keys());
+      buffArr.current = [];
+
+      // choose random index
       chooseRandomIndex();
     }
 
