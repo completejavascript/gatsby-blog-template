@@ -107,6 +107,10 @@ const config = {
       url: "https://thuattoan.phamvanlam.com/",
     },
     {
+      label: "Lam Dev Blog",
+      url: "https://dev.phamvanlam.com/",
+    },
+    {
       label: "Lam Pham Blog",
       url: "https://phamvanlam.com/",
     },
