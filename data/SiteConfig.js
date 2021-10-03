@@ -23,9 +23,14 @@ const config = {
   postInCategories: "",
   postOnDate: "Posted on",
   // Use for comment
+  githubCommentRepo: "completejavascript/completejavascript-comments",
+  githubCommentTheme: "github-light", // github-dark
+  githubCommentTitle: "Bình luận",
+  /** DEPRECATED: not use disqus anymore */
   lazyLoadComments: true,
   disqusShortname: "complete-javascript", // Disqus shortname.
   btnLoadComments: "Xem bình luận",
+  /** DEPRECATED: not use disqus anymore */
   // Use for home page
   numberLoadmore: 6,
   btnLoadmore: "Xem thêm",
