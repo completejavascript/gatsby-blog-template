@@ -26,15 +26,13 @@ const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
         <WidgetLatestPosts latestPostEdges={latestPostEdges} />
       )}
 
-      {latestPostEdges &&
-        config.hasAdsense &&
-        config.adsenseUnits.sidebarMiddle && (
-          <div className="width-full flex justify-content-center padding-top">
-            <AdSense.Google {...config.adsenseUnits.sidebarMiddle} />
-          </div>
-        )}
-
       {categoryList && <WidgetCategory categoryList={categoryList} />}
+
+      {config.hasAdsense && config.adsenseUnits.sidebarMiddle && (
+        <div className="width-full flex justify-content-center padding-top">
+          <AdSense.Google {...config.adsenseUnits.sidebarMiddle} />
+        </div>
+      )}
 
       {tagList && <WidgetTag tagList={tagList} />}
 
