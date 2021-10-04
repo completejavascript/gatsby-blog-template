@@ -26,7 +26,7 @@ const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
         <WidgetLatestPosts latestPostEdges={latestPostEdges} />
       )}
 
-      {config.hasAdsense && (
+      {latestPostEdges && config.hasAdsense && (
         <div className="width-full flex justify-content-center padding-top">
           <AdSense.Google {...config.adsenseUnits.sidebarMiddle} />
         </div>
