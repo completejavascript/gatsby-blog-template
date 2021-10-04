@@ -28,9 +28,10 @@ const config = {
   // Use for home page
   numberLoadmore: 6,
   btnLoadmore: "Load more",
-  homeHasLoadmore: true,
+  homeHasLoadmore: false,
   homeHasThumbnail: true,
   homeHeader: "Home",
+  homeMoreArticles: "More articles",
   // Use for page
   pathPrefixPagination: "/page", // Prefix path for pagination
   pageNotFoundTitle: "Page Not Found", //
