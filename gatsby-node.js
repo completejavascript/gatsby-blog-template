@@ -50,6 +50,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const categoryPageTemplate = path.resolve(
     "src/templates/category-template.jsx"
   );
+  const blogPageTemplate = path.resolve("src/templates/blog-template.jsx");
 
   const markdownQueryResult = await graphql(
     `
@@ -162,7 +163,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // create tag page
   tagList.forEach((tag) => {
-    tagPosts = postEdges.filter((edge) => {
+    const tagPosts = postEdges.filter((edge) => {
       const tags = edge.node.frontmatter.tags;
       return tags && tags.includes(tag);
     });
@@ -193,7 +194,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // create category page
   categoryList.forEach((category) => {
-    categoryPosts = postEdges.filter((edge) => {
+    const categoryPosts = postEdges.filter((edge) => {
       const categories = edge.node.frontmatter.categories;
       return categories && categories.includes(category);
     });
@@ -221,4 +222,29 @@ exports.createPages = async ({ graphql, actions }) => {
       });
     }
   });
+
+  // Create blog page
+  {
+    const numBlogPages = Math.ceil(postEdges.length / postsPerPage);
+    const basePath = siteConfig.pathPrefixBlog;
+
+    for (let i = 0; i < numBlogPages; i++) {
+      createPage({
+        path:
+          i === 0
+            ? `${basePath}`
+            : `${basePath}${pathPrefixPagination}/${i + 1}`,
+        component: blogPageTemplate,
+        context: {
+          tagList,
+          categoryList,
+          latestPostEdges,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          currentPage: i + 1,
+          totalPages: numBlogPages,
+        },
+      });
+    }
+  }
 };
