@@ -14,7 +14,7 @@ const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
         config.sidebarSticky ? "height-full" : ""
       }`}
     >
-      {config.hasAdsense && (
+      {config.hasAdsense && config.adsenseUnits.sidebarTop && (
         <div className="width-full flex justify-content-center padding-top">
           <AdSense.Google {...config.adsenseUnits.sidebarTop} />
         </div>
@@ -26,11 +26,13 @@ const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
         <WidgetLatestPosts latestPostEdges={latestPostEdges} />
       )}
 
-      {latestPostEdges && config.hasAdsense && (
-        <div className="width-full flex justify-content-center padding-top">
-          <AdSense.Google {...config.adsenseUnits.sidebarMiddle} />
-        </div>
-      )}
+      {latestPostEdges &&
+        config.hasAdsense &&
+        config.adsenseUnits.sidebarMiddle && (
+          <div className="width-full flex justify-content-center padding-top">
+            <AdSense.Google {...config.adsenseUnits.sidebarMiddle} />
+          </div>
+        )}
 
       {categoryList && <WidgetCategory categoryList={categoryList} />}
 
@@ -38,7 +40,7 @@ const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
 
       {links && <WidgetLinks links={links} />}
 
-      {config.hasAdsense && (
+      {config.hasAdsense && config.adsenseUnits.sidebarBottom && (
         <div className="position-sticky top-zero padding-top padding-bottom">
           <AdSense.Google {...config.adsenseUnits.sidebarBottom} />
         </div>
