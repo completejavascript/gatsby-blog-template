@@ -34,9 +34,10 @@ const config = {
   // Use for home page
   numberLoadmore: 6,
   btnLoadmore: "Xem thêm",
-  homeHasLoadmore: true,
+  homeHasLoadmore: false,
   homeHasThumbnail: true,
   homeHeader: "Trang chủ",
+  homeMoreArticles: "Xem thêm",
   blogHeader: "Blog",
   jsGroupUrl: "https://www.facebook.com/groups/HoiDapJavascriptVN",
   blogPageUrl: "/blog",
