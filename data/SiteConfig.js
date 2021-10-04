@@ -79,12 +79,17 @@ const config = {
       style: { display: "inline-block", width: "300px", height: "250px" },
       format: "",
     },
+    sidebarMiddle: {
+      client: "ca-pub-7260245524211186",
+      slot: "3126009259",
+      style: { display: "inline-block", width: "300px", height: "250px" },
+      format: "",
+    },
     sidebarBottom: {
       client: "ca-pub-7260245524211186",
-      slot: "5714088466",
-      style: { display: "block" },
-      format: "auto",
-      responsive: "true",
+      slot: "4957801764",
+      style: { display: "inline-block", width: "300px", height: "250px" },
+      format: "",
     },
     postTop: {
       client: "ca-pub-7260245524211186",
