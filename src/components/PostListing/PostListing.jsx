@@ -4,7 +4,8 @@ import Article from "./Article";
 class PostListing extends Component {
   state = {
     maxPosts:
-      this.props.hasLoadmore && this.props.postsPerPage
+      (this.props.hasLoadmore || this.props.forcePostsPerPage) &&
+      this.props.postsPerPage
         ? this.props.postsPerPage
         : this.props.postList.length,
   };
