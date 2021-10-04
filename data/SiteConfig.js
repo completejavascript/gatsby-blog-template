@@ -56,6 +56,10 @@ const config = {
   pathPrefixCategory: "/category", // Prefix path for category
   categoryHeader: "Chuyên mục", // use in header of category-template page
   categoryHasThumbnail: true,
+  // Use for blog
+  pathPrefixBlog: "/blog", // Prefix path for blog
+  blogHeader: "Blog", // use in header of category-template page
+  blogHasThumbnail: true,
   // Use for widget
   categoryWidgetTitle: "Chuyên mục",
   tagWidgetTitle: "Chủ đề",
