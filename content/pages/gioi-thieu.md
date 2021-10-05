@@ -50,7 +50,6 @@ Bạn đọc có quyền bình luận và nêu cảm nghĩ về nội dung bài 
 Để có thể chia sẻ bài viết tới nhiều bạn đọc nhất, cũng như tạo thêm kênh giao lưu với bạn đọc, mình có thành lập một số mạng xã hội như sau:
 
 - [Facebook](https://www.facebook.com/completejavascript/)
-- [Google Plus](https://plus.google.com/u/1/102905788712213091494)
 - [Youtube channel](https://www.youtube.com/channel/UCvpDc5xfA5BAQigOddW5h7A)
 - [Github](https://github.com/completejavascript)
 - [Stackoverflow](https://stackoverflow.com/users/7905521/lam-pham)
