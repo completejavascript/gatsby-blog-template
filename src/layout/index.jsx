@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Navigation from "../components/Navigation/Navigation";
-import Footer from "../components/Footer/Footer";
+import Footer2 from "../components/Footer2/Footer2";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import siteConfig from "../../data/SiteConfig";
 import brand from "../../content/images/brand.png";
@@ -21,13 +21,7 @@ const MainLayout = ({ children, hasFooter = true }) => (
       links={siteConfig.navLinks}
     />
     {children}
-    {hasFooter && (
-      <Footer
-        socials={siteConfig.socialLinks}
-        links={siteConfig.footerLinks}
-        copyright={siteConfig.copyright}
-      />
-    )}
+    {hasFooter && <Footer2 />}
     <ScrollToTop color="#FFF" bgColor="grey-half" />
   </div>
 );

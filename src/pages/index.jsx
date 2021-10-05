@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 
 import Navigation from "../components/Navigation/Navigation";
-import Footer from "../components/Footer/Footer";
+import Footer2 from "../components/Footer2/Footer2";
 import SEO from "../components/SEO/SEO";
 import MacWindow from "../components/MacWindow/MacWindow";
 import AutoLink from "../components/AutoLink/AutoLink";
@@ -32,11 +32,7 @@ const IndexLayout = ({ children }) => (
       hideOnScroll
     />
     {children}
-    <Footer
-      socials={config.socialLinks}
-      links={config.footerLinks}
-      copyright={config.copyright}
-    />
+    <Footer2 />
   </>
 );
 

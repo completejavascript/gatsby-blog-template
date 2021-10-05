@@ -225,6 +225,43 @@ const config = {
     { label: "Chính sách bảo mật", url: "/chinh-sach-bao-mat" },
     { label: "Sitemap", url: "https://completejavascript.com/sitemap.xml" },
   ],
+  networkLinks: [
+    { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
+    { label: "Lam Dev Blog", url: "https://dev.phamvanlam.com/" },
+    { label: "Lam Pham Blog", url: "https://phamvanlam.com/" },
+    { label: "Amazing CSS", url: "https://amazingcss.com/" },
+    { label: "Portfolio", url: "http://about.phamvanlam.com/" },
+    {
+      label: "Cộng đồng JavaScript",
+      url: "https://www.facebook.com/groups/HoiDapJavascriptVN",
+    },
+  ],
+  projectLinks: [
+    {
+      label: "Gatsby Blog Template",
+      url: "https://github.com/completejavascript/gatsby-blog-template",
+    },
+    {
+      label: "Shiba.css",
+      url: "https://github.com/completejavascript/shiba-css",
+    },
+    {
+      label: "Tic Tac Toe",
+      url: "https://github.com/completejavascript/tic-tac-toe",
+    },
+    {
+      label: "React App Template",
+      url: "https://github.com/completejavascript/react-app-template",
+    },
+    {
+      label: "Markdown Editor",
+      url: "https://github.com/completejavascript/markdown-editor",
+    },
+    {
+      label: "NinePatch.js",
+      url: "https://github.com/completejavascript/nine-patch-js",
+    },
+  ],
   copyright:
     "Copyright © 2017-2021 Lam Pham. Unless otherwise noted, all code MIT license.",
   // Use for manifest

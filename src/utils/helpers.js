@@ -60,3 +60,5 @@ export const getRandomExclude = (min, max, currentValue, numRetry = 10) => {
 
   return (randomValue + 1) % max;
 };
+
+export const getCurrentYear = () => new Date().getFullYear();
