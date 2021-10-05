@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/completejavascript/completejavascript.com/compare/v1.2.0...v1.3.0) (2021-10-05)
+
+
+### Features
+
+* implement new Footer2 ([094c2a0](https://github.com/completejavascript/completejavascript.com/commit/094c2a0fa9b2352678746f8f834ab98c3d4529ed))
+* remove google plus in about page ([0823ddb](https://github.com/completejavascript/completejavascript.com/commit/0823ddb722e3ba90d14757ddb2860e552ecfb4b0))
+* update siteConfig (change numLatestPosts to 12 and comment out sidebarLinks) ([67f8b7c](https://github.com/completejavascript/completejavascript.com/commit/67f8b7ce635d149eb1d7fa1a54cdf46a9949ca8e))
+
+
+### Bug Fixes
+
+* change position of sidebar middle ads ([85de9d5](https://github.com/completejavascript/completejavascript.com/commit/85de9d5d19b5904f459fae66394ca0b04cf1b369))
+
 ## [1.2.0](https://github.com/completejavascript/completejavascript.com/compare/v1.1.3...v1.2.0) (2021-10-04)
 
 
