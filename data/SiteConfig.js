@@ -14,7 +14,7 @@ const config = {
   googleAnalyticsID: "UA-96543695-5", // GA tracking ID.
   postDefaultCategoryID: "", // Default category for posts.
   // Common for tag, category pages and widget
-  numberLatestPost: 6,
+  numberLatestPost: 12,
   postsPerPage: 12,
   // Use for post
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
@@ -116,24 +116,24 @@ const config = {
   },
   // Use for links widget
   sidebarSticky: true,
-  sidebarLinks: [
-    {
-      label: "Blog Thuật toán",
-      url: "https://thuattoan.phamvanlam.com/",
-    },
-    {
-      label: "Lam Dev Blog",
-      url: "https://dev.phamvanlam.com/",
-    },
-    {
-      label: "Lam Pham Blog",
-      url: "https://phamvanlam.com/",
-    },
-    {
-      label: "Portfolio",
-      url: "http://about.phamvanlam.com/",
-    },
-  ],
+  // sidebarLinks: [
+  //   {
+  //     label: "Blog Thuật toán",
+  //     url: "https://thuattoan.phamvanlam.com/",
+  //   },
+  //   {
+  //     label: "Lam Dev Blog",
+  //     url: "https://dev.phamvanlam.com/",
+  //   },
+  //   {
+  //     label: "Lam Pham Blog",
+  //     url: "https://phamvanlam.com/",
+  //   },
+  //   {
+  //     label: "Portfolio",
+  //     url: "http://about.phamvanlam.com/",
+  //   },
+  // ],
   // Use for user info
   userName: "Lam Pham", // Username to display in the author segment.
   userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed's author segment
