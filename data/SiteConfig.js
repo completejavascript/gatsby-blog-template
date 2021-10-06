@@ -229,6 +229,9 @@ const config = {
     { label: "Điều khoản sử dụng", url: "/dieu-khoan-su-dung" },
     { label: "Chính sách bảo mật", url: "/chinh-sach-bao-mat" },
     { label: "Sitemap", url: "https://completejavascript.com/sitemap.xml" },
+    { label: "Blog", url: "/blog" },
+    { label: "Freebie", url: "/freebie" },
+    { label: "Wiki", url: "/wiki" },
   ],
   networkLinks: [
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
@@ -237,8 +240,20 @@ const config = {
     { label: "Amazing CSS", url: "https://amazingcss.com/" },
     { label: "Portfolio", url: "http://about.phamvanlam.com/" },
     {
+      label: "My Android Apps",
+      url: "https://play.google.com/store/apps/developer?id=LamPV",
+    },
+    {
+      label: "Hire me on Upwork",
+      url: "https://www.upwork.com/freelancers/~015218a85e68b18cf6",
+    },
+    {
       label: "Cộng đồng JavaScript",
       url: "https://www.facebook.com/groups/HoiDapJavascriptVN",
+    },
+    {
+      label: "Fanpage",
+      url: "https://www.facebook.com/completejavascript/",
     },
   ],
   projectLinks: [
@@ -265,6 +280,18 @@ const config = {
     {
       label: "NinePatch.js",
       url: "https://github.com/completejavascript/nine-patch-js",
+    },
+    {
+      label: "Drum Machine",
+      url: "https://github.com/completejavascript/drum-machine",
+    },
+    {
+      label: "Pomodoro Clock",
+      url: "https://github.com/completejavascript/pomodoro-clock",
+    },
+    {
+      label: "Basic Calculator",
+      url: "https://github.com/completejavascript/calculator",
     },
   ],
   copyright:
