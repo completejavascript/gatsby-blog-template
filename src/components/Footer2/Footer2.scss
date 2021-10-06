@@ -7,9 +7,13 @@
     }
   }
   .container-full {
-    border-top: 1px solid #ececec;
+    &.widgets {
+      background-color: #f7f8f9;
+      border-top: 1px solid #ececec;
+    }
     &.footer {
       background-color: #f7f8f9;
+      border-top: 1px solid #e1e4e8;
     }
   }
   .social-links-container {
