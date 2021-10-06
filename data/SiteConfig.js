@@ -42,6 +42,7 @@ const config = {
   blogHeader: "Blog",
   jsGroupUrl: "https://www.facebook.com/groups/HoiDapJavascriptVN",
   blogPageUrl: "/blog",
+  freebiePageUrl: "/freebie",
   serviceEmail: "completejavascript.super@gmail.com",
   freeLancerLink: "https://www.upwork.com/freelancers/~015218a85e68b18cf6",
   // Use for page

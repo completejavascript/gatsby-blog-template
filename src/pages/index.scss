@@ -48,11 +48,17 @@
     }
   }
   .latestposts-section {
+    background-color: #e1e9f2;
+  }
+  .latestfreebies-section {
+    background-color: #ffffff;
+  }
+  .latestposts-section,
+  .latestfreebies-section {
     min-height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e1e9f2;
     .container {
       display: flex;
       flex-direction: column;
@@ -84,6 +90,19 @@
             position: absolute;
             left: 0;
             bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .latestfreebies-section {
+    .container {
+      .latestposts-container {
+        article {
+          box-shadow: 0 0 0 1px #e2e9ed;
+          &:hover {
+            transform: none;
+            box-shadow: 0 8px 12px 5px rgba(0, 0, 0, 0.08);
           }
         }
       }

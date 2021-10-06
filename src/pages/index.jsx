@@ -52,8 +52,11 @@ const WelcomeSection = () => (
           <AutoLink className="btn btn-primary" to={config.blogPageUrl}>
             Đọc blog
           </AutoLink>
-          <AutoLink className="btn btn-primary-inverse" to={config.jsGroupUrl}>
-            Cộng đồng JavaScript
+          <AutoLink
+            className="btn btn-primary-inverse"
+            to={config.freebiePageUrl}
+          >
+            Top Freebies
           </AutoLink>
         </div>
       </div>
@@ -113,6 +116,26 @@ const LatestPostsSection = ({ postList = [] }) => (
   </section>
 );
 
+const LatestFreebiesSection = ({ postList = [] }) => (
+  <section className="latestfreebies-section">
+    <div className="container padding margin-top-3 margin-bottom-3">
+      <div className="text-center margin-bottom-3 margin-top-2">
+        <h2 className="section-title">Freebie mới nhất</h2>
+      </div>
+      <div className="latestposts-container">
+        {postList.map((post) => (
+          <PostArticle post={post} key={post.title} />
+        ))}
+      </div>
+      <div className="text-center margin-top-3 margin-bottom-2">
+        <AutoLink className="btn btn-primary" to={config.freebiePageUrl}>
+          Xem thêm
+        </AutoLink>
+      </div>
+    </div>
+  </section>
+);
+
 const CommunitySection = () => (
   <section className="community-section background-color-light-blue">
     <div className="container padding">
@@ -131,7 +154,7 @@ const CommunitySection = () => (
         </blockquote>
         <p>
           Tham gia ngay để học JavaScript và tiến bộ mỗi ngày cùng với hơn{" "}
-          <b>10K lập trình viên!</b>
+          <b>14K lập trình viên!</b>
         </p>
         <div>
           <AutoLink className="color-yellow" to={config.jsGroupUrl}>
@@ -225,14 +248,23 @@ const ServiceSection = () => {
 };
 
 function Index({ data }) {
-  const postEdges = data?.allMarkdownRemark?.edges || [];
+  const allEdges = data?.allMarkdownRemark?.edges || [];
+  const postEdges = allEdges
+    .filter((edge) => edge.node.frontmatter.template === "post")
+    .slice(0, 6);
+  const freebieEdges = allEdges
+    .filter((edge) => edge.node.frontmatter.template === "freebie")
+    .slice(0, 6);
+
   const postList = getPostList(postEdges);
+  const freebieList = getPostList(freebieEdges);
 
   return (
     <IndexLayout>
       <main className="index-container background-color-white">
         <WelcomeSection />
         <LatestPostsSection postList={postList} />
+        <LatestFreebiesSection postList={freebieList} />
         <CommunitySection />
         <ServiceSection />
       </main>
@@ -246,9 +278,9 @@ export default Index;
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      limit: 6
+      limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { template: { eq: "post" } } }
+      filter: { frontmatter: { template: { in: ["post", "freebie"] } } }
     ) {
       edges {
         node {
@@ -259,6 +291,7 @@ export const pageQuery = graphql`
           excerpt
           timeToRead
           frontmatter {
+            template
             title
             tags
             categories
