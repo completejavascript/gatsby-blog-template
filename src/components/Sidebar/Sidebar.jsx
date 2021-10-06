@@ -7,7 +7,14 @@ import WidgetSearch from "./WidgetSearch";
 import config from "../../../data/SiteConfig";
 import AdSense from "react-adsense";
 
-const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
+const Sidebar = ({
+  tagList,
+  categoryList,
+  latestPostEdges,
+  latestFreebieEdges,
+  links,
+  isSimple = false,
+}) => {
   return (
     <aside
       className={`sidebar-container width-full ${
@@ -23,20 +30,32 @@ const Sidebar = ({ tagList, categoryList, latestPostEdges, links }) => {
       <WidgetSearch />
 
       {latestPostEdges && (
-        <WidgetLatestPosts latestPostEdges={latestPostEdges} />
+        <WidgetLatestPosts
+          postEdges={latestPostEdges}
+          title={config.latestPostsWidgetTitle}
+        />
       )}
 
-      {categoryList && <WidgetCategory categoryList={categoryList} />}
+      {latestFreebieEdges && (
+        <WidgetLatestPosts
+          postEdges={latestFreebieEdges}
+          title={config.latestFreebiesWidgetTitle}
+        />
+      )}
 
-      {config.hasAdsense && config.adsenseUnits.sidebarMiddle && (
+      {!isSimple && config.hasAdsense && config.adsenseUnits.sidebarMiddle && (
         <div className="width-full flex justify-content-center padding-top">
           <AdSense.Google {...config.adsenseUnits.sidebarMiddle} />
         </div>
       )}
 
-      {tagList && <WidgetTag tagList={tagList} />}
+      {!isSimple && categoryList && (
+        <WidgetCategory categoryList={categoryList} />
+      )}
 
-      {links && <WidgetLinks links={links} />}
+      {!isSimple && tagList && <WidgetTag tagList={tagList} />}
+
+      {!isSimple && links && <WidgetLinks links={links} />}
 
       {config.hasAdsense && config.adsenseUnits.sidebarBottom && (
         <div className="position-sticky top-zero padding-top padding-bottom">

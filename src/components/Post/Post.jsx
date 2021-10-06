@@ -66,21 +66,25 @@ const Post = ({ postNode, config, slug }) => {
       )}
       <PostDivider />
 
-      <div className="padding-top padding-bottom">
-        <small>
-          <PostCategories
-            categories={post.categories}
-            extraClass="block"
-            iconColor="#555"
-          />
-          <PostTags
-            tags={post.tags}
-            extraClass="block padding-top-half"
-            iconColor="#555"
-          />
-        </small>
-      </div>
-      <PostDivider />
+      {(post.categories?.length > 0 || post.tags?.length > 0) && (
+        <>
+          <div className="padding-top padding-bottom">
+            <small>
+              <PostCategories
+                categories={post.categories}
+                extraClass="block"
+                iconColor="#555"
+              />
+              <PostTags
+                tags={post.tags}
+                extraClass="block padding-top-half"
+                iconColor="#555"
+              />
+            </small>
+          </div>
+          <PostDivider />
+        </>
+      )}
 
       {config.hasAdsense && config.adsenseUnits.matchedPostBottom && (
         <AdSense.Google {...config.adsenseUnits.matchedPostBottom} />

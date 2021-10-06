@@ -10,10 +10,18 @@ import { getPostList } from "../utils/helpers";
 import config from "../../data/SiteConfig";
 
 const FreeBieTemplate = ({ data, pageContext }) => {
-  const { categoryList, tagList, latestPostEdges, currentPage, totalPages } =
-    pageContext;
+  const {
+    categoryList,
+    tagList,
+    latestPostEdges,
+    latestFreebieEdges,
+    currentPage,
+    totalPages,
+  } = pageContext;
+
   const postEdges = data.allMarkdownRemark.edges;
   const postList = getPostList(postEdges);
+
   const content = (
     <>
       <PostListing
@@ -30,11 +38,13 @@ const FreeBieTemplate = ({ data, pageContext }) => {
       />
     </>
   );
+
   const sidebar = (
     <Sidebar
       tagList={tagList}
       categoryList={categoryList}
       latestPostEdges={latestPostEdges}
+      latestFreebieEdges={latestFreebieEdges}
       links={config.sidebarLinks}
     />
   );

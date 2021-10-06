@@ -15,7 +15,7 @@ const config = {
   postDefaultCategoryID: "", // Default category for posts.
   // Common for tag, category pages and widget
   numberLatestPost: 8,
-  numberLatestFreebie: 8,
+  numberLatestFreebie: 6,
   postsPerPage: 12,
   // Use for post
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
@@ -70,6 +70,7 @@ const config = {
   categoryWidgetTitle: "Chuyên mục",
   tagWidgetTitle: "Chủ đề",
   latestPostsWidgetTitle: "Bài viết mới nhất",
+  latestFreebiesWidgetTitle: "Freebie mới nhất",
   linksWidgetTitle: "Liên Kết",
   // Use for Google custom search
   searchWidgetTitle: "Bạn đang tìm gì?",
@@ -180,9 +181,8 @@ const config = {
   navTitle: "Complete JavaScript",
   navLinks: [
     { label: "Blog", url: "/blog" },
+    { label: "Freebie", url: "/freebie" },
     { label: "Wiki", url: "/wiki" },
-    { label: "Giới thiệu", url: "/gioi-thieu" },
-    { label: "Liên hệ", url: "/lien-he" },
   ],
   // Use for footer
   socialLinks: [

@@ -16,11 +16,14 @@ const TagTemplate = ({ data, pageContext }) => {
     tagList,
     categoryList,
     latestPostEdges,
+    latestFreebieEdges,
     currentPage,
     totalPages,
   } = pageContext;
+
   const postEdges = data.allMarkdownRemark.edges;
   const postList = getPostList(postEdges);
+
   const content = (
     <>
       <PostListing
@@ -37,11 +40,13 @@ const TagTemplate = ({ data, pageContext }) => {
       />
     </>
   );
+
   const sidebar = (
     <Sidebar
       tagList={tagList}
       categoryList={categoryList}
       latestPostEdges={latestPostEdges}
+      latestFreebieEdges={latestFreebieEdges}
       links={config.sidebarLinks}
     />
   );
@@ -60,35 +65,38 @@ const TagTemplate = ({ data, pageContext }) => {
 export default TagTemplate;
 
 /* eslint no-undef: "off" */
-export const pageQuery = graphql`query TagPage($tag: String, $skip: Int!, $limit: Int!) {
-  allMarkdownRemark(
-    limit: $limit
-    skip: $skip
-    sort: {fields: [frontmatter___date], order: DESC}
-    filter: {frontmatter: {tags: {in: [$tag]}, template: {eq: "post"}}}
-  ) {
-    totalCount
-    edges {
-      node {
-        fields {
-          slug
-          date
-        }
-        excerpt
-        timeToRead
-        frontmatter {
-          title
-          tags
-          categories
-          cover {
-            childImageSharp {
-              gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
-            }
+export const pageQuery = graphql`
+  query TagPage($tag: String, $skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      limit: $limit
+      skip: $skip
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {
+        frontmatter: { tags: { in: [$tag] }, template: { eq: "post" } }
+      }
+    ) {
+      totalCount
+      edges {
+        node {
+          fields {
+            slug
+            date
           }
-          date
+          excerpt
+          timeToRead
+          frontmatter {
+            title
+            tags
+            categories
+            cover {
+              childImageSharp {
+                gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
+              }
+            }
+            date
+          }
         }
       }
     }
   }
-}
 `;

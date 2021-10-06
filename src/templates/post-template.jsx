@@ -10,7 +10,8 @@ import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
 const PostTemplate = ({ data, pageContext }) => {
-  const { slug, tagList, categoryList, latestPostEdges } = pageContext;
+  const { slug, tagList, categoryList, latestPostEdges, latestFreebieEdges } =
+    pageContext;
   const postNode = data.markdownRemark;
   const title = postNode.frontmatter.title;
   const content = <Post postNode={postNode} config={config} slug={slug} />;
@@ -19,6 +20,7 @@ const PostTemplate = ({ data, pageContext }) => {
       tagList={tagList}
       categoryList={categoryList}
       latestPostEdges={latestPostEdges}
+      latestFreebieEdges={latestFreebieEdges}
       links={config.sidebarLinks}
     />
   );
@@ -38,28 +40,29 @@ const PostTemplate = ({ data, pageContext }) => {
 export default PostTemplate;
 
 /* eslint no-undef: "off" */
-export const pageQuery = graphql`query BlogPostBySlug($slug: String!) {
-  markdownRemark(fields: {slug: {eq: $slug}}) {
-    html
-    timeToRead
-    excerpt
-    frontmatter {
-      title
-      date
-      categories
-      tags
-      description
-      keywords
-      cover {
-        childImageSharp {
-          gatsbyImageData(width: 660, quality: 100, layout: FIXED)
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      timeToRead
+      excerpt
+      frontmatter {
+        title
+        date
+        categories
+        tags
+        description
+        keywords
+        cover {
+          childImageSharp {
+            gatsbyImageData(width: 660, quality: 100, layout: FIXED)
+          }
         }
       }
-    }
-    fields {
-      slug
-      date
+      fields {
+        slug
+        date
+      }
     }
   }
-}
 `;
