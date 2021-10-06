@@ -14,7 +14,8 @@ const config = {
   googleAnalyticsID: "UA-96543695-5", // GA tracking ID.
   postDefaultCategoryID: "", // Default category for posts.
   // Common for tag, category pages and widget
-  numberLatestPost: 12,
+  numberLatestPost: 8,
+  numberLatestFreebie: 8,
   postsPerPage: 12,
   // Use for post
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
@@ -59,8 +60,12 @@ const config = {
   categoryHasThumbnail: true,
   // Use for blog
   pathPrefixBlog: "/blog", // Prefix path for blog
-  blogHeader: "Blog", // use in header of category-template page
+  blogHeader: "Blog", // use in header of blog-template page
   blogHasThumbnail: true,
+  // Use for freebie
+  pathPrefixFreebie: "/freebie", // Prefix path for freebie
+  freebieHeader: "Freebie", // use in header of freebie-template page
+  freebieHasThumbnail: true,
   // Use for widget
   categoryWidgetTitle: "Chuyên mục",
   tagWidgetTitle: "Chủ đề",

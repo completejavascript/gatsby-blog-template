@@ -51,6 +51,9 @@ exports.createPages = async ({ graphql, actions }) => {
     "src/templates/category-template.jsx"
   );
   const blogPageTemplate = path.resolve("src/templates/blog-template.jsx");
+  const freebiePageTemplate = path.resolve(
+    "src/templates/freebie-template.jsx"
+  );
 
   const markdownQueryResult = await graphql(
     `
@@ -85,15 +88,22 @@ exports.createPages = async ({ graphql, actions }) => {
   const categorySet = new Set();
   const postEdges = [];
   const pageEdges = [];
+  const freebieEdges = [];
 
   markdownQueryResult.data.allMarkdownRemark.edges.forEach((edge) => {
-    if (edge.node.frontmatter.tags) {
+    if (
+      edge.node.frontmatter.tags &&
+      edge.node.frontmatter.template === "post"
+    ) {
       edge.node.frontmatter.tags.forEach((tag) => {
         tagSet.add(tag);
       });
     }
 
-    if (edge.node.frontmatter.categories) {
+    if (
+      edge.node.frontmatter.categories &&
+      edge.node.frontmatter.template === "post"
+    ) {
       edge.node.frontmatter.categories.forEach((category) => {
         categorySet.add(category);
       });
@@ -106,6 +116,10 @@ exports.createPages = async ({ graphql, actions }) => {
     if (edge.node.frontmatter.template === "page") {
       pageEdges.push(edge);
     }
+
+    if (edge.node.frontmatter.template === "freebie") {
+      freebieEdges.push(edge);
+    }
   });
 
   // Create tagList, categoryList
@@ -117,6 +131,14 @@ exports.createPages = async ({ graphql, actions }) => {
   postEdges.forEach((edge) => {
     if (latestPostEdges.length < siteConfig.numberLatestPost) {
       latestPostEdges.push(edge);
+    }
+  });
+
+  // Get latest freebie posts
+  const latestFreebieEdges = [];
+  freebieEdges.forEach((edge) => {
+    if (latestFreebieEdges.length < siteConfig.numberLatestFreebie) {
+      latestFreebieEdges.push(edge);
     }
   });
 
@@ -139,6 +161,31 @@ exports.createPages = async ({ graphql, actions }) => {
         tagList,
         categoryList,
         latestPostEdges,
+        latestFreebieEdges,
+      },
+    });
+  });
+
+  // Create freebie page
+  freebieEdges.forEach((edge, index) => {
+    const nextID = index + 1 < freebieEdges.length ? index + 1 : 0;
+    const prevID = index - 1 >= 0 ? index - 1 : freebieEdges.length - 1;
+    const nextEdge = freebieEdges[nextID];
+    const prevEdge = freebieEdges[prevID];
+
+    createPage({
+      path: edge.node.fields.slug,
+      component: postPageTemplate,
+      context: {
+        slug: edge.node.fields.slug,
+        nexttitle: nextEdge.node.frontmatter.title,
+        nextslug: nextEdge.node.fields.slug,
+        prevtitle: prevEdge.node.frontmatter.title,
+        prevslug: prevEdge.node.fields.slug,
+        tagList,
+        categoryList,
+        latestPostEdges,
+        latestFreebieEdges,
       },
     });
   });
@@ -153,6 +200,7 @@ exports.createPages = async ({ graphql, actions }) => {
         tagList,
         categoryList,
         latestPostEdges,
+        latestFreebieEdges,
       },
     });
   });
@@ -183,6 +231,7 @@ exports.createPages = async ({ graphql, actions }) => {
           tagList,
           categoryList,
           latestPostEdges,
+          latestFreebieEdges,
           limit: postsPerPage,
           skip: i * postsPerPage,
           currentPage: i + 1,
@@ -214,6 +263,7 @@ exports.createPages = async ({ graphql, actions }) => {
           tagList,
           categoryList,
           latestPostEdges,
+          latestFreebieEdges,
           limit: postsPerPage,
           skip: i * postsPerPage,
           currentPage: i + 1,
@@ -239,10 +289,37 @@ exports.createPages = async ({ graphql, actions }) => {
           tagList,
           categoryList,
           latestPostEdges,
+          latestFreebieEdges,
           limit: postsPerPage,
           skip: i * postsPerPage,
           currentPage: i + 1,
           totalPages: numBlogPages,
+        },
+      });
+    }
+  }
+
+  // Create freebie page
+  {
+    const numFreebiePages = Math.ceil(freebieEdges.length / postsPerPage);
+    const basePath = siteConfig.pathPrefixFreebie;
+
+    for (let i = 0; i < numFreebiePages; i++) {
+      createPage({
+        path:
+          i === 0
+            ? `${basePath}`
+            : `${basePath}${pathPrefixPagination}/${i + 1}`,
+        component: freebiePageTemplate,
+        context: {
+          tagList,
+          categoryList,
+          latestPostEdges,
+          latestFreebieEdges,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          currentPage: i + 1,
+          totalPages: numFreebiePages,
         },
       });
     }
