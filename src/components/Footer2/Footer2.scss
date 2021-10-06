@@ -14,6 +14,13 @@
   }
   .social-links-container {
     font-size: 2.1rem;
+    .header {
+      text-transform: uppercase;
+      color: #7c7c7c;
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
     a {
       max-width: 3rem;
       max-height: 3rem;
@@ -28,7 +35,7 @@
       color: #606060;
       padding: 0 0 3rem;
       .content {
-        margin-top: 1.75rem;
+        margin-top: 3rem;
       }
       a {
         text-decoration: underline;

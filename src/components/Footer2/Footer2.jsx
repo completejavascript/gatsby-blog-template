@@ -39,27 +39,30 @@ function FooterCopyright() {
   );
 }
 
-function FooterSocialLinks({ socials, color }) {
+function FooterSocialLinks({ socials, color, header }) {
   return (
     <div className="social-links-container">
-      {socials.map((social) => {
-        if (social.url !== "")
-          return (
-            <AutoLink
-              className="margin-right"
-              to={social.url}
-              key={social.label}
-            >
-              <FontAwesomeIcon
-                icon={social.iconClassName.split(" ")}
-                style={{ color }}
-              />
-            </AutoLink>
-          );
+      <div className="header">{header}</div>
+      <div className="links">
+        {socials.map((social) => {
+          if (social.url !== "")
+            return (
+              <AutoLink
+                className="margin-right"
+                to={social.url}
+                key={social.label}
+              >
+                <FontAwesomeIcon
+                  icon={social.iconClassName.split(" ")}
+                  style={{ color }}
+                />
+              </AutoLink>
+            );
 
-        // Ignore
-        return null;
-      })}
+          // Ignore
+          return null;
+        })}
+      </div>
     </div>
   );
 }
@@ -84,7 +87,11 @@ function FooterSiteInfo() {
         <AutoLink to="/tag/css">CSS</AutoLink>,...).
       </p>
 
-      <FooterSocialLinks socials={socialLinks} color="#606060" />
+      <FooterSocialLinks
+        socials={socialLinks}
+        color="#606060"
+        header="CONNECT"
+      />
     </div>
   );
 }
