@@ -183,6 +183,9 @@ const config = {
   navLinks: [
     { label: "Blog", url: "/blog" },
     { label: "Freebie", url: "/freebie" },
+    { label: "JavaScript", url: "/category/javascript-co-ban" },
+    { label: "React", url: "/tag/react" },
+    { label: "Quiz", url: "/category/phong-van-javascript" },
     { label: "Wiki", url: "/wiki" },
   ],
   // Use for footer
