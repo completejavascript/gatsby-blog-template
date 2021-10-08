@@ -3,7 +3,7 @@ date: "2021-10-08T14:02:00Z"
 template: "freebie"
 cover: "../images/hosting-mien-phi-cho-web-tinh-completejavascript.com_.png"
 keywords: "hosting miễn phí cho web tĩnh"
-description: "freebies description 1"
+description: "Bài viết này sẽ tổng hợp 10 hosting miễn phí cho web tĩnh - cho phép thay đổi tên miền, hỗ trợ SSL và miễn phí CI... Qua bài viết, bạn sẽ tìm ra được hosting miễn phí phù hợp với dự án cá nhân của mình."
 slug: hosting-mien-phi-cho-web-tinh
 title: "10 hosting miễn phí cho web tĩnh"
 ---
