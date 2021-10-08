@@ -15,7 +15,7 @@ tags:
   - Template
 ---
 
-Khi lập trình Web nói chung và [lập trình JavaScript](/category/javascript/javascript-co-ban/) nói riêng, nhiều khi bạn sẽ cần phải render thêm các thành phần trang web từ JavaScript. Và trong trường hợp thành phần HTML đó được lưu dưới dạng string, bạn có thể sử dụng [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) để chuyển HTML String sang DOM Node. Cách làm vô cùng đơn giản như sau.
+Khi lập trình Web nói chung và [lập trình JavaScript](/category/javascript-co-ban) nói riêng, nhiều khi bạn sẽ cần phải render thêm các thành phần trang web từ JavaScript. Và trong trường hợp thành phần HTML đó được lưu dưới dạng string, bạn có thể sử dụng [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) để chuyển HTML String sang DOM Node. Cách làm vô cùng đơn giản như sau.
 
 ## Cách chuyển HTML String sang DOM
 
@@ -28,7 +28,7 @@ let domParser = new DOMParser();
 **Bước 2**: Sử dụng phương thức **parseFromString** của DOMParser.
 
 ```js
-let doc = domParser.parseFromString('<div>Hello</div>', 'text/html');
+let doc = domParser.parseFromString("<div>Hello</div>", "text/html");
 console.log(doc);
 
 /* Kết quả trả về là một document
@@ -71,9 +71,7 @@ https://codepen.io/completejavascript/pen/BrKrrJ
 Trên giao diện ngoài 2 button Add và Remove, có một phần tử quan trọng là thẻ div với **id="container"**. Thẻ này được dùng làm container để chứa các node mới được parse từ JavaScript.
 
 ```js
-<div id="container">
-
-</div>
+<div id="container"></div>
 ```
 
 ### Code phần JavaScript
@@ -81,40 +79,41 @@ Trên giao diện ngoài 2 button Add và Remove, có một phần tử quan tr�
 Ở đây, mình gộp cả 3 bước phía trên thành hàm getNodes:
 
 ```js
-let getNodes = str => new DOMParser().parseFromString(str, 'text/html').body.childNodes;
+let getNodes = (str) =>
+  new DOMParser().parseFromString(str, "text/html").body.childNodes;
 ```
 
 Bạn sử dụng hàm số này để lấy về mảng các node với đầu vào là một HTML string.
 
 ```js
-let nodes = getNodes('<div><span>1</span></div><div><span>2</span></div>');
+let nodes = getNodes("<div><span>1</span></div><div><span>2</span></div>");
 ```
 
 Sau đó, bạn thêm các node này vào HTML bằng cách nhấn button Add:
 
 ```js
-btnAdd.addEventListener("click", function() {
-  nodes.forEach(node => container.appendChild(node.cloneNode(true)));
+btnAdd.addEventListener("click", function () {
+  nodes.forEach((node) => container.appendChild(node.cloneNode(true)));
 });
 ```
 
 Vì nodes là kiểu mảng, nên mình sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi/) để duyệt. Mỗi phần tử node trong mảng sẽ được sao chép ([clone](https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode)) ra một node mới, để dùng lại sau này.
 
 ```js
-node.cloneNode(true)
+node.cloneNode(true);
 ```
 
 Sau đó, chèn node mới này vào node container sử dụng phương thức [Node.appendChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild).
 
 ```js
-container.appendChild(node.cloneNode(true))
+container.appendChild(node.cloneNode(true));
 ```
 
 Ngoài ra, để bỏ đi các node mới thêm vào, mình sẽ sử dụng một vòng lặp lấy ra [Node.firstChild](https://developer.mozilla.org/en/docs/Web/API/Node/firstChild) của node container và **delete** nó đi, cho đến khi container không còn node con nữa là hoàn thành công việc.
 
 ```js
-btnRm.addEventListener("click", function() {
-  while(container.firstChild) {
+btnRm.addEventListener("click", function () {
+  while (container.firstChild) {
     delete container.removeChild(container.firstChild);
   }
 });

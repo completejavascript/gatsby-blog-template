@@ -56,7 +56,7 @@ Những việc bạn làm khi thức dậy sớm là rất quan trọng. Nó quy
 - Tập thể dục nhẹ nhàng khoảng 15 phút. Việc này giúp khởi động cơ thể, tuần hoàn máu tốt hơn, tái tạo nhiều năng lượng cho cơ thể.
 - Nghe những bạn nhạc vui tươi, tạo động lực.
 - Xem lại kế hoạch đã viết ngày hôm trước và bắt tay ngay vào thực hiện công việc. Bởi lẽ, mục tiêu của bạn khi thức dậy sớm là để thực hiện công việc của mình. Vì vậy, hãy xem lại danh sách công việc, điều chỉnh cho hợp lý và bắt tay ngay vào làm thôi.
-- Hoặc nếu bạn có mong muốn học [lập trình JavaScript](/category/javascript/javascript-co-ban/) thì có thể đọc các bài viết tại blog [CompleteJavaScript](/).
+- Hoặc nếu bạn có mong muốn học [lập trình JavaScript](/category/javascript-co-ban) thì có thể đọc các bài viết tại blog [CompleteJavaScript](/).
 
 Trên đây là những cách để giúp bạn thức dậy sớm mà không cảm thấy mệt mỏi. Mình rất vui nếu bạn đọc chia sẻ các phương pháp của bạn ở dưới phần bình luận.
 

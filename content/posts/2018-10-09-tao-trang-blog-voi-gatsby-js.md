@@ -24,7 +24,7 @@ Mời bạn theo dõi bài viết!
 Trước khi bắt đầu tạo trang blog với Gatsby.js, có một số kiến thức cơ bản mà bạn cần phải nắm vững như:
 
 - [HTML](https://www.tutorialspoint.com/html/) và [CSS](https://www.tutorialspoint.com/css/).
-- [JavaScript cơ bản](/category/javascript/javascript-co-ban/).
+- [JavaScript cơ bản](/category/javascript-co-ban).
 - Một số đặc điểm cơ bản của [ES6](/tag/es6/).
 - Những tư tưởng chính của [React](https://www.taniarascia.com/getting-started-with-react/).
 - Cú pháp [Markdown](https://guides.github.com/features/mastering-markdown/) cơ bản
@@ -41,11 +41,11 @@ Bài viết này giúp bạn:
 
 <a href="https://github.com/completejavascript/gatsby-tutorial" class="btn btn-primary margin-bottom">
   Xem code trên Github
-</a> 
+</a>
 
 <a href="https://gatsby-tutorial-demo.netlify.com/" class="btn btn-primary margin-bottom">
   Xem Demo
-</a> 
+</a>
 
 ## Cách theo dõi bài viết tốt nhất
 
@@ -146,17 +146,17 @@ Lúc này, bạn chỉ cần quan tâm đến thư mục /src. Vì bạn sẽ c�
 Để xem Gatsby project tự **rebuild** và **hot-loading** như thế nào, bạn mở file **/src/pages/index.js** với nội dung ban đầu là:
 
 ```jsx
-import React from "react"
+import React from "react";
 
-export default () => <div>Hello world!</div>
+export default () => <div>Hello world!</div>;
 ```
 
 Bạn sửa file này thành:
 
 ```jsx
-import React from "react"
+import React from "react";
 
-export default () => <div>Hello Gatsby!</div>
+export default () => <div>Hello Gatsby!</div>;
 ```
 
 Sau khi nhấn _Save_, bạn sẽ thấy Gatsby project được build lại (xem ở giao diện dòng lệnh, nơi bạn chạy lệnh <code>gatsby develop</code> trước đó) và trình duyệt tự động reload.
@@ -180,17 +180,17 @@ Mặc định, Gatsby sẽ lấy các file _.js_ được định nghĩa trong t
 **/src/pages/gioi-thieu.js**
 
 ```jsx
-import React from "react"
+import React from "react";
 
-export default () => <div>Giới thiệu</div>
+export default () => <div>Giới thiệu</div>;
 ```
 
 **/src/pages/lien-he.js**
 
 ```jsx
-import React from "react"
+import React from "react";
 
-export default () => <div>Liên hệ</div>
+export default () => <div>Liên hệ</div>;
 ```
 
 Sau khi lưu lại, bạn có thể vào 2 địa chỉ **http:\/\/localhost:8000/gioi-thieu/** và **http:\/\/localhost:8000/lien-he/** sẽ thấy kết quả 2 trang lần lượt là:
@@ -248,20 +248,22 @@ export default ({ children }) => {
       <Menu />
       {children}
     </div>
-  )
-}
+  );
+};
 ```
 
 **/src/components/layout.css**
 
 ```css
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 body {
   padding: 0;
   margin: 0;
   color: #222;
-  background-color: #EEEEEF;
+  background-color: #eeeeef;
   font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
 }
 
@@ -283,12 +285,8 @@ import "./layout.css";
 export default (props) => {
   const children = props.children;
   // Hoặc: const { children } = props;
-  return (
-    <div>
-      {children}
-    </div>
-  )
-}
+  return <div>{children}</div>;
+};
 ```
 
 Thực ra, đối tượng *children* là mặc định, được truyền vào *props* khi bạn sử dụng component Layout. Giả sử bạn sử dụng Layout như sau:
@@ -318,8 +316,8 @@ export default () => {
     <Layout>
       <h1>Hello Gatsby!</h1>
     </Layout>
-  )
-}
+  );
+};
 ```
 
 **/src/pages/gioi-thieu.js**
@@ -333,8 +331,8 @@ export default () => {
     <Layout>
       <h1>Giới thiệu</h1>
     </Layout>
-  )
-}
+  );
+};
 ```
 
 **/src/pages/lien-he.js**
@@ -348,8 +346,8 @@ export default () => {
     <Layout>
       <h1>Liên hệ</h1>
     </Layout>
-  )
-}
+  );
+};
 ```
 
 Cuối cùng lưu lại trang, bạn sẽ thấy sự khác biệt (cụ thể là: font chữ, màu chữ, background color đã thay đổi).
@@ -369,15 +367,23 @@ import "./menu.css";
 export default () => {
   return (
     <header>
-      <h3 className="nav-brand"><a href={`/`}>Gatsby Blog Demo</a></h3>
+      <h3 className="nav-brand">
+        <a href={`/`}>Gatsby Blog Demo</a>
+      </h3>
       <ul>
-        <li className="nav-item"><a href={`/lien-he/`}>Liên hệ</a></li>
-        <li className="nav-item"><a href={`/gioi-thieu/`}>Giới thiệu</a></li>
-        <li className="nav-item"><a href={`/`}>Trang chủ</a></li>
+        <li className="nav-item">
+          <a href={`/lien-he/`}>Liên hệ</a>
+        </li>
+        <li className="nav-item">
+          <a href={`/gioi-thieu/`}>Giới thiệu</a>
+        </li>
+        <li className="nav-item">
+          <a href={`/`}>Trang chủ</a>
+        </li>
       </ul>
     </header>
-  )
-}
+  );
+};
 ```
 
 **/src/components/menu.css**:
@@ -428,8 +434,8 @@ export default ({ children }) => {
       <Menu />
       {children}
     </div>
-  )
-}
+  );
+};
 ```
 
 Lưu lại, bạn sẽ thấy kết quả:
@@ -454,15 +460,23 @@ import { Link } from "gatsby";
 export default () => {
   return (
     <header>
-      <h3 className="nav-brand"><Link to={`/`}>Gatsby Blog Demo</Link></h3>
+      <h3 className="nav-brand">
+        <Link to={`/`}>Gatsby Blog Demo</Link>
+      </h3>
       <ul>
-        <li className="nav-item"><Link to={`/lien-he/`}>Liên hệ</Link></li>
-        <li className="nav-item"><Link to={`/gioi-thieu/`}>Giới thiệu</Link></li>
-        <li className="nav-item"><Link to={`/`}>Trang chủ</Link></li>
+        <li className="nav-item">
+          <Link to={`/lien-he/`}>Liên hệ</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={`/gioi-thieu/`}>Giới thiệu</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={`/`}>Trang chủ</Link>
+        </li>
       </ul>
     </header>
-  )
-}
+  );
+};
 ```
 
 Trong đó, tất cả thẻ *a* đã được thay bằng *Link* component và thuộc tính _href_ được thay bằng *to*.
@@ -486,8 +500,8 @@ export default () => {
     <aside>
       <div>This is Sidebar</div>
     </aside>
-  )
-}
+  );
+};
 ```
 
 **/src/components/sidebar.css**:
@@ -512,11 +526,13 @@ export default ({ children }) => {
       <Menu />
       <div className="main">
         <div className="content">{children}</div>
-        <div className="sidebar"><Sidebar /></div>
+        <div className="sidebar">
+          <Sidebar />
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 ```
 
 Sửa lại giao diện layout một chút:
@@ -649,7 +665,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Blog Tutorial Demo`,
   },
-}
+};
 ```
 
 Trong đó, mình thêm thuộc tính *siteMetadata* vào để lưu những thông tin cần thiết của trang blog. Tiếp theo, mình định nghĩa *title* là tên của blog. Vì hiện tại tên blog đang là *Gatsby Blog Demo* nên mình sửa nó thành *Gatsby Blog Tutorial Demo* xem thế nào.
@@ -672,8 +688,8 @@ export default ({ data }) => {
     <Layout title={data.site.siteMetadata.title}>
       <h1>Bài viết mới nhất</h1>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -683,7 +699,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 **/src/pages/gioi-thieu.js**
@@ -698,8 +714,8 @@ export default ({ data }) => {
     <Layout title={data.site.siteMetadata.title}>
       <h1>Giới thiệu</h1>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -709,7 +725,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 **/src/pages/lien-he.js**
@@ -724,8 +740,8 @@ export default ({ data }) => {
     <Layout title={data.site.siteMetadata.title}>
       <h1>Liên hệ</h1>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -735,7 +751,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 Trong đó, mình đã import thêm *graphql* từ *gatsby*. Rồi viết câu lệnh query *title* ở phía dưới cùng. Ngoài ra, trong phần định nghĩa React Component, mình bổ sung thêm thuộc tính *data*. Thuộc tính này tương ứng với dữ liệu đã query ở phía dưới.
@@ -753,9 +769,9 @@ import React from "react";
 import "./layout.css";
 import Menu from "./menu";
 import Sidebar from "./sidebar";
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby";
 
-export default props => {
+export default (props) => {
   const { children } = props;
 
   return (
@@ -769,18 +785,20 @@ export default props => {
           }
         }
       `}
-      render={data => (
+      render={(data) => (
         <div className="app">
           <Menu title={data.site.siteMetadata.title} />
           <div className="main">
             <div className="content">{children}</div>
-            <div className="sidebar"><Sidebar /></div>
+            <div className="sidebar">
+              <Sidebar />
+            </div>
           </div>
         </div>
       )}
     />
-  )
-}
+  );
+};
 ```
 
 Tương tự như bên trên, nhưng bây giờ mình viết thẳng query của GraphQL bên trong StaticQuery luôn. Để truy cập đến giá trị *title* mình sử dụng  _data.site.siteMetadata.title_.
@@ -799,15 +817,23 @@ export default (props) => {
 
   return (
     <header>
-      <h3 className="nav-brand"><Link to={`/`}>{ title }</Link></h3>
+      <h3 className="nav-brand">
+        <Link to={`/`}>{title}</Link>
+      </h3>
       <ul>
-        <li className="nav-item"><Link to={`/lien-he/`}>Liên hệ</Link></li>
-        <li className="nav-item"><Link to={`/gioi-thieu/`}>Giới thiệu</Link></li>
-        <li className="nav-item"><Link to={`/`}>Trang chủ</Link></li>
+        <li className="nav-item">
+          <Link to={`/lien-he/`}>Liên hệ</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={`/gioi-thieu/`}>Giới thiệu</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={`/`}>Trang chủ</Link>
+        </li>
       </ul>
     </header>
-  )
-}
+  );
+};
 ```
 
 Để xem kết quả như nào, lần này bạn phải **Restart** lại server. Nhớ là mỗi khi thay đổi file ngoài thư mục */src* như */gatsby-config.js* hay thay đổi cú pháp query trong phần *graphql* thì bạn phải **Restart** lại server. Kết quả là *title* mới đã được áp dụng:
@@ -816,7 +842,7 @@ export default (props) => {
 
 #### Sử dụng công cụ đồ hoạ GraphiQL
 
-Ngoài ra, để biết kết quả câu lệnh query graphQL kia như thế nào, bạn có thể sử dụng công cụ GraphiQL bằng cách vào địa chỉ  *http:\/\/localhost:8000/___graphql* và copy-paste đoạn query trên vào:
+Ngoài ra, để biết kết quả câu lệnh query graphQL kia như thế nào, bạn có thể sử dụng công cụ GraphiQL bằng cách vào địa chỉ  *http:\/\/localhost:8000/\_\_\_graphql* và copy-paste đoạn query trên vào:
 
 ```jsx
 {
@@ -876,10 +902,10 @@ module.exports = {
       },
     },
   ],
-}
+};
 ```
 
-Trong đó, phần *options.path*, mình khai báo giá trị của nó đến thư mục */src* (hay <code>${__dirname}/src/</code>). Vì các page, post của mình chỉ nằm trong thư mục này.
+Trong đó, phần *options.path*, mình khai báo giá trị của nó đến thư mục */src* (hay <code>${\_\_dirname}/src/</code>). Vì các page, post của mình chỉ nằm trong thư mục này.
 
 Tuy nhiên, đến đây mình mới chỉ quét được hết các file trong thư mục */src*. Cái mình cần phải cụ thể hơn, đó là quét được các file Markdown. Vì các bài viết của mình được viết dưới dạng Markdown. Vì vậy, mình cài tiếp plugin *gatsby-transformer-remark* bằng câu lệnh:
 
@@ -906,7 +932,7 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
   ],
-}
+};
 ```
 
 Lưu lại và restart server rồi thử query các file Markdown trên GraphiQL xem sao:
@@ -929,24 +955,25 @@ export default ({ data }) => {
     <Layout>
       <h1>Bài viết mới nhất</h1>
 
-      {data.allMarkdownRemark.edges.map(({ node }, index) =>
+      {data.allMarkdownRemark.edges.map(({ node }, index) => (
         <div key={index}>
-          <h3>{node.frontmatter.title} 
-            <span style={{color: `#BBB`}}>— {node.frontmatter.date}</span>
+          <h3>
+            {node.frontmatter.title}
+            <span style={{ color: `#BBB` }}>— {node.frontmatter.date}</span>
           </h3>
           <p>{node.excerpt}</p>
         </div>
-      )}
+      ))}
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
     allMarkdownRemark(
-        sort: {order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
       edges {
         node {
           frontmatter {
@@ -958,7 +985,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 Kết quả là mình đã thu được một danh sách các bài viết trên trang chủ:
@@ -1015,25 +1042,25 @@ export default ({ data }) => {
     <Layout>
       <h1>Bài viết mới nhất</h1>
 
-      {data.allMarkdownRemark.edges.map(({ node }, index) =>
+      {data.allMarkdownRemark.edges.map(({ node }, index) => (
         <div key={index}>
           <h3>
             <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-            <span style={{color: `#BBB`}}>— {node.frontmatter.date}</span>
+            <span style={{ color: `#BBB` }}>— {node.frontmatter.date}</span>
           </h3>
           <p>{node.excerpt}</p>
         </div>
-      )}
+      ))}
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
     allMarkdownRemark(
-        sort: {order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
       edges {
         node {
           frontmatter {
@@ -1048,7 +1075,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 Bây giờ, *title* của mỗi bài viết đã được đặt trong *Link* component.
@@ -1071,11 +1098,11 @@ Lưu lại và restart server. Rồi sau đó bạn có thể nhấn thử vào�
 
 ```js
 /*
-* phần trước không thay đổi, mình bổ sung thêm đoạn sau
-*/
+ * phần trước không thay đổi, mình bổ sung thêm đoạn sau
+ */
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
   return new Promise((resolve, reject) => {
     graphql(`
       {
@@ -1089,7 +1116,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then(result => {
+    `).then((result) => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
@@ -1097,11 +1124,11 @@ exports.createPages = ({ graphql, actions }) => {
           context: {
             slug: node.fields.slug,
           },
-        })
-      })
-      resolve()
-    })
-  })
+        });
+      });
+      resolve();
+    });
+  });
 };
 ```
 
@@ -1133,7 +1160,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -1141,7 +1168,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 Câu lệnh query phần này có vẻ hơi khác so với phần trước. Đó là nó chứa tham số *\$slug*. Cũng đúng thôi, vì với mỗi bài viết khác nhau thì *slug* cũng khác. Vì vậy, mình cần thông tin này để query đúng bài viết tương ứng.
@@ -1157,7 +1184,7 @@ createPage({
   context: {
     slug: node.fields.slug,
   },
-})
+});
 ```
 
 Ở đây, thuộc tính *slug* bên trong phần *context* sẽ được truyền sang template kia và đóng vai trò là *\$slug* trong câu lệnh GraphQL phía trên.
@@ -1209,7 +1236,7 @@ module.exports = {
       },
     },
   ],
-}
+};
 ```
 
 Vì plugin *gatsby-remark-images* để xử lý ảnh sử dụng trong Markdown nên mình phải đặt nó trong phần *plugins* của *gatsby-transformer-remark*.
@@ -1249,46 +1276,46 @@ import Menu from "./menu";
 import Sidebar from "./sidebar";
 import { StaticQuery, graphql } from "gatsby";
 
-export default props => {
+export default (props) => {
   const { children } = props;
 
   return (
     <StaticQuery
       query={graphql`
-      query {
-        site {
-          siteMetadata {
-            title
+        query {
+          site {
+            siteMetadata {
+              title
+            }
           }
-        },
-        topics: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date] }) {
-          edges {
-            node {
-              frontmatter {
-                categories
-                tags
+          topics: allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter___date] }
+          ) {
+            edges {
+              node {
+                frontmatter {
+                  categories
+                  tags
+                }
               }
             }
           }
         }
-      }
-    `}
-      render={data => (
+      `}
+      render={(data) => (
         <div className="app">
           <Menu title={data.site.siteMetadata.title} />
           <div className="main">
             <div className="content">{children}</div>
             <div className="sidebar">
-              <Sidebar
-                edges={data.topics.edges}
-              />
+              <Sidebar edges={data.topics.edges} />
             </div>
           </div>
         </div>
       )}
     />
-  )
-}
+  );
+};
 ```
 
 Trong phần query GraphQL, mình đã thêm vào phần duyệt tất cả file Markdown. Dữ liệu thu được mình sẽ truyền nó vào Sidebar.
@@ -1319,32 +1346,26 @@ export default (props) => {
     <aside>
       <div>
         <h3>Chuyên mục</h3>
-        {
-          categories.map((category, index) => (
-            <p key={index}>
-              <Link to={`/category/${slug(category).toLowerCase()}/`}>
-                {category}
-              </Link>
-            </p>
-          ))
-        }
+        {categories.map((category, index) => (
+          <p key={index}>
+            <Link to={`/category/${slug(category).toLowerCase()}/`}>
+              {category}
+            </Link>
+          </p>
+        ))}
       </div>
 
       <div>
         <h3>Thẻ</h3>
-        {
-          tags.map((tag, index) => (
-            <span key={index}>
-              <Link to={`/tag/${slug(tag).toLowerCase()}/`}>
-                {tag}
-              </Link>{" "}
-            </span>
-          ))
-        }
+        {tags.map((tag, index) => (
+          <span key={index}>
+            <Link to={`/tag/${slug(tag).toLowerCase()}/`}>{tag}</Link>{" "}
+          </span>
+        ))}
       </div>
     </aside>
-  )
-}
+  );
+};
 ```
 
 **/src/components/sidebar.css**:
@@ -1386,11 +1407,11 @@ const path = require(`path`);
 const slug = require(`slug`);
 
 /*
-* onCreateNode không thay đổi
-*/
+ * onCreateNode không thay đổi
+ */
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
   return new Promise((resolve, reject) => {
     graphql(`
       {
@@ -1408,57 +1429,55 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then(result => {
-        let tags = [];
-        let categories = [];
+    `).then((result) => {
+      let tags = [];
+      let categories = [];
 
-        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-          tags = Array.from(
-            new Set([...tags, ...node.frontmatter.tags])
-          );
+      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        tags = Array.from(new Set([...tags, ...node.frontmatter.tags]));
 
-          categories = Array.from(
-            new Set([...categories, ...node.frontmatter.categories])
-          );
+        categories = Array.from(
+          new Set([...categories, ...node.frontmatter.categories])
+        );
 
-          createPage({
-            path: node.fields.slug,
-            component: path.resolve(`./src/templates/blog-post.js`),
-            context: {
-              // Data passed to context is available in page queries 
-              // as GraphQL variables.
-              slug: node.fields.slug,
-            },
-          })
-        })
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`./src/templates/blog-post.js`),
+          context: {
+            // Data passed to context is available in page queries
+            // as GraphQL variables.
+            slug: node.fields.slug,
+          },
+        });
+      });
 
-        categories.forEach(category => {
-          createPage({
-            path: `/category/${slug(category).toLowerCase()}/`,
-            component: path.resolve(`./src/templates/categories.js`),
-            context: {
-              // Data passed to context is available in page queries 
-              // as GraphQL variables.
-              category
-            },
-          })
-        })
+      categories.forEach((category) => {
+        createPage({
+          path: `/category/${slug(category).toLowerCase()}/`,
+          component: path.resolve(`./src/templates/categories.js`),
+          context: {
+            // Data passed to context is available in page queries
+            // as GraphQL variables.
+            category,
+          },
+        });
+      });
 
-        tags.forEach(tag => {
-          createPage({
-            path: `/tag/${slug(tag).toLowerCase()}/`,
-            component: path.resolve(`./src/templates/tags.js`),
-            context: {
-              // Data passed to context is available in page queries 
-              // as GraphQL variables.
-              tag
-            },
-          })
-        })
+      tags.forEach((tag) => {
+        createPage({
+          path: `/tag/${slug(tag).toLowerCase()}/`,
+          component: path.resolve(`./src/templates/tags.js`),
+          context: {
+            // Data passed to context is available in page queries
+            // as GraphQL variables.
+            tag,
+          },
+        });
+      });
 
-        resolve()
-      })
-  })
+      resolve();
+    });
+  });
 };
 ```
 
@@ -1477,37 +1496,33 @@ import { graphql, Link } from "gatsby";
 
 export default ({ data, pageContext }) => {
   const { category } = pageContext;
-  const categoryEdges = data.allMarkdownRemark.edges.filter(
-    ({ node }) => node.frontmatter.categories.includes(category)
+  const categoryEdges = data.allMarkdownRemark.edges.filter(({ node }) =>
+    node.frontmatter.categories.includes(category)
   );
 
   return (
     <Layout>
       <h1>Chuyên mục {category}</h1>
 
-      {categoryEdges.map(({ node }, index) =>
+      {categoryEdges.map(({ node }, index) => (
         <div key={index}>
           <h3>
-            <Link to={node.fields.slug}>
-              {node.frontmatter.title}
-            </Link>
-            <span style={{ color: `#BBB` }}>
-              — {node.frontmatter.date}
-            </span>
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+            <span style={{ color: `#BBB` }}>— {node.frontmatter.date}</span>
           </h3>
           <p>{node.excerpt}</p>
         </div>
-      )}
+      ))}
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
     allMarkdownRemark(
-        sort: {order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
       edges {
         node {
           frontmatter {
@@ -1523,7 +1538,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 **/src/template/tags.js**
@@ -1535,37 +1550,33 @@ import { graphql, Link } from "gatsby";
 
 export default ({ data, pageContext }) => {
   const { tag } = pageContext;
-  const tagEdges = data.allMarkdownRemark.edges.filter(
-    ({ node }) => node.frontmatter.tags.includes(tag)
+  const tagEdges = data.allMarkdownRemark.edges.filter(({ node }) =>
+    node.frontmatter.tags.includes(tag)
   );
 
   return (
     <Layout>
       <h1>Thẻ {tag}</h1>
 
-      {tagEdges.map(({ node }, index) =>
+      {tagEdges.map(({ node }, index) => (
         <div key={index}>
           <h3>
-            <Link to={node.fields.slug}>
-              {node.frontmatter.title}
-            </Link>
-            <span style={{ color: `#BBB` }}>
-              — {node.frontmatter.date}
-            </span>
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+            <span style={{ color: `#BBB` }}>— {node.frontmatter.date}</span>
           </h3>
           <p>{node.excerpt}</p>
         </div>
-      )}
+      ))}
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
     allMarkdownRemark(
-        sort: {order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 1000
+    ) {
       edges {
         node {
           frontmatter {
@@ -1581,7 +1592,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 Thực ra, nội dung của 2 file này gần giống như */src/pages/index.js*, chỉ khác ở chỗ là mình không sử dụng tham số được truyền từ */gatsby-node.js* vào phần query GraphQL như phần *\$slug* ở phía trên. Lần này mình sử dụng nó trong phần React Component.
@@ -1590,14 +1601,14 @@ Giá trị của các tham số *category* và *tag* được lấy từ đ�
 
 ```js
 const { category } = pageContext;
-const categoryEdges = data.allMarkdownRemark.edges.filter(
-  ({ node }) => node.frontmatter.categories.includes(category)
+const categoryEdges = data.allMarkdownRemark.edges.filter(({ node }) =>
+  node.frontmatter.categories.includes(category)
 );
 
 const { tag } = pageContext;
-const tagEdges = data.allMarkdownRemark.edges.filter(
-    ({ node }) => node.frontmatter.tags.includes(tag)
-  ); 
+const tagEdges = data.allMarkdownRemark.edges.filter(({ node }) =>
+  node.frontmatter.tags.includes(tag)
+);
 ```
 
 Khi đã có được giá trị *category* hay *tag* hiện tại rồi, thì mình chỉ cần sử dụng phương thức [filter](/javascript-foreach-la-cai-quai-gi/) để lọc lấy những bài viết chứa *category* và những bài viết chứa *tag* hiện tại. Vì mục đích của mình là phân loại các bài viết theo chuyên mục và thẻ mà.
@@ -1723,11 +1734,11 @@ Trên đây là cách để tạo trang blog với Gatsby.js mà mình đã đú
 
 <a href="https://github.com/completejavascript/gatsby-tutorial" class="btn btn-primary margin-bottom">
   Xem code trên Github
-</a> 
+</a>
 
 <a href="https://gatsby-tutorial-demo.netlify.com/" class="btn btn-primary margin-bottom">
   Xem Demo
-</a> 
+</a>
 
 Bài viết đến đây cũng khá dài rồi, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/mot-so-plugin-gatsby-js-hay-dung/), thân ái!
 

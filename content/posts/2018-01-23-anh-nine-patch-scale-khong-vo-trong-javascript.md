@@ -13,7 +13,7 @@ tags:
   - DOM
 ---
 
-Có thể bạn đã từng nghe đến ảnh Vector rồi. Ảnh Vector có một ưu điểm lớn nhất là có thể kéo to, nhỏ tùy ý mà không bị vỡ ảnh. Bên cạnh đó, có một loại ảnh khác cũng có ưu điểm tương tự, chính là ảnh nine-patch (hay 9patch). Vậy ảnh nine-patch là gì? Cách sử dụng ảnh nine-patch trong [JavaScript](/category/javascript/javascript-co-ban/) như thế nào? Bài viết này sẽ giúp bạn tìm hiểu về xử lý ảnh nine-patch trong JavaScript.
+Có thể bạn đã từng nghe đến ảnh Vector rồi. Ảnh Vector có một ưu điểm lớn nhất là có thể kéo to, nhỏ tùy ý mà không bị vỡ ảnh. Bên cạnh đó, có một loại ảnh khác cũng có ưu điểm tương tự, chính là ảnh nine-patch (hay 9patch). Vậy ảnh nine-patch là gì? Cách sử dụng ảnh nine-patch trong [JavaScript](/category/javascript-co-ban) như thế nào? Bài viết này sẽ giúp bạn tìm hiểu về xử lý ảnh nine-patch trong JavaScript.
 
 ## Ảnh nine-patch là gì?
 
@@ -98,20 +98,21 @@ https://codepen.io/completejavascript/pen/opOvaP
 Trước tiên, mình sẽ hiển thị ảnh gốc, bằng cách áp dụng hàm getSize:
 
 ```js
-new NinePatch().getSize(srcImg)
-  .then(
-    result => setImage($('#ninePatchImg'), result.url, result.width, result.height)
+new NinePatch()
+  .getSize(srcImg)
+  .then((result) =>
+    setImage($("#ninePatchImg"), result.url, result.width, result.height)
   )
-  .catch(error => console.log(error));
+  .catch((error) => console.log(error));
 ```
 
 Hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript/) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
 
 ```js
 function setImage(divElement, srcURL, width, height) {
-  divElement.style.width = width + 'px';
-  divElement.style.height = height + 'px';
-  divElement.style.backgroundSize = '' + width + 'px ' + height + 'px';
+  divElement.style.width = width + "px";
+  divElement.style.height = height + "px";
+  divElement.style.backgroundSize = "" + width + "px " + height + "px";
   divElement.style.backgroundImage = "url('" + srcURL + "')";
 }
 ```
@@ -119,9 +120,10 @@ function setImage(divElement, srcURL, width, height) {
 Tiếp theo, sử dụng hàm scaleImage để scale bức ảnh:
 
 ```js
-new NinePatch().scaleImage(srcImg, WIDTH, HEIGHT)
-  .then(result => setImage($('#normalImg'), result, WIDTH, HEIGHT))
-  .catch(error => console.log(error));
+new NinePatch()
+  .scaleImage(srcImg, WIDTH, HEIGHT)
+  .then((result) => setImage($("#normalImg"), result, WIDTH, HEIGHT))
+  .catch((error) => console.log(error));
 ```
 
 Trên đây là những kiến thức cơ bản về ảnh nine-path, cũng như cách xử lý ảnh nine-patch trong JavaScript. Tuy nhiên, còn rất nhiều thứ cần phải cải tiến. Vì vậy, mình rất mong nhận được sự góp ý từ bạn.

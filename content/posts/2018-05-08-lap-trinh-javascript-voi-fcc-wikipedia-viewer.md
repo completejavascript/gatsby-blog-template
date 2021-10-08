@@ -25,7 +25,7 @@ Tuy nhiên, trước khi bắt đầu, mình muốn **nhấn mạnh** rằng bà
 
 Do đó, nếu bạn mới bắt đầu học JavaScript thì có thể bạn sẽ không hiểu nhiều chỗ. Lúc này, mình có hai giải pháp dành cho bạn. Đó là:
 
-1. Bạn nên đọc trước series bài viết về [JavaScript cơ bản](/category/javascript/javascript-co-ban/) và nhớ thực hành thật kỹ, rồi quay lại bài viết này sau.
+1. Bạn nên đọc trước series bài viết về [JavaScript cơ bản](/category/javascript-co-ban) và nhớ thực hành thật kỹ, rồi quay lại bài viết này sau.
 2. Bạn có thể tiếp tục đọc bài viết này và đặt câu hỏi cho mình trong phần bình luận phía dưới về những phần chưa hiểu rõ.
 
 Nếu đọc đến đây, nghĩa là bạn đã có kiến thức về JavaScript rồi phải không! Vậy thì bắt đầu nhé!
@@ -127,7 +127,7 @@ let _title = $("header");
 
 Ngoài ra, mình sử dụng kí tự \_ đằng trước biến số, để quy định rằng đây là đại diện cho DOM chứ không phải biến số thông thường.
 
-Cái này là tự mình quy định thôi nhé, để tránh nhầm lẫn với jQuery. Nếu như sử dụng jQuery thì mình hay sử dụng kí tự $, ví dụ: *$input, $searchWrapper*,...
+Cái này là tự mình quy định thôi nhé, để tránh nhầm lẫn với jQuery. Nếu như sử dụng jQuery thì mình hay sử dụng kí tự $, ví dụ: *$input, $searchWrapper\*,...
 
 ### Hai sự kiện quan trọng với input[type="search"]
 
@@ -136,10 +136,10 @@ Trong project Wikipedia Viewer này mình sử dụng [input[type="search"]](htt
 Sự kiện **search**: xảy ra khi người dùng nhấn phím Enter để bắt đầu tìm kiếm
 
 ```js
-_input.addEventListener("search", event => {
+_input.addEventListener("search", (event) => {
   let _target = event.target;
   let searchText = _target.value;
-  if (searchText !== '') search(searchText);
+  if (searchText !== "") search(searchText);
   else resetViewResult();
 });
 ```
@@ -147,10 +147,10 @@ _input.addEventListener("search", event => {
 Sự kiện **input**: được gọi trong khi nội dung input thay đổi - nghĩa là chỉ cần bạn nhập vào 1 chữ cái hay xóa đi một chữ cái thôi thì sự kiện này cũng sẽ được gọi. Mình cần xử lý sự kiện này khi người dùng xóa hết sạch nội dung trong input. Khi đó, mình sẽ reset lại kết quả tìm kiếm trước đó, để trở về giao diện như ban đầu.
 
 ```js
-_input.addEventListener("input", event => {
+_input.addEventListener("input", (event) => {
   let _target = event.target;
   let searchText = _target.value;
-  if (searchText === '') resetViewResult();
+  if (searchText === "") resetViewResult();
 });
 ```
 
@@ -159,25 +159,26 @@ _input.addEventListener("input", event => {
 Trong project này mình không sử dụng thằng [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/). Thay vào đó, mình sử dụng [Fetch API](https://davidwalsh.name/fetch). Bởi vì, Fetch API được implement dưới dạng [Promises](https://davidwalsh.name/promises) nên sử dụng rất gọn.
 
 ```js
-let api = 'https://en.wikipedia.org/w/api.php?format=json&action=query&' +
-          'generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&' +
-          'pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=';
-let cors = 'https://cors-anywhere.herokuapp.com/';
+let api =
+  "https://en.wikipedia.org/w/api.php?format=json&action=query&" +
+  "generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&" +
+  "pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=";
+let cors = "https://cors-anywhere.herokuapp.com/";
 
 function search(text) {
   showLoading(true);
 
   fetch(cors + api + text)
-  .then(response => response.json())
-  .then(json => viewResult(json))
-  .catch(error => onSearchError());
+    .then((response) => response.json())
+    .then((json) => viewResult(json))
+    .catch((error) => onSearchError());
 }
 ```
 
 Trong đó:
 
 - _cors + api + text_ : chính là địa chỉ URL để request (kiểu mặc định là GET).
-- Khi có kết quả trả về thành công, mình sẽ xử lý tiếp *.then(response => response.json())* - tức là parse response thành [JSON](/tim-hieu-ve-json-trong-javascript/).
+- Khi có kết quả trả về thành công, mình sẽ xử lý tiếp _.then(response => response.json())_ - tức là parse response thành [JSON](/tim-hieu-ve-json-trong-javascript/).
 - May mắn thay, hàm _json()_ cũng trả về Promises nên mình có thể xử lý tiếp _.then(json => viewResult(json))_ - tức là hiển thị kết quả tìm kiếm. Hàm _viewResult_ là do mình tự định nghĩa.
 - Cuối cùng là xử lý khi có bất kì lỗi nào xảy ra với _.catch(error => onSearchError())_.
 
@@ -185,7 +186,7 @@ Rõ ràng, khi sử dụng Fetch API thì code trở nên rõ ràng và sáng s�
 
 ![fetch vs xmlhttprequest - wikipedia viewer](../images/fetch-vs-xmlhttprequest-wikipedia-viewer-completejavascript.com_.png)
 
-*Ảnh tham khảo: ANTONIO GUILLEM/SHUTTERSTOCK*
+_Ảnh tham khảo: ANTONIO GUILLEM/SHUTTERSTOCK_
 
 ### Sử dụng ES6 Template String để tạo HTML Template
 
@@ -197,16 +198,18 @@ Trong bài viết [Sử dụng ES6 Template String có gì hay?](/su-dung-es6-te
 function itemHTMLTemplate(title, description, pageid) {
   let linkTarget = `${wikiPage}${pageid}`;
 
-  return `<div class="result-item my-transition" target="${linkTarget}">\n` +
-            `<div class="content">\n` +
-              `<h2><a href="${linkTarget}" target="_blank">${title}</a></h2>\n` +
-              `<p>${description}</p>\n` +
-            `</div>\n` +
-          `</div>\n`;
+  return (
+    `<div class="result-item my-transition" target="${linkTarget}">\n` +
+    `<div class="content">\n` +
+    `<h2><a href="${linkTarget}" target="_blank">${title}</a></h2>\n` +
+    `<p>${description}</p>\n` +
+    `</div>\n` +
+    `</div>\n`
+  );
 }
 
 function htmlToElement(html) {
-  let template = document.createElement('template');
+  let template = document.createElement("template");
   html = html.trim(); // Never return a text node of whitespace as the result
   template.innerHTML = html;
   return template.content.firstChild;
@@ -264,7 +267,11 @@ https://codepen.io/completejavascript/pen/xjXwRr
   width: 100%;
   min-height: 100%;
   text-align: center;
-  background: linear-gradient(to bottom right, rgb(115, 237, 241), rgb(81, 81, 229));
+  background: linear-gradient(
+    to bottom right,
+    rgb(115, 237, 241),
+    rgb(81, 81, 229)
+  );
 }
 ```
 
@@ -300,5 +307,5 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-j
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

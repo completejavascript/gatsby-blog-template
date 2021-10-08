@@ -14,7 +14,7 @@ tags:
   - Template
 ---
 
-Đến hẹn lại lên, hôm nay mình sẽ chia sẻ với các bạn cách sử dụng Mustache Template với jQuery trong [lập trình JavaScript](/category/javascript/javascript-co-ban/). Việc sử dụng Mustache.js sẽ giúp bạn hạn chế việc xử lý logic trong JavaScript. Qua đó, giúp code bạn trở nên ngắn gọn và sáng sủa hơn.
+Đến hẹn lại lên, hôm nay mình sẽ chia sẻ với các bạn cách sử dụng Mustache Template với jQuery trong [lập trình JavaScript](/category/javascript-co-ban). Việc sử dụng Mustache.js sẽ giúp bạn hạn chế việc xử lý logic trong JavaScript. Qua đó, giúp code bạn trở nên ngắn gọn và sáng sủa hơn.
 
 ## Mustache Template trong HTML
 
@@ -52,7 +52,7 @@ Bạn có thể sử dụng Mustache.js mà không cần tới jQuery. Tuy nhiê
 Để sử dụng template, trước tiên, bạn phải trích xuất nó ra từ file HTML:
 
 ```js
-let tmpl = $('#my-template').html();
+let tmpl = $("#my-template").html();
 ```
 
 Đến đây bạn đã có template rồi, tiếp theo sử dụng phương thức **parse** của Mustache để parse template trên. Việc sử dụng phương thức này là không bắt buộc, nhưng nó sẽ giúp tăng tốc độ **render** sau này.
@@ -65,9 +65,9 @@ Tương tự như [bài viết trước](/chuyen-html-template-sang-dom-node/), 
 
 ```js
 let data = [
-  {name: "John", comment: "That is great"},
-  {name: "Alex", comment: "It's helpful"},
-  {name: "David", comment: "Thanks a lot"}
+  { name: "John", comment: "That is great" },
+  { name: "Alex", comment: "It's helpful" },
+  { name: "David", comment: "Thanks a lot" },
 ];
 ```
 

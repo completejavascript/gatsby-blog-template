@@ -13,7 +13,7 @@ tags:
   - HTML
 ---
 
-Xin chào bạn! Gần đây, mình có làm một số website static (chỉ gồm HTML5, CSS3 và [JavaScript](/category/javascript/javascript-co-ban/)). Trong đó, website có một phần là contact form (liên hệ). Sau một hồi tìm kiếm google, mình đã tìm ra một phương pháp rất hay giúp bạn gửi email bằng HTML bằng cách sử dụng [Formspree.io](https://formspree.io/). Vậy cách này có những ưu điểm gì?
+Xin chào bạn! Gần đây, mình có làm một số website static (chỉ gồm HTML5, CSS3 và [JavaScript](/category/javascript-co-ban)). Trong đó, website có một phần là contact form (liên hệ). Sau một hồi tìm kiếm google, mình đã tìm ra một phương pháp rất hay giúp bạn gửi email bằng HTML bằng cách sử dụng [Formspree.io](https://formspree.io/). Vậy cách này có những ưu điểm gì?
 
 ## Ưu điểm khi gửi email bằng HTML và Formspree.io
 
@@ -35,7 +35,7 @@ Bạn thay đổi giá trị của thuộc tính **action** trong form thành d�
 
 ```html
 <form method="POST" action="https://formspree.io/lampv606.test@gmail.com">
-  <input type="email" name="email" placeholder="Your email">
+  <input type="email" name="email" placeholder="Your email" />
   <textarea name="abc" placeholder="Your message"></textarea>
   <button type="submit">Send</button>
 </form>
@@ -114,7 +114,11 @@ Dùng để thêm địa chỉ email vào trường **cc**.
 Nếu bạn muốn mail này cc cho nhiều người thì có thể thêm vào nhiều email, phân cách nhau bởi dấu phẩy.
 
 ```html
-<input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" />
+<input
+  type="hidden"
+  name="_cc"
+  value="another@email.com,yetanother@email.com"
+/>
 ```
 
 ### \_format

@@ -12,7 +12,7 @@ tags:
   - React
 ---
 
-Xin chào bạn đến với bài viết **Lầm tưởng tai hại về React**. Nếu bạn theo dõi blog này từ lâu thì sẽ thấy rằng mình chủ yếu viết về [JavaScript thuần](/category/javascript/javascript-co-ban/). Ngoài ra, thư viện JavaScript mình dùng chủ yếu cũng chỉ là [jQuery](/tag/jquery/). Tuy nhiên, sau một thời gian suy nghĩ, mình quyết định sẽ học sâu một [framework hoặc thư viện JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) (về front-end) để khỏi bị lạc hậu so với thế giới.
+Xin chào bạn đến với bài viết **Lầm tưởng tai hại về React**. Nếu bạn theo dõi blog này từ lâu thì sẽ thấy rằng mình chủ yếu viết về [JavaScript thuần](/category/javascript-co-ban). Ngoài ra, thư viện JavaScript mình dùng chủ yếu cũng chỉ là [jQuery](/tag/jquery/). Tuy nhiên, sau một thời gian suy nghĩ, mình quyết định sẽ học sâu một [framework hoặc thư viện JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) (về front-end) để khỏi bị lạc hậu so với thế giới.
 
 ## Đôi điều suy nghĩ trước khi vào nội dung chính
 
@@ -144,5 +144,5 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/deploy-un
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -85,7 +85,7 @@ Chỉ đơn giản là nó lấy data từ **this.props** và **this.state** đ�
 
 #### Phương thức componentDidMount()
 
-Phương thức *componentDidMount()* được gọi **một lần duy nhất** ngay sau khi Component được render xong. Và nếu để so sánh với [JavaScript thuần](/category/javascript/javascript-co-ban/) thì mình thấy phương thức này khá giống với việc bạn đăng ký sự kiện [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
+Phương thức *componentDidMount()* được gọi **một lần duy nhất** ngay sau khi Component được render xong. Và nếu để so sánh với [JavaScript thuần](/category/javascript-co-ban) thì mình thấy phương thức này khá giống với việc bạn đăng ký sự kiện [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
 
 Chính vì tính chỉ được gọi **một lần duy nhất** nên bên trong phương thức này, mình có thể:
 
@@ -132,8 +132,8 @@ Trong ví dụ phía trên, giả sử bạn chủ động gọi hàm _this.setS
 
 ```jsx
 this.setState({
-  count: 0
-})
+  count: 0,
+});
 ```
 
 Lúc này, phương thức _render()_ mặc định sẽ bị gọi lại, nhưng như vậy chẳng phải là vô nghĩa hay sao?
@@ -213,34 +213,32 @@ _index.html_
 ```html
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Understand React Component Lifecycle</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link href="../main.css" rel="stylesheet" />
+    <style>
+      main {
+        width: 100%;
+        max-width: 640px;
+        margin: auto;
+        padding: 15px;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Understand React Component Lifecycle</title>
-  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <link href="../main.css" rel="stylesheet">
-  <style>
-    main {
-      width: 100%;
-      max-width: 640px;
-      margin: auto;
-      padding: 15px;
-    }
-  </style>
-</head>
-
-<body>
-  <main>
-    <h3>Understand React Component Lifecycle</h3>
-    <div id="container"></div>
-  </main>
-  <script src="main.js" type="text/babel"></script>
-</body>
-
+  <body>
+    <main>
+      <h3>Understand React Component Lifecycle</h3>
+      <div id="container"></div>
+    </main>
+    <script src="main.js" type="text/babel"></script>
+  </body>
 </html>
 ```
 
@@ -253,21 +251,21 @@ class Counter extends React.Component {
    */
   constructor(props) {
     /*
-    * Gọi hàm super(props) để tham chiếu đến hàm khởi tạo của React.Component,
-    * để đảm bảo this.props không bị undefined
-    */
+     * Gọi hàm super(props) để tham chiếu đến hàm khởi tạo của React.Component,
+     * để đảm bảo this.props không bị undefined
+     */
     super(props);
 
     // Khai báo state là count với giá trị ban đầu là 0
     this.state = {
-      count: 0
+      count: 0,
     };
 
     /*
-      * Bind hàm updateCounter với this,
-      * hàm này được sử dụng trong 1 interval
-      * để tăng biến đếm state - count lên 1 đơn vị sau mỗi 1 giây
-      */
+     * Bind hàm updateCounter với this,
+     * hàm này được sử dụng trong 1 interval
+     * để tăng biến đếm state - count lên 1 đơn vị sau mỗi 1 giây
+     */
     this.updateCounter = this.updateCounter.bind(this);
     console.log("constructor");
   }
@@ -300,7 +298,7 @@ class Counter extends React.Component {
    */
   updateCounter() {
     this.setState({
-      count: this.state.count + 1
+      count: this.state.count + 1,
     });
   }
 
@@ -313,8 +311,9 @@ class Counter extends React.Component {
    * để test phương thức componentWillUnmount
    */
   componentDidUpdate(prevProps, prevState) {
-    console
-      .log(`componentDidUpdate: count from ${prevState.count} to ${this.state.count}`);
+    console.log(
+      `componentDidUpdate: count from ${prevState.count} to ${this.state.count}`
+    );
     if (this.state.count === 5) {
       ReactDOM.unmountComponentAtNode(document.querySelector("#container"));
     }
@@ -336,11 +335,7 @@ class Counter extends React.Component {
   render() {
     console.log(`render: count = ${this.state.count}`);
 
-    return (
-      <div style={{ fontSize: `2rem` }}>
-        {this.state.count}
-      </div>
-    );
+    return <div style={{ fontSize: `2rem` }}>{this.state.count}</div>;
   }
 }
 
