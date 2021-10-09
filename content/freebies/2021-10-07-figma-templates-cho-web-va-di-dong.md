@@ -1,7 +1,7 @@
 ---
 date: "2021-10-09T15:30:00Z"
 template: "freebie"
-cover: "../images/10-figma-templates-website-mobile-completejavascript.com_.png"
+cover: "../images/figma-templates-website-mobile-completejavascript.com_.png"
 keywords: "figma templates cho web"
 description: "Đây là 10 Figma templates cho web và di động hoàn toàn miễn phí. Bạn có thể tùy ý sao chép, chỉnh sửa cho các dự án cá nhân hoặc thương mại."
 slug: figma-templates-cho-web-va-di-dong
