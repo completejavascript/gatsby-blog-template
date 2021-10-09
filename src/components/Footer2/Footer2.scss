@@ -1,8 +1,10 @@
 .footer-container-2 {
   a {
     color: #212121;
-    &:hover,
     &:visited {
+      color: #212121;
+    }
+    &:hover {
       color: #3f3f3f;
     }
   }

@@ -6,6 +6,7 @@ import WidgetLinks from "./WidgetLinks";
 import WidgetSearch from "./WidgetSearch";
 import config from "../../../data/SiteConfig";
 import AdSense from "react-adsense";
+import "./Sidebar.scss";
 
 const Sidebar = ({
   tagList,

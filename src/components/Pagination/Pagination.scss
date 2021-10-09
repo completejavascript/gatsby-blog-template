@@ -16,16 +16,17 @@ $border-style: 1px solid #dcdcdc;
     border-right: $border-style;
     border-top: $border-style;
     border-bottom: $border-style;
+    color: #222;
     &:hover {
       background-color: #f6f6f6;
       cursor: pointer;
     }
-    &:first-child{
+    &:first-child {
       border-left: $border-style;
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
     }
-    &:last-child{
+    &:last-child {
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
     }

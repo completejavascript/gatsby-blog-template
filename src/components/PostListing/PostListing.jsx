@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Article from "./Article";
+import "./PostListing.scss";
 
 class PostListing extends Component {
   state = {

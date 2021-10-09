@@ -1,0 +1,11 @@
+.post-listing-container {
+  a {
+    color: #212121;
+    &:visited {
+      color: #212121;
+    }
+    &:hover {
+      color: #3f3f3f;
+    }
+  }
+}
