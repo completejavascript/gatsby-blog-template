@@ -8,4 +8,11 @@
       color: #3f3f3f;
     }
   }
+  .btn-search {
+    background-color: #595959;
+    &:hover {
+      background-color: #3f3f3f;
+      border-color: #3f3f3f;
+    }
+  }
 }

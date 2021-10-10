@@ -24,7 +24,7 @@ class WidgetSearch extends Component {
                   />
                 </div>
                 <div className="padding-none padding-left-half col-xs-2">
-                  <button type="submit" className="btn btn-primary">
+                  <button type="submit" className="btn-search">
                     <FontAwesomeIcon
                       icon={["fas", "search"]}
                       style={{ color: "#FFFFFF" }}
