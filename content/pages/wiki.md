@@ -81,6 +81,12 @@ Dưới đây, mình liệt kê và phân loại các bài viết trên trang we
 - [Cách kiểm tra empty object trong JavaScript](/kiem-tra-empty-object-trong-javascript)
 - [Làm sao để bắt buộc truyền tham số vào hàm?](/lam-sao-bat-buoc-truyen-tham-so-vao-ham)
 
+> **[Top Freebies - tổng hợp nguồn tài nguyên miễn phí cho DEV](/freebie)**
+
+- [10 hosting miễn phí cho web tĩnh](/hosting-mien-phi-cho-web-tinh)
+- [10 Figma templates cho web và di động miễn phí](/figma-templates-cho-web-va-di-dong)
+- [10 bộ icon miễn phí dành cho dân IT](/icon-mien-phi-dan-it)
+
 > **[Lập trình cơ bản](/category/lap-trinh-co-ban)**
 
 - [Những ngôn ngữ lập trình nên học năm 2017](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017/)
