@@ -10,11 +10,7 @@ const PostCategories = ({
   iconColor = "#444",
 }) => {
   const categoryLink = (category) => (
-    <AutoLink
-      className="text-uppercase"
-      to={getCategoryPath(category)}
-      label={category}
-    >
+    <AutoLink to={getCategoryPath(category)} label={category}>
       {category}
     </AutoLink>
   );
@@ -23,25 +19,23 @@ const PostCategories = ({
     <>
       {categories && (
         <div className={`post-categories-container ${extraClass}`}>
-          <b>
-            {config.postInCategories && <span>{config.postInCategories} </span>}
+          {config.postInCategories && <span>{config.postInCategories} </span>}
 
-            {!config.postInCategories && (
-              <>
-                <FontAwesomeIcon
-                  icon={["fas", "folder-open"]}
-                  style={{ color: iconColor, width: "20px" }}
-                />{" "}
-              </>
-            )}
+          {!config.postInCategories && (
+            <>
+              <FontAwesomeIcon
+                icon={["fas", "folder-open"]}
+                style={{ color: iconColor, width: "20px" }}
+              />{" "}
+            </>
+          )}
 
-            {categories.map((category, index) => (
-              <span key={category}>
-                {categoryLink(category)}
-                {index < categories.length - 1 && <>, </>}
-              </span>
-            ))}
-          </b>
+          {categories.map((category, index) => (
+            <span key={category}>
+              {categoryLink(category)}
+              {index < categories.length - 1 && <>, </>}
+            </span>
+          ))}
         </div>
       )}
     </>

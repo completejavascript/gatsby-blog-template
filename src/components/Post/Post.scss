@@ -5,6 +5,20 @@
       padding-bottom: 0.75rem;
     }
   }
+  .post-categories-container,
+  .post-tags-container {
+    color: #595959;
+    a {
+      font-weight: 500;
+      color: #595959;
+      &:visited {
+        color: #595959;
+      }
+      &:hover {
+        color: #3f3f3f;
+      }
+    }
+  }
 }
 
 .utterances {

@@ -69,18 +69,16 @@ const Post = ({ postNode, config, slug }) => {
       {(post.categories?.length > 0 || post.tags?.length > 0) && (
         <>
           <div className="padding-top padding-bottom">
-            <small>
-              <PostCategories
-                categories={post.categories}
-                extraClass="block"
-                iconColor="#555"
-              />
-              <PostTags
-                tags={post.tags}
-                extraClass="block padding-top-half"
-                iconColor="#555"
-              />
-            </small>
+            <PostCategories
+              categories={post.categories}
+              extraClass="block"
+              iconColor="#595959"
+            />
+            <PostTags
+              tags={post.tags}
+              extraClass="block padding-top-half"
+              iconColor="#595959"
+            />
           </div>
           <PostDivider />
         </>
