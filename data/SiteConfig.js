@@ -19,10 +19,10 @@ const config = {
   postsPerPage: 12,
   // Use for post
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
-  dateFormat: "MMMM Do, YYYY", // Date format for display.
+  dateFormat: "DD/MM/YYYY", // Date format for display.
   postTagged: "",
   postInCategories: "",
-  postOnDate: "Posted on",
+  postOnDate: "Cập nhật ngày",
   // Use for comment
   githubCommentRepo: "completejavascript/completejavascript-comments",
   githubCommentTheme: "github-light", // github-dark

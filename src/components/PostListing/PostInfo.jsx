@@ -11,7 +11,7 @@ const PostInfo = ({ post, extraClass = "" }) => (
     </AutoLink>
     <div className="margin-bottom-half">{post.excerpt}</div>
     <small>
-      <PostDate date={post.date} />
+      <PostDate date={post.update || post.date} />
     </small>
   </div>
 );

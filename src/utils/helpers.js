@@ -15,6 +15,7 @@ export const getPostList = (postEdges) =>
     categories: postEdge.node.frontmatter.categories,
     cover: postEdge.node.frontmatter.cover,
     title: postEdge.node.frontmatter.title,
+    update: postEdge.node.frontmatter.update,
     date: postEdge.node.fields.date,
     slug: postEdge.node.fields.slug,
     excerpt: postEdge.node.excerpt,

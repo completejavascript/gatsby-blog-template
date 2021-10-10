@@ -58,6 +58,7 @@ export const pageQuery = graphql`
             gatsbyImageData(width: 660, quality: 100, layout: FIXED)
           }
         }
+        update
       }
       fields {
         slug

@@ -43,7 +43,7 @@ const Post = ({ postNode, config, slug }) => {
   return (
     <div className="post-container">
       <div className="meta-share-wrapper padding-top padding-bottom">
-        <PostDate extraClass="meta-wrapper" date={post.date} />
+        <PostDate extraClass="meta-wrapper" date={post.update || post.date} />
         <PostShare
           extraClass="share-wrapper"
           postPath={slug}

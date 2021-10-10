@@ -1,5 +1,6 @@
 ---
 date: "2017-06-03T09:49:44Z"
+update: "2021-10-10T10:46:00Z"
 template: "post"
 cover: "../images/javascript-foreach-la-cai-quai-gi-completejavascript.com_.png"
 keywords: "forEach"
@@ -23,7 +24,7 @@ Thông thường, chúng ta sẽ giải bài toán này như sau:
 ```js
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum = 0;
-for(let i = 0; i < numbers.length; i++) {
+for (let i = 0; i < numbers.length; i++) {
   sum += numbers[i];
 }
 console.log(sum);
@@ -41,9 +42,8 @@ Lúc này, **forEach** JavaScript xuất hiện giúp bạn giải quyết vấ
 Một cách đơn giản để triển khai hàm forEach như sau:
 
 ```js
-function forEach(array, action){
-  for(let i = 0; i < array.length; i++)
-    action(array[i]);
+function forEach(array, action) {
+  for (let i = 0; i < array.length; i++) action(array[i]);
 }
 ```
 
@@ -54,8 +54,8 @@ Hàm *forEach* trên nhận đầu vào là một mảng _array_ và một hàm
 ```js
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum = 0;
-forEach(numbers, function(element){
-    sum += element;
+forEach(numbers, function (element) {
+  sum += element;
 });
 console.log(sum);
 // => 55
@@ -92,18 +92,18 @@ arr.forEach(function callback(currentValue, index, array) {
 ### Ví dụ in ra nội dung của mảng
 
 ```js
-function printContentArray(array){
-  array.forEach(function print(element){
+function printContentArray(array) {
+  array.forEach(function print(element) {
     console.log(element);
   });
 }
 
 printContentArray([1, 3, 5]);
 /*
-* 1
-* 3
-* 5
-*/
+ * 1
+ * 3
+ * 5
+ */
 ```
 
 ### Ví dụ sử dụng _thisArg_
@@ -113,8 +113,8 @@ function Counter() {
   this.sum = 0;
   this.count = 0;
 }
-Counter.prototype.add = function(array) {
-  array.forEach(function(entry) {
+Counter.prototype.add = function (array) {
+  array.forEach(function (entry) {
     this.sum += entry;
     ++this.count;
   }, this);
@@ -124,7 +124,7 @@ Counter.prototype.add = function(array) {
 const obj = new Counter();
 obj.add([2, 5, 9]);
 console.log(obj.count); // => 3
-console.log(obj.sum);   // => 16
+console.log(obj.sum); // => 16
 ```
 
 ## Ưu, nhược điểm của việc sử dụng forEach
@@ -154,23 +154,23 @@ Ngoài forEach, JavaScript còn cung cấp một số phương thức khác, tư
 Trả về một mảng đối tượng mới, chứa **key/value** cho mỗi phần tử trong array.
 
 ```js
-a.entries()
+a.entries();
 ```
 
 Để duyệt mảng đối tượng mới này, ta sử dụng vòng lặp **for...of**
 
 ```js
-const a = ['a', 'b', 'c'];
+const a = ["a", "b", "c"];
 const iterator = a.entries();
 
 for (let e of iterator) {
   console.log(e);
 }
 /*
-* [0, 'a']
-* [1, 'b']
-* [2, 'c']
-*/
+ * [0, 'a']
+ * [1, 'b']
+ * [2, 'c']
+ */
 ```
 
 ### [array.prototype.every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
@@ -229,14 +229,14 @@ Ví dụ sau tìm ra một [object](/javascript-object-last-but-not-least/) vớ
 
 ```js
 const inventory = [
-    {name: 'apples', from: 'usa'},
-    {name: 'bananas', from: 'vietnam'},
-    {name: 'cherries', from: 'usa'},
-    {name: 'cherries', from: 'china'}
+  { name: "apples", from: "usa" },
+  { name: "bananas", from: "vietnam" },
+  { name: "cherries", from: "usa" },
+  { name: "cherries", from: "china" },
 ];
 
 function findCherries(fruit) {
-    return fruit.name === 'cherries';
+  return fruit.name === "cherries";
 }
 
 console.log(inventory.find(findCherries));
@@ -257,14 +257,14 @@ Ví dụ sau tìm ra chỉ số object với tên của nó thoả mãn điều 
 
 ```js
 const inventory = [
-    {name: 'apples', from: 'usa'},
-    {name: 'bananas', from: 'vietnam'},
-    {name: 'cherries', from: 'usa'},
-    {name: 'cherries', from: 'china'}
+  { name: "apples", from: "usa" },
+  { name: "bananas", from: "vietnam" },
+  { name: "cherries", from: "usa" },
+  { name: "cherries", from: "china" },
 ];
 
 function findCherries(fruit) {
-    return fruit.name === 'cherries';
+  return fruit.name === "cherries";
 }
 
 console.log(inventory.findIndex(findCherries));
@@ -308,9 +308,9 @@ Ví dụ:
 ```js
 var arrays = [[1, 2, 3], [4, 5], [6]];
 /*
-* Your code here.
-* // => [1, 2, 3, 4, 5, 6]
-*/
+ * Your code here.
+ * // => [1, 2, 3, 4, 5, 6]
+ */
 ```
 
 ### 2. Every and some
