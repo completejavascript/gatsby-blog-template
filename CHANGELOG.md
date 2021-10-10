@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/completejavascript/completejavascript.com/compare/v1.3.0...v1.4.0) (2021-10-10)
+
+
+### Features
+
+* add header for blog, freebie template ([bffa27f](https://github.com/completejavascript/completejavascript.com/commit/bffa27f169d4e5d6bd397a9e21081910ef984a58))
+* add latest freebies to home page ([4aafac6](https://github.com/completejavascript/completejavascript.com/commit/4aafac6099263d7c0e18144a61a605ceaacd65b5))
+* add more item to navigation ([6bc2c3f](https://github.com/completejavascript/completejavascript.com/commit/6bc2c3f5ec0fbfe67c154d410de46c73cd0b52b2))
+* add post - hosting mien phi ([58f38c8](https://github.com/completejavascript/completejavascript.com/commit/58f38c8306f05b336462ca3702ab1498ad981dc5))
+* create node, page for freebie template ([0684558](https://github.com/completejavascript/completejavascript.com/commit/06845585fd8618e154e6e52c47fdf1dd8dc03ddf))
+* customize sidebar, navigation to support freebie ([f6d75a8](https://github.com/completejavascript/completejavascript.com/commit/f6d75a853de30c3ccfa1ec6af1acb9a0fa08670f))
+* implement updated on ([f664964](https://github.com/completejavascript/completejavascript.com/commit/f664964730ab082a9f812193576278fe86d426ca))
+* update footer site info ([e04b3bf](https://github.com/completejavascript/completejavascript.com/commit/e04b3bfdbf77c7cb83670a94cac07bcbed6f9f7e))
+* update more footer links ([7a16cba](https://github.com/completejavascript/completejavascript.com/commit/7a16cba63ae834bc09b4f5546b66aafc05b60a41))
+
+
+### Bug Fixes
+
+* dead urls ([f3c1916](https://github.com/completejavascript/completejavascript.com/commit/f3c1916805e90e22876ec5eb8849bfeb527ef81e))
+* post hosting-mien-phi descriptions ([5cf597b](https://github.com/completejavascript/completejavascript.com/commit/5cf597b65199f229cb062505d47682b6d4de062b))
+* rename file posts ([67ee8a2](https://github.com/completejavascript/completejavascript.com/commit/67ee8a22d9549f38737749f4ca23980ddf25e956))
+* update image for figma templates post ([5d39a15](https://github.com/completejavascript/completejavascript.com/commit/5d39a15c9c26fa88ccf48a7f18b5ab9ea3aa8d91))
+
 ## [1.3.0](https://github.com/completejavascript/completejavascript.com/compare/v1.2.0...v1.3.0) (2021-10-05)
 
 
