@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
+import Header from "../components/Header/Header";
 import MainContainer from "../components/MainContainer/MainContainer";
 import Sidebar from "../components/Sidebar/Sidebar";
 import PostListing from "../components/PostListing/PostListing";
@@ -53,6 +54,7 @@ const FreeBieTemplate = ({ data, pageContext }) => {
     <Layout>
       <div className="blog-container">
         <Helmet title={`${config.freebieHeader} - ${config.siteTitle}`} />
+        <Header title={config.freebieHeader} />
         <MainContainer content={content} sidebar={sidebar} />
       </div>
     </Layout>
