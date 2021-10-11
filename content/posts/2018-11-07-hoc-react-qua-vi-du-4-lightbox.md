@@ -60,7 +60,7 @@ learn-react-by-example/
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về **Lightbox** nên mình tạo thêm thư mục **lightbox** bên trong với 2 file **lightbox.js** và **lightbox.css** để định nghĩa cho component **Lightbox** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
+- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao) mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Lightbox** ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
@@ -81,10 +81,10 @@ Và ý tưởng chung để xây dựng Lightbox Component là:
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './lightbox.css';
-import SlideshowGallery from '../slideshow-gallery/slideshow-gallery';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./lightbox.css";
+import SlideshowGallery from "../slideshow-gallery/slideshow-gallery";
 
 export default class LightBox extends React.Component {
   constructor(props) {
@@ -94,10 +94,10 @@ export default class LightBox extends React.Component {
     this.slideshowGallery = React.createRef();
 
     /*
-    * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
-    * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
-    * Mình sẽ điều chỉnh các ảnh sao cho về cùng 1 kích thước.
-    */
+     * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
+     * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
+     * Mình sẽ điều chỉnh các ảnh sao cho về cùng 1 kích thước.
+     */
     const ratioWHArray = this.props.ratio.split(":");
     this.ratioWH = ratioWHArray[0] / ratioWHArray[1];
 
@@ -114,7 +114,7 @@ export default class LightBox extends React.Component {
    * Ngoài ra, khi hiển thị Slidshow Gallery lên,
    * mình phải gọi phương thức setSlideIndex()
    * để xác định ảnh nào đang được active
-  */
+   */
   showModal(index) {
     this.slideshowGallery.current.setSlideIndex(index);
     this.modalElm.style.visibility = "visible";
@@ -125,23 +125,23 @@ export default class LightBox extends React.Component {
    * cho thuộc tính visibility của style,
    * của phần tử đóng vai trò là Modal Image là "hidden",
    * để ẩn nó đi
-  */
+   */
   hideModal() {
     this.modalElm.style.visibility = "hidden";
   }
 
   /*
-  * Cập nhật chiều cao cho mỗi ảnh khi thay đổi kích thước màn hình
-  * Trong phần CSS, mình để mỗi ảnh có width = 100%,
-  * Nên dù kéo to hay thu nhỏ thì width vẫn bằng 100% kích thước parent.
-  * Nhưng chiều cao là giá trị tuyệt đối nên phải tính lại,
-  * dựa vào width và tỉ lệ this.ratioWH = width / height
-  *
-  * Ngoài ra, số lượng ảnh ban đầu là this.props.input.length
-  * chứ không phải 1 ảnh nên mình phải chia cho this.props.input.length
-  */
+   * Cập nhật chiều cao cho mỗi ảnh khi thay đổi kích thước màn hình
+   * Trong phần CSS, mình để mỗi ảnh có width = 100%,
+   * Nên dù kéo to hay thu nhỏ thì width vẫn bằng 100% kích thước parent.
+   * Nhưng chiều cao là giá trị tuyệt đối nên phải tính lại,
+   * dựa vào width và tỉ lệ this.ratioWH = width / height
+   *
+   * Ngoài ra, số lượng ảnh ban đầu là this.props.input.length
+   * chứ không phải 1 ảnh nên mình phải chia cho this.props.input.length
+   */
   updateDimensions() {
-    const height = 
+    const height =
       this.containerElm.offsetWidth / this.props.input.length / this.ratioWH;
     this.containerElm.style.height = `${height}px`;
   }
@@ -159,7 +159,7 @@ export default class LightBox extends React.Component {
    * Và cuối cùng là đăng ký sự kiên resize màn hình, với hàm xử lý
    * là updateDimensions(). Tức là mỗi khi thay đổi kích thước màn hình
    * thì sẽ tính lại chiều cao.
-  */
+   */
   componentDidMount() {
     this.rootElm = ReactDOM.findDOMNode(this);
     this.containerElm = this.rootElm.querySelector(".container");
@@ -172,7 +172,7 @@ export default class LightBox extends React.Component {
   /**
    * Hàm này được gọi khi Component bị xóa khỏi HTML.
    * Lúc này mình phải hủy bỏ sự kiện đã đăng ký lúc trước.
-  */
+   */
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions);
   }
@@ -182,36 +182,36 @@ export default class LightBox extends React.Component {
    * là một ảnh như Modal Image.
    *
    * Mà trong đó, mình truyền vào Slideshow Gallery Component
-  */
+   */
   render() {
     return (
       <div className="lp-lightbox">
         <div className="container">
-          {
-            this.props.input.map((image, index) => {
-              return (
-                <div
-                  key={index}
-                  className="image-wrapper"
-                  style={{
-                    width: `${1 / this.props.input.length * 100}%`,
-                    height: `100%`
-                  }}
-                >
-                  <img
-                    className="image"
-                    src={image.src}
-                    alt={image.caption}
-                    onClick={() => this.showModal(index)}
-                  />
-                </div>
-              )
-            })
-          }
+          {this.props.input.map((image, index) => {
+            return (
+              <div
+                key={index}
+                className="image-wrapper"
+                style={{
+                  width: `${(1 / this.props.input.length) * 100}%`,
+                  height: `100%`,
+                }}
+              >
+                <img
+                  className="image"
+                  src={image.src}
+                  alt={image.caption}
+                  onClick={() => this.showModal(index)}
+                />
+              </div>
+            );
+          })}
         </div>
 
         <div className="modal">
-          <span className="close" onClick={this.hideModal}>×</span>
+          <span className="close" onClick={this.hideModal}>
+            ×
+          </span>
           <div className="modal-content">
             <SlideshowGallery
               ref={this.slideshowGallery}
@@ -222,7 +222,7 @@ export default class LightBox extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 ```
@@ -245,18 +245,18 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   width: 100%;
 }
 
-.lp-lightbox>.container {
+.lp-lightbox > .container {
   width: 100%;
   display: flex;
   display: -webkit-flex;
 }
 
-.lp-lightbox>.container>.image-wrapper {
+.lp-lightbox > .container > .image-wrapper {
   flex: 1;
   padding: 0.35rem;
 }
 
-.lp-lightbox>.container>.image-wrapper>.image {
+.lp-lightbox > .container > .image-wrapper > .image {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -267,12 +267,12 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: opacity 0.6s ease;
 }
 
-.lp-lightbox>.container>.image-wrapper>.image:hover {
+.lp-lightbox > .container > .image-wrapper > .image:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-.lp-lightbox>.modal {
+.lp-lightbox > .modal {
   visibility: hidden;
   position: fixed;
   z-index: 1;
@@ -286,7 +286,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.lp-lightbox>.modal>.close {
+.lp-lightbox > .modal > .close {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -299,21 +299,21 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: color 0.3s;
 }
 
-.lp-lightbox>.modal>.close:hover,
-.lp-lightbox>.modal>.close:focus {
+.lp-lightbox > .modal > .close:hover,
+.lp-lightbox > .modal > .close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
 
-.lp-lightbox>.modal>.modal-content {
+.lp-lightbox > .modal > .modal-content {
   margin: auto;
   width: 80%;
   max-width: 600px;
 }
 
 @media only screen and (max-width: 600px) {
-  .lp-lightbox>.modal>.modal-content {
+  .lp-lightbox > .modal > .modal-content {
     width: 100%;
   }
 }
@@ -346,13 +346,13 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 **./src/App.js**
 
 ```jsx
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import LightBox from './components/lightbox/lightbox';
-import img8 from './images/08.jpg';
-import img9 from './images/09.jpg';
-import img10 from './images/10.jpg';
+import LightBox from "./components/lightbox/lightbox";
+import img8 from "./images/08.jpg";
+import img9 from "./images/09.jpg";
+import img10 from "./images/10.jpg";
 
 const collection = [
   { src: img8, caption: "Caption eight" },
@@ -367,14 +367,11 @@ export default class App extends React.Component {
         <h2>LightBox</h2>
         <p>Click on each image below to show the Slideshow Gallery.</p>
 
-        <LightBox
-          input={collection}
-          ratio={`3:2`}
-        />
+        <LightBox input={collection} ratio={`3:2`} />
 
         <div>
-          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-          Visit me at <a href="/">completejavascript.com</a>.
+          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me
+          at <a href="/">completejavascript.com</a>.
         </div>
       </div>
     );
@@ -408,5 +405,5 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

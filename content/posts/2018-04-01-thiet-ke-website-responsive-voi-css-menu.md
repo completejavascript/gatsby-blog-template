@@ -62,20 +62,20 @@ Sau đây sẽ là các bước thực hiện thiết kế website responsive v�
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Responsive website</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel="stylesheet" href="responsive.css"/>
-  <script src="responsive.js"></script>
-</head>
-<body>
-  <div class="topnav" id="myTopnav">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
-  </div>
-</body>
+  <head>
+    <title>Responsive website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script src="responsive.js"></script>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+    </div>
+  </body>
 </html>
 ```
 
@@ -92,30 +92,30 @@ Hiện tại, mình chưa thiết kế file **responsive.js** và **responsive.c
 ```css
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
-    overflow: hidden;
+  background-color: #333;
+  overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-    display: none;
+  display: none;
 }
 
 /* 
@@ -124,7 +124,9 @@ Hiện tại, mình chưa thiết kế file **responsive.js** và **responsive.c
 * Show the link that contains should open and close the topnav (.icon) 
 */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -137,7 +139,9 @@ Hiện tại, mình chưa thiết kế file **responsive.js** và **responsive.c
 * look good on small screens (display the links vertically instead of horizontally) 
 */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -157,8 +161,8 @@ Giải thích chi tiết từng đoạn code:
 
 ```css
 .topnav {
-    background-color: #333;
-    overflow: hidden;
+  background-color: #333;
+  overflow: hidden;
 }
 ```
 
@@ -181,7 +185,7 @@ Giải thích chi tiết từng đoạn code:
 ```
 
 - **float: left**: để dồn các mục về phía tay trái. Bạn cũng có thể dùng **float: right** để dồn menu về phía tay phải.
-* **display: block**: cấu hình các mục của menu là một block chứ không phải chỉ mỗi dòng chữ (link).
+- **display: block**: cấu hình các mục của menu là một block chứ không phải chỉ mỗi dòng chữ (link).
 - **color**, **text-align**, **padding**, **text-decoration**, **font-size**: những phần này đơn giản là để trang trí cho menu.
 
 #### Tạo hiệu ứng khi di chuyển chuột đến các mục của menu
@@ -210,7 +214,9 @@ Trong đó, **display: none**: để ẩn **class="icon"**.
 
 ```css
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -228,7 +234,9 @@ Trong đó, **display: none**: để ẩn **class="icon"**.
 
 ```css
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -272,9 +280,9 @@ Lúc này, nếu bạn nhấn vào icon phía bên phải thanh menu thì vẫn 
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
-      x.className += " responsive";
+    x.className += " responsive";
   } else {
-      x.className = "topnav";
+    x.className = "topnav";
   }
 }
 ```
@@ -300,6 +308,8 @@ Kết quả khi nhấn vào icon:
 ## Lời kết
 
 Trên đây là hướng dẫn thiết kế website responsive. Hy vọng bài viết này có thể giúp ích cho bạn.
+
+Ngoài ra, bạn có thể thực hành thêm với các [mẫu website có sẵn](/figma-templates-cho-web-va-di-dong) để thành thạo hơn trong việc chuyển hóa một bản thiết kế thành code hoàn chỉnh.
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/ma-mau-logo-cac-thuong-hieu-noi-tieng/), thân ái!
 

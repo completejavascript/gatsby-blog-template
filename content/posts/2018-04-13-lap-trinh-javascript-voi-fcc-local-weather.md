@@ -45,7 +45,7 @@ Sau khi đã có tọa độ của người dùng, mình sử dụng [Dark Sky A
 let secretKey = "yourDarkSkyAPIKey";
 let requestURL = `https://api.darksky.net/forecast/${secretKey}/${lat},${lon}`;
 
-$.getJSON(requestURL, info => {
+$.getJSON(requestURL, (info) => {
   // Cập nhật thông tin thời tiết dựa vào info
 });
 ```
@@ -63,7 +63,7 @@ Theo mình hiểu, **cơ chế hoạt động** sẽ là: thay vì bạn gửi [
 Mình mới chỉ hiểu đơn giản vậy thôi. Còn sâu xa hơn thì nhờ bạn nào có kinh nghiệm giải thích hộ nhé. Còn cách code thì đơn giản là bạn sẽ ghép thêm vào đầu request trên địa chỉ server của CORS Anywhere như sau:
 
 ```js
-`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${secretKey}/${lat},${lon}`
+`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${secretKey}/${lat},${lon}`;
 ```
 
 Đến đây, bạn đã có thể hiển thị được thông tin thời tiết ở vị trí hiện tại của người dùng rồi. Tiếp theo, bạn cần hiển thị hình ảnh tương ứng với thông tin thời tiết đó.
@@ -76,7 +76,7 @@ Có nhiều thư viện để bạn có thể thực hiện việc này như sau
 
 https://codepen.io/joshbader/pen/EjXgqr
 
-Hoặc **weather-icon** tại [đây](https://erikflowers.github.io/weather-icons/). Cách này sử dụng sẽ gần giống với **font-awesome**.
+Hoặc **[weather-icon](/icon-mien-phi-dan-it#b%E1%BB%99-icon-v%E1%BB%81-th%E1%BB%9Di-ti%E1%BA%BFt)** với cách này sử dụng gần giống với **font-awesome**.
 
 Còn với project này, mình sử dụng [Skycons](https://darkskyapp.github.io/skycons/) - vẽ icon dựa trên canvas.
 
@@ -99,7 +99,7 @@ Tiếp theo, bạn khai báo một thẻ canvas (với mỗi icon). Mỗi thẻ 
 Trong file script, bạn khai báo đối tượng Skycons, với thuộc tính color là màu sắc của icon.
 
 ```js
-let skycons = new Skycons({"color": "#3da4ab"});
+let skycons = new Skycons({ color: "#3da4ab" });
 ```
 
 Để add icon vào một canvas bạn có thể sử dụng một trong hai cách: id hoặc [DOM](/co-ban-ve-dom-javascript/).
@@ -144,10 +144,10 @@ Ngoài ra, còn một số API khác như:
 
 ```js
 // Hàm convert từ độ F sang độ C
-let F2C = F => ((F - 32) * 5 / 9).toFixed();
+let F2C = (F) => (((F - 32) * 5) / 9).toFixed();
 
 // Hàm convert từ độ C sang độ F
-let C2F = C => (C * 9 / 5 + 32).toFixed();
+let C2F = (C) => ((C * 9) / 5 + 32).toFixed();
 ```
 
 ## Kết luận
@@ -161,5 +161,5 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

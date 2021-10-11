@@ -57,7 +57,7 @@ learn-react-by-example/
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về Slideshow nên mình tạo thêm thư mục **slideshow** bên trong với 2 file **slideshow.js** và **slideshow.css** để định nghĩa cho component Slideshow (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
+- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao) mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component Slideshow ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
@@ -66,28 +66,28 @@ Trong đó:
 ### Nội dung file slideshow.js
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './slideshow.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./slideshow.css";
 
 export default class Slideshow extends React.Component {
   constructor(props) {
     super(props);
 
     /*
-    * State slideIndex dùng để xác định xem slide nào đang được active.
-    * Các ảnh sẽ được xếp chồng lên nhau, cái nào active thì hiển thị,
-    * Cái nào không active thì ẩn đi.
-    */
+     * State slideIndex dùng để xác định xem slide nào đang được active.
+     * Các ảnh sẽ được xếp chồng lên nhau, cái nào active thì hiển thị,
+     * Cái nào không active thì ẩn đi.
+     */
     this.state = {
-      slideIndex: 0
+      slideIndex: 0,
     };
 
     /*
-    * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
-    * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
-    * Mình sẽ điều chỉnh các ảnh sao cho về cùng 1 kích thước.
-    */
+     * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
+     * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
+     * Mình sẽ điều chỉnh các ảnh sao cho về cùng 1 kích thước.
+     */
     const ratioWHArray = this.props.ratio.split(":");
     this.ratioWH = ratioWHArray[0] / ratioWHArray[1];
 
@@ -100,12 +100,12 @@ export default class Slideshow extends React.Component {
   }
 
   /*
-  * Tính chỉ số SlideIndex mới, với step là bước nhảy: +1 hoặc -1
-  * Giả sử, mình có 6 ảnh => các chỉ số lần lượt là: 0, 1, 2,...5
-  * Chú ý:
-  * Nếu đang ở chỉ số 5 mà đi về phía trước thì slideIndex = 0
-  * Nếu đang ở chỉ số 0 mà về sau thì slideIndex = 5
-  */
+   * Tính chỉ số SlideIndex mới, với step là bước nhảy: +1 hoặc -1
+   * Giả sử, mình có 6 ảnh => các chỉ số lần lượt là: 0, 1, 2,...5
+   * Chú ý:
+   * Nếu đang ở chỉ số 5 mà đi về phía trước thì slideIndex = 0
+   * Nếu đang ở chỉ số 0 mà về sau thì slideIndex = 5
+   */
   getNewSlideIndex(step) {
     const slideIndex = this.state.slideIndex;
     const numberSlide = this.props.input.length;
@@ -121,57 +121,58 @@ export default class Slideshow extends React.Component {
   // Quay về ảnh phía trước, tức index giảm 1 => step = -1
   backward() {
     this.setState({
-      slideIndex: this.getNewSlideIndex(-1)
+      slideIndex: this.getNewSlideIndex(-1),
     });
   }
 
   // Tiến tới ảnh phía sau, tức index tăng 1 => step = 1
   forward() {
     this.setState({
-      slideIndex: this.getNewSlideIndex(1)
+      slideIndex: this.getNewSlideIndex(1),
     });
   }
 
   // Xác định slideIndex nào sẽ được active
   setSlideIndex(index) {
     this.setState({
-      slideIndex: index
-    })
-  }
-
-  /*
-  * Cập nhật chiều cao cho container khi thay đổi kích thước màn hình
-  * Trong phần CSS, mình để container có width = 100%,
-  * Nên dù kéo to hay thu nhỏ thì width vẫn bằng 100%
-  * Nhưng chiều cao phải tính lại dựa vào width và tỉ lệ this.ratioWH
-  */
-  updateDimensions() {
-    this.containerElm.style.height 
-      = `${this.containerElm.offsetWidth / this.ratioWH}px`;
-  }
-
-  /*
-  * Nếu người dùng truyền vào thuộc tính mode = automatic
-  * thì Slideshow sẽ chạy tự động dựa vào interval.
-  * Hàm này sẽ được gọi trong mỗi lượt lặp lại
-  * để cập nhật slideIndex mới cho Slideshow
-  */
-  runAutomatic() {
-    this.setState({
-      slideIndex: this.getNewSlideIndex(1)
+      slideIndex: index,
     });
   }
 
   /*
-  * Hàm này thuộc về React Component Lifecycle
-  * được gọi sau khi component này được render xong
-  * Trong đây, sẽ lưu lại reference cho container - this.containerElm
-  * Cập nhật lại chiều cao cho container - this.updateDimensions();
-  * Đăng ký sự kiện thay đổi kích thước - resize
-  * Kiểm tra nếu mode === "automatic" thì sẽ tạo mới một interval
-  * để thay đổi hình ảnh - this.runAutomatic()
-  * với giá trị timeout được truyền từ props hoặc mặc định là 5000 ms
-  */
+   * Cập nhật chiều cao cho container khi thay đổi kích thước màn hình
+   * Trong phần CSS, mình để container có width = 100%,
+   * Nên dù kéo to hay thu nhỏ thì width vẫn bằng 100%
+   * Nhưng chiều cao phải tính lại dựa vào width và tỉ lệ this.ratioWH
+   */
+  updateDimensions() {
+    this.containerElm.style.height = `${
+      this.containerElm.offsetWidth / this.ratioWH
+    }px`;
+  }
+
+  /*
+   * Nếu người dùng truyền vào thuộc tính mode = automatic
+   * thì Slideshow sẽ chạy tự động dựa vào interval.
+   * Hàm này sẽ được gọi trong mỗi lượt lặp lại
+   * để cập nhật slideIndex mới cho Slideshow
+   */
+  runAutomatic() {
+    this.setState({
+      slideIndex: this.getNewSlideIndex(1),
+    });
+  }
+
+  /*
+   * Hàm này thuộc về React Component Lifecycle
+   * được gọi sau khi component này được render xong
+   * Trong đây, sẽ lưu lại reference cho container - this.containerElm
+   * Cập nhật lại chiều cao cho container - this.updateDimensions();
+   * Đăng ký sự kiện thay đổi kích thước - resize
+   * Kiểm tra nếu mode === "automatic" thì sẽ tạo mới một interval
+   * để thay đổi hình ảnh - this.runAutomatic()
+   * với giá trị timeout được truyền từ props hoặc mặc định là 5000 ms
+   */
   componentDidMount() {
     this.rootElm = ReactDOM.findDOMNode(this);
     this.containerElm = this.rootElm.querySelector(".container");
@@ -190,63 +191,62 @@ export default class Slideshow extends React.Component {
   }
 
   /*
-  * Hàm này cũng thuộc về React Component Lifecycle -
-  * được gọi khi component này bị xóa khỏi màn hình
-  * Lúc này, mình phải hủy bỏ sự kiện khi resize
-  * và xóa bỏ interval đã khai bảo bên trên để tránh leak memory.
-  */
+   * Hàm này cũng thuộc về React Component Lifecycle -
+   * được gọi khi component này bị xóa khỏi màn hình
+   * Lúc này, mình phải hủy bỏ sự kiện khi resize
+   * và xóa bỏ interval đã khai bảo bên trên để tránh leak memory.
+   */
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions);
     if (this.automaticInterval) clearInterval(this.automaticInterval);
   }
 
   /*
-  * Giao diện của component
-  * với phần tử ngoài cùng mình để className="lp-slideshow"
-  * để tránh xung đột về tên với các component khác
-  */
+   * Giao diện của component
+   * với phần tử ngoài cùng mình để className="lp-slideshow"
+   * để tránh xung đột về tên với các component khác
+   */
   render() {
     return (
       <div className="lp-slideshow">
         <div className="container">
-          {
-            this.props.input.map((image, index) => {
-              return (
-                <div
-                  key={index}
-                  className={
-                    `slide ${this.state.slideIndex === index ? "active" : ""}`
-                  }
-                >
-                  <div className="number-text">
-                    {`${index + 1} / ${this.props.input.length}`}
-                  </div>
-                  <img className="image" src={image.src} alt={image.caption} />
-                  <div className="caption-text">{image.caption}</div>
+          {this.props.input.map((image, index) => {
+            return (
+              <div
+                key={index}
+                className={`slide ${
+                  this.state.slideIndex === index ? "active" : ""
+                }`}
+              >
+                <div className="number-text">
+                  {`${index + 1} / ${this.props.input.length}`}
                 </div>
-              )
-            })
-          }
+                <img className="image" src={image.src} alt={image.caption} />
+                <div className="caption-text">{image.caption}</div>
+              </div>
+            );
+          })}
 
-          <span className="prev" onClick={this.backward}>❮</span>
-          <span className="next" onClick={this.forward}>❯</span>
+          <span className="prev" onClick={this.backward}>
+            ❮
+          </span>
+          <span className="next" onClick={this.forward}>
+            ❯
+          </span>
         </div>
 
         <div className="dot-container">
-          {
-            this.props.input.map((_, index) => {
-              return (
-                <span
-                  key={index}
-                  className={
-                    `dot ${this.state.slideIndex === index ? "active" : ""}`
-                  }
-                  onClick={() => this.setSlideIndex(index)}
-                >
-                </span>
-              )
-            })
-          }
+          {this.props.input.map((_, index) => {
+            return (
+              <span
+                key={index}
+                className={`dot ${
+                  this.state.slideIndex === index ? "active" : ""
+                }`}
+                onClick={() => this.setSlideIndex(index)}
+              ></span>
+            );
+          })}
         </div>
       </div>
     );
@@ -272,13 +272,13 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   width: 100%;
 }
 
-.lp-slideshow>.container {
+.lp-slideshow > .container {
   position: relative;
   margin: auto;
   width: 100%;
 }
 
-.lp-slideshow>.container>.slide {
+.lp-slideshow > .container > .slide {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -290,17 +290,17 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: opacity 0.6s ease;
 }
 
-.lp-slideshow>.container>.slide.active {
+.lp-slideshow > .container > .slide.active {
   opacity: 1;
 }
 
-.lp-slideshow>.container>.slide>.image {
+.lp-slideshow > .container > .slide > .image {
   width: 100%;
   height: 100%;
-  object-fit: cover
+  object-fit: cover;
 }
 
-.lp-slideshow>.container>.slide>.number-text {
+.lp-slideshow > .container > .slide > .number-text {
   color: #fff;
   font-size: 1rem;
   padding: 8px 12px;
@@ -308,7 +308,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   top: 0;
 }
 
-.lp-slideshow>.container>.slide>.caption-text {
+.lp-slideshow > .container > .slide > .caption-text {
   color: #fff;
   font-size: 1.3rem;
   padding: 8px 12px;
@@ -319,8 +319,8 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.lp-slideshow>.container>.prev,
-.lp-slideshow>.container>.next {
+.lp-slideshow > .container > .prev,
+.lp-slideshow > .container > .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -337,32 +337,32 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: background-color 0.6s ease;
 }
 
-.lp-slideshow:hover>.container>.prev,
-.lp-slideshow:hover>.container>.next {
+.lp-slideshow:hover > .container > .prev,
+.lp-slideshow:hover > .container > .next {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.lp-slideshow:hover>.container>.prev:hover,
-.lp-slideshow:hover>.container>.next:hover {
+.lp-slideshow:hover > .container > .prev:hover,
+.lp-slideshow:hover > .container > .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.lp-slideshow>.container>.next {
+.lp-slideshow > .container > .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.lp-slideshow>.container>.prev {
+.lp-slideshow > .container > .prev {
   left: 0;
   border-radius: 0 3px 3px 0;
 }
 
-.lp-slideshow>.dot-container {
+.lp-slideshow > .dot-container {
   text-align: center;
   margin: 1rem auto;
 }
 
-.lp-slideshow>.dot-container>.dot {
+.lp-slideshow > .dot-container > .dot {
   height: 15px;
   width: 15px;
   margin: 0 0.4rem;
@@ -375,12 +375,12 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: background-color 0.6s ease;
 }
 
-.lp-slideshow>.dot-container>.dot.active,
-.lp-slideshow>.dot-container>.dot:hover {
+.lp-slideshow > .dot-container > .dot.active,
+.lp-slideshow > .dot-container > .dot:hover {
   background-color: #717171;
 }
 
-.lp-slideshow>.dot-container>.dot:not(.active):hover {
+.lp-slideshow > .dot-container > .dot:not(.active):hover {
   cursor: pointer;
 }
 ```
@@ -412,16 +412,16 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 **./src/App.js**
 
 ```jsx
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import Slideshow from './components/slideshow/slideshow';
-import img1 from './images/01.jpg';
-import img2 from './images/02.jpg';
-import img3 from './images/03.jpg';
-import img4 from './images/04.jpg';
-import img5 from './images/05.jpg';
-import img6 from './images/06.jpg';
+import Slideshow from "./components/slideshow/slideshow";
+import img1 from "./images/01.jpg";
+import img2 from "./images/02.jpg";
+import img3 from "./images/03.jpg";
+import img4 from "./images/04.jpg";
+import img5 from "./images/05.jpg";
+import img6 from "./images/06.jpg";
 
 const collection = [
   { src: img1, caption: "Caption one" },
@@ -436,11 +436,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Slideshow
-          input={collection}
-          ratio={`3:2`}
-          mode={`manual`}
-        />
+        <Slideshow input={collection} ratio={`3:2`} mode={`manual`} />
 
         <Slideshow
           input={collection}
@@ -450,8 +446,8 @@ export default class App extends React.Component {
         />
 
         <div>
-          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-          Visit me at <a href="/">completejavascript.com</a>.
+          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me
+          at <a href="/">completejavascript.com</a>.
         </div>
       </div>
     );
@@ -484,5 +480,5 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

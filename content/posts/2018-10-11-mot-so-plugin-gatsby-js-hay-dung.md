@@ -89,7 +89,7 @@ Nếu bạn cần hiển thị code được lưu trên [Gist](https://gist.gith
 
 Nếu bạn đã từng làm web thì có thể sẽ không còn xa lạ gì với Google Analytics. Đây là một dịch vụ của Google giúp bạn quản lý, theo dõi và phân tích mọi hoạt động trên trang web.
 
-Dĩ nhiên, khi đăng ký Google Analytics thì bạn sẽ nhận được một đoạn _script_ để thêm vào trang web. Đối với trang web tĩnh thì việc này khá đơn giản, bạn chỉ cần copy-paste đoạn script đó vào bên trong thẻ _head_ là được. Còn đối với trang Gatsby, việc sử dụng plugin này là đơn giản hơn cả.
+Dĩ nhiên, khi đăng ký Google Analytics thì bạn sẽ nhận được một đoạn _script_ để thêm vào trang web. Đối với [trang web tĩnh](/hosting-mien-phi-cho-web-tinh) thì việc này khá đơn giản, bạn chỉ cần copy-paste đoạn script đó vào bên trong thẻ _head_ là được. Còn đối với trang Gatsby, việc sử dụng plugin này là đơn giản hơn cả.
 
 - Mức độ: tuỳ chọn
 - Cài đặt: <code>npm install --save gatsby-plugin-google-analytics</code>
@@ -146,5 +146,5 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

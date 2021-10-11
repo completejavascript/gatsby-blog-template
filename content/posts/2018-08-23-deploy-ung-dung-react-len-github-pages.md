@@ -22,7 +22,7 @@ Chào bạn! Gần đây mình có dành thời gian tìm hiểu về React và 
 - **Create-react-app**: là một toolchain giúp bạn lập trình React một cách đơn giản và thoải mái mà không cần quan tâm đến việc cấu hình môi trường. Cái này của Facebook nên bạn cứ an tâm mà dùng.
 - **Github Pages**: cho phép bạn deploy static website (trang web tĩnh) lên đó với source code chính là Github repository.
 
-Vì vậy, bài viết này chỉ phù hợp khi bạn muốn deploy các trang web tĩnh đơn giản hoặc Single Page Application. Nếu bạn muốn deploy một trang web dạng blog, hay cần phải xử lý phía server, tương tác với database,... thì hẹn gặp bạn trong một bài viết khác phù hợp hơn nhé!
+Vì vậy, bài viết này chỉ phù hợp khi bạn muốn [deploy các trang web tĩnh](/hosting-mien-phi-cho-web-tinh) đơn giản hoặc Single Page Application. Nếu bạn muốn deploy một trang web dạng blog, hay cần phải xử lý phía server, tương tác với database,... thì hẹn gặp bạn trong một bài viết khác phù hợp hơn nhé!
 
 Nếu đọc đến đây, nghĩa là bài viết này phù hợp với bạn. Vậy thì bắt đầu thôi nào!
 
@@ -145,21 +145,29 @@ Ví dụ file _index.html_ trong 1 project của mình:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="A very simple but useful Markdown Previewer and Markdown Editor with CodeMirror">
-  <meta name="keywords" content="markdown, previewer, markdown previewer, codemirror, markdown editor, editor">
-  <!--
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="A very simple but useful Markdown Previewer and Markdown Editor with CodeMirror"
+    />
+    <meta
+      name="keywords"
+      content="markdown, previewer, markdown previewer, codemirror, markdown editor, editor"
+    />
+    <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-  <!--
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -168,21 +176,30 @@ Ví dụ file _index.html_ trong 1 project của mình:
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>Markdown Editor by Lam Pham</title>
+    <title>Markdown Editor by Lam Pham</title>
 
-  <link href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" rel="stylesheet" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
-    crossorigin="anonymous">
-  <link href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" rel="stylesheet" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="%PUBLIC_URL%/lib/codemirror-5.39.2/lib/codemirror.css">
-</head>
+    <link
+      href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css"
+      rel="stylesheet"
+      integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
+      rel="stylesheet"
+      integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/lib/codemirror-5.39.2/lib/codemirror.css"
+    />
+  </head>
 
-<body>
-  <noscript>
-    You need to enable JavaScript to run this app.
-  </noscript>
-  <div id="root"></div>
-  <!--
+  <body>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div id="root"></div>
+    <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -192,11 +209,10 @@ Ví dụ file _index.html_ trong 1 project của mình:
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.4.0/marked.min.js"></script>
-  <script src="%PUBLIC_URL%/lib/codemirror-5.39.2/lib/codemirror.js"></script>
-  <script src="%PUBLIC_URL%/lib/codemirror-5.39.2/mode/markdown/markdown.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.4.0/marked.min.js"></script>
+    <script src="%PUBLIC_URL%/lib/codemirror-5.39.2/lib/codemirror.js"></script>
+    <script src="%PUBLIC_URL%/lib/codemirror-5.39.2/mode/markdown/markdown.js"></script>
+  </body>
 </html>
 ```
 
@@ -289,5 +305,5 @@ Cuối cùng, xin chào và hẹn gặp lại bạn trong [bài viết tiếp th
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

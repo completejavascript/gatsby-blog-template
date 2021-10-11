@@ -40,30 +40,28 @@ Tiếp theo, bạn có thể vào trang [tinypng.com](https://tinypng.com) để
 
 <a href="https://github.com/completejavascript/lazy-loading-image-demo" class="btn btn-primary margin-bottom">
   Xem code trên Github
-</a>  
+</a>
 
 <a href="https://about.phamvanlam.com/lazy-loading-image-demo/" class="btn btn-primary margin-bottom">
   Xem Demo
-</a> 
+</a>
 
 ### Code toàn bộ component Lazy Loading Image
 
 **lazy-image.js**
 
 ```jsx
-import React from 'react';
+import React from "react";
 import "./lazy-image.css";
 
 function elementInViewport(el) {
   const rect = el.getBoundingClientRect();
 
   return (
-    rect.top >= 0
-    && rect.left >= 0
-    && rect.top <= (
-      window.innerHeight || document.documentElement.clientHeight
-    )
-  )
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+  );
 }
 
 export default class LazyImage extends React.Component {
@@ -71,8 +69,8 @@ export default class LazyImage extends React.Component {
     super(props);
 
     this.state = {
-      loaded: false
-    }
+      loaded: false,
+    };
 
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -80,11 +78,11 @@ export default class LazyImage extends React.Component {
   componentDidMount() {
     this.handleScroll();
 
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll() {
@@ -95,39 +93,34 @@ export default class LazyImage extends React.Component {
       imgLoader.onload = () => {
         const ratioWH = imgLoader.width / imgLoader.height;
 
-        this.imgElm.setAttribute(
-          `src`,
-          `${this.props.src}`
-        );
+        this.imgElm.setAttribute(`src`, `${this.props.src}`);
 
-        this.props.keepRatio && this.imgElm.setAttribute(
-          `height`,
-          `${this.props.width / ratioWH}`
-        )
+        this.props.keepRatio &&
+          this.imgElm.setAttribute(`height`, `${this.props.width / ratioWH}`);
 
         this.imgElm.classList.add(`${this.props.effect}`);
 
         this.setState({
-          loaded: true
+          loaded: true,
         });
-      }
+      };
     }
   }
 
   render() {
-    const width = this.props.width || '100%';
-    const height = this.props.height || '100%';
+    const width = this.props.width || "100%";
+    const height = this.props.height || "100%";
 
     return (
       <img
         src={this.props.placeHolder}
         width={width}
         height={height}
-        ref={imgElm => this.imgElm = imgElm}
+        ref={(imgElm) => (this.imgElm = imgElm)}
         className="lazy-image"
         alt={this.props.alt}
       />
-    )
+    );
   }
 }
 ```
@@ -155,8 +148,8 @@ Khởi tạo biến state _loaded_. Biến này dùng để lưu trạng thái �
 
 ```jsx
 this.state = {
-  loaded: false
-}
+  loaded: false,
+};
 ```
 
 [Bind](/phan-biet-call-apply-va-bind-trong-javascript/) function _handleScroll_ với _this_. [Function](/tim-hieu-function-javascript/) này dùng để xử lý [event](/xu-ly-mot-event-javascript-co-ban/) khi scroll màn hình.
@@ -172,8 +165,8 @@ Hàm này tương ứng với **Bước 1** mà mình đã nói phía trên. Tro
 Tính giá trị của _width_ và _height_. Nếu người dùng không truyền 2 thuộc tính này vào thì mặc định giá trị là **100%**
 
 ```jsx
-const width = this.props.width || '100%';
-const height = this.props.height || '100%';
+const width = this.props.width || "100%";
+const height = this.props.height || "100%";
 ```
 
 Component này khi render lên HTML sẽ đóng vai trò là một [thẻ img](https://www.w3schools.com/tags/tag_img.asp) với các thuộc tính là:
@@ -193,7 +186,7 @@ Hàm [componentDidMount](https://reactjs.org/docs/react-component.html#component
 - Đăng ký sự kiện scroll của màn hình Window - dùng để xử lý **Bước 3**.
 
 ```jsx
-window.addEventListener('scroll', this.handleScroll);
+window.addEventListener("scroll", this.handleScroll);
 ```
 
 #### Hàm componentWillUnmount
@@ -201,7 +194,7 @@ window.addEventListener('scroll', this.handleScroll);
 Hàm [componentWillUnmount](https://reactjs.org/docs/react-component.html#componentwillunmount) dùng để xử lý trước khi component bị huỷ. Lúc này, mình phải huỷ sự kiện đã đăng ký ở phần trước, để tránh bị leak memory.
 
 ```jsx
-window.removeEventListener('scroll', this.handleScroll);
+window.removeEventListener("scroll", this.handleScroll);
 ```
 
 #### Hàm handleScroll
@@ -213,10 +206,10 @@ function elementInViewport(el) {
   const rect = el.getBoundingClientRect();
 
   return (
-    rect.top >= 0
-    && rect.left >= 0
-    && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
-  )
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+  );
 }
 ```
 
@@ -243,19 +236,14 @@ Tính tỉ lệ chiều rộng / chiều cao của ảnh thực tế <code>const
 Gán _src_ với đường dẫn ảnh gốc cần tải.
 
 ```jsx
-this.imgElm.setAttribute(
-  `src`,
-  `${this.props.src}`
-);
+this.imgElm.setAttribute(`src`, `${this.props.src}`);
 ```
 
 Nếu người dùng muốn giữ nguyên tỉ lệ ảnh gốc thì mình sẽ điều chỉnh lại chiều cao của ảnh
 
 ```jsx
-this.props.keepRatio && this.imgElm.setAttribute(
-  `height`,
-  `${this.props.width / ratioWH}`
-)
+this.props.keepRatio &&
+  this.imgElm.setAttribute(`height`, `${this.props.width / ratioWH}`);
 ```
 
 Về cơ bản, khi đến bước này thì ảnh đã sẵn sàng để hiển thị. Nhưng người dùng vẫn chưa nhìn thấy ảnh, vì _opacity: 0_. Do đó, mình sẽ thêm vào thuộc tính _class_ của ảnh giá trị _this.props.effect_. Mặc định, mình mới định nghĩa 1 effect là _opacity_.
@@ -276,7 +264,7 @@ this.imgElm.classList.add(`${this.props.effect}`);
 
 ```jsx
 this.setState({
-  loaded: true
+  loaded: true,
 });
 ```
 
@@ -284,7 +272,7 @@ Như vậy, mình đã định nghĩa xong component _LazyImage_. Bây giờ, ch
 
 ## Cách sử dụng component LazyImage
 
-Mình có làm một ví dụ trên Github. Bạn có thể tham khảo source code tại [đây](https://github.com/completejavascript/lazy-loading-image-demo). Hoặc xem demo trực tiếp tại [đây](https://about.phamvanlam.com/lazy-loading-image-demo/).
+Mình có làm một ví dụ trên Github. Bạn có thể tham khảo [source code](https://github.com/completejavascript/lazy-loading-image-demo) hoặc [xem demo trực tiếp](https://about.phamvanlam.com/lazy-loading-image-demo/).
 
 Ví dụ demo mình sử dụng [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html). Bạn có thể tham khảo thêm tại bài viết [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/) để biết cách tạo project và deploy lên Github Pages.
 
@@ -311,11 +299,11 @@ Tiếp theo, mình dự định sẽ tìm hiểu và chia sẻ tiếp về Lazy 
 
 <a href="https://github.com/completejavascript/lazy-loading-image-demo" class="btn btn-primary margin-bottom">
   Xem code trên Github
-</a>  
+</a>
 
 <a href="https://about.phamvanlam.com/lazy-loading-image-demo/" class="btn btn-primary margin-bottom">
   Xem Demo
-</a> 
+</a>
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-trang-blog-voi-gatsby-js/), thân ái!
 
@@ -324,5 +312,5 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-trang
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

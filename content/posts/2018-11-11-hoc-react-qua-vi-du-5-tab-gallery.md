@@ -54,7 +54,7 @@ learn-react-by-example/
 Trong đó:
 
 - Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Tab Gallery** nên mình tạo thêm thư mục **tab-gallery** bên trong với 2 file **tab-gallery.js** và **tab-gallery.css** để định nghĩa cho component **Tab Gallery** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
+- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao) mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Tab Gallery** ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
@@ -75,9 +75,9 @@ Và ý tưởng chung để xây dựng Tab Gallery Component là:
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './tab-gallery.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./tab-gallery.css";
 
 export default class TabGallery extends React.Component {
   constructor(props) {
@@ -90,13 +90,13 @@ export default class TabGallery extends React.Component {
     this.state = {
       imageSrc: "",
       imageText: "",
-    }
+    };
 
     /*
-    * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
-    * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
-    * Mình sẽ điều chỉnh các ảnh sao cho về cùng 1 kích thước.
-    */
+     * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
+     * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
+     * Mình sẽ điều chỉnh các ảnh sao cho về cùng 1 kích thước.
+     */
     const ratioWHArray = this.props.ratio.split(":");
     this.ratioWH = ratioWHArray[0] / ratioWHArray[1];
 
@@ -139,7 +139,7 @@ export default class TabGallery extends React.Component {
    * Cập nhật kích thước component
    */
   updateDimensions() {
-    const tabHeight = 
+    const tabHeight =
       this.containerElm.offsetWidth / this.props.input.length / this.ratioWH;
     this.containerElm.style.height = `${tabHeight}px`;
 
@@ -194,40 +194,40 @@ export default class TabGallery extends React.Component {
     return (
       <div className="lp-tab-gallery">
         <div className="container">
-          {
-            this.props.input.map((image, index) => {
-              return (
-                <div
-                  key={index}
-                  className="image-wrapper"
-                  style={{
-                    width: `${1 / this.props.input.length * 100}%`,
-                    height: `100%`
-                  }}
-                >
-                  <img
-                    className="image"
-                    src={image.src}
-                    alt={image.caption}
-                    onClick={() => this.showImage(image)}
-                  />
-                </div>
-              )
-            })
-          }
+          {this.props.input.map((image, index) => {
+            return (
+              <div
+                key={index}
+                className="image-wrapper"
+                style={{
+                  width: `${(1 / this.props.input.length) * 100}%`,
+                  height: `100%`,
+                }}
+              >
+                <img
+                  className="image"
+                  src={image.src}
+                  alt={image.caption}
+                  onClick={() => this.showImage(image)}
+                />
+              </div>
+            );
+          })}
         </div>
 
         <div className="container-bottom">
-          <img 
-            className="image" 
-            src={this.state.imageSrc} 
-            alt={this.state.imageText} 
+          <img
+            className="image"
+            src={this.state.imageSrc}
+            alt={this.state.imageText}
           />
-          <span className="close-btn" onClick={() => this.hideImage()}>×</span>
+          <span className="close-btn" onClick={() => this.hideImage()}>
+            ×
+          </span>
           <div className="image-text">{this.state.imageText}</div>
         </div>
       </div>
-    )
+    );
   }
 }
 ```
@@ -250,18 +250,18 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   width: 100%;
 }
 
-.lp-tab-gallery>.container {
+.lp-tab-gallery > .container {
   width: 100%;
   display: flex;
   display: -webkit-flex;
 }
 
-.lp-tab-gallery>.container>.image-wrapper {
+.lp-tab-gallery > .container > .image-wrapper {
   flex: 1;
   padding: 0.35rem;
 }
 
-.lp-tab-gallery>.container>.image-wrapper>.image {
+.lp-tab-gallery > .container > .image-wrapper > .image {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -272,12 +272,12 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: opacity 0.6s ease;
 }
 
-.lp-tab-gallery>.container>.image-wrapper>.image:hover {
+.lp-tab-gallery > .container > .image-wrapper > .image:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-.lp-tab-gallery>.container-bottom {
+.lp-tab-gallery > .container-bottom {
   width: 100%;
   display: none;
   position: relative;
@@ -285,7 +285,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   margin-bottom: 0.35rem;
 }
 
-.lp-tab-gallery>.container-bottom>.image {
+.lp-tab-gallery > .container-bottom > .image {
   position: absolute;
   left: 0.35rem;
   top: 0;
@@ -294,7 +294,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   object-fit: cover;
 }
 
-.lp-tab-gallery>.container-bottom>.image-text {
+.lp-tab-gallery > .container-bottom > .image-text {
   position: absolute;
   bottom: 0;
   left: 15px;
@@ -302,7 +302,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   font-size: 20px;
 }
 
-.lp-tab-gallery>.container-bottom>.close-btn {
+.lp-tab-gallery > .container-bottom > .close-btn {
   position: absolute;
   top: 0px;
   right: 6px;
@@ -319,11 +319,11 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: background-color 0.6s ease;
 }
 
-.lp-tab-gallery>.container-bottom:hover>.close-btn {
+.lp-tab-gallery > .container-bottom:hover > .close-btn {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.lp-tab-gallery>.container-bottom:hover>.close-btn:hover {
+.lp-tab-gallery > .container-bottom:hover > .close-btn:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -355,13 +355,13 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 **./src/App.js**
 
 ```jsx
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import TabGallery from './components/tab-gallery/tab-gallery';
-import img11 from './images/11.jpg';
-import img12 from './images/12.jpg';
-import img13 from './images/13.jpg';
+import TabGallery from "./components/tab-gallery/tab-gallery";
+import img11 from "./images/11.jpg";
+import img12 from "./images/12.jpg";
+import img13 from "./images/13.jpg";
 
 const collection = [
   { src: img11, caption: "Caption eleven" },
@@ -376,14 +376,11 @@ export default class App extends React.Component {
         <h2>Tab Gallery</h2>
         <p>Click on each image below to show the corresponding image.</p>
 
-        <TabGallery
-          input={collection}
-          ratio={`3:2`}
-        />
+        <TabGallery input={collection} ratio={`3:2`} />
 
         <div>
-          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-          Visit me at <a href="/">completejavascript.com</a>.
+          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me
+          at <a href="/">completejavascript.com</a>.
         </div>
       </div>
     );
@@ -402,7 +399,7 @@ Trên đây là kết quả sau khi mình học React qua ví dụ #5 – Tab Ga
 
 <a href="https://about.phamvanlam.com/learn-react-by-example/#/tab-gallery/" class="btn btn-primary margin-bottom">
   Xem Demo
-</a> 
+</a>
 
 Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
 
@@ -413,5 +410,5 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

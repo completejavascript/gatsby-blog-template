@@ -58,7 +58,7 @@ learn-react-by-example/
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về Modal Image nên mình tạo thêm thư mục **modal-image** bên trong với 2 file **modal-image.js** và **modal-image.css** để định nghĩa cho component **Modal Image** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
+- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao) mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component Modal Image ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
@@ -79,19 +79,19 @@ Và ý tưởng chung để xây dựng Modal Image Component là:
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './modal-image.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./modal-image.css";
 
 export default class ModalImage extends React.Component {
   constructor(props) {
     super(props);
 
     /*
-    * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
-    * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
-    * Mình sẽ điều chỉnh các ảnh sao cho về cùng 1 kích thước.
-    */
+     * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
+     * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
+     * Mình sẽ điều chỉnh các ảnh sao cho về cùng 1 kích thước.
+     */
     const ratioWHArray = this.props.ratio.split(":");
     this.ratioWH = ratioWHArray[0] / ratioWHArray[1];
 
@@ -105,7 +105,7 @@ export default class ModalImage extends React.Component {
    * cho thuộc tính display của style,
    * của phần tử đóng vai trò là Modal Image là "initial",
    * để hiển thị nó
-  */
+   */
   showModal() {
     this.modalElm.style.display = "initial";
   }
@@ -115,21 +115,22 @@ export default class ModalImage extends React.Component {
    * cho thuộc tính display của style,
    * của phần tử đóng vai trò là Modal Image là "none",
    * để ẩn nó đi
-  */
+   */
   hideModal() {
     this.modalElm.style.display = "none";
   }
 
   /*
-  * Cập nhật chiều cao cho mỗi ảnh khi thay đổi kích thước màn hình
-  * Trong phần CSS, mình để mỗi ảnh có width = 100%,
-  * Nên dù kéo to hay thu nhỏ thì width vẫn bằng 100% kích thước parent.
-  * Nhưng chiều cao là giá trị tuyệt đối nên phải tính lại,
-  * dựa vào width và tỉ lệ this.ratioWH = width / height
-  */
+   * Cập nhật chiều cao cho mỗi ảnh khi thay đổi kích thước màn hình
+   * Trong phần CSS, mình để mỗi ảnh có width = 100%,
+   * Nên dù kéo to hay thu nhỏ thì width vẫn bằng 100% kích thước parent.
+   * Nhưng chiều cao là giá trị tuyệt đối nên phải tính lại,
+   * dựa vào width và tỉ lệ this.ratioWH = width / height
+   */
   updateDimensions() {
-    this.imageElm.style.height = 
-      `${this.imageElm.offsetWidth / this.ratioWH}px`;
+    this.imageElm.style.height = `${
+      this.imageElm.offsetWidth / this.ratioWH
+    }px`;
   }
 
   /**
@@ -145,7 +146,7 @@ export default class ModalImage extends React.Component {
    * Và cuối cùng là đăng ký sự kiên resize màn hình, với hàm xử lý
    * là updateDimensions(). Tức là mỗi khi thay đổi kích thước màn hình
    * thì sẽ tính lại chiều cao ảnh - đảm bảo tính responsive.
-  */
+   */
   componentDidMount() {
     this.rootElm = ReactDOM.findDOMNode(this);
     this.imageElm = this.rootElm.querySelector(".image");
@@ -158,7 +159,7 @@ export default class ModalImage extends React.Component {
   /**
    * Hàm này được gọi khi Component bị xóa khỏi HTML.
    * Lúc này mình phải hủy bỏ sự kiện đã đăng ký lúc trước.
-  */
+   */
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions);
   }
@@ -174,16 +175,18 @@ export default class ModalImage extends React.Component {
         />
 
         <div className="modal">
-          <span className="close" onClick={this.hideModal}>×</span>
-          <img 
-            className="modal-content" 
-            src={this.props.src} 
-            alt={this.props.alt + " modal"} 
+          <span className="close" onClick={this.hideModal}>
+            ×
+          </span>
+          <img
+            className="modal-content"
+            src={this.props.src}
+            alt={this.props.alt + " modal"}
           />
           <div className="caption">{this.props.alt}</div>
         </div>
       </div>
-    )
+    );
   }
 }
 ```
@@ -206,7 +209,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   width: 100%;
 }
 
-.lp-modal-image>.image {
+.lp-modal-image > .image {
   width: 100%;
   object-fit: cover;
   opacity: 1;
@@ -216,12 +219,12 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: opacity 0.6s ease;
 }
 
-.lp-modal-image>.image:hover {
+.lp-modal-image > .image:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-.lp-modal-image>.modal {
+.lp-modal-image > .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -235,14 +238,14 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.lp-modal-image>.modal>.modal-content {
+.lp-modal-image > .modal > .modal-content {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 780px;
 }
 
-.lp-modal-image>.modal>.caption {
+.lp-modal-image > .modal > .caption {
   margin: auto;
   display: block;
   width: 80%;
@@ -253,13 +256,13 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   height: 150px;
 }
 
-.lp-modal-image>.modal>.modal-content,
-.lp-modal-image>.modal>.caption {
+.lp-modal-image > .modal > .modal-content,
+.lp-modal-image > .modal > .caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
-.lp-modal-image>.modal>.close {
+.lp-modal-image > .modal > .close {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -272,8 +275,8 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: color 0.3s;
 }
 
-.lp-modal-image>.modal>.close:hover,
-.lp-modal-image>.modal>.close:focus {
+.lp-modal-image > .modal > .close:hover,
+.lp-modal-image > .modal > .close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -281,15 +284,15 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 
 @keyframes zoom {
   from {
-    transform: scale(0)
+    transform: scale(0);
   }
   to {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
 @media only screen and (max-width: 780px) {
-  .lp-modal-image>.modal>.modal-content {
+  .lp-modal-image > .modal > .modal-content {
     width: 100%;
   }
 }
@@ -322,12 +325,12 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 **./src/App.js**
 
 ```jsx
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import ModalImage from './components/modal-image/modal-image';
-import img8 from './images/08.jpg';
-import img9 from './images/09.jpg';
+import ModalImage from "./components/modal-image/modal-image";
+import img8 from "./images/08.jpg";
+import img9 from "./images/09.jpg";
 
 export default class App extends React.Component {
   render() {
@@ -338,7 +341,7 @@ export default class App extends React.Component {
 
         <div
           style={{
-            display: `flex`
+            display: `flex`,
           }}
         >
           <ModalImage
@@ -354,8 +357,8 @@ export default class App extends React.Component {
         </div>
 
         <div>
-          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-          Visit me at <a href="/">completejavascript.com</a>.
+          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me
+          at <a href="/">completejavascript.com</a>.
         </div>
       </div>
     );

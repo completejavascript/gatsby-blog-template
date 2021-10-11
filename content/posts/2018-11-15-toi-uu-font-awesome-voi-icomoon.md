@@ -17,7 +17,7 @@ tags:
 
 ## Vậy IcoMoon là gì?
 
-[IcoMoon](https://icomoon.io) thực chất là một ứng dụng cho phép bạn **tuỳ chỉnh icon font**, **import SVG để tạo ra font riêng, convert font sang SVG, PDF, XAML, CSH,**... Và IcoMoon cung cấp hơn 5000 icon free bằng cách tối ưu các thư viện miễn phí như:
+[IcoMoon](https://icomoon.io) thực chất là một ứng dụng cho phép bạn **tuỳ chỉnh icon font**, **import SVG để tạo ra font riêng, convert font sang SVG, PDF, XAML, CSH,**... Và IcoMoon cung cấp hơn 5000 [icon free](/icon-mien-phi-dan-it) bằng cách tối ưu các thư viện miễn phí như:
 
 - [IcoMoon - Free](https://icomoon.io/#icons)
 - [Brands](https://simpleicons.org/)
@@ -96,13 +96,12 @@ Bên trong package này, bạn sẽ thấy hai phần quan trọng như:
 Khi sử dụng các font tuỳ chỉnh này, bạn cần phải copy thư mục **fonts** và tệp tin **style.css** vào project, rồi cấu hình file **html** như bình thường:
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-</body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body></body>
 </html>
 ```
 

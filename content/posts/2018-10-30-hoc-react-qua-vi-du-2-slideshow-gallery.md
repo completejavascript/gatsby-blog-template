@@ -61,7 +61,7 @@ learn-react-by-example/
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về Slideshow Gallery nên mình tạo thêm thư mục **slideshow-gallery** bên trong với 2 file **slideshow-gallery.js** và **slideshow-gallery.css** để định nghĩa cho component Slideshow Gallery (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
+- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao) mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component Slideshow Gallery ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
@@ -78,28 +78,28 @@ Trong phần này bạn cần phải chú ý đến một số kiến thức nh�
 Còn nội dung chi tiết mình giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './slideshow-gallery.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./slideshow-gallery.css";
 
 export default class SlideshowGallery extends React.Component {
   constructor(props) {
     super(props);
 
     /*
-    * State slideIndex dùng để xác định xem slide nào đang được active.
-    * Các ảnh sẽ được xếp chồng lên nhau, cái nào active thì hiển thị,
-    * Cái nào không active thì ẩn đi.
-    */
+     * State slideIndex dùng để xác định xem slide nào đang được active.
+     * Các ảnh sẽ được xếp chồng lên nhau, cái nào active thì hiển thị,
+     * Cái nào không active thì ẩn đi.
+     */
     this.state = {
-      slideIndex: 0
+      slideIndex: 0,
     };
 
     /*
-    * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
-    * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
-    * Mình sẽ điều chỉnh các ảnh sao cho về cùng 1 kích thước.
-    */
+     * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
+     * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
+     * Mình sẽ điều chỉnh các ảnh sao cho về cùng 1 kích thước.
+     */
     const ratioWHArray = this.props.ratio.split(":");
     this.ratioWH = ratioWHArray[0] / ratioWHArray[1];
 
@@ -112,12 +112,12 @@ export default class SlideshowGallery extends React.Component {
   }
 
   /*
-  * Tính chỉ số SlideIndex mới, với step là bước nhảy: +1 hoặc -1
-  * Giả sử, mình có 6 ảnh => các chỉ số lần lượt là: 0, 1, 2,...5
-  * Chú ý:
-  * Nếu đang ở chỉ số 5 mà đi về phía sau thì slideIndex = 0
-  * Nếu đang ở chỉ số 0 mà về trước thì slideIndex = 5
-  */
+   * Tính chỉ số SlideIndex mới, với step là bước nhảy: +1 hoặc -1
+   * Giả sử, mình có 6 ảnh => các chỉ số lần lượt là: 0, 1, 2,...5
+   * Chú ý:
+   * Nếu đang ở chỉ số 5 mà đi về phía sau thì slideIndex = 0
+   * Nếu đang ở chỉ số 0 mà về trước thì slideIndex = 5
+   */
   getNewSlideIndex(step) {
     const slideIndex = this.state.slideIndex;
     const numberSlide = this.props.input.length;
@@ -133,68 +133,72 @@ export default class SlideshowGallery extends React.Component {
   // Quay về ảnh phía trước, tức index giảm 1 => step = -1
   backward() {
     this.setState({
-      slideIndex: this.getNewSlideIndex(-1)
+      slideIndex: this.getNewSlideIndex(-1),
     });
   }
 
   // Tiến tới ảnh phía sau, tức index tăng 1 => step = 1
   forward() {
     this.setState({
-      slideIndex: this.getNewSlideIndex(1)
+      slideIndex: this.getNewSlideIndex(1),
     });
   }
 
   // Xác định slideIndex nào sẽ được active
   setSlideIndex(index) {
     this.setState({
-      slideIndex: index
-    })
-  }
-
-  /*
-  * Cập nhật chiều cao cho container khi thay đổi kích thước màn hình
-  * Trong phần CSS, mình để container có width = 100%,
-  * Nên dù kéo to hay thu nhỏ thì width vẫn bằng 100% kích thước parent.
-  * Nhưng chiều cao là giá trị tuyệt đối nên phải tính lại,
-  * dựa vào width và tỉ lệ this.ratioWH = width / height
-  *
-  * Chú ý: ví dụ Slideshow Gallery này khác với ví dụ Slideshow thông thường
-  * ở chỗ là mình thay những chấm tròn ở dưới thành dãy các ảnh.
-  * Vì vậy, mình cũng phải tính lại chiều cao của phần đó - this.containerBottomElm.
-  *
-  * Ngoài ra, số lượng ảnh ở phía dưới là this.props.input.length chứ không phải 1 ảnh
-  * nên mình phải chia cho this.props.input.length - đây là phần khác so với
-  * khi tính toán với this.containerElm
-  */
-  updateDimensions() {
-    this.containerElm.style.height 
-      = `${this.containerElm.offsetWidth / this.ratioWH}px`;
-    this.containerBottomElm.style.height 
-      = `${this.containerBottomElm.offsetWidth / this.props.input.length / this.ratioWH}px`;
-  }
-
-  /*
-  * Nếu người dùng truyền vào thuộc tính mode = automatic
-  * thì Slideshow Gallery sẽ chạy tự động dựa vào interval.
-  * Hàm này sẽ được gọi trong mỗi lượt lặp lại
-  * để cập nhật slideIndex mới cho Slideshow Gallery
-  */
-  runAutomatic() {
-    this.setState({
-      slideIndex: this.getNewSlideIndex(1)
+      slideIndex: index,
     });
   }
 
   /*
-  * Hàm này thuộc về React Component Lifecycle
-  * được gọi sau khi component này được render xong
-  * Trong đây, sẽ lưu lại reference cho container - this.containerElm
-  * Cập nhật lại chiều cao cho container - this.updateDimensions();
-  * Đăng ký sự kiện thay đổi kích thước - resize
-  * Kiểm tra nếu mode === "automatic" thì sẽ tạo mới một interval
-  * để thay đổi hình ảnh - this.runAutomatic()
-  * với giá trị timeout được truyền từ props hoặc mặc định là 5000 ms
-  */
+   * Cập nhật chiều cao cho container khi thay đổi kích thước màn hình
+   * Trong phần CSS, mình để container có width = 100%,
+   * Nên dù kéo to hay thu nhỏ thì width vẫn bằng 100% kích thước parent.
+   * Nhưng chiều cao là giá trị tuyệt đối nên phải tính lại,
+   * dựa vào width và tỉ lệ this.ratioWH = width / height
+   *
+   * Chú ý: ví dụ Slideshow Gallery này khác với ví dụ Slideshow thông thường
+   * ở chỗ là mình thay những chấm tròn ở dưới thành dãy các ảnh.
+   * Vì vậy, mình cũng phải tính lại chiều cao của phần đó - this.containerBottomElm.
+   *
+   * Ngoài ra, số lượng ảnh ở phía dưới là this.props.input.length chứ không phải 1 ảnh
+   * nên mình phải chia cho this.props.input.length - đây là phần khác so với
+   * khi tính toán với this.containerElm
+   */
+  updateDimensions() {
+    this.containerElm.style.height = `${
+      this.containerElm.offsetWidth / this.ratioWH
+    }px`;
+    this.containerBottomElm.style.height = `${
+      this.containerBottomElm.offsetWidth /
+      this.props.input.length /
+      this.ratioWH
+    }px`;
+  }
+
+  /*
+   * Nếu người dùng truyền vào thuộc tính mode = automatic
+   * thì Slideshow Gallery sẽ chạy tự động dựa vào interval.
+   * Hàm này sẽ được gọi trong mỗi lượt lặp lại
+   * để cập nhật slideIndex mới cho Slideshow Gallery
+   */
+  runAutomatic() {
+    this.setState({
+      slideIndex: this.getNewSlideIndex(1),
+    });
+  }
+
+  /*
+   * Hàm này thuộc về React Component Lifecycle
+   * được gọi sau khi component này được render xong
+   * Trong đây, sẽ lưu lại reference cho container - this.containerElm
+   * Cập nhật lại chiều cao cho container - this.updateDimensions();
+   * Đăng ký sự kiện thay đổi kích thước - resize
+   * Kiểm tra nếu mode === "automatic" thì sẽ tạo mới một interval
+   * để thay đổi hình ảnh - this.runAutomatic()
+   * với giá trị timeout được truyền từ props hoặc mặc định là 5000 ms
+   */
   componentDidMount() {
     this.rootElm = ReactDOM.findDOMNode(this);
     this.containerElm = this.rootElm.querySelector(".container");
@@ -214,11 +218,11 @@ export default class SlideshowGallery extends React.Component {
   }
 
   /*
-  * Hàm này cũng thuộc về React Component Lifecycle -
-  * được gọi khi component này bị xóa khỏi màn hình
-  * Lúc này, mình phải hủy bỏ sự kiện khi resize
-  * và xóa bỏ interval đã khai bảo bên trên để tránh leak memory.
-  */
+   * Hàm này cũng thuộc về React Component Lifecycle -
+   * được gọi khi component này bị xóa khỏi màn hình
+   * Lúc này, mình phải hủy bỏ sự kiện khi resize
+   * và xóa bỏ interval đã khai bảo bên trên để tránh leak memory.
+   */
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions);
     if (this.automaticInterval) clearInterval(this.automaticInterval);
@@ -228,49 +232,49 @@ export default class SlideshowGallery extends React.Component {
     return (
       <div className="lp-slideshow-gallery">
         <div className="container">
-          {
-            this.props.input.map((image, index) => {
-              return (
-                <div
-                  key={index}
-                  className={
-                    `slide ${this.state.slideIndex === index ? "active" : ""}`
-                  }
-                >
-                  <div className="number-text">
-                    {`${index + 1} / ${this.props.input.length}`}
-                  </div>
-                  <img className="image" src={image.src} alt={image.caption} />
-                  <div className="caption-text">{image.caption}</div>
+          {this.props.input.map((image, index) => {
+            return (
+              <div
+                key={index}
+                className={`slide ${
+                  this.state.slideIndex === index ? "active" : ""
+                }`}
+              >
+                <div className="number-text">
+                  {`${index + 1} / ${this.props.input.length}`}
                 </div>
-              )
-            })
-          }
+                <img className="image" src={image.src} alt={image.caption} />
+                <div className="caption-text">{image.caption}</div>
+              </div>
+            );
+          })}
 
-          <span className="prev" onClick={this.backward}>❮</span>
-          <span className="next" onClick={this.forward}>❯</span>
+          <span className="prev" onClick={this.backward}>
+            ❮
+          </span>
+          <span className="next" onClick={this.forward}>
+            ❯
+          </span>
         </div>
 
         <div className="container-bottom">
-          {
-            this.props.input.map((image, index) => {
-              return (
-                <img
-                  key={index}
-                  src={image.src}
-                  alt={image.caption}
-                  className={
-                    `image ${this.state.slideIndex === index ? "active" : ""}`
-                  }
-                  onClick={() => this.setSlideIndex(index)}
-                  style={{
-                    width: `${1 / this.props.input.length * 100}%`,
-                    height: `100%`
-                  }}
-                />
-              )
-            })
-          }
+          {this.props.input.map((image, index) => {
+            return (
+              <img
+                key={index}
+                src={image.src}
+                alt={image.caption}
+                className={`image ${
+                  this.state.slideIndex === index ? "active" : ""
+                }`}
+                onClick={() => this.setSlideIndex(index)}
+                style={{
+                  width: `${(1 / this.props.input.length) * 100}%`,
+                  height: `100%`,
+                }}
+              />
+            );
+          })}
         </div>
       </div>
     );
@@ -296,13 +300,13 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   width: 100%;
 }
 
-.lp-slideshow-gallery>.container {
+.lp-slideshow-gallery > .container {
   position: relative;
   margin: auto;
   width: 100%;
 }
 
-.lp-slideshow-gallery>.container>.slide {
+.lp-slideshow-gallery > .container > .slide {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -314,17 +318,17 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: opacity 0.6s ease;
 }
 
-.lp-slideshow-gallery>.container>.slide.active {
+.lp-slideshow-gallery > .container > .slide.active {
   opacity: 1;
 }
 
-.lp-slideshow-gallery>.container>.slide>.image {
+.lp-slideshow-gallery > .container > .slide > .image {
   width: 100%;
   height: 100%;
-  object-fit: cover
+  object-fit: cover;
 }
 
-.lp-slideshow-gallery>.container>.slide>.number-text {
+.lp-slideshow-gallery > .container > .slide > .number-text {
   color: #fff;
   font-size: 1rem;
   padding: 8px 12px;
@@ -332,7 +336,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   top: 0;
 }
 
-.lp-slideshow-gallery>.container>.slide>.caption-text {
+.lp-slideshow-gallery > .container > .slide > .caption-text {
   color: #fff;
   font-size: 1.3rem;
   padding: 8px 12px;
@@ -343,8 +347,8 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.lp-slideshow-gallery>.container>.prev,
-.lp-slideshow-gallery>.container>.next {
+.lp-slideshow-gallery > .container > .prev,
+.lp-slideshow-gallery > .container > .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -360,34 +364,34 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: background-color 0.6s ease;
 }
 
-.lp-slideshow-gallery:hover>.container>.prev,
-.lp-slideshow-gallery:hover>.container>.next {
+.lp-slideshow-gallery:hover > .container > .prev,
+.lp-slideshow-gallery:hover > .container > .next {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.lp-slideshow-gallery:hover>.container>.prev:hover,
-.lp-slideshow-gallery:hover>.container>.next:hover {
+.lp-slideshow-gallery:hover > .container > .prev:hover,
+.lp-slideshow-gallery:hover > .container > .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.lp-slideshow-gallery>.container>.next {
+.lp-slideshow-gallery > .container > .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.lp-slideshow-gallery>.container>.prev {
+.lp-slideshow-gallery > .container > .prev {
   left: 0;
   border-radius: 0 3px 3px 0;
 }
 
-.lp-slideshow-gallery>.container-bottom {
+.lp-slideshow-gallery > .container-bottom {
   margin-bottom: 1rem;
   width: 100%;
   display: flex;
   display: -webkit-flex;
 }
 
-.lp-slideshow-gallery>.container-bottom>.image {
+.lp-slideshow-gallery > .container-bottom > .image {
   flex: 1;
   object-fit: cover;
   opacity: 0.5;
@@ -397,11 +401,11 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
   -o-transition: opacity 0.6s ease;
 }
 
-.lp-slideshow-gallery>.container-bottom>.image.active,
-.lp-slideshow-gallery>.container-bottom>.image:hover {
+.lp-slideshow-gallery > .container-bottom > .image.active,
+.lp-slideshow-gallery > .container-bottom > .image:hover {
   opacity: 1;
 }
-.lp-slideshow-gallery>.container-bottom>.image:not(.active):hover{
+.lp-slideshow-gallery > .container-bottom > .image:not(.active):hover {
   cursor: pointer;
 }
 ```
@@ -433,16 +437,16 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 **./src/App.js**
 
 ```jsx
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import SlideshowGallery from './components/slideshow-gallery/slideshow-gallery';
-import img1 from './images/01.jpg';
-import img2 from './images/02.jpg';
-import img3 from './images/03.jpg';
-import img4 from './images/04.jpg';
-import img5 from './images/05.jpg';
-import img6 from './images/06.jpg';
+import SlideshowGallery from "./components/slideshow-gallery/slideshow-gallery";
+import img1 from "./images/01.jpg";
+import img2 from "./images/02.jpg";
+import img3 from "./images/03.jpg";
+import img4 from "./images/04.jpg";
+import img5 from "./images/05.jpg";
+import img6 from "./images/06.jpg";
 
 const collection = [
   { src: img1, caption: "Caption one" },
@@ -457,11 +461,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <SlideshowGallery
-          input={collection}
-          ratio={`3:2`}
-          mode={`manual`}
-        />
+        <SlideshowGallery input={collection} ratio={`3:2`} mode={`manual`} />
 
         <SlideshowGallery
           input={collection}
@@ -471,8 +471,8 @@ export default class App extends React.Component {
         />
 
         <div>
-          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-          Visit me at <a href="/">completejavascript.com</a>.
+          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me
+          at <a href="/">completejavascript.com</a>.
         </div>
       </div>
     );
@@ -505,5 +505,5 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)
