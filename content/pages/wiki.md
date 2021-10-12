@@ -87,6 +87,7 @@ Dưới đây, mình liệt kê và phân loại các bài viết trên trang we
 - [10 Figma templates cho web và di động miễn phí](/figma-templates-cho-web-va-di-dong)
 - [10 bộ icon miễn phí dành cho dân IT](/icon-mien-phi-dan-it)
 - [10 trang web tải ảnh miễn phí chất lượng cao](/web-tai-anh-mien-phi-chat-luong-cao)
+- [10 trang web tạo palette màu cực tốt](/trang-web-tao-palette-mau-cuc-tot)
 
 > **[Lập trình cơ bản](/category/lap-trinh-co-ban)**
 
