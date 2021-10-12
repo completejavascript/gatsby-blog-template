@@ -88,6 +88,7 @@ Dưới đây, mình liệt kê và phân loại các bài viết trên trang we
 - [10 bộ icon miễn phí dành cho dân IT](/icon-mien-phi-dan-it)
 - [10 trang web tải ảnh miễn phí chất lượng cao](/web-tai-anh-mien-phi-chat-luong-cao)
 - [10 trang web tạo palette màu cực tốt](/trang-web-tao-palette-mau-cuc-tot)
+- [18 trang web tải free icon SVG cho cá nhân và thương mại](/web-tai-free-icon-svg)
 
 > **[Lập trình cơ bản](/category/lap-trinh-co-ban)**
 
