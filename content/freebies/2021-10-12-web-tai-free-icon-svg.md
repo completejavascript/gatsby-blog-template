@@ -51,7 +51,7 @@ Sau đây là danh sách 18 trang tải free icon SVG mà bạn có thể sử d
 
 ![Font Awesome](../images/web-tai-free-icon-svg-fontawsome.png)
 
-### [IconFinder](https://www.iconfinder.com/search?q=&price=free)
+### [IconFinder](https://www.iconfinder.com/search?q=&price=free&ref=lam-pham-1)
 
 ![IconFinder](../images/web-tai-free-icon-svg-iconfinder.png)
 
