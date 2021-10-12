@@ -1,5 +1,5 @@
 ---
-date: "2021-10-11T21:00:00Z"
+date: "2021-10-12T20:00:00Z"
 template: "freebie"
 cover: "../images/trang-web-tao-palette-mau-cuc-tot-completejavascript.com_.png"
 keywords: "trang web tạo palette màu"
