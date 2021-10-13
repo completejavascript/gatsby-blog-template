@@ -27,15 +27,9 @@ https://codepen.io/completejavascript/pen/MVyPqr
 Để có thể di chuyển đến các mục khác nhau trên trang web, mỗi mục bạn cần phải xác định một id cho nó. Trong ví dụ trên, mình có 3 mục với 3 id lần lượt là: **sec1**, **sec2**, **sec3**.
 
 ```html
-<div id="sec1">
-  This is section 1
-</div>
-<div id="sec2">
-  This is section 2
-</div>
-<div id="sec3">
-  This is section 3
-</div>
+<div id="sec1">This is section 1</div>
+<div id="sec2">This is section 2</div>
+<div id="sec3">This is section 3</div>
 ```
 
 Tiếp theo là thanh menu (hay navigation), cho phép người dùng lựa chọn sẽ di chuyển tới đâu.
@@ -52,14 +46,19 @@ Tiếp theo là thanh menu (hay navigation), cho phép người dùng lựa ch�
 
 ## Smooth Scrolling trang web với jQuery
 
-Mặc định, khi người dùng nhấn vào thẻ a thì trang web sẽ nhảy đến vị trí có địa chỉ xác định trong thẻ href. Vì vậy, để có thể smooth scrolling trang web, bạn cần phải bắt sự kiện khi người dùng nhấn thẻ a vào và chặn lại [event](/xu-ly-mot-event-javascript-co-ban/) mặc định.
+Mặc định, khi người dùng nhấn vào thẻ a thì trang web sẽ nhảy đến vị trí có địa chỉ xác định trong thẻ href. Vì vậy, để có thể smooth scrolling trang web, bạn cần phải bắt sự kiện khi người dùng nhấn thẻ a vào và chặn lại [event](/xu-ly-mot-event-javascript-co-ban) mặc định.
 
 ```js
-$("a[href*='#']:not([href='#])").click(function() {
+$("a[href*='#']:not([href='#])").click(function () {
   let target = $(this).attr("href");
-  $('html,body').stop().animate({
-    scrollTop: $(target).offset().top
-  }, 1000);
+  $("html,body")
+    .stop()
+    .animate(
+      {
+        scrollTop: $(target).offset().top,
+      },
+      1000
+    );
   event.preventDefault();
 });
 ```
@@ -84,7 +83,7 @@ Như vậy, phần thêm animation trên có thể diễn giải thành lời l�
 
 Trên đây là cách mà mình sử dụng để triển khai smooth scrolling trên trang web. Hy vọng nó hữu ích với bạn.
 
-Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/xmlhttprequest-voi-promise-javascript/), thân ái!
+Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/xmlhttprequest-voi-promise-javascript), thân ái!
 
 ## Tham khảo
 

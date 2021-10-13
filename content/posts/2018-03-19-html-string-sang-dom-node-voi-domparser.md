@@ -41,11 +41,11 @@ console.log(doc);
 */
 ```
 
-Trong hàm parseFromString, tham số đầu tiên là nội dung HTML [string](/values-types-va-operators-trong-javascript-phan-2/) mà bạn muốn parse; và tham số tiếp theo là kiểu string.
+Trong hàm parseFromString, tham số đầu tiên là nội dung HTML [string](/values-types-va-operators-trong-javascript-phan-2) mà bạn muốn parse; và tham số tiếp theo là kiểu string.
 
 Có 3 kiểu string được support là: **application/xml**, **image/svg+xml** và **text/html**. Đối với bài toán này, bạn sẽ chọn kiểu text/html.
 
-Kết quả trả về sẽ là một [**document**](/co-ban-ve-dom-javascript/), với đầy đủ các thẻ &lt;html&gt;, &lt;head&gt;, &lt;body&gt; và các node được tạo ra từ string đầu vào như trên.
+Kết quả trả về sẽ là một [**document**](/co-ban-ve-dom-javascript), với đầy đủ các thẻ &lt;html&gt;, &lt;head&gt;, &lt;body&gt; và các node được tạo ra từ string đầu vào như trên.
 
 **Bước 3**: Lấy ra mảng các node mới được tạo ra
 
@@ -58,7 +58,7 @@ console.log(nodes);
 // => NodeList [div]
 ```
 
-Đến đây, bạn sẽ thu được một [mảng](/javascript-array-co-ban/) các node - NodeList. Và bây giờ, bạn hoàn toàn tự do sử dụng NodeList này để chèn vào bất cứ đâu trên trang HTML.
+Đến đây, bạn sẽ thu được một [mảng](/javascript-array-co-ban) các node - NodeList. Và bây giờ, bạn hoàn toàn tự do sử dụng NodeList này để chèn vào bất cứ đâu trên trang HTML.
 
 ## Chuyển HTML String thành DOM và vẽ lên HTML
 
@@ -97,7 +97,7 @@ btnAdd.addEventListener("click", function () {
 });
 ```
 
-Vì nodes là kiểu mảng, nên mình sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi/) để duyệt. Mỗi phần tử node trong mảng sẽ được sao chép ([clone](https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode)) ra một node mới, để dùng lại sau này.
+Vì nodes là kiểu mảng, nên mình sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi) để duyệt. Mỗi phần tử node trong mảng sẽ được sao chép ([clone](https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode)) ra một node mới, để dùng lại sau này.
 
 ```js
 node.cloneNode(true);
@@ -125,7 +125,7 @@ btnRm.addEventListener("click", function () {
 
 Trên đây là cách làm đơn giản để chuyển HTML String sang DOM node và thêm chúng vào giao diện HTML. Tuy nhiên, cách làm này có một nhược điểm là khi cấu trúc của HTML string phức tạp, sẽ rất khó để bạn theo dõi. Vì vậy, bài viết sau mình sẽ giới thiệu với các bạn phương pháp sử dụng thẻ template trong HTML.
 
-Hẹn gặp lại bạn ở [bài viết tiếp theo](/chuyen-html-template-sang-dom-node/), thân ái!
+Hẹn gặp lại bạn ở [bài viết tiếp theo](/chuyen-html-template-sang-dom-node), thân ái!
 
 **Tham khảo**
 

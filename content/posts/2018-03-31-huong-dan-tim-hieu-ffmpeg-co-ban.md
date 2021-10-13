@@ -16,6 +16,7 @@ tags:
 Sau quá trình học tập và làm việc với FFMPEG, mình phải khẳng định rằng FFMPEG là một phần mềm xử lý audio, video đơn giản, miễn phí và hiệu quả. Vì vậy, bài viết này sẽ hướng dẫn tìm hiểu FFmpeg cơ bản.
 
 Tuy nhiên, trước khi bắt đầu đọc bài viết này, mình mong bạn hiểu rõ về vấn đề, đó là:
+
 - FFMPEG là hoàn toàn miễn phí, mã nguồn mở. Do đó bạn hoàn toàn yên tâm sử dụng nó ở bất kì đầu mà không sợ vi phạm bản quyền.
 - Sử dụng FFMPEG để xử lý audio, video - nghĩa là bạn phải sử dụng dòng lệnh thông qua Command line (cmd). Nếu bạn cảm thấy mình lười trong việc sử dụng câu lệnh và mong muốn có một giao diện để xử lý audio, video thì mình xin lỗi rằng bài viết này không dành cho bạn. Mình xin cám ơn và hẹn gặp lại bạn ở các bài viết khác.
 - Nếu bạn đọc đến đây thì có nghĩa là bạn tò mò và sẵn sàng sử dụng FFMPEG. Có thể bạn cũng đang hướng tới sự tự do và đơn giản. Cũng giống như một triết lý nổi tiếng của Lý Tiểu Long đó là:
@@ -89,6 +90,7 @@ Sau đó bạn sẽ được chuyển đến trang để tải phần mềm về
 **Dev**: chứa những tệp tin như trên cộng thêm các tệp tin header, lib,...
 
 Có 2 trường hợp:
+
 - Nếu bạn là người dùng bình thường thì bạn có thể chỉ cần tải về dạng **Static**
 - Nếu bạn là lập trình viên và muốn phát triển ứng dụng cho riêng mình thì có thể tải về dạng **Shared** hoặc **Dev**
 
@@ -333,18 +335,18 @@ Trên đây là những gì mình tìm hiểu được về FFMPEG và những c
 
 Hy vọng, bài viết trên đây có thể giúp ích cho bạn. Nếu có gì thắc mắc bạn có thể để lại comment phía dưới hoặc gửi lại email cho mình.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lay-anh-thumbnail-cua-video-tren-youtube/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lay-anh-thumbnail-cua-video-tren-youtube), thân ái!
 
 Có thể bạn quan tâm:
 
-- [[FFmpeg tutorial] Những câu lệnh FFmpeg xử lý video](https://phamvanlam.com/ffmpeg-tutorial-nhung-cau-lenh-ffmpeg-xu-ly-video/)
-- [[FFmpeg Tutorial] Lấy thông tin video bằng FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-lay-thong-tin-video-bang-ffmpeg/)
-- [[FFmpeg Tutorial] Lấy ảnh từ video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-lay-anh-tu-video-voi-ffmpeg/)
-- [[FFmpeg Tutorial] Chuyển video thành ảnh động GIF](https://phamvanlam.com/ffmpeg-tutorial-chuyen-video-thanh-anh-dong-gif/)
-- [[FFmpeg Tutorial] Convert video thành MP4 với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-convert-video-thanh-mp4-voi-ffmpeg/)
-- [[FFmpeg Tutorial] Convert video thành WEBM với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-convert-video-thanh-webm-voi-ffmpeg/)
-- [[FFmpeg Tutorial] Crop video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-crop-video-voi-ffmpeg/)
-- [[FFmpeg Tutorial] Cut video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-cut-video-voi-ffmpeg/)
+- [[FFmpeg tutorial] Những câu lệnh FFmpeg xử lý video](https://phamvanlam.com/ffmpeg-tutorial-nhung-cau-lenh-ffmpeg-xu-ly-video)
+- [[FFmpeg Tutorial] Lấy thông tin video bằng FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-lay-thong-tin-video-bang-ffmpeg)
+- [[FFmpeg Tutorial] Lấy ảnh từ video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-lay-anh-tu-video-voi-ffmpeg)
+- [[FFmpeg Tutorial] Chuyển video thành ảnh động GIF](https://phamvanlam.com/ffmpeg-tutorial-chuyen-video-thanh-anh-dong-gif)
+- [[FFmpeg Tutorial] Convert video thành MP4 với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-convert-video-thanh-mp4-voi-ffmpeg)
+- [[FFmpeg Tutorial] Convert video thành WEBM với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-convert-video-thanh-webm-voi-ffmpeg)
+- [[FFmpeg Tutorial] Crop video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-crop-video-voi-ffmpeg)
+- [[FFmpeg Tutorial] Cut video với FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-cut-video-voi-ffmpeg)
 
 <hr class="border-color-light-grey" />
 

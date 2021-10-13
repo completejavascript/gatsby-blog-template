@@ -40,7 +40,7 @@ Dẫu vậy thì việc sử dụng Tiếng Anh vẫn sẽ đem lại nhiều l�
 
 ## Dễ dàng xin việc tại các công ty liên doanh nước ngoài tại Việt Nam hoặc các công ty tại nước ngoài
 
-Hiện nay, đa phần các công ty đều yêu cầu nhân viên có [trình độ Tiếng Anh](/tim-hieu-thi-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018/). Dù cho có những công ty thuần Việt Nam, nhưng họ vẫn mong muốn nhân viên biết tiếng anh để có thể phát triển công ty mạnh mẽ hơn.
+Hiện nay, đa phần các công ty đều yêu cầu nhân viên có [trình độ Tiếng Anh](/tim-hieu-thi-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018). Dù cho có những công ty thuần Việt Nam, nhưng họ vẫn mong muốn nhân viên biết tiếng anh để có thể phát triển công ty mạnh mẽ hơn.
 
 Đối với các công ty nước ngoài, việc biết tiếng anh là bắt buộc. Vì bạn cần biết tiếng anh để giao tiếp được với sếp, đồng nghiệp, hoặc với đối tác nước ngoài,...
 
@@ -48,7 +48,7 @@ Trường hợp bạn là lập trình viên, muốn phát triển tự do thì 
 
 Trên đây là 4 lợi ích to lớn của Tiếng Anh đối với lập trình viên. Và chắc chắn sẽ còn nhiều lợi ích khác nữa. Rất mong bạn đọc chia sẻ ý kiến của mình tại phần bình luận.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thuc-day-som-khong-cam-thay-met-moi/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thuc-day-som-khong-cam-thay-met-moi), thân ái!
 
 <hr class="border-color-light-grey" />
 

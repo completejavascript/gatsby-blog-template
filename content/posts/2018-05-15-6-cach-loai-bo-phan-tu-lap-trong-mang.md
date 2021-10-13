@@ -24,18 +24,18 @@ Với bài toán này, yêu cầu là loại bỏ phần tử lặp trong mảng
 
 Hiểu đơn giản: khi hai phần tử a, b trong mảng mà (a === b) là true thì gọi đó là phần tử lặp.
 
-Tiếp theo, mình cần quan tâm đến kiểu dữ liệu của các phần tử trong mảng. JavaScript có 7 kiểu dữ liệu là: [number](/values-types-va-operators-trong-javascript-phan-1/), [string, boolean](/values-types-va-operators-trong-javascript-phan-2/), [array](/javascript-array-co-ban/), [object](/javascript-object-last-but-not-least/), null và undefined. Tuy nhiên, mình tạm thời bỏ qua trường hợp phần tử trong mảng có kiểu dữ liệu là: array và object. Vì xử lý 2 trường hợp này sẽ khá phức tạp.
+Tiếp theo, mình cần quan tâm đến kiểu dữ liệu của các phần tử trong mảng. JavaScript có 7 kiểu dữ liệu là: [number](/values-types-va-operators-trong-javascript-phan-1), [string, boolean](/values-types-va-operators-trong-javascript-phan-2), [array](/javascript-array-co-ban), [object](/javascript-object-last-but-not-least), null và undefined. Tuy nhiên, mình tạm thời bỏ qua trường hợp phần tử trong mảng có kiểu dữ liệu là: array và object. Vì xử lý 2 trường hợp này sẽ khá phức tạp.
 
 Ví dụ phần tử trong mảng có kiểu dữ liệu là object:
 
 ```js
-let arr = [{x : 1}, {x : 2}, 3, 'a', {x : 1}];
+let arr = [{ x: 1 }, { x: 2 }, 3, "a", { x: 1 }];
 ```
 
 Về mặt trực quan, bạn sẽ thấy rằng mảng trên có phần tử lặp là {x : 1}, vì nó lặp lại 2 lần. Nhưng thực tế thì không phải vậy. Bởi lẽ,
 
 ```js
-console.log({x : 1} === {x : 1});
+console.log({ x: 1 } === { x: 1 });
 // => false
 ```
 
@@ -54,8 +54,8 @@ Theo mình thấy, thuật toán bài này khá đơn giản và có thể tóm 
 
 - B1: Khai báo mảng chứa kết quả, ví dụ: dst = []
 - B2: Duyệt từng phần tử trong mảng nguồn (src), rồi kiểm tra:
-  * Nếu phần tử này chưa tồn tại trong mảng dst thì thêm nó vào mảng dst
-  * Nếu phần tử này đã tồn tại trong mảng dst rồi thì bỏ qua
+  - Nếu phần tử này chưa tồn tại trong mảng dst thì thêm nó vào mảng dst
+  - Nếu phần tử này đã tồn tại trong mảng dst rồi thì bỏ qua
 - B3: Trả về mảng dst là mảng đã loại bỏ phần tử lặp.
 
 Ý tưởng chung là như vậy, sau đây mình sẽ triển khai thuật toán này thành code.
@@ -65,7 +65,7 @@ Theo mình thấy, thuật toán bài này khá đơn giản và có thể tóm 
 ### Sử dụng mảng thông thường
 
 ```js
-let arr = [1, 5, 'a', 3, 'f', '3', 5, 3, 'b', 'e', 'f'];
+let arr = [1, 5, "a", 3, "f", "3", 5, 3, "b", "e", "f"];
 let ans = deduplicate(arr);
 
 console.log(ans);
@@ -73,21 +73,21 @@ console.log(ans);
 
 function deduplicate(arr) {
   let isExist = (arr, x) => {
-    for(let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
       if (arr[i] === x) return true;
     }
     return false;
-  }
+  };
 
   let ans = [];
-  arr.forEach(element => {
-    if(!isExist(ans, element)) ans.push(element);
+  arr.forEach((element) => {
+    if (!isExist(ans, element)) ans.push(element);
   });
   return ans;
 }
 ```
 
-Cái mà bạn cần quan tâm ở đây là [function](/tim-hieu-function-javascript/) **deduplicate**. Vậy cách triển khai function này tương ứng với thuật toán sẽ như thế nào?
+Cái mà bạn cần quan tâm ở đây là [function](/tim-hieu-function-javascript) **deduplicate**. Vậy cách triển khai function này tương ứng với thuật toán sẽ như thế nào?
 
 **B1:** Khai báo mảng chứa kết quả, ví dụ: dst = []
 
@@ -98,15 +98,15 @@ let ans = [];
 **B2:** Duyệt từng phần tử trong mảng nguồn (src), rồi kiểm tra:
 
 ```js
-arr.forEach(element => {
-      //
+arr.forEach((element) => {
+  //
 });
 ```
 
 Nếu phần tử chưa tồn tại trong mảng dst thì thêm nó vào mảng:
 
 ```js
-if(!isExist(ans, element)) ans.push(element);
+if (!isExist(ans, element)) ans.push(element);
 ```
 
 Nếu phần tử đã tồn tại trong mảng dst thì bỏ qua (không làm gì).
@@ -121,11 +121,11 @@ return ans;
 
 ```js
 let isExist = (arr, x) => {
-  for(let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === x) return true;
   }
   return false;
-}
+};
 ```
 
 Ở đây, mình không sử dụng phương thức có sẵn. Đơn giản là sử dụng vòng lặp, duyệt từng phần tử trong mảng arr[i]. Nếu nó bằng với phần tử cần so sánh x, tức (arr[i] === x) trả về giá trị **true**, thì phần tử x đã tồn tại trong mảng arr. Hay nói cách khác là hàm _isExist(arr, x)_ trả về giá trị true.
@@ -135,7 +135,7 @@ Trên đây là cách triển khai dài nhất, nhưng cơ bản nhất và nó 
 ### Sử dụng phương thức indexOf để kiểm tra tính tồn tại
 
 ```js
-let arr = [1, 5, 'a', 3, 'f', '3', 5, 3, 'b', 'e', 'f'];
+let arr = [1, 5, "a", 3, "f", "3", 5, 3, "b", "e", "f"];
 let ans = deduplicate(arr);
 
 console.log(ans);
@@ -145,8 +145,8 @@ function deduplicate(arr) {
   let isExist = (arr, x) => arr.indexOf(x) > -1;
   let ans = [];
 
-  arr.forEach(element => {
-    if(!isExist(ans, element)) ans.push(element);
+  arr.forEach((element) => {
+    if (!isExist(ans, element)) ans.push(element);
   });
 
   return ans;
@@ -160,7 +160,7 @@ Nếu bạn để ý thì thấy rằng, mình đã rút ngắn hàm isExist **t
 Cũng tương tự như indexOf, bạn có thể sử dụng phương thức [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) để kiểm tra tính tồn tại của một phần tử trong mảng:
 
 ```js
-let arr = [1, 5, 'a', 3, 'f', '3', 5, 3, 'b', 'e', 'f'];
+let arr = [1, 5, "a", 3, "f", "3", 5, 3, "b", "e", "f"];
 let ans = deduplicate(arr);
 
 console.log(ans);
@@ -170,8 +170,8 @@ function deduplicate(arr) {
   let isExist = (arr, x) => arr.includes(x);
   let ans = [];
 
-  arr.forEach(element => {
-    if(!isExist(ans, element)) ans.push(element);
+  arr.forEach((element) => {
+    if (!isExist(ans, element)) ans.push(element);
   });
 
   return ans;
@@ -183,7 +183,7 @@ Phương thức includes sẽ trả về true nếu mảng arr chứa phần t�
 ### Sử dụng phương thức filter và indexOf
 
 ```js
-let arr = [1, 5, 'a', 3, 'f', '3', 5, 3, 'b', 'e', 'f'];
+let arr = [1, 5, "a", 3, "f", "3", 5, 3, "b", "e", "f"];
 let ans = deduplicate(arr);
 
 console.log(ans);
@@ -199,7 +199,7 @@ Cách này có vẻ không theo logic của thuật toán phía trên, tuy nhiê
 Ở đây hàm test (arrow function) là:
 
 ```js
-(value, index, arr) => arr.indexOf(value) === index
+(value, index, arr) => arr.indexOf(value) === index;
 ```
 
 Trong đó, value là giá trị của mỗi phần tử trong mảng, index là chỉ số tương ứng và arr là mảng gốc ban đầu.
@@ -217,7 +217,7 @@ Cứ như vậy, mình sẽ thu được mảng mới mà không có phần tử
 ### Sử dụng Set và Array.from
 
 ```js
-let arr = [1, 5, 'a', 3, 'f', '3', 5, 3, 'b', 'e', 'f'];
+let arr = [1, 5, "a", 3, "f", "3", 5, 3, "b", "e", "f"];
 let ans = deduplicate(arr);
 
 console.log(ans);
@@ -248,7 +248,7 @@ return Array.from(set);
 ### Sử dụng Set và toán tử spread
 
 ```js
-let arr = [1, 5, 'a', 3, 'f', '3', 5, 3, 'b', 'e', 'f'];
+let arr = [1, 5, "a", 3, "f", "3", 5, 3, "b", "e", "f"];
 let ans = deduplicate(arr);
 
 console.log(ans);
@@ -279,7 +279,7 @@ Trên đây là 6 cách loại bỏ phần tử lặp trong mảng:
 
 Nếu bạn có thắc mắc hay góp ý gì thì có thể để lại cho mình trong phần bình luận. Ngoài ra, nếu bạn có cách làm khác nữa thì mong bạn chia sẻ lại với mình nhé!
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/2-cach-tao-immutable-object-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/2-cach-tao-immutable-object-javascript), thân ái!
 
 <hr class="border-color-light-grey" />
 

@@ -20,9 +20,9 @@ Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 
 ```js
 let a = {
   x: 1,
-  getX: function() {
+  getX: function () {
     return this.x;
-  }
+  },
 };
 
 let b = Object.create(a);
@@ -50,10 +50,11 @@ Theo định nghĩa của [Object.create()](https://developer.mozilla.org/en-US/
 
 Tức là Object.create sẽ tạo ra một object mới, sử dụng object cho trước làm **proto** cho object mới tạo ra.
 
-Trong câu hỏi này, [object](/javascript-object-last-but-not-least/) a sẽ được dùng làm **proto** cho object b.
+Trong câu hỏi này, [object](/javascript-object-last-but-not-least) a sẽ được dùng làm **proto** cho object b.
 
 Giả sử không có câu lệnh _delete b.x_ thì bạn có thể đoán được kết quả sẽ trả về của phương thức _getX()_ là **this.x = b.x = 10**. Nhưng nếu _delete b.x_ thì JavaScript sẽ tìm đến thằng cha gần nhất của b, thông qua **proto**, và đó chính là object a. Vì vậy, kết quả **this.x = a.x = 1**.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -61,8 +62,8 @@ Giả sử không có câu lệnh _delete b.x_ thì bạn có thể đoán đư�
 ## Xoắn não với phỏng vấn JavaScript 3 - Câu 2
 
 ```js
-let a = [1, 'a', {x : 1}, {y : 2}, [1, 2], {x : 1}];
-console.log(a.indexOf({x : 1}));
+let a = [1, "a", { x: 1 }, { y: 2 }, [1, 2], { x: 1 }];
+console.log(a.indexOf({ x: 1 }));
 ```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
@@ -84,7 +85,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 Nghĩa là nó compare phần tử bằng dấu ===. Mà trong JavaScript, bạn không thể sử dụng toán tử này để so sánh 2 object. Ví dụ:
 
 ```js
-console.log({x : 1} === {x : 1});
+console.log({ x: 1 } === { x: 1 });
 // => false
 ```
 
@@ -97,13 +98,16 @@ Bạn có thể sử dụng phương thức [findIndex](https://developer.mozill
 Ví dụ:
 
 ```js
-[1, 'a', {x : 1}, {y : 2}, [1, 2], {x : 1}].findIndex(function(element) {
-  return typeof element === "object" &&
-          Object.keys(element).length === 1 &&
-          Object.keys(element)[0] === 'x' &&
-          element.x === 1;
+[1, "a", { x: 1 }, { y: 2 }, [1, 2], { x: 1 }].findIndex(function (element) {
+  return (
+    typeof element === "object" &&
+    Object.keys(element).length === 1 &&
+    Object.keys(element)[0] === "x" &&
+    element.x === 1
+  );
 });
 ```
+
   </div>
   </div>
 </div>
@@ -112,8 +116,8 @@ Ví dụ:
 ## Xoắn não với phỏng vấn JavaScript 3 - Câu 3
 
 ```js
-(function() {
-  var x = y = 10;
+(function () {
+  var x = (y = 10);
 })();
 console.log(y);
 ```
@@ -133,7 +137,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 Đoạn code trên thực chất có thể tách ra thành như sau:
 
 ```js
-(function() {
+(function () {
   y = 10;
   var x = y;
 })();
@@ -142,8 +146,9 @@ console.log(y);
 
 Biến _y_ viết như vậy sẽ có phạm vi global, tức nó trở thành một thuộc tính của window. Do đó, **console.log(y) = 10**.
 
-Trong khi đó, nếu bạn in ra giá trị của x bằng console.log(x) thì kết quả báo lỗi **ReferenceError: x is not defined**. Bởi vì, biến _x_ kiểu [var sẽ có phạm vi là block](/phan-biet-var-va-let-trong-javascript/), tức là chỉ nó chỉ tồn tại trong [function](/tim-hieu-function-javascript/) trên.
-    </div>
+Trong khi đó, nếu bạn in ra giá trị của x bằng console.log(x) thì kết quả báo lỗi **ReferenceError: x is not defined**. Bởi vì, biến _x_ kiểu [var sẽ có phạm vi là block](/phan-biet-var-va-let-trong-javascript), tức là chỉ nó chỉ tồn tại trong [function](/tim-hieu-function-javascript) trên.
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -187,7 +192,8 @@ a = [1, 2, 3, , , , , , , , 5, -1: 4]
 ```
 
 Do đó, độ dài mảng a.length = 11
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -196,9 +202,9 @@ Do đó, độ dài mảng a.length = 11
 
 ```js
 let a = {},
-    b = {x: 12},
-    c = [1, 2],
-    d = {m: 'a', n: 'b'};
+  b = { x: 12 },
+  c = [1, 2],
+  d = { m: "a", n: "b" };
 
 a[b] = 34;
 a[c] = 56;
@@ -219,31 +225,31 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Ở đây, mình sử dụng object b, array c và object d làm giá trị key cho object a. Và đối với object trong JavaScript, vì key luôn luôn có [kiểu string](/values-types-va-operators-trong-javascript-phan-2/) nên object b, array c và object d sẽ được convert sang kiểu string. Khi đó, sẽ có một số trường hợp đặc biệt sau:
+Ở đây, mình sử dụng object b, array c và object d làm giá trị key cho object a. Và đối với object trong JavaScript, vì key luôn luôn có [kiểu string](/values-types-va-operators-trong-javascript-phan-2) nên object b, array c và object d sẽ được convert sang kiểu string. Khi đó, sẽ có một số trường hợp đặc biệt sau:
 
 Với mọi object khi convert sang kiểu string ta đều thu được string có dạng **[object Object]**;
 
 Ví dụ:
 
 ```js
-console.log(({x : 12}).toString());      // => [object Object]
-console.log(({x : 1, y: 2}).toString()); // => [object Object]
+console.log({ x: 12 }.toString()); // => [object Object]
+console.log({ x: 1, y: 2 }.toString()); // => [object Object]
 ```
 
 Array khi convert sang string sẽ thu được string có dạng _các phần tử cách nhau bởi dấu phẩy (,)_. Ví dụ:
 
 ```js
-console.log([1, 2].toString());          // => 1, 2
-console.log([1, {x : 1}].toString());    // => 1, [object Object]
+console.log([1, 2].toString()); // => 1, 2
+console.log([1, { x: 1 }].toString()); // => 1, [object Object]
 ```
 
 Do đó, đoạn code trên sẽ tương đương với:
 
 ```js
 let a = {},
-    b = {x: 12},
-    c = [1, 2],
-    d = {m: 'a', n: 'b'};
+  b = { x: 12 },
+  c = [1, 2],
+  d = { m: "a", n: "b" };
 
 a["[object Object]"] = 34;
 a["1, 2"] = 56;
@@ -253,7 +259,8 @@ console.log(a["[object Object]"], a["1, 2"], a["[object Object]"]);
 ```
 
 Như vậy, kết quả thu được sẽ phải là: 78, 56, 78
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -261,8 +268,8 @@ Như vậy, kết quả thu được sẽ phải là: 78, 56, 78
 ## Xoắn não với phỏng vấn JavaScript 3 - Câu 6
 
 ```js
-var x = (x = 0, x++, x);
-let y = (y = 0, y++, y);
+var x = ((x = 0), x++, x);
+let y = ((y = 0), y++, y);
 console.log(x, y);
 ```
 
@@ -285,14 +292,14 @@ Khi sử dụng toán tử này, các biểu thức sẽ được thực hiện 
 **Xét câu lệnh thứ nhất:**
 
 ```js
-var x = (x = 0, x++, x);
+var x = ((x = 0), x++, x);
 ```
 
 Biến x được khai báo kiểu var nên sẽ được hoisted. Do đó, câu lệnh này sẽ tương đương với:
 
 ```js
 var x = undefined;
-x = (x = 0, x++, x);
+x = ((x = 0), x++, x);
 ```
 
 Sau đó, _(x = 0, x++, x)_ sẽ thực hiện lần lượt thực hiện: x = 0, x++, x và trả về giá trị của biểu thức cuối cùng. Như vậy, x = 1;
@@ -300,11 +307,12 @@ Sau đó, _(x = 0, x++, x)_ sẽ thực hiện lần lượt thực hiện: x = 
 **Xét biểu thức thứ 2:**
 
 ```js
-let y = (y = 0, y++, y);
+let y = ((y = 0), y++, y);
 ```
 
 Lần này, biến y được khai báo sử dụng let, nên nó sẽ không được hoisted. Vì vậy, khi _(y = 0, y++, y)_ thực hiện lần lượt các lệnh, thì ngay câu lệnh đầu tiên _y = 0_ sẽ báo lỗi ReferenceError: y is not defined. Bởi vì, biến y lúc này chưa được khai báo.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -313,7 +321,7 @@ Lần này, biến y được khai báo sử dụng let, nên nó sẽ không đ
 
 Trên đây là 6 câu hỏi phỏng vấn JavaScript cũng rất hay. Nếu bạn có cùng nhận xét với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-4/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-4), thân ái!
 
 <hr class="border-color-light-grey" />
 

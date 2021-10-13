@@ -14,7 +14,7 @@ tags:
   - HTML
 ---
 
-Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**.
+Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**.
 
 ## DOM là gì?
 
@@ -23,7 +23,7 @@ DOM là viết tắt của Document Object Model - một thành phần javascrip
 Hãy xem xét một ví dụ đơn giản sau:
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>My home page</title>
@@ -31,8 +31,10 @@ Hãy xem xét một ví dụ đơn giản sau:
   <body>
     <h1>My home page</h1>
     <p>Hello, I am Marijn and this is my home page.</p>
-    <p>I also wrote a book! Read it
-      <a href="http://eloquentjavascript.net">here</a>.</p>
+    <p>
+      I also wrote a book! Read it
+      <a href="http://eloquentjavascript.net">here</a>.
+    </p>
   </body>
 </html>
 ```
@@ -49,9 +51,9 @@ Thực tế, cấu trúc dữ liệu của một trang web được biểu diễ
 
 Mỗi DOM node sẽ có thuộc tính *nodeType* - là một số nguyên - để biểu diễn kiểu của node, với giá trị như sau:
 
-- document.ELEMENT\_NODE (1) : node thông thường như **html, head, body, title, h1, p,...**
-- document.TEXT\_NODE (3) : thành phần text trên trang web
-- document.COMMENT\_NODE (8) : thành phần comment.
+- document.ELEMENT_NODE (1) : node thông thường như **html, head, body, title, h1, p,...**
+- document.TEXT_NODE (3) : thành phần text trên trang web
+- document.COMMENT_NODE (8) : thành phần comment.
 
 Ví dụ trên được biểu diễn dạng cây:
 
@@ -73,11 +75,11 @@ Ví dụ: với mỗi node _p_ và _h1_ thì _parentNode_ là _body_.
 
 ### [Node.childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
 
-trỏ đến một [đối tượng](/javascript-object-last-but-not-least/) gần giống với [array](/javascript-array-co-ban/), chứa những node con của một node.
+trỏ đến một [đối tượng](/javascript-object-last-but-not-least) gần giống với [array](/javascript-array-co-ban), chứa những node con của một node.
 
 Tại sao lại là "gần giống với array" ?
 
-Vì đối tượng này không chứa các method như _slice, [forEach](/javascript-foreach-la-cai-quai-gi/)_.
+Vì đối tượng này không chứa các method như _slice, [forEach](/javascript-foreach-la-cai-quai-gi)_.
 
 Ví dụ: với node _body_, _childNodes_ là một danh sách với các node con là _h1, p, p_.
 
@@ -171,7 +173,7 @@ Tham khảo code tại [đây](https://github.com/completejavascript/practical-j
 
 Tham khảo code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/DOM_basic/cat_hat.completejavascript.com.js).
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xu-ly-mot-event-javascript-co-ban/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xu-ly-mot-event-javascript-co-ban), thân ái!
 
 ## Tham khảo
 

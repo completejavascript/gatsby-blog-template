@@ -13,7 +13,7 @@ tags:
   - Strict Mode
 ---
 
-Với mọi ngôn ngữ lập trình, debug là một hoạt động khó và mất nhiều thời gian nhất. Trong đó, debug [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) là khó khăn hơn cả. Tại sao vậy? Chúng ta sẽ cùng nhau tìm hiểu sau đây.
+Với mọi ngôn ngữ lập trình, debug là một hoạt động khó và mất nhiều thời gian nhất. Trong đó, debug [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) là khó khăn hơn cả. Tại sao vậy? Chúng ta sẽ cùng nhau tìm hiểu sau đây.
 
 ## Khái niệm chung về bug và debug
 
@@ -43,7 +43,7 @@ delete Object.prototype;
 Ví dụ 2: Sử dụng strict mode
 
 ```js
-'use strict'
+"use strict";
 x = 10;
 // Uncaught ReferenceError: x is not defined
 var Infinity = 10;
@@ -52,7 +52,7 @@ delete Object.prototype;
 // Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
 ```
 
-Qua hai ví dụ trên, ta thấy rằng: khi sử dụng 'use strict', bạn sẽ không thể sử dụng [biến](/values-types-va-operators-trong-javascript-phan-1/) mà không cần khai báo, không thể gán giá trị cho thuộc tính read-only, không thể delete thuộc tính [prototype](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/) của đối tượng [object](/javascript-object-last-but-not-least/). Và còn nhiều cái **KHÔNG** nữa. Vì vậy, mình quyết định sẽ viết một bài chi tiết hơn về strict mode sau.
+Qua hai ví dụ trên, ta thấy rằng: khi sử dụng 'use strict', bạn sẽ không thể sử dụng [biến](/values-types-va-operators-trong-javascript-phan-1) mà không cần khai báo, không thể gán giá trị cho thuộc tính read-only, không thể delete thuộc tính [prototype](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript) của đối tượng [object](/javascript-object-last-but-not-least). Và còn nhiều cái **KHÔNG** nữa. Vì vậy, mình quyết định sẽ viết một bài chi tiết hơn về strict mode sau.
 
 Như vậy, việc sử dụng strict mode trong lập trình JavaScript sẽ làm giảm thiểu đáng kể những lỗi không mong muốn.
 
@@ -60,7 +60,7 @@ Như vậy, việc sử dụng strict mode trong lập trình JavaScript sẽ l�
 
 Khi mà việc sử dụng strict mode hay trình duyệt không thể giúp bạn tìm ra lỗi thì đây là lúc mà bạn cần phải testing - kiểm thử chương trình.
 
-Và để tránh phát sinh lỗi khi chương trình mở rộng ra, bạn nên kiểm tra kĩ mỗi khi viết thêm một module, hay một [function](/tim-hieu-function-javascript/).
+Và để tránh phát sinh lỗi khi chương trình mở rộng ra, bạn nên kiểm tra kĩ mỗi khi viết thêm một module, hay một [function](/tim-hieu-function-javascript).
 
 Giả sử mình có đoạn chương trình sau:
 
@@ -69,7 +69,7 @@ function Vector(x, y) {
   this.x = x;
   this.y = y;
 }
-Vector.prototype.plus = function(other) {
+Vector.prototype.plus = function (other) {
   return new Vector(this.x + other.x, this.y + other.y);
 };
 ```
@@ -93,17 +93,18 @@ console.log(testVector());
 // => everything ok
 ```
 
-Việc viết test như trên gọi là viết **unit test**. Tuy nhiên, thực tế chúng ta sẽ có những [framework](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) hỗ trợ viết unit test chuyên nghiệp hơn, nhanh gọn hơn.
+Việc viết test như trên gọi là viết **unit test**. Tuy nhiên, thực tế chúng ta sẽ có những [framework](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app) hỗ trợ viết unit test chuyên nghiệp hơn, nhanh gọn hơn.
 
 ## Debugging - Debug JavaScript
 
 Một khi đã xác định được chương trình có bug, công việc tiếp theo là tìm ra vị trí gây ra bug và sửa nó.
 
-Ví dụ chương trình sau sẽ chuyển một số _n_, cơ số _base_ thành [string](/values-types-va-operators-trong-javascript-phan-2/):
+Ví dụ chương trình sau sẽ chuyển một số _n_, cơ số _base_ thành [string](/values-types-va-operators-trong-javascript-phan-2):
 
 ```js
 function numberToString(n, base) {
-  var result = "", sign = "";
+  var result = "",
+    sign = "";
   if (n < 0) {
     sign = "-";
     n = -n;
@@ -124,7 +125,8 @@ Chiến lược hiệu quả trong trường hợp này là ta sẽ ghi ra log k
 
 ```js
 function numberToString(n, base) {
-  var result = "", sign = "";
+  var result = "",
+    sign = "";
   if (n < 0) {
     sign = "-";
     n = -n;
@@ -159,14 +161,15 @@ Bạn đã thấy sự bất ổn chưa? Giá trị log thứ 3 cho thấy n /= 
 
 ```js
 function numberToString(n, base) {
-  var result = "", sign = "";
+  var result = "",
+    sign = "";
   if (n < 0) {
     sign = "-";
     n = -n;
   }
   do {
     result = String(n % base) + result;
-    n = Math.floor(n/base);
+    n = Math.floor(n / base);
   } while (n > 0);
   return sign + result;
 }
@@ -188,7 +191,7 @@ Trên đây là một số cách giúp bạn debug JavaScript. Mình có thể t
 
 Hy vọng qua bài viết này bạn sẽ thấy rằng debug JavaScript không phải là một công việc quá khó khăn. Nó cũng chỉ giống như mọi ngôn ngữ lập trình khác thôi.
 
-Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/mot-so-loi-khi-su-dung-strict-mode-javascript/), thân ái!
+Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/mot-so-loi-khi-su-dung-strict-mode-javascript), thân ái!
 
 ## Tham khảo
 

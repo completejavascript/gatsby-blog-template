@@ -16,7 +16,9 @@ Xin chào bạn, gần đây mình có thử làm chơi một video tên là [K 
 
 Hôm nay mình sẽ chia sẻ với bạn một số cách để lấy được ảnh thumbnail đó. Đầu tiên, bạn phải có được ID của video trên youtube. Thật đơn giản, khi bạn nhấn vào một video thì video đó sẽ có link, ví dụ như sau:
 
-> https:\/\/www.youtube.com/watch?v=**id_video**
+```
+https://www.youtube.com/watch?v=id_video
+```
 
 Phần **id_video** bên trên chính là ID của video trên youtube. Bạn copy lại ID đó và tiếp tục với bước tiếp theo mà mình sẽ trình bày ngay sau đây.
 
@@ -24,13 +26,15 @@ Phần **id_video** bên trên chính là ID của video trên youtube. Bạn co
 
 Với cách này bạn sẽ thu được ảnh thumbnail với độ phân giải lớn nhất. Bạn chỉ cần copy link sau lên trình duyệt:
 
-
-> https:\/\/i.ytimg.com/vi/id_video/maxresdefault.jpg
-
+```
+https://i.ytimg.com/vi/id_video/maxresdefault.jpg
+```
 
 Trong đó: id_video là id của video mà bạn đã có được ở phía trên. Ví dụ với link sau:
 
-> https:\/\/i.ytimg.com/vi/dSs3ya1ppp4/maxresdefault.jpg
+```
+https://i.ytimg.com/vi/dSs3ya1ppp4/maxresdefault.jpg
+```
 
 Bạn sẽ thu được ảnh sau:
 
@@ -56,7 +60,7 @@ Trên đây là 2 cách để lấy ảnh thumbnail của video trên youtube. H
 
 **Lưu ý**: cách này chỉ lấy được ảnh thumbnail của video. Nếu bạn muốn lấy ảnh từ video youtube (bất kỳ tại mọi thời điểm) thì có thể tải video đó về rồi sử dụng [code FFmpeg để chuyển video thành ảnh](/huong-dan-tim-hieu-ffmpeg-co-ban/#Code_ffmpeg_chuyen_doi_video_thanh_anh).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/cac-cau-lenh-thuong-dung-tren-cmd-windows/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/cac-cau-lenh-thuong-dung-tren-cmd-windows), thân ái!
 
 <hr class="border-color-light-grey" />
 

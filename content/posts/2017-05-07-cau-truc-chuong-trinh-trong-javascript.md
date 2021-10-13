@@ -10,7 +10,7 @@ categories:
   - Javascript cơ bản
 ---
 
-Trong các bài viết trước, mình đã giới thiệu với bạn những thành phần cơ bản của JavaScript ([values](/values-types-va-operators-trong-javascript-phan-1/), [types và operators](/values-types-va-operators-trong-javascript-phan-2/)). Nhưng đây mới chỉ là những nguyên liệu thô. Vậy làm thế nào để kết hợp những thành phần này thành một chương trình hoàn chỉnh. Để giải quyết vấn đề này, chúng ta sẽ cùng tìm hiểu về cấu trúc chương trình trong JavaScript.
+Trong các bài viết trước, mình đã giới thiệu với bạn những thành phần cơ bản của JavaScript ([values](/values-types-va-operators-trong-javascript-phan-1), [types và operators](/values-types-va-operators-trong-javascript-phan-2)). Nhưng đây mới chỉ là những nguyên liệu thô. Vậy làm thế nào để kết hợp những thành phần này thành một chương trình hoàn chỉnh. Để giải quyết vấn đề này, chúng ta sẽ cùng tìm hiểu về cấu trúc chương trình trong JavaScript.
 
 ## Biểu thức (expressions)
 
@@ -30,8 +30,8 @@ Theo mình, tốt nhất là chúng ta nên sử dụng dấu chấm phẩy đ�
 
 ```js
 true;
-1 + 2 * 4 % 3 - 6
-'JavaScript ' + 'is ' + ' good';
+1 + ((2 * 4) % 3) - 6;
+"JavaScript " + "is " + " good";
 ```
 
 ## Biến số (variables)
@@ -44,8 +44,8 @@ Cách sử dụng biến số: var &lt;tên biến&gt; = &lt;biểu thức&gt;;
 
 ```js
 var isFriday = true;
-var result = 1 + 2 * 4 % 3 - 6
-var str = 'JavaScript ' + 'is ' + ' good';
+var result = 1 + ((2 * 4) % 3) - 6;
+var str = "JavaScript " + "is " + " good";
 ```
 
 Trong ví dụ trên, mình sử dụng từ khoá (**keyword**) là _var_, theo sau là tên biến số (_isFriday_, _result_, _str_), toán tử gán (=) và cuối cùng là các biểu thức.
@@ -53,7 +53,7 @@ Trong ví dụ trên, mình sử dụng từ khoá (**keyword**) là _var_, theo
 Sau khi đã khai báo như trên, chúng ta có thể sử dụng biến số trong biểu thức thay vì dùng giá trị:
 
 ```js
-var result = 1 + 2 * 4 % 3 - 6; // => result = -3;
+var result = 1 + ((2 * 4) % 3) - 6; // => result = -3;
 var t = result * result;
 console.log(t); // => 9
 ```
@@ -99,7 +99,7 @@ Ví dụ những tên hợp lệ:
 ```js
 var temp = 100;
 var _result3 = 10;
-var $_$ = 'hehehe';
+var $_$ = "hehehe";
 var I_AM_HUNGRY = true;
 var dientichao = 999;
 ```
@@ -127,7 +127,7 @@ Theo kinh nghiệm của bản thân, mình sẽ sử dụng kết hợp cả ha
 
 ```js
 var MAX_LENGTH = 100001;
-var DEFAULT_TITLE = 'Hello World';
+var DEFAULT_TITLE = "Hello World";
 ```
 
 Việc đặt tên theo chuẩn giúp code của bạn giữ được tính thống nhất. Đặc biệt, trong một dự án gồm nhiều lập trình viên tham gia, thử tưởng tượng xem nếu mỗi người đặt tên theo một phong cách khác nhau thì sao? Trời ơi, mình sẽ không muốn đọc thứ code tạp nham đó!
@@ -149,7 +149,7 @@ Cú pháp: alert(message);
 Hàm này giúp đưa ra một thông báo tới người dùng. Ví dụ:
 
 ```js
-alert('Say Hello from CompleteJavaScript.com');
+alert("Say Hello from CompleteJavaScript.com");
 ```
 
 Kết quả:
@@ -173,7 +173,7 @@ Tương tự như hàm _alert_, hàm _confirm_ cũng đưa ra một thông báo 
 Ví dụ:
 
 ```js
-confirm('Bạn muốn tiếp tục sử dụng chương trình?');
+confirm("Bạn muốn tiếp tục sử dụng chương trình?");
 ```
 
 Kết quả:
@@ -187,7 +187,7 @@ Hàm _prompt_ cũng lại tương tự như hàm _confirm_ nhưng cho phép ngư
 Ví dụ:
 
 ```js
-prompt('Nhập vào tên của bạn:');
+prompt("Nhập vào tên của bạn:");
 ```
 
 Kết quả:
@@ -223,7 +223,7 @@ Tiếp tục với ví dụ trên, nếu như bây giờ mình chỉ muốn hi�
 
 ```js
 var theNumber = Number(prompt("Nhập vào một số: "));
-if(!isNaN(theNumber)){
+if (!isNaN(theNumber)) {
   alert("Bình phương của số đó là: " + theNumber * theNumber);
 }
 ```
@@ -240,9 +240,9 @@ Trường hợp, mình vẫn muốn hiển thị thông báo khi người dùng 
 
 ```js
 var theNumber = Number(prompt("Nhập vào một số: "));
-if(!isNaN(theNumber)){
+if (!isNaN(theNumber)) {
   alert("Bình phương của số đó là: " + theNumber * theNumber);
-}else{
+} else {
   alert("Bạn nhập vào không phải là số!");
 }
 ```
@@ -251,15 +251,15 @@ Nếu như mình có nhiều lựa chọn thì sao. Mình sẽ kết hợp nhi�
 
 ```js
 var theNumber = Number(prompt("Nhập vào một số: "));
-if(!isNaN(theNumber)){
-  if(theNumber < 10){
-      alert('Small');
-  }else if(theNumber < 100){
-      alert('Medium');
-  }else{
-      alert('Big');
+if (!isNaN(theNumber)) {
+  if (theNumber < 10) {
+    alert("Small");
+  } else if (theNumber < 100) {
+    alert("Medium");
+  } else {
+    alert("Big");
   }
-}else{
+} else {
   alert("Bạn nhập vào không phải là số!");
 }
 ```
@@ -288,7 +288,7 @@ console.log(100);
 
 _Nhanh mà, copy-paste một lúc là xong thôi._
 
-Nhưng bây giờ mình muốn in ra các số từ 1 đến 1000000000. Cứ tính trung bình 1 dòng lệnh hết 1 giây để copy-paste. Suy ra thời gian để viết hết các câu lệnh là 1000000000 / (365 * 24 * 60 * 60) = 31 (năm). Nghĩ đến đây là đã muốn bỏ cuộc rồi.
+Nhưng bây giờ mình muốn in ra các số từ 1 đến 1000000000. Cứ tính trung bình 1 dòng lệnh hết 1 giây để copy-paste. Suy ra thời gian để viết hết các câu lệnh là 1000000000 / (365 _ 24 _ 60 \* 60) = 31 (năm). Nghĩ đến đây là đã muốn bỏ cuộc rồi.
 
 Nhưng không. Chúng ta có một công cụ rất mạnh mẽ đó là: vòng lặp (**loop**).
 
@@ -304,7 +304,7 @@ Như vậy, khi áp dụng vòng lặp thì bài toán trên sẽ giải quyết
 
 ```js
 var number = 1;
-while(number <= 100){
+while (number <= 100) {
   console.log(number);
   number = number + 1;
 }
@@ -320,10 +320,10 @@ Vòng lặp _do/while_ cũng tương tự vòng lặp _while_. Chỉ khác là n
 
 ```js
 var number = 1;
-do{
+do {
   console.log(number);
   number = number + 1;
-} while(number <= 100);
+} while (number <= 100);
 ```
 
 Nhìn chung, hai cách trên không khác nhau. Bạn có thể lựa chọn một trong hai cách trong từng trường hợp cụ thể sao cho hợp lý (còn riêng mình thì hầu như không sử dụng vòng lặp _do/while_).
@@ -335,10 +335,10 @@ Nếu để ý thì bạn sẽ thấy cấu trúc chung khi sử dụng vòng l�
 - Khởi tạo giá trị đếm (number = 1)
 - So sánh giá trị đếm với giới hạn tối đa (number &lt;= 100)
 - Tăng giá trị đếm (number = number + 1)
-Để ngắn gọn, JavaScript sinh ra vòng lặp _for_.
+  Để ngắn gọn, JavaScript sinh ra vòng lặp _for_.
 
 ```js
-for(var number = 1; number <= 100; number = number + 1){
+for (var number = 1; number <= 100; number = number + 1) {
   console.log(number);
 }
 ```
@@ -370,8 +370,8 @@ Câu trả lời là: khi gặp điều kiện thoả mãn để kết thúc vò
 Ví dụ sau, mình sẽ tìm bội số nhỏ nhất của 7 bắt đầu từ 8:
 
 ```js
-for(var number = 8; ; number++){
-  if(number % 7 == 0){
+for (var number = 8; ; number++) {
+  if (number % 7 == 0) {
     console.log(number); // => 14
     break;
   }
@@ -389,10 +389,10 @@ Có một từ khoá khác gần giống break cũng hay được sử dụng l�
 Ví dụ mình muốn tìm bội số nhỏ nhất của 7, bắt đầu từ 8 và là số lẻ.
 
 ```js
-for(var number = 8; ; number++){
-  if(number % 2 == 0) continue;
-  if(number % 7 == 0) {
-    console.log(number);  // => 21
+for (var number = 8; ; number++) {
+  if (number % 2 == 0) continue;
+  if (number % 7 == 0) {
+    console.log(number); // => 21
     break;
   }
 }
@@ -458,14 +458,15 @@ Xem code tại [đây](https://github.com/completejavascript/practical-javascrip
 
 ```
 #_#_#_#_
-_#_#_#_# 
+_#_#_#_#
 #_#_#_#_
-_#_#_#_# 
+_#_#_#_#
 #_#_#_#_
-_#_#_#_# 
+_#_#_#_#
 #_#_#_#_
 _#_#_#_#
 ```
+
 Xem code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/program_structure/program_structure_chess_board_3_1.js).
 
 2. Yêu cầu người dùng nhập vào một số **size (size &gt; 0)**. Sau đó hiển thị ra hình bàn cờ vua như trên với kích thước là **size x size**.
@@ -480,11 +481,11 @@ Xem code tại [đây](https://github.com/completejavascript/practical-javascrip
 
 **Chú ý:**
 
-Bạn nên tự [thực hành](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon/) để giải quyết bài toán trước khi tham khảo code. Khi đấy bạn sẽ hiểu và nhớ kiến thức lâu hơn.
+Bạn nên tự [thực hành](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon) để giải quyết bài toán trước khi tham khảo code. Khi đấy bạn sẽ hiểu và nhớ kiến thức lâu hơn.
 
 Nếu bạn đã giải quyết được hết những bài toán cơ bản này thì chúc mừng bạn đã nắm được những thành phần cơ bản trong cấu trúc chương trình JavaScript rồi.
 
-Hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-function-javascript/), thân ái!
+Hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-function-javascript), thân ái!
 
 ## Tham khảo
 

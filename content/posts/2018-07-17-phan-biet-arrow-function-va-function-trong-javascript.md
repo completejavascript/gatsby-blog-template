@@ -16,7 +16,7 @@ tags:
 
 ## Giống nhau
 
-Arrow function và function đều là [function](/tim-hieu-function-javascript/).
+Arrow function và function đều là [function](/tim-hieu-function-javascript).
 
 ## Khác nhau cơ bản
 
@@ -27,7 +27,7 @@ Arrow function sử dụng kí tự **=&gt;**:
 ```js
 let sayHi = () => {
   console.log("Hi");
-}
+};
 sayHi();
 // => Hi
 ```
@@ -35,9 +35,9 @@ sayHi();
 Function sử dụng từ khoá **function**:
 
 ```js
-let sayHi = function() {
+let sayHi = function () {
   console.log("Hi");
-}
+};
 sayHi();
 // => Hi
 ```
@@ -48,9 +48,9 @@ Với hàm số có 1 tham số, arrow function có thể bỏ qua cặp dấu n
 
 ```js
 // Sử dụng arrow function
-let greeting = name => {
+let greeting = (name) => {
   console.log(`Hello, my name is ${name}`);
-}
+};
 greeting("Lam");
 // => Hello, my name is Lam
 ```
@@ -58,9 +58,9 @@ greeting("Lam");
 Tương đương với function:
 
 ```js
-let greeting = function(name) {
+let greeting = function (name) {
   console.log(`Hello, my name is ${name}`);
-}
+};
 greeting("Lam");
 // => Hello, my name is Lam
 ```
@@ -69,28 +69,27 @@ Ngoài ra, arrow function cũng có thể bỏ qua từ khoá **return**.
 
 ```js
 // Sử dụng arrow function
-let double = x => x * 2;
+let double = (x) => x * 2;
 double(1); // 2
 ```
 
 Tương đương với function:
 
 ```js
-let double = function(x) {
+let double = function (x) {
   return x * 2;
-}
+};
 double(1); // 2
 ```
 
-Ví dụ sử dụng arrow function với các [higher-order functions](https://eloquentjavascript.net/05_higher_order.html), như: [forEach](/javascript-foreach-la-cai-quai-gi/), map, filter,...
-
+Ví dụ sử dụng arrow function với các [higher-order functions](https://eloquentjavascript.net/05_higher_order.html), như: [forEach](/javascript-foreach-la-cai-quai-gi), map, filter,...
 
 Sử dụng map với function:
 
 ```js
 let arr = [1, 2, 3, 4];
 
-let square1 = arr.map(function(e) {
+let square1 = arr.map(function (e) {
   return e * e;
 });
 console.log(square1); // => [1, 4, 9, 16]
@@ -101,7 +100,7 @@ Sử dụng map với arrow function:
 ```js
 let arr = [1, 2, 3, 4];
 
-let square2 = arr.map(e => e * e);
+let square2 = arr.map((e) => e * e);
 console.log(square2); // => [1, 4, 9, 16]
 ```
 
@@ -165,7 +164,7 @@ let p = new DelayPrint(1, 1000);
 
 Ngược lại với function, arrow function không định nghĩa lại _this_. Do đó, giá trị của _this_ sẽ ứng với ngữ cảnh gần nhất của nó. Vì vậy, trong đoạn code trên _this.x_ sẽ tương ứng với giá trị x được truyền vào và bằng 1.
 
-_Xem thêm: [Sự khác biệt giữa Arrow Function và Function thông thường](https://thienanblog.com/javascript/javascript-co-ban/su-khac-biet-giua-arrow-function-va-function-thong-thuong/)_
+_Xem thêm: [Sự khác biệt giữa Arrow Function và Function thông thường](https://thienanblog.com/javascript/javascript-co-ban/su-khac-biet-giua-arrow-function-va-function-thong-thuong)_
 
 ### Arrow function không bind arguments
 
@@ -180,9 +179,9 @@ function sum() {
   );
 }
 
-console.log(sum(1, 2));         // => 3
-console.log(sum(1, 2, 3));      // => 6
-console.log(sum(1, 2, 3, 4));   // => 10
+console.log(sum(1, 2)); // => 3
+console.log(sum(1, 2, 3)); // => 6
+console.log(sum(1, 2, 3, 4)); // => 10
 ```
 
 Đối với arrow function, sử dụng _arguments_ sẽ lỗi vì biến này không được định nghĩa ở arrow function.
@@ -192,7 +191,7 @@ let sum = () => {
   return Array.from(arguments).reduce(
     (accumulator, currentValue) => accumulator + currentValue
   );
-}
+};
 
 console.log(sum(1, 2));
 // Uncaught ReferenceError: arguments is not defined
@@ -205,11 +204,11 @@ let sum = (...args) => {
   return Array.from(args).reduce(
     (accumulator, currentValue) => accumulator + currentValue
   );
-}
+};
 
-console.log(sum(1, 2));         // => 3
-console.log(sum(1, 2, 3));      // => 6
-console.log(sum(1, 2, 3, 4));   // => 10
+console.log(sum(1, 2)); // => 3
+console.log(sum(1, 2, 3)); // => 6
+console.log(sum(1, 2, 3, 4)); // => 10
 ```
 
 ### Arrow function không phù hợp làm _method_ cho object
@@ -220,10 +219,10 @@ Chính vì arrow function không định nghĩa giá trị this của riêng nó
 let obj = {
   a: 1,
   b: () => console.log(this.a, this),
-  c: function() {
+  c: function () {
     console.log(this.a, this);
-  }
-}
+  },
+};
 
 obj.b(); // prints undefined, Window {...} (or the global object)
 obj.c(); // prints 1, Object {...}
@@ -233,7 +232,7 @@ Vì vậy, nếu muốn định nghĩa _method_ cho object thì bạn nên sử 
 
 ### Arrow function không thể sử dụng làm hàm constructor
 
-Trước khi ES6 ra đời, người ta có thể sử dụng function làm [hàm khởi tạo](/js-pattern-constructor-pattern/) cho object.
+Trước khi ES6 ra đời, người ta có thể sử dụng function làm [hàm khởi tạo](/js-pattern-constructor-pattern) cho object.
 
 ```js
 function Dog(name, color) {
@@ -252,7 +251,7 @@ Nếu thay đoạn code trên bằng arrow function thì bạn sẽ bị lỗi: 
 let Dog = (name, color) => {
   this.name = name;
   this.color = color;
-}
+};
 
 let myDog = new Dog("Nick", "White");
 console.log(myDog.name, myDog.color);
@@ -261,7 +260,7 @@ console.log(myDog.name, myDog.color);
 
 ### Arrow function không có thuộc tính prototype
 
-Về cơ bản, mọi [đối tượng](/javascript-object-last-but-not-least/) trong JavaScript đều có thuộc tính prototype và [kế thừa](/ke-thua-co-ban-trong-javascript/) cũng theo prototype.
+Về cơ bản, mọi [đối tượng](/javascript-object-last-but-not-least) trong JavaScript đều có thuộc tính prototype và [kế thừa](/ke-thua-co-ban-trong-javascript) cũng theo prototype.
 
 Tuy nhiên, nếu _arrow function_ không thể sử dụng làm constructor thì mình cho rằng điều này cũng hợp lý.
 
@@ -279,11 +278,11 @@ Về cơ bản, hoisting được hiểu là biến và hàm số được đưa
 Arrow function không được hoisted: nghĩa là bạn phải định nghĩa arrow function trước khi sử dụng nó.
 
 ```js
-let myFunc1 = () => {}
+let myFunc1 = () => {};
 myFunc1(); // OK
 
 myFunc2(); // => ReferenceError: myFunc2 is not defined
-let myFunc2 = () => {}
+let myFunc2 = () => {};
 ```
 
 Ngược lại, **function declaration** được hoisted nên bạn có thể gọi hàm trước khi định nghĩa nó.
@@ -308,12 +307,12 @@ Trên đây là một số điểm giúp bạn phân biệt arrow function và f
 
 Nếu bạn thấy arrow function khác với function ở điểm nào nữa thì có thể chia sẻ lại với mình và mọi người bằng cách bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tim-hieu-ki-thuat-method-chaining-co-ban/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tim-hieu-ki-thuat-method-chaining-co-ban), thân ái!
 
 <hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

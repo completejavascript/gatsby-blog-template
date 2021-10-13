@@ -21,13 +21,7 @@ Mời bạn theo dõi bài viết!
 
 ```js
 const map = new Map();
-map
-  .set(1, 1)
-  .set("a", 2)
-  .set([1], 3)
-  .set(1, 4)
-  .set("a", 5)
-  .set([1], 6);
+map.set(1, 1).set("a", 2).set([1], 3).set(1, 4).set("a", 5).set([1], 6);
 
 const a = map.get(1),
   b = map.get("a"),
@@ -66,8 +60,9 @@ Do đó, key **1** và **"a"** coi như đã tồn tại, nên giá trị của 
 
 Trong khi đó, key **[1]** coi như chưa tồn tại. Và dĩ nhiên, khi lấy ra giá trị của nó thì kết quả sẽ là **undefined**.
 
-Để biết thêm về Map, mời bạn theo dõi bài viết: [Map trong JavaScript thì sao?](/map-trong-javascript-thi-sao/)
-    </div>
+Để biết thêm về Map, mời bạn theo dõi bài viết: [Map trong JavaScript thì sao?](/map-trong-javascript-thi-sao)
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -107,12 +102,13 @@ Cụ thể convert như thế nào thì mình không dám chắc. Mình chỉ d�
 Và ta có:
 
 ```js
-[].toString();      // => ""
-[1, 2].toString();  // => "1,2"
+[].toString(); // => ""
+[1, 2].toString(); // => "1,2"
 ```
 
 Vì vậy mà mình thu được kết quả như trên.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -144,12 +140,13 @@ Hỏi console in ra kết quả theo thứ tự như thế nào?
 
 **Giải thích:**
 
-Khi [function](/tim-hieu-function-javascript/) **d()** được gọi, dĩ nhiên _d_ sẽ được in ra đầu tiên. Ngoài ra, function **b()** và **c()** là hàm xử lý đồng bộ nên chắc chắn _b_ sẽ in ra trước _c_. Vấn đề ở đây chỉ là _a_ mà thôi.
+Khi [function](/tim-hieu-function-javascript) **d()** được gọi, dĩ nhiên _d_ sẽ được in ra đầu tiên. Ngoài ra, function **b()** và **c()** là hàm xử lý đồng bộ nên chắc chắn _b_ sẽ in ra trước _c_. Vấn đề ở đây chỉ là _a_ mà thôi.
 
 Ở đây, hàm **a()** được đặt trong hàm [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout). Mà khi được đặt trong hàm này, hàm _a()_ sẽ được thực hiện ngay sau một khoảng thời gian *timeout* cho trước.
 
 Ở đây, mình truyền vào thời gian _timeout_ là 0. Nhưng thực tế, thời gian này tối thiểu phải là **4ms**. Về chi tiết bạn có thể tham khảo tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout#Reasons_for_delays_longer_than_specified). Do vậy, _a_ sẽ được in ra sau _b_ và _c_. Và dĩ nhiên, kết quả cuối cùng phải là: **d b c a**.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -165,8 +162,8 @@ const c = () => {
   new Promise((resolve, reject) => {
     resolve("d");
   })
-    .then(res => console.log(res))
-    .catch(err => console.log(err));
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err));
   b();
 };
 c();
@@ -193,7 +190,8 @@ Tuy nhiên, JavaScript quy định những hành động được lên kế ho�
 Vì vậy, d sẽ được in ra trước a. Và kết quả cuối cùng là: **c b d a**.
 
 Để hiểu hơn về sự khác nhau giữa setTimeout và Promise, bạn có thể đọc thêm 2 bài viết sau: [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) và [The JavaScript Event Loop](https://flaviocopes.com/javascript-event-loop/).
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>

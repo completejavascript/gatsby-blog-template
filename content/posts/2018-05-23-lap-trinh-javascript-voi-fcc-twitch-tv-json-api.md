@@ -15,9 +15,9 @@ tags:
   - Template
 ---
 
-Tiếp tục với chủ đề [Lập trình JavaScript với FCC](/tag/lap-trinh-javascript-voi-fcc/), bài viết này mình sẽ chia sẻ với bạn về project **Use the Twitch.tv [JSON](/tim-hieu-ve-json-trong-javascript/) API** trên freeCodeCamp.
+Tiếp tục với chủ đề [Lập trình JavaScript với FCC](/tag/lap-trinh-javascript-voi-fcc), bài viết này mình sẽ chia sẻ với bạn về project **Use the Twitch.tv [JSON](/tim-hieu-ve-json-trong-javascript) API** trên freeCodeCamp.
 
-Trước tiên, project này cũng tương tự như các project trước, mình chỉ sử dụng HTML5, CSS3, JavaScript thuần và kết hợp thêm [jQuery](/tag/jquery/). Vì vậy, nếu bạn đã theo dõi các project trước đây của mình thì sẽ thấy những kiến thức ở đây không có gì mới mẻ cả.
+Trước tiên, project này cũng tương tự như các project trước, mình chỉ sử dụng HTML5, CSS3, JavaScript thuần và kết hợp thêm [jQuery](/tag/jquery). Vì vậy, nếu bạn đã theo dõi các project trước đây của mình thì sẽ thấy những kiến thức ở đây không có gì mới mẻ cả.
 
 Chỉ có một thứ mà mình muốn chia sẻ ở bài viết này. Đó là cách sử dụng [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Storage), để lưu lại những thông tin cài đặt của người dùng.
 
@@ -47,9 +47,9 @@ Bạn có thể nhập tên kênh mà bạn muốn vào phần input và nhấn 
 
 ### Xây dựng HTML Template
 
-Mặc dù trong project này sử dụng jQuery, nhưng phần [HTML Template](/tag/template/) mình không sử dụng Mustache.js giống như trong bài viết [Mustache Template với jQuery](/mustache-template-voi-jquery/). Ở đây, mình tiếp tục sử dụng [ES6 Template String](/su-dung-es6-template-string-co-gi-hay/) để xây dựng HTML Template.
+Mặc dù trong project này sử dụng jQuery, nhưng phần [HTML Template](/tag/template) mình không sử dụng Mustache.js giống như trong bài viết [Mustache Template với jQuery](/mustache-template-voi-jquery). Ở đây, mình tiếp tục sử dụng [ES6 Template String](/su-dung-es6-template-string-co-gi-hay) để xây dựng HTML Template.
 
-Bạn có thể xem thêm project [Lập trình JavaScript với FCC – Wikipedia Viewer](/lap-trinh-javascript-voi-fcc-wikipedia-viewer/) để hiểu thêm về vấn đề này.
+Bạn có thể xem thêm project [Lập trình JavaScript với FCC – Wikipedia Viewer](/lap-trinh-javascript-voi-fcc-wikipedia-viewer) để hiểu thêm về vấn đề này.
 
 ### Sử dụng Web Storage API
 
@@ -67,7 +67,7 @@ Storage trong JavaScript bao gồm 2 loại: [localStorage](https://developer.mo
 
 #### Cách sử dụng
 
-Về cách [sử dụng API](/tag/api/) thì khá đơn giản và mình nghĩ bạn có thể dễ dàng hiểu được. Nên mình sẽ không giới thiệu lại phần này.
+Về cách [sử dụng API](/tag/api) thì khá đơn giản và mình nghĩ bạn có thể dễ dàng hiểu được. Nên mình sẽ không giới thiệu lại phần này.
 
 Vấn đề quan trọng là: API của hai thằng này giống nhau nên mình sẽ xây dựng một class chung cho cả 2. Như vậy sẽ tiện sử dụng sau này.
 
@@ -77,7 +77,7 @@ class AppStorage {
     if (this._storageAvailable(type)) {
       this._appStorage = window[type];
     } else {
-      console.log('app-storage', `Your browser doesn't support ${type}!`);
+      console.log("app-storage", `Your browser doesn't support ${type}!`);
     }
   }
   set(key, value) {
@@ -98,33 +98,34 @@ class AppStorage {
   _storageAvailable(type) {
     try {
       let storage = window[type],
-        x = '__storage_test__';
+        x = "__storage_test__";
       storage.setItem(x, x);
       storage.removeItem(x);
       return true;
-    }
-    catch (e) {
-      console.log('app-storage', e);
-      return e instanceof DOMException && (
+    } catch (e) {
+      console.log("app-storage", e);
+      return (
+        e instanceof DOMException &&
         // everything except Firefox
-        e.code === 22 ||
-        // Firefox
-        e.code === 1014 ||
-        /**
-          * test name field too, because code might not be present
-          * everything except Firefox
-          */
-        e.name === 'QuotaExceededError' ||
-        // Firefox
-        e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+        (e.code === 22 ||
+          // Firefox
+          e.code === 1014 ||
+          /**
+           * test name field too, because code might not be present
+           * everything except Firefox
+           */
+          e.name === "QuotaExceededError" ||
+          // Firefox
+          e.name === "NS_ERROR_DOM_QUOTA_REACHED") &&
         // acknowledge QuotaExceededError only if there's something already stored
-        storage.length !== 0;
+        storage.length !== 0
+      );
     }
   }
 }
 ```
 
-Ở đây mình [ứng dụng class](/js-pattern-constructor-pattern/) để xây dựng một lớp chung cho localStorage và sessionStorage. Trong hàm khởi tạo constructor, mình cần phải kiểm tra xem trình duyệt hiện tại có hỗ trợ kiểu storage hay không?
+Ở đây mình [ứng dụng class](/js-pattern-constructor-pattern) để xây dựng một lớp chung cho localStorage và sessionStorage. Trong hàm khởi tạo constructor, mình cần phải kiểm tra xem trình duyệt hiện tại có hỗ trợ kiểu storage hay không?
 
 ```js
 constructor(type) {
@@ -136,7 +137,7 @@ constructor(type) {
 }
 ```
 
-Với _type_ có thể là: "localStorage" hoặc "sessionStorage". Và hàm *\_storageAvailable* đơn giản là sẽ sử dụng thử một số API của nó. Nếu không có lỗi gì xảy ra thì [hàm](/tim-hieu-function-javascript/) này sẽ trả về true, ngược lại kết quả sẽ là false.
+Với _type_ có thể là: "localStorage" hoặc "sessionStorage". Và hàm _\_storageAvailable_ đơn giản là sẽ sử dụng thử một số API của nó. Nếu không có lỗi gì xảy ra thì [hàm](/tim-hieu-function-javascript) này sẽ trả về true, ngược lại kết quả sẽ là false.
 
 Bạn có thể xem thêm bài này để hiểu rõ hơn: [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API).
 
@@ -153,5 +154,5 @@ Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

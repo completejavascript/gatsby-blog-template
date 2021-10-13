@@ -10,11 +10,11 @@ categories:
   - Javascript cơ bản
 ---
 
-Function JavaScript (hàm số) là một thành phần không thể thiếu trong [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript/). Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm số. Nhờ vậy mà việc bảo trì phần mềm cũng dễ dàng hơn.
+Function JavaScript (hàm số) là một thành phần không thể thiếu trong [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript). Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm số. Nhờ vậy mà việc bảo trì phần mềm cũng dễ dàng hơn.
 
 Ngoài ra, khi đã xây dựng được một hàm số tốt (độc lập và thực hiện một chức năng nhất định), bạn có thể tái sử dụng nó trong các project khác nhau. Điều này làm nâng cao hiệu suất công việc của bạn.
 
-Bài viết này, mình sẽ giới thiệu những [thành phần cơ bản](/values-types-va-operators-trong-javascript-phan-1/) của hàm số trong JavaScript. Qua đó, bạn sẽ biết cách xây dựng hàm số và ứng dụng vào các project của mình.
+Bài viết này, mình sẽ giới thiệu những [thành phần cơ bản](/values-types-va-operators-trong-javascript-phan-1) của hàm số trong JavaScript. Qua đó, bạn sẽ biết cách xây dựng hàm số và ứng dụng vào các project của mình.
 
 ## Định nghĩa function JavaScript
 
@@ -46,14 +46,14 @@ Một số đặc điểm của function JavaScript là:
 - Kiểu của tham số hay giá trị trả về trong hàm số là không được quy định. Do đó, bạn thường phải kiểm tra kiểu của giá trị truyền vào hàm. Nếu không, bạn sẽ rất dễ bị sai.
 
 ```js
-var greet = function(name){
-  console.log("Hello " + name + '!');
+var greet = function (name) {
+  console.log("Hello " + name + "!");
 };
 
-greet('Lam Pham'); // => Hello Lam Pham!
+greet("Lam Pham"); // => Hello Lam Pham!
 
-function min(a, b){
-  return (a < b ? a : b);
+function min(a, b) {
+  return a < b ? a : b;
 }
 
 console.log(min(3, 4)); // => 3
@@ -66,10 +66,10 @@ Tham số của hàm giống như là một biến số với giá trị của n
 Một đặc điểm quan trọng của function JavaScript là tham số và biến số khởi tạo trong hàm số có phạm vi cục bộ (local). Nghĩa là nó chỉ có ý nghĩa và chỉ được truy cập ở trong hàm. Hãy xem ví dụ sau:
 
 ```js
-function increase(number){
+function increase(number) {
   var x = 5;
   number += x;
-  console.log('number inside function:' + number);
+  console.log("number inside function:" + number);
 }
 
 var number = 3;
@@ -94,11 +94,11 @@ Ngoài biến số ra, bạn còn có thể khai báo function JavaScript ở tr
 Tương tự như biến số, nếu bạn sử dụng hàm *nested scope*, thì những hàm này cũng có phạm vi sử dụng cục bộ trong hàm chứa nó. Bạn không thể gọi những hàm này ở _global_.
 
 ```js
-function displayMax(a, b, c, d){
-  var max = function(m, n){
-  if(m > n) return m;
-  return n;
-  }
+function displayMax(a, b, c, d) {
+  var max = function (m, n) {
+    if (m > n) return m;
+    return n;
+  };
 
   var t1 = max(a, b);
   var t2 = max(c, d);
@@ -116,7 +116,7 @@ var t = max(10, 11); // => Uncaught ReferenceError: max is not defined
 
 ## Functions và values
 
-Như mình đã đề cập trong bài viết trước, _function_ JavaScript là một loại [value](/values-types-va-operators-trong-javascript-phan-2/). Hay nói cách khác: tên hàm là biến số và nội dung hàm là giá trị của biến số.
+Như mình đã đề cập trong bài viết trước, _function_ JavaScript là một loại [value](/values-types-va-operators-trong-javascript-phan-2). Hay nói cách khác: tên hàm là biến số và nội dung hàm là giá trị của biến số.
 
 Nghĩa là bạn có thể gán giá trị khác cho biến số đó bằng cách:
 
@@ -124,19 +124,19 @@ Nghĩa là bạn có thể gán giá trị khác cho biến số đó bằng cá
 - Gán cho biến số đó một giá trị khác như: number, string, boolean...
 
 ```js
-var minValue = function(a, b){
-  if(a < b) return a;
+var minValue = function (a, b) {
+  if (a < b) return a;
   return b;
-}
+};
 console.log(minValue(4, 6));
 // => 4
 
-minValue = function(a, b, c){
+minValue = function (a, b, c) {
   var min = a;
-  if(b < min) min = b;
-  if(c < min) min = c;
+  if (b < min) min = b;
+  if (c < min) min = c;
   return min;
-}
+};
 console.log(minValue(3, 5, 8));
 // => 3
 
@@ -148,15 +148,16 @@ console.log(minValue);
 Hoặc bạn có thể sử dụng hàm số trong biểu thức (expression):
 
 ```js
-function sum(a, b){
+function sum(a, b) {
   return a + b;
 }
 
-function hello(){
-  console.log('Hello');
+function hello() {
+  console.log("Hello");
 }
 
-var a = 1, b = 2;
+var a = 1,
+  b = 2;
 var x = 5 + sum(1, 2);
 console.log(x);
 // => 8
@@ -176,10 +177,10 @@ Trường hợp, function JavaScript không có giá trị trả về thì mặc
 Tuy nhiên, bạn có thể gọi hàm trước khi định nghĩa hàm số.
 
 ```js
-console.log('Dog: ' + dog());
+console.log("Dog: " + dog());
 // => Dog: go go go
 
-function dog(){
+function dog() {
   return "go go go";
 }
 ```
@@ -243,11 +244,9 @@ Ví dụ về hàm tính luỹ thừa:
 
 ```js
 function power(base, exponent) {
-  if (exponent == undefined)
-    exponent = 2;
+  if (exponent == undefined) exponent = 2;
   var result = 1;
-  for (var count = 0; count < exponent; count++)
-    result *= base;
+  for (var count = 0; count < exponent; count++) result *= base;
   return result;
 }
 
@@ -272,7 +271,9 @@ Hãy xem ví dụ sau:
 ```js
 function wrapValue(n) {
   var localVariable = n;
-  return function() { return localVariable; };
+  return function () {
+    return localVariable;
+  };
 }
 
 var wrap1 = wrapValue(1);
@@ -293,7 +294,7 @@ Tuy nhiên, JavaScript đã đưa ra khái niệm _closure_, giúp bạn không
 
 ```js
 function multiplier(factor) {
-  return function(number) {
+  return function (number) {
     return number * factor;
   };
 }
@@ -315,10 +316,8 @@ Sau đây là một ví dụ về đệ quy:
 
 ```js
 function power(base, exponent) {
-  if (exponent == 0)
-    return 1;
-  else
-    return base * power(base, exponent - 1);
+  if (exponent == 0) return 1;
+  else return base * power(base, exponent - 1);
 }
 
 console.log(power(2, 3));
@@ -344,7 +343,7 @@ Khi viết chương trình, thông thường sẽ có 2 khả năng khiến mộ
 
 - Một đoạn chương trình được lặp đi, lặp lại nhiều lần. Việc gom chúng lại thành một hàm sẽ giúp chương trình ngắn gọn hơn, dễ hiểu hơn. Và khi cần thay đổi, bạn chỉ cần sửa một lần trong nội dung hàm, thay vì phải sửa nhiều chỗ.
 - Khi viết chương trình, bạn cần tách toàn bộ chương trình thành những phần nhỏ hơn. Hay còn gọi là _module hoá_. Lúc này, bạn có thể xây dựng logic cho toàn bộ chương trình trước khi thật sự định nghĩa nội dung hàm.
-Tại những công ty lớn, thường bạn sẽ chỉ được làm những module nhỏ trong toàn bộ một project lớn. Sau đó, team leader hay project leader... sẽ là người ghép những module nhỏ đó thành một chương trình hoàn chỉnh. Do đó, việc phân chia chương trình thành những hàm số tốt là vô cùng quan trọng.
+  Tại những công ty lớn, thường bạn sẽ chỉ được làm những module nhỏ trong toàn bộ một project lớn. Sau đó, team leader hay project leader... sẽ là người ghép những module nhỏ đó thành một chương trình hoàn chỉnh. Do đó, việc phân chia chương trình thành những hàm số tốt là vô cùng quan trọng.
 
 **Như thế nào là một hàm số tốt?**
 
@@ -366,14 +365,14 @@ _None-pure_ function, ngược lại với _pure_ function, là hàm phụ thu�
 
 ```js
 // pure function
-function f1(number, factor){
+function f1(number, factor) {
   return number * factor;
 }
 console.log(f1(2, 10)); // => 20
 
 // non-pure function
 var factor = 10;
-function f2(number){
+function f2(number) {
   return number * factor;
 }
 console.log(f2(3)); // => 30
@@ -418,7 +417,7 @@ Xem code tại [đây](https://github.com/completejavascript/practical-javascrip
 
 Chỉ có 2 bài đơn giản vậy thôi.
 
-Cuối cùng hẹn gặp lại bạn ở [bài viết sau](/tim-hieu-javascript-closures/), thân ái!
+Cuối cùng hẹn gặp lại bạn ở [bài viết sau](/tim-hieu-javascript-closures), thân ái!
 
 ## Tham khảo
 

@@ -19,21 +19,25 @@ Kĩ thuật Method Chaining giúp code trở nên ngắn gọn, dễ theo dõi v
 Ví dụ: khi sử dụng jQuery, bạn có thể dễ dàng nhìn thấy những đoạn code như sau:
 
 ```js
-$('.myClass').addClass('bird').show().animate({/* some animation */});
+$(".myClass").addClass("bird").show().animate({
+  /* some animation */
+});
 ```
 
 Nếu không sử dụng kĩ thuật Method Chaining thì đoạn code trên sẽ khá dài dòng:
 
 ```js
-const $myClass = $('.myClass');
-$.addClass($myClass, 'bird');
+const $myClass = $(".myClass");
+$.addClass($myClass, "bird");
 $.show($myClass);
-$.animate($myClass, {/* some animation */})
+$.animate($myClass, {
+  /* some animation */
+});
 ```
 
 Bạn có thể thấy rằng, khi sử dụng Method Chaining, bạn hầu như chỉ cần viết các đoạn code trên cùng 1 dòng.
 
-Thực tế, kĩ thuật này đã và đang được sử dụng rất nhiều trong hầu hết các thư viện, [Framework JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/).
+Thực tế, kĩ thuật này đã và đang được sử dụng rất nhiều trong hầu hết các thư viện, [Framework JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app).
 
 ## Cách sử dụng kĩ thuật Method Chaining cơ bản
 
@@ -108,7 +112,7 @@ Trong đoạn code trên, mình đã triển khai các phương thức theo Meth
 
 Cách thực hiện ở đây rất đơn giản là: mình chỉ cần thêm _**return this**_ vào cuối mỗi phương thức.
 
-_This_ ở đây đại diện cho [object](/javascript-object-last-but-not-least/) được tạo ra (_num_) sau khi sử dụng từ khóa _new_.
+_This_ ở đây đại diện cho [object](/javascript-object-last-but-not-least) được tạo ra (_num_) sau khi sử dụng từ khóa _new_.
 
 Rất dễ hiểu phải không bạn?
 
@@ -116,7 +120,7 @@ Rất dễ hiểu phải không bạn?
 
 Trên đây là những thông tin cơ bản về kĩ thuật Method Chaining. Để hiểu thêm về kĩ thuật này, bạn có thể đọc thêm trong các bài viết ở phần tham khảo dưới đây.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lam-sach-website-wordpress-nhu-the-nao/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lam-sach-website-wordpress-nhu-the-nao), thân ái!
 
 ## Tham khảo
 
@@ -129,5 +133,5 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lam-sach-
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

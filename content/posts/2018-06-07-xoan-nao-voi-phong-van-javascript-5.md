@@ -18,7 +18,7 @@ Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 
 ## Xoắn não với phỏng vấn JavaScript 5 - Câu 1
 
 ```js
-let arr = [1, "hi", {x : 2}, [3, 4]];
+let arr = [1, "hi", { x: 2 }, [3, 4]];
 delete arr[1];
 console.log(arr.length);
 ```
@@ -45,6 +45,7 @@ Tuy nhiên, xét trên khía cạnh của Array thì mảng arr vẫn có độ 
 console.log(arr);
 // => (4)[1, empty, {…}, Array(2)]
 ```
+
   </div>
   </div>
 </div>
@@ -53,8 +54,8 @@ console.log(arr);
 ## Xoắn não với phỏng vấn JavaScript 5 - Câu 2
 
 ```js
-let arr = [1, "hi", {x : 2}, [3, 4]];
-for(let i = 0; i < arr.length; i++) {
+let arr = [1, "hi", { x: 2 }, [3, 4]];
+for (let i = 0; i < arr.length; i++) {
   if (arr[i] === "hi") arr.splice(i, 1);
   else console.log(arr[i]);
 }
@@ -95,20 +96,21 @@ Như bạn thấy, phần tử **{x : 2}** đã không được in ra. Nếu mì
 Đơn giản là bạn chỉ cần duyệt mảng theo thứ tự ngược lại:
 
 ```js
-let arr = [1, "hi", {x : 2}, [3, 4]];
-for(let i = arr.length - 1; i >= 0; i--) {
+let arr = [1, "hi", { x: 2 }, [3, 4]];
+for (let i = arr.length - 1; i >= 0; i--) {
   if (arr[i] === "hi") arr.splice(i, 1);
   else console.log(arr[i]);
 }
 /*
-* [3, 4]
-* {x : 2}
-* 1
-*/
+ * [3, 4]
+ * {x : 2}
+ * 1
+ */
 ```
 
 Nếu muốn biết lý do tại sao thì bạn cứ phân tích như trên là sẽ hiểu.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -160,8 +162,9 @@ console.log(x, y, z);
 // => ReferenceError: y is not defined
 ```
 
-_Xem thêm: [Phân biệt var và let trong JavaScript](/phan-biet-var-va-let-trong-javascript/)_
-    </div>
+_Xem thêm: [Phân biệt var và let trong JavaScript](/phan-biet-var-va-let-trong-javascript)_
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -188,10 +191,11 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Vì trong [chế độ strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript/), **this** sẽ không được bind với đối tượng **window**.
+Vì trong [chế độ strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript), **this** sẽ không được bind với đối tượng **window**.
 
-*Xem thêm bài viết sau để hiểu thêm về chế độ strict mode: [Strict mode – JavaScript | MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Strict\_mode).*
-    </div>
+_Xem thêm bài viết sau để hiểu thêm về chế độ strict mode: [Strict mode – JavaScript | MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Strict_mode)._
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -237,7 +241,8 @@ Nếu vẫn không tìm thấy thì sẽ chuyển đến prototype của thằng
 Ban đầu, đối tượng _foo_ chứa thuộc tính _bar_ của chính nó, và cả trong prototype của nó nữa. Khi đó, thuộc tính của chính nó sẽ được ưu tiên, nên _foo.bar_ có kết quả là 10.
 
 Nhưng sau khi **delete foo.bar**, đối tượng _foo_ không còn thuộc tính _bar_ nữa. Nhưng may thay, trong prototype của **foo** vẫn có _bar_ nên kết quả _foo.bar_ lúc này là 42.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -267,7 +272,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 - Toán tử **delete** chỉ xoá bỏ thuộc tính của object mà không có tác dụng đối với biến số thông thường. Vì vậy, 3 câu lệnh **delete** trên là vô tác dụng.
 - Câu hỏi trên sử dụng [IIFE (Immediately Invoked Function Expression)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE), nên giá trị của x, y, z lần lượt là 1, [2, 3], {x: 4}. Khi cộng 3 giá trị này lại với nhau, thự tự phép tính là từ trái sang phải. Trước tiên, **1 + [2, 3] = "12,3"** do [2, 3] được chuyển đổi sang string thành **"2, 3"**. Tiếp theo, **"12,3" + {x: 4} = "12,3[object Object]"**, do mọi object khi convert sang string thì đều trở thành **"[object Object]"**.
-    </div>
+</div>
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -276,7 +281,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 Trên đây là 6 câu hỏi phỏng vấn JavaScript cũng rất hay. Nếu bạn có cùng nhận xét với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-6/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-6), thân ái!
 
 <hr class="border-color-light-grey" />
 

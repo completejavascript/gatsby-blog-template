@@ -18,7 +18,7 @@ tags:
 
 Tiếp tục series lập trình JavaScript với FCC, hôm nay mình sẽ giới thiệu một project thuộc chuyên mục Intermediate Front-End là **Random Quote Machine**. Nhưng khác các bài viết trước, lần này mình muốn chia sẻ quy trình từng bước thực hiện, bắt đầu từ phân tích yêu cầu bài toán, thiết kế UX/UI và xử lý logic trong JavaScript.
 
-Dưới đây là demo trên Codepen. Ngoài ra, bạn cũng có thể xem bản demo đầy đủ hơn tại [đây](http://about.phamvanlam.com/fcc-random-quote-machine/).
+Dưới đây là demo trên Codepen. Ngoài ra, bạn cũng có thể xem bản demo đầy đủ hơn tại [đây](http://about.phamvanlam.com/fcc-random-quote-machine).
 
 https://codepen.io/completejavascript/pen/xWZyRy
 
@@ -55,7 +55,7 @@ Vậy là tạm thời phân tích xong các yêu cầu của bài toán Random 
 
 Vì không phải dân chuyên thiết kế UX/UI, nên chẳng may có bạn nào là chuyên gia trong mảng này mà đọc được thì xin chém nhẹ tay thôi nhé, tội nghiệp mình! ...
 
-Trước tiên, bàn về công cụ thiết kế. Trong đầu mình hiện ra 3 công cụ: PowerPoint, [GIMP](https://phamvanlam.com/category/gimp-28-tutorial/), Giấy và bút. Mình loại bỏ GIMP vì thấy nó hơi phức tạp. Sau đó, mình có thiết kế thử sử dụng PowerPoint (mình khá là rành về mảng này, và có một channel nho nhỏ là [đây](https://www.youtube.com/channel/UCGLAVGAzZlYAKYsxg9N0Zcw)) và vẽ tay.
+Trước tiên, bàn về công cụ thiết kế. Trong đầu mình hiện ra 3 công cụ: PowerPoint, [GIMP](https://phamvanlam.com/category/gimp-28-tutorial), Giấy và bút. Mình loại bỏ GIMP vì thấy nó hơi phức tạp. Sau đó, mình có thiết kế thử sử dụng PowerPoint (mình khá là rành về mảng này, và có một channel nho nhỏ là [đây](https://www.youtube.com/channel/UCGLAVGAzZlYAKYsxg9N0Zcw)) và vẽ tay.
 
 Kết quả cũng được, tuy nhiên, mình muốn sử dụng một công cụ chuyên biệt hơn. Sau một hồi tìm kiếm thì mình phát hiện ra một phần mềm của Việt Nam luôn là [Pencil](http://pencil.evolus.vn/).
 
@@ -110,11 +110,11 @@ let requestURL =
   "https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?";
 ```
 
-Request này kiểu GET, với các tham số là phần phía sau dấu hỏi (?). Và kết quả trả về sẽ là một [JSON](/tim-hieu-ve-json-trong-javascript/), với ngôn ngữ là tiếng anh.
+Request này kiểu GET, với các tham số là phần phía sau dấu hỏi (?). Và kết quả trả về sẽ là một [JSON](/tim-hieu-ve-json-trong-javascript), với ngôn ngữ là tiếng anh.
 
 **Tiến hành request**
 
-Để thực hiện request lên server, bạn có thể sử dụng [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/). Tuy nhiên, trong project này mình sử dụng jQuery, nên sử dụng luôn phương thức [getJSON](http://api.jquery.com/jquery.getjson/) của nó.
+Để thực hiện request lên server, bạn có thể sử dụng [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript). Tuy nhiên, trong project này mình sử dụng jQuery, nên sử dụng luôn phương thức [getJSON](http://api.jquery.com/jquery.getjson/) của nó.
 
 ```js
 function requestRandomQoute() {
@@ -170,7 +170,7 @@ $("#share-tumblr").attr("href", tumblrShareURL);
 
 Trên đây là quy trình các bước mình thực hiện để hoàn thành project Random Quote Machine. Hy vọng quy trình này có thể giúp bạn áp dụng vào các project của mình. Ngoài ra, nếu bạn có góp ý gì vui lòng để lại phần bình luận nhé.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-local-weather/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-local-weather), thân ái!
 
 <hr class="border-color-light-grey" />
 

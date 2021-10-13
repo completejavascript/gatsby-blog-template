@@ -12,7 +12,7 @@ tags:
   - RegExp
 ---
 
-Trong bài viết [tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/), mình có giới thiệu với bạn về Regular Expression trong JavaScript rồi. Hy vọng qua bài viết đó, bạn đã biết và hiểu về các cú pháp cơ bản của RegExp. Còn trong trường hợp bạn vẫn chưa biết gì về nó, mình khuyên bạn nên quay lại bài viết kia để tìm hiểu về RegExp thật kỹ trước đã. Vì trong bài viết này, mình sẽ chỉ tổng hợp lại một số biểu thức chính quy RegExp hay mà mình sưu tầm được và sẽ không giải thích gì nhiều.
+Trong bài viết [tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript), mình có giới thiệu với bạn về Regular Expression trong JavaScript rồi. Hy vọng qua bài viết đó, bạn đã biết và hiểu về các cú pháp cơ bản của RegExp. Còn trong trường hợp bạn vẫn chưa biết gì về nó, mình khuyên bạn nên quay lại bài viết kia để tìm hiểu về RegExp thật kỹ trước đã. Vì trong bài viết này, mình sẽ chỉ tổng hợp lại một số biểu thức chính quy RegExp hay mà mình sưu tầm được và sẽ không giải thích gì nhiều.
 
 Trước khi đi vào nội dung chính của bài viết, mình sẽ tóm tắt lại một số kiến thức cơ bản về biểu thức chính quy RegExp để bạn tiện theo dõi:
 
@@ -115,7 +115,8 @@ console.log(isNumeric.test("")); // false
 **Test:**
 
 ```js
-const isBase64 = /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/;
+const isBase64 =
+  /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/;
 console.log(isBase64.test("SomeStringObviouslyNotBase64Encoded...")); // false
 console.log(isBase64.test("U29tZVN0cmluZ09idmlvdXNseU5vdEJhc2U2NEVuY29kZWQ=")); // true
 ```
@@ -246,7 +247,8 @@ Tham khảo: [How to validate Hex color code with regular expression](http://www
 **Test:**
 
 ```js
-const isRGBColor = /^rgb\(((\s*(\d|[1-9]\d|1\d\d|2[0-4][0-9]|25[0-5])\s*),){2}(\s*(\d|[1-9]\d|1\d\d|2[0-4][0-9]|25[0-5])\s*)\)$/;
+const isRGBColor =
+  /^rgb\(((\s*(\d|[1-9]\d|1\d\d|2[0-4][0-9]|25[0-5])\s*),){2}(\s*(\d|[1-9]\d|1\d\d|2[0-4][0-9]|25[0-5])\s*)\)$/;
 console.log(isRGBColor.test("rgb(0, 0, 0)")); // true
 console.log(isRGBColor.test("rgb(0, 15, 120)")); // true
 console.log(isRGBColor.test("rgb(10, 1, 230)")); // true
@@ -276,7 +278,8 @@ console.log(isRGBColor.test("rgb(03, 15, 120)")); // false
 **Test:**
 
 ```js
-const isRGBAColor = /^rgba\(((\s*(\d|[1-9]\d|1\d\d|2[0-4][0-9]|25[0-5])\s*),){3}(\s*(1(\.0+)?|0?\.\d+)\s*)\)$/;
+const isRGBAColor =
+  /^rgba\(((\s*(\d|[1-9]\d|1\d\d|2[0-4][0-9]|25[0-5])\s*),){3}(\s*(1(\.0+)?|0?\.\d+)\s*)\)$/;
 console.log(isRGBAColor.test("rgba(0, 0, 0, 1)")); // true
 console.log(isRGBAColor.test("rgba(0, 15, 120, 1.0)")); // true
 console.log(isRGBAColor.test("rgba(10, 1, 230, 1.00)")); // true
@@ -306,7 +309,8 @@ console.log(isRGBAColor.test("rgba(03, 15, 120, 0.5)")); // false
 **Test:**
 
 ```js
-const isEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+const isEmail =
+  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
 console.log(isEmail.test("123")); // false
 console.log(isEmail.test("email")); // false
 console.log(isEmail.test("lam@hotmail")); // false
@@ -335,7 +339,8 @@ Tham khảo: [How to validate an email address in JavaScript?](https://stackover
 **Test:**
 
 ```js
-const isIPv4 = /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/;
+const isIPv4 =
+  /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/;
 console.log(isIPv4.test("255.255.255.255")); // true
 console.log(isIPv4.test("0.0.0.0")); // true
 console.log(isIPv4.test("0.12.34.56")); // true
@@ -418,13 +423,15 @@ Còn về phần test thì có khá nhiều trường hợp nên mình không th
 **Regex:**
 
 ```js
-const isVNPhoneMobile = /^(0|\+84)(\s|\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\d)(\s|\.)?(\d{3})(\s|\.)?(\d{3})$/;
+const isVNPhoneMobile =
+  /^(0|\+84)(\s|\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\d)(\s|\.)?(\d{3})(\s|\.)?(\d{3})$/;
 ```
 
 **Test:**
 
 ```js
-const isVNPhoneMobile = /^(0|\+84)(\s|\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\d)(\s|\.)?(\d{3})(\s|\.)?(\d{3})$/;
+const isVNPhoneMobile =
+  /^(0|\+84)(\s|\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\d)(\s|\.)?(\d{3})(\s|\.)?(\d{3})$/;
 
 console.log(isVNPhoneMobile.test("0866888999")); // true - Viettel
 console.log(isVNPhoneMobile.test("0.866.888.999")); // true
@@ -499,13 +506,15 @@ Theo bạn, thế nào là một mật khẩu mạnh? Ở đây, mình định n
 **Regex:**
 
 ```js
-const isStrongPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{8,}$/;
+const isStrongPassword =
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{8,}$/;
 ```
 
 **Test:**
 
 ```js
-const isStrongPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{8,}$/;
+const isStrongPassword =
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{8,}$/;
 
 console.log(isStrongPassword.test("Abcd!234")); // true
 console.log(isStrongPassword.test("aBcd1@345")); // true

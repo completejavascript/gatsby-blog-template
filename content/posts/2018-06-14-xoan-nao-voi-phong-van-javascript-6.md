@@ -19,7 +19,7 @@ Mời bạn theo dõi bài viết!
 ```js
 let foo = function bar() {
   return "hello";
-}
+};
 
 console.log(typeof bar);
 ```
@@ -36,21 +36,20 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Cách khai báo [hàm số](/tim-hieu-function-javascript/) như trên được gọi là **Named function expression**, tức là bạn đặt tên cho function expression. Khi đó, bạn có thể sử dụng hàm số ngay bên trong nội dung của hàm.
+Cách khai báo [hàm số](/tim-hieu-function-javascript) như trên được gọi là **Named function expression**, tức là bạn đặt tên cho function expression. Khi đó, bạn có thể sử dụng hàm số ngay bên trong nội dung của hàm.
 
 Ví dụ:
 
 ```js
 var math = {
-  'factit': function factorial(n) {
-    console.log(n)
-    if (n <= 1)
-      return 1;
+  factit: function factorial(n) {
+    console.log(n);
+    if (n <= 1) return 1;
     return n * factorial(n - 1);
-  }
+  },
 };
 
-math.factit(3)
+math.factit(3);
 // => 3;2;1;
 ```
 
@@ -58,15 +57,14 @@ Ngược lại, khi bạn không sử dụng **Named function expression** thì 
 
 ```js
 var math = {
-  'factit': function(n) {
-    console.log(n)
-    if (n <= 1)
-      return 1;
+  factit: function (n) {
+    console.log(n);
+    if (n <= 1) return 1;
     return n * this.factit(n - 1);
-  }
+  },
 };
 
-math.factit(3)
+math.factit(3);
 // => 3;2;1;
 ```
 
@@ -81,16 +79,17 @@ let foo = function bar() {
   console.log(typeof bar);
 
   return "hello";
-}
+};
 
-foo();                    // => function
-console.log(typeof bar);  // => undefined
+foo(); // => function
+console.log(typeof bar); // => undefined
 ```
 
 Tóm lại, đáp án của câu hỏi 1 là undefined.
 
-Ngoài ra, bạn có thể xem thêm tại [đây](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function#Named\_function\_expression) để hiểu rõ hơn về **Named function expression**.
-    </div>
+Ngoài ra, bạn có thể xem thêm tại [đây](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function#Named_function_expression) để hiểu rõ hơn về **Named function expression**.
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -99,13 +98,13 @@ Ngoài ra, bạn có thể xem thêm tại [đây](https://developer.mozilla.org
 
 ```js
 let person = {
-  name: "foo"
+  name: "foo",
 };
 
 Object.preventExtensions(person);
 
 person.name = "bar";
-person.job  = "teacher";
+person.job = "teacher";
 
 console.log(person);
 ```
@@ -122,26 +121,27 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-[Object.preventExtensions](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions) ngăn chặn việc thêm thuộc tính vào [object](/javascript-object-last-but-not-least/).
+[Object.preventExtensions](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions) ngăn chặn việc thêm thuộc tính vào [object](/javascript-object-last-but-not-least).
 
 Do đó, việc thêm thuộc tính **person.job = "teacher"** sẽ không có ý nghĩa. Vì vậy, kết quả của câu hỏi sẽ là: **{name: "bar"}**.
 
-Ngoài ra, nếu bạn sử dụng code trên ở chế độ [strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript/) thì bạn sẽ nhận được thông báo lỗi: **TypeError: Cannot add property job, object is not extensible**.
+Ngoài ra, nếu bạn sử dụng code trên ở chế độ [strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript) thì bạn sẽ nhận được thông báo lỗi: **TypeError: Cannot add property job, object is not extensible**.
 
 ```js
 "use strict";
 let person = {
-  name: "foo"
+  name: "foo",
 };
 
 Object.preventExtensions(person);
 
 person.name = "bar";
-person.job  = "teacher";
+person.job = "teacher";
 
 console.log(person);
 // => TypeError: Cannot add property job, object is not extensible
 ```
+
   </div>
   </div>
 </div>
@@ -151,13 +151,13 @@ console.log(person);
 
 ```js
 let person = {
-  name: "foo"
+  name: "foo",
 };
 
 Object.preventExtensions(person);
-person.__proto__.sayHi = function() {
+person.__proto__.sayHi = function () {
   console.log("Hi");
-}
+};
 
 console.log(person.sayHi());
 ```
@@ -177,7 +177,8 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 **Object.preventExtensions()** chỉ ngăn chặn việc thêm thuộc tính vào bản thân object. Đối với prototype của object thì bạn vẫn có thể thêm vào.
 
 Trong câu hỏi này, mình đã thêm thuộc tính _sayHi_ vào prototype của đối tượng person. Điều này là hoàn toàn hợp lệ, nên bạn sẽ nhận được kết quả là _Hi_.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -186,7 +187,7 @@ Trong câu hỏi này, mình đã thêm thuộc tính _sayHi_ vào prototype c�
 
 ```js
 let person = {
-  name: "foo"
+  name: "foo",
 };
 
 Object.preventExtensions(person);
@@ -209,10 +210,11 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 Một đặc điểm quan trọng nữa của **Object.preventExtensions()** là: nó làm cho **\_\_proto\_\_** trở thành **immutable** – tức là bạn có thể thay đổi giá trị của nó, nhưng không thể gán nó cho một object mới.
 
-Trong khi đó, câu lệnh *person.\_\_proto\_\_ = { job: "teacher" }* đã gán object mới cho **\_\_proto\_\_** của person.
+Trong khi đó, câu lệnh _person.\_\_proto\_\_ = { job: "teacher" }_ đã gán object mới cho **\_\_proto\_\_** của person.
 
 Vì vậy, bạn sẽ nhận được lỗi như trên.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -220,8 +222,8 @@ Vì vậy, bạn sẽ nhận được lỗi như trên.
 ## Xoắn não với phỏng vấn JavaScript 6 - Câu 5
 
 ```js
-let a = { x : 1, y : 2 };
-let b = { y : 3, z : 4 };
+let a = { x: 1, y: 2 };
+let b = { y: 3, z: 4 };
 
 Object.assign(a, b);
 console.log(a, b);
@@ -253,7 +255,8 @@ Trong câu hỏi trên:
 - a là đối tượng đích, b là đối tượng nguồn.
 
 Do đó, các thuộc tính của b sẽ được copy sang a và b vẫn giữ nguyên. Trường hợp thuộc tính của a và b giống nhau (thuộc tính y) thì giá trị của thuộc tính đích sẽ bị ghi đè bởi giá trị của thuộc tính nguồn.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -261,10 +264,13 @@ Do đó, các thuộc tính của b sẽ được copy sang a và b vẫn giữ 
 ## Xoắn não với phỏng vấn JavaScript 6 - Câu 6
 
 ```js
-let a = Object.create({ foo: 1 }, {
-  bar: { value: 2 },
-  baz: { value: 3, enumerable: true }
-});
+let a = Object.create(
+  { foo: 1 },
+  {
+    bar: { value: 2 },
+    baz: { value: 3, enumerable: true },
+  }
+);
 
 let b = Object.assign({}, a);
 console.log(b);
@@ -282,7 +288,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Khi sử dụng [Object.create](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create) để tạo object như trên thì _{ foo: 1 }_ sẽ là **\_\_proto\_\_** của object mới. Nên nó sẽ không được sao chép thông qua *Object.assign*.
+Khi sử dụng [Object.create](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create) để tạo object như trên thì _{ foo: 1 }_ sẽ là **\_\_proto\_\_** của object mới. Nên nó sẽ không được sao chép thông qua _Object.assign_.
 
 Tiếp theo là việc định nghĩa các thuộc tính cho object:
 
@@ -298,7 +304,8 @@ Thuộc tính _bar_ không chỉ rõ giá trị của _enumerable_ nên nó sẽ
 Còn lại thuộc tính _baz_, giá trị _enumerable_ của nó là true. Nên thuộc tính này sẽ được sao chép thông qua _Object.assign_.
 
 Vì vậy, đối tượng b chỉ có 1 thuộc tính là _baz_ và kết quả thu được là _{baz: 3}_.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>

@@ -12,7 +12,7 @@ tags:
   - ES6
 ---
 
-Thông thường, [object](/javascript-object-last-but-not-least/) trong JavaScript là **mutable** - nghĩa là trạng thái của object có thể thay đổi được. Tuy nhiên, có nhiều trường hợp bạn mong muốn object đó là **immutable** - trạng thái không thể thay đổi được. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript.
+Thông thường, [object](/javascript-object-last-but-not-least) trong JavaScript là **mutable** - nghĩa là trạng thái của object có thể thay đổi được. Tuy nhiên, có nhiều trường hợp bạn mong muốn object đó là **immutable** - trạng thái không thể thay đổi được. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript.
 
 ## Tạo immutable object sử dụng Object.defineProperty
 
@@ -22,7 +22,7 @@ Phương thức [Object.defineProperty()](https://developer.mozilla.org/en-US/do
 
 ```js
 let obj = {};
-Object.defineProperty(obj, 'a', { value: 1, writable: false });
+Object.defineProperty(obj, "a", { value: 1, writable: false });
 obj.a = 2;
 console.log(obj.a); // => 1
 ```
@@ -33,7 +33,7 @@ Thực tế, giá trị mặc định của writable là false, nên bạn có t
 
 ```js
 let obj = {};
-Object.defineProperty(obj, 'a', { value: 1 });
+Object.defineProperty(obj, "a", { value: 1 });
 obj.a = 2;
 console.log(obj.a); // => 1
 ```
@@ -46,8 +46,8 @@ Vì theo mặc định, giá trị của **configurable** là false, nên bạn 
 
 ```js
 let obj = {};
-Object.defineProperty(obj, 'a', { value: 1, writable: false });
-Object.defineProperty(obj, 'a', {writable: true });
+Object.defineProperty(obj, "a", { value: 1, writable: false });
+Object.defineProperty(obj, "a", { writable: true });
 // => TypeError: Cannot redefine property: a
 ```
 
@@ -55,8 +55,12 @@ Object.defineProperty(obj, 'a', {writable: true });
 
 ```js
 let obj = {};
-Object.defineProperty(obj, 'a', { value: 1, writable: false, configurable: true});
-Object.defineProperty(obj, 'a', {writable: true });
+Object.defineProperty(obj, "a", {
+  value: 1,
+  writable: false,
+  configurable: true,
+});
+Object.defineProperty(obj, "a", { writable: true });
 obj.a = 2;
 console.log(obj.a); // => 2
 ```
@@ -71,7 +75,7 @@ Chính vì vậy, phương thức này rất phù hợp để tạo immutable ob
 
 ```js
 let obj = {
-  a: 1
+  a: 1,
 };
 
 Object.freeze(obj);
@@ -92,12 +96,12 @@ Trên đây là 2 cách tạo immutable object trong JavaScript. Mỗi cách đ�
 
 Nếu có thắc mắc hay góp ý gì thì bạn có thể để lại cho mình trong phần bình luận phía dưới nhé!
 
-Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/trien-khai-thuat-toan-undo-redo-trong-javascript/), thân ái!
+Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/trien-khai-thuat-toan-undo-redo-trong-javascript), thân ái!
 
 <hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

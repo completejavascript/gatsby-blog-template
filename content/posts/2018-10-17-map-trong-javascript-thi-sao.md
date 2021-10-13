@@ -15,7 +15,7 @@ tags:
 
 Map trong JavaScript là một loại object cho phép lưu trữ dữ liệu theo kiểu key-value.
 
-Nghe thì có vẻ giống với [object](/javascript-object-last-but-not-least/) bình thường nhỉ? Vì object cũng cho phép bạn làm điều này mà.
+Nghe thì có vẻ giống với [object](/javascript-object-last-but-not-least) bình thường nhỉ? Vì object cũng cho phép bạn làm điều này mà.
 
 Nhưng mọi thứ trên đời này đều có ý nghĩa của riêng nó. Map cũng không ngoại lệ. Map có **những đặc điểm riêng biệt** so với object thông thường.
 
@@ -27,7 +27,7 @@ Nói một cách đầy đủ thì Map trong JavaScript là một cấu trúc d�
 
 Nhưng khác ở chỗ là:
 
-- Object chỉ cho phép sử dụng [String](/values-types-va-operators-trong-javascript-phan-2/) hay [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) làm key
+- Object chỉ cho phép sử dụng [String](/values-types-va-operators-trong-javascript-phan-2) hay [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) làm key
 - Map cho phép mọi kiểu dữ liệu (String, Number, Boolean, NaN, Object,...) có thể làm key
 
 > **Chú ý:** về cơ bản thì Map cũng là Object, tuy nhiên, để tránh hiểu lầm, từ nay mỗi khi mình dùng từ object thì bạn hiểu đó là object thông thường mà từ trước đến giờ bạn vẫn sử dụng, không phải Map.
@@ -45,7 +45,7 @@ console.log(typeof map1);
 Cú pháp khởi tạo Map trong JavaScript là:
 
 ```js
-new Map([iterable])
+new Map([iterable]);
 ```
 
 Cũng tương tự như Set, bạn có thể truyền vào một [iterable object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) để khởi tạo Map. Khi đó, mỗi phần tử của iterable object sẽ tương ứng với một phần tử của Map.
@@ -72,7 +72,10 @@ console.log(map1);
 #### Khởi tạo Map từ Array
 
 ```js
-const map2 = new Map([[1, "a"], [2, "b"]]);
+const map2 = new Map([
+  [1, "a"],
+  [2, "b"],
+]);
 console.log(map2);
 // => Map(2) {1 => "a", 2 => "b"}
 
@@ -84,8 +87,8 @@ const map3 = new Map([1, "a", 2, "b"]);
 
 ```js
 function func4() {
-    const map4 = new Map(arguments);
-    console.log(map4);
+  const map4 = new Map(arguments);
+  console.log(map4);
 }
 func4(["one", 1], ["two", 2], ["three", 3]);
 // => Map(3) {"one" => 1, "two" => 2, "three" => 3}
@@ -94,7 +97,10 @@ func4(["one", 1], ["two", 2], ["three", 3]);
 #### Khởi tạo Map từ Set
 
 ```js
-const set5 = new Set([["a", 1], ["b", 2]]);
+const set5 = new Set([
+  ["a", 1],
+  ["b", 2],
+]);
 console.log(set5);
 // => Set(2) {Array(2), Array(2)}
 
@@ -106,7 +112,10 @@ console.log(map5);
 #### Khởi tạo Map từ Map
 
 ```js
-const map6 = new Map([["a", 1], ["b", 2]]);
+const map6 = new Map([
+  ["a", 1],
+  ["b", 2],
+]);
 console.log(map6);
 // => Map(2) {"a" => 1, "b" => 2}
 
@@ -124,7 +133,7 @@ Nếu bạn tìm ra cách cho vấn đề này, vui lòng chia sẻ lại với 
 Để thêm phần tử vào Map, bạn có thể sử dụng phương thức _set_, với cú pháp:
 
 ```js
-Map.prototype.set(key, value)
+Map.prototype.set(key, value);
 ```
 
 Phương thức này sẽ gán giá trị _value_ cho khoá _key_ bên trong Map. Nói vậy nghĩa là, nếu _key_ chưa tồn tại thì Map sẽ tạo mới phần tử với _key_ tương ứng. Ngược lại, nếu _key_ đã tồn tại thì Map sẽ gán giá trị mới cho nó.
@@ -158,18 +167,13 @@ map7.set(NaN, 6);
 
 Bạn nhớ là khi sử dụng toán tử "===" để so sánh thì <code>[1] !== [1]</code>. Nên trong Map sẽ tồn tại 2 cặp phần tử với key là <code>[1]</code> với value lần lượt là 3 và 5 như trên.
 
-Ngoài ra, phương thức _set_ còn trả về chính đối tượng Map. Nên mình có thể áp dụng [kỹ thuật Method Chaining](/tim-hieu-ki-thuat-method-chaining-co-ban/) ở đây, sẽ giúp cho code trở nên ngắn gọn hơn.
+Ngoài ra, phương thức _set_ còn trả về chính đối tượng Map. Nên mình có thể áp dụng [kỹ thuật Method Chaining](/tim-hieu-ki-thuat-method-chaining-co-ban) ở đây, sẽ giúp cho code trở nên ngắn gọn hơn.
 
 Đoạn code trên có thể trở nên gọn hơn bằng cách:
 
 ```js
 const map7 = new Map();
-map7.set("a", 1)
-    .set("b", 2)
-    .set([1], 3)
-    .set("a", 4)
-    .set([1], 5)
-    .set(NaN, 6);
+map7.set("a", 1).set("b", 2).set([1], 3).set("a", 4).set([1], 5).set(NaN, 6);
 // => Map(5) {"a" => 4, "b" => 2, [1] => 3, [1] => 5, NaN => 6}
 ```
 
@@ -178,7 +182,10 @@ map7.set("a", 1)
 Để lấy _value_ của phần tử tương ứng với _key_, bạn có thể sử dụng phương thức _Map.prototype.get(key)_.
 
 ```js
-const map7 = new Map([["a", 1], ["b", 1]]);
+const map7 = new Map([
+  ["a", 1],
+  ["b", 1],
+]);
 console.log(map7.get("a")); // => 1
 console.log(map7.get("c")); // => undefined
 ```
@@ -204,16 +211,21 @@ console.log(map8.size);
 Để kiểm tra xem một phần tử đã tồn tại trong Map hay chưa - thực chất là kiểm tra xem một giá trị _key_ đã tồn tại hay chưa, bạn có thể dùng phương thức _has_ như sau:
 
 ```js
-Map.prototype.has(key)
+Map.prototype.has(key);
 ```
 
 Nếu trong Map tồn tại _key_ thì phương thức này trả về **true** và ngược lại, nó sẽ trả về **false**.
 
 ```js
-const map9 = new Map([["a", 1], [1, 2], [[2], 3], [NaN, 4]]);
+const map9 = new Map([
+  ["a", 1],
+  [1, 2],
+  [[2], 3],
+  [NaN, 4],
+]);
 console.log(map9.has("a")); // => true
 console.log(map9.has("1")); // => false
-console.log(map9.has(1));   // => true
+console.log(map9.has(1)); // => true
 console.log(map9.has([2])); // => false
 console.log(map9.has(NaN)); // => true
 ```
@@ -225,13 +237,17 @@ console.log(map9.has(NaN)); // => true
 Để xóa một phần tử trong Map, bạn có thể sử dụng phương thức _delete_:
 
 ```js
-Map.prototype.delete(key)
+Map.prototype.delete(key);
 ```
 
 Nếu trong Map tồn tại _key_ thì phần tử ứng với _key_ sẽ bị xóa khỏi Map và phương thức này trả về **true**. Ngược lại, phương thức này sẽ trả về **false**.
 
 ```js
-const map10 = new Map([["one", 1], ["two", 2], ["three", 3]]);
+const map10 = new Map([
+  ["one", 1],
+  ["two", 2],
+  ["three", 3],
+]);
 console.log(map10);
 // Map(3) {"one" => 1, "two" => 2, "three" => 3}
 
@@ -247,7 +263,11 @@ console.log(map10);
 Bên trên là xóa **một** phần tử khỏi Map. Còn để xóa hết **tất cả** các phần tử khỏi Map, bạn sử dụng phương thức _clear_:
 
 ```js
-const map11 = new Map([["a", 1], ["b", 2], ["c", 3]]);
+const map11 = new Map([
+  ["a", 1],
+  ["b", 2],
+  ["c", 3],
+]);
 console.log(map11);
 // Map(3) {"a" => 1, "b" => 2, "c" => 3}
 
@@ -263,31 +283,39 @@ Tương tự như Set, bạn cũng có thể duyệt qua các phần tử trong 
 #### Sử dụng for...of
 
 ```js
-const map12 = new Map([[1, "a"], [2, "b"], [3, "c"]]);
+const map12 = new Map([
+  [1, "a"],
+  [2, "b"],
+  [3, "c"],
+]);
 
 for (const item of map12) {
-    console.log(item);
+  console.log(item);
 }
 /*
-* [1, "a"]
-* [2, "b"]
-* [3, "c"]
-*/
+ * [1, "a"]
+ * [2, "b"]
+ * [3, "c"]
+ */
 ```
 
 #### Sử dụng phương thức forEach
 
 ```js
-const map13 = new Map([[1, "a"], [2, "b"], [3, "c"]]);
+const map13 = new Map([
+  [1, "a"],
+  [2, "b"],
+  [3, "c"],
+]);
 
 map13.forEach((value, key, map) => {
-    console.log(value, key, map);
+  console.log(value, key, map);
 });
 /*
-* a 1 Map(3) {1 => "a", 2 => "b", 3 => "c"}
-* b 2 Map(3) {1 => "a", 2 => "b", 3 => "c"}
-* c 3 Map(3) {1 => "a", 2 => "b", 3 => "c"}
-*/
+ * a 1 Map(3) {1 => "a", 2 => "b", 3 => "c"}
+ * b 2 Map(3) {1 => "a", 2 => "b", 3 => "c"}
+ * c 3 Map(3) {1 => "a", 2 => "b", 3 => "c"}
+ */
 ```
 
 Trong đó, bạn chú ý trong hàm callback, tham số đầu tiên là **value**, tiếp theo mới là **key**. Chứ không phải theo thứ tự thông thương là **key-value**.
@@ -301,34 +329,38 @@ Phương thức <code>Map.prototype.values()</code> trả về một iterable ob
 Phương thức <code>Map.prototype.entries()</code> trả về một iterable object mà mỗi phần tử tương ứng là một mảng <code>[key, value]</code>.
 
 ```js
-const map14 = new Map([[1, "a"], ["b", 2], [3, "c"]]);
+const map14 = new Map([
+  [1, "a"],
+  ["b", 2],
+  [3, "c"],
+]);
 
 for (const key of map14.keys()) {
-    console.log(key);
+  console.log(key);
 }
 /*
-* 1
-* b
-* 3
-*/
+ * 1
+ * b
+ * 3
+ */
 
 for (const value of map14.values()) {
-    console.log(value);
+  console.log(value);
 }
 /*
-* a
-* 2
-* c
-*/
+ * a
+ * 2
+ * c
+ */
 
 for (const item of map14.entries()) {
-    console.log(item);
+  console.log(item);
 }
 /*
-* [1, "a"]
-* ["b", 2]
-* [3, "c"]
-*/
+ * [1, "a"]
+ * ["b", 2]
+ * [3, "c"]
+ */
 ```
 
 ### Chuyển Map thành Array
@@ -336,7 +368,11 @@ for (const item of map14.entries()) {
 #### Chuyển Map Keys thành Array
 
 ```js
-const map15 = new Map([[1, "a"], ["b", 2], [3, "c"]]);
+const map15 = new Map([
+  [1, "a"],
+  ["b", 2],
+  [3, "c"],
+]);
 const keys = [...map15.keys()];
 console.log(keys);
 // => [1, "b", 3]
@@ -345,7 +381,11 @@ console.log(keys);
 #### Chuyển Map Values thành Array
 
 ```js
-const map16 = new Map([[1, "a"], ["b", 2], [3, "c"]]);
+const map16 = new Map([
+  [1, "a"],
+  ["b", 2],
+  [3, "c"],
+]);
 const values = [...map16.values()];
 console.log(values);
 // => ["a", 2, "c"]
@@ -370,5 +410,5 @@ Xin chào và hẹn gặp lại trong bài viết tiếp theo, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

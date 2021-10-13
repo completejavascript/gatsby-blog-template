@@ -26,9 +26,9 @@ Trước khi bắt đầu bài viết mình muốn nhấn mạnh về mục đí
 
 Và những kiến thức cơ bản mà bạn cần phải nắm vững:
 
-- [Array](/javascript-array-co-ban/)
-- [Object](/javascript-object-last-but-not-least/)
-- [Map](/map-trong-javascript-thi-sao/)
+- [Array](/javascript-array-co-ban)
+- [Object](/javascript-object-last-but-not-least)
+- [Map](/map-trong-javascript-thi-sao)
 
 Nếu bạn đã nắm vững kiến thức thì mình sẽ bắt đầu luôn nhé!
 
@@ -46,7 +46,7 @@ Ví dụ như khi bạn xếp sách thành một chồng. Rõ ràng, cuốn sác
 
 Stack là một cấu trúc dữ liệu cơ bản nhưng được áp dụng khá nhiều trong lập trình:
 
-- [Triển khai thuật toán Undo-Redo](/trien-khai-thuat-toan-undo-redo-trong-javascript/) cho các ứng dụng (soạn thảo văn bản, chỉnh sửa ảnh, video,...)
+- [Triển khai thuật toán Undo-Redo](/trien-khai-thuat-toan-undo-redo-trong-javascript) cho các ứng dụng (soạn thảo văn bản, chỉnh sửa ảnh, video,...)
 - [Chuyển biểu thức trung tố thành biểu thức hậu tố](https://yinyangit.wordpress.com/2011/01/26/algorithm-chuy%E1%BB%83n-bi%E1%BB%83u-th%E1%BB%A9c-trung-t%E1%BB%91-sang-ti%E1%BB%81n-t%E1%BB%91-va-h%E1%BA%ADu-t%E1%BB%91-b%E1%BA%B1ng-stack/) cho việc tính toán giá trị biểu thức
 - Tính năng tiến, lùi trang trên trình duyệt web
 - Cấu trúc Call Stack trong một chương trình
@@ -146,7 +146,7 @@ class OStack {
   }
 
   clear() {
-    while(!this.isEmpty()) this.pop();
+    while (!this.isEmpty()) this.pop();
     this.size = 0;
   }
 }
@@ -209,12 +209,12 @@ const TestCase = 10;
 const st = new AStack(Capability);
 
 /*
-* // Test dành cho Object
-* const st = new OStack(Capability);
-*
-* // Test dành cho Map
-* const st = new MStack(Capability);
-*/
+ * // Test dành cho Object
+ * const st = new OStack(Capability);
+ *
+ * // Test dành cho Map
+ * const st = new MStack(Capability);
+ */
 
 const start = performance.now();
 
@@ -283,5 +283,5 @@ Xin chào và hẹn gặp lại!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

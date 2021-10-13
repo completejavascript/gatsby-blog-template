@@ -12,7 +12,7 @@ tags:
   - Event
 ---
 
-Có thể bạn thừa biết, JavaScript là một ngôn ngữ chạy [đơn luồng](https://www.red-gate.com/simple-talk/dotnet/asp-net/javascript-single-threaded/). Điều đó có nghĩa là nếu bạn thực hiện một tác vụ quá lớn trên giao diện chính thì khả năng cao là giao diện sẽ bị đơ. Để giải quyết vấn đề này, JavaScript đã đưa ra một khái niệm là Worker. Vậy JavaScript Web Worker là gì và dùng nó như thế nào? Chúng ta sẽ cùng nhau tìm hiểu sau đây.
+Có thể bạn thừa biết, JavaScript là một ngôn ngữ chạy [đơn luồng](https://www.red-gate.com/simple-talk/dotnet/asp-net/javascript-single-threaded). Điều đó có nghĩa là nếu bạn thực hiện một tác vụ quá lớn trên giao diện chính thì khả năng cao là giao diện sẽ bị đơ. Để giải quyết vấn đề này, JavaScript đã đưa ra một khái niệm là Worker. Vậy JavaScript Web Worker là gì và dùng nó như thế nào? Chúng ta sẽ cùng nhau tìm hiểu sau đây.
 
 ## JavaScript Web Worker là gì?
 
@@ -75,7 +75,7 @@ function startWorker() {
 }
 ```
 
-Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/tim-hieu-function-javascript/) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban/).
+Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/tim-hieu-function-javascript) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban).
 
 Trong đó, **Worker.onerror** được gọi khi có lỗi với Web Worker sau khi khởi tạo. Và **Worker.onmessage** được gọi khi có message từ Worker Thread lên giao diện chính.
 
@@ -98,7 +98,7 @@ w.terminate();
 
 #### Truyền Message thông thường
 
-Trong phương pháp này, tham số truyền vào sẽ là một [object](/javascript-object-last-but-not-least/). Dữ liệu sẽ được copy từ phía gửi sang phía nhận.
+Trong phương pháp này, tham số truyền vào sẽ là một [object](/javascript-object-last-but-not-least). Dữ liệu sẽ được copy từ phía gửi sang phía nhận.
 
 Ví dụ như sau:
 
@@ -112,7 +112,7 @@ function startWorker() {
 }
 ```
 
-Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number](/values-types-va-operators-trong-javascript-phan-1/), [String, Boolean](/values-types-va-operators-trong-javascript-phan-2/), [Array](/javascript-array-co-ban/).
+Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number](/values-types-va-operators-trong-javascript-phan-1), [String, Boolean](/values-types-va-operators-trong-javascript-phan-2), [Array](/javascript-array-co-ban).
 
 Và ở Worker Thread, hàm **onmessage** sẽ được gọi:
 
@@ -240,7 +240,7 @@ Kết quả:
 
 Bài viết hôm nay dừng lại tại đây. Để tìm hiểu thêm về JavaScript Web Worker thì bạn có thể tìm hiểu thêm ở những link phía dưới đây.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo,](/javascript-service-worker-co-ban/) thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo,](/javascript-service-worker-co-ban) thân ái!
 
 ## Xem thêm
 

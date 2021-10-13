@@ -10,9 +10,9 @@ categories:
   - Thủ thuật JavaScript
 ---
 
-Khi nói đến việc copy dữ liệu vào clipboard thì không thể không kể đến thư viện [clipboard.js](https://clipboardjs.com/) - với hơn [24000 star trên Github](https://github.com/zenorocha/clipboard.js/), dung lượng sau nén khoảng 3kb, không phụ thuộc vào Flash và bất kỳ một [framework](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) nào, thì đây đúng là một thư viện rất đáng để sử dụng. Tuy nhiên, bạn cũng vẫn có thể trực tiếp giao tiếp với clipboard sử dụng execCommand một cách đơn giản.
+Khi nói đến việc copy dữ liệu vào clipboard thì không thể không kể đến thư viện [clipboard.js](https://clipboardjs.com/) - với hơn [24000 star trên Github](https://github.com/zenorocha/clipboard.js/), dung lượng sau nén khoảng 3kb, không phụ thuộc vào Flash và bất kỳ một [framework](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app) nào, thì đây đúng là một thư viện rất đáng để sử dụng. Tuy nhiên, bạn cũng vẫn có thể trực tiếp giao tiếp với clipboard sử dụng execCommand một cách đơn giản.
 
-Thực tế, [Document.execCommand()](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) hỗ trợ rất nhiều các [command](/tag/command-line/) khác nhau như: _copy, cut, paste, bold, italic, createLink, fontName, fontSize,..._ Tuy nhiên, bài viết này mình sẽ chỉ đề cập vào 2 phương thức chính giao tiếp với clipboard là: _copy, cut_ (phương thức _paste_ hiện tại không support trên web nên mình sẽ không trình bày).
+Thực tế, [Document.execCommand()](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) hỗ trợ rất nhiều các [command](/tag/command-line) khác nhau như: _copy, cut, paste, bold, italic, createLink, fontName, fontSize,..._ Tuy nhiên, bài viết này mình sẽ chỉ đề cập vào 2 phương thức chính giao tiếp với clipboard là: _copy, cut_ (phương thức _paste_ hiện tại không support trên web nên mình sẽ không trình bày).
 
 ## Ví dụ giao tiếp với clipboard sử dụng execCommand
 
@@ -38,18 +38,18 @@ Trong đó, thẻ _p_ với id _content-copy_ là thành phần chứa nội dun
 
 > **Chú ý**: bạn có thể copy dữ liệu từ hầu hết các phần tử như: _thẻ p, span, div, input, textarea,..._ Nhưng trong ví dụ này, mình chỉ demo với thẻ _p_.
 
-Tiếp theo, mình dùng [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) để lưu lại [DOM node](/co-ban-ve-dom-javascript/) của các phần tử:
+Tiếp theo, mình dùng [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) để lưu lại [DOM node](/co-ban-ve-dom-javascript) của các phần tử:
 
 ```js
 const $ = document.querySelector.bind(document);
 const contentCopyElm = $("#content-copy"),
-buttonCopyElm = $("#button-copy");
+  buttonCopyElm = $("#button-copy");
 ```
 
-Sau đó, định nghĩa một [hàm số](/tim-hieu-function-javascript/) để kiểm tra xem command mình sử dụng có được support hay không, thông qua phương thức [document.queryCommandSupported()](https://developer.mozilla.org/en-US/docs/Web/API/Document/queryCommandSupported):
+Sau đó, định nghĩa một [hàm số](/tim-hieu-function-javascript) để kiểm tra xem command mình sử dụng có được support hay không, thông qua phương thức [document.queryCommandSupported()](https://developer.mozilla.org/en-US/docs/Web/API/Document/queryCommandSupported):
 
 ```js
-const isSupported = cmd => {
+const isSupported = (cmd) => {
   return document.queryCommandSupported(cmd);
 };
 ```
@@ -94,7 +94,11 @@ Nội dung phần **html**:
 
 ```html
 <h3>Cut</h3>
-<input id="content-cut" type="text" value="This text will be cut, then inserted into the clipboard." />
+<input
+  id="content-cut"
+  type="text"
+  value="This text will be cut, then inserted into the clipboard."
+/>
 <button id="button-cut">Cut Text</button>
 ```
 
@@ -109,7 +113,7 @@ buttonCutElm.addEventListener("click", () => {
   try {
     if (isSupported("cut")) document.execCommand("cut");
     else alert(`execCommand("cut") is not supported in your browser.`);
-  } catch(e) {
+  } catch (e) {
     console.log(e);
   }
 });

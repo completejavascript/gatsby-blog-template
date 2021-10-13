@@ -10,7 +10,7 @@ categories:
   - Javascript cơ bản
 ---
 
-Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number](/values-types-va-operators-trong-javascript-phan-1/), [string, boolean](/values-types-va-operators-trong-javascript-phan-2/) và [array](/javascript-array-co-ban/). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/)), nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn trở thành master trên con đường JavaScript học.
+Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number](/values-types-va-operators-trong-javascript-phan-1), [string, boolean](/values-types-va-operators-trong-javascript-phan-2) và [array](/javascript-array-co-ban). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript)), nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn trở thành master trên con đường JavaScript học.
 
 Để hiểu JavaScript object là gì, mình xin đưa ra một ví dụ. Máy tính của mình có những đặc điểm sau:
 
@@ -45,7 +45,7 @@ JavaScript sử dụng cặp dấu ngoặc nhọn {} để biểu diễn object:
 }
 ```
 
-Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị tương ứng là *value1, value2, value3,...* Nếu value là một [function](/tim-hieu-function-javascript/) thì đó chính là phương thức của object.
+Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị tương ứng là *value1, value2, value3,...* Nếu value là một [function](/tim-hieu-function-javascript) thì đó chính là phương thức của object.
 
 Áp dụng cho ví dụ trên:
 
@@ -81,16 +81,16 @@ var myComputer = {
   type: "laptop",
   brand: "Sony",
   "operating system": "Windows 7",
-  "graphic card": "NVIDIA"
+  "graphic card": "NVIDIA",
 };
 
-console.log(myComputer.type);                // => laptop
-console.log(myComputer.brand);               // => Sony
+console.log(myComputer.type); // => laptop
+console.log(myComputer.brand); // => Sony
 
-console.log(myComputer['type']);             // => laptop
-console.log(myComputer["brand"]);            // => Sony
-console.log(myComputer['operating system']); // => Windows 7
-console.log(myComputer["graphic card"]);     // => NVIDIA
+console.log(myComputer["type"]); // => laptop
+console.log(myComputer["brand"]); // => Sony
+console.log(myComputer["operating system"]); // => Windows 7
+console.log(myComputer["graphic card"]); // => NVIDIA
 ```
 
 ## Thay đổi giá trị của thuộc tính
@@ -102,20 +102,20 @@ var myComputer = {
   type: "laptop",
   brand: "Sony",
   "operating system": "Windows 7",
-  "graphic card": "NVIDIA"
+  "graphic card": "NVIDIA",
 };
-console.log(myComputer.type);               // => laptop
-console.log(myComputer['operating system']);// => Windows 7
+console.log(myComputer.type); // => laptop
+console.log(myComputer["operating system"]); // => Windows 7
 
 myComputer.type = "desktop";
-myComputer['operating system'] = 'Ubuntu';
-console.log(myComputer.type);               // => desktop
-console.log(myComputer['operating system']);// => Ubuntu
+myComputer["operating system"] = "Ubuntu";
+console.log(myComputer.type); // => desktop
+console.log(myComputer["operating system"]); // => Ubuntu
 ```
 
 ## Cách duyệt tất cả các thuộc tính của object
 
-Đối với array, bạn có thể sử dụng vòng lặp [_for, while, do/while_](/cau-truc-chuong-trinh-trong-javascript/) với chỉ số là number để duyệt từng phần tử của mảng. Nhưng với object thì hơi khác một chút.
+Đối với array, bạn có thể sử dụng vòng lặp [_for, while, do/while_](/cau-truc-chuong-trinh-trong-javascript) với chỉ số là number để duyệt từng phần tử của mảng. Nhưng với object thì hơi khác một chút.
 
 Để duyệt các thuộc tính của object, bạn có thể sử dụng vòng lặp _for_ với từ khoá _in_ như ví dụ sau:
 
@@ -124,19 +124,19 @@ var myComputer = {
   type: "laptop",
   brand: "Sony",
   "operating system": "Windows 7",
-  "graphic card": "NVIDIA"
+  "graphic card": "NVIDIA",
 };
 
-for(var prop in myComputer){
+for (var prop in myComputer) {
   console.log(prop, myComputer[prop]);
 }
 
 /*
-* type laptop
-* brand Sony
-* operating system Windows 7
-* graphic card NVIDIA
-*/
+ * type laptop
+ * brand Sony
+ * operating system Windows 7
+ * graphic card NVIDIA
+ */
 ```
 
 Khi đó biến _prop_ sẽ chạy hết tất cả các thuộc tính của object _myComputer_.
@@ -154,7 +154,7 @@ Hãy xem ví dụ sau để thấy sự khác biệt giữa hai toán tử
 var x = 1;
 var y = true;
 
-console.log(x == y);  // => true
+console.log(x == y); // => true
 console.log(x === y); // => false
 ```
 
@@ -167,12 +167,12 @@ Bây giờ, mình sẽ thử áp dụng hai toán tử trên để so sánh obje
 ```js
 var obj1 = {
   x: 10,
-  y: 10
+  y: 10,
 };
 
 var obj2 = {
   x: 10,
-  y: 10
+  y: 10,
 };
 
 var obj3 = obj1;
@@ -191,35 +191,35 @@ Qua ví dụ trên, bạn có thể thấy rằng: hai object bằng nhau khi v�
 Trường hợp, bạn muốn quy định obj1 và obj2 như trên là bằng nhau thì bạn có thể tự viết một hàm riêng để so sánh hai đối tượng này:
 
 ```js
-function isEqual(obj1, obj2){
-  for(var prop in obj1){
-    if(obj1[prop] !== obj2[prop]) return false;
+function isEqual(obj1, obj2) {
+  for (var prop in obj1) {
+    if (obj1[prop] !== obj2[prop]) return false;
   }
-  for(var prop in obj2){
-    if(obj2[prop] !== obj1[prop]) return false;
+  for (var prop in obj2) {
+    if (obj2[prop] !== obj1[prop]) return false;
   }
   return true;
 }
 
 var obj1 = {
   x: 10,
-  y: 10
+  y: 10,
 };
 
 var obj2 = {
   x: 10,
-  y: 10
+  y: 10,
 };
 
 var obj3 = {
   x: 10,
-  y: 11
+  y: 11,
 };
 
 var obj4 = {
-  x : 10,
-  y : 11,
-  z : 12
+  x: 10,
+  y: 11,
+  z: 12,
 };
 
 console.log(isEqual(obj2, obj1)); // => true
@@ -242,11 +242,10 @@ Bởi lẽ, bạn có thể truyền vào nhiều hơn, hay ít hơn số lượ
 Ví dụ sau miêu tả cách sử dụng _arguments_ để xác định số lớn nhất trong tất cả các số truyền vào:
 
 ```js
-function maxOf(){
+function maxOf() {
   var max = -1;
-  for(var i = 0; i < arguments.length; i++){
-    if(arguments[i] > max)
-      max = arguments[i];
+  for (var i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) max = arguments[i];
   }
   return max;
 }
@@ -297,7 +296,7 @@ Cho mảng array = [1, 2, 3, 4, 5, 6].
 - Viết hàm **arrayToList(array)** trả về một object dạng list như trên. ([tham khảo](https://github.com/completejavascript/practical-javascript/blob/master/object/arrayToList.js))
 - Từ object dạng list trên, viết hàm **listToArray(list)** trả về array ban đầu. ([tham khảo](https://github.com/completejavascript/practical-javascript/blob/master/object/listToArray.js))
 
-Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết tiếp theo](/javascript-foreach-la-cai-quai-gi/), thân ái!
+Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết tiếp theo](/javascript-foreach-la-cai-quai-gi), thân ái!
 
 ## Tham khảo
 

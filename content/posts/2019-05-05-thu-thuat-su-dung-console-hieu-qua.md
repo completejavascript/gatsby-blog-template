@@ -13,7 +13,7 @@ tags:
   - Debug
 ---
 
-Có thể nói, sử dụng **console.log** để [debug](/debug-javascript-de-hay-kho/), kiểm tra lỗi là việc thường xuyên đối với hầu hết các lập trình viên JavaScript. Tuy nhiên, không phải ai cũng thực sự biết cách sử dụng công cụ này. Vì vậy, bài viết này mình sẽ chia sẻ với bạn một số thủ thuật sử dụng console hiệu quả mà mình mới học được. Mời bạn theo dõi bài viết!
+Có thể nói, sử dụng **console.log** để [debug](/debug-javascript-de-hay-kho), kiểm tra lỗi là việc thường xuyên đối với hầu hết các lập trình viên JavaScript. Tuy nhiên, không phải ai cũng thực sự biết cách sử dụng công cụ này. Vì vậy, bài viết này mình sẽ chia sẻ với bạn một số thủ thuật sử dụng console hiệu quả mà mình mới học được. Mời bạn theo dõi bài viết!
 
 ## Sử dụng console.log
 
@@ -27,7 +27,7 @@ Có thể nói, sử dụng **console.log** để [debug](/debug-javascript-de-h
 console.log(obj1 [, obj2, ..., objN]);
 ```
 
-Đối với cách 1, bạn liệt kê các giá trị, [object](/javascript-object-last-but-not-least/) cách nhau bởi dấu phẩy, ví dụ:
+Đối với cách 1, bạn liệt kê các giá trị, [object](/javascript-object-last-but-not-least) cách nhau bởi dấu phẩy, ví dụ:
 
 ```js
 const foo = 1;
@@ -46,7 +46,7 @@ Theo mình đây là cách cơ bản mà hầu như lập trình viên nào cũn
 console.log(msg [, subst1, ..., substN]);
 ```
 
-Đối với cách 2, bạn hiển thị [string](/values-types-va-operators-trong-javascript-phan-2/) cùng với các tham số truyền vào. Mình chưa biết nói sao cho chuẩn. Tuy nhiên, nó khá giống với việc sử dụng hàm **printf()** trong lập trình C, ví dụ:
+Đối với cách 2, bạn hiển thị [string](/values-types-va-operators-trong-javascript-phan-2) cùng với các tham số truyền vào. Mình chưa biết nói sao cho chuẩn. Tuy nhiên, nó khá giống với việc sử dụng hàm **printf()** trong lập trình C, ví dụ:
 
 ```js
 const foo = 1;
@@ -125,7 +125,7 @@ console.log("baz", baz);
 
 Rõ ràng, bây giờ chỉ cần xem log là biết mỗi giá trị tương ứng với biến nào rồi phải không? Cách này khá ổn, tuy nhiên vẫn hơi mất công.
 
-- **Giải pháp 2**: Đóng gói các biến thành object và sử dụng cú pháp khai báo rút gọn của [ES6](/tag/es6/)
+- **Giải pháp 2**: Đóng gói các biến thành object và sử dụng cú pháp khai báo rút gọn của [ES6](/tag/es6)
 
 ```js
 const foo = { name: "Alex", age: "26", gender: "male" };
@@ -163,7 +163,7 @@ Kết quả:
 
 ## Sử dụng console.time và console.timeEnd
 
-Trong 2 bài viết là: [Triển khai Stack trong JavaScript với Array, Object hay Map](/trien-khai-stack-trong-javascript-voi-array-object-hay-map/) và [Triển khai Queue trong JavaScript](/trien-khai-queue-trong-javascript/), mình có sử dụng [performance.now()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now) để tính toán thời gian thực hiện.
+Trong 2 bài viết là: [Triển khai Stack trong JavaScript với Array, Object hay Map](/trien-khai-stack-trong-javascript-voi-array-object-hay-map) và [Triển khai Queue trong JavaScript](/trien-khai-queue-trong-javascript), mình có sử dụng [performance.now()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now) để tính toán thời gian thực hiện.
 
 Trong đó, cách sử dụng của mình như sau:
 

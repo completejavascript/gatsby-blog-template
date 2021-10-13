@@ -10,11 +10,11 @@ categories:
   - Lập trình và cuộc sống
 ---
 
-Xin chào các bạn, bài viết trước tôi có viết về cách để [thức dậy sớm](/thuc-day-som-khong-cam-thay-met-moi/) mà không cảm thấy mệt mỏi. Nhiều bạn sẽ hỏi là thức dậy sớm để làm gì? Tại sao phải thức dậy sớm? Trong bài viết này, tôi sẽ chỉ cho các bạn thấy 5 lợi ích của việc thức dậy sớm.
+Xin chào các bạn, bài viết trước tôi có viết về cách để [thức dậy sớm](/thuc-day-som-khong-cam-thay-met-moi) mà không cảm thấy mệt mỏi. Nhiều bạn sẽ hỏi là thức dậy sớm để làm gì? Tại sao phải thức dậy sớm? Trong bài viết này, tôi sẽ chỉ cho các bạn thấy 5 lợi ích của việc thức dậy sớm.
 
 ## Tinh thần sảng khoái, năng lượng tràn trề
 
-Đúng vậy, nếu như các bạn thực hiện đi ngủ đúng thời lượng, đúng thời điểm, chuẩn bị đi ngủ đúng cách để có một giấc ngủ ngon thì nhất định các bạn sẽ thức dậy sớm với một tinh thần sảng khoái, năng lượng tràn trề và sẵn sàng chinh phục mọi thử thách. Bạn nào chưa biết cách thì có thể tham khảo bài viết [Làm sao để thức dậy sớm mà không cảm thấy mệt mỏi](/thuc-day-som-khong-cam-thay-met-moi/) của tôi để hiểu thêm nhé.
+Đúng vậy, nếu như các bạn thực hiện đi ngủ đúng thời lượng, đúng thời điểm, chuẩn bị đi ngủ đúng cách để có một giấc ngủ ngon thì nhất định các bạn sẽ thức dậy sớm với một tinh thần sảng khoái, năng lượng tràn trề và sẵn sàng chinh phục mọi thử thách. Bạn nào chưa biết cách thì có thể tham khảo bài viết [Làm sao để thức dậy sớm mà không cảm thấy mệt mỏi](/thuc-day-som-khong-cam-thay-met-moi) của tôi để hiểu thêm nhé.
 
 ## Thức dậy sớm cho bạn không gian yên tĩnh và tập trung vào công việc
 
@@ -34,7 +34,7 @@ Con người chúng ta khác với nhiều loài thú vật khác (những loài
 
 Trên đây là 5 lợi ích của việc thức dậy sớm. Không biết bạn đọc có suy nghĩ thế nào về vấn đề này? Có cái nào không đúng, hay thiếu cái gì thì vui lòng chia sẻ bằng cách bình luận phía dưới nhé.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/nguoi-thanh-cong-day-som-thi-lam-gi/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/nguoi-thanh-cong-day-som-thi-lam-gi), thân ái!
 
 <hr class="border-color-light-grey" />
 

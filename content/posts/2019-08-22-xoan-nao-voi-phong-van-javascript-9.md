@@ -47,7 +47,7 @@ true
 
 **Giải thích:**
 
-Nếu bạn đã đọc bài viết [Tìm hiểu về Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript), mình chắc chắn bạn sẽ trả lời được câu hỏi này. 
+Nếu bạn đã đọc bài viết [Tìm hiểu về Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript), mình chắc chắn bạn sẽ trả lời được câu hỏi này.
 
 Phương thức <code>Symbol("id")</code> sẽ tạo mới một biến kiểu **Symbol** với **description** là "id". Mà một đặc điểm quan trọng của Symbol là tính duy nhất. Nghĩa là bạn tạo ra bao nhiêu Symbol với cùng description thì nó vẫn khác nhau:
 
@@ -63,7 +63,8 @@ console.log(myId2 === myId3); // => false
 Tiếp theo là phương thức <code>Symbol.for("id")</code>. Phương thức này sẽ tìm trong một đối tượng Global, xem có tồn tại Symbol với key là "id" hay không. Nếu chưa có Symbol nào thoả mãn thì một Symbol mới với key "id" sẽ được tạo ra. Ngược lại, phương thức trên sẽ trả về Symbol đã tồn tại.
 
 Do đó, s2 và s3 ở trên chắc chắn bằng nhau và khác s1.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -71,7 +72,7 @@ Do đó, s2 và s3 ở trên chắc chắn bằng nhau và khác s1.
 ## Xoắn não với phỏng vấn JavaScript 9 – Câu 2
 
 ```js
-const a = [0, 1, undefined, 'a', 'b', null, false, true];
+const a = [0, 1, undefined, "a", "b", null, false, true];
 const b = a.filter(Boolean);
 
 console.log(b);
@@ -93,23 +94,23 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Trước tiên, mình nói về hàm [filter](/javascript-foreach-la-cai-quai-gi#arrayprototypefilter). Phương thức này lọc lấy các phần tử trong [mảng](/javascript-array-co-ban/) thoả mãn một điều kiện cho trước và trả về một mảng mới chứa những phần tử đó.
+Trước tiên, mình nói về hàm [filter](/javascript-foreach-la-cai-quai-gi#arrayprototypefilter). Phương thức này lọc lấy các phần tử trong [mảng](/javascript-array-co-ban) thoả mãn một điều kiện cho trước và trả về một mảng mới chứa những phần tử đó.
 
-Nói cách khác, phương thức **filter** nhận tham số đầu tiên là một [hàm](/tim-hieu-function-javascript/) và trả về một mảng các phần tử làm cho hàm trên **return true**.
+Nói cách khác, phương thức **filter** nhận tham số đầu tiên là một [hàm](/tim-hieu-function-javascript) và trả về một mảng các phần tử làm cho hàm trên **return true**.
 
-Cái này chắc nhiều bạn đã biết rồi. Tuy nhiên, vấn đề chính ở đây là tham số đầu tiên truyền vào là [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). Đây là một built-in [object](/javascript-object-last-but-not-least/) trong JavaScript. 
+Cái này chắc nhiều bạn đã biết rồi. Tuy nhiên, vấn đề chính ở đây là tham số đầu tiên truyền vào là [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). Đây là một built-in [object](/javascript-object-last-but-not-least) trong JavaScript.
 
 Nhưng thú vị ở chỗ, bạn có thể sử dụng Boolean như một function để convert một giá trị bất kỳ về kiểu Boolean. Cụ thể trong câu hỏi trên:
 
 ```js
-Boolean(0)          // false 
-Boolean(1)          // true 
-Boolean(undefined)  // false 
-Boolean('a')        // true
-Boolean('b')        // true  
-Boolean(null)       // false
-Boolean(false)      // false 
-Boolean(true)       // true
+Boolean(0); // false
+Boolean(1); // true
+Boolean(undefined); // false
+Boolean("a"); // true
+Boolean("b"); // true
+Boolean(null); // false
+Boolean(false); // false
+Boolean(true); // true
 ```
 
 Đến đây thì đáp án của câu hỏi đã được giải thích rồi phải không nào?
@@ -117,12 +118,12 @@ Boolean(true)       // true
 **Note**: nếu bạn muốn viết code tường minh hơn thì có thể sửa lại đoạn code trên như sau mà vẫn cho kết quả tương tự:
 
 ```js
-const a = [0, 1, undefined, 'a', 'b', null, false, true];
-const b = a.filter(v => Boolean(v));
+const a = [0, 1, undefined, "a", "b", null, false, true];
+const b = a.filter((v) => Boolean(v));
 
 console.log(b);
 ```
-  
+
   </div>
   </div>
 </div>
@@ -131,9 +132,9 @@ console.log(b);
 ## Xoắn não với phỏng vấn JavaScript 9 – Câu 3
 
 ```js
-const f = ({ x = 0, y = "a", z = true}) => {
+const f = ({ x = 0, y = "a", z = true }) => {
   console.log(x, y, z);
-}
+};
 
 f();
 ```
@@ -162,7 +163,7 @@ Trước tiên, function **f** ở trên tương đương:
 const f = (param) => {
   const { x = 0, y = "a", z = true } = param;
   console.log(x, y, z);
-}
+};
 
 f();
 ```
@@ -172,9 +173,9 @@ Khi bạn gọi hàm **f()** mà không có tham số truyền vào, giá trị 
 Để tránh lỗi trên, bạn có thể sửa lại function ban đầu như sau:
 
 ```js
-const f = ({ x = 0, y = "a", z = true} = {}) => {
+const f = ({ x = 0, y = "a", z = true } = {}) => {
   console.log(x, y, z);
-}
+};
 
 f();
 ```
@@ -188,7 +189,8 @@ const { x = 0, y = "a", z = true } = {};
 ```
 
 Các biến số x, y và z nhận giá trị default tương ứng là: 0, "a" và "true".
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>

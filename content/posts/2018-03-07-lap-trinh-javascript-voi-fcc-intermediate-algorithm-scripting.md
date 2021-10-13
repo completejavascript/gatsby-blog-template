@@ -11,17 +11,17 @@ categories:
   - Lập trình JavaScript với FCC
 ---
 
-Bài viết trước tôi đã chia sẻ với các bạn các bài toán thuộc chủ đề [Basic Algorithm Scripting](/lap-trinh-javascript-voi-fcc-basic-algorithm-scripting/). Nếu các bạn đã đọc qua thì có thể thấy rằng, đó đều là những bài toán khá dễ. Ngược lại, các bài toán hôm nay sẽ khó hơn một chút. Vì chúng thuộc chủ đề **Intermediate Algorithm Scripting**.
+Bài viết trước tôi đã chia sẻ với các bạn các bài toán thuộc chủ đề [Basic Algorithm Scripting](/lap-trinh-javascript-voi-fcc-basic-algorithm-scripting). Nếu các bạn đã đọc qua thì có thể thấy rằng, đó đều là những bài toán khá dễ. Ngược lại, các bài toán hôm nay sẽ khó hơn một chút. Vì chúng thuộc chủ đề **Intermediate Algorithm Scripting**.
 
 Cũng như bài viết trước, tôi xin chia sẻ với các bạn các link bài viết hữu ích nên đọc trước khi đi vào lời giải các bài toán:
 
-- [Values, types và operators trong JavaScript – Phần 1](/values-types-va-operators-trong-javascript-phan-1/)
-- [Values, types và operators trong JavaScript – Phần 2](/values-types-va-operators-trong-javascript-phan-2/)
-- [JavaScript Array cơ bản,](/javascript-array-co-ban/)
-- [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
-- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
-- [JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
-- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
+- [Values, types và operators trong JavaScript – Phần 1](/values-types-va-operators-trong-javascript-phan-1)
+- [Values, types và operators trong JavaScript – Phần 2](/values-types-va-operators-trong-javascript-phan-2)
+- [JavaScript Array cơ bản,](/javascript-array-co-ban)
+- [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi)
+- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo)
+- [JavaScript Object – last but not least](/javascript-object-last-but-not-least)
+- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript)
 
 ## Intermediate Algorithm Scripting - Sum All Numbers in a Range
 
@@ -123,7 +123,7 @@ Tham khảo:
 
 ## Intermediate Algorithm Scripting - Wherefore art thou
 
-Duyệt mảng của các [object](/javascript-object-last-but-not-least/) và trả về một mảng bao gồm các object chứa thuộc tính trùng khớp với thành phần cho trước.
+Duyệt mảng của các [object](/javascript-object-last-but-not-least) và trả về một mảng bao gồm các object chứa thuộc tính trùng khớp với thành phần cho trước.
 
 ```js
 function whatIsInAName(collection, source) {
@@ -211,7 +211,7 @@ translatePigLatin("consonant");
 
 Tham khảo:
 
-- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
+- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript)
 - [String.prototype.substr()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
 
 ## Intermediate Algorithm Scripting - DNA Pairing
@@ -289,7 +289,7 @@ Tham khảo:
 
 ## Intermediate Algorithm Scripting - Sorted Union
 
-Viết một [function](/tim-hieu-function-javascript/) nhận đầu vào là 2 hay nhiều array. Trả về một array mới bao gồm các phần tử duy nhất, theo đúng thứ tự ban đầu.
+Viết một [function](/tim-hieu-function-javascript) nhận đầu vào là 2 hay nhiều array. Trả về một array mới bao gồm các phần tử duy nhất, theo đúng thứ tự ban đầu.
 
 ```js
 function uniteUnique(arr) {
@@ -339,7 +339,7 @@ convertHTML("Hamburgers < Pizza < Tacos");
 
 Tham khảo:
 
-- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
+- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript)
 - [String.prototype.replace() ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
 ## Intermediate Algorithm Scripting - Spinal Tap Case

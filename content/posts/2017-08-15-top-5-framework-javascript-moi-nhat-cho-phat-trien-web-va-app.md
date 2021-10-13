@@ -14,7 +14,7 @@ tags:
 
 Bài viết được dịch từ website [Technotification](https://www.technotification.com/2017/06/best-modern-javascript-frameworks.html) của tác giả [Vicky Singh Rao](https://www.technotification.com/author/vicky) về top 5 Framework JavaScript mới nhất cho phát triển web và app.
 
-Những năm gần đây, sự phổ biến của [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) đã được gia tăng rất nhiều. Có một bằng chứng để chứng tỏ sự thay đổi đó. Vào đầu năm nay, IBM đã công nhận JavaScript là một trong [những ngôn ngữ lập trình tốt nhất](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017/) của năm. Họ lập luận rằng bí mật sự thành công của một chương trình là nằm ở cả hai phía client và server được thiết kế tốt và cũng như trang web được tuỳ biến hợp lý. Và có nhiều ưu điểm khi sử dụng các Framework JavaScript là an toàn, hiệu quả cao, chi phí giữa các lợi thế khác.
+Những năm gần đây, sự phổ biến của [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) đã được gia tăng rất nhiều. Có một bằng chứng để chứng tỏ sự thay đổi đó. Vào đầu năm nay, IBM đã công nhận JavaScript là một trong [những ngôn ngữ lập trình tốt nhất](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017) của năm. Họ lập luận rằng bí mật sự thành công của một chương trình là nằm ở cả hai phía client và server được thiết kế tốt và cũng như trang web được tuỳ biến hợp lý. Và có nhiều ưu điểm khi sử dụng các Framework JavaScript là an toàn, hiệu quả cao, chi phí giữa các lợi thế khác.
 
 Vào năm 2017, có một vài Framework JavaScript đã được hoàn thành. Do đó, ở bài viết này, mình sẽ giới thiệu tóm tắt với bạn về chúng.
 
@@ -30,7 +30,7 @@ Ngoài ra, Framework JavaScript này cũng được hỗ trợ từ một cộng
 
 ![ReactJS - Top 5 framework javascript - complete javascript - completejavascript.com](../images/React-JS-top-5-framework-javascript-completejavascript.com_.png)
 
-Framework JavaScript này dựa trên thư viện nhiều hơn. Nó thường cho thấy hiệu quả cao ở những chương trình động - nhiều tương tác như Facebooks và Instagram. Đây cũng là một trong những framework phát triển mạnh trên thị trường hiện nay. Người ta ước tính là có khoảng 1000 thành viên tích cực tham gia vào nó. Nếu so sánh với AngularJS thì ReactJS chính xác hơn và cung cấp hiệu suất cao hơn vì nó sử dụng [DOM](/co-ban-ve-dom-javascript/) ảo.
+Framework JavaScript này dựa trên thư viện nhiều hơn. Nó thường cho thấy hiệu quả cao ở những chương trình động - nhiều tương tác như Facebooks và Instagram. Đây cũng là một trong những framework phát triển mạnh trên thị trường hiện nay. Người ta ước tính là có khoảng 1000 thành viên tích cực tham gia vào nó. Nếu so sánh với AngularJS thì ReactJS chính xác hơn và cung cấp hiệu suất cao hơn vì nó sử dụng [DOM](/co-ban-ve-dom-javascript) ảo.
 
 ## Vue.js
 
@@ -52,7 +52,7 @@ Vào những năm đầu của thế kỉ 21, Ember được cho là một Frame
 
 Đây là một Framework JavaScript phổ biến nhất với nhiều người. Từ năm 2013, Meteor.js đã trải qua nhiều sự thay đổi khác nhau, đã làm nó phát triển và nâng cao tỉ lệ việc làm.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/huong-dan-cac-cau-lenh-git-co-ban/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/huong-dan-cac-cau-lenh-git-co-ban), thân ái!
 
 <hr class="border-color-light-grey" />
 

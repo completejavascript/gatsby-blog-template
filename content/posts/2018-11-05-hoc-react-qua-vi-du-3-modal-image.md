@@ -28,13 +28,13 @@ Vậy xây dựng Modal Image trong React như thế nào?
 
 Mời bạn theo dõi bài viết!
 
-> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Có nhiều cách để thực hiện demo Modal Image. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #3 ngay trên máy tính của mình.
+Có nhiều cách để thực hiện demo Modal Image. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #3 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
 
 ## Cấu trúc Project
 
@@ -68,8 +68,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_resize_**).
 
 Và ý tưởng chung để xây dựng Modal Image Component là:
 
@@ -368,9 +368,9 @@ export default class App extends React.Component {
 
 Trong đó, Modal Image Component có các thuộc tính là:
 
-- **src ([String](/values-types-va-operators-trong-javascript-phan-2/)):** string biểu diễn đường dẫn ảnh sử dụng.
+- **src ([String](/values-types-va-operators-trong-javascript-phan-2)):** string biểu diễn đường dẫn ảnh sử dụng.
 - **alt (String):** string để gán cho thuộc tính [alt](https://www.w3schools.com/tags/att_img_alt.asp) - được hiển thị thay thế cho ảnh, khi ảnh không được tải thành công (vì một lý do nào đó) hoặc không thể hiển thị.
-- **ratio ([String](/values-types-va-operators-trong-javascript-phan-2/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **ratio ([String](/values-types-va-operators-trong-javascript-phan-2)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 
 ## Lời kết
 

@@ -10,7 +10,7 @@ categories:
   - Javascript cơ bản
 ---
 
-Trong [bài viết trước](/values-types-va-operators-trong-javascript-phan-1/), mình đã giới thiệu với bạn cơ bản về giá trị (values) và kiểu dữ liệu (numbers). Hôm nay, mình sẽ tiếp tục giới thiệu về hai kiểu dữ liệu cơ bản khác đó là **strings** và **Booleans**, cùng với một số toán tử (**operators**) phổ biến.
+Trong [bài viết trước](/values-types-va-operators-trong-javascript-phan-1), mình đã giới thiệu với bạn cơ bản về giá trị (values) và kiểu dữ liệu (numbers). Hôm nay, mình sẽ tiếp tục giới thiệu về hai kiểu dữ liệu cơ bản khác đó là **strings** và **Booleans**, cùng với một số toán tử (**operators**) phổ biến.
 
 ## Strings
 
@@ -53,20 +53,20 @@ console.log(str); // => Uncaught SyntaxError: Unexpected identifier
 Ví dụ:
 
 ```js
-var x = 'It\'s six o\'clock now.';
+var x = "It's six o'clock now.";
 console.log(x); // => It's six o'clock now.
-var y = "Call me \"JavaScripter\"";
+var y = 'Call me "JavaScripter"';
 console.log(y); // => Call me "JavaScripter"
-var z = 'It\'s a backslash \\';
+var z = "It's a backslash \\";
 console.log(z); // => It's a backslash \
-var z = 'Monday\tTuesday';
+var z = "Monday\tTuesday";
 console.log(z); // => Monday    Tuesday
-var w = 'January\nFebruary';
+var w = "January\nFebruary";
 console.log(w);
 /*
-* January
-* February
-*/
+ * January
+ * February
+ */
 ```
 
 Đây chỉ là những kí tự đặc biệt hay sử dụng. Còn nhiều kí tự đặc biệt khác nữa, bạn có thể tự tìm hiểu thêm.
@@ -76,7 +76,7 @@ console.log(w);
 Trong ví dụ trên:
 
 ```js
-var x = 'It\'s six o\'clock now.'
+var x = "It's six o'clock now.";
 ```
 
 Thay vì sử dụng backslash để chèn kí tự ' vào trong string, mình có thể thay thế cặp dấu ngoặc đơn ở ngoài cùng bằng cặp dấu ngoặc kép.
@@ -95,7 +95,7 @@ console.log(y); // => Call me "JavaScripter"
 
 Rõ ràng, việc sử dụng kết hợp dấu ngoặc đơn và ngoặc kép giúp cho việc viết string được ngắn gọn hơn và dễ theo dõi hơn.
 
-Sự linh động này trong việc biểu diễn string là rất đặc biệt trong JavaScript mà C/C++ hay Java không có. Một lần nữa, JavaScript lại tỏ ra khá hiệu quả trong vai trò [nâng cao hiệu suất làm việc](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) của lập trình viên.
+Sự linh động này trong việc biểu diễn string là rất đặc biệt trong JavaScript mà C/C++ hay Java không có. Một lần nữa, JavaScript lại tỏ ra khá hiệu quả trong vai trò [nâng cao hiệu suất làm việc](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) của lập trình viên.
 
 ### Biểu diễn string dài
 
@@ -131,7 +131,7 @@ Strings có sẵn một số thuộc tính và phương phức. Qua đó, lập 
 Thuộc tính **length** dùng để xác định độ dài của string.
 
 ```js
-var x = 'Just for laugh';
+var x = "Just for laugh";
 console.log(x.length); // => 14
 ```
 
@@ -154,47 +154,47 @@ Các phương thức của strings bao gồm:
 Ví dụ:
 
 ```js
-var x = 'JavaScript is a Object-Based Languague.';
+var x = "JavaScript is a Object-Based Languague.";
 console.log(x.toUpperCase()); // => JAVASCRIPT IS A OBJECT-BASED LANGUAGUE.
 console.log(x.toLowerCase()); // => javascript is a object-based languague.
 
-var y = '  TrumpScript   ';
-console.log(y.length);        // => 16
+var y = "  TrumpScript   ";
+console.log(y.length); // => 16
 console.log(y.trim().length); // => 11 : độ dài giảm bớt do bớt đi các kí tự cách phía trước và sau
 
-var t1 = 'Hello';
-var t2 = 'World';
-var t3 = '!';
-console.log(t1.concat(' ', t2, t3)); // => Hello World!
+var t1 = "Hello";
+var t2 = "World";
+var t3 = "!";
+console.log(t1.concat(" ", t2, t3)); // => Hello World!
 
 var z = "We don't talk anymore, we don't love anymore";
-console.log(z.indexOf("don't", 1));      // => 3
-console.log(z.indexOf("don't", 22));     // => 26
-console.log(z.indexOf("hehe"));          // => -1
+console.log(z.indexOf("don't", 1)); // => 3
+console.log(z.indexOf("don't", 22)); // => 26
+console.log(z.indexOf("hehe")); // => -1
 
 console.log(z.lastIndexOf("don't", 10)); // => 3
 console.log(z.lastIndexOf("don't", 25)); // => 3
-console.log(z.indexOf("hihi"));          // => -1
-console.log(z.search('anymore'));        // => 14
+console.log(z.indexOf("hihi")); // => -1
+console.log(z.search("anymore")); // => 14
 
-console.log(z.slice(9, 13));    // => talk
-console.log(z.slice(9));        // => talk anymore, we don't love anymore
-console.log(z.slice(-12, -8));  // => love
-console.log(z.slice(-12));      // => love anymore
+console.log(z.slice(9, 13)); // => talk
+console.log(z.slice(9)); // => talk anymore, we don't love anymore
+console.log(z.slice(-12, -8)); // => love
+console.log(z.slice(-12)); // => love anymore
 
-console.log(z.substring(4, 9)); // => on't 
-console.log(z.substring(4));    // => on't talk anymore, we don't love anymore
+console.log(z.substring(4, 9)); // => on't
+console.log(z.substring(4)); // => on't talk anymore, we don't love anymore
 
-console.log(z.substr(14, 4));   // => anym
-console.log(z.substr(14));      // => anymore, we don't love anymore
+console.log(z.substr(14, 4)); // => anym
+console.log(z.substr(14)); // => anymore, we don't love anymore
 
-console.log(z.replace('love', 'hate')); // => We don't talk anymore, we don't hate anymore
+console.log(z.replace("love", "hate")); // => We don't talk anymore, we don't hate anymore
 
-console.log(z.charAt(10));     // => a
+console.log(z.charAt(10)); // => a
 console.log(z.charCodeAt(10)); // => 97
 ```
 
-Trên đây là một số ví dụ cơ bản về các phương thức với strings. Để hiểu rõ và nhớ những phương thức này lâu hơn thì bạn nên [thực hành nhiều hơn](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon/) và thử các trường hợp có thể để hiểu rõ hoạt động của chúng.
+Trên đây là một số ví dụ cơ bản về các phương thức với strings. Để hiểu rõ và nhớ những phương thức này lâu hơn thì bạn nên [thực hành nhiều hơn](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon) và thử các trường hợp có thể để hiểu rõ hoạt động của chúng.
 
 ## Booleans
 
@@ -214,16 +214,16 @@ console.log(Friday); // => true;
 Các loại so sánh bao gồm: _&gt;, &lt;, &gt;=, &lt;=, ==, ===, _!=, !==. Và ta có thể áp dụng việc so sánh cho numbers, strings, booleans...
 
 ```js
-console.log(6 > 4);    	          // => true
-console.log(6 < 3);               // => false
-console.log(6 == 6);              // => true
-console.log(8 >= 6);              // => true
-console.log('hello' >= 'hehe');   // => true
-console.log('mama' == 'papa');    // => false
-console.log('olala' === 'olala'); // => true
-console.log('aaa' != 'aaa');      // => false
-console.log(true == true);        // => true
-console.log(NaN == NaN);          // => false
+console.log(6 > 4); // => true
+console.log(6 < 3); // => false
+console.log(6 == 6); // => true
+console.log(8 >= 6); // => true
+console.log("hello" >= "hehe"); // => true
+console.log("mama" == "papa"); // => false
+console.log("olala" === "olala"); // => true
+console.log("aaa" != "aaa"); // => false
+console.log(true == true); // => true
+console.log(NaN == NaN); // => false
 ```
 
 #### Sử dụng toán tử logic (Logical Operators)
@@ -231,14 +231,14 @@ console.log(NaN == NaN);          // => false
 Trong JavaScript có 3 toán tử logic là: _and_ (&&), _or_ (||), _not_ (!).
 
 ```js
-console.log(true && true);   // => true
-console.log(false && true);  // => false
+console.log(true && true); // => true
+console.log(false && true); // => false
 
-console.log(true || false);  // => true
+console.log(true || false); // => true
 console.log(false || false); // => false
 
-console.log(!true);          // => false
-console.log(!false);         // => true
+console.log(!true); // => false
+console.log(!false); // => true
 ```
 
 Theo mình, Booleans là một kiểu dữ liệu đơn giản nhất. Tuy nhiên, tầm quan trọng của nó thì không ít. Bạn sẽ tiếp tục thấy kiểu dữ liệu này ở trong các bài viết tiếp theo.
@@ -256,11 +256,11 @@ Có rất nhiều loại toán tử. Sau đây, mình sẽ tập trung vào mộ
 Toán tử số học thực hiện các phép tính số học như: cộng (+), trừ (-), nhân (\*), chia (/), chia dư (%) và được áp dụng đối với numbers. Phần này hoàn toàn giống như kiến thức số học mà bạn đã học nên mình sẽ không giải thích gì thêm.
 
 ```js
-console.log(3 + 5);    // => 8
+console.log(3 + 5); // => 8
 console.log(6 - 10.5); // => -4.5
-console.log(4 * 3);    // => 12
-console.log(10 / 3);   // => 3.3333333333333335
-console.log(10 % 4);   // => 2
+console.log(4 * 3); // => 12
+console.log(10 / 3); // => 3.3333333333333335
+console.log(10 % 4); // => 2
 ```
 
 Về độ ưu tiên, bạn chỉ cần nhớ câu _nhân chia trước, cộng trừ sau_. Nghĩa là phép nhân, phép chia, phép chia dư có cùng độ ưu tiên (I). Phép cộng, trừ có cùng độ ưu tiên (II). Độ ưu tiên của nhóm (I) lớn hơn độ ưu tiên của (II).
@@ -268,7 +268,7 @@ Về độ ưu tiên, bạn chỉ cần nhớ câu _nhân chia trước, cộng 
 Và cái nào có độ ưu tiên lớn hơn thì sẽ được thực hiện trước. Trong trường hợp các toán tử có cùng độ ưu tiên thì sẽ được thực hiện từ trái sang phải. (Khi viết đến đây, mình chợt nghĩ là không biết mấy nước mà chúng nó viết chữ từ phải sang trái thì sao nhỉ? Chắc là chúng nó cũng tính toán từ phải sang trái luôn. ???)
 
 ```js
-console.log(1 + 2 * 3 - 8 / 4 + 5 % 3); // => 7
+console.log(1 + 2 * 3 - 8 / 4 + (5 % 3)); // => 7
 console.log(3 + 4 - 8 - 2 + 6); // => 3
 ```
 
@@ -277,7 +277,7 @@ console.log(3 + 4 - 8 - 2 + 6); // => 3
 Toán tử ghép nối (+) chỉ được dùng với strings. Nó dùng để ghép nối 2 strings với nhau.
 
 ```js
-console.log("I" + " " + "love " + 'you'); // => I love you
+console.log("I" + " " + "love " + "you"); // => I love you
 ```
 
 ### Toán tử logic (Logical Operators)
@@ -311,7 +311,7 @@ var y = "string";
 
 Trên đây là những kiến thức cơ bản về strings, booleans và operators. Thực tế, để đào sâu vào từng thành phần thì còn rất nhiều thứ. Nhưng nếu nói hết ở đây thì sau này còn gì để mà nói nữa.
 
-Do đó, hy vọng bạn sẽ tiếp tục theo dõi các [bài viết sau](/cau-truc-chuong-trinh-trong-javascript/), thân ái!
+Do đó, hy vọng bạn sẽ tiếp tục theo dõi các [bài viết sau](/cau-truc-chuong-trinh-trong-javascript), thân ái!
 
 ## Tham khảo
 

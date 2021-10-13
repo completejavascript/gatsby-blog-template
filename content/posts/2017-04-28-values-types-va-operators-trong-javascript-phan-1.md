@@ -10,7 +10,7 @@ categories:
   - Javascript cơ bản
 ---
 
-Trong ngôn ngữ lập trình nói chung và ngôn ngữ lập trình [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) nói riêng, những thành phần cơ bản, quan trọng cấu thành nên một chương trình là: values, types và operators. Hay trong tiếng việt, chúng ta gọi là: giá trị, kiểu dữ liệu và toán tử. Chúng giống như là những nguyên liệu để làm nên một món ăn. Và để làm nên một món ăn ngon, hoàn chỉnh, chúng ta cần phải hiểu rõ từng thành phần và cách sử dụng nó như thế nào. Vì vậy hôm nay, mình và bạn sẽ cùng tìm hiểu về **values, types** và **operators** trong JavaScript.
+Trong ngôn ngữ lập trình nói chung và ngôn ngữ lập trình [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) nói riêng, những thành phần cơ bản, quan trọng cấu thành nên một chương trình là: values, types và operators. Hay trong tiếng việt, chúng ta gọi là: giá trị, kiểu dữ liệu và toán tử. Chúng giống như là những nguyên liệu để làm nên một món ăn. Và để làm nên một món ăn ngon, hoàn chỉnh, chúng ta cần phải hiểu rõ từng thành phần và cách sử dụng nó như thế nào. Vì vậy hôm nay, mình và bạn sẽ cùng tìm hiểu về **values, types** và **operators** trong JavaScript.
 
 ## Values (giá trị)
 
@@ -37,14 +37,14 @@ Numbers là những gía trị có thể được sử dụng trong các phép t
 Ví dụ một số loại số:
 
 ```js
-var x = 66;     // positive integer
-var x = -66;    // negative integer
-var x = 3.14;   // positve float
-var x = -3.14;  // negative float
-var x = 2e3;    // => 2*10^3 = 2000
-var x = 2e-3;   // => 2*10^(-3) = 0.002
-var x = 0xFF;   // hexadecimal: 15*16 + 15 = 255
-var x = 067;    // octal: 6*8 + 7 = 55
+var x = 66; // positive integer
+var x = -66; // negative integer
+var x = 3.14; // positve float
+var x = -3.14; // negative float
+var x = 2e3; // => 2*10^3 = 2000
+var x = 2e-3; // => 2*10^(-3) = 0.002
+var x = 0xff; // hexadecimal: 15*16 + 15 = 255
+var x = 067; // octal: 6*8 + 7 = 55
 ```
 
 Đối với ngôn ngữ lập trình C/C++, numbers được chia ra nhiều kiểu như: int, long, float, double,...Mỗi kiểu sẽ sử dụng số lượng bit khác nhau để lưu numbers. Nhưng JavaScript lại chỉ sử dụng 64 bit để biểu diễn numbers theo chuẩn IEEE 754.
@@ -72,16 +72,16 @@ Có 3 số đặc biệt trong JavaScript là **Infinity**, **-Infinity** và **
 var x = 4 / 0;
 var y = -5 / 0;
 var z = 6 / 0;
-console.log(x);       // => Infinity
-console.log(y);       // => -Infinity
-console.log(z);       // => Infinity
-console.log(x + y);   // => Infinity - Infinity = NaN
-console.log(x + z);   // => Infinity + Infinity = Infinity
+console.log(x); // => Infinity
+console.log(y); // => -Infinity
+console.log(z); // => Infinity
+console.log(x + y); // => Infinity - Infinity = NaN
+console.log(x + z); // => Infinity + Infinity = Infinity
 console.log(x === z); // => Infinity === Infinity = true
-console.log(x == z);  // => Infinity == Infinity = true
-console.log(x > z);   // => Infinity > Infinity = false
-console.log(x == y);  // => Infinity == -Infinity = false
-console.log(x > y);   // => Infinity > -Infinity = true
+console.log(x == z); // => Infinity == Infinity = true
+console.log(x > z); // => Infinity > Infinity = false
+console.log(x == y); // => Infinity == -Infinity = false
+console.log(x > y); // => Infinity > -Infinity = true
 ```
 
 - **NaN** viết tắt của _Not a Number_. Nó được dùng để biểu diễn cho kết quả một số phép tính như: Infinity - Infinity = NaN hay 0 / 0 = NaN hoặc 2 \* 'ba' = NaN... Một số ví dụ để bạn thấy:
@@ -91,19 +91,19 @@ var x = 3 / 0;
 var y = -4 / 0;
 var z = x + y;
 var t = 0 / 0;
-var w = 2 * 'ba';
-console.log(x);   // => Infinity
-console.log(y);   // => -Infinity
-console.log(z);   // => NaN
-console.log(t);   // => NaN
-console.log(w);   // => NaN
+var w = 2 * "ba";
+console.log(x); // => Infinity
+console.log(y); // => -Infinity
+console.log(z); // => NaN
+console.log(t); // => NaN
+console.log(w); // => NaN
 ```
 
 #### Methods (phương thức) đối với numbers
 
-Trong các ngôn ngữ như C/C++, Java,...những kiểu dữ liệu cơ bản như int, long, float...sẽ không có thuộc tính hay phương thức kèm theo. Bởi chúng nó không phải đối tượng ([object](/javascript-object-last-but-not-least/)).
+Trong các ngôn ngữ như C/C++, Java,...những kiểu dữ liệu cơ bản như int, long, float...sẽ không có thuộc tính hay phương thức kèm theo. Bởi chúng nó không phải đối tượng ([object](/javascript-object-last-but-not-least)).
 
-Nhưng JavaScript thì khác, những kiểu dữ liệu cơ bản cũng có thuộc tính và phương thức giống như đối tượng (object). Đó, rõ ràng là JavaScript đã được tối ưu để [nâng cao hiệu suất](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) của lập trình viên.
+Nhưng JavaScript thì khác, những kiểu dữ liệu cơ bản cũng có thuộc tính và phương thức giống như đối tượng (object). Đó, rõ ràng là JavaScript đã được tối ưu để [nâng cao hiệu suất](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) của lập trình viên.
 
 Một số phương thức chính đối với numbers trong JavaScript là:
 
@@ -115,25 +115,25 @@ Một số phương thức chính đối với numbers trong JavaScript là:
 
 ```js
 var x = 66;
-console.log(x.toString());       // => 66
+console.log(x.toString()); // => 66
 
 var y = 69.9696;
-console.log(y.toExponential());  // => 6.99696e+1 : đưa số chữ số phần nguyên về 1
+console.log(y.toExponential()); // => 6.99696e+1 : đưa số chữ số phần nguyên về 1
 console.log(y.toExponential(1)); // => 7.0e+1 : làm tròn
 console.log(y.toExponential(8)); // => 6.99696000e+1 : mở rộng thêm đuôi 0
 
 var z = 96.69;
-console.log(z.toFixed(0));       // => 97 : làm tròn
-console.log(z.toFixed(1));       // => 96.7 : làm tròn
-console.log(z.toFixed(6));       // => 96.690000 : mở rộng đuôi 0
+console.log(z.toFixed(0)); // => 97 : làm tròn
+console.log(z.toFixed(1)); // => 96.7 : làm tròn
+console.log(z.toFixed(6)); // => 96.690000 : mở rộng đuôi 0
 
 var l = 99.696;
-console.log(l.toPrecision());    // => 99.696 : không làm gì
-console.log(l.toPrecision(2));   // => 1.0e+2 : đưa số chữ số về 2 nên kết hợp với exponential
-console.log(l.toPrecision(4));   // => 99.70 : làm tròn
+console.log(l.toPrecision()); // => 99.696 : không làm gì
+console.log(l.toPrecision(2)); // => 1.0e+2 : đưa số chữ số về 2 nên kết hợp với exponential
+console.log(l.toPrecision(4)); // => 99.70 : làm tròn
 
 var o = 1.234;
-console.log(o.valueOf());        // => 1.234 : không làm gì (đặc biệt kết quả vẫn là number)
+console.log(o.valueOf()); // => 1.234 : không làm gì (đặc biệt kết quả vẫn là number)
 ```
 
 #### Một số phương thức toàn cục (Global Methods)
@@ -148,16 +148,16 @@ Ngoài những phương thức gắn với bản thân numbers, JavaScript còn 
 var x = true;
 var y = false;
 var z = new Date();
-var t = '69';
-var u = '100.01 34';
-console.log(Number(x));     // => 1
-console.log(Number(y));     // => 0
-console.log(Number(z));     // => 1493393286011
-console.log(Number(t));     // => 69
-console.log(Number(u));     // => NaN
+var t = "69";
+var u = "100.01 34";
+console.log(Number(x)); // => 1
+console.log(Number(y)); // => 0
+console.log(Number(z)); // => 1493393286011
+console.log(Number(t)); // => 69
+console.log(Number(u)); // => NaN
 
-console.log(parseInt(t));   // => 69
-console.log(parseInt(u));   // => 100 => lấy phần nguyên
+console.log(parseInt(t)); // => 69
+console.log(parseInt(u)); // => 100 => lấy phần nguyên
 
 console.log(parseFloat(t)); // => 69
 console.log(parseFloat(u)); // => 101.01
@@ -165,7 +165,7 @@ console.log(parseFloat(u)); // => 101.01
 
 Trên đây là những kiến thức cơ bản về values, types. Theo dự kiến ban đầu thì mình định viết gộp cả phần **strings**, **booleans** và **operators** vào. Nhưng khi viết đến đây thì thấy dài quá. Một phần vì nghĩ dài quá bạn không đọc. Một phần cũng vì lười. Nên mình sẽ viết tiếp phần 2 sau.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/values-types-va-operators-trong-javascript-phan-2/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/values-types-va-operators-trong-javascript-phan-2), thân ái!
 
 ## Tham khảo
 

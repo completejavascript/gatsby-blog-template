@@ -13,11 +13,11 @@ tags:
   - Array
 ---
 
-Trong JavaScript, để có thể duyệt [array](/javascript-array-co-ban/) thì **forEach** là một hàm rất hay. Vậy hàm **forEach** trong JavaScript cụ thể là như thế nào và cách sử dụng nó ra sao? Chúng ta sẽ cùng tìm hiểu ngay sau đây.
+Trong JavaScript, để có thể duyệt [array](/javascript-array-co-ban) thì **forEach** là một hàm rất hay. Vậy hàm **forEach** trong JavaScript cụ thể là như thế nào và cách sử dụng nó ra sao? Chúng ta sẽ cùng tìm hiểu ngay sau đây.
 
 ## Đặt vấn đề
 
-Cho một mảng [numbers](/values-types-va-operators-trong-javascript-phan-1/) = [1, 2, 3, 4, 5, 6,7, 8, 9, 10]. Hãy tính tổng các số trong mảng và hiển thị ra console.
+Cho một mảng [numbers](/values-types-va-operators-trong-javascript-phan-1) = [1, 2, 3, 4, 5, 6,7, 8, 9, 10]. Hãy tính tổng các số trong mảng và hiển thị ra console.
 
 Thông thường, chúng ta sẽ giải bài toán này như sau:
 
@@ -69,7 +69,7 @@ Theo quan điểm cá nhân mình thì việc sử dụng hàm **forEach** giú
 
 ## Giới thiệu hàm forEach trong JavaScript
 
-[JavaScript](/category/javascript-co-ban/) cung cấp sẵn phương thức **forEach** - là một phương thức có sẵn của [array](/array-sorting-van-de-muon-thuo/), để thực hiện hành động với mỗi phần tử của mảng.
+[JavaScript](/category/javascript-co-ban) cung cấp sẵn phương thức **forEach** - là một phương thức có sẵn của [array](/array-sorting-van-de-muon-thuo), để thực hiện hành động với mỗi phần tử của mảng.
 
 ### Cú pháp
 
@@ -225,7 +225,7 @@ var var1 = arr.find(callback[, thisArg])
 
 Tham số truyền vào cũng giống hệt như hàm forEach.
 
-Ví dụ sau tìm ra một [object](/javascript-object-last-but-not-least/) với tên của nó thoả mãn điều kiện cho trước:
+Ví dụ sau tìm ra một [object](/javascript-object-last-but-not-least) với tên của nó thoả mãn điều kiện cho trước:
 
 ```js
 const inventory = [
@@ -330,7 +330,7 @@ console.log(some([2, 3, 4], isNaN));
 
 (tham khảo [every](https://github.com/completejavascript/practical-javascript/blob/master/iteration/every-prototype-completejavascript.com.js), [some](https://github.com/completejavascript/practical-javascript/blob/master/iteration/some-prototype-completejavascript.com.js)).
 
-Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết sau](/phan-biet-call-apply-va-bind-trong-javascript/)[,](/category/javascript-co-ban/) thân ái!
+Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết sau](/phan-biet-call-apply-va-bind-trong-javascript), thân ái!
 
 **Tham khảo:**
 

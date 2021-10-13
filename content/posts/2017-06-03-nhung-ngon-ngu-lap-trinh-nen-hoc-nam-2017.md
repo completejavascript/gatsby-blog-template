@@ -14,7 +14,7 @@ tags:
 
 Bài viết sau được dịch từ [simpleprogrammer.com](http://simpleprogrammer.com/) bởi tác giả [John Sonmez](https://simpleprogrammer.com/about-simple-programmer/) về top những ngôn ngữ lập trình nên học năm 2017. Bạn có thể đọc bản gốc bài viết bằng tiếng anh tại [đây](https://simpleprogrammer.com/2016/10/18/top-programming-languages-learn-2017/). Trong trường hợp, tiếng anh của bạn chưa đủ hoặc đơn giản là bạn ngại mở máy tính để tra từ điển thì xin mời đọc bản dịch của tôi sau đây.
 
-**Chú ý**: Sau đây, "tôi" chính là John Sonmez, không phải [tác giả](/gioi-thieu/) blog [Complete JavaScript](/).
+**Chú ý**: Sau đây, "tôi" chính là John Sonmez, không phải [tác giả](/gioi-thieu) blog [Complete JavaScript](/).
 
 Rất nhiều người hỏi tôi về ngôn ngữ lập trình mà họ nên học. Tôi cảm thấy hơi bí vì đây là một câu hỏi rất khó để trả lời. Có nhiều thứ quan trọng cần phải cân nhắc trước khi đưa ra quyết định. Đặc biệt là liên quan đến ngôn ngữ lập trình mà bạn nên học.
 
@@ -74,27 +74,27 @@ Nếu so sánh với Java và C# thì rõ ràng C++ khó hơn. Hay nói cách kh
 
 Tiếp theo, có rất nhiều thư viện về xử lý hình ảnh, âm thanh, video như OpenCV, OpenCL, OpenGL, FFMPEG, BOOST,... Chúng đều là mã nguồn mở và chạy cực kì nhanh.
 
-Như đã nói trong phần [giới thiệu](/gioi-thieu/), tôi đã từng học C++ và cực kì thích ngôn ngữ lập trình này.
+Như đã nói trong phần [giới thiệu](/gioi-thieu), tôi đã từng học C++ và cực kì thích ngôn ngữ lập trình này.
 
 #### Cuối cùng là JavaScript?
 
-Nếu như bạn muốn lập trình web thì [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) là ngôn ngữ lập trình không thể bỏ qua. Tuy nhiên, bây giờ tôi sẽ không nói nhiều về JavaScript. Bạn cứ đọc tiếp rồi sẽ rõ lí do tại sao. Tiếp theo tôi sẽ nói về những ngôn ngữ lập trình nên học năm 2017 dành cho những lập trình viên đã có kinh nghiệm.
+Nếu như bạn muốn lập trình web thì [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) là ngôn ngữ lập trình không thể bỏ qua. Tuy nhiên, bây giờ tôi sẽ không nói nhiều về JavaScript. Bạn cứ đọc tiếp rồi sẽ rõ lí do tại sao. Tiếp theo tôi sẽ nói về những ngôn ngữ lập trình nên học năm 2017 dành cho những lập trình viên đã có kinh nghiệm.
 
 ### Ngôn ngữ lập trình nên học dành cho những lập trình viên có kinh nghiệm
 
-![JavaScript Everywhere - top ngôn ngữ lập trình nên học 2017 - completejavascript.com](../images/javascript-everywhere-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg) 
+![JavaScript Everywhere - top ngôn ngữ lập trình nên học 2017 - completejavascript.com](../images/javascript-everywhere-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg)
 
 _Ảnh tham khảo tại https://github.com/vigetlabs/javascript-everywhere_
 
 #### JavaScript
 
-[JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) đã có thời gian tưởng chừng như biến mất. Nhưng giờ đây, khi có rất nhiều framework khác nhau được viết dựa trên JavaScript như: NodeJs, AngularJs, ReactJs, React-Native... bạn có thể sử dụng ở front-end, server, desktop, mobile,...
+[JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) đã có thời gian tưởng chừng như biến mất. Nhưng giờ đây, khi có rất nhiều framework khác nhau được viết dựa trên JavaScript như: NodeJs, AngularJs, ReactJs, React-Native... bạn có thể sử dụng ở front-end, server, desktop, mobile,...
 
 Dĩ nhiên, khi mới làm quen với JavaScript thì bạn sẽ thấy ngôn ngữ lập trình này khá lộn xộn, cú pháp không được chuẩn hoá,... Nhưng khi đã quen rồi thì mọi thứ trở nên rất đơn giản và thậm chí là tiện dụng. Đặc biệt, ECMAScript là một chuẩn hoá của JavaScript - giúp bạn dễ học JavaScript hơn.
 
-Có thể bạn sẽ lựa chọn học một framework nào đó như NodeJs - vì bạn chỉ muốn làm việc với server thôi. Hay bạn sẽ học React-Native - vì bạn chỉ muốn viết ứng dụng cho điện thoại... Bạn hoàn toàn có thể. Tuy nhiên, theo tôi, bạn nên dành thời gian học JavaScript thuần trước. Khi bạn đã nắm vững được những [kiến thức cơ bản](/values-types-va-operators-trong-javascript-phan-1/) rồi thì việc học các framework là chuyện "dễ như ăn kẹo".
+Có thể bạn sẽ lựa chọn học một framework nào đó như NodeJs - vì bạn chỉ muốn làm việc với server thôi. Hay bạn sẽ học React-Native - vì bạn chỉ muốn viết ứng dụng cho điện thoại... Bạn hoàn toàn có thể. Tuy nhiên, theo tôi, bạn nên dành thời gian học JavaScript thuần trước. Khi bạn đã nắm vững được những [kiến thức cơ bản](/values-types-va-operators-trong-javascript-phan-1) rồi thì việc học các framework là chuyện "dễ như ăn kẹo".
 
-Bạn có thể tham khảo JavaScript cơ bản tại [đây](/category/javascript-co-ban/).
+Bạn có thể tham khảo JavaScript cơ bản tại [đây](/category/javascript-co-ban).
 
 #### Python
 
@@ -122,7 +122,7 @@ Nhưng nếu bạn đã là một lập trình viên có kinh nghiệm thì nh�
 
 Tức là, Rust là một ngôn ngữ lập trình mức thấp, có thể thay thế cho C/C++. Và chắc chắn Rust sẽ trở nên rất phổ biến (cái này phải cần thời gian để kiểm chứng - vì hiện tại có rất nhiều hệ thống đang chạy bằng C/C++).
 
-![taylor swift - top những ngôn ngữ lập trình nên học năm 2017 - completejavascript.com](../images/taylor-swift-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg) 
+![taylor swift - top những ngôn ngữ lập trình nên học năm 2017 - completejavascript.com](../images/taylor-swift-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg)
 
 _Ảnh tham khảo tại oportajgazetesi.com_
 
@@ -151,7 +151,7 @@ Ngược lại, bạn là một lập trình viên có kinh nghiệm và mong mu
 
 Có nhiều ý kiến khác nhau về việc lựa chọn ngôn ngữ lập trình nên học năm 2017. Riêng tôi thì tôi rất đồng ý với anh John Sonmez. Còn bạn thì nghĩ sao về vấn đề này? Tôi rất mong để biết được suy nghĩ của bạn (mặc dù bây giờ đã là giữa năm 2017 rồi, hehe).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/danh-ngon-lap-trinh-javascript-phan-1/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/danh-ngon-lap-trinh-javascript-phan-1), thân ái!
 
 <hr class="border-color-light-grey" />
 

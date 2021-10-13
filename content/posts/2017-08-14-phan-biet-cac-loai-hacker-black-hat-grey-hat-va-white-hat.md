@@ -24,13 +24,13 @@ Một cách tổng quát, hacker được chia ra làm ba loại là: black hat,
 
 ## Grey hat hacker
 
-Đây là thể loại đứng giữa hai loại hacker mũ trắng và mũ đen. Những gã này tìm ra lỗ hổng và thông báo chúng cho chính phủ, cơ quan tình báo hay đôi khi là quân đội. Sau đó, chính phủ sẽ sử dụng những thông tin này để hack vào một cơ quan hay một nhóm tội phạm hình sự. Họ có thể là cá nhân hay những nhà nghiên cứu theo đuổi việc tìm kiếm [bugs](/debug-javascript-de-hay-kho/) và những sai sót có thể hữu ích cho chính phủ.
+Đây là thể loại đứng giữa hai loại hacker mũ trắng và mũ đen. Những gã này tìm ra lỗ hổng và thông báo chúng cho chính phủ, cơ quan tình báo hay đôi khi là quân đội. Sau đó, chính phủ sẽ sử dụng những thông tin này để hack vào một cơ quan hay một nhóm tội phạm hình sự. Họ có thể là cá nhân hay những nhà nghiên cứu theo đuổi việc tìm kiếm [bugs](/debug-javascript-de-hay-kho) và những sai sót có thể hữu ích cho chính phủ.
 
 ## White hat hacker
 
 Đây là những người tốt, họ hack vào một hệ thống hay một phần mềm và sau đó thông báo nó cho những người có trách nhiệm về những bugs cần được sửa. Họ giúp đỡ để xây dựng một phần mềm tốt hơn và an toàn hơn. Họ kiếm tiền dưới hình thức là tiền thưởng khi thông báo cho những công ty biết về lỗ hổng bảo mật. Tiền thưởng là khác nhau dựa vào mức độ nghiêm trọng của lỗ hổng, tuy nhiên, nó có thể từ $500 đến $100000.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app), thân ái!
 
 <hr class="border-color-light-grey" />
 

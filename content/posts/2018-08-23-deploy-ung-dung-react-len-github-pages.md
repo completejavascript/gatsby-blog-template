@@ -52,7 +52,7 @@ Ngoài ra, bạn cũng có 2 lựa chọn là tải bản Windows Installer (.ms
 
 ![Tải nodejs](../images/download-nodejs.png)
 
-Các bước để cài đặt Node.js bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban/)
+Các bước để cài đặt Node.js bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban)
 
 _Xem thêm về Node.js tại: [SERIES LƯỢC SỬ LẬP TRÌNH WEB PHẦN 3.2 – NODEJS LÀM LOẠN GIỚI FRONT-END](https://toidicodedao.com/2018/08/07/series-luoc-su-lap-trinh-web-phan-3-2-nodejs-lam-loan-gioi-front-end/)_
 
@@ -96,7 +96,7 @@ Tiếp theo, mở Terminal trên Visual Studio Code bằng cách chọn **View**
 
 ![Màn hình Visual Studio Code sau khi mở Terminal](../images/visual-studio-code-open-terminal.png)
 
-Đến đây, bạn đã có thể sử dụng [câu lệnh](/cac-cau-lenh-thuong-dung-tren-cmd-windows/) ngay trên Visual Studio Code.
+Đến đây, bạn đã có thể sử dụng [câu lệnh](/cac-cau-lenh-thuong-dung-tren-cmd-windows) ngay trên Visual Studio Code.
 
 ### Khởi tạo project
 
@@ -130,7 +130,7 @@ Sau đó, bạn vào địa chỉ `http://127.0.0.1:3000/` trên trình duyệt 
 
 - File **package.json**: chứa thông tin cấu hình project, dependencies, scripts,...
 - Thư mục **src**: chứa các file mã nguồn của project mà bạn sẽ thao tác trực tiếp lên các file trong thư mục này.
-- Thư mục **public**: chứa file [html với template định sẵn](/chuyen-html-template-sang-dom-node/), **favicon.ico** và **manifest.json**
+- Thư mục **public**: chứa file [html với template định sẵn](/chuyen-html-template-sang-dom-node), **favicon.ico** và **manifest.json**
 
 Về lý thuyết, mọi thay đổi của ứng dụng, bạn sẽ thực hiện trong thư mục _src_. Và bạn không nên thay đổi nội dung trong thư mục _public_.
 
@@ -298,7 +298,7 @@ Trên đây là những bước cơ bản để tạo và deploy ứng dụng Re
 
 Tuy nhiên, nếu bạn sử dụng Windows 10 (hoặc cao hơn) thì có thể sẽ có lỗi xảy ra. Nếu bạn chưa thể tìm ra cách khắc phục, có thể để lại câu hỏi dưới phần bình luận, mình sẽ cố gắng tìm cách giải quyết giúp bạn.
 
-Cuối cùng, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/trien-khai-lazy-loading-image-trong-react/), thân ái!
+Cuối cùng, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/trien-khai-lazy-loading-image-trong-react), thân ái!
 
 <hr class="border-color-light-grey" />
 

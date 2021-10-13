@@ -13,7 +13,7 @@ tags:
   - Ubuntu
 ---
 
-Trong bài viết [Các câu lệnh thường dùng đến trong Ubuntu - Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux/), mình đã giới thiệu với bạn những câu lệnh cơ bản thường dùng trong Ubuntu để làm việc với file, folder, thông tin hệ thống,... Tiếp tục, bài viết này sẽ hướng dẫn bạn cách cài đặt và gỡ một gói phần mềm trên Ubuntu.
+Trong bài viết [Các câu lệnh thường dùng đến trong Ubuntu - Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux), mình đã giới thiệu với bạn những câu lệnh cơ bản thường dùng trong Ubuntu để làm việc với file, folder, thông tin hệ thống,... Tiếp tục, bài viết này sẽ hướng dẫn bạn cách cài đặt và gỡ một gói phần mềm trên Ubuntu.
 
 ## Dùng Ubuntu Software Center
 
@@ -124,7 +124,7 @@ Các tùy chọn chúng ta cung cấp cho tar được mô tả bên dưới:
 
 Trên đây là một số cách để cài đặt và gỡ một gói phần mềm trên Ubuntu. Nếu bạn có thắc mắc hay góp ý gì, vui lòng để lại dưới phần bình luận.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết sau](/huong-dan-tim-hieu-ffmpeg-co-ban/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết sau](/huong-dan-tim-hieu-ffmpeg-co-ban), thân ái!
 
 <hr class="border-color-light-grey" />
 

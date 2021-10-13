@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const gridContainer = document.querySelector(".grid");
 
   // Template for each cell in grid
-  const cellTemplate = id => `
+  const cellTemplate = (id) => `
     <div class="cell">
       <div class="lazy-image" id="${id}"></div>
       <div class="caption">${id.replace("-", " ")}</div>
@@ -46,9 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // store all images DOM in array
-  let arrayImages = [].slice.call(
-    document.querySelectorAll(".lazy-image")
-  );
+  let arrayImages = [].slice.call(document.querySelectorAll(".lazy-image"));
 
   // handle scroll
   handleScroll();
@@ -78,12 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const rect = el.getBoundingClientRect();
 
     return (
-      rect.top >= 0
-      && rect.left >= 0
-      && rect.top <= (
-        window.innerHeight || document.documentElement.clientHeight
-      )
-    )
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+    );
   }
 });
 ```
@@ -104,36 +100,74 @@ document.addEventListener("DOMContentLoaded", function () {
   -moz-transition: opacity 0.2s ease-in-out;
 }
 
-.app .grid .cell .lazy-image.visible { opacity: 1; }
-#image-01.visible { background-image: url("images/01.jpg"); }
-#image-02.visible { background-image: url("images/02.jpg"); }
-#image-03.visible { background-image: url("images/03.jpg"); }
-#image-04.visible { background-image: url("images/04.jpg"); }
-#image-05.visible { background-image: url("images/05.jpg"); }
-#image-06.visible { background-image: url("images/06.jpg"); }
-#image-07.visible { background-image: url("images/07.jpg"); }
-#image-08.visible { background-image: url("images/08.jpg"); }
-#image-09.visible { background-image: url("images/09.jpg"); }
-#image-10.visible { background-image: url("images/10.jpg"); }
-#image-11.visible { background-image: url("images/11.jpg"); }
-#image-12.visible { background-image: url("images/12.jpg"); }
-#image-13.visible { background-image: url("images/13.jpg"); }
-#image-14.visible { background-image: url("images/14.jpg"); }
-#image-15.visible { background-image: url("images/15.jpg"); }
-#image-16.visible { background-image: url("images/16.jpg"); }
-#image-17.visible { background-image: url("images/17.jpg"); }
-#image-18.visible { background-image: url("images/18.jpg"); }
+.app .grid .cell .lazy-image.visible {
+  opacity: 1;
+}
+#image-01.visible {
+  background-image: url("images/01.jpg");
+}
+#image-02.visible {
+  background-image: url("images/02.jpg");
+}
+#image-03.visible {
+  background-image: url("images/03.jpg");
+}
+#image-04.visible {
+  background-image: url("images/04.jpg");
+}
+#image-05.visible {
+  background-image: url("images/05.jpg");
+}
+#image-06.visible {
+  background-image: url("images/06.jpg");
+}
+#image-07.visible {
+  background-image: url("images/07.jpg");
+}
+#image-08.visible {
+  background-image: url("images/08.jpg");
+}
+#image-09.visible {
+  background-image: url("images/09.jpg");
+}
+#image-10.visible {
+  background-image: url("images/10.jpg");
+}
+#image-11.visible {
+  background-image: url("images/11.jpg");
+}
+#image-12.visible {
+  background-image: url("images/12.jpg");
+}
+#image-13.visible {
+  background-image: url("images/13.jpg");
+}
+#image-14.visible {
+  background-image: url("images/14.jpg");
+}
+#image-15.visible {
+  background-image: url("images/15.jpg");
+}
+#image-16.visible {
+  background-image: url("images/16.jpg");
+}
+#image-17.visible {
+  background-image: url("images/17.jpg");
+}
+#image-18.visible {
+  background-image: url("images/18.jpg");
+}
 ```
 
 `youtube: https://www.youtube.com/watch?v=6Y-fgdRyLUU`
 
 <a href="https://github.com/completejavascript/lazy-loading-image-es6-css-demo" class="btn btn-primary margin-bottom">
   Xem code trên Github
-</a>  
+</a>
 
 <a href="http://about.phamvanlam.com/lazy-loading-image-es6-css-demo" class="btn btn-primary margin-bottom">
   Xem Demo
-</a> 
+</a>
 
 ### Giải thích cách triển khai Lazy Loading Image với ES6 và CSS
 
@@ -153,10 +187,10 @@ Do đó, mình sẽ phải tạo ra reference đến thẻ đó trước để l
 const gridContainer = document.querySelector(".grid");
 ```
 
-Sau đó, mình sẽ sử dụng [ES6 Template String](/su-dung-es6-template-string-co-gi-hay/) để định nghĩa template cho mỗi cell (chứa ảnh và caption).
+Sau đó, mình sẽ sử dụng [ES6 Template String](/su-dung-es6-template-string-co-gi-hay) để định nghĩa template cho mỗi cell (chứa ảnh và caption).
 
 ```js
-const cellTemplate = id => `
+const cellTemplate = (id) => `
   <div class="cell">
     <div class="lazy-image" id="${id}"></div>
     <div class="caption">${id.replace("-", " ")}</div>
@@ -196,19 +230,17 @@ for (let i = 1; i <= NUMBER_IMAGE; i++) {
 
 Và id của mỗi ảnh lần lượt là: image-01, image-02, ..., image-18. Phần id này sẽ được dùng để xác định ảnh gốc được load ứng với mỗi _cell_.
 
-Như vậy là đến đây mình đã xây dựng được [cấu trúc DOM Tree](/co-ban-ve-dom-javascript/). Tiếp theo mình sẽ xử lý việc load ảnh khi scroll màn hình.
+Như vậy là đến đây mình đã xây dựng được [cấu trúc DOM Tree](/co-ban-ve-dom-javascript). Tiếp theo mình sẽ xử lý việc load ảnh khi scroll màn hình.
 
 #### Xử lý việc load ảnh khi scroll màn hình
 
 Trước tiên, mình sẽ query để lưu lại các phần tử DOM cần Lazy Loading Image vào một mảng để tiện xử lý sau này.
 
 ```js
-let arrayImages = [].slice.call(
-  document.querySelectorAll(".lazy-image")
-);
+let arrayImages = [].slice.call(document.querySelectorAll(".lazy-image"));
 ```
 
-Ở đây phương thức [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) trả về [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) chứ không phải [Array](/javascript-array-co-ban/). Nên mình sẽ phải convert NodeList sang Array. Bạn có thể tham khảo bài viết [Convert NodeList to Array](https://davidwalsh.name/nodelist-array) để biết thêm chi tiết.
+Ở đây phương thức [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) trả về [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) chứ không phải [Array](/javascript-array-co-ban). Nên mình sẽ phải convert NodeList sang Array. Bạn có thể tham khảo bài viết [Convert NodeList to Array](https://davidwalsh.name/nodelist-array) để biết thêm chi tiết.
 
 **Mục đích của mình khi lưu các phần tử DOM này vào Array là gì?**
 
@@ -236,37 +268,73 @@ function elementInViewport(el) {
   const rect = el.getBoundingClientRect();
 
   return (
-    rect.top >= 0
-    && rect.left >= 0
-    && rect.top <= (
-      window.innerHeight || document.documentElement.clientHeight
-    )
-  )
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+  );
 }
 ```
 
 Và để ảnh gốc hiện lên, mình sẽ thêm vào _classList_ giá trị _visible_. Vì mình đã định nghĩa trong _main.css_:
 
 ```css
-.app .grid .cell .lazy-image.visible { opacity: 1; }
-#image-01.visible { background-image: url("images/01.jpg"); }
-#image-02.visible { background-image: url("images/02.jpg"); }
-#image-03.visible { background-image: url("images/03.jpg"); }
-#image-04.visible { background-image: url("images/04.jpg"); }
-#image-05.visible { background-image: url("images/05.jpg"); }
-#image-06.visible { background-image: url("images/06.jpg"); }
-#image-07.visible { background-image: url("images/07.jpg"); }
-#image-08.visible { background-image: url("images/08.jpg"); }
-#image-09.visible { background-image: url("images/09.jpg"); }
-#image-10.visible { background-image: url("images/10.jpg"); }
-#image-11.visible { background-image: url("images/11.jpg"); }
-#image-12.visible { background-image: url("images/12.jpg"); }
-#image-13.visible { background-image: url("images/13.jpg"); }
-#image-14.visible { background-image: url("images/14.jpg"); }
-#image-15.visible { background-image: url("images/15.jpg"); }
-#image-16.visible { background-image: url("images/16.jpg"); }
-#image-17.visible { background-image: url("images/17.jpg"); }
-#image-18.visible { background-image: url("images/18.jpg"); }
+.app .grid .cell .lazy-image.visible {
+  opacity: 1;
+}
+#image-01.visible {
+  background-image: url("images/01.jpg");
+}
+#image-02.visible {
+  background-image: url("images/02.jpg");
+}
+#image-03.visible {
+  background-image: url("images/03.jpg");
+}
+#image-04.visible {
+  background-image: url("images/04.jpg");
+}
+#image-05.visible {
+  background-image: url("images/05.jpg");
+}
+#image-06.visible {
+  background-image: url("images/06.jpg");
+}
+#image-07.visible {
+  background-image: url("images/07.jpg");
+}
+#image-08.visible {
+  background-image: url("images/08.jpg");
+}
+#image-09.visible {
+  background-image: url("images/09.jpg");
+}
+#image-10.visible {
+  background-image: url("images/10.jpg");
+}
+#image-11.visible {
+  background-image: url("images/11.jpg");
+}
+#image-12.visible {
+  background-image: url("images/12.jpg");
+}
+#image-13.visible {
+  background-image: url("images/13.jpg");
+}
+#image-14.visible {
+  background-image: url("images/14.jpg");
+}
+#image-15.visible {
+  background-image: url("images/15.jpg");
+}
+#image-16.visible {
+  background-image: url("images/16.jpg");
+}
+#image-17.visible {
+  background-image: url("images/17.jpg");
+}
+#image-18.visible {
+  background-image: url("images/18.jpg");
+}
 ```
 
 Công việc cuối cùng là đăng ký sự kiện _scroll_ đối với _window_.
@@ -289,7 +357,7 @@ window.addEventListener("scroll", function () {
 Nếu không cần quan tâm đến performance thì bạn chỉ cần viết ngắn gọn là:
 
 ```js
-window.addEventListener('scroll', handleScroll);
+window.addEventListener("scroll", handleScroll);
 ```
 
 ## Demo
@@ -298,22 +366,22 @@ Bạn có thể xem code đầy đủ và demo tại đây:
 
 <a href="https://github.com/completejavascript/lazy-loading-image-es6-css-demo" class="btn btn-primary margin-bottom">
   Xem code trên Github
-</a> 
+</a>
 
 <a href="http://about.phamvanlam.com/lazy-loading-image-es6-css-demo" class="btn btn-primary margin-bottom">
   Xem Demo
-</a> 
+</a>
 
 ## Lời kết
 
 Trên đây là cách mình triển khai Lazy Loading Image với ES6 và CSS. Nhìn chung, mình thấy cách này không khác nhiều so với cách sử dụng React. Nếu bạn có thắc mắc hay góp ý gì thì có thể hỏi mình bằng cách để lại trong phần bình luận phía dưới.
 
-Còn bây giờ thì xin chào và hẹn gặp lại trong [bài viết tiếp theo](/chuyen-anh-dong-gif-thanh-video/), thân ái!
+Còn bây giờ thì xin chào và hẹn gặp lại trong [bài viết tiếp theo](/chuyen-anh-dong-gif-thanh-video), thân ái!
 
 <hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

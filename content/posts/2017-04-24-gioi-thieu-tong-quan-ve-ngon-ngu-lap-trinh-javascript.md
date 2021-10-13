@@ -22,36 +22,36 @@ Sau khi ngôn ngữ lập trình JavaScript được chấp nhận sử dụng b
 
 Tại thời điểm bài viết này được xuất bản (04/2017), phiên bản ECMAScript mới nhất là ECMAScript 2016 hay ECMA-262. Do đó, đã có rất nhiều sự khác biệt giữa JavaScript hiện tại so với phiên bản đầu tiên của nó.
 
-Trong các bài viết sau, mình sẽ chủ yếu giới thiệu với bạn những kiến thức nguyên thuỷ về JavaScript. Qua đó, bạn có thể tự tìm hiểu những chuẩn mới của JavaScript [một cách dễ dàng](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon/).
+Trong các bài viết sau, mình sẽ chủ yếu giới thiệu với bạn những kiến thức nguyên thuỷ về JavaScript. Qua đó, bạn có thể tự tìm hiểu những chuẩn mới của JavaScript [một cách dễ dàng](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon).
 
 ## Đặc điểm chung của JavaScript
 
 - Là ngôn ngữ lập trình bậc cao (high-level) giống như: C/C++, Java, Python, Ruby,... Nó rất gần với ngôn ngữ tự nhiên của con người. Trong khi ngôn ngữ lập trình bậc thấp (low-level) như: Assembly... sẽ gần với máy tính hơn.
 - Là ngôn ngữ lập trình động (dynamic programming language): như Python, Ruby, Perl,... Chúng được tối ưu hoá nhằm nâng cao hiệu suất cho lập trình viên. Trong khi ngôn ngữ lập trình tĩnh (static programming language): như C/C++,... lại được tối ưu hoá để nâng cao hiệu suất cho phần cứng máy tính.
 - Là ngôn ngữ lập trình kịch bản (scripting language): nghĩa là không cần biên dịch (compile) hay liên kết (linked) giống như ngôn ngữ lập trình biên dịch (C/C++, Java,...) mà nó sẽ được dịch tại thời điểm chạy.
-- Là ngôn ngữ [dựa trên đối tượng](/lap-trinh-huong-doi-tuong-voi-javascript/) (object-based): tức nó gần giống như ngôn ngữ lập trình hướng đối tượng, ngoại trừ JavaScript không hỗ trợ tính kế thừa và đa hình.
-- Là ngôn ngữ dựa trên nguyên mẫu (prototype-based): là một kiểu của [lập trình hướng đối tượng](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/), trong đó các hành vi của đối tượng được sử dụng lại.
+- Là ngôn ngữ [dựa trên đối tượng](/lap-trinh-huong-doi-tuong-voi-javascript) (object-based): tức nó gần giống như ngôn ngữ lập trình hướng đối tượng, ngoại trừ JavaScript không hỗ trợ tính kế thừa và đa hình.
+- Là ngôn ngữ dựa trên nguyên mẫu (prototype-based): là một kiểu của [lập trình hướng đối tượng](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript), trong đó các hành vi của đối tượng được sử dụng lại.
 
 ## Ứng dụng của JavaScript
 
 ![JavaScript Everywhere](../images/javascript-everywhere-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg)
 
-*Tham khảo: https://github.com/vigetlabs/javascript-everywhere*
+_Tham khảo: https://github.com/vigetlabs/javascript-everywhere_
 
 JavaScript có rất nhiều ứng dụng trên nhiều môi trường và nền tảng khác khau:
 
 - JavaScript cùng với HTML, CSS trở thành ngôn ngữ không thể thiếu đối với website
-- Ngoài ra, có rất nhiều [framework JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) khác nhau phía front-end: Angular.js, Angular2, ReactJS, Vue.js, Ember.js, Meteor.js, backbone, ...
+- Ngoài ra, có rất nhiều [framework JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app) khác nhau phía front-end: Angular.js, Angular2, ReactJS, Vue.js, Ember.js, Meteor.js, backbone, ...
 - JavaScript có thể sử dụng phía server với framework : Node.js
 - Một số database sử dụng JavaScript như là kịch bản và là ngôn ngữ query: MongoDB, CouchDB
 - JavaScript có thể dùng để xây dựng ứng dụng Desktop với framework: Electron. Những ứng dụng nổi tiếng có thể kể đến là: Atom, Visual Studio Code, GitKraken, Wordpress.com,...
 - Để xây dựng ứng dụng điện thoại đa nền tảng (Android, IOS) có thể dùng: React-native
 
-Rõ ràng, JavaScript đã trở thành một trong những ngôn ngữ phát triển rất mạnh cùng với độ phổ biến của nó hiện nay. Xứng đáng trở thành [ngôn ngữ lập trình nên học nhất năm 2017](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017/).
+Rõ ràng, JavaScript đã trở thành một trong những ngôn ngữ phát triển rất mạnh cùng với độ phổ biến của nó hiện nay. Xứng đáng trở thành [ngôn ngữ lập trình nên học nhất năm 2017](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017).
 
-Trên đây là giới thiệu tổng quan về ngôn ngữ lập trình JavaScript. Trong các bài viết sau, mình sẽ bắt đầu đi sâu vào các khía cạnh của ngôn ngữ này (thành phần cơ bản, [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript/), [hàm](/tim-hieu-function-javascript/), [đối tượng](/javascript-object-last-but-not-least/), [quản lý lỗi](/debug-javascript-de-hay-kho/), JavaScript với trình duyệt,... và một số ứng dụng).
+Trên đây là giới thiệu tổng quan về ngôn ngữ lập trình JavaScript. Trong các bài viết sau, mình sẽ bắt đầu đi sâu vào các khía cạnh của ngôn ngữ này (thành phần cơ bản, [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript), [hàm](/tim-hieu-function-javascript), [đối tượng](/javascript-object-last-but-not-least), [quản lý lỗi](/debug-javascript-de-hay-kho), JavaScript với trình duyệt,... và một số ứng dụng).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết sau](/values-types-va-operators-trong-javascript-phan-1/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết sau](/values-types-va-operators-trong-javascript-phan-1), thân ái!
 
 ## Tham khảo
 

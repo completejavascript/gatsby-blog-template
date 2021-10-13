@@ -51,16 +51,16 @@ Sau khi đã chắc chắn rằng trình duyệt có hỗ trợ Geolocation, b�
 let options = {
   enableHighAccuracy: true,
   timeout: 5000,
-  maximumAge: 0
+  maximumAge: 0,
 };
 geolocation.getCurrentPosition(onGeoSuccess, onGeoError, options);
 ```
 
-[Hàm](/tim-hieu-function-javascript/) này có 3 tham số đầu vào:
+[Hàm](/tim-hieu-function-javascript) này có 3 tham số đầu vào:
 
 - **onGeoSuccess**: hàm callback được gọi khi việc lấy vị trí thành công
 - **onGeoError**: hàm callback được gọi khi việc lấy vị trí bị lỗi
-- **options**: là một [object](/javascript-object-last-but-not-least/), chứa một số cài đặt kèm theo, như độ chính xác, timeout, thời gian position được cached (giá trị này = 0 nghĩa là không bao giờ cache position). Bạn có thể đọc thêm về các option trên tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions).
+- **options**: là một [object](/javascript-object-last-but-not-least), chứa một số cài đặt kèm theo, như độ chính xác, timeout, thời gian position được cached (giá trị này = 0 nghĩa là không bao giờ cache position). Bạn có thể đọc thêm về các option trên tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions).
 
 #### Xử lý khi lấy vị trí người dùng thành công
 
@@ -79,17 +79,14 @@ Có 2 thông số quan trọng trong kết quả **position** trả về là vĩ
 function onGeoError(error) {
   let detailError;
 
-  if(error.code === error.PERMISSION_DENIED) {
+  if (error.code === error.PERMISSION_DENIED) {
     detailError = "User denied the request for Geolocation.";
-  }
-  else if(error.code === error.POSITION_UNAVAILABLE) {
+  } else if (error.code === error.POSITION_UNAVAILABLE) {
     detailError = "Location information is unavailable.";
-  }
-  else if(error.code === error.TIMEOUT) {
-    detailError = "The request to get user location timed out."
-  }
-  else if(error.code === error.UNKNOWN_ERROR) {
-    detailError = "An unknown error occurred."
+  } else if (error.code === error.TIMEOUT) {
+    detailError = "The request to get user location timed out.";
+  } else if (error.code === error.UNKNOWN_ERROR) {
+    detailError = "An unknown error occurred.";
   }
 
   $("#error").innerHTML = `Error: ${detailError}`;
@@ -113,7 +110,7 @@ https://codepen.io/completejavascript/pen/Ovaajp
 
 ### Cách sử dụng ipinfo.io API
 
-Bạn chỉ cần gửi một [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/) dạng GET với kiểu dữ liệu là [JSON](/tim-hieu-ve-json-trong-javascript/). Trong ví dụ trên, mình sử dụng jQuery, nên chỉ cần sử dụng phương thức [\$.getJSON](http://api.jquery.com/jquery.getjson/) là được.
+Bạn chỉ cần gửi một [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript) dạng GET với kiểu dữ liệu là [JSON](/tim-hieu-ve-json-trong-javascript). Trong ví dụ trên, mình sử dụng jQuery, nên chỉ cần sử dụng phương thức [\$.getJSON](http://api.jquery.com/jquery.getjson/) là được.
 
 ```js
 $.getJSON("https://ipinfo.io/", onLocationGot);
@@ -140,12 +137,12 @@ Như vậy là mình đã giới thiệu xong với các bạn hai cách để l
   - Luôn luôn có thể lấy được vị trí người dùng
   - Có hỗ trợ http, có thể test trên localhost.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/21-thu-thuat-javascript-huu-ich/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/21-thu-thuat-javascript-huu-ich), thân ái!
 
 <hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

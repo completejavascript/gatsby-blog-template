@@ -151,7 +151,7 @@ reCAPTCHA dùng để tránh spam. Tuy nhiên, bạn vẫn có thể sử dụng
 
 Trên đây, mình đã trình bày cách gửi email bằng HTML sử dụng Formspree. Trước khi kết thúc bài viết, mình muốn nhấn mạnh lại là: **ứng với mỗi website triển khai form này, bạn cần phải xác minh một lần đầu tiên**. Hy vọng bài viết này có thể giúp bạn biết cách gửi email bằng HTML để có thể triển khai trên các website của mình.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thiet-ke-website-responsive-voi-css-menu/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thiet-ke-website-responsive-voi-css-menu), thân ái!
 
 <hr class="border-color-light-grey" />
 

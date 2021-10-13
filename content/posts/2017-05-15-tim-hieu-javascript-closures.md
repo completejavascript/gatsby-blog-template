@@ -10,7 +10,7 @@ categories:
   - Javascript cơ bản
 ---
 
-Như đã nói trong bài [tìm hiểu function JavaScipt](/tim-hieu-function-javascript/), bài viết này mình sẽ giới thiệu với bạn về JavaScript closures. Việc hiểu closures sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn,...). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closures, chúng ta sẽ xem closures là gì và cách sử dụng nó như thế nào.
+Như đã nói trong bài [tìm hiểu function JavaScipt](/tim-hieu-function-javascript), bài viết này mình sẽ giới thiệu với bạn về JavaScript closures. Việc hiểu closures sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn,...). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closures, chúng ta sẽ xem closures là gì và cách sử dụng nó như thế nào.
 
 ## Khái niệm JavaScript closures
 
@@ -25,16 +25,16 @@ Hàm closures có thể truy cập biến số ở **3 phạm vi** khác nhau l�
 Ví dụ:
 
 ```js
-var YEAR = '2017';
+var YEAR = "2017";
 function greet(name) {
-  var intro = 'Hello ';
-  function sayHello(){
-    var hello = intro + name + ' in ' + YEAR;
+  var intro = "Hello ";
+  function sayHello() {
+    var hello = intro + name + " in " + YEAR;
     console.log(hello);
   }
   sayHello();
 }
-greet('Lam Pham');
+greet("Lam Pham");
 // => Hello Lam Pham in 2017
 ```
 
@@ -49,20 +49,20 @@ Nếu bạn muốn hiểu sâu và vận dụng closures thì sau đây là nh�
 Thông thường, khi một hàm số đã return thì biến cục bộ trong nó cũng sẽ được giải phóng. Nhưng với closures, bạn vẫn có thể truy cập đến những biến cục bộ đó ngay cả khi outer function đã thực hiện xong.
 
 ```js
-function adder(n){
-  var intro = 'This answer is ';
+function adder(n) {
+  var intro = "This answer is ";
   var local = n;
-  return function(number){
+  return function (number) {
     var result = number + local;
     console.log(intro + result);
-  }
+  };
 }
 var adder2 = adder(2);
 adder2(10);
 // => This answer is 12
 ```
 
-Trong ví dụ trên, hàm closures là một hàm số không tên _function(number)_. Hàm closures này sử dụng biến cục bộ của outer function là *intro* và *local*.
+Trong ví dụ trên, hàm closures là một hàm số không tên _function(number)_. Hàm closures này sử dụng biến cục bộ của outer function là _intro_ và _local_.
 
 Khi mình gọi hàm _adder(2)_, hàm số này thực hiện và kết quả trả về được gán vào biến _adder2_. Khi gọi _adder2(10)_, kết quả trả về là _12_, chứng tỏ hàm closures vẫn có thể truy cập tới biến cục bộ của outer function khi hàm đó thực hiện xong.
 
@@ -71,51 +71,51 @@ Khi mình gọi hàm _adder(2)_, hàm số này thực hiện và kết quả tr
 Xét ví dụ dưới đây:
 
 ```js
-function ObjId(){
-    var id = 1;
-    return {
-        getId: function(){
-            return id;
-        },
-        setId: function(_id){
-            id = _id;
-        }
-    }
+function ObjId() {
+  var id = 1;
+  return {
+    getId: function () {
+      return id;
+    },
+    setId: function (_id) {
+      id = _id;
+    },
+  };
 }
 
 var myObject = ObjId();
-console.log(myObject.getId());  // => 1
+console.log(myObject.getId()); // => 1
 myObject.setId(10);
-console.log(myObject.getId());  // => 10
+console.log(myObject.getId()); // => 10
 ```
 
 Hàm _objId_ trả về một đối tượng bao gồm 2 hàm closures là _getId_ và _setId_. Các hàm closures này sử dụng chung một biến cục bộ là _id_.
 
 Ban đầu, mình gọi _myObject.getId()_ thì kết quả trả về là 1 (giá trị của biến cục bộ). Sau đó, mình gọi _myObject.setId(10)_. Nếu hàm closures chỉ lưu biến cục bộ theo giá trị thì nghĩa là giá trị của biến cục bộ id sẽ không thay đổi. Nhưng khi mình gọi tiếp _myObject.getId()_ thì giá trị trả về là 10. Chứng tỏ, hàm closures phải lưu biến cục bộ theo kiểu tham chiếu.
 
-Bây giờ đọc lại ví dụ trên một lần nữa, bạn có thấy nó giống với cách sử dụng class (lớp) trong C++ hay Java không? Mình thì thấy có giống. Thực ra đây là một trong những cách tạo đối tượng ([object](/lap-trinh-huong-doi-tuong-voi-javascript/)) trong JavaScript mà mình sẽ giới thiệu trong những bài viết tiếp theo.
+Bây giờ đọc lại ví dụ trên một lần nữa, bạn có thấy nó giống với cách sử dụng class (lớp) trong C++ hay Java không? Mình thì thấy có giống. Thực ra đây là một trong những cách tạo đối tượng ([object](/lap-trinh-huong-doi-tuong-voi-javascript)) trong JavaScript mà mình sẽ giới thiệu trong những bài viết tiếp theo.
 
 ## So sánh hiệu năng giữa việc sử dụng closures và prototype
 
 Ví dụ trên minh hoạ cách sử dụng closures. Bây giờ mình sẽ viết lại nó theo cách sử dụng _prototype_:
 
 ```js
-function ObjId(){
-    this.id = 1;
+function ObjId() {
+  this.id = 1;
 }
 
-ObjId.prototype.getId = function(){
-    return this.id;
+ObjId.prototype.getId = function () {
+  return this.id;
 };
 
-ObjId.prototype.setId = function(_id){
-    this.id = _id;
+ObjId.prototype.setId = function (_id) {
+  this.id = _id;
 };
 
 var myObject = new ObjId();
-console.log(myObject.getId());  // => 1
+console.log(myObject.getId()); // => 1
 myObject.setId(10);
-console.log(myObject.getId());  // => 10
+console.log(myObject.getId()); // => 10
 ```
 
 Kết quả trả về vẫn giống y hệt như trên. Tuy nhiên, cách nào sẽ chạy nhanh hơn? **Closures** hay **Prototype?**
@@ -130,7 +130,7 @@ Một cách khách quan, việc sử dụng prototype sẽ nhanh hơn và tiết
 
 Bài viết trên là khá ngắn gọn. Hy vọng nó phần nào giúp bạn hiểu được JavaScript closures là gì và cách sử dụng closures.
 
-Cuối cùng, hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-array-co-ban/), thân ái!
+Cuối cùng, hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-array-co-ban), thân ái!
 
 ## Tham khảo
 

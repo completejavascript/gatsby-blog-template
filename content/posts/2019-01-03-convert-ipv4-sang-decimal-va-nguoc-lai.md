@@ -85,11 +85,12 @@ Khi đó, địa chỉ **192.0.2.235** có thể được viết là **(192)(0)
 = 3221225472 + 0 + 512 + 235
 = 3221226219
 ```
+
 Kết quả thu được đúng như mong đợi. Vậy code để convert IPv4 sang Decimal bây giờ là:
 
 ```js
 const ip = "192.0.2.235";
-const octets = ip.split('.');
+const octets = ip.split(".");
 
 const byte3 = octets[0] * Math.pow(2, 24);
 const byte2 = octets[1] * Math.pow(2, 16);
@@ -102,7 +103,7 @@ console.log(decimal); // => 3221226219
 
 ### Triển khai convert IPv4 sang Decimal đầy đủ
 
-Đoạn code trên đã giải quyết khá tốt việc convert IPv4 sang Decimal. Tuy nhiên, mình vẫn chưa xử lý việc kiểm tra đầu vào có hợp lệ hay không và cũng chưa viết nó thành một [function](/tim-hieu-function-javascript/) riêng biệt để dễ dàng tái sử dụng sau này. Và sau đây chính là đoạn code khá đầy đủ mà mình đã viết:
+Đoạn code trên đã giải quyết khá tốt việc convert IPv4 sang Decimal. Tuy nhiên, mình vẫn chưa xử lý việc kiểm tra đầu vào có hợp lệ hay không và cũng chưa viết nó thành một [function](/tim-hieu-function-javascript) riêng biệt để dễ dàng tái sử dụng sau này. Và sau đây chính là đoạn code khá đầy đủ mà mình đã viết:
 
 ```js
 /**
@@ -136,9 +137,9 @@ function convertIPv4toDecimal(ip) {
 }
 ```
 
-Trong đoạn code trên, mình sử dụng [Regex](/tim-hieu-regular-expression-javascript/) để xác định một cách cơ bản đầu vào là địa chỉ IPv4. Tức là địa chỉ IP phải có 4 nhóm, phân tách nhau bởi dấu chấm (**.**) và mỗi nhóm sẽ có số kí tự từ 1 đến 3 (tương ứng giá trị từ 0 đến 255).
+Trong đoạn code trên, mình sử dụng [Regex](/tim-hieu-regular-expression-javascript) để xác định một cách cơ bản đầu vào là địa chỉ IPv4. Tức là địa chỉ IP phải có 4 nhóm, phân tách nhau bởi dấu chấm (**.**) và mỗi nhóm sẽ có số kí tự từ 1 đến 3 (tương ứng giá trị từ 0 đến 255).
 
-Sau đó, mình tách 4 cụm của địa chỉ IP thành [mảng](/javascript-array-co-ban/) để duyệt. Mỗi phần phải đảm bảo có giá trị từ 0 đến 255 thì mới hợp lệ. Nếu địa chỉ IPv4 đầu vào là hợp lệ thì mình sẽ trả về giá trị Decimal của nó. Ngược lại, mình trả về giá trị -1.
+Sau đó, mình tách 4 cụm của địa chỉ IP thành [mảng](/javascript-array-co-ban) để duyệt. Mỗi phần phải đảm bảo có giá trị từ 0 đến 255 thì mới hợp lệ. Nếu địa chỉ IPv4 đầu vào là hợp lệ thì mình sẽ trả về giá trị Decimal của nó. Ngược lại, mình trả về giá trị -1.
 
 Bạn thử tìm hiểu kỹ hơn xem nó hoạt động thế nào nhé! Nếu có gì khó hiểu thì để lại bình luận xuống phía dưới, mình sẽ cố gắng giải đáp.
 
@@ -171,6 +172,7 @@ Nói xuông thì hơi khó hiểu, mình sẽ minh họa lại như sau:
 0x00000200 >> 8 = 0x02 = 2
 0x000000EB >> 0 = 0xEB = 235
 ```
+
 Như vậy là mình đã thu được 4 giá trị octet. Công việc còn lại là vô cùng đơn giản.
 
 ### Triển khai convert Decimal sang IPv4 theo lý thuyết
@@ -227,7 +229,7 @@ function convertDecimalToIPv4(decimal) {
 }
 ```
 
-Trong đó, mình có kiểm tra điều kiện cơ bản của số Decimal đầu vào. Tiếp theo, mình thực hiện phép **AND** và dịch bit để thu được các octet. Cuối cùng, mình sử dụng [ES6 Template String](/su-dung-es6-template-string-co-gi-hay/) để hợp các octet lại thành giá trị IPv4.
+Trong đó, mình có kiểm tra điều kiện cơ bản của số Decimal đầu vào. Tiếp theo, mình thực hiện phép **AND** và dịch bit để thu được các octet. Cuối cùng, mình sử dụng [ES6 Template String](/su-dung-es6-template-string-co-gi-hay) để hợp các octet lại thành giá trị IPv4.
 
 ## Lời kết
 

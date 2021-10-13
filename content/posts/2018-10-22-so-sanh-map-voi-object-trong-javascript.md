@@ -19,9 +19,9 @@ Mời bạn theo dõi bài viết!
 
 ## Nhắc lại khái niệm
 
-**[Object](/javascript-object-last-but-not-least/)** là một khái niệm trừu tượng dùng để biểu diễn một vật thể (cụ thể). Trong đó, các thuộc tính dùng để miêu tả đặc điểm, tính chất của đối tượng. Và các phương thức dùng để chỉ các hoạt động của đối tượng.
+**[Object](/javascript-object-last-but-not-least)** là một khái niệm trừu tượng dùng để biểu diễn một vật thể (cụ thể). Trong đó, các thuộc tính dùng để miêu tả đặc điểm, tính chất của đối tượng. Và các phương thức dùng để chỉ các hoạt động của đối tượng.
 
-**[Map](/map-trong-javascript-thi-sao/)** là một cấu trúc dữ liệu cho phép lưu trữ dữ liệu theo kiểu **key-value**, tương tự như object.
+**[Map](/map-trong-javascript-thi-sao)** là một cấu trúc dữ liệu cho phép lưu trữ dữ liệu theo kiểu **key-value**, tương tự như object.
 
 ## So sánh Map với Object trong JavaScript
 
@@ -38,32 +38,33 @@ Trước khi Map xuất hiện, người ta vẫn thường sử dụng Object c
 
 #### Kiểu dữ liệu của key
 
-Object chỉ cho phép lưu trữ **key** kiểu [String](/values-types-va-operators-trong-javascript-phan-2/) hoặc [Symbol](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
+Object chỉ cho phép lưu trữ **key** kiểu [String](/values-types-va-operators-trong-javascript-phan-2) hoặc [Symbol](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
 
 ```js
 const symbol1 = Symbol(1);
 const obj = {
-  x : 1,
-  "a b" : 2,
-  symbol1 : 3
+  x: 1,
+  "a b": 2,
+  symbol1: 3,
 };
 console.log(obj);
 // => {x: 1, a b: 2, symbol1: 3}
 ```
 
-Trong khi đó, Map cho phép **mọi kiểu dữ liệu** có thể làm key, kể cả [Number](/values-types-va-operators-trong-javascript-phan-1/), NaN, [Function](/tim-hieu-function-javascript/), Object,...
+Trong khi đó, Map cho phép **mọi kiểu dữ liệu** có thể làm key, kể cả [Number](/values-types-va-operators-trong-javascript-phan-1), NaN, [Function](/tim-hieu-function-javascript), Object,...
 
 ```js
-const fun = function () {}
+const fun = function () {};
 const set = new Set();
 const map = new Map();
-map.set(NaN, 1)
-    .set(1, 2)
-    .set("a", 3)
-    .set([2], 4)
-    .set({x : 3}, 5)
-    .set(fun, 6)
-    .set(set, 7);
+map
+  .set(NaN, 1)
+  .set(1, 2)
+  .set("a", 3)
+  .set([2], 4)
+  .set({ x: 3 }, 5)
+  .set(fun, 6)
+  .set(set, 7);
 
 // Map(7) {
 //  NaN => 1, 1 => 2, "a" => 3, [2] => 4, {x : 3} => 5, function() {} => 6, Set(0) => 7
@@ -76,34 +77,34 @@ Map duy trì thứ tự của key giống như khi nó được thêm vào.
 
 ```js
 const map = new Map();
-map.set('xyz', 1);
-map.set('b', 2);
-map.set('1', 4);
+map.set("xyz", 1);
+map.set("b", 2);
+map.set("1", 4);
 
-for(const key of map.keys()) {
+for (const key of map.keys()) {
   console.log(key);
 }
 /*
-* xyz
-* b
-* 1
-*/
+ * xyz
+ * b
+ * 1
+ */
 ```
 
 Object thì không đảm bảo thứ tự này.
 
 ```js
-const obj = { xyz : 1 };
+const obj = { xyz: 1 };
 obj.b = 2;
-obj['1'] = 4;
-for(const key in obj) {
+obj["1"] = 4;
+for (const key in obj) {
   console.log(key);
 }
 /*
-* 1
-* xyz
-* b
-*/
+ * 1
+ * xyz
+ * b
+ */
 ```
 
 #### Xác định kích thước
@@ -112,9 +113,9 @@ Bạn có thể lấy kích thước của Map thông qua thuộc tính _size_.
 
 ```js
 const map = new Map();
-map.set('xyz', 1);
-map.set('b', 2);
-map.set('1', 4);
+map.set("xyz", 1);
+map.set("b", 2);
+map.set("1", 4);
 
 console.log(map.size);
 // => 3
@@ -122,12 +123,12 @@ console.log(map.size);
 
 Đối với Object, bạn phải đếm số lượng các thuộc tính thủ công. Hoặc bạn cũng có thể tính được số lượng này thông qua phương thức [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys).
 
-Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tính của Object. Lúc này, bạn chỉ cần sử dụng thuộc tính _length_ của [Array](/javascript-array-co-ban/) là được.
+Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tính của Object. Lúc này, bạn chỉ cần sử dụng thuộc tính _length_ của [Array](/javascript-array-co-ban) là được.
 
 ```js
-const obj = { xyz : 1 };
+const obj = { xyz: 1 };
 obj.b = 2;
-obj['1'] = 4;
+obj["1"] = 4;
 
 let size = 0;
 for (const key in obj) size++;
@@ -143,7 +144,10 @@ console.log(Object.keys(obj).length);
 Để kiểm tra xem một key có tồn tại trong Map hay chưa, bạn có thể dùng phương thức có sẵn là _has_.
 
 ```js
-const map = new Map([["a", 1], ["b", 2]]);
+const map = new Map([
+  ["a", 1],
+  ["b", 2],
+]);
 console.log(map.has("a")); // => true
 console.log(map.has("c")); // => false
 ```
@@ -151,7 +155,7 @@ console.log(map.has("c")); // => false
 Còn đối với Object, bạn phải sử dụng gián tiếp thông qua phương thức _Object.keys()_ như bên trên.
 
 ```js
-const obj = { "a" : 1, "b" : 2 };
+const obj = { a: 1, b: 2 };
 const hasKey = (obj, key) => Object.keys(obj).indexOf(key) !== -1;
 console.log(hasKey(obj, "a")); // => true
 console.log(hasKey(obj, "c")); // => false
@@ -172,43 +176,46 @@ Bạn có thể duyệt qua các phần tử của Map (để lấy _key_, _valu
 _Entry là một phần tử của Map, có dạng mảng [key, value]_.
 
 ```js
-const map = new Map([["a", 1], ["b", 2]]);
+const map = new Map([
+  ["a", 1],
+  ["b", 2],
+]);
 for (const key of map.keys()) {
   console.log(key);
 }
 /*
-* a
-* b
-*/
+ * a
+ * b
+ */
 
 for (const value of map.values()) {
   console.log(value);
 }
 /*
-* 1
-* 2
-*/
+ * 1
+ * 2
+ */
 
 for (const [key, value] of map) {
   console.log(key, value);
 }
 /*
-* a 1
-* b 2
-*/
+ * a 1
+ * b 2
+ */
 ```
 
 Ngược lại, với Object, bạn chỉ có thể duyệt qua các _key_, sau đó mới lấy _value_ thông qua _key_.
 
 ```js
-const obj = { "a" : 1, "b" : 2 };
+const obj = { a: 1, b: 2 };
 for (const key in obj) {
   console.log(key, obj[key]);
 }
 /*
-* a 1
-* b 2
-*/
+ * a 1
+ * b 2
+ */
 ```
 
 ## Lời kết
@@ -234,5 +241,5 @@ Xin chào và hẹn gặp lại!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -20,17 +20,17 @@ Xin chào bạn đến với Học React qua ví dụ #6. Bài này mình sẽ t
   Xem Demo Tab Content
 </a>
 
-Về cơ bản thì phần này khá giống với Tab Gallery, chỉ khác ở chỗ là nội dung ứng với mỗi tab là bất kỳ chứ không phải chỉ mỗi ảnh. Vì vậy, nếu bạn đã theo dõi bài viết về [Tab Gallery](/hoc-react-qua-vi-du-5-tab-gallery/) thì bài này sẽ rất đơn giản. Vì nó hoàn toàn tương tự.
+Về cơ bản thì phần này khá giống với Tab Gallery, chỉ khác ở chỗ là nội dung ứng với mỗi tab là bất kỳ chứ không phải chỉ mỗi ảnh. Vì vậy, nếu bạn đã theo dõi bài viết về [Tab Gallery](/hoc-react-qua-vi-du-5-tab-gallery) thì bài này sẽ rất đơn giản. Vì nó hoàn toàn tương tự.
 
 Sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #6 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #6 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
 
 ## Cấu trúc Project
 
@@ -65,8 +65,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_resize_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
@@ -80,13 +80,13 @@ export default class TabContent extends React.Component {
 
     // Tạo ra một mảng để lưu ref của các tab content
     this.refTabContents = [];
-    this.props.input.forEach(_ => {
+    this.props.input.forEach((_) => {
       this.refTabContents.push(React.createRef());
     });
 
     // Mặc định sẽ hiển thị tab đầu tiên, nên this.state.tabIndex = 0
     this.state = {
-      tabIndex: 0
+      tabIndex: 0,
     };
 
     this.changeTabIndex = this.changeTabIndex.bind(this);
@@ -98,7 +98,7 @@ export default class TabContent extends React.Component {
    */
   changeTabIndex(index) {
     this.setState({
-      tabIndex: index
+      tabIndex: index,
     });
   }
 
@@ -166,9 +166,9 @@ export default class TabContent extends React.Component {
             return (
               <button
                 key={index}
-                className={
-                  `tab-link ${this.state.tabIndex === index ? "active" : ""}`
-                }
+                className={`tab-link ${
+                  this.state.tabIndex === index ? "active" : ""
+                }`}
                 onClick={() => this.changeTabIndex(index)}
               >
                 {tabContent.title}
@@ -180,9 +180,9 @@ export default class TabContent extends React.Component {
         <div className="tab-content-wrapper">
           {this.props.input.map((tabContent, index) => {
             return (
-              <div 
-                ref={this.refTabContents[index]} 
-                key={index} 
+              <div
+                ref={this.refTabContents[index]}
+                key={index}
                 className={`tab-content`}
               >
                 {tabContent.content}
@@ -216,7 +216,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 /* Style the tab */
 
-.lp-tab-content>.tab {
+.lp-tab-content > .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
@@ -224,7 +224,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 /* Style the buttons that are used to open the tab content */
 
-.lp-tab-content>.tab>.tab-link {
+.lp-tab-content > .tab > .tab-link {
   background-color: inherit;
   font-size: 1.05rem;
   float: left;
@@ -243,24 +243,24 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 /* Change background color of buttons on hover */
 
-.lp-tab-content>.tab>.tab-link:hover {
+.lp-tab-content > .tab > .tab-link:hover {
   background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
 
-.lp-tab-content>.tab>.tab-link.active {
+.lp-tab-content > .tab > .tab-link.active {
   background-color: #ccc;
 }
 
-.lp-tab-content>.tab-content-wrapper{
+.lp-tab-content > .tab-content-wrapper {
   position: relative;
   width: 100%;
 }
 
 /* Style the tab content */
 
-.lp-tab-content>.tab-content-wrapper>.tab-content {
+.lp-tab-content > .tab-content-wrapper > .tab-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -299,7 +299,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 **./src/App.js**
 
-Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow/), [Modal Image](/hoc-react-qua-vi-du-3-modal-image/) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox/).
+Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow), [Modal Image](/hoc-react-qua-vi-du-3-modal-image) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox).
 
 ```jsx
 import React from "react";
@@ -321,7 +321,7 @@ import LightBox from "./components/lightbox/lightbox";
 const collection = [
   { src: img1, caption: "Caption one" },
   { src: img2, caption: "Caption two" },
-  { src: img3, caption: "Caption three" }
+  { src: img3, caption: "Caption three" },
 ];
 
 export default class App extends React.Component {
@@ -331,25 +331,21 @@ export default class App extends React.Component {
         title: "Section1",
         content: (
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris,
-            nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris, nisi ut
+            aliquip ex ea commodo consequat.
           </p>
-        )
+        ),
       },
       {
         title: "Section2",
         content: (
           <div>
             <h2> Slideshow </h2>
-            <Slideshow 
-              input={collection} 
-              ratio={`3:2`} 
-              mode={`manual`} 
-            />
+            <Slideshow input={collection} ratio={`3:2`} mode={`manual`} />
           </div>
-        )
+        ),
       },
       {
         title: "Section3",
@@ -357,13 +353,13 @@ export default class App extends React.Component {
           <div>
             <h2>Image Modal</h2>
             <p>Click the image below to show the modal.</p>
-            <ModalImage 
-              src={img2} 
-              alt={`This is one of beautiful girls`} 
-              ratio={`3:2`} 
+            <ModalImage
+              src={img2}
+              alt={`This is one of beautiful girls`}
+              ratio={`3:2`}
             />
           </div>
-        )
+        ),
       },
       {
         title: "Section 4",
@@ -374,8 +370,8 @@ export default class App extends React.Component {
 
             <LightBox input={collection} ratio={`3:2`} />
           </div>
-        )
-      }
+        ),
+      },
     ];
     return (
       <div className="App">
@@ -386,9 +382,8 @@ export default class App extends React.Component {
 
         <div>
           <p>
-            Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. 
-            {" "}Visit me at{" "}
-            <a href="/">completejavascript.com</a>.
+            Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit
+            me at <a href="/">completejavascript.com</a>.
           </p>
         </div>
       </div>
@@ -399,7 +394,7 @@ export default class App extends React.Component {
 
 Trong đó, Tab Content Component có các thuộc tính là:
 
-- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các tab, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/) gồm **title** - tên của tab và **content** - là một react element được viết theo JSX để miêu tả nội dung phần content.
+- **input ([Array](/javascript-array-co-ban)):** mảng chứa thông tin các tab, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least) gồm **title** - tên của tab và **content** - là một react element được viết theo JSX để miêu tả nội dung phần content.
 
 ## Lời kết
 
@@ -407,7 +402,7 @@ Trên đây là kết quả sau khi mình học React qua ví dụ #6 – Tab Co
 
 <a href="https://about.phamvanlam.com/learn-react-by-example/#/tab-content/" class="btn btn-primary margin-bottom">
   Xem Demo
-</a> 
+</a>
 
 Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
 

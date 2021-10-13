@@ -32,7 +32,7 @@ Git hỗ trợ Windows, Macs và Linux. Đối với Macs, tôi chưa dùng bao 
 - Windows: bạn có thể cài [Git for windows](https://git-scm.com/download) hoặc [Tortoisegit](https://tortoisegit.org/download/) (giao diện đồ hoạ).
 - Linux: xem hướng dẫn tại [đây](https://git-scm.com/download/linux).
 
-Nếu bạn không quen sử dụng các câu lệnh thì có thể sử dụng TortoiseGit. Còn cá nhân, tôi sử dụng Git trên [Ubuntu](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux/).
+Nếu bạn không quen sử dụng các câu lệnh thì có thể sử dụng TortoiseGit. Còn cá nhân, tôi sử dụng Git trên [Ubuntu](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux).
 
 Sau khi cài đặt Git xong, chúng ta bắt đầu tìm hiểu về Git.
 
@@ -202,7 +202,7 @@ Câu lệnh Git này dùng để lấy source code từ server về Working Spac
 
 Trong trường hợp bạn làm việc một mình thì hầu như sẽ chẳng có rắc rối gì xảy ra. Nhưng khi làm việc theo nhóm thì chuyện xung đột và giải quyết xung đột là điều không thể tránh khỏi. Phần này tôi sẽ giới thiệu với các bạn trong một bài viết khác sau.
 
-Bài viết này sẽ dừng lại tại đây, hẹn gặp lại bạn trong [bài viết tiếp theo](/phan-biet-var-va-let-trong-javascript/), thân ái!
+Bài viết này sẽ dừng lại tại đây, hẹn gặp lại bạn trong [bài viết tiếp theo](/phan-biet-var-va-let-trong-javascript), thân ái!
 
 <hr class="border-color-light-grey" />
 

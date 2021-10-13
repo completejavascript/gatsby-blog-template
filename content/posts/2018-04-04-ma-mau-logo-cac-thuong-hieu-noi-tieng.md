@@ -186,7 +186,7 @@ Trên đây là mã màu của một số thương hiệu nổi tiếng. Nếu b
 
 Ngoài ra, nếu bạn muốn tự tìm kiếm các palette màu mới, cập nhật xu hướng thì có thể tham khảo các trang [web tạo palette màu](/trang-web-tao-palette-mau-cuc-tot).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/cach-su-dung-hang-so-trong-es5-va-es6/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/cach-su-dung-hang-so-trong-es5-va-es6), thân ái!
 
 <hr class="border-color-light-grey" />
 

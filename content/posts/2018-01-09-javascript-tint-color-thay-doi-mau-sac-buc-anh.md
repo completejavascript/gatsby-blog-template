@@ -19,7 +19,7 @@ Xin chào bạn. Hình như là đã lâu rồi mình chưa viết bài nào v�
 
 ## JavaScript Tint Color là gì?
 
-JavaScript Tint Color là việc sử dụng [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) ([Canvas](https://www.tutorialspoint.com/html5/html5_canvas.htm)) để thay đổi màu sắc của một bức ảnh. Bạn có thể thấy ở phía trên. Cùng là ảnh một ngôi sao nhưng màu sắc của chúng là khác nhau. Bình thường, bạn cần phải tạo ra những tệp tin ảnh tương ứng với mỗi màu. Nhưng khi áp dụng JavaScript Tint Color, chúng ta chỉ cần một bức ảnh ban đầu, sau đó có thể tạo ra vô số bức ảnh tương tự với màu sắc khác nhau.
+JavaScript Tint Color là việc sử dụng [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) ([Canvas](https://www.tutorialspoint.com/html5/html5_canvas.htm)) để thay đổi màu sắc của một bức ảnh. Bạn có thể thấy ở phía trên. Cùng là ảnh một ngôi sao nhưng màu sắc của chúng là khác nhau. Bình thường, bạn cần phải tạo ra những tệp tin ảnh tương ứng với mỗi màu. Nhưng khi áp dụng JavaScript Tint Color, chúng ta chỉ cần một bức ảnh ban đầu, sau đó có thể tạo ra vô số bức ảnh tương tự với màu sắc khác nhau.
 
 ## Những lợi ích của JavaScript Tint Color
 
@@ -50,12 +50,12 @@ class TintColor {
   }
   run() {
     return new Promise((resolve, reject) => {
-      let canvas = document.createElement('canvas');
-      let context = canvas.getContext('2d');
+      let canvas = document.createElement("canvas");
+      let context = canvas.getContext("2d");
       let image = new Image();
       image.crossOrigin = "Anonymous";
       image.onload = () => {
-        canvas.width  = image.width;
+        canvas.width = image.width;
         canvas.height = image.height;
 
         context.drawImage(image, 0, 0, canvas.width, canvas.height);
@@ -73,27 +73,32 @@ class TintColor {
           }
         }
         context.putImageData(imgData, 0, 0);
-        resolve({url: canvas.toDataURL(), width: image.width, height: image.height});
+        resolve({
+          url: canvas.toDataURL(),
+          width: image.width,
+          height: image.height,
+        });
       };
-      image.onerror = error => reject(this._srcImage, error);
+      image.onerror = (error) => reject(this._srcImage, error);
       image.src = this._srcImage;
     });
   }
   _getRGBAArray(color) {
     // Check input as rgba/rgb color
-    let m = 
-      /^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d+(?:\.\d+)?)\s*)?\)$/
-      .exec(color);
+    let m =
+      /^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d+(?:\.\d+)?)\s*)?\)$/.exec(
+        color
+      );
 
-    if(m) {
-      if(m[4]) return [m[1], m[2], m[3], m[4] * 255];
+    if (m) {
+      if (m[4]) return [m[1], m[2], m[3], m[4] * 255];
       return [m[1], m[2], m[3], 255];
     }
 
     // Check input as hex 6-digit color
     m = /^#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})$/.exec(color);
-    if(m) {
-      return [parseInt(m[1], 16), parseInt(m[2], 16) , parseInt(m[3], 16), 255];
+    if (m) {
+      return [parseInt(m[1], 16), parseInt(m[2], 16), parseInt(m[3], 16), 255];
     }
   }
 }
@@ -105,7 +110,7 @@ class TintColor {
 
 Trong đó:
 
-- **srcImage**: ([string](/values-types-va-operators-trong-javascript-phan-2/)) là đường dẫn đến bức ảnh, có thể là đường dẫn tương đối đến một vị trí trên server hoặc đường dẫn tuyệt đối đến một host (cdn) lưu trữ ảnh.
+- **srcImage**: ([string](/values-types-va-operators-trong-javascript-phan-2)) là đường dẫn đến bức ảnh, có thể là đường dẫn tương đối đến một vị trí trên server hoặc đường dẫn tuyệt đối đến một host (cdn) lưu trữ ảnh.
 
 - **tintColor**: (string) là mã màu mới dạng HEX hoặc RGB hay RGBA. Ví dụ: *#ff00ff* hoặc _rgb(255, 0, 255)_ hay _rgba(255, 0, 255, 0.5)_.
 
@@ -138,29 +143,32 @@ function setImage(divElement, srcURL, width, height) {
 }
 ```
 
-Trong đó, hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript/) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
+Trong đó, hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
 
 Tiếp theo, mình sẽ sử dụng **TintColor.js** để thay đổi màu sắc của bức ảnh. Ở đây, mình thử với cả 3 loại mã màu khác nhau là: HEX, RGB và RGBA.
 
 ```js
-new TintColor(srcImg, "#ff0000").run()
-  .then(result => setImage($("#newImg1"), result.url, 150, 150))
-  .catch(err => console.log(err));
+new TintColor(srcImg, "#ff0000")
+  .run()
+  .then((result) => setImage($("#newImg1"), result.url, 150, 150))
+  .catch((err) => console.log(err));
 
-  new TintColor(srcImg, "rgba(255, 0, 255, 0.8)").run()
-  .then(result => setImage($("#newImg2"), result.url, 150, 150))
-  .catch(err => console.log(err));
+new TintColor(srcImg, "rgba(255, 0, 255, 0.8)")
+  .run()
+  .then((result) => setImage($("#newImg2"), result.url, 150, 150))
+  .catch((err) => console.log(err));
 
-  new TintColor(srcImg, "rgb(127, 127, 255)").run()
-  .then(result => setImage($("#newImg3"), result.url, 150, 150))
-  .catch(err => console.log(err));
+new TintColor(srcImg, "rgb(127, 127, 255)")
+  .run()
+  .then((result) => setImage($("#newImg3"), result.url, 150, 150))
+  .catch((err) => console.log(err));
 ```
 
 Bạn có thể thấy là cách sử dụng TintColor.js rất là đơn giản phải không ạ!
 
 Tuy nhiên, mình rất mong muốn nhận được phản hồi của bạn đọc để có thể cải tiến và hoàn thiện thư viện này. Vì vậy, mình sẽ vui khi nhận được phản hồi của bạn.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-web-worker-javascript-o-background/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-web-worker-javascript-o-background), thân ái!
 
 <hr class="border-color-light-grey" />
 

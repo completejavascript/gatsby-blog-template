@@ -13,7 +13,7 @@ tags:
   - Strict Mode
 ---
 
-Trong [bài viết trước](/debug-javascript-de-hay-kho/), mình có đề cập tới việc sử dụng Strict mode trong việc giảm thiểu những lỗi ngớ ngẩn của lập trình viên khi lập trình JavaScript. Như đã hứa, mình sẽ đưa ra một số lỗi phổ biến khi sử dụng chế độ này.
+Trong [bài viết trước](/debug-javascript-de-hay-kho), mình có đề cập tới việc sử dụng Strict mode trong việc giảm thiểu những lỗi ngớ ngẩn của lập trình viên khi lập trình JavaScript. Như đã hứa, mình sẽ đưa ra một số lỗi phổ biến khi sử dụng chế độ này.
 
 ## Sử dụng biến không khai báo
 
@@ -51,12 +51,16 @@ console.log(Infinity);
 // => Infinity
 
 var obj = {};
-Object.defineProperty(obj, 'x', {value: 42, writable: false});
+Object.defineProperty(obj, "x", { value: 42, writable: false });
 obj.x = 9;
 console.log(obj.x);
 // => 42
 
-var obj = {get x(){return 15;}};
+var obj = {
+  get x() {
+    return 15;
+  },
+};
 obj.x = 10;
 console.log(obj.x);
 // => 15
@@ -91,12 +95,16 @@ console.log(Infinity);
 // => Uncaught TypeError: Cannot assign to read only property 'Infinity' of object '#<Window>'
 
 var obj = {};
-Object.defineProperty(obj, 'x', {value: 42, writable: false});
+Object.defineProperty(obj, "x", { value: 42, writable: false });
 obj.x = 9;
 console.log(obj.x);
 // => Uncaught TypeError: Cannot assign to read only property 'x' of object '#<Object>'
 
-var obj = {get x(){return 15;}};
+var obj = {
+  get x() {
+    return 15;
+  },
+};
 obj.x = 10;
 console.log(obj.x);
 // => Uncaught TypeError: Cannot set property x of #<Object> which has only a getter
@@ -115,7 +123,7 @@ Bình thường, bạn sẽ không thể xoá thuộc tính của một đối t
 Ví dụ: Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
 
 ```js
-'use strict';
+"use strict";
 delete Object.prototype;
 // Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
 ```
@@ -127,8 +135,8 @@ Strict mode yêu cầu các tham số phải có tên khác nhau. Ngược lại
 Uncaught SyntaxError: Duplicate parameter name not allowed in this context
 
 ```js
-function sum(a, a, c){
-  'use strict'
+function sum(a, a, c) {
+  "use strict";
   return a + b + c;
 }
 // => Uncaught SyntaxError: Duplicate parameter name not allowed in this context
@@ -136,21 +144,21 @@ function sum(a, a, c){
 
 ## Thêm thuộc tính cho những giá trị nguyên thuỷ
 
-Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](/values-types-va-operators-trong-javascript-phan-1/), [string, boolean.](/values-types-va-operators-trong-javascript-phan-2/) Ngược lại, bạn sẽ bị lỗi như:
+Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](/values-types-va-operators-trong-javascript-phan-1), [string, boolean.](/values-types-va-operators-trong-javascript-phan-2) Ngược lại, bạn sẽ bị lỗi như:
 
 - Uncaught TypeError: Cannot create property 'true' on boolean 'false'
 - Uncaught TypeError: Cannot create property 'sailing' on number '14'
 - Uncaught TypeError: Cannot create property 'you' on string 'with'
 
 ```js
-'use strict';
+"use strict";
 false.true = false;
 // => Uncaught TypeError: Cannot create property 'true' on boolean 'false'
 
-(14).sailing = 'home';
+(14).sailing = "home";
 // => Uncaught TypeError: Cannot create property 'sailing' on number '14'
 
-'with'.you = 'far away';
+"with".you = "far away";
 // => Uncaught TypeError: Cannot create property 'you' on string 'with'
 ```
 
@@ -170,25 +178,25 @@ delete x;
 
 ## Đặt tên biến trùng với từ dự trữ
 
-Ngoài từ khoá, [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.
+Ngoài từ khoá, [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.
 
 Do đó, strict mode nghiêm cấm bạn đặt tên biến số trùng với những từ này. Nếu bạn đặt tên biến trùng với từ dự trữ thì bạn sẽ bị lỗi như sau:
 
 Uncaught SyntaxError: Unexpected strict mode reserved word
 
 ```js
-'use strict';
+"use strict";
 var implements = 10;
-// => Uncaught SyntaxError: Unexpected strict mode 
+// => Uncaught SyntaxError: Unexpected strict mode
 ```
 
 ## Kết luận
 
-Trên đây là một số lỗi thường gặp phải khi bạn sử dụng JavaScript ở strict mode. Nói vậy, không có nghĩa là mình khuyên bạn tránh sử dụng strict mode. Ngược lại, chế độ này giúp bạn dễ dàng [phát hiện lỗi](/debug-javascript-de-hay-kho/). Và đây là sự đảm bảo cho code bạn không bị xung đột với những phiên bản JavaScript mới hơn sau này.
+Trên đây là một số lỗi thường gặp phải khi bạn sử dụng JavaScript ở strict mode. Nói vậy, không có nghĩa là mình khuyên bạn tránh sử dụng strict mode. Ngược lại, chế độ này giúp bạn dễ dàng [phát hiện lỗi](/debug-javascript-de-hay-kho). Và đây là sự đảm bảo cho code bạn không bị xung đột với những phiên bản JavaScript mới hơn sau này.
 
 Bài viết này sẽ dừng lại ở đây.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-regular-expression-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-regular-expression-javascript), thân ái!
 
 ## Tham khảo
 

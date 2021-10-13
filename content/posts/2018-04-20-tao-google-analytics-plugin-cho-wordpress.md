@@ -73,7 +73,7 @@ add_action( 'wp_head', 'wp_lpdevs_google_analytics');
 
 Trên đây là các bước mình tạo Google Analytics Plugin cho Wordpress. Nếu có góp ý hoặc thắc mắc gì, vui lòng để lại cho mình trong phần bình luận.
 
-Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/phan-biet-arrow-function-va-function-trong-javascript/), thân ái!
+Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/phan-biet-arrow-function-va-function-trong-javascript), thân ái!
 
 ## Tham khảo
 
@@ -84,5 +84,5 @@ Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/phan-biet-arrow
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

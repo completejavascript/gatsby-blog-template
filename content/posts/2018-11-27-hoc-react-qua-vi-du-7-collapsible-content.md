@@ -24,13 +24,13 @@ Theo như từ điển anh việt thì Collapsible nghĩa là: **có thể gập
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #7 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #7 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
 
 ## Cấu trúc Project
 
@@ -64,8 +64,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_resize_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
@@ -85,7 +85,7 @@ export default class CollapsibleContent extends React.Component {
      * thì mặc định this.state.isActive là false
      */
     this.state = {
-      isActive: this.props.isActive || false
+      isActive: this.props.isActive || false,
     };
 
     this.toggleCollapseContent = this.toggleCollapseContent.bind(this);
@@ -100,17 +100,17 @@ export default class CollapsibleContent extends React.Component {
    */
   toggleCollapseContent() {
     this.setState({
-      isActive: !this.state.isActive
+      isActive: !this.state.isActive,
     });
   }
 
   /**
    * Cập nhật maxHeight của khu vực content,
-   * 
-   * Nếu this.state.isActive là true thì 
+   *
+   * Nếu this.state.isActive là true thì
    * khu vực content có maxHeight = giá trị thực tế nó cần.
-   * 
-   * Nếu this.state.isActive là false thì 
+   *
+   * Nếu this.state.isActive là false thì
    * khu vực content có maxHeight = 0 => content bị ẩn.
    */
   updateContentMaxHeight() {
@@ -193,7 +193,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 /* Style the buttons that are used to open and close the content */
 
-.lp-collapsible-content>.title {
+.lp-collapsible-content > .title {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -213,14 +213,14 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 * and when you move the mouse over it (hover)
 */
 
-.lp-collapsible-content>.title.active,
-.lp-collapsible-content>.title:hover {
+.lp-collapsible-content > .title.active,
+.lp-collapsible-content > .title:hover {
   background-color: #ccc;
 }
 
 /* Style the content. Note: hidden by default */
 
-.lp-collapsible-content>.content {
+.lp-collapsible-content > .content {
   padding: 0 18px;
   background-color: white;
   max-height: 0;
@@ -231,8 +231,8 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
   -o-transition: max-height 0.2s ease-out;
 }
 
-.lp-collapsible-content>.title:after {
-  content: '\02795';
+.lp-collapsible-content > .title:after {
+  content: "\02795";
   /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
@@ -241,7 +241,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
   margin-top: 3px;
 }
 
-.lp-collapsible-content>.title.active:after {
+.lp-collapsible-content > .title.active:after {
   content: "\2796";
   /* Unicode character for "minus" sign (-) */
 }
@@ -272,24 +272,24 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 **./src/App.js**
 
-Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow/), [Modal Image](/hoc-react-qua-vi-du-3-modal-image/) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox/).
+Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow), [Modal Image](/hoc-react-qua-vi-du-3-modal-image) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox).
 
 ```jsx
-import React from 'react';
-import './App.css';
-import CollapsibleContent from './components/collapsible-content/collapsible-content';
+import React from "react";
+import "./App.css";
+import CollapsibleContent from "./components/collapsible-content/collapsible-content";
 
 // Kết hợp Slideshow trong Collapsible Content
-import Slideshow from './components/slideshow/slideshow';
-import img1 from './images/01.jpg';
-import img2 from './images/02.jpg';
-import img3 from './images/03.jpg';
+import Slideshow from "./components/slideshow/slideshow";
+import img1 from "./images/01.jpg";
+import img2 from "./images/02.jpg";
+import img3 from "./images/03.jpg";
 
 // Kết hợp Modal Image trong Collapsible Content
-import ModalImage from './components/modal-image/modal-image';
+import ModalImage from "./components/modal-image/modal-image";
 
 // Kết hợp Lightbox trong Collapsible Content
-import LightBox from './components/lightbox/lightbox';
+import LightBox from "./components/lightbox/lightbox";
 
 const collection = [
   { src: img1, caption: "Caption one" },
@@ -302,24 +302,22 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <h2>Collapsible Content</h2>
-        <p>Click on each section to toggle between hiding and showing the content</p>
+        <p>
+          Click on each section to toggle between hiding and showing the content
+        </p>
 
         <CollapsibleContent title={`Section 1`} isActive={true}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </p>
         </CollapsibleContent>
 
         <CollapsibleContent title={`Section 2`}>
           <h2> Slideshow </h2>
-          <Slideshow
-            input={collection}
-            ratio={`3:2`}
-            mode={`manual`}
-          />
+          <Slideshow input={collection} ratio={`3:2`} mode={`manual`} />
         </CollapsibleContent>
 
         <CollapsibleContent title={`Section 3`}>
@@ -336,16 +334,13 @@ export default class App extends React.Component {
           <h2>LightBox</h2>
           <p>Click on each image below to show the modal.</p>
 
-          <LightBox
-            input={collection}
-            ratio={`3:2`}
-          />
+          <LightBox input={collection} ratio={`3:2`} />
         </CollapsibleContent>
 
         <div>
           <p>
-            Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>.
-            Visit me at <a href="/">completejavascript.com</a>.
+            Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit
+            me at <a href="/">completejavascript.com</a>.
           </p>
         </div>
       </div>
@@ -356,7 +351,7 @@ export default class App extends React.Component {
 
 Trong đó, Collapsible Content Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
-- **title ([String](/values-types-va-operators-trong-javascript-phan-2/)):** là title của component
+- **title ([String](/values-types-va-operators-trong-javascript-phan-2)):** là title của component
 - **isActive** (**Boolean**): là biến để xác định xem Component có được active hay không. Nếu **isActive** có giá trị **true** thì Component sẽ hiển thị nội dung dạng mở rộng.
 
 ## Lời kết

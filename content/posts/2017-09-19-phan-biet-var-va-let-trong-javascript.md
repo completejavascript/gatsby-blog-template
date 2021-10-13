@@ -12,7 +12,7 @@ tags:
   - ES6
 ---
 
-Từ trước tới giờ, có thể bạn đã quen dùng **var** để khai báo [biến](/values-types-va-operators-trong-javascript-phan-1/) trong JavaScript. Tuy nhiên, từ phiên bản ES6, bạn có thêm một sự lựa chọn nữa là **let**. Vậy **let** giống và khác **var** như thế nào? Bài viết này sẽ giúp bạn phân biệt **var** và **let** trong JavaScript. Qua đó, bạn biết cách sử dụng chúng sao cho phù hợp nhất.
+Từ trước tới giờ, có thể bạn đã quen dùng **var** để khai báo [biến](/values-types-va-operators-trong-javascript-phan-1) trong JavaScript. Tuy nhiên, từ phiên bản ES6, bạn có thêm một sự lựa chọn nữa là **let**. Vậy **let** giống và khác **var** như thế nào? Bài viết này sẽ giúp bạn phân biệt **var** và **let** trong JavaScript. Qua đó, bạn biết cách sử dụng chúng sao cho phù hợp nhất.
 
 ## Giống nhau
 
@@ -21,7 +21,7 @@ Từ trước tới giờ, có thể bạn đã quen dùng **var** để khai b�
 
 ## Khác nhau
 
-- Phạm vi của biến số sử dụng **var** là phạm vi hàm số hoặc bên ngoài [hàm số](/tim-hieu-function-javascript/), toàn cục.
+- Phạm vi của biến số sử dụng **var** là phạm vi hàm số hoặc bên ngoài [hàm số](/tim-hieu-function-javascript), toàn cục.
 - Phạm vi của biến số sử dụng **let** là phạm vi một khối, xác định bởi cặp {}
 
 ### Ví dụ phân biệt var và let
@@ -57,7 +57,7 @@ Câu trả lời là cả hai. Mặc dù, việc sử dụng **let** có vẻ gi
 
 Hy vọng qua bài viết ngắn gọn này bạn có thể phân biệt **var** và **let** trong JavaScript.
 
-Cuối cùng, hẹn gặp lại bạn trong [bài viết tiếp theo](/gui-mail-bang-html-va-formspree-io/), thân ái!
+Cuối cùng, hẹn gặp lại bạn trong [bài viết tiếp theo](/gui-mail-bang-html-va-formspree-io), thân ái!
 
 ## Tham khảo
 

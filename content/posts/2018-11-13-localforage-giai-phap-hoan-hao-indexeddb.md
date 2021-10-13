@@ -12,18 +12,18 @@ tags:
   - IndexedDB
 ---
 
-[IndexedDB](/javascript-indexeddb-tai-sao-khong/) là một local database dạng NoSQL cho phép lưu trữ dữ liệu ngay trên trình duyệt. Nó cho phép lưu trữ một lượng dữ liệu lớn với các kiểu dữ liệu khác nhau (bao gồm cả file/blob); hỗ trợ trên nhiều trình duyệt và cung cấp khả năng truy cập nhanh. Qua đó, IndexedDB giúp cho web app có khả năng hoạt động offline một cách mượt mà.
+[IndexedDB](/javascript-indexeddb-tai-sao-khong) là một local database dạng NoSQL cho phép lưu trữ dữ liệu ngay trên trình duyệt. Nó cho phép lưu trữ một lượng dữ liệu lớn với các kiểu dữ liệu khác nhau (bao gồm cả file/blob); hỗ trợ trên nhiều trình duyệt và cung cấp khả năng truy cập nhanh. Qua đó, IndexedDB giúp cho web app có khả năng hoạt động offline một cách mượt mà.
 
 Tuy nhiên, IndexedDB lại có nhược điểm lớn là nó chỉ cung cấp API cấp thấp. Khi sử dụng IndexedDB bạn phải quan tâm đến những thứ như: transaction, objectStore, cursor,... và nó còn không hỗ trợ [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise). Điều này làm cho việc sử dụng IndexedDB trở nên khá khó khăn và phức tạp.
 
-May mắn thay, [localForage](https://localforage.github.io/localForage/) đã ra đời và giúp cho việc sử dụng IndexedDB trở nên đơn giản hơn rất nhiều.
+May mắn thay, [localForage](https://localforage.github.io/localForage) đã ra đời và giúp cho việc sử dụng IndexedDB trở nên đơn giản hơn rất nhiều.
 
 ## LocalForage là gì?
 
 LocalForage là một thư viện JavaScript mã nguồn mở, giúp cho việc giao tiếp với database trên trình duyệt (đặc biệt là IndexedDB) trở nên đơn giản hơn và tiện lợi hơn với những đặc điểm:
 
 - API gần giống với [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) bao gồm: _setItem()_, _getItem()_, _removeItem()_, _clear()_ và thêm một số API khác nữa.
-- Hỗ trợ [ES6](/tag/es6/) Promise API
+- Hỗ trợ [ES6](/tag/es6) Promise API
 - Hỗ trợ sử dụng IndexedDB và [Web SQL](https://en.wikipedia.org/wiki/Web_SQL_Database). Tuy nhiên, nếu browser không hỗ trợ thì localForage sẽ quay về sử dụng localStorage.
 - [Hỗ trợ trên nhiều trình duyệt khác nhau](https://caniuse.com/#feat=indexeddb) như: Chrome, Firefox, IE, và Safari (bao gồm cả Safari Mobile).
 
@@ -39,7 +39,9 @@ Hoặc tải [phiên bản release mới nhất](https://github.com/mozilla/loca
 
 ```html
 <script src="localforage.js"></script>
-<script>console.log('localforage is: ', localforage);</script>
+<script>
+  console.log("localforage is: ", localforage);
+</script>
 ```
 
 mà không cần phải **init** hay chờ các sự kiện như **onready**.
@@ -58,7 +60,7 @@ Và sử dụng nó với các bundler (như Webpack) bằng cách:
 
 ```js
 import localforage from "localforage";
-localforage.setItem('key', 'value');
+localforage.setItem("key", "value");
 ```
 
 ## Cách sử dụng một số API của localForage
@@ -76,11 +78,11 @@ localforage.setItem(key, value, successCallback);
 // Hoặc sử dụng promise
 localforage
   .setItem(key, value)
-  .then(function(value) {
+  .then(function (value) {
     // Xử lý khi việc lưu key-value thành công
     console.log(value);
   })
-  .catch(function(err) {
+  .catch(function (err) {
     // Xử lý khi việc lưu key-value bị lỗi
     console.log(err);
   });
@@ -89,18 +91,18 @@ localforage
 Trong đó:
 
 - **key**: là string, phân biệt hoa-thường và được sử dụng để lấy giá trị ra sau này.
-- **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number](/values-types-va-operators-trong-javascript-phan-1/), [string](/values-types-va-operators-trong-javascript-phan-2/), [array](/javascript-array-co-ban/), [object](/javascript-object-last-but-not-least/), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
+- **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number](/values-types-va-operators-trong-javascript-phan-1), [string](/values-types-va-operators-trong-javascript-phan-2), [array](/javascript-array-co-ban), [object](/javascript-object-last-but-not-least), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
 
 Ví dụ:
 
 ```js
 localforage
   .setItem("my point", { x: 1, y: 2 })
-  .then(function(value) {
+  .then(function (value) {
     console.log(value);
     // => {x: 1, y: 2}
   })
-  .catch(function(err) {
+  .catch(function (err) {
     console.log(err);
   });
 ```
@@ -118,11 +120,11 @@ localforage.getItem(key, successCallback);
 // Hoặc sử dụng promise
 localforage
   .getItem(key)
-  .then(function(value) {
+  .then(function (value) {
     // Xử lý khi việc lấy giá trị với key thành công
     console.log(value);
   })
-  .catch(function(err) {
+  .catch(function (err) {
     // Xử lý khi việc lấy giá trị với key bị lỗi
     console.log(err);
   });
@@ -133,11 +135,11 @@ Ví dụ:
 ```js
 localforage
   .getItem("my point")
-  .then(function(value) {
+  .then(function (value) {
     console.log(value.x, value.y);
     // => 1 2
   })
-  .catch(function(err) {
+  .catch(function (err) {
     console.log(err);
   });
 ```
@@ -147,11 +149,11 @@ localforage
 ```js
 localforage
   .getItem("her point")
-  .then(function(value) {
+  .then(function (value) {
     console.log(value);
     // => null
   })
-  .catch(function(err) {
+  .catch(function (err) {
     console.log(err);
   });
 ```
@@ -169,11 +171,11 @@ localforage.removeItem(key, successCallback);
 // Hoặc sử dụng promise
 localforage
   .removeItem(key)
-  .then(function() {
+  .then(function () {
     // Xử lý khi việc remove thành công
     console.log("Key is cleared!");
   })
-  .catch(function(err) {
+  .catch(function (err) {
     // Xử lý khi việc remove bị lỗi
     console.log(err);
   });
@@ -184,11 +186,11 @@ Ví dụ:
 ```js
 localforage
   .removeItem("my point")
-  .then(function() {
+  .then(function () {
     console.log("Key is cleared!");
     // => Key is cleared!
   })
-  .catch(function(err) {
+  .catch(function (err) {
     console.log(err);
   });
 ```
@@ -198,11 +200,11 @@ localforage
 ```js
 localforage
   .removeItem("her point")
-  .then(function() {
+  .then(function () {
     console.log("Key is cleared!");
     // => Key is cleared!
   })
-  .catch(function(err) {
+  .catch(function (err) {
     console.log(err);
   });
 ```
@@ -220,11 +222,11 @@ localforage.clear(successCallback);
 // Hoặc sử dụng promise
 localforage
   .clear()
-  .then(function() {
+  .then(function () {
     // Xử lý khi xoá database thành công
     console.log("Database is now empty.");
   })
-  .catch(function(err) {
+  .catch(function (err) {
     // Xử lý khi việc xoá bị lỗi.
     console.log(err);
   });
@@ -238,7 +240,7 @@ Ngoài 4 API giống với localStorage như trên ra, localForage còn hỗ tr�
 
 - length(successCallback): trả về số lượng cặp key-value trong database.
 - keys(successCallback): trả về một mảng chứa các key trong database.
-- iterate(iteratorCallback, successCallback): dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](/javascript-foreach-la-cai-quai-gi/).
+- iterate(iteratorCallback, successCallback): dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](/javascript-foreach-la-cai-quai-gi).
 - key(keyIndex, successCallback): trả về tên của key tương ứng với ID của nó.
 
 ## Cấu hình localForage
@@ -289,7 +291,7 @@ localforage.config({
   size,
   storeName,
   version,
-  description
+  description,
 });
 ```
 
@@ -303,11 +305,11 @@ Ví dụ mình tạo ra 2 instance của localForage để lưu trữ toạ đ�
 
 ```js
 let twoDStore = localforage.createInstance({
-  name: "2-D"
+  name: "2-D",
 });
 
 let threeDStore = localforage.createInstance({
-  name: "3-D"
+  name: "3-D",
 });
 ```
 
@@ -317,12 +319,12 @@ Khi đó dữ liệu ở mỗi instance sẽ không liên quan đến nhau (kể
 twoDStore.setItem("a", { x: 1, y: 2 });
 threeDStore.setItem("a", { x: 1, y: 2, z: 3 });
 
-twoDStore.getItem("a").then(value => {
+twoDStore.getItem("a").then((value) => {
   console.log(value);
   // => {x: 1, y: 2}
 });
 
-threeDStore.getItem("a").then(value => {
+threeDStore.getItem("a").then((value) => {
   console.log(value);
   // => {x: 1, y: 2, z: 3}
 });
@@ -337,7 +339,7 @@ Còn theo bạn, việc sử dụng localForage là dễ hay khó? Và bạn th�
 Để xem thêm các API khác của localForage, bạn có thể xem thêm tại:
 
 - [Trang chủ](https://localforage.github.io/localForage/).
-- [localForage trên Github](https://github.com/localForage/localForage).
+- [localForage trên Github](https://github.com/localForage/localForage/).
 
 Xin chào và hẹn gặp lại, thân ái!
 

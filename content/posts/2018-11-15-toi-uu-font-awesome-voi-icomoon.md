@@ -77,7 +77,7 @@ Trong đó:
   - **Include metadata in fonts**: thêm metadata vào fonts
   - **Encode & embed font in CSS**: chỉ hỗ trợ gói Premium
   - **Generate Sass, Less or Stylus variables**: sinh ra các biến số dành cho Sass, Less hoặc Stylus
-- **CSS Selector**: lựa chọn cách sử dụng font trong [CSS](/tag/css/) với 3 loại CSS [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors).
+- **CSS Selector**: lựa chọn cách sử dụng font trong [CSS](/tag/css) với 3 loại CSS [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors).
   - **Use i (for selecting <>)**: sử dụng thẻ _i_. Ví dụ: <code>&lt;i class="icon-asterisk"&gt;&lt;/i&gt;</code>
   - **Use attribute selectors**. Ví dụ: <code>&lt;span class="icon-asterisk"&gt;&lt;/span&gt;</code>
   - **Use a class**. Ví dụ: <code>&lt;span class="icon icon-asterisk"&gt;&lt;/span&gt;</code>

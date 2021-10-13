@@ -102,7 +102,7 @@ Và cuối cùng là nhấn **Finish** để kết thúc.
 
 ### Kiểm tra cài đặt thành công
 
-Tương như như bài viết về [hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban/), mình cũng cần phải kiểm tra xem việc cài đặt MongoDB đã thực sự thành công hay chưa.
+Tương như như bài viết về [hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban), mình cũng cần phải kiểm tra xem việc cài đặt MongoDB đã thực sự thành công hay chưa.
 
 Như phần trên, mình đã chọn **cài đặt MongoDB như một service** rồi. Nên bây giờ mình sẽ xem thử nó đã chạy hay chưa bằng cách mở **Windows Task Manager** và chọn tab **Services** (_tham khảo thêm bài viết [6 cách để mở Windows Task Manager)](https://ictnews.vn/the-gioi-so/thu-thuat/6-cach-de-mo-windows-task-manager-97595.ict)_.
 
@@ -116,13 +116,13 @@ Nếu bạn tìm thấy MongoDB xuất hiện trong phần này nghĩa là việ
 
 Trước tiên bạn cần phải tìm đến vị trí thư mục cài đặt MongoDB. Mặc định, vị trí đó là: **C:\Program Files\MongoDB\Server\4.0\bin**
 
-Nếu nhìn vào thư mục đó, bạn sẽ thấy file **mongo.exe**. Đây chính là chương trình dùng để tương tác với MongoDB thông qua [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows/).
+Nếu nhìn vào thư mục đó, bạn sẽ thấy file **mongo.exe**. Đây chính là chương trình dùng để tương tác với MongoDB thông qua [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows).
 
 Để biết cách cài đặt biến môi trường, bạn có thể tham khảo thêm tại bài viết [Hướng dẫn tìm hiểu FFmpeg cơ bản](/huong-dan-tim-hieu-ffmpeg-co-ban/#Cai_dat_phan_mem) để biết thêm chi tiết.
 
 ### Các câu lệnh cơ bản
 
-Đầu tiên bạn mở **CMD** lên và gõ [câu lệnh](/tag/command-line/):
+Đầu tiên bạn mở **CMD** lên và gõ [câu lệnh](/tag/command-line):
 
 ```bash
 mongo
@@ -134,7 +134,7 @@ Ví dụ:
 
 - <code>show dbs</code>: dùng để hiển thị danh sách các database đang tồn tại. Mặc định ban đầu sẽ có 3 database của hệ thống là: **admin, config** và **local**.
 - <code>db</code>: hiển thị danh sách database đang sử dụng. Vì bạn chưa có database nào nên mặc định database mặc định cho bạn sẽ là **test**.
-- <code>use DATABASE\_NAME</code>: chuyển sang sử dụng database với tên là DATABASE\_NAME (tên này tùy bạn chọn).
+- <code>use DATABASE_NAME</code>: chuyển sang sử dụng database với tên là DATABASE_NAME (tên này tùy bạn chọn).
 - <code>db.dropDatabase()</code>: dùng để xóa database hiện tại
 - <code>[db.createCollection(name, options)](https://docs.mongodb.com/manual/reference/method/db.createCollection/)</code>: dùng để tạo mới một **Collection** trong MongoDB (cái này tương tự như **Table** trong MySQL).
 - <code>show collections</code>: hiển thị các collection đang tồn tại
@@ -155,5 +155,5 @@ Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

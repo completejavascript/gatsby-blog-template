@@ -14,7 +14,7 @@ tags:
   - React
 ---
 
-Xin chào bạn đến với Học React qua ví dụ #4. Bài viết này mình sẽ thực hành React thông qua cách tạo Lightbox. Trong đó, Lightbox chính là sự kết hợp giữa [Slideshow Gallery](/hoc-react-qua-vi-du-2-slideshow-gallery/) và [Modal Image](/hoc-react-qua-vi-du-3-modal-image/).
+Xin chào bạn đến với Học React qua ví dụ #4. Bài viết này mình sẽ thực hành React thông qua cách tạo Lightbox. Trong đó, Lightbox chính là sự kết hợp giữa [Slideshow Gallery](/hoc-react-qua-vi-du-2-slideshow-gallery) và [Modal Image](/hoc-react-qua-vi-du-3-modal-image).
 
 Cụ thể là: thay vì click vào 1 ảnh nhỏ để hiển thị 1 ảnh lớn (giống Modal Image) thì mình sẽ hiển thị 1 Slideshow Gallery. Để dễ hiểu hơn, mời bạn theo dõi **demo**:
 
@@ -26,17 +26,17 @@ Trong ví dụ trên, ban đầu mình để demo 3 bức ảnh nhỏ. Và khi b
 
 Và vì Lightbox kế thừa ý tưởng từ Modal Image, nên nếu bạn đã theo dõi bài viết về Modal Image rồi thì bài này sẽ rất đơn giản.
 
-Bạn chỉ cần triển khai tương tự như Modal Image, rồi trong phần nội dung của Modal, mình không đưa vào một phần tử **[DOM](/co-ban-ve-dom-javascript/)** chứa ảnh nữa, mà thay vào đó là một **Slideshow Gallery Component**.
+Bạn chỉ cần triển khai tương tự như Modal Image, rồi trong phần nội dung của Modal, mình không đưa vào một phần tử **[DOM](/co-ban-ve-dom-javascript)** chứa ảnh nữa, mà thay vào đó là một **Slideshow Gallery Component**.
 
 Chi tiết thế nào, mời bạn theo dõi bài viết!
 
-> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #4 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #4 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
 
 ## Cấu trúc Project
 
@@ -70,8 +70,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_resize_**).
 
 Và ý tưởng chung để xây dựng Lightbox Component là:
 
@@ -381,8 +381,8 @@ export default class App extends React.Component {
 
 Trong đó, Lightbox Component có các thuộc tính là:
 
-- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/)gồm _src_ – đường dẫn ảnh và _caption_ – tiêu đề ảnh.
-- **ratio ([String](/values-types-va-operators-trong-javascript-phan-2/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **input ([Array](/javascript-array-co-ban)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least)gồm _src_ – đường dẫn ảnh và _caption_ – tiêu đề ảnh.
+- **ratio ([String](/values-types-va-operators-trong-javascript-phan-2)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 
 ## Lời kết
 
@@ -394,7 +394,7 @@ Trên đây là kết quả sau khi mình học React qua ví dụ #4 – Lightb
 
 Bạn thấy đó, trong bài này, mình hầu như tái sử dụng lại những Component đã viết từ trước mà không cần phải viết lại nhiều. Vì vậy, mình tiết kiệm được một lượng thời gian kha khá.
 
-Đặc biệt là sau này, khi làm các project lớn hơn, mình chỉ cần **copy-paste** lại các Component đã làm trong [series](/tag/hoc-react-qua-vi-du/) này (sửa style nếu cần) mà không mất công xây dựng lại những thành phần cơ bản này nữa. Đó chính là lợi ích lớn nhất khi mình xây dựng React Component.
+Đặc biệt là sau này, khi làm các project lớn hơn, mình chỉ cần **copy-paste** lại các Component đã làm trong [series](/tag/hoc-react-qua-vi-du) này (sửa style nếu cần) mà không mất công xây dựng lại những thành phần cơ bản này nữa. Đó chính là lợi ích lớn nhất khi mình xây dựng React Component.
 
 Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
 

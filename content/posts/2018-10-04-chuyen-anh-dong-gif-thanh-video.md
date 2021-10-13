@@ -13,7 +13,7 @@ tags:
   - Performance
 ---
 
-Có lẽ bạn đã quá quen thuộc với ảnh động GIF. Việc sử dụng ảnh động GIF sẽ giúp cho trang web, bài viết trở nên sinh động hơn. Tuy nhiên, ảnh động GIF thường có dung lượng khá lớn. Điều này sẽ làm giảm [hiệu năng của trang web](/tag/performance/). May mắn thay, có một giải pháp cho vấn đề này, đó là: chuyển ảnh động GIF thành video. Do đó, bài viết này sẽ giới thiệu với bạn cách chuyển ảnh động GIF thành video và sử dụng video mà đem lại hiệu quả tương tự như ảnh động GIF. Mời bạn theo dõi bài viết.
+Có lẽ bạn đã quá quen thuộc với ảnh động GIF. Việc sử dụng ảnh động GIF sẽ giúp cho trang web, bài viết trở nên sinh động hơn. Tuy nhiên, ảnh động GIF thường có dung lượng khá lớn. Điều này sẽ làm giảm [hiệu năng của trang web](/tag/performance). May mắn thay, có một giải pháp cho vấn đề này, đó là: chuyển ảnh động GIF thành video. Do đó, bài viết này sẽ giới thiệu với bạn cách chuyển ảnh động GIF thành video và sử dụng video mà đem lại hiệu quả tương tự như ảnh động GIF. Mời bạn theo dõi bài viết.
 
 ## Tại sao ảnh động GIF lại nặng hơn video?
 
@@ -35,7 +35,7 @@ Vì frame loại P và B chỉ lưu sự thay đổi giữa các frame, nên dun
 
 Nếu bạn search trên Google thì sẽ thấy có rất nhiều trang giúp chuyển ảnh động GIF thành video online. Tuy nhiên, bài viết này sẽ giới thiệu với bạn một phần mềm mã nguồn mở rất mạnh mẽ, đó là **ffmpeg**. Đây là công cụ chuyên dùng để xử lý hình ảnh, audio và video.
 
-Để tải và cài đặt ffmpeg bạn có thể tham khảo bài viết: [Hướng dẫn tìm hiểu FFmpeg cơ bản](/huong-dan-tim-hieu-ffmpeg-co-ban/).
+Để tải và cài đặt ffmpeg bạn có thể tham khảo bài viết: [Hướng dẫn tìm hiểu FFmpeg cơ bản](/huong-dan-tim-hieu-ffmpeg-co-ban).
 
 ### Câu lệnh cơ bản
 
@@ -85,7 +85,7 @@ Nhưng khi đã chuyển ảnh động GIF thành video thì mình phải chuy�
 
 ```html
 <video>
-  <source src="input.mp4" type="video/mp4">
+  <source src="input.mp4" type="video/mp4" />
 </video>
 ```
 
@@ -99,7 +99,7 @@ Vì vậy, đoạn code trên sửa thành:
 
 ```html
 <video autoplay loop muted playsinline>
-  <source src="input.mp4" type="video/mp4">
+  <source src="input.mp4" type="video/mp4" />
 </video>
 ```
 
@@ -109,11 +109,11 @@ Vì vậy, đoạn code trên sửa thành:
 
 <a href="https://github.com/completejavascript/replace-gif-with-video" class="btn btn-primary margin-bottom">
   Xem code trên Github
-</a> 
+</a>
 
 <a href="http://about.phamvanlam.com/replace-gif-with-video/" class="btn btn-primary margin-bottom">
   Xem Demo
-</a> 
+</a>
 
 ## Lời kết
 
@@ -131,5 +131,5 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

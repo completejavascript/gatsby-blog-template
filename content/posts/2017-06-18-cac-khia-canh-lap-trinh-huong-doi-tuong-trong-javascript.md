@@ -12,7 +12,7 @@ tags:
   - OOP
 ---
 
-Trong bài viết [Lập trình hướng đối tượng với JavaScript?](/lap-trinh-huong-doi-tuong-voi-javascript/), mình đã so sánh ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu sâu hơn về các khía cạnh liên quan đến lập trình hướng đối tượng của ngôn ngữ lập trình JavaScript.
+Trong bài viết [Lập trình hướng đối tượng với JavaScript?](/lap-trinh-huong-doi-tuong-voi-javascript), mình đã so sánh ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu sâu hơn về các khía cạnh liên quan đến lập trình hướng đối tượng của ngôn ngữ lập trình JavaScript.
 
 ## Lịch sử object
 
@@ -20,17 +20,17 @@ Có một câu nói mang đầy tính triết học như này:
 
 > Một vấn đề phức tạp có thể được quản lý bằng cách chia nó thành những phần nhỏ độc lập với nhau.
 
-Mỗi thành phần nhỏ ở đây chính là [**object**](/javascript-object-last-but-not-least/). Object cung cấp cho chúng ta những phương thức để gọi mà không cần biết nội dung bên trong nó như thế nào. Sau khi xây dựng được những object hoạt động theo đúng yêu cầu, ta sẽ sử dụng chúng để giải quyết những bài toán lớn hơn một cách đơn giản. Đây cũng chính là tư tưởng **chia để trị**.
+Mỗi thành phần nhỏ ở đây chính là [**object**](/javascript-object-last-but-not-least). Object cung cấp cho chúng ta những phương thức để gọi mà không cần biết nội dung bên trong nó như thế nào. Sau khi xây dựng được những object hoạt động theo đúng yêu cầu, ta sẽ sử dụng chúng để giải quyết những bài toán lớn hơn một cách đơn giản. Đây cũng chính là tư tưởng **chia để trị**.
 
 ## Method (phương thức)
 
 Method là một thành phần vô cùng quan trọng trong object. Đối với C++ hay Java, chúng ta chỉ có thể sử dụng được những method dạng public. Chúng ta sẽ sử dụng những method này để lấy giá trị hay thay đổi thông tin các thuộc tính của object.
 
-Trong JavaScript, method chính là một thuộc tính mà giá trị của nó là [function](/tim-hieu-function-javascript/). Sau đây là một phương thức đơn giản:
+Trong JavaScript, method chính là một thuộc tính mà giá trị của nó là [function](/tim-hieu-function-javascript). Sau đây là một phương thức đơn giản:
 
 ```js
 var rabbit = {};
-rabbit.speak = function(line) {
+rabbit.speak = function (line) {
   console.log("The rabbit says '" + line + "'");
 };
 
@@ -46,8 +46,8 @@ Ví dụ trên có thể thay đổi như sau:
 function speak(line) {
   console.log("The " + this.type + " rabbit says '" + line + "'");
 }
-var whiteRabbit = {type: "white", speak: speak};
-var fatRabbit = {type: "fat", speak: speak};
+var whiteRabbit = { type: "white", speak: speak };
+var fatRabbit = { type: "fat", speak: speak };
 
 whiteRabbit.speak("I'm alive.");
 // => The white rabbit says 'I'm alive.'
@@ -59,15 +59,15 @@ Tư tưởng sử dụng từ khoá **this** này cũng được áp dụng tron
 
 ### Sự tương quan với bind, call, apply
 
-Nếu bạn chưa biết **bind**, **call** hay **apply** là gì thì bạn có thể tham khảo tại [đây](/phan-biet-call-apply-va-bind-trong-javascript/). Khi gọi 3 hàm này, tham số đầu tiên chính là giá trị của con trỏ **this**.
+Nếu bạn chưa biết **bind**, **call** hay **apply** là gì thì bạn có thể tham khảo tại [đây](/phan-biet-call-apply-va-bind-trong-javascript). Khi gọi 3 hàm này, tham số đầu tiên chính là giá trị của con trỏ **this**.
 
 ```js
 function speak(line) {
   console.log("The " + this.type + " rabbit says '" + line + "'");
 }
-var whiteRabbit = {type: "white"};
-var fatRabbit = {type: "fat"};
-var sexyRabbit = {type: "sexy"};
+var whiteRabbit = { type: "white" };
+var fatRabbit = { type: "fat" };
+var sexyRabbit = { type: "sexy" };
 
 speak.apply(whiteRabbit, ["I'm alive."]);
 // => The white rabbit says 'I'm alive.'
@@ -118,9 +118,9 @@ Sau đây là một ví dụ đơn giản về constructor:
 ```js
 function Rabbit(type) {
   this.type = type;
-  this.greeting = function(){
+  this.greeting = function () {
     console.log(this.type + " rabbit" + " say Hello!");
-  }
+  };
 }
 
 var blackRabbit = new Rabbit("black");
@@ -141,14 +141,14 @@ Lúc này, mỗi đối tượng được tạo ra từ constructor **Rabbit** s
 ```js
 function Rabbit(type) {
   this.type = type;
-  this.greeting = function(){
+  this.greeting = function () {
     console.log(this.type + " rabbit" + " say Hello!");
-  }
+  };
 }
 
-Rabbit.prototype.sayBye = function (){
+Rabbit.prototype.sayBye = function () {
   console.log(this.type + " rabbit" + " say GoodBye!");
-}
+};
 
 var blackRabbit = new Rabbit("black");
 blackRabbit.sayBye();
@@ -162,9 +162,9 @@ Trong ví dụ trên, **Rabbit** chứa thuộc tính **type**. Đối với m�
 ```js
 function Rabbit(type) {
   this.type = type;
-  this.greeting = function(){
+  this.greeting = function () {
     console.log(this.type + " rabbit" + " say Hello!");
-  }
+  };
 }
 
 Rabbit.prototype.teeth = "small";
@@ -172,12 +172,12 @@ Rabbit.prototype.teeth = "small";
 var blackRabbit = new Rabbit("black");
 var killerRabbit = new Rabbit("killer");
 
-console.log(blackRabbit.teeth);   // => small
-console.log(killerRabbit.teeth);  // => small
+console.log(blackRabbit.teeth); // => small
+console.log(killerRabbit.teeth); // => small
 
 killerRabbit.teeth = "long";
-console.log(blackRabbit.teeth);   // => small
-console.log(killerRabbit.teeth);  // => long
+console.log(blackRabbit.teeth); // => small
+console.log(killerRabbit.teeth); // => long
 ```
 
 ## Tính chất đặc trưng của lập trình hướng đối tượng trong JavaScript
@@ -187,22 +187,22 @@ console.log(killerRabbit.teeth);  // => long
 Tính đóng gói: che giấu dữ liệu, không cho phép truy cập dữ liệu trực tiếp từ bên ngoài, mà phải thông qua các method được cung cấp.
 
 ```js
-function Person(_name){
+function Person(_name) {
   var name = _name;
-  this.setName = function(_name){
+  this.setName = function (_name) {
     name = _name;
-  }
-  this.getName = function(){
+  };
+  this.getName = function () {
     return name;
-  }
+  };
 }
 
 var person = new Person("LamPham");
-console.log(person.name);          // => undefined
-console.log(person.getName());     // => LamPham
+console.log(person.name); // => undefined
+console.log(person.getName()); // => LamPham
 
 person.setName("LP Devs");
-console.log(person.getName());     // => LP Devs
+console.log(person.getName()); // => LP Devs
 ```
 
 ### Tính kế thừa (inheritance)
@@ -212,36 +212,36 @@ Tính kế thừa: đối tượng con sẽ kế thừa những thuộc tính c�
 Mặc dù, JavaScript không hỗ trợ trực tiếp tính kế thừa, tuy nhiên ta vẫn có thể tuỳ biến để áp dụng tính chất này trong JavaScript.
 
 ```js
-function Person(_name){
+function Person(_name) {
   var name = _name;
-  this.setName = function(_name){
+  this.setName = function (_name) {
     name = _name;
-  }
-  this.getName = function(){
+  };
+  this.getName = function () {
     return name;
-  }
+  };
 }
 
-function Student(_name, _school){
+function Student(_name, _school) {
   var school = _school;
   Person.call(this, _name);
-  this.setSchool = function(_school){
+  this.setSchool = function (_school) {
     school = _school;
-  }
-  this.getSchool = function(){
+  };
+  this.getSchool = function () {
     return school;
-  }
+  };
 }
 
 var student = new Student("LamPham", "HUST");
-console.log(student.getName());    // => LamPham
-console.log(student.getSchool());  // => HUST
+console.log(student.getName()); // => LamPham
+console.log(student.getSchool()); // => HUST
 
 student.setSchool("NEU");
 student.setName("Ronaldo");
 
-console.log(student.getName());    // => Ronaldo
-console.log(student.getSchool());  // => NEU
+console.log(student.getName()); // => Ronaldo
+console.log(student.getSchool()); // => NEU
 ```
 
 Ngoài ra, còn hai tính chất nữa là: tính **đa hình** và tính **trừu tượng**. Tuy nhiên, việc áp dụng hai tính chất này trong JavaScript là không rõ ràng. Do đó, mình sẽ không trình bày về chúng nữa.
@@ -284,22 +284,22 @@ Implement object kiểu **ArraySeg** với đầu vào là một mảng và mộ
 
 logFive(new ArraySeq([1, 2]));
 /*
-* 1
-* 2
-*/
+ * 1
+ * 2
+ */
 logFive(new RangeSeq(100, 1000));
 /*
-* 100
-* 101
-* 102
-* 103
-* 104
-*/
+ * 100
+ * 101
+ * 102
+ * 103
+ * 104
+ */
 ```
 
 Tham khảo code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/OOP_javascript/interface_completejavascript.com.js).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết sau](/debug-javascript-de-hay-kho/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết sau](/debug-javascript-de-hay-kho), thân ái!
 
 ## Tham khảo
 

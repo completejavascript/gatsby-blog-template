@@ -23,8 +23,8 @@ Mời bạn theo dõi bài viết!
 Về cơ bản, phương pháp Lazy Loading Image gồm các bước sau:
 
 - **Bước 1**: Sử dụng ảnh đơn sắc, hoặc ảnh đã làm mờ đóng vai trò là _place holder_ (giữ chỗ). Vì những ảnh này có kích thước rất nhỏ (cỡ 200 byte là đủ) nên sẽ được load rất nhanh. Do đó, giao diện chương trình sẽ không bị vỡ.
-- **Bước 2**: Kiểm tra các phần tử [DOM](/co-ban-ve-dom-javascript/) liên quan đến hình ảnh xem nó có ở trên viewport (phạm vi màn hình) hay không. Nếu có thì sẽ load ảnh gốc một cách bất đồng bộ. Sau khi load ảnh xong thì mới set lại ảnh gốc đó cho phần tử DOM.
-- **Bước 3**:Trong quá trình [scroll màn hình](/smooth-scrolling-trang-web-voi-jquery/), thực hiện lại **Bước 2** cho đến khi tất cả các ảnh gốc được load hết thì thôi.
+- **Bước 2**: Kiểm tra các phần tử [DOM](/co-ban-ve-dom-javascript) liên quan đến hình ảnh xem nó có ở trên viewport (phạm vi màn hình) hay không. Nếu có thì sẽ load ảnh gốc một cách bất đồng bộ. Sau khi load ảnh xong thì mới set lại ảnh gốc đó cho phần tử DOM.
+- **Bước 3**:Trong quá trình [scroll màn hình](/smooth-scrolling-trang-web-voi-jquery), thực hiện lại **Bước 2** cho đến khi tất cả các ảnh gốc được load hết thì thôi.
 
 Tư tưởng chính là vậy. Bây giờ, mình sẽ bắt đầu triển khai Lazy Loading Image trong React.
 
@@ -152,7 +152,7 @@ this.state = {
 };
 ```
 
-[Bind](/phan-biet-call-apply-va-bind-trong-javascript/) function _handleScroll_ với _this_. [Function](/tim-hieu-function-javascript/) này dùng để xử lý [event](/xu-ly-mot-event-javascript-co-ban/) khi scroll màn hình.
+[Bind](/phan-biet-call-apply-va-bind-trong-javascript) function _handleScroll_ với _this_. [Function](/tim-hieu-function-javascript) này dùng để xử lý [event](/xu-ly-mot-event-javascript-co-ban) khi scroll màn hình.
 
 ```jsx
 this.handleScroll = this.handleScroll.bind(this);
@@ -272,9 +272,9 @@ Như vậy, mình đã định nghĩa xong component _LazyImage_. Bây giờ, ch
 
 ## Cách sử dụng component LazyImage
 
-Mình có làm một ví dụ trên Github. Bạn có thể tham khảo [source code](https://github.com/completejavascript/lazy-loading-image-demo) hoặc [xem demo trực tiếp](https://about.phamvanlam.com/lazy-loading-image-demo/).
+Mình có làm một ví dụ trên Github. Bạn có thể tham khảo [source code](https://github.com/completejavascript/lazy-loading-image-demo) hoặc [xem demo trực tiếp](https://about.phamvanlam.com/lazy-loading-image-demo).
 
-Ví dụ demo mình sử dụng [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html). Bạn có thể tham khảo thêm tại bài viết [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/) để biết cách tạo project và deploy lên Github Pages.
+Ví dụ demo mình sử dụng [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html). Bạn có thể tham khảo thêm tại bài viết [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages) để biết cách tạo project và deploy lên Github Pages.
 
 Trong _App.js_ mình đã sử dụng component LazyImage như sau:
 
@@ -305,7 +305,7 @@ Tiếp theo, mình dự định sẽ tìm hiểu và chia sẻ tiếp về Lazy 
   Xem Demo
 </a>
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-trang-blog-voi-gatsby-js/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-trang-blog-voi-gatsby-js), thân ái!
 
 <hr class="border-color-light-grey" />
 

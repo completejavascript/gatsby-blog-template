@@ -22,7 +22,7 @@ Sau đây, chúng ta sẽ cùng tìm hiểu về Regular Expression trong JavaSc
 
 Có hai cách để tạo ra một Regular Expression là:
 
-- Sử dụng hàm khởi tạo của [đối tượng](/javascript-object-last-but-not-least/) RegExp
+- Sử dụng hàm khởi tạo của [đối tượng](/javascript-object-last-but-not-least) RegExp
 - Viết trực tiếp sử dụng cặp dấu "/ /"
 
 ```js
@@ -243,10 +243,10 @@ function findDate(string) {
   var dateTime = /(\d{1,2})-(\d{1,2})-(\d{4})/;
   var match = dateTime.exec(string);
   return {
-    day : match[1],
-    month : match[2],
-    year: match[3]
-  }
+    day: match[1],
+    month: match[2],
+    year: match[3],
+  };
 }
 var obj = findDate("30-1-2003");
 console.log(obj);
@@ -265,12 +265,12 @@ Regular Expression JavaScript cung cấp 2 cách để giải quyết vấn đ�
 function findDate(string) {
   var dateTime = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;
   var match = dateTime.exec(string);
-  if(!match) return null;
+  if (!match) return null;
   return {
-    day : match[1],
-    month : match[2],
-    year: match[3]
-  }
+    day: match[1],
+    month: match[2],
+    year: match[3],
+  };
 }
 var obj1 = findDate("30-1-2003");
 console.log(obj1);
@@ -291,12 +291,12 @@ console.log(obj3);
 function findDate(string) {
   var dateTime = /\b(\d{1,2})-(\d{1,2})-(\d{4})\b/;
   var match = dateTime.exec(string);
-  if(!match) return null;
+  if (!match) return null;
   return {
-    day : match[1],
-    month : match[2],
-    year: match[3]
-  }
+    day: match[1],
+    month: match[2],
+    year: match[3],
+  };
 }
 var obj1 = findDate("30-1-2003");
 console.log(obj1);
@@ -328,7 +328,7 @@ Trong đó:
 - tham số g: chỉ ra rằng khuôn mẫu áp dụng Global, nghĩa là nó áp dụng cho tất cả thành phần trùng khớp.
 - tham số i: chỉ ra rằng khuôn mẫu không phân biệt chữ hoa và chữ thường.
 
-Ngoài ra, ở đây mình có sử dụng phương thức _replace_ của [string](/values-types-va-operators-trong-javascript-phan-2/) - dùng để thay thế tất cả những thành phần trùng khớp với khuôn mẫu với "_\$1_".
+Ngoài ra, ở đây mình có sử dụng phương thức _replace_ của [string](/values-types-va-operators-trong-javascript-phan-2) - dùng để thay thế tất cả những thành phần trùng khớp với khuôn mẫu với "_\$1_".
 
 Ở đây \$1 chính là nội dung của group thứ nhất.
 
@@ -356,7 +356,7 @@ Tóm tắt một số khuôn mẫu cơ bản của Regular Expression:
 - /^/: bắt đầu string
 - /\$/: kết thúc string
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/co-ban-ve-dom-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/co-ban-ve-dom-javascript), thân ái!
 
 ## Tham khảo
 

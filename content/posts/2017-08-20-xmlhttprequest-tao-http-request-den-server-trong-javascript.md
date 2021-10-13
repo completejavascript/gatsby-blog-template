@@ -18,7 +18,7 @@ Có bao giờ bạn thắc mắc, chuyện gì thực sự diễn ra khi chúng 
 
 Đầu tiên, trình duyệt sẽ tìm kiếm địa chỉ IP của server ứng với tên miền, sau đó là mở kết nối TCP đến server thông qua cổng 80 - cổng mặc định của giao thức HTTP. Nếu server tồn tại và chấp nhận kết nối, trình duyệt sẽ gửi yêu cầu dạng GET đến server để lấy thông tin trang web. Tiếp theo, server phản hồi lại trình duyệt theo đúng kết nối đó. Và cuối cùng, trình duyệt xử lý thông tin phản hồi và hiển thị nó lên trang web.
 
-Quá trình này được thực hiện hoàn toàn dựa trên trình duyệt. Tuy nhiên, bài viết này sẽ hướng dẫn bạn gửi yêu cầu HTTP đến server bằng JavaScript thông qua [đối tượng](/javascript-object-last-but-not-least/) XMLHttpRequest. Nhưng trước khi đi vào tìm hiểu cách sử dụng XMLHttpRequest, chúng ta hãy lướt qua một chút về giao thức HTTP để biết nó là cái gì trước đã. OK?
+Quá trình này được thực hiện hoàn toàn dựa trên trình duyệt. Tuy nhiên, bài viết này sẽ hướng dẫn bạn gửi yêu cầu HTTP đến server bằng JavaScript thông qua [đối tượng](/javascript-object-last-but-not-least) XMLHttpRequest. Nhưng trước khi đi vào tìm hiểu cách sử dụng XMLHttpRequest, chúng ta hãy lướt qua một chút về giao thức HTTP để biết nó là cái gì trước đã. OK?
 
 ## HTTP là gì?
 
@@ -51,7 +51,7 @@ Cụ thể về từng status-code, bạn có thể tìm hiểu thêm tại [đ�
 
 ## Gửi HTTP request sử dụng XMLHttpRequest
 
-Thông thường, vì lý do an toàn nên server sẽ chặn các request từ các tên miền khác với "tên miền của server". Do đó, bạn sẽ không thể thực hiện gửi HTTP request đến server sử dụng XMLHttpRequest từ localhost. Sau đây, mình sẽ sử dụng server chuyên dùng để test HTTP request tại: [https://httpbin.org/](https://httpbin.org/)
+Thông thường, vì lý do an toàn nên server sẽ chặn các request từ các tên miền khác với "tên miền của server". Do đó, bạn sẽ không thể thực hiện gửi HTTP request đến server sử dụng XMLHttpRequest từ localhost. Sau đây, mình sẽ sử dụng server chuyên dùng để test HTTP request tại: [https://httpbin.org/](https://httpbin.org)
 
 Ví dụ sau gửi phương thức request dạng GET đến [https://httpbin.org/get](https://httpbin.org/get):
 
@@ -91,14 +91,14 @@ Sau khi đã có đối tượng req, mình sử dụng phương thức **open**
 
 - Thuộc tính đầu tiên là tên kiểu request: **GET, HEAD, POST, PUT, DELETE,**...
 - Thuộc tính tiếp theo là địa chỉ URL mà mình muốn gửi request đến.
-- Thuộc tính cuối cùng là đối số [kiểu bool](/values-types-va-operators-trong-javascript-phan-2/), với giá trị **false** ý nghĩa là request kiểu đồng bộ (đợi cho đến khi nhận được kết quả phản hồi response) và giá trị **true** ý nghĩa là request kiểu bất đồng bộ (không đợi kết quả trả về mà sẽ tiếp tục thực hiện lệnh phía dưới, kết quả trả về sẽ được xử lý trong [hàm](/tim-hieu-function-javascript/) callback).
+- Thuộc tính cuối cùng là đối số [kiểu bool](/values-types-va-operators-trong-javascript-phan-2), với giá trị **false** ý nghĩa là request kiểu đồng bộ (đợi cho đến khi nhận được kết quả phản hồi response) và giá trị **true** ý nghĩa là request kiểu bất đồng bộ (không đợi kết quả trả về mà sẽ tiếp tục thực hiện lệnh phía dưới, kết quả trả về sẽ được xử lý trong [hàm](/tim-hieu-function-javascript) callback).
 
 Lúc này, request mới được cấu hình. Để gửi request này đến server, mình sẽ sử dụng phương thức **send** với đối số là **body** của request. Trong ví dụ này, mình gửi request kiểu **GET** nên body chỉ cần là **null**.
 
 Kết quả trả về có nhiều thuộc tính, nhưng quan trọng nhất là 2 thuộc tính:
 
 - **status**: chính là status-code. Kết quả trả về là 200, chứng tỏ request thành công.
-- **responseText**: là nội dung phản hồi từ server. Trong trường hợp này, kết quả trả về là một chuỗi [JSON](/tim-hieu-ve-json-trong-javascript/).
+- **responseText**: là nội dung phản hồi từ server. Trong trường hợp này, kết quả trả về là một chuỗi [JSON](/tim-hieu-ve-json-trong-javascript).
 
 Ngoài ra, nhiều trường hợp bạn phải chèn thêm header cho request thì server mới chấp nhận. Để làm được việc này, bạn có thể sử dụng phương thức [setRequestHeader](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/setRequestHeader) đơn giản như sau:
 
@@ -169,7 +169,7 @@ Nếu như server bị lỗi, hoặc việc xử lý request mất nhiều thờ
 
 Do đó, chỉ nên sử dụng request đồng bộ với những yêu cầu có thể xử lý nhanh. Nhìn chung, bạn nên sử dụng request bất đồng bộ.
 
-Như mình đã nói ở trên, để cấu hình request là bất đồng bộ, bạn chỉ cần truyền vào **true** ở thuộc tính thứ 3 của phương thức **open**. Ngoài ra, bạn cần phải [đăng ký sự kiện](/xu-ly-mot-event-javascript-co-ban/) **load** và truyền vào hàm callback - hàm này được thực hiện khi có thông tin phản hồi từ server.
+Như mình đã nói ở trên, để cấu hình request là bất đồng bộ, bạn chỉ cần truyền vào **true** ở thuộc tính thứ 3 của phương thức **open**. Ngoài ra, bạn cần phải [đăng ký sự kiện](/xu-ly-mot-event-javascript-co-ban) **load** và truyền vào hàm callback - hàm này được thực hiện khi có thông tin phản hồi từ server.
 
 ```js
 var req = new XMLHttpRequest();
@@ -231,7 +231,7 @@ Trên đây là một số kiến thức cơ bản về HTTP và cách sử dụ
 
 Về HTTP và XMLHttpRequest còn rất nhiều thứ, bài viết này chỉ đưa ra những kiến thức cơ bản nhất. Bạn có thể tự tìm hiểu thêm trên Internet.
 
-Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo[,](/category/javascript-co-ban/) thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
 
 ## Tham khảo
 

@@ -13,7 +13,7 @@ tags:
   - OOP
 ---
 
-Khi lập trình, việc kế thừa là cần thiết nếu bạn muốn giảm lượng code phải viết và quản lý code dễ dàng hơn. Vậy triển khai [kế thừa trong JavaScript](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/) như thế nào? Bài viết này, mình sẽ giới thiệu với bạn các cách triển khai kế thừa cơ bản trong JavaScript.
+Khi lập trình, việc kế thừa là cần thiết nếu bạn muốn giảm lượng code phải viết và quản lý code dễ dàng hơn. Vậy triển khai [kế thừa trong JavaScript](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript) như thế nào? Bài viết này, mình sẽ giới thiệu với bạn các cách triển khai kế thừa cơ bản trong JavaScript.
 
 ## Kế thừa cơ bản trong JavaScript
 
@@ -23,23 +23,23 @@ Mời bạn xem ví dụ sau:
 function Animal(name) {
   this.type = "Animal";
   this.name = name;
-  this.sayType = function() {
+  this.sayType = function () {
     console.log("type: " + this.type);
-  }
+  };
 }
 
-Animal.prototype.sayName = function() {
+Animal.prototype.sayName = function () {
   console.log("name: " + this.name);
-}
+};
 
 function Dog(name) {
   this.super_ = Animal;
   this.super_.call(this, name);
 
-  this.type  = "Dog";
-  this.shout = function() {
+  this.type = "Dog";
+  this.shout = function () {
     console.log("shout: " + "Go Go Go !!!");
-  }
+  };
 }
 
 let myDog = new Dog("Rex");
@@ -50,11 +50,11 @@ myDog.sayName(); // => TypeError: myDog.sayName is not a function
 
 Lớp cha **Animal** có một thuộc tính là _type_, phương thức là _sayType_ và một phương thức khác được định nghĩa thêm trong prototype của Animal là _sayName_.
 
-Lớp con **Dog** kế thừa lớp cha Animal. Trong đó, mình gán **this.super\_ = Animal** để hiểu rằng lớp cha của Dog là Animal. Sau đó, gọi ra hàm khởi tạo của lớp cha ứng với đối tượng **this** là Dog (nếu bạn vẫn chưa biết ý nghĩa của hàm **call** thì có thể đọc bài viết [này](/phan-biet-call-apply-va-bind-trong-javascript/)).
+Lớp con **Dog** kế thừa lớp cha Animal. Trong đó, mình gán **this.super\_ = Animal** để hiểu rằng lớp cha của Dog là Animal. Sau đó, gọi ra hàm khởi tạo của lớp cha ứng với đối tượng **this** là Dog (nếu bạn vẫn chưa biết ý nghĩa của hàm **call** thì có thể đọc bài viết [này](/phan-biet-call-apply-va-bind-trong-javascript)).
 
 Việc tiếp theo là ghi đè thuộc tính type của lớp cha **this.type = "Dog"**, và định nghĩa thêm một phương thức khác là **shout**.
 
-Cuối cùng, để test thử, mình có tạo mới một [object](/javascript-object-last-but-not-least/) _myDog_ kiểu Dog và gọi ra các phương thức của nó với các phương thức của lớp cha Animal. Bạn có thể thấy rằng việc gọi ra phương thức _shout()_ và _sayType()_ đã thành công. Tuy nhiên, phương thức _sayName()_ thì bị lỗi:
+Cuối cùng, để test thử, mình có tạo mới một [object](/javascript-object-last-but-not-least) _myDog_ kiểu Dog và gọi ra các phương thức của nó với các phương thức của lớp cha Animal. Bạn có thể thấy rằng việc gọi ra phương thức _shout()_ và _sayType()_ đã thành công. Tuy nhiên, phương thức _sayName()_ thì bị lỗi:
 
 **TypeError: myDog.sayName is not a function**
 
@@ -68,21 +68,21 @@ Cuối cùng, để test thử, mình có tạo mới một [object](/javascript
 function Animal(name) {
   this.type = "Animal";
   this.name = name;
-  this.sayType = function() {
+  this.sayType = function () {
     console.log("type: " + this.type);
-  }
+  };
 }
-Animal.prototype.sayName = function() {
+Animal.prototype.sayName = function () {
   console.log("name: " + this.name);
-}
+};
 
 function Dog(name) {
   this.super_ = Animal;
   this.super_.call(this, name);
-  this.type  = "Dog";
-  this.shout = function() {
+  this.type = "Dog";
+  this.shout = function () {
     console.log("shout: " + "Go Go Go !!!");
-  }
+  };
 }
 
 inherits(Dog, Animal);
@@ -93,18 +93,18 @@ function inherits(child, parent) {
       value: child,
       enumerable: false,
       writable: true,
-      configurable: true
-    }
+      configurable: true,
+    },
   });
-};
+}
 
 let myDog = new Dog("Rex");
-myDog.shout();   // => shout: Go Go Go !!!
+myDog.shout(); // => shout: Go Go Go !!!
 myDog.sayType(); // => type: Dog
 myDog.sayName(); // => name: Rex
 ```
 
-Trong đó, mình có định nghĩa một [hàm số](/tim-hieu-function-javascript/) là **inherits**, với hai tham số đầu vào là child và parent, lần lượt là 2 hàm khởi tạo của lớp con và lớp cha. Ở đây, child là Dog và parent là Animal.
+Trong đó, mình có định nghĩa một [hàm số](/tim-hieu-function-javascript) là **inherits**, với hai tham số đầu vào là child và parent, lần lượt là 2 hàm khởi tạo của lớp con và lớp cha. Ở đây, child là Dog và parent là Animal.
 
 Hàm này có nhiệm vụ là tạo ra một đối tượng mới từ prototype của lớp cha và gán nó cho prototype của lớp con. Vì vậy mà các đối tượng thuộc lớp con đã có thể truy cập đến các phương thức trong prototype của lớp cha (ví dụ: **sayName**).
 
@@ -130,10 +130,10 @@ class Animal {
   }
 }
 
-class Dog extends Animal{
+class Dog extends Animal {
   constructor(name) {
     super(name);
-    this.type  = "Dog";
+    this.type = "Dog";
   }
   shout() {
     console.log("shout: " + "Go Go Go !!!");
@@ -141,7 +141,7 @@ class Dog extends Animal{
 }
 
 let myDog = new Dog("Rex");
-myDog.shout();   // => shout: Go Go Go !!!
+myDog.shout(); // => shout: Go Go Go !!!
 myDog.sayType(); // => type: Dog
 myDog.sayName(); // => name: Rex
 ```
@@ -171,5 +171,5 @@ Hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

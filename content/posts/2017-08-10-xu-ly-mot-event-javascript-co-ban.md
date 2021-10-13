@@ -19,7 +19,7 @@ tags:
 
 ### Đăng ký Event JavaScript
 
-Ở bài viết trước về [DOM](/co-ban-ve-dom-javascript/), bạn biết rằng mỗi phần tử trên trang web là một node. Và chúng ta có thể đăng ký nhận sự kiện cho mỗi node này bằng cách sử dụng phương thức **addEventListener** như sau:
+Ở bài viết trước về [DOM](/co-ban-ve-dom-javascript), bạn biết rằng mỗi phần tử trên trang web là một node. Và chúng ta có thể đăng ký nhận sự kiện cho mỗi node này bằng cách sử dụng phương thức **addEventListener** như sau:
 
 ```js
 Node.addEventListener('tên sự kiện', hàm xử lý);
@@ -36,14 +36,14 @@ Trong đó:
 Ví dụ:
 
 ```js
-function func1 () {
-  console.log('function 1');
+function func1() {
+  console.log("function 1");
 }
-function func2 () {
-  console.log('function 2');
+function func2() {
+  console.log("function 2");
 }
-addEventListener('click', func1);
-addEventListener('click', func2);
+addEventListener("click", func1);
+addEventListener("click", func2);
 ```
 
 Trong ví dụ trên, mình đã đăng kí sự kiện _click_ cho d*ocument* với hai hàm xử lý là _func1_ và _func2_. Từ nay, mỗi khi bạn click chuột trái vào trang web thì hàm _func1_ sẽ được gọi trước, sau đó đến hàm _func2_.
@@ -59,29 +59,29 @@ Node.removeEventListener('tên sự kiện', hàm xử lý);
 Ví dụ:
 
 ```js
-function func1 () {
-  console.log('function 1');
+function func1() {
+  console.log("function 1");
 }
-function func2 () {
-  console.log('function 2');
+function func2() {
+  console.log("function 2");
 }
-addEventListener('click', func1);
-addEventListener('click', func2);
+addEventListener("click", func1);
+addEventListener("click", func2);
 
-removeEventListener('click', func1);
+removeEventListener("click", func1);
 ```
 
 Tiếp theo ví dụ trên, nếu mình huỷ đăng ký sự kiện *click* trên _document_ với hàm _func1_ bằng phương thức sau:
 
 ```js
-removeEventListener('click', func1);
+removeEventListener("click", func1);
 ```
 
 Thì bây giờ, mỗi khi bạn click chuột trái vào trang web, chỉ có hàm _func2_ được gọi.
 
 ### Đăng ký event cho nhiều node dựa trên đối tượng event
 
-Bình thường để đăng ký sự kiện cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, thực tế bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/javascript-object-last-but-not-least/) event để phân biệt node được gọi.
+Bình thường để đăng ký sự kiện cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, thực tế bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/javascript-object-last-but-not-least) event để phân biệt node được gọi.
 
 Hãy xem ví dụ sau:
 
@@ -89,9 +89,9 @@ Hãy xem ví dụ sau:
 <button>A</button>
 <button>B</button>
 <button>C</button>
-<p> Hello </p>
+<p>Hello</p>
 <script>
-  document.body.addEventListener("click", function(event) {
+  document.body.addEventListener("click", function (event) {
     if (event.target.nodeName == "BUTTON")
       console.log("Clicked", event.target.textContent);
     else if (event.target.nodeName == "P")
@@ -114,7 +114,7 @@ Ví dụ:
 <a href="https://developer.mozilla.org/">MDN</a>
 <script>
   var link = document.querySelector("a");
-  link.addEventListener("click", function(event) {
+  link.addEventListener("click", function (event) {
     console.log("Nope.");
     event.preventDefault();
   });
@@ -137,13 +137,13 @@ Key event là sự kiện khi bạn nhấn vào một key trên bàn phím. Có
 Ví dụ:
 
 ```js
-addEventListener("keydown", function(event) {
+addEventListener("keydown", function (event) {
   console.log("keydown", event.keyCode);
 });
-addEventListener("keyup", function(event) {
+addEventListener("keyup", function (event) {
   console.log("keyup", event.keyCode);
 });
-addEventListener("keypress", function(event) {
+addEventListener("keypress", function (event) {
   console.log("keypress", event.keyCode);
 });
 ```
@@ -198,7 +198,7 @@ Trên đây là một số cách xử lý Event JavaScript cơ bản. Mình có 
 - Một số sự kiện với key: keydown, keyup, keypress,...
 - Một số sự kiện với mouse: click, dbclick, mousedown, mouseup, mousemove,...
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xmlhttprequest-tao-http-request-den-server-trong-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xmlhttprequest-tao-http-request-den-server-trong-javascript), thân ái!
 
 ## Tham khảo
 
@@ -209,6 +209,6 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xmlhttprequ
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

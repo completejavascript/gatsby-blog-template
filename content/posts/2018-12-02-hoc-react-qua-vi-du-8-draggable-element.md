@@ -28,13 +28,13 @@ Như bạn thấy đó, Draggable Element nghĩa là **phần tử có thể k
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #8 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #8 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
 
 ## Cấu trúc Project
 
@@ -68,8 +68,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_mousedown, mouseup, mousemove_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_mousedown, mouseup, mousemove_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
@@ -79,16 +79,16 @@ import ReactDOM from "react-dom";
 import "./draggable-element.css";
 
 // Kiểm tra xem 1 element có vượt quá chiều rộng của container không
-const isOverflowedX = elm => elm.scrollWidth > elm.clientWidth;
+const isOverflowedX = (elm) => elm.scrollWidth > elm.clientWidth;
 
 // Kiểm tra xem 1 element có vượt quá chiều cao của container không
-const isOverflowedY = elm => elm.scrollHeight > elm.clientHeight;
+const isOverflowedY = (elm) => elm.scrollHeight > elm.clientHeight;
 
 /**
  * Nếu 1 element có chiều rộng vượt quá container,
  * thì sẽ thêm scrollbar theo chiều X
  */
-const addScrollbarXIfNeeded = elm => {
+const addScrollbarXIfNeeded = (elm) => {
   if (isOverflowedX(elm)) elm.style.setProperty("overflow-x", "scroll");
   else elm.style.setProperty("overflow-x", "initial");
 };
@@ -97,7 +97,7 @@ const addScrollbarXIfNeeded = elm => {
  * Nếu 1 element có chiều cao vượt quá container,
  * thì sẽ thêm scrollbar theo chiều Y
  */
-const addScrollbarYIfNeeded = elm => {
+const addScrollbarYIfNeeded = (elm) => {
   if (isOverflowedY(elm)) elm.style.setProperty("overflow-y", "scroll");
   else elm.style.setProperty("overflow-y", "initial");
 };
@@ -108,8 +108,8 @@ const addScrollbarYIfNeeded = elm => {
  * ở trong phạm vi màn hình
  */
 const maxWidth =
-  window.innerWidth || 
-  document.documentElement.clientWidth || 
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
   document.body.clientWidth;
 
 /**
@@ -118,8 +118,8 @@ const maxWidth =
  * ở trong phạm vi màn hình
  */
 const maxHeight =
-  window.innerHeight || 
-  document.documentElement.clientHeight || 
+  window.innerHeight ||
+  document.documentElement.clientHeight ||
   document.body.clientHeight;
 
 /**
@@ -235,9 +235,9 @@ export default class DraggableElement extends React.Component {
      * Nếu có, thì mới cập nhật vị trí mới
      */
     if (
-      newLeft >= 0 && 
-      newLeft <= maxWidth && 
-      newRight >= 0 && 
+      newLeft >= 0 &&
+      newLeft <= maxWidth &&
+      newRight >= 0 &&
       newRight <= maxWidth
     ) {
       this.startX = e.clientX;
@@ -250,9 +250,9 @@ export default class DraggableElement extends React.Component {
      * Nếu có, thì mới cập nhật vị trí mới
      */
     if (
-      newTop >= 0 && 
-      newTop <= maxHeight && 
-      newBottom >= 0 && 
+      newTop >= 0 &&
+      newTop <= maxHeight &&
+      newBottom >= 0 &&
       newBottom <= maxHeight
     ) {
       this.startY = e.clientY;
@@ -275,7 +275,7 @@ export default class DraggableElement extends React.Component {
       width: `${this.props.width || 300}px`,
       height: `${this.props.height || 300}px`,
       top: `${this.props.top || 0}px`,
-      left: `${this.props.left || 0}px`
+      left: `${this.props.left || 0}px`,
     };
 
     return (
@@ -294,7 +294,7 @@ File này dùng để xác định style cho Draggable Element Component. Bạn 
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-```css
+````css
 .lp-draggable-element,
 .lp-draggable-element * {
   box-sizing: border-box;
@@ -316,18 +316,18 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
   max-height: 100%;
 }
 
-.lp-draggable-element>.header {
+.lp-draggable-element > .header {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: #2196F3;
+  background-color: #2196f3;
   color: #fff;
 }
 
-.lp-draggable-element>.content {
+.lp-draggable-element > .content {
   padding: 15px;
 }
-```
+````
 
 ## Sử dụng Draggable Element component
 
@@ -354,7 +354,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 **./src/App.js**
 
-Trong đây mình có kết hợp Draggable Element với các React Component khác mà mình đã làm như: [Modal Image](/hoc-react-qua-vi-du-3-modal-image/), [Slideshow](/hoc-react-qua-vi-du-1-slideshow/).
+Trong đây mình có kết hợp Draggable Element với các React Component khác mà mình đã làm như: [Modal Image](/hoc-react-qua-vi-du-3-modal-image), [Slideshow](/hoc-react-qua-vi-du-1-slideshow).
 
 ```jsx
 import React from "react";
@@ -381,7 +381,7 @@ const collection = [
   { src: img3, caption: "Caption three" },
   { src: img4, caption: "Caption four" },
   { src: img5, caption: "Caption five" },
-  { src: img6, caption: "Caption six" }
+  { src: img6, caption: "Caption six" },
 ];
 
 export default class App extends React.Component {
@@ -390,9 +390,8 @@ export default class App extends React.Component {
       <div className="App">
         <h2>Draggable Element</h2>
         <div>
-          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. 
-          {" "}Visit me at{" "}
-          <a href="/">completejavascript.com</a>.
+          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me
+          at <a href="/">completejavascript.com</a>.
         </div>
 
         <DraggableElement
@@ -403,10 +402,10 @@ export default class App extends React.Component {
           left={`200`}
         >
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris,
-            nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris, nisi ut
+            aliquip ex ea commodo consequat.
           </p>
         </DraggableElement>
 
@@ -429,10 +428,10 @@ export default class App extends React.Component {
           left={`800`}
         >
           <h3>Modal Image</h3>
-          <ModalImage 
-            src={img6} 
-            alt={`This is one of beautiful girls`} 
-            ratio={`3:2`} 
+          <ModalImage
+            src={img6}
+            alt={`This is one of beautiful girls`}
+            ratio={`3:2`}
           />
         </DraggableElement>
       </div>
@@ -443,8 +442,8 @@ export default class App extends React.Component {
 
 Trong đó, Draggable Element Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
-- **title ([String](/values-types-va-operators-trong-javascript-phan-2/)):** là title của component.
-- **width, height (String hoặc [Number](/values-types-va-operators-trong-javascript-phan-1/)):** lần lượt là chiều rộng và chiều cao của phần tử.
+- **title ([String](/values-types-va-operators-trong-javascript-phan-2)):** là title của component.
+- **width, height (String hoặc [Number](/values-types-va-operators-trong-javascript-phan-1)):** lần lượt là chiều rộng và chiều cao của phần tử.
 - **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
 
 ## Lời kết

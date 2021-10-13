@@ -25,7 +25,7 @@ https://codepen.io/completejavascript/pen/QmwLQY
 
 ### Các thư viện sử dụng
 
-Đối với cách config thư viện sử dụng trên codepen, mình đã giới thiệu trong bài viết [Lập trình JavaScript với FCC - Build a Tribute Page](/lap-trinh-javascript-voi-fcc-build-a-tribute-page/). Bạn có thể tham khảo lại để biết cách sử dụng.
+Đối với cách config thư viện sử dụng trên codepen, mình đã giới thiệu trong bài viết [Lập trình JavaScript với FCC - Build a Tribute Page](/lap-trinh-javascript-voi-fcc-build-a-tribute-page). Bạn có thể tham khảo lại để biết cách sử dụng.
 
 Trong project này, mình sử dụng các công cụ như sau:
 

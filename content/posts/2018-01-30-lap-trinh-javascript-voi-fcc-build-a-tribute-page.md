@@ -24,7 +24,7 @@ https://codepen.io/completejavascript/pen/baOYpa
 
 ### Các thư viện sử dụng
 
-Ngoài HTML, CSS, [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript/), mình sử dụng thêm 2 thư viện khác là: Bootstrap (CSS) và jQuery (js). Để thêm chúng vào project trên codepen, bạn làm như sau:
+Ngoài HTML, CSS, [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript), mình sử dụng thêm 2 thư viện khác là: Bootstrap (CSS) và jQuery (js). Để thêm chúng vào project trên codepen, bạn làm như sau:
 
 - Bootstrap CSS: **Setting / CSS / Quick-add / Bootstrap 3**
 
@@ -43,11 +43,17 @@ Phần HTML trên codepen chỉ bao gồm nội dung trong thẻ body. Vì vậy
 ![freecodecamp - build a tribute page - setting html at completejavascript - completejavascript.com](../images/freecodecamp-setting-html.png)
 
 ```html
-<meta charset="UTF-8">
-<meta name="description" content="A tribute page for Brendan Eich - founder of JavaScript">
-<meta name="keywords" content="fcc, freecodecamp, tribute page, brendan eich, javascript, bootstrap, jquery, html5, css3">
-<meta name="author" content="Lam Pham">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta
+  name="description"
+  content="A tribute page for Brendan Eich - founder of JavaScript"
+/>
+<meta
+  name="keywords"
+  content="fcc, freecodecamp, tribute page, brendan eich, javascript, bootstrap, jquery, html5, css3"
+/>
+<meta name="author" content="Lam Pham" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
 Trong đó:
@@ -82,12 +88,12 @@ Ngoài ra, menu còn trỏ đến các mục tương ứng trên trang là: **Ab
 
 ### Bắt đầu với \$(document).ready()
 
-Hàm này dùng để phát hiện trạng thái khi toàn bộ các phần tử [DOM](/co-ban-ve-dom-javascript/) đã được load.
+Hàm này dùng để phát hiện trạng thái khi toàn bộ các phần tử [DOM](/co-ban-ve-dom-javascript) đã được load.
 
 ```js
 // A $( document ).ready() block.
-$( document ).ready(function() {
-    console.log( "ready!" );
+$(document).ready(function () {
+  console.log("ready!");
 });
 ```
 
@@ -105,7 +111,7 @@ Khi một trong 3 menu item này được click thì hàm sau sẽ được gọ
 
 ```js
 // Navigation Bar Handling
-$(".my-menu").click(function(){
+$(".my-menu").click(function () {
   menuClicked = true;
   activateMenu(this);
   $("#my-navbar").slideUp();
@@ -118,7 +124,7 @@ Có 3 thứ cần làm khi menu item được click:
 - Kích hoạt menu item được click (bỏ **active** với các menu item còn lại) thông qua class **active** - xử lý bởi Bootstrap.
 
 ```js
-function activateMenu(menuItem){
+function activateMenu(menuItem) {
   $(menuItem).parent().children().removeClass("active");
   $(menuItem).addClass("active");
 }
@@ -131,16 +137,20 @@ Giả sử, trang web đang ở vị trí đầu trang (_About_). Nếu người
 ```js
 // Smooth scrolling
 $("a[href*='#']:not([href='#'])").click(function () {
-  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-    || location.hostname == this.hostname) {
-
+  if (
+    location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") ||
+    location.hostname == this.hostname
+  ) {
     var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
 
     if (target.length) {
-      $('html,body').animate({
-        scrollTop: target.offset().top
-      }, 1000);
+      $("html,body").animate(
+        {
+          scrollTop: target.offset().top,
+        },
+        1000
+      );
     }
   }
 });
@@ -154,12 +164,12 @@ Trong đó, sau khi đã xác định được _target_, sử dụng [.animate()
 
 #### Bắt sự kiện scroll
 
-Để [xử lý sự kiện](/xu-ly-mot-event-javascript-co-ban/) này, mình sử dụng hàm [.scroll()](https://api.jquery.com/scroll/) của jQuery.
+Để [xử lý sự kiện](/xu-ly-mot-event-javascript-co-ban) này, mình sử dụng hàm [.scroll()](https://api.jquery.com/scroll/) của jQuery.
 
 ```js
 // Update menu while scrolling
-$(window).scroll(function(){
-  if(timer) {
+$(window).scroll(function () {
+  if (timer) {
     window.clearTimeout(timer);
   }
   timer = window.setTimeout(handleScrollEvent, 100);
@@ -169,33 +179,31 @@ $(window).scroll(function(){
 Thực tế, khi người dùng kéo trang thì sự kiện này sẽ liên tục được gọi. Để tránh tình trạng đó, mình sẽ gọi đến hàm _handleScrollEvent_, sau thời gian timeout là 100 ms. Trong khoảng thời gian này, nếu như tiếp tục có sự kiện gọi đến thì hành động trước sẽ bị xoá đi, để tránh phải xử lý quá nhiều việc giống nhau:
 
 ```js
-if(timer) {
+if (timer) {
   window.clearTimeout(timer);
 }
 ```
 
 #### Xử lý sự kiện scroll
 
-Có một vấn đề phát sinh là khi người dùng click vào menu item, trang web được scroll đến một mục khác. Lúc này, **\$(window).scroll** cũng sẽ được gọi tới. Để tránh xung đột giữa hai trường hợp (người dùng kéo trang và người dùng click vào menu), mình đã sử dụng một biến [Boolean](/values-types-va-operators-trong-javascript-phan-2/) là **menuClicked** để phân biệt. Trường hợp, click menu item thì <code>menuClicked = true</code> và mình sẽ không xử lý gì trong [function](/tim-hieu-function-javascript/) _handleScrollEvent_.
+Có một vấn đề phát sinh là khi người dùng click vào menu item, trang web được scroll đến một mục khác. Lúc này, **\$(window).scroll** cũng sẽ được gọi tới. Để tránh xung đột giữa hai trường hợp (người dùng kéo trang và người dùng click vào menu), mình đã sử dụng một biến [Boolean](/values-types-va-operators-trong-javascript-phan-2) là **menuClicked** để phân biệt. Trường hợp, click menu item thì <code>menuClicked = true</code> và mình sẽ không xử lý gì trong [function](/tim-hieu-function-javascript) _handleScrollEvent_.
 
 ```js
 function handleScrollEvent() {
   if (!menuClicked) {
-    let about = $('#about');
-    let career = $('#career');
-    let qoute = $('#qoute');
+    let about = $("#about");
+    let career = $("#career");
+    let qoute = $("#qoute");
 
-    if(isInViewPort(about) && !about.hasClass("active")) {
-      activateMenu($('#menu-about'));
-      setHashLocation('#about');
-    }
-    else if(isInViewPort(career) && !career.hasClass("active")) {
-      activateMenu($('#menu-career'));
-      setHashLocation('#career');
-    }
-    else if(isInViewPort(qoute) && !qoute.hasClass("active")) {
-      activateMenu($('#menu-qoute'));
-      setHashLocation('#qoute');
+    if (isInViewPort(about) && !about.hasClass("active")) {
+      activateMenu($("#menu-about"));
+      setHashLocation("#about");
+    } else if (isInViewPort(career) && !career.hasClass("active")) {
+      activateMenu($("#menu-career"));
+      setHashLocation("#career");
+    } else if (isInViewPort(qoute) && !qoute.hasClass("active")) {
+      activateMenu($("#menu-qoute"));
+      setHashLocation("#qoute");
     }
   } else {
     menuClicked = false;
@@ -206,7 +214,7 @@ function handleScrollEvent() {
 Trường hợp, không phải là click menu thì mình sẽ kiểm tra trong 3 mục chính, phần nào nằm trong viewport thì sẽ active menu tương ứng và set lại _hash location_ ở thanh địa chỉ URL. Sau đây là hàm kiểm tra xem 1 phần tử có nằm trong viewport hay không:
 
 ```js
-function isInViewPort(element){
+function isInViewPort(element) {
   // get top and bottom of element
   let elementTop = $(element).offset().top;
   let elementBottom = elementTop + $(element).outerHeight();
@@ -231,9 +239,9 @@ Khi người dùng kéo trang web đến mục nào thì mình sẽ set lại đ
 
 ```js
 function setHashLocation(id) {
-  var scrollmem = $('html,body').scrollTop();
+  var scrollmem = $("html,body").scrollTop();
   window.location.hash = id;
-  $('html,body').scrollTop(scrollmem);
+  $("html,body").scrollTop(scrollmem);
 }
 ```
 
@@ -251,7 +259,7 @@ Trên đây là toàn bộ những điều mình rút ra được từ project *
 
 Không biết bạn đánh giá như thế nào? Vui lòng để lại bình luận phía dưới để mọi người cùng trao đổi nhé!
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-personal-portfolio/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-personal-portfolio), thân ái!
 
 ## Tham khảo
 

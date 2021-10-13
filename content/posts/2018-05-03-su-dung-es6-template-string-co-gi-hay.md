@@ -19,7 +19,7 @@ Có thể bạn thừa biết, phiên bản ES6 của JavaScript đã giới thi
 
 ## ES6 Template String là gì?
 
-ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong [string](/values-types-va-operators-trong-javascript-phan-2/). Trong đó, thay vì sử dụng cặp dấu ngoặc đơn ('') hay ngoặc kép (""), bạn sử dụng cặp dấu **backtick** hay **backqoute**, để biểu diễn string.
+ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong [string](/values-types-va-operators-trong-javascript-phan-2). Trong đó, thay vì sử dụng cặp dấu ngoặc đơn ('') hay ngoặc kép (""), bạn sử dụng cặp dấu **backtick** hay **backqoute**, để biểu diễn string.
 
 Xin lỗi vì mình chưa tìm ra cách để hiển thị cặp dấu này ở wordpress, nên dùng tạm cái này:
 
@@ -32,7 +32,7 @@ Khi đó, biểu thức bên trong template string sẽ được biểu diễn v
 Ví dụ:
 
 ```js
-let name = 'Lam Pham';
+let name = "Lam Pham";
 let greeting = `I'm ${name}`;
 
 console.log(greeting);
@@ -53,10 +53,10 @@ Thông thường để ghép nối string trong JavaScript bạn có thể sử 
 
 ```js
 let intro = "Hello everyone, I'm";
-let firstName = 'Lam';
-let lastName = 'Pham';
+let firstName = "Lam";
+let lastName = "Pham";
 
-let full1 = intro.concat(' ', firstName, ' ', lastName, '.');
+let full1 = intro.concat(" ", firstName, " ", lastName, ".");
 console.log(full1);
 // => Hello everyone, I'm Lam Pham.
 ```
@@ -65,10 +65,10 @@ console.log(full1);
 
 ```js
 let intro = "Hello everyone, I'm";
-let firstName = 'Lam';
-let lastName = 'Pham';
+let firstName = "Lam";
+let lastName = "Pham";
 
-let full2 = intro + ' ' + firstName + ' ' + lastName + '.';
+let full2 = intro + " " + firstName + " " + lastName + ".";
 console.log(full2);
 // => Hello everyone, I'm Lam Pham.
 ```
@@ -77,8 +77,8 @@ Cả hai cách trên đều ra được kết quả như mong muốn. Tuy nhiên
 
 ```js
 let intro = "Hello everyone, I'm";
-let firstName = 'Lam';
-let lastName = 'Pham';
+let firstName = "Lam";
+let lastName = "Pham";
 
 let full3 = `${intro} ${firstName} ${lastName}.`;
 console.log(full3);
@@ -94,7 +94,7 @@ _Nếu bạn đồng ý với nhận xét của mình thì có thể để lại
 Sử dụng kí tự backslash (\\):
 
 ```js
-let str = "I'm a \"JavaScript Lover\".";
+let str = 'I\'m a "JavaScript Lover".';
 console.log(str);
 // => I'm a "JavaScript Lover".
 ```
@@ -132,9 +132,10 @@ Bạn thấy đấy, bạn vừa có thể hiển thị dấu ngoặc đơn và 
 Với cách thông thường, để viết string trên nhiều dòng, bạn có thể sử dụng kí tự (\\n) - **newline**.
 
 ```js
-let str = 'Hello everyone!\n' +
-          'This is line 1 of multiline string example.\n' +
-          'This is line 2 of multiline string example.';
+let str =
+  "Hello everyone!\n" +
+  "This is line 1 of multiline string example.\n" +
+  "This is line 2 of multiline string example.";
 
 console.log(str);
 /*
@@ -168,10 +169,10 @@ let x = 1;
 let y = 2;
 let sum = (x, y) => x + y;
 
-console.log('Sum of x and y is: ' + (x + y));
+console.log("Sum of x and y is: " + (x + y));
 // => Sum of x and y is: 3
 
-console.log('Sum of x and y is: ' + sum(x, y));
+console.log("Sum of x and y is: " + sum(x, y));
 // => Sum of x and y is: 3
 ```
 
@@ -195,9 +196,9 @@ Trên đây là một số những tính năng mà mình thấy rất hữu ích
 
 Nghe tên có **Template** là mình nghĩ ngay đến việc sử dụng thằng này vào xây dựng HTML template. Vì mấy bài viết gần đây mình cũng có đề cập đến chủ đề này:
 
-- [HTML String sang DOM Node với DOMParser](/html-string-sang-dom-node-voi-domparser/)
-- [HTML Template sang DOM Node](/chuyen-html-template-sang-dom-node/)
-- [Mustache Template với jQuery](/mustache-template-voi-jquery/)
+- [HTML String sang DOM Node với DOMParser](/html-string-sang-dom-node-voi-domparser)
+- [HTML Template sang DOM Node](/chuyen-html-template-sang-dom-node)
+- [Mustache Template với jQuery](/mustache-template-voi-jquery)
 
 **Liệu mình có thể xây dựng một thư viện tương đương như [Mustache.js](https://github.com/janl/mustache.js/) hay [Handlebars.js](https://handlebarsjs.com/)?**
 
@@ -218,11 +219,11 @@ Nhưng dù sao thì cứ thử làm xem nó ra cái gì nào.
 
 Trước khi bắt đầu, mình nghĩ nên đưa ra một bài toán ví dụ để áp dụng cái này. Và như đã nói ở trên, mình có viết 3 bài về chủ đề này rồi, do đó, tốt nhất là lấy lại một ví dụ trong đấy.
 
-Mình quyết định sử dụng ví dụ trong bài viết **[HTML Template sang DOM Node](/chuyen-html-template-sang-dom-node/):**
+Mình quyết định sử dụng ví dụ trong bài viết **[HTML Template sang DOM Node](/chuyen-html-template-sang-dom-node):**
 
 https://codepen.io/completejavascript/pen/MVyXyp
 
-Bạn có thể đọc lại bài viết đó để hiểu rõ hơn. Nhưng túm gọn lại, bài toán này nhằm xây dựng template để hiển thị mục bình luận với dữ liệu được cung cấp dưới dạng [mảng](/javascript-array-co-ban/).
+Bạn có thể đọc lại bài viết đó để hiểu rõ hơn. Nhưng túm gọn lại, bài toán này nhằm xây dựng template để hiển thị mục bình luận với dữ liệu được cung cấp dưới dạng [mảng](/javascript-array-co-ban).
 
 Trong bài đó, mình sử dụng thẻ [template](https://developer.mozilla.org/en/docs/Web/HTML/Element/template) của HTML để khai báo html template:
 
@@ -241,16 +242,16 @@ Kết quả của phương pháp này là ta được [DocumentFragment](https:/
 
 ```js
 let data = [
-  {name: "John", comment: "That is great"},
-  {name: "Alex", comment: "It's helpful"},
-  {name: "David", comment: "Thanks a lot"}
+  { name: "John", comment: "That is great" },
+  { name: "Alex", comment: "It's helpful" },
+  { name: "David", comment: "Thanks a lot" },
 ];
 
 btnAdd.addEventListener("click", () => {
-  data.forEach(item => {
+  data.forEach((item) => {
     let tmpl = templateFrag.cloneNode(true);
-    tmpl.querySelector('.name').innerText = item.name;
-    tmpl.querySelector('.comment').innerText = item.comment;
+    tmpl.querySelector(".name").innerText = item.name;
+    tmpl.querySelector(".comment").innerText = item.comment;
     container.appendChild(tmpl);
   });
 });
@@ -274,7 +275,7 @@ let itemTemplate = (data) => {
       <span class="comment">${data.comment}</span>
     </div>
   `;
-}
+};
 ```
 
 Bạn có thể thấy là cách định nghĩa này rất giống với Mustache, chỉ khác ở chỗ là:
@@ -286,11 +287,11 @@ Bạn có thể thấy là cách định nghĩa này rất giống với Mustach
 
 #### Render template thành html
 
-Dưới đây là đoạn code [xử lý sự kiện](/xu-ly-mot-event-javascript-co-ban/) khi người dùng click vào button **Add**:
+Dưới đây là đoạn code [xử lý sự kiện](/xu-ly-mot-event-javascript-co-ban) khi người dùng click vào button **Add**:
 
 ```js
 btnAdd.addEventListener("click", () => {
-  data.forEach(item => {
+  data.forEach((item) => {
     let tmpl = itemTemplate(item);
     let frag = document.createRange().createContextualFragment(tmpl);
     container.appendChild(frag);
@@ -298,13 +299,13 @@ btnAdd.addEventListener("click", () => {
 });
 ```
 
-Với mảng **data**, mình sử dụng [forEach](/javascript-foreach-la-cai-quai-gi/) để duyệt từng phần tử một - **item** và gọi [hàm](/tim-hieu-function-javascript/):
+Với mảng **data**, mình sử dụng [forEach](/javascript-foreach-la-cai-quai-gi) để duyệt từng phần tử một - **item** và gọi [hàm](/tim-hieu-function-javascript):
 
 ```js
 let tmpl = itemTemplate(item);
 ```
 
-Kết quả của câu lệnh trên là một html string. Tiếp theo, mình cần tạo ra [DOM](/co-ban-ve-dom-javascript/) để chèn vào html.
+Kết quả của câu lệnh trên là một html string. Tiếp theo, mình cần tạo ra [DOM](/co-ban-ve-dom-javascript) để chèn vào html.
 
 Cách đơn giản nhất là sử dụng DocumentFragment bằng cách:
 
@@ -318,7 +319,7 @@ _Tham khảo thêm:_
 - _[Document.createRange()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createRange)_
 - _[Range.createContextualFragment()](https://developer.mozilla.org/en-US/docs/Web/API/Range/createContextualFragment)_
 
-Công việc cuối cùng cần làm là [append](https://developer.mozilla.org/en/docs/Web/API/Node/appendChild) vào *container* thôi. Với cách làm như này, mình đã có thể tạo HTML Template mà không cần phải querySelector hay sử dụng thư viện như Mustache.js...
+Công việc cuối cùng cần làm là [append](https://developer.mozilla.org/en/docs/Web/API/Node/appendChild) vào _container_ thôi. Với cách làm như này, mình đã có thể tạo HTML Template mà không cần phải querySelector hay sử dụng thư viện như Mustache.js...
 
 Bạn có thể tham khảo ví dụ hoàn chỉnh tại đây:
 
@@ -342,11 +343,11 @@ let itemTemplate = (item) => {
       <span class="comment">${item.comment}</span>
       </div>
     `;
-}
+};
 
 let htmlTemplate = (data) => {
-  return `${data.map(item => itemTemplate(item)).join('')}`;
-}
+  return `${data.map((item) => itemTemplate(item)).join("")}`;
+};
 ```
 
 Bạn chú ý:
@@ -372,18 +373,18 @@ Ngoài ra, nếu bạn biết ES6 Template String có thể ứng dụng vào đ
 
 Và nếu bạn có thắc mắc hay góp ý gì với bài viết của mình thì cũng vui lòng để lại dưới phần bình luận. Mình mong muốn nhận được góp ý của bạn để có thể viết được những bài viết chất lượng hơn sau này.
 
-Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/6-cach-loai-bo-phan-tu-lap-trong-mang/), thân ái!
+Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/6-cach-loai-bo-phan-tu-lap-trong-mang), thân ái!
 
 **Tham khảo:**
 
 - [Getting Literal With ES6 Template Strings](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings)
 - [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-- [Easy Creation of HTML with JavaScript's Template Strings](https://wesbos.com/template-strings-html/)
+- [Easy Creation of HTML with JavaScript's Template Strings](https://wesbos.com/template-strings-html)
 
 <hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

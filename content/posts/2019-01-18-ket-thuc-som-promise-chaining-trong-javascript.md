@@ -48,25 +48,25 @@ Dưới đây, mình sẽ xem xét một bài phi thực tế để biết cách
 Giả sử mình có đoạn code dưới đây:
 
 ```js
-const increase = x => {
+const increase = (x) => {
   console.log(x);
   return x + 1;
-}
+};
 
 const run = (x) => {
   new Promise((resolve, reject) => {
     resolve(x);
   })
-    .then(res => increase(res))
-    .then(res => increase(res))
-    .then(res => increase(res))
-    .catch(err => console.log('Catched: ' + err));
-}
+    .then((res) => increase(res))
+    .then((res) => increase(res))
+    .then((res) => increase(res))
+    .catch((err) => console.log("Catched: " + err));
+};
 ```
 
 Trong đó:
 
-- [Hàm](/tim-hieu-function-javascript/) _increase_ sẽ trả về giá trị của đầu vào + 1.
+- [Hàm](/tim-hieu-function-javascript) _increase_ sẽ trả về giá trị của đầu vào + 1.
 - Hàm _run_ sẽ thực hiện một Promise chaining, với mỗi mắt xích sẽ gọi hàm _increase_.
 
 Với hàm _run_ như trên thì với mọi giá trị của x, 3 cái _then_ trên luôn được thực hiện. Ví dụ với x = 4 thì kết quả thu được là:
@@ -74,10 +74,10 @@ Với hàm _run_ như trên thì với mọi giá trị của x, 3 cái _then_ t
 ```js
 run(4);
 /*
-* 4
-* 5
-* 6
-*/
+ * 4
+ * 5
+ * 6
+ */
 ```
 
 Nếu mình muốn kết thúc sớm Promise chaining ngay tại _then_ đầu tiên khi giá trị của _res_ lớn hơn 3 thì sao?
@@ -89,33 +89,33 @@ Có 2 cách để giải quyết bài toán này, đó là: **không thực hi�
 Bình thường, khi thực hiện _return_, giá trị _return_ sẽ được đưa đến mắt xích tiếp theo của chuỗi Promise để xử lý. Và nếu bạn không _return_ thì giá trị đó sẽ được hiểu là **undefined**. Dựa vào đặc điểm này, mình sẽ thay đổi đoạn code trên như sau:
 
 ```js
-const increase = x => {
+const increase = (x) => {
   console.log(x);
   return x + 1;
-}
+};
 
 const run = (x) => {
   new Promise((resolve, reject) => {
     resolve(x);
   })
-    .then(res => {
+    .then((res) => {
       if (res <= 3) return increase(res);
     })
-    .then(res => {
+    .then((res) => {
       if (res !== undefined) return increase(res);
     })
-    .then(res => {
+    .then((res) => {
       if (res !== undefined) return increase(res);
     })
-    .catch(err => console.log('Catched: ' + err));
-}
+    .catch((err) => console.log("Catched: " + err));
+};
 
 run(3);
 /*
-* 3
-* 4
-* 5
-*/
+ * 3
+ * 4
+ * 5
+ */
 
 run(4);
 // Nothing
@@ -132,30 +132,30 @@ Tuy nhiên, nếu để ý kĩ thì bạn sẽ thấy cách này chỉ giải qu
 Đúng vậy, việc sử dụng _Promise.reject()_ sẽ giúp bạn kết thúc sớm Promise chaining bằng cách nhảy thẳng đến phần _catch_. Khi đó, đoạn code trên sẽ trở thành:
 
 ```js
-const increase = x => {
+const increase = (x) => {
   console.log(x);
   return x + 1;
-}
+};
 
 const run = (x) => {
   new Promise((resolve, reject) => {
     resolve(x);
   })
-    .then(res => {
+    .then((res) => {
       if (res <= 3) return increase(res);
       return Promise.reject(res);
     })
-    .then(res => increase(res))
-    .then(res => increase(res))
-    .catch(err => console.log('Catched: ' + err));
-}
+    .then((res) => increase(res))
+    .then((res) => increase(res))
+    .catch((err) => console.log("Catched: " + err));
+};
 
 run(3);
 /*
-* 3
-* 4
-* 5
-*/
+ * 3
+ * 4
+ * 5
+ */
 run(4);
 // Catched: 4
 ```

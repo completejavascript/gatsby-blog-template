@@ -32,7 +32,7 @@ Việc sử dụng biến số có những ưu điểm là bạn có thể đị
 
 ### Cách sử dụng cơ bản
 
-Mọi CSS variable đều bắt đầu bằng hai dấu gạch ngang (--) và phải đặt trong một **element** nào đó. Ví dụ: *body, div, .class\_bat\_ky,...*
+Mọi CSS variable đều bắt đầu bằng hai dấu gạch ngang (--) và phải đặt trong một **element** nào đó. Ví dụ: _body, div, .class_bat_ky,..._
 
 Ví dụ phần khai báo CSS variable:
 
@@ -50,7 +50,7 @@ element {
 }
 ```
 
-Ngoài ra, nếu bạn muốn sử dụng CSS variable ở mọi nơi trên trang web, bạn có thể khai báo chúng ở <code>:root</code> - phần tử cấp cao nhất trong [DOM tree](/co-ban-ve-dom-javascript/).
+Ngoài ra, nếu bạn muốn sử dụng CSS variable ở mọi nơi trên trang web, bạn có thể khai báo chúng ở <code>:root</code> - phần tử cấp cao nhất trong [DOM tree](/co-ban-ve-dom-javascript).
 
 Để biết thêm về các tính chất của CSS variable bạn có thể tham khảo thêm tại các bài viết sau:
 
@@ -75,13 +75,13 @@ Giả sử mình có một file _index.html_ với nội dung phần body như n
       <h1>Exercitation ullamco laboris nisi ut aliquip commodo.
     </header>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris,
     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
 
     <p>in reprehenderit in voluptate velit esse cillum dolore eu,
-    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </main>
 </body>
@@ -102,11 +102,11 @@ Dĩ nhiên, việc thêm hay không thêm _class_, mình áp dụng thông qua 2
 Ví dụ sử dụng jQuery:
 
 ```js
-$(document).ready(function() {
+$(document).ready(function () {
   const $body = $("body");
   const $btns = $(".btn");
 
-  $btns.on("click", function() {
+  $btns.on("click", function () {
     $btns.removeClass("active");
     $(this).addClass("active");
     $body.toggleClass("dark");
@@ -121,7 +121,9 @@ Tiếp theo là việc thay đổi style.
 Giả sử, giao diện Light theme ban đầu có style như sau:
 
 ```css
-* { box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 15px;
@@ -135,11 +137,13 @@ main {
   margin: 15px auto;
   padding: 15px;
   background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-.option {font-size: 0.8rem;}
+.option {
+  font-size: 0.8rem;
+}
 .btn {
   padding: 5px 10px;
   background-color: #e8edec;
@@ -148,7 +152,9 @@ main {
   background-color: #222;
   color: #fff;
 }
-.btn:not(.active):hover {cursor: pointer;}
+.btn:not(.active):hover {
+  cursor: pointer;
+}
 ```
 
 Với Dark theme, mình phải đặt tất cả element cần thay đổi vào bên trong class "dark" để tuỳ chỉnh:
@@ -160,11 +166,13 @@ Với Dark theme, mình phải đặt tất cả element cần thay đổi vào 
 }
 .dark main {
   background-color: #000;
-  box-shadow: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
-  -webkit-box-shadow: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
-  -moz-box-shadow: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
 }
-.dark .btn {background-color: #222;}
+.dark .btn {
+  background-color: #222;
+}
 .dark .btn.active {
   background-color: #fff;
   color: #000;
@@ -193,7 +201,7 @@ body {
   --main-txt-color: #222;
   --main-bg-color: #fff;
   --active-txt-color: #fff;
-  --shadow-style: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-style: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
   margin: 0;
   padding: 15px;
@@ -214,7 +222,7 @@ body.dark {
   --main-txt-color: #e8edec;
   --main-bg-color: #000;
   --active-txt-color: #000;
-  --shadow-style: 0 1px 3px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
+  --shadow-style: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
 }
 ```
 
@@ -244,7 +252,9 @@ main {
   -webkit-box-shadow: var(--shadow-style);
   -moz-box-shadow: var(--shadow-style);
 }
-.option {font-size: 0.8rem;}
+.option {
+  font-size: 0.8rem;
+}
 .btn {
   padding: 5px 10px;
   background-color: var(--primary-bg-color);
@@ -253,7 +263,9 @@ main {
   background-color: var(--primary-color);
   color: var(--active-txt-color);
 }
-.btn:not(.active):hover {cursor: pointer;}
+.btn:not(.active):hover {
+  cursor: pointer;
+}
 ```
 
 ## Demo
@@ -279,5 +291,5 @@ Nếu có phần nào khó hiểu, hy vọng bạn góp ý lại với mình. C�
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

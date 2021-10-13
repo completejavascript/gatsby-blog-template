@@ -23,12 +23,12 @@ Cho bạn 4 đoạn code sau:
 
 ```js
 let person = {
-  name : 'Bob',
-  sayName : function() {
-    setTimeout(function() {
+  name: "Bob",
+  sayName: function () {
+    setTimeout(function () {
       console.log(`I'm ${this.name}`);
     }, 1000);
-  }
+  },
 };
 person.sayName();
 ```
@@ -37,12 +37,12 @@ person.sayName();
 
 ```js
 let person = {
-  name : 'Bob',
-  sayName : () => {
+  name: "Bob",
+  sayName: () => {
     setTimeout(() => {
       console.log(`I'm ${this.name}`);
     }, 1000);
-  }
+  },
 };
 person.sayName();
 ```
@@ -51,12 +51,12 @@ person.sayName();
 
 ```js
 let person = {
-  name : 'Bob',
-  sayName : function() {
+  name: "Bob",
+  sayName: function () {
     setTimeout(() => {
       console.log(`I'm ${this.name}`);
     }, 1000);
-  }
+  },
 };
 person.sayName();
 ```
@@ -65,12 +65,12 @@ person.sayName();
 
 ```js
 let person = {
-  name : 'Bob',
-  sayName : () => {
-    setTimeout(function() {
+  name: "Bob",
+  sayName: () => {
+    setTimeout(function () {
       console.log(`I'm ${this.name}`);
     }, 1000);
-  }
+  },
 };
 person.sayName();
 ```
@@ -92,7 +92,7 @@ Như vậy đoạn code 3 là đoạn code in ra kết quả như mong muốn.
 
 **Giải thích:**
 
-Để giải quyết bài toán này bạn cần nắm được sự khác biệt giữa [function](/tim-hieu-function-javascript/) và [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). Cụ thể là về **[this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)**.
+Để giải quyết bài toán này bạn cần nắm được sự khác biệt giữa [function](/tim-hieu-function-javascript) và [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). Cụ thể là về **[this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)**.
 
 ➤ Đối với function:
 
@@ -108,7 +108,7 @@ Hãy thử xem xét 4 ví dụ sau:
 
 ```js
 function func1() {
-  console.log('function 1: ', this);
+  console.log("function 1: ", this);
 }
 func1();
 // => function 1:  Window {
@@ -122,24 +122,24 @@ func1();
 
 ```js
 function func2() {
-  console.log('function 2: ', this);
+  console.log("function 2: ", this);
 }
 
-let obj = {x: 1};
+let obj = { x: 1 };
 func2.bind(obj)();
 // => function 2:  {x: 1}
 ```
 
-Ở đây, mình dùng phương thức [bind](/phan-biet-call-apply-va-bind-trong-javascript/) để bind _this_ với đối tượng _obj_. Vì vậy, _this_ sẽ là tương ứng với đối tượng _obj_.
+Ở đây, mình dùng phương thức [bind](/phan-biet-call-apply-va-bind-trong-javascript) để bind _this_ với đối tượng _obj_. Vì vậy, _this_ sẽ là tương ứng với đối tượng _obj_.
 
 **Ví dụ 3:**
 
 ```js
 let person = {
-  name : 'Bob',
-  test : function() {
+  name: "Bob",
+  test: function () {
     console.log("test: ", this);
-  }
+  },
 };
 person.test();
 // => test:  {name: "Bob", test: ƒ}
@@ -150,8 +150,8 @@ person.test();
 **Ví dụ 4:**
 
 ```js
-setTimeout(function() {
-  console.log('callback: ', this);
+setTimeout(function () {
+  console.log("callback: ", this);
 }, 1000);
 // => callback:  Window {
 // postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, frames: Window, …
@@ -172,10 +172,10 @@ Theo như định nghĩa, hàm arrow function không có thuộc tính _this_. V
 
 ```js
 let person = {
-  name : 'Bob',
-  test : () => {
+  name: "Bob",
+  test: () => {
     console.log("test: ", this);
-  }
+  },
 };
 person.test();
 // => test:  Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, frames: Window, …}
@@ -189,14 +189,14 @@ Như vậy, ứng với mỗi đoạn code trên thì _this_ sẽ được xác 
 
 ```js
 let person = {
-  name : 'Bob',
-  sayName : function() {
+  name: "Bob",
+  sayName: function () {
     // this = person
-    setTimeout(function() {
+    setTimeout(function () {
       // this = window
       console.log(`I'm ${this.name}`);
     }, 1000);
-  }
+  },
 };
 person.sayName();
 ```
@@ -205,14 +205,14 @@ person.sayName();
 
 ```js
 let person = {
-  name : 'Bob',
-  sayName : () => {
+  name: "Bob",
+  sayName: () => {
     // this = window
     setTimeout(() => {
       // this = window
       console.log(`I'm ${this.name}`);
     }, 1000);
-  }
+  },
 };
 person.sayName();
 ```
@@ -221,14 +221,14 @@ person.sayName();
 
 ```js
 let person = {
-  name : 'Bob',
-  sayName : function() {
+  name: "Bob",
+  sayName: function () {
     // this = person
     setTimeout(() => {
       // this = person
       console.log(`I'm ${this.name}`);
     }, 1000);
-  }
+  },
 };
 person.sayName();
 ```
@@ -237,14 +237,14 @@ person.sayName();
 
 ```js
 let person = {
-  name : 'Bob',
-  sayName : () => {
+  name: "Bob",
+  sayName: () => {
     // this = window
-    setTimeout(function() {
+    setTimeout(function () {
       // this = window
       console.log(`I'm ${this.name}`);
     }, 1000);
-  }
+  },
 };
 person.sayName();
 ```
@@ -259,15 +259,15 @@ Với cách xác định _this_ như trên thì đoạn code 3 sẽ cho ra kết
 
 ```js
 let person = {
-  name : 'Bob',
-  sayName : function() {
+  name: "Bob",
+  sayName: function () {
     let self = this;
     // this = person, self = person
-    setTimeout(function() {
+    setTimeout(function () {
       // this = window, self = person
       console.log(`I'm ${self.name}`);
     }, 1000);
-  }
+  },
 };
 person.sayName();
 ```
@@ -276,14 +276,17 @@ person.sayName();
 
 ```js
 let person = {
-  name : 'Bob',
-  sayName : function() {
+  name: "Bob",
+  sayName: function () {
     // this = person
-    setTimeout(function() {
-      // this = person
-      console.log(`I'm ${this.name}`);
-    }.bind(this), 1000);
-  }
+    setTimeout(
+      function () {
+        // this = person
+        console.log(`I'm ${this.name}`);
+      }.bind(this),
+      1000
+    );
+  },
 };
 person.sayName();
 ```
@@ -293,7 +296,8 @@ Cụ thể, mình đã bind hàm callback trên với this – person. Vì vậy
 > Với các đoạn code còn lại, tại sao kết quả không phải là "I'm undefined" mà chỉ là "I'm". Bởi vì, đối tượng window có sẵn một thuộc tính là "name". Khi bạn chưa set giá trị cho nó thì mặc định name là một string rỗng "", chứ không phải **undefined**. Điều đó giải thích cho kết quả phía trên.
 
 Trên đây là lời giải thích khá chi tiết cho câu hỏi số 1. Mời bạn đến với câu số 2.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -301,7 +305,7 @@ Trên đây là lời giải thích khá chi tiết cho câu hỏi số 1. Mời
 ## Xoắn não với phỏng vấn JavaScript 2 – Câu 2
 
 ```js
-(function(foo) {
+(function (foo) {
   console.log(typeof foo);
 })([1, 2, 3]);
 ```
@@ -323,17 +327,16 @@ Với câu hỏi này, bạn cần quan tâm đến 2 vấn đề:
 **[IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) (Immediately Invoked Function Expression):** tức là hàm số thực thi ngay sau khi nó được khai báo. Và bạn có thể truyền tham số vào hàm này, bằng cách:
 
 ```js
-(function(p) {
-
-})(parameter);
+(function (p) {})(parameter);
 ```
 
-Trong đó, _parameter_ sẽ tương ứng với _p_.Quay lại với câu hỏi, _foo_ chính là [array](/javascript-array-co-ban/) [1, 2, 3].
+Trong đó, _parameter_ sẽ tương ứng với _p_.Quay lại với câu hỏi, _foo_ chính là [array](/javascript-array-co-ban) [1, 2, 3].
 
 **Toán tử [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)** sẽ trả về string biểu diễn kiểu dữ liệu của toán hạng tương ứng. Tuy nhiên, bạn cần chú ý là **typeof (array)** luôn trả về "object" chứ không phải "array".
 
 Như vậy, đáp án cho câu hỏi này phải là: "object".
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -345,7 +348,7 @@ Như vậy, đáp án cho câu hỏi này phải là: "object".
 function func() {}
 
 // Cách 2:
-let func = function() {}
+let func = function () {};
 ```
 
 Hai cách khai báo function trên khác nhau như thế nào? Nêu ví dụ minh họa?
@@ -378,17 +381,18 @@ Do đó, nếu sử dụng cách 1, bạn có thể gọi hàm trước khi khai
 
 ```js
 // Cách 1:
-func();                   // Đúng
+func(); // Đúng
 function func() {
-    console.log("Hello");
+  console.log("Hello");
 }
 
 // Cách 2:
-func();                   // Lỗi: ReferenceError: func is not defined
-let func = function() {
-    console.log("Hello");
-}
+func(); // Lỗi: ReferenceError: func is not defined
+let func = function () {
+  console.log("Hello");
+};
 ```
+
   </div>
   </div>
 </div>
@@ -397,12 +401,12 @@ let func = function() {
 ## Xoắn não với phỏng vấn JavaScript 2 – Câu 4
 
 ```js
-let cat = function() {
-  return
+let cat = function () {
+  return;
   {
-    say: 'meow'
+    say: "meow";
   }
-}
+};
 ```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
@@ -420,13 +424,13 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 Bởi vì, với JavaScript bạn có thể không cần sử dụng dấu chấm phẩy (;). Do đó, đoạn code trên sẽ tương đương với:
 
 ```js
-let cat = function() {
-  return undefined
+let cat = function () {
+  return undefined;
 
   {
-    say: 'meow'
+    say: "meow";
   }
-}
+};
 console.log(cat());
 // => undefined
 ```
@@ -434,14 +438,15 @@ console.log(cat());
 Vì vậy, đoạn code phía sau _return_ sẽ không bao giờ được chạy đến. Để sửa lại kết quả sao cho đúng thì bạn có thể làm như sau:
 
 ```js
-let cat = function() {
+let cat = function () {
   return {
-    say: 'meow'
-  }
-}
+    say: "meow",
+  };
+};
 console.log(cat());
 // => {say: "meow"}
 ```
+
   </div>
   </div>
 </div>
@@ -474,7 +479,7 @@ Nhưng tại sao kết quả lại là số này? Trước tiên cần xem xét 
 ```js
 function max(arr) {
   let ans = -Infinity;
-  for(let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] > ans) ans = arr[i];
   }
   return ans;
@@ -482,7 +487,8 @@ function max(arr) {
 ```
 
 Tức là để tìm ra số lớn nhất của mảng, mình cần khởi tạo _ans_ với giá trị nhỏ nhất có thể. Sau đó, mình duyệt từng phần tử của mảng và kiểm tra nếu như phần tử đó lớn hơn giá trị nhỏ nhất hiện tại thì gán ans = giá trị phần tử hiện tại. Đó chính là lý do tại sao bạn có thể suy ra kết quả là -Infinity mà không cần đọc tài liệu.
-    </div>
+</div>
+
   </div>
 </div>
 <div class="margin-bottom"></div>
@@ -490,10 +496,10 @@ Tức là để tìm ra số lớn nhất của mảng, mình cần khởi tạo
 ## Xoắn não với phỏng vấn JavaScript 2 – Câu 6
 
 ```js
-console.log(0 + '0');
-console.log(0 - '0');
-console.log(0 * '0');
-console.log(0 / '0');
+console.log(0 + "0");
+console.log(0 - "0");
+console.log(0 * "0");
+console.log(0 / "0");
 ```
 
 Hỏi console in ra kết quả như thế nào? Tại sao?
@@ -534,6 +540,7 @@ Với các toán tử còn lại (-, \*, /), JavaScript sẽ convert về number
 0 * '0' = 0 * 0 = 0;
 0 / '0' = 0 / 0 = NaN;
 ```
+
   </div>
   </div>
 </div>
@@ -543,12 +550,12 @@ Với các toán tử còn lại (-, \*, /), JavaScript sẽ convert về number
 
 Trên đây là 6 câu hỏi phỏng vấn JavaScript cũng rất hay. Nếu bạn có cùng nhận xét với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-3/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-3), thân ái!
 
 <hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

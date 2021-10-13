@@ -13,7 +13,7 @@ tags:
   - Symbol
 ---
 
-Symbol là một kiểu dữ liệu mới được giới thiệu từ phiên bản [ES6](/tag/es6/). Tuy nhiên, mình cũng chưa từng dùng Symbol trong JavaScript bao giờ cả. Nếu vậy thì người ta đưa ra kiểu dữ liệu này để làm gì nhỉ? Nó có ưu điểm gì? Ứng dụng của Symbol như thế nào? Cách sử dụng Symbol trong JavaScript ra sao?
+Symbol là một kiểu dữ liệu mới được giới thiệu từ phiên bản [ES6](/tag/es6). Tuy nhiên, mình cũng chưa từng dùng Symbol trong JavaScript bao giờ cả. Nếu vậy thì người ta đưa ra kiểu dữ liệu này để làm gì nhỉ? Nó có ưu điểm gì? Ứng dụng của Symbol như thế nào? Cách sử dụng Symbol trong JavaScript ra sao?
 
 Bài viết này, mình sẽ đi tìm lời giải cho những câu hỏi trên. Và nếu nó thật sự có ích thì chẳng tội gì mà mình không dùng nhỉ!
 
@@ -56,7 +56,7 @@ console.log(myId1 === myId2); // => false
 
 ### Symbol không tự convert sang string
 
-Hầu hết các kiểu dữ liệu trong JavaScript đều hỗ trợ tự động convert sang [String](/values-types-va-operators-trong-javascript-phan-2/), nhưng Symbol thì không. Ví dụ khi bạn sử dụng Symbol với phương thức [alert()](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert):
+Hầu hết các kiểu dữ liệu trong JavaScript đều hỗ trợ tự động convert sang [String](/values-types-va-operators-trong-javascript-phan-2), nhưng Symbol thì không. Ví dụ khi bạn sử dụng Symbol với phương thức [alert()](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert):
 
 ```js
 let a = true;
@@ -120,7 +120,7 @@ console.log("key2: ", key2); // => name
 
 ### Symbol có thể làm key cho thuộc tính của Object
 
-Đối với [Object](/javascript-object-last-but-not-least/) thì ngoài String, Symbol cũng có thể làm key cho thuộc tính của Object. Ví dụ:
+Đối với [Object](/javascript-object-last-but-not-least) thì ngoài String, Symbol cũng có thể làm key cho thuộc tính của Object. Ví dụ:
 
 ```js
 const id = Symbol("id");
@@ -178,7 +178,7 @@ console.log(arr);
 
 #### Ví dụ khi không dùng Symbol
 
-Giả sử mình định nghĩa một [module](/su-dung-es-modules-tren-trinh-duyet/) như là một object, với một key dạng string là "id". Trường "id" sẽ được sử dụng với mục đích nào đó bên trong module.
+Giả sử mình định nghĩa một [module](/su-dung-es-modules-tren-trinh-duyet) như là một object, với một key dạng string là "id". Trường "id" sẽ được sử dụng với mục đích nào đó bên trong module.
 
 **lib.js:**
 

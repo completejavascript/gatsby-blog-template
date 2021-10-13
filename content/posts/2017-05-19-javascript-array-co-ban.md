@@ -12,7 +12,7 @@ tags:
   - Array
 ---
 
-Trong những bài viết trước, mình đã giới thiệu với bạn về những kiểu dữ liệu cơ bản là: [numbers](/values-types-va-operators-trong-javascript-phan-1/), [strings](/values-types-va-operators-trong-javascript-phan-2/), boolean. Hôm nay, mình sẽ nói về kiểu dữ liệu nâng cao hơn. Đó là _array_. JavaScript array giúp bạn có thể biểu diễn được những dữ liệu phức tạp và dễ dàng hơn trong việc quản lý cũng như xử lý dữ liệu.
+Trong những bài viết trước, mình đã giới thiệu với bạn về những kiểu dữ liệu cơ bản là: [numbers](/values-types-va-operators-trong-javascript-phan-1), [strings](/values-types-va-operators-trong-javascript-phan-2), boolean. Hôm nay, mình sẽ nói về kiểu dữ liệu nâng cao hơn. Đó là _array_. JavaScript array giúp bạn có thể biểu diễn được những dữ liệu phức tạp và dễ dàng hơn trong việc quản lý cũng như xử lý dữ liệu.
 
 ## Vậy array là gì?
 
@@ -65,10 +65,10 @@ var array1 = [1, 2, [6, 4, 8], 7, [3, 5], 4];
 
 ```js
 var arr = [1, 3, 5, 0];
-console.log(arr[0]);   // => 1
-console.log(arr[1]);   // => 3
-console.log(arr[4]);   // => undefined
-console.log(arr[-1]);  // => undefined
+console.log(arr[0]); // => 1
+console.log(arr[1]); // => 3
+console.log(arr[4]); // => undefined
+console.log(arr[-1]); // => undefined
 console.log(arr[1.4]); // => undefined
 ```
 
@@ -91,7 +91,7 @@ console.log(b.length);
 Nếu sử dụng thuộc tính _length_, mình có thể dễ dàng truy cập vào phần tử cuối mảng - có chỉ số là _length - 1_:
 
 ```js
-var a = ['cat', 'dog', 'fish', 'chicken'];
+var a = ["cat", "dog", "fish", "chicken"];
 console.log(a[a.length - 1]);
 // => chicken
 ```
@@ -106,9 +106,9 @@ Kiểm tra obj có phải là array hay không. Nếu đúng thì trả về tru
 
 ```js
 console.log(Array.isArray([1, 2, 3])); // => true
-console.log(Array.isArray(1, 2, 3));   // => false
-console.log(Array.isArray('hehe'));    // => false
-console.log(Array.isArray({a:1, b:2}));// => false
+console.log(Array.isArray(1, 2, 3)); // => false
+console.log(Array.isArray("hehe")); // => false
+console.log(Array.isArray({ a: 1, b: 2 })); // => false
 ```
 
 ### Array.of([e1], [e2], ...)
@@ -124,7 +124,7 @@ var b = Array.of(1, 2, 3);
 console.log(b);
 // => [1, 2, 3]
 
-var c = Array.of(1, 'hai', null, NaN);
+var c = Array.of(1, "hai", null, NaN);
 console.log(c);
 // => [1, 'hai', null, NaN]
 ```
@@ -171,7 +171,7 @@ len = a.push(2, 3);
 console.log(len, a);
 // => 3 [10, 2, 3];
 
-len = a.push([4, 1], 'hihi');
+len = a.push([4, 1], "hihi");
 console.log(len, a);
 // => 5 [10, 2, 3, [4, 1], 'hihi']
 ```
@@ -181,7 +181,7 @@ console.log(len, a);
 Bỏ đi phần tử cuối của mảng và trả về giá trị của phần tử đó. Nếu ban đầu mảng là rỗng thì kết quả trả về là _undefined_.
 
 ```js
-var a = ['one', 'two', 'three'];
+var a = ["one", "two", "three"];
 var t = a.pop();
 console.log(t); // => three
 console.log(a); // => ['one', 'two']
@@ -207,7 +207,7 @@ console.log(r); // => [12, 11, 10, 9]
 Bỏ đi phần tử đầu tiên của mảng và trả về giá trị của phần tử đó.
 
 ```js
-var s = ['car', 'bike', 'train'];
+var s = ["car", "bike", "train"];
 var e = s.shift();
 console.log(e); // => car
 console.log(s); // => ['bike', 'train']
@@ -220,7 +220,7 @@ Thêm một hay nhiều phần tử vào đầu tiên của mảng và độ dà
 ```js
 var m = [1, 3, 5, 7];
 var len = m.unshift(9, 8, NaN);
-console.log(m);   // => [9, 8, NaN, 1, 3, 5, 7]
+console.log(m); // => [9, 8, NaN, 1, 3, 5, 7]
 console.log(len); // => 7
 ```
 
@@ -262,7 +262,7 @@ console.log(f); // => [15, 17]
 Trả về mảng mới bằng cách lấy mảng hiện tại nối với các phần tử value1, value2,...
 
 ```js
-var c = ['a', 'b', 'c'];
+var c = ["a", "b", "c"];
 var d = [1, 2, 3];
 
 var e = c.concat(d);
@@ -272,7 +272,7 @@ console.log(e); // => ['a', 'b', 'c', 1, 2, 3]
 var f = c.concat(1, 2);
 console.log(f); // => ['a', 'b', 'c', 1, 2]
 
-var g = c.concat(['hello', 'hi'], 1);
+var g = c.concat(["hello", "hi"], 1);
 console.log(g); // => ['a', 'b', 'c', 'hello', 'hi', 1]
 ```
 
@@ -284,12 +284,12 @@ Kiểm tra xem trong mảng hiện tại tính từ _fromIndex_ có chứa phầ
 
 ```js
 var a = [0, 2, 4, 6, 8];
-console.log(a.includes(1));    // => false
-console.log(a.includes(2));    // => true
+console.log(a.includes(1)); // => false
+console.log(a.includes(2)); // => true
 console.log(a.includes(4, 1)); // => true
 console.log(a.includes(4, 3)); // => false
-console.log(a.includes(6,-2)); // => true
-console.log(a.includes(2,-2)); // => false
+console.log(a.includes(6, -2)); // => true
+console.log(a.includes(2, -2)); // => false
 ```
 
 ### array.indexOf(searchElement, [fromIndex])
@@ -300,10 +300,10 @@ Trả về vị trí phần tử đầu tiên trong mảng có giá trị _searc
 
 ```js
 var a = [0, 2, 3, 4];
-console.log(a.indexOf(2));    // => 1
+console.log(a.indexOf(2)); // => 1
 console.log(a.indexOf(2, 2)); // => -1
-console.log(a.indexOf(3,-2)); // => 2
-console.log(a.indexOf(4, 10));// => -1
+console.log(a.indexOf(3, -2)); // => 2
+console.log(a.indexOf(4, 10)); // => -1
 ```
 
 ### array.lastIndexOf(searchElement, [fromIndex])
@@ -312,9 +312,9 @@ Tương tự như _array.indexOf_, nhưng kết quả trả về sẽ là phần
 
 ```js
 var x = [1, 2, 3, 4, 3, 2, 1];
-console.log(x.lastIndexOf(2));   // => 5
-console.log(x.lastIndexOf(3, 3));// => 2
-console.log(x.lastIndexOf(3, 5));// => 2
+console.log(x.lastIndexOf(2)); // => 5
+console.log(x.lastIndexOf(3, 3)); // => 2
+console.log(x.lastIndexOf(3, 5)); // => 2
 ```
 
 ### array.toString()
@@ -322,7 +322,7 @@ console.log(x.lastIndexOf(3, 5));// => 2
 Convert tất cả các phần tử trong mảng thành string và ghép chúng thành một string mới. Nếu một phần tử là null hoặc undefined thì nó sẽ được convert thành string rỗng.
 
 ```js
-var a = [1, 2, [3, 4], 'hello', null, NaN, undefined];
+var a = [1, 2, [3, 4], "hello", null, NaN, undefined];
 var b = a.toString();
 console.log(b);
 // => 1,2,3,4,hello,,NaN,
@@ -333,12 +333,12 @@ console.log(b);
 Tương tự như _array.toString()_, tuy nhiên bạn có thể tuỳ biến thành phần phân cách. Lúc này các phần tử sẽ phân cách nhau bởi _seperator_. Nếu không được khai báo thì mặc định seperator là dấu phẩy ",".
 
 ```js
-var a = [1, 2, [3, 4], 'hello', null, NaN, undefined];
+var a = [1, 2, [3, 4], "hello", null, NaN, undefined];
 var b = a.join();
 console.log(b);
 // => 1,2,3,4,hello,,NaN,
 
-var c = a.join('-');
+var c = a.join("-");
 console.log(c);
 // => 1-2-3,4-hello--NaN-
 ```
@@ -357,11 +357,11 @@ Cho một mảng các số. Hãy sắp xếp các số trong mảng theo thứ t
 - Sắp xếp trộn - merge sort ([tham khảo](https://github.com/completejavascript/practical-javascript/blob/master/array_sorting/merge_sort_completejavascript.com.js))
 - Sắp xếp vun đống - heap sort ([tham khảo](https://github.com/completejavascript/practical-javascript/blob/master/array_sorting/heap_sort_completejavascript.com.js))
 
-Nếu bạn thấy khó khăn thì có thể xem cách mình triển khai các thuật toán sắp xếp bằng C/C++ tại [đây](https://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-1/) và [đây](https://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-2/).
+Nếu bạn thấy khó khăn thì có thể xem cách mình triển khai các thuật toán sắp xếp bằng C/C++ tại [đây](https://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-1) và [đây](https://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-2).
 
 Trên đây là một số những phương thức cơ bản về JavaScript array. Còn nhiều những phương thức khác, nhưng mình sẽ không trình bày ở bài viết này. Bạn có thể tham khảo thêm tại các link cuối bài viết.
 
-Xin chào và hẹn gặp lại ở [bài viết sau](/array-sorting-van-de-muon-thuo/), thân ái!
+Xin chào và hẹn gặp lại ở [bài viết sau](/array-sorting-van-de-muon-thuo), thân ái!
 
 ## Tham khảo
 

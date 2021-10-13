@@ -61,7 +61,7 @@ Như vậy là mình đã tìm hiểu về cơ chế làm việc của React Con
 const MyContext = React.createContext(defaultValue);
 ```
 
-Đây là API đầu tiên **bắt buộc** phải sử dụng. API này sẽ tạo mới một [object](/javascript-object-last-but-not-least/) đóng vai trò là Context. Và khi một component đăng ký sử dụng Context này thì nó sẽ đọc giá trị context từ **Provider** gần nhất.
+Đây là API đầu tiên **bắt buộc** phải sử dụng. API này sẽ tạo mới một [object](/javascript-object-last-but-not-least) đóng vai trò là Context. Và khi một component đăng ký sử dụng Context này thì nó sẽ đọc giá trị context từ **Provider** gần nhất.
 
 Ngược lại, khi bên ngoài nó không có một **Provider** nào thì giá trị của context sẽ ứng với giá trị **defaultValue** bên trên.
 
@@ -104,7 +104,7 @@ Nếu như hai API trên là để khởi tạo Context và truyền giá trị 
 
 Ở đây, thuộc tính **contextType** được gán giá trị là **MyContext** - thành phần được khởi tạo bởi _React.createContext()_ bên trên.
 
-Sau đó, mình có thể truy cập đến giá trị của Context thông qua **this.context** ở bất kỳ phương thức nào thuộc [React Lifecycle](/tim-hieu-react-component-lifecycle/) và cả phương thức **render()** nữa.
+Sau đó, mình có thể truy cập đến giá trị của Context thông qua **this.context** ở bất kỳ phương thức nào thuộc [React Lifecycle](/tim-hieu-react-component-lifecycle) và cả phương thức **render()** nữa.
 
 ### Context.Consumer
 
@@ -124,9 +124,9 @@ Trên đây là những thông tin cơ bản về các API của React Context. 
 
 ### Khởi tạo Project
 
-Ở đây mình sử dụng [CodeSanbox.io](https://codesandbox.io) để làm Demo. Tuy nhiên, bạn cũng có thể sử dụng [Create-react-app](/tag/create-react-app/) để làm ví dụ ngay trên máy tính.
+Ở đây mình sử dụng [CodeSanbox.io](https://codesandbox.io) để làm Demo. Tuy nhiên, bạn cũng có thể sử dụng [Create-react-app](/tag/create-react-app) để làm ví dụ ngay trên máy tính.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
 
 > **Chú ý**: React Context API chính thức được hỗ trợ trên phiên bản React 16.3. Vì vậy, bạn cần phải sử dụng phiên bản React >= 16.3. Để đơn giản, bạn có thể nâng cấp React lên phiên bản mới nhất luôn bằng câu lệnh sau:
 
@@ -170,7 +170,7 @@ class AppProvider extends React.Component {
     },
     dec: () => {
       this.setState({ number: this.state.number - 1 });
-    }
+    },
   };
 
   render() {
@@ -235,7 +235,7 @@ Mình xin nhấn mạnh lại, **this.context** tương ứng với giá trị c
 const Blue = () => (
   <div className="blue">
     <AppContext.Consumer>
-      {context => (
+      {(context) => (
         <>
           <button onClick={context.inc}>INC</button>
           <button onClick={context.dec}>DEC</button>
@@ -260,9 +260,7 @@ class Green extends React.Component {
   render() {
     return (
       <div className="green">
-        <AppContext.Consumer>
-          {context => context.number}
-        </AppContext.Consumer>
+        <AppContext.Consumer>{(context) => context.number}</AppContext.Consumer>
       </div>
     );
   }

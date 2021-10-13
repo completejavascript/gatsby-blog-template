@@ -27,7 +27,7 @@ JSON viết tắt bởi **JavaScript Object Notation**. Dịch nôm na thì nó 
 }
 ```
 
-Nếu bạn đã biết về [JavaScript Object](/javascript-object-last-but-not-least/) thì bạn có thể thấy rằng ví dụ trên cũng chính là biểu diễn cho một Object trong JavaScript. Trong đó, gồm có hai thành phần:
+Nếu bạn đã biết về [JavaScript Object](/javascript-object-last-but-not-least) thì bạn có thể thấy rằng ví dụ trên cũng chính là biểu diễn cho một Object trong JavaScript. Trong đó, gồm có hai thành phần:
 
 - **keys**: _type, brand, operating system, graphic card_
 - **values**: _laptop, Sony, Windows 7, NVIDIA_
@@ -36,9 +36,9 @@ Nếu bạn đã biết về [JavaScript Object](/javascript-object-last-but-not
 
 ## Ứng dụng
 
-JSON thường được dùng trong cơ sở dữ liệu NoSQL (ví dụ như [MongoDB](/cai-dat-mongodb-tren-windows-moi-nhat/)) và là một chuẩn giao tiếp trên web.
+JSON thường được dùng trong cơ sở dữ liệu NoSQL (ví dụ như [MongoDB](/cai-dat-mongodb-tren-windows-moi-nhat)) và là một chuẩn giao tiếp trên web.
 
-Khi một client gửi [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/) lên server thì server có thể gửi kết quả trả về dạng JSON (hoặc XML). Client bóc tách kết quả đó và dựa vào **key** để lấy ra thông tin cần thiết. Việc sử dụng JSON thay vì XML giúp giảm thời gian truy xuất dữ liệu và giảm dung lượng gói tin.
+Khi một client gửi [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript) lên server thì server có thể gửi kết quả trả về dạng JSON (hoặc XML). Client bóc tách kết quả đó và dựa vào **key** để lấy ra thông tin cần thiết. Việc sử dụng JSON thay vì XML giúp giảm thời gian truy xuất dữ liệu và giảm dung lượng gói tin.
 
 Quay lại ví dụ trên, nếu mình dùng XML để biểu diễn thì nó sẽ như sau:
 
@@ -56,7 +56,7 @@ Rõ ràng, XML phức tạp hơn ở chỗ là XML cần phải có 2 thành ph�
 Mặc dù JSON rất giống JavaScript Object nhưng vẫn có một số giới hạn khác như:
 
 - **Key**: luôn luôn phải được đóng gói trong cặp dấu ngoặc kép, không phải ngoặc đơn, cũng không được phép là biến số (variable)
-- **Value**: Chỉ được phép là những dữ liệu cơ bản như [numbers](/values-types-va-operators-trong-javascript-phan-1/), [strings, Boolean](/values-types-va-operators-trong-javascript-phan-2/), [array](/javascript-array-co-ban/), object, null, không được phép là [function](/tim-hieu-function-javascript/), date, undefined hoặc là một biểu thức tính toán.
+- **Value**: Chỉ được phép là những dữ liệu cơ bản như [numbers](/values-types-va-operators-trong-javascript-phan-1), [strings, Boolean](/values-types-va-operators-trong-javascript-phan-2), [array](/javascript-array-co-ban), object, null, không được phép là [function](/tim-hieu-function-javascript), date, undefined hoặc là một biểu thức tính toán.
 - Không được phép tồn tại **dấu phẩy cuối cùng** như JavaScript Object.
 - Đối với **number** thì không được phép có chữ số 0 ở đầu. Ngoài ra, nếu đó là chữ số thập phân thì phải có ít nhất 1 chữ số sau dấu chấm **(.)**.
 
@@ -127,7 +127,7 @@ JavaScript cung cấp sẵn cho chúng ta hai hàm số là: [JSON.stringify](ht
 Hãy xem ví dụ sau:
 
 ```js
-const string = JSON.stringify({name: "X", born: 1990});
+const string = JSON.stringify({ name: "X", born: 1990 });
 console.log(string);
 // => {"name":"X","born":1990}
 
@@ -144,7 +144,7 @@ console.log(obj.born);
 
 JSON là một thành phần quan trọng dùng để lưu trữ dữ liệu và là chuẩn giao tiếp giữa client và server. Hy vọng qua bài viết này bạn hiểu được JSON là gì và cách sử dụng nó. Vì chắc chắn là bạn sẽ phải sử dụng nó nhiều.
 
-Hẹn gặp lại bạn ở [bài viết sau](/lap-trinh-huong-doi-tuong-voi-javascript/), thân ái!
+Hẹn gặp lại bạn ở [bài viết sau](/lap-trinh-huong-doi-tuong-voi-javascript), thân ái!
 
 **Tham khảo**
 
@@ -155,6 +155,6 @@ Hẹn gặp lại bạn ở [bài viết sau](/lap-trinh-huong-doi-tuong-voi-jav
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

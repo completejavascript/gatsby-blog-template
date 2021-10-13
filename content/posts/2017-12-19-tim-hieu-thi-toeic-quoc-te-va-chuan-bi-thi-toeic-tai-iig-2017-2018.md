@@ -10,7 +10,7 @@ categories:
   - Lập trình và cuộc sống
 ---
 
-Xin chào tất cả mọi người. Kể ra thì cũng lâu rồi mình chưa ra một bài viết nào. Bài viết mới gần đây nhất là [PHÂN BIỆT VAR VÀ LET TRONG JAVASCRIPT,](/phan-biet-var-va-let-trong-javascript/) cách đây cũng hơn hai tháng.
+Xin chào tất cả mọi người. Kể ra thì cũng lâu rồi mình chưa ra một bài viết nào. Bài viết mới gần đây nhất là [PHÂN BIỆT VAR VÀ LET TRONG JAVASCRIPT,](/phan-biet-var-va-let-trong-javascript) cách đây cũng hơn hai tháng.
 
 Vậy thì bắt đầu từ hôm nay, mình sẽ quyết tâm một tuần xuất bản 3 đến 4 bài viết, nghĩa là 2 ngày một bài từ thứ 2 đến thứ 7. Mặc dù thời tiết bây giờ đang rất lạnh, nhiệt độ từ 9 đến 19 độ C, tại Hà Nội.
 
@@ -26,7 +26,7 @@ Xin chân thành cám ơn.
 
 ![Baby - Completejavascript - Completejavascript.com](../images/baby-completejavascript-com.jpg)
 
-Quay lại chủ đề bài viết ngày hôm nay. Đó là: [**Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 – 2018**](/tim-hieu-thi-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018/). Có thể, bạn đang thắc mắc là tại sao mình lại viết chủ đề này và TOEIC thì liên quan quái gì đến [JavaScript](/category/javascript-co-ban)? Chúng ta sẽ cùng nhau tìm hiểu qua những câu hỏi sau đây.
+Quay lại chủ đề bài viết ngày hôm nay. Đó là: [**Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 – 2018**](/tim-hieu-thi-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018). Có thể, bạn đang thắc mắc là tại sao mình lại viết chủ đề này và TOEIC thì liên quan quái gì đến [JavaScript](/category/javascript-co-ban)? Chúng ta sẽ cùng nhau tìm hiểu qua những câu hỏi sau đây.
 
 ## TOEIC là gì?
 
@@ -85,12 +85,12 @@ Trên đây là kinh nghiệm thi TOEIC của mình từ năm nhất Đại họ
 
 Mục tiêu của mình trong lần thi TOEIC sắp tới tại IIG vào 31/1/2018 là >= 735 điểm. Lúc đó, mình sẽ viết một bài review về quá trình chuẩn bị và thi TOEIC của mình.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/4-loi-ich-to-lon-cua-tieng-anh-doi-voi-lap-trinh-vien/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/4-loi-ich-to-lon-cua-tieng-anh-doi-voi-lap-trinh-vien), thân ái!
 
 ## Tham khảo
 
 - [TOEIC](https://en.wikipedia.org/wiki/TOEIC)
-- [Cấu trúc đề thi TOEIC](https://giasutoeic.com/thong-tin-toeic/cau-truc-de-thi-toeic/)
+- [Cấu trúc đề thi TOEIC](https://giasutoeic.com/thong-tin-toeic/cau-truc-de-thi-toeic)
 
 <hr class="border-color-light-grey" />
 

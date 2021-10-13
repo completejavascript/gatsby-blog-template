@@ -31,7 +31,7 @@ Node.js là một môi trường thực thi JavaScript bên ngoài trình duyệ
 
 _Chrome's V8 JavaScript engine được viết bằng C++, giúp biên dịch code JavaScript thành mã máy một cách nhanh chóng._
 
-Hơn nữa, Node.js là [mã nguồn mở](https://github.com/nodejs/node), miễn phí và có thể chạy trên nhiều nền tảng: Windows, [Linux](/tag/ubuntu/), Unix, Mac OS X, Embedded system,...
+Hơn nữa, Node.js là [mã nguồn mở](https://github.com/nodejs/node), miễn phí và có thể chạy trên nhiều nền tảng: Windows, [Linux](/tag/ubuntu), Unix, Mac OS X, Embedded system,...
 
 ### Node.js có khả năng xử lý bất đồng bộ
 
@@ -45,9 +45,9 @@ Nghĩa là bạn chỉ cần gửi request, viết hàm xử lý khi có kết q
 
 Theo mình biết, đối với PHP (Java, ASP.NET,...) mỗi request gửi lên sẽ được đưa vào một thread riêng để thực thi. Điều này dẫn đến tiêu tốn nhiều bộ nhớ.
 
-Ngược lại, Node.js lại chạy **single-threaded**. Nghĩa là mỗi request gửi lên sẽ được cho vào một **event-queue**. Node.js sẽ chạy một **vòng lặp** để duyệt event-queue này và **lần lượt xử lý** các request theo [kiểu bất đồng bộ](/tag/ajax/).
+Ngược lại, Node.js lại chạy **single-threaded**. Nghĩa là mỗi request gửi lên sẽ được cho vào một **event-queue**. Node.js sẽ chạy một **vòng lặp** để duyệt event-queue này và **lần lượt xử lý** các request theo [kiểu bất đồng bộ](/tag/ajax).
 
-[![Cách single-threaded chạy](../images/nodejs-overview-single-threaded-architecture-gaurav-mittal.jpg)](https://www.linkedin.com/pulse/nodejs-overview-single-threaded-architecture-gaurav-mittal/)
+[![Cách single-threaded chạy](../images/nodejs-overview-single-threaded-architecture-gaurav-mittal.jpg)](https://www.linkedin.com/pulse/nodejs-overview-single-threaded-architecture-gaurav-mittal)
 
 Chính vì vậy, Node.js sẽ giúp tiết kiệm về bộ nhớ.
 
@@ -109,7 +109,7 @@ Khi cài đặt xong, bạn nhấn **Finish** để kết thúc.
 
 Sau khi đã thực hiện xong các bước trên, bạn cần kiểm tra xem mình đã có thể làm việc bình thường với Node.js hay chưa.
 
-Bạn mở [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows/) trên Windows lên rồi gõ các câu lệnh sau:
+Bạn mở [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows) trên Windows lên rồi gõ các câu lệnh sau:
 
 ```bash
 node -v
@@ -131,14 +131,14 @@ Các câu lệnh trên cho biết: phiên bản Node.js hiện tại là **8.12.
 Sau đó, sửa nội dung của file đó như sau:
 
 ```js
-const http = require('http');
-const hostname = 'localhost';
+const http = require("http");
+const hostname = "localhost";
 const port = 8000;
 
 const server = http.createServer((request, response) => {
   response.statusCode = 200;
-  response.setHeader('Content-Type', 'text/plain');
-  response.end('Hello World!\n');
+  response.setHeader("Content-Type", "text/plain");
+  response.end("Hello World!\n");
 });
 
 server.listen(port, hostname, () => {
@@ -151,8 +151,8 @@ server.listen(port, hostname, () => {
 Đầu tiên, bạn khai báo module **http** - dùng để tạo server, **hostname** là **localhost** và cổng sử dụng là **8000** (bạn có thể thay đổi cổng tùy thích).
 
 ```js
-const http = require('http');
-const hostname = 'localhost';
+const http = require("http");
+const hostname = "localhost";
 const port = 8000;
 ```
 
@@ -161,8 +161,8 @@ Tiếp theo, bạn khởi tạo server sử dụng phương thức [createServer
 ```js
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World!\n');
+  res.setHeader("Content-Type", "text/plain");
+  res.end("Hello World!\n");
 });
 ```
 
@@ -184,7 +184,7 @@ server.listen(port, hostname, () => {
 
 ### Chạy thử server và kiểm tra kết quả
 
-Để chạy server, bạn mở **CMD** lên tại vị trí file nguồn vừa tạo và chạy [câu lệnh](/tag/command-line/):
+Để chạy server, bạn mở **CMD** lên tại vị trí file nguồn vừa tạo và chạy [câu lệnh](/tag/command-line):
 
 ```bash
 node hello-world.js
@@ -220,5 +220,5 @@ Xin chào và hẹn gặp lại trong bài viết tiếp theo, thân ái!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

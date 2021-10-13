@@ -42,7 +42,7 @@ console.log(typeof set1);
 // => object
 ```
 
-Xem thêm:[JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
+Xem thêm:[JavaScript Object – last but not least](/javascript-object-last-but-not-least)
 
 ### Dữ liệu trong Set là duy nhất, không trùng lặp
 
@@ -52,11 +52,11 @@ Nói nôm na thì nghĩa là "giá trị" của các phần tử không được
 
 Thuật toán này cũng tương tự như việc sử dụng toán tử "===" để so sánh giá trị giữa chúng. Chỉ khác ở chỗ nó coi **NaN** là giống nhau (mặc dù **_NaN !== NaN_**)
 
-Vì vậy, cái mà mình nói ở trên chỉ đúng với [Number](/values-types-va-operators-trong-javascript-phan-1/) và [String](/values-types-va-operators-trong-javascript-phan-2/). Còn đối với Object thì khác. Bởi 2 object nhìn giống nhau nhưng rõ ràng chúng không bằng nhau:
+Vì vậy, cái mà mình nói ở trên chỉ đúng với [Number](/values-types-va-operators-trong-javascript-phan-1) và [String](/values-types-va-operators-trong-javascript-phan-2). Còn đối với Object thì khác. Bởi 2 object nhìn giống nhau nhưng rõ ràng chúng không bằng nhau:
 
 ```js
-const obj1 = { x: 1, y: 2};
-const obj2 = { x: 1, y: 2};
+const obj1 = { x: 1, y: 2 };
+const obj2 = { x: 1, y: 2 };
 
 console.log(obj1 === obj2);
 // => false
@@ -97,7 +97,7 @@ Trong đó:
 
 Có một điều mình nhấn mạnh ở đây là: **Bạn có thể truyền vào iterable object, chứ không chỉ có Array**.
 
-Mình đọc rất nhiều bài viết trên mạng về Set thì chỉ thấy họ khởi tạo Set bằng [Array](/javascript-array-co-ban/).
+Mình đọc rất nhiều bài viết trên mạng về Set thì chỉ thấy họ khởi tạo Set bằng [Array](/javascript-array-co-ban).
 
 Sẽ là rất thiếu sót nếu như không kể đến String, Array-like objects ([arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments), [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)), [TypedArray](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray), [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map), và cả Set luôn - vì chúng đều là iterable object mà.
 
@@ -131,8 +131,8 @@ console.log(set3);
 
 ```js
 function func4() {
-    const set4 = new Set(arguments);
-    console.log(set4);
+  const set4 = new Set(arguments);
+  console.log(set4);
 }
 func4("a", "b", "c", "b", 0, 1);
 // => Set(5) {"a", "b", "c", 0, 1}
@@ -179,12 +179,12 @@ console.log(set1);
 // => Set(2) {Array(2), Array(2)}
 
 for (const x of set1) {
-    console.log(x);
+  console.log(x);
 }
 /*
-* ["one", 1]
-* ["two", 2]
-*/
+ * ["one", 1]
+ * ["two", 2]
+ */
 ```
 
 #### Khởi tạo Set từ Set
@@ -205,7 +205,7 @@ Trên đây là một số cách để khởi tạo Set.
 Để thêm phần tử vào Set, bạn có thể sử dụng phương thức _add_ như sau:
 
 ```js
-Set.prototype.add(value)
+Set.prototype.add(value);
 ```
 
 Trong đó:
@@ -232,7 +232,7 @@ console.log(set1);
 
 Rõ ràng, việc trả về chính đối tượng Set sau khi _add_ giúp code trở trên ngắn gọn hơn nhiều.
 
-Xem thêm: [Tìm hiểu kĩ thuật Method Chaining cơ bản](/tim-hieu-ki-thuat-method-chaining-co-ban/)
+Xem thêm: [Tìm hiểu kĩ thuật Method Chaining cơ bản](/tim-hieu-ki-thuat-method-chaining-co-ban)
 
 ### Lấy số lượng phần tử trong Set
 
@@ -250,11 +250,11 @@ console.log(set1.size);
 
 ```js
 const set1 = new Set([1, "a", [1, 2]]);
-console.log(set1.has(1));       // => true
-console.log(set1.has("1"));     // => false
-console.log(set1.has("a"));     // => true
-console.log(set1.has("b"));     // => false
-console.log(set1.has([1, 2]));  // => false
+console.log(set1.has(1)); // => true
+console.log(set1.has("1")); // => false
+console.log(set1.has("a")); // => true
+console.log(set1.has("b")); // => false
+console.log(set1.has([1, 2])); // => false
 ```
 
 Kết quả trên là hoàn toàn dễ hiểu phải không?
@@ -262,9 +262,9 @@ Kết quả trên là hoàn toàn dễ hiểu phải không?
 Ở đây, mình chỉ muốn nhắc lại, Set sẽ sử dụng toán tử "===" để so sánh. Do đó:
 
 ```js
-console.log(1 === 1);           // => true
-console.log(1 === "1");         // => false
-console.log("a" === "a");       // => true
+console.log(1 === 1); // => true
+console.log(1 === "1"); // => false
+console.log("a" === "a"); // => true
 console.log([1, 2] === [1, 2]); // => false
 ```
 
@@ -291,10 +291,10 @@ console.log(set1); // => Set(2) {b, c}
 
 ```js
 const set1 = new Set([1, 2, 3]);
-console.log(set1);  // => Set(3) {1, 2, 3}
+console.log(set1); // => Set(3) {1, 2, 3}
 
 set1.clear();
-console.log(set1);  // => Set(0) {}
+console.log(set1); // => Set(0) {}
 ```
 
 ### Duyệt qua các phần tử trong Set
@@ -308,34 +308,34 @@ Như trong ví dụ phần định nghĩa Set, mình đã sử dụng <code>for 
 Nhắc lại ví dụ về <code>for of</code>:
 
 ```js
-const set1 = new Set(["a", { x : 1}, 1]);
-for(const x of set1) {
-    console.log(x);
+const set1 = new Set(["a", { x: 1 }, 1]);
+for (const x of set1) {
+  console.log(x);
 }
 /*
-* a
-* { x : 1}
-* 1
-*/
+ * a
+ * { x : 1}
+ * 1
+ */
 ```
 
 #### Sử dụng forEach
 
-Sử dụng _forEach_ trong Set cũng tương tự như [forEach trong Array](/javascript-foreach-la-cai-quai-gi/).
+Sử dụng _forEach_ trong Set cũng tương tự như [forEach trong Array](/javascript-foreach-la-cai-quai-gi).
 
 ```js
 const set1 = new Set(["a", "b", "c"]);
 console.log(set1);
 // => Set(3) {"a", "b", "c"}
 
-set1.forEach(function(value) {
-    console.log(value);
+set1.forEach(function (value) {
+  console.log(value);
 });
 /*
-* a
-* b
-* c
-*/
+ * a
+ * b
+ * c
+ */
 ```
 
 #### Sử dụng phương thức keys(), value(), entries()
@@ -347,43 +347,43 @@ Vì 3 phương thức này đều trả về iterable object, với mỗi phần
 Mà mình thấy cách sử dụng cũng tương tự như 2 phần trên.
 
 ```js
-const set1 = new Set(["a", { x : 1}, 1]);
+const set1 = new Set(["a", { x: 1 }, 1]);
 
-for(const x of set1) {
-    console.log(x);
+for (const x of set1) {
+  console.log(x);
 }
 /*
-* a
-* { x : 1}
-* 1
-*/
+ * a
+ * { x : 1}
+ * 1
+ */
 
-for(const x of set1.keys()) {
-    console.log(x);
+for (const x of set1.keys()) {
+  console.log(x);
 }
 /*
-* a
-* { x : 1}
-* 1
-*/
+ * a
+ * { x : 1}
+ * 1
+ */
 
-for(const x of set1.values()) {
-    console.log(x);
+for (const x of set1.values()) {
+  console.log(x);
 }
 /*
-* a
-* { x : 1}
-* 1
-*/
+ * a
+ * { x : 1}
+ * 1
+ */
 
-for(const x of set1.entries()) {
-    console.log(x);
+for (const x of set1.entries()) {
+  console.log(x);
 }
 /*
-* ["a", "a"]
-* [{ x : 1}, { x : 1}]
-* [1, 1]
-*/
+ * ["a", "a"]
+ * [{ x : 1}, { x : 1}]
+ * [1, 1]
+ */
 ```
 
 Có mỗi phần _entries()_ hơi khác một chút. Mỗi phần tử trong iterable object là một mảng gồm 2 phần tử giống nhau.
@@ -415,7 +415,7 @@ console.log(arr2);
 Giả sử lúc này mình sử dụng phương thức [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) để lọc lấy những phần tử là số chẵn.
 
 ```js
-const arr3 = arr1.filter(x => x%2 === 0);
+const arr3 = arr1.filter((x) => x % 2 === 0);
 console.log(arr3);
 // => (2) [2, 4]
 ```
@@ -435,16 +435,16 @@ const set1 = new Set([1, 2, 3, 4, 5]);
 console.log(set1);
 // => Set(5) {1, 2, 3, 4, 5}
 
-const set2 = new Set([...set1].filter(x => x%2 == 0));
+const set2 = new Set([...set1].filter((x) => x % 2 == 0));
 console.log(set2);
 // => Set(2) {2, 4}
 ```
 
-Dĩ nhiên, khi đã chuyển Set thành Array rồi thì bạn có thể sử dụng bất kể [phương thức](/javascript-foreach-la-cai-quai-gi/) nào mà Array hỗ trợ, tùy thích!
+Dĩ nhiên, khi đã chuyển Set thành Array rồi thì bạn có thể sử dụng bất kể [phương thức](/javascript-foreach-la-cai-quai-gi) nào mà Array hỗ trợ, tùy thích!
 
 ## Một ví dụ thực tế sử dụng Set
 
-Trong bài viết về [Tạo blog với Gatsby.js](/tao-trang-blog-voi-gatsby-js/), mình đã nói về vấn đề tạo danh sách các thẻ, chuyên mục cho tất cả các bài viết.
+Trong bài viết về [Tạo blog với Gatsby.js](/tao-trang-blog-voi-gatsby-js), mình đã nói về vấn đề tạo danh sách các thẻ, chuyên mục cho tất cả các bài viết.
 
 Đó chính là một ví dụ thực tế sử dụng Set. Vì mình cần phải lưu lại danh sách các thẻ, chuyên mục với các phần tử là duy nhất, rồi sau đó hiển thị danh sách này lên sidebar.
 
@@ -474,7 +474,7 @@ const post3 = ["tag1", "tag3", "tag5"];
 Để cập nhật danh sách thẻ tag mình có thể làm như sau:
 
 ```js
-arrTag =  Array.from(new Set([...arrTag, ...post3]));
+arrTag = Array.from(new Set([...arrTag, ...post3]));
 // => (5) ["tag1", "tag2", "tag4", "tag3", "tag5"]
 ```
 
@@ -500,5 +500,5 @@ Còn bây giờ thì xin chào và hẹn gặp lại bạn trong bài viết ti�
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

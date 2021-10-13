@@ -14,7 +14,7 @@ tags:
 
 Giả sử bạn đang muốn kiểm tra empty object đối với một giá trị cho trước. Với empty object được hiểu như sau:
 
-- Đó là một [object](/javascript-object-last-but-not-least/).
+- Đó là một [object](/javascript-object-last-but-not-least).
 - Và nó không có một thuộc tính [enumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) nào cả.
 
 Tức là nó được biểu diễn như sau:
@@ -121,7 +121,7 @@ Kết quả lần này lại đúng như mong đợi.
 
 ### Tổng hợp cách kiểm tra empty object trong JavaScript
 
-Kết hợp 2 đoạn kiểm tra trên, mình suy ra [hàm](/tim-hieu-function-javascript/) để kiểm tra empty object trong JavaScript là:
+Kết hợp 2 đoạn kiểm tra trên, mình suy ra [hàm](/tim-hieu-function-javascript) để kiểm tra empty object trong JavaScript là:
 
 ```js
 const isEmptyObject = (v) => {
@@ -161,6 +161,6 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com)

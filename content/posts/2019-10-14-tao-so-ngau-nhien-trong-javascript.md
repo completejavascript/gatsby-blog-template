@@ -1,11 +1,11 @@
 ---
-date: '2019-10-14T06:00:00Z'
-template: 'post'
-title: 'Tạo số ngẫu nhiên trong JavaScript'
+date: "2019-10-14T06:00:00Z"
+template: "post"
+title: "Tạo số ngẫu nhiên trong JavaScript"
 slug: tao-so-ngau-nhien-trong-javascript
-keywords: 'tạo số ngẫu nhiên trong JavaScript'
-description: 'Bài viết này mình sẽ tổng hợp lại một số biến thể của việc tạo số ngẫu nhiên trong JavaScript với phương thức Math.random() và các ứng dụng của chúng.'
-cover: '../images/tao-so-ngau-nhien-trong-javascript-completejavascript.com.png'
+keywords: "tạo số ngẫu nhiên trong JavaScript"
+description: "Bài viết này mình sẽ tổng hợp lại một số biến thể của việc tạo số ngẫu nhiên trong JavaScript với phương thức Math.random() và các ứng dụng của chúng."
+cover: "../images/tao-so-ngau-nhien-trong-javascript-completejavascript.com.png"
 categories:
   - Thủ thuật JavaScript
 tags:
@@ -16,7 +16,7 @@ Có thể bạn đã biết hoặc chưa biết về các cách tạo số ngẫ
 
 ## Các phương thức tạo số ngẫu nhiên trong JavaScript
 
-Trước khi bắt đầu, mình cùng điểm qua một số [phương thức](/tim-hieu-function-javascript/) tạo số ngẫu nhiên trong JavaScript.
+Trước khi bắt đầu, mình cùng điểm qua một số [phương thức](/tim-hieu-function-javascript) tạo số ngẫu nhiên trong JavaScript.
 
 Theo mình biết, JavaScript có hai phương thức tạo số ngẫu nhiên là: [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) và [window.crypto.getRandomValues()](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues).
 
@@ -159,7 +159,7 @@ Như vậy là mình đã giới thiệu với bạn một số biến thể c�
 
 Mã màu RGB có dạng như sau: <code>rgb(rValue, gValue, bValue)</code>.
 
-Trong đó, giá trị của *rValue, gValue và bValue* sẽ lớn hơn hoặc bằng 0 và nhỏ hơn hoặc bằng 255. Vì vậy, mình sẽ sử dụng phương thức **getRandomIntInclusive()** bên trên như sau:
+Trong đó, giá trị của _rValue, gValue và bValue_ sẽ lớn hơn hoặc bằng 0 và nhỏ hơn hoặc bằng 255. Vì vậy, mình sẽ sử dụng phương thức **getRandomIntInclusive()** bên trên như sau:
 
 ```js
 const getRandomRGB = () => {
@@ -202,7 +202,7 @@ const getRandomHEX = () => {
   const g = getRandomIntInclusive(0, 255);
   const b = getRandomIntInclusive(0, 255);
 
-  const toHexa = v => v.toString(16).padStart(2, '0');
+  const toHexa = (v) => v.toString(16).padStart(2, "0");
   return `#${toHexa(r)}${toHexa(g)}${toHexa(b)}`;
 };
 
@@ -246,14 +246,14 @@ Cách triển khai:
 
 ```js
 const baseString =
-  '0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM';
+  "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
 
 const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + min;
 };
 
 const getRandomString = (length, base) => {
-  let result = '';
+  let result = "";
   const baseLength = base.length;
 
   for (let i = 0; i < length; i++) {
@@ -269,7 +269,7 @@ Ví dụ tạo chuỗi string ngẫu nhiên với độ dài 6 với các ký t�
 
 ```js
 const baseString =
-  '0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM';
+  "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
 
 for (let i = 0; i < 10; i += 1) {
   console.log(`Random string ${i}: ${getRandomString(6, baseString)}`);
@@ -293,7 +293,7 @@ Với cách làm trên, mình có thể áp dụng vào bài toán tạo ngẫu 
 
 ```js
 const getRandomHex2 = () => {
-  const baseString = '0123456789ABCDEF';
+  const baseString = "0123456789ABCDEF";
   return `#${getRandomString(6, baseString)}`;
 };
 
@@ -327,7 +327,7 @@ Trên đây là một số cách tạo số ngẫu nhiên trong JavaScript và �
 - Ứng dụng tạo ngẫu nhiên mã màu HEX
 - Ứng dụng tạo chuỗi string ngẫu nhiên với độ dài và các ký tự cho trước
 
-Bạn có thường sử dụng những cách tạo số ngẫu nhiên trên không? Ngoài những cái mình đã đề cập bên trên, bạn còn biết ứng dụng nào khác nữa? 
+Bạn có thường sử dụng những cách tạo số ngẫu nhiên trên không? Ngoài những cái mình đã đề cập bên trên, bạn còn biết ứng dụng nào khác nữa?
 
 Nếu câu trả lời là **CÓ** thì đừng ngần ngại chia sẻ với mình và mọi người nhé!
 
@@ -337,6 +337,6 @@ Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript)
 - Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)
+- Portfoflio: [Lam Pham](http://about.phamvanlam.com)
