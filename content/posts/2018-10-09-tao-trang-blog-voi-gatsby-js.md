@@ -574,7 +574,7 @@ Trước khi đến các phần tiếp phía dưới, mình sẽ thêm 3 bài vi
 
 Tiếp theo, mình tải starter kia trên Github về, rồi vào thư mục *\gatsby-starter-blog-master\src\pages*, copy-paste 3 thư mục (_hello-world_, *hi-folks*, *my-second-post*) vào thư mục */posts* mới tạo. Rồi sau đó, mình sẽ đổi tên 3 thư mục này thành: *2015-05-01---hello-world*, *2015-05-28---hi-folks*, *2015-05-06---my-second-post*. Mục đích của mình khi đổi tên như vậy là để dễ dàng theo dõi thứ tự bài viết theo trình tự thời gian.
 
-Nếu xem qua các thư mục mình vừa copy-paste xong thì bạn sẽ thấy mỗi thư mục tương ứng với một bài viết. Tên thư mục sẽ sử dụng làm [_slug_](https://www.vietnetgroup.vn/slug-la-gi-toi-uu-slug.html) cho bài viết đó. Bên trong thư mục có một file **_index.md_** chứa nội dung bài viết và có thể có **ảnh** (tuỳ thuộc nội dung từng bài).
+Nếu xem qua các thư mục mình vừa copy-paste xong thì bạn sẽ thấy mỗi thư mục tương ứng với một bài viết. Tên thư mục sẽ sử dụng làm **slug** cho bài viết đó. Bên trong thư mục có một file `index.md` chứa nội dung bài viết và có thể có **ảnh** (tuỳ thuộc nội dung từng bài).
 
 Còn nội dung từng bài viết thì sao?
 

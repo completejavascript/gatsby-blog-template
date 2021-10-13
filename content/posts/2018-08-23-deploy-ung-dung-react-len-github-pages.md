@@ -72,7 +72,7 @@ Visual Studio Code là một trong những code editor tốt nhất hiện nay. 
 
 ![tải visual studio code](../images/download-visual-studio-code.png)
 
-Việc cài đặt Visual Studio Code không có gì đặc biệt, bạn chỉ cần cài đặt theo mặc định hoặc tham khảo bài viết: [Cài Đặt Visual Studio Code Trên Môi Trường Windows](https://www.stdio.vn/articles/cai-dat-visual-studio-code-tren-moi-truong-windows-577)
+Việc cài đặt Visual Studio Code không có gì đặc biệt, bạn chỉ cần cài đặt theo mặc định.
 
 Ngoài ra, để biết thêm các tính năng hấp dẫn của Visual Studio Code, bạn có thể tham khảo bài viết: [Visual Studio Code: Code Editor yêu thích mới của tôi](https://webdesign.tutsplus.com/vi/tutorials/visual-studio-code-my-new-favorite-code-editor--cms-28012)
 
@@ -120,7 +120,7 @@ cd app-name
 yarn start
 ```
 
-Sau đó, bạn vào địa chỉ **http:\/\/127.0.0.1:3000/** trên trình duyệt để kiểm tra kết quả. Nếu mọi thứ hoạt động bình thường thì bạn sẽ thu được màn hình như sau:
+Sau đó, bạn vào địa chỉ `http://127.0.0.1:3000/` trên trình duyệt để kiểm tra kết quả. Nếu mọi thứ hoạt động bình thường thì bạn sẽ thu được màn hình như sau:
 
 ![Ứng dụng React mặc định](../images/create-react-app-default.png)
 
@@ -226,7 +226,7 @@ Sau khi đã tuỳ biến ứng dụng React theo ý mình, tiếp theo là bư�
 
 Có 5 bước để deploy ứng dụng React lên Github Pages như sau:
 
-**Bước 1**: Tạo Github Repository trên Github. Giả sử đường dẫn của nó là: _https:\/\/github.com/completejavascript/app-name.git_
+**Bước 1**: Tạo Github Repository trên Github. Giả sử đường dẫn của nó là: `https://github.com/completejavascript/app-name.git`
 
 **Bước 2**: Đồng bộ ứng dụng React ở local lên Github repository thông qua các câu lệnh sau:
 
@@ -280,7 +280,7 @@ npm install --save gh-pages
 
 Trong đó:
 
-- **homepage**: Là địa chỉ của ứng dụng sau khi được deploy, có dạng: _https:\/\/[your-user-name].github.io/[your-repo-name]/_
+- **homepage**: Là địa chỉ của ứng dụng sau khi được deploy, có dạng: `https://[your-user-name].github.io/[your-repo-name]/`
 - **predeploy**: xác định câu lệnh để build ứng dụng trước khi deploy
 - **deploy**: Xác định câu lệnh để deploy ứng dụng.
 
@@ -290,7 +290,7 @@ Trong đó:
 npm run deploy
 ```
 
-Sau khi deploy ứng dụng React thành công, bạn cần chờ một vài phút, rồi truy cập vào địa chỉ ứng với phần **homepage** (ví dụ: _https:\/\/completejavascript.github.io/app-name/_ ) để kiểm tra thành quả của mình.
+Sau khi deploy ứng dụng React thành công, bạn cần chờ một vài phút, rồi truy cập vào địa chỉ ứng với phần **homepage** (ví dụ: `https://completejavascript.github.io/app-name/`) để kiểm tra thành quả của mình.
 
 ## Lời kết
 

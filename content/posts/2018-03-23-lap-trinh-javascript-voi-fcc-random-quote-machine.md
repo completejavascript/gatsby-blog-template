@@ -24,7 +24,7 @@ https://codepen.io/completejavascript/pen/xWZyRy
 
 ## Phân tích yêu cầu bài toán Random Quote Machine
 
-Mình xin tóm tắt lại yêu cầu bài toán như sau (hoặc xem phiên bản bằng tiếng anh tại [đây](https://www.freecodecamp.org/challenges/build-a-random-quote-machine)):
+Mình tóm tắt lại yêu cầu bài toán như sau:
 
 - Có một button cho phép nhấn vào thì hiển thị một random quote mới.
 - Có các button để chia sẻ quote lên mạng xã hội Twitter.
@@ -55,7 +55,7 @@ Vậy là tạm thời phân tích xong các yêu cầu của bài toán Random 
 
 Vì không phải dân chuyên thiết kế UX/UI, nên chẳng may có bạn nào là chuyên gia trong mảng này mà đọc được thì xin chém nhẹ tay thôi nhé, tội nghiệp mình! ...
 
-Trước tiên, bàn về công cụ thiết kế. Trong đầu mình hiện ra 3 công cụ: PowerPoint, [GIMP](https://phamvanlam.com/category/gimp-2-8-tutorial/), Giấy và bút. Mình loại bỏ GIMP vì thấy nó hơi phức tạp. Sau đó, mình có thiết kế thử sử dụng PowerPoint (mình khá là rành về mảng này, và có một channel nho nhỏ là [đây](https://www.youtube.com/channel/UCGLAVGAzZlYAKYsxg9N0Zcw)) và vẽ tay.
+Trước tiên, bàn về công cụ thiết kế. Trong đầu mình hiện ra 3 công cụ: PowerPoint, [GIMP](https://phamvanlam.com/category/gimp-28-tutorial/), Giấy và bút. Mình loại bỏ GIMP vì thấy nó hơi phức tạp. Sau đó, mình có thiết kế thử sử dụng PowerPoint (mình khá là rành về mảng này, và có một channel nho nhỏ là [đây](https://www.youtube.com/channel/UCGLAVGAzZlYAKYsxg9N0Zcw)) và vẽ tay.
 
 Kết quả cũng được, tuy nhiên, mình muốn sử dụng một công cụ chuyên biệt hơn. Sau một hồi tìm kiếm thì mình phát hiện ra một phần mềm của Việt Nam luôn là [Pencil](http://pencil.evolus.vn/).
 
@@ -106,8 +106,8 @@ Bạn có thể tự đọc hướng dẫn trên trang chủ để triển khai.
 **Xây dựng URL để request**
 
 ```js
-let requestURL = 
-  'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?';
+let requestURL =
+  "https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?";
 ```
 
 Request này kiểu GET, với các tham số là phần phía sau dấu hỏi (?). Và kết quả trả về sẽ là một [JSON](/tim-hieu-ve-json-trong-javascript/), với ngôn ngữ là tiếng anh.
@@ -118,9 +118,9 @@ Request này kiểu GET, với các tham số là phần phía sau dấu hỏi (
 
 ```js
 function requestRandomQoute() {
-  $.getJSON(requestURL, function(data) {
+  $.getJSON(requestURL, function (data) {
     animateText("#quote-text", data.quoteText);
-    animateText("#quote-name", '-- ' + data.quoteAuthor);
+    animateText("#quote-name", "-- " + data.quoteAuthor);
     animateText("#quote-symbol");
     updateShares(data.quoteText, data.quoteAuthor);
   });
@@ -133,9 +133,9 @@ Ngoài ra, ở đây mình có thêm animation cho phần thay đổi nội dung
 
 ```js
 function animateText(element, content) {
-  $(element).animate({opacity: 0}, 500, function() {
-    $(this).animate({opacity: 1}, 500);
-    if(content) $(this).text(content);
+  $(element).animate({ opacity: 0 }, 500, function () {
+    $(this).animate({ opacity: 1 }, 500);
+    if (content) $(this).text(content);
   });
 }
 ```
@@ -150,16 +150,18 @@ Tư tưởng của phần này là thay thế giá trị thuộc tính **href** 
 let currentQuote = qoute || $("#quote-text").text();
 let currentAuthor = author || $("#quote-name").text();
 
-let twitterShareURL = 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' 
-  + encodeURIComponent('"' + currentQuote + '" ' + currentAuthor);
+let twitterShareURL =
+  "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
+  encodeURIComponent('"' + currentQuote + '" ' + currentAuthor);
 
 $("#share-twitter").attr("href", twitterShareURL);
 
-let tumblrShareURL = 'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=' 
-  + encodeURIComponent(currentAuthor) 
-  + '&content=' 
-  + encodeURIComponent(currentQuote) 
-  + '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button';
+let tumblrShareURL =
+  "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" +
+  encodeURIComponent(currentAuthor) +
+  "&content=" +
+  encodeURIComponent(currentQuote) +
+  "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button";
 
 $("#share-tumblr").attr("href", tumblrShareURL);
 ```

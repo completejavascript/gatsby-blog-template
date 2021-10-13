@@ -27,10 +27,10 @@ Vì vậy, khi áp dụng JavaScript Web Worker một cách chính xác và phù
 Để kiểm tra xem trình duyệt bạn đang sử dụng có hỗ trợ JavaScript Web Worker hay không, bạn có thể sử dụng **typeof**:
 
 ```js
-if (typeof(Worker) !== "undefined") {
-    // Có hỗ trợ JavaScript Web Worker
+if (typeof Worker !== "undefined") {
+  // Có hỗ trợ JavaScript Web Worker
 } else {
-    // Không hỗ trợ JavaScript Web Worker
+  // Không hỗ trợ JavaScript Web Worker
 }
 ```
 
@@ -39,13 +39,13 @@ if (typeof(Worker) !== "undefined") {
 Một ví dụ đơn giản cho file JavaScript Web Worker:
 
 ```js
-for(var i = 0; i < 10000000000; i++) {
+for (var i = 0; i < 10000000000; i++) {
   if (i % 1000000000 == 0) postMessage(i);
 }
 
-self.onmessage = function(msg) {
+self.onmessage = function (msg) {
   // Được gọi khi có message gửi từ luồng chính
-}
+};
 ```
 
 ### Khởi tạo Web Worker
@@ -56,22 +56,22 @@ Giả sử bạn đã tạo một file **web_worker.js**. Để khởi tạo We
 var w;
 
 function startWorker() {
-    // Kiểm tra xem trình duyệt có hỗ trợ JavaScript Web Worker
-    if(typeof(Worker) !== "undefined") {
-        // Kiểm tra đối tượng Web Worker đã được khởi tạo hay chưa
-        if(typeof(w) == "undefined") {
-            // Khởi tạo Web Worker
-            w = new Worker("web_worker.js");
-        }
-        w.onmessage = function(event) {
-            // Được gọi khi có message từ Web Worker gửi đến
-        };
-        w.onerror = function() {
-            // Khi có lỗi xảy ra với Web Worker
-        };
-    } else {
-        // Trình duyệt không hỗ trợ JavaScript Web Worker
+  // Kiểm tra xem trình duyệt có hỗ trợ JavaScript Web Worker
+  if (typeof Worker !== "undefined") {
+    // Kiểm tra đối tượng Web Worker đã được khởi tạo hay chưa
+    if (typeof w == "undefined") {
+      // Khởi tạo Web Worker
+      w = new Worker("web_worker.js");
     }
+    w.onmessage = function (event) {
+      // Được gọi khi có message từ Web Worker gửi đến
+    };
+    w.onerror = function () {
+      // Khi có lỗi xảy ra với Web Worker
+    };
+  } else {
+    // Trình duyệt không hỗ trợ JavaScript Web Worker
+  }
 }
 ```
 
@@ -104,10 +104,10 @@ Ví dụ như sau:
 
 ```js
 function startWorker() {
-  if(typeof(myWorker) != 'undefined') {
-    myWorker.postMessage({cmd : 'start', msg : 'hello'});
+  if (typeof myWorker != "undefined") {
+    myWorker.postMessage({ cmd: "start", msg: "hello" });
   } else {
-    console.log('[Main]', 'Worker is undefined.');
+    console.log("[Main]", "Worker is undefined.");
   }
 }
 ```
@@ -117,22 +117,23 @@ function startWorker() {
 Và ở Worker Thread, hàm **onmessage** sẽ được gọi:
 
 ```js
-self.onmessage = function(event) {
+self.onmessage = function (event) {
   handleMessage(event);
-}
+};
 
 function handleMessage(event) {
   console.log(
-    '[Worker]', 
-    'Worker Thread receives command: ', event.data.cmd, event.data.msg
+    "[Worker]",
+    "Worker Thread receives command: ",
+    event.data.cmd,
+    event.data.msg
   );
-  if(event.data.cmd == 'start') {
-    for(var i = 0; i <= 10000000000; i++) {
-      if(i % 1000000000 == 0) postMessage({cmd : 'resp', msg: i});
+  if (event.data.cmd == "start") {
+    for (var i = 0; i <= 10000000000; i++) {
+      if (i % 1000000000 == 0) postMessage({ cmd: "resp", msg: i });
     }
-  }
-  else if(event.data.cmd == 'stop') {
-    postMessage({cmd : 'stop', msg: 'Good Bye!'});
+  } else if (event.data.cmd == "stop") {
+    postMessage({ cmd: "stop", msg: "Good Bye!" });
     self.close();
   }
 }
@@ -142,8 +143,10 @@ Object nhận được từ phía giao diện chính sẽ được lấy từ **
 
 ```js
 console.log(
-  '[Worker]', 
-  'Worker Thread receives command: ', event.data.cmd, event.data.msg
+  "[Worker]",
+  "Worker Thread receives command: ",
+  event.data.cmd,
+  event.data.msg
 );
 // => [Worker] Worker Thread receives command: start hello
 ```
@@ -154,7 +157,7 @@ Cách này có một nhược điểm là nếu như bạn gửi dữ liệu l�
 
 #### Sử dụng Transferable Object
 
-Khi sử dụng [Transferable Object](https://developer.mozilla.org/en-US/docs/Web/API/Transferable), dữ liệu được chuyển toàn bộ từ phía gửi sang phía nhận. Dung lượng dữ liệu phía gửi sẽ bị xóa về 0.
+Khi sử dụng [Transferable Object](https://developers.google.com/web/updates/2011/12/Transferable-Objects-Lightning-Fast), dữ liệu được chuyển toàn bộ từ phía gửi sang phía nhận. Dung lượng dữ liệu phía gửi sẽ bị xóa về 0.
 
 [Ví dụ](https://github.com/completejavascript/web-worker-transferable-object):
 
@@ -162,24 +165,24 @@ Phía Main Thread:
 
 ```js
 function startWorker() {
-  if(typeof(myWorker) != 'undefined') {
+  if (typeof myWorker != "undefined") {
     var arrBuf1 = new ArrayBuffer(1000);
     var arrBuf2 = new ArrayBuffer(100000);
 
-    console.log('[Main]', 'Before Transfering:');
-    console.log('[Main]', 'Length of Array Buffer 1:', arrBuf1.byteLength);
-    console.log('[Main]', 'Length of Array Buffer 2:', arrBuf2.byteLength);
+    console.log("[Main]", "Before Transfering:");
+    console.log("[Main]", "Length of Array Buffer 1:", arrBuf1.byteLength);
+    console.log("[Main]", "Length of Array Buffer 2:", arrBuf2.byteLength);
 
-    myWorker.postMessage(
-      { cmd : 'start', buf1 : arrBuf1, buf2 : arrBuf2 }, 
-      [arrBuf1, arrBuf2]
-    );
+    myWorker.postMessage({ cmd: "start", buf1: arrBuf1, buf2: arrBuf2 }, [
+      arrBuf1,
+      arrBuf2,
+    ]);
 
-    console.log('[Main]', 'After Transfering:');
-    console.log('[Main]', 'Length of Array Buffer 1:', arrBuf1.byteLength);
-    console.log('[Main]', 'Length of Array Buffer 2:', arrBuf2.byteLength);
+    console.log("[Main]", "After Transfering:");
+    console.log("[Main]", "Length of Array Buffer 1:", arrBuf1.byteLength);
+    console.log("[Main]", "Length of Array Buffer 2:", arrBuf2.byteLength);
   } else {
-    console.log('[Main]', 'Worker is undefined.');
+    console.log("[Main]", "Worker is undefined.");
   }
 }
 ```
@@ -187,22 +190,24 @@ function startWorker() {
 Phía Worker Thread:
 
 ```js
-self.onmessage = function(event) {
+self.onmessage = function (event) {
   handleMessage(event);
-}
+};
 
 function handleMessage(event) {
-  console.log(
-    '[Worker]', 'Worker Thread receives command: ', event.data.cmd
-  );
+  console.log("[Worker]", "Worker Thread receives command: ", event.data.cmd);
 
-  if(event.data.cmd == 'start') {
+  if (event.data.cmd == "start") {
     console.log(
-      '[Worker]', 'Length of Array Buffer 1:', event.data.buf1.byteLength
+      "[Worker]",
+      "Length of Array Buffer 1:",
+      event.data.buf1.byteLength
     );
 
     console.log(
-      '[Worker]', 'Length of Array Buffer 2:', event.data.buf2.byteLength
+      "[Worker]",
+      "Length of Array Buffer 2:",
+      event.data.buf2.byteLength
     );
   }
 }
@@ -220,7 +225,7 @@ Kết quả:
 [Main] After Transfering:
 [Main] Length of Array Buffer 1: 0
 [Main] Length of Array Buffer 2: 0
-// Độ dài của Array Buffer sau khi gửi sẽ là 0 
+// Độ dài của Array Buffer sau khi gửi sẽ là 0
 // vì nó được chuyển sang phía Worker Thread.
 
 [Worker] Worker Thread receives command: start

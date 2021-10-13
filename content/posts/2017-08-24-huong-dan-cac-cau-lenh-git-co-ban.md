@@ -186,7 +186,7 @@ $ git remote add origin <remote_url>
 $ git push origin <name_branch>
 ```
 
-**Chú ý**: **remote_url** ở đây cũng chính là link đến project trên server, như: https:\/\/github.com/user/repo.git
+**Chú ý**: **remote_url** ở đây cũng chính là link đến project trên server, ví dụ: `https://github.com/user/repo.git`
 
 ### Fetch
 

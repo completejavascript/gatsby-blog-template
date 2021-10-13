@@ -24,7 +24,6 @@ tags:
 - [Zondicons](http://www.zondicons.com/)
 - [Hawcons](http://hawcons.com/)
 - [Linecons](http://designmodo.com/linecons-free/)
-- [Broccolidry](http://dribbble.com/shots/587469-Free-16px-Broccolidryiconsaniconsetitisfullof-icons)
 - [60 Vicons](https://dribbble.com/shots/1663443-60-Vicons-Free-Icon-Set)
 - [Steadysets](http://dribbble.com/shots/929153-Steady-set-of-icons)
 - [Entypo+](http://www.entypo.com/)

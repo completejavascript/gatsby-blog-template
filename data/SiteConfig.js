@@ -195,11 +195,11 @@ const config = {
       url: "https://codepen.io/completejavascript/",
       iconClassName: "fab codepen",
     },
-    {
-      label: "FreeCodeCamp",
-      url: "https://www.freecodecamp.org/completejavascript", // Ignore
-      iconClassName: "fab free-code-camp",
-    },
+    // {
+    //   label: "FreeCodeCamp",
+    //   url: "https://www.freecodecamp.org/completejavascript", // Ignore
+    //   iconClassName: "fab free-code-camp",
+    // },
     {
       label: "GitHub",
       url: "https://github.com/completejavascript",

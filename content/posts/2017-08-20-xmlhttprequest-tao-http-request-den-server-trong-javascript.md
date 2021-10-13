@@ -103,7 +103,7 @@ Kết quả trả về có nhiều thuộc tính, nhưng quan trọng nhất là
 Ngoài ra, nhiều trường hợp bạn phải chèn thêm header cho request thì server mới chấp nhận. Để làm được việc này, bạn có thể sử dụng phương thức [setRequestHeader](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/setRequestHeader) đơn giản như sau:
 
 ```js
-XMLHttpRequest.setRequestHeader(header, value)
+XMLHttpRequest.setRequestHeader(header, value);
 ```
 
 Ví dụ, để cấu hình request sử dụng body kiểu JSON, bạn có thể set header "Content-Type":
@@ -114,7 +114,7 @@ req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
 ### Sử dụng XMLHttpRequest với phương thức POST
 
-Ví dụ sau gửi phương thức request dạng POST đến https://httpbin.org/post:
+Ví dụ sau gửi phương thức request dạng POST:
 
 ```js
 var req = new XMLHttpRequest();
@@ -122,8 +122,8 @@ req.open("POST", "https://httpbin.org/post", false);
 req.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
 
 var jsonBody = {
-  "name" : "Lam Pham",
-  "url" : "completejavascript.com"
+  name: "Lam Pham",
+  url: "completejavascript.com",
 };
 req.send(jsonBody);
 
@@ -174,12 +174,12 @@ Như mình đã nói ở trên, để cấu hình request là bất đồng bộ
 ```js
 var req = new XMLHttpRequest();
 req.open("GET", "https://httpbin.org/get", true);
-req.addEventListener('load', function(){
+req.addEventListener("load", function () {
   console.log(req.status);
   console.log(req.responseText);
 });
 req.send(null);
-console.log('Sent');
+console.log("Sent");
 ```
 
 Kết quả:
@@ -210,15 +210,15 @@ Ngoài ra, bạn có thể đăng ký sự kiện **error** để xử lý trư�
 ```js
 var req = new XMLHttpRequest();
 req.open("GET", "https://httpbin.org/get", true);
-req.addEventListener('load', function(){
+req.addEventListener("load", function () {
   console.log(req.status);
   console.log(req.responseText);
 });
-req.addEventListener('error', function(){
-  console.log('Error occurred!');
-})
+req.addEventListener("error", function () {
+  console.log("Error occurred!");
+});
 req.send(null);
-console.log('Sent');
+console.log("Sent");
 ```
 
 ## Tổng kết

@@ -29,7 +29,7 @@ Service Worker có một số đặc điểm quan trọng là:
 Với Service Worker chúng ta có thể:
 
 - Làm cho trang web chạy nhanh hơn và có thể chạy offline
-- Thực hiện một số tính năng ở background như: [push message](http://updates.html5rocks.com/2015/03/push-notificatons-on-the-open-web) và [background synchronization](https://github.com/slightlyoff/BackgroundSync/blob/master/explainer.md).
+- Thực hiện một số tính năng ở background như: [push message](http://updates.html5rocks.com/2015/03/push-notificatons-on-the-open-web) và [background synchronization](https://developers.google.com/web/updates/2015/12/background-sync).
 
 Có lẽ đến đây thì bạn đã hiểu phần nào về JavaScript Service Worker rồi. Tiếp theo, chúng ta sẽ tìm hiểu về cách sử dụng nó.
 
@@ -47,13 +47,15 @@ style.css
 Lúc này, mình sẽ đăng ký Service Worker trong file **main.js**:
 
 ```js
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service_worker.js')
-  .then(reg => {
-    console.log('Registered service worker');
-  }).catch(err => {
-    console.log('Register service worker failed', err);
-  });
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("service_worker.js")
+    .then((reg) => {
+      console.log("Registered service worker");
+    })
+    .catch((err) => {
+      console.log("Register service worker failed", err);
+    });
 }
 ```
 
@@ -68,60 +70,69 @@ Mình có tham khảo được một ví dụ mẫu về cách triển khai Java
 
 ```js
 /*
-* Names of the two caches used in this version of the service worker.
-* Change to v2, etc. when you update any of the local resources, which will
-* in turn trigger the install event again.
-*/
-const PRECACHE = 'my-precache-v1';
-const RUNTIME = 'my-runtime';
+ * Names of the two caches used in this version of the service worker.
+ * Change to v2, etc. when you update any of the local resources, which will
+ * in turn trigger the install event again.
+ */
+const PRECACHE = "my-precache-v1";
+const RUNTIME = "my-runtime";
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
-  'index.html',
-  './', // Alias for index.html
-  'style.css',
-  'main.js'
+  "index.html",
+  "./", // Alias for index.html
+  "style.css",
+  "main.js",
 ];
 
 // The install handler takes care of precaching the resources we always need.
-self.addEventListener('install', event => {
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(PRECACHE)
-      .then(cache => cache.addAll(PRECACHE_URLS))
+    caches
+      .open(PRECACHE)
+      .then((cache) => cache.addAll(PRECACHE_URLS))
       .then(self.skipWaiting())
   );
 });
 
 // The activate handler takes care of cleaning up old caches.
-self.addEventListener('activate', event => {
+self.addEventListener("activate", (event) => {
   const currentCaches = [PRECACHE, RUNTIME];
   event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
-    }).then(cachesToDelete => {
-      return Promise.all(cachesToDelete.map(cacheToDelete => {
-        return caches.delete(cacheToDelete);
-      }));
-    }).then(() => self.clients.claim())
+    caches
+      .keys()
+      .then((cacheNames) => {
+        return cacheNames.filter(
+          (cacheName) => !currentCaches.includes(cacheName)
+        );
+      })
+      .then((cachesToDelete) => {
+        return Promise.all(
+          cachesToDelete.map((cacheToDelete) => {
+            return caches.delete(cacheToDelete);
+          })
+        );
+      })
+      .then(() => self.clients.claim())
   );
 });
 
 /*
-* The fetch handler serves responses for same-origin resources from a cache.
-* If no response is found, it populates the runtime cache with the response
-* from the network before returning it to the page.
-*/
-self.addEventListener('fetch', event => {
+ * The fetch handler serves responses for same-origin resources from a cache.
+ * If no response is found, it populates the runtime cache with the response
+ * from the network before returning it to the page.
+ */
+self.addEventListener("fetch", (event) => {
   // Skip cross-origin requests, like those for Google Analytics.
   if (event.request.url.startsWith(self.location.origin)) {
     event.respondWith(
-      caches.match(event.request).then(cachedResponse => {
+      caches.match(event.request).then((cachedResponse) => {
         if (cachedResponse) {
           return cachedResponse;
         }
 
-        return caches.open(RUNTIME).then(cache => {
-          return fetch(event.request).then(response => {
+        return caches.open(RUNTIME).then((cache) => {
+          return fetch(event.request).then((response) => {
             // Put a copy of the response in the runtime cache.
             return cache.put(event.request, response.clone()).then(() => {
               return response;
@@ -141,20 +152,21 @@ Sau khi đăng ký thành công, Service Worker sẽ được download về phí
 Đoạn code dùng để install Service Worker:
 
 ```js
-const PRECACHE = 'my-precache-v1';
-const RUNTIME = 'my-runtime'; // A list of local resources we always want to be cached.
+const PRECACHE = "my-precache-v1";
+const RUNTIME = "my-runtime"; // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
-  'index.html',
-  './', // Alias for index.html
-  'style.css',
-  'main.js'
+  "index.html",
+  "./", // Alias for index.html
+  "style.css",
+  "main.js",
 ];
 
 // The install handler takes care of precaching the resources we always need.
-self.addEventListener('install', event => {
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(PRECACHE)
-      .then(cache => cache.addAll(PRECACHE_URLS))
+    caches
+      .open(PRECACHE)
+      .then((cache) => cache.addAll(PRECACHE_URLS))
       .then(self.skipWaiting())
   );
 });
@@ -170,16 +182,24 @@ Sau khi lưu xong hết tất cả các resources cần thiết, hàm [self.skip
 
 ```js
 // The activate handler takes care of cleaning up old caches.
-self.addEventListener('activate', event => {
+self.addEventListener("activate", (event) => {
   const currentCaches = [PRECACHE, RUNTIME];
   event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
-    }).then(cachesToDelete => {
-      return Promise.all(cachesToDelete.map(cacheToDelete => {
-        return caches.delete(cacheToDelete);
-      }));
-    }).then(() => self.clients.claim())
+    caches
+      .keys()
+      .then((cacheNames) => {
+        return cacheNames.filter(
+          (cacheName) => !currentCaches.includes(cacheName)
+        );
+      })
+      .then((cachesToDelete) => {
+        return Promise.all(
+          cachesToDelete.map((cacheToDelete) => {
+            return caches.delete(cacheToDelete);
+          })
+        );
+      })
+      .then(() => self.clients.claim())
   );
 });
 ```
@@ -193,7 +213,7 @@ Giả sử ban đầu bạn có hai cache là: **PRECACHE = my-precache-v1** v�
 Bạn cần thay đổi tên của **PRECACHE**, ví dụ là: **my-precache-v2**. Lúc này **currentCaches = ['my-precache-v2', RUNTIME]**. Bây giờ chỉ cần dùng [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) để lọc ra tên của cache không có trong **currentCaches**:
 
 ```js
-cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
+cacheNames.filter((cacheName) => !currentCaches.includes(cacheName));
 ```
 
 Đó chính là **my-precache-v1**. Tiếp theo, xóa cache này đi:
@@ -220,21 +240,21 @@ Theo như hình trên thì bạn có thể thấy là Service Worker đã đư�
 
 ```js
 /*
-* The fetch handler serves responses for same-origin resources from a cache.
-* If no response is found, it populates the runtime cache with the response
-* from the network before returning it to the page.
-*/
-self.addEventListener('fetch', event => {
+ * The fetch handler serves responses for same-origin resources from a cache.
+ * If no response is found, it populates the runtime cache with the response
+ * from the network before returning it to the page.
+ */
+self.addEventListener("fetch", (event) => {
   // Skip cross-origin requests, like those for Google Analytics.
   if (event.request.url.startsWith(self.location.origin)) {
     event.respondWith(
-      caches.match(event.request).then(cachedResponse => {
+      caches.match(event.request).then((cachedResponse) => {
         if (cachedResponse) {
           return cachedResponse;
         }
 
-        return caches.open(RUNTIME).then(cache => {
-          return fetch(event.request).then(response => {
+        return caches.open(RUNTIME).then((cache) => {
+          return fetch(event.request).then((response) => {
             // Put a copy of the response in the runtime cache.
             return cache.put(event.request, response.clone()).then(() => {
               return response;
@@ -261,8 +281,6 @@ Toàn bộ quá trình có thể được mô phỏng thông qua hình vẽ dư�
 
 ![Offline workflow](https://mdn.mozillademos.org/files/7311/lifeOfOffline-05.svg)
 
-*Tham khảo tại [https://developer.mozilla.org/en-US/Apps/Fundamentals/Offline](https://developer.mozilla.org/en-US/Apps/Fundamentals/Offline)*
-
 ## Kết luận
 
 Trên đây là những kiến thức cơ bản về JavaScript Service Worker mà mình tìm hiểu được, và còn rất nhiều vấn đề liên quan khác cần nghiên cứu thêm.
@@ -283,7 +301,6 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/anh-nine-
 - [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers/)
 - [Introduction to Service Worker](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker)
 - [Service Worker CookBook](https://serviceworke.rs/)
-- [Working offline](https://developer.mozilla.org/en-US/Apps/Fundamentals/Offline)
 - [Adding a Service Worker and Offline into your Web App](https://developers.google.com/web/fundamentals/codelabs/offline/)
 - [Service Worker Explainer](https://github.com/w3c/ServiceWorker/blob/master/explainer.md)
 

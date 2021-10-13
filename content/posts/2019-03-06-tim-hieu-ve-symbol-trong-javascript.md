@@ -125,7 +125,7 @@ console.log("key2: ", key2); // => name
 ```js
 const id = Symbol("id");
 const obj = {
-  [id]: "abc123"
+  [id]: "abc123",
 };
 
 console.log(obj);
@@ -139,7 +139,7 @@ const id = Symbol("id");
 const obj = {
   [id]: "abc123",
   x: 1,
-  y: 2
+  y: 2,
 };
 
 console.log(obj);
@@ -163,7 +163,7 @@ const name = Symbol("name");
 const obj = {
   [id]: "abc123",
   [name]: "obj",
-  y: 2
+  y: 2,
 };
 
 console.log(obj);
@@ -185,9 +185,9 @@ Giả sử mình định nghĩa một [module](/su-dung-es-modules-tren-trinh-du
 ```js
 let module = {
   id: "abc",
-  printId: function() {
+  printId: function () {
     console.log("id in lib:", this.id);
-  }
+  },
 };
 
 export default module;
@@ -219,9 +219,9 @@ let id = Symbol("id");
 
 let module = {
   [id]: "abc",
-  printId: function() {
+  printId: function () {
     console.log("id in lib:", this[id]);
-  }
+  },
 };
 
 export default module;

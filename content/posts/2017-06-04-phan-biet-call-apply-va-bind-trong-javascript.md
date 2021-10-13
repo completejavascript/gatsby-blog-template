@@ -37,7 +37,7 @@ function.call(thisArg, arg1, arg2, ...)
 Gọi hàm và cho phép bạn truyền vào một object và các đối số thông qua mảng (**A**rray)
 
 ```js
-fun.apply(thisArg, [argsArray])
+fun.apply(thisArg, [argsArray]);
 ```
 
 ### bind
@@ -53,55 +53,55 @@ var newFunction = fun.bind(thisArg[, arg1[, arg2[, ...]]])
 ### Hàm call
 
 ```js
-var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
-var person2 = {firstName: 'Kelly', lastName: 'King'};
+var person1 = { firstName: "Jon", lastName: "Kuperman" };
+var person2 = { firstName: "Kelly", lastName: "King" };
 
 function say(greeting1, greeting2) {
   console.log(
-    greeting1 + ',' + greeting2 + ' ' + this.firstName + ' ' + this.lastName
+    greeting1 + "," + greeting2 + " " + this.firstName + " " + this.lastName
   );
 }
 
-say.call(person1, 'Hello', 'Good morning'); 
+say.call(person1, "Hello", "Good morning");
 // => Hello,Good morning Jon Kuperman
 
-say.call(person2, 'Hello', 'Good morning'); 
+say.call(person2, "Hello", "Good morning");
 // => Hello,Good morning Kelly King
 ```
 
 ### Hàm apply
 
 ```js
-var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
-var person2 = {firstName: 'Kelly', lastName: 'King'};
+var person1 = { firstName: "Jon", lastName: "Kuperman" };
+var person2 = { firstName: "Kelly", lastName: "King" };
 
 function say(greeting0, greeting1) {
   console.log(
-    greeting0 + ',' + greeting1 + ' ' + this.firstName + ' ' + this.lastName
+    greeting0 + "," + greeting1 + " " + this.firstName + " " + this.lastName
   );
 }
 
-say.apply(person1, ['Hello', 'Good moring']); 
+say.apply(person1, ["Hello", "Good moring"]);
 // => Hello,Good moring Jon Kuperman
 
-say.apply(person2, ['Hello', 'Good moring']); 
+say.apply(person2, ["Hello", "Good moring"]);
 // => Hello,Good moring Kelly King
 ```
 
 ### Hàm bind
 
 ```js
-var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
-var person2 = {firstName: 'Kelly', lastName: 'King'};
+var person1 = { firstName: "Jon", lastName: "Kuperman" };
+var person2 = { firstName: "Kelly", lastName: "King" };
 
 function say(greeting0, greeting1) {
   console.log(
-    greeting0 + ',' + greeting1 + ' ' + this.firstName + ' ' + this.lastName
+    greeting0 + "," + greeting1 + " " + this.firstName + " " + this.lastName
   );
 }
 
-var sayHelloJon = say.bind(person1, 'Hello', 'Good morning');
-var sayHelloKelly = say.bind(person2, 'Hello', 'Good morning');
+var sayHelloJon = say.bind(person1, "Hello", "Good morning");
+var sayHelloKelly = say.bind(person2, "Hello", "Good morning");
 
 sayHelloJon(); // => Hello,Good morning Jon Kuperman
 sayHelloKelly(); // => Hello,Good morning Kelly King
@@ -118,7 +118,6 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-ve
 
 ## Tham khảo
 
-- [Apply vs. Call vs. Bind in JavaScript](https://codeplanet.io/javascript-apply-vs-call-vs-bind/)
 - [Higher-Order Functions](http://eloquentjavascript.net/05_higher_order.html)
 
 <hr class="border-color-light-grey" />

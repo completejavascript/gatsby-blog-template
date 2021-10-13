@@ -27,8 +27,6 @@ Trước khi đi vào tìm hiểu các bài toán, các bạn có thể đọc t
 
 Cho một string, nhiệm vụ của bạn là phải đảo ngược lại string đó. Ví dụ: **Hello** => **olleH.**
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/reverse-a-string).
-
 ```js
 function reverseString(str) {
   return str.split("").reverse().join("");
@@ -48,14 +46,11 @@ Tham khảo:
 
 Tính giai thừa của một số tự nhiên n!. Ví dụ: **5! = 5 \* 4 \* 3 \* 2 \* 1**.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/factorialize-a-number).
-
 ```js
 function factorialize(num) {
-  if(num == 0) return 1;
+  if (num == 0) return 1;
 
-  for(var i = num - 1; i >= 1; i--)
-    num *= i;
+  for (var i = num - 1; i >= 1; i--) num *= i;
 
   return num;
 }
@@ -70,8 +65,6 @@ Tham khảo:
 ## Basic Algorithm Scripting - Check for Palindromes
 
 Kiểm tra xem một string có phải là **palindrome** hay không? (Một string được gọi là **palindrome** khi và chỉ khi đọc ngược và đọc xuôi đều giống nhau, với điều kiện bỏ qua các dấu câu, kí tự đặc biệt, dấu cách). Ví dụ: **boob, eye,...**
-
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/factorialize-a-number).
 
 ```js
 function palindrome(str) {
@@ -93,12 +86,10 @@ Tham khảo:
 
 Tìm độ dài của từ dài nhất trong câu.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/find-the-longest-word-in-a-string).
-
 ```js
 function findLongestWord(str) {
   var words = str.split(" ");
-  var maxLength = words.reduce(function(acc, cur){
+  var maxLength = words.reduce(function (acc, cur) {
     return cur.length > acc ? cur.length : acc;
   }, 0);
   return maxLength;
@@ -117,17 +108,15 @@ Tham khảo:
 
 Trả về string với các từ có chữ cái đầu tiên viết hoa. Ví dụ: **I'm a little tea pot** => **I'm A Little Tea Pot**.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/title-case-a-sentence).
-
 ```js
 function titleCase(str) {
   var words = str.split(" ");
 
-  var newWords = words.map(function(word){
+  var newWords = words.map(function (word) {
     var chars = word.split("");
 
     chars[0] = chars[0].toUpperCase();
-    for(var i = 1; i < chars.length; i++) {
+    for (var i = 1; i < chars.length; i++) {
       chars[i] = chars[i].toLowerCase();
     }
 
@@ -151,14 +140,12 @@ Tham khảo:
 
 Trả về một mảng gồm các số lớn nhất của mỗi sub-array.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/return-largest-numbers-in-arrays).
-
 ```js
 function largestOfFour(arr) {
   var answer = [];
-  for(var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i++) {
     var max = 0;
-    for(var j = 0; j < arr[i].length; j++) {
+    for (var j = 0; j < arr[i].length; j++) {
       if (arr[i][j] > max) max = arr[i][j];
     }
     answer.push(max);
@@ -166,7 +153,12 @@ function largestOfFour(arr) {
   return answer;
 }
 
-largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+largestOfFour([
+  [4, 5, 1, 3],
+  [13, 27, 18, 26],
+  [32, 35, 37, 39],
+  [1000, 1001, 857, 1],
+]);
 ```
 
 Tham khảo:
@@ -177,8 +169,6 @@ Tham khảo:
 ## Basic Algorithm Scripting - Confirm the Ending
 
 Kiểm tra xem một string có được kết thúc bởi một string khác.
-
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/confirm-the-ending).
 
 ```js
 function confirmEnding(str, target) {
@@ -197,13 +187,10 @@ Tham khảo:
 
 Lặp lại string với số lần cho trước.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/repeat-a-string-repeat-a-string).
-
 ```js
 function repeatStringNumTimes(str, num) {
   var answer = "";
-  for(var i = 0; i < num; i++)
-    answer += str;
+  for (var i = 0; i < num; i++) answer += str;
   return answer;
 }
 
@@ -218,12 +205,10 @@ Tham khảo:
 
 Rút gọn string nếu nó dài quá n kí tự.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/truncate-a-string).
-
 ```js
 function truncateString(str, num) {
-  if(str.length <= num) return str;
-  if(num <= 3) return str.slice(0, num) + "...";
+  if (str.length <= num) return str;
+  if (num <= 3) return str.slice(0, num) + "...";
   return str.slice(0, num - 3) + "...";
 }
 
@@ -238,12 +223,10 @@ Tham khảo:
 
 Chia mảng thành các phần với độ dài n cho trước.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/chunky-monkey).
-
 ```js
 function chunkArrayInGroups(arr, size) {
   var answer = [];
-  for(var i = 0; i < arr.length; i += size) {
+  for (var i = 0; i < arr.length; i += size) {
     answer.push(arr.slice(i, i + size));
   }
   return answer;
@@ -260,8 +243,6 @@ Tham khảo:
 ## Basic Algorithm Scripting - Slasher Flick
 
 Trả về những phần tử của mảng sau khi đã cắt đi n phần tử đầu tiên.
-
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/slasher-flick).
 
 ```js
 function slasher(arr, howMany) {
@@ -281,14 +262,12 @@ Tham khảo:
 
 Kiểm tra xem trong 1 string có chứa tất cả các kí tự của string thứ 2 hay không.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/mutations).
-
 ```js
 function mutation(arr) {
   arr[0] = arr[0].toLowerCase();
   arr[1] = arr[1].toLowerCase();
-  for(var i = 0; i < arr[1].length; i++) {
-    if(arr[0].indexOf(arr[1][i]) < 0) return false;
+  for (var i = 0; i < arr[1].length; i++) {
+    if (arr[0].indexOf(arr[1][i]) < 0) return false;
   }
   return true;
 }
@@ -305,13 +284,17 @@ Tham khảo:
 
 Bỏ đi tất cả các giá trị **falsy** khỏi một mảng (giá trị **falsy** là false, null, 0, "", undefined và NaN).
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/falsy-bouncer).
-
 ```js
 function bouncer(arr) {
-  var answer = arr.filter(function(val) {
-    return ((typeof(val) == 'string' && val != "") ||
-            (val != false && val != null && val != 0 && val != undefined && !isNaN(val)));
+  var answer = arr.filter(function (val) {
+    return (
+      (typeof val == "string" && val != "") ||
+      (val != false &&
+        val != null &&
+        val != 0 &&
+        val != undefined &&
+        !isNaN(val))
+    );
   });
   return answer;
 }
@@ -329,14 +312,12 @@ Tham khảo:
 
 Bỏ đi tất cả các phần tử của mảng giống với tập cho trước.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/seek-and-destroy).
-
 ```js
 function destroyer(arr) {
   var args = arguments;
-  var answer = arr.filter(function(val){
-    for(var i = 1; i < args.length; i++) {
-      if(val === args[i]) return false;
+  var answer = arr.filter(function (val) {
+    for (var i = 1; i < args.length; i++) {
+      if (val === args[i]) return false;
     }
     return true;
   });
@@ -355,16 +336,14 @@ Tham khảo:
 
 Tìm ra vị trí có chỉ số nhỏ nhất phù hợp để chèn một số cho trước vào.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/where-do-i-belong).
-
 ```js
 function getIndexToIns(arr, num) {
-  var newArr = arr.sort(function(a, b){
+  var newArr = arr.sort(function (a, b) {
     return a - b;
   });
   var index = 0;
-  while(true) {
-    if(index == newArr.length || newArr[index] >= num) return index;
+  while (true) {
+    if (index == newArr.length || newArr[index] >= num) return index;
     index++;
   }
 }
@@ -381,13 +360,12 @@ Tham khảo:
 
 Giải mã string cho trước sử dụng **ROT13**.
 
-Đề bài tại [đây](https://www.freecodecamp.org/challenges/caesars-cipher).
-
 ```js
-function rot13(str) { // LBH QVQ VG!
+function rot13(str) {
+  // LBH QVQ VG!
   var arr = str.split("");
   var code, delta;
-  for(var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i++) {
     code = arr[i].charCodeAt(0) - 13;
 
     if (arr[i] >= "A" && arr[i] < "N") {

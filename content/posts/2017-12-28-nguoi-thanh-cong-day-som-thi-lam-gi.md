@@ -3,7 +3,7 @@ date: "2017-12-28T13:32:11Z"
 template: "post"
 cover: "../images/nhung-nguoi-thanh-cong-day-som-thi-lam-gi-lap-trinh-vien-lap-trinh-javascript-completejavascript-com.png"
 keywords: "người thành công dậy sớm"
-description: "Để trả lời được câu hỏi: \"Người thành công dậy sớm thì làm gì?\", sau đây tôi sẽ đưa ra 10 thói quen buổi sáng của những nhà khởi nghiệp cực kì thành công, được dịch từ 10 Morning Routines of Wildly Successful Entrepreneurs. Qua đó, bạn có thể chọn ra những thói quen phù hợp để áp dụng cho bản thân mình."
+description: 'Để trả lời được câu hỏi: "Người thành công dậy sớm thì làm gì?", sau đây tôi sẽ đưa ra 10 thói quen buổi sáng của những nhà khởi nghiệp cực kì thành công, được dịch từ 10 Morning Routines of Wildly Successful Entrepreneurs. Qua đó, bạn có thể chọn ra những thói quen phù hợp để áp dụng cho bản thân mình.'
 slug: nguoi-thanh-cong-day-som-thi-lam-gi
 title: "Người thành công dậy sớm thì làm gì?"
 categories:
@@ -36,9 +36,9 @@ _— [Tai Lopez](http://www.tailopez.com/blog/about-tai-lopezwww.tailopez.com), 
 
 ## Kích hoạt bộ não của bạn
 
-Trước khi tôi bước vào một ngày bận rộn và không thể đoán trước được. Tôi sẽ lao vào nước lạnh tại bể bơi của mình, dành ra vài phút để mài dũa kĩ năng cân bằng và sửa chữa bản thân với một cốc cà phê. Tôi sẽ kích hoạt bộ não của mình bằng cách giải quyết trò chơi crossword trong tờ báo _Los Angeles Times_ với thời gian ít hơn 20 phút. Chỉ đến khi tôi sẵn sàng để đi tới văn phòng và bắt đầu công việc.
+Trước khi tôi bước vào một ngày bận rộn và không thể đoán trước được. Tôi sẽ lao vào nước lạnh tại bể bơi của mình, dành ra vài phút để mài dũa kĩ năng cân bằng và sửa chữa bản thân với một cốc cà phê. Tôi sẽ kích hoạt bộ não của mình bằng cách giải quyết trò chơi crossword trong tờ báo *Los Angeles Times* với thời gian ít hơn 20 phút. Chỉ đến khi tôi sẵn sàng để đi tới văn phòng và bắt đầu công việc.
 
-*— Mark Sisson, founder of [Primal Blueprint](https://www.primalblueprint.com/what-we-do/), best-selling author of [The New Primal Blueprint](https://www.amazon.com/gp/product/1939563305/ref=as\_li\_ss\_tl?ie=UTF8&linkCode=ll1&tag=sm0fe-20&linkId=24487be3d936c26d963f094fcecf0070), and publisher of [MarksDailyApple.com](http://www.marksdailyapple.com/about/), the world's most visited blog on paleo, primal and ancestral health*
+_— Mark Sisson, founder of [Primal Blueprint](https://www.primalblueprint.com/what-we-do/), best-selling author of [The New Primal Blueprint](https://www.amazon.com/gp/product/1939563305/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=sm0fe-20&linkId=24487be3d936c26d963f094fcecf0070), and publisher of [MarksDailyApple.com](https://www.marksdailyapple.com/), the world's most visited blog on paleo, primal and ancestral health_
 
 ## Bổ sung dinh dưỡng cho não bộ khi bạn thức dậy
 
@@ -50,7 +50,7 @@ Tôi uống một chất khoáng được làm sạch trong một "ounce" nướ
 
 Trước khi ra khỏi giường, tôi dành ra ít phút để kéo dãn cơ dưới chăn, và thể hiện lòng biết ơn đối với cơ thể và sức khỏe. Tôi xác định mục đích cho một ngày, và thường xuyên nói to với chính mình. Tôi uống một cốc nước đầy, pha cà phê hoặc trà, thắp sáng một vài cây nến, và thích thú trong khi thiết lập nhiều mục đích cho mục tiêu của mình. Tôi chuyển một cách dần dần sang kiểm tra Email, hoàn thành càng nhiều việc càng tốt trước khi rời khỏi nhà cho việc tập thể dục.
 
-— *Elle Russ, best-selling author [The Paleo Thyroid Solution](https://www.amazon.com/Paleo-Thyroid-Solution-Fatigued-Uninformed/dp/1939563240/ref=as\_li\_ss\_tl?ie=UTF8&linkCode=ll1&tag=sm0fe-20&linkId=be24a1f9573f6132e9be5ebfa31d1243), coach, and host of the top-ranked [Primal Blueprint Podcast](https://mailtrack.io/trace/link/7e438f55ea30d954e04539f323657575adc77a8f?url=http%3A%2F%2Fblog.primalblueprint.com%2F&signature=751834e623856cf7)*
+— _Elle Russ, best-selling author [The Paleo Thyroid Solution](https://www.amazon.com/Paleo-Thyroid-Solution-Fatigued-Uninformed/dp/1939563240/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=sm0fe-20&linkId=be24a1f9573f6132e9be5ebfa31d1243), coach, and host of the top-ranked [Primal Blueprint Podcast](https://mailtrack.io/trace/link/7e438f55ea30d954e04539f323657575adc77a8f?url=http%3A%2F%2Fblog.primalblueprint.com%2F&signature=751834e623856cf7)_
 
 ## Xác định một hoặc hai sự ưu tiên lớn nhất
 
@@ -68,7 +68,7 @@ _— [Adèle McLay](http://www.adelemclay.com/about-adele-business-growth-coach/
 
 Đầu tiên là chăm lo cho chính mình. Tôi thiền, sử dụng  [_Five Minute Journal_](https://www.intelligentchange.com/pages/our-story) của tôi, di chuyển, và tập thể dục, và uống Protein. Sau đó, tôi quan tâm đến những người khác, bởi việc giúp đỡ một số người bằng một vài cách: tôi post một [#PloughShare](https://chrisplough.com/cps-40th-ploughshare-birthday/) online, gửi đi một bài viết về sự biết ơn hay tạo ra một bài giới thiệu ý nghĩa. Tôi tạo ra, thường xuyên qua việc viết lách, mặc dù thỉnh thoảng tôi vẽ tranh hay tạo ra những bức ảnh. Cuối cùng, tôi thực hiện một bước đáng giá để tiến gần hơn với sứ mệnh của mình.
 
-— *[Chris Plough](https://chrisplough.com/about-me/), entrepreneur advisor and serial entrepreneur*
+— _[Chris Plough](https://chrisplough.com/about-me/), entrepreneur advisor and serial entrepreneur_
 
 ## Sự yên bình sớm tạo nên bản vẽ của thành công
 

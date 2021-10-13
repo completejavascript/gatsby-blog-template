@@ -54,7 +54,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 ### Version
 
 - Khi một database được tạo ra, version của nó là 1.
-- Mỗi database sẽ chỉ có một version ở một thời điểm. Vì vậy, khi muốn nâng cấp database, thì bạn cần phải thay đổi giá trị của version bởi một số tự nhiên lớn hơn. Khi đó, transaction [versionchange](https://developer.mozilla.org/en-US/docs/Web/API/IDBVersionChangeRequest) bắt đầu và [event ](/xu-ly-mot-event-javascript-co-ban/)**upgradeneeded** sẽ được gọi.
+- Mỗi database sẽ chỉ có một version ở một thời điểm. Vì vậy, khi muốn nâng cấp database, thì bạn cần phải thay đổi giá trị của version bởi một số tự nhiên lớn hơn. Khi đó, transaction **versionchange** bắt đầu và [event](/xu-ly-mot-event-javascript-co-ban/) **upgradeneeded** sẽ được gọi.
 
 ### Database connection
 
@@ -92,23 +92,24 @@ Dưới đây là đoạn code để kiểm tra trình duyệt bạn đang dùng
 
 ```js
 //prefixes of implementation that we want to test
-window.indexedDB = window.indexedDB 
-  || window.mozIndexedDB 
-  || window.webkitIndexedDB 
-  || window.msIndexedDB;
+window.indexedDB =
+  window.indexedDB ||
+  window.mozIndexedDB ||
+  window.webkitIndexedDB ||
+  window.msIndexedDB;
 
 /**
-* prefixes of window.IDB objects
-* IDBTransaction interface of the IndexedDB API provides a static,
-* asynchronous transaction on a database using event handler attributes.
-*/
-window.IDBTransaction = window.IDBTransaction 
-  || window.webkitIDBTransaction 
-  || window.msIDBTransaction;
+ * prefixes of window.IDB objects
+ * IDBTransaction interface of the IndexedDB API provides a static,
+ * asynchronous transaction on a database using event handler attributes.
+ */
+window.IDBTransaction =
+  window.IDBTransaction ||
+  window.webkitIDBTransaction ||
+  window.msIDBTransaction;
 
-window.IDBKeyRange = window.IDBKeyRange 
-  || window.webkitIDBKeyRange 
-  || window.msIDBKeyRange;
+window.IDBKeyRange =
+  window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
 
 if (!window.indexedDB) {
   window.alert("Your browser doesn't support a stable version of IndexedDB.");
@@ -130,8 +131,13 @@ Ví dụ:
 
 ```js
 // Implement in SimpleSindexedDB.js
-this.open = function(
-  onsuccess, onerror, onupgradeneeded, objName, keyPath, objData
+this.open = function (
+  onsuccess,
+  onerror,
+  onupgradeneeded,
+  objName,
+  keyPath,
+  objData
 ) {
   this.objName = objName;
   this.request = window.indexedDB.open(this.dbName, this.dbVersionNumber);
@@ -147,25 +153,25 @@ this.open = function(
   this.request.onupgradeneeded = function (event) {
     var db = event.target.result;
     var objectStore = db.createObjectStore(objName, { keyPath: keyPath });
-    if(objData != undefined) {
+    if (objData != undefined) {
       for (var i in objData) {
         objectStore.add(objData[i]);
       }
     }
     onupgradeneeded();
-  }
-}
+  };
+};
 
 // Implement in main.js
-const INDEXED_DB_NAME = 'employee_db';
+const INDEXED_DB_NAME = "employee_db";
 var firstname, email, id;
 var simpleIndexedDb;
 var objData = [
   { id: "1", name: "lam", email: "lam@whatever.com" },
-  { id: "2", name: "phong", email: "phong@whatever.com" }
+  { id: "2", name: "phong", email: "phong@whatever.com" },
 ];
-var objName = 'employee';
-var keyPath = 'id';
+var objName = "employee";
+var keyPath = "id";
 function init() {
   firstname = document.querySelector('[name="firstname"]');
   email = document.querySelector('[name="email"]');
@@ -173,17 +179,22 @@ function init() {
 
   simpleIndexedDb = new SimpleIndexedDB(INDEXED_DB_NAME);
   simpleIndexedDb.open(
-    openDBSuccess, openDBError, openDBUpgradeNeeded, objName, keyPath, objData
+    openDBSuccess,
+    openDBError,
+    openDBUpgradeNeeded,
+    objName,
+    keyPath,
+    objData
   );
 }
 function openDBSuccess() {
-  console.log('open db success');
+  console.log("open db success");
 }
 function openDBError() {
-  console.log('open db error');
+  console.log("open db error");
 }
 function openDBUpgradeNeeded() {
-  console.log('open db upgradedneeded');
+  console.log("open db upgradedneeded");
 }
 ```
 
@@ -196,24 +207,22 @@ Ví dụ:
 ```js
 // Implement in SimpleSindexedDB.js
 this.readAll = function (callback) {
-  var objectStore = 
-    this.db.transaction(this.objName).objectStore(this.objName);
-  
+  var objectStore = this.db.transaction(this.objName).objectStore(this.objName);
+
   objectStore.openCursor().onsuccess = function (event) {
     var cursor = event.target.result;
     if (cursor) {
       callback(cursor);
       cursor.continue();
-    }
-    else {
+    } else {
       console.log("No more entries!");
     }
   };
-}
+};
 
 // Implement in main.js
-function showAll(){
-  simpleIndexedDb.readAll(function(cursor){
+function showAll() {
+  simpleIndexedDb.readAll(function (cursor) {
     console.log(cursor.key, cursor.value.name, cursor.value.email);
   });
 }
@@ -227,12 +236,12 @@ Ví dụ:
 
 ```js
 // Implement in SimpleSindexedDB.js
-  this.read = function(id) {
+this.read = function (id) {
   var transaction = this.db.transaction([this.objName]);
   var objectStore = transaction.objectStore(this.objName);
-  var keySearch = '' + id;
+  var keySearch = "" + id;
 
-  return new Promise(function(resolve, reject){
+  return new Promise(function (resolve, reject) {
     var request = objectStore.get(id);
     request.onerror = function (event) {
       reject(event);
@@ -241,13 +250,13 @@ Ví dụ:
       resolve(request.result);
     };
   });
-}
+};
 
 // Implement in main.js
 function read() {
   simpleIndexedDb.read(getId()).then(
-    result => console.log('read success', result),
-    event => console.log('read error', event)
+    (result) => console.log("read success", result),
+    (event) => console.log("read error", event)
   );
 }
 ```
@@ -261,10 +270,10 @@ Ví dụ:
 ```js
 // Implement in SimpleSindexedDB.js
 this.add = function (objData) {
-  var transaction = this.db.transaction([this.objName], 'readwrite');
+  var transaction = this.db.transaction([this.objName], "readwrite");
   var objectStore = transaction.objectStore(this.objName);
 
-  return new Promise(function(resolve, reject){
+  return new Promise(function (resolve, reject) {
     var request = objectStore.add(objData);
     request.onsuccess = function (event) {
       resolve(event);
@@ -272,22 +281,22 @@ this.add = function (objData) {
 
     request.onerror = function (event) {
       reject(event);
-    }
+    };
   });
-}
+};
 
 // Implement in main.js
 function save() {
   var data = {
     id: getId(),
     name: getName(),
-    email: getEmail()
+    email: getEmail(),
   };
-  console.log('save', data);
+  console.log("save", data);
 
   simpleIndexedDb.add(data).then(
-    event => console.log('add success', event),
-    error => console.log('add error', error)
+    (event) => console.log("add success", event),
+    (error) => console.log("add error", error)
   );
 }
 ```
@@ -300,12 +309,12 @@ Ví dụ:
 
 ```js
 // Implement in SimpleSindexedDB.js
-this.remove = function(id) {
-  var transaction = this.db.transaction([this.objName], 'readwrite');
+this.remove = function (id) {
+  var transaction = this.db.transaction([this.objName], "readwrite");
   var objectStore = transaction.objectStore(this.objName);
-  var keySearch = '' + id;
+  var keySearch = "" + id;
 
-  return new Promise(function(resolve, reject){
+  return new Promise(function (resolve, reject) {
     var request = objectStore.delete(id);
     request.onerror = function (event) {
       reject(event);
@@ -314,13 +323,13 @@ this.remove = function(id) {
       resolve(event);
     };
   });
-}
+};
 
 // Implement in main.js
 function remove() {
   simpleIndexedDb.remove(getId()).then(
-    event => console.log('remove success', event),
-    event => console.log('remove error', event)
+    (event) => console.log("remove success", event),
+    (event) => console.log("remove error", event)
   );
 }
 ```

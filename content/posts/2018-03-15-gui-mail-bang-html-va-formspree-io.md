@@ -15,7 +15,7 @@ tags:
 
 Xin chào bạn! Gần đây, mình có làm một số website static (chỉ gồm HTML5, CSS3 và [JavaScript](/category/javascript-co-ban)). Trong đó, website có một phần là contact form (liên hệ). Sau một hồi tìm kiếm google, mình đã tìm ra một phương pháp rất hay giúp bạn gửi email bằng HTML bằng cách sử dụng [Formspree.io](https://formspree.io/). Vậy cách này có những ưu điểm gì?
 
-## Ưu điểm khi gửi email bằng HTML và Formspree.io
+## Ưu điểm khi gửi email bằng HTML và Formspree
 
 Mình xin liệt kê ra một vài ưu điểm như sau:
 
@@ -27,11 +27,11 @@ Với những ưu điểm trên mình quyết định dùng nó ngay mà không 
 
 ## Test thử trên test.formspree.io
 
-Việc đầu tiên cần làm là phải dùng thử xem nó hoạt động như thế nào. Để dùng thử, bạn vào trang [test.formspree.io](http://test.formspree.io/) và làm theo hướng dẫn sau:
+Việc đầu tiên cần làm là phải dùng thử xem nó hoạt động như thế nào. Để dùng thử, bạn vào trang `test.formspree.io` và làm theo hướng dẫn sau:
 
 ### Bước 1: Sửa nội dung form
 
-Bạn thay đổi giá trị của thuộc tính **action** trong form thành dạng **https:\/\/formspree.io/your@email.com** với **your@email** là địa chỉ mà bạn muốn dùng để nhận mail. Ví dụ của mình là: https:\/\/formspree.io/lampv606.test@gmail.com.
+Bạn thay đổi giá trị của thuộc tính **action** trong form thành dạng `https://formspree.io/your@email.com` với **your@email** là địa chỉ mà bạn muốn dùng để nhận mail. Ví dụ của mình là: `https://formspree.io/lampv606.test@gmail.com`.
 
 ```html
 <form method="POST" action="https://formspree.io/lampv606.test@gmail.com">
@@ -61,13 +61,13 @@ Bạn sẽ cần vào email mà bạn muốn nhận (email đã cài đặt tron
 
 Từ nay về sau, mọi người có thể gửi email trực tiếp cho bạn thông qua form này mà không cần xác nhận nữa.
 
-> **Chú ý**: với mỗi địa chỉ trang web chứa form (ví dụ ở đây là http://test.formspree.io/), bạn cần phải test thử để xác minh một lần đầu tiên. Nghĩa là việc xác minh dựa trên địa chỉ trang web, không phải theo địa chỉ email. Vậy nên, khi bạn sử dụng form ở một địa chỉ khác (http:\/\/abc.com), với cùng email như trên, thì bạn vẫn cần phải xác minh lại.
+> **Chú ý**: với mỗi địa chỉ trang web chứa form (ví dụ ở đây là `http://test.formspree.io/`), bạn cần phải test thử để xác minh một lần đầu tiên. Nghĩa là việc xác minh dựa trên địa chỉ trang web, không phải theo địa chỉ email. Vậy nên, khi bạn sử dụng form ở một địa chỉ khác (`http://abc.com`), với cùng email như trên, thì bạn vẫn cần phải xác minh lại.
 
 ## Triển khai gửi email bằng HTML
 
 Có lẽ bạn sẽ muốn test thử trên local trước khi làm trên website của mình. Nhưng khi áp dụng cách gửi email bằng HTML và Formspree này, bạn buộc phải triển khai trên một website thật mà không làm trên local được.
 
-Giải pháp là bạn có thể sử dụng **github.io** hoặc **codepen.io**. Mình thì thích dùng codepen.io hơn vì nó nhanh và có thể nhúng vào blog wordpress.
+Giải pháp là bạn có thể sử dụng **github.io** hoặc **codepen.io**. Mình thì thích dùng Codepen hơn vì nó nhanh và có thể nhúng vào blog wordpress.
 
 Demo đây nhé:
 
@@ -149,7 +149,7 @@ reCAPTCHA dùng để tránh spam. Tuy nhiên, bạn vẫn có thể sử dụng
 
 ## Kết luận
 
-Trên đây, mình đã trình bày cách gửi email bằng HTML sử dụng Formspree.io. Trước khi kết thúc bài viết, mình muốn nhấn mạnh lại là: **ứng với mỗi website triển khai form này, bạn cần phải xác minh một lần đầu tiên**. Hy vọng bài viết này có thể giúp bạn biết cách gửi email bằng HTML để có thể triển khai trên các website của mình.
+Trên đây, mình đã trình bày cách gửi email bằng HTML sử dụng Formspree. Trước khi kết thúc bài viết, mình muốn nhấn mạnh lại là: **ứng với mỗi website triển khai form này, bạn cần phải xác minh một lần đầu tiên**. Hy vọng bài viết này có thể giúp bạn biết cách gửi email bằng HTML để có thể triển khai trên các website của mình.
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thiet-ke-website-responsive-voi-css-menu/), thân ái!
 
