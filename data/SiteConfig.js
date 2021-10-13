@@ -159,7 +159,7 @@ const config = {
     },
     {
       label: "Website",
-      url: "https://completejavascript.com/",
+      url: "https://completejavascript.com",
       iconClassName: "fas globe",
     },
     {

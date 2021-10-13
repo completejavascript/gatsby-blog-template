@@ -1,11 +1,11 @@
 ---
-date: '2020-01-07T06:00:00Z'
-template: 'post'
-title: 'Sử dụng SASS với create-react-app'
+date: "2020-01-07T06:00:00Z"
+template: "post"
+title: "Sử dụng SASS với create-react-app"
 slug: su-dung-sass-voi-create-react-app
-keywords: 'Sử dụng SASS với create-react-app'
-description: 'Cách mà mình thấy cơ bản và hiệu quả nhất để style componenet trong React, đó là dùng SASS. Bài viết này sẽ giới thiệu với bạn cách để sử dụng SASS với create-react-app.'
-cover: '../images/su-dung-sass-voi-create-react-app-completejavascript.com.png'
+keywords: "Sử dụng SASS với create-react-app"
+description: "Cách mà mình thấy cơ bản và hiệu quả nhất để style componenet trong React, đó là dùng SASS. Bài viết này sẽ giới thiệu với bạn cách để sử dụng SASS với create-react-app."
+cover: "../images/su-dung-sass-voi-create-react-app-completejavascript.com.png"
 categories:
   - Thư viện và Framework JavaScript
 tags:
@@ -29,7 +29,7 @@ Và còn nhiều tính năng thú vị khác của SASS nữa mà bạn có th�
 
 Tiếp theo là **create-react-app**.
 
-Đúng vậy, nếu bạn đã theo dõi blog của mình thì sẽ thấy các ứng dụng, ví dụ đều sử dụng [create-react-app](https://completejavascript.com/tag/create-react-app). Bởi lẽ, create-react-app có ưu điểm là cài đặt đơn giản và nhanh chóng.
+Đúng vậy, nếu bạn đã theo dõi blog của mình thì sẽ thấy các ứng dụng, ví dụ đều sử dụng [create-react-app](/tag/create-react-app). Bởi lẽ, create-react-app có ưu điểm là cài đặt đơn giản và nhanh chóng.
 
 Chỉ cần một câu lệnh <code>npx create-react-app app-name</code> mà không cần phải cấu hình gì thêm, bạn đã có đầy đủ các công cụ mới nhất để tập trung vào việc coding rồi.
 
@@ -37,9 +37,9 @@ Thêm nữa, create-react-app v2 trở đi đã hỗ trợ việc cấu hình ch
 
 ## Sử dụng SASS với create-react-app
 
-Dĩ nhiên, để có thể bắt đầu code được với React thì bạn phải cài đặt môi trường với Node.js, yarn hoặc npm và một editor (khuyên dùng) như Visual Studio Code. 
+Dĩ nhiên, để có thể bắt đầu code được với React thì bạn phải cài đặt môi trường với Node.js, yarn hoặc npm và một editor (khuyên dùng) như Visual Studio Code.
 
-Bạn có thể xem lại bài viết [tạo và deploy ứng dụng React lên Github Pages](https://completejavascript.com/deploy-ung-dung-react-len-github-pages) của mình để biết cách cài đặt đầy đủ môi trường trước khi bắt đầu sử dụng SASS với create-react-app nhé.
+Bạn có thể xem lại bài viết [tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages) của mình để biết cách cài đặt đầy đủ môi trường trước khi bắt đầu sử dụng SASS với create-react-app nhé.
 
 Sau khi cài đặt xong, bạn tạo mới React app bằng câu lệnh:
 
@@ -68,18 +68,18 @@ Sau khi cài đặt xong, bạn đổi toàn bộ file **.css** thành **.scss**
 ```js
 // App.js
 // replace
-import './App.css';
+import "./App.css";
 // with
-import './App.scss';
+import "./App.scss";
 
 // index.js
 // replace
-import './index.css';
+import "./index.css";
 // with
-import './index.scss';
+import "./index.scss";
 ```
 
-Cuối cùng, chạy <code>yarn start</code> để khởi tạo môi trường DEV xem có lỗi gì không nhé. Nếu không có lỗi xảy ra thì nghĩa là bạn có thể sử dụng SASS với create-react-app được rồi. 
+Cuối cùng, chạy <code>yarn start</code> để khởi tạo môi trường DEV xem có lỗi gì không nhé. Nếu không có lỗi xảy ra thì nghĩa là bạn có thể sử dụng SASS với create-react-app được rồi.
 
 Tuy nhiên, mình mới chỉ đổi tên file từ **.css** thành **.scss** chứ chưa áp dụng cú pháp nào của SASS để thay thế cho CSS.
 
@@ -363,12 +363,12 @@ App.scss
 $primaryColor: #61dafb;
 
 // with
-@import './scss/variables.scss';
+@import "./scss/variables.scss";
 ```
 
 Bạn có thể thấy code chạy vẫn bình thường và không có lỗi xảy ra.
 
-Về sau, nếu muốn định nghĩa thêm variable thì bạn chỉ cần cập nhật vào file variables.scss. Rồi ở file .scss nào muốn sử dụng thì gọi lệnh import như trên là được. 
+Về sau, nếu muốn định nghĩa thêm variable thì bạn chỉ cần cập nhật vào file variables.scss. Rồi ở file .scss nào muốn sử dụng thì gọi lệnh import như trên là được.
 
 ## Lời kết
 
