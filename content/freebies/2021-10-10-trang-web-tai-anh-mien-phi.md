@@ -68,7 +68,7 @@ Dưới đây là tổng hợp danh sách 10 trang web tải ảnh miễn phí c
 
 Trên đây là 10 trang web tải ảnh miễn phí chất lượng cao mà bạn có thể sử dụng trong các bài viết hoặc trong các dự án web mà không lo về vấn đề bản quyền.
 
-Tuy nhiên, nếu những trang web này không có những hình ảnh mà bạn mong muốn thì bạn thử tham khảo trên [Shutterstock](https://www.shutterstock.com/) xem sao. Tuy nhiên, ảnh trên trang web này thường sẽ mất phí nhé!
+Tuy nhiên, nếu những trang web này không có những hình ảnh mà bạn mong muốn thì bạn thử tham khảo trên [Shutterstock](https://shutterstock.7eer.net/KeX6b7) xem sao. Tuy nhiên, ảnh trên trang web này thường sẽ mất phí nhé!
 
 ![Shutterstock](../images/web-tai-anh-mien-phi-chat-luong-cao-shutterstock.png)
 
