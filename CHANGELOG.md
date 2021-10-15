@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/completejavascript/completejavascript.com/compare/v1.4.0...v1.5.0) (2021-10-15)
+
+
+### Features
+
+* custom FontAwesome by IcoMoon ([135b6c1](https://github.com/completejavascript/completejavascript.com/commit/135b6c11f26a43b449f7d582147e7c33735d7135))
+
+
+### Bug Fixes
+
+* **src:** do not use moment to format date - reduce bundle size ([5a766d1](https://github.com/completejavascript/completejavascript.com/commit/5a766d1d590df0f083b02c3db19106a720d4c600))
+* add backlink to freebies ([0ee1b52](https://github.com/completejavascript/completejavascript.com/commit/0ee1b526406c8195542b5748ce203b9732d4cfa5))
+* affiliate link with shutterstock ([efe11be](https://github.com/completejavascript/completejavascript.com/commit/efe11be9bcae3d9765b25eff4bbac114032f37f2))
+* chang date of post - web tao palette mau ([0911d19](https://github.com/completejavascript/completejavascript.com/commit/0911d19c74174d76cbcca98716009e496a005f2b))
+* change or remove broken links ([d480433](https://github.com/completejavascript/completejavascript.com/commit/d48043343e4734b34d3c7211069542005679bf66))
+* not hard code site url in post ([9869bd1](https://github.com/completejavascript/completejavascript.com/commit/9869bd1c446a669b903f33a494a4942af9985eb3))
+* post - link of post - tai free icon svg ([af45ad8](https://github.com/completejavascript/completejavascript.com/commit/af45ad83f40de0c606ddf9b584c836d42aebd043))
+* remove dead links and remove disqus in chinh-sach-bao-mat ([c7b8849](https://github.com/completejavascript/completejavascript.com/commit/c7b8849be999cc92926afd8e6eb464efdaee85d9))
+* remove ending trail slash of url ([836541d](https://github.com/completejavascript/completejavascript.com/commit/836541d5f8a36f68cd75244a96120dd3c8a485ea))
+* update date up post - 10 web tao palette mau ([91f82d3](https://github.com/completejavascript/completejavascript.com/commit/91f82d304415c8e2fb644a3c69c26aa85ebcb96b))
+* update post - forEach ([5778b17](https://github.com/completejavascript/completejavascript.com/commit/5778b17db511b870ae2fe5fe6fbfc57f489690b8))
+* update post - ma mau logo ([abfc3ee](https://github.com/completejavascript/completejavascript.com/commit/abfc3ee1dc8ae807aa84fb4644223b5e3878477d))
+* update post ffmpeg la gi ([80e3c4a](https://github.com/completejavascript/completejavascript.com/commit/80e3c4a945d4c75a562f708cc61585840169f046))
+
 ## [1.4.0](https://github.com/completejavascript/completejavascript.com/compare/v1.3.0...v1.4.0) (2021-10-10)
 
 
