@@ -1,6 +1,6 @@
 import React from "react";
 import AutoLink from "../AutoLink/AutoLink";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
 
 const SocialLinks = ({ socials, color }) => (
   <div className="social-links-container margin-half">
@@ -13,8 +13,7 @@ const SocialLinks = ({ socials, color }) => (
             key={social.label}
           >
             <FontAwesomeIcon
-              icon={social.iconClassName.split(" ")}
-              transform="grow-2"
+              className={social.iconClassName}
               style={{ color }}
             />
           </AutoLink>

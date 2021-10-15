@@ -2,7 +2,7 @@ import React from "react";
 import AutoLink from "../AutoLink/AutoLink";
 import { getCategoryPath } from "../../utils/helpers";
 import config from "../../../data/SiteConfig";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
 
 const PostCategories = ({
   categories,
@@ -24,7 +24,7 @@ const PostCategories = ({
           {!config.postInCategories && (
             <>
               <FontAwesomeIcon
-                icon={["fas", "folder-open"]}
+                className="icon-folder-open"
                 style={{ color: iconColor, width: "20px" }}
               />{" "}
             </>

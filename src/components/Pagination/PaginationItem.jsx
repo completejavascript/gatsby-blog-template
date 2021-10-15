@@ -1,5 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
 import AutoLink from "../AutoLink/AutoLink";
 
 const PaginationItem = (props) => {
@@ -23,15 +23,11 @@ const PaginationItem = (props) => {
       className={`pagination-item ${currentPage === value ? "active" : ""}`}
       activeClassName="active"
     >
-      {isLeft && (
-        <FontAwesomeIcon icon={["fas", "angle-double-left"]} size="xs" />
-      )}
+      {isLeft && <FontAwesomeIcon className="icon-angle-double-left" />}
 
       {value != 0 && value}
 
-      {isRight && (
-        <FontAwesomeIcon icon={["fas", "angle-double-right"]} size="xs" />
-      )}
+      {isRight && <FontAwesomeIcon className="icon-angle-double-right" />}
     </AutoLink>
   );
 };

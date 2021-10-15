@@ -158,27 +158,27 @@ const config = {
     {
       label: "Email",
       url: "mailto:completejavascript.super@gmail.com",
-      iconClassName: "far envelope",
+      iconClassName: "icon-envelope",
     },
     {
       label: "Website",
       url: "https://completejavascript.com",
-      iconClassName: "fas globe",
+      iconClassName: "icon-globe",
     },
     {
       label: "Twitter",
       url: "https://twitter.com/CmpltJavaScript",
-      iconClassName: "fab twitter",
+      iconClassName: "icon-twitter",
     },
     {
       label: "Facebook",
       url: "https://www.facebook.com/completejavascript/",
-      iconClassName: "fab facebook-f",
+      iconClassName: "icon-facebook-f",
     },
     {
       label: "Linkedin",
       url: "https://www.linkedin.com/in/completejavascript/",
-      iconClassName: "fab linkedin-in",
+      iconClassName: "icon-linkedin",
     },
   ],
   // Use for navigation
@@ -196,37 +196,37 @@ const config = {
     {
       label: "Codepen",
       url: "https://codepen.io/completejavascript/",
-      iconClassName: "fab codepen",
+      iconClassName: "icon-codepen",
     },
     // {
     //   label: "FreeCodeCamp",
     //   url: "https://www.freecodecamp.org/completejavascript", // Ignore
-    //   iconClassName: "fab free-code-camp",
+    //   iconClassName: "icon-free-code-camp",
     // },
     {
       label: "GitHub",
       url: "https://github.com/completejavascript",
-      iconClassName: "fab github",
+      iconClassName: "icon-github",
     },
     {
       label: "Facebook",
       url: "https://www.facebook.com/completejavascript/",
-      iconClassName: "fab facebook-f",
+      iconClassName: "icon-facebook-f",
     },
     {
       label: "Linkedin",
       url: "https://www.linkedin.com/in/completejavascript/",
-      iconClassName: "fab linkedin-in",
+      iconClassName: "icon-linkedin",
     },
     {
       label: "Twitter",
       url: "https://twitter.com/CmpltJavaScript",
-      iconClassName: "fab twitter",
+      iconClassName: "icon-twitter",
     },
     {
       label: "RSS",
       url: "https://completejavascript.com/rss.xml",
-      iconClassName: "fas rss",
+      iconClassName: "icon-rss",
     },
   ],
   footerLinks: [

@@ -1,5 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
 import "./ScrollToTop.css";
 
 class ScrollToTop extends React.Component {
@@ -53,7 +53,10 @@ class ScrollToTop extends React.Component {
         className={`scroll-to-top position-fixed background-color-${bgColor} 
           cursor-pointer transition padding line-height-reset border-radius`}
       >
-        <FontAwesomeIcon icon={["fas", "angle-up"]} style={{ color }} />
+        <FontAwesomeIcon
+          className="icon-angle-up"
+          style={{ color, fontWeight: 600 }}
+        />
       </div>
     );
   }

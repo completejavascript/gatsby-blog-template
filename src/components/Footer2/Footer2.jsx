@@ -1,7 +1,7 @@
 import React from "react";
 import AutoLink from "../AutoLink/AutoLink";
 import NavBrand from "../Navigation/NavBrand";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
 import {
   networkLinks,
   footerLinks,
@@ -53,7 +53,7 @@ function FooterSocialLinks({ socials, color, header }) {
                 key={social.label}
               >
                 <FontAwesomeIcon
-                  icon={social.iconClassName.split(" ")}
+                  className={social.iconClassName}
                   style={{ color }}
                 />
               </AutoLink>

@@ -5,9 +5,9 @@ import Footer2 from "../components/Footer2/Footer2";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import siteConfig from "../../data/SiteConfig";
 import brand from "../../content/images/brand.png";
-import "../components/Icons/FontAwesome";
 import "shiba-css/docs/css/shiba.min.css";
 import "../../content/styles/customize.scss";
+import "../fonts/font.css";
 
 const MainLayout = ({ children, hasFooter = true }) => (
   <div>
@@ -22,7 +22,7 @@ const MainLayout = ({ children, hasFooter = true }) => (
     />
     {children}
     {hasFooter && <Footer2 />}
-    <ScrollToTop color="#FFF" bgColor="grey-half" />
+    <ScrollToTop color="white" bgColor="grey-half" />
   </div>
 );
 
