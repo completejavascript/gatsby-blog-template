@@ -21,7 +21,9 @@ Khi vào đại học, chuyên ngành của mình là Điện tử – Viễn th
 
 Ngoài ra, mình còn có thời gian học C#, Java và lập trình Android. Tính đến nay, mình cũng đã có 4 ứng dụng Android trên Google Play.
 
-Sau khi tốt nghiệp, mình làm việc như một lập trình viên phần mềm cho một công ty. Ở đây, mình được đào tạo nhiều về [cơ sở dữ liệu và giải thuật](https://thuattoan.phamvanlam.com/). Project đầu tiên mà mình làm là về web. Nhờ project này, mình biết nhiều hơn về [HTML](/tag/html), [CSS](/tag/css), [JavaScript](/category/javascript-co-ban), [Nodejs](/huong-dan-tim-hieu-node-js-co-ban), Expressjs, [MongoDB](/cai-dat-mongodb-tren-windows-moi-nhat)… Sau đó, mình cũng tự học thêm rất nhiều thứ khác nữa như Bootstrap, React-native,… Mình viết một [blog](http://phamvanlam.com/) với mục đích chia sẻ tất cả những kiến thức mình đã học, cùng với những [project](http://lpdevs.herokuapp.com/) mình đã làm. Tuy nhiên, không lâu sau đó mình đã dừng việc viết blog đó.
+Sau khi tốt nghiệp, mình làm việc như một lập trình viên phần mềm cho một công ty. Ở đây, mình được đào tạo nhiều về [cơ sở dữ liệu và giải thuật](https://thuattoan.phamvanlam.com/). Project đầu tiên mà mình làm là về web. Nhờ project này, mình biết nhiều hơn về [HTML](/tag/html), [CSS](/tag/css), [JavaScript](/category/javascript-co-ban), [Nodejs](/huong-dan-tim-hieu-node-js-co-ban), Expressjs, [MongoDB](/cai-dat-mongodb-tren-windows-moi-nhat)…
+
+Sau đó, mình cũng tự học thêm rất nhiều thứ khác nữa như Bootstrap, React-native,… Mình viết một [blog](http://phamvanlam.com/) với mục đích chia sẻ tất cả những kiến thức mình đã học, cùng với những project mình đã làm. Tuy nhiên, không lâu sau đó mình đã dừng việc viết blog đó.
 
 ## Chuyện gì phải đến cũng sẽ đến
 

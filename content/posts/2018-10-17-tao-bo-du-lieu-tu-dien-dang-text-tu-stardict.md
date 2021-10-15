@@ -18,10 +18,6 @@ Gần đây, trên diễn đàn nổi tiếng **DayNhauHoc**, có một bạn h�
 
 À, lúc đó mình đang học về [Node.js](https://nodejs.org/en/) nên cũng mày mò làm cho được một cái Dictionary trên web.
 
-<a href="https://lpdevs.herokuapp.com/dictionary/" class="btn btn-primary margin-bottom">
-  Xem thử Dictionary
-</a>
-
 Mà cơ sở dữ liệu cho Node.js thì mình lại dùng [MongoDB](https://www.mongodb.com/), nên mình phải convert cái database của StarDict thành dạng text.
 
 _Sau đó, mình làm một cái tool để chuyển dữ liệu dạng text này thành kiểu của MongoDB._
@@ -108,5 +104,5 @@ Xin chào và hẹn gặp lại!
 ★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
 
 - Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)  
+- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
 - Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

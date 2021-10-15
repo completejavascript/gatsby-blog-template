@@ -19,13 +19,11 @@ Trước đây, việc truy cập internet chủ yếu là từ máy vi tính (d
 
 Thiết kế website responsive là làm cho website tương thích với tất cả các thiết bị (desktops, tablets, phones). Công việc này bao gồm thay đổi kích thước, ẩn-hiện, di chuyển phần tử,...
 
-Ví dụ: Bạn có thể tham khảo tại [đây](https://lpdevs.herokuapp.com/).
-
-Giao diện trang web trên desktop:
+Ví dụ giao diện trang web trên máy tính:
 
 ![thiet-ke-website-responsive-voi-css-phan-1-menu-desktop](../images/thiet-ke-website-responsive-voi-css-phan-1-menu-1024x594.png)
 
-Giao diện trang web trên phone:
+Ví dụ giao diện trang web trên điện thoại:
 
 ![thiet-ke-website-responsive-voi-css-phan-1-menu-phone](../images/thiet-ke-website-responsive-voi-css-phan-1-menu-2.png)
 

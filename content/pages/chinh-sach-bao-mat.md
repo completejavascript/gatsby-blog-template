@@ -19,7 +19,7 @@ Complete JavaScript sử dụng Google Analytics để thống kê lưu lượng
 
 ### Bình luận
 
-Complete JavaScript sử dụng [Disqus](https://disqus.com/) làm dịch vụ lưu trữ bình luận trên trang web. Chính sách bảo mật của Disqus có tại đây: https://help.disqus.com/en/articles/1717103-disqus-privacy-policy
+Complete JavaScript sử dụng [Github Issues](https://github.com/completejavascript/completejavascript-comments/issues) làm dịch vụ lưu trữ bình luận trên trang web. Tất cả đều mã nguồn mở.
 
 ## Complete JavaScript chia sẻ dữ liệu của bạn với ai?
 
