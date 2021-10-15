@@ -19,7 +19,10 @@ const config = {
   postsPerPage: 12,
   // Use for post
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
+  /** DEPRECATED: not use dateFormat with moment.js anymore, just use default toLocaleDateString() */
   dateFormat: "DD/MM/YYYY", // Date format for display.
+  /** DEPRECATED: not use disqus anymore */
+  dateLocale: "vi-VI",
   postTagged: "",
   postInCategories: "",
   postOnDate: "Cập nhật ngày",
