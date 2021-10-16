@@ -1,11 +1,12 @@
 ---
 date: "2017-04-24T15:38:46Z"
+update: "2021-10-16T15:38:46Z"
 template: "post"
 cover: "../images/gioi-thieu-tong-quan-ngon-ngu-lap-trinh-javascript-featured-image-1-completejavascript.com_.png"
 keywords: "ngôn ngữ lập trình javascript"
-description: "Bài viết này giới thiệu tổng quan về ngôn ngữ lập trình javascript. Qua đó, bạn nắm được những kiến thức cơ bản nhất của ngôn ngữ này."
+description: "Bài viết này giới thiệu tổng quan về ngôn ngữ lập trình javascript. Qua đó, bạn nắm được những kiến thức cơ bản nhất về JavaScript và hiểu chính xác JavaScript là gì?"
 slug: gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript
-title: "Giới thiệu tổng quan về ngôn ngữ lập trình JavaScript"
+title: "Tổng quan về ngôn ngữ lập trình JavaScript - JavaScript là gì?"
 categories:
   - Javascript cơ bản
 ---
@@ -40,9 +41,9 @@ _Tham khảo: https://github.com/vigetlabs/javascript-everywhere_
 
 JavaScript có rất nhiều ứng dụng trên nhiều môi trường và nền tảng khác khau:
 
-- JavaScript cùng với HTML, CSS trở thành ngôn ngữ không thể thiếu đối với website
-- Ngoài ra, có rất nhiều [framework JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app) khác nhau phía front-end: Angular.js, Angular2, ReactJS, Vue.js, Ember.js, Meteor.js, backbone, ...
-- JavaScript có thể sử dụng phía server với framework : Node.js
+- JavaScript cùng với [HTML](/tag/html), [CSS](/tag/css) trở thành ngôn ngữ không thể thiếu đối với website
+- Ngoài ra, có rất nhiều [framework JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app) khác nhau phía front-end: Angular.js, Angular2, [ReactJS](/tag/react), Vue.js, Ember.js, Meteor.js, backbone, ...
+- JavaScript có thể sử dụng phía server với framework : [Node.js](/tag/nodejs)
 - Một số database sử dụng JavaScript như là kịch bản và là ngôn ngữ query: MongoDB, CouchDB
 - JavaScript có thể dùng để xây dựng ứng dụng Desktop với framework: Electron. Những ứng dụng nổi tiếng có thể kể đến là: Atom, Visual Studio Code, GitKraken, Wordpress.com,...
 - Để xây dựng ứng dụng điện thoại đa nền tảng (Android, IOS) có thể dùng: React-native
