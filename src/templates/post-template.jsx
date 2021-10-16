@@ -10,11 +10,34 @@ import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
 const PostTemplate = ({ data, pageContext }) => {
-  const { slug, tagList, categoryList, latestPostEdges, latestFreebieEdges } =
-    pageContext;
+  const {
+    slug,
+    tagList,
+    categoryList,
+    latestPostEdges,
+    latestFreebieEdges,
+    nextTitle,
+    nextSlug,
+    prevTitle,
+    prevSlug,
+  } = pageContext;
+
   const postNode = data.markdownRemark;
+
   const title = postNode.frontmatter.title;
-  const content = <Post postNode={postNode} config={config} slug={slug} />;
+
+  const content = (
+    <Post
+      postNode={postNode}
+      config={config}
+      slug={slug}
+      nextTitle={nextTitle}
+      nextSlug={nextSlug}
+      prevTitle={prevTitle}
+      prevSlug={prevSlug}
+    />
+  );
+
   const sidebar = (
     <Sidebar
       tagList={tagList}

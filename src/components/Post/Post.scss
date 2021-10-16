@@ -6,7 +6,8 @@
     }
   }
   .post-categories-container,
-  .post-tags-container {
+  .post-tags-container,
+  .post-sibling-container {
     color: #595959;
     a {
       font-weight: 500;
@@ -16,6 +17,29 @@
       }
       &:hover {
         color: #3f3f3f;
+      }
+    }
+  }
+  .post-sibling-container {
+    display: flex;
+    flex-direction: column;
+    .post-sibling-item {
+      display: grid;
+      grid-gap: 1rem;
+      align-items: center;
+      &.left {
+        grid-template-columns: 12px 1fr;
+        a {
+          text-align: left;
+        }
+      }
+      &.right {
+        grid-template-columns: 1fr 12px;
+        padding-left: 2rem;
+        margin-top: 1.5rem;
+        a {
+          text-align: left;
+        }
       }
     }
   }
@@ -51,6 +75,23 @@
       .share-wrapper {
         padding-top: unset;
         padding-bottom: unset;
+      }
+    }
+    .post-sibling-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .post-sibling-item {
+        &.left {
+          a {
+            text-align: left;
+          }
+        }
+        &.right {
+          margin-top: unset;
+          a {
+            text-align: right;
+          }
+        }
       }
     }
   }

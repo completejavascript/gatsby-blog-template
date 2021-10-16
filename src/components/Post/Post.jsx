@@ -4,6 +4,7 @@ import PostShare from "./PostShare";
 import PostDate from "./PostDate";
 import PostDivider from "./PostDivider";
 import PostCategories from "./PostCategories";
+import PostSibling from "./PostSibling";
 import AdSense from "react-adsense";
 import {
   githubCommentRepo,
@@ -13,7 +14,15 @@ import {
 import "./Post.scss";
 import "../../../content/styles/code-highlight.scss";
 
-const Post = ({ postNode, config, slug }) => {
+const Post = ({
+  postNode,
+  config,
+  slug,
+  nextTitle,
+  nextSlug,
+  prevTitle,
+  prevSlug,
+}) => {
   const post = postNode.frontmatter;
   if (!post.id) {
     post.id = slug;
@@ -80,6 +89,18 @@ const Post = ({ postNode, config, slug }) => {
               iconColor="#595959"
             />
           </div>
+          <PostDivider />
+        </>
+      )}
+
+      {nextTitle && nextSlug && prevTitle && prevSlug && nextSlug !== prevSlug && (
+        <>
+          <PostSibling
+            nextTitle={nextTitle}
+            nextSlug={nextSlug}
+            prevTitle={prevTitle}
+            prevSlug={prevSlug}
+          />
           <PostDivider />
         </>
       )}
