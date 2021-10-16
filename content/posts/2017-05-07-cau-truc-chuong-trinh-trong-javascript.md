@@ -1,5 +1,6 @@
 ---
 date: "2017-05-07T04:50:40Z"
+update: "2021-10-16T04:50:40Z"
 template: "post"
 cover: "../images/cau-truc-chuong-trinh-trong-javascript-completejavascript.com_.png"
 keywords: "cấu trúc chương trình"
@@ -136,9 +137,9 @@ Việc đặt tên theo chuẩn giúp code của bạn giữ được tính th�
 
 Tập hợp những biến số và giá trị của chúng tại một thời điểm được gọi là môi trường (**enviroment**). Khi chương trình bắt đầu, môi trường của nó không phải trống rỗng. Luôn luôn có những biến số giúp chương trình tương tác với môi trường xung quanh.
 
-Ví dụ như trình duyệt. Luôn có những biến số và hàm số giúp chương trình đọc được trạng thái của chuột và bàn phím.
+Ví dụ như trình duyệt. Luôn có những biến số và hàm giúp chương trình đọc được trạng thái của chuột và bàn phím.
 
-## Hàm số (functions)
+## Hàm (functions)
 
 Để giúp cho việc lập trình dễ dàng hơn, trình duyệt cung cấp sẵn một số hàm sau đây.
 
@@ -417,7 +418,7 @@ Có nhiều quan điểm về việc có nên viết chú thích hay không. B�
 
 - Việc đặt tên biến không diễn tả được hết ý nghĩa của nó (muốn đầy đủ ý nghĩa thì nó lại quá dài)
 - Sử một công thức đã được chứng minh (nếu không chú thích lại sẽ không biết công thức đó ở đâu ra)
-- Giải thích ý nghĩa của một hàm số (tại sao lại phải viết hàm này...)
+- Giải thích ý nghĩa của một hàm (tại sao lại phải viết hàm này...)
 - ...
 
 ## Kết luận

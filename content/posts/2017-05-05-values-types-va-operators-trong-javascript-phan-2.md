@@ -1,5 +1,6 @@
 ---
 date: "2017-05-05T14:29:33Z"
+update: "2021-10-16T14:29:33Z"
 template: "post"
 cover: "../images/values-types-operators-trong-javascript-phan-2-strings-boolean-operators-completejavascript.com_.png"
 keywords: "Values, types và operators"
@@ -140,10 +141,10 @@ Các phương thức của strings bao gồm:
 - **toLowerCase()**: trả về string mới với tất cả các kí viết thường (số, kí tự không có tác dụng)
 - **toUpperCase()**: trả về string mới với tất cả các kí tự viết hoa (số, kí tự không có tác dụng)
 - **trim()**: trả về một string mới với tất cả dấu cách ở đầu và cuối bị bỏ đi.
-- **concat(str1, str2, str3,...)**: trả về string mới bằng cách lấy string ban đầu ghép với **str1, str2, str3,... **Tương tự như việc sử dụng toán tử +.
+- **concat(str1, str2, str3,...)**: trả về string mới bằng cách lấy string ban đầu ghép với **str1, str2, str3,...** Tương tự như việc sử dụng toán tử +.
 - **indexOf(str, [start])**: trả về vị trí của *str* xuất hiện đầu tiên trong string ban đầu, bắt đầu từ vị trí _start_. Nếu không tìm thấy thì trả về -1.
 - **lastIndexOf(str, [end])**: trả về vị trí của str xuất hiện cuối cùng trong string ban đầu, kết thúc tại vị trí _end_. Nếu không tìm thấy thì trả về -1.
-- **search()**: tương tự như **indexOf() (**tuy nhiên **search()** mạnh mẽ hơn vì nó hỗ trợ Regular Expression, mình sẽ nói về phần này sau).
+- **search()**: tương tự như **indexOf()** (tuy nhiên **search()** mạnh mẽ hơn vì nó hỗ trợ Regular Expression, mình sẽ nói về phần này sau).
 - **slice(start, [end])**: trả về string mới là một phần của string ban đầu tính từ vị trí **start** đến **end** (chú ý ở đây là string được cắt tính từ vị trí &gt;= start và &lt; end). Trong đó, **start** và **end** có thể là những số nguyên âm. Khi đó, vị trí được tính từ cuối string. Trường hợp bạn không sử dụng tham số **end** thì mặc định là cắt string đến cuối dãy.
 - **substring(start, [end])**: tương tự như **slice()**, nhưng các hệ số không thể là số nguyên âm.
 - **substr(start, [length])**: tương tự như **slice()**, tuy nhiên tham số **length** sẽ là độ dài của string mới.
