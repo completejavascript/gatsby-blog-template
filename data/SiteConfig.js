@@ -188,6 +188,7 @@ const config = {
     { label: "Freebie", url: "/freebie" },
     { label: "JavaScript", url: "/category/javascript-co-ban" },
     { label: "React", url: "/tag/react" },
+    { label: "JsTips", url: "/category/thu-thuat-javascript" },
     { label: "Quiz", url: "/category/phong-van-javascript" },
     { label: "Wiki", url: "/wiki" },
   ],
