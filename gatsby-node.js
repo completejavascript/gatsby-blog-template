@@ -54,6 +54,9 @@ exports.createPages = async ({ graphql, actions }) => {
   const freebiePageTemplate = path.resolve(
     "src/templates/freebie-template.jsx"
   );
+  const directoryPageTemplate = path.resolve(
+    "src/templates/directory-template.jsx"
+  );
 
   const markdownQueryResult = await graphql(
     `
@@ -89,6 +92,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const postEdges = [];
   const pageEdges = [];
   const freebieEdges = [];
+  const directoryEdges = [];
 
   markdownQueryResult.data.allMarkdownRemark.edges.forEach((edge) => {
     if (
@@ -119,6 +123,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
     if (edge.node.frontmatter.template === "freebie") {
       freebieEdges.push(edge);
+    }
+
+    if (edge.node.frontmatter.template === "directory") {
+      directoryEdges.push(edge);
     }
   });
 
@@ -201,6 +209,17 @@ exports.createPages = async ({ graphql, actions }) => {
         categoryList,
         latestPostEdges,
         latestFreebieEdges,
+      },
+    });
+  });
+
+  // create directory page
+  directoryEdges.forEach((edge) => {
+    createPage({
+      path: edge.node.fields.slug,
+      component: directoryPageTemplate,
+      context: {
+        slug: edge.node.fields.slug,
       },
     });
   });
