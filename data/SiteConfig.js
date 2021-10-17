@@ -46,6 +46,8 @@ const config = {
   jsGroupUrl: "https://www.facebook.com/groups/HoiDapJavascriptVN",
   blogPageUrl: "/blog",
   freebiePageUrl: "/freebie",
+  javaScriptPageUrl: "/javascript",
+  reactPageUrl: "/react",
   serviceEmail: "completejavascript.super@gmail.com",
   freeLancerLink: "https://www.upwork.com/freelancers/~015218a85e68b18cf6",
   // Use for page
@@ -186,11 +188,8 @@ const config = {
   navLinks: [
     { label: "Blog", url: "/blog" },
     { label: "Freebie", url: "/freebie" },
-    { label: "JavaScript", url: "/category/javascript-co-ban" },
-    { label: "React", url: "/tag/react" },
-    { label: "JsTips", url: "/category/thu-thuat-javascript" },
-    { label: "Quiz", url: "/category/phong-van-javascript" },
-    { label: "Wiki", url: "/wiki" },
+    { label: "JavaScript", url: "/javascript" },
+    { label: "React", url: "/react" },
   ],
   // Use for footer
   socialLinks: [

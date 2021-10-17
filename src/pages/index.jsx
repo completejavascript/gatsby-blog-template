@@ -49,14 +49,14 @@ const WelcomeSection = () => (
           Chia sẻ về JavaScript, lập trình JavaScript từ cơ bản đến nâng cao.
         </p>
         <div className="btn-group">
-          <AutoLink className="btn btn-primary" to={config.blogPageUrl}>
-            Đọc blog
+          <AutoLink className="btn btn-primary" to={config.javaScriptPageUrl}>
+            JavaScript
           </AutoLink>
           <AutoLink
             className="btn btn-primary-inverse"
-            to={config.freebiePageUrl}
+            to={config.reactPageUrl}
           >
-            Top Freebies
+            React
           </AutoLink>
         </div>
       </div>
