@@ -61,16 +61,21 @@ const Sidebar = ({
 
       {!isSimple && links && links.length > 0 && <WidgetLinks links={links} />}
 
-      {latestRelatedEdges && latestRelatedEdges.length > 0 && (
-        <WidgetLatestPosts
-          postEdges={latestRelatedEdges}
-          title={config.latestRelatedWidgetTitle}
-        />
-      )}
+      {((latestRelatedEdges && latestRelatedEdges.length > 0) ||
+        (config.hasAdsense && config.adsenseUnits.sidebarBottom)) && (
+        <div className="position-sticky top-zero">
+          {latestRelatedEdges && latestRelatedEdges.length > 0 && (
+            <WidgetLatestPosts
+              postEdges={latestRelatedEdges}
+              title={config.latestRelatedWidgetTitle}
+            />
+          )}
 
-      {config.hasAdsense && config.adsenseUnits.sidebarBottom && (
-        <div className="position-sticky top-zero padding-top padding-bottom">
-          <AdSense.Google {...config.adsenseUnits.sidebarBottom} />
+          {config.hasAdsense && config.adsenseUnits.sidebarBottom && (
+            <div className="padding-top padding-bottom">
+              <AdSense.Google {...config.adsenseUnits.sidebarBottom} />
+            </div>
+          )}
         </div>
       )}
     </aside>
