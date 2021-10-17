@@ -67,13 +67,14 @@
 /* Directory container */
 .directory-container {
   counter-reset: a;
+  counter-reset: part;
   .section-wrapper {
     position: relative;
-    padding-top: 3rem;
+    padding-top: 6rem;
     padding-bottom: 1rem;
     margin-top: 3rem;
     &.below {
-      padding-top: 5.4rem;
+      padding-top: 8.4rem;
       margin-top: 5.4rem;
     }
     &.below::before {
@@ -97,8 +98,22 @@
     font-weight: 550;
   }
   h2 {
+    counter-increment: part;
     color: #303030;
     font-size: 2.4rem;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "Phần " counter(part);
+      top: -5rem;
+      left: 0;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #ffffff;
+      background-color: #343434;
+      border-radius: 1.5rem;
+    }
   }
   h3 {
     color: #353535;
