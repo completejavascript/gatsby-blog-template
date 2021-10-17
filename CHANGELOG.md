@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/completejavascript/completejavascript.com/compare/v1.5.0...v1.6.0) (2021-10-17)
+
+
+### Features
+
+* **src:** add related post to side bar ([8d97cca](https://github.com/completejavascript/completejavascript.com/commit/8d97cca83dc357c02525397da975b7e9972bcda8))
+* add directory page ([5ff6a76](https://github.com/completejavascript/completejavascript.com/commit/5ff6a765d7504929bd5e5ee6b6ebd5e83a9d2441))
+* add next/prev post ([71faaf2](https://github.com/completejavascript/completejavascript.com/commit/71faaf2cafe22e61672fca6788a83fa295303bf0))
+* Make GithubComment component & add comment to directory page ([c06ca13](https://github.com/completejavascript/completejavascript.com/commit/c06ca13b6f38af86b7d79f557983c86208029c93))
+
+
+### Bug Fixes
+
+* **dev:** disable webpack analyser by normal ([78a1418](https://github.com/completejavascript/completejavascript.com/commit/78a1418259aad742cbaec0bccccfc0335390222d))
+* **post:** add javascript directory page ([c0063a6](https://github.com/completejavascript/completejavascript.com/commit/c0063a698c053436074828be7b070b89fc3f5fc4))
+* **post:** add react directory page ([2687737](https://github.com/completejavascript/completejavascript.com/commit/268773701548d5bdb39917795acdb7563daa4eae))
+* **post:** update image for tint-color post ([cfbfb82](https://github.com/completejavascript/completejavascript.com/commit/cfbfb824c7881eb3ea5164fa55d7fe1ad510588d))
+* **post:** update post gioi-thieu-js ([df052ec](https://github.com/completejavascript/completejavascript.com/commit/df052ecf90fdfafac339461935a09fbb2cfc540c))
+* **post:** update text ([baf9a98](https://github.com/completejavascript/completejavascript.com/commit/baf9a98c2911c9c9d07edc6c1e45d35c9328a48b))
+* **src:** add JsTips to navigation ([7d86032](https://github.com/completejavascript/completejavascript.com/commit/7d86032a04bb4636d7339fbb009a09ea2893a61a))
+* **src:** change query allMarkdownRemark in landing page to use alias ([2d4f663](https://github.com/completejavascript/completejavascript.com/commit/2d4f663ca4e61481b4b58ffd28e391825efdc79f))
+* **src:** update links on navigation and landing page ([7b44b7d](https://github.com/completejavascript/completejavascript.com/commit/7b44b7da66392880a2cba051ed7b370f3d44c966))
+
 ## [1.5.0](https://github.com/completejavascript/completejavascript.com/compare/v1.4.0...v1.5.0) (2021-10-15)
 
 
