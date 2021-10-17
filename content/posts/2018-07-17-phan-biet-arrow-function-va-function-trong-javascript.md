@@ -12,7 +12,7 @@ tags:
   - ES6
 ---
 
-[Arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) là một trong những tính năng mới rất hay của ES6. Việc sử dụng đúng cách arrow function giúp code trở nên ngắn gọn và dễ hiểu hơn. Tuy nhiên, theo mình, arrow function không thể thay thế hoàn toàn function được. Vì vậy, bài viết này sẽ giúp bạn phân biệt arrow function và function trong JavaScript. Qua đó, bạn sẽ biết cách sử dụng chúng sao cho phù hợp nhất với từng hoàn cảnh.
+[Arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) là một trong những tính năng mới rất hay của ES6. Việc sử dụng đúng cách arrow function giúp code trở nên ngắn gọn và dễ hiểu hơn. Tuy nhiên, arrow function không thể thay thế hoàn toàn function được. Vì vậy, bài viết này sẽ giúp bạn phân biệt arrow function và function trong JavaScript. Qua đó, bạn sẽ biết cách sử dụng chúng sao cho phù hợp nhất với từng hoàn cảnh.
 
 ## Giống nhau
 

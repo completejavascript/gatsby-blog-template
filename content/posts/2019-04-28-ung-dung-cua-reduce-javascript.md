@@ -1,26 +1,27 @@
 ---
 date: "2019-04-28T23:00:53Z"
+update: "2021-10-17T23:00:53Z"
 template: "post"
 cover: "../images/mot-so-ung-dung-cua-reduce-trong-javascript-completejavascript.com_.png"
 keywords: "ứng dụng của reduce"
-description: "Bài viết này mình sẽ giới thiệu với bạn một vài ứng dụng của Reduce trong JavaScript giúp code của bạn trở nên ngắn gọn và dễ hiểu hơn."
+description: "Bài viết này mình sẽ giới thiệu với bạn một vài ứng dụng của Reduce trong JavaScript giúp code của bạn trở nên ngắn gọn và dễ hiểu hơn. Qua đó, bạn có thể làm chủ và biết cách áp dụng JavaScript reduce."
 slug: ung-dung-cua-reduce-javascript
-title: "Một vài ứng dụng của Reduce trong JavaScript"
+title: "Ứng dụng của Reduce trong JavaScript"
 categories:
   - Thủ thuật JavaScript
 tags:
   - Array
 ---
 
-Xin chào bạn, đã lâu rồi mình chưa viết thêm được bài nào. Không biết bạn đã bỏ mình đi hay chưa? À, nếu bạn đang đọc bài viết này, nghĩa là bạn vẫn còn theo dõi blog của mình. Cám ơn bạn vì điều đó nhé! Hôm nay, mình sẽ giới thiệu với bạn một số ứng dụng của **Reduce** trong JavaScript.
+Trước khi bắt đầu, mình muốn bạn hiểu tại sao mình lại viết về phương thức Reduce trong JavaScript mà không phải là một cái nào khác.
 
-Trước khi bắt đầu, mình muốn bạn hiểu tại sao mình lại viết về phương thức Reduce mà không phải là một cái nào khác. Bởi lẽ, Reduce là một trong 3 phương thức quan trọng hay sử dụng trong lập trình hàm, đó là [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) và [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce). Việc sử dụng Reduce sẽ giúp cho code của bạn trở nên sáng sủa và ngắn gọn hơn rất nhiều.
+Bởi lẽ, Reduce là một trong 3 phương thức quan trọng hay sử dụng trong lập trình hàm, đó là [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) và [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce). Việc sử dụng Reduce sẽ giúp cho code của bạn trở nên sáng sủa và ngắn gọn hơn rất nhiều.
 
 Dĩ nhiên, đây chỉ là quan điểm cá nhân của mình thôi. Nếu bạn có ý kiến đóng góp, thảo luận, vui lòng để lại dưới phần bình luận nhé. Còn bây giờ thì mời bạn theo dõi bài viết!
 
-## Ôn lại cú pháp cơ bản của Reduce
+## Cú pháp
 
-Về cơ bản, phương thức Reduce sẽ thực thi một [hàm](/tim-hieu-function-javascript) lên các phần tử của [mảng](/javascript-array-co-ban) (từ trái sang phải) với một biến tích lũy để thu về một giá trị duy nhất.
+JavaScript Reduce là một phương thức có sẵn của Array, được sử dụng để thực thi một [hàm](/tim-hieu-function-javascript) lên các phần tử của [mảng](/javascript-array-co-ban) (từ trái sang phải) với một biến tích lũy để thu về một giá trị duy nhất.
 
 **Cú pháp:**
 
@@ -69,7 +70,7 @@ const topics = [
 
 Bây giờ, mình muốn có một mảng các bài viết để hiển thị chúng thành một danh sách. Vậy mình phải làm sao?
 
-#### Ứng dụng của Reduce để giải quyết vấn đề
+#### Ứng dụng JavaScript Reduce để giải quyết vấn đề
 
 Nếu quay trở lại thời điểm vài năm trước, khi mới chuyển từ C/C++ sang JavaScript thì mình sẽ luôn sử dụng vòng lặp **for** mà không cần phải suy nghĩ nhiều.
 
@@ -175,7 +176,7 @@ getPost("id4", posts).title; // => title4
 
 Vậy mình phải làm sao đây?
 
-#### Ứng dụng của Reduce để giải quyết vấn đề
+#### Ứng dụng JavaScript Reduce để giải quyết vấn đề
 
 Cách suy nghĩ thông thường nhất là mình sẽ duyệt mảng trên. Với mỗi bài viết, mình sẽ so sánh giá trị **postID** của nó với cái mà mình đang tìm. Mình sẽ duyệt lần lượt từng phần tử cho đến khi tìm được đúng bài viết thì thôi.
 
@@ -277,7 +278,7 @@ Trên đây là một số ứng dụng của Reduce trong JavaScript, cụ th�
 - Chuyển mảng 2 chiều thành mảng một chiều
 - Chuyển array thành object theo giá trị của một thuộc tính
 
-Hy vọng qua bài viết này, bạn hiểu hơn về Reduce và ứng dụng nó nhiều hơn trong các project của mình, giúp code trở nên rõ ràng, dễ hiểu hơn.
+Hy vọng qua bài viết này, bạn hiểu hơn về Reduce JS và ứng dụng nó nhiều hơn trong các project của mình - giúp code trở nên rõ ràng, dễ hiểu hơn.
 
 Ngoài 2 ứng dụng mình đã kể ra ở trên thì bạn còn biết cái nào khác nữa không? Chia sẻ trong phần bình luận phía dưới nhé!
 

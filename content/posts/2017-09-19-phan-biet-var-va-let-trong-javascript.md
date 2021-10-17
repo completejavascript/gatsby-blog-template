@@ -1,5 +1,6 @@
 ---
 date: "2017-09-19T23:19:32Z"
+update: "2021-10-17T23:19:32Z"
 template: "post"
 cover: "../images/phan-biet-var-va-let-trong-javascript-complete-javascript.png"
 keywords: "phân biệt var và let"
@@ -21,7 +22,7 @@ Từ trước tới giờ, có thể bạn đã quen dùng **var** để khai b�
 
 ## Khác nhau
 
-- Phạm vi của biến số sử dụng **var** là phạm vi hàm số hoặc bên ngoài [hàm số](/tim-hieu-function-javascript), toàn cục.
+- Phạm vi của biến số sử dụng **var** là phạm vi hàm hoặc bên ngoài [hàm](/tim-hieu-function-javascript), toàn cục.
 - Phạm vi của biến số sử dụng **let** là phạm vi một khối, xác định bởi cặp {}
 
 ### Ví dụ phân biệt var và let
@@ -49,7 +50,7 @@ varvslet();
 ```
 
 - **Let**: trong ví dụ trên biến j được khai báo sử dụng **let**. Bạn có thể thấy rằng biến j chỉ được phép sử dụng trong vòng lặp for. Nếu bạn gọi biến j ngoài vòng lặp for thì đều bị lỗi **ReferenceError: j is not defined**.
-- **Var**: phạm vi của biến var là phạm vi của hàm số chứa phần khai báo biến. Do đó, mặc dù biến i được khai báo trong vòng lặp for, nhưng bạn vẫn có thể gọi đến biến i ở mọi vị trí trong hàm số này. Lúc đầu, giá trị của biến i là **undefined**, nên khi bạn gọi console.log(i) lần đầu tiên, giá trị in ra là undefined chứ không phải là lỗi **ReferenceError: i is not defined**.
+- **Var**: phạm vi của biến var là phạm vi của hàm chứa phần khai báo biến. Do đó, mặc dù biến i được khai báo trong vòng lặp for, nhưng bạn vẫn có thể gọi đến biến i ở mọi vị trí trong hàm này. Lúc đầu, giá trị của biến i là **undefined**, nên khi bạn gọi console.log(i) lần đầu tiên, giá trị in ra là undefined chứ không phải là lỗi **ReferenceError: i is not defined**.
 
 ### Nên sử dụng var hay let?
 

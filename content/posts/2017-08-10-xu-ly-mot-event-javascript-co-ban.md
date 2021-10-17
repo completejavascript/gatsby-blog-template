@@ -1,9 +1,10 @@
 ---
 date: "2017-08-10T00:25:12Z"
+update: "2021-10-17T00:25:12Z"
 template: "post"
 cover: "../images/xu-ly-mot-so-event-javascript-co-ban-completejavascript.com_.png"
 keywords: "event javascript"
-description: "Đối với mỗi trang web, việc xử lý sự kiện chuột và bàn phím là không thể thiếu. Bài viết này tôi sẽ giới thiệu cách xử lý một số Event JavaScript cơ bản."
+description: "Đối với mỗi trang web, việc xử lý sự kiện chuột và bàn phím là không thể thiếu. Bài viết này mình sẽ giới thiệu cách xử lý một số Event JavaScript cơ bản. Qua đó, bạn có thể tiếp tục tìm hiểu và làm chủ về JS event."
 slug: xu-ly-mot-event-javascript-co-ban
 title: "Xử lý một số Event JavaScript cơ bản"
 categories:
@@ -13,7 +14,7 @@ tags:
   - Event
 ---
 
-Đối với mỗi trang web, đặc biệt là những trang web có sự tương tác với người dùng, thì việc xử lý sự kiện chuột và bàn phím là không thể thiếu. Do đó, bài viết này mình sẽ giới thiệu với bạn cách xử lý một số Event JavaScript cơ bản.
+Đối với mỗi trang web, đặc biệt là những trang web có sự tương tác với người dùng, việc xử lý sự kiện chuột và bàn phím là không thể thiếu. Vì vậy, bài viết này mình sẽ giới thiệu với bạn cách xử lý một số Event JavaScript cơ bản. Qua đó, bạn có thể tiếp tục tìm hiểu và làm chủ về JS event.
 
 ## Cách đăng ký và huỷ đăng ký Event JavaScript
 
@@ -31,7 +32,7 @@ Trong đó:
 - Tên sự kiện: ứng với sự kiện mà bạn muốn nhận như: _click, mousedown, mouseup, mousemove, keydown, keyup, keypress,..._
 - Hàm xử lý: là hàm được gọi khi sự kiện bạn đăng ký xảy với node trên.
 
-**Chú ý**: với một sự kiện bạn có thể đăng ký nhiều hàm xử lý. Khi đó, hàm đăng ký trước sẽ được gọi trước.
+**Chú ý**: với một JS event, bạn có thể đăng ký nhiều hàm xử lý. Khi đó, hàm đăng ký trước sẽ được gọi trước.
 
 Ví dụ:
 
@@ -50,7 +51,7 @@ Trong ví dụ trên, mình đã đăng kí sự kiện _click_ cho d*ocument* 
 
 ### Huỷ đăng ký Event JavaScript
 
-Tương tự, để huỷ sự kiện đã đăng ký bạn có thể sử dụng phương thức **removeEventListener** như sau:
+Tương tự, để huỷ event trong JavaScript đã đăng ký, bạn có thể sử dụng phương thức **removeEventListener** như sau:
 
 ```js
 Node.removeEventListener('tên sự kiện', hàm xử lý);
@@ -81,7 +82,7 @@ Thì bây giờ, mỗi khi bạn click chuột trái vào trang web, chỉ có h
 
 ### Đăng ký event cho nhiều node dựa trên đối tượng event
 
-Bình thường để đăng ký sự kiện cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, thực tế bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/javascript-object-last-but-not-least) event để phân biệt node được gọi.
+Bình thường để đăng ký event trong JavaScript cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/javascript-object-last-but-not-least) event để phân biệt node được gọi.
 
 Hãy xem ví dụ sau:
 
@@ -102,7 +103,7 @@ Hãy xem ví dụ sau:
 
 Trong ví dụ trên, mình chỉ cần gọi phương thức **addEventListener** một lần. Sau đó, mình chỉ cần sử dụng _event.target.nodeName_ để biết được node nào thật sự được _click_.
 
-### Huỷ hàm thực hiện mặc định với event
+### Huỷ hàm thực hiện mặc định với JS event
 
 Một số Event JavaScript có sẵn hàm thực hiện mặc định. Ví dụ: khi bạn click vào một link thì bạn sẽ được chuyển hướng đến trang của link đó, hay khi bạn click chuột phải thì sẽ có một context menu hiện ra,...
 
@@ -197,6 +198,8 @@ Trên đây là một số cách xử lý Event JavaScript cơ bản. Mình có 
 - preventDefault: bỏ đi hàm xử lý mặc định với sự kiện
 - Một số sự kiện với key: keydown, keyup, keypress,...
 - Một số sự kiện với mouse: click, dbclick, mousedown, mouseup, mousemove,...
+
+Hy vọng bạn có thể nắm được những kiến thức cơ bản về JS event.
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xmlhttprequest-tao-http-request-den-server-trong-javascript), thân ái!
 

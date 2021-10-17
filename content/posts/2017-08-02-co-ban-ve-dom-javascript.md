@@ -1,11 +1,12 @@
 ---
 date: "2017-08-02T00:29:51Z"
+update: "2021-10-17T00:29:51Z"
 template: "post"
 cover: "../images/co-ban-ve-dom-javascript-completejavascript.com_.png"
 keywords: "DOM"
-description: "Bài viết này tôi sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà tôi muốn nói đến, chính là DOM."
+description: "Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là DOM. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời."
 slug: co-ban-ve-dom-javascript
-title: "Cơ bản về DOM JavaScript"
+title: "Cơ bản về DOM JavaScript - DOM là gì?"
 categories:
   - Javascript cơ bản
 tags:
@@ -14,11 +15,11 @@ tags:
   - HTML
 ---
 
-Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**.
+Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời.
 
 ## DOM là gì?
 
-DOM là viết tắt của Document Object Model - một thành phần javascript cơ bản. Hiểu đơn giản thì DOM chính là những phần tử biểu diễn cấu trúc dữ liệu của một trang web.
+DOM là viết tắt của Document Object Model - một thành phần javascript cơ bản. Hiểu đơn giản thì DOM trong JavaScript chính là những phần tử biểu diễn cấu trúc dữ liệu của một trang web.
 
 Hãy xem xét một ví dụ đơn giản sau:
 
@@ -45,7 +46,7 @@ Hãy xem xét một ví dụ đơn giản sau:
 
 Ở đây, mỗi hình vuông cùng với nội dung bên trong nó chính là DOM.
 
-## Cấu trúc biểu diễn DOM
+## Cấu trúc biểu diễn DOM JavaScript
 
 Thực tế, cấu trúc dữ liệu của một trang web được biểu diễn dạng cây (tree). Trong đó, mỗi node sẽ tương ứng với một DOM.
 
@@ -157,7 +158,7 @@ Trả về danh sách các node thoả mãn _selectors_, theo thứ tự sử d�
 
 ![Perfect practice makes perfect - Complete JavaScript - completejavascript.com](../images/only-perfect-practice-makes-perfect-completejavascript.com_.png)
 
-## Ví dụ sử dụng DOM
+## Ví dụ sử dụng DOM trong JavaScript
 
 "Cách học tốt nhất là học từ thực hành". Sau đây là một số bài tập thực hành sử dụng DOM và các phương thức trên mà mình đã thực hiện (phần đề bài ở trang mà mình đã tham khảo, xem phía dưới).
 

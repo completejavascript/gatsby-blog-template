@@ -1,22 +1,23 @@
 ---
 date: "2017-05-15T00:35:17Z"
+update: "2021-10-16T00:35:17Z"
 template: "post"
 cover: "../images/tim-hieu-javascript-closures-completejavascript.com_.png"
-keywords: "JavaScript Closures"
-description: "Bài viết này mình sẽ giới thiệu với bạn về JavaScript closures. Việc hiểu closures sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn,...)."
+keywords: "JavaScript Closure"
+description: "Bài viết này sẽ giúp bạn hiểu về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Hãy cùng tìm hiểu xem closure trong JavaScript là gì và cách dùng closure thế nào nhé!"
 slug: tim-hieu-javascript-closures
-title: "Tìm hiểu JavaScript Closures"
+title: "Tìm hiểu JavaScript Closure - Closure là gì?"
 categories:
   - Javascript cơ bản
 ---
 
-Như đã nói trong bài [tìm hiểu function JavaScipt](/tim-hieu-function-javascript), bài viết này mình sẽ giới thiệu với bạn về JavaScript closures. Việc hiểu closures sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn,...). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closures, chúng ta sẽ xem closures là gì và cách sử dụng nó như thế nào.
+Như đã nói trong bài [tìm hiểu function JavaScipt](/tim-hieu-function-javascript), bài viết này mình sẽ giới thiệu với bạn về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closure trong JavaScript, chúng ta sẽ xem closure là gì và cách sử dụng nó như thế nào.
 
-## Khái niệm JavaScript closures
+## Khái niệm JavaScript closure
 
 Closures là tập hợp bao gồm một hàm và _môi trường_ nơi hàm số đó được khai báo. Ở đây, môi trường bao gồm tất cả những biến cục bộ trong phạm vi hàm số được khai báo (để đơn giản, từ nay mình sẽ sử dụng _hàm closures_ khi nói về JavaScript closures).
 
-Hàm closures có thể truy cập biến số ở **3 phạm vi** khác nhau là:
+Hàm closures có thể truy cập [biến số](/cau-truc-chuong-trinh-trong-javascript) ở **3 phạm vi** khác nhau là:
 
 - Biến toàn cục (global)
 - Biến được khai báo ở hàm số chứa hàm closures (outer function)
@@ -42,7 +43,7 @@ greet("Lam Pham");
 
 ## Một số đặc điểm quan trọng của JavaScript Closures
 
-Nếu bạn muốn hiểu sâu và vận dụng closures thì sau đây là những đặc điểm quan trọng mà bạn cần nắm vững.
+Nếu bạn muốn hiểu sâu và vận dụng closure trong JavaScript thì sau đây là những đặc điểm quan trọng mà bạn cần nắm vững.
 
 ### Hàm closures có thể truy cập tới biến số của hàm chứa nó, dù cho hàm đó đã return
 
@@ -128,7 +129,7 @@ Dựa theo kết quả so sánh tại bài viết [_Performance of prototype vs 
 
 Một cách khách quan, việc sử dụng prototype sẽ nhanh hơn và tiết kiệm bộ nhớ hơn việc sử dụng closures. Tuy nhiên, mình vẫn không phủ nhận vai trò của closures trong việc giúp bạn viết code ngắn gọn và rõ ràng hơn. Và dù sao, việc sử dụng closures là không bắt buộc. Tất cả tuỳ thuộc vào bạn.
 
-Bài viết trên là khá ngắn gọn. Hy vọng nó phần nào giúp bạn hiểu được JavaScript closures là gì và cách sử dụng closures.
+Bài viết trên là khá ngắn gọn. Hy vọng nó phần nào giúp bạn hiểu được JavaScript closure là gì và cách sử dụng closure trong JavaScript.
 
 Cuối cùng, hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-array-co-ban), thân ái!
 

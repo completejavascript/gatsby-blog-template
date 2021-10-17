@@ -1,20 +1,21 @@
 ---
 date: "2017-05-11T15:05:14Z"
+update: "2021-10-16T15:05:14Z"
 template: "post"
 cover: "../images/tim-hieu-function-javascript-completejavascript.com_.png"
 keywords: "function JavaScript"
-description: "Function JavaScript (hàm số) là một thành phần không thể thiếu trong cấu trúc chương trình. Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm số."
+description: "Function JavaScript (hàm trong JavaScript) là một thành phần không thể thiếu trong cấu trúc chương trình. Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm."
 slug: tim-hieu-function-javascript
-title: "Tìm hiểu function JavaScript"
+title: "Tìm hiểu function JavaScript - Hàm trong JavaScript"
 categories:
   - Javascript cơ bản
 ---
 
-Function JavaScript (hàm số) là một thành phần không thể thiếu trong [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript). Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm số. Nhờ vậy mà việc bảo trì phần mềm cũng dễ dàng hơn.
+Function JavaScript (hàm trong JavaScript) là một thành phần không thể thiếu trong [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript). Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm. Nhờ vậy mà việc bảo trì phần mềm cũng dễ dàng hơn.
 
-Ngoài ra, khi đã xây dựng được một hàm số tốt (độc lập và thực hiện một chức năng nhất định), bạn có thể tái sử dụng nó trong các project khác nhau. Điều này làm nâng cao hiệu suất công việc của bạn.
+Ngoài ra, khi đã xây dựng được một hàm tốt (độc lập và thực hiện một chức năng nhất định), bạn có thể tái sử dụng nó trong các project khác nhau. Điều này làm nâng cao hiệu suất công việc của bạn.
 
-Bài viết này, mình sẽ giới thiệu những [thành phần cơ bản](/values-types-va-operators-trong-javascript-phan-1) của hàm số trong JavaScript. Qua đó, bạn sẽ biết cách xây dựng hàm số và ứng dụng vào các project của mình.
+Bài viết này, mình sẽ giới thiệu những [thành phần cơ bản](/values-types-va-operators-trong-javascript-phan-1) của hàm trong JavaScript. Qua đó, bạn sẽ biết cách xây dựng hàm và ứng dụng vào các project của mình.
 
 ## Định nghĩa function JavaScript
 
@@ -28,7 +29,7 @@ function functionName([parameter1], [parameter2],...){
 }
 ```
 
-Hoặc bạn có thể sử dụng một biến và gán giá trị cho nó là nội dung function. Khi đó, tên biến số cũng chính là tên của hàm số.
+Hoặc bạn có thể sử dụng một biến và gán giá trị cho nó là nội dung function. Khi đó, tên biến số cũng chính là tên của hàm.
 
 ```js
 var param = function([parameter1], [parameter2],...){
@@ -38,12 +39,12 @@ var param = function([parameter1], [parameter2],...){
 };
 ```
 
-Một số đặc điểm của function JavaScript là:
+Một số đặc điểm của hàm trong JavaScript là:
 
-- Hàm số có thể không có tham số, 1 tham số hay thậm chí là nhiều tham số
+- Hàm có thể không có tham số, 1 tham số hay thậm chí là nhiều tham số
 - Nội dung của hàm phải được đặt trong cặp dấu ngoặc nhọn ({}), dù cho không có câu lệnh nào hoặc nhiều câu lệnh bên trong nó.
-- Hàm số có thể có giá trị trả về hoặc không có giá trị trả về.
-- Kiểu của tham số hay giá trị trả về trong hàm số là không được quy định. Do đó, bạn thường phải kiểm tra kiểu của giá trị truyền vào hàm. Nếu không, bạn sẽ rất dễ bị sai.
+- Hàm có thể có giá trị trả về hoặc không có giá trị trả về.
+- Kiểu của tham số hay giá trị trả về trong hàm là không được quy định. Do đó, bạn thường phải kiểm tra kiểu của giá trị truyền vào hàm. Nếu không, bạn sẽ rất dễ bị sai.
 
 ```js
 var greet = function (name) {
@@ -63,7 +64,7 @@ console.log(min(3, 4)); // => 3
 
 Tham số của hàm giống như là một biến số với giá trị của nó được khởi tạo khi function được gọi.
 
-Một đặc điểm quan trọng của function JavaScript là tham số và biến số khởi tạo trong hàm số có phạm vi cục bộ (local). Nghĩa là nó chỉ có ý nghĩa và chỉ được truy cập ở trong hàm. Hãy xem ví dụ sau:
+Một đặc điểm quan trọng của function JavaScript là tham số và biến số khởi tạo trong hàm có phạm vi cục bộ (local). Nghĩa là nó chỉ có ý nghĩa và chỉ được truy cập ở trong hàm. Hãy xem ví dụ sau:
 
 ```js
 function increase(number) {
@@ -89,7 +90,7 @@ Tính chất này có ưu điểm là: khi bạn khai báo biến số ở trong
 
 ## Nested scope
 
-Ngoài biến số ra, bạn còn có thể khai báo function JavaScript ở trong một hàm số khác. Tính chất này gọi là _nested scope_. Tạm dịch là "phạm vi lồng vào nhau" (thực tế, mình không biết dịch thế nào cho hợp lý, nên tốt nhất là dùng từ tiếng anh cho chuẩn bài).
+Ngoài biến số ra, bạn còn có thể khai báo function JavaScript ở trong một hàm khác. Tính chất này gọi là _nested scope_. Tạm dịch là "phạm vi lồng vào nhau" (thực tế, mình không biết dịch thế nào cho hợp lý, nên tốt nhất là dùng từ tiếng anh cho chuẩn bài).
 
 Tương tự như biến số, nếu bạn sử dụng hàm *nested scope*, thì những hàm này cũng có phạm vi sử dụng cục bộ trong hàm chứa nó. Bạn không thể gọi những hàm này ở _global_.
 
@@ -120,7 +121,7 @@ Như mình đã đề cập trong bài viết trước, _function_ JavaScript l
 
 Nghĩa là bạn có thể gán giá trị khác cho biến số đó bằng cách:
 
-- Định nghĩa lại hàm số khác (trường hợp này khiến mình liên tưởng đến con trỏ hàm trong C/C++)
+- Định nghĩa lại hàm khác (trường hợp này khiến mình liên tưởng đến con trỏ hàm trong C/C++)
 - Gán cho biến số đó một giá trị khác như: number, string, boolean...
 
 ```js
@@ -145,7 +146,7 @@ console.log(minValue);
 // => 0
 ```
 
-Hoặc bạn có thể sử dụng hàm số trong biểu thức (expression):
+Hoặc bạn có thể sử dụng hàm trong biểu thức (expression):
 
 ```js
 function sum(a, b) {
@@ -172,9 +173,9 @@ Trường hợp, function JavaScript không có giá trị trả về thì mặc
 
 ## Vị trí khai báo function JavaScript
 
-**Chú ý rằng**: nếu bạn sử dụng hàm số theo ví dụ trên thì chương trình vẫn sẽ thực hiện tuần tự từ trên xuống dưới.
+**Chú ý rằng**: nếu bạn sử dụng hàm theo ví dụ trên thì chương trình vẫn sẽ thực hiện tuần tự từ trên xuống dưới.
 
-Tuy nhiên, bạn có thể gọi hàm trước khi định nghĩa hàm số.
+Tuy nhiên, bạn có thể gọi hàm trước khi định nghĩa hàm.
 
 ```js
 console.log("Dog: " + dog());
@@ -185,15 +186,15 @@ function dog() {
 }
 ```
 
-Khi thực hiện, trình duyệt sẽ đưa phần định nghĩa hàm số lên trên đầu của chương trình. Do đó, bạn có thể gọi hàm ở bất cứ đâu bạn muốn.
+Khi thực hiện, trình duyệt sẽ đưa phần định nghĩa hàm lên trên đầu của chương trình. Do đó, bạn có thể gọi hàm ở bất cứ đâu bạn muốn.
 
 Hay hiểu theo cách khác là: trình duyệt sẽ bỏ qua phần định nghĩa function JavaScript, cho đến khi hàm này được gọi thì trình duyệt sẽ tìm đến vị trí hàm được định nghĩa.
 
-Có một vị trí khác để định nghĩa hàm số là ở trong block _if_ hoặc _loop (for, while,...)._ Tuy nhiên, cách này không được khuyến khích sử dụng vì một số trình duyệt không hỗ trợ và đã bị cấm trong phiên bản mới nhất của JavaScript.
+Có một vị trí khác để định nghĩa hàm là ở trong block _if_ hoặc _loop (for, while,...)._ Tuy nhiên, cách này không được khuyến khích sử dụng vì một số trình duyệt không hỗ trợ và đã bị cấm trong phiên bản mới nhất của JavaScript.
 
 ## Call stack
 
-Ở bài viết về cấu trúc chương trình, bạn đã biết về một số loại _flow_. Tuy nhiên, nếu mình sử dụng hàm số thì flow chương trình sẽ như thế nào?
+Ở bài viết về cấu trúc chương trình, bạn đã biết về một số loại _flow_. Tuy nhiên, nếu mình sử dụng hàm thì flow chương trình sẽ như thế nào?
 
 Hãy xem ví dụ:
 
@@ -286,11 +287,11 @@ console.log(wrap2());
 
 Trong hàm _wrapValue_, mình có khởi tạo một biến số là _localVariable_. Khi mình gọi _wrapValue(1)_ thì kết quả trả về là 1. Tức là _localVariable_ = 1.  Và khi mình gọi _wrapValue(2)_ thì kết quả trả về là 2. Chứng tỏ, *localVariable* = 2.
 
-**Như vậy, sau khi hàm số được gọi thì biến số cục bộ sẽ ở đâu?**
+**Như vậy, sau khi hàm được gọi thì biến số cục bộ sẽ ở đâu?**
 
 Thực tế, bạn không cần quan tâm đến vấn đề này. Vì dù sao, việc này cũng không làm ảnh hưởng gì đến kết quả chương trình của bạn.
 
-Tuy nhiên, JavaScript đã đưa ra khái niệm _closure_, giúp bạn không cần phải bận tâm đến vòng đời của những biến cục bộ nữa. Hơn nữa, _closure_ còn mang đến cho bạn sự linh hoạt và sáng tạo khi sử dụng hàm số.
+Tuy nhiên, JavaScript đã đưa ra khái niệm _closure_, giúp bạn không cần phải bận tâm đến vòng đời của những biến cục bộ nữa. Hơn nữa, _closure_ còn mang đến cho bạn sự linh hoạt và sáng tạo khi sử dụng hàm.
 
 ```js
 function multiplier(factor) {
@@ -308,9 +309,9 @@ console.log(twice(5));
 
 Khái niệm _closure_ là khá mới mẻ và trông cũng rất thú vị. Vì vậy, mình quyết định sẽ dành riêng một bài viết về hàm _closure_. Qua đó, bạn có thể hiểu rõ hơn về hàm này và những ứng dụng của nó.
 
-## Recursion
+## Recursion - hàm đệ quy
 
-_Recursion_ hay còn gọi là hàm đệ quy. Recursion cho phép một hàm số có thể gọi đến chính nó, miễn sao không bị tràn stack.
+_Recursion_ hay còn gọi là hàm đệ quy. Recursion cho phép một hàm có thể gọi đến chính nó, miễn sao không bị tràn stack.
 
 Sau đây là một ví dụ về đệ quy:
 
@@ -337,21 +338,21 @@ Nhưng trong JavaScript, việc sử dụng đệ quy sẽ chậm hơn khoảng 
 
 Cụ thể, bạn nên so sánh giữa cách triển khai và tốc độ thực hiện chương trình. Cách triển khai có thể hiểu là *tính rõ ràng, dễ hiểu* khi viết code. Thông thường, hai yếu tố này sẽ tỉ lệ nghịch với nhau. Và bạn sẽ phải tìm ra một điểm cân bằng.
 
-## Sự phát sinh hàm số trong chương trình
+## Sự phát sinh hàm trong chương trình
 
-Khi viết chương trình, thông thường sẽ có 2 khả năng khiến một hàm số được sinh ra:
+Khi viết chương trình, thông thường sẽ có 2 khả năng khiến một hàm được sinh ra:
 
 - Một đoạn chương trình được lặp đi, lặp lại nhiều lần. Việc gom chúng lại thành một hàm sẽ giúp chương trình ngắn gọn hơn, dễ hiểu hơn. Và khi cần thay đổi, bạn chỉ cần sửa một lần trong nội dung hàm, thay vì phải sửa nhiều chỗ.
 - Khi viết chương trình, bạn cần tách toàn bộ chương trình thành những phần nhỏ hơn. Hay còn gọi là _module hoá_. Lúc này, bạn có thể xây dựng logic cho toàn bộ chương trình trước khi thật sự định nghĩa nội dung hàm.
-  Tại những công ty lớn, thường bạn sẽ chỉ được làm những module nhỏ trong toàn bộ một project lớn. Sau đó, team leader hay project leader... sẽ là người ghép những module nhỏ đó thành một chương trình hoàn chỉnh. Do đó, việc phân chia chương trình thành những hàm số tốt là vô cùng quan trọng.
+  Tại những công ty lớn, thường bạn sẽ chỉ được làm những module nhỏ trong toàn bộ một project lớn. Sau đó, team leader hay project leader... sẽ là người ghép những module nhỏ đó thành một chương trình hoàn chỉnh. Do đó, việc phân chia chương trình thành những hàm tốt là vô cùng quan trọng.
 
-**Như thế nào là một hàm số tốt?**
+**Như thế nào là một hàm tốt?**
 
-Đây là một câu hỏi rất khó để trả lời. Theo mình, hàm số tốt là hàm số thỏa mãn một số điều kiện sau:
+Đây là một câu hỏi rất khó để trả lời. Theo mình, hàm tốt là hàm thỏa mãn một số điều kiện sau:
 
-- một hàm số chỉ thực hiện một chức năng duy nhất
-- độc lập với các yếu tố bên ngoài (biến toàn cục, môi trường thực thi,...)
-- dễ dàng tái sử dụng
+- Một hàm chỉ thực hiện một chức năng duy nhất
+- Độc lập với các yếu tố bên ngoài (biến toàn cục, môi trường thực thi,...)
+- Dễ dàng tái sử dụng
 
 Tuy nhiên, không phải lúc nào bạn cũng có thể thoả mãn những yêu cầu trên. Hoặc không nhất thiết phải thoả mãn tất cả những yêu cầu trên.
 
@@ -359,9 +360,9 @@ Tuy nhiên, không phải lúc nào bạn cũng có thể thoả mãn những y�
 
 Nhìn chung, có hai loại function JavaScript là **pure** function (hàm thuần khiết) và **non-pure** function (hàm không thuần khiết).
 
-_Pure_ function là hàm không phụ thuộc vào yếu tố bên ngoài (biến toàn cục, môi trường thực thi,...). Bất cứ khi nào bạn gọi hàm _pure_ function với cùng một đối số thì kết quả trả về luôn giống nhau. Do đó, *pure* function rất dễ để sử dụng, tái sử dụng hay bảo trì,... Theo mình, _pure_ function là một hàm số tốt.
+_Pure_ function là hàm không phụ thuộc vào yếu tố bên ngoài (biến toàn cục, môi trường thực thi,...). Bất cứ khi nào bạn gọi hàm _pure_ function với cùng một đối số thì kết quả trả về luôn giống nhau. Do đó, *pure* function rất dễ để sử dụng, tái sử dụng hay bảo trì,... Theo mình, _pure_ function là một hàm tốt.
 
-_None-pure_ function, ngược lại với _pure_ function, là hàm phụ thuộc vào biến toàn cục hay môi trường thực thi. Do đó, khi bạn gọi cùng một hàm số với cùng một đối số, nhưng kết quả lại khác nhau.
+_None-pure_ function, ngược lại với _pure_ function, là hàm phụ thuộc vào biến toàn cục hay môi trường thực thi. Do đó, khi bạn gọi cùng một hàm với cùng một đối số, nhưng kết quả lại khác nhau.
 
 ```js
 // pure function
@@ -386,7 +387,7 @@ Rõ ràng, hàm _non-pure_ function là khó để tái sử dụng. Nhưng tron
 
 ## Tổng kết
 
-Trên đây là những kiến thức cơ bản về function JavaScript. Hy vọng qua đây bạn có thể hiểu về hàm số là gì, cách xây dựng hàm số sao cho phù hợp với yêu cầu của từng bài toán.
+Trên đây là những kiến thức cơ bản về function JavaScript. Hy vọng qua đây bạn có thể hiểu về hàm là gì, cách xây dựng hàm sao cho phù hợp với yêu cầu của từng bài toán.
 
 Như đã trình bày ở trên, bài viết sau mình sẽ trình bày chi tiết về _closure_ trong JavaScript. Đây là kiến thức rất hay mà mình muốn tìm hiểu và áp dụng nó.
 
@@ -411,7 +412,7 @@ f(0) = f(1) = 1;
 f(n) = f(n-1) + f(n-2) với n là số nguyên, n >= 2
 ```
 
-Hãy viết hàm số tính f(6) sử dụng hai cách (vòng lặp và đệ quy).
+Hãy viết hàm tính f(6) sử dụng hai cách (vòng lặp và đệ quy).
 
 Xem code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/function/function_fibonaci_2.js).
 

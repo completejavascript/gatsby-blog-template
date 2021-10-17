@@ -1,5 +1,6 @@
 ---
 date: "2018-03-09T15:03:38Z"
+update: "2021-10-17T15:03:38Z"
 template: "post"
 cover: "../images/lap-trinh-voi-fcc-build-a-personal-portfolio-completejavascript-completejavascript.com_.png"
 keywords: "personal portfolio"
@@ -32,7 +33,7 @@ Trong project này, mình sử dụng các công cụ như sau:
 - [HTML5](/tag/html)
 - [CSS3](/tag/css)
 - [JQuery](/tag/jquery)
-- [Mustache.js](https://github.com/janl/mustache.js/)
+- [Mustache.js](/tag/mustachejs)
 
 Như vậy, so với project, mình đã không sử dụng Bootstrap nữa mà thay vào đó, mình tự triển khai **design website responsive** trong main.css. Ngoài ra, mình còn sử dụng thêm thư viện Mustache.js để xử lý **template** trong HTML.
 

@@ -1,5 +1,6 @@
 ---
 date: "2017-07-08T04:03:17Z"
+update: "2021-10-17T04:03:17Z"
 template: "post"
 cover: "../images/Debug-javascript-de-hay-kho-completejavascript.com_.png"
 keywords: "debug javascript"
@@ -13,7 +14,9 @@ tags:
   - Strict Mode
 ---
 
-Với mọi ngôn ngữ lập trình, debug là một hoạt động khó và mất nhiều thời gian nhất. Trong đó, debug [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) là khó khăn hơn cả. Tại sao vậy? Chúng ta sẽ cùng nhau tìm hiểu sau đây.
+Với mọi ngôn ngữ lập trình, debug là một hoạt động khó và mất nhiều thời gian nhất. Trong đó, debug [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) là khó khăn hơn cả. Tại sao vậy?
+
+Chúng ta sẽ cùng nhau tìm hiểu về debug trong JavaScript sau đây.
 
 ## Khái niệm chung về bug và debug
 
@@ -177,9 +180,9 @@ console.log(numberToString(13, 10));
 // => 13
 ```
 
-Đó chính là một cách mà mình thường làm khi debug JavaScript.
+Đó chính là một cách mà mình thường làm khi debug JS.
 
-Ngoài cách viết log, bạn cũng có thể set breakpoint giống như bạn debug trên IDE khi lập trình C/C++ hay Java. Đây cũng là một cách debug JavaScript khá hay mà mình mới biết, nên chắc chắn sẽ thử cách này.
+Ngoài cách viết log, bạn cũng có thể set breakpoint giống như bạn debug trên IDE khi lập trình C/C++ hay Java. Đây cũng là một cách debug trong JavaScript khá hay mà mình mới biết, nên chắc chắn sẽ thử cách này.
 
 ## Kết luận
 
@@ -189,7 +192,7 @@ Trên đây là một số cách giúp bạn debug JavaScript. Mình có thể t
 - Testing - unit test giúp kiểm tra từng thành phần trong chương trình.
 - Debugging bằng cách ghi ra log hoặc set breakpoint giúp bạn xác định chính xác vị trí lỗi và sửa nó.
 
-Hy vọng qua bài viết này bạn sẽ thấy rằng debug JavaScript không phải là một công việc quá khó khăn. Nó cũng chỉ giống như mọi ngôn ngữ lập trình khác thôi.
+Hy vọng qua bài viết này bạn sẽ thấy rằng debug JS không phải là một công việc quá khó khăn. Nó cũng chỉ giống như mọi ngôn ngữ lập trình khác thôi.
 
 Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/mot-so-loi-khi-su-dung-strict-mode-javascript), thân ái!
 

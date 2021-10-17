@@ -1,9 +1,10 @@
 ---
 date: "2017-05-24T14:39:44Z"
+update: "2021-10-16T14:39:44Z"
 template: "post"
 cover: "../images/Array-sorting-van-de-muon-thuo-completejavascript.com_.png"
 keywords: "Array sorting"
-description: "Array sorting là một bài toán vô cùng quen thuộc. Bài viết này sẽ tìm hiểu về một số cách để thực hiện Array sorting trong JavaScript"
+description: "Array sorting (sắp xếp mảng) là một bài toán vô cùng quen thuộc. Bài viết này sẽ tìm hiểu về một số cách để thực hiện sắp xếp mảng trong trong JavaScript"
 slug: array-sorting-van-de-muon-thuo
 title: "Array Sorting - vấn đề muôn thuở"
 categories:
@@ -13,7 +14,7 @@ tags:
   - Thuật toán
 ---
 
-Từ xưa đến nay, sắp xếp giữ một vai trò vô cùng quan trọng. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc này giúp cho người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn. Do đó, trong bài viết này, mình sẽ cùng với bạn tìm hiểu về vấn đề [Array](/javascript-array-co-ban) Sorting trong JavaScript.
+Từ xưa đến nay, sắp xếp giữ một vai trò vô cùng quan trọng. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc này giúp cho người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn. Do đó, trong bài viết này, mình sẽ cùng với bạn tìm hiểu về vấn đề [Array](/javascript-array-co-ban) Sorting - sắp xếp mảng trong JavaScript.
 
 Về sắp xếp nói chung, chúng ta có rất nhiều thuật toán với độ phức tạp khác nhau, có thể kể đến là: selection sort, insertion sort, binary insertion sort, interchange sort, bubble sort, shaker sort, quick sort, merge sort, heap sort,...
 
@@ -21,7 +22,9 @@ _(Xem thêm hai bài tổng hợp về thuật toán sắp xếp trong C/C++: [p
 
 Tuy nhiên, bạn không cần thiết phải implement lại những thuật toán sắp xếp này. Vì JavaScript hỗ trợ sẵn cho chúng ta một [function](/tim-hieu-function-javascript) để sắp xếp.
 
-## Cú pháp:
+## Cú pháp hàm sắp xếp mảng trong JavaScript
+
+Hàm **sort()**:
 
 ```js
 arr.sort();
@@ -30,7 +33,7 @@ arr.sort(compareFunction);
 
 ### Tham số
 
-**compareFunction**: dùng để xác định thứ tự sắp xếp. Nếu bạn bỏ qua tham số này thì mặc định JavaScript sẽ sắp xếp theo thứ tự tăng dần trong bảng mã Unicode (hay đơn giản thì cứ gọi là thứ tự tăng dần bảng chữ cái).
+**compareFunction**: dùng để xác định thứ tự sắp xếp. Nếu bạn bỏ qua tham số này thì mặc định JavaScript sẽ sắp xếp mảng theo thứ tự tăng dần trong bảng mã Unicode (hay đơn giản thì cứ gọi là thứ tự tăng dần bảng chữ cái).
 
 ### Giá trị trả về
 
@@ -45,7 +48,7 @@ console.log(b); // => ["a", "c", "g", "w"]
 
 ## Tìm hiểu compareFunction
 
-Hàm _compareFunction_ dùng để xác định thứ tự sắp xếp. Nếu a và b là hai phần tử dùng để so sánh thì:
+Hàm _compareFunction_ dùng để xác định thứ tự sắp xếp mảng. Nếu a và b là hai phần tử dùng để so sánh thì:
 
 - Nếu compareFunction(a, b) trả về < 0 thì a sẽ đứng trước b.
 - Nếu compareFunction(a, b) trả về > 0 thì a sẽ đứng sau b.
@@ -88,7 +91,7 @@ console.log(
 // => [9, 33, 45, 100]
 ```
 
-### Sắp xếp numbers theo thứ tự giảm dần
+### Sắp xếp mảng numbers theo thứ tự giảm dần
 
 Để sắp xếp mảng numbers theo thứ tự giảm dần thì bạn chỉ cần thay đổi nội dung hàm _compareNumbers_. Thay vì return a - b thì bây giờ mình sẽ return b - a.
 
@@ -339,9 +342,9 @@ function heapSort(array) {
 }
 ```
 
-Trên đây là những vấn đề cơ bản về Array Sorting, cùng với một số thuật toán sắp xếp. Theo mình, đây là những kiến thức cơ bản và có thể được áp dụng rất nhiều.
+Trên đây là những vấn đề cơ bản về Array Sorting, cùng với một số thuật toán sắp xếp mảng 1 chiều. Theo mình, đây là những kiến thức cơ bản và có thể được áp dụng rất nhiều.
 
-Cuối cùng, xin chào và hẹn gặp lại bạn ở [bài viết sau](/javascript-object-last-but-not-least), thân ái!
+Xin chào và hẹn gặp lại ở [bài viết sau](/javascript-object-last-but-not-least), thân ái!
 
 ## Tham Khảo
 

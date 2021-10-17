@@ -1,9 +1,10 @@
 ---
 date: "2017-06-08T00:21:47Z"
+update: "2021-10-17T00:21:47Z"
 template: "post"
 cover: "../images/tim-hieu-ve-json-trong-javascript-completejavascript.com_.png"
 keywords: "json"
-description: "Bài viết này mình sẽ tìm hiểu tổng quan về JSON, ứng dụng và cách sử dụng JSON trong JavaScript. Ngoài ra, mình cũng so sánh nó với JavaScript Object."
+description: "Bài viết này mình sẽ tìm hiểu tổng quan về JSON, ứng dụng và cách sử dụng JSON trong JavaScript. Ngoài ra, mình cũng so sánh JSON với JavaScript Object."
 slug: tim-hieu-ve-json-trong-javascript
 title: "Tìm hiểu về JSON trong JavaScript"
 categories:
@@ -12,9 +13,9 @@ tags:
   - JSON
 ---
 
-Cách đây khoảng 3 - 4 năm, khi đang học về lập trình Android, mình đã bắt đầu được tiếp xúc với JSON. Gần đây, mình mới biết nguồn gốc của nó lại liên quan đến JavaScript - khi mình bắt đầu học ngôn ngữ này. Vậy JSON là gì? Nó có tác dụng gì ? Và cách sử dụng nó như thế nào? Sau đây, chúng ta sẽ cùng tìm hiểu.
+Cách đây khoảng 3 - 4 năm, khi đang học về lập trình Android, mình đã bắt đầu được tiếp xúc với JSON. Gần đây, mình mới biết nguồn gốc của nó lại liên quan đến JavaScript - khi mình bắt đầu học ngôn ngữ này. Vậy JSON là gì? JSON trong JavaScript có tác dụng gì? Và cách sử dụng JSON như thế nào? Sau đây, chúng ta sẽ cùng tìm hiểu.
 
-## Tổng quan về JSON
+## Tổng quan về JSON trong JavaScript
 
 JSON viết tắt bởi **JavaScript Object Notation**. Dịch nôm na thì nó là "Kí hiệu object trong JavaScript".
 
@@ -34,7 +35,7 @@ Nếu bạn đã biết về [JavaScript Object](/javascript-object-last-but-not
 
 > **Chú ý:** Trong bài viết này, mình sẽ chỉ quan tâm đến **JSONObject** - nghĩa là sau khi parse string loại này mình sẽ thu được Object. Nhưng thực chất, JSON có nhiều loại: _null, boolean, JSONNumber, JSONArray,..._ Để biết thêm chi tiết về cú pháp các loại này, mới bạn theo dõi tại [đây](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#Full_JSON_syntax).
 
-## Ứng dụng
+## Ứng dụng của JSON
 
 JSON thường được dùng trong cơ sở dữ liệu NoSQL (ví dụ như [MongoDB](/cai-dat-mongodb-tren-windows-moi-nhat)) và là một chuẩn giao tiếp trên web.
 
@@ -142,7 +143,7 @@ console.log(obj.born);
 
 ## Lời kết
 
-JSON là một thành phần quan trọng dùng để lưu trữ dữ liệu và là chuẩn giao tiếp giữa client và server. Hy vọng qua bài viết này bạn hiểu được JSON là gì và cách sử dụng nó. Vì chắc chắn là bạn sẽ phải sử dụng nó nhiều.
+JSON trong JavaScript là một thành phần quan trọng dùng để lưu trữ dữ liệu và là chuẩn giao tiếp giữa client và server. Hy vọng qua bài viết này bạn hiểu được JSON là gì và cách sử dụng nó. Vì chắc chắn là bạn sẽ phải sử dụng nó nhiều.
 
 Hẹn gặp lại bạn ở [bài viết sau](/lap-trinh-huong-doi-tuong-voi-javascript), thân ái!
 

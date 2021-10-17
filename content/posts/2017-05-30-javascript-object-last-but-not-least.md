@@ -1,16 +1,17 @@
 ---
 date: "2017-05-30T00:10:29Z"
+update: "2021-10-16T00:10:29Z"
 template: "post"
 cover: "../images/javascript-object-last-but-not-least-completejavascript.com_.png"
 keywords: "JavaScript Object"
-description: "JavaScript là ngôn ngữ dựa trên đối tượng, nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn trở thành master trên con đường JavaScript học."
+description: "JavaScript là ngôn ngữ dựa trên đối tượng, nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn trở thành master trên con đường JavaScript học. Hãy tìm hiểu thật kỹ về Object trong JavaScript nhé!"
 slug: javascript-object-last-but-not-least
 title: "JavaScript Object - last but not least"
 categories:
   - Javascript cơ bản
 ---
 
-Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number](/values-types-va-operators-trong-javascript-phan-1), [string, boolean](/values-types-va-operators-trong-javascript-phan-2) và [array](/javascript-array-co-ban). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript)), nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn trở thành master trên con đường JavaScript học.
+Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number](/values-types-va-operators-trong-javascript-phan-1), [string, boolean](/values-types-va-operators-trong-javascript-phan-2) và [array](/javascript-array-co-ban). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object trong Javascript (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript)), nên việc hiểu rõ về JavaScript Object sẽ giúp bạn dễ dàng chinh phục ngôn ngữ lập trình JavaScript.
 
 Để hiểu JavaScript object là gì, mình xin đưa ra một ví dụ. Máy tính của mình có những đặc điểm sau:
 
@@ -25,7 +26,7 @@ Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì 
 
 ## Vậy JavaScript Object là gì?
 
-_Object là một khái niệm trừu tượng dùng để biểu diễn một vật thể (cụ thể). Trong đó, các thuộc tính dùng để miêu tả đặc điểm, tính chất của đối tượng. Và các phương thức dùng để chỉ các hoạt động của đối tượng._
+_Object trong JavaScript là một khái niệm trừu tượng dùng để biểu diễn một vật thể (cụ thể). Trong đó, các thuộc tính dùng để miêu tả đặc điểm, tính chất của đối tượng. Và các phương thức dùng để chỉ các hoạt động của đối tượng._
 
 **Chú ý:**
 
@@ -45,7 +46,7 @@ JavaScript sử dụng cặp dấu ngoặc nhọn {} để biểu diễn object:
 }
 ```
 
-Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị tương ứng là *value1, value2, value3,...* Nếu value là một [function](/tim-hieu-function-javascript) thì đó chính là phương thức của object.
+Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị tương ứng là *value1, value2, value3,...* Nếu value là một [function](/tim-hieu-function-javascript) thì đó chính là phương thức của object JS.
 
 Áp dụng cho ví dụ trên:
 
@@ -67,7 +68,7 @@ var myComputer = {
 - Key: có thể đặt theo quy tắc của biến số, hoặc có thể là một string. Nếu key là một string thì phải được đặt trong cặp dấu ngoặc đơn hoặc ngoặc kép.
 - Value: có thể là một trong các loại numbers, strings, Boolean, array, function, null,... hay thậm chí là một object khác.
 
-## Cách sử dụng JavaScript Object
+## Cách sử dụng Object trong JavaScript
 
 Khi đã biểu diễn được object rồi thì vấn đề tiếp theo là làm sao sử dụng được nó. Cụ thể là cách thức để truy cập vào thuộc tính của Object. Có 2 cách để lấy ra giá trị của một thuộc tính trong object:
 
@@ -279,7 +280,7 @@ console.log(window.x);
 // => 6
 ```
 
-Trên đây là một số kiến thức cơ bản về JavaScript object. Nếu bạn đã hiểu hết những nội dung ở trên, bạn có thể tìm hiểu sâu hơn về object. Còn bây giờ thì tạm dừng lại và thực hành một chút về những gì đã học được nhé.
+Trên đây là một số kiến thức cơ bản về JavaScript object. Nếu bạn đã hiểu hết những nội dung ở trên, bạn có thể tìm hiểu sâu hơn về object JS. Còn bây giờ thì tạm dừng lại và thực hành một chút về những gì đã học được về Object trong JavaScript nhé.
 
 > Dục tốc bất đạt.
 

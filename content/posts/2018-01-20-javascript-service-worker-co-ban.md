@@ -1,5 +1,6 @@
 ---
 date: "2018-01-20T05:16:13Z"
+update: "2021-10-17T05:16:13Z"
 template: "post"
 cover: "../images/javascript-service-worker-xay-dung-ung-dung-web-offline-completejavascript-completejavascript.com_.png"
 keywords: "javascript service worker"
@@ -153,7 +154,7 @@ Sau khi đăng ký thành công, Service Worker sẽ được download về phí
 
 ```js
 const PRECACHE = "my-precache-v1";
-const RUNTIME = "my-runtime"; // A list of local resources we always want to be cached.
+const RUNTIME = "my-runtime"; // A list of local resources want to be cached.
 const PRECACHE_URLS = [
   "index.html",
   "./", // Alias for index.html
@@ -269,17 +270,13 @@ self.addEventListener("fetch", (event) => {
 
 Đoạn code trên có thể mô tả thành lời như sau:
 
-Bước 1) Khi có request từ phía client (trình duyệt): Nếu url không thuộc cùng origin (không cùng trang web) thì bỏ qua.
+**Bước 1:** Khi có request từ phía client (trình duyệt): Nếu url không thuộc cùng origin (không cùng trang web) thì bỏ qua.
 
-Bước 2) Ngược lại, kiểm tra trong bộ nhớ đệm cache xem đã có response tương ứng với request chưa. Nếu tồn tại, thì trả về response đó cho trình duyệt.
+**Bước 2:** Ngược lại, kiểm tra trong bộ nhớ đệm cache xem đã có response tương ứng với request chưa. Nếu tồn tại, thì trả về response đó cho trình duyệt.
 
-Bước 3) Ngược lại, gửi request đó lên server, rồi lấy response trả về.
+**Bước 3:** Ngược lại, gửi request đó lên server, rồi lấy response trả về.
 
-Bước 4) Clone response đó và lưu vào **RUNTIME** cache để phục vụ cho lần request tiếp theo, rồi sau đó trả về response đó cho trình duyệt.
-
-Toàn bộ quá trình có thể được mô phỏng thông qua hình vẽ dưới đây:
-
-![Offline workflow](https://mdn.mozillademos.org/files/7311/lifeOfOffline-05.svg)
+**Bước 4:** Clone response đó và lưu vào **RUNTIME** cache để phục vụ cho lần request tiếp theo, rồi sau đó trả về response đó cho trình duyệt.
 
 ## Kết luận
 

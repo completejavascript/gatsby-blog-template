@@ -1,5 +1,6 @@
 ---
 date: "2018-02-04T14:02:31Z"
+update: "2021-10-17T14:02:31Z"
 template: "post"
 cover: "../images/javascript-indexeddb-tai-sao-khong-completejavascript-completejavascript.com_.png"
 keywords: "javascript indexeddb"
@@ -22,7 +23,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 
 ## Tại sao lại tìm hiểu JavaScript IndexedDB?
 
-- IndexedDB sử dụng công nghệ [index](https://en.wikipedia.org/wiki/Database_index) để nâng cao hiệu quả tìm kiếm, giúp tìm kiếm dữ liệu nhanh hơn.
+- IndexedDB sử dụng công nghệ [index db](https://en.wikipedia.org/wiki/Database_index) để nâng cao hiệu quả tìm kiếm, giúp tìm kiếm dữ liệu nhanh hơn.
 - IndexedDB hoạt động theo kiểu bất đồng bộ (asynchronous) và còn hỗ trợ sử dụng trong [Web Worker](/javascript-web-worker-javascript-o-background), giúp tránh việc block [DOM](/co-ban-ve-dom-javascript). Qua đó, trình duyệt chạy sẽ mượt hơn.
 - Trong khi LocalStorage chỉ hỗ trợ dung lượng tối đa là 5MB thì IndexedDB hỗ trợ lên đến 50MB. Và khi dùng [quá 50MB này](https://support.mozilla.org/en-US/questions/818987#answer-180011), trình duyệt sẽ yêu cầu permission từ người dùng để có thể tăng thêm dung lượng lưu trữ.
 
@@ -36,7 +37,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 - IndexedDB là cơ sở dữ liệu dạng [NoSQL](https://en.wikipedia.org/wiki/NoSQL).
 - IndexedDB cũng dựa trên chính sách **same-orgin**. Nghĩa là file script thực thi phải nằm trên cùng tên miền, protocol (**http** hay **https**), và cổng (**port**).
 
-## Một số định nghĩa quan trọng trước khi áp dụng IndexedDB
+## Một số định nghĩa quan trọng khi dùng IndexedDB
 
 ### Database
 
@@ -142,14 +143,17 @@ this.open = function (
   this.objName = objName;
   this.request = window.indexedDB.open(this.dbName, this.dbVersionNumber);
   var self = this;
+
   this.request.onerror = function (event) {
     onerror();
   };
+
   this.request.onsuccess = function (event) {
     // here: this = request
     self.db = this.result;
     onsuccess();
   };
+
   this.request.onupgradeneeded = function (event) {
     var db = event.target.result;
     var objectStore = db.createObjectStore(objName, { keyPath: keyPath });
@@ -166,12 +170,15 @@ this.open = function (
 const INDEXED_DB_NAME = "employee_db";
 var firstname, email, id;
 var simpleIndexedDb;
+
 var objData = [
   { id: "1", name: "lam", email: "lam@whatever.com" },
   { id: "2", name: "phong", email: "phong@whatever.com" },
 ];
+
 var objName = "employee";
 var keyPath = "id";
+
 function init() {
   firstname = document.querySelector('[name="firstname"]');
   email = document.querySelector('[name="email"]');
@@ -187,12 +194,15 @@ function init() {
     objData
   );
 }
+
 function openDBSuccess() {
   console.log("open db success");
 }
+
 function openDBError() {
   console.log("open db error");
 }
+
 function openDBUpgradeNeeded() {
   console.log("open db upgradedneeded");
 }
@@ -336,7 +346,9 @@ function remove() {
 
 ## Kết luận
 
-Trên đây, tôi đã giới thiệu với các bạn những kiến thức cơ bản cần nhớ về JavaScript IndexedDB. Tuy nhiên, để giải thích chi tiết thì thật sự tôi không biết phải giải thích với các bạn như thế nào. Vì vậy, nếu có phần nào bạn cảm thấy không hiểu thì có thể đặt câu hỏi trong phần bình luận.
+Trên đây, mình đã giới thiệu với bạn những kiến thức cơ bản cần nhớ về JavaScript IndexedDB. Tuy nhiên, để giải thích chi tiết về index db thì thật sự không biết phải giải thích như thế nào.
+
+Vì vậy, nếu có phần nào bạn cảm thấy không hiểu thì có thể đặt câu hỏi trong phần bình luận.
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/ke-thua-co-ban-trong-javascript), thân ái!
 

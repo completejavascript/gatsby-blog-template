@@ -1,19 +1,22 @@
 ---
 date: "2018-03-07T13:59:55Z"
+update: "2021-10-17T13:59:55Z"
 template: "post"
 cover: "../images/lap-trinh-javascript-voi-intermediate-algorithm-scripting-completejavascript-completejavascript.com_.png"
 keywords: "Intermediate Algorithm Scripting"
-description: "Bài viết trước tôi đã chia sẻ với các bạn các bài toán thuộc chủ đề Basic Algorithm Scripting. Nếu các bạn đã đọc qua thì có thể thấy rằng, đó đều là những bài toán khá dễ. Ngược lại, các bài toán hôm nay sẽ khó hơn một chút. Vì chúng thuộc chủ đề Intermediate Algorithm Scripting."
+description: "Bài viết trước mình đã chia sẻ với bạn các bài toán thuộc chủ đề Basic Algorithm Scripting. Nếu bạn đã đọc qua thì có thể thấy rằng, đó đều là những bài toán khá dễ. Ngược lại, các bài toán hôm nay sẽ khó hơn một chút. Vì chúng thuộc chủ đề Intermediate Algorithm Scripting."
 slug: lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting
 title: "Lập trình JavaScript với FCC - Intermediate Algorithm Scripting"
 categories:
   - Thủ thuật JavaScript
   - Lập trình JavaScript với FCC
+tags:
+  - Thuật toán
 ---
 
-Bài viết trước tôi đã chia sẻ với các bạn các bài toán thuộc chủ đề [Basic Algorithm Scripting](/lap-trinh-javascript-voi-fcc-basic-algorithm-scripting). Nếu các bạn đã đọc qua thì có thể thấy rằng, đó đều là những bài toán khá dễ. Ngược lại, các bài toán hôm nay sẽ khó hơn một chút. Vì chúng thuộc chủ đề **Intermediate Algorithm Scripting**.
+Bài viết trước mình đã chia sẻ với bạn các bài toán thuộc chủ đề [Basic Algorithm Scripting](/lap-trinh-javascript-voi-fcc-basic-algorithm-scripting). Nếu bạn đã đọc qua thì có thể thấy rằng, đó đều là những bài toán khá dễ. Ngược lại, các bài toán hôm nay sẽ khó hơn một chút. Vì chúng thuộc chủ đề **Intermediate Algorithm Scripting**.
 
-Cũng như bài viết trước, tôi xin chia sẻ với các bạn các link bài viết hữu ích nên đọc trước khi đi vào lời giải các bài toán:
+Cũng như bài viết trước, mình chia sẻ với bạn các link bài viết hữu ích nên đọc trước khi đi vào lời giải các bài toán:
 
 - [Values, types và operators trong JavaScript – Phần 1](/values-types-va-operators-trong-javascript-phan-1)
 - [Values, types và operators trong JavaScript – Phần 2](/values-types-va-operators-trong-javascript-phan-2)
@@ -608,7 +611,9 @@ Tham khảo:
 
 ## Kết luận
 
-Trên đây là tổng hợp các bài toán thuộc chủ đề **Intermediate Algorithm Scripting** trên freeCodeCamp. Nếu các bạn có gì thắc mắc, góp ý hay cải tiến các thuật toán trên. Vui lòng để lại bình luận phía dưới nhé.
+Trên đây là tổng hợp các bài toán thuộc chủ đề **Intermediate Algorithm Scripting** trên freeCodeCamp.
+
+Nếu bạn có gì thắc mắc, góp ý hay cải tiến các thuật toán trên. Vui lòng để lại bình luận phía dưới nhé.
 
 Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
 

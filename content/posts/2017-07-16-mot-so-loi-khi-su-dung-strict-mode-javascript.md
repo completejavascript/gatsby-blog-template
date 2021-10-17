@@ -1,5 +1,6 @@
 ---
 date: "2017-07-16T13:16:19Z"
+update: "2021-10-17T13:16:19Z"
 template: "post"
 cover: "../images/mot-so-loi-khi-su-dung-strict-mode-javascript-completejavascript.com_.png"
 keywords: "strict mode"
@@ -13,7 +14,7 @@ tags:
   - Strict Mode
 ---
 
-Trong [bài viết trước](/debug-javascript-de-hay-kho), mình có đề cập tới việc sử dụng Strict mode trong việc giảm thiểu những lỗi ngớ ngẩn của lập trình viên khi lập trình JavaScript. Như đã hứa, mình sẽ đưa ra một số lỗi phổ biến khi sử dụng chế độ này.
+Trong [bài viết trước](/debug-javascript-de-hay-kho), mình có đề cập tới việc sử dụng Strict mode trong JavaScript để giảm thiểu những lỗi ngớ ngẩn của lập trình viên khi lập trình JavaScript. Như đã hứa, mình sẽ đưa ra một số lỗi phổ biến khi sử dụng chế độ này.
 
 ## Sử dụng biến không khai báo
 
@@ -25,7 +26,7 @@ console.log(window.x);
 // => 10
 ```
 
-Ở chế độ strict mode, bạn sẽ bị lỗi _x chưa được định nghĩa_: **Uncaught ReferenceError: x is not defined**
+Ở strict mode, bạn sẽ bị lỗi _x chưa được định nghĩa_: **Uncaught ReferenceError: x is not defined**
 
 ```js
 x = 10;
@@ -84,21 +85,25 @@ Khi ở strict mode, bạn chắc chắn sẽ nhận được lỗi như:
 ```js
 var undefined = 5;
 console.log(undefined);
-// => Uncaught TypeError: Cannot assign to read only property 'undefined' of object '#<Window>'
+// => Uncaught TypeError:
+// Cannot assign to read only property 'undefined' of object '#<Window>'
 
 var NaN = 10;
 console.log(NaN);
-// => Uncaught TypeError: Cannot assign to read only property 'NaN' of object '#<Window>'
+// => Uncaught TypeError:
+// Cannot assign to read only property 'NaN' of object '#<Window>'
 
 var Infinity = 11;
 console.log(Infinity);
-// => Uncaught TypeError: Cannot assign to read only property 'Infinity' of object '#<Window>'
+// => Uncaught TypeError:
+// Cannot assign to read only property 'Infinity' of object '#<Window>'
 
 var obj = {};
 Object.defineProperty(obj, "x", { value: 42, writable: false });
 obj.x = 9;
 console.log(obj.x);
-// => Uncaught TypeError: Cannot assign to read only property 'x' of object '#<Object>'
+// => Uncaught TypeError:
+// Cannot assign to read only property 'x' of object '#<Object>'
 
 var obj = {
   get x() {
@@ -107,13 +112,15 @@ var obj = {
 };
 obj.x = 10;
 console.log(obj.x);
-// => Uncaught TypeError: Cannot set property x of #<Object> which has only a getter
+// => Uncaught TypeError:
+// Cannot set property x of #<Object> which has only a getter
 
 var fixed = {};
 Object.preventExtensions(fixed);
 fixed.x = 10;
 console.log(fixed.x);
-// => Uncaught TypeError: Cannot add property x, object is not extensible
+// => Uncaught TypeError:
+// Cannot add property x, object is not extensible
 ```
 
 ## Xoá thuộc tính của đối tượng Global
@@ -125,12 +132,13 @@ Ví dụ: Uncaught TypeError: Cannot delete property 'prototype' of function Ob
 ```js
 "use strict";
 delete Object.prototype;
-// Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
+// Uncaught TypeError:
+// Cannot delete property 'prototype' of function Object() { [native code] }
 ```
 
 ## Tên tham số trùng nhau ở khai báo hàm
 
-Strict mode yêu cầu các tham số phải có tên khác nhau. Ngược lại thì bạn sẽ gặp lỗi:
+Strict mode JavaScript yêu cầu các tham số phải có tên khác nhau. Ngược lại thì bạn sẽ gặp lỗi:
 
 Uncaught SyntaxError: Duplicate parameter name not allowed in this context
 
@@ -139,7 +147,8 @@ function sum(a, a, c) {
   "use strict";
   return a + b + c;
 }
-// => Uncaught SyntaxError: Duplicate parameter name not allowed in this context
+// => Uncaught SyntaxError:
+// Duplicate parameter name not allowed in this context
 ```
 
 ## Thêm thuộc tính cho những giá trị nguyên thuỷ
@@ -153,16 +162,19 @@ Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](/values-ty
 ```js
 "use strict";
 false.true = false;
-// => Uncaught TypeError: Cannot create property 'true' on boolean 'false'
+// => Uncaught TypeError:
+// Cannot create property 'true' on boolean 'false'
 
 (14).sailing = "home";
-// => Uncaught TypeError: Cannot create property 'sailing' on number '14'
+// => Uncaught TypeError:
+// Cannot create property 'sailing' on number '14'
 
 "with".you = "far away";
-// => Uncaught TypeError: Cannot create property 'you' on string 'with'
+// => Uncaught TypeError:
+// Cannot create property 'you' on string 'with'
 ```
 
-## Xoá một biến thông thường ở Strict mode
+## Xoá một biến thông thường ở Strict mode trong JavaScript
 
 Strict mode cấm bạn xoá tên biến. Ngược lại, bạn sẽ bị lỗi là:
 
@@ -173,7 +185,8 @@ Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.
 
 var x = 10;
 delete x;
-// => Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.
+// => Uncaught SyntaxError:
+// Delete of an unqualified identifier in strict mode.
 ```
 
 ## Đặt tên biến trùng với từ dự trữ
@@ -192,7 +205,7 @@ var implements = 10;
 
 ## Kết luận
 
-Trên đây là một số lỗi thường gặp phải khi bạn sử dụng JavaScript ở strict mode. Nói vậy, không có nghĩa là mình khuyên bạn tránh sử dụng strict mode. Ngược lại, chế độ này giúp bạn dễ dàng [phát hiện lỗi](/debug-javascript-de-hay-kho). Và đây là sự đảm bảo cho code bạn không bị xung đột với những phiên bản JavaScript mới hơn sau này.
+Trên đây là một số lỗi thường gặp phải khi bạn sử dụng JavaScript strict mode. Nói vậy, không có nghĩa là mình khuyên bạn tránh sử dụng strict mode. Ngược lại, chế độ này giúp bạn dễ dàng [phát hiện lỗi](/debug-javascript-de-hay-kho). Và đây là sự đảm bảo cho code bạn không bị xung đột với những phiên bản JavaScript mới hơn sau này.
 
 Bài viết này sẽ dừng lại ở đây.
 

@@ -1,9 +1,10 @@
 ---
 date: "2017-07-23T04:06:50Z"
+update: "2021-10-17T04:06:50Z"
 template: "post"
 cover: "../images/tim-hieu-regular-expression-javascript-completejavascript.com_.png"
 keywords: "regular expression"
-description: "Regular expression hay còn được gọi tắt là Regex hay RegExp, là một cách để biểu diễn khuôn mẫu của string - là một phần của ngôn ngữ lập trình JavaScript."
+description: "Regular expression hay còn được gọi tắt là Regex hay RegExp, là một cách để biểu diễn khuôn mẫu của string. Regex JavaScript là một phần quan trọng của ngôn ngữ lập trình JavaScript."
 slug: tim-hieu-regular-expression-javascript
 title: "Tìm hiểu Regular Expression JavaScript"
 categories:
@@ -12,7 +13,7 @@ tags:
   - RegExp
 ---
 
-Regular expression hay còn được gọi tắt là Regex hay RegExp, là một cách để biểu diễn khuôn mẫu của string. Đây là một phần của ngôn ngữ lập trình JavaScript, cũng như nhiều ngôn ngữ lập trình khác.
+Regular expression hay còn được gọi tắt là Regex hay RegExp, là một cách để biểu diễn khuôn mẫu của string. Regex là một phần quan trọng của ngôn ngữ lập trình JavaScript, cũng như nhiều ngôn ngữ lập trình khác.
 
 Nếu bạn là một lập trình viên và đã từng sử dụng Regular Expression thì bạn chắc hẳn sẽ thấy rằng nó có cú pháp rất kinh khủng và có phần "bí ẩn". Tuy nhiên, công cụ này lại cực kì mạnh mẽ và hiệu quả khi dùng để xử lý string.
 
@@ -20,7 +21,7 @@ Sau đây, chúng ta sẽ cùng tìm hiểu về Regular Expression trong JavaSc
 
 ## Khởi tạo Regular Expression
 
-Có hai cách để tạo ra một Regular Expression là:
+Có hai cách để tạo ra một Regex JavaScript là:
 
 - Sử dụng hàm khởi tạo của [đối tượng](/javascript-object-last-but-not-least) RegExp
 - Viết trực tiếp sử dụng cặp dấu "/ /"
@@ -51,9 +52,9 @@ Trong ví dụ trên, 2 string "abcde" và "12abcde" đều chứa "abc" nên k�
 
 #### Kiểm tra trùng khớp với tập hợp các kí tự
 
-Nếu chỉ kiểm tra như ví dụ trên thì bạn hoàn toàn có thể sử dụng phương thức *indexOf* của string thay vì sử dụng Regular Expression.
+Nếu chỉ kiểm tra như ví dụ trên thì bạn hoàn toàn có thể sử dụng phương thức *indexOf* của string thay vì sử dụng JavaScript Regular Expression.
 
-Tuy nhiên, với Regular Expression thì bạn có thể kiểm tra những mẫu string phức tạp hơn.
+Tuy nhiên, với RegExp JavaScript thì bạn có thể kiểm tra những mẫu string phức tạp hơn.
 
 **Ví dụ:**
 
@@ -311,7 +312,7 @@ console.log(obj3);
 // => Object {day: "30", month: "1", year: "2003"}
 ```
 
-## Tạo đối tượng RegExp một cách linh động
+## Tạo đối tượng RegExp JavaScript một cách linh động
 
 Trong nhiều trường hợp, bạn muốn tạo ra một Regular Expression với nội dung chưa được biết trước. Bạn có thể sử dụng hàm khởi tạo của RegExp theo cách sau:
 
@@ -334,9 +335,9 @@ Ngoài ra, ở đây mình có sử dụng phương thức _replace_ của [stri
 
 ## Kết luận
 
-Trên đây là một số kiến thức cơ bản về Regular Expression. Hy vọng qua bài viết này bạn phần nào hiểu và biết cách sử dụng công cụ hiệu quả này trong công việc lập trình của mình, đặc biệt là lập trình JavaScript.
+Trên đây là một số kiến thức cơ bản về Regular Expression. Hy vọng qua bài viết này bạn phần nào hiểu và biết cách sử dụng Regex JavaScript.
 
-Tóm tắt một số khuôn mẫu cơ bản của Regular Expression:
+Tóm tắt một số khuôn mẫu cơ bản của Regex trong JavaScript:
 
 - /abc/ : chuỗi các kí tự _abc_
 - /[abc]: bất kỳ kí tự nào thuộc tập hợp a, b, c
