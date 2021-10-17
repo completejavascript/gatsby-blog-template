@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/completejavascript/completejavascript.com/compare/v1.6.0...v1.6.1) (2021-10-17)
+
+
+### Bug Fixes
+
+* **src:** fix sidebar sticky related post ([f83ad13](https://github.com/completejavascript/completejavascript.com/commit/f83ad136de1a7a510cc80613c1b0c51582cb73cf))
+
 ## [1.6.0](https://github.com/completejavascript/completejavascript.com/compare/v1.5.0...v1.6.0) (2021-10-17)
 
 
