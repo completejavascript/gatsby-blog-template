@@ -248,13 +248,8 @@ const ServiceSection = () => {
 };
 
 function Index({ data }) {
-  const allEdges = data?.allMarkdownRemark?.edges || [];
-  const postEdges = allEdges
-    .filter((edge) => edge.node.frontmatter.template === "post")
-    .slice(0, 6);
-  const freebieEdges = allEdges
-    .filter((edge) => edge.node.frontmatter.template === "freebie")
-    .slice(0, 6);
+  const postEdges = data?.posts?.edges || [];
+  const freebieEdges = data?.freebies?.edges || [];
 
   const postList = getPostList(postEdges);
   const freebieList = getPostList(freebieEdges);
@@ -277,10 +272,38 @@ export default Index;
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
-      limit: 2000
+    posts: allMarkdownRemark(
+      limit: 6
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { template: { in: ["post", "freebie"] } } }
+      filter: { frontmatter: { template: { eq: "post" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            date
+          }
+          excerpt
+          timeToRead
+          frontmatter {
+            template
+            title
+            tags
+            categories
+            date
+            cover {
+              childImageSharp {
+                gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
+              }
+            }
+          }
+        }
+      }
+    }
+    freebies: allMarkdownRemark(
+      limit: 6
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { template: { eq: "freebie" } } }
     ) {
       edges {
         node {
