@@ -24,6 +24,27 @@ const PostTemplate = ({ data, pageContext }) => {
 
   const postNode = data.markdownRemark;
 
+  // Get the 5 random related posts
+  const uniqueRelatedPosts = {};
+  (data.relatedCategories.edges || [])
+    .filter((item) => item.node.fields.slug !== postNode.fields.slug)
+    .forEach((item) => {
+      if (!uniqueRelatedPosts[item.node.fields.slug]) {
+        uniqueRelatedPosts[item.node.fields.slug] = item;
+      }
+    });
+  (data.relatedTags.edges || [])
+    .filter((item) => item.node.fields.slug !== postNode.fields.slug)
+    .forEach((item) => {
+      if (!uniqueRelatedPosts[item.node.fields.slug]) {
+        uniqueRelatedPosts[item.node.fields.slug] = item;
+      }
+    });
+  const latestRelatedEdges = Object.values(uniqueRelatedPosts)
+    .sort((a, b) => 0.5 - Math.random())
+    .slice(0, config.numberLatestRelatedPost);
+  //
+
   const title = postNode.frontmatter.title;
 
   const content = (
@@ -44,6 +65,7 @@ const PostTemplate = ({ data, pageContext }) => {
       categoryList={categoryList}
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
+      latestRelatedEdges={latestRelatedEdges}
       links={config.sidebarLinks}
     />
   );
@@ -64,7 +86,12 @@ export default PostTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostBySlug(
+    $slug: String!
+    $template: String!
+    $categories: [String!]
+    $tags: [String!]
+  ) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
@@ -86,6 +113,69 @@ export const pageQuery = graphql`
       fields {
         slug
         date
+      }
+    }
+    relatedCategories: allMarkdownRemark(
+      limit: 8
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {
+        frontmatter: {
+          categories: { in: $categories }
+          template: { eq: $template }
+        }
+      }
+    ) {
+      totalCount
+      edges {
+        node {
+          fields {
+            slug
+            date
+          }
+          excerpt
+          timeToRead
+          frontmatter {
+            title
+            tags
+            cover {
+              childImageSharp {
+                gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
+              }
+            }
+            date
+            update
+          }
+        }
+      }
+    }
+    relatedTags: allMarkdownRemark(
+      limit: 8
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {
+        frontmatter: { tags: { in: $tags }, template: { eq: $template } }
+      }
+    ) {
+      totalCount
+      edges {
+        node {
+          fields {
+            slug
+            date
+          }
+          excerpt
+          timeToRead
+          frontmatter {
+            title
+            tags
+            cover {
+              childImageSharp {
+                gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
+              }
+            }
+            date
+            update
+          }
+        }
       }
     }
   }

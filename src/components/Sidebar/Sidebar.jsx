@@ -13,6 +13,7 @@ const Sidebar = ({
   categoryList,
   latestPostEdges,
   latestFreebieEdges,
+  latestRelatedEdges,
   links,
   isSimple = false,
 }) => {
@@ -30,14 +31,14 @@ const Sidebar = ({
 
       <WidgetSearch />
 
-      {latestPostEdges && (
+      {latestPostEdges && latestPostEdges.length > 0 && (
         <WidgetLatestPosts
           postEdges={latestPostEdges}
           title={config.latestPostsWidgetTitle}
         />
       )}
 
-      {latestFreebieEdges && (
+      {latestFreebieEdges && latestFreebieEdges.length > 0 && (
         <WidgetLatestPosts
           postEdges={latestFreebieEdges}
           title={config.latestFreebiesWidgetTitle}
@@ -50,13 +51,22 @@ const Sidebar = ({
         </div>
       )}
 
-      {!isSimple && categoryList && (
+      {!isSimple && categoryList && categoryList.length > 0 && (
         <WidgetCategory categoryList={categoryList} />
       )}
 
-      {!isSimple && tagList && <WidgetTag tagList={tagList} />}
+      {!isSimple && tagList && tagList.length > 0 && (
+        <WidgetTag tagList={tagList} />
+      )}
 
-      {!isSimple && links && <WidgetLinks links={links} />}
+      {!isSimple && links && links.length > 0 && <WidgetLinks links={links} />}
+
+      {latestRelatedEdges && latestRelatedEdges.length > 0 && (
+        <WidgetLatestPosts
+          postEdges={latestRelatedEdges}
+          title={config.latestRelatedWidgetTitle}
+        />
+      )}
 
       {config.hasAdsense && config.adsenseUnits.sidebarBottom && (
         <div className="position-sticky top-zero padding-top padding-bottom">

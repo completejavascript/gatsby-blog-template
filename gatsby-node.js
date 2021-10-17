@@ -162,6 +162,9 @@ exports.createPages = async ({ graphql, actions }) => {
       component: postPageTemplate,
       context: {
         slug: edge.node.fields.slug,
+        template: edge.node.frontmatter.template,
+        categories: edge.node.frontmatter.categories || [],
+        tags: edge.node.frontmatter.tags || [],
         nextTitle: nextEdge.node.frontmatter.title,
         nextSlug: nextEdge.node.fields.slug,
         prevTitle: prevEdge.node.frontmatter.title,
@@ -186,6 +189,9 @@ exports.createPages = async ({ graphql, actions }) => {
       component: postPageTemplate,
       context: {
         slug: edge.node.fields.slug,
+        template: edge.node.frontmatter.template,
+        categories: edge.node.frontmatter.categories || [],
+        tags: edge.node.frontmatter.tags || [],
         nextTitle: nextEdge.node.frontmatter.title,
         nextSlug: nextEdge.node.fields.slug,
         prevTitle: prevEdge.node.frontmatter.title,

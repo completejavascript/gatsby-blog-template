@@ -16,6 +16,7 @@ const config = {
   // Common for tag, category pages and widget
   numberLatestPost: 8,
   numberLatestFreebie: 6,
+  numberLatestRelatedPost: 4,
   postsPerPage: 12,
   // Use for post
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
@@ -77,6 +78,7 @@ const config = {
   tagWidgetTitle: "Chủ đề",
   latestPostsWidgetTitle: "Bài viết mới nhất",
   latestFreebiesWidgetTitle: "Freebie mới nhất",
+  latestRelatedWidgetTitle: "Bài viết liên quan",
   linksWidgetTitle: "Liên Kết",
   // Use for Google custom search
   searchWidgetTitle: "Bạn đang tìm gì?",
