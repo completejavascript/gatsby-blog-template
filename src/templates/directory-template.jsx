@@ -22,19 +22,23 @@ const DirectoryTemplate = ({ data, pageContext }) => {
       <SEO postPath={slug} postNode={postNode} postSEO />
       <Header title={title} />
 
-      <section className="container directory-container">
-        {config.hasAdsense && config.adsenseUnits.postTop && (
-          <AdSense.Google {...config.adsenseUnits.postTop} />
-        )}
+      <main className="directory-container">
+        <div className="container">
+          {config.hasAdsense && config.adsenseUnits.postTop && (
+            <AdSense.Google {...config.adsenseUnits.postTop} />
+          )}
+        </div>
 
         <div className="content-wrapper padding-top-half padding-bottom-2">
           {content}
         </div>
 
-        {config.hasAdsense && config.adsenseUnits.postBottom && (
-          <AdSense.Google {...config.adsenseUnits.postBottom} />
-        )}
-      </section>
+        <div className="container">
+          {config.hasAdsense && config.adsenseUnits.postBottom && (
+            <AdSense.Google {...config.adsenseUnits.postBottom} />
+          )}
+        </div>
+      </main>
     </Layout>
   );
 };
