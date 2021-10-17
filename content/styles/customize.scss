@@ -67,100 +67,104 @@
 /* Directory container */
 .directory-container {
   counter-reset: part;
-  .section-wrapper {
-    counter-reset: a;
-    position: relative;
-    padding-top: 6rem;
-    padding-bottom: 1rem;
-    margin-top: 3rem;
-    &.below {
-      padding-top: 8.4rem;
-      margin-top: 5.4rem;
-    }
-    &.below::before {
-      content: "";
-      height: 54px;
-      position: absolute;
-      top: -54px;
-      right: 0;
-      left: 0;
-      background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.04) 0,
-        transparent
-      );
-    }
-  }
-  h2,
-  h3 {
-    border-bottom: 1px solid #ebebeb;
-    padding-bottom: 0.8rem;
-    font-weight: 550;
-  }
-  h2 {
-    counter-increment: part;
-    color: #303030;
-    font-size: 2.4rem;
-    position: relative;
-    &::before {
-      position: absolute;
-      content: "Phần " counter(part);
-      top: -5rem;
-      left: 0;
-      padding: 0.5rem 1.5rem;
-      font-size: 1.5rem;
-      font-weight: 400;
-      color: #ffffff;
-      background-color: #343434;
-      border-radius: 1.5rem;
-    }
-  }
-  h3 {
-    color: #353535;
-    font-size: 2rem;
-  }
-  ul {
-    counter-increment: a;
-    counter-reset: b;
-    padding: 0;
-    margin: 0.5rem 1.5rem 2.5rem 0;
-    list-style-type: none;
-    li {
-      break-inside: avoid;
-      -webkit-break-inside: avoid;
+  .content-wrapper {
+    .section-wrapper {
+      counter-reset: a;
       position: relative;
-      padding-left: 3.8rem;
+      padding-top: 6rem;
+      padding-bottom: 1rem;
+      margin-top: 3rem;
+      &.below {
+        padding-top: 8.4rem;
+        margin-top: 5.4rem;
+      }
+      &.below::before {
+        content: "";
+        height: 54px;
+        position: absolute;
+        top: -54px;
+        right: 0;
+        left: 0;
+        background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.04) 0,
+          transparent
+        );
+      }
     }
-    li:before {
-      counter-increment: b;
-      content: counter(a) "." counter(b);
-      position: absolute;
-      left: 0;
-      top: 0.6rem;
-      font-family: Consolas, Lucida Console, Menlo, Monaco, monospace;
-      font-size: 1.4rem;
-      line-height: 1.6rem;
-      margin-right: 1rem;
+    h2,
+    h3 {
+      border-bottom: 1px solid #ebebeb;
+      padding-bottom: 0.8rem;
+      font-weight: 550;
     }
-  }
-  a {
-    color: #212121;
-    &:visited {
+    h2 {
+      counter-increment: part;
+      color: #303030;
+      font-size: 2.4rem;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "Phần " counter(part);
+        top: -5rem;
+        left: 0;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: #343434;
+        border-radius: 1.5rem;
+      }
+    }
+    h3 {
+      color: #353535;
+      font-size: 2rem;
+    }
+    ul {
+      counter-increment: a;
+      counter-reset: b;
+      padding: 0;
+      margin: 0.5rem 1.5rem 2.5rem 0;
+      list-style-type: none;
+      li {
+        break-inside: avoid;
+        -webkit-break-inside: avoid;
+        position: relative;
+        padding-left: 3.8rem;
+      }
+      li:before {
+        counter-increment: b;
+        content: counter(a) "." counter(b);
+        position: absolute;
+        left: 0;
+        top: 0.6rem;
+        font-family: Consolas, Lucida Console, Menlo, Monaco, monospace;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin-right: 1rem;
+      }
+    }
+    a {
       color: #212121;
-    }
-    &:hover {
-      color: #3f3f3f;
+      &:visited {
+        color: #212121;
+      }
+      &:hover {
+        color: #3f3f3f;
+      }
     }
   }
 }
 
 @media (min-width: 900px) {
   .directory-container {
-    ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 1.5rem;
-      grid-row-gap: 0.5rem;
+    .content-wrapper {
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 0.5rem;
+      }
     }
   }
 }

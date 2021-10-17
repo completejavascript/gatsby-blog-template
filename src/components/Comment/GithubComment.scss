@@ -1,0 +1,24 @@
+.github-comment-wrapper {
+  .utterances {
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-top: 2rem;
+  }
+
+  &#comments {
+    margin-top: 3rem;
+  }
+
+  &#comments h2 {
+    margin: 0;
+  }
+}
+
+@media print {
+  .github-comment-wrapper {
+    .comments,
+    &#comments {
+      display: none;
+    }
+  }
+}

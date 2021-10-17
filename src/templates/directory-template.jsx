@@ -5,6 +5,7 @@ import Layout from "../layout";
 import Header from "../components/Header/Header";
 import Page from "../components/Page/Page";
 import SEO from "../components/SEO/SEO";
+import GithubComment from "../components/Comment/GithubComment";
 import config from "../../data/SiteConfig";
 import AdSense from "react-adsense";
 
@@ -35,7 +36,10 @@ const DirectoryTemplate = ({ data, pageContext }) => {
 
         <div className="container">
           {config.hasAdsense && config.adsenseUnits.postBottom && (
-            <AdSense.Google {...config.adsenseUnits.postBottom} />
+            <>
+              <AdSense.Google {...config.adsenseUnits.postBottom} />
+              <GithubComment />
+            </>
           )}
         </div>
       </main>
