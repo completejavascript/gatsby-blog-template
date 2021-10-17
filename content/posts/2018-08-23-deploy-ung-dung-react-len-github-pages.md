@@ -1,5 +1,6 @@
 ---
 date: "2018-08-23T13:55:27Z"
+update: "2021-10-17T13:55:27Z"
 template: "post"
 cover: "../images/tao-va-deploy-ung-dung-react-len-github-pages-create-react-app-completejavascript.com_.png"
 keywords: "deploy ứng dụng react"
@@ -15,7 +16,9 @@ tags:
   - React
 ---
 
-Chào bạn! Gần đây mình có dành thời gian tìm hiểu về React và cũng đã làm được một số project nho nhỏ như: [Markdown Editor](http://about.phamvanlam.com/markdown-editor/), [Drum Machine](http://about.phamvanlam.com/drum-machine/)... Trong những project này, mình đều sử dụng [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) để phát triển và deploy sản phẩm lên Github Pages. Mình sẽ rất vui nếu bạn dùng thử chúng và cho mình xin một vài dòng đánh giá. Còn trong bài viết này, mình sẽ tổng hợp lại các bước thực hiện, để đảm bảo rằng bạn có thể tạo và deploy ứng dụng React lên Github Pages với create-react-app thành công trong năm 2018.
+Chào bạn! Gần đây mình có dành thời gian tìm hiểu về React và cũng đã làm được một số project nho nhỏ như: [Markdown Editor](http://about.phamvanlam.com/markdown-editor/), [Drum Machine](http://about.phamvanlam.com/drum-machine/)... Trong những project này, mình đều sử dụng [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) để phát triển và deploy sản phẩm lên Github Pages.
+
+Mình sẽ rất vui nếu bạn dùng thử chúng và cho mình xin một vài dòng đánh giá. Còn trong bài viết này, mình sẽ tổng hợp lại các bước thực hiện, để đảm bảo rằng bạn có thể tạo và deploy ứng dụng React lên Github Pages với create-react-app thành công trong năm 2018.
 
 ## Một số vấn đề cần làm rõ
 
@@ -120,7 +123,7 @@ cd app-name
 yarn start
 ```
 
-Sau đó, bạn vào địa chỉ `http://127.0.0.1:3000/` trên trình duyệt để kiểm tra kết quả. Nếu mọi thứ hoạt động bình thường thì bạn sẽ thu được màn hình như sau:
+Sau đó, bạn vào địa chỉ `http://127.0.0.1:3000` trên trình duyệt để kiểm tra kết quả. Nếu mọi thứ hoạt động bình thường thì bạn sẽ thu được màn hình như sau:
 
 ![Ứng dụng React mặc định](../images/create-react-app-default.png)
 
@@ -226,7 +229,11 @@ Sau khi đã tuỳ biến ứng dụng React theo ý mình, tiếp theo là bư�
 
 Có 5 bước để deploy ứng dụng React lên Github Pages như sau:
 
-**Bước 1**: Tạo Github Repository trên Github. Giả sử đường dẫn của nó là: `https://github.com/completejavascript/app-name.git`
+**Bước 1**: Tạo Github Repository trên Github. Giả sử đường dẫn của nó là:
+
+```
+https://github.com/completejavascript/app-name.git
+```
 
 **Bước 2**: Đồng bộ ứng dụng React ở local lên Github repository thông qua các câu lệnh sau:
 
@@ -280,9 +287,14 @@ npm install --save gh-pages
 
 Trong đó:
 
-- **homepage**: Là địa chỉ của ứng dụng sau khi được deploy, có dạng: `https://[your-user-name].github.io/[your-repo-name]/`
-- **predeploy**: xác định câu lệnh để build ứng dụng trước khi deploy
-- **deploy**: Xác định câu lệnh để deploy ứng dụng.
+**homepage**: Là địa chỉ của ứng dụng sau khi được deploy, có dạng:
+
+```
+https://[your-user-name].github.io/[your-repo-name]/
+```
+
+**predeploy**: xác định câu lệnh để build ứng dụng trước khi deploy  
+**deploy**: Xác định câu lệnh để deploy ứng dụng.
 
 **Bước 5**: Chạy câu lệnh sau để deploy ứng dụng.
 
@@ -290,7 +302,13 @@ Trong đó:
 npm run deploy
 ```
 
-Sau khi deploy ứng dụng React thành công, bạn cần chờ một vài phút, rồi truy cập vào địa chỉ ứng với phần **homepage** (ví dụ: `https://completejavascript.github.io/app-name/`) để kiểm tra thành quả của mình.
+Sau khi deploy ứng dụng React thành công, bạn cần chờ một vài phút, rồi truy cập vào địa chỉ ứng với phần **homepage** để kiểm tra thành quả của mình.
+
+Ví dụ:
+
+```
+https://completejavascript.github.io/app-name/
+```
 
 ## Lời kết
 
