@@ -66,9 +66,9 @@
 
 /* Directory container */
 .directory-container {
-  counter-reset: a;
   counter-reset: part;
   .section-wrapper {
+    counter-reset: a;
     position: relative;
     padding-top: 6rem;
     padding-bottom: 1rem;
