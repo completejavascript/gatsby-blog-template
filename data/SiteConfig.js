@@ -240,7 +240,6 @@ const config = {
     { label: "Sitemap", url: "https://completejavascript.com/sitemap.xml" },
     { label: "Blog", url: "/blog" },
     { label: "Freebie", url: "/freebie" },
-    { label: "Wiki", url: "/wiki" },
   ],
   networkLinks: [
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
