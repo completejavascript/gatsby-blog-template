@@ -3,7 +3,6 @@ import PostTags from "./PostTags";
 import PostShare from "./PostShare";
 import PostDate from "./PostDate";
 import PostDivider from "./PostDivider";
-import PostCategories from "./PostCategories";
 import PostSibling from "./PostSibling";
 import AdSense from "react-adsense";
 import GithubComment from "../Comment/GithubComment";
@@ -53,20 +52,13 @@ const Post = ({
       )}
       <PostDivider />
 
-      {(post.categories?.length > 0 || post.tags?.length > 0) && (
+      {post.tags?.length > 0 && (
         <>
-          <div className="padding-top padding-bottom">
-            <PostCategories
-              categories={post.categories}
-              extraClass="block"
-              iconColor="#595959"
-            />
-            <PostTags
-              tags={post.tags}
-              extraClass="block padding-top-half"
-              iconColor="#595959"
-            />
-          </div>
+          <PostTags
+            tags={post.tags}
+            extraClass="block padding-top padding-bottom"
+            iconColor="#595959"
+          />
           <PostDivider />
         </>
       )}

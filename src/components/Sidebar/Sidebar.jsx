@@ -10,7 +10,6 @@ import "./Sidebar.scss";
 
 const Sidebar = ({
   tagList,
-  categoryList,
   latestPostEdges,
   latestFreebieEdges,
   latestRelatedEdges,
@@ -49,10 +48,6 @@ const Sidebar = ({
         <div className="width-full flex justify-content-center padding-top">
           <AdSense.Google {...config.adsenseUnits.sidebarMiddle} />
         </div>
-      )}
-
-      {!isSimple && categoryList && categoryList.length > 0 && (
-        <WidgetCategory categoryList={categoryList} />
       )}
 
       {!isSimple && tagList && tagList.length > 0 && (

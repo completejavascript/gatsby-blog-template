@@ -10,15 +10,13 @@ import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
 const PageTemplate = ({ data, pageContext }) => {
-  const { slug, tagList, categoryList, latestPostEdges, latestFreebieEdges } =
-    pageContext;
+  const { slug, tagList, latestPostEdges, latestFreebieEdges } = pageContext;
   const postNode = data.markdownRemark;
   const title = postNode.frontmatter.title;
   const content = <Page postNode={postNode} slug={slug} />;
   const sidebar = (
     <Sidebar
       tagList={tagList}
-      categoryList={categoryList}
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
       links={config.sidebarLinks}

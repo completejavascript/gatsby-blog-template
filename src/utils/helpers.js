@@ -21,7 +21,6 @@ export const getPostList = (postEdges) =>
   postEdges.map((postEdge) => ({
     path: postEdge.node.fields.slug,
     tags: postEdge.node.frontmatter.tags,
-    categories: postEdge.node.frontmatter.categories,
     cover: postEdge.node.frontmatter.cover,
     title: postEdge.node.frontmatter.title,
     update: postEdge.node.frontmatter.update,
@@ -31,17 +30,10 @@ export const getPostList = (postEdges) =>
     timeToRead: postEdge.node.timeToRead,
   }));
 
-export const getTagCategoryList = (postList) => {
+export const getTagList = (postList) => {
   const tagSet = new Set();
-  const categorySet = new Set();
 
-  postList.forEach(({ categories, tags }) => {
-    if (categories) {
-      categories.forEach((category) => {
-        categorySet.add(category);
-      });
-    }
-
+  postList.forEach(({ tags }) => {
     if (tags) {
       tags.forEach((tag) => {
         tagSet.add(tag);
@@ -51,7 +43,6 @@ export const getTagCategoryList = (postList) => {
 
   return {
     tagList: Array.from(tagSet),
-    categoryList: Array.from(categorySet),
   };
 };
 

@@ -47,9 +47,6 @@ exports.createPages = async ({ graphql, actions }) => {
   const postPageTemplate = path.resolve("src/templates/post-template.jsx");
   const pagePageTemplate = path.resolve("src/templates/page-template.jsx");
   const tagPageTemplate = path.resolve("src/templates/tag-template.jsx");
-  const categoryPageTemplate = path.resolve(
-    "src/templates/category-template.jsx"
-  );
   const blogPageTemplate = path.resolve("src/templates/blog-template.jsx");
   const freebiePageTemplate = path.resolve(
     "src/templates/freebie-template.jsx"
@@ -71,7 +68,6 @@ exports.createPages = async ({ graphql, actions }) => {
                 template
                 title
                 tags
-                categories
                 date
               }
             }
@@ -88,7 +84,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Filter data
   const tagSet = new Set();
-  const categorySet = new Set();
   const postEdges = [];
   const pageEdges = [];
   const freebieEdges = [];
@@ -101,15 +96,6 @@ exports.createPages = async ({ graphql, actions }) => {
     ) {
       edge.node.frontmatter.tags.forEach((tag) => {
         tagSet.add(tag);
-      });
-    }
-
-    if (
-      edge.node.frontmatter.categories &&
-      edge.node.frontmatter.template === "post"
-    ) {
-      edge.node.frontmatter.categories.forEach((category) => {
-        categorySet.add(category);
       });
     }
 
@@ -130,9 +116,8 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   });
 
-  // Create tagList, categoryList
+  // Create tagList
   const tagList = Array.from(tagSet);
-  const categoryList = Array.from(categorySet);
 
   // Get latest posts
   const latestPostEdges = [];
@@ -163,14 +148,12 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: edge.node.fields.slug,
         template: edge.node.frontmatter.template,
-        categories: edge.node.frontmatter.categories || [],
         tags: edge.node.frontmatter.tags || [],
         nextTitle: nextEdge.node.frontmatter.title,
         nextSlug: nextEdge.node.fields.slug,
         prevTitle: prevEdge.node.frontmatter.title,
         prevSlug: prevEdge.node.fields.slug,
         tagList,
-        categoryList,
         latestPostEdges,
         latestFreebieEdges,
       },
@@ -190,14 +173,12 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: edge.node.fields.slug,
         template: edge.node.frontmatter.template,
-        categories: edge.node.frontmatter.categories || [],
         tags: edge.node.frontmatter.tags || [],
         nextTitle: nextEdge.node.frontmatter.title,
         nextSlug: nextEdge.node.fields.slug,
         prevTitle: prevEdge.node.frontmatter.title,
         prevSlug: prevEdge.node.fields.slug,
         tagList,
-        categoryList,
         latestPostEdges,
         latestFreebieEdges,
       },
@@ -212,7 +193,6 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: edge.node.fields.slug,
         tagList,
-        categoryList,
         latestPostEdges,
         latestFreebieEdges,
       },
@@ -254,45 +234,12 @@ exports.createPages = async ({ graphql, actions }) => {
         context: {
           tag,
           tagList,
-          categoryList,
           latestPostEdges,
           latestFreebieEdges,
           limit: postsPerPage,
           skip: i * postsPerPage,
           currentPage: i + 1,
           totalPages: numTagPages,
-        },
-      });
-    }
-  });
-
-  // create category page
-  categoryList.forEach((category) => {
-    const categoryPosts = postEdges.filter((edge) => {
-      const categories = edge.node.frontmatter.categories;
-      return categories && categories.includes(category);
-    });
-
-    const numCategoryPages = Math.ceil(categoryPosts.length / postsPerPage);
-    const basePath = `${siteConfig.pathPrefixCategory}/${slugify(category)}`;
-
-    for (let i = 0; i < numCategoryPages; i++) {
-      createPage({
-        path:
-          i === 0
-            ? `${basePath}`
-            : `${basePath}${pathPrefixPagination}/${i + 1}`,
-        component: categoryPageTemplate,
-        context: {
-          category,
-          tagList,
-          categoryList,
-          latestPostEdges,
-          latestFreebieEdges,
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          currentPage: i + 1,
-          totalPages: numCategoryPages,
         },
       });
     }
@@ -312,7 +259,6 @@ exports.createPages = async ({ graphql, actions }) => {
         component: blogPageTemplate,
         context: {
           tagList,
-          categoryList,
           latestPostEdges,
           latestFreebieEdges,
           limit: postsPerPage,
@@ -338,7 +284,6 @@ exports.createPages = async ({ graphql, actions }) => {
         component: freebiePageTemplate,
         context: {
           tagList,
-          categoryList,
           latestPostEdges,
           latestFreebieEdges,
           limit: postsPerPage,

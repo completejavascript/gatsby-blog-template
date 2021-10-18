@@ -14,7 +14,6 @@ const TagTemplate = ({ data, pageContext }) => {
   const {
     tag,
     tagList,
-    categoryList,
     latestPostEdges,
     latestFreebieEdges,
     currentPage,
@@ -44,7 +43,6 @@ const TagTemplate = ({ data, pageContext }) => {
   const sidebar = (
     <Sidebar
       tagList={tagList}
-      categoryList={categoryList}
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
       links={config.sidebarLinks}
@@ -87,7 +85,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             tags
-            categories
             cover {
               childImageSharp {
                 gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)

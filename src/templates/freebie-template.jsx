@@ -12,7 +12,6 @@ import config from "../../data/SiteConfig";
 
 const FreeBieTemplate = ({ data, pageContext }) => {
   const {
-    categoryList,
     tagList,
     latestPostEdges,
     latestFreebieEdges,
@@ -43,7 +42,6 @@ const FreeBieTemplate = ({ data, pageContext }) => {
   const sidebar = (
     <Sidebar
       tagList={tagList}
-      categoryList={categoryList}
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
       links={config.sidebarLinks}
@@ -84,7 +82,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             tags
-            categories
             cover {
               childImageSharp {
                 gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)

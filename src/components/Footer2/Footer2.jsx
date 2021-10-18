@@ -76,11 +76,8 @@ function FooterSiteInfo() {
 
       <p className="content">
         {siteTitle} là trang blog về lập trình - chuyên chia sẻ kiến thức về lập
-        trình{" "}
-        <AutoLink to="/category/javascript-co-ban">JavaScript cơ bản</AutoLink>{" "}
-        đến <AutoLink to="/category/thu-thuat-javascript">nâng cao</AutoLink>,
-        một số thư viện/framework Javascript (
-        <AutoLink to="/tag/react">React.js</AutoLink>,{" "}
+        trình <AutoLink to="/javascript">JavaScript</AutoLink>, một số thư
+        viện/framework Javascript (<AutoLink to="/react">React.js</AutoLink>,{" "}
         <AutoLink to="/tag/gatsbyjs">Gatsby.js</AutoLink>,...) và những kiến
         thức khác liên quan đến lập trình web (
         <AutoLink to="/tag/html">HTML</AutoLink>,{" "}

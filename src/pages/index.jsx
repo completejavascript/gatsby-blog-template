@@ -289,7 +289,6 @@ export const pageQuery = graphql`
             template
             title
             tags
-            categories
             date
             cover {
               childImageSharp {
@@ -317,7 +316,6 @@ export const pageQuery = graphql`
             template
             title
             tags
-            categories
             date
             cover {
               childImageSharp {

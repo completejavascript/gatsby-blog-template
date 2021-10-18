@@ -13,7 +13,6 @@ const PostTemplate = ({ data, pageContext }) => {
   const {
     slug,
     tagList,
-    categoryList,
     latestPostEdges,
     latestFreebieEdges,
     nextTitle,
@@ -26,13 +25,6 @@ const PostTemplate = ({ data, pageContext }) => {
 
   // Get the 5 random related posts
   const uniqueRelatedPosts = {};
-  (data.relatedCategories?.edges || [])
-    .filter((item) => item.node.fields.slug !== postNode.fields.slug)
-    .forEach((item) => {
-      if (!uniqueRelatedPosts[item.node.fields.slug]) {
-        uniqueRelatedPosts[item.node.fields.slug] = item;
-      }
-    });
   (data.relatedTags?.edges || [])
     .filter((item) => item.node.fields.slug !== postNode.fields.slug)
     .forEach((item) => {
@@ -62,7 +54,6 @@ const PostTemplate = ({ data, pageContext }) => {
   const sidebar = (
     <Sidebar
       tagList={tagList}
-      categoryList={categoryList}
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
       latestRelatedEdges={latestRelatedEdges}
@@ -86,12 +77,7 @@ export default PostTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $slug: String!
-    $template: String!
-    $categories: [String!]
-    $tags: [String!]
-  ) {
+  query BlogPostBySlug($slug: String!, $template: String!, $tags: [String!]) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
@@ -99,7 +85,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date
-        categories
         tags
         description
         keywords
@@ -113,39 +98,6 @@ export const pageQuery = graphql`
       fields {
         slug
         date
-      }
-    }
-    relatedCategories: allMarkdownRemark(
-      limit: 8
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: {
-        frontmatter: {
-          categories: { in: $categories }
-          template: { eq: $template }
-        }
-      }
-    ) {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover {
-              childImageSharp {
-                gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
-              }
-            }
-            date
-            update
-          }
-        }
       }
     }
     relatedTags: allMarkdownRemark(
