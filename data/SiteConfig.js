@@ -13,29 +13,36 @@ const config = {
   siteFBAppID: "531084654023054", // FB Application ID for using app insights
   googleAnalyticsID: "UA-96543695-5", // GA tracking ID.
   postDefaultCategoryID: "", // Default category for posts.
+
   // Common for tag, category pages and widget
   numberLatestPost: 8,
   numberLatestFreebie: 6,
   numberLatestRelatedPost: 4,
   postsPerPage: 12,
+
   // Use for post
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
+
   /** DEPRECATED: not use dateFormat with moment.js anymore, just use default toLocaleDateString() */
-  dateFormat: "DD/MM/YYYY", // Date format for display.
-  /** DEPRECATED: not use disqus anymore */
+  // dateFormat: "DD/MM/YYYY", // Date format for display.
+  /** DEPRECATED: not use dateFormat anymore */
+
   dateLocale: "vi-VI",
   postTagged: "",
   postInCategories: "",
   postOnDate: "Cập nhật ngày",
+
   // Use for comment
   githubCommentRepo: "completejavascript/completejavascript-comments",
   githubCommentTheme: "github-light", // github-dark
   githubCommentTitle: "Bình luận",
+
   /** DEPRECATED: not use disqus anymore */
-  lazyLoadComments: true,
-  disqusShortname: "complete-javascript", // Disqus shortname.
-  btnLoadComments: "Xem bình luận",
+  // lazyLoadComments: true,
+  // disqusShortname: "complete-javascript", // Disqus shortname.
+  // btnLoadComments: "Xem bình luận",
   /** DEPRECATED: not use disqus anymore */
+
   // Use for home page
   numberLoadmore: 6,
   btnLoadmore: "Xem thêm",
@@ -51,28 +58,34 @@ const config = {
   reactPageUrl: "/react",
   serviceEmail: "completejavascript.super@gmail.com",
   freeLancerLink: "https://www.upwork.com/freelancers/~015218a85e68b18cf6",
+
   // Use for page
   pathPrefixPagination: "/page", // Prefix path for pagination
   pageNotFoundTitle: "Trang không tồn tại", //
   pageNotFoundBtn: "Quay về trang chủ",
   pageNotFoundContent:
     "Rất tiếc, trang bạn đang tìm kiếm không tồn tại hoặc liên kết đã bị thay thế.",
+
   // Use for tag
   pathPrefixTag: "/tag", // Prefix path for tags
   tagHeader: "Chủ đề", // use in header of tag-template page
   tagHasThumbnail: true,
+
   // Use for category
   pathPrefixCategory: "/category", // Prefix path for category
   categoryHeader: "Chuyên mục", // use in header of category-template page
   categoryHasThumbnail: true,
+
   // Use for blog
   pathPrefixBlog: "/blog", // Prefix path for blog
   blogHeader: "Blog", // use in header of blog-template page
   blogHasThumbnail: true,
+
   // Use for freebie
   pathPrefixFreebie: "/freebie", // Prefix path for freebie
   freebieHeader: "Freebie", // use in header of freebie-template page
   freebieHasThumbnail: true,
+
   // Use for widget
   categoryWidgetTitle: "Chuyên mục",
   tagWidgetTitle: "Chủ đề",
@@ -80,11 +93,13 @@ const config = {
   latestFreebiesWidgetTitle: "Freebie mới nhất",
   latestRelatedWidgetTitle: "Bài viết liên quan",
   linksWidgetTitle: "Liên Kết",
+
   // Use for Google custom search
   searchWidgetTitle: "Bạn đang tìm gì?",
   searchWidgetPlaceHolder: "Nhập từ khóa",
   searchEngineID: "partner-pub-7260245524211186:4187549499",
   hasSearch: true,
+
   // Set up for google adsense
   hasAdsense: true,
   adsenseUnits: {
@@ -128,6 +143,7 @@ const config = {
       responsive: "true",
     },
   },
+
   // Use for links widget
   sidebarSticky: true,
   // sidebarLinks: [
@@ -148,43 +164,46 @@ const config = {
   //     url: "http://about.phamvanlam.com/",
   //   },
   // ],
-  // Use for user info
-  userName: "Lam Pham", // Username to display in the author segment.
-  userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed's author segment
-  userTwitter: "CmpltJavaScript", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "Hanoi, Vietnam", // User location to display in the author segment.
-  userAvatar:
-    "https://www.gravatar.com/avatar/42fd3d526fde1ef76d5002e4ebd303e9.jpg?s=300", // User avatar to display in the author segment.
-  userDescription:
-    "Software Engineer, Web Developer, JavaScript Lover & Blogger @completejavascript.", // User description to display in the author segment.
+
+  // // Use for user info
+  // userName: "Lam Pham", // Username to display in the author segment.
+  // userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed's author segment
+  // userTwitter: "CmpltJavaScript", // Optionally renders "Follow Me" in the UserInfo segment.
+  // userLocation: "Hanoi, Vietnam", // User location to display in the author segment.
+  // userAvatar:
+  //   "https://www.gravatar.com/avatar/42fd3d526fde1ef76d5002e4ebd303e9.jpg?s=300", // User avatar to display in the author segment.
+  // userDescription:
+  //   "Software Engineer, Web Developer, JavaScript Lover & Blogger @completejavascript.", // User description to display in the author segment.
+
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  userLinks: [
-    {
-      label: "Email",
-      url: "mailto:completejavascript.super@gmail.com",
-      iconClassName: "icon-envelope",
-    },
-    {
-      label: "Website",
-      url: "https://completejavascript.com",
-      iconClassName: "icon-globe",
-    },
-    {
-      label: "Twitter",
-      url: "https://twitter.com/CmpltJavaScript",
-      iconClassName: "icon-twitter",
-    },
-    {
-      label: "Facebook",
-      url: "https://www.facebook.com/completejavascript/",
-      iconClassName: "icon-facebook-f",
-    },
-    {
-      label: "Linkedin",
-      url: "https://www.linkedin.com/in/completejavascript/",
-      iconClassName: "icon-linkedin",
-    },
-  ],
+  // userLinks: [
+  //   {
+  //     label: "Email",
+  //     url: "mailto:completejavascript.super@gmail.com",
+  //     iconClassName: "icon-envelope",
+  //   },
+  //   {
+  //     label: "Website",
+  //     url: "https://completejavascript.com",
+  //     iconClassName: "icon-globe",
+  //   },
+  //   {
+  //     label: "Twitter",
+  //     url: "https://twitter.com/CmpltJavaScript",
+  //     iconClassName: "icon-twitter",
+  //   },
+  //   {
+  //     label: "Facebook",
+  //     url: "https://www.facebook.com/completejavascript/",
+  //     iconClassName: "icon-facebook-f",
+  //   },
+  //   {
+  //     label: "Linkedin",
+  //     url: "https://www.linkedin.com/in/completejavascript/",
+  //     iconClassName: "icon-linkedin",
+  //   },
+  // ],
+
   // Use for navigation
   navTitle: "Complete JavaScript",
   navLinks: [
@@ -193,6 +212,7 @@ const config = {
     { label: "JavaScript", url: "/javascript" },
     { label: "React", url: "/react" },
   ],
+
   // Use for footer
   socialLinks: [
     {
@@ -227,7 +247,7 @@ const config = {
     },
     {
       label: "RSS",
-      url: "https://completejavascript.com/rss.xml",
+      url: "/rss.xml",
       iconClassName: "icon-rss",
     },
   ],
@@ -237,10 +257,9 @@ const config = {
     { label: "Liên hệ", url: "/lien-he" },
     { label: "Điều khoản sử dụng", url: "/dieu-khoan-su-dung" },
     { label: "Chính sách bảo mật", url: "/chinh-sach-bao-mat" },
-    { label: "Sitemap", url: "https://completejavascript.com/sitemap.xml" },
+    { label: "Sitemap", url: "/sitemap.xml" },
     { label: "Blog", url: "/blog" },
     { label: "Freebie", url: "/freebie" },
-    { label: "Wiki", url: "/wiki" },
   ],
   networkLinks: [
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
@@ -303,8 +322,11 @@ const config = {
       url: "https://github.com/completejavascript/calculator",
     },
   ],
-  copyright:
-    "Copyright © 2017-2021 Lam Pham. Unless otherwise noted, all code MIT license.",
+  /** DEPRECATED: use Footer2 instead */
+  // copyright:
+  //   "Copyright © 2017-2021 Lam Pham. Unless otherwise noted, all code MIT license.",
+  /** DEPRECATED: use Footer2 instead */
+
   // Use for manifest
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF", // Used for setting manifest background color.
