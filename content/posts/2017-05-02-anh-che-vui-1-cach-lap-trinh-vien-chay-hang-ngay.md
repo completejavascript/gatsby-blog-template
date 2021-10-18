@@ -1,13 +1,14 @@
 ---
 date: "2017-05-02T15:09:45Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay-completejavascript.com_.png"
 keywords: "Ảnh chế vui 1"
 description: "Đây là ảnh chế vui 1 nói về cách lập trình viên chạy hằng ngày."
 slug: anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay
 title: "Ảnh chế vui #1: Cách lập trình viên chạy hằng ngày"
-categories:
-  - Ảnh chế vui
+tags:
+  - Ảnh chế
 ---
 
 ![Ảnh chế vui #1: Cách lập trình viên chạy hằng ngày](../images/anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay-completejavascript.com_.png)

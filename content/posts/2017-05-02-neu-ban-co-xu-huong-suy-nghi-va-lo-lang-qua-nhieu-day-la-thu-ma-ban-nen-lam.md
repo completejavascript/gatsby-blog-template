@@ -1,13 +1,12 @@
 ---
 date: "2017-05-02T00:04:18Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/neu-ban-suy-nghi-va-lo-lang-qua-nhieu-thi-day-la-thu-ban-nen-lam-completejavascript.com_.png"
 keywords: "suy nghĩ và lo lắng"
 description: "Suy nghĩ và lo lắng quá nhiều sẽ ảnh hưởng tiêu cực đến chất lượng cuộc sống. Bài viết này sẽ giúp bạn tìm ra giải pháp cho vấn đề này."
 slug: neu-ban-co-xu-huong-suy-nghi-va-lo-lang-qua-nhieu-day-la-thu-ma-ban-nen-lam
 title: "Nếu bạn có xu hướng suy nghĩ và lo lắng quá nhiều, đây là thứ mà bạn nên làm"
-categories:
-  - Lập trình và cuộc sống
 tags:
   - Dịch blog
 ---

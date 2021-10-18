@@ -1,13 +1,12 @@
 ---
 date: "2018-01-11T14:34:12Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/javascript-web-worker-chay-javascript-code-background-completejavascript-completejavascript.com_.png"
 keywords: "javascript web worker"
 description: "Có thể bạn thừa biết, JavaScript là một ngôn ngữ chạy đơn luồng. Điều đó có nghĩa là nếu bạn thực hiện một tác vụ quá lớn trên giao diện chính thì khả năng cao là giao diện sẽ bị đơ. Để giải quyết vấn đề này, JavaScript đã đưa ra một khái niệm là JavaScript Web Worker."
 slug: javascript-web-worker-javascript-o-background
 title: "JavaScript Web Worker - chạy JavaScript ở background"
-categories:
-  - Javascript cơ bản
 tags:
   - Event
 ---

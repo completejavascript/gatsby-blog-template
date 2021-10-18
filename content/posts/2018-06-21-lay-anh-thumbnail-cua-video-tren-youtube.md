@@ -1,13 +1,14 @@
 ---
 date: "2018-06-21T12:36:26Z"
 template: "post"
+directory: "Thủ thuật IT"
 cover: "../images/huong-dan-lay-anh-thumbnail-video-youtube-completejavascript.com_.png"
 keywords: "lấy ảnh thumbnail của video trên youtube"
 description: "Mình sẽ chia sẻ với các bạn một số cách để lấy ảnh thumbnail của video trên youtube. Đầu tiên, các bạn phải có được ID của video trên youtube."
 slug: lay-anh-thumbnail-cua-video-tren-youtube
 title: "Hướng dẫn lấy ảnh thumbnail của video trên youtube"
-categories:
-  - Thủ thuật máy tính
+tags:
+  - Youtube
 ---
 
 Xin chào bạn, gần đây mình có thử làm chơi một video tên là [K Tigers - Taekwondo Save Me](https://www.youtube.com/watch?v=tp6t8eKo7e4). Và có một bạn đã hỏi mình làm sao để kiếm được ảnh chị tóc vàng xinh thế (ảnh thumbnail video). Thực ra, mình đã sử dụng ảnh thumbnail của video gốc. Nói đến đây có thể nhiều bạn đã hiểu ra vấn đề rồi. Đó là mình đã lấy ảnh thumbnail của video trên youtube.

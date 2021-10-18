@@ -2,18 +2,17 @@
 date: "2018-08-23T13:55:27Z"
 update: "2021-10-17T13:55:27Z"
 template: "post"
+directory: "React"
 cover: "../images/tao-va-deploy-ung-dung-react-len-github-pages-create-react-app-completejavascript.com_.png"
 keywords: "deploy ứng dụng react"
 description: "Các bước cơ bản và đơn giản để tạo và deploy ứng dụng React lên Github Pages. Bạn chỉ cần làm theo đảm bảo sẽ deploy ứng dụng React thành công."
 slug: deploy-ung-dung-react-len-github-pages
 title: "Tạo và deploy ứng dụng React lên Github Pages"
-categories:
-  - Thư viện và Framework JavaScript
 tags:
   - Create-react-app
   - Git
   - Node.js
-  - React
+  - Hosting
 ---
 
 Chào bạn! Gần đây mình có dành thời gian tìm hiểu về React và cũng đã làm được một số project nho nhỏ như: [Markdown Editor](http://about.phamvanlam.com/markdown-editor/), [Drum Machine](http://about.phamvanlam.com/drum-machine/)... Trong những project này, mình đều sử dụng [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html) để phát triển và deploy sản phẩm lên Github Pages.

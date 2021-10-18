@@ -1,17 +1,17 @@
 ---
 date: "2018-10-28T22:30:40Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/trien-khai-stack-voi-array-object-map-completejavascript.com_.png"
 keywords: "triển khai stack trong javascript"
 description: "Theo bạn, triển khai Stack trong JavaScript với Array, Object hay Map sẽ cho kết quả tối ưu nhất. Bài viết này mình sẽ so sánh hiệu năng của 3 cách."
 slug: trien-khai-stack-trong-javascript-voi-array-object-hay-map
 title: "Triển khai Stack trong JavaScript với Array, Object hay Map"
-categories:
-  - Thủ thuật JavaScript
 tags:
   - ES6
   - Map
   - Thuật toán
+  - Object
 ---
 
 Ý tưởng của bài viết này xuất phát từ một bài viết trên Medium là [DS — Stack implement in JS](https://medium.com/@mayashavin/ds-stack-implement-in-js-c75ccc254e27). Trong đó, tác giả bài viết đã triển khai Stack trong JavaScript với Object và khẳng định cách này nhanh hơn so với việc sử dụng Array.

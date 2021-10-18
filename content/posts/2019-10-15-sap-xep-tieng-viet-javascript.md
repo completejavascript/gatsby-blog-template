@@ -1,13 +1,12 @@
 ---
-date: '2019-10-15T06:00:00Z'
-template: 'post'
-title: 'Sắp xếp Tiếng Việt trong JavaScript'
+date: "2019-10-15T06:00:00Z"
+template: "post"
+directory: "JavaScript"
+title: "Sắp xếp Tiếng Việt trong JavaScript"
 slug: sap-xep-tieng-viet-javascript
-keywords: 'sắp xếp tiếng việt trong JavaScript'
-description: 'Bài viết này sẽ giới thiệu với bạn một cách sắp xếp Tiếng Việt trong JavaScript cực kỳ đơn giản, ngắn gọn và hiệu quả.'
-cover: '../images/sap-xep-tieng-viet-javascript-completejavascript.com.png'
-categories:
-  - Thủ thuật JavaScript
+keywords: "sắp xếp tiếng việt trong JavaScript"
+description: "Bài viết này sẽ giới thiệu với bạn một cách sắp xếp Tiếng Việt trong JavaScript cực kỳ đơn giản, ngắn gọn và hiệu quả."
+cover: "../images/sap-xep-tieng-viet-javascript-completejavascript.com.png"
 tags:
   - Array
 ---
@@ -37,7 +36,7 @@ Tham số **compareFunction** là [hàm](/tim-hieu-function-javascript/) dùng �
 Ví dụ:
 
 ```js
-const a = ['c', 'g', 'w', 'a'];
+const a = ["c", "g", "w", "a"];
 const b = a.sort();
 console.log(a); // => ["a", "c", "g", "w"]
 console.log(b); // => ["a", "c", "g", "w"]
@@ -61,15 +60,15 @@ Giả sử mình có một mảng string Tiếng Việt là tên một số tỉ
 
 ```js
 const provinces = [
-  'Hà Giang',
-  'Hà Nam',
-  'Hà Nội',
-  'Hà Tĩnh',
-  'Hòa Bình',
-  'Hưng Yên',
-  'Hải Dương',
-  'Hải Phòng',
-  'Hậu Giang'
+  "Hà Giang",
+  "Hà Nam",
+  "Hà Nội",
+  "Hà Tĩnh",
+  "Hòa Bình",
+  "Hưng Yên",
+  "Hải Dương",
+  "Hải Phòng",
+  "Hậu Giang",
 ];
 ```
 
@@ -77,15 +76,15 @@ Mình cần sắp xếp các tên này theo thứ tự tăng dần của bảng 
 
 ```js
 const sorted = [
-  'Hà Giang',
-  'Hà Nam',
-  'Hà Nội',
-  'Hà Tĩnh',
-  'Hải Dương',
-  'Hải Phòng',
-  'Hậu Giang',
-  'Hòa Bình',
-  'Hưng Yên'
+  "Hà Giang",
+  "Hà Nam",
+  "Hà Nội",
+  "Hà Tĩnh",
+  "Hải Dương",
+  "Hải Phòng",
+  "Hậu Giang",
+  "Hòa Bình",
+  "Hưng Yên",
 ];
 ```
 

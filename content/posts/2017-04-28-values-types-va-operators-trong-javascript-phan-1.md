@@ -1,13 +1,12 @@
 ---
 date: "2017-04-28T15:46:25Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/values-types-operators-trong-javascript-phan-1-numbers-completejavascript.com_.png"
 keywords: "Values JavaScript"
 description: "Bài này mình sẽ cùng nhau tìm hiểu về values javascript, xem chúng bao gồm những loại nào nhé."
 slug: values-types-va-operators-trong-javascript-phan-1
 title: "Values, types và operators trong JavaScript - Phần 1"
-categories:
-  - Javascript cơ bản
 ---
 
 Trong ngôn ngữ lập trình nói chung và ngôn ngữ lập trình [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) nói riêng, những thành phần cơ bản, quan trọng cấu thành nên một chương trình là: values, types và operators. Hay trong tiếng việt, chúng ta gọi là: giá trị, kiểu dữ liệu và toán tử. Chúng giống như là những nguyên liệu để làm nên một món ăn. Và để làm nên một món ăn ngon, hoàn chỉnh, chúng ta cần phải hiểu rõ từng thành phần và cách sử dụng nó như thế nào. Vì vậy hôm nay, mình và bạn sẽ cùng tìm hiểu về **values, types** và **operators** trong JavaScript.

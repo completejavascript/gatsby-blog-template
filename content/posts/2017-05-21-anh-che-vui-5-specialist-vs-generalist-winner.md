@@ -1,13 +1,14 @@
 ---
 date: "2017-05-22T14:10:56Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/Specialist-vs-Generalist-who-is-the-winner.png"
 keywords: "Specialist vs Generalist"
-description: "a person who devotes himself or herself to one subject or to one particular branch of a subject or pursuit."
+description: "A person who devotes himself or herself to one subject or to one particular branch of a subject or pursuit."
 slug: anh-che-vui-5-specialist-vs-generalist-winner
 title: "Ảnh chế vui #5: Specialist vs Generalist - who is the winner?"
-categories:
-  - Ảnh chế vui
+tags:
+  - Ảnh chế
 ---
 
 ![Specialist vs Generalist: who is the winner?](../images/Specialist-vs-Generalist-who-is-the-winner.png)

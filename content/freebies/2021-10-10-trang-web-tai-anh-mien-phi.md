@@ -1,6 +1,7 @@
 ---
 date: "2021-10-10T20:00:00Z"
 template: "freebie"
+directory: "Freebie"
 cover: "../images/web-tai-anh-mien-phi-chat-luong-cao-completejavascript.com_.png"
 keywords: "tải ảnh miễn phí"
 description: "Tổng hợp 10 trang web tải ảnh miễn phí chất lượng cao. Bạn thoải mái sử dụng mà không lo vi phạm bản quyền hình ảnh."

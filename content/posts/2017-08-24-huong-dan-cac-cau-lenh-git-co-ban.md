@@ -1,13 +1,12 @@
 ---
 date: "2017-08-24T00:23:59Z"
 template: "post"
+directory: "Thủ thuật IT"
 cover: "../images/huong-dan-cac-cau-lenh-git-co-ban-completejavascript.com_.png"
 keywords: "câu lệnh git"
 description: "Việc biết cách sử dụng Git là điều vô cùng quan trọng. Bài viết này sẽ hướng dẫn cơ bản về Git cũng như các câu lệnh Git cơ bản."
 slug: huong-dan-cac-cau-lenh-git-co-ban
 title: "Hướng dẫn các câu lệnh Git cơ bản"
-categories:
-  - Lập trình cơ bản
 tags:
   - Command Line
   - Git

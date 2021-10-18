@@ -1,15 +1,15 @@
 ---
 date: "2018-03-30T00:00:21Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/js-pattern-2-module-pattern-completejavascript.com_.png"
 keywords: "module pattern"
 description: "Module pattern là một loại pattern khá mạnh và được sử dụng rất phổ biến, với một số các đặc điểm sau: sử dụng Object Literals ({}), cung cấp khả năng đóng gói dữ liệu với cả thuộc tính và phương thức dạng public/private, giúp tránh xung đột về tên đối với các function ở các script khác trên trang web."
 slug: js-pattern-2-module-pattern
 title: "JS Pattern #2 - Module Pattern"
-categories:
-  - JavaScript Design Pattern
 tags:
   - IIFE
+  - Design Pattern
 ---
 
 Module pattern là một loại pattern khá mạnh và được sử dụng rất phổ biến, với một số các đặc điểm sau:

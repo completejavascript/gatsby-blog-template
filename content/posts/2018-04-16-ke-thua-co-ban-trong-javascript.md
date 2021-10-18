@@ -1,13 +1,12 @@
 ---
 date: "2018-04-16T00:00:54Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/cac-cach-ke-thua-co-ban-javascript-completejavascript.com_.png"
 keywords: "kế thừa cơ bản trong JavaScript"
 description: "Khi lập trình, việc kế thừa là cần thiết nếu bạn muốn giảm lượng code phải viết và quản lý code dễ dàng hơn. Vậy triển khai kế thừa trong JavaScript như thế nào? Bài viết này, mình sẽ giới thiệu với các bạn các cách triển khai kế thừa cơ bản trong JavaScript."
 slug: ke-thua-co-ban-trong-javascript
 title: "Các cách kế thừa cơ bản trong JavaScript"
-categories:
-  - Javascript cơ bản
 tags:
   - ES6
   - OOP

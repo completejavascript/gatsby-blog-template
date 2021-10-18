@@ -1,6 +1,7 @@
 ---
 date: "2021-10-10T17:00:00Z"
 template: "freebie"
+directory: "Freebie"
 cover: "../images/icon-mien-phi-completejavascript.com_.png"
 keywords: "icon miễn phí"
 description: "Tổng hợp 10 bộ icon miễn phí dành cho dân IT. Bạn có thể tải về miễn phí và thoải mái sử dụng cho các dự án cá nhân và dự án thương mại."

@@ -1,13 +1,12 @@
 ---
 date: "2019-02-18T23:00:10Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/destructuring-assignment-trong-javascript-completejavascript.com_.png"
 keywords: "destructuring assignment"
 description: "Bài viết trình bày về cách sử dụng cơ bản và một số ứng dụng của Destructuring Assignment với Object và Array trong JavaScript."
 slug: destructuring-assignment-trong-javascript
 title: "Destructuring Assignment trong JavaScript"
-categories:
-  - Javascript cơ bản
 tags:
   - Destructuring Assignment
   - ES6

@@ -1,13 +1,12 @@
 ---
 date: "2019-10-18T12:00:00Z"
 template: "post"
+directory: "JavaScript"
 title: "Làm sao để bắt buộc truyền tham số vào hàm?"
 slug: lam-sao-bat-buoc-truyen-tham-so-vao-ham
 keywords: "bắt buộc truyền tham số"
 description: "Khi lập trình, nhiều hàm phải bắt buộc truyền tham số vào. Ngược lại thì hàm sẽ không có ý nghĩa gì cả. Bài viết này sẽ giới thiệu với bạn cách để làm được điều đó."
 cover: "../images/bat-buoc-truyen-tham-so-vao-ham-1-completejavascript.com.png"
-categories:
-  - Thủ thuật JavaScript
 tags:
   - ES6
 ---

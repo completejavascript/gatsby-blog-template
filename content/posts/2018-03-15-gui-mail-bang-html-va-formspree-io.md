@@ -2,13 +2,12 @@
 date: "2018-03-15T18:19:49Z"
 update: "2021-10-17T18:19:49Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/gui-email-bang-html-va-formspree.io-completejavascript.com_.png"
 keywords: "gửi email bằng html"
 description: "Phương pháp cực kì đơn giản và hiệu quả giúp bạn gửi email bằng HTML sử dụng formspree.io. Tất cả công việc bạn cần phải làm là cấu hình form trong HTML sử dụng email cá nhân của bạn,..."
 slug: gui-mail-bang-html-va-formspree-io
 title: "Gửi email bằng HTML và Formspree.io"
-categories:
-  - Lập trình cơ bản
 tags:
   - API
   - HTML

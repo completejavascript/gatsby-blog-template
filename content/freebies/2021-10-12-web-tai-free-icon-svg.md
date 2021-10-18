@@ -1,6 +1,7 @@
 ---
 date: "2021-10-12T22:00:00Z"
 template: "freebie"
+directory: "Freebie"
 cover: "../images/web-tai-free-icon-svg-completejavascript.com_.png"
 keywords: "tải free icon svg"
 description: "Ảnh SVG là gì? Tại sao nên dùng ảnh SVG? Bài viết này sẽ giải đáp lý do tại sao và tổng hợp 18 trang tải free icon SVG cho các dự án cá nhân và thương mại."

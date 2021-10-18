@@ -1,17 +1,15 @@
 ---
 date: "2018-11-18T22:30:53Z"
 template: "post"
+directory: "React"
 cover: "../images/hoc-react-qua-vi-du-6-tab-content-completejavascript.com_.png"
 keywords: "tab content"
 description: "Xin chào bạn đến với Học React qua ví dụ #6. Bài này mình sẽ thực hành React thông qua việc tạo Tab Content. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-6-tab-content
 title: "Học React qua ví dụ #6: Tab Content"
-categories:
-  - Thư viện và Framework JavaScript
-  - Học React qua ví dụ
 tags:
   - Create-react-app
-  - React
+  - React Component
 ---
 
 Xin chào bạn đến với Học React qua ví dụ #6. Bài này mình sẽ thực hành React thông qua việc tạo Tab Content. Trước khi bắt đầu, mời bạn theo dõi ví dụ minh họa:

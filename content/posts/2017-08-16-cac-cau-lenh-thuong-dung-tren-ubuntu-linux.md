@@ -1,13 +1,12 @@
 ---
 date: "2017-08-16T14:28:19Z"
 template: "post"
+directory: "Thủ thuật IT"
 cover: "../images/cac-cau-lenh-thuong-dung-ubuntu-linux-completejavascript.com_.png"
 keywords: "câu lệnh"
 description: "Ubuntu cung cấp rất nhiều các câu lệnh sử dụng trên Terminal giúp lập trình viên làm việc nhanh chóng, đơn giản và hiệu quả."
 slug: cac-cau-lenh-thuong-dung-tren-ubuntu-linux
 title: "Các câu lệnh thường dùng trên Ubuntu - Linux"
-categories:
-  - Thủ thuật máy tính
 tags:
   - Command Line
   - Ubuntu

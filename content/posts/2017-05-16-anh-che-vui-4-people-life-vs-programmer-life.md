@@ -1,13 +1,14 @@
 ---
 date: "2017-05-16T00:21:22Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/people-life-vs-programmer-life.png"
 keywords: "Programmer life"
 description: "There are something different between people life and programmer life."
 slug: anh-che-vui-4-people-life-vs-programmer-life
 title: "Ảnh chế vui #4: People life vs Programmer life"
-categories:
-  - Ảnh chế vui
+tags:
+  - Ảnh chế
 ---
 
 ![ảnh chế vui #4: people life vs programmer life tại completejavascript.com](../images/people-life-vs-programmer-life.png)

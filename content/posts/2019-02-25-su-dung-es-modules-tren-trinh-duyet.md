@@ -1,13 +1,12 @@
 ---
 date: "2019-02-25T23:00:56Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/su-dung-es-module-tren-trinh-duyet-completejavascript.com_.png"
 keywords: "ES Modules"
 description: "ES Modules đã được support bởi khá nhiều trình duyệt. Hãy xem xem nó là gì và cách sử dụng nó trên trình duyệt như thế nào nhé!"
 slug: su-dung-es-modules-tren-trinh-duyet
 title: "Sử dụng ES Modules trên trình duyệt"
-categories:
-  - Javascript cơ bản
 tags:
   - ES6
   - Modules

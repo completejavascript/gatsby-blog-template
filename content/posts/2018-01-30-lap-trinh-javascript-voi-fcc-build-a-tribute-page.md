@@ -1,17 +1,16 @@
 ---
 date: "2018-01-30T15:41:57Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/hoc-front-end-cung-fcc-build-a-tribute-page-completejavascript-completejavascript.com_.png"
 keywords: "build a tribute page"
 description: "Gần đây mình đã tìm và thấy một trang web rất hay, là freecodecamp.org. Mình đang thực hành và sẽ chia sẻ lại với bạn. Bài viết này nói về project đầu tiên Build a tribute page thuộc chuyên mục Basic Front End."
 slug: lap-trinh-javascript-voi-fcc-build-a-tribute-page
 title: "Lập trình JavaScript với FCC - Build a Tribute Page"
-categories:
-  - JavaScript Tutorial
-  - Lập trình JavaScript với FCC
 tags:
   - Event
   - jQuery
+  - FCC
 ---
 
 Có thể bạn đã nghe thấy câu **practice makes perfect** rồi. Tuy nhiên, có một câu mà mình thấy đúng hơn cả. Đó là **perfect practice makes perfect**. Câu đó nói rằng, nếu bạn có một chiến thuật thực hành hoàn hảo, thì bạn sẽ trở nên hoàn hảo. Vì vậy, gần đây mình đã tìm và thấy một trang web rất hay, là [freecodecamp.org](https://www.freecodecamp.org/). Mình đang thực hành và sẽ chia sẻ lại với bạn. Bài viết này nói về project đầu tiên **Build a tribute page** thuộc chuyên mục **Basic Front End**.

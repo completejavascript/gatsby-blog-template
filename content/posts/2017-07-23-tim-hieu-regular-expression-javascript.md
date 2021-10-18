@@ -2,13 +2,12 @@
 date: "2017-07-23T04:06:50Z"
 update: "2021-10-17T04:06:50Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/tim-hieu-regular-expression-javascript-completejavascript.com_.png"
 keywords: "regular expression"
 description: "Regular expression hay còn được gọi tắt là Regex hay RegExp, là một cách để biểu diễn khuôn mẫu của string. Regex JavaScript là một phần quan trọng của ngôn ngữ lập trình JavaScript."
 slug: tim-hieu-regular-expression-javascript
 title: "Tìm hiểu Regular Expression JavaScript"
-categories:
-  - Javascript cơ bản
 tags:
   - RegExp
 ---

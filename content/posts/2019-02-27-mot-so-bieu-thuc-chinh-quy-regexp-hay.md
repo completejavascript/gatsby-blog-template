@@ -1,13 +1,12 @@
 ---
 date: "2019-02-27T23:00:31Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/mot-so-bieu-thuc-chinh-quy-regexp-hay-completejavascript.com_.png"
 keywords: "biểu thức chính quy RegExp"
 description: "Biểu thức chính quy RegExp là một chủ đề khá phức tạp. Bài viết này sẽ tổng hợp lại một số biểu thức chính quy RegExp mà mình sưu tầm được."
 slug: mot-so-bieu-thuc-chinh-quy-regexp-hay
 title: "Một số biểu thức chính quy RegExp hay"
-categories:
-  - Thủ thuật JavaScript
 tags:
   - RegExp
 ---

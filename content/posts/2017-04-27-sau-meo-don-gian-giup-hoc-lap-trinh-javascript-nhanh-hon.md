@@ -1,13 +1,12 @@
 ---
 date: "2017-04-27T00:20:22Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/sau-meo-hoc-lap-trinh-javascript-nhanh-hon-completejavascript.com_.png"
 keywords: "học lập trình Javascript"
 description: "Khi mọi người cố gắng học lập trình Javascript, hay bất kỳ kĩ năng lập trình nào, họ thường trải qua những thử thách giống nhau."
 slug: sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon
 title: "Sáu mẹo đơn giản giúp học lập trình Javascript nhanh hơn"
-categories:
-  - Lập trình và cuộc sống
 tags:
   - Dịch blog
 ---

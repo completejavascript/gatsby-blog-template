@@ -1,15 +1,15 @@
 ---
 date: "2018-03-28T00:00:01Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/js-pattern-1-constructor-pattern-completejavascript.com_.png"
 keywords: "constructor pattern"
 description: "Đối với lập trình hướng đối tượng trong JavaScript, cách đơn giản nhất để tạo mới một object là sử dụng function kết hợp với từ khoá new. Hàm số này còn được gọi là hàm khởi tạo - constructor. Sau đây, chúng ta sẽ cùng nhau tìm hiểu về một vài Constructor Pattern trong JavaScript."
 slug: js-pattern-constructor-pattern
 title: "JS Pattern #1 - Constructor Pattern"
-categories:
-  - JavaScript Design Pattern
 tags:
   - OOP
+  - Design Pattern
 ---
 
 Đối với [lập trình hướng đối tượng trong JavaScript](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript), cách đơn giản nhất để tạo mới một object là sử dụng function kết hợp với từ khoá **new**. Bên trong hàm khởi tạo này, từ khoá **this** dùng để chỉ tới đối tượng mới. Thông thường, hàm khởi tạo được viết hoa chữ cái đầu tiên, dùng để phân biệt với các [hàm số](/tim-hieu-function-javascript) thông thường. Sau đây, chúng ta sẽ cùng nhau tìm hiểu về một vài Constructor Pattern trong JavaScript.

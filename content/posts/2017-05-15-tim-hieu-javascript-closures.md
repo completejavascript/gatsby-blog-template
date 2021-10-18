@@ -2,13 +2,12 @@
 date: "2017-05-15T00:35:17Z"
 update: "2021-10-16T00:35:17Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/tim-hieu-javascript-closures-completejavascript.com_.png"
 keywords: "JavaScript Closure"
 description: "Bài viết này sẽ giúp bạn hiểu về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Hãy cùng tìm hiểu xem closure trong JavaScript là gì và cách dùng closure thế nào nhé!"
 slug: tim-hieu-javascript-closures
 title: "Tìm hiểu JavaScript Closure - Closure là gì?"
-categories:
-  - Javascript cơ bản
 ---
 
 Như đã nói trong bài [tìm hiểu function JavaScipt](/tim-hieu-function-javascript), bài viết này mình sẽ giới thiệu với bạn về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closure trong JavaScript, chúng ta sẽ xem closure là gì và cách sử dụng nó như thế nào.

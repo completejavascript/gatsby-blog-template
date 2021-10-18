@@ -1,17 +1,15 @@
 ---
 date: "2018-12-09T22:30:37Z"
 template: "post"
+directory: "React"
 cover: "../images/hoc-react-qua-vi-du-10-sticky-notes-completejavascript.com_.png"
 keywords: "sticky notes"
 description: "Xin chào bạn đến với Học React qua ví dụ #10. Bài này mình sẽ thực hành React thông qua việc tạo Sticky Notes. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-10-sticky-notes
 title: "Học React qua ví dụ #10: Sticky Notes"
-categories:
-  - Thư viện và Framework JavaScript
-  - Học React qua ví dụ
 tags:
   - Create-react-app
-  - React
+  - React Component
 ---
 
 Xin chào bạn đến với Học React qua ví dụ #10. Bài này mình sẽ thực hành React thông qua việc tạo Sticky Notes. Trước khi bắt đầu, mời bạn theo dõi ví dụ minh họa:
@@ -97,7 +95,7 @@ export default class StickyNotes extends React.Component {
       height: this.props.height || 300,
       top: this.props.top || 0,
       left: this.props.left || 0,
-      content: this.props.content || ""
+      content: this.props.content || "",
     };
 
     /**
@@ -113,7 +111,7 @@ export default class StickyNotes extends React.Component {
      */
     this.state = {
       activeId: this.count,
-      notes: [this.initNoteData()]
+      notes: [this.initNoteData()],
     };
 
     this.initNoteData = this.initNoteData.bind(this);
@@ -133,7 +131,7 @@ export default class StickyNotes extends React.Component {
     // mỗi lần tạo một note mới thì this.count++
     const noteData = {
       ...this.initialStateForEachNote,
-      id: this.count++
+      id: this.count++,
     };
 
     if (offset) {
@@ -159,10 +157,10 @@ export default class StickyNotes extends React.Component {
     const noteData = this.initNoteData(offset);
 
     // Cập nhật lại state
-    this.setState(state => {
+    this.setState((state) => {
       return {
         activeId: noteData.id,
-        notes: [...state.notes, noteData]
+        notes: [...state.notes, noteData],
       };
     });
   }
@@ -176,14 +174,14 @@ export default class StickyNotes extends React.Component {
     if (this.state.notes.length === 1) return;
 
     // Dùng filter lọc lấy các note có id khác với id cần xoá
-    this.setState(state => {
-      const remainNotes = [...state.notes].filter(note => {
+    this.setState((state) => {
+      const remainNotes = [...state.notes].filter((note) => {
         return note.id !== id;
       });
 
       return {
         activeId: remainNotes[remainNotes.length - 1].id,
-        notes: remainNotes
+        notes: remainNotes,
       };
     });
   }
@@ -203,7 +201,7 @@ export default class StickyNotes extends React.Component {
   makeActive(id) {
     if (this.state.activeId !== id) {
       this.setState({
-        activeId: id
+        activeId: id,
       });
     }
   }
@@ -215,8 +213,8 @@ export default class StickyNotes extends React.Component {
    * thì hàm này được gọi để cập nhật lại state cho component.
    */
   handleDataChange(id, data) {
-    this.setState(state => {
-      const newNotes = [...state.notes].map(note => {
+    this.setState((state) => {
+      const newNotes = [...state.notes].map((note) => {
         if (note.id === id) {
           if (data.width !== undefined) note.width = data.width;
           if (data.height !== undefined) note.height = data.height;
@@ -229,7 +227,7 @@ export default class StickyNotes extends React.Component {
       });
 
       return {
-        notes: newNotes
+        notes: newNotes,
       };
     });
   }
@@ -308,8 +306,8 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
   justify-content: space-between;
 }
 
-.lp-sticky-notes-header>.add,
-.lp-sticky-notes-header>.remove{
+.lp-sticky-notes-header > .add,
+.lp-sticky-notes-header > .remove {
   font-size: 1.1rem;
   opacity: 0.2;
   padding: 0 5px;
@@ -320,13 +318,13 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
   -o-transition: opacity 0.6s ease, color 0.6s ease;
 }
 
-.lp-sticky-notes-header:hover>.add,
-.lp-sticky-notes-header:hover>.remove{
+.lp-sticky-notes-header:hover > .add,
+.lp-sticky-notes-header:hover > .remove {
   opacity: 1;
 }
 
-.lp-sticky-notes-header:hover>.add:hover,
-.lp-sticky-notes-header:hover>.remove:hover {
+.lp-sticky-notes-header:hover > .add:hover,
+.lp-sticky-notes-header:hover > .remove:hover {
   color: #222;
   cursor: pointer;
 }
@@ -369,9 +367,8 @@ export default class App extends React.Component {
       <div className="App">
         <h2>Sticky Notes</h2>
         <div>
-          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. 
-          {" "}Visit me at{" "}
-          <a href="/">completejavascript.com</a>.
+          Made by <a href="https://about.phamvanlam.com/">Lam Pham</a>. Visit me
+          at <a href="/">completejavascript.com</a>.
         </div>
 
         <StickyNotes

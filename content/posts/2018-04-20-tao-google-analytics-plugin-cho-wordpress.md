@@ -1,13 +1,12 @@
 ---
 date: "2018-04-20T00:00:22Z"
 template: "post"
+directory: "Thủ thuật IT"
 cover: "../images/tao-google-analytics-plugin-cho-wordpress-completejavascript.com_.png"
 keywords: "tạo google analytics plugin cho wordpress"
 description: "Đối với mỗi trang web, việc tìm hiểu và phân tích hành vi người dùng là vô cùng quan trọng. Trong đó, Google Analytics là một công cụ miễn phí nhưng khá tốt để giúp bạn làm được việc này. Bài viết hôm nay, mình sẽ chia sẻ với các bạn cách tạo Google Analytics Plugin cho Wordpress."
 slug: tao-google-analytics-plugin-cho-wordpress
 title: "Tạo Google Analytics Plugin cho Wordpress"
-categories:
-  - Lập trình cơ bản
 tags:
   - Plugin
   - Wordpress

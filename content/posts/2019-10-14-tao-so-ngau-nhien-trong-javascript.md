@@ -1,13 +1,12 @@
 ---
 date: "2019-10-14T06:00:00Z"
 template: "post"
+directory: "JavaScript"
 title: "Tạo số ngẫu nhiên trong JavaScript"
 slug: tao-so-ngau-nhien-trong-javascript
 keywords: "tạo số ngẫu nhiên trong JavaScript"
 description: "Bài viết này mình sẽ tổng hợp lại một số biến thể của việc tạo số ngẫu nhiên trong JavaScript với phương thức Math.random() và các ứng dụng của chúng."
 cover: "../images/tao-so-ngau-nhien-trong-javascript-completejavascript.com.png"
-categories:
-  - Thủ thuật JavaScript
 tags:
   - Thuật toán
 ---

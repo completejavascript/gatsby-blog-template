@@ -1,13 +1,12 @@
 ---
 date: "2018-12-26T06:00:07Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/remove-item-in-array-javascript-completejavascript.com_.png"
 keywords: "Remove item in Array JavaScript"
 description: "Remove item in Array JavaScript - bạn thường thực hiện việc này theo mutable ways hay immutable ways. Hãy xem các cách mà mình áp dụng sau đây."
 slug: remove-item-in-array-javascript
 title: "Remove item in Array JavaScript"
-categories:
-  - Thủ thuật JavaScript
 tags:
   - Array
 ---

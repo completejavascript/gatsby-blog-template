@@ -1,13 +1,12 @@
 ---
 date: "2018-10-11T11:53:05Z"
 template: "post"
+directory: "React"
 cover: "../images/mot-so-plugin-gatsby.js-hay-dung-completejavascript.com_.png"
 keywords: "một số plugin gatsby.js"
 description: "Gatsby.js hỗ trợ rất nhiều plugin, nhưng chỉ có một số plugin Gatsby.js hay dùng. Vì vậy, bài viết này mình sẽ liệt kê những plugin đó."
 slug: mot-so-plugin-gatsby-js-hay-dung
 title: "Một số plugin Gatsby.js hay dùng"
-categories:
-  - Thư viện và Framework JavaScript
 tags:
   - Command Line
   - Gatsby.js

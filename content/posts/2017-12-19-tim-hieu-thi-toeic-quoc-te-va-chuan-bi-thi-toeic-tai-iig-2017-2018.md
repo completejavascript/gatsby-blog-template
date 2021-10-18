@@ -1,13 +1,12 @@
 ---
 date: "2017-12-19T00:09:28Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/tim-hieu-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018-completejavascript-com.png"
 keywords: "thi toeic"
 description: "Nếu bạn là một lập trình viên, mong muốn làm việc tại Việt Nam thì việc thi TOEIC và có một tấm bằng TOEIC điểm tương đối là rất thuận lợi."
 slug: tim-hieu-thi-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018
 title: "Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 - 2018"
-categories:
-  - Lập trình và cuộc sống
 ---
 
 Xin chào tất cả mọi người. Kể ra thì cũng lâu rồi mình chưa ra một bài viết nào. Bài viết mới gần đây nhất là [PHÂN BIỆT VAR VÀ LET TRONG JAVASCRIPT,](/phan-biet-var-va-let-trong-javascript) cách đây cũng hơn hai tháng.

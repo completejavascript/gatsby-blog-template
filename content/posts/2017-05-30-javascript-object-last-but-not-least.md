@@ -2,13 +2,12 @@
 date: "2017-05-30T00:10:29Z"
 update: "2021-10-16T00:10:29Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/javascript-object-last-but-not-least-completejavascript.com_.png"
 keywords: "JavaScript Object"
 description: "JavaScript là ngôn ngữ dựa trên đối tượng, nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn trở thành master trên con đường JavaScript học. Hãy tìm hiểu thật kỹ về Object trong JavaScript nhé!"
 slug: javascript-object-last-but-not-least
 title: "JavaScript Object - last but not least"
-categories:
-  - Javascript cơ bản
 ---
 
 Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number](/values-types-va-operators-trong-javascript-phan-1), [string, boolean](/values-types-va-operators-trong-javascript-phan-2) và [array](/javascript-array-co-ban). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object trong Javascript (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript)), nên việc hiểu rõ về JavaScript Object sẽ giúp bạn dễ dàng chinh phục ngôn ngữ lập trình JavaScript.

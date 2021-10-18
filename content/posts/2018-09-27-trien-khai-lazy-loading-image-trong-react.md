@@ -1,17 +1,15 @@
 ---
 date: "2018-09-27T12:30:31Z"
 template: "post"
+directory: "React"
 cover: "../images/trien-khai-lazy-loading-image-trong-react-completejavascript.com_-1.png"
 keywords: "triển khai Lazy Loading Image trong React"
 description: "Lazy Loading Image là một phương pháp rất hay. Vì vậy, bài viết này sẽ giúp bạn hiểu được tư tưởng chính và cách triển khai Lazy Loading Image trong React."
 slug: trien-khai-lazy-loading-image-trong-react
 title: "Triển khai Lazy Loading Image trong React"
-categories:
-  - Thư viện và Framework JavaScript
 tags:
   - Create-react-app
   - Performance
-  - React
 ---
 
 Đối với hầu hết các trang web thì ảnh là thứ không thể thiếu. Tuy nhiên, nếu ảnh có kích thước và dung lượng lớn, mà ta lại load ảnh theo cách thông thường thì sẽ dẫn đến ảnh load bị chậm, làm phá vỡ cấu trúc giao diện. Điều này làm giảm trải nghiệm của người dùng. Để khắc phục tình trạng này, người ta thường sẽ sử dụng phương pháp _**Lazy Loading Image**_. Vậy _Lazy Loading Image_ là gì và cách triển khai Lazy Loading Image trong React như thế nào?

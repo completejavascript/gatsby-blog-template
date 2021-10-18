@@ -1,15 +1,14 @@
 ---
 date: "2018-10-31T22:30:03Z"
 template: "post"
+directory: "React"
 cover: "../images/tim-hieu-react-component-lifecycle-completejavascript.com_.png"
 keywords: "react component lifecycle"
 description: "Bạn có biết các phương thức trong React Component Lifecycle hay chưa? Chúng được gọi khi nào và chúng được sử dụng để làm gì?"
 slug: tim-hieu-react-component-lifecycle
 title: "Tìm hiểu React Component Lifecycle"
-categories:
-  - Thư viện và Framework JavaScript
 tags:
-  - React
+  - React Lifecycle
 ---
 
 Khi học và tìm hiểu về React Component, có lẽ bạn đã đôi lần nhìn thấy các phương thức như _componentDidMount(), componentDidUpdate(), componentWillUnmount(),..._ Chúng được gọi là các "React lifecycle methods" - các phương thức trong vòng đời của React Component. Chúng cho phép bạn **override** để thực hiện một số nhiệm vụ nhất định. Do đó, việc hiểu và biết cách sử dụng các phương thức này là vô cùng quan trọng. Vì vậy, bài viết này mình sẽ đi vào tìm hiểu về React Component Lifecycle. Hay nói ngắn gọn hơn là "React Lifecycle".

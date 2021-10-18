@@ -1,15 +1,15 @@
 ---
 date: "2018-07-21T02:57:04Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/2-cach-tao-immutable-object-javascript-completejavascript.com_.png"
 keywords: "tạo immutable object"
 description: "Có nhiều trường hợp bạn mong muốn object là immutable. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript."
 slug: 2-cach-tao-immutable-object-javascript
 title: "2 cách tạo immutable object trong JavaScript"
-categories:
-  - Thủ thuật JavaScript
 tags:
   - ES6
+  - Object
 ---
 
 Thông thường, [object](/javascript-object-last-but-not-least) trong JavaScript là **mutable** - nghĩa là trạng thái của object có thể thay đổi được. Tuy nhiên, có nhiều trường hợp bạn mong muốn object đó là **immutable** - trạng thái không thể thay đổi được. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript.

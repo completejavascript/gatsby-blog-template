@@ -1,13 +1,14 @@
 ---
 date: "2018-06-14T12:00:20Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/xoan-nao-voi-phong-van-javascript-6-completejavascript.com_.png"
 keywords: "xoắn não với phỏng vấn javascript 6"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 6, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!"
 slug: xoan-nao-voi-phong-van-javascript-6
 title: "Xoắn não với phỏng vấn JavaScript 6"
-categories:
-  - Phỏng vấn JavaScript
+tags:
+  - Quiz
 ---
 
 Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 6**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay.
@@ -88,6 +89,7 @@ console.log(typeof bar); // => undefined
 Tóm lại, đáp án của câu hỏi 1 là undefined.
 
 Ngoài ra, bạn có thể xem thêm tại [đây](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function#Named_function_expression) để hiểu rõ hơn về **Named function expression**.
+
 </div>
 
   </div>
@@ -177,6 +179,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 **Object.preventExtensions()** chỉ ngăn chặn việc thêm thuộc tính vào bản thân object. Đối với prototype của object thì bạn vẫn có thể thêm vào.
 
 Trong câu hỏi này, mình đã thêm thuộc tính _sayHi_ vào prototype của đối tượng person. Điều này là hoàn toàn hợp lệ, nên bạn sẽ nhận được kết quả là _Hi_.
+
 </div>
 
   </div>
@@ -213,6 +216,7 @@ Một đặc điểm quan trọng nữa của **Object.preventExtensions()** là
 Trong khi đó, câu lệnh _person.\_\_proto\_\_ = { job: "teacher" }_ đã gán object mới cho **\_\_proto\_\_** của person.
 
 Vì vậy, bạn sẽ nhận được lỗi như trên.
+
 </div>
 
   </div>
@@ -255,6 +259,7 @@ Trong câu hỏi trên:
 - a là đối tượng đích, b là đối tượng nguồn.
 
 Do đó, các thuộc tính của b sẽ được copy sang a và b vẫn giữ nguyên. Trường hợp thuộc tính của a và b giống nhau (thuộc tính y) thì giá trị của thuộc tính đích sẽ bị ghi đè bởi giá trị của thuộc tính nguồn.
+
 </div>
 
   </div>
@@ -304,6 +309,7 @@ Thuộc tính _bar_ không chỉ rõ giá trị của _enumerable_ nên nó sẽ
 Còn lại thuộc tính _baz_, giá trị _enumerable_ của nó là true. Nên thuộc tính này sẽ được sao chép thông qua _Object.assign_.
 
 Vì vậy, đối tượng b chỉ có 1 thuộc tính là _baz_ và kết quả thu được là _{baz: 3}_.
+
 </div>
 
   </div>

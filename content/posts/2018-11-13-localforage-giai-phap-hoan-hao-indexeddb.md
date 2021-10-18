@@ -1,15 +1,15 @@
 ---
 date: "2018-11-13T22:30:10Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/localforage-giai-phap-hoan-hao-cho-indexeddb-completejavascript.com-2.png"
 keywords: "localForage"
 description: "IndexedDB là một công cụ mạnh mẽ để quản lý database phía server nhưng sử dụng lại quá khó. Vì vậy, localForage chính là một giải pháp hoàn hảo."
 slug: localforage-giai-phap-hoan-hao-indexeddb
 title: "LocalForage: giải pháp hoàn hảo cho IndexedDB"
-categories:
-  - Thư viện và Framework JavaScript
 tags:
   - IndexedDB
+  - Storage
 ---
 
 [IndexedDB](/javascript-indexeddb-tai-sao-khong) là một local database dạng NoSQL cho phép lưu trữ dữ liệu ngay trên trình duyệt. Nó cho phép lưu trữ một lượng dữ liệu lớn với các kiểu dữ liệu khác nhau (bao gồm cả file/blob); hỗ trợ trên nhiều trình duyệt và cung cấp khả năng truy cập nhanh. Qua đó, IndexedDB giúp cho web app có khả năng hoạt động offline một cách mượt mà.

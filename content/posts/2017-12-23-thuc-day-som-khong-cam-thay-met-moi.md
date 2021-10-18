@@ -1,13 +1,12 @@
 ---
 date: "2017-12-23T01:22:31Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/lam-sao-de-thuc-day-som-ma-khong-cam-thay-met-moi-completejavascript-com.png"
 keywords: "thức dậy sớm"
 description: "Bạn có quá nhiều việc phải làm. Bạn chăm chỉ, cố gắng để biến ước mơ trở thành hiện thực. Nhưng một ngày thì vẫn chỉ có 24 giờ. Vậy làm thế nào để bạn có thêm một đến hai giờ làm việc hiệu quả mỗi ngày? Câu trả lời là: Hãy thức dậy sớm."
 slug: thuc-day-som-khong-cam-thay-met-moi
 title: "Làm sao để thức dậy sớm mà không cảm thấy mệt mỏi"
-categories:
-  - Lập trình và cuộc sống
 ---
 
 Bạn có quá nhiều việc phải làm. Bạn chăm chỉ, cố gắng để biến ước mơ trở thành hiện thực. Nhưng một ngày thì vẫn chỉ có 24 giờ. Vậy làm thế nào để bạn có thêm một đến hai giờ làm việc hiệu quả mỗi ngày? Câu trả lời là: Hãy **THỨC DẬY SỚM**. Bởi lẽ, buổi sáng là khoảng thời gian mà bộ não hoạt động hiệu quả nhất. Nhưng làm sao để thức dậy sớm mà không cảm thấy mệt mỏi? Sau đây là một số cách giúp bạn đạt được điều này.

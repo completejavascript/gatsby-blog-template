@@ -2,13 +2,12 @@
 date: "2017-08-10T00:25:12Z"
 update: "2021-10-17T00:25:12Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/xu-ly-mot-so-event-javascript-co-ban-completejavascript.com_.png"
 keywords: "event javascript"
 description: "Đối với mỗi trang web, việc xử lý sự kiện chuột và bàn phím là không thể thiếu. Bài viết này mình sẽ giới thiệu cách xử lý một số Event JavaScript cơ bản. Qua đó, bạn có thể tiếp tục tìm hiểu và làm chủ về JS event."
 slug: xu-ly-mot-event-javascript-co-ban
 title: "Xử lý một số Event JavaScript cơ bản"
-categories:
-  - Javascript cơ bản
 tags:
   - DOM
   - Event

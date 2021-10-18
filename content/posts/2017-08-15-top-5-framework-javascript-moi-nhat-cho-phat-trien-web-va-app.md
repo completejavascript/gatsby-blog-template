@@ -1,13 +1,12 @@
 ---
 date: "2017-08-15T13:21:36Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app-completejavascript.com_.png"
 keywords: "framework javascript"
 description: "Bài viết được dịch từ website Technotification của tác giả Vicky Singh Rao về top 5 Framework JavaScript mới nhất cho phát triển web và app."
 slug: top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app
 title: "Top 5 Framework JavaScript mới nhất cho phát triển web và app"
-categories:
-  - Thư viện và Framework JavaScript
 tags:
   - Dịch blog
 ---

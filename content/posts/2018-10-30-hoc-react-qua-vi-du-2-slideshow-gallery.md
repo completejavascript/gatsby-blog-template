@@ -1,18 +1,16 @@
 ---
 date: "2018-10-30T22:30:09Z"
 template: "post"
+directory: "React"
 cover: "../images/hoc-react-qua-vi-du-2-slideshow-gallery-completejavascript.com_.png"
 keywords: "Slideshow Gallery"
 description: "Xin chào bạn đến với Học React qua ví dụ #2. Bài trước mình đã thực hành Slideshow rồi. Bài viết này mình sẽ cải tiến nó trở thành Slideshow Gallery."
 slug: hoc-react-qua-vi-du-2-slideshow-gallery
 title: "Học React qua ví dụ #2: Slideshow Gallery"
-categories:
-  - Thư viện và Framework JavaScript
-  - Học React qua ví dụ
 tags:
   - Create-react-app
   - Event
-  - React
+  - React Component
 ---
 
 Xin chào bạn đến với Học React qua ví dụ #2. Bài trước mình đã thực hành React với [Slideshow](/hoc-react-qua-vi-du-1-slideshow) rồi. Vì vậy, bài viết này mình sẽ cải tiến nó một chút, trở thành Slideshow Gallery.

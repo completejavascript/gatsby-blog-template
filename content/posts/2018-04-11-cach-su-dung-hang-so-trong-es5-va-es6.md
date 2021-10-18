@@ -1,13 +1,12 @@
 ---
 date: "2018-04-11T00:00:05Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/cach-su-dung-hang-so-trong-es5-va-es6-completejavascript.com_.png"
 keywords: "hằng số trong ES5 và ES6"
 description: "Mình thường thấy nhiều bạn khi lập trình JavaScript sử dụng var trong mọi trường hợp, kể cả với hằng số. Tuy nhiên, nếu sử dụng như vậy, bạn sẽ không phản ánh được đúng tính chất của hằng số. Bài viết này mình sẽ giúp bạn khai báo và sử dụng hằng số trong ES5 và ES6."
 slug: cach-su-dung-hang-so-trong-es5-va-es6
 title: "Cách sử dụng hằng số trong ES5 và ES6"
-categories:
-  - Thủ thuật JavaScript
 tags:
   - ES6
   - Strict Mode

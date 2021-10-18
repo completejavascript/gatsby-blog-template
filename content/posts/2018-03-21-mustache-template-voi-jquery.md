@@ -1,13 +1,12 @@
 ---
 date: "2018-03-21T00:00:21Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/mustache-template-voi-jquery-completejavascript.com_.png"
 keywords: "mustache template với jquery"
 description: "Đến hẹn lại lên, hôm nay mình sẽ chia sẻ với các bạn cách sử dụng Mustache Template với jQuery trong lập trình JavaScript. Việc sử dụng Mustache.js sẽ giúp bạn hạn chế việc xử lý logic trong JavaScript. Qua đó, giúp code bạn trở nên ngắn gọn và sáng sủa hơn."
 slug: mustache-template-voi-jquery
 title: "Mustache Template với jQuery"
-categories:
-  - Thư viện và Framework JavaScript
 tags:
   - jQuery
   - Mustache.js

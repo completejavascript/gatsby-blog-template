@@ -1,15 +1,14 @@
 ---
 date: "2017-05-06T03:50:09Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/anh-che-vui-2-Code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang-completejavascript.com_.png"
 keywords: "Ảnh chế vui 2"
 description: "Trong lập trình, việc có bug là điều hết sức bình thường. Tuy nhiên, nhiều lập trình viên lại hay sử dụng câu nói này khi bị bạn bè, đồng nghiệp chỉ ra bug trong code của mình."
 slug: anh-che-vui-2-code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang
 title: "Ảnh chế vui #2: Code anh không có bug, tất cả chỉ là tính năng"
-categories:
-  - Ảnh chế vui
 tags:
-  - Debug
+  - Ảnh chế
 ---
 
 ![Ảnh chế vui 2: code anh không có bug, tất cả chỉ là tính năng](../images/anh-che-vui-2-Code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang-completejavascript.com_.png)

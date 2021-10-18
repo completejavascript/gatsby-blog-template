@@ -1,15 +1,14 @@
 ---
 date: "2018-12-12T22:30:23Z"
 template: "post"
+directory: "React"
 cover: "../images/quan-ly-state-react-voi-react-context-api-completejavascript.com_.png"
 keywords: "react context api"
 description: "React Context API có thể thay thế Redux để quản lý State của ứng dụng React một cách dễ dàng. Cụ thể thế nào, mời bạn theo dõi bài viết!"
 slug: quan-ly-state-react-voi-react-context-api
 title: "Quản lý state trong React với React Context API"
-categories:
-  - Thư viện và Framework JavaScript
 tags:
-  - React
+  - React State
 ---
 
 Bình thường bạn quản lý state trong React bằng cách nào? Đặt chúng trong Component gốc rồi truyền property từ Component cha sang Component con? Hay sử dụng một thư viện vô cùng quen thuộc, đó là [Redux](https://redux.js.org/)? Thật lòng mà nói thì mình chưa từng sử dụng Redux bao giờ. Mình mới chỉ tìm hiểu qua về concept của nó thôi. Nhưng khi áp dụng, mình thấy Redux khá phức tạp. Do đó, mình quyết định sẽ không sử dụng Redux nữa. Và điều này lại càng được khẳng định khi **React Context API** (version mới) được chính thức support ở [React phiên bản 16.3](https://github.com/facebook/react/blob/master/CHANGELOG.md#1630-march-29-2018). Vì vậy, bài viết này sẽ tìm hiểu về React Context API và cách sử dụng nó để quản lý state trong React.

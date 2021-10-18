@@ -1,17 +1,15 @@
 ---
 date: "2018-11-07T22:30:49Z"
 template: "post"
+directory: "React"
 cover: "../images/hoc-react-qua-vi-du-4-lightbox-completejavascript.com_.png"
 keywords: "lightbox"
 description: "Xin chào bạn đến với Học React qua ví dụ #4. Bài viết này mình sẽ thực hành React với Lightbox - sự kết hợp giữa Slideshow Gallery và Modal Image."
 slug: hoc-react-qua-vi-du-4-lightbox
 title: "Học React qua ví dụ #4: Lightbox"
-categories:
-  - Thư viện và Framework JavaScript
-  - Học React qua ví dụ
 tags:
   - Create-react-app
-  - React
+  - React Component
 ---
 
 Xin chào bạn đến với Học React qua ví dụ #4. Bài viết này mình sẽ thực hành React thông qua cách tạo Lightbox. Trong đó, Lightbox chính là sự kết hợp giữa [Slideshow Gallery](/hoc-react-qua-vi-du-2-slideshow-gallery) và [Modal Image](/hoc-react-qua-vi-du-3-modal-image).

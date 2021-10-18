@@ -1,13 +1,12 @@
 ---
 date: "2017-12-20T23:41:02Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/4-loi-ich-to-lon-cua-tieng-anh-doi-voi-lap-trinh-vien-completejavascript-com.png"
 keywords: "lợi ích to lớn của Tiếng anh"
 description: "Khi nhắc đến tiếng anh thì ai cũng phải công nhận rằng nó có rất nhiều lợi ích. Đặc biệt đối với lập trình viên, tiếng anh lại càng quan trọng. Sau đây là 4 lợi ích to lớn của Tiếng Anh đối với lập trình viên mà tôi đúc kết lại được trong quá trình học tập và làm việc."
 slug: 4-loi-ich-to-lon-cua-tieng-anh-doi-voi-lap-trinh-vien
 title: "4 Lợi ích to lớn của Tiếng Anh đối với lập trình viên"
-categories:
-  - Lập trình và cuộc sống
 ---
 
 Khi nhắc đến tiếng anh thì ai cũng phải công nhận rằng nó có rất nhiều lợi ích. Đặc biệt đối với lập trình viên, tiếng anh lại càng quan trọng. Sau đây là 4 lợi ích to lớn của Tiếng Anh đối với lập trình viên mà tôi đúc kết lại được trong quá trình học tập và làm việc.

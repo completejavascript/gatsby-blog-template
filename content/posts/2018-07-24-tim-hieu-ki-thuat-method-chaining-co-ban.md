@@ -1,13 +1,14 @@
 ---
 date: "2018-07-24T14:02:44Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/tim-hieu-ki-thuat-method-chaining-completejavascript.com_.png"
 keywords: "method chaining"
 description: "Trong lập trình nói chung và lập trình JavaScript nói riêng, có một kĩ thuật khá hay với tên gọi là: Method Chaining, Function Chaining hoặc Cascading."
 slug: tim-hieu-ki-thuat-method-chaining-co-ban
 title: "Tìm hiểu kĩ thuật Method Chaining cơ bản"
-categories:
-  - Thủ thuật JavaScript
+tags:
+  - Design Pattern
 ---
 
 Trong lập trình nói chung và lập trình JavaScript nói riêng, có một kĩ thuật khá hay với tên gọi trong tiếng Anh là: **Method Chaining**, **Function Chaining** hoặc **Cascading**. Vậy kĩ thuật này có gì hay và cách sử dụng nó như thế thế nào? Mời bạn theo dõi bài viết!

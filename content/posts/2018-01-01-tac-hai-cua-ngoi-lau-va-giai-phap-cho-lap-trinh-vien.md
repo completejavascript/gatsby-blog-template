@@ -1,13 +1,12 @@
 ---
 date: "2018-01-01T13:18:02Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/tac-hai-cua-viec-ngoi-lau-va-giai-phap-danh-cho-lap-trinh-vien-completejavascript.png"
 keywords: "tác hại của ngồi lâu"
 description: "Đối với dân văn phòng nói chung và lập trình viên nói riêng thì ngồi lâu là việc khó tránh khỏi. Tuy nhiên, đây không phải là một thói quen tốt. Vì vậy, bài viết này tôi sẽ nói về tác hại của ngồi lâu và giải pháp cho lập trình viên chúng ta."
 slug: tac-hai-cua-ngoi-lau-va-giai-phap-cho-lap-trinh-vien
 title: "Tác hại của ngồi lâu và giải pháp cho lập trình viên"
-categories:
-  - Lập trình và cuộc sống
 ---
 
 Đối với dân văn phòng nói chung và lập trình viên nói riêng thì ngồi lâu là việc khó tránh khỏi. Tuy nhiên, đây không phải là một thói quen tốt. Vì vậy, bài viết này mình sẽ nói về tác hại của ngồi lâu và giải pháp cho lập trình viên chúng ta.

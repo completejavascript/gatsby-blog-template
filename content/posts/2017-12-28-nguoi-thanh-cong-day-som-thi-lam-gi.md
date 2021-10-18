@@ -1,13 +1,12 @@
 ---
 date: "2017-12-28T13:32:11Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/nhung-nguoi-thanh-cong-day-som-thi-lam-gi-lap-trinh-vien-lap-trinh-javascript-completejavascript-com.png"
 keywords: "người thành công dậy sớm"
 description: 'Để trả lời được câu hỏi: "Người thành công dậy sớm thì làm gì?", sau đây tôi sẽ đưa ra 10 thói quen buổi sáng của những nhà khởi nghiệp cực kì thành công, được dịch từ 10 Morning Routines of Wildly Successful Entrepreneurs. Qua đó, bạn có thể chọn ra những thói quen phù hợp để áp dụng cho bản thân mình.'
 slug: nguoi-thanh-cong-day-som-thi-lam-gi
 title: "Người thành công dậy sớm thì làm gì?"
-categories:
-  - Lập trình và cuộc sống
 ---
 
 Để trả lời được câu hỏi: "người thành công dậy sớm thì làm gì?", sau đây tôi sẽ đưa ra 10 thói quen buổi sáng của những nhà khởi nghiệp cực kì thành công, được dịch từ [10 Morning Routines of Wildly Successful Entrepreneurs](https://www.success.com/article/10-morning-routines-of-wildly-successful-entrepreneurs).  Qua đó, bạn có thể chọn ra những thói quen phù hợp và áp dụng cho bản thân mình.

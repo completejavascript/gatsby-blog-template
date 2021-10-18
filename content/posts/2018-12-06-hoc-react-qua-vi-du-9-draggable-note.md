@@ -1,17 +1,15 @@
 ---
 date: "2018-12-06T22:30:43Z"
 template: "post"
+directory: "React"
 cover: "../images/hoc-react-qua-vi-du-9-draggable-note-completejavascript.com_.png"
 keywords: "draggable note"
 description: "Xin chào bạn đến với Học React qua ví dụ #9. Bài này mình sẽ thực hành React thông qua việc tạo Draggable Note. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-9-draggable-note
 title: "Học React qua ví dụ #9: Draggable Note"
-categories:
-  - Thư viện và Framework JavaScript
-  - Học React qua ví dụ
 tags:
   - Create-react-app
-  - React
+  - React Component
 ---
 
 Xin chào bạn đến với Học React qua ví dụ #9. Bài này mình sẽ thực hành React thông qua việc tạo Draggable Note. Trước khi bắt đầu, mời bạn theo dõi ví dụ minh họa:

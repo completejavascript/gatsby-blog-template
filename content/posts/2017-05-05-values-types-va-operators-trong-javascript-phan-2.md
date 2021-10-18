@@ -2,13 +2,12 @@
 date: "2017-05-05T14:29:33Z"
 update: "2021-10-16T14:29:33Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/values-types-operators-trong-javascript-phan-2-strings-boolean-operators-completejavascript.com_.png"
 keywords: "Values, types và operators"
 description: "Hôm nay, mình sẽ tiếp tục giới thiệu về hai kiểu dữ liệu cơ bản khác đó là strings và Booleans, cùng với một số toán tử (operator) phổ biến."
 slug: values-types-va-operators-trong-javascript-phan-2
 title: "Values, types và operators trong JavaScript - Phần 2"
-categories:
-  - Javascript cơ bản
 ---
 
 Trong [bài viết trước](/values-types-va-operators-trong-javascript-phan-1), mình đã giới thiệu với bạn cơ bản về giá trị (values) và kiểu dữ liệu (numbers). Hôm nay, mình sẽ tiếp tục giới thiệu về hai kiểu dữ liệu cơ bản khác đó là **strings** và **Booleans**, cùng với một số toán tử (**operators**) phổ biến.

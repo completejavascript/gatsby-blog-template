@@ -1,16 +1,16 @@
 ---
 date: "2018-06-07T12:00:14Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/xoan-nao-voi-phong-van-javascript-5-completejavascript.com_.png"
 keywords: "xoắn não với phỏng vấn javascript 5"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 5, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!"
 slug: xoan-nao-voi-phong-van-javascript-5
 title: "Xoắn não với phỏng vấn JavaScript 5"
-categories:
-  - Phỏng vấn JavaScript
 tags:
   - IIFE
   - Strict Mode
+  - Quiz
 ---
 
 Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 5**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!
@@ -109,6 +109,7 @@ for (let i = arr.length - 1; i >= 0; i--) {
 ```
 
 Nếu muốn biết lý do tại sao thì bạn cứ phân tích như trên là sẽ hiểu.
+
 </div>
 
   </div>
@@ -163,6 +164,7 @@ console.log(x, y, z);
 ```
 
 _Xem thêm: [Phân biệt var và let trong JavaScript](/phan-biet-var-va-let-trong-javascript)_
+
 </div>
 
   </div>
@@ -194,6 +196,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 Vì trong [chế độ strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript), **this** sẽ không được bind với đối tượng **window**.
 
 _Xem thêm bài viết sau để hiểu thêm về chế độ strict mode: [Strict mode – JavaScript | MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Strict_mode)._
+
 </div>
 
   </div>
@@ -241,6 +244,7 @@ Nếu vẫn không tìm thấy thì sẽ chuyển đến prototype của thằng
 Ban đầu, đối tượng _foo_ chứa thuộc tính _bar_ của chính nó, và cả trong prototype của nó nữa. Khi đó, thuộc tính của chính nó sẽ được ưu tiên, nên _foo.bar_ có kết quả là 10.
 
 Nhưng sau khi **delete foo.bar**, đối tượng _foo_ không còn thuộc tính _bar_ nữa. Nhưng may thay, trong prototype của **foo** vẫn có _bar_ nên kết quả _foo.bar_ lúc này là 42.
+
 </div>
 
   </div>

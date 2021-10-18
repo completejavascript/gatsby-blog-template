@@ -2,13 +2,12 @@
 date: "2018-04-04T00:00:52Z"
 update: "2021-10-15T00:00:52Z"
 template: "post"
+directory: "Thủ thuật IT"
 cover: "../images/ma-mau-logo-cac-thuong-hieu-noi-tieng-completejavascript.com_.png"
 keywords: "mã màu logo"
 description: "Đã bao giờ bạn rơi vào trường hợp không biết lựa chọn, sử dụng hay phối hợp màu sắc sao cho hợp lý chưa? ... Bạn chỉ cần tải logo của họ về, sử dụng bất kỳ một công cụ chỉnh sửa hình ảnh là có thể lấy ra mã màu ở đó. Hoặc là bạn có thể theo dõi bài viết này. Mình sẽ lấy mã màu logo các thương hiệu nổi tiếng giúp bạn."
 slug: ma-mau-logo-cac-thuong-hieu-noi-tieng
 title: "Mã màu logo các thương hiệu nổi tiếng"
-categories:
-  - Lập trình cơ bản
 tags:
   - CSS
 ---

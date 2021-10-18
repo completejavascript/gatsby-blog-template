@@ -1,13 +1,12 @@
 ---
 date: "2017-08-21T14:46:46Z"
 template: "post"
+directory: "Thủ thuật IT"
 cover: "../images/cach-cai-dat-va-go-mot-goi-phan-mem-tren-ubuntu-completejavascript.c.png"
 keywords: "phần mềm trên Ubuntu"
 description: "Bài viết này sẽ hướng dẫn các bạn cách cài đặt và gỡ một gói phần mềm trên Ubuntu như sử dụng Ubuntu Software Center, apt-get hay dùng MakeFile,..."
 slug: cach-cai-dat-va-go-mot-goi-phan-mem-tren-ubuntu
 title: "Cách cài đặt và gỡ một gói phần mềm trên Ubuntu"
-categories:
-  - Thủ thuật máy tính
 tags:
   - Command Line
   - Ubuntu

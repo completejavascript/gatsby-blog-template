@@ -1,15 +1,12 @@
 ---
 date: "2019-05-15T23:00:23Z"
 template: "post"
+directory: "React"
 cover: "../images/tai-sao-react-yeu-cau-render-single-element-va-cac-cach-giai-quyet-completejavascript.com_.png"
 keywords: "render single DOM element"
 description: "Khi viết React, chắc hẳn đã ít nhất một lần bạn gặp phải lỗi liên quan đến việc React yêu cầu render single DOM element. Có 4 cách giải quyết vấn đề này."
 slug: react-render-single-dom-element
 title: "Tại sao React yêu cầu render single DOM element?"
-categories:
-  - Thư viện và Framework JavaScript
-tags:
-  - React
 ---
 
 Khi viết code [React](/tag/react), chắc hẳn đã ít nhất một lần bạn gặp phải lỗi liên quan đến việc React yêu cầu render single [DOM](/co-ban-ve-dom-javascript) element. Lúc này, cách giải quyết đơn giản nhất là bạn đóng gói các element bởi một cặp thẻ **div** bên ngoài.

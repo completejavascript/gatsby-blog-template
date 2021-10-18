@@ -1,13 +1,12 @@
 ---
-date: '2019-10-17T16:00:00Z'
-template: 'post'
-title: 'Tagged template ES6 là gì?'
+date: "2019-10-17T16:00:00Z"
+template: "post"
+directory: "JavaScript"
+title: "Tagged template ES6 là gì?"
 slug: tagged-template-es6-la-gi
-keywords: 'Tagged template ES6'
-description: 'Bạn đã bao giờ sử dụng Tagged template ES6 chưa? Bài viết này mình sẽ tìm hiểu xem cách sử dụng của nó như thế nào nhé.'
-cover: '../images/tagged-template-es6-la-gi-completejavascript.com.png'
-categories:
-  - Javascript cơ bản
+keywords: "Tagged template ES6"
+description: "Bạn đã bao giờ sử dụng Tagged template ES6 chưa? Bài viết này mình sẽ tìm hiểu xem cách sử dụng của nó như thế nào nhé."
+cover: "../images/tagged-template-es6-la-gi-completejavascript.com.png"
 tags:
   - ES6
 ---
@@ -39,7 +38,7 @@ Cho đoạn code:
 ```js
 const math = ([x, y], op) => op(Number(x), Number(y));
 const plus = (x, y) => x + y;
-const result = math`6 ${plus} 3`; 
+const result = math`6 ${plus} 3`;
 console.log(result); // 9
 ```
 
@@ -67,15 +66,15 @@ Giả sử trường hợp template string với expression ở đầu hoặc/v�
 
 ```js
 const func = (arr, expr1, expr2) => {
-  console.log(arr);           // (1)
-  console.log(expr1, expr2);  // (2)
+  console.log(arr); // (1)
+  console.log(expr1, expr2); // (2)
   return { x: "1" };
-}
+};
 
 const a = 1;
 const b = 2;
 const result = func`${a} and then ${b}`;
-console.log(result);         // (3)
+console.log(result); // (3)
 
 // (1) => ["", " and then ", ""]
 // (2) => 1 2

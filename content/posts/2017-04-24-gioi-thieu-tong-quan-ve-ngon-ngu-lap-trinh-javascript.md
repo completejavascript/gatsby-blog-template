@@ -2,13 +2,12 @@
 date: "2017-04-24T15:38:46Z"
 update: "2021-10-16T15:38:46Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/gioi-thieu-tong-quan-ngon-ngu-lap-trinh-javascript-featured-image-1-completejavascript.com_.png"
 keywords: "ngôn ngữ lập trình javascript"
 description: "Bài viết này giới thiệu tổng quan về ngôn ngữ lập trình javascript. Qua đó, bạn nắm được những kiến thức cơ bản nhất về JavaScript và hiểu chính xác JavaScript là gì?"
 slug: gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript
 title: "Tổng quan về ngôn ngữ lập trình JavaScript - JavaScript là gì?"
-categories:
-  - Javascript cơ bản
 ---
 
 Ngôn ngữ lập trình Javascript được giới thiệu đầu tiên vào năm 1995. Mục đích là để đưa những chương trình vào trang web ở trình duyệt Netscape Navigator - một trình duyệt web phổ biến những năm 1990.

@@ -2,16 +2,15 @@
 date: "2018-02-28T16:35:32Z"
 update: "2021-10-17T16:35:32Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/lap-trinh-javascript-voi-basic-algorithm-scripting-completejavascript-completejavascript.com_.png"
 keywords: "basic algorithm scripting"
 description: "Thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn. Vì vậy, tiếp theo trong loạt bài Lập trình JavaScript với FCC, hôm nay, mình sẽ tổng hợp lại những bài toán thuộc chủ đề Basic Algorithm Scripting trên freeCodeCamp."
 slug: lap-trinh-javascript-voi-fcc-basic-algorithm-scripting
 title: "Lập trình JavaScript với FCC - Basic Algorithm Scripting"
-categories:
-  - Thủ thuật JavaScript
-  - Lập trình JavaScript với FCC
 tags:
   - Thuật toán
+  - FCC
 ---
 
 Trong lập trình nói chung và lập trình JavaScript nói riêng, việc học thuật toán vẫn luôn vô cùng quan trọng. Thuật toán giúp cho lập trình viên rèn luyện tư duy.

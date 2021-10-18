@@ -1,15 +1,15 @@
 ---
 date: "2019-10-16T06:00:00Z"
 template: "post"
+directory: "JavaScript"
 title: "Cách kiểm tra empty object trong JavaScript"
 slug: kiem-tra-empty-object-trong-javascript
 keywords: "kiểm tra empty object"
 description: "Bạn đã biết cách kiểm tra empty object trong JavaScript hay chưa? Bài viết này sẽ giới thiệu với bạn cách đơn giản để kiểm tra empty object."
 cover: "../images/kiem-tra-empty-object-trong-javascript-completejavascript.com.png"
-categories:
-  - Thủ thuật JavaScript
 tags:
   - ES6
+  - Object
 ---
 
 Giả sử bạn đang muốn kiểm tra empty object đối với một giá trị cho trước. Với empty object được hiểu như sau:

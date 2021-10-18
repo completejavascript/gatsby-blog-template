@@ -1,6 +1,7 @@
 ---
 date: "2021-10-11T20:00:00Z"
 template: "freebie"
+directory: "Freebie"
 cover: "../images/trang-web-tao-palette-mau-cuc-tot-completejavascript.com_.png"
 keywords: "trang web tạo palette màu"
 description: "Đối với lập trình viên web, việc lựa chọn tổ hợp mã màu sao cho hợp với project của mình thật sự khó khăn. Vì vậy, bài viết này tổng hợp 10 trang web tạo palette màu cực tốt, màu sắc hiện đại và tươi mới."

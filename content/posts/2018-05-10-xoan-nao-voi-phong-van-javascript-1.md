@@ -1,16 +1,16 @@
 ---
 date: "2018-05-10T00:00:25Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/xoan-nao-voi-phong-van-javascript-1-completejavascript.com_.png"
 keywords: "Xoắn não với phỏng vấn JavaScript 1"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 1 trong chuyên mục những câu hỏi phỏng vấn JavaScript. Hôm nay, mình sẽ giới thiệu với các bạn những câu đố cực kỳ hóc búa về JavaScript."
 slug: xoan-nao-voi-phong-van-javascript-1
 title: "Xoắn não với phỏng vấn JavaScript 1"
-categories:
-  - Phỏng vấn JavaScript
 tags:
   - ES6
   - IIFE
+  - Quiz
 ---
 
 Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 1** trong chuyên mục những câu hỏi phỏng vấn JavaScript. Hôm nay, mình sẽ giới thiệu với các bạn những câu đố cực kỳ hóc búa về JavaScript.
@@ -163,6 +163,7 @@ Phương thức này đơn giản là tìm ra chỉ số của một giá trị 
 Với mảng x như trên thì **x.indexOf(10000)** sẽ trả về -1, vì mảng x không có phần tử nào có giá trị là 10000. Do đó, kết quả hiển thị trên console sẽ là kết quả của x[-1]. Và đó chính là -1.
 
 Các bạn thấy câu hỏi này thế nào? Rất hay phải không?
+
 </div>
 
   </div>
@@ -207,6 +208,7 @@ Do đó, mình thấy rằng chỉ có số Number.MIN_VALUE là thỏa mãn vì
 - Thương của 2 số dương bất kì luôn trả về 1 nên Number.MIN_VALUE / Number.MIN_VALUE = 1.
 
 Cũng lập luận tương tự như vậy, bạn thử đoán xem nếu thay i bằng các giá trị Number còn lại thì kết quả sẽ như thế nào?
+
 </div>
 
   </div>

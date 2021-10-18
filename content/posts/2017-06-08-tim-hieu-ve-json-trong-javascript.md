@@ -2,13 +2,12 @@
 date: "2017-06-08T00:21:47Z"
 update: "2021-10-17T00:21:47Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/tim-hieu-ve-json-trong-javascript-completejavascript.com_.png"
 keywords: "json"
 description: "Bài viết này mình sẽ tìm hiểu tổng quan về JSON, ứng dụng và cách sử dụng JSON trong JavaScript. Ngoài ra, mình cũng so sánh JSON với JavaScript Object."
 slug: tim-hieu-ve-json-trong-javascript
 title: "Tìm hiểu về JSON trong JavaScript"
-categories:
-  - Javascript cơ bản
 tags:
   - JSON
 ---

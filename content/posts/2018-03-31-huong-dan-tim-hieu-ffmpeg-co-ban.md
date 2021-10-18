@@ -2,13 +2,12 @@
 date: "2018-03-31T00:00:52Z"
 update: "2021-10-15T15:00:00Z"
 template: "post"
+directory: "Thủ thuật IT"
 cover: "../images/huong-dan-tim-hieu-ffmpeg-co-ban-completejavascript.com_.png"
 keywords: "ffmpeg là gì"
 description: "Sau thời gian làm việc với FFmpeg, mình khẳng định FFmpeg là một phần mềm xử lý audio, video đơn giản, miễn phí và hiệu quả nhất. Bài viết này sẽ giúp bạn biết FFmpeg là gì, cách tải FFmpeg, cài đặt FFmpeg, một số FFmpeg code hay FFmpeg command thường dùng."
 slug: huong-dan-tim-hieu-ffmpeg-co-ban
 title: "Hướng dẫn tìm hiểu FFmpeg cơ bản - FFmpeg là gì?"
-categories:
-  - Thủ thuật máy tính
 tags:
   - Command Line
   - FFmpeg

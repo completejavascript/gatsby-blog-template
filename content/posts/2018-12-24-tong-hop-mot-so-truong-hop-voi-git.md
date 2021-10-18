@@ -1,13 +1,12 @@
 ---
 date: "2018-12-24T12:30:53Z"
 template: "post"
+directory: "Thủ thuật IT"
 cover: "../images/tong-hop-mot-so-truong-hop-voi-git-completejavascript.com_.png"
 keywords: "trường hợp với git"
 description: "Đối với lập trình viên, Git là công cụ không thể thiếu. Bài viết này mình sẽ tổng hợp lại một số trường hợp với Git và cách mình giải quyết chúng."
 slug: tong-hop-mot-so-truong-hop-voi-git
 title: "Tổng hợp một số trường hợp với Git"
-categories:
-  - Lập trình cơ bản
 tags:
   - Command Line
   - Git

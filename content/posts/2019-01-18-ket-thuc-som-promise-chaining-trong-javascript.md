@@ -1,13 +1,12 @@
 ---
 date: "2019-01-18T02:00:26Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/ket-thuc-som-promise-chaining-trong-javascript-completejavascript.com_.png"
 keywords: "kết thúc sớm Promise chaining"
 description: "Bài viết này mình sẽ trình bày 2 cách để kết thúc sớm Promise chaining trong JavaScript là không thực hiện return hoặc sử dụng Promise.reject()."
 slug: ket-thuc-som-promise-chaining-trong-javascript
 title: "Kết thúc sớm Promise chaining trong JavaScript"
-categories:
-  - Thủ thuật JavaScript
 tags:
   - Promise
 ---

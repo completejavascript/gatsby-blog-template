@@ -2,13 +2,12 @@
 date: "2017-08-02T00:29:51Z"
 update: "2021-10-17T00:29:51Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/co-ban-ve-dom-javascript-completejavascript.com_.png"
 keywords: "DOM"
 description: "Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là DOM. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời."
 slug: co-ban-ve-dom-javascript
 title: "Cơ bản về DOM JavaScript - DOM là gì?"
-categories:
-  - Javascript cơ bản
 tags:
   - CSS
   - DOM

@@ -1,15 +1,13 @@
 ---
 date: "2017-06-15T23:20:38Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/hoc-lap-trinh-ma-khong-co-tutorials-va-tai-lieu-completejavascript.com_.png"
 keywords: "học lập trình"
 description: "Bài viết sau lấy ý tưởng từ simpleprogrammer.com, bởi tác giả John Sonmez về cách học lập trình mà không có tutorials. Bạn có thể xem bản gốc tại đây."
 slug: cach-hoc-lap-trinh-ma-khong-co-tutorials-hay-tai-lieu
 title: "Cách học lập trình mà không có tutorials hay tài liệu"
-categories:
-  - Lập trình cơ bản
 tags:
-  - Debug
   - Dịch blog
 ---
 

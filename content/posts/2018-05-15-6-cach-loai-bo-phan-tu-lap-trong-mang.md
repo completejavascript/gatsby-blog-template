@@ -1,13 +1,12 @@
 ---
 date: "2018-05-15T12:44:37Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/6-cach-loai-bo-phan-tu-lap-trong-mang-completejavascript.com_.png"
 keywords: "loại bỏ phần tử lặp trong mảng"
 description: "Trong con đường lập trình, có lẽ bạn sẽ phải ít nhất một lần đối mặt với bài toán Loại bỏ phần tử lặp trong mảng. Đây là bài toán cơ bản và khá hay. Sau đây mình sẽ giới thiệu thuật toán chung và triển khai 6 cách loại bỏ phần tử lặp trong mảng."
 slug: 6-cach-loai-bo-phan-tu-lap-trong-mang
 title: "6 cách loại bỏ phần tử lặp trong mảng"
-categories:
-  - Thủ thuật JavaScript
 tags:
   - Array
 ---

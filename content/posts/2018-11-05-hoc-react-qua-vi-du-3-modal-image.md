@@ -1,17 +1,15 @@
 ---
 date: "2018-11-05T22:30:33Z"
 template: "post"
+directory: "React"
 cover: "../images/hoc-react-qua-vi-du-3-modal-image-completejavascript.com_.png"
 keywords: "modal image"
 description: "Xin chào bạn đến với Học React qua ví dụ #3. Bài viết này mình sẽ thực hành React thông qua cách tạo Modal Image. Mời bạn theo dõi bài viết!"
 slug: hoc-react-qua-vi-du-3-modal-image
 title: "Học React qua ví dụ #3: Modal Image"
-categories:
-  - Thư viện và Framework JavaScript
-  - Học React qua ví dụ
 tags:
   - Create-react-app
-  - React
+  - React Component
 ---
 
 Xin chào bạn đến với Học React qua ví dụ #3. Bài viết này mình sẽ thực hành React thông qua cách tạo Modal Image.

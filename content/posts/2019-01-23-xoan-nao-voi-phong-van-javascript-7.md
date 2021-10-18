@@ -1,16 +1,16 @@
 ---
 date: "2019-01-23T02:00:43Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/xoan-nao-voi-phong-van-javascript-7-completejavascript.com_.png"
 keywords: "Xoắn não với phỏng vấn JavaScript 7"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 7, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay."
 slug: xoan-nao-voi-phong-van-javascript-7
 title: "Xoắn não với phỏng vấn JavaScript 7"
-categories:
-  - Phỏng vấn JavaScript
 tags:
   - Map
   - Promise
+  - Quiz
 ---
 
 Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 7**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay.
@@ -61,6 +61,7 @@ Do đó, key **1** và **"a"** coi như đã tồn tại, nên giá trị của 
 Trong khi đó, key **[1]** coi như chưa tồn tại. Và dĩ nhiên, khi lấy ra giá trị của nó thì kết quả sẽ là **undefined**.
 
 Để biết thêm về Map, mời bạn theo dõi bài viết: [Map trong JavaScript thì sao?](/map-trong-javascript-thi-sao)
+
 </div>
 
   </div>
@@ -107,6 +108,7 @@ Và ta có:
 ```
 
 Vì vậy mà mình thu được kết quả như trên.
+
 </div>
 
   </div>
@@ -145,6 +147,7 @@ Khi [function](/tim-hieu-function-javascript) **d()** được gọi, dĩ nhiên
 Ở đây, hàm **a()** được đặt trong hàm [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout). Mà khi được đặt trong hàm này, hàm _a()_ sẽ được thực hiện ngay sau một khoảng thời gian *timeout* cho trước.
 
 Ở đây, mình truyền vào thời gian _timeout_ là 0. Nhưng thực tế, thời gian này tối thiểu phải là **4ms**. Về chi tiết bạn có thể tham khảo tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout#Reasons_for_delays_longer_than_specified). Do vậy, _a_ sẽ được in ra sau _b_ và _c_. Và dĩ nhiên, kết quả cuối cùng phải là: **d b c a**.
+
 </div>
 
   </div>
@@ -190,6 +193,7 @@ Tuy nhiên, JavaScript quy định những hành động được lên kế ho�
 Vì vậy, d sẽ được in ra trước a. Và kết quả cuối cùng là: **c b d a**.
 
 Để hiểu hơn về sự khác nhau giữa setTimeout và Promise, bạn có thể đọc thêm 2 bài viết sau: [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/) và [The JavaScript Event Loop](https://flaviocopes.com/javascript-event-loop/).
+
 </div>
 
   </div>

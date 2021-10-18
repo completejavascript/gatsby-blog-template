@@ -2,13 +2,12 @@
 date: "2017-05-24T14:39:44Z"
 update: "2021-10-16T14:39:44Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/Array-sorting-van-de-muon-thuo-completejavascript.com_.png"
 keywords: "Array sorting"
 description: "Array sorting (sắp xếp mảng) là một bài toán vô cùng quen thuộc. Bài viết này sẽ tìm hiểu về một số cách để thực hiện sắp xếp mảng trong trong JavaScript"
 slug: array-sorting-van-de-muon-thuo
 title: "Array Sorting - vấn đề muôn thuở"
-categories:
-  - Javascript cơ bản
 tags:
   - Array
   - Thuật toán

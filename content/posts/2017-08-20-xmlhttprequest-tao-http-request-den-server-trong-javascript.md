@@ -1,13 +1,12 @@
 ---
 date: "2017-08-20T04:33:46Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/xmlhttprequest-tao-http-request-den-server-trong-javascript-completejavascript.com_.png"
 keywords: "XMLHttpRequest"
 description: "XMLHttpRequest giúp bạn gửi HTTP request (GET, POST, PUT, DELETE,...) đến server và hỗ trợ hai kiểu request: đồng bộ và bất đồng bộ."
 slug: xmlhttprequest-tao-http-request-den-server-trong-javascript
 title: "XMLHttpRequest - Tạo HTTP request đến server trong JavaScript"
-categories:
-  - Javascript cơ bản
 tags:
   - AJAX
   - Event

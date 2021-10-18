@@ -2,13 +2,12 @@
 date: "2017-06-03T09:49:44Z"
 update: "2021-10-14T16:25:00Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/javascript-foreach-la-cai-quai-gi-completejavascript.com_.png"
 keywords: "forEach"
 description: "Trong JavaScript, để duyệt array thì forEach là một hàm rất hay. Vậy hàm forEach trong JavaScript là như thế nào và cách sử dụng forEach JavaScript ra sao? Chúng ta hãy cùng tìm hiểu để làm chủ forEach js nhé!"
 slug: javascript-foreach-la-cai-quai-gi
 title: "JavaScript forEach là cái quái gì?"
-categories:
-  - Javascript cơ bản
 tags:
   - Array
 ---

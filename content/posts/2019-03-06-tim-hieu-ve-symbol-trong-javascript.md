@@ -1,13 +1,12 @@
 ---
 date: "2019-03-06T23:00:14Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/tim-hieu-symbol-trong-javascript-completejavascript.com_.png"
 keywords: "symbol trong JavaScript"
 description: "Symbol là một kiểu dữ liệu mới được giới thiệu từ phiên bản ES6. Bài này mình sẽ tìm hiểu cơ bản về Symbol trong JavaScript với các ứng dụng của nó."
 slug: tim-hieu-ve-symbol-trong-javascript
 title: "Tìm hiểu về Symbol trong JavaScript"
-categories:
-  - Javascript cơ bản
 tags:
   - ES6
   - Symbol

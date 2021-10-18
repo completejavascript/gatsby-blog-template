@@ -1,18 +1,16 @@
 ---
 date: "2018-10-09T11:50:24Z"
 template: "post"
+directory: "React"
 cover: "../images/tao-blog-voi-gatsby.js-completejavascript.com_.png"
 keywords: "blog với gatsby.js"
 description: "Mình sẽ tổng hợp lại những kiến thức tích luỹ được, qua đó giúp bạn biết cách tạo trang blog với Gatsby.js và thậm chí là nhiều static website khác nữa."
 slug: tao-trang-blog-voi-gatsby-js
 title: "Tạo trang blog với Gatsby.js"
-categories:
-  - Thư viện và Framework JavaScript
 tags:
   - Command Line
   - Gatsby.js
   - Node.js
-  - React
 ---
 
 Xin chào bạn! Như vậy là đã qua hơn 2 tháng mình học và thực hành React với các project như: [Markdown Editor](http://about.phamvanlam.com/markdown-editor/), [Drum Machine](http://about.phamvanlam.com/drum-machine/), [Standard Calculator](http://about.phamvanlam.com/calculator/), [Pomodoro Clock](http://about.phamvanlam.com/pomodoro-clock/),... Với những thứ mình đã học và thực hành thì có lẽ là chưa đủ, nhưng hiện tại mình cảm thấy khá thoải mái, tự tin khi viết code React. Do đó, mình muốn bắt tay vào học những những công cụ, thư viện hay framework sử dụng React để có thể làm thêm được nhiều thứ hay ho hơn nữa. Và cái mình chọn đầu tiên đó là [Gatsby.js](https://www.gatsbyjs.org/). Nhờ vậy, mình đã chuyển 2 blog khác của mình từ [Wordpress.org](https://wordpress.org/) sang sử dụng Gatsby.js, đó là: <del>[Lam Pham Blog](https://phamvanlam.com/)</del> và [Ôn luyện thuật toán](https://thuattoan.phamvanlam.com/). Bài viết này, mình sẽ tổng hợp lại những kiến thức tích luỹ được, qua đó giúp bạn biết cách tạo trang blog với Gatsby.js và thậm chí là nhiều static website khác nữa.

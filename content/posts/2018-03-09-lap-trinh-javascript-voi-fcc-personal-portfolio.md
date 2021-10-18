@@ -2,18 +2,17 @@
 date: "2018-03-09T15:03:38Z"
 update: "2021-10-17T15:03:38Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/lap-trinh-voi-fcc-build-a-personal-portfolio-completejavascript-completejavascript.com_.png"
 keywords: "personal portfolio"
 description: "Tiếp tục series lập trình JavaScript với FCC, bài viết này tôi sẽ chia sẻ với các bạn project thứ hai mà tôi đã làm trên freeCodeCamp đó là Build a personal portfolio webpage, thuộc chuyên mục Basic Front End."
 slug: lap-trinh-javascript-voi-fcc-personal-portfolio
 title: "Lập trình JavaScript với FCC – Personal Portfolio"
-categories:
-  - JavaScript Tutorial
-  - Lập trình JavaScript với FCC
 tags:
   - jQuery
   - Mustache.js
   - Template
+  - FCC
 ---
 
 Tiếp tục series lập trình JavaScript với FCC, bài viết này mình sẽ chia sẻ với bạn project thứ hai mà mình đã làm trên freeCodeCamp đó là **Build a personal portfolio webpage** thuộc chuyên mục **Basic Front End**.

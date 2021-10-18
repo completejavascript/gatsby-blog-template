@@ -1,16 +1,16 @@
 ---
 date: "2018-05-17T12:19:36Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/xoan-nao-voi-phong-van-javascript-2-completejavascript.com_.png"
 keywords: "xoắn não với phỏng vấn javascript 2"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 2, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!"
 slug: xoan-nao-voi-phong-van-javascript-2
 title: "Xoắn não với phỏng vấn JavaScript 2"
-categories:
-  - Phỏng vấn JavaScript
 tags:
   - ES6
   - IIFE
+  - Quiz
 ---
 
 Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 2**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!
@@ -296,6 +296,7 @@ Cụ thể, mình đã bind hàm callback trên với this – person. Vì vậy
 > Với các đoạn code còn lại, tại sao kết quả không phải là "I'm undefined" mà chỉ là "I'm". Bởi vì, đối tượng window có sẵn một thuộc tính là "name". Khi bạn chưa set giá trị cho nó thì mặc định name là một string rỗng "", chứ không phải **undefined**. Điều đó giải thích cho kết quả phía trên.
 
 Trên đây là lời giải thích khá chi tiết cho câu hỏi số 1. Mời bạn đến với câu số 2.
+
 </div>
 
   </div>
@@ -335,6 +336,7 @@ Trong đó, _parameter_ sẽ tương ứng với _p_.Quay lại với câu hỏi
 **Toán tử [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)** sẽ trả về string biểu diễn kiểu dữ liệu của toán hạng tương ứng. Tuy nhiên, bạn cần chú ý là **typeof (array)** luôn trả về "object" chứ không phải "array".
 
 Như vậy, đáp án cho câu hỏi này phải là: "object".
+
 </div>
 
   </div>
@@ -487,6 +489,7 @@ function max(arr) {
 ```
 
 Tức là để tìm ra số lớn nhất của mảng, mình cần khởi tạo _ans_ với giá trị nhỏ nhất có thể. Sau đó, mình duyệt từng phần tử của mảng và kiểm tra nếu như phần tử đó lớn hơn giá trị nhỏ nhất hiện tại thì gán ans = giá trị phần tử hiện tại. Đó chính là lý do tại sao bạn có thể suy ra kết quả là -Infinity mà không cần đọc tài liệu.
+
 </div>
 
   </div>

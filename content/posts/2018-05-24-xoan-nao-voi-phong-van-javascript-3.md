@@ -1,16 +1,16 @@
 ---
 date: "2018-05-24T12:36:10Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/xoan-nao-voi-phong-van-javascript-3-completejavascript.com_.png"
 keywords: "xoắn não với phỏng vấn javascript 3"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 3, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!"
 slug: xoan-nao-voi-phong-van-javascript-3
 title: "Xoắn não với phỏng vấn JavaScript 3"
-categories:
-  - Phỏng vấn JavaScript
 tags:
   - IIFE
   - Strict Mode
+  - Quiz
 ---
 
 Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 3**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!
@@ -53,6 +53,7 @@ Tức là Object.create sẽ tạo ra một object mới, sử dụng object cho
 Trong câu hỏi này, [object](/javascript-object-last-but-not-least) a sẽ được dùng làm **proto** cho object b.
 
 Giả sử không có câu lệnh _delete b.x_ thì bạn có thể đoán được kết quả sẽ trả về của phương thức _getX()_ là **this.x = b.x = 10**. Nhưng nếu _delete b.x_ thì JavaScript sẽ tìm đến thằng cha gần nhất của b, thông qua **proto**, và đó chính là object a. Vì vậy, kết quả **this.x = a.x = 1**.
+
 </div>
 
   </div>
@@ -147,6 +148,7 @@ console.log(y);
 Biến _y_ viết như vậy sẽ có phạm vi global, tức nó trở thành một thuộc tính của window. Do đó, **console.log(y) = 10**.
 
 Trong khi đó, nếu bạn in ra giá trị của x bằng console.log(x) thì kết quả báo lỗi **ReferenceError: x is not defined**. Bởi vì, biến _x_ kiểu [var sẽ có phạm vi là block](/phan-biet-var-va-let-trong-javascript), tức là chỉ nó chỉ tồn tại trong [function](/tim-hieu-function-javascript) trên.
+
 </div>
 
   </div>
@@ -192,6 +194,7 @@ a = [1, 2, 3, , , , , , , , 5, -1: 4]
 ```
 
 Do đó, độ dài mảng a.length = 11
+
 </div>
 
   </div>
@@ -259,6 +262,7 @@ console.log(a["[object Object]"], a["1, 2"], a["[object Object]"]);
 ```
 
 Như vậy, kết quả thu được sẽ phải là: 78, 56, 78
+
 </div>
 
   </div>
@@ -311,6 +315,7 @@ let y = ((y = 0), y++, y);
 ```
 
 Lần này, biến y được khai báo sử dụng let, nên nó sẽ không được hoisted. Vì vậy, khi _(y = 0, y++, y)_ thực hiện lần lượt các lệnh, thì ngay câu lệnh đầu tiên _y = 0_ sẽ báo lỗi ReferenceError: y is not defined. Bởi vì, biến y lúc này chưa được khai báo.
+
 </div>
 
   </div>

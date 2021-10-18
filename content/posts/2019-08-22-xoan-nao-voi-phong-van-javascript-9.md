@@ -1,18 +1,18 @@
 ---
 date: "2019-08-22T06:00:00Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/xoan-nao-voi-phong-van-javascript-9-completejavascript.com.png"
 keywords: "Xoắn não với phỏng vấn JavaScript 9"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 9, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay."
 slug: xoan-nao-voi-phong-van-javascript-9
 title: "Xoắn não với phỏng vấn JavaScript 9"
-categories:
-  - Phỏng vấn JavaScript
 tags:
   - ES6
   - Destructuring Assignment
   - Symbol
   - Array
+  - Quiz
 ---
 
 Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 9**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay.
@@ -63,6 +63,7 @@ console.log(myId2 === myId3); // => false
 Tiếp theo là phương thức <code>Symbol.for("id")</code>. Phương thức này sẽ tìm trong một đối tượng Global, xem có tồn tại Symbol với key là "id" hay không. Nếu chưa có Symbol nào thoả mãn thì một Symbol mới với key "id" sẽ được tạo ra. Ngược lại, phương thức trên sẽ trả về Symbol đã tồn tại.
 
 Do đó, s2 và s3 ở trên chắc chắn bằng nhau và khác s1.
+
 </div>
 
   </div>
@@ -189,6 +190,7 @@ const { x = 0, y = "a", z = true } = {};
 ```
 
 Các biến số x, y và z nhận giá trị default tương ứng là: 0, "a" và "true".
+
 </div>
 
   </div>

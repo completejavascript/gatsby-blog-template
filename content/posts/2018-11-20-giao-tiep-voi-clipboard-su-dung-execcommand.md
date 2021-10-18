@@ -1,13 +1,14 @@
 ---
 date: "2018-11-20T22:30:17Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/giao-tiep-voi-clipboard-su-dung-execcommand-completejavascript.com_.png"
 keywords: "giao tiếp với clipboard sử dụng execCommand"
 description: "Ngoài thư viện clipboard.js ra, bạn cũng vẫn có thể trực tiếp giao tiếp với clipboard sử dụng execCommand một cách đơn giản."
 slug: giao-tiep-voi-clipboard-su-dung-execcommand
 title: "Giao tiếp với clipboard sử dụng execCommand"
-categories:
-  - Thủ thuật JavaScript
+tags:
+  - Clipboard
 ---
 
 Khi nói đến việc copy dữ liệu vào clipboard thì không thể không kể đến thư viện [clipboard.js](https://clipboardjs.com/) - với hơn [24000 star trên Github](https://github.com/zenorocha/clipboard.js/), dung lượng sau nén khoảng 3kb, không phụ thuộc vào Flash và bất kỳ một [framework](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app) nào, thì đây đúng là một thư viện rất đáng để sử dụng. Tuy nhiên, bạn cũng vẫn có thể trực tiếp giao tiếp với clipboard sử dụng execCommand một cách đơn giản.

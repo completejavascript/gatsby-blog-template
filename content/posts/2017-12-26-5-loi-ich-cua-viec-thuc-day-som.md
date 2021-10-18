@@ -1,13 +1,12 @@
 ---
 date: "2017-12-26T13:48:34Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/5-loi-ich-cua-viec-thuc-day-som-lap-trinh-javascript-completejavascript-com.png"
 keywords: "lợi ích của việc thức dậy sớm"
 description: "Xin chào các bạn, bài viết trước tôi có viết về cách để thức dậy sớm mà không cảm thấy mệt mỏi. Nhiều bạn sẽ hỏi là thức dậy sớm để làm gì? Tại sao phải thức dậy sớm? Trong bài viết này, tôi sẽ chỉ cho các bạn thấy 5 lợi ích của việc thức dậy sớm."
 slug: 5-loi-ich-cua-viec-thuc-day-som
 title: "5 lợi ích của việc thức dậy sớm"
-categories:
-  - Lập trình và cuộc sống
 ---
 
 Xin chào các bạn, bài viết trước tôi có viết về cách để [thức dậy sớm](/thuc-day-som-khong-cam-thay-met-moi) mà không cảm thấy mệt mỏi. Nhiều bạn sẽ hỏi là thức dậy sớm để làm gì? Tại sao phải thức dậy sớm? Trong bài viết này, tôi sẽ chỉ cho các bạn thấy 5 lợi ích của việc thức dậy sớm.

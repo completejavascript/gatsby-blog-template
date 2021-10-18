@@ -1,15 +1,15 @@
 ---
 date: "2018-05-31T12:00:59Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/xoan-nao-voi-phong-van-javascript-4-completejavascript.com_.png"
 keywords: "xoắn não với phỏng vấn javascript 4"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 4, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!"
 slug: xoan-nao-voi-phong-van-javascript-4
 title: "Xoắn não với phỏng vấn JavaScript 4"
-categories:
-  - Phỏng vấn JavaScript
 tags:
   - JSON
+  - Quiz
 ---
 
 Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 4**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!
@@ -229,6 +229,7 @@ Câu 3 khác với câu 2 ở chỗ có sử dụng thêm phương thức [Objec
 Nếu đúng thì kết quả trả về là **true**. Ngược lại, nếu thuộc tính đó không tồn tại, hoặc nó là thuộc tính của prototype, hay nó được kế thừa từ prototype thì kết quả trả về là **false**.
 
 Trong khi đó, _arrCustom_ và _objCustom_ lần lượt là thuộc tính của **Array.prototype** và **Object.prototype** nên chúng sẽ không được in ra.
+
 </div>
 
   </div>
@@ -340,6 +341,7 @@ Phương thức [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/
 Và giá trị JavaScript thường dùng nhất chính là object. Tuy nhiên, nếu giá trị của một thuộc tính là [function](/tim-hieu-function-javascript) thì **JSON.stringify** sẽ bỏ qua thuộc tính này.
 
 Đó là lý do tại sao bạn không thấy thuộc tính z trong kết quả.
+
 </div>
 
   </div>
@@ -375,6 +377,7 @@ Hỏi console in ra kết quả như thế nào, tại sao?
 Bạn sẽ nhận được lỗi: **TypeError: Converting circular structure to JSON**. Bởi lẽ, object a ở trên có cấu trúc lặp vô hạn.
 
 Xem thêm: [Issue with JSON.stringify() when serializing circular references](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#Issue_with_JSON.stringify()_when_serializing_circular_references>)
+
 </div>
 
   </div>

@@ -1,13 +1,14 @@
 ---
 date: "2017-05-28T11:40:41Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/a-type-of-programmer-completejavascript.com_.png"
 keywords: "type of programmer"
 description: "There's a type of programmer who's always working late. And before sleeping, he always check his phone until tired."
 slug: anh-che-vui-6-type-programmer
 title: "Ảnh chế vui #6: A type of programmer"
-categories:
-  - Ảnh chế vui
+tags:
+  - Ảnh chế
 ---
 
 ![A type of programmer at completejavascript.com](../images/a-type-of-programmer-completejavascript.com_.png)

@@ -2,13 +2,12 @@
 date: "2017-05-07T04:50:40Z"
 update: "2021-10-16T04:50:40Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/cau-truc-chuong-trinh-trong-javascript-completejavascript.com_.png"
 keywords: "cấu trúc chương trình"
 description: "Làm thế nào để kết hợp những thành phần này thành một chương trình hoàn chỉnh? Để giải quyết vấn đề này, chúng ta sẽ cùng tìm hiểu về cấu trúc chương trình trong JavaScript."
 slug: cau-truc-chuong-trinh-trong-javascript
 title: "Cấu trúc chương trình trong JavaScript"
-categories:
-  - Javascript cơ bản
 ---
 
 Trong các bài viết trước, mình đã giới thiệu với bạn những thành phần cơ bản của JavaScript ([values](/values-types-va-operators-trong-javascript-phan-1), [types và operators](/values-types-va-operators-trong-javascript-phan-2)). Nhưng đây mới chỉ là những nguyên liệu thô. Vậy làm thế nào để kết hợp những thành phần này thành một chương trình hoàn chỉnh. Để giải quyết vấn đề này, chúng ta sẽ cùng tìm hiểu về cấu trúc chương trình trong JavaScript.

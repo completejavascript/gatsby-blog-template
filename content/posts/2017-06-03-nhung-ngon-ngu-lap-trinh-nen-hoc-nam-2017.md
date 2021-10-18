@@ -1,13 +1,12 @@
 ---
 date: "2017-06-03T00:41:10Z"
 template: "post"
+directory: "Cuộc sống IT"
 cover: "../images/nhung-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.png"
 keywords: "ngôn ngữ lập trình"
 description: "Bài viết sau được dịch từ simpleprogrammer.com bởi tác giả John Sonmez về top những ngôn ngữ lập trình nên học năm 2017."
 slug: nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017
 title: "Những ngôn ngữ lập trình nên học năm 2017"
-categories:
-  - Lập trình cơ bản
 tags:
   - Dịch blog
 ---

@@ -2,13 +2,12 @@
 date: "2018-02-04T14:02:31Z"
 update: "2021-10-17T14:02:31Z"
 template: "post"
+directory: "JavaScript"
 cover: "../images/javascript-indexeddb-tai-sao-khong-completejavascript-completejavascript.com_.png"
 keywords: "javascript indexeddb"
 description: "Có 3 loại database cơ bản là: LocalStorage, Web SQL, IndexedDB. Việc tìm hiểu các database gốc sẽ giúp bạn hiểu rõ được bản chất của các cơ sở dữ liệu đó. Qua đó, bạn có thể tự xây dựng những thư viện của riêng mình. Tuy nhiên, bài viết này sẽ chỉ tập chung vào JavaScript IndexedDB."
 slug: javascript-indexeddb-tai-sao-khong
 title: "JavaScript IndexedDB - tại sao không?"
-categories:
-  - Javascript cơ bản
 tags:
   - Event
   - IndexedDB
