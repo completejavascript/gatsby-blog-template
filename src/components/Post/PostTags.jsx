@@ -4,13 +4,13 @@ import { getTagPath } from "../../utils/helpers";
 import config from "../../../data/SiteConfig";
 import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
 
-const PostTags = ({ tags, extraClass = "", iconColor = "#444" }) => {
-  const tagLink = (tag) => (
-    <AutoLink to={getTagPath(tag)} label={tag}>
-      {tag}
-    </AutoLink>
-  );
+const tagLink = (tag) => (
+  <AutoLink to={getTagPath(tag)} label={tag}>
+    {tag}
+  </AutoLink>
+);
 
+const PostTags = ({ tags, extraClass = "", iconColor = "#444" }) => {
   return (
     <>
       {tags && (

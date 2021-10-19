@@ -4,6 +4,7 @@ import PostShare from "./PostShare";
 import PostDate from "./PostDate";
 import PostDivider from "./PostDivider";
 import PostSibling from "./PostSibling";
+import PostDirectory from "./PostDirectory";
 import AdSense from "react-adsense";
 import GithubComment from "../Comment/GithubComment";
 import "./Post.scss";
@@ -52,11 +53,16 @@ const Post = ({
       )}
       <PostDivider />
 
-      {post.tags?.length > 0 && (
+      {(!!post.directory || post.tags?.length > 0) && (
         <>
+          <PostDirectory
+            directory={post.directory}
+            extraClass="block padding-top"
+            iconColor="#595959"
+          />
           <PostTags
             tags={post.tags}
-            extraClass="block padding-top padding-bottom"
+            extraClass="block padding-top-half padding-bottom"
             iconColor="#595959"
           />
           <PostDivider />

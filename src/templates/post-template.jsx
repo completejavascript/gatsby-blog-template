@@ -83,6 +83,7 @@ export const pageQuery = graphql`
       timeToRead
       excerpt
       frontmatter {
+        directory
         title
         date
         tags

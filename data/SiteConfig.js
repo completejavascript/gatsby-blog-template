@@ -57,6 +57,8 @@ const config = {
   pageNotFoundBtn: "Quay về trang chủ",
   pageNotFoundContent:
     "Rất tiếc, trang bạn đang tìm kiếm không tồn tại hoặc liên kết đã bị thay thế.",
+  // User for directory
+  pathPrefixDirectory: "",
   // Use for tag
   pathPrefixTag: "/tag", // Prefix path for tags
   tagHeader: "Chủ đề", // use in header of tag-template page

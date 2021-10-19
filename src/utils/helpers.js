@@ -17,6 +17,9 @@ export const getTagPath = (tag) => `${config.pathPrefixTag}/${slugify(tag)}`;
 export const getCategoryPath = (category) =>
   `${config.pathPrefixCategory}/${slugify(category)}`;
 
+export const getDirectoryPath = (directory) =>
+  `${config.pathPrefixDirectory}/${slugify(directory)}`;
+
 export const getPostList = (postEdges) =>
   postEdges.map((postEdge) => ({
     path: postEdge.node.fields.slug,
