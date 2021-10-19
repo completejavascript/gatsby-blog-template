@@ -234,7 +234,6 @@ const config = {
     },
   ],
   footerLinks: [
-    { label: "Trang chủ", url: "/" },
     { label: "Giới thiệu", url: "/gioi-thieu" },
     { label: "Liên hệ", url: "/lien-he" },
     { label: "Điều khoản sử dụng", url: "/dieu-khoan-su-dung" },
@@ -242,6 +241,10 @@ const config = {
     { label: "Sitemap", url: "https://completejavascript.com/sitemap.xml" },
     { label: "Blog", url: "/blog" },
     { label: "Freebie", url: "/freebie" },
+    { label: "JavaScript", url: "/javascript" },
+    { label: "React", url: "/react" },
+    { label: "Cuộc sống IT", url: "/cuoc-song-it" },
+    { label: "Thủ thuật IT", url: "/thu-thuat-it" },
   ],
   networkLinks: [
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
