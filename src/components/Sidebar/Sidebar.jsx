@@ -28,8 +28,6 @@ const Sidebar = ({
         </div>
       )}
 
-      <WidgetSearch />
-
       {latestPostEdges && latestPostEdges.length > 0 && (
         <WidgetLatestPosts
           postEdges={latestPostEdges}
