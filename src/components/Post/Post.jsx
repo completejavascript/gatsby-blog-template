@@ -55,16 +55,18 @@ const Post = ({
 
       {(!!post.directory || post.tags?.length > 0) && (
         <>
-          <PostDirectory
-            directory={post.directory}
-            extraClass="block padding-top"
-            iconColor="#595959"
-          />
-          <PostTags
-            tags={post.tags}
-            extraClass="block padding-top-half padding-bottom"
-            iconColor="#595959"
-          />
+          <div className="padding-top padding-bottom">
+            <PostDirectory
+              directory={post.directory}
+              extraClass="block"
+              iconColor="#595959"
+            />
+            <PostTags
+              tags={post.tags}
+              extraClass="block padding-top-half"
+              iconColor="#595959"
+            />
+          </div>
           <PostDivider />
         </>
       )}
