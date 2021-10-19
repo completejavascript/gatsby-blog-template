@@ -26,14 +26,14 @@ const PostTemplate = ({ data, pageContext }) => {
 
   // Get the 5 random related posts
   const uniqueRelatedPosts = {};
-  (data.relatedCategories.edges || [])
+  (data.relatedCategories?.edges || [])
     .filter((item) => item.node.fields.slug !== postNode.fields.slug)
     .forEach((item) => {
       if (!uniqueRelatedPosts[item.node.fields.slug]) {
         uniqueRelatedPosts[item.node.fields.slug] = item;
       }
     });
-  (data.relatedTags.edges || [])
+  (data.relatedTags?.edges || [])
     .filter((item) => item.node.fields.slug !== postNode.fields.slug)
     .forEach((item) => {
       if (!uniqueRelatedPosts[item.node.fields.slug]) {
