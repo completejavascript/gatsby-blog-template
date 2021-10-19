@@ -19,6 +19,7 @@ const config = {
   numberLatestRelatedPost: 4,
   postsPerPage: 12,
   // Use for post
+  txtShare: "Chia sẻ: ",
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
   /** DEPRECATED: not use dateFormat with moment.js anymore, just use default toLocaleDateString() */
   dateFormat: "DD/MM/YYYY", // Date format for display.
