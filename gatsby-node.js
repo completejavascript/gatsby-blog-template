@@ -65,6 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 slug
               }
               frontmatter {
+                directory
                 template
                 title
                 tags
@@ -135,30 +136,48 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   });
 
-  // Create post page
-  postEdges.forEach((edge, index) => {
-    const nextID = index + 1 < postEdges.length ? index + 1 : 0;
-    const prevID = index - 1 >= 0 ? index - 1 : postEdges.length - 1;
-    const nextEdge = postEdges[nextID];
-    const prevEdge = postEdges[prevID];
+  // Map posts by directory
+  const mapPostsByDirectory = {};
+  postEdges.forEach((edge) => {
+    const directory = edge?.node?.frontmatter?.directory;
+    if (directory) {
+      if (!mapPostsByDirectory[directory]) {
+        mapPostsByDirectory[directory] = [];
+      }
 
-    createPage({
-      path: edge.node.fields.slug,
-      component: postPageTemplate,
-      context: {
-        slug: edge.node.fields.slug,
-        template: edge.node.frontmatter.template,
-        tags: edge.node.frontmatter.tags || [],
-        nextTitle: nextEdge.node.frontmatter.title,
-        nextSlug: nextEdge.node.fields.slug,
-        prevTitle: prevEdge.node.frontmatter.title,
-        prevSlug: prevEdge.node.fields.slug,
-        tagList,
-        latestPostEdges,
-        latestFreebieEdges,
-      },
-    });
+      mapPostsByDirectory[directory].push(edge);
+    }
   });
+
+  // Create post by directory to be sure next/prev posts are same directory
+  for (let directory in mapPostsByDirectory) {
+    const postEdges = mapPostsByDirectory[directory];
+
+    // Create post page
+    postEdges.forEach((edge, index) => {
+      const nextID = index + 1 < postEdges.length ? index + 1 : 0;
+      const prevID = index - 1 >= 0 ? index - 1 : postEdges.length - 1;
+      const nextEdge = postEdges[nextID];
+      const prevEdge = postEdges[prevID];
+
+      createPage({
+        path: edge.node.fields.slug,
+        component: postPageTemplate,
+        context: {
+          slug: edge.node.fields.slug,
+          template: edge.node.frontmatter.template,
+          tags: edge.node.frontmatter.tags || [],
+          nextTitle: nextEdge.node.frontmatter.title,
+          nextSlug: nextEdge.node.fields.slug,
+          prevTitle: prevEdge.node.frontmatter.title,
+          prevSlug: prevEdge.node.fields.slug,
+          tagList,
+          latestPostEdges,
+          latestFreebieEdges,
+        },
+      });
+    });
+  }
 
   // Create freebie page
   freebieEdges.forEach((edge, index) => {
