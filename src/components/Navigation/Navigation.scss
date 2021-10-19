@@ -1,7 +1,3 @@
-$primary-text-color: #222;
-$menu-item-color: rgba(0, 0, 0, 0.6);
-$menu-item-font-weight: 500;
-
 .navigation-container {
   --nav-box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0, 0, 0, 0.1);
   --nav-height: 64px;
@@ -21,27 +17,42 @@ $menu-item-font-weight: 500;
     height: var(--nav-height);
     .brand {
       a {
-        color: $primary-text-color;
+        color: #212121;
       }
       .image {
         width: auto;
         height: 32px;
       }
     }
+    .navlinks-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-weight: 400;
+        font-size: 2rem;
+        padding: 1.5rem 1rem;
+        cursor: pointer;
+        color: #505050;
+        &:hover {
+          color: #707070;
+        }
+      }
+    }
     .nav-links {
       display: none;
       .item {
-        color: $menu-item-color;
-        font-weight: $menu-item-font-weight;
+        color: #303030;
+        font-weight: 500;
         &:hover,
         &.active {
-          color: $primary-text-color;
+          color: #707070;
         }
       }
     }
     .navbars {
       display: block;
-      color: $primary-text-color;
+      color: #303030;
       margin-right: -1.5rem;
     }
   }
@@ -49,13 +60,26 @@ $menu-item-font-weight: 500;
     .nav-links {
       .item {
         display: block;
-        color: $menu-item-color;
-        font-weight: $menu-item-font-weight;
+        color: #303030;
+        font-weight: 500;
         &:hover,
         &.active {
-          color: $primary-text-color;
+          color: #707070;
         }
       }
+    }
+  }
+  .form-search {
+    background-color: white;
+    padding: 1rem 1.5rem 2rem;
+    text-align: right;
+    box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    .input-search {
+      max-width: 100%;
+    }
+    &.desktop {
+      display: none;
     }
   }
 }
@@ -63,6 +87,12 @@ $menu-item-font-weight: 500;
 @media (min-width: 800px) {
   .navigation-container {
     .navigation-main {
+      .navlinks-wrapper {
+        i {
+          margin-right: 10px;
+          padding: 1.5rem 0rem 1.5rem 2rem;
+        }
+      }
       .nav-links {
         display: unset;
       }
@@ -72,6 +102,15 @@ $menu-item-font-weight: 500;
     }
     .navigation-dropdown {
       display: none;
+    }
+    .form-search {
+      display: none;
+      box-shadow: none;
+      padding: 0;
+      width: 350px;
+      &.desktop {
+        display: unset;
+      }
     }
   }
 }
