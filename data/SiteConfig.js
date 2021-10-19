@@ -238,7 +238,6 @@ const config = {
     { label: "Liên hệ", url: "/lien-he" },
     { label: "Điều khoản sử dụng", url: "/dieu-khoan-su-dung" },
     { label: "Chính sách bảo mật", url: "/chinh-sach-bao-mat" },
-    { label: "Sitemap", url: "https://completejavascript.com/sitemap.xml" },
     { label: "Blog", url: "/blog" },
     { label: "Freebie", url: "/freebie" },
     { label: "JavaScript", url: "/javascript" },
