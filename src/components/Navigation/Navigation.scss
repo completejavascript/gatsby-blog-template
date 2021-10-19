@@ -14,7 +14,7 @@ $menu-item-font-weight: 500;
     left: 0;
     width: 100%;
   }
-  &:not(.hideOnScroll) {
+  &:not(.adaptiveBoxShadow) {
     box-shadow: var(--nav-box-shadow);
   }
   .navigation-main {

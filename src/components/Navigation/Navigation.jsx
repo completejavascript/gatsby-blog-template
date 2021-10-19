@@ -12,6 +12,8 @@ class Navigation extends Component {
   rootRef = React.createRef();
 
   handleClick = () => {
+    if (!this.rootRef.current) return;
+
     if (this.state.openDropdown == false) {
       this.rootRef.current.style.boxShadow = this.navBoxShadow;
     }
@@ -22,11 +24,16 @@ class Navigation extends Component {
   };
 
   handleScroll = () => {
+    if (!this.rootRef.current) return;
+
     const currentScrollPos = window.pageYOffset;
-    if (this.prevScrollpos > currentScrollPos) {
+
+    if (this.prevScrollpos >= currentScrollPos) {
       this.rootRef.current.style.top = "0";
       this.rootRef.current.style.boxShadow =
-        window.pageYOffset === 0 ? "none" : this.navBoxShadow;
+        window.pageYOffset === 0 && this.props.adaptiveBoxShadow
+          ? "none"
+          : this.navBoxShadow;
     } else {
       this.rootRef.current.style.top = `-${this.navHeight}`;
       if (this.state.openDropdown) {
@@ -35,10 +42,13 @@ class Navigation extends Component {
         }));
       }
     }
+
     this.prevScrollpos = currentScrollPos;
   };
 
   componentDidMount() {
+    if (!this.rootRef.current) return;
+
     this.prevScrollpos = window.pageYOffset;
 
     const computedStyle = getComputedStyle(this.rootRef.current);
@@ -59,9 +69,13 @@ class Navigation extends Component {
   }
 
   render() {
-    const { brand, title, links, hideOnScroll } = this.props;
+    const { brand, title, links, hideOnScroll, adaptiveBoxShadow } = this.props;
     const { openDropdown } = this.state;
-    const extraClass = hideOnScroll ? "hideOnScroll" : "";
+
+    let extraClass = hideOnScroll ? "hideOnScroll" : "";
+    if (adaptiveBoxShadow) {
+      extraClass += " adaptiveBoxShadow";
+    }
 
     return (
       <nav

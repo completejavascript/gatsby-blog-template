@@ -9,7 +9,12 @@ import "shiba-css/docs/css/shiba.min.css";
 import "../../content/styles/customize.scss";
 import "../fonts/font.css";
 
-const MainLayout = ({ children, hasFooter = true }) => (
+const MainLayout = ({
+  children,
+  hasFooter = true,
+  hideOnScroll = true,
+  adaptiveBoxShadow = false,
+}) => (
   <div>
     <Helmet htmlAttributes={{ lang: siteConfig.siteLang }}>
       <meta name="description" content={siteConfig.siteDescription} />
@@ -19,6 +24,8 @@ const MainLayout = ({ children, hasFooter = true }) => (
       brand={brand}
       title={siteConfig.navTitle}
       links={siteConfig.navLinks}
+      hideOnScroll={hideOnScroll}
+      adaptiveBoxShadow={adaptiveBoxShadow}
     />
     {children}
     {hasFooter && <Footer2 />}

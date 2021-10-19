@@ -1,40 +1,16 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 
-import Navigation from "../components/Navigation/Navigation";
-import Footer2 from "../components/Footer2/Footer2";
-import SEO from "../components/SEO/SEO";
 import MacWindow from "../components/MacWindow/MacWindow";
 import AutoLink from "../components/AutoLink/AutoLink";
 import Thumbnail from "../components/PostListing/Thumbnail";
 import AskAnswerAnimation from "../components/MacWindow/AskAnswerAnimation";
 import TipTrickWindow from "../components/MacWindow/TipTrickWindow";
+import MainLayout from "../layout/index";
 
 import { getPostList, getTagPath } from "../utils/helpers";
 import config from "../../data/SiteConfig";
-import brand from "../../content/images/brand.png";
-import "shiba-css/docs/css/shiba.min.css";
 import "./index.scss";
-import "../fonts/font.css";
-
-const IndexLayout = ({ children }) => (
-  <>
-    <Helmet htmlAttributes={{ lang: config.siteLang }} title={config.siteTitle}>
-      <meta name="description" content={config.siteDescription} />
-      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    </Helmet>
-    <SEO />
-    <Navigation
-      brand={brand}
-      title={config.navTitle}
-      links={config.navLinks}
-      hideOnScroll
-    />
-    {children}
-    <Footer2 />
-  </>
-);
 
 const WelcomeSection = () => (
   <section className="welcome-section background-color-white">
@@ -255,7 +231,7 @@ function Index({ data }) {
   const freebieList = getPostList(freebieEdges);
 
   return (
-    <IndexLayout>
+    <MainLayout hasFooter={true} hideOnScroll={true} adaptiveBoxShadow={true}>
       <main className="index-container background-color-white">
         <WelcomeSection />
         <LatestPostsSection postList={postList} />
@@ -263,7 +239,7 @@ function Index({ data }) {
         <CommunitySection />
         <ServiceSection />
       </main>
-    </IndexLayout>
+    </MainLayout>
   );
 }
 
