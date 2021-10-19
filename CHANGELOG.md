@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.2](https://github.com/completejavascript/completejavascript.com/compare/v1.6.1...v1.6.2) (2021-10-19)
+
+
+### Bug Fixes
+
+* issue undefined after deploy since cached ([2c6ebd1](https://github.com/completejavascript/completejavascript.com/commit/2c6ebd1dced8117b9a5153fabf4c9a927757298e))
+
 ### [1.6.1](https://github.com/completejavascript/completejavascript.com/compare/v1.6.0...v1.6.1) (2021-10-17)
 
 
