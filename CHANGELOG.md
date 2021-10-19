@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/completejavascript/completejavascript.com/compare/v1.6.2...v1.7.0) (2021-10-19)
+
+
+### Features
+
+* add directory for cuoc-song-it and thu-thuat-it ([f068c6d](https://github.com/completejavascript/completejavascript.com/commit/f068c6da30674ab47482fdbdb4ee3046b300ef27))
+* add post share in post's bottom ([43f0ae2](https://github.com/completejavascript/completejavascript.com/commit/43f0ae2819c17f4c4a97090b9269fc262d0dc133))
+* add postDirectory ([90e3f9e](https://github.com/completejavascript/completejavascript.com/commit/90e3f9ec9ab7530450ef2cc91266e62b72dbec27))
+* add search icon to navigation ([b1c9b87](https://github.com/completejavascript/completejavascript.com/commit/b1c9b87bd62355b205f2e289fcc70c013f8456e8))
+* apply auto hide navigation on scroll with other pages ([aee01ed](https://github.com/completejavascript/completejavascript.com/commit/aee01ed75d3b1956f47f7a87e75e89739bd57c61))
+* next/prev with same directory ([63ec4ad](https://github.com/completejavascript/completejavascript.com/commit/63ec4ad1e7c35132e68533c4283442b7b00e7b2a))
+* remove widgetSearch from sidebar ([d179f2f](https://github.com/completejavascript/completejavascript.com/commit/d179f2fa0191002f1b84815211db691358d7bfee))
+* replace frontmatter categories by frontmatter directory ([895962a](https://github.com/completejavascript/completejavascript.com/commit/895962ae7d94f3dfdca574115417e988f878cb21))
+
+
+### Bug Fixes
+
+* fixed size for navigation brand image ([6540cd1](https://github.com/completejavascript/completejavascript.com/commit/6540cd19f6501cdee230afcc6de24690ecf3a782))
+* remove categories in grapql query and all related ([bf1169f](https://github.com/completejavascript/completejavascript.com/commit/bf1169fe3ef538301c643c8060380fca4b447c2b))
+* remove sitemap.xml in footer ([409ddf7](https://github.com/completejavascript/completejavascript.com/commit/409ddf758646d07f0b8932d2c2858f235dd9454f))
+* remove some not used configs ([8158348](https://github.com/completejavascript/completejavascript.com/commit/8158348c06a2b4b18bcbd53e3a7be9817526b4c2))
+* remove wiki url in bottom links ([c3a5105](https://github.com/completejavascript/completejavascript.com/commit/c3a51055989d3b93df6d637808a161f5e7923268))
+
 ### [1.6.2](https://github.com/completejavascript/completejavascript.com/compare/v1.6.1...v1.6.2) (2021-10-19)
 
 
