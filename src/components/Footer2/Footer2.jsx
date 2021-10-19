@@ -71,7 +71,7 @@ function FooterSiteInfo() {
   return (
     <div className="site-info">
       <div className="flex">
-        <NavBrand brand={brand} title="" />
+        <NavBrand brand={brand} title="" size="48px" />
       </div>
 
       <p className="content">
