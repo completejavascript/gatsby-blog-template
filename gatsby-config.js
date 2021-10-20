@@ -75,7 +75,12 @@ module.exports = {
               height: 500,
             },
           },
-          "gatsby-remark-prismjs",
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              noInlineHighlight: true,
+            },
+          },
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-autolink-headers",
         ],
