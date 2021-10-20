@@ -19,6 +19,7 @@ const MainLayout = ({
     <Helmet htmlAttributes={{ lang: siteConfig.siteLang }}>
       <meta name="description" content={siteConfig.siteDescription} />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+      <link rel="canonical" href={siteConfig.siteUrl} />
     </Helmet>
     <Navigation
       brand={brand}
