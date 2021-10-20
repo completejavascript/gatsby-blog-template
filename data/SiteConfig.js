@@ -191,10 +191,10 @@ const config = {
   // Use for navigation
   navTitle: "Complete JavaScript",
   navLinks: [
-    { label: "Blog", url: "/blog" },
-    { label: "Freebie", url: "/freebie" },
     { label: "JavaScript", url: "/javascript" },
     { label: "React", url: "/react" },
+    { label: "Freebie", url: "/freebie" },
+    { label: "Blog", url: "/blog" },
   ],
   // Use for footer
   socialLinks: [
