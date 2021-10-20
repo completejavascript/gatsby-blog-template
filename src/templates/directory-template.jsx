@@ -12,7 +12,7 @@ import AdSense from "react-adsense";
 const DirectoryTemplate = ({ data, pageContext }) => {
   const { slug } = pageContext;
   const postNode = data.markdownRemark;
-  const title = postNode.frontmatter.title;
+  const title = postNode?.frontmatter?.title;
   const content = <Page postNode={postNode} slug={slug} />;
 
   return (
@@ -25,8 +25,8 @@ const DirectoryTemplate = ({ data, pageContext }) => {
 
       <main className="directory-container">
         <div className="container">
-          {config.hasAdsense && config.adsenseUnits.postTop && (
-            <AdSense.Google {...config.adsenseUnits.postTop} />
+          {config.hasAdsense && config.adsenseUnits?.postTop && (
+            <AdSense.Google {...config.adsenseUnits?.postTop} />
           )}
         </div>
 
@@ -35,9 +35,9 @@ const DirectoryTemplate = ({ data, pageContext }) => {
         </div>
 
         <div className="container">
-          {config.hasAdsense && config.adsenseUnits.postBottom && (
+          {config.hasAdsense && config.adsenseUnits?.postBottom && (
             <>
-              <AdSense.Google {...config.adsenseUnits.postBottom} />
+              <AdSense.Google {...config.adsenseUnits?.postBottom} />
               <GithubComment />
             </>
           )}

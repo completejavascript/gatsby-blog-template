@@ -42,8 +42,8 @@ const Post = ({
       </div>
 
       <PostDivider />
-      {config.hasAdsense && config.adsenseUnits.postTop && (
-        <AdSense.Google {...config.adsenseUnits.postTop} />
+      {config.hasAdsense && config.adsenseUnits?.postTop && (
+        <AdSense.Google {...config.adsenseUnits?.postTop} />
       )}
 
       <div
@@ -51,8 +51,8 @@ const Post = ({
         dangerouslySetInnerHTML={{ __html: postNode.html }}
       />
 
-      {config.hasAdsense && config.adsenseUnits.postBottom && (
-        <AdSense.Google {...config.adsenseUnits.postBottom} />
+      {config.hasAdsense && config.adsenseUnits?.postBottom && (
+        <AdSense.Google {...config.adsenseUnits?.postBottom} />
       )}
       <PostDivider />
 
@@ -96,8 +96,8 @@ const Post = ({
       </div>
       <PostDivider />
 
-      {config.hasAdsense && config.adsenseUnits.matchedPostBottom && (
-        <AdSense.Google {...config.adsenseUnits.matchedPostBottom} />
+      {config.hasAdsense && config.adsenseUnits?.matchedPostBottom && (
+        <AdSense.Google {...config.adsenseUnits?.matchedPostBottom} />
       )}
 
       <GithubComment />

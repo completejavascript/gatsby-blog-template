@@ -20,7 +20,7 @@ const TagTemplate = ({ data, pageContext }) => {
     totalPages,
   } = pageContext;
 
-  const postEdges = data.allMarkdownRemark.edges;
+  const postEdges = data.allMarkdownRemark?.edges || [];
   const postList = getPostList(postEdges);
 
   const content = (

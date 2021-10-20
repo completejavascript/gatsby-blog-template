@@ -12,7 +12,7 @@ import config from "../../data/SiteConfig";
 const PageTemplate = ({ data, pageContext }) => {
   const { slug, tagList, latestPostEdges, latestFreebieEdges } = pageContext;
   const postNode = data.markdownRemark;
-  const title = postNode.frontmatter.title;
+  const title = postNode?.frontmatter?.title;
   const content = <Page postNode={postNode} slug={slug} />;
   const sidebar = (
     <Sidebar

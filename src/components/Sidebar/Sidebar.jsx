@@ -1,9 +1,7 @@
 import React from "react";
-import WidgetCategory from "./WidgetCategory";
 import WidgetTag from "./WidgetTag";
 import WidgetLatestPosts from "./WidgetLatestPosts";
 import WidgetLinks from "./WidgetLinks";
-import WidgetSearch from "./WidgetSearch";
 import config from "../../../data/SiteConfig";
 import AdSense from "react-adsense";
 import "./Sidebar.scss";
@@ -22,9 +20,9 @@ const Sidebar = ({
         config.sidebarSticky ? "height-full" : ""
       }`}
     >
-      {config.hasAdsense && config.adsenseUnits.sidebarTop && (
+      {config.hasAdsense && config.adsenseUnits?.sidebarTop && (
         <div className="width-full flex justify-content-center padding-top">
-          <AdSense.Google {...config.adsenseUnits.sidebarTop} />
+          <AdSense.Google {...config.adsenseUnits?.sidebarTop} />
         </div>
       )}
 
@@ -42,9 +40,9 @@ const Sidebar = ({
         />
       )}
 
-      {!isSimple && config.hasAdsense && config.adsenseUnits.sidebarMiddle && (
+      {!isSimple && config.hasAdsense && config.adsenseUnits?.sidebarMiddle && (
         <div className="width-full flex justify-content-center padding-top">
-          <AdSense.Google {...config.adsenseUnits.sidebarMiddle} />
+          <AdSense.Google {...config.adsenseUnits?.sidebarMiddle} />
         </div>
       )}
 
@@ -55,7 +53,7 @@ const Sidebar = ({
       {!isSimple && links && links.length > 0 && <WidgetLinks links={links} />}
 
       {((latestRelatedEdges && latestRelatedEdges.length > 0) ||
-        (config.hasAdsense && config.adsenseUnits.sidebarBottom)) && (
+        (config.hasAdsense && config.adsenseUnits?.sidebarBottom)) && (
         <div className="position-sticky top-zero">
           {latestRelatedEdges && latestRelatedEdges.length > 0 && (
             <WidgetLatestPosts
@@ -64,9 +62,9 @@ const Sidebar = ({
             />
           )}
 
-          {config.hasAdsense && config.adsenseUnits.sidebarBottom && (
+          {config.hasAdsense && config.adsenseUnits?.sidebarBottom && (
             <div className="padding-top padding-bottom">
-              <AdSense.Google {...config.adsenseUnits.sidebarBottom} />
+              <AdSense.Google {...config.adsenseUnits?.sidebarBottom} />
             </div>
           )}
         </div>

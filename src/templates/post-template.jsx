@@ -26,10 +26,10 @@ const PostTemplate = ({ data, pageContext }) => {
   // Get the 5 random related posts
   const uniqueRelatedPosts = {};
   (data.relatedTags?.edges || [])
-    .filter((item) => item.node.fields.slug !== postNode.fields.slug)
+    .filter((item) => item.node?.fields?.slug !== postNode?.fields?.slug)
     .forEach((item) => {
-      if (!uniqueRelatedPosts[item.node.fields.slug]) {
-        uniqueRelatedPosts[item.node.fields.slug] = item;
+      if (!uniqueRelatedPosts[item.node?.fields?.slug]) {
+        uniqueRelatedPosts[item.node?.fields?.slug] = item;
       }
     });
   const latestRelatedEdges = Object.values(uniqueRelatedPosts)
@@ -37,7 +37,7 @@ const PostTemplate = ({ data, pageContext }) => {
     .slice(0, config.numberLatestRelatedPost);
   //
 
-  const title = postNode.frontmatter.title;
+  const title = postNode?.frontmatter?.title;
 
   const content = (
     <Post
