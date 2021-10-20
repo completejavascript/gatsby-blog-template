@@ -53,9 +53,7 @@ class Navigation extends Component {
   handleSearchIconClicked = () => {
     if (!this.rootRef.current) return;
 
-    if (this.state.openSearch == false) {
-      this.rootRef.current.style.boxShadow = "none";
-    } else {
+    if (this.state.openSearch == true) {
       this.rootRef.current.style.boxShadow =
         window.pageYOffset === 0 && this.props.adaptiveBoxShadow
           ? "none"
