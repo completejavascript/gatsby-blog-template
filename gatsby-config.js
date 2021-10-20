@@ -76,6 +76,12 @@ module.exports = {
             },
           },
           {
+            resolve: "gatsby-remark-code-titles",
+            options: {
+              className: "gatsby-remark-code-title",
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               noInlineHighlight: true,

@@ -46,9 +46,7 @@ Tiếp theo, bạn có thể vào trang [tinypng.com](https://tinypng.com) để
 
 ### Code toàn bộ component Lazy Loading Image
 
-**lazy-image.js**
-
-```jsx
+```jsx:title=lazy-image.js
 import React from "react";
 import "./lazy-image.css";
 
@@ -123,9 +121,7 @@ export default class LazyImage extends React.Component {
 }
 ```
 
-**lazy-image.css**
-
-```css
+```css:title=lazy-image.css
 .lazy-image {
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
