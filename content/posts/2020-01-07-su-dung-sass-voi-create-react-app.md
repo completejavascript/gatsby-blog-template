@@ -42,7 +42,7 @@ Bạn có thể xem lại bài viết [tạo và deploy ứng dụng React lên 
 
 Sau khi cài đặt xong, bạn tạo mới React app bằng câu lệnh:
 
-```
+```shell
 npx create-react-app app-name
 ```
 
@@ -58,24 +58,20 @@ Nếu version của bạn đang là 1.x.x thì hãy sửa lại giống mình r�
 
 Tiếp theo, bạn cần cài đặt module [node-sass](https://www.npmjs.com/package/node-sass):
 
-```bash
+```shell
 yarn add node-sass
 ```
 
 Sau khi cài đặt xong, bạn đổi toàn bộ file **.css** thành **.scss** để có thể bắt đầu sử dụng SCSS. Với project mới tạo, bạn có 2 file cần sửa là App.css và index.css. Rồi thay đổi phần import tương ứng trong file App.js và index.js.
 
-```js
-// App.js
-// replace
-import "./App.css";
-// with
-import "./App.scss";
+```diff:title=App.js
+- import "./App.css";
++ import "./App.scss";
+```
 
-// index.js
-// replace
-import "./index.css";
-// with
-import "./index.scss";
+```diff:title=index.js
+- import "./index.css";
++ import "./index.scss";
 ```
 
 Cuối cùng, chạy <code>yarn start</code> để khởi tạo môi trường DEV xem có lỗi gì không nhé. Nếu không có lỗi xảy ra thì nghĩa là bạn có thể sử dụng SASS với create-react-app được rồi.
@@ -102,7 +98,7 @@ body {
 
 Ví dụ tương ứng với Sass - sử dụng dấu cách hoặc tab (thụt lề) để tạo block, xuống dòng để ngắt dòng:
 
-```css
+```scss
 $font-stack:    Helvetica, sans-serif
 $primary-color: #333
 
@@ -115,9 +111,9 @@ Bạn có thể viết bằng cách SCSS hoặc Sass tùy thích. Tuy nhiên, m�
 
 ### Sử dụng SASS cơ bản với App component
 
-Đây là code mặc định của App.js:
+Đây là code mặc định:
 
-```jsx
+```jsx:title=App.js
 function App() {
   return (
     <div className="App">
@@ -140,9 +136,7 @@ function App() {
 }
 ```
 
-Và App.css:
-
-```css
+```css:title=App.css
 .App {
   text-align: center;
 }
@@ -182,9 +176,7 @@ Và App.css:
 
 Tuy nhiên, mình sẽ không sử dụng tiền tố này nữa, nên App.js và App.scss trở thành:
 
-App.js:
-
-```js
+```js:title=App.js
 function App() {
   return (
     <div className="App">
@@ -207,9 +199,7 @@ function App() {
 }
 ```
 
-App.scss:
-
-```scss
+```scss:title=App.scss
 .App {
   text-align: center;
 }
@@ -247,9 +237,7 @@ App.scss:
 
 Đến đây, mọi thứ vẫn hoạt động bình thường. Nhưng việc bỏ tiền tố _App-_ dẫn tới nguy cơ bị xung đột với className của các component khác sau này. Do đó, mình sẽ sử dụng **nesting** của SASS thì đoạn code trên sẽ trở thành:
 
-App.scss:
-
-```scss
+```scss:title=App.scss
 .App {
   text-align: center;
   .header {
@@ -293,9 +281,7 @@ App.scss:
 
 Trong phần trên, mình nhận thấy giá trị màu của class **link** chắc chắn sẽ được sử dụng ở nhiều nơi để đảm bảo tính đồng nhất. Vì vậy, mình sẽ sử dụng variables để khai báo nó, như sau:
 
-App.scss:
-
-```scss
+```scss:title=App.scss
 // Khai báo
 $primaryColor: #61dafb;
 
@@ -342,9 +328,7 @@ Tuy nhiên, vì variable này có thể được sử dụng ở nhiều compone
 
 Đầu tiên mình tạo thư mục **scss** bên trong thự mục **src** để chứa file **variables.scss**. Trong file variables.scss mình sẽ định nghĩa các variable để sử dụng chung cho các file scss khác sau này:
 
-scss/variables.scss:
-
-```scss
+```scss:title=scss/variables.scss
 /**
 * Variables
 */
@@ -355,14 +339,9 @@ $primaryColor: #61dafb;
 
 Sau đó, ở file App.scss mình sửa phần khai báo thành import:
 
-App.scss
-
-```scss
-// replace
-$primaryColor: #61dafb;
-
-// with
-@import "./scss/variables.scss";
+```diff:title=App.scss
+- $primaryColor: #61dafb;
++ @import "./scss/variables.scss";
 ```
 
 Bạn có thể thấy code chạy vẫn bình thường và không có lỗi xảy ra.
