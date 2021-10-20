@@ -5,7 +5,7 @@
 */
 
 :root {
-  --code-primary: #757ff8
+  --code-primary: #7578f8;
   --code-font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --code-font-color: #b3b9c5;
   --code-background-color: #333;
@@ -105,7 +105,7 @@ pre.language-terminal {
 }
 
 code.language-shell::before {
-  content: '$ ';
+  content: "$ ";
   color: var(--comment);
 }
 
@@ -158,10 +158,10 @@ pre.language-terminal::after {
   background-color: #222;
   display: block;
   margin-right: -1rem;
-  margin-left: -1.5rem;
+  margin-left: -1rem;
   padding-right: 1.5rem;
-  padding-left: 1.25rem;
-  border-left: 0.25rem solid var(--code-primary);
+  padding-left: 0.7rem;
+  border-left: 0.35rem solid var(--code-primary);
 }
 
 /* Colors */
