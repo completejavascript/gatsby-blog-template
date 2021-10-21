@@ -156,11 +156,3 @@ let C2F = (C) => ((C * 9) / 5 + 32).toFixed();
 Trên đây là cách giải quyết bài toán Show the Local Weather. Nếu có phần nào mình giải thích chưa rõ, thì bạn có thể đặt câu hỏi ở phần bình luận.
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-wikipedia-viewer), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

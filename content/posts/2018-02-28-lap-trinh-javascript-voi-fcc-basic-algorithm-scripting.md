@@ -401,11 +401,3 @@ Tham khảo:
 Trên đây là tổng hợp các bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp. Theo cá nhân mình thấy thì các bài toán trên khá dễ. Nhưng lại rất hay ở chỗ, nó giúp ta áp dụng được kiến thức lý thuyết. Nếu các bạn có gì thắc mắc, góp ý hay cải tiến các thuật toán trên. Vui lòng để lại bình luận phía dưới nhé.
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

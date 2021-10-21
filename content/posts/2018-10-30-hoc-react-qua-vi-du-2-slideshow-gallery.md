@@ -497,11 +497,3 @@ Mình thấy React hay ở chỗ là mình có thể tách code ra thành các c
 Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
 
 Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

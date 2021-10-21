@@ -170,11 +170,3 @@ Trước khi kết thúc bài viết, mình muốn nhấn mạnh lại là: **�
 Hy vọng bài viết này có thể giúp bạn biết cách gửi email bằng HTML để có thể triển khai trên các website của mình.
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thiet-ke-website-responsive-voi-css-menu), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -173,11 +173,3 @@ Bạn có thể thấy là cách sử dụng TintColor.js rất là đơn giản
 Tuy nhiên, mình rất mong muốn nhận được phản hồi của bạn đọc để có thể cải tiến và hoàn thiện thư viện này. Vì vậy, mình sẽ vui khi nhận được phản hồi của bạn.
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-web-worker-javascript-o-background), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -98,11 +98,3 @@ $("#btn-rm").click(() => {
 Trên đây là cách mình sử dụng Mustache Template với jQuery. Rõ ràng, việc sử dụng kết hợp 2 thư viện JavaScript này giúp code trở nên ngắn gọn và khá rõ ràng. Hy vọng với những hướng dẫn đơn giản trên, bạn có thể biết cách sử dụng Mustache.js.
 
 Xin chào và hẹn gặp lại ở [bài viết tiếp theo](/smooth-scrolling-trang-web-voi-jquery), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

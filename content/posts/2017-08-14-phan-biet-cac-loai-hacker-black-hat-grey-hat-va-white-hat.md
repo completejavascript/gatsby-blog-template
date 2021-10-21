@@ -30,11 +30,3 @@ Một cách tổng quát, hacker được chia ra làm ba loại là: black hat,
 Đây là những người tốt, họ hack vào một hệ thống hay một phần mềm và sau đó thông báo nó cho những người có trách nhiệm về những bugs cần được sửa. Họ giúp đỡ để xây dựng một phần mềm tốt hơn và an toàn hơn. Họ kiếm tiền dưới hình thức là tiền thưởng khi thông báo cho những công ty biết về lỗ hổng bảo mật. Tiền thưởng là khác nhau dựa vào mức độ nghiêm trọng của lỗ hổng, tuy nhiên, nó có thể từ $500 đến $100000.
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -284,11 +284,3 @@ Trên đây là cách tạo dark theme với CSS variable. Và dĩ nhiên, bạn
 Bài này mình chỉ làm một Demo chạy thử nghiệm, nên là không biết những phần mình giải thích phía trên bạn có hiểu hết không? Hy vọng là bạn hiểu được cái ý tưởng chính của nó.
 
 Nếu có phần nào khó hiểu, hy vọng bạn góp ý lại với mình. Còn bây giờ thì xin chào và hẹn gặp lại!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

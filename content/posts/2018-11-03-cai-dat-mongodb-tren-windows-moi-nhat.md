@@ -148,11 +148,3 @@ Còn rất nhiều phương thức khác nữa mà mình không thể kể hết
 Trên đây là cách cài đặt MongoDB trên Windows mới nhất năm 2018. Nếu trong quá trình cài đặt mà bạn gặp lỗi thì có thể hỏi bằng cách để lại bình luận phía dưới.
 
 Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

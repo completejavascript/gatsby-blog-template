@@ -139,11 +139,3 @@ Tuy nhiên, bạn sẽ không thể sử dụng _Link_ component trong file Mark
 Trên đây là một số plugin Gatsby.js hay dùng. Với những plugin này, bạn có thể tạo nên một blog tương đối hoàn chỉnh như mình đã làm với: <del>[Lam Pham Blog](https://phamvanlam.com)</del> và [Ôn luyện thuật toán](https://thuattoan.phamvanlam.com). Nếu có plugin nào chưa hiểu thì bạn có thể hỏi mình bằng cách để lại bình luận phía dưới. Mình sẽ cố gắng giải đáp.
 
 Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

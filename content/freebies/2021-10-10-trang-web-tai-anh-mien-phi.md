@@ -72,11 +72,3 @@ Trên đây là 10 trang web tải ảnh miễn phí chất lượng cao mà b�
 Tuy nhiên, nếu những trang web này không có những hình ảnh mà bạn mong muốn thì bạn thử tham khảo trên [Shutterstock](https://shutterstock.7eer.net/KeX6b7) xem sao. Tuy nhiên, ảnh trên trang web này thường sẽ mất phí nhé!
 
 ![Shutterstock](../images/web-tai-anh-mien-phi-chat-luong-cao-shutterstock.png)
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio : [Lam Pham](http://about.phamvanlam.com/)

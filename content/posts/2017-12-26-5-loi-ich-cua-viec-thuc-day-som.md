@@ -34,11 +34,3 @@ Con người chúng ta khác với nhiều loài thú vật khác (những loài
 Trên đây là 5 lợi ích của việc thức dậy sớm. Không biết bạn đọc có suy nghĩ thế nào về vấn đề này? Có cái nào không đúng, hay thiếu cái gì thì vui lòng chia sẻ bằng cách bình luận phía dưới nhé.
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/nguoi-thanh-cong-day-som-thi-lam-gi), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -117,11 +117,3 @@ Vậy bạn tiếp cận việc học như thế nào? Bạn có bất kì mẹo
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/neu-ban-co-xu-huong-suy-nghi-va-lo-lang-qua-nhieu-day-la-thu-ma-ban-nen-lam), thân ái!
 
 _(Bài viết được dịch từ [Sitepoint.com](https://www.sitepoint.com/mind-tricks-to-learn-javascript-faster/))_
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

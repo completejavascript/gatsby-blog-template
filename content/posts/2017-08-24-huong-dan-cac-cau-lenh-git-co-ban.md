@@ -202,11 +202,3 @@ Câu lệnh Git này dùng để lấy source code từ server về Working Spac
 Trong trường hợp bạn làm việc một mình thì hầu như sẽ chẳng có rắc rối gì xảy ra. Nhưng khi làm việc theo nhóm thì chuyện xung đột và giải quyết xung đột là điều không thể tránh khỏi. Phần này tôi sẽ giới thiệu với các bạn trong một bài viết khác sau.
 
 Bài viết này sẽ dừng lại tại đây, hẹn gặp lại bạn trong [bài viết tiếp theo](/phan-biet-var-va-let-trong-javascript), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -123,11 +123,3 @@ Bạn thấy đó, ở ngoài hàm **test**, myconst chưa được định ngh�
 Trên đây là cách sử dụng hằng số trong ES5 và ES6. Rõ ràng, việc sử dụng ES6 giúp code ngắn gọn hơn rất nhiều. Vì vậy, trong các bài viết tiếp theo mình sẽ tiếp tục giới thiệu với các bạn các đặc điểm hay và nổi bật của ES6.
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-google-analytics-plugin-cho-wordpress), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -184,11 +184,3 @@ Có lẽ, do mình sử dụng React và Gatsby.js là chủ yếu nên việc s
 Còn bạn thì sao? Bạn đã / đang sử dụng dịch vụ hosting nào? Ngoài 10 hosting miễn phí cho web tĩnh được đề cập ở trên, bạn có đề xuất dịch vụ nào nữa không?
 
 Cho mình biết trong phần bình luận phía dưới nhé!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio : [Lam Pham](http://about.phamvanlam.com/)

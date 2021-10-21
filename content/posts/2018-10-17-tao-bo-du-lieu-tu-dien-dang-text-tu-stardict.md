@@ -97,11 +97,3 @@ Trên đây là cách mà mình đã dùng để tạo bộ dữ liệu từ đi
 Nếu có bước nào khó hiểu, bạn có thể đặt câu hỏi trong phần bình luận phía dưới. Mình sẽ cố gắng giải đáp nhé!
 
 Xin chào và hẹn gặp lại!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -316,11 +316,3 @@ Trên đây là những bước cơ bản để tạo và deploy ứng dụng Re
 Tuy nhiên, nếu bạn sử dụng Windows 10 (hoặc cao hơn) thì có thể sẽ có lỗi xảy ra. Nếu bạn chưa thể tìm ra cách khắc phục, có thể để lại câu hỏi dưới phần bình luận, mình sẽ cố gắng tìm cách giải quyết giúp bạn.
 
 Cuối cùng, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/trien-khai-lazy-loading-image-trong-react), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

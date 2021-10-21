@@ -42,11 +42,3 @@ Ví dụ, có một form trên UI, bạn cũng sẽ tạo ra một cái form tư
 Trên đây là hai cách học lập trình mà không có tutorials hay tài liệu của anh John Sonmez, cũng là cách mà tôi đã áp dụng. Nếu bạn biết nhiều cách khác, vui lòng chia sẻ ở phần bình luận phía dưới.
 
 Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -307,11 +307,3 @@ Trên đây là một số điểm giúp bạn phân biệt arrow function và f
 Nếu bạn thấy arrow function khác với function ở điểm nào nữa thì có thể chia sẻ lại với mình và mọi người bằng cách bình luận xuống phía dưới nhé!
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tim-hieu-ki-thuat-method-chaining-co-ban), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

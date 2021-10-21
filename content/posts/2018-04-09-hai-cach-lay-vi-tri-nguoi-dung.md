@@ -137,11 +137,3 @@ Như vậy là mình đã giới thiệu xong với các bạn hai cách để l
   - Có hỗ trợ http, có thể test trên localhost.
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/21-thu-thuat-javascript-huu-ich), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

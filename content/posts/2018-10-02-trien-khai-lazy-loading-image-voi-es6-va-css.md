@@ -376,11 +376,3 @@ Bạn có thể xem code đầy đủ và demo tại đây:
 Trên đây là cách mình triển khai Lazy Loading Image với ES6 và CSS. Nhìn chung, mình thấy cách này không khác nhiều so với cách sử dụng React. Nếu bạn có thắc mắc hay góp ý gì thì có thể hỏi mình bằng cách để lại trong phần bình luận phía dưới.
 
 Còn bây giờ thì xin chào và hẹn gặp lại trong [bài viết tiếp theo](/chuyen-anh-dong-gif-thanh-video), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

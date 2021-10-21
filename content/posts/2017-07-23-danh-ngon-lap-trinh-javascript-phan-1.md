@@ -50,11 +50,3 @@ Câu danh ngôn trên dịch ra là: "JavaScript là thứ ngôn ngữ duy nhấ
 Trên đây là những danh ngôn lập trình của những lập trình viên "huyền thoại": Brendan Eich, Jeff Atwood, Douglas Crockford. Nếu bạn biết danh ngôn nào khác, vui lòng chia sẻ ở phần bình luận phía dưới. Tôi rất vui và cám ơn bạn.
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/phan-biet-coder-programmer-developer-va-software-engineer), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

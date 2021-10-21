@@ -124,11 +124,3 @@ Các tùy chọn chúng ta cung cấp cho tar được mô tả bên dưới:
 Trên đây là một số cách để cài đặt và gỡ một gói phần mềm trên Ubuntu. Nếu bạn có thắc mắc hay góp ý gì, vui lòng để lại dưới phần bình luận.
 
 Xin chào và hẹn gặp lại bạn ở [bài viết sau](/huong-dan-tim-hieu-ffmpeg-co-ban), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

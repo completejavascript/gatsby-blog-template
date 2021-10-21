@@ -151,11 +151,3 @@ Ngược lại, bạn là một lập trình viên có kinh nghiệm và mong mu
 Có nhiều ý kiến khác nhau về việc lựa chọn ngôn ngữ lập trình nên học năm 2017. Riêng tôi thì tôi rất đồng ý với anh John Sonmez. Còn bạn thì nghĩ sao về vấn đề này? Tôi rất mong để biết được suy nghĩ của bạn (mặc dù bây giờ đã là giữa năm 2017 rồi, hehe).
 
 Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/danh-ngon-lap-trinh-javascript-phan-1), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -48,11 +48,3 @@ Trường hợp bạn là lập trình viên, muốn phát triển tự do thì 
 Trên đây là 4 lợi ích to lớn của Tiếng Anh đối với lập trình viên. Và chắc chắn sẽ còn nhiều lợi ích khác nữa. Rất mong bạn đọc chia sẻ ý kiến của mình tại phần bình luận.
 
 Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thuc-day-som-khong-cam-thay-met-moi), thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

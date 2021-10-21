@@ -143,11 +143,3 @@ Trên đây mình đã giới thiệu với bạn 2 cách xử lý bất đồng
 _Bạn đã biết cách xử lý bất đồng bộ song song chưa? Và nếu bạn đã từng làm nó rồi thì cách thực hiện của bạn là gì? Ngoài cách sử dụng Promise.all như trên thì còn cách nào nữa không? Chia sẻ với mình và mọi người trong phần bình luận nhé!_
 
 Xin chào và hẹn gặp lại, thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

@@ -171,11 +171,3 @@ Trong đó, module A sẽ thực hiện **addItem** và kích hoạt sự kiện
 Trên đây là cách triển khai PubSub Pattern và ví dụ đơn giản mô tả cách áp dụng pattern này. Nếu có phần nào mình giải thích chưa được rõ thì các bạn cứ đặt câu hỏi thoải mái nhé.
 
 Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)

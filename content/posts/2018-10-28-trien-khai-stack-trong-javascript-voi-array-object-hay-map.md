@@ -277,11 +277,3 @@ Hy vọng qua bài viết này bạn thu được:
 Ngoài 3 cách triển khai trên thì bạn còn có cách nào khác nữa không. Chia sẻ lại với mình và mọi người nhé!
 
 Xin chào và hẹn gặp lại!
-
-<hr class="border-color-light-grey" />
-
-★ Nếu bạn thấy bài viết này hay thì hãy theo dõi mình trên Facebook để nhận được thông báo khi có bài viết mới nhất nhé:
-
-- Facebook Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-- Facebook Group: [Hỏi đáp JavaScript VN](https://www.facebook.com/groups/HoiDapJavascriptVN)
-- Portfoflio: [Lam Pham](http://about.phamvanlam.com/)
