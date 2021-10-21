@@ -234,17 +234,25 @@ const config = {
       iconClassName: "icon-rss",
     },
   ],
-  footerLinks: [
-    { label: "Giới thiệu", url: "/gioi-thieu" },
-    { label: "Liên hệ", url: "/lien-he" },
-    { label: "Điều khoản sử dụng", url: "/dieu-khoan-su-dung" },
-    { label: "Chính sách bảo mật", url: "/chinh-sach-bao-mat" },
-    { label: "Blog", url: "/blog" },
-    { label: "Freebie", url: "/freebie" },
+  aboutLinks: [
     { label: "JavaScript", url: "/javascript" },
     { label: "React", url: "/react" },
-    { label: "Cuộc sống IT", url: "/cuoc-song-it" },
+    { label: "Freebie", url: "/freebie" },
     { label: "Thủ thuật IT", url: "/thu-thuat-it" },
+    { label: "Cuộc sống IT", url: "/cuoc-song-it" },
+    { label: "Blog", url: "/blog" },
+  ],
+  footerLinks: [
+    { label: "Trang chủ", url: "/" },
+    { label: "Giới thiệu", url: "/gioi-thieu" },
+    { label: "Liên hệ", url: "/lien-he" },
+    { label: "Dịch vụ", url: "/dich-vu" },
+    {
+      label: "Hire me on Upwork",
+      url: "https://www.upwork.com/freelancers/~015218a85e68b18cf6",
+    },
+    { label: "Điều khoản", url: "/dieu-khoan-su-dung" },
+    { label: "Chính sách", url: "/chinh-sach-bao-mat" },
   ],
   networkLinks: [
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
@@ -255,10 +263,6 @@ const config = {
     {
       label: "My Android Apps",
       url: "https://play.google.com/store/apps/developer?id=LamPV",
-    },
-    {
-      label: "Hire me on Upwork",
-      url: "https://www.upwork.com/freelancers/~015218a85e68b18cf6",
     },
     {
       label: "Cộng đồng JavaScript",

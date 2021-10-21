@@ -4,11 +4,12 @@ import NavBrand from "../Navigation/NavBrand";
 import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
 import {
   networkLinks,
-  footerLinks,
+  aboutLinks,
   siteTitle,
   siteUrl,
   projectLinks,
   socialLinks,
+  footerLinks,
 } from "../../../data/SiteConfig";
 import { getCurrentYear } from "../../utils/helpers";
 import "./Footer2.scss";
@@ -30,6 +31,20 @@ function FooterLinks({ header, links, className = "" }) {
 function FooterCopyright() {
   return (
     <footer className="container-full footer">
+      <div className="footer-copyright-links container text-center padding-top-2">
+        {footerLinks &&
+          footerLinks.length > 0 &&
+          footerLinks.map((link) => (
+            <AutoLink
+              key={link.label}
+              to={link.url}
+              className="item margin-left-half margin-right-half  inline-block"
+            >
+              {link.label}
+            </AutoLink>
+          ))}
+      </div>
+
       <div className="footer-copyright container text-center">
         {`© 2017-${getCurrentYear()} `}
         <AutoLink to={siteUrl}>{siteTitle}</AutoLink>
@@ -115,7 +130,7 @@ function Footer2() {
           <FooterLinks
             className="site-links"
             header="About"
-            links={footerLinks}
+            links={aboutLinks}
           />
         </div>
       </div>

@@ -65,12 +65,16 @@
       }
     }
   }
+  .footer-copyright-links {
+    font-size: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
   .footer-copyright {
     background-color: #f7f8f9;
     color: #727272;
     font-size: 1.35rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding: 0.8rem 0 2.5rem;
   }
 }
 
