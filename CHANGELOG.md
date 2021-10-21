@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/completejavascript/completejavascript.com/compare/v1.7.0...v1.8.0) (2021-10-21)
+
+
+### Features
+
+* add gatsby-remark-code-title and add new-moon theme ([ba260dd](https://github.com/completejavascript/completejavascript.com/commit/ba260ddc924f4cf6031a1aac5d9c453c782906b2))
+* create PostFollow component ([59d86ea](https://github.com/completejavascript/completejavascript.com/commit/59d86eaeb425170dc920bed3ea84c87ee6e92d40))
+* move service to other component ([4be14d2](https://github.com/completejavascript/completejavascript.com/commit/4be14d29126883734fd6d1bd3ff9600dec84b19d))
+
+
+### Bug Fixes
+
+* add canonical to header ([9ed1d59](https://github.com/completejavascript/completejavascript.com/commit/9ed1d59d2a4892c8b3273c58c3964aad9e1a41ca))
+* add optional chaining to prevent crash ([6ddf87e](https://github.com/completejavascript/completejavascript.com/commit/6ddf87e6c192bc0e5149f14885588f5f32601b67))
+* apply new syntax for code block ([069ae05](https://github.com/completejavascript/completejavascript.com/commit/069ae05180d26b8da2c72b14542e529c36281402))
+* change order of navigation links ([ac22b46](https://github.com/completejavascript/completejavascript.com/commit/ac22b46ce9612a55641c99a87792d5e0b882a0c2))
+* gatsby-remark-prismjs noInlineHighlight ([d6607f7](https://github.com/completejavascript/completejavascript.com/commit/d6607f759f7d60afe13b9c51091e5365b19b92c8))
+* remove call-to-action follow in each post ([5948445](https://github.com/completejavascript/completejavascript.com/commit/59484457ad3e0c8e1cf476e612b20deab1d98228))
+* update layout for Footer2 ([ee8a583](https://github.com/completejavascript/completejavascript.com/commit/ee8a583625afb21780a999ebf047ffc24a710d74))
+* wrong boxshadow when open/close search on navigation ([c231692](https://github.com/completejavascript/completejavascript.com/commit/c231692b46aa1c25c58783a1a948501c02417827))
+
 ## [1.7.0](https://github.com/completejavascript/completejavascript.com/compare/v1.6.2...v1.7.0) (2021-10-19)
 
 
