@@ -5,6 +5,7 @@ import PostDate from "./PostDate";
 import PostDivider from "./PostDivider";
 import PostSibling from "./PostSibling";
 import PostDirectory from "./PostDirectory";
+import PostFollow from "./PostFollow";
 import AdSense from "react-adsense";
 import GithubComment from "../Comment/GithubComment";
 import { txtShare } from "../../../data/SiteConfig";
@@ -50,6 +51,9 @@ const Post = ({
         className="padding-top padding-bottom"
         dangerouslySetInnerHTML={{ __html: postNode.html }}
       />
+
+      <PostDivider />
+      <PostFollow />
 
       {config.hasAdsense && config.adsenseUnits?.postBottom && (
         <AdSense.Google {...config.adsenseUnits?.postBottom} />
