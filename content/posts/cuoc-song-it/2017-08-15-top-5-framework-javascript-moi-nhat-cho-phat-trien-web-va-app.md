@@ -13,7 +13,7 @@ tags:
 
 Bài viết được dịch từ website [Technotification](https://www.technotification.com/2017/06/best-modern-javascript-frameworks.html) của tác giả [Vicky Singh Rao](https://www.technotification.com/author/vicky) về top 5 Framework JavaScript mới nhất cho phát triển web và app.
 
-Những năm gần đây, sự phổ biến của [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) đã được gia tăng rất nhiều. Có một bằng chứng để chứng tỏ sự thay đổi đó. Vào đầu năm nay, IBM đã công nhận JavaScript là một trong [những ngôn ngữ lập trình tốt nhất](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017) của năm. Họ lập luận rằng bí mật sự thành công của một chương trình là nằm ở cả hai phía client và server được thiết kế tốt và cũng như trang web được tuỳ biến hợp lý. Và có nhiều ưu điểm khi sử dụng các Framework JavaScript là an toàn, hiệu quả cao, chi phí giữa các lợi thế khác.
+Những năm gần đây, sự phổ biến của [JavaScript](/javascript-la-gi) đã được gia tăng rất nhiều. Có một bằng chứng để chứng tỏ sự thay đổi đó. Vào đầu năm nay, IBM đã công nhận JavaScript là một trong [những ngôn ngữ lập trình tốt nhất](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017) của năm. Họ lập luận rằng bí mật sự thành công của một chương trình là nằm ở cả hai phía client và server được thiết kế tốt và cũng như trang web được tuỳ biến hợp lý. Và có nhiều ưu điểm khi sử dụng các Framework JavaScript là an toàn, hiệu quả cao, chi phí giữa các lợi thế khác.
 
 Vào năm 2017, có một vài Framework JavaScript đã được hoàn thành. Do đó, ở bài viết này, mình sẽ giới thiệu tóm tắt với bạn về chúng.
 

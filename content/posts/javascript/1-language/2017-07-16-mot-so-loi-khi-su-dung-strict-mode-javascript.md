@@ -190,7 +190,7 @@ delete x;
 
 ## Đặt tên biến trùng với từ dự trữ
 
-Ngoài từ khoá, [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.
+Ngoài từ khoá, [JavaScript](/javascript-la-gi) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.
 
 Do đó, strict mode nghiêm cấm bạn đặt tên biến số trùng với những từ này. Nếu bạn đặt tên biến trùng với từ dự trữ thì bạn sẽ bị lỗi như sau:
 

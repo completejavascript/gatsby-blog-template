@@ -1,6 +1,7 @@
 # Redirects from what the browser requests to what we serve
 # https://www.netlify.com/docs/redirects/
 
+# pages
 /so-do-trang                                     /sitemap.xml
 /wiki                                            /sitemap.xml
 /privacy-policy                                  /chinh-sach-bao-mat
@@ -22,4 +23,7 @@
 /category/javascript-tutorial                    /javascript
 /category/lap-trinh-javascript-voi-fcc           /tag/fcc
 /category/javascript-design-pattern              /tag/design-pattern
-/category/lap-trinh-va-cuoc-song                 /cuoc-song-it                         
+/category/lap-trinh-va-cuoc-song                 /cuoc-song-it                 
+
+# posts
+/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript  /javascript-la-gi

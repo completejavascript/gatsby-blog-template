@@ -14,7 +14,7 @@ tags:
   - HTML
 ---
 
-Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời.
+Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/javascript-la-gi). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời.
 
 ## DOM là gì?
 

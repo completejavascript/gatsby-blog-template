@@ -19,7 +19,7 @@ Xin chào bạn. Hình như là đã lâu rồi mình chưa viết bài nào v�
 
 ## JavaScript Tint Color là gì?
 
-JavaScript Tint Color là việc sử dụng [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) ([Canvas](https://www.tutorialspoint.com/html5/html5_canvas.htm)) để thay đổi màu sắc của một bức ảnh.
+JavaScript Tint Color là việc sử dụng [JavaScript](/javascript-la-gi) ([Canvas](https://www.tutorialspoint.com/html5/html5_canvas.htm)) để thay đổi màu sắc của một bức ảnh.
 
 ![demo tint color](../images/tint-color-demo.png)
 

@@ -18,7 +18,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 ### Tổng quan về JavaScript
 
-- [JavaScript là gì?](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript)
+- [JavaScript là gì?](/javascript-la-gi)
 
 ### JavaScript cơ bản
 

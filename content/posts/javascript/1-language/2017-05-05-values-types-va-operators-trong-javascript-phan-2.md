@@ -95,7 +95,7 @@ console.log(y); // => Call me "JavaScripter"
 
 Rõ ràng, việc sử dụng kết hợp dấu ngoặc đơn và ngoặc kép giúp cho việc viết string được ngắn gọn hơn và dễ theo dõi hơn.
 
-Sự linh động này trong việc biểu diễn string là rất đặc biệt trong JavaScript mà C/C++ hay Java không có. Một lần nữa, JavaScript lại tỏ ra khá hiệu quả trong vai trò [nâng cao hiệu suất làm việc](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) của lập trình viên.
+Sự linh động này trong việc biểu diễn string là rất đặc biệt trong JavaScript mà C/C++ hay Java không có. Một lần nữa, JavaScript lại tỏ ra khá hiệu quả trong vai trò [nâng cao hiệu suất làm việc](/javascript-la-gi) của lập trình viên.
 
 ### Biểu diễn string dài
 

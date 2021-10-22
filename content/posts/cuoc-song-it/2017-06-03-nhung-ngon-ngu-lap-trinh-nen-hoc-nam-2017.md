@@ -77,7 +77,7 @@ Như đã nói trong phần [giới thiệu](/gioi-thieu), tôi đã từng họ
 
 #### Cuối cùng là JavaScript?
 
-Nếu như bạn muốn lập trình web thì [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) là ngôn ngữ lập trình không thể bỏ qua. Tuy nhiên, bây giờ tôi sẽ không nói nhiều về JavaScript. Bạn cứ đọc tiếp rồi sẽ rõ lí do tại sao. Tiếp theo tôi sẽ nói về những ngôn ngữ lập trình nên học năm 2017 dành cho những lập trình viên đã có kinh nghiệm.
+Nếu như bạn muốn lập trình web thì [JavaScript](/javascript-la-gi) là ngôn ngữ lập trình không thể bỏ qua. Tuy nhiên, bây giờ tôi sẽ không nói nhiều về JavaScript. Bạn cứ đọc tiếp rồi sẽ rõ lí do tại sao. Tiếp theo tôi sẽ nói về những ngôn ngữ lập trình nên học năm 2017 dành cho những lập trình viên đã có kinh nghiệm.
 
 ### Ngôn ngữ lập trình nên học dành cho những lập trình viên có kinh nghiệm
 
@@ -87,7 +87,7 @@ _Ảnh tham khảo tại https://github.com/vigetlabs/javascript-everywhere_
 
 #### JavaScript
 
-[JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) đã có thời gian tưởng chừng như biến mất. Nhưng giờ đây, khi có rất nhiều framework khác nhau được viết dựa trên JavaScript như: NodeJs, AngularJs, ReactJs, React-Native... bạn có thể sử dụng ở front-end, server, desktop, mobile,...
+[JavaScript](/javascript-la-gi) đã có thời gian tưởng chừng như biến mất. Nhưng giờ đây, khi có rất nhiều framework khác nhau được viết dựa trên JavaScript như: NodeJs, AngularJs, ReactJs, React-Native... bạn có thể sử dụng ở front-end, server, desktop, mobile,...
 
 Dĩ nhiên, khi mới làm quen với JavaScript thì bạn sẽ thấy ngôn ngữ lập trình này khá lộn xộn, cú pháp không được chuẩn hoá,... Nhưng khi đã quen rồi thì mọi thứ trở nên rất đơn giản và thậm chí là tiện dụng. Đặc biệt, ECMAScript là một chuẩn hoá của JavaScript - giúp bạn dễ học JavaScript hơn.
 

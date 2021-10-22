@@ -23,7 +23,7 @@ https://codepen.io/completejavascript/pen/baOYpa
 
 ### Các thư viện sử dụng
 
-Ngoài HTML, CSS, [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript), mình sử dụng thêm 2 thư viện khác là: Bootstrap (CSS) và jQuery (js). Để thêm chúng vào project trên codepen, bạn làm như sau:
+Ngoài HTML, CSS, [JavaScript](/javascript-la-gi), mình sử dụng thêm 2 thư viện khác là: Bootstrap (CSS) và jQuery (js). Để thêm chúng vào project trên codepen, bạn làm như sau:
 
 - Bootstrap CSS: **Setting / CSS / Quick-add / Bootstrap 3**
 

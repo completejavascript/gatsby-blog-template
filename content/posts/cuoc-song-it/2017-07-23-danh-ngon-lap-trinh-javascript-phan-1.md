@@ -19,7 +19,7 @@ Bài viết này tôi sẽ giới thiệu với bạn 3 danh ngôn lập trình 
 
 ![Always bet on JavaScript - Complete JavaScript - Completejavascript.com](../images/always-bet-on-javascript-completejavascript.com_.png)
 
-[Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) chính là cha đẻ của ngôn ngữ lập trình [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript). Câu danh ngôn lập trình này dịch ra là "luôn luôn đặt cược vào JavaScript".
+[Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich) chính là cha đẻ của ngôn ngữ lập trình [JavaScript](/javascript-la-gi). Câu danh ngôn lập trình này dịch ra là "luôn luôn đặt cược vào JavaScript".
 
 Câu nói này cho thấy sự tin tưởng tuyệt đối của Brendan Eich vào đứa con đẻ của mình. Ông tin rằng JavaScript sẽ trở thành một trong những [ngôn ngữ lập trình phổ biến và đáng học nhất](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017).
 

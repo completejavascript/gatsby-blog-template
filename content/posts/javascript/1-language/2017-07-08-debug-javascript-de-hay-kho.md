@@ -13,7 +13,7 @@ tags:
   - Strict Mode
 ---
 
-Với mọi ngôn ngữ lập trình, debug là một hoạt động khó và mất nhiều thời gian nhất. Trong đó, debug [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) là khó khăn hơn cả. Tại sao vậy?
+Với mọi ngôn ngữ lập trình, debug là một hoạt động khó và mất nhiều thời gian nhất. Trong đó, debug [JavaScript](/javascript-la-gi) là khó khăn hơn cả. Tại sao vậy?
 
 Chúng ta sẽ cùng nhau tìm hiểu về debug trong JavaScript sau đây.
 

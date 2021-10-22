@@ -9,7 +9,7 @@ slug: values-types-va-operators-trong-javascript-phan-1
 title: "Values, types và operators trong JavaScript - Phần 1"
 ---
 
-Trong ngôn ngữ lập trình nói chung và ngôn ngữ lập trình [JavaScript](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) nói riêng, những thành phần cơ bản, quan trọng cấu thành nên một chương trình là: values, types và operators. Hay trong tiếng việt, chúng ta gọi là: giá trị, kiểu dữ liệu và toán tử. Chúng giống như là những nguyên liệu để làm nên một món ăn. Và để làm nên một món ăn ngon, hoàn chỉnh, chúng ta cần phải hiểu rõ từng thành phần và cách sử dụng nó như thế nào. Vì vậy hôm nay, mình và bạn sẽ cùng tìm hiểu về **values, types** và **operators** trong JavaScript.
+Trong ngôn ngữ lập trình nói chung và ngôn ngữ lập trình [JavaScript](/javascript-la-gi) nói riêng, những thành phần cơ bản, quan trọng cấu thành nên một chương trình là: values, types và operators. Hay trong tiếng việt, chúng ta gọi là: giá trị, kiểu dữ liệu và toán tử. Chúng giống như là những nguyên liệu để làm nên một món ăn. Và để làm nên một món ăn ngon, hoàn chỉnh, chúng ta cần phải hiểu rõ từng thành phần và cách sử dụng nó như thế nào. Vì vậy hôm nay, mình và bạn sẽ cùng tìm hiểu về **values, types** và **operators** trong JavaScript.
 
 ## Values (giá trị)
 
@@ -102,7 +102,7 @@ console.log(w); // => NaN
 
 Trong các ngôn ngữ như C/C++, Java,...những kiểu dữ liệu cơ bản như int, long, float...sẽ không có thuộc tính hay phương thức kèm theo. Bởi chúng nó không phải đối tượng ([object](/javascript-object-last-but-not-least)).
 
-Nhưng JavaScript thì khác, những kiểu dữ liệu cơ bản cũng có thuộc tính và phương thức giống như đối tượng (object). Đó, rõ ràng là JavaScript đã được tối ưu để [nâng cao hiệu suất](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript) của lập trình viên.
+Nhưng JavaScript thì khác, những kiểu dữ liệu cơ bản cũng có thuộc tính và phương thức giống như đối tượng (object). Đó, rõ ràng là JavaScript đã được tối ưu để [nâng cao hiệu suất](/javascript-la-gi) của lập trình viên.
 
 Một số phương thức chính đối với numbers trong JavaScript là:
 

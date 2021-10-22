@@ -31,7 +31,7 @@ In the beginning, JavaScript seems to be cluttered.
 
 But when I learned it carefully and deeply, it would become more easily.
 
-With JavaScript, you can do some font-ends, back-ends, mobile apps, desktop apps,...([more details](/gioi-thieu-tong-quan-ve-ngon-ngu-lap-trinh-javascript))
+With JavaScript, you can do some font-ends, back-ends, mobile apps, desktop apps,...([more details](/javascript-la-gi))
 
 Like Barney Stinson usually said:_ It's gonna be Java - wait for it - script. JavaScript._
 
