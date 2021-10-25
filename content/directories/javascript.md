@@ -6,7 +6,7 @@ slug: "javascript"
 ---
 
 <p class="container">
-Tổng hợp tất cả những kiến thức liên quan đến ngôn ngữ lập trình JavaScript từ cơ bản (biến, kiểu dữ liệu, array, object, hàm,...) đến nâng cao (lập trình hướng đối tượng, design pattern, cách giao tiếp với server...) và cách JavaScript làm việc với trình duyệt, web API,...
+Tổng hợp tất cả những kiến thức liên quan đến ngôn ngữ lập trình JavaScript từ cơ bản (biến, kiểu dữ liệu, array, object, hàm,...) đến nâng cao (lập trình hướng đối tượng, design pattern, cách giao tiếp với server...), cách JavaScript làm việc với trình duyệt, web API và một số ví dụ thực tế...
 </p>
 
 <div class="section-wrapper">
@@ -16,9 +16,10 @@ Tổng hợp tất cả những kiến thức liên quan đến ngôn ngữ lậ
 
 Phần này bao gồm tất cả những thành phần liên quan đến ngôn ngữ lập trình JavaScript như: các kiểu dữ liệu, biến, biểu thức, vòng lặp, hàm, array, object, class,...
 
-### Tổng quan về JavaScript
+### Kiến thức tổng quan
 
 - [JavaScript là gì?](/javascript-la-gi)
+- [IDE là gì?](/ide-la-gi)
 
 ### JavaScript cơ bản
 
