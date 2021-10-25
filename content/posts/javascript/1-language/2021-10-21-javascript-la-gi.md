@@ -116,6 +116,8 @@ Còn rất nhiều ngôn ngữ lập trình khác nữa. Mỗi ngôn ngữ lập
 
 ## Tổng kết
 
+Vậy JavaScript là gì?
+
 - JavaScript là ngôn ngữ lập trình website phổ biến. Mục đích ban đầu của JavaScript là dành cho trình duyệt. Nhưng sau đó, JavaScript có thể được dùng ở nhiều môi trường khác nhau (chỉ cần có JavaScript engine).
 - JavaScript có thể làm được nhiều thứ trên trình duyệt như: tạo, thay đổi nội dung trang web; tương tác với người dùng qua chuột, bàn phím; tương tác với web server thông qua gọi API.
 - JavaScript cũng bị hạn chế một số thứ trên trình duyệt liên quan đến máy người dùng như: đọc, ghi, thực thi tệp tin; thao tác trực tiếp với Camera/Microphone.
