@@ -20,6 +20,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 - [JavaScript là gì?](/javascript-la-gi)
 - [IDE là gì?](/ide-la-gi)
+- [Dev Tools là gì?](/dev-tools-la-gi)
 
 ### JavaScript cơ bản
 
