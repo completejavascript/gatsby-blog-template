@@ -33,7 +33,7 @@ Giả sử bạn đang định học một Framework mới trên Github. Đầu 
 
 Ý tưởng của cách này, đó là bạn sẽ tạo ra những tính năng nhỏ cho Framework đó. Những tính năng này có thể không hữu ích trong project thực tế. Bạn có thể chỉ cần tạo ra một vài thứ giống với những cái cũ. Nghe có vẻ vô lý, nhưng thực tế là vậy.
 
-Ví dụ, có một form trên UI, bạn cũng sẽ tạo ra một cái form tương tự, sau đó có thể là một vài sự thay đổi nhỏ. Như vậy là bạn đã có một ví dụ về cách tạo form trên UI rồi phải không nào. Cứ tiếp tục [thực hành](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon) như vậy với những tính năng khác, bạn sẽ dần hiểu hết những thứ căn bản trong Framework này.
+Ví dụ, có một form trên UI, bạn cũng sẽ tạo ra một cái form tương tự, sau đó có thể là một vài sự thay đổi nhỏ. Như vậy là bạn đã có một ví dụ về cách tạo form trên UI rồi phải không nào. Cứ tiếp tục [thực hành](/hoc-lap-trinh-javascript-nhanh-hon) như vậy với những tính năng khác, bạn sẽ dần hiểu hết những thứ căn bản trong Framework này.
 
 Ý tưởng này khiến tôi nhớ đến có lần xem một bộ phim võ thuật. Người ta nói rằng: "Để học võ thuật thì đầu tiên phải bắt chước theo những động tác, chiêu thức cơ bản thật tốt. Sau khi đã nắm được cơ bản, dần dần bớt lệ thuộc vào các chiêu thức. Cuối cùng, bạn có thể tự tạo chiêu thức cho riêng mình. Lúc này, bạn đã đạt cảnh giới Vô Chiêu Thắng Hữu Chiêu.
 

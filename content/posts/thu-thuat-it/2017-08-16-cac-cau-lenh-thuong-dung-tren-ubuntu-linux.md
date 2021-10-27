@@ -12,7 +12,7 @@ tags:
   - Ubuntu
 ---
 
-Ubuntu là một trong những phiên bản Linux phổ biến nhất. Vì vậy, hiện tại mình đang sử dụng hệ điều hành này. Theo mình, Ubuntu có những ưu điểm như: nhẹ, ổn định, an toàn, miễn phí và "nhanh". Từ "nhanh" ở đây mình đặt trong ngoặc kép vì nó không dùng để chỉ tốc độ xử lý phần cứng. Mà bởi vì, Ubuntu cung cấp rất nhiều các câu lệnh sử dụng trên Terminal giúp lập trình viên [làm việc nhanh chóng, đơn giản và hiệu quả](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon). Tin mình đi, một khi bạn đã biết sử dụng Ubuntu, bạn sẽ không muốn quay trở lại Windows nữa đâu.
+Ubuntu là một trong những phiên bản Linux phổ biến nhất. Vì vậy, hiện tại mình đang sử dụng hệ điều hành này. Theo mình, Ubuntu có những ưu điểm như: nhẹ, ổn định, an toàn, miễn phí và "nhanh". Từ "nhanh" ở đây mình đặt trong ngoặc kép vì nó không dùng để chỉ tốc độ xử lý phần cứng. Mà bởi vì, Ubuntu cung cấp rất nhiều các câu lệnh sử dụng trên Terminal giúp lập trình viên [làm việc nhanh chóng, đơn giản và hiệu quả](/hoc-lap-trinh-javascript-nhanh-hon). Tin mình đi, một khi bạn đã biết sử dụng Ubuntu, bạn sẽ không muốn quay trở lại Windows nữa đâu.
 
 Dĩ nhiên, với phiên bản Ubuntu Desktop, bạn hoàn toàn có thể sử dụng Ubuntu theo cách mà bạn đang dùng trên Windows - với chuột và bàn phím. Nhưng sẽ là thiếu sót nếu như bạn không biết về những câu lệnh cơ bản, đơn giản mà lại hiệu quả sau đây.
 

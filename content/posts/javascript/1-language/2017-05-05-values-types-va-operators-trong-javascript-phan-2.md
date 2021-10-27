@@ -194,7 +194,7 @@ console.log(z.charAt(10)); // => a
 console.log(z.charCodeAt(10)); // => 97
 ```
 
-Trên đây là một số ví dụ cơ bản về các phương thức với strings. Để hiểu rõ và nhớ những phương thức này lâu hơn thì bạn nên [thực hành nhiều hơn](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon) và thử các trường hợp có thể để hiểu rõ hoạt động của chúng.
+Trên đây là một số ví dụ cơ bản về các phương thức với strings. Để hiểu rõ và nhớ những phương thức này lâu hơn thì bạn nên [thực hành nhiều hơn](/hoc-lap-trinh-javascript-nhanh-hon) và thử các trường hợp có thể để hiểu rõ hoạt động của chúng.
 
 ## Booleans
 

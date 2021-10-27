@@ -33,7 +33,7 @@ Hiện nay, Jeff Atwood cũng đang viết blog tại trang [Coding Horror](http
 
 Câu danh ngôn lập trình trên có thể được dịch là: "Bất kì một ứng dụng nào có thể được viết bằng JavaScript thì cuối cùng nó sẽ được viết bằng JavaScript".
 
-Theo tôi hiểu thì Jeff Atwood muốn đề cập tới vấn đề tốc độ triển khai phần mềm. JavaScript được thiết kế giúp nâng cao [hiệu suất làm việc](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon) của lập trình viên.
+Theo tôi hiểu thì Jeff Atwood muốn đề cập tới vấn đề tốc độ triển khai phần mềm. JavaScript được thiết kế giúp nâng cao [hiệu suất làm việc](/hoc-lap-trinh-javascript-nhanh-hon) của lập trình viên.
 
 ## Douglas Crockford
 

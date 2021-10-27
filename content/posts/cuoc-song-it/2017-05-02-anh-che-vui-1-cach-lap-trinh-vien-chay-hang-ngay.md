@@ -22,7 +22,7 @@ Chạy bộ là một trong những bài tập thể dục rất tốt cho sức
 - Giảm [căng thẳng](/neu-ban-co-xu-huong-suy-nghi-va-lo-lang-qua-nhieu-day-la-thu-ma-ban-nen-lam)
 - Cải thiện trí nhớ ở người cao tuổi
 - Bảo vệ xương
-- [Tăng năng suất làm việc](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon)
+- [Tăng năng suất làm việc](/hoc-lap-trinh-javascript-nhanh-hon)
 - Tiết kiệm tiền bạc và thời gian
 
 ## Chuẩn bị

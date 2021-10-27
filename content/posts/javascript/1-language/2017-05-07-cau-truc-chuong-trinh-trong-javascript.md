@@ -481,7 +481,7 @@ Xem code tại [đây](https://github.com/completejavascript/practical-javascrip
 
 **Chú ý:**
 
-Bạn nên tự [thực hành](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon) để giải quyết bài toán trước khi tham khảo code. Khi đấy bạn sẽ hiểu và nhớ kiến thức lâu hơn.
+Bạn nên tự [thực hành](/hoc-lap-trinh-javascript-nhanh-hon) để giải quyết bài toán trước khi tham khảo code. Khi đấy bạn sẽ hiểu và nhớ kiến thức lâu hơn.
 
 Nếu bạn đã giải quyết được hết những bài toán cơ bản này thì chúc mừng bạn đã nắm được những thành phần cơ bản trong cấu trúc chương trình JavaScript rồi.
 

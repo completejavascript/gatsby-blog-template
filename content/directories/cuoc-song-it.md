@@ -14,7 +14,7 @@ Chia sẻ kiến thức về cuộc sống dân IT, kinh nghiệm học lập tr
 
 ## Kinh nghiệm học lập trình
 
-- [Sáu mẹo đơn giản giúp học lập trình Javascript nhanh hơn](/sau-meo-don-gian-giup-hoc-lap-trinh-javascript-nhanh-hon)
+- [Sáu mẹo đơn giản giúp học lập trình Javascript nhanh hơn](/hoc-lap-trinh-javascript-nhanh-hon)
 
 </section>
 </div>
