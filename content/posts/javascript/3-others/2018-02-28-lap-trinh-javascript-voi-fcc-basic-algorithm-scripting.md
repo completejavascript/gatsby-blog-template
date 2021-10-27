@@ -17,7 +17,7 @@ Trong lập trình nói chung và lập trình JavaScript nói riêng, việc h�
 
 Ngoài ra, khi thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn.
 
-Vì vậy, tiếp theo trong loạt bài [**Lập trình JavaScript với FCC**](/tag/lap-trinh-javascript-voi-fcc), hôm nay, mình sẽ tổng hợp lại những bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp để các bạn tiện theo dõi và có thể tham khảo khi cần.
+Vì vậy, tiếp theo trong loạt bài [**Lập trình JavaScript với FCC**](/tag/fcc), hôm nay, mình sẽ tổng hợp lại những bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp để các bạn tiện theo dõi và có thể tham khảo khi cần.
 
 Tuy nhiên, những bài toán này khá đơn giản nên mình sẽ không giải thích cách làm. Nếu các bạn có thắc mắc hay góp ý thì có thể để lại ở phần bình luận phía dưới.
 

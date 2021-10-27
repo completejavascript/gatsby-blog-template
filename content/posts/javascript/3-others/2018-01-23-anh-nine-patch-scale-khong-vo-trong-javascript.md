@@ -12,7 +12,7 @@ tags:
   - DOM
 ---
 
-Có thể bạn đã từng nghe đến ảnh Vector rồi. Ảnh Vector có một ưu điểm lớn nhất là có thể kéo to, nhỏ tùy ý mà không bị vỡ ảnh. Bên cạnh đó, có một loại ảnh khác cũng có ưu điểm tương tự, chính là ảnh nine-patch (hay 9patch). Vậy ảnh nine-patch là gì? Cách sử dụng ảnh nine-patch trong [JavaScript](/category/javascript-co-ban) như thế nào? Bài viết này sẽ giúp bạn tìm hiểu về xử lý ảnh nine-patch trong JavaScript.
+Có thể bạn đã từng nghe đến ảnh Vector rồi. Ảnh Vector có một ưu điểm lớn nhất là có thể kéo to, nhỏ tùy ý mà không bị vỡ ảnh. Bên cạnh đó, có một loại ảnh khác cũng có ưu điểm tương tự, chính là ảnh nine-patch (hay 9patch). Vậy ảnh nine-patch là gì? Cách sử dụng ảnh nine-patch trong [JavaScript](/javascript) như thế nào? Bài viết này sẽ giúp bạn tìm hiểu về xử lý ảnh nine-patch trong JavaScript.
 
 ## Ảnh nine-patch là gì?
 

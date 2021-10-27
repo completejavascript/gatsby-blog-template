@@ -27,7 +27,7 @@ Bộ icon Flagpack này có trên **250 icon của các nước**, được tố
 
 Đối với designer, bạn có thể chọn tải về phiên bản Figma hoặc Sketch.
 
-Còn đối với lập trình viên (web), dĩ nhiên bạn cũng có thể tải về phiên bản Figma hoặc Sketch rồi xuất ra file ảnh. Hoặc bạn có thể cài đặt trực tiếp vào code (hỗ trợ [React](/tag/react), Vue và Svelte).
+Còn đối với lập trình viên (web), dĩ nhiên bạn cũng có thể tải về phiên bản Figma hoặc Sketch rồi xuất ra file ảnh. Hoặc bạn có thể cài đặt trực tiếp vào code (hỗ trợ [React](/react), Vue và Svelte).
 
 <a  href="https://flagpack.xyz/" class="btn btn-primary margin-bottom">
   Download

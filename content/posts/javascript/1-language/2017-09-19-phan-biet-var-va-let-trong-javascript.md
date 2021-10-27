@@ -17,7 +17,7 @@ Từ trước tới giờ, có thể bạn đã quen dùng **var** để khai b�
 ## Giống nhau
 
 - **Var** và **let** đều là từ khoá - keyword.
-- **Var** và **let** cùng được dùng để khai báo biến trong [JavaScript](/category/javascript-co-ban)
+- **Var** và **let** cùng được dùng để khai báo biến trong [JavaScript](/javascript)
 
 ## Khác nhau
 

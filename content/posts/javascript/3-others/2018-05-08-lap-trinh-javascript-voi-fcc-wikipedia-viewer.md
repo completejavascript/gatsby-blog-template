@@ -24,7 +24,7 @@ Tuy nhiên, trước khi bắt đầu, mình muốn **nhấn mạnh** rằng bà
 
 Do đó, nếu bạn mới bắt đầu học JavaScript thì có thể bạn sẽ không hiểu nhiều chỗ. Lúc này, mình có hai giải pháp dành cho bạn. Đó là:
 
-1. Bạn nên đọc trước series bài viết về [JavaScript cơ bản](/category/javascript-co-ban) và nhớ thực hành thật kỹ, rồi quay lại bài viết này sau.
+1. Bạn nên đọc trước series bài viết về [JavaScript cơ bản](/javascript) và nhớ thực hành thật kỹ, rồi quay lại bài viết này sau.
 2. Bạn có thể tiếp tục đọc bài viết này và đặt câu hỏi cho mình trong phần bình luận phía dưới về những phần chưa hiểu rõ.
 
 Nếu đọc đến đây, nghĩa là bạn đã có kiến thức về JavaScript rồi phải không! Vậy thì bắt đầu nhé!

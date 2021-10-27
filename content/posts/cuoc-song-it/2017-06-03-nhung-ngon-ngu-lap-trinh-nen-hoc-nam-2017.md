@@ -93,7 +93,7 @@ Dĩ nhiên, khi mới làm quen với JavaScript thì bạn sẽ thấy ngôn ng
 
 Có thể bạn sẽ lựa chọn học một framework nào đó như NodeJs - vì bạn chỉ muốn làm việc với server thôi. Hay bạn sẽ học React-Native - vì bạn chỉ muốn viết ứng dụng cho điện thoại... Bạn hoàn toàn có thể. Tuy nhiên, theo tôi, bạn nên dành thời gian học JavaScript thuần trước. Khi bạn đã nắm vững được những [kiến thức cơ bản](/values-types-va-operators-trong-javascript-phan-1) rồi thì việc học các framework là chuyện "dễ như ăn kẹo".
 
-Bạn có thể tham khảo JavaScript cơ bản tại [đây](/category/javascript-co-ban).
+Bạn có thể tham khảo JavaScript cơ bản tại [đây](/javascript).
 
 #### Python
 

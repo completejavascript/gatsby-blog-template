@@ -84,7 +84,7 @@ Chỉ đơn giản là nó lấy data từ **this.props** và **this.state** đ�
 
 #### Phương thức componentDidMount()
 
-Phương thức *componentDidMount()* được gọi **một lần duy nhất** ngay sau khi Component được render xong. Và nếu để so sánh với [JavaScript thuần](/category/javascript-co-ban) thì mình thấy phương thức này khá giống với việc bạn đăng ký sự kiện [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
+Phương thức *componentDidMount()* được gọi **một lần duy nhất** ngay sau khi Component được render xong. Và nếu để so sánh với [JavaScript thuần](/javascript) thì mình thấy phương thức này khá giống với việc bạn đăng ký sự kiện [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
 
 Chính vì tính chỉ được gọi **một lần duy nhất** nên bên trong phương thức này, mình có thể:
 

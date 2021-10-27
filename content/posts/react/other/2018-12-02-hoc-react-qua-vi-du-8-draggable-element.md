@@ -26,7 +26,7 @@ Như bạn thấy đó, Draggable Element nghĩa là **phần tử có thể k
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/hoc-react-qua-vi-du) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/react-component) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 

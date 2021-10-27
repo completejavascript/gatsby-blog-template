@@ -9,7 +9,7 @@ slug: react-render-single-dom-element
 title: "Tại sao React yêu cầu render single DOM element?"
 ---
 
-Khi viết code [React](/tag/react), chắc hẳn đã ít nhất một lần bạn gặp phải lỗi liên quan đến việc React yêu cầu render single [DOM](/co-ban-ve-dom-javascript) element. Lúc này, cách giải quyết đơn giản nhất là bạn đóng gói các element bởi một cặp thẻ **div** bên ngoài.
+Khi viết code [React](/react), chắc hẳn đã ít nhất một lần bạn gặp phải lỗi liên quan đến việc React yêu cầu render single [DOM](/co-ban-ve-dom-javascript) element. Lúc này, cách giải quyết đơn giản nhất là bạn đóng gói các element bởi một cặp thẻ **div** bên ngoài.
 
 Tuy nhiên, đã bao giờ bạn tự hỏi lý do thực sự là do đâu? Liệu đây có phải đây là [bug](/debug-javascript-de-hay-kho) của React? Cách giải quyết lỗi này như thế nào? Và việc đóng gói các element vào thẻ **div** như trên có ưu, nhược điểm gì?
 

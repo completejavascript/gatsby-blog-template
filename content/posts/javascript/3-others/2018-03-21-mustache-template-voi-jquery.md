@@ -13,7 +13,7 @@ tags:
   - Template
 ---
 
-Đến hẹn lại lên, hôm nay mình sẽ chia sẻ với các bạn cách sử dụng Mustache Template với jQuery trong [lập trình JavaScript](/category/javascript-co-ban). Việc sử dụng Mustache.js sẽ giúp bạn hạn chế việc xử lý logic trong JavaScript. Qua đó, giúp code bạn trở nên ngắn gọn và sáng sủa hơn.
+Đến hẹn lại lên, hôm nay mình sẽ chia sẻ với các bạn cách sử dụng Mustache Template với jQuery trong [lập trình JavaScript](/javascript). Việc sử dụng Mustache.js sẽ giúp bạn hạn chế việc xử lý logic trong JavaScript. Qua đó, giúp code bạn trở nên ngắn gọn và sáng sủa hơn.
 
 ## Mustache Template trong HTML
 

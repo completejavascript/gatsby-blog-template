@@ -35,7 +35,7 @@ With JavaScript, you can do some font-ends, back-ends, mobile apps, desktop apps
 
 Like Barney Stinson usually said:_ It's gonna be Java - wait for it - script. JavaScript._
 
-Finally, I decided to stick with [JavaScript](/category/javascript-co-ban).
+Finally, I decided to stick with [JavaScript](/javascript).
 
 That's _how I met JavaScript_.
 

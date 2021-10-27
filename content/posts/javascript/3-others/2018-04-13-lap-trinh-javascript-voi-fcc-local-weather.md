@@ -16,7 +16,7 @@ tags:
   - FCC
 ---
 
-Tiếp tục series[ lập trình JavaScript với FCC](/tag/lap-trinh-javascript-voi-fcc), hôm nay mình sẽ giới thiệu một project là **Show the Local Weather**. Dưới đây là demo trên codepen. Ngoài ra, bạn có thể xem bản đầy đủ tại [đây](http://about.phamvanlam.com/fcc-local-weather).
+Tiếp tục series[ lập trình JavaScript với FCC](/tag/fcc), hôm nay mình sẽ giới thiệu một project là **Show the Local Weather**. Dưới đây là demo trên codepen. Ngoài ra, bạn có thể xem bản đầy đủ tại [đây](http://about.phamvanlam.com/fcc-local-weather).
 
 https://codepen.io/completejavascript/pen/JLeEao
 

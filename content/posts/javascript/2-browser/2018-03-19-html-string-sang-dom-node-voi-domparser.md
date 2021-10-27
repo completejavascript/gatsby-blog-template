@@ -14,7 +14,7 @@ tags:
   - Template
 ---
 
-Khi lập trình Web nói chung và [lập trình JavaScript](/category/javascript-co-ban) nói riêng, nhiều khi bạn sẽ cần phải render thêm các thành phần trang web từ JavaScript. Và trong trường hợp thành phần HTML đó được lưu dưới dạng string, bạn có thể sử dụng [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) để chuyển HTML String sang DOM Node. Cách làm vô cùng đơn giản như sau.
+Khi lập trình Web nói chung và [lập trình JavaScript](/javascript) nói riêng, nhiều khi bạn sẽ cần phải render thêm các thành phần trang web từ JavaScript. Và trong trường hợp thành phần HTML đó được lưu dưới dạng string, bạn có thể sử dụng [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) để chuyển HTML String sang DOM Node. Cách làm vô cùng đơn giản như sau.
 
 ## Cách chuyển HTML String sang DOM
 

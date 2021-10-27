@@ -25,7 +25,7 @@ Xin chân thành cám ơn.
 
 ![Baby - Completejavascript - Completejavascript.com](../images/baby-completejavascript-com.jpg)
 
-Quay lại chủ đề bài viết ngày hôm nay. Đó là: [**Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 – 2018**](/tim-hieu-thi-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018). Có thể, bạn đang thắc mắc là tại sao mình lại viết chủ đề này và TOEIC thì liên quan quái gì đến [JavaScript](/category/javascript-co-ban)? Chúng ta sẽ cùng nhau tìm hiểu qua những câu hỏi sau đây.
+Quay lại chủ đề bài viết ngày hôm nay. Đó là: [**Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 – 2018**](/tim-hieu-thi-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018). Có thể, bạn đang thắc mắc là tại sao mình lại viết chủ đề này và TOEIC thì liên quan quái gì đến [JavaScript](/javascript)? Chúng ta sẽ cùng nhau tìm hiểu qua những câu hỏi sau đây.
 
 ## TOEIC là gì?
 

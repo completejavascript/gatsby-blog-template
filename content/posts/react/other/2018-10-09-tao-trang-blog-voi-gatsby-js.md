@@ -22,7 +22,7 @@ Mời bạn theo dõi bài viết!
 Trước khi bắt đầu tạo trang blog với Gatsby.js, có một số kiến thức cơ bản mà bạn cần phải nắm vững như:
 
 - [HTML](https://www.tutorialspoint.com/html/) và [CSS](https://www.tutorialspoint.com/css/).
-- [JavaScript cơ bản](/category/javascript-co-ban).
+- [JavaScript cơ bản](/javascript).
 - Một số đặc điểm cơ bản của [ES6](/tag/es6).
 - Những tư tưởng chính của [React](https://www.taniarascia.com/getting-started-with-react/).
 - Cú pháp [Markdown](https://guides.github.com/features/mastering-markdown/) cơ bản

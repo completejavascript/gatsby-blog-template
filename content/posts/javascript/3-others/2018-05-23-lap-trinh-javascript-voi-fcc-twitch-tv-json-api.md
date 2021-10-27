@@ -14,7 +14,7 @@ tags:
   - FCC
 ---
 
-Tiếp tục với chủ đề [Lập trình JavaScript với FCC](/tag/lap-trinh-javascript-voi-fcc), bài viết này mình sẽ chia sẻ với bạn về project **Use the Twitch.tv [JSON](/tim-hieu-ve-json-trong-javascript) API** trên freeCodeCamp.
+Tiếp tục với chủ đề [Lập trình JavaScript với FCC](/tag/fcc), bài viết này mình sẽ chia sẻ với bạn về project **Use the Twitch.tv [JSON](/tim-hieu-ve-json-trong-javascript) API** trên freeCodeCamp.
 
 Trước tiên, project này cũng tương tự như các project trước, mình chỉ sử dụng HTML5, CSS3, JavaScript thuần và kết hợp thêm [jQuery](/tag/jquery). Vì vậy, nếu bạn đã theo dõi các project trước đây của mình thì sẽ thấy những kiến thức ở đây không có gì mới mẻ cả.
 
