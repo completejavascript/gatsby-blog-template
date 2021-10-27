@@ -23,7 +23,7 @@ a person whose knowledge, aptitudes, and skills are applied to a field as a who
 
 ## Comment
 
-This picture is just [funny](/category/anh-che-vui). It's hard to choose who is the winner between specialist and generalist. In my opinion, I choose specialist. Because I'm working as a programmer, so, becoming specialist is more important.
+This picture is just [funny](/tag/anh-che). It's hard to choose who is the winner between specialist and generalist. In my opinion, I choose specialist. Because I'm working as a programmer, so, becoming specialist is more important.
 
 What do you think about this? I would like to know your opinion.
 

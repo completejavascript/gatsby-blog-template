@@ -23,7 +23,7 @@ Thực sự, điều này đã được chứng minh bởi các nhà khoa học.
 
 ## Tạo ra những thành công nhỏ
 
-Để giảm bớt sự lo lắng, điều đầu tiên bạn có thể làm là tập trung vào những thành công nhỏ mỗi ngày. Nếu như sự thiếu thông tin phản hồi làm cho bạn lo lắng, thì hãy cung cấp thông tin phản hồi mà bộ não cần để vượt qua một tình huống. Khi bộ não nhận được thông tin phản hồi, những điều không chắc chắn sẽ giảm bớt tính không chắc chắn. Đồng thời, những sự lo âu cũng sẽ giảm bớt. Tốt hơn nữa, khi bạn tập trung vào những thông tin phản hồi tích cực mỗi ngày, bạn không chỉ làm giảm bớt điều không chắc chắn, mà bạn còn tạo ra động lực và niềm [hạnh phúc](/category/anh-che-vui) cho bản thân.
+Để giảm bớt sự lo lắng, điều đầu tiên bạn có thể làm là tập trung vào những thành công nhỏ mỗi ngày. Nếu như sự thiếu thông tin phản hồi làm cho bạn lo lắng, thì hãy cung cấp thông tin phản hồi mà bộ não cần để vượt qua một tình huống. Khi bộ não nhận được thông tin phản hồi, những điều không chắc chắn sẽ giảm bớt tính không chắc chắn. Đồng thời, những sự lo âu cũng sẽ giảm bớt. Tốt hơn nữa, khi bạn tập trung vào những thông tin phản hồi tích cực mỗi ngày, bạn không chỉ làm giảm bớt điều không chắc chắn, mà bạn còn tạo ra động lực và niềm [hạnh phúc](/tag/anh-che) cho bản thân.
 
 ![Loại bỏ lo lắng để thành công nhỏ mỗi ngày - completejavascript.com](../images/small-success-everyday-loai-bo-lo-lang-completejavascript.com_.png)
 

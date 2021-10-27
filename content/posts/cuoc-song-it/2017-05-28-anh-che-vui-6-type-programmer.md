@@ -17,7 +17,7 @@ tags:
 
 There's a type of [programmer](/anh-che-vui-4-people-life-vs-programmer-life) who's always working late. And before sleeping, he always check his phone until tired.
 
-Actually, It's not [funny](/category/anh-che-vui). Don't like that, just:
+Actually, It's not [funny](/tag/anh-che). Don't like that, just:
 
 > Sleep earlier, code better.
 

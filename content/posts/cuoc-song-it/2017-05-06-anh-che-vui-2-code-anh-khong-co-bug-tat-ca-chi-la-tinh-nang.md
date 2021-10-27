@@ -15,7 +15,7 @@ tags:
 
 Trong lập trình, việc có [bug](/debug-javascript-de-hay-kho) là điều hết sức bình thường. Tuy nhiên, nhiều lập trình viên lại hay sử dụng câu nói này khi bị bạn bè, đồng nghiệp chỉ ra bug trong code của mình.
 
-Thực ra, nghe thì cũng [vui](/category/anh-che-vui) tai. Nhưng theo quan điểm của mình, nếu có bug thì mình cứ nhận thôi, sau đó fix bug.
+Thực ra, nghe thì cũng [vui](/tag/anh-che) tai. Nhưng theo quan điểm của mình, nếu có bug thì mình cứ nhận thôi, sau đó fix bug.
 
 Fix xong bug thì tất cả đều vui.
 
