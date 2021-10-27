@@ -1,8 +1,9 @@
 ---
 date: "2017-06-03T00:41:10Z"
+update: "2017-06-03T00:41:10Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/nhung-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.png"
+cover: "../../images/cuoc-song-it/nhung-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.png"
 keywords: "ngôn ngữ lập trình"
 description: "Bài viết sau được dịch từ simpleprogrammer.com bởi tác giả John Sonmez về top những ngôn ngữ lập trình nên học năm 2017."
 slug: nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017
@@ -11,7 +12,7 @@ tags:
   - Dịch blog
 ---
 
-Bài viết sau được dịch từ [simpleprogrammer.com](http://simpleprogrammer.com/) bởi tác giả [John Sonmez](https://simpleprogrammer.com/about-simple-programmer/) về top những ngôn ngữ lập trình nên học năm 2017. Bạn có thể đọc bản gốc bài viết bằng tiếng anh tại [đây](https://simpleprogrammer.com/2016/10/18/top-programming-languages-learn-2017/). Trong trường hợp, tiếng anh của bạn chưa đủ hoặc đơn giản là bạn ngại mở máy tính để tra từ điển thì xin mời đọc bản dịch của tôi sau đây.
+Bài viết sau được dịch từ [simpleprogrammer.com](http://simpleprogrammer.com/) bởi tác giả [John Sonmez](https://simpleprogrammer.com/about-simple-programmer/) về top những ngôn ngữ lập trình nên học năm 2017. Bạn có thể đọc bản gốc bài viết bằng tiếng anh tại [đây](https://simpleprogrammer.com/top-programming-languages-learn-2017/). Trong trường hợp, tiếng anh của bạn chưa đủ hoặc đơn giản là bạn ngại mở máy tính để tra từ điển thì xin mời đọc bản dịch của tôi sau đây.
 
 **Chú ý**: Sau đây, "tôi" chính là John Sonmez, không phải [tác giả](/gioi-thieu) blog [Complete JavaScript](/).
 
@@ -81,9 +82,7 @@ Nếu như bạn muốn lập trình web thì [JavaScript](/javascript-la-gi) l�
 
 ### Ngôn ngữ lập trình nên học dành cho những lập trình viên có kinh nghiệm
 
-![JavaScript Everywhere - top ngôn ngữ lập trình nên học 2017 - completejavascript.com](../images/javascript-everywhere-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg)
-
-_Ảnh tham khảo tại https://github.com/vigetlabs/javascript-everywhere_
+![JavaScript everywhere](../../images/javascript/javascript-everywhere.jpg)
 
 #### JavaScript
 
@@ -121,9 +120,7 @@ Nhưng nếu bạn đã là một lập trình viên có kinh nghiệm thì nh�
 
 Tức là, Rust là một ngôn ngữ lập trình mức thấp, có thể thay thế cho C/C++. Và chắc chắn Rust sẽ trở nên rất phổ biến (cái này phải cần thời gian để kiểm chứng - vì hiện tại có rất nhiều hệ thống đang chạy bằng C/C++).
 
-![taylor swift - top những ngôn ngữ lập trình nên học năm 2017 - completejavascript.com](../images/taylor-swift-top-ngon-ngu-lap-trinh-nen-hoc-2017-completejavascript.com_.jpg)
-
-_Ảnh tham khảo tại oportajgazetesi.com_
+![Taylor Swift](../../images/cuoc-song-it/taylor-swift.jpg)
 
 #### Swift
 
@@ -150,4 +147,4 @@ Ngược lại, bạn là một lập trình viên có kinh nghiệm và mong mu
 
 Có nhiều ý kiến khác nhau về việc lựa chọn ngôn ngữ lập trình nên học năm 2017. Riêng tôi thì tôi rất đồng ý với anh John Sonmez. Còn bạn thì nghĩ sao về vấn đề này? Tôi rất mong để biết được suy nghĩ của bạn (mặc dù bây giờ đã là giữa năm 2017 rồi, hehe).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/danh-ngon-lap-trinh-javascript-phan-1), thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!

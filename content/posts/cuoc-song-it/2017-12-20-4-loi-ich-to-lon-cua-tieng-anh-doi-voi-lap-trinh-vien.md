@@ -1,8 +1,9 @@
 ---
 date: "2017-12-20T23:41:02Z"
+update: "2017-12-20T23:41:02Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/4-loi-ich-to-lon-cua-tieng-anh-doi-voi-lap-trinh-vien-completejavascript-com.png"
+cover: "../../images/cuoc-song-it/4-loi-ich-to-lon-cua-tieng-anh-doi-voi-lap-trinh-vien-completejavascript-com.png"
 keywords: "lợi ích to lớn của Tiếng anh"
 description: "Khi nhắc đến tiếng anh thì ai cũng phải công nhận rằng nó có rất nhiều lợi ích. Đặc biệt đối với lập trình viên, tiếng anh lại càng quan trọng. Sau đây là 4 lợi ích to lớn của Tiếng Anh đối với lập trình viên mà tôi đúc kết lại được trong quá trình học tập và làm việc."
 slug: 4-loi-ich-to-lon-cua-tieng-anh-doi-voi-lap-trinh-vien
@@ -33,7 +34,9 @@ Trường hợp bạn muốn tìm kiếm về một vấn đề chung chung, n�
 
 Nếu bạn viết phần mềm, hay tài liệu bằng ngôn ngữ Tiếng Việt thì bạn đang giới hạn phạm vi tiếp cận là người Việt Nam, hoặc rộng hơn chút là người nước ngoài biết tiếng Việt. Ngược lại, nếu đó là tiếng anh thì nó có thể được sử dụng trên toàn thế giới.
 
-Tuy nhiên, có một vài trường hợp ngoại lệ, việc sử dụng Tiếng Việt sẽ tốt hơn. Đó là khi trên thế giới đã có nhiều sản phẩm mà bạn đang làm rồi. Nếu bạn đưa ra nó ra thị trường thì khả năng cạnh tranh được với những thứ kia là rất khó. Ngược lại, việc sử dụng Tiếng Việt sẽ giúp giảm đi đối thủ cạnh tranh. Cái này gọi là "thà làm vua xứ mù, còn hơn làm lính của một đất nước lớn".
+Tuy nhiên, có một vài trường hợp ngoại lệ, việc sử dụng Tiếng Việt sẽ tốt hơn. Đó là khi trên thế giới đã có nhiều sản phẩm mà bạn đang làm rồi. Nếu bạn đưa ra nó ra thị trường thì khả năng cạnh tranh được với những thứ kia là rất khó.
+
+Ngược lại, việc sử dụng Tiếng Việt sẽ giúp giảm đi đối thủ cạnh tranh. Cái này gọi là "thà làm vua xứ mù, còn hơn làm lính của một đất nước lớn".
 
 Dẫu vậy thì việc sử dụng Tiếng Anh vẫn sẽ đem lại nhiều lợi ích to lớn hơn.
 
@@ -47,4 +50,4 @@ Trường hợp bạn là lập trình viên, muốn phát triển tự do thì 
 
 Trên đây là 4 lợi ích to lớn của Tiếng Anh đối với lập trình viên. Và chắc chắn sẽ còn nhiều lợi ích khác nữa. Rất mong bạn đọc chia sẻ ý kiến của mình tại phần bình luận.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thuc-day-som-khong-cam-thay-met-moi), thân ái!
+Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!

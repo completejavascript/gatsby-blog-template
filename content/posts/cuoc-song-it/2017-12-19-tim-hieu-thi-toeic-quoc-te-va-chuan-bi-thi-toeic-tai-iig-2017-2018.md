@@ -1,8 +1,9 @@
 ---
 date: "2017-12-19T00:09:28Z"
+update: "2017-12-19T00:09:28Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/tim-hieu-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018-completejavascript-com.png"
+cover: "../../images/cuoc-song-it/tim-hieu-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018-completejavascript-com.png"
 keywords: "thi toeic"
 description: "Nếu bạn là một lập trình viên, mong muốn làm việc tại Việt Nam thì việc thi TOEIC và có một tấm bằng TOEIC điểm tương đối là rất thuận lợi."
 slug: tim-hieu-thi-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018
@@ -23,9 +24,9 @@ Mặc dù vậy thì việc thức dậy vào 5 giờ sáng giữa trời Đông
 
 Xin chân thành cám ơn.
 
-![Baby - Completejavascript - Completejavascript.com](../images/baby-completejavascript-com.jpg)
+![Baby](../../images/cuoc-song-it/baby-completejavascript-com.jpg)
 
-Quay lại chủ đề bài viết ngày hôm nay. Đó là: [**Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 – 2018**](/tim-hieu-thi-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018). Có thể, bạn đang thắc mắc là tại sao mình lại viết chủ đề này và TOEIC thì liên quan quái gì đến [JavaScript](/javascript)? Chúng ta sẽ cùng nhau tìm hiểu qua những câu hỏi sau đây.
+Quay lại chủ đề bài viết ngày hôm nay. Đó là: **Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 – 2018**. Có thể, bạn đang thắc mắc là tại sao mình lại viết chủ đề này và TOEIC thì liên quan quái gì đến [JavaScript](/javascript)? Chúng ta sẽ cùng nhau tìm hiểu qua những câu hỏi sau đây.
 
 ## TOEIC là gì?
 
@@ -82,11 +83,11 @@ Khác với phần thi Listening - bạn phải làm lần lượt, thì trong p
 
 Trên đây là kinh nghiệm thi TOEIC của mình từ năm nhất Đại học đến trước khi tốt nghiệp. Điểm số hiện tại của mình là 735. Dĩ nhiên, đây không phải là điểm thi TOEIC quốc tế.
 
-Mục tiêu của mình trong lần thi TOEIC sắp tới tại IIG vào 31/1/2018 là >= 735 điểm. Lúc đó, mình sẽ viết một bài review về quá trình chuẩn bị và thi TOEIC của mình.
+Mục tiêu của mình trong lần thi TOEIC sắp tới tại IIG vào 31/1/2018 là `>=` 735 điểm. Lúc đó, mình sẽ viết một bài review về quá trình chuẩn bị và thi TOEIC của mình.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/4-loi-ich-to-lon-cua-tieng-anh-doi-voi-lap-trinh-vien), thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
 
 ## Tham khảo
 
-- [TOEIC](https://en.wikipedia.org/wiki/TOEIC)
+- [TOEIC](https://vi.wikipedia.org/wiki/TOEIC)
 - [Cấu trúc đề thi TOEIC](https://giasutoeic.com/thong-tin-toeic/cau-truc-de-thi-toeic)

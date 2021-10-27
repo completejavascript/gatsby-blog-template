@@ -1,8 +1,9 @@
 ---
 date: "2018-01-01T13:18:02Z"
+update: "2018-01-01T13:18:02Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/tac-hai-cua-viec-ngoi-lau-va-giai-phap-danh-cho-lap-trinh-vien-completejavascript.png"
+cover: "../../images/cuoc-song-it/tac-hai-cua-viec-ngoi-lau-va-giai-phap-danh-cho-lap-trinh-vien-completejavascript.png"
 keywords: "tác hại của ngồi lâu"
 description: "Đối với dân văn phòng nói chung và lập trình viên nói riêng thì ngồi lâu là việc khó tránh khỏi. Tuy nhiên, đây không phải là một thói quen tốt. Vì vậy, bài viết này tôi sẽ nói về tác hại của ngồi lâu và giải pháp cho lập trình viên chúng ta."
 slug: tac-hai-cua-ngoi-lau-va-giai-phap-cho-lap-trinh-vien
@@ -13,7 +14,9 @@ title: "Tác hại của ngồi lâu và giải pháp cho lập trình viên"
 
 ## Nguyên nhân của việc ngồi lâu
 
-Việc này đến từ bản chất công việc. Công việc của lập trình viên luôn gắn liền với máy vi tính. Và quan trọng hơn hết là: khi làm việc, lập trình viên luôn rất tập trung và mong muốn giải quyết công việc của mình trước khi đứng dậy làm việc khác. Việc nghỉ giữa chừng có thể làm bạn xao nhãng, quên đi công việc đang làm. Nhưng khi ngồi lâu như vậy thì tác hại đến với chúng ta là rất lớn.
+Việc này đến từ bản chất công việc. Công việc của lập trình viên luôn gắn liền với máy vi tính. Và quan trọng hơn hết là: khi làm việc, lập trình viên luôn rất tập trung và mong muốn giải quyết công việc của mình trước khi đứng dậy làm việc khác.
+
+Việc nghỉ giữa chừng có thể làm bạn xao nhãng, quên đi công việc đang làm. Nhưng khi ngồi lâu như vậy thì tác hại đến với chúng ta là rất lớn.
 
 ## Tác hại của ngồi lâu
 

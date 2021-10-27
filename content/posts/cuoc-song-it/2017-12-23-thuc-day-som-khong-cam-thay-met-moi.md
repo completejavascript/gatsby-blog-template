@@ -1,15 +1,18 @@
 ---
 date: "2017-12-23T01:22:31Z"
+update: "2017-12-23T01:22:31Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/lam-sao-de-thuc-day-som-ma-khong-cam-thay-met-moi-completejavascript-com.png"
+cover: "../../images/cuoc-song-it/lam-sao-de-thuc-day-som-ma-khong-cam-thay-met-moi-completejavascript-com.png"
 keywords: "thức dậy sớm"
 description: "Bạn có quá nhiều việc phải làm. Bạn chăm chỉ, cố gắng để biến ước mơ trở thành hiện thực. Nhưng một ngày thì vẫn chỉ có 24 giờ. Vậy làm thế nào để bạn có thêm một đến hai giờ làm việc hiệu quả mỗi ngày? Câu trả lời là: Hãy thức dậy sớm."
 slug: thuc-day-som-khong-cam-thay-met-moi
 title: "Làm sao để thức dậy sớm mà không cảm thấy mệt mỏi"
 ---
 
-Bạn có quá nhiều việc phải làm. Bạn chăm chỉ, cố gắng để biến ước mơ trở thành hiện thực. Nhưng một ngày thì vẫn chỉ có 24 giờ. Vậy làm thế nào để bạn có thêm một đến hai giờ làm việc hiệu quả mỗi ngày? Câu trả lời là: Hãy **THỨC DẬY SỚM**. Bởi lẽ, buổi sáng là khoảng thời gian mà bộ não hoạt động hiệu quả nhất. Nhưng làm sao để thức dậy sớm mà không cảm thấy mệt mỏi? Sau đây là một số cách giúp bạn đạt được điều này.
+Bạn có quá nhiều việc phải làm. Bạn chăm chỉ, cố gắng để biến ước mơ trở thành hiện thực. Nhưng một ngày thì vẫn chỉ có 24 giờ. Vậy làm thế nào để bạn có thêm một đến hai giờ làm việc hiệu quả mỗi ngày?
+
+Câu trả lời là: Hãy **THỨC DẬY SỚM**. Bởi lẽ, buổi sáng là khoảng thời gian mà bộ não hoạt động hiệu quả nhất. Nhưng làm sao để thức dậy sớm mà không cảm thấy mệt mỏi? Sau đây là một số cách giúp bạn đạt được điều này.
 
 ## Xác định thời lượng ngủ một ngày
 
@@ -27,9 +30,13 @@ Yếu tố tiếp theo quyết định việc bạn có cảm thấy mệt mỏi
 
 Theo mình, thời gian đi ngủ hợp lý là từ 9 giờ tối đến 12 giờ đêm (0 giờ sáng), để đảm bảo được tính âm - dương của giấc ngủ và thời gian sinh học của cơ thể người (các bạn có thể tìm hiểu thêm về giấc ngủ tại [đây](http://soha.vn/ts-nguyen-manh-hung-rat-nhieu-nguoi-dang-ngu-sai-gio-ho-khong-biet-duong-toi-nghia-dia-dan-ngan-lai-20170403001704476.htm)).
 
-Trong xã hội hiện đại mà có quá nhiều cám dỗ như ngày nay thì việc đi ngủ sớm quả thật là một điều vô cùng khó khăn. Nhiều bạn thì đi chơi với bạn trai, bạn gái đến 11, 12 giờ đêm. Nhiều bạn khác thì ở nhà, nhưng lướt facebook, xem phim cũng phải đến 1, 2 giờ sáng... Thật khó để chúng ta bỏ đi những thứ đó, nhưng làm sao cân bằng được cuộc sống mới là điều quan trọng.
+Trong xã hội hiện đại mà có quá nhiều cám dỗ như ngày nay thì việc đi ngủ sớm quả thật là một điều vô cùng khó khăn. Nhiều bạn thì đi chơi với bạn trai, bạn gái đến 11, 12 giờ đêm.
 
-Mình thường đi ngủ lúc 11 giờ tối và thức dậy vào 5 giờ 30 phút sáng (dĩ nhiên vẫn có những hôm ngoại lệ, con người mà, đâu phải máy móc đúng không). Mình nghĩ rằng đây là thời điểm khá phù hợp. Vì bạn vẫn có thời gian để làm một vài thứ vào buổi tối (học tiếng anh, học đàn, hát, chat chít với bạn bè,....). Và khi thực dậy buổi sáng thì bạn cũng có thêm ít nhất là 1 giờ (từ 5 giờ 30 đến 6 giờ 30) để thực hiện công việc của mình. Hợp lý phải không các bạn?
+Nhiều bạn khác thì ở nhà, nhưng lướt facebook, xem phim cũng phải đến 1, 2 giờ sáng... Thật khó để chúng ta bỏ đi những thứ đó, nhưng làm sao cân bằng được cuộc sống mới là điều quan trọng.
+
+Mình thường đi ngủ lúc 11 giờ tối và thức dậy vào 5 giờ 30 phút sáng (dĩ nhiên vẫn có những hôm ngoại lệ, con người mà, đâu phải máy móc đúng không). Mình nghĩ rằng đây là thời điểm khá phù hợp.
+
+Vì bạn vẫn có thời gian để làm một vài thứ vào buổi tối (học tiếng anh, học đàn, hát, chat chít với bạn bè,....). Và khi thực dậy buổi sáng thì bạn cũng có thêm ít nhất là 1 giờ (từ 5 giờ 30 đến 6 giờ 30) để thực hiện công việc của mình. Hợp lý phải không các bạn?
 
 Sau khi đã xác định được thời lượng, thời điểm dành cho giấc ngủ, việc tiếp theo là nâng cao chất lượng giấc ngủ.
 
@@ -59,4 +66,4 @@ Những việc bạn làm khi thức dậy sớm là rất quan trọng. Nó quy
 
 Trên đây là những cách để giúp bạn thức dậy sớm mà không cảm thấy mệt mỏi. Mình rất vui nếu bạn đọc chia sẻ các phương pháp của bạn ở dưới phần bình luận.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/5-loi-ich-cua-viec-thuc-day-som), thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
