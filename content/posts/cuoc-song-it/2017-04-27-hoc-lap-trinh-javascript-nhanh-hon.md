@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../images/cuoc-song-it/sau-meo-hoc-lap-trinh-javascript-nhanh-hon-completejavascript.com_.png"
 keywords: "học lập trình Javascript"
-description: "Khi mọi người cố gắng học lập trình Javascript, hay bất kỳ kĩ năng lập trình nào, họ thường trải qua những thử thách giống nhau."
+description: "Khi mọi người cố gắng học lập trình Javascript, họ thường trải qua những thử thách giống nhau. Sau đây là sáu mẹo giúp học lập trình JavaScript nhanh hơn."
 slug: hoc-lap-trinh-javascript-nhanh-hon
 title: "Sáu mẹo đơn giản giúp học lập trình Javascript nhanh hơn"
 tags:
