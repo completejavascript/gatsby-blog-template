@@ -19,7 +19,7 @@ Chạy bộ là một trong những bài tập thể dục rất tốt cho sức
 - Ngăn ngừa ung thư vú
 - Cải thiện giấc ngủ
 - Giảm đau nhức cơ thể
-- Giảm [căng thẳng](/neu-ban-co-xu-huong-suy-nghi-va-lo-lang-qua-nhieu-day-la-thu-ma-ban-nen-lam)
+- Giảm [căng thẳng](/thu-nen-lam-neu-suy-nghi-va-lo-lang-nhieu)
 - Cải thiện trí nhớ ở người cao tuổi
 - Bảo vệ xương
 - [Tăng năng suất làm việc](/hoc-lap-trinh-javascript-nhanh-hon)

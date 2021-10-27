@@ -22,7 +22,9 @@ Chia sẻ kiến thức về cuộc sống dân IT, kinh nghiệm học lập tr
 <div class="section-wrapper">
 <section class="container">
 
-## Ảnh chế vui
+## Cuộc sống dân IT
+
+- [Những thứ bạn nên làm nếu suy nghĩ và lo lắng quá nhiều](/thu-nen-lam-neu-suy-nghi-va-lo-lang-nhieu)
 
 </section>
 </div>
@@ -30,7 +32,7 @@ Chia sẻ kiến thức về cuộc sống dân IT, kinh nghiệm học lập tr
 <div class="section-wrapper">
 <section class="container">
 
-## Các bài viết khác
+## Ảnh chế vui
 
 </section>
 </div>
