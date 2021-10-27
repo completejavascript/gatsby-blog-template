@@ -1,8 +1,9 @@
 ---
 date: "2017-05-02T15:09:45Z"
+update: "2017-05-02T15:09:45Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay-completejavascript.com_.png"
+cover: "../../images/cuoc-song-it/anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay-completejavascript.com_.png"
 keywords: "Ảnh chế vui 1"
 description: "Đây là ảnh chế vui 1 nói về cách lập trình viên chạy hằng ngày."
 slug: anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay
@@ -11,7 +12,7 @@ tags:
   - Ảnh chế
 ---
 
-![Ảnh chế vui #1: Cách lập trình viên chạy hằng ngày](../images/anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay-completejavascript.com_.png)
+![Ảnh chế vui #1: Cách lập trình viên chạy hằng ngày](../../images/cuoc-song-it/anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay-completejavascript.com_.png)
 
 Chạy bộ là một trong những bài tập thể dục rất tốt cho sức khoẻ. Việc chạy bộ hằng ngày đem lại cho bạn những lợi ích về sức khoẻ như:
 
@@ -37,7 +38,7 @@ Bạn có thể chạy ở khu mình sinh sống. Tốt nhất là chạy ở c�
 
 Đừng như lập trình viên, hãy chạy bộ thường xuyên.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/anh-che-vui-2-code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang), thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
 
 ## Bài viết cùng chuyên mục
 

@@ -1,8 +1,9 @@
 ---
 date: "2017-05-16T00:21:22Z"
+update: "2017-05-16T00:21:22Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/people-life-vs-programmer-life.png"
+cover: "../../images/cuoc-song-it/people-life-vs-programmer-life.png"
 keywords: "Programmer life"
 description: "There are something different between people life and programmer life."
 slug: anh-che-vui-4-people-life-vs-programmer-life
@@ -11,7 +12,7 @@ tags:
   - Ảnh chế
 ---
 
-![ảnh chế vui #4: people life vs programmer life tại completejavascript.com](../images/people-life-vs-programmer-life.png)
+![ảnh chế vui #4: people life vs programmer life tại completejavascript.com](../../images/cuoc-song-it/people-life-vs-programmer-life.png)
 
 ## People
 
@@ -24,7 +25,7 @@ who work every monday to friday and **work** **hard** at the weekend.
 - Programmers aren't people, they are **heroes**.
 - That's programmer life.
 
-See you in the [next post](/anh-che-vui-5-specialist-vs-generalist-winner), thank you!
+See you in the next post, thank you!
 
 ## Similar posts
 

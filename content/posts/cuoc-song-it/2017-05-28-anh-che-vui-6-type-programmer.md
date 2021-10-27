@@ -1,8 +1,9 @@
 ---
 date: "2017-05-28T11:40:41Z"
+update: "2017-05-28T11:40:41Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/a-type-of-programmer-completejavascript.com_.png"
+cover: "../../images/cuoc-song-it/a-type-of-programmer-completejavascript.com_.png"
 keywords: "type of programmer"
 description: "There's a type of programmer who's always working late. And before sleeping, he always check his phone until tired."
 slug: anh-che-vui-6-type-programmer
@@ -11,7 +12,7 @@ tags:
   - Ảnh chế
 ---
 
-![A type of programmer at completejavascript.com](../images/a-type-of-programmer-completejavascript.com_.png)
+![A type of programmer at completejavascript.com](../../images/cuoc-song-it/a-type-of-programmer-completejavascript.com_.png)
 
 ## A type of programmer:
 
@@ -21,7 +22,7 @@ Actually, It's not [funny](/tag/anh-che). Don't like that, just:
 
 > Sleep earlier, code better.
 
-See you in the [next post](/anh-che-vui-7-ip-man-4-phien-ban-lap-trinh-vien) in the series, thank you,
+See you in the next post, thank you,
 
 ## Similar posts
 

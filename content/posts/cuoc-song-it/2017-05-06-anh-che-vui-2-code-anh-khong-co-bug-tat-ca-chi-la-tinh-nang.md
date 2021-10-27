@@ -1,8 +1,9 @@
 ---
 date: "2017-05-06T03:50:09Z"
+update: "2017-05-06T03:50:09Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/anh-che-vui-2-Code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang-completejavascript.com_.png"
+cover: "../../images/cuoc-song-it/anh-che-vui-2-Code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang-completejavascript.com_.png"
 keywords: "Ảnh chế vui 2"
 description: "Trong lập trình, việc có bug là điều hết sức bình thường. Tuy nhiên, nhiều lập trình viên lại hay sử dụng câu nói này khi bị bạn bè, đồng nghiệp chỉ ra bug trong code của mình."
 slug: anh-che-vui-2-code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang
@@ -11,7 +12,7 @@ tags:
   - Ảnh chế
 ---
 
-![Ảnh chế vui 2: code anh không có bug, tất cả chỉ là tính năng](../images/anh-che-vui-2-Code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang-completejavascript.com_.png)
+![Ảnh chế vui 2: code anh không có bug, tất cả chỉ là tính năng](../../images/cuoc-song-it/anh-che-vui-2-Code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang-completejavascript.com_.png)
 
 Trong lập trình, việc có [bug](/debug-javascript-de-hay-kho) là điều hết sức bình thường. Tuy nhiên, nhiều lập trình viên lại hay sử dụng câu nói này khi bị bạn bè, đồng nghiệp chỉ ra bug trong code của mình.
 
@@ -23,7 +24,7 @@ Fix xong bug thì tất cả đều vui.
 
 > Code không bug, sướng nhiều bậc.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/anh-che-vui-3-how-i-met-javascript-parody), thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
 
 ## Bài viết cùng chuyên mục
 

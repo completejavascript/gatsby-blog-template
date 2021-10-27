@@ -1,8 +1,9 @@
 ---
 date: "2017-05-22T14:10:56Z"
+update: "2017-05-22T14:10:56Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/Specialist-vs-Generalist-who-is-the-winner.png"
+cover: "../../images/cuoc-song-it/Specialist-vs-Generalist-who-is-the-winner.png"
 keywords: "Specialist vs Generalist"
 description: "A person who devotes himself or herself to one subject or to one particular branch of a subject or pursuit."
 slug: anh-che-vui-5-specialist-vs-generalist-winner
@@ -11,7 +12,7 @@ tags:
   - Ảnh chế
 ---
 
-![Specialist vs Generalist: who is the winner?](../images/Specialist-vs-Generalist-who-is-the-winner.png)
+![Specialist vs Generalist: who is the winner?](../../images/cuoc-song-it/Specialist-vs-Generalist-who-is-the-winner.png)
 
 ## Specialist:
 
@@ -27,7 +28,7 @@ This picture is just [funny](/tag/anh-che). It's hard to choose who is the winne
 
 What do you think about this? I would like to know your opinion.
 
-See you in the [next post](/anh-che-vui-6-type-programmer), thank you!
+See you in the next post, thank you!
 
 ## Similar posts
 

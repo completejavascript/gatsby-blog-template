@@ -1,8 +1,9 @@
 ---
-date: "2017-07-13T00:45:35Z"
+date: "2017-05-29T00:45:35Z"
+update: "2017-05-29T00:45:35Z"
 template: "post"
 directory: "Cuộc sống IT"
-cover: "../images/ip-man-4-phien-ban-lap-trinh-vien-completejavascript.com_.png"
+cover: "../../images/cuoc-song-it/ip-man-4-phien-ban-lap-trinh-vien-completejavascript.com_.png"
 keywords: "IP man"
 description: "IP man 4 phiên bản lập trình viên. Châu Tử Đan - Chung Tử Đơn (Donnie Yen): 107.113.70.1. Cùng các anh em: 107.113.70.2 - 107.113.70.9"
 slug: anh-che-vui-7-ip-man-4-phien-ban-lap-trinh-vien
@@ -11,7 +12,7 @@ tags:
   - Ảnh chế
 ---
 
-![IP man 4 - phiên bản lập trình viên - completejavascript.com](../images/ip-man-4-phien-ban-lap-trinh-vien-completejavascript.com_.png)
+![IP man 4 - phiên bản lập trình viên - completejavascript.com](../../images/cuoc-song-it/ip-man-4-phien-ban-lap-trinh-vien-completejavascript.com_.png)
 
 ## IP man 4 phiên bản lập trình viên
 
