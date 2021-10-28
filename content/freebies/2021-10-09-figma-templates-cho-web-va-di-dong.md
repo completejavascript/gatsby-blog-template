@@ -1,5 +1,6 @@
 ---
 date: "2021-10-09T15:30:00Z"
+update: "2021-10-09T15:30:00Z"
 template: "freebie"
 directory: "Freebie"
 cover: "../images/figma-templates-website-mobile-completejavascript.com_.png"

@@ -1,5 +1,6 @@
 ---
 date: "2018-12-02T22:30:04Z"
+update: "2018-12-02T22:30:04Z"
 template: "post"
 directory: "React"
 cover: "../images/hoc-react-qua-vi-du-8-draggable-element-completejavascript.com_.png"

@@ -1,5 +1,6 @@
 ---
 date: "2018-10-30T22:30:09Z"
+update: "2018-10-30T22:30:09Z"
 template: "post"
 directory: "React"
 cover: "../images/hoc-react-qua-vi-du-2-slideshow-gallery-completejavascript.com_.png"

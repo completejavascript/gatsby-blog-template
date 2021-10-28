@@ -1,5 +1,6 @@
 ---
 date: "2021-10-11T20:00:00Z"
+update: "2021-10-11T20:00:00Z"
 template: "freebie"
 directory: "Freebie"
 cover: "../images/trang-web-tao-palette-mau-cuc-tot-completejavascript.com_.png"

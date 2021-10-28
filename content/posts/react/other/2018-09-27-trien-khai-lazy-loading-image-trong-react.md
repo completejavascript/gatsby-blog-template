@@ -1,5 +1,6 @@
 ---
 date: "2018-09-27T12:30:31Z"
+update: "2018-09-27T12:30:31Z"
 template: "post"
 directory: "React"
 cover: "../images/trien-khai-lazy-loading-image-trong-react-completejavascript.com_-1.png"

@@ -1,5 +1,6 @@
 ---
 date: "2018-06-14T12:00:20Z"
+update: "2018-06-14T12:00:20Z"
 template: "post"
 directory: "JavaScript"
 cover: "../images/xoan-nao-voi-phong-van-javascript-6-completejavascript.com_.png"

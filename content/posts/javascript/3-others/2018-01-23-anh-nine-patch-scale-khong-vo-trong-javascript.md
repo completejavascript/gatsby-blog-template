@@ -1,5 +1,6 @@
 ---
 date: "2018-01-23T13:34:08Z"
+update: "2018-01-23T13:34:08Z"
 template: "post"
 directory: "JavaScript"
 cover: "../images/anh-nine-patch-scale-khong-vo-trong-javascript-completejavascript.com_.png"

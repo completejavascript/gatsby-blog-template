@@ -1,5 +1,6 @@
 ---
 date: "2018-12-09T22:30:37Z"
+update: "2018-12-09T22:30:37Z"
 template: "post"
 directory: "React"
 cover: "../images/hoc-react-qua-vi-du-10-sticky-notes-completejavascript.com_.png"

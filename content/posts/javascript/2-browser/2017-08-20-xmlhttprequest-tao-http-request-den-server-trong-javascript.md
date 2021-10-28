@@ -1,5 +1,6 @@
 ---
 date: "2017-08-20T04:33:46Z"
+update: "2017-08-20T04:33:46Z"
 template: "post"
 directory: "JavaScript"
 cover: "../images/xmlhttprequest-tao-http-request-den-server-trong-javascript-completejavascript.com_.png"

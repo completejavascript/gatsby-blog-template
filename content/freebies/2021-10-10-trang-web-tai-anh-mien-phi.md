@@ -1,5 +1,6 @@
 ---
 date: "2021-10-10T20:00:00Z"
+update: "2021-10-10T20:00:00Z"
 template: "freebie"
 directory: "Freebie"
 cover: "../images/web-tai-anh-mien-phi-chat-luong-cao-completejavascript.com_.png"

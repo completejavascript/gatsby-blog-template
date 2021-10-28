@@ -1,5 +1,6 @@
 ---
 date: "2018-07-28T02:49:59Z"
+update: "2018-07-28T02:49:59Z"
 template: "post"
 directory: "React"
 cover: "../images/lam-tuong-tai-hai-ve-react-completejavascript.com_.png"

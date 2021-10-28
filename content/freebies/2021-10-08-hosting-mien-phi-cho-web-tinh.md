@@ -1,5 +1,6 @@
 ---
 date: "2021-10-08T14:02:00Z"
+update: "2021-10-08T14:02:00Z"
 template: "freebie"
 directory: "Freebie"
 cover: "../images/hosting-mien-phi-cho-web-tinh-completejavascript.com_.png"
