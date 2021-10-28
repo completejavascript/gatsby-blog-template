@@ -3,7 +3,7 @@ date: "2018-04-04T00:00:52Z"
 update: "2021-10-15T00:00:52Z"
 template: "post"
 directory: "Thủ thuật IT"
-cover: "../images/ma-mau-logo-cac-thuong-hieu-noi-tieng-completejavascript.com_.png"
+cover: "../../images/thu-thuat-it/ma-mau-logo-cac-thuong-hieu-noi-tieng-completejavascript.com_.png"
 keywords: "mã màu logo"
 description: "Đã bao giờ bạn rơi vào trường hợp không biết lựa chọn, sử dụng hay phối hợp màu sắc sao cho hợp lý chưa? ... Bạn chỉ cần tải logo của họ về, sử dụng bất kỳ một công cụ chỉnh sửa hình ảnh là có thể lấy ra mã màu ở đó. Hoặc là bạn có thể theo dõi bài viết này. Mình sẽ lấy mã màu logo các thương hiệu nổi tiếng giúp bạn."
 slug: ma-mau-logo-cac-thuong-hieu-noi-tieng
@@ -263,4 +263,4 @@ Trên đây là mã màu của một số thương hiệu nổi tiếng. Nếu b
 
 Ngoài ra, nếu bạn muốn tự tìm kiếm các palette màu mới, cập nhật xu hướng thì có thể tham khảo các trang [web tạo palette màu](/trang-web-tao-palette-mau-cuc-tot).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/cach-su-dung-hang-so-trong-es5-va-es6), thân ái!
+Xin chào và hẹn gặp bạn ở bài viết tiếp theo, thân ái!

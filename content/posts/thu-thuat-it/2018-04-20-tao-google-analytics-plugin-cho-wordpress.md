@@ -1,8 +1,9 @@
 ---
 date: "2018-04-20T00:00:22Z"
+update: "2018-04-20T00:00:22Z"
 template: "post"
 directory: "Thủ thuật IT"
-cover: "../images/tao-google-analytics-plugin-cho-wordpress-completejavascript.com_.png"
+cover: "../../images/thu-thuat-it/tao-google-analytics-plugin-cho-wordpress-completejavascript.com_.png"
 keywords: "tạo google analytics plugin cho wordpress"
 description: "Đối với mỗi trang web, việc tìm hiểu và phân tích hành vi người dùng là vô cùng quan trọng. Trong đó, Google Analytics là một công cụ miễn phí nhưng khá tốt để giúp bạn làm được việc này. Bài viết hôm nay, mình sẽ chia sẻ với các bạn cách tạo Google Analytics Plugin cho Wordpress."
 slug: tao-google-analytics-plugin-cho-wordpress
@@ -26,11 +27,11 @@ Kết quả của bạn cần thu được là **Google-Analytics-ID**, ví dụ
 
 ## Code tạo Google Analytics Plugin cho Wordpress
 
-**Bước 1**: Tạo một file mới có tên dạng \*.php.
+**Bước 1**: Tạo một file mới có tên dạng `*.php`, ví dụ: **analytics_plugin.php**
 
 **Bước 2**: Copy đoạn code của mình sau đây vào file vừa rồi
 
-```php
+```php:title=analytics_plugin.php
 <?php
 // Plugin Name: Simple Google Analytics Plugin for Wordpress
 // Description: Adds a Google analytics tracking code to the <head> of your theme, by hooking to wp_head.
@@ -64,15 +65,15 @@ add_action( 'wp_head', 'wp_lpdevs_google_analytics');
 - Copy file trên vào thư mục **/wp-content/plugins.**
 - Login vào trình quản lý Wordpress, rồi chọn mục Plugin. Nếu như các bước trên thực hiện đúng thì đến đây bạn sẽ nhìn thấy plugin của bạn. Giờ chỉ cần kích hoạt nó lên là xong rồi.
 
-![simple google analytics plugin](../images/tao-google-analytics-plugin-wordpress-completejavascript.com_.png)
+![simple google analytics plugin](../../images/thu-thuat-it/tao-google-analytics-plugin-wordpress-completejavascript.com_.png)
 
-Đây là kết quả khi sử dụng Google Analytics Plugin trên với trang web của mình:
+Đây là kết quả khi sử dụng Google Analytics Plugin trên với trang web của mình.
 
 ## Kết luận
 
 Trên đây là các bước mình tạo Google Analytics Plugin cho Wordpress. Nếu có góp ý hoặc thắc mắc gì, vui lòng để lại cho mình trong phần bình luận.
 
-Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/phan-biet-arrow-function-va-function-trong-javascript), thân ái!
+Xin chào và hẹn gặp bạn trong bài viết tiếp theo, thân ái!
 
 ## Tham khảo
 

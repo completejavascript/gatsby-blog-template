@@ -1,8 +1,9 @@
 ---
 date: "2017-08-21T14:46:46Z"
+update: "2017-08-21T14:46:46Z"
 template: "post"
 directory: "Thủ thuật IT"
-cover: "../images/cach-cai-dat-va-go-mot-goi-phan-mem-tren-ubuntu-completejavascript.c.png"
+cover: "../../images/thu-thuat-it/cach-cai-dat-va-go-mot-goi-phan-mem-tren-ubuntu-completejavascript.c.png"
 keywords: "phần mềm trên Ubuntu"
 description: "Bài viết này sẽ hướng dẫn các bạn cách cài đặt và gỡ một gói phần mềm trên Ubuntu như sử dụng Ubuntu Software Center, apt-get hay dùng MakeFile,..."
 slug: cach-cai-dat-va-go-mot-goi-phan-mem-tren-ubuntu
@@ -12,7 +13,7 @@ tags:
   - Ubuntu
 ---
 
-Trong bài viết [Các câu lệnh thường dùng đến trong Ubuntu - Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux), mình đã giới thiệu với bạn những câu lệnh cơ bản thường dùng trong Ubuntu để làm việc với file, folder, thông tin hệ thống,... Tiếp tục, bài viết này sẽ hướng dẫn bạn cách cài đặt và gỡ một gói phần mềm trên Ubuntu.
+Trong bài viết [các câu lệnh thường dùng đến trong Ubuntu - Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux), mình đã giới thiệu với bạn những câu lệnh cơ bản thường dùng trong Ubuntu để làm việc với file, folder, thông tin hệ thống,... Tiếp tục, bài viết này sẽ hướng dẫn bạn cách cài đặt và gỡ một gói phần mềm trên Ubuntu.
 
 ## Dùng Ubuntu Software Center
 
@@ -39,13 +40,13 @@ Trong bài viết [Các câu lệnh thường dùng đến trong Ubuntu - Linux]
 Để cài đặt 1 gói phần mềm trên Ubuntu sử dụng Terminal theo cách **online**, bạn cần có kết nối Internet (dĩ nhiên rồi). Bạn tìm kiếm trên Google tên những gói phần mềm mình cần cài đặt rồi:
 
 - Mở Terminal: Ctrl Alt T
-- **sudo apt-get install ten_goi1 ten_goi2 ten_goi3**
+- Gõ lệnh: `sudo apt-get install ten_goi1 ten_goi2 ten_goi3`
 - Nhập mật khẩu và đợi cài đặt xong
 
 Để gỡ cài đặt:
 
 - Mở Terminal: Ctr Alt T
-- **sudo apt-get remove ten_goi1 ten_goi2 ten_goi3**
+- Gõ lệnh: `sudo apt-get remove ten_goi1 ten_goi2 ten_goi3`
 - Nhập mật khẩu và chờ đợi
 
 **Bonus:**
@@ -53,8 +54,8 @@ Trong bài viết [Các câu lệnh thường dùng đến trong Ubuntu - Linux]
 Trong quá trình cài đặt và gỡ phần mềm trên Ubuntu, việc sinh ra rác là điều không tránh khỏi. Để bỏ đi những thứ không cần thiết:
 
 - Mở Terminal
-- **sudo apt-get autoremove** và nhập mật khẩu
-- **sudo apt-get autoclean** (và nhập mật khẩu nếu cần thiết)
+- Gõ lệnh: `sudo apt-get autoremove` (và nhập mật khẩu)
+- Gõ lệnh: `sudo apt-get autoclean` (và nhập mật khẩu nếu cần thiết)
 
 ### Cài đặt offline
 
@@ -72,16 +73,16 @@ Mình sẽ chuyển file **.rpm** thành file **.deb** để làm giống như t
 
 - Mở Terminal
 - Cài đặt gói **alien** với câu lệnh: **sudo apt-get install alien**
-- Convert file từ **.rpm** thành **.deb** với câu lệnh: **sudo alien -k filename.rpm**
+- Convert file từ **.rpm** thành **.deb** với câu lệnh: `sudo alien -k filename.rpm`
 - Sau bước trên bạn đã có một tệp tin là **filename.deb**, tiếp tục click vào để cài đặt.
 
 #### Cài đặt file .bin
 
 Đầu tiên lưu file **.bin** tới Desktop. Mở Terminal:
 
-- Di chuyển đến thư mục chứa file: **cd Desktop** (đây chỉ là ví dụ, thực tế bạn có thể đặt file ở thư mục khác)
-- Thêm quyền cho file: **sudo chmod +x filename.bin**
-- Cài đặt: **./filename.bin**
+- Di chuyển đến thư mục chứa file: `cd Desktop` (đây chỉ là ví dụ, thực tế bạn có thể đặt file ở thư mục khác)
+- Thêm quyền cho file: `sudo chmod +x filename.bin`
+- Cài đặt: `./filename.bin`
 - Sau đó chương trình sẽ cài đặt trong Terminal!
 
 #### Cài đặt phần mềm từ tarball
@@ -90,9 +91,9 @@ Một tarball (thường là các file .tar , .tar.gz , .tgz , .tar.bz2 , .tbz2 
 
 ##### Giải nén tarball
 
-**Cách 1**: click vào file, nhấn chuột phải, chọn **extract here**
+**Cách 1**: Click vào file, nhấn chuột phải, chọn **extract here**
 
-**Cách 2**: dùng dòng lệnh:
+**Cách 2**: Dùng một trong các lệnh sau:
 
 ```bash
 $ tar zxvf file.tar.gz
@@ -102,25 +103,25 @@ $ tar jxf file.tar.bz2
 $ tar jxf file.tbz2
 ```
 
-Các tùy chọn chúng ta cung cấp cho tar được mô tả bên dưới:
+Các tùy chọn chúng ta cung cấp cho **tar** được mô tả bên dưới:
 
-- -z để lệnh cho tar chạy file này thông qua gzip để giải nén (sử dụng –j cho các file bzip)
-- -x để bung các file
-- -v cho "verbose", để chúng ta có thể thấy danh sách các file đang bung
-- -f để lệnh cho tar rằng chúng ta đang làm việc với một file
+- `-z` để lệnh cho tar chạy file này thông qua gzip để giải nén (sử dụng `–j` cho các file bzip)
+- `-x` để bung các file
+- `-v` cho "verbose", để chúng ta có thể thấy danh sách các file đang bung
+- `-f` để lệnh cho tar rằng chúng ta đang làm việc với một file
 
 ##### Configure
 
 - Mở terminal lên, dùng lệnh cd để di chuyển tới nơi đã bung file ở bước trước
-- gõ **./configure** : mục đích là để kiểm tra xem hệ thống có đầy đủ các phần mềm để cài đặt chưa, nếu thiếu thì ta phải cài đặt các phần mềm đó trước
-- gõ **make**: chờ cho tới khi hoàn thành rồi đến bước tiếp theo
-- gõ **sudo make install** : đợi cho tới khi kết thúc là hoàn thành cài đặt.
+- Gõ lệnh `./configure`: mục đích là để kiểm tra xem hệ thống có đầy đủ các phần mềm để cài đặt chưa, nếu thiếu thì ta phải cài đặt các phần mềm đó trước
+- Gõ lệnh `make`: chờ cho tới khi hoàn thành rồi đến bước tiếp theo
+- Gõ lệnh `sudo make install`: đợi cho tới khi kết thúc là hoàn thành cài đặt.
 
 ##### Gỡ phần mềm
 
-- dùng lệnh cd di chuyển tới thư mục chứa file nguồn của phần mềm vừa bung ra.
-- gõ **make uninstall**
+- Dùng lệnh cd di chuyển tới thư mục chứa file nguồn của phần mềm vừa bung ra.
+- Gõ lệnh: `make uninstall`
 
 Trên đây là một số cách để cài đặt và gỡ một gói phần mềm trên Ubuntu. Nếu bạn có thắc mắc hay góp ý gì, vui lòng để lại dưới phần bình luận.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết sau](/huong-dan-tim-hieu-ffmpeg-co-ban), thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết sau, thân ái!

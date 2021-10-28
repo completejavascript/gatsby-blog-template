@@ -1,8 +1,9 @@
 ---
 date: "2018-11-02T22:30:44Z"
+update: "2018-11-02T22:30:44Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/huong-dan-tim-hieu-node-js-co-ban-completejavascript.com_.png"
+cover: "../../images/thu-thuat-it/huong-dan-tim-hieu-node-js-co-ban-completejavascript.com_.png"
 keywords: "tìm hiểu Node.js cơ bản"
 description: "Node.js giúp JavaScript có thể chạy được trong môi trường server. Vì vậy, bài viết này mình sẽ giúp bạn tìm hiểu Node.js cơ bản."
 slug: huong-dan-tim-hieu-node-js-co-ban
@@ -46,7 +47,7 @@ Theo mình biết, đối với PHP (Java, ASP.NET,...) mỗi request gửi lên
 
 Ngược lại, Node.js lại chạy **single-threaded**. Nghĩa là mỗi request gửi lên sẽ được cho vào một **event-queue**. Node.js sẽ chạy một **vòng lặp** để duyệt event-queue này và **lần lượt xử lý** các request theo [kiểu bất đồng bộ](/tag/ajax).
 
-[![Cách single-threaded chạy](../images/nodejs-overview-single-threaded-architecture-gaurav-mittal.jpg)](https://www.linkedin.com/pulse/nodejs-overview-single-threaded-architecture-gaurav-mittal)
+[![Cách single-threaded chạy](../../images/thu-thuat-it/nodejs-overview-single-threaded-architecture-gaurav-mittal.jpg)](https://www.linkedin.com/pulse/nodejs-overview-single-threaded-architecture-gaurav-mittal)
 
 Chính vì vậy, Node.js sẽ giúp tiết kiệm về bộ nhớ.
 
@@ -72,37 +73,37 @@ _Bài viết này, mình sẽ hướng dẫn bạn cài đặt Node.js trên mô
 
 Đầu tiên, bạn tải bản cài đặt Node.js tại [trang chủ](https://nodejs.org/en/). Bạn có thể chọn bản mới nhất. Tuy nhiên, mình sẽ chọn bản LTS (**Long Term Support**). Vì bản này thường sẽ ổn định và khá ít lỗi.
 
-![Tải Node.js bản LTS sẽ ổn định hơn](../images/download.png)
+![Tải Node.js bản LTS sẽ ổn định hơn](../../images/thu-thuat-it/download.png)
 
 Sau khi tải xong, bạn sẽ thu được một file cài đặt (ví dụ: **node-v8.12.0-x64.msi**). Bây giờ, bạn click vào để cài đặt.
 
 Một cửa sổ sẽ hiện lên, rồi bạn nhấn vào **Run**.
 
-![Nhấn vào Run để bắt đầu](../images/install-1.png)
+![Nhấn vào Run để bắt đầu](../../images/thu-thuat-it/install-1.png)
 
 Bạn nhấn **Next** để tiếp tục:
 
-![Nhấn tiếp vào Next để tiếp tục](../images/install-2.png)
+![Nhấn tiếp vào Next để tiếp tục](../../images/thu-thuat-it/install-2.png)
 
 Tiếp theo, bạn nhấn vào checkbox để đồng ý với điều khoản, bản quyền phần mềm, rồi nhấn **Next** để tiếp tục.
 
-![Đồng ý điều khoản và tiếp tục](../images/install-3.png)
+![Đồng ý điều khoản và tiếp tục](../../images/thu-thuat-it/install-3.png)
 
 Sau đó là lựa chọn thư mục cài đặt Node.js. Nếu không có gì đặc biệt (ví dụ như ổ C bị đầy) thì bạn cứ để mặc định, rồi nhấn Next để tiếp tục.
 
-![Lựa chọn thư mục cài đặt Node.js rồi tiếp tục.](../images/install-4.png)
+![Lựa chọn thư mục cài đặt Node.js rồi tiếp tục.](../../images/thu-thuat-it/install-4.png)
 
 Bước này, Node.js sẽ cho phép bạn tùy chỉnh phần cài đặt. Tuy nhiên, bạn cứ để mặc định thôi. Sau này muốn thay đổi gì thì tính sau.
 
-![Tùy chỉnh cài đặt](../images/install-5.png)
+![Tùy chỉnh cài đặt](../../images/thu-thuat-it/install-5.png)
 
 Sau khi mọi thứ đã hoàn tất, bạn nhấn **Install** để bắt đầu cài đặt
 
-![Bắt đầu cài đặt](../images/install-6.png)
+![Bắt đầu cài đặt](../../images/thu-thuat-it/install-6.png)
 
 Khi cài đặt xong, bạn nhấn **Finish** để kết thúc.
 
-![Hoàn thành cài đặt](../images/install-7.png)
+![Hoàn thành cài đặt](../../images/thu-thuat-it/install-7.png)
 
 ### Kiểm tra cài đặt thành công
 
@@ -111,13 +112,13 @@ Sau khi đã thực hiện xong các bước trên, bạn cần kiểm tra xem m
 Bạn mở [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows) trên Windows lên rồi gõ các câu lệnh sau:
 
 ```bash
-node -v
-npm -v
+$ node -v
+$ npm -v
 ```
 
 Nếu kết quả hiển thị như này là thành công:
 
-![Kiểm tra version node và npm](../images/version.png)
+![Kiểm tra version node và npm](../../images/thu-thuat-it/version.png)
 
 Các câu lệnh trên cho biết: phiên bản Node.js hiện tại là **8.12.0** và phiên bản npm (Node Package Manager) là **6.4.1**.
 
@@ -129,7 +130,7 @@ Các câu lệnh trên cho biết: phiên bản Node.js hiện tại là **8.12.
 
 Sau đó, sửa nội dung của file đó như sau:
 
-```js
+```js:title=hello-world.js
 const http = require("http");
 const hostname = "localhost";
 const port = 8000;
@@ -149,7 +150,7 @@ server.listen(port, hostname, () => {
 
 Đầu tiên, bạn khai báo module **http** - dùng để tạo server, **hostname** là **localhost** và cổng sử dụng là **8000** (bạn có thể thay đổi cổng tùy thích).
 
-```js
+```js:title=hello-world.js
 const http = require("http");
 const hostname = "localhost";
 const port = 8000;
@@ -157,7 +158,7 @@ const port = 8000;
 
 Tiếp theo, bạn khởi tạo server sử dụng phương thức [createServer](https://www.w3schools.com/nodejs/met_http_createserver.asp) của module [http](https://nodejs.org/api/http.html), với 2 tham số đầu vào là **req** và **res**.
 
-```js
+```js:title=hello-world.js
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/plain");
@@ -175,7 +176,7 @@ Với **req** là đại diện cho yêu cầu được gửi từ client đến
 
 Cuối cùng, bắt đầu cho server lắng nghe, với 2 thông số là cổng (**port**) và địa chỉ (**hostname**).
 
-```js
+```js:title=hello-world.js
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
@@ -186,16 +187,16 @@ server.listen(port, hostname, () => {
 Để chạy server, bạn mở **CMD** lên tại vị trí file nguồn vừa tạo và chạy [câu lệnh](/tag/command-line):
 
 ```bash
-node hello-world.js
+$ node hello-world.js
 ```
 
-Nếu kết quả hiển thị ra _Server running at http:\/\/localhost:8000/_ là thành công.
+Nếu kết quả hiển thị ra _Server running at `http://localhost:8000/`_ là thành công.
 
-![Chạy server để test](../images/run.png)
+![Chạy server để test](../../images/thu-thuat-it/run.png)
 
-Cuối cùng bạn gõ địa chỉ **http:\/\/localhost:8000/** lên trình duyệt để kiểm tra lại:
+Cuối cùng bạn gõ địa chỉ `http://localhost:8000/` lên trình duyệt để kiểm tra lại:
 
-![Kiểm tra server bằng trình duyệt](../images/test.png)
+![Kiểm tra server bằng trình duyệt](../../images/thu-thuat-it/test.png)
 
 Như vậy, server đã chạy thành công rồi phải không bạn?
 

@@ -1,8 +1,9 @@
 ---
 date: "2018-10-04T11:45:05Z"
+update: "2018-10-04T11:45:05Z"
 template: "post"
 directory: "Thủ thuật IT"
-cover: "../images/chuyen-anh-dong-gif-thanh-video-completejavascript.com_.png"
+cover: "../../images/thu-thuat-it/chuyen-anh-dong-gif-thanh-video-completejavascript.com_.png"
 keywords: "chuyển ảnh động GIF thành video"
 description: "Ảnh động GIF thường nặng hơn video. Vì vậy, mình sẽ giới thiệu với bạn cách chuyển ảnh động GIF thành video và sử dụng video tương tự như ảnh động GIF."
 slug: chuyen-anh-dong-gif-thanh-video
@@ -40,47 +41,47 @@ Nếu bạn search trên Google thì sẽ thấy có rất nhiều trang giúp c
 
 Để chuyển ảnh động GIF thành video bạn sử dụng câu lệnh sau:
 
-```bash
+```shell
 ffmpeg -i input.gif output.mp4
 ```
 
 Trong đó:
 
-- _ffmpeg_: tên của chương trình
-- _-i_: là cờ dùng để chỉ định đầu vào, tên đầu vào đặt ngay sau đó
-- _iniput.gif_: tên ảnh động GIF đầu vào
-- _output.mp4_: tên video đầu ra với định dạng MPEG-4
+- `ffmpeg`: tên của chương trình
+- `-i`: là cờ dùng để chỉ định đầu vào, tên đầu vào đặt ngay sau đó
+- `iniput.gif`: tên ảnh động GIF đầu vào
+- `output.mp4`: tên video đầu ra với định dạng MPEG-4
 
-![Dung lượng của video giảm đáng kể so với ảnh động GIF](../images/gif_to_mp4.png)
+![Dung lượng của video giảm đáng kể so với ảnh động GIF](../../images/thu-thuat-it/gif_to_mp4.png)
 
 ### Sử dụng phương pháp CRF
 
 Ngoài ra, ffmpeg còn hỗ trợ sử dụng một phương pháp mã hoá, được gọi là [Constant Rate Factor](https://trac.ffmpeg.org/wiki/Encode/H.264#crf) (hay CRF). CRF giúp bạn dễ dàng điều chỉnh được chất lượng của video đầu ra. Câu lệnh là:
 
-```bash
+```shell
 ffmpeg -i input.gif -b:v 0 -crf 25 output.mp4
 ```
 
 Lệnh này tương tự lệnh trên, chỉ khác ở chỗ:
 
-- _-b:v_: là cờ dùng để giới hạn bitrate của output. Vì mình đang sử dụng CRF, nên giá trị này phải đặt là 0
-- _-crf_: là cờ dùng để xác định hệ số của CRF. Giá trị này nằm trong khoảng từ 0 đến 51. Hệ số CRF càng thấp sẽ cho video chất lượng càng cao, nhưng càng nặng. Ngược lại, hệ số CRF càng cao sẽ cho video chất lượng càng thấp nhưng càng nhẹ.
+- `-b:v`: là cờ dùng để giới hạn bitrate của output. Vì mình đang sử dụng CRF, nên giá trị này phải đặt là 0
+- `-crf`: là cờ dùng để xác định hệ số của CRF. Giá trị này nằm trong khoảng từ 0 đến 51. Hệ số CRF càng thấp sẽ cho video chất lượng càng cao, nhưng càng nặng. Ngược lại, hệ số CRF càng cao sẽ cho video chất lượng càng thấp nhưng càng nhẹ.
 
-![Sử dụng CRF với các giá trị khác nhau sẽ cho ra chất lượng video khác nhau](../images/gif_to_mp4_crf.png)
+![Sử dụng CRF với các giá trị khác nhau sẽ cho ra chất lượng video khác nhau](../../images/thu-thuat-it/gif_to_mp4_crf.png)
 
 Với kết quả thử nghiệm trên, mình thấy rằng sử dụng hệ số CRF bằng 25 là hợp lý nhất. Vì dung lượng giảm đi đáng kể mà chất lượng hình ảnh gần như không đổi.
 
 Như vậy là mình đã chuyển ảnh động GIF thành video xong rồi. Tiếp theo, làm sao có thể sử dụng video tương tự như việc sử dụng ảnh động GIF?
 
-## Sử dụng thẻ &lt;video&gt; thay cho thẻ &lt;img&gt;
+## Sử dụng thẻ `<video>` thay cho thẻ `<img>`
 
-Trước tiên, để sử dụng ảnh GIF, mình phải sử dụng thẻ <img> (giống các loại ảnh khác), như sau:
+Trước tiên, để sử dụng ảnh GIF, mình phải sử dụng thẻ `<img>` (giống các loại ảnh khác), như sau:
 
 ```html
 <img src="input.gif" />
 ```
 
-Nhưng khi đã chuyển ảnh động GIF thành video thì mình phải chuyển sang sử dụng thẻ &lt;video&gt;. Cơ bản là như này:
+Nhưng khi đã chuyển ảnh động GIF thành video thì mình phải chuyển sang sử dụng thẻ `<video>`. Cơ bản là như này:
 
 ```html
 <video>

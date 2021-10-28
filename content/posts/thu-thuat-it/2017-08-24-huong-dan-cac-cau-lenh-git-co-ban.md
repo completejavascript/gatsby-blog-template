@@ -1,8 +1,9 @@
 ---
 date: "2017-08-24T00:23:59Z"
+update: "2017-08-24T00:23:59Z"
 template: "post"
 directory: "Thủ thuật IT"
-cover: "../images/huong-dan-cac-cau-lenh-git-co-ban-completejavascript.com_.png"
+cover: "../../images/thu-thuat-it/huong-dan-cac-cau-lenh-git-co-ban-completejavascript.com_.png"
 keywords: "câu lệnh git"
 description: "Việc biết cách sử dụng Git là điều vô cùng quan trọng. Bài viết này sẽ hướng dẫn cơ bản về Git cũng như các câu lệnh Git cơ bản."
 slug: huong-dan-cac-cau-lenh-git-co-ban
@@ -26,36 +27,36 @@ Lúc này, trên máy bạn sẽ có hai thành phần chính là: **Local Repos
 
 ## Cài đặt Git
 
-Git hỗ trợ Windows, Macs và Linux. Đối với Macs, tôi chưa dùng bao giờ nên không dám chia sẻ.
+Git hỗ trợ Windows, Macs và Linux. Đối với Macs, mình chưa dùng bao giờ nên không dám chia sẻ.
 
 - Windows: bạn có thể cài [Git for windows](https://git-scm.com/download) hoặc [Tortoisegit](https://tortoisegit.org/download/) (giao diện đồ hoạ).
 - Linux: xem hướng dẫn tại [đây](https://git-scm.com/download/linux).
 
-Nếu bạn không quen sử dụng các câu lệnh thì có thể sử dụng TortoiseGit. Còn cá nhân, tôi sử dụng Git trên [Ubuntu](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux).
+Nếu bạn không quen sử dụng các câu lệnh thì có thể sử dụng TortoiseGit. Còn cá nhân, mình sử dụng Git trên [Ubuntu](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux).
 
 Sau khi cài đặt Git xong, chúng ta bắt đầu tìm hiểu về Git.
 
-## Flow cơ bản khi sử dụng Git
+## Luồng cơ bản khi sử dụng Git
 
-Sau đây là flow cơ bản khi bạn sử dụng Git:
+Sau đây là luồng cơ bản khi bạn sử dụng Git:
 
 - Clone project từ server về Local Repository
 - Check-out 1 nhánh từ Local Repository về Working Space
 - Bạn sẽ làm việc (thêm, sửa, xoá tại Working Space)
-- Add : xác nhận sự thay đổi của các files (đưa đến vùng Staging Area)
+- Add: xác nhận sự thay đổi của các files (đưa đến vùng Staging Area)
 - Commit: cập nhật sự thay đổi lên Local Repository
 
 Về cơ bản đến đây là bạn đã hoàn thành 1 chu trình sử dụng Git. Lúc này, nếu như bạn muốn cập nhật sự thay đổi này lên server thì bạn sẽ dùng lệnh push để đẩy chúng lên server.
 
 ## Các câu lệnh Git cơ bản
 
-Trước khi giới thiệu các câu lệnh Git, tôi muốn nhấn mạnh với bạn rằng Git là công cụ để quản lý source code. Trong khi đó, Github là server chứa code.
+Trước khi giới thiệu các câu lệnh Git, mình muốn nhấn mạnh với bạn rằng Git là công cụ để quản lý source code. Trong khi đó, Github là server chứa code.
 
 Vì vậy, trước khi bắt đầu bạn hãy đăng ký một tài khoản trên Github. Sau khi đăng ký xong, bạn cần nhớ 3 thông tin chính là: **username**, **email** và **password**.
 
 ### Config
 
-Đầu tiên, bạn sẽ cần phải config username và email mà bạn đã đăng ký trên Github. Thực tế, Git hỗ trợ 3 tuỳ chọn là --global, --system, --local. Tuy nhiên, tôi thường chọn --global.
+Đầu tiên, bạn sẽ cần phải config username và email mà bạn đã đăng ký trên Github. Thực tế, Git hỗ trợ 3 tuỳ chọn là `--global`, `--system`, `--local`. Tuy nhiên, mình thường chọn `--global`.
 
 ```bash
 $ git config --global user.name <username>
@@ -199,6 +200,6 @@ $ git fetch <name_branch>
 
 Câu lệnh Git này dùng để lấy source code từ server về Working Space và merge với code hiện tại trên máy bạn nếu có thể. Trường hợp không thể merge tự động được thì bạn phải merge thủ công.
 
-Trong trường hợp bạn làm việc một mình thì hầu như sẽ chẳng có rắc rối gì xảy ra. Nhưng khi làm việc theo nhóm thì chuyện xung đột và giải quyết xung đột là điều không thể tránh khỏi. Phần này tôi sẽ giới thiệu với các bạn trong một bài viết khác sau.
+Trong trường hợp bạn làm việc một mình thì hầu như sẽ chẳng có rắc rối gì xảy ra. Nhưng khi làm việc theo nhóm thì chuyện xung đột và giải quyết xung đột là điều không thể tránh khỏi. Phần này mình sẽ giới thiệu với các bạn trong một bài viết khác sau.
 
-Bài viết này sẽ dừng lại tại đây, hẹn gặp lại bạn trong [bài viết tiếp theo](/phan-biet-var-va-let-trong-javascript), thân ái!
+Bài viết này dừng lại tại đây, hẹn gặp bạn trong bài viết tiếp theo, thân ái!

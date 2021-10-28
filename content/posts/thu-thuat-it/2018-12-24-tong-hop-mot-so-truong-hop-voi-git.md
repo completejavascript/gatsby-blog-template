@@ -1,8 +1,9 @@
 ---
 date: "2018-12-24T12:30:53Z"
+update: "2018-12-24T12:30:53Z"
 template: "post"
 directory: "Thủ thuật IT"
-cover: "../images/tong-hop-mot-so-truong-hop-voi-git-completejavascript.com_.png"
+cover: "../../images/thu-thuat-it/tong-hop-mot-so-truong-hop-voi-git-completejavascript.com_.png"
 keywords: "trường hợp với git"
 description: "Đối với lập trình viên, Git là công cụ không thể thiếu. Bài viết này mình sẽ tổng hợp lại một số trường hợp với Git và cách mình giải quyết chúng."
 slug: tong-hop-mot-so-truong-hop-voi-git
@@ -12,7 +13,7 @@ tags:
   - Git
 ---
 
-Trong bài viết [Hướng dẫn các câu lệnh Git cơ bản](/huong-dan-cac-cau-lenh-git-co-ban), mình đã giới thiệu với bạn về Git, cũng như những câu lệnh thường dùng với Git. Tuy nhiên, khi làm việc với project thực tế bạn sẽ gặp phải nhiều trường hợp oái oăm hơn rất nhiều. Vì vậy, bài viết này mình sẽ tổng hợp lại một số trường hợp với Git mà mình gặp phải và cách mình giải quyết chúng.
+Trong bài viết [hướng dẫn các câu lệnh Git cơ bản](/huong-dan-cac-cau-lenh-git-co-ban), mình đã giới thiệu với bạn về Git, cũng như những câu lệnh thường dùng với Git. Tuy nhiên, khi làm việc với project thực tế bạn sẽ gặp phải nhiều trường hợp oái oăm hơn rất nhiều. Vì vậy, bài viết này mình sẽ tổng hợp lại một số trường hợp với Git mà mình gặp phải và cách mình giải quyết chúng.
 
 ## Đổi tên nhánh ở Local và Remote trong Git
 

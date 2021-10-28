@@ -3,7 +3,7 @@ date: "2018-03-31T00:00:52Z"
 update: "2021-10-15T15:00:00Z"
 template: "post"
 directory: "Thủ thuật IT"
-cover: "../images/huong-dan-tim-hieu-ffmpeg-co-ban-completejavascript.com_.png"
+cover: "../../images/thu-thuat-it/huong-dan-tim-hieu-ffmpeg-co-ban-completejavascript.com_.png"
 keywords: "ffmpeg là gì"
 description: "Sau thời gian làm việc với FFmpeg, mình khẳng định FFmpeg là một phần mềm xử lý audio, video đơn giản, miễn phí và hiệu quả nhất. Bài viết này sẽ giúp bạn biết FFmpeg là gì, cách tải FFmpeg, cài đặt FFmpeg, một số FFmpeg code hay FFmpeg command thường dùng."
 slug: huong-dan-tim-hieu-ffmpeg-co-ban
@@ -79,13 +79,13 @@ Một chương trình đơn giản giúp phân tích việc stream các tệp ti
 
 Các bạn có thể vào trang chủ để [tải FFmpeg](https://ffmpeg.org/download.html). Có 3 nền tảng cho bạn lựa chọn là: Linux, Windows và Mac OS X. Ở đây mình chọn nền tảng Windows.
 
-![Tải ffmpeg](../images/tai-cai-dat-ffmpeg-phamvanlam-com.png)
+![Tải ffmpeg](../../images/thu-thuat-it/tai-cai-dat-ffmpeg-phamvanlam-com.png)
 
 Sau đó bạn sẽ được chuyển đến trang để tải phần mềm về. Lúc này bạn có 3 lựa chọn để tải về:
 
-**Static**: chỉ bao gồm các tiện ích như mình đã kể trên, tức chỉ chứa file chạy .exe
+**Static**: chỉ bao gồm các tiện ích như mình đã kể trên, tức chỉ chứa file chạy **.exe**
 
-**Shared**: ngoài những thành phần kể trên giống như của phần **static** thì còn có thêm thư viện dạng liên kết động .dll
+**Shared**: ngoài những thành phần kể trên giống như của phần **static** thì còn có thêm thư viện dạng liên kết động **.dll**
 
 **Dev**: chứa những tệp tin như trên cộng thêm các tệp tin header, lib,...
 
@@ -106,15 +106,15 @@ Thực tế là bạn đã có thể sử dụng FFmpeg rồi mà không cần p
 
 **Bước 1**: Nhấn vào biểu tượng search, rồi gõ vào **Advanced system settings**. Sau đó, bấm vào **Advanced system settings** đó.
 
-![Tìm advanced system settings](../images/ffmpeg-la-gi-1-completejavascript.com_.jpg)
+![Tìm advanced system settings](../../images/thu-thuat-it/ffmpeg-la-gi-1-completejavascript.com_.jpg)
 
 **Bước 2**: Cửa sổ tiếp theo hiện ra thì bạn chọn tab **Advanced** => **Enviroment Variables**
 
-![Tìm environment variables](../images/ffmpeg-la-gi-2-completejavascript.com_.jpg)
+![Tìm environment variables](../../images/thu-thuat-it/ffmpeg-la-gi-2-completejavascript.com_.jpg)
 
 **Bước 3**: Cửa sổ tiếp theo hiện ra bạn chọn trong mục **System variables** => **Path** => **Edit**. Sau đó, bạn thêm vào đường dẫn sau **C:\ffmpeg\bin** - là đường dẫn đến file chạy của **ffmpeg.exe, ffplay.exe, ffprobe.exe**.
 
-![Thêm biến môi trường cho ffmpeg](../images/ffmpeg-la-gi-3-completejavascript.com_.jpg)
+![Thêm biến môi trường cho ffmpeg](../../images/thu-thuat-it/ffmpeg-la-gi-3-completejavascript.com_.jpg)
 
 Bây giờ, bạn chỉ cần lưu lại là xong. Đến đây bạn có thể sử dụng FFmpeg ở mọi thư mục trên máy tính.
 
@@ -144,13 +144,13 @@ Một chú ý nhỏ trước khi bắt đầu đó là: các ảnh, audio và vi
 
 **Code FFmpeg hiển thị thông tin của file**
 
-```bash
+```shell
 ffmpeg -i test.mp4
 ```
 
 **Code FFmpeg chuyển đổi ảnh thành video**
 
-```bash
+```shell
 ffmpeg -f image2 -i img%d.png video.mp4
 ```
 
@@ -158,15 +158,15 @@ Trong đó, img%d.png là tất cả những ảnh đầu vào của bạn trong
 
 **Code FFmpeg chuyển đổi video thành ảnh**
 
-```bash
+```shell
 ffmpeg -i video.mp4 image%d.png
 ```
 
-Ở đây, đầu vào là file video có tên là video.mp4 và đầu ra là các ảnh có tên dạng image%d.png (image1.png, image2.png, image3.png,...)
+Ở đây, đầu vào là file video có tên là video.mp4 và đầu ra là các ảnh có tên dạng **image%d.png** (image1.png, image2.png, image3.png,...)
 
 **Code FFmpeg tách âm thanh từ video và lưu lại thành file mp3**
 
-```bash
+```shell
 ffmpeg -i video.mp4 -vn -ar 44100 -ac 2 -ab 192k -f mp3 sound.mp3
 ```
 
@@ -180,7 +180,7 @@ Trong đó:
 
 **Code FFmpeg chuyển đổi định dạng video**
 
-```bash
+```shell
 ffmpeg -i video_input.xxx video_output.yyy
 ```
 
@@ -191,13 +191,13 @@ Trong đó:
 
 Ví dụ, mình muốn chuyển từ định dạng flv sang mp4, thì câu lệnh sẽ là:
 
-```bash
+```shell
 ffmpeg -i video_input.flv video_output.mp4
 ```
 
 **Code FFmpeg chuyển video thành ảnh động .gif**
 
-```bash
+```shell
 ffmpeg -i video.mp4 gif_anime.gif
 ```
 
@@ -208,7 +208,7 @@ Trong đó:
 
 **Code FFmpeg trộn video với một file âm thanh**
 
-```bash
+```shell
 ffmpeg -i sound.mp3 -i video_input.mp4 video_output.mp4
 ```
 
@@ -222,19 +222,19 @@ Chú ý là: độ dài video đầu ra sẽ là độ dài lớn hơn của m�
 
 **Code FFmpeg tăng - giảm tốc độ video**
 
-```bash
+```shell
 ffmpeg -i video.mp4 -vf "setpts=0.5*PTS" highspeed.mp4
 ```
 
 Trong đó:
 
 - video.mp4 là video đầu vào
-- setpts=0.5\*PTS giúp tăng tốc video lên gấp 2 lần
+- `setpts=0.5\*PTS` giúp tăng tốc video lên gấp 2 lần
 - File video đầu ra là: highspeed.mp4
 
 Nếu muốn giảm tốc độ đi 2 lần thì chỉ cần thay đổi thành:
 
-```bash
+```shell
 ffmpeg -i video.mp4 -vf "setpts=2*PTS" highspeed.mp4
 ```
 
@@ -242,7 +242,7 @@ Còn muốn tốc độ khác thì bạn tự suy luận ra nhé.
 
 **Code FFmpeg thêm ảnh vào audio và xuất bản thành video**
 
-```bash
+```shell
 ffmpeg -loop 1 -i image.png -i sound.mp3 -c:v libx264 -c:a aac -strict experimental -b:a 192k -shortest output.mp4
 ```
 
@@ -254,7 +254,7 @@ Trong đó:
 
 **Code FFmpeg thêm phụ đề cho video**
 
-```bash
+```shell
 ffmpeg -i video.mp4 -i subtitles.srt -map 0 -map 1 -c copy -c:v libx264 -crf 23 -preset veryfast video-output.mp4
 ```
 
@@ -266,7 +266,7 @@ Trong đó:
 
 **Code FFmpeg cắt lấy một phần nhỏ của video**
 
-```bash
+```shell
 ffmpeg -i video.mp4 -ss 00:00:50.0 -codec copy -t 20 output.mp4
 ```
 
@@ -278,18 +278,18 @@ Trong đó:
 
 **Code FFmpeg chia video ra thành nhiều phần**
 
-```bash
+```shell
 ffmpeg -i video.mp4 -t 00:00:50 -c copy small-1.mp4 -ss 00:00:50 -codec copy small-2.mp4
 ```
 
 Trong đó:
 
 - File video đầu vào là video.mp4
-- File sẽ được chia làm 2 phần: phần 1 có tên small-1.mp4 sẽ có thời lượng 50 giây tính từ đầu video, phần 2 sẽ có tên small-2.mp4 sẽ bắt đầu từ giây thứ 50 và kéo dài đến cuối video
+- File sẽ được chia làm 2 phần: phần 1 có tên **small-1.mp4** sẽ có thời lượng 50 giây tính từ đầu video, phần 2 sẽ có tên **small-2.mp4** sẽ bắt đầu từ giây thứ 50 và kéo dài đến cuối video
 
 **Code FFmpeg ghép video từ những video nhỏ**
 
-```bash
+```shell
 ffmpeg -f concat -i file-list.txt -c copy output.mp4
 ```
 
@@ -297,7 +297,7 @@ Trong đó:
 
 - File đầu vào là file file-list.txt - chứa tên của các video cần ghép, ở cùng thư mục đang xét. Ví dụ nội dung file sẽ như sau:
 
-```bash
+```
 file 'small-1.mp4'
 file 'small-2.mp4'
 ```
@@ -306,7 +306,7 @@ file 'small-2.mp4'
 
 **Code FFmpeg tắt âm thanh của video**
 
-```bash
+```shell
 ffmpeg -i video.mp4 -an mute-video.mp4
 ```
 
@@ -320,7 +320,7 @@ Trong đó:
 
 Dùng để chạy, phát video. Câu lệnh đơn giản là:
 
-```bash
+```shell
 ffplay dir/video.mp4
 ```
 
@@ -335,9 +335,9 @@ Trên đây là những gì mình tìm hiểu được về FFmpeg và những c
 
 Hy vọng, bài viết trên đây có thể giúp ích cho bạn. Nếu có gì thắc mắc bạn có thể để lại comment phía dưới hoặc gửi lại email cho mình.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lay-anh-thumbnail-cua-video-tren-youtube), thân ái!
+Xin chào và hẹn gặp bạn ở bài viết tiếp theo, thân ái!
 
-Có thể bạn quan tâm:
+**Có thể bạn quan tâm:**
 
 - [[FFmpeg Tutorial] Những câu lệnh FFmpeg xử lý video](https://phamvanlam.com/ffmpeg-tutorial-nhung-cau-lenh-ffmpeg-xu-ly-video)
 - [[FFmpeg Tutorial] Lấy thông tin video bằng FFmpeg](https://phamvanlam.com/ffmpeg-tutorial-lay-thong-tin-video-bang-ffmpeg)

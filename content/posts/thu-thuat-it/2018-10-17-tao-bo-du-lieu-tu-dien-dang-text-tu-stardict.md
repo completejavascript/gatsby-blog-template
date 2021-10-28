@@ -1,8 +1,9 @@
 ---
 date: "2018-10-17T15:45:34Z"
+update: "2018-10-17T15:45:34Z"
 template: "post"
 directory: "Thủ thuật IT"
-cover: "../images/tao-bo-tu-dien-dang-text-tu-stardict-completejavascript.com_.png"
+cover: "../../images/thu-thuat-it/tao-bo-tu-dien-dang-text-tu-stardict-completejavascript.com_.png"
 keywords: "tạo bộ dữ liệu từ điển dạng text"
 description: "Có thể bạn chưa biết, cách đơn giản để tạo bộ dữ liệu từ điển dạng text là sử dụng bộ từ điển của StarDict cùng với StarDict Editor là xong."
 slug: tao-bo-du-lieu-tu-dien-dang-text-tu-stardict
@@ -35,13 +36,13 @@ Tại trang download, bạn sẽ thấy có rất nhiều loại từ điền kh
 
 Giả sử mình tải bộ từ điển Anh Việt về. Rồi sau khi giải nén xong, mình thu được 3 tệp tin như sau:
 
-![Sau khi giải nén bộ từ điển Anh-Việt](../images/Capture.png)
+![Sau khi giải nén bộ từ điển Anh-Việt](../../images/thu-thuat-it/Capture.png)
 
 Tiếp theo, mình sử dụng [7zip](https://www.7-zip.org/) để giải nén **en_vi.dict.dz** để thu được **en_vi.dict**.
 
 Kết quả:
 
-![Sau khi giải nén en_vi.dict.dz](../images/Capture-3.png)
+![Sau khi giải nén en_vi.dict.dz](../../images/thu-thuat-it/Capture-3.png)
 
 ### Download công cụ chuyển đổi
 
@@ -56,13 +57,13 @@ _Vì hai tệp tin này mình tải từ rất lâu rồi, nên không còn nh�
 
 Kết quả mình có những công cụ như sau:
 
-![Sau khi tải 2 công cụ gtk2-runtime và stardict-editor](../images/Capture-2.png)
+![Sau khi tải 2 công cụ gtk2-runtime và stardict-editor](../../images/thu-thuat-it/Capture-2.png)
 
 ## Cài đặt môi trường
 
 Đầu tiên bạn chạy **gtk2-runtime**. Cài đặt dễ lắm. Bạn chỉ cần chú ý là có một bước như này:
 
-![Nhấn thêm 2 tùy chọn để cho thằng stardict-editor chạy được](../images/gtk-3.png)
+![Nhấn thêm 2 tùy chọn để cho thằng stardict-editor chạy được](../../images/thu-thuat-it/gtk-3.png)
 
 Bạn phải **nhấn vào 2 checkbox** phía trên, rồi nhấn **Next**. Sau đó, bạn cứ chọn **Next**, hoặc **Install**,... cho đến khi **Finish** là cài đặt xong.
 
@@ -72,15 +73,15 @@ Bạn phải **nhấn vào 2 checkbox** phía trên, rồi nhấn **Next**. Sau 
 
 Sau khi chương trình xuất hiện, bạn chọn vào tab **DeCompile** như hình dưới.
 
-![Chọn DeCompile để chuyển database thành dạng text](../images/stardict-1.png)
+![Chọn DeCompile để chuyển database thành dạng text](../../images/thu-thuat-it/stardict-1.png)
 
 Tiếp theo là nhấn vào **Browse** và chọn đến file **en_vi.ifo** ở bên trong thư mục chứa bộ dữ liệu từ điển mà mình tải về lúc đầu rồi nhấn **Open**.
 
-![Nhớ chọn vào file en_vi.info nhé](../images/Untitled.png)
+![Nhớ chọn vào file en_vi.info nhé](../../images/thu-thuat-it/Untitled.png)
 
 Sau đó, bạn chỉ cần nhấn vào **Decompile**.
 
-![Nhấn vào Decompile để bắt đầu chuyển đổi](../images/stardict-3-1.png)
+![Nhấn vào Decompile để bắt đầu chuyển đổi](../../images/thu-thuat-it/stardict-3-1.png)
 
 Nếu bạn thấy thông báo **Done!**, thì nghĩa là bạn đã tạo bộ dữ liệu từ điển dạng text thành công.
 
@@ -88,7 +89,7 @@ Nếu cẩn thận hơn thì bạn có thể nhấn thêm vào **Verify** để 
 
 Kết quả là mình đã có bộ dữ liệu từ điển dạng text rồi!
 
-![Kết quả thu được file en_vi.txt](../images/Capture-6.png)
+![Kết quả thu được file en_vi.txt](../../images/thu-thuat-it/Capture-6.png)
 
 ## Lời kết
 
