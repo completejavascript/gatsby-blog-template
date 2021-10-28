@@ -1,5 +1,6 @@
 ---
-date: "2018-12-12T22:30:23Z"
+date: "2018-08-01T22:30:23Z"
+update: "2018-12-12T22:30:23Z"
 template: "post"
 directory: "React"
 cover: "../images/quan-ly-state-react-voi-react-context-api-completejavascript.com_.png"

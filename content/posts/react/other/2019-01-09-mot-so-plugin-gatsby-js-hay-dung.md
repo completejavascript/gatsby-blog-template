@@ -1,5 +1,6 @@
 ---
-date: "2018-10-11T11:53:05Z"
+date: "2019-01-09T11:53:05Z"
+update: "2019-01-09T11:53:05Z"
 template: "post"
 directory: "React"
 cover: "../images/mot-so-plugin-gatsby.js-hay-dung-completejavascript.com_.png"

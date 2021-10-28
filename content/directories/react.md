@@ -57,6 +57,8 @@ Phần này bao gồm những bài viết về học React qua ví dụ, cách d
 ### React với các thư viện khác
 
 - [SASS với create-react-app](/su-dung-sass-voi-create-react-app)
+- [Tạo trang blog với Gatsby.js](/tao-trang-blog-voi-gatsby-js)
+- [Một số plugin Gatsby.js hay dùng](/mot-so-plugin-gatsby-js-hay-dung)
 
 </section>
 </div>

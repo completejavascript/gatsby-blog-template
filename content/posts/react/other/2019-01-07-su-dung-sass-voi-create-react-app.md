@@ -1,5 +1,6 @@
 ---
-date: "2020-01-07T06:00:00Z"
+date: "2019-01-07T06:00:00Z"
+update: "2020-01-07T06:00:00Z"
 template: "post"
 directory: "React"
 title: "Sử dụng SASS với create-react-app"

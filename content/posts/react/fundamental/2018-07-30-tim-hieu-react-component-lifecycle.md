@@ -1,5 +1,6 @@
 ---
-date: "2018-10-31T22:30:03Z"
+date: "2018-07-30T22:30:03Z"
+update: "2018-10-31T22:30:03Z"
 template: "post"
 directory: "React"
 cover: "../images/tim-hieu-react-component-lifecycle-completejavascript.com_.png"

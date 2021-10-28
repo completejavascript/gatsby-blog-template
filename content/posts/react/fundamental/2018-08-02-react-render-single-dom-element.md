@@ -1,5 +1,6 @@
 ---
-date: "2019-05-15T23:00:23Z"
+date: "2018-08-02T23:00:23Z"
+update: "2019-05-15T23:00:23Z"
 template: "post"
 directory: "React"
 cover: "../images/tai-sao-react-yeu-cau-render-single-element-va-cac-cach-giai-quyet-completejavascript.com_.png"
