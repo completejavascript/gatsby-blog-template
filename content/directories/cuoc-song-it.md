@@ -22,7 +22,7 @@ Chia sẻ kiến thức về cuộc sống dân IT, kinh nghiệm học lập tr
 </section>
 </div>
 
-<div class="section-wrapper">
+<div class="section-wrapper below">
 <section class="container">
 
 ## Cuộc sống dân IT
@@ -41,7 +41,7 @@ Chia sẻ kiến thức về cuộc sống dân IT, kinh nghiệm học lập tr
 </section>
 </div>
 
-<div class="section-wrapper">
+<div class="section-wrapper below">
 <section class="container">
 
 ## Ảnh chế vui

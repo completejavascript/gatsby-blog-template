@@ -29,7 +29,7 @@ Chia sẻ kiến thức về thủ thuật IT, thủ thuật máy tính, phần 
 </section>
 </div>
 
-<div class="section-wrapper">
+<div class="section-wrapper below">
 <section class="container">
 
 ## Các bài viết khác
