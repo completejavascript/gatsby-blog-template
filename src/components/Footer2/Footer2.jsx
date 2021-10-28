@@ -102,7 +102,7 @@ function FooterSiteInfo() {
       <FooterSocialLinks
         socials={socialLinks}
         color="#606060"
-        header="CONNECT"
+        header="Mạng xã hội"
       />
     </div>
   );
@@ -117,19 +117,19 @@ function Footer2() {
 
           <FooterLinks
             className="project-links"
-            header="Projects"
+            header="Dự án cá nhân"
             links={projectLinks}
           />
 
           <FooterLinks
             className="network-links"
-            header="Network"
+            header="Các trang web"
             links={networkLinks}
           />
 
           <FooterLinks
             className="site-links"
-            header="About"
+            header="Tài nguyên"
             links={aboutLinks}
           />
         </div>
