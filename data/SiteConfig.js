@@ -237,9 +237,9 @@ const config = {
   aboutLinks: [
     { label: "JavaScript", url: "/javascript" },
     { label: "React", url: "/react" },
-    { label: "Freebie", url: "/freebie" },
     { label: "Thủ thuật IT", url: "/thu-thuat-it" },
     { label: "Cuộc sống IT", url: "/cuoc-song-it" },
+    { label: "Freebie", url: "/freebie" },
     { label: "Blog", url: "/blog" },
   ],
   footerLinks: [
