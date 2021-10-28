@@ -136,18 +136,6 @@ Phần này bao gồm những thủ thuật, tips & tricks, design pattern, nh�
 - [Tạo số ngẫu nhiên và ứng dụng](/tao-so-ngau-nhien-trong-javascript)
 - [Bắt buộc truyền tham số vào hàm](/lam-sao-bat-buoc-truyen-tham-so-vao-ham)
 
-### JavaScript Quiz
-
-- [Quiz phần 1](/xoan-nao-voi-phong-van-javascript-1)
-- [Quiz phần 2](/xoan-nao-voi-phong-van-javascript-2)
-- [Quiz phần 3](/xoan-nao-voi-phong-van-javascript-3)
-- [Quiz phần 4](/xoan-nao-voi-phong-van-javascript-4)
-- [Quiz phần 5](/xoan-nao-voi-phong-van-javascript-5)
-- [Quiz phần 6](/xoan-nao-voi-phong-van-javascript-6)
-- [Quiz phần 7](/xoan-nao-voi-phong-van-javascript-7)
-- [Quiz phần 8](/xoan-nao-voi-phong-van-javascript-8)
-- [Quiz phần 9](/xoan-nao-voi-phong-van-javascript-9)
-
 ### Bài toán thực tế
 
 - [JavaScript Tint Color](/javascript-tint-color-thay-doi-mau-sac-buc-anh)
@@ -171,22 +159,35 @@ Phần này bao gồm những thủ thuật, tips & tricks, design pattern, nh�
 
 ### Tutorials
 
-- [Mustache Template với jQuery](/mustache-template-voi-jquery)
-- [Smooth Scrolling với jQuery](/smooth-scrolling-trang-web-voi-jquery)
-- [Menu Responsive](/thiet-ke-website-responsive-voi-css-menu)
-- [Lấy vị trí với Geolocation API và ipinfo.io](/hai-cach-lay-vi-tri-nguoi-dung)
 - [Tribute Page](/lap-trinh-javascript-voi-fcc-build-a-tribute-page)
 - [Portfolio cá nhân](/lap-trinh-javascript-voi-fcc-personal-portfolio)
 - [Random Quote Machine](/lap-trinh-javascript-voi-fcc-random-quote-machine)
 - [Ứng dụng thời tiết](/lap-trinh-javascript-voi-fcc-local-weather)
 - [Wikipedia Viewer](/lap-trinh-javascript-voi-fcc-wikipedia-viewer)
 - [Twitch TV client](/lap-trinh-javascript-voi-fcc-twitch-tv-json-api)
+- [Mustache Template với jQuery](/mustache-template-voi-jquery)
+- [Smooth Scrolling với jQuery](/smooth-scrolling-trang-web-voi-jquery)
+- [Triển khai Lazy Loading Image với ES6 và CSS](/trien-khai-lazy-loading-image-voi-es6-va-css)
+- [Menu Responsive](/thiet-ke-website-responsive-voi-css-menu)
+- [Lấy vị trí với Geolocation API và ipinfo.io](/hai-cach-lay-vi-tri-nguoi-dung)
 
 ### Một số bài viết hữu ích khác
 
 - [Gửi email bằng HTML và Formspree.io](/gui-mail-bang-html-va-formspree-io)
 - [Dark theme với CSS variable](/tao-dark-theme-voi-css-variable)
 - [Tối ưu FontAwesome với IcoMoon](/toi-uu-font-awesome-voi-icomoon)
+
+### JavaScript Quiz
+
+- [Quiz phần 1](/xoan-nao-voi-phong-van-javascript-1)
+- [Quiz phần 2](/xoan-nao-voi-phong-van-javascript-2)
+- [Quiz phần 3](/xoan-nao-voi-phong-van-javascript-3)
+- [Quiz phần 4](/xoan-nao-voi-phong-van-javascript-4)
+- [Quiz phần 5](/xoan-nao-voi-phong-van-javascript-5)
+- [Quiz phần 6](/xoan-nao-voi-phong-van-javascript-6)
+- [Quiz phần 7](/xoan-nao-voi-phong-van-javascript-7)
+- [Quiz phần 8](/xoan-nao-voi-phong-van-javascript-8)
+- [Quiz phần 9](/xoan-nao-voi-phong-van-javascript-9)
 
 </section>
 </div>
