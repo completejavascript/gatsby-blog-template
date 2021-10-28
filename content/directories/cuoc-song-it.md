@@ -1,7 +1,7 @@
 ---
 template: "directory"
 title: "Cuộc sống IT"
-description: "Chia sẻ kiến thức về cuộc sống dân IT"
+description: "Chia sẻ kiến thức về cuộc sống dân IT, kinh nghiệm học lập trình và lĩnh vực liên quan như Tiếng Anh."
 slug: "cuoc-song-it"
 ---
 
