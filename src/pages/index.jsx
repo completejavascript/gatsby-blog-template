@@ -76,7 +76,7 @@ const LatestPostsSection = ({ postList = [] }) => (
   <section className="latestposts-section">
     <div className="container padding margin-top-3 margin-bottom-3">
       <div className="text-center margin-bottom-3 margin-top-2">
-        <h2 className="section-title">Bài viết mới nhất</h2>
+        <h2 className="section-title">Bài viết mới cập nhật</h2>
       </div>
       <div className="latestposts-container">
         {postList.map((post) => (
@@ -96,7 +96,7 @@ const LatestFreebiesSection = ({ postList = [] }) => (
   <section className="latestfreebies-section">
     <div className="container padding margin-top-3 margin-bottom-3">
       <div className="text-center margin-bottom-3 margin-top-2">
-        <h2 className="section-title">Freebie mới nhất</h2>
+        <h2 className="section-title">Freebie mới cập nhật</h2>
       </div>
       <div className="latestposts-container">
         {postList.map((post) => (
@@ -168,7 +168,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     posts: allMarkdownRemark(
       limit: 6
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___update], order: DESC }
       filter: { frontmatter: { template: { eq: "post" } } }
     ) {
       edges {
@@ -184,6 +184,7 @@ export const pageQuery = graphql`
             title
             tags
             date
+            update
             cover {
               childImageSharp {
                 gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
@@ -195,7 +196,7 @@ export const pageQuery = graphql`
     }
     freebies: allMarkdownRemark(
       limit: 6
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___update], order: DESC }
       filter: { frontmatter: { template: { eq: "freebie" } } }
     ) {
       edges {
@@ -211,6 +212,7 @@ export const pageQuery = graphql`
             title
             tags
             date
+            update
             cover {
               childImageSharp {
                 gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)

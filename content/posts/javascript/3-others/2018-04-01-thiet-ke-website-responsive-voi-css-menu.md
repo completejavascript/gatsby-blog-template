@@ -1,5 +1,6 @@
 ---
 date: "2018-04-01T00:00:07Z"
+update: "2018-04-01T00:00:07Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/thiet-ke-website-responsive-menu-completejavascript.com_.png"

@@ -79,8 +79,8 @@ const config = {
   // Use for widget
   categoryWidgetTitle: "Chuyên mục",
   tagWidgetTitle: "Chủ đề",
-  latestPostsWidgetTitle: "Bài viết mới nhất",
-  latestFreebiesWidgetTitle: "Freebie mới nhất",
+  latestPostsWidgetTitle: "Bài viết mới cập nhật",
+  latestFreebiesWidgetTitle: "Freebie mới cập nhật",
   latestRelatedWidgetTitle: "Bài viết liên quan",
   linksWidgetTitle: "Liên Kết",
   // Use for Google custom search

@@ -103,7 +103,7 @@ export const pageQuery = graphql`
     }
     relatedTags: allMarkdownRemark(
       limit: 8
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___update], order: DESC }
       filter: {
         frontmatter: { tags: { in: $tags }, template: { eq: $template } }
       }
