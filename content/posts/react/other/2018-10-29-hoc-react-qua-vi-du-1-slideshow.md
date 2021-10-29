@@ -64,7 +64,7 @@ Trong đó:
 
 ### Nội dung file slideshow.js
 
-```jsx
+```jsx:title=slideshow.js
 import React from "react";
 import ReactDOM from "react-dom";
 import "./slideshow.css";
@@ -259,7 +259,7 @@ File này dùng để xác định style cho Slideshow component. Bạn chú ý 
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì hiểu là style này được áp dụng cho **element2** là con trực tiếp của **element1** - không phải cháu, chắt,...
 
-```css
+```css:title=slideshow.css
 .lp-slideshow,
 .lp-slideshow * {
   box-sizing: border-box;
@@ -386,9 +386,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 
 ## Sử dụng Slideshow component
 
-**./src/App.css**
-
-```css
+```css:title=./src/App.css
 /* Không thay đổi */
 .App,
 .App * {
@@ -408,9 +406,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 }
 ```
 
-**./src/App.js**
-
-```jsx
+```jsx:title=./src/App.js
 import React from "react";
 import "./App.css";
 

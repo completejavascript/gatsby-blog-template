@@ -105,7 +105,7 @@ Tiếp theo, mở Terminal trên Visual Studio Code bằng cách chọn **View**
 Bạn có thể sử dụng câu lệnh sau để tạo mới một project create-react-app:
 
 ```bash
-npx create-react-app app-name
+$ npx create-react-app app-name
 ```
 
 Trong đó, _app-name_ là tên project mà bạn muốn đặt. Kết quả của câu lệnh trên là bạn đã có một project mẫu.
@@ -116,10 +116,10 @@ Trong đó, _app-name_ là tên project mà bạn muốn đặt. Kết quả c�
 
 ```bash
 # Di chuyển đến vị trí bên trong thư mục chứa project
-cd app-name
+$ cd app-name
 
 # Tạo server
-yarn start
+$ yarn start
 ```
 
 Sau đó, bạn vào địa chỉ `http://127.0.0.1:3000` trên trình duyệt để kiểm tra kết quả. Nếu mọi thứ hoạt động bình thường thì bạn sẽ thu được màn hình như sau:
@@ -144,7 +144,7 @@ Tuy nhiên, có nhiều thứ mà mình thấy rằng nên thay đổi và việ
 
 Ví dụ file _index.html_ trong 1 project của mình:
 
-```html
+```html:title=index.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -238,30 +238,30 @@ https://github.com/completejavascript/app-name.git
 
 ```bash
 # Tạo mới git repository
-git init
+$ git init
 
 # Thêm tất cả các file vào git
-git add .
+$ git add .
 
 # Commit sự thay đổi
-git commit -m 'initial commit'
+$ git commit -m 'initial commit'
 
 # Add remote đến Github Repository mà bạn đã tạo
-git remote add origin https://github.com/completejavascript/app-name.git
+$ git remote add origin https://github.com/completejavascript/app-name.git
 
 # Push các file lên Github
-git push origin master
+$ git push origin master
 ```
 
 **Bước 3**: Cài đặt gh-pages sử dụng npm
 
 ```bash
-npm install --save gh-pages
+$ npm install --save gh-pages
 ```
 
 **Bước 4**: Sửa file _package.json_
 
-```json
+```json:title=package.json
 {
   "name": "app-name",
   "version": "0.1.0",
@@ -298,7 +298,7 @@ https://[your-user-name].github.io/[your-repo-name]/
 **Bước 5**: Chạy câu lệnh sau để deploy ứng dụng.
 
 ```bash
-npm run deploy
+$ npm run deploy
 ```
 
 Sau khi deploy ứng dụng React thành công, bạn cần chờ một vài phút, rồi truy cập vào địa chỉ ứng với phần **homepage** để kiểm tra thành quả của mình.
@@ -315,4 +315,4 @@ Trên đây là những bước cơ bản để tạo và deploy ứng dụng Re
 
 Tuy nhiên, nếu bạn sử dụng Windows 10 (hoặc cao hơn) thì có thể sẽ có lỗi xảy ra. Nếu bạn chưa thể tìm ra cách khắc phục, có thể để lại câu hỏi dưới phần bình luận, mình sẽ cố gắng tìm cách giải quyết giúp bạn.
 
-Cuối cùng, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/trien-khai-lazy-loading-image-trong-react), thân ái!
+Cuối cùng, xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!

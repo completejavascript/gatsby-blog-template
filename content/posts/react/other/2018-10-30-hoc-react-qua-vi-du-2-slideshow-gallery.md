@@ -76,7 +76,7 @@ Trong phần này bạn cần phải chú ý đến một số kiến thức nh�
 
 Còn nội dung chi tiết mình giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-```jsx
+```jsx:title=slideshow-gallery.js
 import React from "react";
 import ReactDOM from "react-dom";
 import "./slideshow-gallery.css";
@@ -287,7 +287,7 @@ File này dùng để xác định style cho Slideshow Gallery component. Bạn 
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-```css
+```css:title=slideshow-gallery.css
 .lp-slideshow-gallery,
 .lp-slideshow-gallery * {
   box-sizing: border-box;
@@ -411,9 +411,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 
 ## Sử dụng Slideshow Gallery component
 
-**./src/App.css**
-
-```css
+```css:title=./src/App.css
 /* Không thay đổi */
 .App,
 .App * {
@@ -433,9 +431,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 }
 ```
 
-**./src/App.js**
-
-```jsx
+```jsx:title=./src/App.js
 import React from "react";
 import "./App.css";
 

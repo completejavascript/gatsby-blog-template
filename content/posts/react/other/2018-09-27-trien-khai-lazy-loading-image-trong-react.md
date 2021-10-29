@@ -300,4 +300,4 @@ Tiếp theo, mình dự định sẽ tìm hiểu và chia sẻ tiếp về Lazy 
   Xem Demo
 </a>
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-trang-blog-voi-gatsby-js), thân ái!
+Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!

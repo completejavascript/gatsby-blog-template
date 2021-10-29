@@ -69,7 +69,7 @@ Trong phần này bạn cần phải chú ý đến một số kiến thức nh�
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-```jsx
+```jsx:title=sticky-note.js
 import React from "react";
 import "./sticky-notes.css";
 import DraggableNote from "../draggable-note/draggable-note";
@@ -293,7 +293,7 @@ File này dùng để xác định style cho Sticky Notes Component. Bạn chú 
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-```css
+```css:title=sticky-notes.css
 .lp-sticky-notes-header,
 .lp-sticky-notes-header * {
   box-sizing: border-box;
@@ -333,9 +333,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 ## Sử dụng Sticky Notes component
 
-**./src/App.css**
-
-```css
+```css:title=./src/App.css
 .App,
 .App * {
   box-sizing: border-box;
@@ -354,9 +352,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 }
 ```
 
-**./src/App.js**
-
-```jsx
+```jsx:title=./src/App.js
 import React from "react";
 import "./App.css";
 

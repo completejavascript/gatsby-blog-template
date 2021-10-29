@@ -79,7 +79,7 @@ Và ý tưởng chung để xây dựng Lightbox Component là:
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-```jsx
+```jsx:title=lightbox.js
 import React from "react";
 import ReactDOM from "react-dom";
 import "./lightbox.css";
@@ -232,7 +232,7 @@ File này dùng để xác định style cho Lightbox Component. Bạn chú ý l
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-```css
+```css:title=lightbox.css
 .lp-lightbox,
 .lp-lightbox * {
   box-sizing: border-box;
@@ -320,9 +320,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 
 ## Sử dụng Lightbox component
 
-**./src/App.css**
-
-```css
+```css:title=./src/App.css
 /* Không thay đổi */
 .App,
 .App * {
@@ -342,9 +340,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 }
 ```
 
-**./src/App.js**
-
-```jsx
+```jsx:title=./src/App.js
 import React from "react";
 import "./App.css";
 

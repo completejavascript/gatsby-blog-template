@@ -68,7 +68,7 @@ Trong phần này bạn cần phải chú ý đến một số kiến thức nh�
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-```jsx
+```jsx:title=collapsible-content.js
 import React from "react";
 import ReactDOM from "react-dom";
 import "./collapsible-content.css";
@@ -178,7 +178,7 @@ File này dùng để xác định style cho Collapsible Content Component. Bạ
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-```css
+```css:title=collapsible-content.css
 .lp-collapsible-content,
 .lp-collapsible-content * {
   box-sizing: border-box;
@@ -248,9 +248,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 
 ## Sử dụng Collapsible Content component
 
-**./src/App.css**
-
-```css
+```css:title=./src/App.css
 .App,
 .App * {
   box-sizing: border-box;
@@ -269,11 +267,9 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 }
 ```
 
-**./src/App.js**
-
 Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow), [Modal Image](/hoc-react-qua-vi-du-3-modal-image) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox).
 
-```jsx
+```jsx:title=./src/App.js
 import React from "react";
 import "./App.css";
 import CollapsibleContent from "./components/collapsible-content/collapsible-content";

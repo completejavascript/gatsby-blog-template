@@ -14,7 +14,7 @@ tags:
   - Node.js
 ---
 
-Xin chào bạn! Như vậy là đã qua hơn 2 tháng mình học và thực hành React với các project như: [Markdown Editor](http://about.phamvanlam.com/markdown-editor/), [Drum Machine](http://about.phamvanlam.com/drum-machine/), [Standard Calculator](http://about.phamvanlam.com/calculator/), [Pomodoro Clock](http://about.phamvanlam.com/pomodoro-clock/),... Với những thứ mình đã học và thực hành thì có lẽ là chưa đủ, nhưng hiện tại mình cảm thấy khá thoải mái, tự tin khi viết code React. Do đó, mình muốn bắt tay vào học những những công cụ, thư viện hay framework sử dụng React để có thể làm thêm được nhiều thứ hay ho hơn nữa. Và cái mình chọn đầu tiên đó là [Gatsby.js](https://www.gatsbyjs.org/). Nhờ vậy, mình đã chuyển 2 blog khác của mình từ [Wordpress.org](https://wordpress.org/) sang sử dụng Gatsby.js, đó là: <del>[Lam Pham Blog](https://phamvanlam.com/)</del> và [Ôn luyện thuật toán](https://thuattoan.phamvanlam.com/). Bài viết này, mình sẽ tổng hợp lại những kiến thức tích luỹ được, qua đó giúp bạn biết cách tạo trang blog với Gatsby.js và thậm chí là nhiều static website khác nữa.
+Xin chào bạn! Như vậy là đã qua hơn 2 tháng mình học và thực hành React với các project như: [Markdown Editor](http://about.phamvanlam.com/markdown-editor/), [Drum Machine](http://about.phamvanlam.com/drum-machine/), [Standard Calculator](http://about.phamvanlam.com/calculator/), [Pomodoro Clock](http://about.phamvanlam.com/pomodoro-clock/),... Với những thứ mình đã học và thực hành thì có lẽ là chưa đủ, nhưng hiện tại mình cảm thấy khá thoải mái, tự tin khi viết code React. Do đó, mình muốn bắt tay vào học những những công cụ, thư viện hay framework sử dụng React để có thể làm thêm được nhiều thứ hay ho hơn nữa. Và cái mình chọn đầu tiên đó là [Gatsby.js](https://www.gatsbyjs.org/). Nhờ vậy, mình đã chuyển 2 blog khác của mình từ [Wordpress.org](https://wordpress.org/) sang sử dụng Gatsby.js, đó là: [Lam Pham Blog](https://phamvanlam.com/) và [Ôn luyện thuật toán](https://thuattoan.phamvanlam.com/). Bài viết này, mình sẽ tổng hợp lại những kiến thức tích luỹ được, qua đó giúp bạn biết cách tạo trang blog với Gatsby.js và thậm chí là nhiều static website khác nữa.
 
 Mời bạn theo dõi bài viết!
 
@@ -65,18 +65,18 @@ Mục đích của Gatsby.js là build ra trang web dưới dạng các file tĩ
 
 ### Cài đặt Node.js
 
-Node.js là thứ không thể thiếu vì Gatsby được xây dựng dựa trên Node.js. Để cài đặt Node.js trên Windows, bạn có thể tham khảo bài viết [Hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban).
+Node.js là thứ không thể thiếu vì Gatsby được xây dựng dựa trên Node.js. Để cài đặt Node.js trên Windows, bạn có thể tham khảo bài viết [hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban).
 
 ### Cài đặt Git
 
-Git cũng là một thành phần không thể thiếu. Mình cần cài đặt Git để tạo mới Gatsby project và giúp quản lý code dễ dàng hơn trên Local cũng như trên Github. Để cài đặt Git trên Windows, bạn có thể tham khảo bài viết [Hướng dẫn cài đặt và cấu hình Git trên Windows](https://o7planning.org/vi/11707/huong-dan-cai-dat-va-cau-hinh-git-tren-windows).
+Git cũng là một thành phần không thể thiếu. Mình cần cài đặt Git để tạo mới Gatsby project và giúp quản lý code dễ dàng hơn trên Local cũng như trên Github. Để cài đặt Git trên Windows, bạn có thể tham khảo bài viết [hướng dẫn cài đặt và cấu hình Git trên Windows](https://o7planning.org/vi/11707/huong-dan-cai-dat-va-cau-hinh-git-tren-windows).
 
 ### Cài đặt Gatsby CLI
 
 Gatsby CLI là công cụ cần thiết để tạo mới một trang blog với Gatsby.js, cũng như là chạy các câu lệnh phục vụ cho việc phát triển, [deploy](/deploy-ung-dung-react-len-github-pages) trang web. Để cài đặt Gatsby CLI bạn có thể sử dụng npm bằng [câu lệnh](/tag/command-line):
 
 ```bash
-npm install --global gatsby-cli
+$ npm install --global gatsby-cli
 ```
 
 _Câu lệnh trên cài đặt Gatsby CLI ở phạm vi global. Nghĩa là bạn có thể sử dụng Gatsby ở bất kỳ vị trí nào trên máy tính của bạn._
@@ -84,19 +84,19 @@ _Câu lệnh trên cài đặt Gatsby CLI ở phạm vi global. Nghĩa là bạn
 Sau khi cài đặt Gatsby CLI, bạn có thể kiểm tra xem việc cài đặt có thành công hay chưa bằng 2 câu lệnh:
 
 ```bash
-gatsby --version
-gatsby --help
+$ gatsby --version
+$ gatsby --help
 ```
 
 #### Kiểm tra Gatsby CLI sau khi cài đặt
 
-Nếu việc cài đặt thành công thì câu lệnh <code>gatsby --version</code> sẽ in ra phiên bản của Gatsby CLI và câu lệnh <code>gatsby --help</code> sẽ in ra những câu lệnh mà Gatsby CLI hỗ trợ bạn như:
+Nếu việc cài đặt thành công thì câu lệnh `gatsby --version` sẽ in ra phiên bản của Gatsby CLI và câu lệnh `gatsby --help` sẽ in ra những câu lệnh mà Gatsby CLI hỗ trợ bạn như:
 
-- <code>gatsby develop</code>: dùng để tạo server cho quá trình dev, có hỗ trợ **rebuild** và hot-reload trình duyệt khi nội dung các file liên quan thay đổi.
-- <code>gatsby build</code>: build Gatsby project ra trang web dạng các file tĩnh.
-- <code>gatsby serve</code>: giả lập môi trường server cho trang web vừa mới build ra.
-- <code>gatsby info</code>: lấy thông tin của môi trường.
-- <code>gatsby new [rootPath] [starter]</code>: tạo mới Gatsby project tại vị trí _rootPath_ bằng cách clone một project mẫu _starter_.
+- `gatsby develop`: dùng để tạo server cho quá trình dev, có hỗ trợ **rebuild** và hot-reload trình duyệt khi nội dung các file liên quan thay đổi.
+- `gatsby build`: build Gatsby project ra trang web dạng các file tĩnh.
+- `gatsby serve`: giả lập môi trường server cho trang web vừa mới build ra.
+- `gatsby info`: lấy thông tin của môi trường.
+- `gatsby new [rootPath] [starter]`: tạo mới Gatsby project tại vị trí _rootPath_ bằng cách clone một project mẫu _starter_.
 
 ![Kiểm tra cài đặt Gatsby CLI](../../../images/react/gatsby-check-installation.png)
 
@@ -105,7 +105,7 @@ Nếu việc cài đặt thành công thì câu lệnh <code>gatsby --version</c
 Như mình đã nói ở phần trên, Gatsby hỗ trợ bạn tạo mới Gatsby project từ một _starter_ thông qua câu lệnh:
 
 ```bash
-gatsby new [rootPath] [starter]
+$ gatsby new [rootPath] [starter]
 ```
 
 Trong đó, _starter_ là các project mẫu mà bạn có thể tham khảo tại [Gatsby Starters](https://www.gatsbyjs.org/starters). Với khoảng trên 60 starters khác nhau bao gồm các loại như: blog cơ bản đến nâng cao, portfolio, hỗ trợ Contentful, [Wordpress](/tag/wordpress), Firebase,... Nhờ vậy, bạn có thể dễ dàng lựa chọn một mẫu starter phù hợp, sau đó nhanh chóng tuỳ chỉnh nó theo sở thích và yêu cầu của mình, tương tự như _theme_ của Wordpress hay _template_ của Blogger.
@@ -115,7 +115,7 @@ Trong đó, _starter_ là các project mẫu mà bạn có thể tham khảo t�
 Việc sử dụng các starter nâng cao chỉ phù hợp khi mình đã thành thạo và hiểu rõ Gatsby.js rồi. Còn đối với người mời bắt đầu như mình, cần hiểu rõ về quy trình xây dựng Gatsby project, thì mình sẽ lựa chọn starter _Hello World_ như sau:
 
 ```bash
-gatsby new gatsby-tutorial https://github.com/gatsbyjs/gatsby-starter-hello-world
+$ gatsby new gatsby-tutorial https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
 Câu lệnh này sẽ tạo mới một thư mục tên là _gatsby-tutorial_. Sau đó, Gatsby CLI clone project từ Github tại địa chỉ: [https://github.com/gatsbyjs/gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world) và đưa vào thư mục vừa tạo ra.
@@ -123,16 +123,16 @@ Câu lệnh này sẽ tạo mới một thư mục tên là _gatsby-tutorial_. S
 Sau khi lệnh trên hoàn thành, bạn đi vào thư mục mới tạo ra _gatsby-tutorial_:
 
 ```bash
-cd gatsby-tutorial
+$ cd gatsby-tutorial
 ```
 
 rồi chạy lệnh sau để tạo server cho quá trình develop:
 
 ```bash
-gatsby develop
+$ gatsby develop
 ```
 
-Đợi lệnh trên hoàn tất, bạn mở trình duyệt và đi đến địa chỉ: **_http:\/\/localhost:8000/_** thì sẽ thấy trang blog với Gatsby.js đã được tạo ra thành công.
+Đợi lệnh trên hoàn tất, bạn mở trình duyệt và đi đến địa chỉ: `http://localhost:8000/` thì sẽ thấy trang blog với Gatsby.js đã được tạo ra thành công.
 
 ![Tạo mới Hello World Gatsby Project](../../../images/react/gatsby-hello-world.png)
 
@@ -144,7 +144,7 @@ Lúc này, bạn chỉ cần quan tâm đến thư mục /src. Vì bạn sẽ c�
 
 Để xem Gatsby project tự **rebuild** và **hot-loading** như thế nào, bạn mở file **/src/pages/index.js** với nội dung ban đầu là:
 
-```jsx
+```jsx:title=/src/pages/index.js
 import React from "react";
 
 export default () => <div>Hello world!</div>;
@@ -152,13 +152,13 @@ export default () => <div>Hello world!</div>;
 
 Bạn sửa file này thành:
 
-```jsx
+```jsx:title=/src/pages/index.js
 import React from "react";
 
 export default () => <div>Hello Gatsby!</div>;
 ```
 
-Sau khi nhấn _Save_, bạn sẽ thấy Gatsby project được build lại (xem ở giao diện dòng lệnh, nơi bạn chạy lệnh <code>gatsby develop</code> trước đó) và trình duyệt tự động reload.
+Sau khi nhấn _Save_, bạn sẽ thấy Gatsby project được build lại (xem ở giao diện dòng lệnh, nơi bạn chạy lệnh `gatsby develop` trước đó) và trình duyệt tự động reload.
 
 ![Gatsby project tự động rebuild rồi reload](../../../images/react/gatsby-rebuild-hot-loading.png)
 
@@ -176,23 +176,19 @@ Mặc định, Gatsby sẽ lấy các file _.js_ được định nghĩa trong t
 
 Để tạo thêm trang giới thiệu và liên hệ, mình tạo thêm 2 file mới trong thư mục này là _gioi-thieu.js_ và _lien-he.js_. Với nội dung tương tự như file _index.js_:
 
-**/src/pages/gioi-thieu.js**
-
-```jsx
+```jsx:title=/src/pages/gioi-thieu.js
 import React from "react";
 
 export default () => <div>Giới thiệu</div>;
 ```
 
-**/src/pages/lien-he.js**
-
-```jsx
+```jsx:title=/src/pages/lien-he.js
 import React from "react";
 
 export default () => <div>Liên hệ</div>;
 ```
 
-Sau khi lưu lại, bạn có thể vào 2 địa chỉ **http:\/\/localhost:8000/gioi-thieu/** và **http:\/\/localhost:8000/lien-he/** sẽ thấy kết quả 2 trang lần lượt là:
+Sau khi lưu lại, bạn có thể vào 2 địa chỉ `http://localhost:8000/gioi-thieu/` và `http://localhost:8000/lien-he/` sẽ thấy kết quả 2 trang lần lượt là:
 
 Kết quả trang giới thiệu:
 
@@ -204,7 +200,7 @@ Kết quả trang liên hệ:
 
 #### Cách xem các trang đang tồn tại từ trang 404 mặc định
 
-Ngoài ra, nếu bạn chưa biết chắc trang blog với Gatsby.js hiện tại gồm những trang nào thì bạn có thể vào 1 địa chỉ bất kì, ví dụ **_http:\/\/localhost:8000/abc/_** (*abc* là giá trị bất kỳ nhé).
+Ngoài ra, nếu bạn chưa biết chắc trang blog với Gatsby.js hiện tại gồm những trang nào thì bạn có thể vào 1 địa chỉ bất kì, ví dụ `http://localhost:8000/abc/` (*abc* là giá trị bất kỳ nhé).
 
 Ở chế độ phát triển, khi bạn vào một trang bất kỳ mà trang này không tồn tại thì Gatsby sẽ hiển thị ra một trang **404** mặc định, trong đó sẽ có thông tin về những trang đang tồn tại:
 
@@ -218,7 +214,7 @@ Hình trên cho thấy blog của mình đang có 3 trang là:
 
 > **Chú ý:** Trang này chỉ tồn tại ở chế độ phát triển, khi deploy ra thực tế, bạn cần phải implement trang này. Hay nói cách khác là bạn phải tạo thêm 1 file *404.js* trong thư mục */src/pages/*. Tạm thời mình chưa quan tâm đến trang này vội.
 
-Tóm lại, để tạo thêm một trang bất kì, bạn cần định nghĩa nó trong thư mục <code>/scs/pages/</code>. Trong đó, mỗi trang sẽ là một file *.js* được *export default* React Component. Tiếp theo, mình sẽ bất đầu xây dựng layout cho trang blog với Gatsby.js.
+Tóm lại, để tạo thêm một trang bất kì, bạn cần định nghĩa nó trong thư mục `/scs/pages/`. Trong đó, mỗi trang sẽ là một file *.js* được *export default* React Component. Tiếp theo, mình sẽ bất đầu xây dựng layout cho trang blog với Gatsby.js.
 
 ### Thiết kế layout
 
@@ -234,9 +230,7 @@ Dĩ nhiên, bạn có thể định nghĩa nhiều loại Layout khác nhau đ�
 
 Để dễ dàng quản lý các Component, mình sẽ tạo mới thư mục _components_ trong thư mục */src*. Và trong đó, tạo thêm file *layout.js* để định nghĩa Layout Component và file *layout.css* để định nghĩa style cho layout.
 
-**/src/components/layout.js**
-
-```jsx
+```jsx:title=/src/components/layout.js
 import React from "react";
 import "./layout.css";
 import Menu from "./menu";
@@ -251,9 +245,7 @@ export default ({ children }) => {
 };
 ```
 
-**/src/components/layout.css**
-
-```css
+```css:title=/src/components/layout.css
 * {
   box-sizing: border-box;
 }
@@ -304,9 +296,7 @@ Khi đó giá trị *children* là:
 
 Bây giờ, mình sẽ sử dụng Layout Component trong 3 trang mà mình đã định nghĩa (đồng thời sửa thẻ *div* thành *h1* cho nổi bật).
 
-**/src/pages/index.js**
-
-```jsx
+```jsx:title=/src/pages/index.js
 import React from "react";
 import Layout from "../components/layout";
 
@@ -319,9 +309,7 @@ export default () => {
 };
 ```
 
-**/src/pages/gioi-thieu.js**
-
-```jsx
+```jsx:title=/src/pages/gioi-thieu.js
 import React from "react";
 import Layout from "../components/layout";
 
@@ -334,9 +322,7 @@ export default () => {
 };
 ```
 
-**/src/pages/lien-he.js**
-
-```jsx
+```jsx:title=/src/pages/lien-he.js
 import React from "react";
 import Layout from "../components/layout";
 
@@ -357,9 +343,7 @@ Như vậy là mình đã thiết lập Layout cơ bản cho các trang. Tiếp 
 
 Mình sẽ tạo Menu dạng React Component. Trước tiên, mình tạo mới 2 file **/src/components/menu.js** và **/src/components/menu.css**.
 
-**/src/components/menu.js**:
-
-```jsx
+```jsx:title=/src/components/menu.js
 import React from "react";
 import "./menu.css";
 
@@ -385,9 +369,7 @@ export default () => {
 };
 ```
 
-**/src/components/menu.css**:
-
-```css
+```css:title=/src/components/menu.css
 header {
   display: flex;
   display: -webkit-flex;
@@ -420,9 +402,7 @@ Mình sẽ không giải thích nhiều về nội dung 2 file này, vì nó là
 
 Bây giờ, mình sẽ thêm Menu vào Layout:
 
-**/src/components/layout.js**
-
-```jsx
+```jsx:title=/src/components/layout.js
 import React from "react";
 import "./layout.css";
 import Menu from "./menu";
@@ -449,9 +429,7 @@ Tuy nhiên, bạn cũng thấy là khi chuyển sang các trang khác (giới th
 
 Bạn mở file */src/components/menu.js* và sửa lại thành:
 
-**/src/components/menu.js**:
-
-```jsx
+```jsx:title=/src/components/menu.js
 import React from "react";
 import "./menu.css";
 import { Link } from "gatsby";
@@ -488,9 +466,7 @@ Hiện tại, mình chưa thêm bài viết nào, nên cũng chưa có chuyên m
 
 Để tạo sidebar mình tạo thêm 2 file là: */src/components/sidebar.js* và  _/src/components/sidebar.css_.
 
-**/src/components/sidebar.js**:
-
-```jsx
+```jsx:title=/src/components/sidebar.js
 import React from "react";
 import "./sidebar.css";
 
@@ -503,17 +479,13 @@ export default () => {
 };
 ```
 
-**/src/components/sidebar.css**:
-
-```css
+```css:title=/src/components/sidebar.css
 /* Tạm thời chưa có gì */
 ```
 
 Sau đó, thêm Sidebar vào layout:
 
-**/src/components/layout.js**
-
-```jsx
+```jsx:title=/src/components/layout.js
 import React from "react";
 import "./layout.css";
 import Menu from "./menu";
@@ -536,9 +508,7 @@ export default ({ children }) => {
 
 Sửa lại giao diện layout một chút:
 
-**/src/components/layout.css**
-
-```css
+```css:title=/src/components/layout.css
 /*
 * Mình chỉ trích dẫn phần thay đổi thôi nhé!
 */
@@ -579,7 +549,7 @@ Còn nội dung từng bài viết thì sao?
 
 Ví dụ bài */src/posts/2015-05-01---hello-world*:
 
-```md
+```md:title=/src/posts/2015-05-01---hello-world
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
@@ -612,9 +582,7 @@ Mỗi bài viết trong blog với Gatsby.js sẽ có 2 phần.
 
 À mà, bài viết này chưa có thông tin về chuyên mục và thẻ. Mà mình cần 2 thông tin này cho các phần sau nên mình sẽ thêm 2 thông tin này vào mỗi bài viết.
 
-**/src/posts/2015-05-01---hello-world**
-
-```md
+```md:title=/src/posts/2015-05-01---hello-world
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
@@ -623,9 +591,7 @@ tags: ["greeting", "egg"]
 ---
 ```
 
-**/src/posts/2015-05-06---my-second-post**
-
-```md
+```md:title=/src/posts/2015-05-06---my-second-post
 ---
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
@@ -634,9 +600,7 @@ tags: ["egg", "wiki"]
 ---
 ```
 
-**/src/posts/2015-05-28---hi-folks**
-
-```md
+```md:title=/src/posts/2015-05-28---hi-folks
 ---
 title: New Beginnings
 date: "2015-05-28T22:40:32.169Z"
@@ -657,9 +621,7 @@ Hiện tại, mình nghĩ bạn chưa cần tìm hiểu kỹ về GraphQL, vì m
 
 Trước tiên, thử một query đơn của GraphQL xem cách sử dụng nó như thế nào nhé! Bây giờ, bạn tạo mới một file *gatsby-config.js* - ngay tại thư mục gốc, ngang hàng với *package.json* ấy. Rồi sửa nội dung file đó thành:
 
-**/gatsby-config.js**
-
-```js
+```js:title=/gatsby-config.js
 module.exports = {
   siteMetadata: {
     title: `Gatsby Blog Tutorial Demo`,
@@ -675,9 +637,7 @@ Dĩ nhiên, bây giờ trang blog vẫn chưa có gì thay đổi. Để áp d�
 
 Nếu không dùng StaticQuery, mình sẽ phải query data trong 3 file  _/src/pages/index.js_, */src/pages/gioi-thieu.js*, */src/pages/lien-he.js*, tương ứng với 3 trang (sử dụng cách này sẽ dễ tiếp cận hơn nhưng code sẽ bị lặp lại). Mà bạn đừng vội thay đổi code giống 3 đoạn phía dưới nhé, mình chỉ nói nếu dùng cách này thì mới sửa thôi. Nên 3 đoạn sau chỉ dùng để tham khảo.
 
-**/src/pages/index.js**:
-
-```jsx
+```jsx:title=/src/pages/index.js
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
@@ -701,9 +661,7 @@ export const query = graphql`
 `;
 ```
 
-**/src/pages/gioi-thieu.js**
-
-```jsx
+```jsx:title=/src/pages/gioi-thieu.js
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
@@ -727,9 +685,7 @@ export const query = graphql`
 `;
 ```
 
-**/src/pages/lien-he.js**
-
-```jsx
+```jsx:title=/src/pages/lien-he.js
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
@@ -761,9 +717,7 @@ Bạn thấy đó, code bị lặp lại ở cả 3 file. Điều này là khôn
 
 Mình sẽ sửa lại file */src/components/layout.js*:
 
-**/src/components/layout.js**:
-
-```jsx
+```jsx:title=/src/components/layout.js
 import React from "react";
 import "./layout.css";
 import Menu from "./menu";
@@ -804,9 +758,7 @@ Tương tự như bên trên, nhưng bây giờ mình viết thẳng query của
 
 Rồi trong đó, mình lại truyền *title* đến Menu. Và để hiển thị *title* mới này trong Menu, mình sửa file */src/components/menu.js* như sau.
 
-**/src/components/menu.js**:
-
-```jsx
+```jsx:title=/src/components/menu.js
 import React from "react";
 import "./menu.css";
 import { Link } from "gatsby";
@@ -841,7 +793,7 @@ export default (props) => {
 
 #### Sử dụng công cụ đồ hoạ GraphiQL
 
-Ngoài ra, để biết kết quả câu lệnh query graphQL kia như thế nào, bạn có thể sử dụng công cụ GraphiQL bằng cách vào địa chỉ  *http:\/\/localhost:8000/\_\_\_graphql* và copy-paste đoạn query trên vào:
+Ngoài ra, để biết kết quả câu lệnh query graphQL kia như thế nào, bạn có thể sử dụng công cụ GraphiQL bằng cách vào địa chỉ `http://localhost:8000/___graphql` và copy-paste đoạn query trên vào:
 
 ```jsx
 {
@@ -880,14 +832,12 @@ Như mình đã nói ở trên, Gatsby có thể lấy dữ liệu từ các fil
 Trước tiên, cài đặt plugin này bằng câu lệnh:
 
 ```bash
-npm install --save gatsby-source-filesystem
+$ npm install --save gatsby-source-filesystem
 ```
 
 Sau khi cài đặt xong, bạn khai báo plugin này trong file */gatsby-config.js*:
 
-**/gatsby-config.js**:
-
-```js
+```js:title=/gatsby-config.js
 module.exports = {
   siteMetadata: {
     title: `Gatsby Blog Tutorial Demo`,
@@ -904,19 +854,17 @@ module.exports = {
 };
 ```
 
-Trong đó, phần *options.path*, mình khai báo giá trị của nó đến thư mục */src* (hay <code>${\_\_dirname}/src/</code>). Vì các page, post của mình chỉ nằm trong thư mục này.
+Trong đó, phần *options.path*, mình khai báo giá trị của nó đến thư mục `/src` hay `${__dirname}/src/`. Vì các page, post của mình chỉ nằm trong thư mục này.
 
 Tuy nhiên, đến đây mình mới chỉ quét được hết các file trong thư mục */src*. Cái mình cần phải cụ thể hơn, đó là quét được các file Markdown. Vì các bài viết của mình được viết dưới dạng Markdown. Vì vậy, mình cài tiếp plugin *gatsby-transformer-remark* bằng câu lệnh:
 
 ```bash
-npm install --save gatsby-transformer-remark
+$ npm install --save gatsby-transformer-remark
 ```
 
 Rồi lại add nó vào file */gatsby-config.js*:
 
-**/gatsby-config.js**
-
-```js
+```js:title=/gatsby-config.js
 module.exports = {
   siteMetadata: {
     title: `Gatsby Blog Tutorial Demo`,
@@ -942,9 +890,7 @@ Kết quả là mình tìm thấy 3 file Markdown - tương ứng với 3 bài v
 
 Bây giờ, mình sẽ sửa file */src/pages/index.js* để hiển thị danh sách các bài viết lên trang chủ:
 
-**/src/pages/index.js**
-
-```jsx
+```jsx:title=/src/pages/index.js
 import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
@@ -997,9 +943,7 @@ Tuy nhiên, hiện tại mình muốn click vào mỗi bài viết thì phải n
 
 Mình cần phải tạo slug cho mỗi bài viết để có thể link đến chúng. Để làm việc này, đầu tiên mình phải tạo mới file */gatsby-node.js* và sửa file:
 
-**/gatsby-node.js**
-
-```js
+```js:title=/gatsby-node.js
 const path = require(`path`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -1025,13 +969,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 Trong đó, *onCreateNode* là một Gatsby API được gọi mỗi khi có một node mới thêm vào hay chỉnh sửa (mỗi node chính là một file). Mục đích của hàm này là mình sẽ tạo thêm trường *slug* cho mỗi node với *slug* có được bằng cách lấy tên thư mục và tách lấy phần bên phải của dấu (---).
 
-Ví dụ bài viết ứng với thư mục *2015-05-01---hello-world*, mình sẽ lấy thành phần bên phải dấu (---) làm *slug* cho bài viết. Do đó, bài viết ứng với thư mục này sẽ có địa chỉ là **_http:\/\/localhost:8000/hello-world/_** (tương tự với các bài viết khác).
+Ví dụ bài viết ứng với thư mục *2015-05-01---hello-world*, mình sẽ lấy thành phần bên phải dấu (---) làm *slug* cho bài viết.
+
+Do đó, bài viết ứng với thư mục này sẽ có địa chỉ là `http://localhost:8000/hello-world/` (tương tự với các bài viết khác).
 
 Bây giờ mình sẽ sửa file */src/pages/index.js* thành:
 
-**/src/pages/index.js**
-
-```jsx
+```jsx:title=/src/pages/index.js
 import React from "react";
 import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
@@ -1093,9 +1037,7 @@ Lưu lại và restart server. Rồi sau đó bạn có thể nhấn thử vào�
 
 Để làm việc này, mình cần phải sử dụng một Gatsby API khác là _createPages_. Mình tiếp tục sửa file */gatsby-node.js*.
 
-**/gatsby-node.js**
-
-```js
+```js:title=/gatsby-node.js
 /*
  * phần trước không thay đổi, mình bổ sung thêm đoạn sau
  */
@@ -1139,9 +1081,7 @@ Dĩ nhiên, đến đây thì mọi thứ vẫn chưa có gì thay đổi. Vì m
 
 Đầu tiên, tạo file */src/templates/blog-post.js* và sửa nội dung nó thành:
 
-**/src/templates/blog-post.js**
-
-```jsx
+```jsx:title=/src/templates/blog-post.js
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
@@ -1201,14 +1141,14 @@ Trong demo này, mình sẽ chỉ xử lý thêm trường hợp nội dung bài
 Để xử lý phần hiển thị ảnh trong Markdown, mình cần cài thêm plugin *gatsby-remark-images* bằng câu lệnh:
 
 ```bash
-npm install --save gatsby-remark-images gatsby-plugin-sharp
+$ npm install --save gatsby-remark-images gatsby-plugin-sharp
 ```
 
 _Ở đây mình có cài thêm plugin gatsby-plugin-sharp vì gatsby-remark-images cần sử dụng plugin này._
 
 Tiếp theo mình sửa lại file */gatsby-config.js*:
 
-```js
+```js:title=/gatsby-config.js
 module.exports = {
   siteMetadata: {
     title: `Gatsby Blog Tutorial Demo`,
@@ -1261,14 +1201,12 @@ Module này có hỗ trợ tiếng việt. Ví dụ: chuyên mục "Lập trình
 Câu lệnh cài đặt như sau:
 
 ```bash
-npm install --save slug
+$ npm install --save slug
 ```
 
 Sau đó mình bắt đầu sửa file */src/components/layout.js*.
 
-**/src/components/layout.js**:
-
-```js
+```js:title=/src/components/layout.js
 import React from "react";
 import "./layout.css";
 import Menu from "./menu";
@@ -1321,9 +1259,7 @@ Trong phần query GraphQL, mình đã thêm vào phần duyệt tất cả file
 
 Tiếp theo, sử dụng chúng trong Sidebar, bằng cách sửa file _/src/components/sidebar.js_.
 
-**/src/components/sidebar.js**:
-
-```js
+```js:title=/src/components/sidebar.js
 import React from "react";
 import "./sidebar.css";
 import slug from "slug";
@@ -1367,9 +1303,7 @@ export default (props) => {
 };
 ```
 
-**/src/components/sidebar.css**:
-
-```css
+```css:title=/src/components/sidebar.css
 aside {
   padding: 0 15px;
 }
@@ -1399,9 +1333,7 @@ Cũng tương tự như phần liệt kê danh sách cách bài viết tại tra
 
 Để tạo ra các trang tương ứng với chuyên mục và thẻ mình cần phải thực hiện trong Gatsby API *createPages* ở file */gatsby-node.js*.
 
-**/gatsby-node.js**:
-
-```js
+```js:title=/gatsby-node.js
 const path = require(`path`);
 const slug = require(`slug`);
 
@@ -1486,9 +1418,7 @@ Phần tạo ra các trang với thẻ và chuyên mục cũng tương tự như
 
 Khi đó, các file template sẽ được triển khai như sau đây:
 
-**/src/templates/categories.js**
-
-```js
+```js:title=/src/templates/categories.js
 import React from "react";
 import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
@@ -1540,9 +1470,7 @@ export const query = graphql`
 `;
 ```
 
-**/src/template/tags.js**
-
-```js
+```js:title=/src/template/tags.js
 import React from "react";
 import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
@@ -1626,7 +1554,7 @@ Tuy nhiên, sau khi đọc qua thì mình thấy chỉ có Netlify và Github Pa
 
 Nhưng bạn biết đấy, với mỗi tài khoản Github thì mình chỉ có thể tạo ra một trang chính thôi. Ví dụ: tài khoản của mình là *username*. Khi đó, trang chính của mình sẽ là **_username.github.io_**.
 
-Bây giờ, nếu mình deploy một project *gatsby-tutorial* lên thì địa chỉ trang web tương ứng với nó sẽ là **_username.github.io/gatsby-tutorial/_**. Tuy nhiên, nếu mình muốn custom domain thành *gatsby-tutorial.phamvanlam.com* (vì [phamvanlam.com](https://phamvanlam.com) là tên miền của mình), thì lại không được.
+Bây giờ, nếu mình deploy một project *gatsby-tutorial* lên thì địa chỉ trang web tương ứng với nó sẽ là `username.github.io/gatsby-tutorial/`. Tuy nhiên, nếu mình muốn custom domain thành *gatsby-tutorial.phamvanlam.com* (vì [phamvanlam.com](https://phamvanlam.com) là tên miền của mình), thì lại không được.
 
 Không lẽ mình phải tạo mới một tài khoản Github với tên *gatsby-tutorial*. Khi đó, địa chỉ trang blog là *gatsby-tutorial.github.io*. Lúc này, mình có thể custom domain được. Nhưng làm như vậy thì quá mất công.
 
@@ -1649,12 +1577,12 @@ Sau khi nhấn vào button *Create repository* thì bạn sẽ được dẫn 
 Đối với trường hợp này, mình sẽ lựa chọn cách thứ 2 (bôi vàng ở trên). Mình sẽ làm theo hướng dẫn để upload code lên github nhé. Tuy nhiên, vì project của mình đã có code rồi nên mình sẽ sửa lại một chút, như sau:
 
 ```bash
-echo "# gatsby-tutorial" >> README.md
-git init
-git add .
-git commit -m "first commit"
-git remote add origin https://github.com/completejavascript/gatsby-tutorial.git
-git push -u origin master
+$ echo "# gatsby-tutorial" >> README.md
+$ git init
+$ git add .
+$ git commit -m "first commit"
+$ git remote add origin https://github.com/completejavascript/gatsby-tutorial.git
+$ git push -u origin master
 ```
 
 Sau khi việc upload code lên Github thành công. Mình bắt đầu deploy nó lên Netlify.
@@ -1739,4 +1667,4 @@ Trên đây là cách để tạo trang blog với Gatsby.js mà mình đã đú
   Xem Demo
 </a>
 
-Bài viết đến đây cũng khá dài rồi, xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/mot-so-plugin-gatsby-js-hay-dung), thân ái!
+Bài viết đến đây cũng khá dài rồi, xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!

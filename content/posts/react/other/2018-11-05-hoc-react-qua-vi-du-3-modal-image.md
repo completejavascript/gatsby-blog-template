@@ -77,7 +77,7 @@ Và ý tưởng chung để xây dựng Modal Image Component là:
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
-```jsx
+```jsx:title=modal-image.js
 import React from "react";
 import ReactDOM from "react-dom";
 import "./modal-image.css";
@@ -196,7 +196,7 @@ File này dùng để xác định style cho Modal Image Component. Bạn chú �
 
 Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
-```css
+```css:title=modal-image.css
 .lp-modal-image,
 .lp-modal-image * {
   box-sizing: border-box;
@@ -299,9 +299,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 
 ## Sử dụng Modal Image component
 
-**./src/App.css**
-
-```css
+```css:title=./src/App.css
 /* Không thay đổi */
 .App,
 .App * {
@@ -321,9 +319,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css
 }
 ```
 
-**./src/App.js**
-
-```jsx
+```jsx:title=./src/App.js
 import React from "react";
 import "./App.css";
 

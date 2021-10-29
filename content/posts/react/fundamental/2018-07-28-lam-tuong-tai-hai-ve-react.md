@@ -35,16 +35,16 @@ Chả là từ trước đến giờ mình vẫn hay lên [Tutorialspoint](https
 Bài viết về [ReactJS - Home](https://www.tutorialspoint.com/reactjs/index.htm), [ReactJS - Overview](https://www.tutorialspoint.com/reactjs/reactjs_overview.htm) thì không nói làm gì. Đến [ReactJS - Environment Setup](https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm) thì mình phải cài NodeJS, sau đó là một loạt những thứ sau:
 
 ```bash
-npm install -g babel
-npm install -g babel-cli
-npm install webpack --save
-npm install webpack-dev-server --save
-npm install react --save
-npm install react-dom --save
-npm install babel-core
-npm install babel-loader
-npm install babel-preset-react
-npm install babel-preset-es2015
+$ npm install -g babel
+$ npm install -g babel-cli
+$ npm install webpack --save
+$ npm install webpack-dev-server --save
+$ npm install react --save
+$ npm install react-dom --save
+$ npm install babel-core
+$ npm install babel-loader
+$ npm install babel-preset-react
+$ npm install babel-preset-es2015
 ```
 
 Mình suy nghĩ trong đầu: _Mình chỉ cần React thôi mà, sao phải cài một đống thứ như thế này? Vai trò của từng cái là gì?_
@@ -67,8 +67,8 @@ Bạn thấy đấy, mình chỉ cần thêm 2 file .js là có thể lập trì
 Đối chiếu lại với phần cài đặt phía trên thì chúng tương đương với:
 
 ```bash
-npm install react --save
-npm install react-dom --save
+$ npm install react --save
+$ npm install react-dom --save
 ```
 
 Vậy mấy cái _webpack_ với _babel_ để làm gì?
@@ -95,15 +95,15 @@ Nghĩa là React hỗ trợ JSX. Mà nếu muốn trình duyệt hiểu được
 Đối chiếu lại với phần cài đặt phía trên xem nó tương đương với thằng nào:
 
 ```bash
-npm install -g babel
-npm install -g babel-cli
-npm install babel-core
-npm install babel-loader
-npm install babel-preset-react
-npm install babel-preset-es2015
+$ npm install -g babel
+$ npm install -g babel-cli
+$ npm install babel-core
+$ npm install babel-loader
+$ npm install babel-preset-react
+$ npm install babel-preset-es2015
 ```
 
-Mình đoán nó tương đương với _npm install -g babel_. Còn những thằng còn lại có nhiệm vụ như thế nào thì mình vẫn chưa rõ.
+Mình đoán nó tương đương với `npm install -g babel`. Còn những thằng còn lại có nhiệm vụ như thế nào thì mình vẫn chưa rõ.
 
 Bạn có thể giải thích cho mình không?
 
@@ -135,4 +135,4 @@ Và mình có thể deploy nó trên Codepen.io, Github Pages,... mà không c�
 
 Nếu bạn có phần nào chưa rõ hoặc có gì muốn góp ý với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/deploy-ung-dung-react-len-github-pages), thân ái!
+Xin chào và hẹn gặp bạn trong bài viết tiếp theo, thân ái!

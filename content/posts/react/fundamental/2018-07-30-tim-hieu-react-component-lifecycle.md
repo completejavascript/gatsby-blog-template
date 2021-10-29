@@ -62,7 +62,7 @@ constructor(props) {
 Trong đó:
 
 - Component bạn khai báo [kế thừa](/ke-thua-co-ban-trong-javascript) từ React.Component, nên bạn cần phải gọi hàm *super(props)* để gọi đến hàm khởi tạo của thằng cha React.Component. Nếu thiếu thì *this.props* sẽ là **undefined**.
-- <code>this.state = { count: 0 }</code>: khởi tạo biến thuộc state là: **count = 0**.
+- `this.state = { count: 0 }`: khởi tạo biến thuộc state là: **count = 0**.
 - Cuối cùng, *this.updateCounter* là hàm được sử dụng trong _setInterval_ mà mình sẽ sử dụng trong ví dụ dưới. Mình cần phải **bind** phương thức này với **this** - là tham chiếu đến đối tượng Component hiện tại.
 
 #### Phương thức render()
@@ -148,7 +148,7 @@ shouldComponentUpdate(nextProps, nextState) {
 
 thì phương thức _render()_ sẽ không bị gọi lại nữa.
 
-Bởi vì, _nextState.count_ và _this.state.count_ lúc này đều bằng 0, nên <code>nextState.count !== this.state.count</code> sẽ trả về **false**. Suy ra, hàm _render()_ sẽ không bị gọi lại. Hay nói tổng quát hơn là: phương thức _render()_ chỉ bị gọi lại khi **props** hoặc **state** mới **có giá trị khác** so với hiện tại.
+Bởi vì, _nextState.count_ và _this.state.count_ lúc này đều bằng 0, nên `nextState.count !== this.state.count` sẽ trả về **false**. Suy ra, hàm _render()_ sẽ không bị gọi lại. Hay nói tổng quát hơn là: phương thức _render()_ chỉ bị gọi lại khi **props** hoặc **state** mới **có giá trị khác** so với hiện tại.
 
 Tuy nhiên, nếu không quá quan trọng về [hiệu năng](/tag/performance) thì bạn có thể bỏ qua phương thức _shouldComponentUpdate()_.
 
@@ -208,9 +208,7 @@ Giả sử mình xây dựng **Counter Component** như sau.
 
 ### Code demo về React Component Lifecycle
 
-_index.html_
-
-```html
+```html:title=index.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -242,9 +240,7 @@ _index.html_
 </html>
 ```
 
-_main.js_
-
-```jsx
+```jsx:title=main.js
 class Counter extends React.Component {
   /**
    * Hàm constructor - dùng để khai báo state và bind function
