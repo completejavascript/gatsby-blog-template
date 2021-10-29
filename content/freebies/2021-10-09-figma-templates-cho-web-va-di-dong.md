@@ -3,7 +3,7 @@ date: "2021-10-09T15:30:00Z"
 update: "2021-10-09T15:30:00Z"
 template: "freebie"
 directory: "Freebie"
-cover: "../images/figma-templates-website-mobile-completejavascript.com_.png"
+cover: "../images/freebies/figma-templates-website-mobile-completejavascript.com_.png"
 keywords: "figma templates cho web"
 description: "Đây là 10 Figma templates cho web và di động hoàn toàn miễn phí. Bạn có thể tùy ý sao chép, chỉnh sửa cho các dự án cá nhân hoặc thương mại."
 slug: figma-templates-cho-web-va-di-dong
@@ -22,7 +22,7 @@ Dưới đây là 10 templates mà bạn có thể sử dụng hoàn toàn miễ
 
 ### Figma template cho Dashboard
 
-![dashboard](../images/10-figma-templates-dashboard.png)
+![dashboard](../images/freebies/10-figma-templates-dashboard.png)
 
 Để quản lý, phân tích các chỉ số KPI về hiệu quả công việc, kinh doanh thì chắc hẳn không thể thiếu dashboard.
 
@@ -32,7 +32,7 @@ Dưới đây là 10 templates mà bạn có thể sử dụng hoàn toàn miễ
 
 ### Figma template cho Details Section
 
-![detail sections](../images/10-figma-templates-detail-sections.png)
+![detail sections](../images/freebies/10-figma-templates-detail-sections.png)
 
 Details section là một phần quan trọng không thể thiếu trong một trang Landing page của công ty khi muốn quảng các các dịch vụ của họ.
 
@@ -42,7 +42,7 @@ Details section là một phần quan trọng không thể thiếu trong một t
 
 ### Figma template cho Feedback Modal
 
-![feedback modal](../images/10-figma-templates-feedback-modal.png)
+![feedback modal](../images/freebies/10-figma-templates-feedback-modal.png)
 
 Feedback Modal cần khi bạn muốn thu thập ý kiến phản hồi của người dùng.
 
@@ -52,7 +52,7 @@ Feedback Modal cần khi bạn muốn thu thập ý kiến phản hồi của ng
 
 ### Figma template cho Fruits Store
 
-![fruits store](../images/10-figma-templates-fruits-store.png)
+![fruits store](../images/freebies/10-figma-templates-fruits-store.png)
 
 Đây là mẫu Figma trên di động dành cho một cửa hàng bán hoa quả.
 
@@ -62,7 +62,7 @@ Feedback Modal cần khi bạn muốn thu thập ý kiến phản hồi của ng
 
 ### Figma template cho Landing Page
 
-![landing page](../images/10-figma-templates-landing-pages.png)
+![landing page](../images/freebies/10-figma-templates-landing-pages.png)
 
 Đây là mẫu Landing Page mà bạn có thể sử dụng để làm trang portfolio giới thiệu về bản thân, các dự án, kiến thức kinh nghiệm lập trình.
 
@@ -72,7 +72,7 @@ Feedback Modal cần khi bạn muốn thu thập ý kiến phản hồi của ng
 
 ### Figma template cho Login Screen
 
-![login screen](../images/10-figma-templates-login-screen.png)
+![login screen](../images/freebies/10-figma-templates-login-screen.png)
 
 Màn hình đăng nhập là một phần không thể thiếu đối với nhiều trang web.
 
@@ -82,7 +82,7 @@ Màn hình đăng nhập là một phần không thể thiếu đối với nhi�
 
 ### Figma template cho Mobile Gallery
 
-![mobile-gallery](../images/10-figma-templates-mobile-gallery.png)
+![mobile-gallery](../images/freebies/10-figma-templates-mobile-gallery.png)
 
 Mẫu Figma này dành dùng để trình diễn bộ sưu tập ảnh trên di động.
 
@@ -92,7 +92,7 @@ Mẫu Figma này dành dùng để trình diễn bộ sưu tập ảnh trên di 
 
 ### Figma template cho Profile Section
 
-![profile-section](../images/10-figma-templates-profile-section.png)
+![profile-section](../images/freebies/10-figma-templates-profile-section.png)
 
 Mẫu Figma này dùng cho mục thông tin cá nhân.
 
@@ -102,7 +102,7 @@ Mẫu Figma này dùng cho mục thông tin cá nhân.
 
 ### Figma template cho Testimonial
 
-![testimonial](../images/10-figma-templates-testimonial.png)
+![testimonial](../images/freebies/10-figma-templates-testimonial.png)
 
 Testimonial là mục thể hiện những nhận xét của người dùng sau khi sử dụng dịch vụ.
 
@@ -112,7 +112,7 @@ Testimonial là mục thể hiện những nhận xét của người dùng sau 
 
 ### Figma template cho Twitter Profile Card
 
-![twitter profile card](../images/10-figma-templates-twitter-profile-card.png)
+![twitter profile card](../images/freebies/10-figma-templates-twitter-profile-card.png)
 
 Twitter Profile Card được dùng khi bạn muốn show thông tin về Twitter của bản thân.
 

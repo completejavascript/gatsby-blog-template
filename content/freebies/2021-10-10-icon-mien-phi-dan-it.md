@@ -3,7 +3,7 @@ date: "2021-10-10T17:00:00Z"
 update: "2021-10-10T17:00:00Z"
 template: "freebie"
 directory: "Freebie"
-cover: "../images/icon-mien-phi-completejavascript.com_.png"
+cover: "../images/freebies/icon-mien-phi-completejavascript.com_.png"
 keywords: "icon miễn phí"
 description: "Tổng hợp 10 bộ icon miễn phí dành cho dân IT. Bạn có thể tải về miễn phí và thoải mái sử dụng cho các dự án cá nhân và dự án thương mại."
 slug: icon-mien-phi-dan-it
@@ -18,7 +18,7 @@ Dưới đây là danh sách bộ icon miễn phí cho bạn tải về.
 
 ### Bộ icon miễn phí về lá cờ của các quốc gia
 
-![flagpack](../images/icon-mien-phi-dan-it-flagpack.png)
+![flagpack](../images/freebies/icon-mien-phi-dan-it-flagpack.png)
 
 Bộ icon về lá cờ của các quốc gia thường được sử dụng khi bạn muốn hiển thị thông tin liên quan đến quốc gia như: lựa chọn quốc gia khi nhập thông tin cá nhân, hiển thị tiền tệ, thời tiết các nước,...
 
@@ -36,7 +36,7 @@ Còn đối với lập trình viên (web), dĩ nhiên bạn cũng có thể t�
 
 ### Bộ icon về COVID-19
 
-![covid-19](../images/icon-mien-phi-dan-it-covid19.jpg)
+![covid-19](../images/freebies/icon-mien-phi-dan-it-covid19.jpg)
 
 Đây là bộ icon miễn phí về những vấn đề liên quan đến dịch bệnh COVID-19 như: ho, ốm, sốt, giãn cách xã hội, làm việc từ xa, tiềm phòng,...
 
@@ -48,7 +48,7 @@ Bộ icon này bao gồm các định dạng: AI, EPS, SVG và PNG.
 
 ### Boring Avatars
 
-![boring avatars](../images/icon-mien-phi-dan-it-boring-avatars.png)
+![boring avatars](../images/freebies/icon-mien-phi-dan-it-boring-avatars.png)
 
 Đừng để cái tên đánh lừa bạn. Bộ icon miễn phí này không hề **boring** một chút nào.
 
@@ -62,7 +62,7 @@ Có 6 style khác nhau và một vài tùy chỉnh khác. Bạn có thể thự 
 
 ### Bộ icon về sức khỏe
 
-![health icons](../images/icon-mien-phi-dan-it-health-icons.png)
+![health icons](../images/freebies/icon-mien-phi-dan-it-health-icons.png)
 
 Đây là bộ icon miễn phí, mã nguồn mở về tất cả mọi thứ liên quan đến vấn đề sức khỏe như: máu, cơ thể con người, thiết bị y tế, cơ quan y tế,...
 
@@ -74,7 +74,7 @@ Bộ Health icons này có trên 1166 icon khác nhau, với 3 styles (outlined,
 
 ### Bộ icon về du lịch
 
-![tourism icons](../images/icon-mien-phi-dan-it-dulich.jpg)
+![tourism icons](../images/freebies/icon-mien-phi-dan-it-dulich.jpg)
 
 Đây là bộ icon miễn phí liên quan đến du lịch với các định dạng AI, EPS và PNG.
 
@@ -86,7 +86,7 @@ Bạn có thể tải về và thoải mái sử dụng cho các dự án cá nh
 
 ### Bộ icon về khoa học
 
-![science life](../images/icon-mien-phi-dan-it-science-life.png)
+![science life](../images/freebies/icon-mien-phi-dan-it-science-life.png)
 
 Đây là bộ icon miễn phí về các chủ đề liên quan đến khoa học: sinh học (vắc-xin, vi-rút, bộ gen), hóa học (các dụng cụ thí nghiệm hóa học), khoa học máy tính,...
 
@@ -98,7 +98,7 @@ Bộ bioicons này có trên 1699 icons khác nhau. Và bạn có thể tải xu
 
 ### Bộ icon về thời tiết
 
-![weather icons](../images/icon-mien-phi-dan-it-weather.png)
+![weather icons](../images/freebies/icon-mien-phi-dan-it-weather.png)
 
 Weather Icons là bộ icon miễn phí về thời tiết (mưa, nắng, giông, bão, gió,...).
 
@@ -110,7 +110,7 @@ Weather Icons là bộ icon miễn phí về thời tiết (mưa, nắng, giông
 
 ### Bộ icon về vũ trụ
 
-![space](../images/icon-mien-phi-dan-it-space.png)
+![space](../images/freebies/icon-mien-phi-dan-it-space.png)
 
 Đây là bộ icon miễn phí dạng vẽ tay về vũ trụ, không gian như: các sao trong dải ngân hà, tàu vũ trụ, phi hành gia,...
 
@@ -122,7 +122,7 @@ Có 77 icon khác nhau với các định dạng AI, EPS, PNG và SVG cho bạn 
 
 ### OpenMoji
 
-![openmoji](../images/icon-mien-phi-dan-it-openmoji.png)
+![openmoji](../images/freebies/icon-mien-phi-dan-it-openmoji.png)
 
 Đây là bộ icon miễn phí mã nguồn mở của trên 60 học sinh, 3 giáo sư và trên 20 người đóng góp.
 
@@ -136,7 +136,7 @@ Bạn có thể tải về 2 định dạng phổ biến là SVG và PNG.
 
 ### Bộ icon về mạng xã hội
 
-![social](../images/icon-mien-phi-dan-it-social.png)
+![social](../images/freebies/icon-mien-phi-dan-it-social.png)
 
 Đây là bộ icon miễn phí dạng vẽ tay về các mạng xã hội như: Facebook, Twitter, Youtube,...
 

@@ -3,7 +3,7 @@ date: "2021-10-08T14:02:00Z"
 update: "2021-10-08T14:02:00Z"
 template: "freebie"
 directory: "Freebie"
-cover: "../images/hosting-mien-phi-cho-web-tinh-completejavascript.com_.png"
+cover: "../images/freebies/hosting-mien-phi-cho-web-tinh-completejavascript.com_.png"
 keywords: "hosting miễn phí cho web tĩnh"
 description: "Bài viết này sẽ tổng hợp 10 hosting miễn phí cho web tĩnh - cho phép thay đổi tên miền, hỗ trợ SSL và miễn phí CI... Qua bài viết, bạn sẽ tìm ra được hosting miễn phí phù hợp với dự án cá nhân của mình."
 slug: hosting-mien-phi-cho-web-tinh
@@ -30,7 +30,7 @@ Dưới đây là danh sách các hosting miễn phí cho phép bạn thay đổ
 
 ### 1. [Netlify](https://www.netlify.com/)
 
-![netlify](../images/hosting-mien-phi-netlify.png)
+![netlify](../images/freebies/hosting-mien-phi-netlify.png)
 
 Bản thân blog **Complete JavaScript** của mình cũng là web tĩnh được [deploy lên Netlify](/tao-trang-blog-voi-gatsby-js#deploy-lên-netlify). Và mình rất ưng ý với dịch vụ hosting này nên sẽ tiếp tục sử dụng nó dài dài.
 
@@ -47,7 +47,7 @@ Netlify cho phép bạn kết nối với các private repo trên Github kết h
 
 ### 2. [Github Pages](https://pages.github.com/)
 
-![github pages](../images/hosting-mien-phi-github-pages.png)
+![github pages](../images/freebies/hosting-mien-phi-github-pages.png)
 
 Github Pages cho phép bạn deploy web tĩnh trực tiếp từ repo trên Github. Rõ ràng, việc tạo account và các repo trên Github là hoàn toàn miễn phí nên chuyện Github hỗ trợ hosting miễn phí là điều dễ hiểu.
 
@@ -64,7 +64,7 @@ Bản thân mình thì thường hay deploy single-page application [viết bằ
 
 ### 3. [Gitlab Pages](https://docs.gitlab.com/ee/user/project/pages/)
 
-![gitlab pages](../images/hosting-mien-phi-gitlab-pages.png)
+![gitlab pages](../images/freebies/hosting-mien-phi-gitlab-pages.png)
 
 Gitlab Pages cũng tương tự như Github Pages. Ngoài việc là Gitlab hỗ trợ miễn phí CI cho hầu hết các Static Site Generators.
 
@@ -77,7 +77,7 @@ Gitlab Pages cũng tương tự như Github Pages. Ngoài việc là Gitlab hỗ
 
 ### 4. [Cloudflare Pages](https://pages.cloudflare.com/)
 
-![cloudflare pages](../images/hosting-mien-phi-cho-web-tinh-cloudflare.png)
+![cloudflare pages](../images/freebies/hosting-mien-phi-cho-web-tinh-cloudflare.png)
 
 Cloudflare Pages cho phép bạn deploy và hosting JAMstack websites một cách dễ dàng. Cloudflare có tích hợp Git, hỗ trợ băng thông không giới hạn, hỗ trợ CDN và cho phép tạo preview build cho mỗi commit.
 
@@ -90,7 +90,7 @@ Cloudflare Pages cho phép bạn deploy và hosting JAMstack websites một các
 
 ### 5. [Render.com](https://render.com/)
 
-![render.com pages](../images/hosting-mien-phi-cho-web-tinh-render.png)
+![render.com pages](../images/freebies/hosting-mien-phi-cho-web-tinh-render.png)
 
 Render.com cho phép bạn build và deploy web tĩnh trực tiếp từ Git repo, với hỗ trợ SSL và global CDN.
 
@@ -103,7 +103,7 @@ Render.com cho phép bạn build và deploy web tĩnh trực tiếp từ Git rep
 
 ### 6. [DigitalOcean App Platform](https://m.do.co/c/6111d2704eb4)
 
-![digitalocean app platform pages](../images/hosting-mien-phi-cho-web-tinh-digitalocean.png)
+![digitalocean app platform pages](../images/freebies/hosting-mien-phi-cho-web-tinh-digitalocean.png)
 
 DigitalOcean được biết đến nhiều nhất với VPS. Tuy nhiên, DigitalOcean App Platform đã ra đời - cung cấp dịch vụ hosting miễn phí cho web tĩnh cũng như web động.
 
@@ -118,7 +118,7 @@ DigitalOcean App Platform hỗ trợ deploy code trực tiếp từ Github cũng
 
 ### 7. [Vercel](https://vercel.com/)
 
-![vercel pages](../images/hosting-mien-phi-cho-web-tinh-vercel.png)
+![vercel pages](../images/freebies/hosting-mien-phi-cho-web-tinh-vercel.png)
 
 Vercel là một platform tốt cho phép bạn build, preview và deploy websites một cách dễ dàng.
 
@@ -133,7 +133,7 @@ Với Vercel, bạn có thể build và deploy dễ dàng cho những trang web 
 
 ### 8. [Firebase Hosting](https://firebase.google.com/)
 
-![firebase hosting](../images/hosting-mien-phi-cho-web-tinh-firebase.png)
+![firebase hosting](../images/freebies/hosting-mien-phi-cho-web-tinh-firebase.png)
 
 Firebase Hosting của Google cho phép bạn deploy web tĩnh cũng như single-page application một cách dễ dàng.
 
@@ -148,7 +148,7 @@ Firebase Hosting cho phép thay đổi domain và miễn phí SSL. Hơn nữa, b
 
 ### 9. [Google App Engine](https://cloud.google.com/appengine/)
 
-![google app engine](../images/hosting-mien-phi-cho-web-tinh-google-app.png)
+![google app engine](../images/freebies/hosting-mien-phi-cho-web-tinh-google-app.png)
 
 Google App Engine cho phép bạn deploy web tĩnh.
 
@@ -163,7 +163,7 @@ Google App Engine hỗ trợ nhiều ngôn ngữ Backend như PHP, Go, Java. Tuy
 
 ### 10. [Surge](https://surge.sh/)
 
-![surge](../images/hosting-mien-phi-cho-web-tinh-surge.png)
+![surge](../images/freebies/hosting-mien-phi-cho-web-tinh-surge.png)
 
 Surge hỗ trợ deploy web tĩnh với CLI. Bạn chỉ cần cài đặt npm module và chạy câu lệnh với surge trực tiếp trong project.
 

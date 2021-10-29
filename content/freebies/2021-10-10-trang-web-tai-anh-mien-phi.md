@@ -3,7 +3,7 @@ date: "2021-10-10T20:00:00Z"
 update: "2021-10-10T20:00:00Z"
 template: "freebie"
 directory: "Freebie"
-cover: "../images/web-tai-anh-mien-phi-chat-luong-cao-completejavascript.com_.png"
+cover: "../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-completejavascript.com_.png"
 keywords: "tải ảnh miễn phí"
 description: "Tổng hợp 10 trang web tải ảnh miễn phí chất lượng cao. Bạn thoải mái sử dụng mà không lo vi phạm bản quyền hình ảnh."
 slug: web-tai-anh-mien-phi-chat-luong-cao
@@ -28,43 +28,43 @@ Dưới đây là tổng hợp danh sách 10 trang web tải ảnh miễn phí c
 
 ### [Pixabay Photos](https://pixabay.com/photos/)
 
-![Pixabay Photos](../images/web-tai-anh-mien-phi-chat-luong-cao-pixabay.png)
+![Pixabay Photos](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-pixabay.png)
 
 ### [Pexels](https://www.pexels.com/)
 
-![Pexels](../images/web-tai-anh-mien-phi-chat-luong-cao-pexels.png)
+![Pexels](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-pexels.png)
 
 ### [Unsplash](https://unsplash.com/)
 
-![Unsplash](../images/web-tai-anh-mien-phi-chat-luong-cao-unsplash.png)
+![Unsplash](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-unsplash.png)
 
 ### [Gratisography Photos](https://gratisography.com/photos/photos/)
 
-![Gratisography Photos](../images/web-tai-anh-mien-phi-chat-luong-cao-gratisography.png)
+![Gratisography Photos](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-gratisography.png)
 
 ### [Burst](https://burst.shopify.com/)
 
-![Burst](../images/web-tai-anh-mien-phi-chat-luong-cao-burst.png)
+![Burst](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-burst.png)
 
 ### [Glyphs Photos](https://glyphs.co/photos)
 
-![Glyphs Photos](../images/web-tai-anh-mien-phi-chat-luong-cao-glyphs.png)
+![Glyphs Photos](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-glyphs.png)
 
 ### [Picjumbo](https://picjumbo.com/)
 
-![Picjumbo](../images/web-tai-anh-mien-phi-chat-luong-cao-picjumpo.png)
+![Picjumbo](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-picjumpo.png)
 
 ### [FreeImages](https://www.freeimages.com/)
 
-![FreeImages](../images/web-tai-anh-mien-phi-chat-luong-cao-freeimages.png)
+![FreeImages](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-freeimages.png)
 
 ### [StockSnap](https://stocksnap.io/)
 
-![Sticksnap](../images/web-tai-anh-mien-phi-chat-luong-cao-stocksnap.png)
+![Sticksnap](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-stocksnap.png)
 
 ### [Rawpixel](https://www.rawpixel.com/)
 
-![Rawpixel](../images/web-tai-anh-mien-phi-chat-luong-cao-rawpixel.png)
+![Rawpixel](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-rawpixel.png)
 
 ## Kết luận
 
@@ -72,4 +72,4 @@ Trên đây là 10 trang web tải ảnh miễn phí chất lượng cao mà b�
 
 Tuy nhiên, nếu những trang web này không có những hình ảnh mà bạn mong muốn thì bạn thử tham khảo trên [Shutterstock](https://shutterstock.7eer.net/KeX6b7) xem sao. Tuy nhiên, ảnh trên trang web này thường sẽ mất phí nhé!
 
-![Shutterstock](../images/web-tai-anh-mien-phi-chat-luong-cao-shutterstock.png)
+![Shutterstock](../images/freebies/web-tai-anh-mien-phi-chat-luong-cao-shutterstock.png)

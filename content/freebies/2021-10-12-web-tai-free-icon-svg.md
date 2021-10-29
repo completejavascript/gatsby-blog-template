@@ -3,7 +3,7 @@ date: "2021-10-12T22:00:00Z"
 update: "2021-10-12T22:00:00Z"
 template: "freebie"
 directory: "Freebie"
-cover: "../images/web-tai-free-icon-svg-completejavascript.com_.png"
+cover: "../images/freebies/web-tai-free-icon-svg-completejavascript.com_.png"
 keywords: "tải free icon svg"
 description: "Ảnh SVG là gì? Tại sao nên dùng ảnh SVG? Bài viết này sẽ giải đáp lý do tại sao và tổng hợp 18 trang tải free icon SVG cho các dự án cá nhân và thương mại."
 slug: web-tai-free-icon-svg
@@ -39,75 +39,75 @@ Sau đây là danh sách 18 trang tải free icon SVG mà bạn có thể sử d
 
 ### [SVG Repo](https://www.svgrepo.com/)
 
-![SVG Repo](../images/web-tai-free-icon-svg-svgrepo.png)
+![SVG Repo](../images/freebies/web-tai-free-icon-svg-svgrepo.png)
 
 ### [Bootstrap Icons](https://icons.getbootstrap.com/)
 
-![Bootstrap Icons](../images/web-tai-free-icon-svg-bootstrap.png)
+![Bootstrap Icons](../images/freebies/web-tai-free-icon-svg-bootstrap.png)
 
 ### [Heroicons](https://heroicons.com/)
 
-![Heroicons](../images/web-tai-free-icon-svg-heroicons.png)
+![Heroicons](../images/freebies/web-tai-free-icon-svg-heroicons.png)
 
 ### [Font Awesome](https://fontawesome.com/)
 
-![Font Awesome](../images/web-tai-free-icon-svg-fontawsome.png)
+![Font Awesome](../images/freebies/web-tai-free-icon-svg-fontawsome.png)
 
 ### [IconFinder](https://www.iconfinder.com/search?q=&price=free&ref=lam-pham-1)
 
-![IconFinder](../images/web-tai-free-icon-svg-iconfinder.png)
+![IconFinder](../images/freebies/web-tai-free-icon-svg-iconfinder.png)
 
 ### [Typicons](https://www.s-ings.com/typicons/)
 
-![Typicons](../images/web-tai-free-icon-svg-typicons.png)
+![Typicons](../images/freebies/web-tai-free-icon-svg-typicons.png)
 
 ### [Linearicons](https://linearicons.com/free)
 
-![Linearicons](../images/web-tai-free-icon-svg-linearicons.png)
+![Linearicons](../images/freebies/web-tai-free-icon-svg-linearicons.png)
 
 ### [Line-Style Icons](https://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons)
 
-![Line-Style Icons](../images/web-tai-free-icon-svg-line-styles.png)
+![Line-Style Icons](../images/freebies/web-tai-free-icon-svg-line-styles.png)
 
 ### [IcoMoon](https://icomoon.io/)
 
-![IcoMoon](../images/web-tai-free-icon-svg-icomoon.png)
+![IcoMoon](../images/freebies/web-tai-free-icon-svg-icomoon.png)
 
 ### [Linea](https://linea.io/)
 
-![Linea](../images/web-tai-free-icon-svg-linea.png)
+![Linea](../images/freebies/web-tai-free-icon-svg-linea.png)
 
 ### [Open Icomic](https://useiconic.com/open/)
 
-![Open Icomic](../images/web-tai-free-icon-svg-openicomic.png)
+![Open Icomic](../images/freebies/web-tai-free-icon-svg-openicomic.png)
 
 ### [Feather Icons](https://feathericons.com/)
 
-![Feather Icons](../images/web-tai-free-icon-svg-feather.png)
+![Feather Icons](../images/freebies/web-tai-free-icon-svg-feather.png)
 
 ### [Hawcons](https://hawcons.com/)
 
-![Hawcons](../images/web-tai-free-icon-svg-hawcons.png)
+![Hawcons](../images/freebies/web-tai-free-icon-svg-hawcons.png)
 
 ### [Zondicons](http://www.zondicons.com/)
 
-![Zondicons](../images/web-tai-free-icon-svg-zondicons.png)
+![Zondicons](../images/freebies/web-tai-free-icon-svg-zondicons.png)
 
 ### [Entypo](http://www.entypo.com/)
 
-![Entypo](../images/web-tai-free-icon-svg-entypo.png)
+![Entypo](../images/freebies/web-tai-free-icon-svg-entypo.png)
 
 ### [Octicons](https://primer.style/octicons/)
 
-![Octicons](../images/web-tai-free-icon-svg-octicons.png)
+![Octicons](../images/freebies/web-tai-free-icon-svg-octicons.png)
 
 ### [Material Design icons by Google](https://github.com/google/material-design-icons)
 
-![Material Design icons by Google](../images/web-tai-free-icon-svg-material-icons.png)
+![Material Design icons by Google](../images/freebies/web-tai-free-icon-svg-material-icons.png)
 
 ### [IconArchive](https://iconarchive.com/svg-icons.html)
 
-![IconArchive](../images/web-tai-free-icon-svg-icon-archive.png)
+![IconArchive](../images/freebies/web-tai-free-icon-svg-icon-archive.png)
 
 ## Kết luận
 
