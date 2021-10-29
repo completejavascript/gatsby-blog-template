@@ -3,7 +3,7 @@ date: "2017-04-28T15:46:25Z"
 update: "2017-04-28T15:46:25Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/values-types-operators-trong-javascript-phan-1-numbers-completejavascript.com_.png"
+cover: "../../../images/javascript/values-types-operators-trong-javascript-phan-1-numbers-completejavascript.com_.png"
 keywords: "Values JavaScript"
 description: "Bài này mình sẽ cùng nhau tìm hiểu về values javascript, xem chúng bao gồm những loại nào nhé."
 slug: values-types-va-operators-trong-javascript-phan-1
@@ -18,7 +18,7 @@ Mình nhận thấy rằng là con người chúng ta rất hay nói chuyện th
 
 Nhưng với thế giới của máy tính, tất cả đều là dữ liệu được biểu diễn dưới dạng bit (0 và 1). Tức là chỉ có đúng (1) hoặc sai (0). Ví dụ số 13 sẽ được biểu diễn dưới dạng bit như sau:
 
-![number 13 respresent in values, types, operators post at completejavascript.com](../images/number-13-respresent-values-types-operators-completejavascript.com_.png)
+![number 13 respresent in values, types, operators post at completejavascript.com](../../../images/javascript/number-13-respresent-values-types-operators-completejavascript.com_.png)
 
 Như trên, số nhị phân 00001101 hay 8 + 4 + 1 = 13.
 

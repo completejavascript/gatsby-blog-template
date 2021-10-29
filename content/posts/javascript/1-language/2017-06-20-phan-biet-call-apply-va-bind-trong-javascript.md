@@ -3,7 +3,7 @@ date: "2017-06-20T00:19:42Z"
 update: "2021-10-17T00:19:42Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/so-sanh-call-apply-va-bind-trong-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/so-sanh-call-apply-va-bind-trong-javascript-completejavascript.com_.png"
 keywords: "call apply và bind"
 description: "Mình có đọc được cách sử dụng ba hàm call, apply và bind trong JavaScript. Vì hơi khó hiểu nên mình quyết định so sánh ba hàm này. Hy vọng bài viết giúp bạn phân biệt được call, apply và bind trong JavaScript."
 slug: phan-biet-call-apply-va-bind-trong-javascript

@@ -3,7 +3,7 @@ date: "2017-05-30T00:10:29Z"
 update: "2021-10-16T00:10:29Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/javascript-object-last-but-not-least-completejavascript.com_.png"
+cover: "../../../images/javascript/javascript-object-last-but-not-least-completejavascript.com_.png"
 keywords: "JavaScript Object"
 description: "JavaScript là ngôn ngữ dựa trên đối tượng, nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn trở thành master trên con đường JavaScript học. Hãy tìm hiểu thật kỹ về Object trong JavaScript nhé!"
 slug: javascript-object-last-but-not-least
@@ -287,7 +287,7 @@ Trên đây là một số kiến thức cơ bản về JavaScript object. Nếu
 
 Giả sử, ta định nghĩa cấu trúc dữ liệu dạng **List** như sau:
 
-![list - completejavascript.com](../images/list.png)
+![list - completejavascript.com](../../../images/javascript/list.png)
 
 Trong đó, value1, value2, value3 là những phần tử của mảng.
 

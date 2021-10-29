@@ -3,7 +3,7 @@ date: "2017-08-12T00:00:30Z"
 update: "2018-03-20T00:00:30Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/html-template-sang-dom-node-completejavascript.com_.png"
+cover: "../../../images/javascript/html-template-sang-dom-node-completejavascript.com_.png"
 keywords: "html template sang dom"
 description: "Như đã nói trong bài viết trước, bài này mình sẽ hướng dẫn các bạn chuyển HTML Template sang DOM Node. Với phương pháp này, bạn không cần phải sử dụng DOMParser nữa, mà sẽ sử dụng trực tiếp thẻ template của HTML."
 slug: chuyen-html-template-sang-dom-node

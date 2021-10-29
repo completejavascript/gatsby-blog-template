@@ -3,7 +3,7 @@ date: "2017-06-03T02:57:04Z"
 update: "2018-07-21T02:57:04Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/2-cach-tao-immutable-object-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/2-cach-tao-immutable-object-javascript-completejavascript.com_.png"
 keywords: "tạo immutable object"
 description: "Có nhiều trường hợp bạn mong muốn object là immutable. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript."
 slug: 2-cach-tao-immutable-object-javascript

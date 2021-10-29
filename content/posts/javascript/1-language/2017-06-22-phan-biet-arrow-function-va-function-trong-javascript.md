@@ -3,7 +3,7 @@ date: "2017-06-22T15:11:26Z"
 update: "2018-07-17T15:11:26Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/phan-biet-arrow-function-va-function-trong-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/phan-biet-arrow-function-va-function-trong-javascript-completejavascript.com_.png"
 keywords: "phân biệt arrow function và function"
 description: "Arrow function hữu ích nhưng không thể thay thế function được. Vì vậy, bài viết này sẽ giúp bạn phân biệt arrow function và function trong JavaScript."
 slug: phan-biet-arrow-function-va-function-trong-javascript

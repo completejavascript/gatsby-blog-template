@@ -3,7 +3,7 @@ date: "2018-01-25T22:30:40Z"
 update: "2018-10-28T22:30:40Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/trien-khai-stack-voi-array-object-map-completejavascript.com_.png"
+cover: "../../../images/javascript/trien-khai-stack-voi-array-object-map-completejavascript.com_.png"
 keywords: "triển khai stack trong javascript"
 description: "Theo bạn, triển khai Stack trong JavaScript với Array, Object hay Map sẽ cho kết quả tối ưu nhất. Bài viết này mình sẽ so sánh hiệu năng của 3 cách."
 slug: trien-khai-stack-trong-javascript-voi-array-object-hay-map
@@ -41,7 +41,7 @@ Stack là một kiểu cấu trúc dữ liệu tuyến tính, tuân theo quy lu�
 
 Ví dụ như khi bạn xếp sách thành một chồng. Rõ ràng, cuốn sách xếp trước sẽ ở dưới cùng, nên nó sẽ phải ra sau cùng. Và cuốn sách xếp cuối cùng thì ở trên cùng, nên nó sẽ được lấy ra đầu tiên.
 
-![Minh họa về Last In, First Out trong Stack](../images/Capture-7-1.png)
+![Minh họa về Last In, First Out trong Stack](../../../images/javascript/Capture-7-1.png)
 
 ### Ứng dụng Stack trong lập trình
 
@@ -249,7 +249,7 @@ Mình thực hiện test trên Console của Google Chrome. Bạn có thể mở
 
 Nếu bạn test trên trình duyệt khác thì cũng tương tự.
 
-![copy-paste code trực tiếp vào tab console](../images/console.png)
+![copy-paste code trực tiếp vào tab console](../../../images/javascript/console.png)
 
 Bạn chỉ cần copy-paste toàn bộ phần code (bao gồm code triển khai Stack và Code test) vào tab **Console** rồi nhấn Enter là được. Nhớ là nếu bạn test Stack với Array thì trong phần code test bạn phải khởi tạo Stack ứng với Array (**AStack**). Tương tự như Stack với Object (**OStack**) và Stack với Map (**MStack**).
 

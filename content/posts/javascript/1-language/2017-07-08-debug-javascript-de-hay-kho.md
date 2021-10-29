@@ -3,7 +3,7 @@ date: "2017-07-08T04:03:17Z"
 update: "2021-10-17T04:03:17Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/Debug-javascript-de-hay-kho-completejavascript.com_.png"
+cover: "../../../images/javascript/Debug-javascript-de-hay-kho-completejavascript.com_.png"
 keywords: "debug javascript"
 description: "Với mọi ngôn ngữ lập trình, debug là một hoạt động khó và mất nhiều thời gian nhất. Trong đó, debug JavaScript là khó khăn hơn cả. Tại sao vậy?"
 slug: debug-javascript-de-hay-kho

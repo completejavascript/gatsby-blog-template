@@ -3,7 +3,7 @@ date: "2017-06-06T22:30:12Z"
 update: "2018-10-22T22:30:12Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/so-sanh-map-voi-object-trong-javascript.png"
+cover: "../../../images/javascript/so-sanh-map-voi-object-trong-javascript.png"
 keywords: "so sánh map với object"
 description: "Map là một kiểu dữ liệu vừa giống vừa khác Object. Vì vậy, bài viết này sẽ tập trung vào so sánh Map với Object trong JavaScript để làm rõ vấn đề trên."
 slug: so-sanh-map-voi-object-trong-javascript

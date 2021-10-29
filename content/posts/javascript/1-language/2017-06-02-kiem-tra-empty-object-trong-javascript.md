@@ -7,7 +7,7 @@ title: "Cách kiểm tra empty object trong JavaScript"
 slug: kiem-tra-empty-object-trong-javascript
 keywords: "kiểm tra empty object"
 description: "Bạn đã biết cách kiểm tra empty object trong JavaScript hay chưa? Bài viết này sẽ giới thiệu với bạn cách đơn giản để kiểm tra empty object."
-cover: "../images/kiem-tra-empty-object-trong-javascript-completejavascript.com.png"
+cover: "../../../images/javascript/kiem-tra-empty-object-trong-javascript-completejavascript.com.png"
 tags:
   - ES6
   - Object

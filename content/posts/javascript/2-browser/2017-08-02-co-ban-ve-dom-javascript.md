@@ -3,7 +3,7 @@ date: "2017-08-02T00:29:51Z"
 update: "2021-10-17T00:29:51Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/co-ban-ve-dom-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/co-ban-ve-dom-javascript-completejavascript.com_.png"
 keywords: "DOM"
 description: "Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là DOM. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời."
 slug: co-ban-ve-dom-javascript
@@ -41,7 +41,7 @@ Hãy xem xét một ví dụ đơn giản sau:
 
 Đây là cấu trúc đơn giản của một trang web.
 
-![Cơ bản về DOM JavaScript 1 - Complete JavaScript - completejavascript.com](../images/Co-ban-ve-DOM-JavaScript-1-completejavascript.com_.png)
+![Cơ bản về DOM JavaScript 1 - Complete JavaScript - completejavascript.com](../../../images/javascript/Co-ban-ve-DOM-JavaScript-1-completejavascript.com_.png)
 
 Ở đây, mỗi hình vuông cùng với nội dung bên trong nó chính là DOM.
 
@@ -57,13 +57,13 @@ Mỗi DOM node sẽ có thuộc tính *nodeType* - là một số nguyên - đ�
 
 Ví dụ trên được biểu diễn dạng cây:
 
-![Cơ bản về DOM JavaScript 2 - Complete JavaScript - completejavascript.com](../images/Co-ban-ve-DOM-JavaScript-2-completejavascript.com_.png)
+![Cơ bản về DOM JavaScript 2 - Complete JavaScript - completejavascript.com](../../../images/javascript/Co-ban-ve-DOM-JavaScript-2-completejavascript.com_.png)
 
 ## Liên kết giữa các DOM node trong cây
 
 Mỗi DOM node luôn chứa rất nhiều liên kết đến các DOM node khác.
 
-![Cơ bản về DOM JavaScript - Complete JavaScript - completejavascript.com](../images/Co-ban-ve-DOM-JavaScript-3-completejavascript.com_.png)
+![Cơ bản về DOM JavaScript - Complete JavaScript - completejavascript.com](../../../images/javascript/Co-ban-ve-DOM-JavaScript-3-completejavascript.com_.png)
 
 ### [Node.parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
 
@@ -155,7 +155,7 @@ Trả về node đầu tiên thoả mãn _selectors_. Trong đó, _selectors_ l�
 
 Trả về danh sách các node thoả mãn _selectors_, theo thứ tự sử dụng thuật toán DFS.
 
-![Perfect practice makes perfect - Complete JavaScript - completejavascript.com](../images/only-perfect-practice-makes-perfect-completejavascript.com_.png)
+![Perfect practice makes perfect - Complete JavaScript - completejavascript.com](../../../images/cuoc-song-it/only-perfect-practice-makes-perfect-completejavascript.com_.png)
 
 ## Ví dụ sử dụng DOM trong JavaScript
 

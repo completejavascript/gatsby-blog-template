@@ -3,7 +3,7 @@ date: "2018-03-08T15:41:57Z"
 update: "2018-03-08T15:41:57Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/hoc-front-end-cung-fcc-build-a-tribute-page-completejavascript-completejavascript.com_.png"
+cover: "../../../images/javascript/hoc-front-end-cung-fcc-build-a-tribute-page-completejavascript-completejavascript.com_.png"
 keywords: "build a tribute page"
 description: "Gần đây mình đã tìm và thấy một trang web rất hay, là freecodecamp.org. Mình đang thực hành và sẽ chia sẻ lại với bạn. Bài viết này nói về project đầu tiên Build a tribute page thuộc chuyên mục Basic Front End."
 slug: lap-trinh-javascript-voi-fcc-build-a-tribute-page
@@ -28,11 +28,11 @@ Ngoài HTML, CSS, [JavaScript](/javascript-la-gi), mình sử dụng thêm 2 th�
 
 - Bootstrap CSS: **Setting / CSS / Quick-add / Bootstrap 3**
 
-![freecodecamp - build a tribute page - setting css at completejavascript - completejavascript.com](../images/freecodecamp-setting-css.png)
+![freecodecamp - build a tribute page - setting css at completejavascript - completejavascript.com](../../../images/javascript/freecodecamp-setting-css.png)
 
 - jQuery JS: **Setting / JavaScript / Quick-add / jQuery**
 
-![freecodecamp - build a tribute page - setting javascript at completejavascript - completejavascript.com](../images/freecodecamp-setting-javascript.png)
+![freecodecamp - build a tribute page - setting javascript at completejavascript - completejavascript.com](../../../images/javascript/freecodecamp-setting-javascript.png)
 
 ### Thông tin cho thẻ &lt;head&gt; của html
 
@@ -40,7 +40,7 @@ Phần HTML trên codepen chỉ bao gồm nội dung trong thẻ body. Vì vậy
 
 Đối với project này, mình chỉ thêm vào các thẻ **meta**:
 
-![freecodecamp - build a tribute page - setting html at completejavascript - completejavascript.com](../images/freecodecamp-setting-html.png)
+![freecodecamp - build a tribute page - setting html at completejavascript - completejavascript.com](../../../images/javascript/freecodecamp-setting-html.png)
 
 ```html
 <meta charset="UTF-8" />
@@ -68,11 +68,11 @@ Mục đích của việc xác định viewport để làm cho trang web trở n
 
 Có thẻ meta viewport:
 
-![freecodecamp - build a tribute page - setting viewport at completejavascript - completejavascript.com](../images/freecodecamp-setting-viewport.png)
+![freecodecamp - build a tribute page - setting viewport at completejavascript - completejavascript.com](../../../images/javascript/freecodecamp-setting-viewport.png)
 
 Không có thẻ meta viewport:
 
-![freecodecamp - build a tribute page - setting with no viewport at completejavascript - completejavascript.com](../images/freecodecamp-setting-no-viewport.png)
+![freecodecamp - build a tribute page - setting with no viewport at completejavascript - completejavascript.com](../../../images/javascript/freecodecamp-setting-no-viewport.png)
 
 Chi tiết cho phần nội dung của HTML và CSS mình sẽ không trình bày trong khuôn khổ của trang web này. Nếu bạn chưa biết gì về Bootstrap thì có thể tham khảo tại [đây](https://www.tutorialspoint.com/bootstrap/index.htm).
 
@@ -80,7 +80,7 @@ Chi tiết cho phần nội dung của HTML và CSS mình sẽ không trình bà
 
 Trước tiên, mình muốn giải thích lý do tại sao lại chọn [jQuery](https://jquery.com/) thay vì nhiều thư viện JavaScript khác. Đơn giản, chương trình của freeCodeCamp bắt đầu với HTML5, CSS , Bootstrap và jQuery. Trong khi Bootstrap phục vụ mục đích Responsive thì jQuery dùng để xử lý phần logic - cụ thể đó là để xử lý hoạt động của menu (collapse) ứng với thiết bị là điện thoại.
 
-![freecodecamp - build a tribute page - setting with no menu at completejavascript - completejavascript.com](../images/freecodecamp-setting-menu.png)
+![freecodecamp - build a tribute page - setting with no menu at completejavascript - completejavascript.com](../../../images/javascript/freecodecamp-setting-menu.png)
 
 Khi người dùng nhấn vào biểu tượng menu ở góc trên bên phải thì các thanh menu sẽ đổ xuống, sau khi lựa chọn xong thì chúng lại được kéo lên, nhằm tiết kiệm diện tích màn hình.
 

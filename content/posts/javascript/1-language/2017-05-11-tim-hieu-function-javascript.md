@@ -3,7 +3,7 @@ date: "2017-05-11T15:05:14Z"
 update: "2021-10-16T15:05:14Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/tim-hieu-function-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/tim-hieu-function-javascript-completejavascript.com_.png"
 keywords: "function JavaScript"
 description: "Function JavaScript (hàm trong JavaScript) là một thành phần không thể thiếu trong cấu trúc chương trình. Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm."
 slug: tim-hieu-function-javascript

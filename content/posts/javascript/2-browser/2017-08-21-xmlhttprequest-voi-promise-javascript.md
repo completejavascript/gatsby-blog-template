@@ -3,7 +3,7 @@ date: "2017-08-21T00:00:37Z"
 update: "2018-03-26T00:00:37Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/xmlhttprequest-voi-promise-javascript-completejavascript.png"
+cover: "../../../images/javascript/xmlhttprequest-voi-promise-javascript-completejavascript.png"
 keywords: "xmlhttprequest với promise"
 description: "Với xử lý đồng bộ, bạn quản lý chương trình dễ hơn, nhưng thường nó sẽ chạy chậm. Trong khi xử lý bất đồng bộ, chương trình chạy nhanh hơn nhưng code sẽ khó khăn hơn. Vì vậy, bài viết này sẽ hướng dẫn các bạn kết hợp XMLHttpRequest với Promise JavaScript trong xử lý bất đồng bộ."
 slug: xmlhttprequest-voi-promise-javascript

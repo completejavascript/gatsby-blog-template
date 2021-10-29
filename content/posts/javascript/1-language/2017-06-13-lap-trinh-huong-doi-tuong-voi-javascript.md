@@ -1,8 +1,9 @@
 ---
 date: "2017-06-13T23:33:08Z"
+update: "2017-06-13T23:33:08Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/lap-trinh-huong-doi-tuong-voi-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/lap-trinh-huong-doi-tuong-voi-javascript-completejavascript.com_.png"
 keywords: "lập trình hướng đối tượng"
 description: "JavaScript là ngôn ngữ lập trình dựa trên đối tượng. Vậy ngôn ngữ lập trình dựa trên đối tượng với lập trình hướng đối tượng giống và khác nhau như thế nào?"
 slug: lap-trinh-huong-doi-tuong-voi-javascript

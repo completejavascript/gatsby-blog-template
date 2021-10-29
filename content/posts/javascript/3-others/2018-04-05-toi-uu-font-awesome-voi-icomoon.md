@@ -3,7 +3,7 @@ date: "2018-04-05T22:30:34Z"
 update: "2018-11-15T22:30:34Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/toi-uu-font-awesome-voi-icomoon-completejavascript.com_.png"
+cover: "../../../images/javascript/toi-uu-font-awesome-voi-icomoon-completejavascript.com_.png"
 keywords: "tối tưu Font Awesome với IcoMoon"
 description: "Font Awesome là một trong những icon font phổ biến nhất hiện nay. Bài này mình sẽ hướng dẫn bạn tối tưu Font Awesome với IcoMoon hiệu quả nhất."
 slug: toi-uu-font-awesome-voi-icomoon
@@ -47,7 +47,7 @@ Và quan trọng hơn cả, IcoMoon cho phép bạn lựa chọn icon mà mình 
 
 Trước tiên, bạn cần phải vào danh sách các [thư viện hỗ trợ](https://icomoon.io/app/#/select/library) của IcoMoon.
 
-![Thêm font awesome vào icomoon](../images/them-font-awesome-vao-icomoon.png)
+![Thêm font awesome vào icomoon](../../../images/javascript/them-font-awesome-vao-icomoon.png)
 
 Trong đó, bạn tìm đến phần Font Awesome rồi nhấn vào nút **Add** để thêm thư viện này vào IcoMoon App.
 
@@ -55,7 +55,7 @@ Trong đó, bạn tìm đến phần Font Awesome rồi nhấn vào nút **Add**
 
 Bạn vào trang [Select](https://icomoon.io/app/#/select) để lựa chọn các icon font sử dụng, bằng cách click vào mỗi icon:
 
-![Lựa chọn icon sử dụng trong Font Awesome](../images/lua-chon-icon-su-dung-1.png)
+![Lựa chọn icon sử dụng trong Font Awesome](../../../images/javascript/lua-chon-icon-su-dung-1.png)
 
 ### Bước 3: tuỳ chỉnh và tải về package
 
@@ -65,7 +65,7 @@ Nếu để ý phía dưới bên phải, bạn sẽ nhìn thấy button **Downl
 
 Tuy nhiên, mình khuyến khích bạn nhấn vào biểu tượng **bánh răng** bên cạnh để cài đặt một chút trước khi tải package về máy.
 
-![Tùy chọn cài đặt trước khi tải icon font về máy](../images/cai-dat-truoc-khi-tai-font-ve-may-1.png)
+![Tùy chọn cài đặt trước khi tải icon font về máy](../../../images/javascript/cai-dat-truoc-khi-tai-font-ve-may-1.png)
 
 Trong đó:
 

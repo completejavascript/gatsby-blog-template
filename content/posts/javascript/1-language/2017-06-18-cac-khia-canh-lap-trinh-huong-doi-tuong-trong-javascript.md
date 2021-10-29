@@ -1,8 +1,9 @@
 ---
 date: "2017-06-18T07:59:28Z"
+update: "2017-06-18T07:59:28Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/cac-khia-canh-lap-trinh-huong-doi-tuong-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/cac-khia-canh-lap-trinh-huong-doi-tuong-javascript-completejavascript.com_.png"
 keywords: "hướng đối tượng"
 description: "Trong bài viết này, chúng ta sẽ cùng tìm hiểu sâu hơn về các khía cạnh liên quan đến lập trình hướng đối tượng của ngôn ngữ lập trình JavaScript."
 slug: cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript

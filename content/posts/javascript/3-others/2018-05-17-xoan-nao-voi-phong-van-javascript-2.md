@@ -3,7 +3,7 @@ date: "2018-05-17T12:19:36Z"
 update: "2018-05-17T12:19:36Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/xoan-nao-voi-phong-van-javascript-2-completejavascript.com_.png"
+cover: "../../../images/javascript/xoan-nao-voi-phong-van-javascript-2-completejavascript.com_.png"
 keywords: "xoắn não với phỏng vấn javascript 2"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 2, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!"
 slug: xoan-nao-voi-phong-van-javascript-2

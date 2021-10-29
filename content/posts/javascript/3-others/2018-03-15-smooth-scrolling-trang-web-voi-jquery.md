@@ -3,7 +3,7 @@ date: "2018-03-15T00:00:21Z"
 update: "2018-03-22T00:00:21Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/smooth-scolling-trang-web-voi-jquery-completejavascript.com_.png"
+cover: "../../../images/javascript/smooth-scolling-trang-web-voi-jquery-completejavascript.com_.png"
 keywords: "smooth scrolling trang web"
 description: "Đối với các trang web dạng Landing Page, việc di chuyển giữa các mục trên trang là chắc chắn phải có. Tuy nhiên làm sao để hoạt động này diễn ra mượt và tự nhiên nhất. Bài viết này sẽ hướng dẫn bạn một cách đơn giản mà hiệu quả để có thể smooth scrolling trang web với jQuery."
 slug: smooth-scrolling-trang-web-voi-jquery

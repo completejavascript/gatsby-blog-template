@@ -3,7 +3,7 @@ date: "2018-03-12T12:00:02Z"
 update: "2018-05-08T12:00:02Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/lap-trinh-javascript-voi-fcc-wikipedia-viewer-completejavascript.com_.png"
+cover: "../../../images/javascript/lap-trinh-javascript-voi-fcc-wikipedia-viewer-completejavascript.com_.png"
 keywords: "Wikipedia Viewer"
 description: "Tiếp tục với chủ đề Lập trình JavaScript với FCC, bài viết này mình sẽ tổng hợp lại những bài học kinh nghiệm, thủ thuật rút ra được từ project Wikipedia Viewer. Hy vọng nó có thể giúp ích cho bạn trong các project của mình."
 slug: lap-trinh-javascript-voi-fcc-wikipedia-viewer
@@ -107,7 +107,7 @@ let ele3 = $("div.user-panel.main input[name='login']");
 
 Nhìn chả khác gì jQuery phải không bạn?
 
-![tăng tốc độ website - wikipedia viewer](../images/airplain-speed.jpg)
+![tăng tốc độ website - wikipedia viewer](../../../images/javascript/airplain-speed.jpg)
 
 ### Chỉ Query DOM một lần giúp nâng cao hiệu năng
 
@@ -184,7 +184,7 @@ Trong đó:
 
 Rõ ràng, khi sử dụng Fetch API thì code trở nên rõ ràng và sáng sủa hơn rất nhiều.
 
-![fetch vs xmlhttprequest - wikipedia viewer](../images/fetch-vs-xmlhttprequest-wikipedia-viewer-completejavascript.com_.png)
+![fetch vs xmlhttprequest - wikipedia viewer](../../../images/javascript/fetch-vs-xmlhttprequest-wikipedia-viewer-completejavascript.com_.png)
 
 _Ảnh tham khảo: ANTONIO GUILLEM/SHUTTERSTOCK_
 

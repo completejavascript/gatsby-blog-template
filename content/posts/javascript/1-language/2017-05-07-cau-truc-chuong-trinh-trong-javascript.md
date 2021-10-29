@@ -3,7 +3,7 @@ date: "2017-05-07T04:50:40Z"
 update: "2021-10-16T04:50:40Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/cau-truc-chuong-trinh-trong-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/cau-truc-chuong-trinh-trong-javascript-completejavascript.com_.png"
 keywords: "cấu trúc chương trình"
 description: "Làm thế nào để kết hợp những thành phần này thành một chương trình hoàn chỉnh? Để giải quyết vấn đề này, chúng ta sẽ cùng tìm hiểu về cấu trúc chương trình trong JavaScript."
 slug: cau-truc-chuong-trinh-trong-javascript
@@ -121,7 +121,7 @@ Vấn đề mình muốn đề cập ở đây là cách đặt tên làm sao đ
 - Sử dụng dấu gạch dưới để phân tách các từ: dien_tich_ao
 - Sử dụng Camel Case (đơn giản là bạn viết hoa chữ cái đầu tiên của mỗi từ, trừ từ đầu tiên): dienTichAo
 
-![camel case tại completejavascript.com](../images/camel-case-completejavascript.com_.png)
+![camel case tại completejavascript.com](../../../images/javascript/camel-case-completejavascript.com_.png)
 
 Theo kinh nghiệm của bản thân, mình sẽ sử dụng kết hợp cả hai cách trên. Thường thì mình sẽ sử dụng cách thứ hai (Camel Case). Tuy nhiên, khi muốn sử dụng một biến số như là một hằng số thì mình sẽ sử dụng cách một. Vì lúc này, mình sẽ viết hoa tất cả các kí tự.
 
@@ -154,7 +154,7 @@ alert("Say Hello from CompleteJavaScript.com");
 
 Kết quả:
 
-![Ví dụ hàm alert() tại completejavascript.com](../images/Screenshot-from-2017-05-07-06-49-44.png)
+![Ví dụ hàm alert() tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-06-49-44.png)
 
 ### Hàm console.log
 
@@ -178,7 +178,7 @@ confirm("Bạn muốn tiếp tục sử dụng chương trình?");
 
 Kết quả:
 
-![Ví dụ hàm prompt tại completejavascript.com](../images/Screenshot-from-2017-05-07-07-01-29.png)
+![Ví dụ hàm prompt tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-07-01-29.png)
 
 ### Hàm prompt
 
@@ -192,7 +192,7 @@ prompt("Nhập vào tên của bạn:");
 
 Kết quả:
 
-![Ví dụ hàm prompt tại completejavascript.com](../images/Screenshot-from-2017-05-07-07-03-21.png)
+![Ví dụ hàm prompt tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-07-03-21.png)
 
 Hai hàm _confirm_ và _prompt_ thường không được sử dụng ở trên trình duyệt hiện đại. Bởi bạn không thể quyết định được giao diện của nó sẽ như thế nào. Tuy nhiên, với mục đích để kiểm tra hay trong một vài chương trình đơn giản thì bạn vẫn có thể sử dụng chúng.
 
@@ -209,7 +209,7 @@ alert("Bình phương của số đó là: " + theNumber * theNumber);
 
 Chương trình sẽ thực hiện tuần tự từng câu lệnh. Và luồng điều khiển của chương trình sẽ như sau:
 
-![Luồng điều kiển tuần tự tại completejavascript.com](../images/Screenshot-from-2017-05-07-07-11-44.png)
+![Luồng điều kiển tuần tự tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-07-11-44.png)
 
 ### Điều kiện rẽ nhánh (conditional execution)
 
@@ -232,7 +232,7 @@ Nếu người dùng nhập vào số thì hàm _isNaN(theNumber)_ sẽ trả v�
 
 Lúc này luồng điểu khiển:
 
-![Luồng điều khiển rẽ nhánh tại completejavascript.com](../images/Screenshot-from-2017-05-07-07-21-26.png)
+![Luồng điều khiển rẽ nhánh tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-07-21-26.png)
 
 #### Kết hợp if và else
 
@@ -268,7 +268,7 @@ Nếu bạn không nhập vào số thì sẽ có một thông báo hiện lên:
 
 Lúc này luồng điểu khiển có thể được biểu diễn đơn giản như sau:
 
-![Luồng điều khiển rẽ nhánh nhiều đường tại completejavascript.com](../images/Screenshot-from-2017-05-07-07-32-02.png)
+![Luồng điều khiển rẽ nhánh nhiều đường tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-07-32-02.png)
 
 #### Từ khoá switch
 
@@ -296,7 +296,7 @@ Vòng lặp giúp giải quyết những bài toán có tính lặp lại theo q
 
 Luồng điều khiển lúc này sẽ là:
 
-![Vòng lặp điều khiển tại completejavascript.com](../images/Screenshot-from-2017-05-07-07-57-24.png)
+![Vòng lặp điều khiển tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-07-57-24.png)
 
 Như vậy, khi áp dụng vòng lặp thì bài toán trên sẽ giải quyết thế nào?
 

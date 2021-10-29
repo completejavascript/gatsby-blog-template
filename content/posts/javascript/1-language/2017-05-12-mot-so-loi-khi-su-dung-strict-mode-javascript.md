@@ -3,7 +3,7 @@ date: "2017-05-12T13:16:19Z"
 update: "2021-10-17T13:16:19Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/mot-so-loi-khi-su-dung-strict-mode-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/mot-so-loi-khi-su-dung-strict-mode-javascript-completejavascript.com_.png"
 keywords: "strict mode"
 description: "Strict mode giúp giảm thiểu những lỗi ngớ ngẩn của lập trình viên khi lập trình JavaScript. Bài viết này tôi sẽ đưa ra một số lỗi khi sử dụng strict mode."
 slug: mot-so-loi-khi-su-dung-strict-mode-javascript

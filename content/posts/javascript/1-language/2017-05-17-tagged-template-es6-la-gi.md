@@ -7,7 +7,7 @@ title: "Tagged template ES6 là gì?"
 slug: tagged-template-es6-la-gi
 keywords: "Tagged template ES6"
 description: "Bạn đã bao giờ sử dụng Tagged template ES6 chưa? Bài viết này mình sẽ tìm hiểu xem cách sử dụng của nó như thế nào nhé."
-cover: "../images/tagged-template-es6-la-gi-completejavascript.com.png"
+cover: "../../../images/javascript/tagged-template-es6-la-gi-completejavascript.com.png"
 tags:
   - ES6
 ---

@@ -3,7 +3,7 @@ date: "2018-01-26T22:30:58Z"
 update: "2018-11-22T22:30:58Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/trien-khai-queue-trong-javascript-completejavascript.com-1.png"
+cover: "../../../images/javascript/trien-khai-queue-trong-javascript-completejavascript.com-1.png"
 keywords: "triển khai Queue trong JavaScript"
 description: "Tiếp tục ý tưởng từ bài viết Triển khai Stack trong JavaScript với Array, Object hay Map, bài viết này sẽ tiếp tục triển khai Queue trong JavaScript."
 slug: trien-khai-queue-trong-javascript
@@ -29,7 +29,7 @@ Queue là một kiểu cấu trúc dữ liệu tuyến tính, tuân theo quy lu�
 
 Rõ ràng, cấu trúc dữ liệu này quá phổ biến và gần gũi với mọi người rồi. Vì đã là người văn minh thì khi đi đâu, làm gì thì cũng nên xếp hàng phải không?
 
-[![Hoạt động xếp hàng](../images/line-up-1.png)](https://pngtree.com/freepng/vector-cartoon-bus-station-queue_2749406.html)
+[![Hoạt động xếp hàng](../../../images/javascript/line-up-1.png)](https://pngtree.com/freepng/vector-cartoon-bus-station-queue_2749406.html)
 
 ### Ứng dụng Queue trong lập trình
 

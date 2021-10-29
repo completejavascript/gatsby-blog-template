@@ -3,7 +3,7 @@ date: "2017-05-13T23:19:32Z"
 update: "2021-10-17T23:19:32Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/phan-biet-var-va-let-trong-javascript-complete-javascript.png"
+cover: "../../../images/javascript/phan-biet-var-va-let-trong-javascript-complete-javascript.png"
 keywords: "phân biệt var và let"
 description: "let giống và khác var như thế nào? Bài viết này sẽ giúp bạn phân biệt var và let trong JavaScript. Qua đó, bạn biết cách sử dụng chúng sao cho phù hợp nhất."
 slug: phan-biet-var-va-let-trong-javascript

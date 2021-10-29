@@ -3,7 +3,7 @@ date: "2017-05-16T23:00:10Z"
 update: "2019-02-18T23:00:10Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/destructuring-assignment-trong-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/destructuring-assignment-trong-javascript-completejavascript.com_.png"
 keywords: "destructuring assignment"
 description: "Bài viết trình bày về cách sử dụng cơ bản và một số ứng dụng của Destructuring Assignment với Object và Array trong JavaScript."
 slug: destructuring-assignment-trong-javascript
@@ -43,7 +43,7 @@ let firstName, lastName;
 
 Ở đây, JavaScript sẽ thực hiện việc gán giá trị ở **vế phải** cho biến số ở **vế trái** theo đúng thứ tự chỉ số xuất hiện trong mảng.
 
-![Array destructuring assignment](../images/array-destructuring-assignment-completejavascript.com_.png)
+![Array destructuring assignment](../../../images/javascript/array-destructuring-assignment-completejavascript.com_.png)
 
 Khi đó, đoạn code trên sẽ tương đương với:
 
@@ -205,7 +205,7 @@ let firstName, lastName;
 
 Có thể hiểu đơn giản là: JavaScript sẽ thực hiện việc gán giá trị ở **vế phải** cho biến số ở **vế trái** tương ứng với giá trị của **key** trong Object mà không phân biệt thứ tự.
 
-![Object destructuring assignment](../images/object-destructuring-assignment-completejavascript.com_.png)
+![Object destructuring assignment](../../../images/javascript/object-destructuring-assignment-completejavascript.com_.png)
 
 Giả sử mình đổi thứ tự của _firstName_ và _lastName_ như sau:
 

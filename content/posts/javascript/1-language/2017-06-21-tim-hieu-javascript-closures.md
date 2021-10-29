@@ -3,7 +3,7 @@ date: "2017-06-21T00:35:17Z"
 update: "2021-10-16T00:35:17Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/tim-hieu-javascript-closures-completejavascript.com_.png"
+cover: "../../../images/javascript/tim-hieu-javascript-closures-completejavascript.com_.png"
 keywords: "JavaScript Closure"
 description: "Bài viết này sẽ giúp bạn hiểu về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Hãy cùng tìm hiểu xem closure trong JavaScript là gì và cách dùng closure thế nào nhé!"
 slug: tim-hieu-javascript-closures

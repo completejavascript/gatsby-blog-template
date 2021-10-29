@@ -3,7 +3,7 @@ date: "2018-01-24T12:00:10Z"
 update: "2018-08-01T12:00:10Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/trien-khai-thuat-toan-undo-redo-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/trien-khai-thuat-toan-undo-redo-javascript-completejavascript.com_.png"
 keywords: "triển khai thuật toán undo-redo"
 description: "Đối với hầu hết các ứng dụng (text editor, sửa ảnh,...) việc triển khai thuật toán Undo-Redo là thật sự cần thiết. Dưới đây là một cách triển khai đơn giản."
 slug: trien-khai-thuat-toan-undo-redo-trong-javascript
@@ -34,13 +34,13 @@ Trong đó:
 
 **Undo** là hoạt động đưa ứng dụng về trạng thái cũ hơn với bước nhảy là 1: S[n] → S[n-1] → ... → S[1] → S[0]. Nghĩa là bạn chỉ có thể thực hiện Undo khi bạn đang ở trạng thái S[i] với i > 0.
 
-![Cách thức hoạt động của Undo](../images/cach-thuc-hoat-dong-undo-completejavascript.com_.png)
+![Cách thức hoạt động của Undo](../../../images/javascript/cach-thuc-hoat-dong-undo-completejavascript.com_.png)
 
 ### Cách thức hoạt động của Redo
 
 Ngược lại với Undo, **Redo** là hoạt động đưa ứng dụng về trạng thái mới hơn với bước nhảy là 1: S[0] → S[1] → ... → S[n-1] → S[n]. Nghĩa là bạn chỉ có thể thực hiện Redo khi bạn đang ở trạng thái thứ S[i] với i < n.
 
-![Cách thức hoạt động của Redo](../images/cach-thuc-hoat-dong-redo-completejavascript.com_.png)
+![Cách thức hoạt động của Redo](../../../images/javascript/cach-thuc-hoat-dong-redo-completejavascript.com_.png)
 
 ### Cách thức hoạt động của phần Thêm trạng thái
 
@@ -48,11 +48,11 @@ Khi có một trạng thái mới được thêm vào tập các trạng thái c
 
 - Ứng dụng đang ở trạng thái mới nhất S[n]: Trường hợp này đơn giản, bạn chỉ cần thêm trạng thái S[n + 1] vào sau trạng thái S[n]. Khi đó, tập trạng thái của ứng dụng là: S[0], S[1], S[2],..., S[n-1], S[n], S[n+1].
 
-![Thêm trạng thái vào Undo-Redo trường hợp 1](../images/them-trang-thai-th1-completejavascript.com_.png)
+![Thêm trạng thái vào Undo-Redo trường hợp 1](../../../images/javascript/them-trang-thai-th1-completejavascript.com_.png)
 
 - Ứng dụng đang ở trạng thái cũ S[i] với i < n: Trường hợp này xảy ra khi bạn đã thực hiện ít nhất một lần Undo. Lúc này, bạn phải xoá đi toàn bộ các trạng thái từ S[i+1] đến S[n]. Sau đó, mới thêm trạng thái S'[i+1] vào sau S[i]. Khi đó, tập trạng thái của ứng dụng là: S[0], S[1], S[2],..., S[i], S'[i+1]. Điều đó cũng có nghĩa là bạn sẽ không thể đưa ứng dụng tới các trạng thái S[i+1], S[i+2],..., S[n], sau khi đã chèn trạng thái S'[i+1] vào.
 
-![Thêm trạng thái vào Undo-Redo trường hợp 2](../images/them-trang-thai-th2-completejavascript.com_.png)
+![Thêm trạng thái vào Undo-Redo trường hợp 2](../../../images/javascript/them-trang-thai-th2-completejavascript.com_.png)
 
 _Chú ý: Trạng thái S'[i+1] khác với S[i+1] và S'[i+1] đang là trạng thái mới nhất hiện tại._
 
@@ -115,13 +115,13 @@ constructor(currentstate) {
 
 Thực chất, [array trong JavaScript](/javascript-array-co-ban) có thể đóng vai trò là Stack, với sự hỗ trợ của các phương thức _push_, _pop_. Do đó, mình khởi tạo Undo Stack - _this.\_undoStack_ và Redo Stack - _this.\_redoStack_ là các mảng rỗng. Sau đó, _push_ trạng thái hiện tại của ứng dụng _currentstate_ vào _this.\_redoStack_.
 
-![Khởi tạo Undo, Redo Stack](../images/khoi-tao-completejavascript.com_.png)
+![Khởi tạo Undo, Redo Stack](../../../images/javascript/khoi-tao-completejavascript.com_.png)
 
 **Mục đích: mình sẽ sử dụng đỉnh của Redo Stack để lưu giá trị hiện tại của ứng dụng.**
 
 Nghĩa là: một cách tổng quát, _this.\_undoStack_ sẽ lưu các trạng thái từ S[0] đến S[i-1] và _this.\_redoStack_ sẽ lưu các trạng thái từ S[i] đến S[n]. Với S[i] là giá trị hiện tại của ứng dụng, nằm tại đỉnh của _this.\_redoStack_.
 
-![Trạng thái tổng quát của Undo, Redo Stack](../images/trang-thai-undo-redo-stack-completejavascript.com_.png)
+![Trạng thái tổng quát của Undo, Redo Stack](../../../images/javascript/trang-thai-undo-redo-stack-completejavascript.com_.png)
 
 Dĩ nhiên, bạn có thể cho trạng thái hiện tại vào _this.\_undoStack_ hoặc tạo thêm một biến để lưu trạng thái này. Khi đó, bạn chỉ cần sửa lại code một chút. Về cơ bản, chúng vẫn giống nhau, nên bạn có thể làm theo cách của mình.
 
@@ -153,7 +153,7 @@ Cuối cùng trạng thái _state_ mới nhất sẽ được đưa vào _this.\
 this._redoStack.push(state);
 ```
 
-![Trạng thái của Undo, Redo Stack sau khi thêm trạng thái](../images/trang-thai-undo-redo-stack-sau-khi-them-trang-thai-completejavascript.com_.png)
+![Trạng thái của Undo, Redo Stack sau khi thêm trạng thái](../../../images/javascript/trang-thai-undo-redo-stack-sau-khi-them-trang-thai-completejavascript.com_.png)
 
 ### Triển khai phần Undo
 
@@ -191,7 +191,7 @@ Và _return_ để sử dụng cho việc thay đổi trạng thái ứng dụng
 return state;
 ```
 
-![Trạng thái của Undo, Redo Stack sau khi Undo](../images/trang-thai-undo-redo-stack-sau-khi-undo-completejavascript.com_.png)
+![Trạng thái của Undo, Redo Stack sau khi Undo](../../../images/javascript/trang-thai-undo-redo-stack-sau-khi-undo-completejavascript.com_.png)
 
 ### Triển khai phần Redo
 
@@ -231,7 +231,7 @@ Lúc này trạng thái mới hơn (cần di chuyển đến) đang nằm ở đ
 return this._redoStack[this._redoStack.length - 1];
 ```
 
-![Trạng thái của Undo, Redo Stack sau khi redo](../images/trang-thai-undo-redo-stack-sau-khi-redo-completejavascript.com_.png)
+![Trạng thái của Undo, Redo Stack sau khi redo](../../../images/javascript/trang-thai-undo-redo-stack-sau-khi-redo-completejavascript.com_.png)
 
 ### Triển khai phần Clear
 
@@ -265,7 +265,7 @@ Cuối cùng lưu lại trạng thái hiện tại của ứng dụng vào Redo 
 this._redoStack.push(state);
 ```
 
-![Trạng thái của Undo, Redo Stack sau khi clear](../images/trang-thai-undo-redo-stack-sau-khi-clear-completejavascript.com_.png)
+![Trạng thái của Undo, Redo Stack sau khi clear](../../../images/javascript/trang-thai-undo-redo-stack-sau-khi-clear-completejavascript.com_.png)
 
 ## Demo sử dụng thuật toán Undo-Redo
 

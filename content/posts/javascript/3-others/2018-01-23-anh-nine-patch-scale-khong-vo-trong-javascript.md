@@ -3,7 +3,7 @@ date: "2018-01-23T13:34:08Z"
 update: "2018-01-23T13:34:08Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/anh-nine-patch-scale-khong-vo-trong-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/anh-nine-patch-scale-khong-vo-trong-javascript-completejavascript.com_.png"
 keywords: "ảnh nine-patch"
 description: "Có một loại ảnh cho phép kéo dãn mà không vỡ ảnh, chính là ảnh nine-patch (hay 9patch). Vậy ảnh nine-patch là gì? Cách sử dụng ảnh nine-patch trong JavaScript như thế nào? Bài viết này sẽ giúp bạn tìm hiểu về xử lý ảnh nine-patch trong JavaScript."
 slug: anh-nine-patch-scale-khong-vo-trong-javascript
@@ -31,11 +31,11 @@ Theo định nghĩa ở trên, ảnh nine-patch sẽ sử dụng border có đ�
 
 Trong đó, phần co dãn được xác định bởi 2 đường kẻ màu đen ở phía trên (**top**) và phía bên trái (**left**), những pixel còn lại ở top và left phải để transparent hoặc màu trắng hoàn toàn.
 
-![nine-patch button stretchable 0- complete javascript - completejavascript.com](../images/nine-patch-button-stretchable-0.jpg)
+![nine-patch button stretchable 0- complete javascript - completejavascript.com](../../../images/javascript/nine-patch-button-stretchable-0.jpg)
 
 Hai đường kẻ này chia bức ảnh thành 9 phần như sau:
 
-![nine-patch button stretchable 2- complete javascript - completejavascript.com](../images/nine-patch-button-stretchable-2.jpg)
+![nine-patch button stretchable 2- complete javascript - completejavascript.com](../../../images/javascript/nine-patch-button-stretchable-2.jpg)
 
 Trong 9 phần đó:
 
@@ -50,7 +50,7 @@ Ngoài việc định nghĩa phần co dãn và phần cố định của ảnh,
 
 Phần này được xác định bởi 2 đường kẻ màu đen ở phía bên phải (**right**) và phía dưới (**bottom**).
 
-![nine-patch button stretchable 3- complete javascript - completejavascript.com](../images/nine-patch-button-stretchable-3.jpg)
+![nine-patch button stretchable 3- complete javascript - completejavascript.com](../../../images/javascript/nine-patch-button-stretchable-3.jpg)
 
 Nghĩa là chỉ có hình chữ nhật màu hồng được phép chứa nội dung. Nếu nội dung lớn hơn vùng này thì ảnh nine-patch sẽ được kéo dãn ra để chứa đủ nội dung đó.
 
@@ -64,7 +64,7 @@ Ngoài ra, bạn cũng có thể dùng các công cụ chuyên biệt như [WYSI
 
 Để đơn giản, ta sẽ không quan tâm đến padding (padding = 0), nghĩa là phần đường kẻ màu đen phía dưới và bên phải kéo dài đến hết bức ảnh (trừ đi 1 pixel là border).
 
-![nine-patch image demo - complete javascript - completejavascript.com](../images/demo_normal.9.png)
+![nine-patch image demo - complete javascript - completejavascript.com](../../../images/javascript/demo_normal.9.png)
 
 Để scale ảnh nine-patch, mình sẽ xử dụng Canvas với ý tưởng chung như sau:
 

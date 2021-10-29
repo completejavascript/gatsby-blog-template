@@ -3,7 +3,7 @@ date: "2018-01-09T14:39:22Z"
 update: "2021-10-16T14:39:22Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/javascript-tint-color-thay-doi-mau-sac-cua-buc-anh-completejavascript-completejavascript.com_.png"
+cover: "../../../images/javascript/javascript-tint-color-thay-doi-mau-sac-cua-buc-anh-completejavascript-completejavascript.com_.png"
 keywords: "javascript tint color"
 description: "Xin chào các bạn. Hình như là đã lâu rồi tôi chưa viết bài nào về lập trình JavaScript. Nguyên nhân là vừa rồi tôi cũng không có nhiều thời gian để học và tìm hiểu về nó. Từ hôm nay, tôi sẽ bắt đầu lại với chủ đề này, đó là JavaScript nâng cao. Bài viết đầu tiên là JavaScript Tint Color - thay đổi màu sắc của bức ảnh."
 slug: javascript-tint-color-thay-doi-mau-sac-buc-anh
@@ -21,7 +21,7 @@ Xin chào bạn. Hình như là đã lâu rồi mình chưa viết bài nào v�
 
 JavaScript Tint Color là việc sử dụng [JavaScript](/javascript-la-gi) ([Canvas](https://www.tutorialspoint.com/html5/html5_canvas.htm)) để thay đổi màu sắc của một bức ảnh.
 
-![demo tint color](../images/tint-color-demo.png)
+![demo tint color](../../../images/javascript/tint-color-demo.png)
 
 Bạn có thể thấy ở phía trên. Cùng là ảnh một ngôi sao nhưng màu sắc của chúng là khác nhau. Bình thường, bạn cần phải tạo ra những tệp tin ảnh tương ứng với mỗi màu. Nhưng khi áp dụng JavaScript Tint Color, chúng ta chỉ cần một bức ảnh ban đầu, sau đó có thể tạo ra vô số bức ảnh tương tự với màu sắc khác nhau.
 

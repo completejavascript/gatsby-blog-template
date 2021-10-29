@@ -3,7 +3,7 @@ date: "2018-01-04T22:30:26Z"
 update: "2019-01-03T22:30:26Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/convert-ipv4-sang-decimal-va-nguoc-lai-completejavascript.com_.png"
+cover: "../../../images/javascript/convert-ipv4-sang-decimal-va-nguoc-lai-completejavascript.com_.png"
 keywords: "convert IPv4 sang Decimal"
 description: "Bài viết đầu tiên, mình sẽ trình bày về cách convert IPv4 sang Decimal và sau đó là convert ngược lại từ Decimal sang IPv4."
 slug: convert-ipv4-sang-decimal-va-nguoc-lai
@@ -43,11 +43,11 @@ Trong phạm vi bài viết này, mình sẽ chia sẻ với bạn cách để c
 
 Như mình đã nói ở trên, mỗi octet sẽ gồm 8 bit - tương ứng với một byte. Vì vậy, mình sẽ chuyển đổi địa chỉ **192.0.2.235** như sau:
 
-![Ý tưởng convert IPv4 sang Decimal](../images/nguyen-ly-1.png)
+![Ý tưởng convert IPv4 sang Decimal](../../../images/javascript/nguyen-ly-1.png)
 
 Theo như hình trên, số 235 ở vị trí byte 0, số 2 ở vị trí byte 1, số 0 ở vị trí byte 2 và số 192 ở vị trí byte 3. Hay nói cách khác, số 235 vẫn giữ nguyên vị trí, số 2 dịch trái 1 byte, số 0 dịch trái 2 byte và số 192 dịch trái 3 byte. Khi đó, mình có thể mô phỏng lại bằng hình vẽ sau:
 
-![Nguyên lý dịch bit](../images/nguyen-ly-dich-bit-1.png)
+![Nguyên lý dịch bit](../../../images/javascript/nguyen-ly-dich-bit-1.png)
 
 Như vậy, ý tưởng đầu tiên để convert IPv4 sang Decimal đó là: **thực hiện phép dịch bit sang trái (<<) với các số 235, 2, 0, 192 lần lượt là 0, 8, 16, 24 bit.** Sau đó, sử dụng phép bitwise OR (|) để hợp chúng lại với nhau là thu được kết quả.
 

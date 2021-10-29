@@ -3,7 +3,7 @@ date: "2018-03-10T00:00:56Z"
 update: "2018-03-23T00:00:56Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/random-quote-machine-lap-trinh-javascript-voi-fcc-completejavascript.com_.png"
+cover: "../../../images/javascript/random-quote-machine-lap-trinh-javascript-voi-fcc-completejavascript.com_.png"
 keywords: "random quote machine"
 description: "Tiếp tục series lập trình JavaScript với FCC, hôm nay mình sẽ giới thiệu một project thuộc chủ đề Intermediate Front-End là Random Quote Machine. Nhưng khác các bài viết trước, lần này mình muốn chia sẻ quy trình từng bước thực hiện, bắt đầu từ phân tích yêu cầu bài toán, thiết kế UX/UI và xử lý logic trong JavaScript."
 slug: lap-trinh-javascript-voi-fcc-random-quote-machine
@@ -65,15 +65,15 @@ Hướng dẫn sử dụng bạn có thể xem trên mạng, rất nhiều. Mìn
 
 Giao diện Random Quote Machine trên Mobile:
 
-![random quote machine trên mobile](../images/pencil-mobile-random-quote-machine.png)
+![random quote machine trên mobile](../../../images/javascript/pencil-mobile-random-quote-machine.png)
 
 Giao diện trên Tablet:
 
-![random quote machine trên tablet](../images/pencil-tablet-random-quote-machine.png)
+![random quote machine trên tablet](../../../images/javascript/pencil-tablet-random-quote-machine.png)
 
 Giao diện trên PC:
 
-![random quote machine trên pc](../images/pencil-pc-random-quote-machine.png)
+![random quote machine trên pc](../../../images/javascript/pencil-pc-random-quote-machine.png)
 
 Thực tế, những thứ trên chỉ nên gọi là UX. Tuy nhiên, mình tạm hài lòng và dừng bước này tại đây. Việc thiết kế màu sắc, font chữ,... sẽ làm luôn trên CSS.
 

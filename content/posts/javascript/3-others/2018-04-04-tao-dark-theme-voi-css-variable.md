@@ -3,7 +3,7 @@ date: "2018-04-04T22:30:40Z"
 update: "2018-10-24T22:30:40Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/tao-dark-theme-voi-css-variable-completejavascript.com_.png"
+cover: "../../../images/javascript/tao-dark-theme-voi-css-variable-completejavascript.com_.png"
 keywords: "tạo dark theme với css variable"
 description: "Bạn đã biết tạo Dark theme cho trang web. Bài viết này mình sẽ giới thiệu với bạn cách tạo Dark theme với CSS Variable rất hay."
 slug: tao-dark-theme-voi-css-variable

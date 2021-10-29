@@ -2,7 +2,7 @@
 date: "2018-04-01T00:00:07Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/thiet-ke-website-responsive-menu-completejavascript.com_.png"
+cover: "../../../images/javascript/thiet-ke-website-responsive-menu-completejavascript.com_.png"
 keywords: "thiết kế website responsive"
 description: "Hiện nay, mọi người có thể truy cập vào website từ rất nhiều các thiết bị khác nhau: máy tính, máy tính bảng (tablet), điện thoại (smart phone),... Vì vậy, mình sẽ hướng dẫn các bạn thiết kế website responsive với CSS."
 slug: thiet-ke-website-responsive-voi-css-menu
@@ -20,11 +20,11 @@ Thiết kế website responsive là làm cho website tương thích với tất 
 
 Ví dụ giao diện trang web trên máy tính:
 
-![thiet-ke-website-responsive-voi-css-phan-1-menu-desktop](../images/thiet-ke-website-responsive-voi-css-phan-1-menu-1024x594.png)
+![thiet-ke-website-responsive-voi-css-phan-1-menu-desktop](../../../images/javascript/thiet-ke-website-responsive-voi-css-phan-1-menu-1024x594.png)
 
 Ví dụ giao diện trang web trên điện thoại:
 
-![thiet-ke-website-responsive-voi-css-phan-1-menu-phone](../images/thiet-ke-website-responsive-voi-css-phan-1-menu-2.png)
+![thiet-ke-website-responsive-voi-css-phan-1-menu-phone](../../../images/javascript/thiet-ke-website-responsive-voi-css-phan-1-menu-2.png)
 
 ## Các phương pháp thiết kế website responsive
 
@@ -82,7 +82,7 @@ Phần **responsive.js** và **responsive.css** mình sẽ giới thiệu sau. �
 
 Hiện tại, mình chưa thiết kế file **responsive.js** và **responsive.css** nên bạn có thể comment 2 dòng đó lại để xem kết quả hiện tại:
 
-![thiet-ke-website-responsive-phan-1-menu-add-html](../images/thiet-ke-website-responsive-phan-1-menu-add-html.png)
+![thiet-ke-website-responsive-phan-1-menu-add-html](../../../images/javascript/thiet-ke-website-responsive-phan-1-menu-add-html.png)
 
 ### Bước 2: Thêm CSS (responsive.css)
 
@@ -263,11 +263,11 @@ Chữ trên các mục menu để phía bên trái: **text-align: left**
 
 Giao diện trên máy tính:
 
-![thiet-ke-website-responsive-phan-1-menu-add-css-desktop](../images/thiet-ke-website-responsive-phan-1-menu-add-css-desktop.png)
+![thiet-ke-website-responsive-phan-1-menu-add-css-desktop](../../../images/javascript/thiet-ke-website-responsive-phan-1-menu-add-css-desktop.png)
 
 Giao diện trên điện thoại:
 
-![thiet-ke-website-responsive-menu-giao-dien-dien-thoai.png](../images/thiet-ke-website-responsive-menu-giao-dien-dien-thoai.png)
+![thiet-ke-website-responsive-menu-giao-dien-dien-thoai.png](../../../images/javascript/thiet-ke-website-responsive-menu-giao-dien-dien-thoai.png)
 
 Lúc này, nếu bạn nhấn vào icon phía bên phải thanh menu thì vẫn chưa có hiện tượng gì xảy ra. Tiếp theo mình sẽ thêm phần xử lý javascript.
 
@@ -300,7 +300,7 @@ Khi menu đã được mở ra, nghĩa là nó sẽ thuộc 2 lớp là "topnav"
 
 Kết quả khi nhấn vào icon:
 
-![thiet-ke-website-responsive-menu-giao-dien-phone-open](../images/thiet-ke-website-responsive-menu-giao-dien-phone-open.png)
+![thiet-ke-website-responsive-menu-giao-dien-phone-open](../../../images/javascript/thiet-ke-website-responsive-menu-giao-dien-phone-open.png)
 
 ## Lời kết
 

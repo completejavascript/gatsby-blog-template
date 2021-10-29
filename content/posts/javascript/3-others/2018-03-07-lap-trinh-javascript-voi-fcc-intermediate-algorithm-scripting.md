@@ -3,7 +3,7 @@ date: "2018-03-07T13:59:55Z"
 update: "2021-10-17T13:59:55Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/lap-trinh-javascript-voi-intermediate-algorithm-scripting-completejavascript-completejavascript.com_.png"
+cover: "../../../images/javascript/lap-trinh-javascript-voi-intermediate-algorithm-scripting-completejavascript-completejavascript.com_.png"
 keywords: "Intermediate Algorithm Scripting"
 description: "Bài viết trước mình đã chia sẻ với bạn các bài toán thuộc chủ đề Basic Algorithm Scripting. Nếu bạn đã đọc qua thì có thể thấy rằng, đó đều là những bài toán khá dễ. Ngược lại, các bài toán hôm nay sẽ khó hơn một chút. Vì chúng thuộc chủ đề Intermediate Algorithm Scripting."
 slug: lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting

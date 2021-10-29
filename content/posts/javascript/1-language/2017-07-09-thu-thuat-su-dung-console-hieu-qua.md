@@ -3,7 +3,7 @@ date: "2017-07-09T23:00:42Z"
 update: "2019-05-05T23:00:42Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/mot-so-thu-thuat-su-dung-console-hieu-qua-completejavascript.com_.png"
+cover: "../../../images/javascript/mot-so-thu-thuat-su-dung-console-hieu-qua-completejavascript.com_.png"
 keywords: "thủ thuật sử dụng console"
 description: "Console.log là hàm khá phổ biến.Tuy nhiên, không phải ai cũng biết cách sử dụng. Bài viết này sẽ chia sẻ với bạn một số thủ thuật sử dụng console hiệu quả."
 slug: thu-thuat-su-dung-console-hieu-qua
@@ -159,7 +159,7 @@ console.table([foo, bar, baz]);
 
 Kết quả:
 
-![Sử dụng console.table](../images/su-dung-console.table-completejavascript.com_.png)
+![Sử dụng console.table](../../../../../images/javascript/javascript/su-dung-console.table-completejavascript.com_.png)
 
 ## Sử dụng console.time và console.timeEnd
 

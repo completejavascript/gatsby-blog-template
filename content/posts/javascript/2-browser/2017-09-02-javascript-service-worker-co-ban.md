@@ -3,7 +3,7 @@ date: "2017-09-02T05:16:13Z"
 update: "2021-10-17T05:16:13Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/javascript-service-worker-xay-dung-ung-dung-web-offline-completejavascript-completejavascript.com_.png"
+cover: "../../../images/javascript/javascript-service-worker-xay-dung-ung-dung-web-offline-completejavascript-completejavascript.com_.png"
 keywords: "javascript service worker"
 description: "Có 2 thứ cần thiết để web app có thể chạy được là: resources (html, js, css, ảnh,...) và định tuyến. Thì thằng mà chúng ta sẽ tìm hiểu sau đây là JavaScript Service Worker có thể đáp ứng được cả hai việc đó. Vậy..."
 slug: javascript-service-worker-co-ban
@@ -230,7 +230,7 @@ Cuối cùng là kích hoạt Service Worker sử dụng [self.clients.claim()](
 
 Bạn có thể kiểm tra lại bằng cách nhấn **Ctrl Shift I** hoặc **F12** (tùy thuộc trình duyệt) để vào phần Công cụ dành cho nhà phát triển:
 
-![Google Dev Tool - Check Service Worker](../images/google-dev-tool-service-worker-check.png)
+![Google Dev Tool - Check Service Worker](../../../images/javascript/google-dev-tool-service-worker-check.png)
 
 Theo như hình trên thì bạn có thể thấy là Service Worker đã được kích hoạt (**activated**) và đang chạy (**running**).
 

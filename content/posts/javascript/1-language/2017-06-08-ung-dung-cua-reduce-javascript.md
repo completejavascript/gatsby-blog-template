@@ -3,7 +3,7 @@ date: "2017-06-08T23:00:53Z"
 update: "2021-10-17T23:00:53Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/mot-so-ung-dung-cua-reduce-trong-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/mot-so-ung-dung-cua-reduce-trong-javascript-completejavascript.com_.png"
 keywords: "ứng dụng của reduce"
 description: "Bài viết này mình sẽ giới thiệu với bạn một vài ứng dụng của Reduce trong JavaScript giúp code của bạn trở nên ngắn gọn và dễ hiểu hơn. Qua đó, bạn có thể làm chủ và biết cách áp dụng JavaScript reduce."
 slug: ung-dung-cua-reduce-javascript

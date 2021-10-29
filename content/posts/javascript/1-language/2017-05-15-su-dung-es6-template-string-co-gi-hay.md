@@ -3,7 +3,7 @@ date: "2017-05-15T00:00:44Z"
 update: "2018-05-03T00:00:44Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/su-dung-es6-template-string-co-gi-hay-ho-completejavascript.com_.1.png"
+cover: "../../../images/javascript/su-dung-es6-template-string-co-gi-hay-ho-completejavascript.com_.1.png"
 keywords: "Sử dụng ES6 Template String"
 description: "Đúng như tiêu đề, bài viết này mình sẽ đi tìm lời giải đáp cho câu hỏi: sử dụng ES6 Template String có gì hay hơn so với các phương pháp truyền thống."
 slug: su-dung-es6-template-string-co-gi-hay

@@ -3,7 +3,7 @@ date: "2017-08-13T22:30:17Z"
 update: "2018-11-20T22:30:17Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/giao-tiep-voi-clipboard-su-dung-execcommand-completejavascript.com_.png"
+cover: "../../../images/javascript/giao-tiep-voi-clipboard-su-dung-execcommand-completejavascript.com_.png"
 keywords: "giao tiếp với clipboard sử dụng execCommand"
 description: "Ngoài thư viện clipboard.js ra, bạn cũng vẫn có thể trực tiếp giao tiếp với clipboard sử dụng execCommand một cách đơn giản."
 slug: giao-tiep-voi-clipboard-su-dung-execcommand

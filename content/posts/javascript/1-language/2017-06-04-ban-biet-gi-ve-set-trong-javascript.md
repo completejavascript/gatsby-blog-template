@@ -3,7 +3,7 @@ date: "2017-06-04T22:30:13Z"
 update: "2018-10-15T22:30:13Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/ban-biet-gi-ve-set-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/ban-biet-gi-ve-set-javascript-completejavascript.com_.png"
 keywords: "set trong javascript"
 description: "Set trong Javascript là một loại object cho phép bạn lưu trữ dữ liệu một cách duy nhất, không trùng lặp. Vậy mình có thể làm được gì với Set."
 slug: ban-biet-gi-ve-set-trong-javascript

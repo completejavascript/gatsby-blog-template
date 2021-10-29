@@ -3,7 +3,7 @@ date: "2018-04-03T18:19:49Z"
 update: "2021-10-17T18:19:49Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/gui-email-bang-html-va-formspree.io-completejavascript.com_.png"
+cover: "../../../images/javascript/gui-email-bang-html-va-formspree.io-completejavascript.com_.png"
 keywords: "gửi email bằng html"
 description: "Phương pháp cực kì đơn giản và hiệu quả giúp bạn gửi email bằng HTML sử dụng formspree.io. Tất cả công việc bạn cần phải làm là cấu hình form trong HTML sử dụng email cá nhân của bạn,..."
 slug: gui-mail-bang-html-va-formspree-io
@@ -57,7 +57,7 @@ Khi đó ta có:
 
 Như vậy là đã hoàn thành phần cài đặt form.
 
-![cài đặt form](../images/test-sending-email-testformspree.io_.png)
+![cài đặt form](../../../images/javascript/test-sending-email-testformspree.io_.png)
 
 ### Bước 2: Nhập nội dung vào form
 
@@ -67,7 +67,7 @@ Bạn sẽ nhập địa chỉ email vào mục _Your email_ (chú ý là phải
 
 Lúc này, trang web thông báo rằng bạn cần xác minh email.
 
-![xác minh email khi gửi mail bằng html và formspree](../images/confirm-email-testformspree.png)
+![xác minh email khi gửi mail bằng html và formspree](../../../images/javascript/confirm-email-testformspree.png)
 
 ### Bước 3: Xác minh email
 
