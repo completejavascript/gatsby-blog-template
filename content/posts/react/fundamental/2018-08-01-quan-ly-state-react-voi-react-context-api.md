@@ -3,7 +3,7 @@ date: "2018-08-01T22:30:23Z"
 update: "2018-12-12T22:30:23Z"
 template: "post"
 directory: "React"
-cover: "../images/quan-ly-state-react-voi-react-context-api-completejavascript.com_.png"
+cover: "../../../images/react/quan-ly-state-react-voi-react-context-api-completejavascript.com_.png"
 keywords: "react context api"
 description: "React Context API có thể thay thế Redux để quản lý State của ứng dụng React một cách dễ dàng. Cụ thể thế nào, mời bạn theo dõi bài viết!"
 slug: quan-ly-state-react-voi-react-context-api
@@ -34,7 +34,7 @@ Kể cả trong trường hợp component B không cần sử dụng đến các
 
 Ngược lại, khi cần cập nhật state từ C lên A, mình cũng cần phải cập nhật từ C lên B, rồi mới cập nhật từ B lên A được.
 
-![Theo cách thông thường A và C muốn giao tiếp thì phải thông qua B](../images/react-context-api-quan-ly-state-theo-cach-thong-thuong-completejavascript.com_.png)
+![Theo cách thông thường A và C muốn giao tiếp thì phải thông qua B](../../../images/react/react-context-api-quan-ly-state-theo-cach-thong-thuong-completejavascript.com_.png)
 
 Thử tưởng tượng bạn đang có hàng chục component khác nhau. Nếu mà cứ truyền props với cập nhật state như thế này thì quả thật sẽ rất lằng nhằng và thừa code không cần thiết.
 
@@ -44,7 +44,7 @@ Thử tưởng tượng bạn đang có hàng chục component khác nhau. Nếu
 
 Ý tưởng của React Context API là nó sẽ tập trung dữ liệu vào một nơi. Sau đó, nó cung cấp cơ chế cho phép mỗi component có thể lấy state cũng như cập nhật state trực tiếp tại đó mà không cần qua các component trung gian.
 
-![Với React Context API, số lượng phần tử bao nhiêu cũng không thành vấn đề](../images/react-context-api-quan-ly-state-voi-react-context-api-completejavascript.com_.png)
+![Với React Context API, số lượng phần tử bao nhiêu cũng không thành vấn đề](../../../images/react/react-context-api-quan-ly-state-voi-react-context-api-completejavascript.com_.png)
 
 So với cách quản lý state thông thường, mình thấy cách này có ưu, nhược điểm là:
 

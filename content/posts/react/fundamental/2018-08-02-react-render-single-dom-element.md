@@ -3,7 +3,7 @@ date: "2018-08-02T23:00:23Z"
 update: "2019-05-15T23:00:23Z"
 template: "post"
 directory: "React"
-cover: "../images/tai-sao-react-yeu-cau-render-single-element-va-cac-cach-giai-quyet-completejavascript.com_.png"
+cover: "../../../images/react/tai-sao-react-yeu-cau-render-single-element-va-cac-cach-giai-quyet-completejavascript.com_.png"
 keywords: "render single DOM element"
 description: "Khi viết React, chắc hẳn đã ít nhất một lần bạn gặp phải lỗi liên quan đến việc React yêu cầu render single DOM element. Có 4 cách giải quyết vấn đề này."
 slug: react-render-single-dom-element

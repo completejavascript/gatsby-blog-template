@@ -3,7 +3,7 @@ date: "2019-01-09T11:53:05Z"
 update: "2019-01-09T11:53:05Z"
 template: "post"
 directory: "React"
-cover: "../images/mot-so-plugin-gatsby.js-hay-dung-completejavascript.com_.png"
+cover: "../../../images/react/mot-so-plugin-gatsby.js-hay-dung-completejavascript.com_.png"
 keywords: "một số plugin gatsby.js"
 description: "Gatsby.js hỗ trợ rất nhiều plugin, nhưng chỉ có một số plugin Gatsby.js hay dùng. Vì vậy, bài viết này mình sẽ liệt kê những plugin đó."
 slug: mot-so-plugin-gatsby-js-hay-dung

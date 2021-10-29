@@ -3,7 +3,7 @@ date: "2018-07-30T22:30:03Z"
 update: "2018-10-31T22:30:03Z"
 template: "post"
 directory: "React"
-cover: "../images/tim-hieu-react-component-lifecycle-completejavascript.com_.png"
+cover: "../../../images/react/tim-hieu-react-component-lifecycle-completejavascript.com_.png"
 keywords: "react component lifecycle"
 description: "Bạn có biết các phương thức trong React Component Lifecycle hay chưa? Chúng được gọi khi nào và chúng được sử dụng để làm gì?"
 slug: tim-hieu-react-component-lifecycle
@@ -24,7 +24,7 @@ Khi học và tìm hiểu về React Component, có lẽ bạn đã đôi lần 
 
 Các phương thức trong React Component Lifecycle có thể chia ra làm 3 pha chính là: **Mounting**, **Updating** và **Unmounting**.
 
-![Sơ đồ các phương thức chính của React Component Lifecycle](../images/react-lifecycle-diagram.png)
+![Sơ đồ các phương thức chính của React Component Lifecycle](../../../images/react/react-lifecycle-diagram.png)
 
 ### Các phương thức trong pha Mounting
 
@@ -102,7 +102,7 @@ Hết phương thức này, nghĩa là mình đã xử lý xong trong pha Mounti
 
 Tiếp theo, mình sẽ xử lý việc cập nhật giao diện trong pha Updating.
 
-![Sơ đồ đầy đủ các phương thức của React Component Lifecycle (sưu tầm)](../images/react-lifecycle-diagram-full.png)
+![Sơ đồ đầy đủ các phương thức của React Component Lifecycle](../../../images/react/react-lifecycle-diagram-full.png)
 
 _Sơ đồ đầy đủ các phương thức của React Component Lifecycle (sưu tầm)_
 

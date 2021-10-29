@@ -3,7 +3,7 @@ date: "2018-10-29T22:30:30Z"
 update: "2018-10-29T22:30:30Z"
 template: "post"
 directory: "React"
-cover: "../images/hoc-react-qua-vi-du-1-slideshow-completejavascript.com_.png"
+cover: "../../../images/react/hoc-react-qua-vi-du-1-slideshow-completejavascript.com_.png"
 keywords: "Slideshow"
 description: "Xin chào bạn đến với Học React qua ví dụ #1. Bài viết này mình sẽ thực hành React thông qua cách tạo Slideshow để trình diễn ảnh."
 slug: hoc-react-qua-vi-du-1-slideshow

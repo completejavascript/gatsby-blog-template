@@ -3,7 +3,7 @@ date: "2018-11-07T22:30:49Z"
 update: "2018-11-07T22:30:49Z"
 template: "post"
 directory: "React"
-cover: "../images/hoc-react-qua-vi-du-4-lightbox-completejavascript.com_.png"
+cover: "../../../images/react/hoc-react-qua-vi-du-4-lightbox-completejavascript.com_.png"
 keywords: "lightbox"
 description: "Xin chào bạn đến với Học React qua ví dụ #4. Bài viết này mình sẽ thực hành React với Lightbox - sự kết hợp giữa Slideshow Gallery và Modal Image."
 slug: hoc-react-qua-vi-du-4-lightbox

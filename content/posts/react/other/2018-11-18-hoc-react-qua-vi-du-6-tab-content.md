@@ -3,7 +3,7 @@ date: "2018-11-18T22:30:53Z"
 update: "2018-11-18T22:30:53Z"
 template: "post"
 directory: "React"
-cover: "../images/hoc-react-qua-vi-du-6-tab-content-completejavascript.com_.png"
+cover: "../../../images/react/hoc-react-qua-vi-du-6-tab-content-completejavascript.com_.png"
 keywords: "tab content"
 description: "Xin chào bạn đến với Học React qua ví dụ #6. Bài này mình sẽ thực hành React thông qua việc tạo Tab Content. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-6-tab-content

@@ -7,7 +7,7 @@ title: "Sử dụng SASS với create-react-app"
 slug: su-dung-sass-voi-create-react-app
 keywords: "Sử dụng SASS với create-react-app"
 description: "Cách mà mình thấy cơ bản và hiệu quả nhất để style componenet trong React, đó là dùng SASS. Bài viết này sẽ giới thiệu với bạn cách để sử dụng SASS với create-react-app."
-cover: "../images/su-dung-sass-voi-create-react-app-completejavascript.com.png"
+cover: "../../../images/react/su-dung-sass-voi-create-react-app-completejavascript.com.png"
 tags:
   - Create-react-app
   - CSS
@@ -16,7 +16,7 @@ tags:
 
 Có nhiều cách để style component trong ứng dụng React. Tuy nhiên, cách mà mình thấy cơ bản và hiệu quả nhất, đó là dùng SASS. Bài viết này sẽ giới thiệu với bạn cách đơn giản để sử dụng SASS với create-react-app.
 
-![Create react app và SASS](../images/su-dung-sass-voi-create-react-app-completejavascript.com.png)
+![Create react app và SASS](../../../images/react/su-dung-sass-voi-create-react-app-completejavascript.com.png)
 
 ## Tại sao lại là SASS và create-react-app?
 

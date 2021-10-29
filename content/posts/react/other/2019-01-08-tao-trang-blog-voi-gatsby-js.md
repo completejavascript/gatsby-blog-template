@@ -3,7 +3,7 @@ date: "2019-01-08T11:50:24Z"
 update: "2019-01-08T11:50:24Z"
 template: "post"
 directory: "React"
-cover: "../images/tao-blog-voi-gatsby.js-completejavascript.com_.png"
+cover: "../../../images/react/tao-blog-voi-gatsby.js-completejavascript.com_.png"
 keywords: "blog với gatsby.js"
 description: "Mình sẽ tổng hợp lại những kiến thức tích luỹ được, qua đó giúp bạn biết cách tạo trang blog với Gatsby.js và thậm chí là nhiều static website khác nữa."
 slug: tao-trang-blog-voi-gatsby-js
@@ -98,7 +98,7 @@ Nếu việc cài đặt thành công thì câu lệnh <code>gatsby --version</c
 - <code>gatsby info</code>: lấy thông tin của môi trường.
 - <code>gatsby new [rootPath] [starter]</code>: tạo mới Gatsby project tại vị trí _rootPath_ bằng cách clone một project mẫu _starter_.
 
-![Kiểm tra cài đặt Gatsby CLI](../images/gatsby-check-installation.png)
+![Kiểm tra cài đặt Gatsby CLI](../../../images/react/gatsby-check-installation.png)
 
 ### Tạo trang blog với Gatsby.js cơ bản
 
@@ -134,7 +134,7 @@ gatsby develop
 
 Đợi lệnh trên hoàn tất, bạn mở trình duyệt và đi đến địa chỉ: **_http:\/\/localhost:8000/_** thì sẽ thấy trang blog với Gatsby.js đã được tạo ra thành công.
 
-![Tạo mới Hello World Gatsby Project](../images/gatsby-hello-world.png)
+![Tạo mới Hello World Gatsby Project](../../../images/react/gatsby-hello-world.png)
 
 #### Cấu trúc thư mục của Gatsby project
 
@@ -160,7 +160,7 @@ export default () => <div>Hello Gatsby!</div>;
 
 Sau khi nhấn _Save_, bạn sẽ thấy Gatsby project được build lại (xem ở giao diện dòng lệnh, nơi bạn chạy lệnh <code>gatsby develop</code> trước đó) và trình duyệt tự động reload.
 
-![Gatsby project tự động rebuild rồi reload](../images/gatsby-rebuild-hot-loading.png)
+![Gatsby project tự động rebuild rồi reload](../../../images/react/gatsby-rebuild-hot-loading.png)
 
 Nếu làm được đến đây thì có nghĩa là bạn đã cài đặt môi trường thành công để sử dụng Gatsby. Còn về mặt nội dung thì blog của mình vẫn trống rỗng, chưa có nội dung gì hết. Vì vậy, phần tiếp theo, mình sẽ bắt đầu xây dựng những thành phần cơ bản mà một trang blog cần phải có.
 
@@ -172,7 +172,7 @@ Mặc định, Gatsby sẽ lấy các file _.js_ được định nghĩa trong t
 
 > **Chú ý**: các file này phải **export default** một [React Component](https://reactjs.org/docs/react-component.html) để Gatsby sử dụng. Ngược lại, sẽ bị lỗi.
 
-![Gatsby project compile bị lỗi](../images/gatsby-compile-failed.png)
+![Gatsby project compile bị lỗi](../../../images/react/gatsby-compile-failed.png)
 
 Để tạo thêm trang giới thiệu và liên hệ, mình tạo thêm 2 file mới trong thư mục này là _gioi-thieu.js_ và _lien-he.js_. Với nội dung tương tự như file _index.js_:
 
@@ -196,11 +196,11 @@ Sau khi lưu lại, bạn có thể vào 2 địa chỉ **http:\/\/localhost:80
 
 Kết quả trang giới thiệu:
 
-![Trang giới thiệu](../images/gatsby-gioi-thieu.png)
+![Trang giới thiệu](../../../images/react/gatsby-gioi-thieu.png)
 
 Kết quả trang liên hệ:
 
-![Trang liên hệ](../images/gatsby-lien-he.png)
+![Trang liên hệ](../../../images/react/gatsby-lien-he.png)
 
 #### Cách xem các trang đang tồn tại từ trang 404 mặc định
 
@@ -208,7 +208,7 @@ Ngoài ra, nếu bạn chưa biết chắc trang blog với Gatsby.js hiện t�
 
 Ở chế độ phát triển, khi bạn vào một trang bất kỳ mà trang này không tồn tại thì Gatsby sẽ hiển thị ra một trang **404** mặc định, trong đó sẽ có thông tin về những trang đang tồn tại:
 
-![Trang 404 mặc định ở chế độ phát triển](../images/gatsby-404-default.png)
+![Trang 404 mặc định ở chế độ phát triển](../../../images/react/gatsby-404-default.png)
 
 Hình trên cho thấy blog của mình đang có 3 trang là:
 
@@ -439,7 +439,7 @@ export default ({ children }) => {
 
 Lưu lại, bạn sẽ thấy kết quả:
 
-![Thêm menu vào Gatsby Project](../images/gatsby-menu.png)
+![Thêm menu vào Gatsby Project](../../../images/react/gatsby-menu.png)
 
 Bạn có thể thử nhấn vào mỗi Menu item thì sẽ thấy trang web có chuyển hướng đến các trang tương ứng.
 
@@ -561,7 +561,7 @@ Trong bài demo này, mình không thiết kế giao diện Responsive. Phần n
 
 Bây giờ lưu lại và kiểm tra giao diện một chút:
 
-![Thêm Sidebar vào Gatsby Blog](../images/gatsby-them-sidebar.png)
+![Thêm Sidebar vào Gatsby Blog](../../../images/react/gatsby-them-sidebar.png)
 
 Mình nghĩ bạn có thể tưởng tượng được giao diện sau khi hoàn thiện sẽ như thế nào rồi phải không?
 
@@ -837,7 +837,7 @@ export default (props) => {
 
 Để xem kết quả như nào, lần này bạn phải **Restart** lại server. Nhớ là mỗi khi thay đổi file ngoài thư mục */src* như */gatsby-config.js* hay thay đổi cú pháp query trong phần *graphql* thì bạn phải **Restart** lại server. Kết quả là *title* mới đã được áp dụng:
 
-![Thay đổi title sử dụng GraphQL](../images/gatsby-thay-doi-title.png)
+![Thay đổi title sử dụng GraphQL](../../../images/react/gatsby-thay-doi-title.png)
 
 #### Sử dụng công cụ đồ hoạ GraphiQL
 
@@ -855,7 +855,7 @@ Ngoài ra, để biết kết quả câu lệnh query graphQL kia như thế nà
 
 Rồi nhấn vào nút Excute Query (hình tròn, có tam giác ở giữa) sẽ thấy kết quả:
 
-![Sử dụng GraphiQL](../images/gatsby-graphiql.png)
+![Sử dụng GraphiQL](../../../images/react/gatsby-graphiql.png)
 
 Kết quả trả về là một Object:
 
@@ -936,7 +936,7 @@ module.exports = {
 
 Lưu lại và restart server rồi thử query các file Markdown trên GraphiQL xem sao:
 
-![Query Markdown file từ GraphiQL](../images/gatsby-query-markdown.png)
+![Query Markdown file từ GraphiQL](../../../images/react/gatsby-query-markdown.png)
 
 Kết quả là mình tìm thấy 3 file Markdown - tương ứng với 3 bài viết mà mình đã copy-paste vào phía trên.
 
@@ -989,7 +989,7 @@ export const query = graphql`
 
 Kết quả là mình đã thu được một danh sách các bài viết trên trang chủ:
 
-![Thêm bài viết lên trang chủ Gatsby](../images/gatsby-list-homepage.png)
+![Thêm bài viết lên trang chủ Gatsby](../../../images/react/gatsby-list-homepage.png)
 
 Tuy nhiên, hiện tại mình muốn click vào mỗi bài viết thì phải nhảy đến nội dung bài viết tương ứng thì lại chưa làm được. Vì vậy, mình cần phải tạo thêm *slug* cho mỗi bài viết.
 
@@ -1079,11 +1079,11 @@ export const query = graphql`
 
 Bây giờ, *title* của mỗi bài viết đã được đặt trong *Link* component.
 
-![Tạo slug liên kết đến mỗi bài viết từ trang chủ](../images/gatsby-create-page-slug.png)
+![Tạo slug liên kết đến mỗi bài viết từ trang chủ](../../../images/react/gatsby-create-page-slug.png)
 
 Lưu lại và restart server. Rồi sau đó bạn có thể nhấn thử vào *title* của mỗi bài viết để xem nó có nhảy đến đúng địa chỉ của mỗi bài viết không.
 
-![Nội dung bài viết chưa tồn tại](../images/gatsby-post-404.png)
+![Nội dung bài viết chưa tồn tại](../../../images/react/gatsby-post-404.png)
 
 Đến đây thì bạn thấy rằng địa chỉ là đúng. Nhưng tiếc là Gatsby thông báo rằng trang này vẫn chưa tồn tại. Do đó, phần tiếp theo mình sẽ tạo ra các trang tương ứng với mỗi bài viết.
 
@@ -1190,7 +1190,7 @@ createPage({
 
 Bây giờ, bạn lưu lại và restart server thì sẽ thấy kết quả:
 
-![Nội dung bài viết đã được hiển thị nhưng ảnh thị lỗi](../images/gatsby-post-ok.png)
+![Nội dung bài viết đã được hiển thị nhưng ảnh thị lỗi](../../../images/react/gatsby-post-ok.png)
 
 Đợi chút, trong nội dung bài viết, phần hiển thị ảnh (dưới cùng) bị lỗi. Nghĩa là hiện tại mình mới chỉ xử lý được trường hợp nội dung bài viết dạng text. Còn có những dạng khác như ảnh, video, iframe,... mình vẫn chưa xử lý.
 
@@ -1242,7 +1242,7 @@ Vì plugin *gatsby-remark-images* để xử lý ảnh sử dụng trong Markd
 
 Bây giờ, chạy lại server và bạn sẽ thấy kết quả như mong đợi:
 
-![Nội bung bài viết đã hiển thị được ảnh](../images/gatsby-post-image-ok.png)
+![Nội bung bài viết đã hiển thị được ảnh](../../../images/react/gatsby-post-image-ok.png)
 
 Đúng ra, theo dự định ban đầu mình sẽ giới thiệu phần tích hợp bình luận và chia sẻ lên mạng xã hội. Tuy nhiên, phần này khá đơn giản vì có nhiều React Component hỗ trợ sẵn. Bạn cứ search Google thì sẽ ra. Còn nếu bạn không biết search kiểu gì thì để lại câu hỏi trong phần bình luận mình sẽ giải đáp sau.
 
@@ -1391,7 +1391,7 @@ edges.forEach(({ node }) => {
 
 Sau khi đã có mảng các chuyên mục và thẻ với các phần tử là duy nhất rồi, mình render chúng lên sidebar như bình thường. Kết quả mình thu được:
 
-![Liệt kê thẻ, chuyên mục lên sidebar](../images/gatsby-liet-ke-chuyen-muc-the.png)
+![Liệt kê thẻ, chuyên mục lên sidebar](../../../images/react/gatsby-liet-ke-chuyen-muc-the.png)
 
 Cũng tương tự như phần liệt kê danh sách cách bài viết tại trang chủ, lúc này mình mới chỉ liệt kê ra các thẻ với *Link* đến trang tương ứng mà chưa định nghĩa các trang đó. Phần tiếp theo mình sẽ thực hiện việc này.
 
@@ -1640,11 +1640,11 @@ Không những thế, Netlify còn hỗ trợ cài đặt SSL miễn phí, tốc
 
 Trước tiên, mình sẽ tạo mới một respository trên Github với tên là *gatsby-tutorial*.
 
-![Tạo mới repository trên Github](../images/github-tao-moi-repository.png)
+![Tạo mới repository trên Github](../../../images/react/github-tao-moi-repository.png)
 
 Sau khi nhấn vào button *Create repository* thì bạn sẽ được dẫn đến một gợi ý:
 
-![Commit project lên Github](../images/github-commit-project.png)
+![Commit project lên Github](../../../images/react/github-commit-project.png)
 
 Đối với trường hợp này, mình sẽ lựa chọn cách thứ 2 (bôi vàng ở trên). Mình sẽ làm theo hướng dẫn để upload code lên github nhé. Tuy nhiên, vì project của mình đã có code rồi nên mình sẽ sửa lại một chút, như sau:
 
@@ -1665,7 +1665,7 @@ Sau khi việc upload code lên Github thành công. Mình bắt đầu deploy n
 
 Đầu tiên, bạn vào trang [create a new site](https://app.netlify.com/start).
 
-![Đăng nhập vào Netlify](../images/netlify-create-new-site.png)
+![Đăng nhập vào Netlify](../../../images/react/netlify-create-new-site.png)
 
 Netlify sẽ yêu cầu đăng nhập. Và bạn có thể lựa chọn bất kì cách nào. Tuy nhiên, mình đã upload code lên Github và deploy code ở Github lên Netlify. Do đó, mình sẽ chọn đăng nhập bằng Github.
 
@@ -1673,23 +1673,23 @@ Vì mình đang làm demo trên tab ẩn danh - tương đương với việc m�
 
 Sau khi đăng nhập thành công, bạn bắt đầu được chuyển đến trang để tạo mới một site.
 
-![Bắt đầu tạo trang mới](../images/netlify-create-new-site-start.png)
+![Bắt đầu tạo trang mới](../../../images/react/netlify-create-new-site-start.png)
 
 Mình sẽ chọn mục *GitHub*. Sau đó, Netlify sẽ yêu cầu Authorize Github.
 
-![Netlify sẽ yêu cầu Authorize Github](../images/netlify-authorize-github.png)
+![Netlify sẽ yêu cầu Authorize Github](../../../images/react/netlify-authorize-github.png)
 
 Bạn nhấn vào button màu xanh để đồng ý là OK.
 
-![Chọn repository để install](../images/netlify-choose-project-1.png)
+![Chọn repository để install](../../../images/react/netlify-choose-project-1.png)
 
 Tiếp theo, mình chọn repository vừa upload lên github, rồi nhấn *Install*.
 
-![Bắt đầu deploy](../images/netlify-bat-dau-cai-dat.png)
+![Bắt đầu deploy](../../../images/react/netlify-bat-dau-cai-dat.png)
 
 Tiếp theo, mình chọn vào phần gạch vàng như trong hình trên, rồi nhấn vào *Deploy Site*.
 
-![Chọn nhánh để deploy](../images/netlify-deploy-site.png)
+![Chọn nhánh để deploy](../../../images/react/netlify-deploy-site.png)
 
 Chọn nhánh để deploy
 
@@ -1699,7 +1699,7 @@ Công việc cuối cùng là chờ đợi cho đến khi Netlify cài đặt xo
 
 Trong lúc chờ cài đặt thành công, mình sẽ thay đổi tên của blog mặc định. Bạn thấy đấy, tên mặc định khá xấu xí:
 
-![Tên mặc định của Netlify khá xấu](../images/netlify-ten-mac-dinh.png)
+![Tên mặc định của Netlify khá xấu](../../../images/react/netlify-ten-mac-dinh.png)
 
 Mình sẽ nhấn vào *Site settings* để thay đổi *Site name*. Phần tiếp theo khá đơn giản, bạn cứ làm theo hướng dẫn như trên giao diện là được.
 
@@ -1707,7 +1707,7 @@ Lúc đầu mình định lấy tên *gatsby-tutorial* nhưng tiếc là tên 
 
 Kết quả trang blog của mình bây giờ có địa chỉ: *[https://gatsby-tutorial-demo.netlify.com](https://gatsby-tutorial-demo.netlify.com)*.
 
-![Kết quả Gatsby blog sau khi deploy lên Netlify khá ngon lành](../images/netlify-live.png)
+![Kết quả Gatsby blog sau khi deploy lên Netlify khá ngon lành](../../../images/react/netlify-live.png)
 
 Kết quả khá ngon lành phải không bạn (còn phần custom domain, bạn có thể tự nghiên cứu thêm, cũng khá đơn giản, nếu cần bạn có thể để lại bình luận, mình sẽ support).
 

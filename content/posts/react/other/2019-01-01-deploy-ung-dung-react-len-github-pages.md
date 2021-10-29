@@ -3,7 +3,7 @@ date: "2019-01-01T13:55:27Z"
 update: "2021-10-17T13:55:27Z"
 template: "post"
 directory: "React"
-cover: "../images/tao-va-deploy-ung-dung-react-len-github-pages-create-react-app-completejavascript.com_.png"
+cover: "../../../images/react/tao-va-deploy-ung-dung-react-len-github-pages-create-react-app-completejavascript.com_.png"
 keywords: "deploy ứng dụng react"
 description: "Các bước cơ bản và đơn giản để tạo và deploy ứng dụng React lên Github Pages. Bạn chỉ cần làm theo đảm bảo sẽ deploy ứng dụng React thành công."
 slug: deploy-ung-dung-react-len-github-pages
@@ -52,7 +52,7 @@ Ngoài ra, bạn cũng có 2 lựa chọn là tải bản Windows Installer (.ms
 
 Để đơn giản, mình sẽ chọn bản [Windows Installer (.msi) 64-bit](https://nodejs.org/dist/v8.11.4/node-v8.11.4-x64.msi). Phiên bản này là 8.11.4 đã bao gồm npm 5.6.0, nên thoả mãn yêu cầu của create-react-app là Node >= 6 and npm >= 5.2.
 
-![Tải nodejs](../images/download-nodejs.png)
+![Tải nodejs](../../../images/react/download-nodejs.png)
 
 Các bước để cài đặt Node.js bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban)
 
@@ -62,7 +62,7 @@ _Xem thêm về Node.js tại: [SERIES LƯỢC SỬ LẬP TRÌNH WEB PHẦN 3.2 
 
 Git giúp quản lý source code dễ dàng hơn và deploy ứng dụng React lên Github Pages sau khi code xong. Để cài đặt Git cho Windows, bạn có thể vào [trang download git](https://git-scm.com/download) và chọn phần Windows.
 
-![tải git](../images/download-git.png)
+![tải git](../../../images/react/download-git.png)
 
 Việc cài đặt Git cũng khá đơn giản và bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn cài đặt và cấu hình Git trên Windows](https://o7planning.org/vi/11707/huong-dan-cai-dat-va-cau-hinh-git-tren-windows)
 
@@ -72,7 +72,7 @@ Visual Studio Code là một trong những code editor tốt nhất hiện nay. 
 
 Để tải Visual Studio Code, bạn có thể vào link: [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) và chọn bản 64-bit.
 
-![tải visual studio code](../images/download-visual-studio-code.png)
+![tải visual studio code](../../../images/react/download-visual-studio-code.png)
 
 Việc cài đặt Visual Studio Code không có gì đặc biệt, bạn chỉ cần cài đặt theo mặc định.
 
@@ -92,11 +92,11 @@ D:\create-react-app
 
 Sau đó, mình mở Visual Studio Code lên, chọn **File** \ **Open Folder...**. Chọn đến thư mục vừa tạo ra ở trên.
 
-![Màn hình mặc định của Visual Studio Code](../images/visual-studio-code-1.png)
+![Màn hình mặc định của Visual Studio Code](../../../images/react/visual-studio-code-1.png)
 
 Tiếp theo, mở Terminal trên Visual Studio Code bằng cách chọn **View** \ **Terminal**
 
-![Màn hình Visual Studio Code sau khi mở Terminal](../images/visual-studio-code-open-terminal.png)
+![Màn hình Visual Studio Code sau khi mở Terminal](../../../images/react/visual-studio-code-open-terminal.png)
 
 Đến đây, bạn đã có thể sử dụng [câu lệnh](/cac-cau-lenh-thuong-dung-tren-cmd-windows) ngay trên Visual Studio Code.
 
@@ -110,7 +110,7 @@ npx create-react-app app-name
 
 Trong đó, _app-name_ là tên project mà bạn muốn đặt. Kết quả của câu lệnh trên là bạn đã có một project mẫu.
 
-![Cấu trúc project React sử dụng create-react-app](../images/create-react-app-init.png)
+![Cấu trúc project React sử dụng create-react-app](../../../images/react/create-react-app-init.png)
 
 Để xem nó hoạt động như nào, bạn chạy lệnh sau để test:
 
@@ -124,7 +124,7 @@ yarn start
 
 Sau đó, bạn vào địa chỉ `http://127.0.0.1:3000` trên trình duyệt để kiểm tra kết quả. Nếu mọi thứ hoạt động bình thường thì bạn sẽ thu được màn hình như sau:
 
-![Ứng dụng React mặc định](../images/create-react-app-default.png)
+![Ứng dụng React mặc định](../../../images/react/create-react-app-default.png)
 
 ## Tuỳ biến ứng dụng create-react-app
 

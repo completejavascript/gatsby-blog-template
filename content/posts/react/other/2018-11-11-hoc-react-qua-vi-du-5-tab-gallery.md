@@ -3,7 +3,7 @@ date: "2018-11-11T22:30:50Z"
 update: "2018-11-11T22:30:50Z"
 template: "post"
 directory: "React"
-cover: "../images/hoc-react-qua-vi-du-5-tab-gallery-completejavascript.com_.png"
+cover: "../../../images/react/hoc-react-qua-vi-du-5-tab-gallery-completejavascript.com_.png"
 keywords: "tab gallery"
 description: "Xin chào bạn đến với Học React qua ví dụ #5. Bài này mình sẽ thực hành React thông qua việc tạo Tab Gallery. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-5-tab-gallery
