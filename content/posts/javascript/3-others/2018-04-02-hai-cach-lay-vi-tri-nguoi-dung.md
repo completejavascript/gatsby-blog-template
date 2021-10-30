@@ -3,7 +3,7 @@ date: "2018-04-02T00:00:40Z"
 update: "2019-04-09T00:00:40Z"
 template: "post"
 directory: "JavaScript"
-cover: "../../images/javascript/hai-cach-lay-vi-tri-nguoi-dung-trong-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/hai-cach-lay-vi-tri-nguoi-dung-trong-javascript-completejavascript.com_.png"
 keywords: "vị trí người dùng"
 description: "Trong nhiều trường hợp, việc xác định vị trí (kinh độ, vĩ độ) là vô cùng cần thiết, ví dụ như: chỉ đường, hiển thị thông tin thời tiết,... Bài viết này mình sẽ hướng dẫn các bạn hai cách lấy vị trí người dùng vô cùng đơn giản. Đó là sử dụng Geolocation API và ipinfo.io API."
 slug: hai-cach-lay-vi-tri-nguoi-dung

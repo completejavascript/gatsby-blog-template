@@ -3,7 +3,7 @@ date: "2018-02-02T00:00:37Z"
 update: "2018-04-02T00:00:37Z"
 template: "post"
 directory: "JavaScript"
-cover: "../images/js-pattern-3-singleton-pattern-completejavascript.com_.png"
+cover: "../../../images/javascript/js-pattern-3-singleton-pattern-completejavascript.com_.png"
 keywords: "singleton pattern"
 description: "Có thể bạn đã nghe quen về Singleton. Singleton Pattern giới hạn số lượng instance của một class là một. Trong JavaScript, bạn có thể triển khai Singleton Pattern theo cách sau."
 slug: js-pattern-3-singleton-pattern

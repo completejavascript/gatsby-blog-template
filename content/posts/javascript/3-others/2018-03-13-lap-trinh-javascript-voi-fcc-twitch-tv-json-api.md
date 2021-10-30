@@ -3,7 +3,7 @@ date: "2018-03-13T13:23:59Z"
 update: "2018-05-23T13:23:59Z"
 template: "post"
 directory: "JavaScript"
-cover: "../../../images/lap-trinh-javascript-voi-fcc-use-the-twitchtv-json-api-completejavascript.com_.png"
+cover: "../../../images/javascript/lap-trinh-javascript-voi-fcc-use-the-twitchtv-json-api-completejavascript.com_.png"
 keywords: "use the twitch.tv json api"
 description: "Tiếp tục với chủ đề Lập trình JavaScript với FCC, bài viết này mình sẽ chia sẻ với bạn về project Use the Twitch.tv JSON API trên freeCodeCamp."
 slug: lap-trinh-javascript-voi-fcc-twitch-tv-json-api

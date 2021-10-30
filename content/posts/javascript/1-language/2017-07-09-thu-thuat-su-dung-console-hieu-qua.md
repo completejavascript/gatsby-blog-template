@@ -159,7 +159,7 @@ console.table([foo, bar, baz]);
 
 Kết quả:
 
-![Sử dụng console.table](../../../../../images/javascript/javascript/su-dung-console.table-completejavascript.com_.png)
+![Sử dụng console.table](../../../images/javascript/su-dung-console.table-completejavascript.com_.png)
 
 ## Sử dụng console.time và console.timeEnd
 
