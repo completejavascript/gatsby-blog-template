@@ -8,7 +8,7 @@
   --code-primary: #7578f8;
   --code-font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --code-font-color: #b3b9c5;
-  --code-background-color: #333;
+  --code-background-color: #2a373a;
   --string: #92d192;
   --variable: #f2777a;
   --property: #abb2bf;
@@ -57,6 +57,48 @@ pre[class*="language-"] {
   overflow-x: auto;
   overflow-y: initial;
   border: 1px solid var(--black);
+}
+
+/* you're on a device with a mouse or trackpad */
+@media (hover: hover) and (pointer: fine) {
+  $bg-color: var(--code-background-color);
+  $scrollbar-thumb-color: rgba(255, 255, 255, 0.3);
+
+  pre[class*="language-"] {
+    /* Custom for mozilla */
+    scrollbar-color: $scrollbar-thumb-color var(--code-background-color);
+    scrollbar-width: thin;
+
+    /* Custom for webkit: chrome, egde */
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:vertical {
+      width: 18px;
+    }
+    &::-webkit-scrollbar:horizontal {
+      height: 18px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $scrollbar-thumb-color;
+    }
+    &::-webkit-scrollbar-thumb:horizontal {
+      border-top: 6px solid $bg-color; /* should match background, can't be transparent */
+      border-left: 6px solid $bg-color; /* should match background, can't be transparent */
+      border-bottom: 6px solid $bg-color; /* should match background, can't be transparent */
+    }
+    &::-webkit-scrollbar-thumb:vertical {
+      border-top: 6px solid $bg-color; /* should match background, can't be transparent */
+      border-right: 6px solid $bg-color; /* should match background, can't be transparent */
+      border-left: 6px solid $bg-color; /* should match background, can't be transparent */
+    }
+    &::-webkit-scrollbar-track {
+      background-color: $bg-color;
+    }
+    &::-webkit-scrollbar-corner {
+      background-color: $bg-color;
+    }
+  }
 }
 
 /* Inline code */
@@ -300,7 +342,7 @@ code[class*="language-"] ::selection {
   padding: 0.5em 0.6em 0.7em;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 
-  background-color: #222;
+  background-color: #1f2a2c;
   color: white;
   z-index: 0;
 

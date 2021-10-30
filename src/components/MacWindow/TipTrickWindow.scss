@@ -21,38 +21,40 @@ $scrollbar-thumb-color: rgba(255, 255, 255, 0.3);
 /* you're on a device with a mouse or trackpad */
 @media (hover: hover) and (pointer: fine) {
   .tiptrick-window-container {
-    /* Custom for mozilla */
-    scrollbar-color: $scrollbar-thumb-color #334246;
-    scrollbar-width: thin;
+    pre {
+      /* Custom for mozilla */
+      scrollbar-color: $scrollbar-thumb-color $bg-color;
+      scrollbar-width: thin;
 
-    /* Custom for webkit: chrome, egde */
-    *::-webkit-scrollbar {
-      -webkit-appearance: none;
-    }
-    *::-webkit-scrollbar:vertical {
-      width: 18px;
-    }
-    *::-webkit-scrollbar:horizontal {
-      height: 18px;
-    }
-    *::-webkit-scrollbar-thumb {
-      background-color: $scrollbar-thumb-color;
-    }
-    *::-webkit-scrollbar-thumb:horizontal {
-      border-top: 6px solid $bg-color; /* should match background, can't be transparent */
-      border-left: 6px solid $bg-color; /* should match background, can't be transparent */
-      border-bottom: 6px solid $bg-color; /* should match background, can't be transparent */
-    }
-    *::-webkit-scrollbar-thumb:vertical {
-      border-top: 6px solid $bg-color; /* should match background, can't be transparent */
-      border-right: 6px solid $bg-color; /* should match background, can't be transparent */
-      border-left: 6px solid $bg-color; /* should match background, can't be transparent */
-    }
-    *::-webkit-scrollbar-track {
-      background-color: $bg-color;
-    }
-    *::-webkit-scrollbar-corner {
-      background-color: $bg-color;
+      /* Custom for webkit: chrome, egde */
+      &::-webkit-scrollbar {
+        -webkit-appearance: none;
+      }
+      &::-webkit-scrollbar:vertical {
+        width: 18px;
+      }
+      &::-webkit-scrollbar:horizontal {
+        height: 18px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $scrollbar-thumb-color;
+      }
+      &::-webkit-scrollbar-thumb:horizontal {
+        border-top: 6px solid $bg-color; /* should match background, can't be transparent */
+        border-left: 6px solid $bg-color; /* should match background, can't be transparent */
+        border-bottom: 6px solid $bg-color; /* should match background, can't be transparent */
+      }
+      &::-webkit-scrollbar-thumb:vertical {
+        border-top: 6px solid $bg-color; /* should match background, can't be transparent */
+        border-right: 6px solid $bg-color; /* should match background, can't be transparent */
+        border-left: 6px solid $bg-color; /* should match background, can't be transparent */
+      }
+      &::-webkit-scrollbar-track {
+        background-color: $bg-color;
+      }
+      &::-webkit-scrollbar-corner {
+        background-color: $bg-color;
+      }
     }
   }
 }
