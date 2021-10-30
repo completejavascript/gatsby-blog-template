@@ -2,7 +2,7 @@
 date: "2017-04-27T00:20:22Z"
 update: "2017-04-27T00:20:22Z"
 template: "post"
-directory: "JavaScript"
+directory: "Cuộc sống IT"
 cover: "../../images/cuoc-song-it/sau-meo-hoc-lap-trinh-javascript-nhanh-hon-completejavascript.com_.png"
 keywords: "học lập trình Javascript"
 description: "Khi mọi người cố gắng học lập trình Javascript, họ thường trải qua những thử thách giống nhau. Sau đây là sáu mẹo giúp học lập trình JavaScript nhanh hơn."
