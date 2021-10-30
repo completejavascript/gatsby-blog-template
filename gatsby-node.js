@@ -55,12 +55,75 @@ exports.createPages = async ({ graphql, actions }) => {
     "src/templates/directory-template.jsx"
   );
 
-  const markdownQueryResult = await graphql(
+  // Get latest blog posts by the updated date
+  const latestUpdatedPostQueryResult = await graphql(
     `
       {
         allMarkdownRemark(
+          limit: ${siteConfig.numberLatestPost}
+          filter: { frontmatter: { template: { eq: "post" } } }
           sort: { fields: [frontmatter___update], order: DESC }
         ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                directory
+                template
+                title
+                tags
+                date
+                update
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
+  const latestPostEdges =
+    latestUpdatedPostQueryResult.data.allMarkdownRemark.edges;
+
+  // Get latest freebie posts by the updated date
+  const latestUpdatedFreebieQueryResult = await graphql(
+    `
+      {
+        allMarkdownRemark(
+          limit: ${siteConfig.numberLatestFreebie}
+          filter: { frontmatter: { template: { eq: "freebie" } } }
+          sort: { fields: [frontmatter___update], order: DESC }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                directory
+                template
+                title
+                tags
+                date
+                update
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
+  const latestFreebieEdges =
+    latestUpdatedFreebieQueryResult.data.allMarkdownRemark.edges;
+
+  // Get all markdown remarks
+  const markdownQueryResult = await graphql(
+    `
+      {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
           edges {
             node {
               fields {
@@ -123,21 +186,21 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create tagList
   const tagList = Array.from(tagSet);
 
-  // Get latest posts
-  const latestPostEdges = [];
-  postEdges.forEach((edge) => {
-    if (latestPostEdges.length < siteConfig.numberLatestPost) {
-      latestPostEdges.push(edge);
-    }
-  });
+  // // Get latest posts
+  // const latestPostEdges = [];
+  // postEdges.forEach((edge) => {
+  //   if (latestPostEdges.length < siteConfig.numberLatestPost) {
+  //     latestPostEdges.push(edge);
+  //   }
+  // });
 
-  // Get latest freebie posts
-  const latestFreebieEdges = [];
-  freebieEdges.forEach((edge) => {
-    if (latestFreebieEdges.length < siteConfig.numberLatestFreebie) {
-      latestFreebieEdges.push(edge);
-    }
-  });
+  // // Get latest freebie posts
+  // const latestFreebieEdges = [];
+  // freebieEdges.forEach((edge) => {
+  //   if (latestFreebieEdges.length < siteConfig.numberLatestFreebie) {
+  //     latestFreebieEdges.push(edge);
+  //   }
+  // });
 
   // Map posts by directory
   const mapPostsByDirectory = {};
