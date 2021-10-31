@@ -168,3 +168,14 @@
     }
   }
 }
+
+// Blockquote
+blockquote {
+  font-size: 1.7rem;
+  padding: 1.5rem;
+  border: 0.1rem solid #cdcdcd;
+  border-left-width: 1rem;
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
