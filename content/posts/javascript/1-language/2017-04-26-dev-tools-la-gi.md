@@ -8,6 +8,9 @@ keywords: "dev tools là gì"
 description: "Dev Tools là gì? Dev Tools là công cụ được tích hợp sẵn trên trình duyệt, giúp lập trình viên dễ dàng truy cập vào nội bộ trình duyệt và ứng dụng trang web của họ."
 slug: dev-tools-la-gi
 title: "Dev Tools là gì?"
+tags:
+  - Console
+  - Debug
 ---
 
 Trong lập trình, việc code lỗi là không thể tránh khỏi. Nhưng trên trình duyệt, bạn thường sẽ không nhìn thấy những lỗi này. Mà thay vào đó, bạn cần xem thông qua một công cụ. Đó chính là Dev Tools.

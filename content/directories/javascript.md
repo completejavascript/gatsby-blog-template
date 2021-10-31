@@ -25,12 +25,13 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 ### JavaScript cơ bản
 
 - [Chương trình đầu tiên](/chuong-trinh-javascript-dau-tien)
-- [Câu lệnh trong JavaScript](/cau-lenh-trong-javascript)
+- [Câu lệnh](/cau-lenh-trong-javascript)
+- [Use strict trong JS](/use-strict-trong-js)
 - [Giá trị, kiểu dữ liệu (number)](/values-types-va-operators-trong-javascript-phan-1)
 - [Kiểu dữ liệu (string, boolean) và các toán tử](/values-types-va-operators-trong-javascript-phan-2)
 - [Biểu thức, câu lệnh, biến số, điều kiện rẽ nhánh, vòng lặp](/cau-truc-chuong-trinh-trong-javascript)
 - [Cơ bản về hàm - functions](/tim-hieu-function-javascript)
-- [Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript)
+- [Một số lỗi ở Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript)
 - [Phân biệt var và let](/phan-biet-var-va-let-trong-javascript)
 - [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6)
 - [ES6 template string](/su-dung-es6-template-string-co-gi-hay)
