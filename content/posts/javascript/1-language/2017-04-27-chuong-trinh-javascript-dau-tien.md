@@ -34,7 +34,7 @@ Bạn sẽ thấy kết quả hiển thị:
 
 Console.log trong JavaScript là một hàm được sử dụng để in ra bất kể thứ gì (với trình duyệt thì nơi hiển thị kết quả đó là tab console của Dev Tools).
 
-Trong các bài viết sau, mình chủ yếu dùng hàm [console.log()](/thu-thuat-su-dung-console-hieu-qua) để in ra kết quả của biến, phép tính, đoạn chương trình,...
+> Trong các bài viết sau, mình chủ yếu dùng hàm [console.log()](/thu-thuat-su-dung-console-hieu-qua) để in ra kết quả của biến, phép tính, đoạn chương trình,...
 
 Bạn sẽ không cần phải cài đặt thêm bất cứ phần mềm nào khác. Bạn chỉ cần mở trình duyệt, vừa đọc hướng dẫn và thực hành trên tab console của Dev Tools.
 
@@ -44,7 +44,7 @@ Sau khi bạn đã nắm hết kiến thức cơ bản về ngôn ngữ JavaScri
 
 Để viết chương trình JavaScript đầu tiên với HTML, bạn nên cài đặt một IDE (code editor) để viết code dễ dàng hơn. Dĩ nhiên, bạn có thể dùng Notepad / Notepad++. Nhưng về lâu dài, bạn nên chọn editor chuyên dụng cho lập trình web (JavaScript).
 
-> Mình gợi ý bạn sử dụng [Visual Studio Code](https://code.visualstudio.com/). Vì nó miễn phí, hỗ trợ đa nền tảng Windows, macOS, Linux, và có nhiều extension hỗ trợ code nhanh hơn, tốt hơn.
+> 💡 Mình gợi ý bạn sử dụng [Visual Studio Code](https://code.visualstudio.com/). Vì nó miễn phí, hỗ trợ đa nền tảng Windows, macOS, Linux, và có nhiều extension hỗ trợ code nhanh hơn, tốt hơn.
 >
 > Ngoài ra, mình cũng đang sử dụng Visual Studio Code. Do đó, nếu bạn gặp khó khăn liên quan đến code editor thì mình sẽ dễ dàng hỗ trợ hơn.
 
@@ -152,7 +152,7 @@ Ngoài ra, bạn cũng có thể truyền vào một URL đầy đủ, ví dụ:
 <script src="/path/to/script2.js"></script>
 ```
 
-> **Chú ý**: việc tách code JavaScript ra các file riêng biệt, ngoài việc giúp dễ dàng quản lý code ra thì nó còn giúp trình duyệt [cache](https://vi.wikipedia.org/wiki/Web_caching) lại nội dung các file đó.
+> 📝 **Chú ý**: việc tách code JavaScript ra các file riêng biệt, ngoài việc giúp dễ dàng quản lý code ra thì nó còn giúp trình duyệt [cache](https://vi.wikipedia.org/wiki/Web_caching) lại nội dung các file đó.
 >
 > Các trang web khác nhau sử dụng chung file JavaScript sẽ lấy nội dung từ cache của trình duyệt, thay vì tải lại file. Nói cách khác, các file JavaScript thường chỉ cần tải về một lần.
 >

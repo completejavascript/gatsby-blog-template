@@ -18,7 +18,7 @@ JavaScript là ngôn ngữ lập trình website phổ biến nhất hiện nay. 
 
 Vì JavaScript là ngôn ngữ thông dịch nên bạn không cần chuẩn bị công cụ nào để [biên dịch](https://vi.wikipedia.org/wiki/Tr%C3%ACnh_bi%C3%AAn_d%E1%BB%8Bch) chương trình trước khi chạy. Đây là đặc điểm khác biệt so với ngôn ngữ lập trình [Java](<https://vi.wikipedia.org/wiki/Java_(ng%C3%B4n_ng%E1%BB%AF_l%E1%BA%ADp_tr%C3%ACnh)>) mà nhiều bạn hay nhầm.
 
-**Tại sao có tên <u>Java</u>Script**
+**Tại sao có tên <u>Java</u>Script?**
 
 JavaScript được phát triển bởi [Brendan Eich](https://vi.wikipedia.org/wiki/Brendan_Eich) (tại Hãng truyền thông Netscape) với cái tên đầu tiên là "Mocha", sau đó đổi tên thành "LiveScript", và cuối cùng thành "JavaScript".
 
