@@ -1,6 +1,6 @@
 ---
-date: "2017-04-28T15:46:25Z"
-update: "2017-04-28T15:46:25Z"
+date: "2017-05-04T15:46:25Z"
+update: "2017-05-04T15:46:25Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/values-types-operators-trong-javascript-phan-1-numbers-completejavascript.com_.png"
