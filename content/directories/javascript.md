@@ -24,7 +24,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 ### JavaScript cơ bản
 
-- [Chương trình JavaScript đầu tiên](/chuong-trinh-javascript-dau-tien)
+- [Chương trình đầu tiên](/chuong-trinh-javascript-dau-tien)
 - [Câu lệnh trong JavaScript](/cau-lenh-trong-javascript)
 - [Giá trị, kiểu dữ liệu (number)](/values-types-va-operators-trong-javascript-phan-1)
 - [Kiểu dữ liệu (string, boolean) và các toán tử](/values-types-va-operators-trong-javascript-phan-2)
