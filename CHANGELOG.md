@@ -2,6 +2,49 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/completejavascript/completejavascript.com/compare/v1.8.0...v1.9.0) (2021-10-31)
+
+
+### Features
+
+* display latetest updated posts instead of latest posts ([8f2dca4](https://github.com/completejavascript/completejavascript.com/commit/8f2dca46f2602663d60fe8e0c0d385e02ef10a09))
+
+
+### Bug Fixes
+
+* **post:** add dev-tools-la-gi ([f6c13e3](https://github.com/completejavascript/completejavascript.com/commit/f6c13e306f0f5628788a542e7a1b7aade43c489a))
+* **post:** add emoji, blockquote ([4b39d31](https://github.com/completejavascript/completejavascript.com/commit/4b39d318b25cc63aff82bfc841c871e048132abf))
+* **post:** add javascript post - ide la gi ([3f21d3c](https://github.com/completejavascript/completejavascript.com/commit/3f21d3cd70eddd4d8ee5afc43019565ab54f7772))
+* **post:** add post cau-lenh-trong-javascript ([1f2a15b](https://github.com/completejavascript/completejavascript.com/commit/1f2a15bf7b4ce6da53cba0b139db2b14fdace159))
+* **post:** add post chuong-trinh-dau-tien ([78878d3](https://github.com/completejavascript/completejavascript.com/commit/78878d3f3d839a6b546825b65effc38c73ea9f8a))
+* **post:** add post use-strict ([8f6dbce](https://github.com/completejavascript/completejavascript.com/commit/8f6dbce49e059061d0d77f67328e352b356ae6bf))
+* **post:** add update property to frontmatter for some posts ([2a229e9](https://github.com/completejavascript/completejavascript.com/commit/2a229e950b68f7f3a73ed68406fb64924a0aadb7))
+* **post:** anh che vui ([2fcdc3a](https://github.com/completejavascript/completejavascript.com/commit/2fcdc3a4aaef8a0348eaf02a17c5e08136055fa5))
+* **post:** description for hoc-lap-trinh-javascript-nhanh-hon ([8eb444f](https://github.com/completejavascript/completejavascript.com/commit/8eb444f5556e945d4b7048265e8d71c6b5b1cb13))
+* **post:** fix post for cuoc-song-it ([58820aa](https://github.com/completejavascript/completejavascript.com/commit/58820aa4290dca8736d986da2228de70824d9a5c))
+* **post:** format posts for react directories ([fec44c2](https://github.com/completejavascript/completejavascript.com/commit/fec44c2f4a622e85130b773366963ffbf6e97183))
+* **post:** javascript la gi ([45797f1](https://github.com/completejavascript/completejavascript.com/commit/45797f12ef7d11842ba4773014abd04f801d3506))
+* **post:** kinh-nghiem-hoc-lap-trinh-nhanh-hon ([cb8d0a6](https://github.com/completejavascript/completejavascript.com/commit/cb8d0a6bd4fb9ed73a9e98c42262ed78d7937877))
+* **post:** nen-lam-neu-suy-nghi-qua-nhieu ([a801241](https://github.com/completejavascript/completejavascript.com/commit/a801241edb7d1d2bd88b4d1e19b8ef7ac9fc82cf))
+* **post:** replace old urls by new urls ([fac3342](https://github.com/completejavascript/completejavascript.com/commit/fac334247bdc152165546656b3a3b852b79bdfde))
+* **post:** update date for posts from javascript directory ([8b589ed](https://github.com/completejavascript/completejavascript.com/commit/8b589ed184d2c01fd15e6b687de5edffb7fb29bf))
+* **post:** update description for cuoc-song-it page ([f30c2c3](https://github.com/completejavascript/completejavascript.com/commit/f30c2c35068621e892a4bf31f21e3559aa215eed))
+* **post:** update images for javascript directories ([a0b4ee9](https://github.com/completejavascript/completejavascript.com/commit/a0b4ee9dd150973cd930172a7fc0858b917c0c28))
+* **post:** update images for posts in freebies ([71ab187](https://github.com/completejavascript/completejavascript.com/commit/71ab1870e9f4252f2c16d43ec0d1e078f00db31e))
+* **post:** update images for react pages ([a9dc56a](https://github.com/completejavascript/completejavascript.com/commit/a9dc56a12923a276fe9df9c3fa014db8ed3bfd6d))
+* **post:** update javascript directory for javascript co ban ([66b16dd](https://github.com/completejavascript/completejavascript.com/commit/66b16dd7daaa9927046efa0196281e3f04ff097c))
+* **post:** update order for posts from react directory ([ccd9f2d](https://github.com/completejavascript/completejavascript.com/commit/ccd9f2da5f705d24f7922c72e9d9068b4865e8bc))
+* **post:** update order of posts for javascript directory ([aec3493](https://github.com/completejavascript/completejavascript.com/commit/aec34933768b0b582c527178514ff8a5160089fd))
+* **post:** update post for thu-thuat-it ([b8bea64](https://github.com/completejavascript/completejavascript.com/commit/b8bea642c238cbf1b289696214fca6afbeb27a69))
+* **post:** update post javascript-la-gi ([cc02aac](https://github.com/completejavascript/completejavascript.com/commit/cc02aac19a599d274ed45403d35de00bc4dfd52c))
+* **post:** update posts with wrong path for images ([821212e](https://github.com/completejavascript/completejavascript.com/commit/821212e9a0d94889f0ee00017e91aa925152542f))
+* **post:** wrong directory ([6bc94fb](https://github.com/completejavascript/completejavascript.com/commit/6bc94fb57078ddc51b6031f769afdaa89e8b3d81))
+* get latest posts and latest freebies by date correctly ([aa1c23a](https://github.com/completejavascript/completejavascript.com/commit/aa1c23a524b17580eee96b90f93e9ac84c8530f7))
+* remove unused images ([3d9ba68](https://github.com/completejavascript/completejavascript.com/commit/3d9ba68ee92a4078b2127e11a541b2de160a1b67))
+* update name for footer links sections ([dec3fd8](https://github.com/completejavascript/completejavascript.com/commit/dec3fd8d7d21dfd3762e0f3163506d85dda489be))
+* update order of footer links ([fca198a](https://github.com/completejavascript/completejavascript.com/commit/fca198a0a09663b7a346673899cf117a8333efd0))
+* **post:** update url for hoc-lap-trinh-javascript-nhanh-hon ([6e8c327](https://github.com/completejavascript/completejavascript.com/commit/6e8c3274b88960f9e73fb2dbc2ae17e194ba1143))
+
 ## [1.8.0](https://github.com/completejavascript/completejavascript.com/compare/v1.7.0...v1.8.0) (2021-10-21)
 
 
