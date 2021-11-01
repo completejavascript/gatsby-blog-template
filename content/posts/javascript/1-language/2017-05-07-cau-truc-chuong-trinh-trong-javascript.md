@@ -20,20 +20,6 @@ Do đó, mỗi giá trị được viết trực tiếp (66, 'hello', true, NaN,
 
 Biểu thức có thể đơn giản là những phép cộng, trừ,... Hoặc có thể là những công thức toán học, vật lý,... phức tạp. Và trong một biểu thức có thể chứa nhiều biểu thức con.
 
-## Câu lệnh (statements)
-
-Một biểu thức hoàn chỉnh (tương ứng với một câu) được gọi là một câu lệnh (**statement**). Chương trình thực chất là tập hợp của những câu lệnh.
-
-Trong hầu hết các ngôn ngữ lập trình, một câu lệnh thường được kết thúc bởi dấu chấm phẩy (;). JavaScript cũng vậy. Ngoài ra, JavaScript còn cho phép bạn bỏ qua dấu chấm phẩy. Khi đó, mỗi câu lệnh sẽ ở trên một dòng.
-
-Theo mình, tốt nhất là chúng ta nên sử dụng dấu chấm phẩy để kết thúc một câu lệnh. Điều này đảm bảo rằng chương trình của chúng ta hoạt động theo đúng ý muốn.
-
-```js
-true;
-1 + ((2 * 4) % 3) - 6;
-"JavaScript " + "is " + " good";
-```
-
 ## Biến số (variables)
 
 Mình đã đưa ra 3 ví dụ về câu lệnh. Các bạn thấy rằng, các câu lệnh được thực hiện. Nhưng chúng hoàn toàn vô nghĩa. Để giải quyết vấn đề này, JavaScript đưa ra khái niệm: biến số (**variable**).
@@ -399,26 +385,6 @@ for (var number = 8; ; number++) {
 ```
 
 Khác với ví dụ trước, ví dụ này cần phải tìm ra bội số là số lẻ. Do đó, trước tiên mình sẽ kiểm tra xem số hiện tại là chẵn hay lẻ. Nếu _number % 2 == 0_, suy ra đó là số chẵn. Chắc chắn trường hợp này không thoả mãn nên mình không cần phải chạy tiếp các câu lệnh tiếp theo, mà chuyển ngay sang lượt lặp tiếp theo.
-
-## Chú thích (comments)
-
-Khi viết code, có những lúc bạn khó có thể sử dụng code của mình để diễn tả cho người khác hiểu. Hoặc thậm chí là chính bạn, khi đọc lại code của mình cũng sẽ không hiểu tại sao mình viết như vậy.
-
-Lúc này, bạn phải viết lại chú thích (**comment**).
-
-Có 2 kiểu viết chú thích là:
-
-- Chú thích 1 dòng, sử dụng //
-- Chú thích nhiều dòng, sử dụng /\*\*/
-
-Khi chạy chương trình, trình duyệt sẽ bỏ qua thành phần chú thích này.
-
-Có nhiều quan điểm về việc có nên viết chú thích hay không. Bản thân mình thì mình sẽ chỉ viết chú thích khi cần thiết. Một vài trường hợp mình viết chú thích:
-
-- Việc đặt tên biến không diễn tả được hết ý nghĩa của nó (muốn đầy đủ ý nghĩa thì nó lại quá dài)
-- Sử một công thức đã được chứng minh (nếu không chú thích lại sẽ không biết công thức đó ở đâu ra)
-- Giải thích ý nghĩa của một hàm (tại sao lại phải viết hàm này...)
-- ...
 
 ## Kết luận
 
