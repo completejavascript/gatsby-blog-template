@@ -54,6 +54,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const directoryPageTemplate = path.resolve(
     "src/templates/directory-template.jsx"
   );
+  const tagsPageTemplate = path.resolve("src/templates/tags-template.jsx");
 
   // Get latest blog posts by the updated date
   const latestUpdatedPostQueryResult = await graphql(
@@ -293,6 +294,15 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: edge.node.fields.slug,
       },
     });
+  });
+
+  // create page contains list of all tags
+  createPage({
+    path: siteConfig.pathPrefixTags,
+    component: tagsPageTemplate,
+    context: {
+      tagList,
+    },
   });
 
   // common config for pagination
