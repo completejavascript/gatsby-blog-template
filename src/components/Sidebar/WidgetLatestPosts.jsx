@@ -4,7 +4,7 @@ import WidgetContainer from "./WidgetContainer";
 import WidgetTitle from "./WidgetTitle";
 import { getPostList } from "../../utils/helpers";
 
-const WidgetLatesPosts = ({ postEdges, title }) => {
+const WidgetLatesPosts = ({ postSlug, postEdges, title }) => {
   const postList = getPostList(postEdges);
 
   return (
@@ -12,13 +12,16 @@ const WidgetLatesPosts = ({ postEdges, title }) => {
       <WidgetTitle title={title} />
       <div>
         {postList.map((post) => (
-          <AutoLink
-            key={post.title}
-            to={post.slug}
-            className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half"
-          >
-            <span>{post.title}</span>
-          </AutoLink>
+          <React.Fragment key={post.title}>
+            {postSlug !== post.slug ? (
+              <AutoLink
+                to={post.slug}
+                className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half"
+              >
+                <span>{post.title}</span>
+              </AutoLink>
+            ) : null}
+          </React.Fragment>
         ))}
       </div>
     </WidgetContainer>

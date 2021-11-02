@@ -58,6 +58,7 @@ const PostTemplate = ({ data, pageContext }) => {
       latestFreebieEdges={latestFreebieEdges}
       latestRelatedEdges={latestRelatedEdges}
       links={config.sidebarLinks}
+      postSlug={slug}
     />
   );
 

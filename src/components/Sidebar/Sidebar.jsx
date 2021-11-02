@@ -12,6 +12,7 @@ const Sidebar = ({
   latestFreebieEdges,
   latestRelatedEdges,
   links,
+  postSlug,
   isSimple = false,
 }) => {
   return (
@@ -28,6 +29,7 @@ const Sidebar = ({
 
       {latestPostEdges && latestPostEdges.length > 0 && (
         <WidgetLatestPosts
+          postSlug={postSlug}
           postEdges={latestPostEdges}
           title={config.latestPostsWidgetTitle}
         />
@@ -35,6 +37,7 @@ const Sidebar = ({
 
       {latestFreebieEdges && latestFreebieEdges.length > 0 && (
         <WidgetLatestPosts
+          postSlug={postSlug}
           postEdges={latestFreebieEdges}
           title={config.latestFreebiesWidgetTitle}
         />
