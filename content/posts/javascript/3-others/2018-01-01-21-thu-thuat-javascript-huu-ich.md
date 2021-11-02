@@ -8,6 +8,7 @@ keywords: "thủ thuật javascript hữu ích"
 description: "Trong bài viết này, mình sẽ chia sẻ với các bạn 21 thủ thuật JavaScript hữu ích. Qua đó, bạn có thể viết code ngắn gọn hơn và cảm thấy yêu ngôn ngữ lập trình JavaScript hơn."
 slug: 21-thu-thuat-javascript-huu-ich
 title: "3x7 = 21 thủ thuật JavaScript hữu ích"
+series: "JavaScript: Thủ thuật JavaScript"
 tags:
   - DOM
   - ES6

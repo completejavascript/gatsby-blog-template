@@ -8,6 +8,7 @@ keywords: "thức dậy sớm"
 description: "Bạn có quá nhiều việc phải làm. Bạn chăm chỉ, cố gắng để biến ước mơ trở thành hiện thực. Nhưng một ngày thì vẫn chỉ có 24 giờ. Vậy làm thế nào để bạn có thêm một đến hai giờ làm việc hiệu quả mỗi ngày? Câu trả lời là: Hãy thức dậy sớm."
 slug: thuc-day-som-khong-cam-thay-met-moi
 title: "Làm sao để thức dậy sớm mà không cảm thấy mệt mỏi"
+series: "Cuộc sống IT: Cuộc sống dân IT"
 ---
 
 Bạn có quá nhiều việc phải làm. Bạn chăm chỉ, cố gắng để biến ước mơ trở thành hiện thực. Nhưng một ngày thì vẫn chỉ có 24 giờ. Vậy làm thế nào để bạn có thêm một đến hai giờ làm việc hiệu quả mỗi ngày?

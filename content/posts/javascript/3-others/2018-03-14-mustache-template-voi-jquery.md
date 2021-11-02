@@ -8,6 +8,7 @@ keywords: "mustache template với jquery"
 description: "Đến hẹn lại lên, hôm nay mình sẽ chia sẻ với các bạn cách sử dụng Mustache Template với jQuery trong lập trình JavaScript. Việc sử dụng Mustache.js sẽ giúp bạn hạn chế việc xử lý logic trong JavaScript. Qua đó, giúp code bạn trở nên ngắn gọn và sáng sủa hơn."
 slug: mustache-template-voi-jquery
 title: "Mustache Template với jQuery"
+series: "JavaScript: Tutorials"
 tags:
   - jQuery
   - Mustache.js

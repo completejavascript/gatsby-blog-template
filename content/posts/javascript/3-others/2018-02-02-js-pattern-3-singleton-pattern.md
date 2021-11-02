@@ -8,6 +8,7 @@ keywords: "singleton pattern"
 description: "Có thể bạn đã nghe quen về Singleton. Singleton Pattern giới hạn số lượng instance của một class là một. Trong JavaScript, bạn có thể triển khai Singleton Pattern theo cách sau."
 slug: js-pattern-3-singleton-pattern
 title: "JS Pattern #3 -  Singleton Pattern"
+series: "JavaScript: Design Pattern"
 tags:
   - IIFE
   - Design Pattern

@@ -8,6 +8,7 @@ keywords: "tạo bộ dữ liệu từ điển dạng text"
 description: "Có thể bạn chưa biết, cách đơn giản để tạo bộ dữ liệu từ điển dạng text là sử dụng bộ từ điển của StarDict cùng với StarDict Editor là xong."
 slug: tao-bo-du-lieu-tu-dien-dang-text-tu-stardict
 title: "Tạo bộ dữ liệu từ điển dạng text từ StarDict"
+series: "Thủ thuật IT: Thủ thuật lập trình"
 tags:
   - Windows
 ---

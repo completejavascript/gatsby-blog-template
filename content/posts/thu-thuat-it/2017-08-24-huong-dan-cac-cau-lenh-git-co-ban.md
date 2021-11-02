@@ -8,6 +8,7 @@ keywords: "câu lệnh git"
 description: "Việc biết cách sử dụng Git là điều vô cùng quan trọng. Bài viết này sẽ hướng dẫn cơ bản về Git cũng như các câu lệnh Git cơ bản."
 slug: huong-dan-cac-cau-lenh-git-co-ban
 title: "Hướng dẫn các câu lệnh Git cơ bản"
+series: "Thủ thuật IT: Thủ thuật lập trình"
 tags:
   - Command Line
   - Git

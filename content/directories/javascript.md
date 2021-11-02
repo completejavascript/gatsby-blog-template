@@ -156,27 +156,24 @@ Phần này bao gồm những thủ thuật, tips & tricks, design pattern, nh�
 - [PubSub Pattern](/js-pattern-4-pubsub-pattern)
 - [Method Chaining](/tim-hieu-ki-thuat-method-chaining-co-ban)
 
-### Thuật toán
+### Lập trình JavaScript với FCC
 
 - [Thuật toán cơ bản](/lap-trinh-javascript-voi-fcc-basic-algorithm-scripting)
 - [Thuật toán nâng cao](/lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting)
-
-### Tutorials
-
 - [Tribute Page](/lap-trinh-javascript-voi-fcc-build-a-tribute-page)
 - [Portfolio cá nhân](/lap-trinh-javascript-voi-fcc-personal-portfolio)
 - [Random Quote Machine](/lap-trinh-javascript-voi-fcc-random-quote-machine)
 - [Ứng dụng thời tiết](/lap-trinh-javascript-voi-fcc-local-weather)
 - [Wikipedia Viewer](/lap-trinh-javascript-voi-fcc-wikipedia-viewer)
 - [Twitch TV client](/lap-trinh-javascript-voi-fcc-twitch-tv-json-api)
+
+### Tutorials
+
 - [Mustache Template với jQuery](/mustache-template-voi-jquery)
 - [Smooth Scrolling với jQuery](/smooth-scrolling-trang-web-voi-jquery)
 - [Triển khai Lazy Loading Image với ES6 và CSS](/trien-khai-lazy-loading-image-voi-es6-va-css)
 - [Menu Responsive](/thiet-ke-website-responsive-voi-css-menu)
 - [Lấy vị trí với Geolocation API và ipinfo.io](/hai-cach-lay-vi-tri-nguoi-dung)
-
-### Một số bài viết hữu ích khác
-
 - [Gửi email bằng HTML và Formspree.io](/gui-mail-bang-html-va-formspree-io)
 - [Dark theme với CSS variable](/tao-dark-theme-voi-css-variable)
 - [Tối ưu FontAwesome với IcoMoon](/toi-uu-font-awesome-voi-icomoon)

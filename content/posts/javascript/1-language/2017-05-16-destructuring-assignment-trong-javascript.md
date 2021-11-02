@@ -8,6 +8,7 @@ keywords: "destructuring assignment"
 description: "Bài viết trình bày về cách sử dụng cơ bản và một số ứng dụng của Destructuring Assignment với Object và Array trong JavaScript."
 slug: destructuring-assignment-trong-javascript
 title: "Destructuring Assignment trong JavaScript"
+series: "JavaScript: JavaScript cơ bản"
 tags:
   - Destructuring Assignment
   - ES6

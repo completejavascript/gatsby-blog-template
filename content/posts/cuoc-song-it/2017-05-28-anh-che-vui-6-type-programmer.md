@@ -8,6 +8,7 @@ keywords: "type of programmer"
 description: "There's a type of programmer who's always working late. And before sleeping, he always check his phone until tired."
 slug: anh-che-vui-6-type-programmer
 title: "Ảnh chế vui #6: A type of programmer"
+series: "Ảnh chế vui"
 tags:
   - Ảnh chế
 ---

@@ -8,6 +8,7 @@ keywords: "personal portfolio"
 description: "Tiếp tục series lập trình JavaScript với FCC, bài viết này tôi sẽ chia sẻ với các bạn project thứ hai mà tôi đã làm trên freeCodeCamp đó là Build a personal portfolio webpage, thuộc chuyên mục Basic Front End."
 slug: lap-trinh-javascript-voi-fcc-personal-portfolio
 title: "Lập trình JavaScript với FCC – Personal Portfolio"
+series: "Lập trình JavaScript với FCC"
 tags:
   - jQuery
   - Mustache.js

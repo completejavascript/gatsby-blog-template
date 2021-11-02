@@ -8,6 +8,7 @@ keywords: "basic algorithm scripting"
 description: "Thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn. Vì vậy, tiếp theo trong loạt bài Lập trình JavaScript với FCC, hôm nay, mình sẽ tổng hợp lại những bài toán thuộc chủ đề Basic Algorithm Scripting trên freeCodeCamp."
 slug: lap-trinh-javascript-voi-fcc-basic-algorithm-scripting
 title: "Lập trình JavaScript với FCC - Basic Algorithm Scripting"
+series: "Lập trình JavaScript với FCC"
 tags:
   - Thuật toán
   - FCC

@@ -8,6 +8,7 @@ keywords: "triển khai thuật toán undo-redo"
 description: "Đối với hầu hết các ứng dụng (text editor, sửa ảnh,...) việc triển khai thuật toán Undo-Redo là thật sự cần thiết. Dưới đây là một cách triển khai đơn giản."
 slug: trien-khai-thuat-toan-undo-redo-trong-javascript
 title: "Triển khai thuật toán Undo-Redo trong JavaScript"
+series: "JavaScript: Bài toán thực tế"
 tags:
   - Thuật toán
 ---

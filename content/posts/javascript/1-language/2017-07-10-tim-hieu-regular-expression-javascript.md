@@ -8,6 +8,7 @@ keywords: "regular expression"
 description: "Regular expression hay còn được gọi tắt là Regex hay RegExp, là một cách để biểu diễn khuôn mẫu của string. Regex JavaScript là một phần quan trọng của ngôn ngữ lập trình JavaScript."
 slug: tim-hieu-regular-expression-javascript
 title: "Tìm hiểu Regular Expression JavaScript"
+series: "JavaScript: Regualar Expression"
 tags:
   - RegExp
 ---

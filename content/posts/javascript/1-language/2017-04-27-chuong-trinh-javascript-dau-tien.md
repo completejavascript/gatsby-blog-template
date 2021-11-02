@@ -8,6 +8,7 @@ keywords: "chương trình javascript đầu tiên"
 description: "JavaScript helloworld! Bài viết này mình sẽ bắt đầu học cách viết và chạy thử chương trình JavaScript đầu tiên trước khi học sâu hơn về JavaScript."
 slug: chuong-trinh-javascript-dau-tien
 title: "Chương trình JavaScript đầu tiên"
+series: "JavaScript: JavaScript cơ bản"
 ---
 
 Trong những bài viết trước, bạn đã biết các kiến thức tổng quan về JavaScript rồi. Hôm nay, mình sẽ bắt đầu viết chương trình JavaScript đầu tiên.

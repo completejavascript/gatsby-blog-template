@@ -8,6 +8,7 @@ keywords: "trường hợp với git"
 description: "Đối với lập trình viên, Git là công cụ không thể thiếu. Bài viết này mình sẽ tổng hợp lại một số trường hợp với Git và cách mình giải quyết chúng."
 slug: tong-hop-mot-so-truong-hop-voi-git
 title: "Tổng hợp một số trường hợp với Git"
+series: "Thủ thuật IT: Thủ thuật lập trình"
 tags:
   - Command Line
   - Git

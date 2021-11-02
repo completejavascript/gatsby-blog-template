@@ -8,6 +8,7 @@ keywords: "sticky notes"
 description: "Xin chào bạn đến với Học React qua ví dụ #10. Bài này mình sẽ thực hành React thông qua việc tạo Sticky Notes. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-10-sticky-notes
 title: "Học React qua ví dụ #10: Sticky Notes"
+series: "Học React qua ví dụ"
 tags:
   - Create-react-app
   - React Component

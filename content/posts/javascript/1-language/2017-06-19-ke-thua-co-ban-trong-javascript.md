@@ -8,6 +8,7 @@ keywords: "kế thừa cơ bản trong JavaScript"
 description: "Khi lập trình, việc kế thừa là cần thiết nếu bạn muốn giảm lượng code phải viết và quản lý code dễ dàng hơn. Vậy triển khai kế thừa trong JavaScript như thế nào? Bài viết này, mình sẽ giới thiệu với các bạn các cách triển khai kế thừa cơ bản trong JavaScript."
 slug: ke-thua-co-ban-trong-javascript
 title: "Các cách kế thừa cơ bản trong JavaScript"
+series: "JavaScript: Lập trình hướng đối tượng"
 tags:
   - ES6
   - OOP

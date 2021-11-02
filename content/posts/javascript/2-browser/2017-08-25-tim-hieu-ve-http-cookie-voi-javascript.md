@@ -8,6 +8,7 @@ keywords: "HTTP Cookie"
 description: "Bài viết này mình sẽ tìm hiểu về HTTP Cookie, cách thao tác với Cookie từ client và server, một số cài đặt giúp cho HTTP Cookie trở nên an toàn hơn."
 slug: tim-hieu-ve-http-cookie-voi-javascript
 title: "Tìm hiểu về HTTP Cookie với JavaScript"
+series: "JavaScript: Lưu trữ dữ liệu"
 tags:
   - AJAX
   - Cookie

@@ -8,6 +8,7 @@ keywords: "lợi ích của việc thức dậy sớm"
 description: "Xin chào các bạn, bài viết trước tôi có viết về cách để thức dậy sớm mà không cảm thấy mệt mỏi. Nhiều bạn sẽ hỏi là thức dậy sớm để làm gì? Tại sao phải thức dậy sớm? Trong bài viết này, tôi sẽ chỉ cho các bạn thấy 5 lợi ích của việc thức dậy sớm."
 slug: 5-loi-ich-cua-viec-thuc-day-som
 title: "5 lợi ích của việc thức dậy sớm"
+series: "Cuộc sống IT: Cuộc sống dân IT"
 ---
 
 Xin chào các bạn, bài viết trước tôi có viết về cách để [thức dậy sớm](/thuc-day-som-khong-cam-thay-met-moi) mà không cảm thấy mệt mỏi. Nhiều bạn sẽ hỏi là thức dậy sớm để làm gì? Tại sao phải thức dậy sớm? Trong bài viết này, tôi sẽ chỉ cho các bạn thấy 5 lợi ích của việc thức dậy sớm.

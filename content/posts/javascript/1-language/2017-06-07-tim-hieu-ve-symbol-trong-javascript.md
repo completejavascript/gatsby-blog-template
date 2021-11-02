@@ -8,6 +8,7 @@ keywords: "symbol trong JavaScript"
 description: "Symbol là một kiểu dữ liệu mới được giới thiệu từ phiên bản ES6. Bài này mình sẽ tìm hiểu cơ bản về Symbol trong JavaScript với các ứng dụng của nó."
 slug: tim-hieu-ve-symbol-trong-javascript
 title: "Tìm hiểu về Symbol trong JavaScript"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Symbol

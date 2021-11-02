@@ -8,6 +8,7 @@ keywords: "xoắn não với phỏng vấn javascript 6"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 6, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!"
 slug: xoan-nao-voi-phong-van-javascript-6
 title: "Xoắn não với phỏng vấn JavaScript 6"
+series: "JavaScript Quiz"
 tags:
   - Quiz
 ---

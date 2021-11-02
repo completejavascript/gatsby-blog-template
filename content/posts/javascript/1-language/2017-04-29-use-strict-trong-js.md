@@ -8,6 +8,7 @@ keywords: "use strict trong js"
 description: "Use strict trong js giúp kích hoạt strict mode trong JavaScript. Khi đó, code JavaScript sẽ chặt chẽ và rõ ràng hơn vì phải tuân theo quy tắc hiện đại của JavaScript."
 slug: use-strict-trong-js
 title: "Use strict trong JS"
+series: "JavaScript: JavaScript cơ bản"
 tags:
   - Strict Mode
 ---

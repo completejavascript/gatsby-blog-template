@@ -8,6 +8,7 @@ keywords: "JavaScript array"
 description: "JavaScript array giúp bạn có thể biểu diễn được những dữ liệu phức tạp và dễ dàng hơn trong việc quản lý cũng như xử lý dữ liệu."
 slug: javascript-array-co-ban
 title: "JavaScript Array cơ bản"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Array
 ---

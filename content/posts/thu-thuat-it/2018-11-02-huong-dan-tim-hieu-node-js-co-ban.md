@@ -8,6 +8,7 @@ keywords: "tìm hiểu Node.js cơ bản"
 description: "Node.js giúp JavaScript có thể chạy được trong môi trường server. Vì vậy, bài viết này mình sẽ giúp bạn tìm hiểu Node.js cơ bản."
 slug: huong-dan-tim-hieu-node-js-co-ban
 title: "Hướng dẫn tìm hiểu Node.js cơ bản"
+series: "Thủ thuật IT: Thủ thuật lập trình"
 tags:
   - Node.js
 ---

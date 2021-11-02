@@ -8,6 +8,7 @@ keywords: "Wikipedia Viewer"
 description: "Tiếp tục với chủ đề Lập trình JavaScript với FCC, bài viết này mình sẽ tổng hợp lại những bài học kinh nghiệm, thủ thuật rút ra được từ project Wikipedia Viewer. Hy vọng nó có thể giúp ích cho bạn trong các project của mình."
 slug: lap-trinh-javascript-voi-fcc-wikipedia-viewer
 title: "Lập trình JavaScript với FCC - Wikipedia Viewer"
+series: "Lập trình JavaScript với FCC"
 tags:
   - AJAX
   - CORS

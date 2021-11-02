@@ -8,6 +8,7 @@ keywords: "Xoắn não với phỏng vấn JavaScript 1"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 1 trong chuyên mục những câu hỏi phỏng vấn JavaScript. Hôm nay, mình sẽ giới thiệu với các bạn những câu đố cực kỳ hóc búa về JavaScript."
 slug: xoan-nao-voi-phong-van-javascript-1
 title: "Xoắn não với phỏng vấn JavaScript 1"
+series: "JavaScript Quiz"
 tags:
   - ES6
   - IIFE

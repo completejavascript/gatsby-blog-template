@@ -8,6 +8,7 @@ keywords: "thiết kế website responsive"
 description: "Hiện nay, mọi người có thể truy cập vào website từ rất nhiều các thiết bị khác nhau: máy tính, máy tính bảng (tablet), điện thoại (smart phone),... Vì vậy, mình sẽ hướng dẫn các bạn thiết kế website responsive với CSS."
 slug: thiet-ke-website-responsive-voi-css-menu
 title: "Thiết kế website responsive với CSS - Menu"
+series: "JavaScript: Tutorials"
 tags:
   - CSS
   - HTML

@@ -8,6 +8,7 @@ keywords: "Ảnh chế vui 1"
 description: "Đây là ảnh chế vui 1 nói về cách lập trình viên chạy hằng ngày."
 slug: anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay
 title: "Ảnh chế vui #1: Cách lập trình viên chạy hằng ngày"
+series: "Ảnh chế vui"
 tags:
   - Ảnh chế
 ---

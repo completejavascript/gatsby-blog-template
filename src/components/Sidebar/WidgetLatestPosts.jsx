@@ -20,7 +20,11 @@ const WidgetLatesPosts = ({ postSlug, postEdges, title }) => {
               >
                 <span>{post.title}</span>
               </AutoLink>
-            ) : null}
+            ) : (
+              <span className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half text-description">
+                {post.title}
+              </span>
+            )}
           </React.Fragment>
         ))}
       </div>

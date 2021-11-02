@@ -8,6 +8,7 @@ keywords: "collapsible content"
 description: "Xin chào bạn đến với Học React qua ví dụ #7. Bài này mình sẽ thực hành React thông qua việc tạo Collapsible Content. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-7-collapsible-content
 title: "Học React qua ví dụ #7: Collapsible Content"
+series: "Học React qua ví dụ"
 tags:
   - Create-react-app
   - React Component

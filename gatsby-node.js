@@ -137,6 +137,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 tags
                 date
                 update
+                series
               }
             }
           }
@@ -234,6 +235,7 @@ exports.createPages = async ({ graphql, actions }) => {
           slug: edge.node.fields.slug,
           template: edge.node.frontmatter.template,
           tags: edge.node.frontmatter.tags || [],
+          series: edge.node.frontmatter.series || "__IGNORED__",
           nextTitle: nextEdge.node.frontmatter.title,
           nextSlug: nextEdge.node.fields.slug,
           prevTitle: prevEdge.node.frontmatter.title,
@@ -260,6 +262,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: edge.node.fields.slug,
         template: edge.node.frontmatter.template,
         tags: edge.node.frontmatter.tags || [],
+        series: edge.node.frontmatter.series || "__IGNORED__",
         nextTitle: nextEdge.node.frontmatter.title,
         nextSlug: nextEdge.node.fields.slug,
         prevTitle: prevEdge.node.frontmatter.title,

@@ -8,6 +8,7 @@ keywords: "học lập trình Javascript"
 description: "Khi mọi người cố gắng học lập trình Javascript, họ thường trải qua những thử thách giống nhau. Sau đây là sáu mẹo giúp học lập trình JavaScript nhanh hơn."
 slug: hoc-lap-trinh-javascript-nhanh-hon
 title: "Sáu mẹo đơn giản giúp học lập trình Javascript nhanh hơn"
+series: "Cuộc sống IT: Kinh nghiệm học lập trình"
 tags:
   - Dịch blog
 ---

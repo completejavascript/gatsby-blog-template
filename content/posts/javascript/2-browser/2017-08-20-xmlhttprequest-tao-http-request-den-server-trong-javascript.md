@@ -8,6 +8,7 @@ keywords: "XMLHttpRequest"
 description: "XMLHttpRequest giúp bạn gửi HTTP request (GET, POST, PUT, DELETE,...) đến server và hỗ trợ hai kiểu request: đồng bộ và bất đồng bộ."
 slug: xmlhttprequest-tao-http-request-den-server-trong-javascript
 title: "XMLHttpRequest - Tạo HTTP request đến server trong JavaScript"
+series: "JavaScript: Network requests"
 tags:
   - AJAX
   - Event

@@ -8,6 +8,7 @@ keywords: "ngôn ngữ lập trình"
 description: "Bài viết sau được dịch từ simpleprogrammer.com bởi tác giả John Sonmez về top những ngôn ngữ lập trình nên học năm 2017."
 slug: nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017
 title: "Những ngôn ngữ lập trình nên học năm 2017"
+series: "Cuộc sống IT: Kinh nghiệm học lập trình"
 tags:
   - Dịch blog
 ---

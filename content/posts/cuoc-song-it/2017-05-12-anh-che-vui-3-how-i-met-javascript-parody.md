@@ -8,6 +8,7 @@ keywords: "How I met JavaScript"
 description: "This is how I met JavaScript parody of How I met your mother"
 slug: anh-che-vui-3-how-i-met-javascript-parody
 title: "Ảnh chế vui #3: How I met JavaScript - Parody"
+series: "Ảnh chế vui"
 tags:
   - Ảnh chế
 ---

@@ -8,6 +8,7 @@ keywords: "Ảnh chế vui 2"
 description: "Trong lập trình, việc có bug là điều hết sức bình thường. Tuy nhiên, nhiều lập trình viên lại hay sử dụng câu nói này khi bị bạn bè, đồng nghiệp chỉ ra bug trong code của mình."
 slug: anh-che-vui-2-code-anh-khong-co-bug-tat-ca-chi-la-tinh-nang
 title: "Ảnh chế vui #2: Code anh không có bug, tất cả chỉ là tính năng"
+series: "Ảnh chế vui"
 tags:
   - Ảnh chế
 ---

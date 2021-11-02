@@ -13,6 +13,7 @@ const Sidebar = ({
   latestRelatedEdges,
   links,
   postSlug,
+  sameSeriesPosts = [],
   isSimple = false,
 }) => {
   return (
@@ -21,6 +22,14 @@ const Sidebar = ({
         config.sidebarSticky ? "height-full" : ""
       }`}
     >
+      {sameSeriesPosts && sameSeriesPosts.length > 0 && (
+        <WidgetLatestPosts
+          postSlug={postSlug}
+          postEdges={sameSeriesPosts}
+          title={config.sameSeriesPostsWidgetTitle}
+        />
+      )}
+
       {config.hasAdsense && config.adsenseUnits?.sidebarTop && (
         <div className="width-full flex justify-content-center padding-top">
           <AdSense.Google {...config.adsenseUnits?.sidebarTop} />
@@ -29,17 +38,10 @@ const Sidebar = ({
 
       {latestPostEdges && latestPostEdges.length > 0 && (
         <WidgetLatestPosts
-          postSlug={postSlug}
-          postEdges={latestPostEdges}
+          postEdges={latestPostEdges.filter(
+            (item) => item.node.fields.slug !== postSlug
+          )}
           title={config.latestPostsWidgetTitle}
-        />
-      )}
-
-      {latestFreebieEdges && latestFreebieEdges.length > 0 && (
-        <WidgetLatestPosts
-          postSlug={postSlug}
-          postEdges={latestFreebieEdges}
-          title={config.latestFreebiesWidgetTitle}
         />
       )}
 
@@ -49,8 +51,24 @@ const Sidebar = ({
         </div>
       )}
 
+      {latestFreebieEdges && latestFreebieEdges.length > 0 && (
+        <WidgetLatestPosts
+          postEdges={latestFreebieEdges.filter(
+            (item) => item.node.fields.slug !== postSlug
+          )}
+          title={config.latestFreebiesWidgetTitle}
+        />
+      )}
+
       {!isSimple && tagList && tagList.length > 0 && (
-        <WidgetTag tagList={tagList} />
+        <>
+          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle2 && (
+            <div className="width-full flex justify-content-center padding-top">
+              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle2} />
+            </div>
+          )}
+          <WidgetTag tagList={tagList} />
+        </>
       )}
 
       {!isSimple && links && links.length > 0 && <WidgetLinks links={links} />}

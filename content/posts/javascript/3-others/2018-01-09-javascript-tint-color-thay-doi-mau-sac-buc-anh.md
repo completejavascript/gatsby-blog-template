@@ -8,6 +8,7 @@ keywords: "javascript tint color"
 description: "Xin chào các bạn. Hình như là đã lâu rồi tôi chưa viết bài nào về lập trình JavaScript. Nguyên nhân là vừa rồi tôi cũng không có nhiều thời gian để học và tìm hiểu về nó. Từ hôm nay, tôi sẽ bắt đầu lại với chủ đề này, đó là JavaScript nâng cao. Bài viết đầu tiên là JavaScript Tint Color - thay đổi màu sắc của bức ảnh."
 slug: javascript-tint-color-thay-doi-mau-sac-buc-anh
 title: "JavaScript Tint Color - thay đổi màu sắc bức ảnh"
+series: "JavaScript: Bài toán thực tế"
 tags:
   - Canvas
   - CSS

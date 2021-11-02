@@ -8,6 +8,7 @@ keywords: "xử lý bất đồng bộ"
 description: "Xử lý bất đồng bộ là cơ chế xử lý không thể thiếu trong JavaScript. Cùng xem cách triển khai nó với callback, promise và async/await trong JavaScript nhé."
 slug: xu-ly-bat-dong-bo-callback-promise-async-await
 title: "Xử lý bất đồng bộ với callback, promise, async/await"
+series: "JavaScript: Xử lý bất đồng bộ"
 tags:
   - Async - Await
   - Callback

@@ -8,6 +8,7 @@ keywords: "function JavaScript"
 description: "Function JavaScript (hàm trong JavaScript) là một thành phần không thể thiếu trong cấu trúc chương trình. Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm."
 slug: tim-hieu-function-javascript
 title: "Tìm hiểu function JavaScript - Hàm trong JavaScript"
+series: "JavaScript: JavaScript cơ bản"
 ---
 
 Function JavaScript (hàm trong JavaScript) là một thành phần không thể thiếu trong [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript). Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm. Nhờ vậy mà việc bảo trì phần mềm cũng dễ dàng hơn.

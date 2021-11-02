@@ -8,6 +8,7 @@ keywords: "câu lệnh trong javascript"
 description: "Chương trình là tập hợp của các câu lệnh. Nói cách khác, câu lệnh trong JavaScript là đơn vị cơ bản xây dựng nên một chương trình. Vì vậy, đây là khái niệm đầu tiên cần nắm vững."
 slug: cau-lenh-trong-javascript
 title: "Câu lệnh trong JavaScript"
+series: "JavaScript: JavaScript cơ bản"
 ---
 
 Chương trình là tập hợp của các câu lệnh. Hay nói cách khác, câu lệnh trong JavaScript là đơn vị cơ bản xây dựng nên một chương trình. Vì vậy, câu lệnh là khái niệm đầu tiên mà mình cần nắm vững khi học lập trình JavaScript.

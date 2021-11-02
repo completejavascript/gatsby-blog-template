@@ -8,6 +8,7 @@ keywords: "lấy ảnh thumbnail của video trên youtube"
 description: "Mình sẽ chia sẻ với các bạn một số cách để lấy ảnh thumbnail của video trên youtube. Đầu tiên, các bạn phải có được ID của video trên youtube."
 slug: lay-anh-thumbnail-cua-video-tren-youtube
 title: "Hướng dẫn lấy ảnh thumbnail của video trên youtube"
+series: "Thủ thuật IT: Bài viết khác"
 tags:
   - Youtube
 ---

@@ -8,6 +8,7 @@ keywords: "tạo immutable object"
 description: "Có nhiều trường hợp bạn mong muốn object là immutable. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript."
 slug: 2-cach-tao-immutable-object-javascript
 title: "2 cách tạo immutable object trong JavaScript"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Object

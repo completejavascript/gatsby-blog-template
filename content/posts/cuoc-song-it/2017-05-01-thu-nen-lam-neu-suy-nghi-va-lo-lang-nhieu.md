@@ -8,6 +8,7 @@ keywords: "suy nghĩ và lo lắng"
 description: "Suy nghĩ và lo lắng quá nhiều sẽ ảnh hưởng tiêu cực đến chất lượng cuộc sống. Bài viết này sẽ giúp bạn tìm ra giải pháp cho vấn đề này."
 slug: thu-nen-lam-neu-suy-nghi-va-lo-lang-nhieu
 title: "Những thứ bạn nên làm nếu suy nghĩ và lo lắng quá nhiều"
+series: "Cuộc sống IT: Cuộc sống dân IT"
 tags:
   - Dịch blog
 ---

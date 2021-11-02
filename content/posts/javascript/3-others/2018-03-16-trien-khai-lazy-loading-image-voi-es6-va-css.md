@@ -8,6 +8,7 @@ keywords: "lazy loading image với es6 và css"
 description: "Triển khai Lazy Loading Image với ES6 và CSS khác với việc triển khai Lazy Loading Image trong React như thế nào? Mời bạn theo dõi để biết thêm chi tiết."
 slug: trien-khai-lazy-loading-image-voi-es6-va-css
 title: "Triển khai Lazy Loading Image với ES6 và CSS"
+series: "JavaScript: Tutorials"
 tags:
   - CSS
   - ES6

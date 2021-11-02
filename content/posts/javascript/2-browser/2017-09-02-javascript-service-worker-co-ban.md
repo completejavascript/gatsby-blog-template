@@ -8,6 +8,7 @@ keywords: "javascript service worker"
 description: "Có 2 thứ cần thiết để web app có thể chạy được là: resources (html, js, css, ảnh,...) và định tuyến. Thì thằng mà chúng ta sẽ tìm hiểu sau đây là JavaScript Service Worker có thể đáp ứng được cả hai việc đó. Vậy..."
 slug: javascript-service-worker-co-ban
 title: "JavaScript Service Worker cơ bản"
+series: "JavaScript: Worker"
 tags:
   - AJAX
   - Event

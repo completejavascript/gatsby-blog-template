@@ -8,6 +8,7 @@ keywords: "hacker"
 description: "Bài viết được dịch từ Technotification của Jagadesh siddhartha về cách phân biệt giữa các loại hacker như hacker mũ đen, hacker mũ xám và hacker mũ trắng."
 slug: phan-biet-cac-loai-hacker-black-hat-grey-hat-va-white-hat
 title: "Phân biệt các loại hacker - black hat, grey hat và white hat"
+series: "Cuộc sống IT: Cuộc sống dân IT"
 tags:
   - Dịch blog
 ---

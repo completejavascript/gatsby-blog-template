@@ -8,6 +8,7 @@ keywords: "phân biệt var và let"
 description: "let giống và khác var như thế nào? Bài viết này sẽ giúp bạn phân biệt var và let trong JavaScript. Qua đó, bạn biết cách sử dụng chúng sao cho phù hợp nhất."
 slug: phan-biet-var-va-let-trong-javascript
 title: "Phân biệt var và let trong JavaScript"
+series: "JavaScript: JavaScript cơ bản"
 tags:
   - ES6
 ---

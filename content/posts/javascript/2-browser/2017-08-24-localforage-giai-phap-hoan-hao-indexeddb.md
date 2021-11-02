@@ -8,6 +8,7 @@ keywords: "localForage"
 description: "IndexedDB là một công cụ mạnh mẽ để quản lý database phía server nhưng sử dụng lại quá khó. Vì vậy, localForage chính là một giải pháp hoàn hảo."
 slug: localforage-giai-phap-hoan-hao-indexeddb
 title: "LocalForage: giải pháp hoàn hảo cho IndexedDB"
+series: "JavaScript: Lưu trữ dữ liệu"
 tags:
   - IndexedDB
   - Storage

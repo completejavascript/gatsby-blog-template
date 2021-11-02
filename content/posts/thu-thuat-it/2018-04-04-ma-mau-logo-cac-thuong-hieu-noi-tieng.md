@@ -8,6 +8,7 @@ keywords: "mã màu logo"
 description: "Đã bao giờ bạn rơi vào trường hợp không biết lựa chọn, sử dụng hay phối hợp màu sắc sao cho hợp lý chưa? ... Bạn chỉ cần tải logo của họ về, sử dụng bất kỳ một công cụ chỉnh sửa hình ảnh là có thể lấy ra mã màu ở đó. Hoặc là bạn có thể theo dõi bài viết này. Mình sẽ lấy mã màu logo các thương hiệu nổi tiếng giúp bạn."
 slug: ma-mau-logo-cac-thuong-hieu-noi-tieng
 title: "Mã màu logo các thương hiệu nổi tiếng"
+series: "Thủ thuật IT: Bài viết khác"
 tags:
   - CSS
 ---

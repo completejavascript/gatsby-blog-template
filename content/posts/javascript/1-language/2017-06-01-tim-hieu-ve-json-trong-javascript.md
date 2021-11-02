@@ -8,6 +8,7 @@ keywords: "json"
 description: "Bài viết này mình sẽ tìm hiểu tổng quan về JSON, ứng dụng và cách sử dụng JSON trong JavaScript. Ngoài ra, mình cũng so sánh JSON với JavaScript Object."
 slug: tim-hieu-ve-json-trong-javascript
 title: "Tìm hiểu về JSON trong JavaScript"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - JSON
 ---

@@ -8,6 +8,7 @@ keywords: "kết thúc sớm Promise chaining"
 description: "Bài viết này mình sẽ trình bày 2 cách để kết thúc sớm Promise chaining trong JavaScript là không thực hiện return hoặc sử dụng Promise.reject()."
 slug: ket-thuc-som-promise-chaining-trong-javascript
 title: "Kết thúc sớm Promise chaining trong JavaScript"
+series: "JavaScript: Xử lý bất đồng bộ"
 tags:
   - Promise
 ---

@@ -8,6 +8,7 @@ keywords: "Specialist vs Generalist"
 description: "A person who devotes himself or herself to one subject or to one particular branch of a subject or pursuit."
 slug: anh-che-vui-5-specialist-vs-generalist-winner
 title: "Ảnh chế vui #5: Specialist vs Generalist - who is the winner?"
+series: "Ảnh chế vui"
 tags:
   - Ảnh chế
 ---

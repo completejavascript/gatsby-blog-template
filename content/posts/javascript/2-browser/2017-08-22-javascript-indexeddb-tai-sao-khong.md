@@ -8,6 +8,7 @@ keywords: "javascript indexeddb"
 description: "Có 3 loại database cơ bản là: LocalStorage, Web SQL, IndexedDB. Việc tìm hiểu các database gốc sẽ giúp bạn hiểu rõ được bản chất của các cơ sở dữ liệu đó. Qua đó, bạn có thể tự xây dựng những thư viện của riêng mình. Tuy nhiên, bài viết này sẽ chỉ tập chung vào JavaScript IndexedDB."
 slug: javascript-indexeddb-tai-sao-khong
 title: "JavaScript IndexedDB - tại sao không?"
+series: "JavaScript: Lưu trữ dữ liệu"
 tags:
   - Event
   - IndexedDB

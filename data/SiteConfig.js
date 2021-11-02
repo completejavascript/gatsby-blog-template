@@ -82,6 +82,7 @@ const config = {
   // Use for widget
   categoryWidgetTitle: "Chuyên mục",
   tagWidgetTitle: "Chủ đề",
+  sameSeriesPostsWidgetTitle: "Bài viết cùng series",
   latestPostsWidgetTitle: "Bài viết mới cập nhật",
   latestFreebiesWidgetTitle: "Freebie mới cập nhật",
   latestRelatedWidgetTitle: "Bài viết liên quan",
@@ -103,6 +104,12 @@ const config = {
     sidebarMiddle: {
       client: "ca-pub-7260245524211186",
       slot: "3126009259",
+      style: { display: "inline-block", width: "300px", height: "250px" },
+      format: "",
+    },
+    sidebarMiddle2: {
+      client: "ca-pub-7260245524211186",
+      slot: "6458569398",
       style: { display: "inline-block", width: "300px", height: "250px" },
       format: "",
     },

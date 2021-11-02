@@ -8,6 +8,7 @@ slug: sap-xep-tieng-viet-javascript
 keywords: "sắp xếp tiếng việt trong JavaScript"
 description: "Bài viết này sẽ giới thiệu với bạn một cách sắp xếp Tiếng Việt trong JavaScript cực kỳ đơn giản, ngắn gọn và hiệu quả."
 cover: "../../../images/javascript/sap-xep-tieng-viet-javascript-completejavascript.com.png"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Array
 ---

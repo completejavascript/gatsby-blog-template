@@ -8,6 +8,7 @@ keywords: "forEach"
 description: "Trong JavaScript, để duyệt array thì forEach là một hàm rất hay. Vậy hàm forEach trong JavaScript là như thế nào và cách sử dụng forEach JavaScript ra sao? Chúng ta hãy cùng tìm hiểu để làm chủ forEach js nhé!"
 slug: javascript-foreach-la-cai-quai-gi
 title: "JavaScript forEach là cái quái gì?"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Array
 ---

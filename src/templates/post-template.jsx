@@ -37,6 +37,9 @@ const PostTemplate = ({ data, pageContext }) => {
     .slice(0, config.numberLatestRelatedPost);
   //
 
+  // Get posts in the same series
+  const sameSeriesPosts = data.sameSeries?.edges || [];
+
   const title = postNode?.frontmatter?.title;
 
   const content = (
@@ -53,12 +56,12 @@ const PostTemplate = ({ data, pageContext }) => {
 
   const sidebar = (
     <Sidebar
-      tagList={tagList}
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
       latestRelatedEdges={latestRelatedEdges}
       links={config.sidebarLinks}
       postSlug={slug}
+      sameSeriesPosts={sameSeriesPosts}
     />
   );
 
@@ -78,7 +81,12 @@ export default PostTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!, $template: String!, $tags: [String!]) {
+  query BlogPostBySlug(
+    $slug: String!
+    $template: String!
+    $tags: [String!]
+    $series: String
+  ) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
@@ -128,6 +136,34 @@ export const pageQuery = graphql`
             }
             date
             update
+          }
+        }
+      }
+    }
+    sameSeries: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: ASC }
+      filter: { frontmatter: { series: { eq: $series } } }
+    ) {
+      totalCount
+      edges {
+        node {
+          fields {
+            slug
+            date
+          }
+          excerpt
+          timeToRead
+          frontmatter {
+            title
+            tags
+            cover {
+              childImageSharp {
+                gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
+              }
+            }
+            date
+            update
+            series
           }
         }
       }

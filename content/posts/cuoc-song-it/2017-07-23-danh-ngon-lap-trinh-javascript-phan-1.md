@@ -8,6 +8,7 @@ keywords: "danh ngôn lập trình"
 description: 'Danh ngôn lập trình - đơn giản là "phát ngôn" của những danh nhân (người nổi tiếng) về lập trình - là những kinh nghiệm qua quá trình học tập, lao động,...'
 slug: danh-ngon-lap-trinh-javascript-phan-1
 title: "Danh ngôn lập trình JavaScript - Phần 1"
+series: "Cuộc sống IT: Cuộc sống dân IT"
 ---
 
 Danh ngôn *là những tinh hoa trí tuệ chắt lọc, đúc kết lâu đời; những trải nghiệm cuộc sống phong phú, sâu sắc tích lũy qua bao thế hệ được diễn đạt bằng những câu ngắn gọn, ý nghĩa hàm súc, đan kết với nhau thành những "chuỗi hạt giống tâm hồn" quý hiếm như đang chờ bạn chọn lựa, gieo trồng cho "mảnh vườn trí tuệ" của chính mình*.

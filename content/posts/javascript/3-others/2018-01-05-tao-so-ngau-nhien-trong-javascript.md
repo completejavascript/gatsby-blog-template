@@ -8,6 +8,7 @@ slug: tao-so-ngau-nhien-trong-javascript
 keywords: "tạo số ngẫu nhiên trong JavaScript"
 description: "Bài viết này mình sẽ tổng hợp lại một số biến thể của việc tạo số ngẫu nhiên trong JavaScript với phương thức Math.random() và các ứng dụng của chúng."
 cover: "../../../images/javascript/tao-so-ngau-nhien-trong-javascript-completejavascript.com.png"
+series: "JavaScript: Thủ thuật JavaScript"
 tags:
   - Thuật toán
 ---

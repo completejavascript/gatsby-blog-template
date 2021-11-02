@@ -8,6 +8,7 @@ keywords: "triển khai Queue trong JavaScript"
 description: "Tiếp tục ý tưởng từ bài viết Triển khai Stack trong JavaScript với Array, Object hay Map, bài viết này sẽ tiếp tục triển khai Queue trong JavaScript."
 slug: trien-khai-queue-trong-javascript
 title: "Triển khai Queue trong JavaScript"
+series: "JavaScript: Bài toán thực tế"
 tags:
   - ES6
   - Thuật toán

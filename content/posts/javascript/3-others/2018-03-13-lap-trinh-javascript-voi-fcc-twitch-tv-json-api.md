@@ -8,6 +8,7 @@ keywords: "use the twitch.tv json api"
 description: "Tiếp tục với chủ đề Lập trình JavaScript với FCC, bài viết này mình sẽ chia sẻ với bạn về project Use the Twitch.tv JSON API trên freeCodeCamp."
 slug: lap-trinh-javascript-voi-fcc-twitch-tv-json-api
 title: "Lập trình JavaScript với FCC - Use the Twitch.tv JSON API"
+series: "Lập trình JavaScript với FCC"
 tags:
   - API
   - ES6

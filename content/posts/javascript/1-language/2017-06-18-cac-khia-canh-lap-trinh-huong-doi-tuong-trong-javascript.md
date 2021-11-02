@@ -8,6 +8,7 @@ keywords: "hướng đối tượng"
 description: "Trong bài viết này, chúng ta sẽ cùng tìm hiểu sâu hơn về các khía cạnh liên quan đến lập trình hướng đối tượng của ngôn ngữ lập trình JavaScript."
 slug: cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript
 title: "Các khía cạnh lập trình hướng đối tượng trong JavaScript"
+series: "JavaScript: Lập trình hướng đối tượng"
 tags:
   - OOP
 ---

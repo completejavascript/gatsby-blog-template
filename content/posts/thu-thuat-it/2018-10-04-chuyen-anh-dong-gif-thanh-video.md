@@ -8,6 +8,7 @@ keywords: "chuyển ảnh động GIF thành video"
 description: "Ảnh động GIF thường nặng hơn video. Vì vậy, mình sẽ giới thiệu với bạn cách chuyển ảnh động GIF thành video và sử dụng video tương tự như ảnh động GIF."
 slug: chuyen-anh-dong-gif-thanh-video
 title: "Chuyển ảnh động GIF thành video"
+series: "Thủ thuật IT: Bài viết khác"
 tags:
   - FFmpeg
   - Performance

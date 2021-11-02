@@ -8,6 +8,7 @@ keywords: "gửi email bằng html"
 description: "Phương pháp cực kì đơn giản và hiệu quả giúp bạn gửi email bằng HTML sử dụng formspree.io. Tất cả công việc bạn cần phải làm là cấu hình form trong HTML sử dụng email cá nhân của bạn,..."
 slug: gui-mail-bang-html-va-formspree-io
 title: "Gửi email bằng HTML và Formspree.io"
+series: "JavaScript: Tutorials"
 tags:
   - API
   - HTML

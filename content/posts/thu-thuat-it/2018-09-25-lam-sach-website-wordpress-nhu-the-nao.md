@@ -8,6 +8,7 @@ keywords: "làm sạch website wordpress"
 description: "Website bị dính mã độc là điều không ai mong muốn. Bài viết này mình sẽ chia sẻ với bạn các bước mà mình đã thực hiện để làm sạch website Wordpress."
 slug: lam-sach-website-wordpress-nhu-the-nao
 title: "Mình đã làm sạch website Wordpress như thế nào?"
+series: "Thủ thuật IT: Thủ thuật lập trình"
 tags:
   - Command Line
   - Wordpress

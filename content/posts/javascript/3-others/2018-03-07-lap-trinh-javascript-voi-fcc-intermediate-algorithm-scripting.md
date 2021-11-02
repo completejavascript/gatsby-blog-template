@@ -8,6 +8,7 @@ keywords: "Intermediate Algorithm Scripting"
 description: "Bài viết trước mình đã chia sẻ với bạn các bài toán thuộc chủ đề Basic Algorithm Scripting. Nếu bạn đã đọc qua thì có thể thấy rằng, đó đều là những bài toán khá dễ. Ngược lại, các bài toán hôm nay sẽ khó hơn một chút. Vì chúng thuộc chủ đề Intermediate Algorithm Scripting."
 slug: lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting
 title: "Lập trình JavaScript với FCC - Intermediate Algorithm Scripting"
+series: "Lập trình JavaScript với FCC"
 tags:
   - Thuật toán
   - FCC

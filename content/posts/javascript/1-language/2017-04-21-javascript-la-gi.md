@@ -8,6 +8,7 @@ keywords: "javascript là gì"
 description: "JavaScript là gì? JavaScript là ngôn ngữ lập trình website phổ biến nhất hiện nay. JavaScript giúp trang web trở nên sống động hơn. Vậy thì JavaScript có thể và không thể làm gì?"
 slug: javascript-la-gi
 title: "JavaScript là gì?"
+series: "JavaScript: Kiến thức tổng quan"
 ---
 
 JavaScript là một trong những ngôn ngữ lập trình phổ biến nhất hiện nay. Sau đây, mình sẽ cùng tìm hiểu xem cụ thể JavaScript là gì. JavaScript có thể và không thể làm được gì nhé!

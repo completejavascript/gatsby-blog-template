@@ -8,6 +8,7 @@ keywords: "programmer"
 description: "Bài viết được dịch từ website Technotification của tác giả Vicky Singh Rao về cách phân biệt giữa Coder, Programmer, Developer và Software Engineer."
 slug: phan-biet-coder-programmer-developer-va-software-engineer
 title: "Phân biệt coder, programmer, developer và software engineer"
+series: "Cuộc sống IT: Cuộc sống dân IT"
 tags:
   - Dịch blog
 ---

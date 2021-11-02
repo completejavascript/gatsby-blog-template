@@ -8,6 +8,7 @@ keywords: "Xoắn não với phỏng vấn JavaScript 9"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 9, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay."
 slug: xoan-nao-voi-phong-van-javascript-9
 title: "Xoắn não với phỏng vấn JavaScript 9"
+series: "JavaScript Quiz"
 tags:
   - ES6
   - Destructuring Assignment

@@ -8,6 +8,7 @@ keywords: "biểu thức chính quy RegExp"
 description: "Biểu thức chính quy RegExp là một chủ đề khá phức tạp. Bài viết này sẽ tổng hợp lại một số biểu thức chính quy RegExp mà mình sưu tầm được."
 slug: mot-so-bieu-thuc-chinh-quy-regexp-hay
 title: "Một số biểu thức chính quy RegExp hay"
+series: "JavaScript: Regualar Expression"
 tags:
   - RegExp
 ---

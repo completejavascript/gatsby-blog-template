@@ -8,6 +8,7 @@ keywords: "tác hại của ngồi lâu"
 description: "Đối với dân văn phòng nói chung và lập trình viên nói riêng thì ngồi lâu là việc khó tránh khỏi. Tuy nhiên, đây không phải là một thói quen tốt. Vì vậy, bài viết này tôi sẽ nói về tác hại của ngồi lâu và giải pháp cho lập trình viên chúng ta."
 slug: tac-hai-cua-ngoi-lau-va-giai-phap-cho-lap-trinh-vien
 title: "Tác hại của ngồi lâu và giải pháp cho lập trình viên"
+series: "Cuộc sống IT: Cuộc sống dân IT"
 ---
 
 Đối với dân văn phòng nói chung và lập trình viên nói riêng thì ngồi lâu là việc khó tránh khỏi. Tuy nhiên, đây không phải là một thói quen tốt. Vì vậy, bài viết này mình sẽ nói về tác hại của ngồi lâu và giải pháp cho lập trình viên chúng ta.

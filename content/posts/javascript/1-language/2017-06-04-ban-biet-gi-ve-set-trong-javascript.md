@@ -8,6 +8,7 @@ keywords: "set trong javascript"
 description: "Set trong Javascript là một loại object cho phép bạn lưu trữ dữ liệu một cách duy nhất, không trùng lặp. Vậy mình có thể làm được gì với Set."
 slug: ban-biet-gi-ve-set-trong-javascript
 title: "Bạn biết gì về Set trong JavaScript?"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
 ---

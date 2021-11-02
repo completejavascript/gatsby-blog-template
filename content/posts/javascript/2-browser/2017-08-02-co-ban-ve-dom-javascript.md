@@ -8,6 +8,7 @@ keywords: "DOM"
 description: "Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là DOM. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời."
 slug: co-ban-ve-dom-javascript
 title: "Cơ bản về DOM JavaScript - DOM là gì?"
+series: "JavaScript: DOM"
 tags:
   - CSS
   - DOM

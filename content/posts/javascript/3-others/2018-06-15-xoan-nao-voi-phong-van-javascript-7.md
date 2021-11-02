@@ -8,6 +8,7 @@ keywords: "Xoắn não với phỏng vấn JavaScript 7"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 7, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay."
 slug: xoan-nao-voi-phong-van-javascript-7
 title: "Xoắn não với phỏng vấn JavaScript 7"
+series: "JavaScript Quiz"
 tags:
   - Map
   - Promise

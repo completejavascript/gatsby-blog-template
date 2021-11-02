@@ -8,6 +8,7 @@ keywords: "html string sang dom"
 description: "Khi lập trình Web nói chung và lập trình JavaScript nói riêng, nhiều khi bạn sẽ cần phải render thêm các thành phần trang web từ JavaScript. Và trong trường hợp thành phần HTML đó được lưu dưới dạng string, bạn có thể sử dụng DOMParser để chuyển HTML String sang DOM Node. Cách làm vô cùng đơn giản như sau."
 slug: html-string-sang-dom-node-voi-domparser
 title: "HTML String sang DOM Node với DOMParser"
+series: "JavaScript: DOM"
 tags:
   - DOM
   - Event

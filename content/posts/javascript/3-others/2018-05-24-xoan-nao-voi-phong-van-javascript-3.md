@@ -8,6 +8,7 @@ keywords: "xoắn não với phỏng vấn javascript 3"
 description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 3, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!"
 slug: xoan-nao-voi-phong-van-javascript-3
 title: "Xoắn não với phỏng vấn JavaScript 3"
+series: "JavaScript Quiz"
 tags:
   - IIFE
   - Strict Mode

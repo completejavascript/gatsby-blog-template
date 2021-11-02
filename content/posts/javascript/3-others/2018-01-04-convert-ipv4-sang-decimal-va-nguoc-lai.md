@@ -8,6 +8,7 @@ keywords: "convert IPv4 sang Decimal"
 description: "Bài viết đầu tiên, mình sẽ trình bày về cách convert IPv4 sang Decimal và sau đó là convert ngược lại từ Decimal sang IPv4."
 slug: convert-ipv4-sang-decimal-va-nguoc-lai
 title: "Convert IPv4 sang Decimal và ngược lại"
+series: "JavaScript: Thủ thuật JavaScript"
 tags:
   - ES6
   - Snippets

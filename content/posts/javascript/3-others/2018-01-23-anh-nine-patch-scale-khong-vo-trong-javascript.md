@@ -8,6 +8,7 @@ keywords: "ảnh nine-patch"
 description: "Có một loại ảnh cho phép kéo dãn mà không vỡ ảnh, chính là ảnh nine-patch (hay 9patch). Vậy ảnh nine-patch là gì? Cách sử dụng ảnh nine-patch trong JavaScript như thế nào? Bài viết này sẽ giúp bạn tìm hiểu về xử lý ảnh nine-patch trong JavaScript."
 slug: anh-nine-patch-scale-khong-vo-trong-javascript
 title: "Ảnh nine-patch - Scale không vỡ trong JavaScript"
+series: "JavaScript: Bài toán thực tế"
 tags:
   - Canvas
   - DOM

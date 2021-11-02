@@ -8,6 +8,7 @@ keywords: "giao tiếp với clipboard sử dụng execCommand"
 description: "Ngoài thư viện clipboard.js ra, bạn cũng vẫn có thể trực tiếp giao tiếp với clipboard sử dụng execCommand một cách đơn giản."
 slug: giao-tiep-voi-clipboard-su-dung-execcommand
 title: "Giao tiếp với clipboard sử dụng execCommand"
+series: "JavaScript: DOM"
 tags:
   - Clipboard
 ---

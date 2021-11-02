@@ -8,6 +8,7 @@ keywords: "Array sorting"
 description: "Array sorting (sắp xếp mảng) là một bài toán vô cùng quen thuộc. Bài viết này sẽ tìm hiểu về một số cách để thực hiện sắp xếp mảng trong trong JavaScript"
 slug: array-sorting-van-de-muon-thuo
 title: "Array Sorting - vấn đề muôn thuở"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Array
   - Thuật toán

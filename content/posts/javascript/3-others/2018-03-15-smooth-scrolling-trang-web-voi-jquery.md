@@ -8,6 +8,7 @@ keywords: "smooth scrolling trang web"
 description: "Đối với các trang web dạng Landing Page, việc di chuyển giữa các mục trên trang là chắc chắn phải có. Tuy nhiên làm sao để hoạt động này diễn ra mượt và tự nhiên nhất. Bài viết này sẽ hướng dẫn bạn một cách đơn giản mà hiệu quả để có thể smooth scrolling trang web với jQuery."
 slug: smooth-scrolling-trang-web-voi-jquery
 title: "Smooth Scrolling trang web với jQuery"
+series: "JavaScript: Tutorials"
 tags:
   - Event
   - HTML

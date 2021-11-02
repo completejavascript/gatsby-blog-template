@@ -8,6 +8,7 @@ keywords: "draggable element"
 description: "Xin chào bạn đến với Học React qua ví dụ #8. Bài này mình sẽ thực hành React thông qua việc tạo Draggable Element. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-8-draggable-element
 title: "Học React qua ví dụ #8: Draggable Element"
+series: "Học React qua ví dụ"
 tags:
   - Create-react-app
   - React Component

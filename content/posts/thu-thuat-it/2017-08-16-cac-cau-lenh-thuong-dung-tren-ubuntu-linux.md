@@ -8,6 +8,7 @@ keywords: "câu lệnh"
 description: "Ubuntu cung cấp rất nhiều các câu lệnh sử dụng trên Terminal giúp lập trình viên làm việc nhanh chóng, đơn giản và hiệu quả."
 slug: cac-cau-lenh-thuong-dung-tren-ubuntu-linux
 title: "Các câu lệnh thường dùng trên Ubuntu - Linux"
+series: "Thủ thuật IT: Thủ thuật máy tính"
 tags:
   - Command Line
   - Ubuntu

@@ -8,6 +8,7 @@ keywords: "triển khai stack trong javascript"
 description: "Theo bạn, triển khai Stack trong JavaScript với Array, Object hay Map sẽ cho kết quả tối ưu nhất. Bài viết này mình sẽ so sánh hiệu năng của 3 cách."
 slug: trien-khai-stack-trong-javascript-voi-array-object-hay-map
 title: "Triển khai Stack trong JavaScript với Array, Object hay Map"
+series: "JavaScript: Bài toán thực tế"
 tags:
   - ES6
   - Map

@@ -8,6 +8,7 @@ keywords: "build a tribute page"
 description: "Gần đây mình đã tìm và thấy một trang web rất hay, là freecodecamp.org. Mình đang thực hành và sẽ chia sẻ lại với bạn. Bài viết này nói về project đầu tiên Build a tribute page thuộc chuyên mục Basic Front End."
 slug: lap-trinh-javascript-voi-fcc-build-a-tribute-page
 title: "Lập trình JavaScript với FCC - Build a Tribute Page"
+series: "Lập trình JavaScript với FCC"
 tags:
   - Event
   - jQuery

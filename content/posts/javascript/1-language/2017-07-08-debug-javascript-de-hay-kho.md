@@ -8,6 +8,7 @@ keywords: "debug javascript"
 description: "Với mọi ngôn ngữ lập trình, debug là một hoạt động khó và mất nhiều thời gian nhất. Trong đó, debug JavaScript là khó khăn hơn cả. Tại sao vậy?"
 slug: debug-javascript-de-hay-kho
 title: "Debug JavaScript - dễ hay khó?"
+series: "JavaScript: Kiểm thử và đảm bảo chất lượng code"
 tags:
   - Debug
   - Strict Mode

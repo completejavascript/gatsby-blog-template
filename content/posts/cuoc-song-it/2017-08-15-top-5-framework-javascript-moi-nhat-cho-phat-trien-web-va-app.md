@@ -8,6 +8,7 @@ keywords: "framework javascript"
 description: "Bài viết được dịch từ website Technotification của tác giả Vicky Singh Rao về top 5 Framework JavaScript mới nhất cho phát triển web và app."
 slug: top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app
 title: "Top 5 Framework JavaScript mới nhất cho phát triển web và app"
+series: "Cuộc sống IT: Kinh nghiệm học lập trình"
 tags:
   - Dịch blog
 ---

@@ -8,6 +8,7 @@ keywords: "cài đặt mongodb trên windows"
 description: "Bài viết này mình sẽ không đi vào giải thích chi tiết về MongoDB. Mà chỉ đơn giản là sẽ chia sẻ cách cài đặt MongoDB trên Windows mới nhất năm 2018."
 slug: cai-dat-mongodb-tren-windows-moi-nhat
 title: "Cài đặt MongoDB trên Windows mới nhất"
+series: "Thủ thuật IT: Thủ thuật lập trình"
 tags:
   - Command Line
 ---

@@ -8,6 +8,7 @@ keywords: "học lập trình"
 description: "Bài viết sau lấy ý tưởng từ simpleprogrammer.com, bởi tác giả John Sonmez về cách học lập trình mà không có tutorials. Bạn có thể xem bản gốc tại đây."
 slug: hoc-lap-trinh-ma-khong-co-tutorials
 title: "Cách học lập trình mà không có tutorials hay tài liệu"
+series: "Cuộc sống IT: Kinh nghiệm học lập trình"
 tags:
   - Dịch blog
 ---

@@ -8,6 +8,7 @@ keywords: "Sử dụng ES6 Template String"
 description: "Đúng như tiêu đề, bài viết này mình sẽ đi tìm lời giải đáp cho câu hỏi: sử dụng ES6 Template String có gì hay hơn so với các phương pháp truyền thống."
 slug: su-dung-es6-template-string-co-gi-hay
 title: "Sử dụng ES6 Template String có gì hay?"
+series: "JavaScript: JavaScript cơ bản"
 tags:
   - ES6
   - Event

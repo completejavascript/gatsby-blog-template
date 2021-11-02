@@ -8,6 +8,7 @@ keywords: "modal image"
 description: "Xin chào bạn đến với Học React qua ví dụ #3. Bài viết này mình sẽ thực hành React thông qua cách tạo Modal Image. Mời bạn theo dõi bài viết!"
 slug: hoc-react-qua-vi-du-3-modal-image
 title: "Học React qua ví dụ #3: Modal Image"
+series: "Học React qua ví dụ"
 tags:
   - Create-react-app
   - React Component
