@@ -244,6 +244,7 @@ const config = {
     { label: "Cuộc sống IT", url: "/cuoc-song-it" },
     { label: "Freebie", url: "/freebie" },
     { label: "Blog", url: "/blog" },
+    { label: "Tags", url: "/tags" },
   ],
   footerLinks: [
     { label: "Trang chủ", url: "/" },
