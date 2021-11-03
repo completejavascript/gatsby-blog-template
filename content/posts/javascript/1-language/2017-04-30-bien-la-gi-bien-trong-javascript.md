@@ -35,7 +35,7 @@ Ví dụ câu lệnh sau khai báo một biến số có tên là "language":
 let language;
 ```
 
-Bây giờ, bạn có thể gán giá trị cho biến "language" sử dụng toán tử `=`:
+Bây giờ, bạn có thể gán giá trị cho biến "language" sử dụng toán tử gán (`=`):
 
 ```js{3}
 let language;
@@ -61,21 +61,13 @@ let language = "JavaScript";
 console.log(language); // JavaScript
 ```
 
-Bạn cũng có thể khai báo nhiều biến trên cùng một dòng bằng cách dùng dấu phẩy `,` để ngăn cách:
+Để khai báo nhiều biến, bạn có thể dùng dấu phẩy (`,`) để ngăn cách các biến trên cùng một dòng:
 
 ```
 let language = "JavaScript", message = "Hello", date = "Monday";
 ```
 
-Như vậy, trông có vẻ ngắn gọn. Nhưng mình thấy khai báo mỗi biến trên một dòng sẽ dễ nhìn hơn:
-
-```js
-let language = "JavaScript";
-let message = "Hello";
-let date = "Monday";
-```
-
-Ngoài ra, nhiều bạn có thể khai báo biến kiểu như sau:
+Ngoài ra, bạn cũng có thể viết như sau:
 
 ```js
 let language = "JavaScript",
@@ -91,7 +83,15 @@ let language = "JavaScript"
     , date = "Monday";
 ```
 
-Về cơ bản thì chúng đều giống nhau, tùy thuộc thói quen và sở thích của bạn mà lựa chọn cho phù hợp.
+Tuy nhiên, mình thấy khai báo mỗi biến trên một dòng là dễ nhìn hơn cả:
+
+```js
+let language = "JavaScript";
+let message = "Hello";
+let date = "Monday";
+```
+
+Về cơ bản thì các cách trên đều giống nhau, tùy thuộc thói quen và sở thích của bạn mà lựa chọn cho phù hợp.
 
 ## Cách thay đổi giá trị của biến số
 
@@ -127,7 +127,7 @@ console.log(language1); // JavaScript
 
 ## Quy tắc đặt tên biến trong JavaScript
 
-Quy tắc đặt tên trong JavaScript như sau:
+Quy tắc đặt tên biến trong JavaScript như sau:
 
 - Bắt đầu bằng chữ cái, dấu gạch dưới (`_`) hoặc kí tự "đô la" (`$`).
 - Sau kí tự đầu tiên, ngoài những kí tự trên, bạn có thể sử dụng thêm số (0-9).
@@ -141,9 +141,9 @@ Quy tắc đặt tên trong JavaScript như sau:
 >
 > _break case catch class const continue debugger default delete do else enum export extends false finally for function if implements import in instanceof interface let new null package private protected public return static super switch this throw true try typeof var void while with yield_
 >
-> Mỗi từ khoá mang một ý nghĩa khác nhau. Và mình sẽ giới thiệu chúng trong những bài viết sau.
+> Mỗi từ khoá và từ dự trữ mang một ý nghĩa khác nhau. Và mình sẽ giới thiệu chúng trong những bài viết sau.
 
-Ví dụ những tên hợp lệ:
+Ví dụ những tên biến hợp lệ:
 
 ```js
 let temp = 100;
@@ -153,12 +153,12 @@ let I_AM_HUNGRY = true;
 let dientichao = 999;
 ```
 
-Ví dụ những tên không hợp lệ:
+Ví dụ những tên biến không hợp lệ:
 
 ```js
 let point% = 50;       // sử dụng kí tự đặc biệt %
 let 2you = 'passtion'; // bắt đầu bằng số
-let null = 'oh no';    // sử dụng từ khoá
+let null = 'oh no';    // sử dụng từ khoá "null"
 ```
 
 > 📝 Một số **chú ý** khi đặt tên biến:
