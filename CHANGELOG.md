@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/completejavascript/completejavascript.com/compare/v1.9.0...v1.10.0) (2021-11-03)
+
+
+### Features
+
+* add link to tags page in footer ([68c4ef1](https://github.com/completejavascript/completejavascript.com/commit/68c4ef1c1490bbbf389d8d0d22c57092744fe4bc))
+* add list of posts in the same series to sidebar ([4cde7b6](https://github.com/completejavascript/completejavascript.com/commit/4cde7b6c6f679f367c5a2eb2e8dc34a5112ca7bb))
+* create  tags-template ([aac3407](https://github.com/completejavascript/completejavascript.com/commit/aac340785c89b649dcdc433e2ac94ae154058fe4))
+* not display duplicate post item in latest post sidebar ([7220559](https://github.com/completejavascript/completejavascript.com/commit/7220559c40c051420028898bea636f5fa8239a92))
+
+
+### Bug Fixes
+
+* **post:** add post bien-la-gi ([858b3b0](https://github.com/completejavascript/completejavascript.com/commit/858b3b0049cad2647758ef1758156791770d44ae))
+* **post:** add post hang-la-gi ([dd29da7](https://github.com/completejavascript/completejavascript.com/commit/dd29da7372a18de5517c531c03522785cb6d828c))
+* **post:** remove duplicate content ([51e6b00](https://github.com/completejavascript/completejavascript.com/commit/51e6b00609d28187a18d23d7a4134d8045b4f838))
+* **post:** rename file use-strict-trong-js ([8c59a34](https://github.com/completejavascript/completejavascript.com/commit/8c59a34a4af1666bf6885c394538f696ee757d5d))
+* **post:** update post bien-la-gi ([1ea8b42](https://github.com/completejavascript/completejavascript.com/commit/1ea8b429c9b408d833dac1dfdacab73821ba1fb4))
+
 ## [1.9.0](https://github.com/completejavascript/completejavascript.com/compare/v1.8.0...v1.9.0) (2021-10-31)
 
 
