@@ -8,6 +8,7 @@ keywords: "so sánh map với object"
 description: "Map là một kiểu dữ liệu vừa giống vừa khác Object. Vì vậy, bài viết này sẽ tập trung vào so sánh Map với Object trong JavaScript để làm rõ vấn đề trên."
 slug: so-sanh-map-voi-object-trong-javascript
 title: "So sánh Map với Object trong JavaScript"
+shortTitle: "So sánh Map với Object trong JS"
 series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6

@@ -18,11 +18,11 @@ const WidgetLatesPosts = ({ postSlug, postEdges, title }) => {
                 to={post.slug}
                 className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half"
               >
-                <span>{post.title}</span>
+                <span>{post.shortTitle || post.title}</span>
               </AutoLink>
             ) : (
               <span className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half text-description">
-                {post.title}
+                {post.shortTitle || post.title}
               </span>
             )}
           </React.Fragment>

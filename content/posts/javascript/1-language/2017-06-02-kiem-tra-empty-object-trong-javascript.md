@@ -4,6 +4,7 @@ update: "2019-10-16T06:00:00Z"
 template: "post"
 directory: "JavaScript"
 title: "Cách kiểm tra empty object trong JavaScript"
+shortTitle: "Kiểm tra empty object trong JS"
 slug: kiem-tra-empty-object-trong-javascript
 keywords: "kiểm tra empty object"
 description: "Bạn đã biết cách kiểm tra empty object trong JavaScript hay chưa? Bài viết này sẽ giới thiệu với bạn cách đơn giản để kiểm tra empty object."

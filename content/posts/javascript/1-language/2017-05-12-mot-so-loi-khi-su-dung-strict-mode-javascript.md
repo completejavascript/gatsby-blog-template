@@ -8,6 +8,7 @@ keywords: "strict mode"
 description: "Strict mode giúp giảm thiểu những lỗi ngớ ngẩn của lập trình viên khi lập trình JavaScript. Bài viết này tôi sẽ đưa ra một số lỗi khi sử dụng strict mode."
 slug: mot-so-loi-khi-su-dung-strict-mode-javascript
 title: "Một số lỗi khi sử dụng Strict mode JavaScript"
+shortTitle: "Một số lỗi với Strict mode JavaScript"
 series: "JavaScript: JavaScript cơ bản"
 tags:
   - Debug

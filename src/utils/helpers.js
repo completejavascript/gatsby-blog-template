@@ -26,6 +26,7 @@ export const getPostList = (postEdges) =>
     tags: postEdge.node.frontmatter.tags,
     cover: postEdge.node.frontmatter.cover,
     title: postEdge.node.frontmatter.title,
+    shortTitle: postEdge.node.frontmatter.shortTitle,
     update: postEdge.node.frontmatter.update,
     date: postEdge.node.fields.date,
     slug: postEdge.node.fields.slug,

@@ -8,6 +8,7 @@ keywords: "hằng là gì"
 description: "Hằng cũng là thành phần không thể thiếu trong lập trình. Sau đây, mình sẽ tìm hiểu xem hằng là gì, cách khai báo hằng trong JavaScript và quy tắc đặt tên hằng."
 slug: hang-la-gi-hang-trong-javascript
 title: "Hằng là gì? Cơ bản về hằng trong JavaScript"
+shortTitle: "Hằng là gì? Hằng trong JavaScript"
 series: "JavaScript: JavaScript cơ bản"
 ---
 

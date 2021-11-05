@@ -8,6 +8,7 @@ keywords: "biến là gì"
 description: "Biến là một thành phần không thể thiếu trong lập trình. Bài viết này mình sẽ tìm hiểu xem biến là gì, cách khai báo biến trong JavaScript và quy tắc đặt tên biến."
 slug: bien-la-gi-bien-trong-javascript
 title: "Biến là gì? Cơ bản về biến trong JavaScript"
+shortTitle: "Biến là gì? Biến trong JavaScript"
 series: "JavaScript: JavaScript cơ bản"
 ---
 

@@ -128,6 +128,7 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
+            shortTitle
             tags
             cover {
               childImageSharp {
@@ -155,6 +156,7 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
+            shortTitle
             tags
             cover {
               childImageSharp {

@@ -8,6 +8,7 @@ keywords: "thi toeic"
 description: "Nếu bạn là một lập trình viên, mong muốn làm việc tại Việt Nam thì việc thi TOEIC và có một tấm bằng TOEIC điểm tương đối là rất thuận lợi."
 slug: tim-hieu-thi-toeic-quoc-te-va-chuan-bi-thi-toeic-tai-iig-2017-2018
 title: "Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 - 2018"
+shortTitle: "Thi TOEIC quốc tế tại IIG"
 series: "Cuộc sống IT: Cuộc sống dân IT"
 ---
 

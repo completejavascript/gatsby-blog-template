@@ -74,6 +74,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 directory
                 template
                 title
+                shortTitle
                 tags
                 date
                 update
@@ -106,6 +107,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 directory
                 template
                 title
+                shortTitle
                 tags
                 date
                 update
@@ -134,6 +136,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 directory
                 template
                 title
+                shortTitle
                 tags
                 date
                 update

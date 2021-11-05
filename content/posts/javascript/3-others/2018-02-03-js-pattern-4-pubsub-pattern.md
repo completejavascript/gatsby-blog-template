@@ -8,6 +8,7 @@ keywords: "pubsub pattern"
 description: "JavaScript PubSub Pattern, hay Publish / Subscribe Pattern, hay Events Pattern, là một loại JavaScript Design Pattern rất hữu dụng và khá phổ biến, được sử dụng trong rất nhiều thư viện JavaScript. Sau đây là một cách triển khai Pubsub Pattern cực kỳ ngắn gọn và dễ hiểu."
 slug: js-pattern-4-pubsub-pattern
 title: "JS Pattern #4 - PubSub Pattern"
+shortTitle: "JS Pattern - PubSub Pattern"
 series: "JavaScript: Design Pattern"
 tags:
   - Event
