@@ -172,7 +172,7 @@ Phần này bao gồm những thủ thuật, tips & tricks, design pattern, nh�
 
 - [Mustache Template với jQuery](/mustache-template-voi-jquery)
 - [Smooth Scrolling với jQuery](/smooth-scrolling-trang-web-voi-jquery)
-- [Triển khai Lazy Loading Image với ES6 và CSS](/trien-khai-lazy-loading-image-voi-es6-va-css)
+- [Lazy Loading Image với ES6 và CSS](/trien-khai-lazy-loading-image-voi-es6-va-css)
 - [Menu Responsive](/thiet-ke-website-responsive-voi-css-menu)
 - [Lấy vị trí với Geolocation API và ipinfo.io](/hai-cach-lay-vi-tri-nguoi-dung)
 - [Gửi email bằng HTML và Formspree.io](/gui-mail-bang-html-va-formspree-io)

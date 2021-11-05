@@ -8,6 +8,7 @@ keywords: "vị trí người dùng"
 description: "Trong nhiều trường hợp, việc xác định vị trí (kinh độ, vĩ độ) là vô cùng cần thiết, ví dụ như: chỉ đường, hiển thị thông tin thời tiết,... Bài viết này mình sẽ hướng dẫn các bạn hai cách lấy vị trí người dùng vô cùng đơn giản. Đó là sử dụng Geolocation API và ipinfo.io API."
 slug: hai-cach-lay-vi-tri-nguoi-dung
 title: "Hai cách lấy vị trí người dùng với JavaScript"
+shortTitle: "Hai cách lấy vị trí người dùng với JS"
 series: "JavaScript: Tutorials"
 tags:
   - AJAX
