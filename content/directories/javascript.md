@@ -29,7 +29,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Use strict trong JS](/use-strict-trong-js)
 - [Biến là gì?](/bien-la-gi-bien-trong-javascript)
 - [Hằng là gì?](/hang-la-gi-hang-trong-javascript)
-- [Giá trị, kiểu dữ liệu (number)](/values-types-va-operators-trong-javascript-phan-1)
+- [Các kiểu dữ liệu trong JavaScript](/kieu-du-lieu-trong-javascript)
 - [Kiểu dữ liệu (string, boolean) và các toán tử](/values-types-va-operators-trong-javascript-phan-2)
 - [Biểu thức, điều kiện rẽ nhánh, vòng lặp](/cau-truc-chuong-trinh-trong-javascript)
 - [Cơ bản về hàm - functions](/tim-hieu-function-javascript)

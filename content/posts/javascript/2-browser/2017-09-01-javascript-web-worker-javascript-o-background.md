@@ -113,7 +113,7 @@ function startWorker() {
 }
 ```
 
-Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number](/values-types-va-operators-trong-javascript-phan-1), [String, Boolean](/values-types-va-operators-trong-javascript-phan-2), [Array](/javascript-array-co-ban).
+Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number](/kieu-du-lieu-trong-javascript), [String, Boolean](/values-types-va-operators-trong-javascript-phan-2), [Array](/javascript-array-co-ban).
 
 Và ở Worker Thread, hàm **onmessage** sẽ được gọi:
 

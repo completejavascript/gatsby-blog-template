@@ -130,7 +130,7 @@ Hàm số này sẽ duyệt mảng ứng với **eventName** và kiểm tra tấ
 Hàm **emit** có 2 tham số:
 
 - **eventName**: tên sự kiện
-- **data**: dữ liệu truyền cho các hàm đã đăng ký sự kiện, trong đó, data có thể là tất cả các kiểu dữ liệu: [number](/values-types-va-operators-trong-javascript-phan-1), array, string hay object,...
+- **data**: dữ liệu truyền cho các hàm đã đăng ký sự kiện, trong đó, data có thể là tất cả các kiểu dữ liệu: [number](/kieu-du-lieu-trong-javascript), array, string hay object,...
 
 Ví dụ:
 

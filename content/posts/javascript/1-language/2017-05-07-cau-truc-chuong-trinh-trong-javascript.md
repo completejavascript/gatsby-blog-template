@@ -11,7 +11,7 @@ title: "Cấu trúc chương trình trong JavaScript"
 series: "JavaScript: JavaScript cơ bản"
 ---
 
-Trong các bài viết trước, mình đã giới thiệu với bạn những thành phần cơ bản của JavaScript ([values](/values-types-va-operators-trong-javascript-phan-1), [types và operators](/values-types-va-operators-trong-javascript-phan-2)). Nhưng đây mới chỉ là những nguyên liệu thô. Vậy làm thế nào để kết hợp những thành phần này thành một chương trình hoàn chỉnh. Để giải quyết vấn đề này, chúng ta sẽ cùng tìm hiểu về cấu trúc chương trình trong JavaScript.
+Trong các bài viết trước, mình đã giới thiệu với bạn những thành phần cơ bản của JavaScript ([values](/kieu-du-lieu-trong-javascript), [types và operators](/values-types-va-operators-trong-javascript-phan-2)). Nhưng đây mới chỉ là những nguyên liệu thô. Vậy làm thế nào để kết hợp những thành phần này thành một chương trình hoàn chỉnh. Để giải quyết vấn đề này, chúng ta sẽ cùng tìm hiểu về cấu trúc chương trình trong JavaScript.
 
 ## Biểu thức (expressions)
 

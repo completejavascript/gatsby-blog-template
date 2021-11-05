@@ -18,7 +18,7 @@ Bài viết trước mình đã chia sẻ với bạn các bài toán thuộc ch
 
 Cũng như bài viết trước, mình chia sẻ với bạn các link bài viết hữu ích nên đọc trước khi đi vào lời giải các bài toán:
 
-- [Values, types và operators trong JavaScript – Phần 1](/values-types-va-operators-trong-javascript-phan-1)
+- [Values, types và operators trong JavaScript – Phần 1](/kieu-du-lieu-trong-javascript)
 - [Values, types và operators trong JavaScript – Phần 2](/values-types-va-operators-trong-javascript-phan-2)
 - [JavaScript Array cơ bản,](/javascript-array-co-ban)
 - [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi)

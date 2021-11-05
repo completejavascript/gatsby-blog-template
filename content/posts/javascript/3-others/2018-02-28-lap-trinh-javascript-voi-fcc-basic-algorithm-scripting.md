@@ -24,7 +24,7 @@ Tuy nhiên, những bài toán này khá đơn giản nên mình sẽ không gi�
 
 Trước khi đi vào tìm hiểu các bài toán, các bạn có thể đọc trước các bài viết sau. Chúng khá hữu ích vì các thuật toán sau đây sẽ sử dụng đến những kiến thức trong đó.
 
-- [Values, types và operators trong JavaScript – Phần 1](/values-types-va-operators-trong-javascript-phan-1)
+- [Values, types và operators trong JavaScript – Phần 1](/kieu-du-lieu-trong-javascript)
 - [Values, types và operators trong JavaScript – Phần 2](/values-types-va-operators-trong-javascript-phan-2)
 - [JavaScript Array cơ bản,](/javascript-array-co-ban)
 - [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo)

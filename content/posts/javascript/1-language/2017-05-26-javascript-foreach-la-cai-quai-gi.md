@@ -17,7 +17,7 @@ Trong JavaScript, để duyệt [array](/javascript-array-co-ban) thì **forEach
 
 ## Đặt vấn đề
 
-Cho một mảng [numbers](/values-types-va-operators-trong-javascript-phan-1) = [1, 2, 3, 4, 5, 6,7, 8, 9, 10]. Hãy tính tổng các số trong mảng và hiển thị ra console.
+Cho một mảng [numbers](/kieu-du-lieu-trong-javascript) = [1, 2, 3, 4, 5, 6,7, 8, 9, 10]. Hãy tính tổng các số trong mảng và hiển thị ra console.
 
 Thông thường, chúng ta sẽ giải bài toán này như sau:
 

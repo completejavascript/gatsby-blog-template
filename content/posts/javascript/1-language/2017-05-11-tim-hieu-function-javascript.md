@@ -15,7 +15,7 @@ Function JavaScript (hàm trong JavaScript) là một thành phần không thể
 
 Ngoài ra, khi đã xây dựng được một hàm tốt (độc lập và thực hiện một chức năng nhất định), bạn có thể tái sử dụng nó trong các project khác nhau. Điều này làm nâng cao hiệu suất công việc của bạn.
 
-Bài viết này, mình sẽ giới thiệu những [thành phần cơ bản](/values-types-va-operators-trong-javascript-phan-1) của hàm trong JavaScript. Qua đó, bạn sẽ biết cách xây dựng hàm và ứng dụng vào các project của mình.
+Bài viết này, mình sẽ giới thiệu những [thành phần cơ bản](/kieu-du-lieu-trong-javascript) của hàm trong JavaScript. Qua đó, bạn sẽ biết cách xây dựng hàm và ứng dụng vào các project của mình.
 
 ## Định nghĩa function JavaScript
 

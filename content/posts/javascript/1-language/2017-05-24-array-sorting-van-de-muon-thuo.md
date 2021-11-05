@@ -56,7 +56,7 @@ Hàm _compareFunction_ dùng để xác định thứ tự sắp xếp mảng. N
 
 ## Array sorting với numbers
 
-JavaScript hỗ trợ sắp xếp nhiều kiểu dữ liệu. Tuy nhiên, phổ biến nhất vẫn là [numbers](/values-types-va-operators-trong-javascript-phan-1). Và như mình đã nói ở trên, mặc định hàm _sort_ sẽ so sánh theo kiểu string. Do đó, kết quả sẽ như thế này:
+JavaScript hỗ trợ sắp xếp nhiều kiểu dữ liệu. Tuy nhiên, phổ biến nhất vẫn là [numbers](/kieu-du-lieu-trong-javascript). Và như mình đã nói ở trên, mặc định hàm _sort_ sẽ so sánh theo kiểu string. Do đó, kết quả sẽ như thế này:
 
 ```js
 var a = [9, 100, 45, 33];

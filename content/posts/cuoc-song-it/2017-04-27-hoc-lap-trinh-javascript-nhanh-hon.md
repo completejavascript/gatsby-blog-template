@@ -24,7 +24,7 @@ May mắn là, những thử thách này có thể được nhận ra và cuối
 
 ## Đừng để những quyết định tương lai làm bạn dừng bước từ những tiến bộ hôm nay
 
-Với nhiều người học lập trình Javascript, một trong những câu hỏi đầu tiên họ hỏi đó là: nên sử dụng Framework nào (và công bằng mà nói thì có rất nhiều). Nhưng nếu như bạn chưa thành thạo với [Javascript nguyên thuỷ](/values-types-va-operators-trong-javascript-phan-1), đó sẽ là một câu hỏi sai. Bạn sẽ dành tất cả thời gian của mình để tìm kiếm những Framework khác nhau. Và thực sự, bạn không hề tiến bộ.
+Với nhiều người học lập trình Javascript, một trong những câu hỏi đầu tiên họ hỏi đó là: nên sử dụng Framework nào (và công bằng mà nói thì có rất nhiều). Nhưng nếu như bạn chưa thành thạo với [Javascript nguyên thuỷ](/kieu-du-lieu-trong-javascript), đó sẽ là một câu hỏi sai. Bạn sẽ dành tất cả thời gian của mình để tìm kiếm những Framework khác nhau. Và thực sự, bạn không hề tiến bộ.
 
 Một cách để giúp bạn thoát khỏi cái bẫy của sự do dự, đó là việc có một bản đồ về những gì bạn cần phải học. Ví dụ, để trở thành một lập trình viên front-end, tấm bản đồ của bạn có thể như sau:
 
