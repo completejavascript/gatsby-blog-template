@@ -30,6 +30,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Biến là gì? Biến trong JS](/bien-la-gi-bien-trong-javascript)
 - [Hằng là gì? Hằng trong JS](/hang-la-gi-hang-trong-javascript)
 - [Các kiểu dữ liệu trong JavaScript](/kieu-du-lieu-trong-javascript)
+- [Toán tử là gì? Toán tử trong JS](/toan-tu-la-gi-toan-tu-trong-javascript)
 - [Kiểu dữ liệu (string, boolean) và các toán tử](/values-types-va-operators-trong-javascript-phan-2)
 - [Biểu thức, điều kiện rẽ nhánh, vòng lặp](/cau-truc-chuong-trinh-trong-javascript)
 - [Cơ bản về hàm trong JavaScript](/tim-hieu-function-javascript)
