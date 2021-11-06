@@ -41,7 +41,7 @@ Trước khi Map xuất hiện, người ta vẫn thường sử dụng Object c
 
 #### Kiểu dữ liệu của key
 
-Object chỉ cho phép lưu trữ **key** kiểu [String](/values-types-va-operators-trong-javascript-phan-2) hoặc [Symbol](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
+Object chỉ cho phép lưu trữ **key** kiểu [String](/kieu-du-lieu-trong-javascript) hoặc [Symbol](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
 
 ```js
 const symbol1 = Symbol(1);

@@ -13,7 +13,7 @@ tags:
   - Array
 ---
 
-Trong những bài viết trước, mình đã giới thiệu với bạn về những kiểu dữ liệu cơ bản là: [numbers](/kieu-du-lieu-trong-javascript), [strings](/values-types-va-operators-trong-javascript-phan-2), boolean. Hôm nay, mình sẽ nói về kiểu dữ liệu nâng cao hơn. Đó là _array_ hay là _mảng_ trong JavaScript. JavaScript array giúp bạn có thể biểu diễn được những dữ liệu phức tạp và dễ dàng hơn trong việc quản lý cũng như xử lý dữ liệu.
+Trong những bài viết trước, mình đã giới thiệu với bạn về những kiểu dữ liệu cơ bản là: [numbers, string, boolean](/kieu-du-lieu-trong-javascript). Hôm nay, mình sẽ nói về kiểu dữ liệu nâng cao hơn. Đó là _array_ hay là _mảng_ trong JavaScript. JavaScript array giúp bạn có thể biểu diễn được những dữ liệu phức tạp và dễ dàng hơn trong việc quản lý cũng như xử lý dữ liệu.
 
 ## Vậy array là gì?
 

@@ -115,7 +115,7 @@ class TintColor {
 
 Trong đó:
 
-- **srcImage**: ([string](/values-types-va-operators-trong-javascript-phan-2)) là đường dẫn đến bức ảnh, có thể là đường dẫn tương đối đến một vị trí trên server hoặc đường dẫn tuyệt đối đến một host (cdn) lưu trữ ảnh.
+- **srcImage**: ([string](/kieu-du-lieu-trong-javascript)) là đường dẫn đến bức ảnh, có thể là đường dẫn tương đối đến một vị trí trên server hoặc đường dẫn tuyệt đối đến một host (cdn) lưu trữ ảnh.
 
 - **tintColor**: (string) là mã màu mới dạng HEX hoặc RGB hay RGBA. Ví dụ: *#ff00ff* hoặc _rgb(255, 0, 255)_ hay _rgba(255, 0, 255, 0.5)_.
 

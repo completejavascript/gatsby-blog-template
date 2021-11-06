@@ -118,7 +118,7 @@ var t = max(10, 11); // => Uncaught ReferenceError: max is not defined
 
 ## Functions và values
 
-Như mình đã đề cập trong bài viết trước, _function_ JavaScript là một loại [value](/values-types-va-operators-trong-javascript-phan-2). Hay nói cách khác: tên hàm là biến số và nội dung hàm là giá trị của biến số.
+Như mình đã đề cập trong bài viết trước, _function_ JavaScript là một loại [value](/kieu-du-lieu-trong-javascript). Hay nói cách khác: tên hàm là biến số và nội dung hàm là giá trị của biến số.
 
 Nghĩa là bạn có thể gán giá trị khác cho biến số đó bằng cách:
 

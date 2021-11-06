@@ -329,7 +329,7 @@ Trong đó:
 - tham số g: chỉ ra rằng khuôn mẫu áp dụng Global, nghĩa là nó áp dụng cho tất cả thành phần trùng khớp.
 - tham số i: chỉ ra rằng khuôn mẫu không phân biệt chữ hoa và chữ thường.
 
-Ngoài ra, ở đây mình có sử dụng phương thức _replace_ của [string](/values-types-va-operators-trong-javascript-phan-2) - dùng để thay thế tất cả những thành phần trùng khớp với khuôn mẫu với "_\$1_".
+Ngoài ra, ở đây mình có sử dụng phương thức _replace_ của [string](/kieu-du-lieu-trong-javascript) - dùng để thay thế tất cả những thành phần trùng khớp với khuôn mẫu với "_\$1_".
 
 Ở đây \$1 chính là nội dung của group thứ nhất.
 

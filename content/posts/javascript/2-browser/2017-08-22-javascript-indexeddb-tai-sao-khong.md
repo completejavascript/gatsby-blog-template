@@ -43,7 +43,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 
 - Database là một kho chứa thông tin, bao gồm một hay nhiều object stores.
 - Mỗi database bắt buộc phải có 2 thông số là:
-  - Name (tên): xác định database ứng với mỗi origin. Name có thể là bất kỳ string nào, kể cả [string](/values-types-va-operators-trong-javascript-phan-2) rỗng.
+  - Name (tên): xác định database ứng với mỗi origin. Name có thể là bất kỳ string nào, kể cả [string](/kieu-du-lieu-trong-javascript) rỗng.
   - Current verion (phiên bản hiện tại): Khi database được tạo ra, nếu không chỉ rõ thì giá trị current version sẽ là 1. Và tại mỗi thời điểm, database version sẽ chỉ có một giá trị.
 
 ### Object store

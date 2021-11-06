@@ -47,7 +47,7 @@ Theo mình đây là cách cơ bản mà hầu như lập trình viên nào cũn
 console.log(msg [, subst1, ..., substN]);
 ```
 
-Đối với cách 2, bạn hiển thị [string](/values-types-va-operators-trong-javascript-phan-2) cùng với các tham số truyền vào. Mình chưa biết nói sao cho chuẩn. Tuy nhiên, nó khá giống với việc sử dụng hàm **printf()** trong lập trình C, ví dụ:
+Đối với cách 2, bạn hiển thị [string](/kieu-du-lieu-trong-javascript) cùng với các tham số truyền vào. Mình chưa biết nói sao cho chuẩn. Tuy nhiên, nó khá giống với việc sử dụng hàm **printf()** trong lập trình C, ví dụ:
 
 ```js
 const foo = 1;

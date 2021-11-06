@@ -42,7 +42,7 @@ console.log(doc);
 */
 ```
 
-Trong hàm parseFromString, tham số đầu tiên là nội dung HTML [string](/values-types-va-operators-trong-javascript-phan-2) mà bạn muốn parse; và tham số tiếp theo là kiểu string.
+Trong hàm parseFromString, tham số đầu tiên là nội dung HTML [string](/kieu-du-lieu-trong-javascript) mà bạn muốn parse; và tham số tiếp theo là kiểu string.
 
 Có 3 kiểu string được support là: **application/xml**, **image/svg+xml** và **text/html**. Đối với bài toán này, bạn sẽ chọn kiểu text/html.
 

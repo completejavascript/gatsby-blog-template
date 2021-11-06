@@ -364,9 +364,9 @@ export default class App extends React.Component {
 
 Trong đó, Modal Image Component có các thuộc tính là:
 
-- **src ([String](/values-types-va-operators-trong-javascript-phan-2)):** string biểu diễn đường dẫn ảnh sử dụng.
+- **src ([String](/kieu-du-lieu-trong-javascript)):** string biểu diễn đường dẫn ảnh sử dụng.
 - **alt (String):** string để gán cho thuộc tính [alt](https://www.w3schools.com/tags/att_img_alt.asp) - được hiển thị thay thế cho ảnh, khi ảnh không được tải thành công (vì một lý do nào đó) hoặc không thể hiển thị.
-- **ratio ([String](/values-types-va-operators-trong-javascript-phan-2)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **ratio ([String](/kieu-du-lieu-trong-javascript)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 
 ## Lời kết
 

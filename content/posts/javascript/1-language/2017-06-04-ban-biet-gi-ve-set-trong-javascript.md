@@ -53,7 +53,7 @@ Nói nôm na thì nghĩa là "giá trị" của các phần tử không được
 
 Thuật toán này cũng tương tự như việc sử dụng toán tử "===" để so sánh giá trị giữa chúng. Chỉ khác ở chỗ nó coi **NaN** là giống nhau (mặc dù **_NaN !== NaN_**)
 
-Vì vậy, cái mà mình nói ở trên chỉ đúng với [Number](/kieu-du-lieu-trong-javascript) và [String](/values-types-va-operators-trong-javascript-phan-2). Còn đối với Object thì khác. Bởi 2 object nhìn giống nhau nhưng rõ ràng chúng không bằng nhau:
+Vì vậy, cái mà mình nói ở trên chỉ đúng với [number và string](/kieu-du-lieu-trong-javascript). Còn đối với Object thì khác. Bởi 2 object nhìn giống nhau nhưng rõ ràng chúng không bằng nhau:
 
 ```js
 const obj1 = { x: 1, y: 2 };

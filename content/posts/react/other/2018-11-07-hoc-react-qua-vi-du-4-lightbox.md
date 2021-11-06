@@ -378,7 +378,7 @@ export default class App extends React.Component {
 Trong đó, Lightbox Component có các thuộc tính là:
 
 - **input ([Array](/javascript-array-co-ban)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least)gồm _src_ – đường dẫn ảnh và _caption_ – tiêu đề ảnh.
-- **ratio ([String](/values-types-va-operators-trong-javascript-phan-2)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **ratio ([String](/kieu-du-lieu-trong-javascript)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 
 ## Lời kết
 

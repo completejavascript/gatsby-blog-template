@@ -92,7 +92,7 @@ Sau khi đã có đối tượng req, mình sử dụng phương thức **open**
 
 - Thuộc tính đầu tiên là tên kiểu request: **GET, HEAD, POST, PUT, DELETE,**...
 - Thuộc tính tiếp theo là địa chỉ URL mà mình muốn gửi request đến.
-- Thuộc tính cuối cùng là đối số [kiểu bool](/values-types-va-operators-trong-javascript-phan-2), với giá trị **false** ý nghĩa là request kiểu đồng bộ (đợi cho đến khi nhận được kết quả phản hồi response) và giá trị **true** ý nghĩa là request kiểu bất đồng bộ (không đợi kết quả trả về mà sẽ tiếp tục thực hiện lệnh phía dưới, kết quả trả về sẽ được xử lý trong [hàm](/tim-hieu-function-javascript) callback).
+- Thuộc tính cuối cùng là đối số [kiểu bool](/kieu-du-lieu-trong-javascript), với giá trị **false** ý nghĩa là request kiểu đồng bộ (đợi cho đến khi nhận được kết quả phản hồi response) và giá trị **true** ý nghĩa là request kiểu bất đồng bộ (không đợi kết quả trả về mà sẽ tiếp tục thực hiện lệnh phía dưới, kết quả trả về sẽ được xử lý trong [hàm](/tim-hieu-function-javascript) callback).
 
 Lúc này, request mới được cấu hình. Để gửi request này đến server, mình sẽ sử dụng phương thức **send** với đối số là **body** của request. Trong ví dụ này, mình gửi request kiểu **GET** nên body chỉ cần là **null**.
 

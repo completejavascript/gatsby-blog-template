@@ -57,7 +57,7 @@ console.log(myId1 === myId2); // => false
 
 ### Symbol không tự convert sang string
 
-Hầu hết các kiểu dữ liệu trong JavaScript đều hỗ trợ tự động convert sang [String](/values-types-va-operators-trong-javascript-phan-2), nhưng Symbol thì không. Ví dụ khi bạn sử dụng Symbol với phương thức [alert()](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert):
+Hầu hết các kiểu dữ liệu trong JavaScript đều hỗ trợ tự động convert sang [String](/kieu-du-lieu-trong-javascript), nhưng Symbol thì không. Ví dụ khi bạn sử dụng Symbol với phương thức [alert()](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert):
 
 ```js
 let a = true;

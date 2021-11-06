@@ -21,7 +21,7 @@ Có thể bạn thừa biết, phiên bản ES6 của JavaScript đã giới thi
 
 ## ES6 Template String là gì?
 
-ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong [string](/values-types-va-operators-trong-javascript-phan-2). Trong đó, thay vì sử dụng cặp dấu ngoặc đơn ('') hay ngoặc kép (""), bạn sử dụng cặp dấu **backtick** hay **backqoute**, để biểu diễn string.
+ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong [string](/kieu-du-lieu-trong-javascript). Trong đó, thay vì sử dụng cặp dấu ngoặc đơn ('') hay ngoặc kép (""), bạn sử dụng cặp dấu **backtick** hay **backqoute**, để biểu diễn string.
 
 Xin lỗi vì mình chưa tìm ra cách để hiển thị cặp dấu này ở wordpress, nên dùng tạm cái này:
 

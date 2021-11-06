@@ -154,7 +154,7 @@ function sum(a, a, c) {
 
 ## Thêm thuộc tính cho những giá trị nguyên thuỷ
 
-Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number](/kieu-du-lieu-trong-javascript), [string, boolean.](/values-types-va-operators-trong-javascript-phan-2) Ngược lại, bạn sẽ bị lỗi như:
+Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number, string, boolean](/kieu-du-lieu-trong-javascript). Ngược lại, bạn sẽ bị lỗi như:
 
 - Uncaught TypeError: Cannot create property 'true' on boolean 'false'
 - Uncaught TypeError: Cannot create property 'sailing' on number '14'

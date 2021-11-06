@@ -347,7 +347,7 @@ export default class App extends React.Component {
 
 Trong đó, Collapsible Content Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
-- **title ([String](/values-types-va-operators-trong-javascript-phan-2)):** là title của component
+- **title ([String](/kieu-du-lieu-trong-javascript)):** là title của component
 - **isActive** (**Boolean**): là biến để xác định xem Component có được active hay không. Nếu **isActive** có giá trị **true** thì Component sẽ hiển thị nội dung dạng mở rộng.
 
 ## Lời kết

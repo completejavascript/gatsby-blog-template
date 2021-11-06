@@ -11,7 +11,7 @@ title: "JavaScript Object - last but not least"
 series: "JavaScript: Các kiểu dữ liệu"
 ---
 
-Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number](/kieu-du-lieu-trong-javascript), [string, boolean](/values-types-va-operators-trong-javascript-phan-2) và [array](/javascript-array-co-ban). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object trong Javascript (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](/javascript-la-gi)), nên việc hiểu rõ về JavaScript Object sẽ giúp bạn dễ dàng chinh phục ngôn ngữ lập trình JavaScript.
+Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number, string, boolean](/kieu-du-lieu-trong-javascript) và [array](/javascript-array-co-ban). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object trong Javascript (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](/javascript-la-gi)), nên việc hiểu rõ về JavaScript Object sẽ giúp bạn dễ dàng chinh phục ngôn ngữ lập trình JavaScript.
 
 Để hiểu JavaScript object là gì, mình xin đưa ra một ví dụ. Máy tính của mình có những đặc điểm sau:
 

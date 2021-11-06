@@ -230,7 +230,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Ở đây, mình sử dụng object b, array c và object d làm giá trị key cho object a. Và đối với object trong JavaScript, vì key luôn luôn có [kiểu string](/values-types-va-operators-trong-javascript-phan-2) nên object b, array c và object d sẽ được convert sang kiểu string. Khi đó, sẽ có một số trường hợp đặc biệt sau:
+Ở đây, mình sử dụng object b, array c và object d làm giá trị key cho object a. Và đối với object trong JavaScript, vì key luôn luôn có [kiểu string](/kieu-du-lieu-trong-javascript) nên object b, array c và object d sẽ được convert sang kiểu string. Khi đó, sẽ có một số trường hợp đặc biệt sau:
 
 Với mọi object khi convert sang kiểu string ta đều thu được string có dạng **[object Object]**;
 

@@ -479,7 +479,7 @@ export default class App extends React.Component {
 Trong đó, component Slideshow Gallery có các thuộc tính là:
 
 - **input ([Array](/javascript-array-co-ban)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least) gồm src – đường dẫn ảnh và caption – tiêu đề ảnh.
-- **ratio ([String](/values-types-va-operators-trong-javascript-phan-2)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **ratio ([String](/kieu-du-lieu-trong-javascript)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 - **mode (String):** kiểu chạy, có 2 giá trị là "manual" – thủ công và "automatic" – tự động. Riêng với trường hợp, chạy tự động thì bạn cần truyền thêm giá trị "timeout" – thời gian giữa các ảnh, mặc định là 5000 ms.
 
 ## Lời kết

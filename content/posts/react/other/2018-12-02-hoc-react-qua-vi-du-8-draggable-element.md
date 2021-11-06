@@ -438,7 +438,7 @@ export default class App extends React.Component {
 
 Trong đó, Draggable Element Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
-- **title ([String](/values-types-va-operators-trong-javascript-phan-2)):** là title của component.
+- **title ([String](/kieu-du-lieu-trong-javascript)):** là title của component.
 - **width, height (String hoặc [Number](/kieu-du-lieu-trong-javascript)):** lần lượt là chiều rộng và chiều cao của phần tử.
 - **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
 

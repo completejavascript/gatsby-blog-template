@@ -28,7 +28,7 @@ Nói một cách đầy đủ thì Map trong JavaScript là một cấu trúc d�
 
 Nhưng khác ở chỗ là:
 
-- Object chỉ cho phép sử dụng [String](/values-types-va-operators-trong-javascript-phan-2) hay [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) làm key
+- Object chỉ cho phép sử dụng [String](/kieu-du-lieu-trong-javascript) hay [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) làm key
 - Map cho phép mọi kiểu dữ liệu (String, Number, Boolean, NaN, Object,...) có thể làm key
 
 > **Chú ý:** về cơ bản thì Map cũng là Object, tuy nhiên, để tránh hiểu lầm, từ nay mỗi khi mình dùng từ object thì bạn hiểu đó là object thông thường mà từ trước đến giờ bạn vẫn sử dụng, không phải Map.

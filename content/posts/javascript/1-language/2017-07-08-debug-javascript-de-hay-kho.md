@@ -102,7 +102,7 @@ Việc viết test như trên gọi là viết **unit test**. Tuy nhiên, thực
 
 Một khi đã xác định được chương trình có bug, công việc tiếp theo là tìm ra vị trí gây ra bug và sửa nó.
 
-Ví dụ chương trình sau sẽ chuyển một số _n_, cơ số _base_ thành [string](/values-types-va-operators-trong-javascript-phan-2):
+Ví dụ chương trình sau sẽ chuyển một số _n_, cơ số _base_ thành [string](/kieu-du-lieu-trong-javascript):
 
 ```js
 function numberToString(n, base) {
