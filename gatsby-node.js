@@ -307,7 +307,7 @@ exports.createPages = async ({ graphql, actions }) => {
     path: siteConfig.pathPrefixTags,
     component: tagsPageTemplate,
     context: {
-      tagList,
+      tagList: [...tagList].sort((a, b) => a.localeCompare(b)),
     },
   });
 
