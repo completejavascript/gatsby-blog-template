@@ -10,6 +10,8 @@ slug: toan-tu-la-gi-toan-tu-trong-javascript
 title: "Toán tử là gì? Các toán tử trong JavaScript"
 shortTitle: "Toán tử là gì? Các toán tử trong JS"
 series: "JavaScript: JavaScript cơ bản"
+tags:
+  - Toán tử
 ---
 
 Trong toán học, bạn đã biết về các toán tử cơ bản như: cộng (`+`), trừ (`-`), nhân (`*`) và chia (`/`),... Trong JavaScript cũng có những toán tử như vậy và thêm nhiều toán tử khác nữa. Sau đây, mình sẽ cùng tìm hiểu xem toán tử là gì, các toán tử trong JavaScript và thứ tự ưu tiên của các toán tử trong JS.

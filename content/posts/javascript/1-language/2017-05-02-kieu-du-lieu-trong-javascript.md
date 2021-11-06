@@ -9,6 +9,8 @@ description: "Mỗi giá trị đều có một kiểu dữ liệu nhất địn
 slug: kieu-du-lieu-trong-javascript
 title: "Các kiểu dữ liệu trong JavaScript"
 series: "JavaScript: JavaScript cơ bản"
+tags:
+  - Kiểu dữ liệu
 ---
 
 Trong hai bài viết về [biến](/bien-la-gi-bien-trong-javascript) và [hằng](/hang-la-gi-hang-trong-javascript) trong JavaScript, mình có đề cập đến việc **gán giá trị** cho biến và hằng. Ở đó, mỗi giá trị đều có một kiểu dữ liệu nhất định. Vậy bạn có biết kiểu dữ liệu là gì và các kiểu dữ liệu trong JavaScript là gì không?

@@ -10,6 +10,8 @@ slug: bien-la-gi-bien-trong-javascript
 title: "Biến là gì? Cơ bản về biến trong JavaScript"
 shortTitle: "Biến là gì? Biến trong JavaScript"
 series: "JavaScript: JavaScript cơ bản"
+tags:
+  - Biến
 ---
 
 Nếu như trong toán học có khái niệm [biến số](https://vi.wikipedia.org/wiki/Bi%E1%BA%BFn_s%E1%BB%91) thì trong lập trình cũng có khái niệm biến. Đây là một thành phần không thể thiếu trong lập trình. Vì vậy, bài viết này mình sẽ tập trung vào tìm hiểu xem biến là gì, cách khai báo biến trong JavaScript và quy tắc đặt tên biến.

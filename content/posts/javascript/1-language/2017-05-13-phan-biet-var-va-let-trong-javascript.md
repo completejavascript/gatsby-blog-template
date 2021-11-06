@@ -11,6 +11,7 @@ title: "Phân biệt var và let trong JavaScript"
 series: "JavaScript: JavaScript cơ bản"
 tags:
   - ES6
+  - Biến
 ---
 
 Từ trước tới giờ, có thể bạn đã quen dùng **var** để khai báo [biến](/kieu-du-lieu-trong-javascript) trong JavaScript. Tuy nhiên, từ phiên bản ES6, bạn có thêm một sự lựa chọn nữa là **let**. Vậy **let** giống và khác **var** như thế nào? Bài viết này sẽ giúp bạn phân biệt **var** và **let** trong JavaScript. Qua đó, bạn biết cách sử dụng chúng sao cho phù hợp nhất.

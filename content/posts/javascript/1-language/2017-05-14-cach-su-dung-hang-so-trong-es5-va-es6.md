@@ -13,6 +13,7 @@ series: "JavaScript: JavaScript cơ bản"
 tags:
   - ES6
   - Strict Mode
+  - Hằng
 ---
 
 Mình thường thấy nhiều bạn khi lập trình JavaScript sử dụng **var** trong mọi trường hợp, kể cả với hằng số. Tuy nhiên, nếu sử dụng như vậy, bạn sẽ không phản ánh được đúng tính chất của hằng số. Đó là **tính bất biến** - không bao giờ thay đổi giá trị. Bài viết này mình sẽ giúp bạn khai báo và sử dụng hằng số trong ES5 và ES6.

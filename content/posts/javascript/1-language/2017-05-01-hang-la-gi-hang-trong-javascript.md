@@ -10,6 +10,8 @@ slug: hang-la-gi-hang-trong-javascript
 title: "Hằng là gì? Cơ bản về hằng trong JavaScript"
 shortTitle: "Hằng là gì? Hằng trong JavaScript"
 series: "JavaScript: JavaScript cơ bản"
+tags:
+  - Hằng
 ---
 
 Tương tự như [biến](/bien-la-gi-bien-trong-javascript), hằng cũng là một thành phần quan trọng trong lập trình JavaScript. Sau đây, mình sẽ tìm hiểu xem hằng là gì, cách khai báo hằng trong JavaScript, cách đặt tên hằng. Đồng thời, mình so sánh sự khác nhau giữa hằng và biến trong JavaScript.
