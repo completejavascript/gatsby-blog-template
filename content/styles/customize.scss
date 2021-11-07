@@ -127,8 +127,8 @@
       margin: 0.5rem 1.5rem 2.5rem 0;
       list-style-type: none;
       li {
-        break-inside: avoid;
         -webkit-break-inside: avoid;
+        break-inside: avoid;
         position: relative;
         padding-left: 3.8rem;
       }

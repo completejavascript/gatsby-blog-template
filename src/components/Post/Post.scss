@@ -47,8 +47,8 @@
 @media (min-width: 600px) {
   .post-container {
     .meta-share-wrapper {
-      display: flex;
       display: -webkit-flex;
+      display: flex;
       justify-content: space-between;
       align-items: center;
       .meta-wrapper {
