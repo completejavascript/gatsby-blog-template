@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.3](https://github.com/completejavascript/completejavascript.com/compare/v1.11.2...v1.11.3) (2021-11-07)
+
+
+### Bug Fixes
+
+* missing title for home page ([66a9475](https://github.com/completejavascript/completejavascript.com/commit/66a9475dac8957cdb57fa75b2c3012d32fff4c9c))
+
 ### [1.11.2](https://github.com/completejavascript/completejavascript.com/compare/v1.11.1...v1.11.2) (2021-11-07)
 
 
