@@ -14,10 +14,10 @@ Chia sẻ kiến thức về thủ thuật IT, thủ thuật máy tính, phần 
 
 ## Thủ thuật máy tính
 
-- [Các câu lệnh thường dùng trên Ubuntu - Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux)
-- [Cách cài đặt và gỡ một gói phần mềm trên Ubuntu](/cach-cai-dat-va-go-mot-goi-phan-mem-tren-ubuntu)
-- [Các câu lệnh thường dùng trên CMD – Windows](/cac-cau-lenh-thuong-dung-tren-cmd-windows)
-- [Hướng dẫn tìm hiểu FFmpeg cơ bản - FFmpeg là gì?](/huong-dan-tim-hieu-ffmpeg-co-ban)
+- [Các câu lệnh trên Ubuntu - Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux)
+- [Cài đặt và gỡ gói phần mềm trên Ubuntu](/cach-cai-dat-va-go-mot-goi-phan-mem-tren-ubuntu)
+- [Các câu lệnh trên CMD – Windows](/cac-cau-lenh-thuong-dung-tren-cmd-windows)
+- [Tìm hiểu FFmpeg cơ bản - FFmpeg là gì?](/huong-dan-tim-hieu-ffmpeg-co-ban)
 
 </section>
 </div>
@@ -29,7 +29,7 @@ Chia sẻ kiến thức về thủ thuật IT, thủ thuật máy tính, phần 
 
 - [Hướng dẫn các câu lệnh Git cơ bản](/huong-dan-cac-cau-lenh-git-co-ban)
 - [Tạo Google Analytics Plugin cho Wordpress](/tao-google-analytics-plugin-cho-wordpress)
-- [Mình đã làm sạch website Wordpress như thế nào?](/lam-sach-website-wordpress-nhu-the-nao)
+- [Làm sạch website Wordpress như thế nào?](/lam-sach-website-wordpress-nhu-the-nao)
 - [Tạo bộ dữ liệu từ điển dạng text từ StarDict](/tao-bo-du-lieu-tu-dien-dang-text-tu-stardict)
 - [Hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban)
 - [Cài đặt MongoDB trên Windows mới nhất](/cai-dat-mongodb-tren-windows-moi-nhat)
