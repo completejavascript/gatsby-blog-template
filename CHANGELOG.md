@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/completejavascript/completejavascript.com/compare/v1.10.0...v1.11.0) (2021-11-07)
+
+
+### Features
+
+* add breadcrumb to post ([704c4e9](https://github.com/completejavascript/completejavascript.com/commit/704c4e93eee99805daf62247b19ea196e19e6645))
+* display shortTitle if it exist for sidebar widget latest posts ([074bb96](https://github.com/completejavascript/completejavascript.com/commit/074bb966abc5cbfda1a97a61eee58371228e5d09))
+* fix sort by local compare for list of tags in tagsPage template ([8c95a75](https://github.com/completejavascript/completejavascript.com/commit/8c95a754a2c01fb68afd45daae5a7b870f04cac6))
+* refactor layout ([b8eb218](https://github.com/completejavascript/completejavascript.com/commit/b8eb218291af898104199c86cd991fe7dbf8a7f8))
+* update gatsby-config netlify cache and feeds ([2e2016d](https://github.com/completejavascript/completejavascript.com/commit/2e2016d58b6efd2bb5e8e5c7cb416c92d3279de1))
+
+
+### Bug Fixes
+
+* **post:** update shortTitle for post in thu-thu-it ([ace218b](https://github.com/completejavascript/completejavascript.com/commit/ace218bd8d1e22daec9675501ff3883d519cd803))
+* remove ads for top of post ([71c4fae](https://github.com/completejavascript/completejavascript.com/commit/71c4fae224adfbc7c0f1cd69fc2c72f3b1466052))
+* remove unnecessary div level ([ac23da6](https://github.com/completejavascript/completejavascript.com/commit/ac23da609393599492a372805572ee444b75c5ef))
+* warning conflict order when import css ([644b83f](https://github.com/completejavascript/completejavascript.com/commit/644b83fa49682e89f674c6bb1601b30d17ba078f))
+* **post:** add post kieu-du-lieu-trong-javascript ([0158b2e](https://github.com/completejavascript/completejavascript.com/commit/0158b2e34bb51d93bcce50aab37d89cb0bbe1067))
+* **post:** add post toan-tu-la-gi ([8258aeb](https://github.com/completejavascript/completejavascript.com/commit/8258aeb60a30efc1d3e35f153775491b20a2987d))
+* **post:** add tags ([d6703d3](https://github.com/completejavascript/completejavascript.com/commit/d6703d3febc511098d84046a8ba051822009a38d))
+* **post:** remove post values-types-operator-2 ([72170b1](https://github.com/completejavascript/completejavascript.com/commit/72170b1b20eb7d6de413ec0b09efbaeacfdba1da))
+* **post:** update shortTitle for some posts ([617d241](https://github.com/completejavascript/completejavascript.com/commit/617d2410de0c8f6360fcd50c39ac21cfc58e3cf8))
+
 ## [1.10.0](https://github.com/completejavascript/completejavascript.com/compare/v1.9.0...v1.10.0) (2021-11-03)
 
 
