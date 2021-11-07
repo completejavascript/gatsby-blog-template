@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.2](https://github.com/completejavascript/completejavascript.com/compare/v1.11.1...v1.11.2) (2021-11-07)
+
+
+### Bug Fixes
+
+* crash after deploy - need check null ([5452167](https://github.com/completejavascript/completejavascript.com/commit/5452167e53d2613242c46924255e45e28ce56afc))
+
 ### [1.11.1](https://github.com/completejavascript/completejavascript.com/compare/v1.11.0...v1.11.1) (2021-11-07)
 
 ## [1.11.0](https://github.com/completejavascript/completejavascript.com/compare/v1.10.0...v1.11.0) (2021-11-07)
