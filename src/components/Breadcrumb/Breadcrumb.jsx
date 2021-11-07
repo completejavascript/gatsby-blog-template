@@ -1,6 +1,6 @@
 import React from "react";
 import AutoLink from "../AutoLink/AutoLink";
-import "./BreadCrumb.scss";
+import "./BreadCrumbs.scss";
 
 function BreadCrumb({ items }) {
   return (
