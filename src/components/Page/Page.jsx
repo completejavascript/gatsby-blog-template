@@ -7,12 +7,10 @@ const Page = ({ postNode, slug }) => {
   }
 
   return (
-    <div className="page-container">
-      <div
-        className="padding-top padding-bottom"
-        dangerouslySetInnerHTML={{ __html: postNode.html }}
-      />
-    </div>
+    <div
+      className="page-container padding-top padding-bottom"
+      dangerouslySetInnerHTML={{ __html: postNode.html }}
+    />
   );
 };
 
