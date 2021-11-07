@@ -31,6 +31,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Hằng là gì? Hằng trong JS](/hang-la-gi-hang-trong-javascript)
 - [Các kiểu dữ liệu trong JavaScript](/kieu-du-lieu-trong-javascript)
 - [Toán tử là gì? Toán tử trong JS](/toan-tu-la-gi-toan-tu-trong-javascript)
+- [Toán tử so sánh trong JavaScript](/toan-tu-so-sanh-trong-javascript)
 - [Biểu thức, điều kiện rẽ nhánh, vòng lặp](/cau-truc-chuong-trinh-trong-javascript)
 - [Cơ bản về hàm trong JavaScript](/tim-hieu-function-javascript)
 - [Một số lỗi ở Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript)
