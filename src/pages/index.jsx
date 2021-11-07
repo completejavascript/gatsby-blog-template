@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Helmet from "react-helmet";
 
 import MacWindow from "../components/MacWindow/MacWindow";
 import AutoLink from "../components/AutoLink/AutoLink";
@@ -151,6 +152,9 @@ function Index({ data }) {
 
   return (
     <MainLayout hasFooter={true} hideOnScroll={true} adaptiveBoxShadow={true}>
+      <Helmet title={config.siteTitle}>
+        <link rel="canonical" href={config.siteUrl} />
+      </Helmet>
       <main className="index-container background-color-white">
         <WelcomeSection />
         <LatestPostsSection postList={postList} />
