@@ -1,7 +1,7 @@
 import config from "../../data/SiteConfig";
 import slug from "slug";
 
-export const slugify = (text) => slug(text).toLowerCase();
+export const slugify = (text) => slug(text || "").toLowerCase();
 
 export const isInteralLink = (link) => link && link[0] === "/";
 

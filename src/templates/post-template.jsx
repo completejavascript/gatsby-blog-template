@@ -50,11 +50,11 @@ const PostTemplate = ({ data, pageContext }) => {
       link: "/",
     },
     {
-      title: postNode.frontmatter.directory,
-      link: getDirectoryPath(postNode.frontmatter.directory),
+      title: postNode?.frontmatter?.directory,
+      link: getDirectoryPath(postNode?.frontmatter?.directory),
     },
     {
-      title: postNode.frontmatter.title,
+      title: postNode?.frontmatter?.title,
     },
   ];
 
