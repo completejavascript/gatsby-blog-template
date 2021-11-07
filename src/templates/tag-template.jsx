@@ -23,8 +23,15 @@ const TagTemplate = ({ data, pageContext }) => {
   const postEdges = data.allMarkdownRemark?.edges || [];
   const postList = getPostList(postEdges);
 
+  const tagPath = getTagPath(tag);
+  const canonical =
+    currentPage === 1
+      ? `${config.siteUrl}${tagPath}`
+      : `${config.siteUrl}${tagPath}${config.pathPrefixPagination}/${currentPage}`;
+
   const content = (
     <>
+      <Header title={`${config.tagHeader} ${tag}`} />
       <PostListing
         postList={postList}
         hasThumbnail={config.tagHasThumbnail}
@@ -34,7 +41,7 @@ const TagTemplate = ({ data, pageContext }) => {
         extraClass="margin-top padding-top-half"
         currentPage={currentPage}
         totalPages={totalPages}
-        pathPrefix={getTagPath(tag)}
+        pathPrefix={tagPath}
         pathPrefixPagination={config.pathPrefixPagination}
       />
     </>
@@ -51,11 +58,10 @@ const TagTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <div className="tag-container">
-        <Helmet title={`${config.tagHeader} ${tag} - ${config.siteTitle}`} />
-        <Header title={`${config.tagHeader} ${tag}`} />
-        <MainContainer content={content} sidebar={sidebar} />
-      </div>
+      <Helmet title={`${config.tagHeader} ${tag} - ${config.siteTitle}`}>
+        <link rel="canonical" href={canonical} />
+      </Helmet>
+      <MainContainer content={content} sidebar={sidebar} />
     </Layout>
   );
 };

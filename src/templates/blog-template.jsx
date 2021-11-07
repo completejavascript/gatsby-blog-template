@@ -22,8 +22,14 @@ const BlogTemplate = ({ data, pageContext }) => {
   const postEdges = data.allMarkdownRemark?.edges || [];
   const postList = getPostList(postEdges);
 
+  const canonical =
+    currentPage === 1
+      ? `${config.siteUrl}${config.pathPrefixBlog}`
+      : `${config.siteUrl}${config.pathPrefixBlog}${config.pathPrefixPagination}/${currentPage}`;
+
   const content = (
     <>
+      <Header title={config.blogHeader} />
       <PostListing
         postList={postList}
         hasThumbnail={config.blogHasThumbnail}
@@ -50,11 +56,10 @@ const BlogTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <div className="blog-container">
-        <Helmet title={`${config.blogHeader} - ${config.siteTitle}`} />
-        <Header title={config.blogHeader} />
-        <MainContainer content={content} sidebar={sidebar} />
-      </div>
+      <Helmet title={`${config.blogHeader} - ${config.siteTitle}`}>
+        <link rel="canonical" href={canonical} />
+      </Helmet>
+      <MainContainer content={content} sidebar={sidebar} />
     </Layout>
   );
 };

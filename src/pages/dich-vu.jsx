@@ -86,10 +86,11 @@ const ServiceSection = () => {
 };
 
 function Service() {
+  const canonical = `${config.siteUrl}/dich-vu`;
   return (
     <MainLayout hasFooter={true} hideOnScroll={true} adaptiveBoxShadow={true}>
-      <Helmet>
-        <title>{`Dịch vụ - ${config.siteTitle}`}</title>
+      <Helmet title={`Dịch vụ - ${config.siteTitle}`}>
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <main className="index-container background-color-white">
         <ServiceSection />

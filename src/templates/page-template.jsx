@@ -13,7 +13,15 @@ const PageTemplate = ({ data, pageContext }) => {
   const { slug, tagList, latestPostEdges, latestFreebieEdges } = pageContext;
   const postNode = data.markdownRemark;
   const title = postNode?.frontmatter?.title;
-  const content = <Page postNode={postNode} slug={slug} />;
+  const canonical = `${config.siteUrl}${slug}`;
+
+  const content = (
+    <>
+      <Header title={title} />
+      <Page postNode={postNode} slug={slug} />
+    </>
+  );
+
   const sidebar = (
     <Sidebar
       tagList={tagList}
@@ -26,11 +34,10 @@ const PageTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{`${title} - ${config.siteTitle}`}</title>
+      <Helmet title={`${title} - ${config.siteTitle}`}>
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <Header title={title} />
       <MainContainer content={content} sidebar={sidebar} />
     </Layout>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import PostTags from "./PostTags";
+import PostShare from "./PostShare";
 import PostShare2 from "./PostShare2";
 import PostDate from "./PostDate";
 import PostDivider from "./PostDivider";
@@ -31,15 +32,15 @@ const Post = ({
 
   return (
     <div className="post-container">
-      <div className="meta-share-wrapper padding-top padding-bottom">
+      <div className="meta-share-wrapper padding-top">
         <PostDate extraClass="meta-wrapper" date={post.update || post.date} />
-        {!!post.directory && (
-          <PostDirectory
-            directory={post.directory}
-            extraClass="block"
-            iconColor="#767676"
-          />
-        )}
+        <PostShare2
+          extraClass="share-wrapper"
+          postPath={slug}
+          postNode={postNode}
+          round={true}
+          iconSize={26}
+        />
       </div>
 
       <PostDivider />

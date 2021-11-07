@@ -14,7 +14,7 @@ $sidebar-desktop-width: 330px;
 }
 
 @media (min-width: 1000px) {
-  .main-container { 
+  .main-container {
     flex-direction: row;
     .content-wrapper {
       padding-right: 3rem;
@@ -26,4 +26,4 @@ $sidebar-desktop-width: 330px;
       width: $sidebar-desktop-width;
     }
   }
-} 
+}

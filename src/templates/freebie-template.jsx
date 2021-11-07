@@ -22,8 +22,14 @@ const FreeBieTemplate = ({ data, pageContext }) => {
   const postEdges = data.allMarkdownRemark?.edges || [];
   const postList = getPostList(postEdges);
 
+  const canonical =
+    currentPage === 1
+      ? `${config.siteUrl}${config.pathPrefixFreebie}`
+      : `${config.siteUrl}${config.pathPrefixFreebie}${config.pathPrefixPagination}/${currentPage}`;
+
   const content = (
     <>
+      <Header title={config.freebieHeader} />
       <PostListing
         postList={postList}
         hasThumbnail={config.freebieHasThumbnail}
@@ -50,11 +56,10 @@ const FreeBieTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <div className="blog-container">
-        <Helmet title={`${config.freebieHeader} - ${config.siteTitle}`} />
-        <Header title={config.freebieHeader} />
-        <MainContainer content={content} sidebar={sidebar} />
-      </div>
+      <Helmet title={`${config.freebieHeader} - ${config.siteTitle}`}>
+        <link rel="canonical" href={canonical} />
+      </Helmet>
+      <MainContainer content={content} sidebar={sidebar} />
     </Layout>
   );
 };

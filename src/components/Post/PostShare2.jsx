@@ -14,10 +14,15 @@ import {
 import urljoin from "url-join";
 import config from "../../../data/SiteConfig";
 
-const PostShare2 = ({ postNode, postPath, extraClass = "" }) => {
+const PostShare2 = ({
+  postNode,
+  postPath,
+  extraClass = "",
+  round = false,
+  iconSize = 40,
+}) => {
   const post = postNode.frontmatter;
   const url = urljoin(config.siteUrl, config.pathPrefix, postPath);
-  const iconSize = 40;
 
   return (
     <div className={`flex ${extraClass}`}>
@@ -26,7 +31,7 @@ const PostShare2 = ({ postNode, postPath, extraClass = "" }) => {
         url={url}
         title={post.title}
       >
-        <RedditIcon size={iconSize} />
+        <RedditIcon round={round} size={iconSize} />
       </RedditShareButton>
 
       <TwitterShareButton
@@ -34,7 +39,7 @@ const PostShare2 = ({ postNode, postPath, extraClass = "" }) => {
         url={url}
         title={post.title}
       >
-        <TwitterIcon size={iconSize} />
+        <TwitterIcon round={round} size={iconSize} />
       </TwitterShareButton>
 
       <FacebookShareButton
@@ -42,7 +47,7 @@ const PostShare2 = ({ postNode, postPath, extraClass = "" }) => {
         url={url}
         quote={postNode.excerpt}
       >
-        <FacebookIcon size={iconSize} />
+        <FacebookIcon round={round} size={iconSize} />
       </FacebookShareButton>
 
       <LinkedinShareButton
@@ -52,11 +57,11 @@ const PostShare2 = ({ postNode, postPath, extraClass = "" }) => {
         summary={postNode.excerpt}
         source={config.siteUrl}
       >
-        <LinkedinIcon size={iconSize} />
+        <LinkedinIcon round={round} size={iconSize} />
       </LinkedinShareButton>
 
       <TelegramShareButton className="cursor-pointer" url={url}>
-        <TelegramIcon size={iconSize} />
+        <TelegramIcon round={round} size={iconSize} />
       </TelegramShareButton>
     </div>
   );

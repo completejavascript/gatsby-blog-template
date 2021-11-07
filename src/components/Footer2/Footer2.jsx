@@ -30,7 +30,7 @@ function FooterLinks({ header, links, className = "" }) {
 
 function FooterCopyright() {
   return (
-    <footer className="container-full footer">
+    <div className="container-full footer">
       <div className="footer-copyright-links container text-center padding-top-2">
         {footerLinks &&
           footerLinks.length > 0 &&
@@ -50,7 +50,7 @@ function FooterCopyright() {
         <AutoLink to={siteUrl}>{siteTitle}</AutoLink>
         {`. Unless otherwise noted, all code MIT license.`}
       </div>
-    </footer>
+    </div>
   );
 }
 
@@ -110,7 +110,7 @@ function FooterSiteInfo() {
 
 function Footer2() {
   return (
-    <div className="footer-container-2">
+    <footer className="footer-container-2">
       <div className="container-full widgets">
         <div className="footer-widgets container">
           <FooterSiteInfo />
@@ -136,7 +136,7 @@ function Footer2() {
       </div>
 
       <FooterCopyright />
-    </div>
+    </footer>
   );
 }
 

@@ -15,7 +15,7 @@ const MainLayout = ({
   hideOnScroll = true,
   adaptiveBoxShadow = false,
 }) => (
-  <div>
+  <>
     <Helmet htmlAttributes={{ lang: siteConfig.siteLang }}>
       <meta name="description" content={siteConfig.siteDescription} />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -31,7 +31,7 @@ const MainLayout = ({
     {children}
     {hasFooter && <Footer2 />}
     <ScrollToTop color="white" bgColor="grey-half" />
-  </div>
+  </>
 );
 
 export default MainLayout;

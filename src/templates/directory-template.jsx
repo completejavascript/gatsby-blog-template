@@ -5,6 +5,7 @@ import Layout from "../layout";
 import Header from "../components/Header/Header";
 import Page from "../components/Page/Page";
 import SEO from "../components/SEO/SEO";
+import MainContainerWrapper from "../components/MainContainer/MainContainerWrapper";
 import GithubComment from "../components/Comment/GithubComment";
 import config from "../../data/SiteConfig";
 import AdSense from "react-adsense";
@@ -14,16 +15,18 @@ const DirectoryTemplate = ({ data, pageContext }) => {
   const postNode = data.markdownRemark;
   const title = postNode?.frontmatter?.title;
   const content = <Page postNode={postNode} slug={slug} />;
+  const canonical = `${config.siteUrl}${slug}`;
 
   return (
     <Layout>
-      <Helmet>
-        <title>{`${title} - ${config.siteTitle}`}</title>
+      <Helmet title={`${title} - ${config.siteTitle}`}>
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <Header title={title} />
 
-      <main className="directory-container">
+      <MainContainerWrapper className="directory-container">
+        <Header title={title} className="container" />
+
         <div className="container">
           {config.hasAdsense && config.adsenseUnits?.postTop && (
             <AdSense.Google {...config.adsenseUnits?.postTop} />
@@ -42,7 +45,7 @@ const DirectoryTemplate = ({ data, pageContext }) => {
             </>
           )}
         </div>
-      </main>
+      </MainContainerWrapper>
     </Layout>
   );
 };

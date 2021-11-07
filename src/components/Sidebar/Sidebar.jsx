@@ -23,16 +23,23 @@ const Sidebar = ({
       }`}
     >
       {sameSeriesPosts && sameSeriesPosts.length > 0 && (
-        <WidgetLatestPosts
-          postSlug={postSlug}
-          postEdges={sameSeriesPosts}
-          title={config.sameSeriesPostsWidgetTitle}
-        />
+        <>
+          {config.hasAdsense && config.adsenseUnits?.sidebarTop && (
+            <div className="width-full flex justify-content-center padding-top">
+              <AdSense.Google {...config.adsenseUnits?.sidebarTop} />
+            </div>
+          )}
+          <WidgetLatestPosts
+            postSlug={postSlug}
+            postEdges={sameSeriesPosts}
+            title={config.sameSeriesPostsWidgetTitle}
+          />
+        </>
       )}
 
-      {config.hasAdsense && config.adsenseUnits?.sidebarTop && (
+      {!isSimple && config.hasAdsense && config.adsenseUnits?.sidebarMiddle && (
         <div className="width-full flex justify-content-center padding-top">
-          <AdSense.Google {...config.adsenseUnits?.sidebarTop} />
+          <AdSense.Google {...config.adsenseUnits?.sidebarMiddle} />
         </div>
       )}
 
@@ -45,12 +52,6 @@ const Sidebar = ({
         />
       )}
 
-      {!isSimple && config.hasAdsense && config.adsenseUnits?.sidebarMiddle && (
-        <div className="width-full flex justify-content-center padding-top">
-          <AdSense.Google {...config.adsenseUnits?.sidebarMiddle} />
-        </div>
-      )}
-
       {latestFreebieEdges && latestFreebieEdges.length > 0 && (
         <WidgetLatestPosts
           postEdges={latestFreebieEdges.filter(
@@ -60,15 +61,14 @@ const Sidebar = ({
         />
       )}
 
+      {config.hasAdsense && config.adsenseUnits?.sidebarMiddle2 && (
+        <div className="width-full flex justify-content-center padding-top">
+          <AdSense.Google {...config.adsenseUnits?.sidebarMiddle2} />
+        </div>
+      )}
+
       {!isSimple && tagList && tagList.length > 0 && (
-        <>
-          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle2 && (
-            <div className="width-full flex justify-content-center padding-top">
-              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle2} />
-            </div>
-          )}
-          <WidgetTag tagList={tagList} />
-        </>
+        <WidgetTag tagList={tagList} />
       )}
 
       {!isSimple && links && links.length > 0 && <WidgetLinks links={links} />}

@@ -41,17 +41,21 @@ const PostTemplate = ({ data, pageContext }) => {
   const sameSeriesPosts = data.sameSeries?.edges || [];
 
   const title = postNode?.frontmatter?.title;
+  const canonical = `${config.siteUrl}${slug}`;
 
   const content = (
-    <Post
-      postNode={postNode}
-      config={config}
-      slug={slug}
-      nextTitle={nextTitle}
-      nextSlug={nextSlug}
-      prevTitle={prevTitle}
-      prevSlug={prevSlug}
-    />
+    <>
+      <Header title={title} />
+      <Post
+        postNode={postNode}
+        config={config}
+        slug={slug}
+        nextTitle={nextTitle}
+        nextSlug={nextSlug}
+        prevTitle={prevTitle}
+        prevSlug={prevSlug}
+      />
+    </>
   );
 
   const sidebar = (
@@ -67,11 +71,10 @@ const PostTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{`${title} - ${config.siteTitle}`}</title>
+      <Helmet title={`${title} - ${config.siteTitle}`}>
+        <link rel="canonical" href={canonical} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <Header title={title} />
       <MainContainer content={content} sidebar={sidebar} />
     </Layout>
   );
