@@ -33,8 +33,8 @@ Nếu chia theo chức năng thì JavaScript có các loại toán tử cơ bả
 - Toán tử gán
 - Toán tử bitwise
 - Toán tử dấu phẩy
+- Toán tử so sánh
 - Toán tử logic
-- Toán tử quan hệ (so sánh)
 - Toán tử điều kiện rẽ nhánh `?:`
 - Toán tử "Nullish coalescing" `??`
 
@@ -328,8 +328,8 @@ Nếu chia theo chức năng thì có một số toán tử cơ bản trong Java
 - Toán tử gán
 - Toán tử bitwise
 - Toán tử dấu phẩy
+- Toán tử so sánh
 - Toán tử logic
-- Toán tử quan hệ (so sánh)
 - Toán tử điều kiện rẽ nhánh `?:`
 - Toán tử "Nullish coalescing" `??`
 
