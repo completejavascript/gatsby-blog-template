@@ -22,7 +22,12 @@ const TagsTemplate = ({ pageContext }) => {
       <MainContainerWrapper className="container margin-bottom-3">
         <Header title={title} />
 
-        <section className="margin-top-2">
+        <p className="margin-top-2">
+          Dưới đây là tổng hợp tất cả những thẻ <strong>tag</strong> từ các bài
+          viết.
+        </p>
+
+        <section className="margin-top">
           {tagList && tagList.map((tag) => <Tag key={tag} content={tag} />)}
         </section>
 
