@@ -1,0 +1,11 @@
+.breadcrumb-container {
+  .content {
+    font-size: 1.5rem;
+    &.nolink {
+      opacity: 0.6 !important;
+    }
+  }
+  a {
+    color: #757575;
+  }
+}

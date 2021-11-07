@@ -7,7 +7,9 @@ import MainContainer from "../components/MainContainer/MainContainer";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Post from "../components/Post/Post";
 import SEO from "../components/SEO/SEO";
+import BreadCrumb from "../components/Breadcrumb/Breadcrumb";
 import config from "../../data/SiteConfig";
+import { getDirectoryPath } from "../utils/helpers";
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -42,9 +44,23 @@ const PostTemplate = ({ data, pageContext }) => {
 
   const title = postNode?.frontmatter?.title;
   const canonical = `${config.siteUrl}${slug}`;
+  const breadcrumb = [
+    {
+      title: "Trang chủ",
+      link: "/",
+    },
+    {
+      title: postNode.frontmatter.directory,
+      link: getDirectoryPath(postNode.frontmatter.directory),
+    },
+    {
+      title: postNode.frontmatter.title,
+    },
+  ];
 
   const content = (
     <>
+      <BreadCrumb items={breadcrumb} />
       <Header title={title} />
       <Post
         postNode={postNode}
