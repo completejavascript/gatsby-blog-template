@@ -119,13 +119,13 @@ const config = {
       style: { display: "inline-block", width: "300px", height: "250px" },
       format: "",
     },
-    postTop: {
-      client: "ca-pub-7260245524211186",
-      slot: "5797848941",
-      style: { display: "block" },
-      format: "auto",
-      responsive: "true",
-    },
+    // postTop: {
+    //   client: "ca-pub-7260245524211186",
+    //   slot: "5797848941",
+    //   style: { display: "block" },
+    //   format: "auto",
+    //   responsive: "true",
+    // },
     postBottom: {
       client: "ca-pub-7260245524211186",
       slot: "5905660151",

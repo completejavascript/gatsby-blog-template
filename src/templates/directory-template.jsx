@@ -27,24 +27,22 @@ const DirectoryTemplate = ({ data, pageContext }) => {
       <MainContainerWrapper className="directory-container">
         <Header title={title} className="container" />
 
-        <div className="container">
-          {config.hasAdsense && config.adsenseUnits?.postTop && (
+        {config.hasAdsense && config.adsenseUnits?.postTop && (
+          <div className="container">
             <AdSense.Google {...config.adsenseUnits?.postTop} />
-          )}
-        </div>
+          </div>
+        )}
 
         <div className="content-wrapper padding-top-half padding-bottom-2">
           {content}
         </div>
 
-        <div className="container">
-          {config.hasAdsense && config.adsenseUnits?.postBottom && (
-            <>
-              <AdSense.Google {...config.adsenseUnits?.postBottom} />
-              <GithubComment />
-            </>
-          )}
-        </div>
+        {config.hasAdsense && config.adsenseUnits?.postBottom && (
+          <div className="container">
+            <AdSense.Google {...config.adsenseUnits?.postBottom} />
+            <GithubComment />
+          </div>
+        )}
       </MainContainerWrapper>
     </Layout>
   );
