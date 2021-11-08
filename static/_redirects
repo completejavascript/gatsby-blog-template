@@ -2,8 +2,8 @@
 # https://www.netlify.com/docs/redirects/
 
 # pages
-/so-do-trang                                     /sitemap.xml
-/wiki                                            /sitemap.xml
+/so-do-trang                                     /
+/wiki                                            /
 /privacy-policy                                  /chinh-sach-bao-mat
 
 /tag/react                                       /react
