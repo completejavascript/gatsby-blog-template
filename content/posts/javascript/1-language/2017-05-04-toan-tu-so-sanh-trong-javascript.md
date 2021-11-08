@@ -244,6 +244,40 @@ Trong các phép so sánh (1) và (2), `undefined` chuyển thành `NaN` nên ch
 >
 > Trường hợp một biến có thể `null` hoặc `undefined` thì bạn nên kiểm tra giá trị có bằng `null` hoặc `undefined` hay không để xử lý trước. Khi biến khác `null` và `undefined` rồi thì mới thực hiện so sánh với các toán tử `>`, `<`, `>=` và `<=` sau.
 
+## Thứ tự ưu tiên của các toán tử so sánh
+
+Các toán tử so sánh có **thứ tự ưu tiên giống nhau**. Khi trong biểu thức có nhiều toán tử so sánh, thứ tự thực hiện là **từ trái sang phải**.
+
+Ví dụ:
+
+```js
+console.log(3 > 2 > 1); // false
+```
+
+Thoạt đầu nhìn qua, bạn sẽ thấy kết quả trên là vô lý phải không?
+
+Vì theo toán học thì chắc chắn số `3` lớn hơn số `2` và số `2` lớn hơn số `1`, nên kết quả (2) phải bằng `true` mới hợp lý.
+
+Nhưng nếu bạn áp dụng đúng **quy tắc thứ tự ưu tiên** vào đây, bạn sẽ thấy kết quả trên là **hoàn toàn đúng**.
+
+Vì JavaScript sẽ thực hiện so sánh hai số đầu tiên trước, `3 > 2` là đúng nên kết quả của phép so sánh này là `true`. Khi đó, mình có thể viết lại như sau:
+
+```js
+console.log(true > 1); // false
+```
+
+Rõ ràng, đây là phép so sánh **hai kiểu dữ liệu khác nhau**. Vì vậy, `true` được chuyển thành dạng số và bằng `1`. Mà `1 > 1` là `false`.
+
+Tóm lại, kết quả của phép so sánh trên là `false`.
+
+> 💡 Khi thực hiện tính toán, so sánh với các toán tử, bạn phải ghi nhớ thứ tự ưu tiên của các toán tử để biết chính xác thứ tự thực hiện của các phép toán.
+>
+> Trường hợp bạn không chắc chắn về thứ tự thực hiện, bạn nên sử dụng cặp dấu ngoặc đơn `(...)` (toán tử nhóm) để thực hiện phép toán một cách chính xác.
+>
+> Đoạn code trên có thể viết lại thành `console.log((3 > 2) > 1)`. Ở đây, mình đã nhóm `3 > 2` thành một nhóm, nên chắc chắn phép toán này thực hiện trước.
+>
+> Nếu muốn `2 > 1` thực hiện trước bạn viết lại thành `console.log(3 > (2 > 1))`. Kết quả của câu lệnh này là `true`.
+
 ## Tổng kết
 
 Sau đây là những kiến thức cơ bản cần nhớ về toán tử so sánh trong JavaScript:
@@ -258,6 +292,7 @@ Sau đây là những kiến thức cơ bản cần nhớ về toán tử so sá
 - Khi so sánh các giá trị với kiểu dữ liệu khác nhau, JavaScript chuyển các giá trị đó thành dạng số (trừ trường hợp so sánh với toán tử bằng "nghiêm ngặt" `===` và toán tử khác "nghiêm ngặt" `!==`).
 - Hai giá trị `null` và `undefined` bằng nhau (khi sử dụng toán tử `==`) và luôn khác các giá trị còn lại.
 - Không nên sử dụng toán tử `>`, `<`, `>=` và `<=` với `null` và `undefined`. Nếu các biến có thể bằng `null` hoặc `undefined` thì bạn nên kiểm tra giá trị có bằng `null` hoặc `undefined` hay không để xử lý trước. Khi biến khác `null` và `undefined` rồi thì mới thực hiện so sánh với các toán tử `>`, `<`, `>=` và `<=` sau.
+- Thứ tự ưu tiên của các toán tử so sánh là giống nhau. Nếu trong câu lệnh có nhiều toán tử so sánh thì thứ tự thực hiện là **từ trái sang phải**.
 
 ## Thực hành
 
