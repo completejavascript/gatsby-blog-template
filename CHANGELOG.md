@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/completejavascript/gatsby-blog-template/compare/v1.2.0...v1.2.1) (2021-11-09)
+
+
+### Bug Fixes
+
+* remove gatsby-plugin-offine ([8f1b8aa](https://github.com/completejavascript/gatsby-blog-template/commit/8f1b8aa90a7e4f4f52f6c849f3fef77fad9ec30e))
+
 ## [1.2.0](https://github.com/completejavascript/gatsby-blog-template/compare/v1.1.1...v1.2.0) (2021-10-04)
 
 
