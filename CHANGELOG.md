@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.4](https://github.com/completejavascript/completejavascript.com/compare/v1.11.3...v1.11.4) (2021-11-09)
+
+
+### Bug Fixes
+
+* adsense script ([a96cb06](https://github.com/completejavascript/completejavascript.com/commit/a96cb06afa2e058f83494356a347b088d469fc18))
+* gatsby-plugin-offline not update new content ([c6b3536](https://github.com/completejavascript/completejavascript.com/commit/c6b35368c85c8effcebd34acc21b3402ee916270))
+* **post:** add post toan-tu-logic ([2dcca0a](https://github.com/completejavascript/completejavascript.com/commit/2dcca0af834b94b975304be9430030a43d23ad4b))
+* not redirect to sitemap.xml ([881ea60](https://github.com/completejavascript/completejavascript.com/commit/881ea602ab14b4104a73e7d2f9d64cd3d271609c))
+* **post:** add post toan-tu-so-sanh ([f4822a7](https://github.com/completejavascript/completejavascript.com/commit/f4822a716d344e8b6be39856d8c242680371774c))
+* **post:** update post toan-tu-la-gi ([8602f9e](https://github.com/completejavascript/completejavascript.com/commit/8602f9e5dc5a29a87877822effc616e4b34340a8))
+* **post:** update thu-tu-uu-tien for post toan-tu-so-sanh ([810a945](https://github.com/completejavascript/completejavascript.com/commit/810a945d575ff88f3836d82b3b9465e39b475bc7))
+* tags-template - add description ([b13cec2](https://github.com/completejavascript/completejavascript.com/commit/b13cec23c565a2e3ad2285f361a55af4193fad15))
+
 ### [1.11.3](https://github.com/completejavascript/completejavascript.com/compare/v1.11.2...v1.11.3) (2021-11-07)
 
 
