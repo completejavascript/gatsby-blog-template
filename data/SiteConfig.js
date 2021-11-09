@@ -94,6 +94,7 @@ const config = {
   hasSearch: true,
   // Set up for google adsense
   hasAdsense: true,
+  adsClient: "ca-pub-7260245524211186",
   adsenseUnits: {
     sidebarTop: {
       client: "ca-pub-7260245524211186",
