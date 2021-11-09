@@ -75,7 +75,7 @@ const Sidebar = ({
 
       {((latestRelatedEdges && latestRelatedEdges.length > 0) ||
         (config.hasAdsense && config.adsenseUnits?.sidebarBottom)) && (
-        <div className="position-sticky top-zero">
+        <div className="position-sticky last-item">
           {latestRelatedEdges && latestRelatedEdges.length > 0 && (
             <WidgetLatestPosts
               postEdges={latestRelatedEdges}
