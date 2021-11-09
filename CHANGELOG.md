@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.5](https://github.com/completejavascript/completejavascript.com/compare/v1.11.4...v1.11.5) (2021-11-09)
+
+
+### Bug Fixes
+
+* remove gatsby-plugin-offline ([ca31039](https://github.com/completejavascript/completejavascript.com/commit/ca3103959b3c09bf33aa0fc63803b3ad65a819e3))
+
 ### [1.11.4](https://github.com/completejavascript/completejavascript.com/compare/v1.11.3...v1.11.4) (2021-11-09)
 
 
