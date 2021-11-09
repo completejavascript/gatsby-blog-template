@@ -117,7 +117,7 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-offline",
+    "gatsby-plugin-remove-serviceworker",
     {
       resolve: "gatsby-plugin-feed",
       options: {
