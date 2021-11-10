@@ -116,13 +116,13 @@ const config = {
     },
     sidebarMiddle3: {
       client: "ca-pub-7260245524211186",
-      slot: "6458569398",
+      slot: "7764616475",
       style: { display: "inline-block", width: "300px", height: "250px" },
       format: "",
     },
     sidebarMiddle4: {
       client: "ca-pub-7260245524211186",
-      slot: "6458569398",
+      slot: "4098185274",
       style: { display: "inline-block", width: "300px", height: "250px" },
       format: "",
     },
@@ -134,8 +134,8 @@ const config = {
     },
     sidebarBottomLeft: {
       client: "ca-pub-7260245524211186",
-      slot: "4957801764",
-      style: { display: "inline-block", width: "300px", height: "250px" },
+      slot: "1883935539",
+      style: { display: "inline-block", width: "300px", height: "600px" },
       format: "",
     },
     postTop: {
