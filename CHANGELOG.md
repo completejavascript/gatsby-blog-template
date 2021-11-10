@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/completejavascript/completejavascript.com/compare/v1.11.6...v1.12.0) (2021-11-10)
+
+
+### Features
+
+* dev new layout 3-column ([53ca9d9](https://github.com/completejavascript/completejavascript.com/commit/53ca9d92662ab1b42528efea60c4013cba8bffb3))
+
+
+### Bug Fixes
+
+* ads code ([09b28b5](https://github.com/completejavascript/completejavascript.com/commit/09b28b511d6a395a95dd05065bbd7b57dad2ddcb))
+* ads in sidebar ([6a50966](https://github.com/completejavascript/completejavascript.com/commit/6a509666bc82b7645ad9a95cb671fe9e7b7e271f))
+
 ### [1.11.6](https://github.com/completejavascript/completejavascript.com/compare/v1.11.5...v1.11.6) (2021-11-10)
 
 
