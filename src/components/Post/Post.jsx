@@ -44,11 +44,9 @@ const Post = ({
       </div>
 
       <PostDivider />
-      <div className="ads-banner-container">
-        {config.hasAdsense && config.adsenseUnits?.postTop && (
-          <AdSense.Google {...config.adsenseUnits?.postTop} />
-        )}
-      </div>
+      {config.hasAdsense && config.adsenseUnits?.postTop && (
+        <AdSense.Google {...config.adsenseUnits?.postTop} />
+      )}
 
       <div
         className="padding-top padding-bottom"

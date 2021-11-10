@@ -19,12 +19,9 @@ const DirectoryTemplate = ({ data, pageContext }) => {
   const content = (
     <>
       <Header title={title} />
-
-      <div className="ads-banner-container">
-        {config.hasAdsense && config.adsenseUnits?.postTop && (
-          <AdSense.Google {...config.adsenseUnits?.postTop} />
-        )}
-      </div>
+      {config.hasAdsense && config.adsenseUnits?.postTop && (
+        <AdSense.Google {...config.adsenseUnits?.postTop} />
+      )}
 
       <div className="directory-content-wrapper padding-top-half padding-bottom-2">
         {<Page postNode={postNode} slug={slug} />}
