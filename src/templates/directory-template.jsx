@@ -18,12 +18,10 @@ const DirectoryTemplate = ({ data, pageContext }) => {
 
   const content = (
     <>
-      <Header title={title} className="container" />
+      <Header title={title} />
 
       {config.hasAdsense && config.adsenseUnits?.postTop && (
-        <div className="container">
-          <AdSense.Google {...config.adsenseUnits?.postTop} />
-        </div>
+        <AdSense.Google {...config.adsenseUnits?.postTop} />
       )}
 
       <div className="directory-content-wrapper padding-top-half padding-bottom-2">
@@ -31,10 +29,10 @@ const DirectoryTemplate = ({ data, pageContext }) => {
       </div>
 
       {config.hasAdsense && config.adsenseUnits?.postBottom && (
-        <div className="container">
+        <>
           <AdSense.Google {...config.adsenseUnits?.postBottom} />
           {process.env.NODE_ENV === "production" && <GithubComment />}
-        </div>
+        </>
       )}
     </>
   );

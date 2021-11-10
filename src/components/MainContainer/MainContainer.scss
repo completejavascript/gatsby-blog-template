@@ -6,22 +6,52 @@
   flex-direction: column;
   .content-wrapper {
     width: 100%;
-    padding: 1.5rem 2.5rem;
-    border: 1px solid #e1e4e8;
-    border-radius: 0.4rem;
+    padding: 1.5rem 0rem;
     background-color: #ffffff;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
   .sidebar-wrapper {
     width: 100%;
+    &.left {
+      display: none;
+    }
+  }
+}
+
+// Common
+@media (min-width: 800px) {
+  body {
+    background-color: #f8f7fa;
+  }
+  .main-container {
+    .content-wrapper {
+      padding: 1.5rem 2.5rem;
+      border: 1px solid #e1e4e8;
+      border-radius: 0.4rem;
+    }
   }
 }
 
 @media (min-width: 1000px) {
   .main-container {
     flex-direction: row;
-    counter-reset: a;
+    .content-wrapper {
+      &.hasRight {
+        width: calc(100% - var(--sidebar-desktop-width) * 1);
+      }
+    }
+    .sidebar-wrapper {
+      width: var(--sidebar-desktop-width);
+      &.right {
+        padding-left: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-container {
     .content-wrapper {
       &.hasLeft.hasRight {
         width: calc(100% - var(--sidebar-desktop-width) * 2);
@@ -32,14 +62,9 @@
       }
     }
     .sidebar-wrapper {
-      width: var(--sidebar-desktop-width);
-      &.right {
-        counter-increment: a;
-        padding-left: 1.5rem;
-      }
       &.left {
-        counter-increment: a;
         padding-right: 1.5rem;
+        display: unset;
       }
     }
   }

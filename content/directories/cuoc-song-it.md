@@ -5,12 +5,10 @@ description: "Chia sẻ kiến thức về cuộc sống dân IT, kinh nghiệm 
 slug: "cuoc-song-it"
 ---
 
-<p class="container">
 Chia sẻ kiến thức về cuộc sống dân IT, kinh nghiệm học lập trình và lĩnh vực liên quan như Tiếng Anh.
-</p>
 
 <div class="section-wrapper">
-<section class="container">
+<section>
 
 ## Kinh nghiệm học lập trình
 
@@ -23,7 +21,7 @@ Chia sẻ kiến thức về cuộc sống dân IT, kinh nghiệm học lập tr
 </div>
 
 <div class="section-wrapper below">
-<section class="container">
+<section>
 
 ## Cuộc sống dân IT
 
@@ -42,7 +40,7 @@ Chia sẻ kiến thức về cuộc sống dân IT, kinh nghiệm học lập tr
 </div>
 
 <div class="section-wrapper below">
-<section class="container">
+<section>
 
 ## Ảnh chế vui
 

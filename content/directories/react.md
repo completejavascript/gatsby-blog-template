@@ -5,12 +5,10 @@ description: "Tổng hợp tất cả những kiến thức liên quan đến Re
 slug: "react"
 ---
 
-<p class="container">
 Tổng hợp tất cả những kiến thức liên quan đến React từ cơ bản đến nâng cao, học React qua ví dụ, cách deploy ứng dụng React, các thư viện khác thường dùng với React,...
-</p>
 
 <div class="section-wrapper">
-<section class="container">
+<section>
 
 ## React cơ bản
 
@@ -30,7 +28,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến thư vi
 </div>
 
 <div class="section-wrapper below">
-<section class="container">
+<section>
 
 ## Các kiến thức khác về React
 

@@ -5,12 +5,10 @@ description: "Chia sẻ kiến thức về thủ thuật IT, thủ thuật máy 
 slug: "thu-thuat-it"
 ---
 
-<p class="container">
 Chia sẻ kiến thức về thủ thuật IT, thủ thuật máy tính, phần mềm máy tính và một số kiến thức khác về lập trình.
-</p>
 
 <div class="section-wrapper">
-<section class="container">
+<section>
 
 ## Thủ thuật máy tính
 
@@ -23,7 +21,7 @@ Chia sẻ kiến thức về thủ thuật IT, thủ thuật máy tính, phần 
 </div>
 
 <div class="section-wrapper below">
-<section class="container">
+<section>
 
 ## Thủ thuật lập trình
 
@@ -39,7 +37,7 @@ Chia sẻ kiến thức về thủ thuật IT, thủ thuật máy tính, phần 
 </div>
 
 <div class="section-wrapper below">
-<section class="container">
+<section>
 
 ## Các bài viết khác
 

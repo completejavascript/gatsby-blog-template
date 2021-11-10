@@ -9,6 +9,10 @@
   }
   .post-info-wrapper {
     margin-top: 2rem;
+    h2 {
+      margin-top: -0.8rem;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
@@ -19,7 +23,7 @@
     .thumbnail-wrapper {
       .thumbnail-img {
         width: 300px;
-        margin-right: 4rem;
+        margin-right: 2rem;
       }
     }
     .post-info-wrapper {

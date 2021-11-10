@@ -5,12 +5,10 @@ description: "Tổng hợp tất cả những kiến thức liên quan đến ng
 slug: "javascript"
 ---
 
-<p class="container">
 Tổng hợp tất cả những kiến thức liên quan đến ngôn ngữ lập trình JavaScript từ cơ bản (biến, kiểu dữ liệu, array, object, hàm,...) đến nâng cao (lập trình hướng đối tượng, design pattern, cách giao tiếp với server...), cách JavaScript làm việc với trình duyệt, web API và một số ví dụ thực tế...
-</p>
 
 <div class="section-wrapper">
-<section class="container">
+<section>
 
 ## Ngôn ngữ lập trình JavaScript
 
@@ -94,7 +92,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 </div>
 
 <div class="section-wrapper below">
-<section class="container">
+<section>
 
 ## JavaScript với trình duyệt
 
@@ -128,7 +126,7 @@ Phần này bao gồm những bài viết về cách JavaScript làm việc vớ
 </div>
 
 <div class="section-wrapper below">
-<section class="container">
+<section>
 
 ## Một số kiến thức khác về JavaScript
 
