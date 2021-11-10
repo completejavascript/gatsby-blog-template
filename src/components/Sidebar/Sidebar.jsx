@@ -11,10 +11,8 @@ const Sidebar = ({
   latestPostEdges,
   latestFreebieEdges,
   latestRelatedEdges,
-  links,
   postSlug,
   sameSeriesPosts = [],
-  isSimple = false,
 }) => {
   return (
     <aside
@@ -37,41 +35,48 @@ const Sidebar = ({
         </>
       )}
 
-      {!isSimple && config.hasAdsense && config.adsenseUnits?.sidebarMiddle && (
-        <div className="width-full flex justify-content-center padding-top">
-          <AdSense.Google {...config.adsenseUnits?.sidebarMiddle} />
-        </div>
-      )}
-
       {latestPostEdges && latestPostEdges.length > 0 && (
-        <WidgetLatestPosts
-          postEdges={latestPostEdges.filter(
-            (item) => item.node.fields.slug !== postSlug
+        <>
+          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle && (
+            <div className="width-full flex justify-content-center padding-top">
+              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle} />
+            </div>
           )}
-          title={config.latestPostsWidgetTitle}
-        />
+          <WidgetLatestPosts
+            postEdges={latestPostEdges.filter(
+              (item) => item.node.fields.slug !== postSlug
+            )}
+            title={config.latestPostsWidgetTitle}
+          />
+        </>
       )}
 
       {latestFreebieEdges && latestFreebieEdges.length > 0 && (
-        <WidgetLatestPosts
-          postEdges={latestFreebieEdges.filter(
-            (item) => item.node.fields.slug !== postSlug
+        <>
+          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle2 && (
+            <div className="width-full flex justify-content-center padding-top">
+              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle2} />
+            </div>
           )}
-          title={config.latestFreebiesWidgetTitle}
-        />
+          <WidgetLatestPosts
+            postEdges={latestFreebieEdges.filter(
+              (item) => item.node.fields.slug !== postSlug
+            )}
+            title={config.latestFreebiesWidgetTitle}
+          />
+        </>
       )}
 
-      {config.hasAdsense && config.adsenseUnits?.sidebarMiddle2 && (
-        <div className="width-full flex justify-content-center padding-top">
-          <AdSense.Google {...config.adsenseUnits?.sidebarMiddle2} />
-        </div>
+      {tagList && tagList.length > 0 && (
+        <>
+          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle3 && (
+            <div className="width-full flex justify-content-center padding-top">
+              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle3} />
+            </div>
+          )}
+          <WidgetTag tagList={tagList} />
+        </>
       )}
-
-      {!isSimple && tagList && tagList.length > 0 && (
-        <WidgetTag tagList={tagList} />
-      )}
-
-      {!isSimple && links && links.length > 0 && <WidgetLinks links={links} />}
 
       {((latestRelatedEdges && latestRelatedEdges.length > 0) ||
         (config.hasAdsense && config.adsenseUnits?.sidebarBottom)) && (

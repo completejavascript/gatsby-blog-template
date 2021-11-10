@@ -40,7 +40,7 @@ const ServiceSection = () => {
 
   return (
     <section className="service-section background-color-white">
-      <div className="container margin-top-3 margin-bottom-3 padding">
+      <div className="container padding padding-top-3 padding-bottom-3">
         <div className="text-center padding-bottom-3 padding-top-3">
           <h2 className="section-title margin-bottom-1">Dịch vụ</h2>
           <p className="section-subtitle margin-top-half">
@@ -92,7 +92,7 @@ function Service() {
       <Helmet title={`Dịch vụ - ${config.siteTitle}`}>
         <link rel="canonical" href={canonical} />
       </Helmet>
-      <main className="index-container background-color-white">
+      <main className="index-container">
         <ServiceSection />
       </main>
     </MainLayout>

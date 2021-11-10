@@ -17,7 +17,7 @@ const config = {
   numberLatestPost: 8,
   numberLatestFreebie: 6,
   numberLatestRelatedPost: 4,
-  postsPerPage: 12,
+  postsPerPage: 10,
   // Use for post
   txtShare: "Chia sẻ: ",
   dateFromFormat: "YYYY-MM-DDTHH:mm:ssZ", // Date format used in the frontmatter.
@@ -109,6 +109,12 @@ const config = {
       format: "",
     },
     sidebarMiddle2: {
+      client: "ca-pub-7260245524211186",
+      slot: "6458569398",
+      style: { display: "inline-block", width: "300px", height: "250px" },
+      format: "",
+    },
+    sidebarMiddle3: {
       client: "ca-pub-7260245524211186",
       slot: "6458569398",
       style: { display: "inline-block", width: "300px", height: "250px" },

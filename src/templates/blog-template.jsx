@@ -36,7 +36,7 @@ const BlogTemplate = ({ data, pageContext }) => {
         hasLoadmore={false}
       />
       <Pagination
-        extraClass="margin-top padding-top-half"
+        extraClass="padding-top-2 border-top border-color-light-grey"
         currentPage={currentPage}
         totalPages={totalPages}
         pathPrefix={config.pathPrefixBlog}
@@ -45,12 +45,12 @@ const BlogTemplate = ({ data, pageContext }) => {
     </>
   );
 
-  const sidebar = (
+  const sidebarLeft = <Sidebar tagList={tagList} />;
+
+  const sidebarRight = (
     <Sidebar
-      tagList={tagList}
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
-      links={config.sidebarLinks}
     />
   );
 
@@ -59,7 +59,11 @@ const BlogTemplate = ({ data, pageContext }) => {
       <Helmet title={`${config.blogHeader} - ${config.siteTitle}`}>
         <link rel="canonical" href={canonical} />
       </Helmet>
-      <MainContainer content={content} sidebar={sidebar} />
+      <MainContainer
+        content={content}
+        sidebarLeft={sidebarLeft}
+        sidebarRight={sidebarRight}
+      />
     </Layout>
   );
 };

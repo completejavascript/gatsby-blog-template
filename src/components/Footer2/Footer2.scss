@@ -10,11 +10,11 @@
   }
   .container-full {
     &.widgets {
-      background-color: #f7f8f9;
-      border-top: 1px solid #ececec;
+      background-color: #ffffff; //#f7f8f9;
+      border-top: 1px solid #e1e4e8;
     }
     &.footer {
-      background-color: #f7f8f9;
+      background-color: #ffffff; //#f7f8f9;
       border-top: 1px solid #e1e4e8;
     }
   }
@@ -71,7 +71,7 @@
     padding-right: 0;
   }
   .footer-copyright {
-    background-color: #f7f8f9;
+    background-color: transparent;
     color: #727272;
     font-size: 1.35rem;
     padding: 0.8rem 0 2.5rem;

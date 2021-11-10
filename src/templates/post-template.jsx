@@ -74,14 +74,16 @@ const PostTemplate = ({ data, pageContext }) => {
     </>
   );
 
-  const sidebar = (
+  const sidebarLeft = (
+    <Sidebar postSlug={slug} sameSeriesPosts={sameSeriesPosts} />
+  );
+
+  const sidebarRight = (
     <Sidebar
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
       latestRelatedEdges={latestRelatedEdges}
-      links={config.sidebarLinks}
       postSlug={slug}
-      sameSeriesPosts={sameSeriesPosts}
     />
   );
 
@@ -91,7 +93,11 @@ const PostTemplate = ({ data, pageContext }) => {
         <link rel="canonical" href={canonical} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <MainContainer content={content} sidebar={sidebar} />
+      <MainContainer
+        content={content}
+        sidebarLeft={sidebarLeft}
+        sidebarRight={sidebarRight}
+      />
     </Layout>
   );
 };

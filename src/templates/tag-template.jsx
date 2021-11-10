@@ -38,7 +38,7 @@ const TagTemplate = ({ data, pageContext }) => {
         hasLoadmore={false}
       />
       <Pagination
-        extraClass="margin-top padding-top-half"
+        extraClass="padding-top-2 border-top border-color-light-grey"
         currentPage={currentPage}
         totalPages={totalPages}
         pathPrefix={tagPath}
@@ -47,12 +47,12 @@ const TagTemplate = ({ data, pageContext }) => {
     </>
   );
 
-  const sidebar = (
+  const sidebarLeft = <Sidebar tagList={tagList} />;
+
+  const sidebarRight = (
     <Sidebar
-      tagList={tagList}
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
-      links={config.sidebarLinks}
     />
   );
 
@@ -61,7 +61,11 @@ const TagTemplate = ({ data, pageContext }) => {
       <Helmet title={`${config.tagHeader} ${tag} - ${config.siteTitle}`}>
         <link rel="canonical" href={canonical} />
       </Helmet>
-      <MainContainer content={content} sidebar={sidebar} />
+      <MainContainer
+        content={content}
+        sidebarLeft={sidebarLeft}
+        sidebarRight={sidebarRight}
+      />
     </Layout>
   );
 };

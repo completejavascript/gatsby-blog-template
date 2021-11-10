@@ -105,7 +105,7 @@ const Post = ({
         <AdSense.Google {...config.adsenseUnits?.matchedPostBottom} />
       )}
 
-      <GithubComment />
+      {process.env.NODE_ENV === "production" && <GithubComment />}
     </div>
   );
 };

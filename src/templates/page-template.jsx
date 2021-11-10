@@ -22,13 +22,10 @@ const PageTemplate = ({ data, pageContext }) => {
     </>
   );
 
-  const sidebar = (
+  const sidebarRight = (
     <Sidebar
-      tagList={tagList}
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
-      links={config.sidebarLinks}
-      isSimple={true}
     />
   );
 
@@ -38,7 +35,7 @@ const PageTemplate = ({ data, pageContext }) => {
         <link rel="canonical" href={canonical} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <MainContainer content={content} sidebar={sidebar} />
+      <MainContainer content={content} sidebarRight={sidebarRight} />
     </Layout>
   );
 };

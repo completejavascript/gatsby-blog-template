@@ -8,4 +8,7 @@
       color: #3f3f3f;
     }
   }
+  .article-container:last-child {
+    border-bottom: none;
+  }
 }
