@@ -45,7 +45,7 @@ const BlogTemplate = ({ data, pageContext }) => {
     </>
   );
 
-  const sidebarLeft = <Sidebar tagList={tagList} />;
+  const sidebarLeft = <Sidebar tagList={tagList} isLeft={true} />;
 
   const sidebarRight = (
     <Sidebar

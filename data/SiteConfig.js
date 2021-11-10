@@ -120,7 +120,19 @@ const config = {
       style: { display: "inline-block", width: "300px", height: "250px" },
       format: "",
     },
-    sidebarBottom: {
+    sidebarMiddle4: {
+      client: "ca-pub-7260245524211186",
+      slot: "6458569398",
+      style: { display: "inline-block", width: "300px", height: "250px" },
+      format: "",
+    },
+    sidebarBottomRight: {
+      client: "ca-pub-7260245524211186",
+      slot: "4957801764",
+      style: { display: "inline-block", width: "300px", height: "250px" },
+      format: "",
+    },
+    sidebarBottomLeft: {
       client: "ca-pub-7260245524211186",
       slot: "4957801764",
       style: { display: "inline-block", width: "300px", height: "250px" },

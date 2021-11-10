@@ -1,7 +1,6 @@
 import React from "react";
 import WidgetTag from "./WidgetTag";
 import WidgetLatestPosts from "./WidgetLatestPosts";
-import WidgetLinks from "./WidgetLinks";
 import config from "../../../data/SiteConfig";
 import AdSense from "react-adsense";
 import "./Sidebar.scss";
@@ -13,6 +12,7 @@ const Sidebar = ({
   latestRelatedEdges,
   postSlug,
   sameSeriesPosts = [],
+  isLeft = false,
 }) => {
   return (
     <aside
@@ -78,23 +78,45 @@ const Sidebar = ({
         </>
       )}
 
-      {((latestRelatedEdges && latestRelatedEdges.length > 0) ||
-        (config.hasAdsense && config.adsenseUnits?.sidebarBottom)) && (
-        <div className="position-sticky last-item">
-          {latestRelatedEdges && latestRelatedEdges.length > 0 && (
-            <WidgetLatestPosts
-              postEdges={latestRelatedEdges}
-              title={config.latestRelatedWidgetTitle}
-            />
-          )}
-
-          {config.hasAdsense && config.adsenseUnits?.sidebarBottom && (
-            <div className="padding-top padding-bottom">
-              <AdSense.Google {...config.adsenseUnits?.sidebarBottom} />
-            </div>
-          )}
-        </div>
+      {latestRelatedEdges && latestRelatedEdges.length > 0 && (
+        <>
+          {config.hasAdsense &&
+            config.adsenseUnits?.sidebarMiddle4 &&
+            latestRelatedEdges.length > 3 && (
+              <div className="width-full flex justify-content-center padding-top">
+                <AdSense.Google {...config.adsenseUnits?.sidebarMiddle4} />
+              </div>
+            )}
+          <WidgetLatestPosts
+            postEdges={latestRelatedEdges}
+            title={config.latestRelatedWidgetTitle}
+          />
+        </>
       )}
+
+      {config.hasAdsense &&
+        config.adsenseUnits?.sidebarBottomRight &&
+        isLeft == false && (
+          <div className="position-sticky last-item">
+            {config.hasAdsense && config.adsenseUnits?.sidebarBottomRight && (
+              <div className="padding-top padding-bottom">
+                <AdSense.Google {...config.adsenseUnits?.sidebarBottomRight} />
+              </div>
+            )}
+          </div>
+        )}
+
+      {config.hasAdsense &&
+        config.adsenseUnits?.sidebarBottomLeft &&
+        isLeft == true && (
+          <div className="position-sticky last-item">
+            {config.hasAdsense && config.adsenseUnits?.sidebarBottomLeft && (
+              <div className="padding-top padding-bottom">
+                <AdSense.Google {...config.adsenseUnits?.sidebarBottomLeft} />
+              </div>
+            )}
+          </div>
+        )}
     </aside>
   );
 };

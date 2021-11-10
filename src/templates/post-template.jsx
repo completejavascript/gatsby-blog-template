@@ -75,7 +75,7 @@ const PostTemplate = ({ data, pageContext }) => {
   );
 
   const sidebarLeft = (
-    <Sidebar postSlug={slug} sameSeriesPosts={sameSeriesPosts} />
+    <Sidebar postSlug={slug} sameSeriesPosts={sameSeriesPosts} isLeft={true} />
   );
 
   const sidebarRight = (
