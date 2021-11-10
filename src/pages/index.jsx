@@ -135,7 +135,7 @@ const CommunitySection = () => (
         </p>
         <div>
           <AutoLink className="color-yellow" to={config.jsGroupUrl}>
-            ⚡ Cộng đồng JavaScript 🚀
+            ⚡ Tham gia cộng đồng JavaScript 🚀
           </AutoLink>
         </div>
       </div>

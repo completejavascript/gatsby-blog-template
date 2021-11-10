@@ -65,7 +65,7 @@
       justify-content: center;
       .latestposts-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
         grid-gap: 2rem;
         article {
           position: relative;
@@ -127,7 +127,7 @@
         a {
           position: relative;
           text-decoration: none;
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
         a::after {
           content: "";
@@ -149,7 +149,7 @@
     min-height: 100vh;
     .service-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
       grid-gap: 2rem;
       .service-item {
         border-radius: 4px;
@@ -204,6 +204,9 @@
         .right {
           padding-left: 3rem;
           margin-top: 0;
+          a {
+            font-size: 2rem;
+          }
         }
       }
     }
@@ -220,6 +223,19 @@
             font-size: 4.7rem;
           }
         }
+      }
+    }
+    .latestposts-section,
+    .latestfreebies-section {
+      .container {
+        .latestposts-container {
+          grid-gap: 2.6rem;
+        }
+      }
+    }
+    .service-section {
+      .service-container {
+        grid-gap: 2.6rem;
       }
     }
   }

@@ -210,3 +210,10 @@
 .container-below-header {
   margin-top: 6.5rem;
 }
+
+// Common container
+@media (min-width: 1366px) {
+  .container {
+    width: 1366px;
+  }
+}
