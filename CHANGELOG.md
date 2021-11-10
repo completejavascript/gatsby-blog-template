@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.6](https://github.com/completejavascript/completejavascript.com/compare/v1.11.5...v1.11.6) (2021-11-10)
+
+
+### Bug Fixes
+
+* enable post top ads again ([a867d1c](https://github.com/completejavascript/completejavascript.com/commit/a867d1cd93f8e6350ab06c690dd806f8924d37ac))
+
 ### [1.11.5](https://github.com/completejavascript/completejavascript.com/compare/v1.11.4...v1.11.5) (2021-11-09)
 
 
