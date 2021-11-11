@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.4](https://github.com/completejavascript/completejavascript.com/compare/v1.12.3...v1.12.4) (2021-11-11)
+
+
+### Bug Fixes
+
+* windows not defined in rendering ([b469dc0](https://github.com/completejavascript/completejavascript.com/commit/b469dc079dcdc893149588d42e7a5ba3978c3da7))
+
 ### [1.12.3](https://github.com/completejavascript/completejavascript.com/compare/v1.12.2...v1.12.3) (2021-11-11)
 
 
