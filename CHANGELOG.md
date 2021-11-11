@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.3](https://github.com/completejavascript/completejavascript.com/compare/v1.12.2...v1.12.3) (2021-11-11)
+
+
+### Bug Fixes
+
+* disable anchor ads to top of page ([51b9b7a](https://github.com/completejavascript/completejavascript.com/commit/51b9b7aa56b5d401625e2562bbf21a1cb397bda2))
+
 ### [1.12.2](https://github.com/completejavascript/completejavascript.com/compare/v1.12.0...v1.12.2) (2021-11-10)
 
 
