@@ -23,6 +23,9 @@
         width: auto;
         height: 32px;
       }
+      .title {
+        font-size: 1.5rem;
+      }
     }
     .navlinks-wrapper {
       display: flex;
@@ -87,6 +90,11 @@
 @media (min-width: 800px) {
   .navigation-container {
     .navigation-main {
+      .brand {
+        .title {
+          font-size: 1.7rem;
+        }
+      }
       .navlinks-wrapper {
         i {
           margin-right: 10px;
