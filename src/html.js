@@ -3,22 +3,23 @@ import PropTypes from "prop-types";
 import { adsClient } from "../data/SiteConfig";
 
 export default function HTML(props) {
-  const ads = process.env.NODE_ENV === "production" && (
-    <>
-      <script
-        async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsClient}`}
-        crossorigin="anonymous"
-      />
-      <script>
-        {(adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: adsClient,
-          enable_page_level_ads: true,
-          overlays: { bottom: true },
-        })}
-      </script>
-    </>
-  );
+  const ads = process.env.NODE_ENV === "production" &&
+    typeof window !== "undefined" && (
+      <>
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsClient}`}
+          crossorigin="anonymous"
+        />
+        <script>
+          {(adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: adsClient,
+            enable_page_level_ads: true,
+            overlays: { bottom: true },
+          })}
+        </script>
+      </>
+    );
 
   return (
     <html {...props.htmlAttributes}>
