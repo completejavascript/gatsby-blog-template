@@ -5,6 +5,9 @@ import config from "../../../data/SiteConfig";
 import AdSense from "react-adsense";
 import "./Sidebar.scss";
 
+const MIN_POST_FOR_ADS = 3;
+const MIN_TAG_FOR_ADS = 10;
+
 const Sidebar = ({
   tagList,
   latestPostEdges,
@@ -22,11 +25,13 @@ const Sidebar = ({
     >
       {sameSeriesPosts && sameSeriesPosts.length > 0 && (
         <>
-          {config.hasAdsense && config.adsenseUnits?.sidebarTop && (
-            <div className="width-full flex justify-content-center padding-top">
-              <AdSense.Google {...config.adsenseUnits?.sidebarTop} />
-            </div>
-          )}
+          {config.hasAdsense &&
+            config.adsenseUnits?.sidebarTop &&
+            sameSeriesPosts.length > MIN_POST_FOR_ADS && (
+              <div className="width-full flex justify-content-center padding-top">
+                <AdSense.Google {...config.adsenseUnits?.sidebarTop} />
+              </div>
+            )}
           <WidgetLatestPosts
             postSlug={postSlug}
             postEdges={sameSeriesPosts}
@@ -35,29 +40,33 @@ const Sidebar = ({
         </>
       )}
 
-      {latestPostEdges && latestPostEdges.length > 0 && (
-        <>
-          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle && (
-            <div className="width-full flex justify-content-center padding-top">
-              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle} />
-            </div>
-          )}
-          <WidgetLatestPosts
-            postEdges={latestPostEdges.filter(
-              (item) => item.node.fields.slug !== postSlug
+      {latestPostEdges &&
+        latestPostEdges.length > 0 &&
+        latestPostEdges.length > MIN_POST_FOR_ADS && (
+          <>
+            {config.hasAdsense && config.adsenseUnits?.sidebarMiddle && (
+              <div className="width-full flex justify-content-center padding-top">
+                <AdSense.Google {...config.adsenseUnits?.sidebarMiddle} />
+              </div>
             )}
-            title={config.latestPostsWidgetTitle}
-          />
-        </>
-      )}
+            <WidgetLatestPosts
+              postEdges={latestPostEdges.filter(
+                (item) => item.node.fields.slug !== postSlug
+              )}
+              title={config.latestPostsWidgetTitle}
+            />
+          </>
+        )}
 
       {latestFreebieEdges && latestFreebieEdges.length > 0 && (
         <>
-          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle2 && (
-            <div className="width-full flex justify-content-center padding-top">
-              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle2} />
-            </div>
-          )}
+          {config.hasAdsense &&
+            config.adsenseUnits?.sidebarMiddle2 &&
+            latestFreebieEdges.length > MIN_POST_FOR_ADS && (
+              <div className="width-full flex justify-content-center padding-top">
+                <AdSense.Google {...config.adsenseUnits?.sidebarMiddle2} />
+              </div>
+            )}
           <WidgetLatestPosts
             postEdges={latestFreebieEdges.filter(
               (item) => item.node.fields.slug !== postSlug
@@ -69,11 +78,13 @@ const Sidebar = ({
 
       {tagList && tagList.length > 0 && (
         <>
-          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle3 && (
-            <div className="width-full flex justify-content-center padding-top">
-              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle3} />
-            </div>
-          )}
+          {config.hasAdsense &&
+            config.adsenseUnits?.sidebarMiddle3 &&
+            tagList.length > MIN_TAG_FOR_ADS && (
+              <div className="width-full flex justify-content-center padding-top">
+                <AdSense.Google {...config.adsenseUnits?.sidebarMiddle3} />
+              </div>
+            )}
           <WidgetTag tagList={tagList} />
         </>
       )}
@@ -82,7 +93,7 @@ const Sidebar = ({
         <>
           {config.hasAdsense &&
             config.adsenseUnits?.sidebarMiddle4 &&
-            latestRelatedEdges.length > 3 && (
+            latestRelatedEdges.length > MIN_POST_FOR_ADS && (
               <div className="width-full flex justify-content-center padding-top">
                 <AdSense.Google {...config.adsenseUnits?.sidebarMiddle4} />
               </div>
