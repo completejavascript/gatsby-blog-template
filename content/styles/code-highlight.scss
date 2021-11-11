@@ -109,6 +109,9 @@ pre[class*="language-"] {
   color: var(--code-font-color) !important;
   font-size: 1em;
 }
+:not(pre) > code {
+  white-space: normal;
+}
 
 /* Hide line numbers */
 
