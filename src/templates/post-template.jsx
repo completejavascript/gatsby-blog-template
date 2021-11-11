@@ -14,7 +14,6 @@ import { getDirectoryPath } from "../utils/helpers";
 const PostTemplate = ({ data, pageContext }) => {
   const {
     slug,
-    tagList,
     latestPostEdges,
     latestFreebieEdges,
     nextTitle,

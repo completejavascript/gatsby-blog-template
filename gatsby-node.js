@@ -243,7 +243,6 @@ exports.createPages = async ({ graphql, actions }) => {
           nextSlug: nextEdge.node.fields.slug,
           prevTitle: prevEdge.node.frontmatter.title,
           prevSlug: prevEdge.node.fields.slug,
-          tagList,
           latestPostEdges,
           latestFreebieEdges,
         },
@@ -284,7 +283,6 @@ exports.createPages = async ({ graphql, actions }) => {
       component: pagePageTemplate,
       context: {
         slug: edge.node.fields.slug,
-        tagList,
         latestPostEdges,
         latestFreebieEdges,
       },
