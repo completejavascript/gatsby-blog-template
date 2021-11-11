@@ -108,6 +108,7 @@ pre[class*="language-"] {
   background: var(--code-background-color) !important;
   color: var(--code-font-color) !important;
   font-size: 1em;
+  white-space: normal;
 }
 :not(pre) > code {
   white-space: normal;

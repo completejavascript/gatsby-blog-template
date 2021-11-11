@@ -60,7 +60,7 @@ Trong đó:
 - Thư mục **components**: chứa code của các Component. Bài này mình thực hành về  **Draggable Element** nên mình tạo thêm thư mục **draggable-element** bên trong với 2 file **draggable-element.js** và **draggable-element.css** để định nghĩa cho component **Draggable Element** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
 - Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Draggable Element** ở trên.
-- Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
+- Các file **index.css, index.js và serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
 ## Xây dựng Draggable Element Component
 

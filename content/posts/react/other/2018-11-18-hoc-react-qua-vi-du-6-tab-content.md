@@ -57,7 +57,7 @@ Trong đó:
 
 - Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Tab Content** ở trên.
-- Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
+- Các file **index.css, index.js và serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
 ## Xây dựng Tab Content Component
 
