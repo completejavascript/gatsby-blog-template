@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.5](https://github.com/completejavascript/completejavascript.com/compare/v1.12.4...v1.12.5) (2021-11-11)
+
+
+### Bug Fixes
+
+* add conditions to show ads in sidebar ([f153ee3](https://github.com/completejavascript/completejavascript.com/commit/f153ee39163c659b3044ef7754a97db3c4c8d24e))
+* break-word not correct ([86c1513](https://github.com/completejavascript/completejavascript.com/commit/86c15138c8ccdf88d2cdc7b5bd2e13e7270f23b8))
+* import component conflict order ([c226c82](https://github.com/completejavascript/completejavascript.com/commit/c226c82ec673dd3e7f48adc37abe5477388fbd5e))
+* remove config not overlay bottom since it not work ([d318bfa](https://github.com/completejavascript/completejavascript.com/commit/d318bfa9464c5406c46b3b511a3fdf71fe237055))
+* remove tagList in post-template and page-template since not used ([c43c880](https://github.com/completejavascript/completejavascript.com/commit/c43c88021806450c7abb9f5f6ddc355bfd6dabe2))
+
 ### [1.12.4](https://github.com/completejavascript/completejavascript.com/compare/v1.12.3...v1.12.4) (2021-11-11)
 
 
