@@ -4,8 +4,8 @@ import AdSense from "react-adsense";
 import Layout from "../layout";
 import Header from "../components/Header/Header";
 import Tag from "../components/Tag/Tag";
-import GithubComment from "../components/Comment/GithubComment";
 import MainContainer from "../components/MainContainer/MainContainer";
+import GithubComment from "../components/Comment/GithubComment";
 import config from "../../data/SiteConfig";
 
 const TagsTemplate = ({ pageContext }) => {
