@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.12.6](https://github.com/completejavascript/completejavascript.com/compare/v1.12.5...v1.12.6) (2021-11-12)
+
+
+### Bug Fixes
+
+* add useWindowSize and move sameseripost to right sidebar in small screen ([d023405](https://github.com/completejavascript/completejavascript.com/commit/d0234056a9abef9eb30473cbbf19cffbaaf44210))
+
 ### [1.12.5](https://github.com/completejavascript/completejavascript.com/compare/v1.12.4...v1.12.5) (2021-11-11)
 
 
