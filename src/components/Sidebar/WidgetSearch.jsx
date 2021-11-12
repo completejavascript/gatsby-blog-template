@@ -9,7 +9,7 @@ class WidgetSearch extends Component {
     return (
       <>
         {config.hasSearch && (
-          <WidgetContainer extraClass="search-container">
+          <WidgetContainer extraClass="search-container sidebar-widget">
             <WidgetTitle title={config.searchWidgetTitle} />
             <form className="margin-bottom-none" action="/search/" method="get">
               <div className="container-full row padding-none margin-bottom-none">

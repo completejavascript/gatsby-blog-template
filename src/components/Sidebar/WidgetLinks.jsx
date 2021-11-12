@@ -7,7 +7,7 @@ import config from "../../../data/SiteConfig";
 const WidgetLinks = ({ links }) => (
   <>
     {links && links.length > 0 && (
-      <WidgetContainer extraClass="categories-container">
+      <WidgetContainer extraClass="categories-container sidebar-widget">
         <WidgetTitle title={config.linksWidgetTitle} />
         <div>
           {links.map((link) => (

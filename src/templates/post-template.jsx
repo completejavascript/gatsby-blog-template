@@ -79,7 +79,7 @@ const PostTemplate = ({ data, pageContext }) => {
   const sidebarLeft = (
     <Sidebar
       postSlug={slug}
-      sameSeriesPosts={size?.width >= 1400 ? sameSeriesPosts : []}
+      sameSeriesPosts={size?.width >= 1440 ? sameSeriesPosts : []}
       isLeft={true}
     />
   );
@@ -89,7 +89,7 @@ const PostTemplate = ({ data, pageContext }) => {
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
       latestRelatedEdges={latestRelatedEdges}
-      sameSeriesPosts={size?.width < 1400 ? sameSeriesPosts : []}
+      sameSeriesPosts={size?.width < 1440 ? sameSeriesPosts : []}
       postSlug={slug}
     />
   );

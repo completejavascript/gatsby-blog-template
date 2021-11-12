@@ -19,3 +19,15 @@
     top: 6rem;
   }
 }
+
+@media (min-width: 1000px) {
+  .sidebar-container {
+    .sidebar-widget {
+      a,
+      span {
+        font-size: 1.6rem;
+        opacity: 0.975;
+      }
+    }
+  }
+}

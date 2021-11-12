@@ -8,7 +8,7 @@ const WidgetLatesPosts = ({ postSlug, postEdges, title }) => {
   const postList = getPostList(postEdges);
 
   return (
-    <WidgetContainer extraClass="latest-posts-container">
+    <WidgetContainer extraClass="latest-posts-container sidebar-widget">
       <WidgetTitle title={title} />
       <div>
         {postList.map((post) => (

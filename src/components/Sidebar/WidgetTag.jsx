@@ -5,7 +5,7 @@ import WidgetTitle from "./WidgetTitle";
 import config from "../../../data/SiteConfig";
 
 const WidgetTag = ({ tagList }) => (
-  <WidgetContainer extraClass="categories-container">
+  <WidgetContainer extraClass="categories-container sidebar-widget">
     <WidgetTitle title={config.tagWidgetTitle} />
     <div>
       {tagList.map((tag) => (

@@ -6,7 +6,7 @@ import { getCategoryPath } from "../../utils/helpers";
 import config from "../../../data/SiteConfig";
 
 const WidgetCategory = ({ categoryList }) => (
-  <WidgetContainer extraClass="categories-container">
+  <WidgetContainer extraClass="categories-container sidebar-widget">
     <WidgetTitle title={config.categoryWidgetTitle} />
     <div>
       {categoryList.map((category) => (
