@@ -10,6 +10,7 @@ import SEO from "../components/SEO/SEO";
 import BreadCrumb from "../components/Breadcrumb/Breadcrumb";
 import config from "../../data/SiteConfig";
 import { getDirectoryPath } from "../utils/helpers";
+import useWindowSize from "../hooks/useWindowSize";
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -73,8 +74,14 @@ const PostTemplate = ({ data, pageContext }) => {
     </>
   );
 
+  const size = useWindowSize();
+
   const sidebarLeft = (
-    <Sidebar postSlug={slug} sameSeriesPosts={sameSeriesPosts} isLeft={true} />
+    <Sidebar
+      postSlug={slug}
+      sameSeriesPosts={size?.width >= 1400 ? sameSeriesPosts : []}
+      isLeft={true}
+    />
   );
 
   const sidebarRight = (
@@ -82,6 +89,7 @@ const PostTemplate = ({ data, pageContext }) => {
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
       latestRelatedEdges={latestRelatedEdges}
+      sameSeriesPosts={size?.width < 1400 ? sameSeriesPosts : []}
       postSlug={slug}
     />
   );
