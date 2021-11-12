@@ -138,6 +138,28 @@ const config = {
       style: { display: "inline-block", width: "300px", height: "600px" },
       format: "",
     },
+    postTopSmall: {
+      client: "ca-pub-7260245524211186",
+      slot: "9521138000",
+      style: {
+        display: "block",
+        width: "320px",
+        height: "50px",
+        margin: "0 auto",
+      },
+      format: "",
+    },
+    postTopSmall2: {
+      client: "ca-pub-7260245524211186",
+      slot: "4608039900",
+      style: {
+        display: "block",
+        width: "728px",
+        height: "90px",
+        margin: "0 auto",
+      },
+      format: "",
+    },
     postTop: {
       client: "ca-pub-7260245524211186",
       slot: "5797848941",

@@ -1,6 +1,5 @@
 import React from "react";
 import PostTags from "./PostTags";
-import PostShare from "./PostShare";
 import PostShare2 from "./PostShare2";
 import PostDate from "./PostDate";
 import PostDivider from "./PostDivider";
@@ -9,6 +8,7 @@ import PostDirectory from "./PostDirectory";
 import PostFollow from "./PostFollow";
 import AdSense from "react-adsense";
 import GithubComment from "../Comment/GithubComment";
+import useWindowSize from "../../hooks/useWindowSize";
 import { txtShare } from "../../../data/SiteConfig";
 import "./Post.scss";
 import "../../../content/styles/code-highlight.scss";
@@ -30,6 +30,8 @@ const Post = ({
     post.category_id = config.postDefaultCategoryID;
   }
 
+  const size = useWindowSize();
+
   return (
     <div className="post-container">
       <div className="meta-share-wrapper padding-top">
@@ -42,25 +44,40 @@ const Post = ({
           iconSize={26}
         />
       </div>
-
       <PostDivider />
-      {config.hasAdsense && config.adsenseUnits?.postTop && (
-        <AdSense.Google {...config.adsenseUnits?.postTop} />
-      )}
+
+      {size?.width < 1000 &&
+        config.hasAdsense &&
+        config.adsenseUnits.postTop && (
+          <AdSense.Google {...config.adsenseUnits.postTop} />
+        )}
+
+      {size?.width >= 1000 &&
+        size?.width < 1200 &&
+        config.hasAdsense &&
+        config.adsenseUnits.postTopSmall && (
+          <AdSense.Google {...config.adsenseUnits.postTopSmall} />
+        )}
+
+      {size?.width >= 1200 &&
+        config.hasAdsense &&
+        config.adsenseUnits.postTopSmall2 && (
+          <AdSense.Google {...config.adsenseUnits.postTopSmall2} />
+        )}
 
       <div
         className="padding-top padding-bottom"
         dangerouslySetInnerHTML={{ __html: postNode.html }}
       />
 
-      <PostDivider />
-      <PostFollow />
-
       {config.hasAdsense && config.adsenseUnits?.postBottom && (
         <AdSense.Google {...config.adsenseUnits?.postBottom} />
       )}
-      <PostDivider />
 
+      <PostDivider />
+      <PostFollow />
+
+      <PostDivider />
       {(!!post.directory || post.tags?.length > 0) && (
         <>
           <div className="padding-top padding-bottom">
