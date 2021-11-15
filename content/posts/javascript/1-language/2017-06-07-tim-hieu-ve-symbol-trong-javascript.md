@@ -12,6 +12,7 @@ series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Symbol
+  - Kiểu dữ liệu
 ---
 
 Symbol là một kiểu dữ liệu mới được giới thiệu từ phiên bản [ES6](/tag/es6). Tuy nhiên, mình cũng chưa từng dùng Symbol trong JavaScript bao giờ cả. Nếu vậy thì người ta đưa ra kiểu dữ liệu này để làm gì nhỉ? Nó có ưu điểm gì? Ứng dụng của Symbol như thế nào? Cách sử dụng Symbol trong JavaScript ra sao?

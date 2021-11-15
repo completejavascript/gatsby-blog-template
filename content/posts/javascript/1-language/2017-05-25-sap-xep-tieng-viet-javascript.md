@@ -11,6 +11,7 @@ cover: "../../../images/javascript/sap-xep-tieng-viet-javascript-completejavascr
 series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Array
+  - Kiểu dữ liệu
 ---
 
 Sắp xếp là một bài toán không thể thiếu trong lập trình. Tuy nhiên, mình thấy nhiều bạn vẫn đang gặp khó khăn với việc sắp xếp Tiếng việt trong JavaScript. Vì vậy, bài viết này sẽ giới thiệu với bạn về cách mình giải quyết bài toán này.

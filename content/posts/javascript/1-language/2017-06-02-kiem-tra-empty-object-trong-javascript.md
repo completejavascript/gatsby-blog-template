@@ -13,6 +13,7 @@ series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Object
+  - Kiểu dữ liệu
 ---
 
 Giả sử bạn đang muốn kiểm tra empty object đối với một giá trị cho trước. Với empty object được hiểu như sau:

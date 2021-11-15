@@ -11,6 +11,7 @@ title: "Ứng dụng của Reduce trong JavaScript"
 series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Array
+  - Kiểu dữ liệu
 ---
 
 Trước khi bắt đầu, mình muốn bạn hiểu tại sao mình lại viết về phương thức Reduce trong JavaScript mà không phải là một cái nào khác.

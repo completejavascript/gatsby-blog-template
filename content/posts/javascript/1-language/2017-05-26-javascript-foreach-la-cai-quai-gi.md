@@ -11,6 +11,7 @@ title: "JavaScript forEach là cái quái gì?"
 series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Array
+  - Kiểu dữ liệu
 ---
 
 Trong JavaScript, để duyệt [array](/javascript-array-co-ban) thì **forEach** là một hàm rất hay. Vậy hàm forEach trong JavaScript cụ thể là như thế nào? Cách sử dụng forEach JavaScript ra sao? Chúng ta hãy cùng tìm hiểu để làm chủ forEach js nhé!

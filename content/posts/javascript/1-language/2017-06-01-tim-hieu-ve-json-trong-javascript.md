@@ -11,6 +11,8 @@ title: "Tìm hiểu về JSON trong JavaScript"
 series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - JSON
+  - Kiểu dữ liệu
+  - Object
 ---
 
 Cách đây khoảng 3 - 4 năm, khi đang học về lập trình Android, mình đã bắt đầu được tiếp xúc với JSON. Gần đây, mình mới biết nguồn gốc của nó lại liên quan đến JavaScript - khi mình bắt đầu học ngôn ngữ này. Vậy JSON là gì? JSON trong JavaScript có tác dụng gì? Và cách sử dụng JSON như thế nào? Sau đây, chúng ta sẽ cùng tìm hiểu.

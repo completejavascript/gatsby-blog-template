@@ -12,6 +12,7 @@ series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Map
+  - Kiểu dữ liệu
 ---
 
 Map trong JavaScript là một loại object cho phép lưu trữ dữ liệu theo kiểu key-value.

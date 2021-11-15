@@ -12,6 +12,7 @@ series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Array
   - Thuật toán
+  - Kiểu dữ liệu
 ---
 
 Từ xưa đến nay, sắp xếp giữ một vai trò vô cùng quan trọng. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc này giúp cho người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn. Do đó, trong bài viết này, mình sẽ cùng với bạn tìm hiểu về vấn đề [Array](/javascript-array-co-ban) Sorting - sắp xếp mảng trong JavaScript.

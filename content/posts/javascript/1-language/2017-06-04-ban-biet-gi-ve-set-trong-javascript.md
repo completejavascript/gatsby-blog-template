@@ -11,6 +11,7 @@ title: "Bạn biết gì về Set trong JavaScript?"
 series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
+  - Kiểu dữ liệu
 ---
 
 Set trong Javascript là một loại object cho phép bạn lưu trữ dữ liệu một cách duy nhất, không trùng lặp.

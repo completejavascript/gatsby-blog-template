@@ -14,6 +14,7 @@ tags:
   - ES6
   - Map
   - Object
+  - Kiểu dữ liệu
 ---
 
 Có thể bạn đã quen với việc sử dụng Object trong JavaScript. Trong khi đó, Map là một kiểu dữ liệu mới xuất hiện trong ES6. Map có những đặc điểm **giống và khác** so với Object. Cụ thể là như thế nào ? Trong bài viết này, mình sẽ đi vào so sánh Map với Object trong JavaScript.
