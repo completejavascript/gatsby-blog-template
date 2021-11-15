@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/completejavascript/completejavascript.com/compare/v1.12.6...v1.13.0) (2021-11-15)
+
+
+### Features
+
+* dynamic ads size in top post ([7154b84](https://github.com/completejavascript/completejavascript.com/commit/7154b8462b5ddcb024fe34766b3a633a2a339c9d))
+
+
+### Bug Fixes
+
+* **post:** add post chuyen-doi-kieu-du-lieu ([41314a7](https://github.com/completejavascript/completejavascript.com/commit/41314a77f67fb7b720e85b15cb93031fa162070c))
+* **post:** update chapter and tags for js posts ([c475422](https://github.com/completejavascript/completejavascript.com/commit/c475422e6415d26e1b1ac6d90fef2585665542ee))
+* **post:** update javascript directory ([a905f8f](https://github.com/completejavascript/completejavascript.com/commit/a905f8f18fb5bf5649da9c587f36b96a83b8e38e))
+* **post:** update series for some posts ([686c21e](https://github.com/completejavascript/completejavascript.com/commit/686c21ee29864c9ccec2c03b8f1836efa2ab529f))
+* **post:** wrong post directory ([5de39ec](https://github.com/completejavascript/completejavascript.com/commit/5de39eca16ebf8a81f41ed73fe09711b23aea778))
+
 ### [1.12.6](https://github.com/completejavascript/completejavascript.com/compare/v1.12.5...v1.12.6) (2021-11-12)
 
 
