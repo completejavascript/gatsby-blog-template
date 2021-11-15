@@ -21,7 +21,7 @@ const WidgetLatesPosts = ({ postSlug, postEdges, title }) => {
                 <span>{post.shortTitle || post.title}</span>
               </AutoLink>
             ) : (
-              <span className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half text-description">
+              <span className="block border-bottom border-color-light-grey padding-top-half padding-bottom-half text-primary">
                 {post.shortTitle || post.title}
               </span>
             )}
