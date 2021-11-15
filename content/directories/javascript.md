@@ -36,12 +36,11 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Một số lỗi ở Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript)
 - [Phân biệt var và let](/phan-biet-var-va-let-trong-javascript)
 - [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6)
-- [ES6 template string](/su-dung-es6-template-string-co-gi-hay)
-- [Destructuring Assignment](/destructuring-assignment-trong-javascript)
-- [Tagged template ES6](/tagged-template-es6-la-gi)
 
 ### Các kiểu dữ liệu
 
+- [ES6 template string](/su-dung-es6-template-string-co-gi-hay)
+- [Tagged template ES6](/tagged-template-es6-la-gi)
 - [Arrays](/javascript-array-co-ban)
 - [Sắp xếp mảng](/array-sorting-van-de-muon-thuo)
 - [Sắp xếp mảng Tiếng Việt](/sap-xep-tieng-viet-javascript)
@@ -50,6 +49,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [JSON](/tim-hieu-ve-json-trong-javascript)
 - [Kiểm tra empty object](/kiem-tra-empty-object-trong-javascript)
 - [Immutable object - đối tượng bất biến](/2-cach-tao-immutable-object-javascript)
+- [Destructuring Assignment](/destructuring-assignment-trong-javascript)
 - [Set](/ban-biet-gi-ve-set-trong-javascript)
 - [Map](/map-trong-javascript-thi-sao)
 - [So sánh Map và Object](/so-sanh-map-voi-object-trong-javascript)
