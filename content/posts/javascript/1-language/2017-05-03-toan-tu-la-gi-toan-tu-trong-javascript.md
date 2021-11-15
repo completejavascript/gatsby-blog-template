@@ -77,7 +77,7 @@ console.log("5a" % "2"); // NaN
 console.log("5b" ** "2"); // NaN
 ```
 
-> Chuyển đổi kiểu dữ liệu là một thứ **khá xoắn não** khi học lập trình JavaScript. Mình sẽ có một bài viết chuyên về chuyển đổi kiểu dữ liệu trong JavaScript sau.
+> Chuyển đổi kiểu dữ liệu là một thứ **khá xoắn não** khi học lập trình JavaScript. Bạn có thể đọc bài viết [chuyển đổi kiểu dữ liệu trong JavaScript](/chuyen-doi-kieu-du-lieu-trong-javascript) để hiểu kỹ hơn về vấn đề chuyển đổi kiểu dữ liệu.
 
 Trong ví dụ `"5" + 2` trên, bạn thấy kết quả là `52`. Lúc này, `+` không còn là toán tử số học nữa mà nó trở thành toán tử ghép string.
 
