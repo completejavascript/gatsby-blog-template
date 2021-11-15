@@ -9,7 +9,7 @@ description: "Bài viết trình bày về cách sử dụng cơ bản và một
 slug: destructuring-assignment-trong-javascript
 title: "Destructuring Assignment trong JavaScript"
 shortTitle: "Destructuring Assignment trong JS"
-series: "JavaScript: JavaScript cơ bản"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Destructuring Assignment
   - ES6

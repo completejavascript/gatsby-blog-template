@@ -9,7 +9,7 @@ description: "Đúng như tiêu đề, bài viết này mình sẽ đi tìm lờ
 slug: su-dung-es6-template-string-co-gi-hay
 title: "Sử dụng ES6 Template String có gì hay?"
 shortTitle: "ES6 Template String có gì hay?"
-series: "JavaScript: JavaScript cơ bản"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Event

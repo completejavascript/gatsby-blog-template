@@ -8,7 +8,7 @@ slug: tagged-template-es6-la-gi
 keywords: "Tagged template ES6"
 description: "Bạn đã bao giờ sử dụng Tagged template ES6 chưa? Bài viết này mình sẽ tìm hiểu xem cách sử dụng của nó như thế nào nhé."
 cover: "../../../images/javascript/tagged-template-es6-la-gi-completejavascript.com.png"
-series: "JavaScript: JavaScript cơ bản"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Kiểu dữ liệu
