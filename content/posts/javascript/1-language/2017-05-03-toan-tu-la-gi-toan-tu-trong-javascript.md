@@ -35,7 +35,7 @@ Nếu chia theo chức năng thì JavaScript có các loại toán tử cơ bả
 - Toán tử dấu phẩy
 - [Toán tử so sánh](/toan-tu-so-sanh-trong-javascript)
 - [Toán tử logic](/toan-tu-so-sanh-trong-javascript)
-- Toán tử điều kiện rẽ nhánh `?:`
+- [Toán tử điều kiện rẽ nhánh `?:`](/cau-truc-re-nhanh-trong-javascript)
 - Toán tử "Nullish coalescing" `??`
 
 Để tìm hiểu hết về những loại toán tử này, mình sẽ chia thành các bài viết khác nhau. Bài này chủ yếu tập trung vào các toán tử dùng cho việc tính toán như: **toán tử số học, toán tử gán, toán tử bitwise và toán tử dấu phẩy**.

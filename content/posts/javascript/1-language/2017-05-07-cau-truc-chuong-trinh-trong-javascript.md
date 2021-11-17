@@ -8,6 +8,7 @@ keywords: "cấu trúc chương trình"
 description: "Làm thế nào để kết hợp những thành phần này thành một chương trình hoàn chỉnh? Để giải quyết vấn đề này, chúng ta sẽ cùng tìm hiểu về cấu trúc chương trình trong JavaScript."
 slug: cau-truc-chuong-trinh-trong-javascript
 title: "Cấu trúc chương trình trong JavaScript"
+shortTitle: "Biểu thức, switch, vòng lặp"
 series: "JavaScript: JavaScript cơ bản"
 ---
 
@@ -104,62 +105,11 @@ Chương trình sẽ thực hiện tuần tự từng câu lệnh. Và luồng �
 
 Thỉnh thoảng chúng ta sẽ muốn chỉ thực hiện câu lệnh nếu một hay nhiều điều kiện thoả mãn. Lúc này chúng ta sẽ sử dụng điều kiện rẽ nhánh.
 
-#### Từ khoá if
+#### Từ khóa `if` và `else`
 
-Phương pháp hay được sử dụng nhất để rẽ nhánh trong JavaScript là sử dụng _if._
+> Tham khảo bài viết [cấu trúc rẽ nhánh trong JavaScript](/cau-truc-re-nhanh-trong-javascript) để hiểu về câu lệnh **if/else** và toán tử `?`.
 
-Tiếp tục với ví dụ trên, nếu như bây giờ mình chỉ muốn hiển thị kết quả khi người dùng nhập số. Nếu người dùng nhập vào không phải là số thì mình sẽ không hiển thị thông báo.
-
-```js
-var theNumber = Number(prompt("Nhập vào một số: "));
-if (!isNaN(theNumber)) {
-  alert("Bình phương của số đó là: " + theNumber * theNumber);
-}
-```
-
-Nếu người dùng nhập vào số thì hàm _isNaN(theNumber)_ sẽ trả về false. Sau đó !false =&gt; true. Tức là lúc này điều kiện được thoả mãn, nên hàm thông báo _alert_ được thực hiện, ngược lại sẽ không có thông báo nào.
-
-Lúc này luồng điểu khiển:
-
-![Luồng điều khiển rẽ nhánh tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-07-21-26.png)
-
-#### Kết hợp if và else
-
-Trường hợp, mình vẫn muốn hiển thị thông báo khi người dùng không nhập số. Mình sẽ sử dụng thêm từ khoá _else_:
-
-```js
-var theNumber = Number(prompt("Nhập vào một số: "));
-if (!isNaN(theNumber)) {
-  alert("Bình phương của số đó là: " + theNumber * theNumber);
-} else {
-  alert("Bạn nhập vào không phải là số!");
-}
-```
-
-Nếu như mình có nhiều lựa chọn thì sao. Mình sẽ kết hợp nhiều cặp if/else.
-
-```js
-var theNumber = Number(prompt("Nhập vào một số: "));
-if (!isNaN(theNumber)) {
-  if (theNumber < 10) {
-    alert("Small");
-  } else if (theNumber < 100) {
-    alert("Medium");
-  } else {
-    alert("Big");
-  }
-} else {
-  alert("Bạn nhập vào không phải là số!");
-}
-```
-
-Nếu bạn không nhập vào số thì sẽ có một thông báo hiện lên: _Bạn nhập vào không phải là số_. Ngược lại nếu đó là số thì mình lại kiểm tra tiếp. Nếu số đó &lt; 10 thì thông báo: _Small_. Nếu số đó &gt;= 10 và &lt; 100 thì thông báo: _Medium_. Còn nếu số đó &gt;= 100 thì thông báo: _Big_.
-
-Lúc này luồng điểu khiển có thể được biểu diễn đơn giản như sau:
-
-![Luồng điều khiển rẽ nhánh nhiều đường tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-07-32-02.png)
-
-#### Từ khoá switch
+#### Từ khoá `switch`
 
 Ngoài sử dụng từ khoá _if/else_, chúng ta còn có thể sử dụng _switch_. Tuy nhiên, theo như một số tài liệu mình đọc được, trong JavaScript bạn không nên sử dụng _switch_. Do đó, mình sẽ không trình bày chi tiết về phần này. Về lí do thì bạn có thể tự tìm hiểu thêm.
 
