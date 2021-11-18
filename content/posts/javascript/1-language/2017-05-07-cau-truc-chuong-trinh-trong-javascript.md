@@ -32,23 +32,9 @@ Ví dụ như trình duyệt. Luôn có những biến số và hàm giúp chư�
 
 Để giúp cho việc lập trình dễ dàng hơn, trình duyệt cung cấp sẵn một số hàm sau đây.
 
-### Hàm alert
-
-Cú pháp: alert(message);
-
-Hàm này giúp đưa ra một thông báo tới người dùng. Ví dụ:
-
-```js
-alert("Say Hello from CompleteJavaScript.com");
-```
-
-Kết quả:
-
-![Ví dụ hàm alert() tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-06-49-44.png)
-
 ### Hàm console.log
 
-Khác với hàm _alert_, hàm _console.log_ sẽ không đưa ra thông báo trực tiếp tới người dùng. Thông thường hàm này chỉ được sử dụng để ghi lại **log**.
+Hàm _console.log_ không đưa ra thông báo trực tiếp tới người dùng. Thông thường hàm này chỉ được sử dụng để ghi lại **log**.
 
 Cú pháp: console.log(message);
 
@@ -56,35 +42,9 @@ Cú pháp: console.log(message);
 
 Trong hầu hết các ví dụ, mình đều sử dụng hàm _console.log_ để kiểm tra kết quả.
 
-### Hàm confirm
+### Hàm alert, confirm và prompt
 
-Tương tự như hàm _alert_, hàm _confirm_ cũng đưa ra một thông báo trực tiếp tới người dùng. Tuy nhiên, hàm này sẽ yêu cầu người dùng xác nhận bằng cách chọn _OK/Cancel_. Nếu người dùng chọn _OK_ thì hàm này sẽ trả về _true_. Ngược lại, nếu người dùng chọn _Cancel_ thì kết quả trả về sẽ là _false_.
-
-Ví dụ:
-
-```js
-confirm("Bạn muốn tiếp tục sử dụng chương trình?");
-```
-
-Kết quả:
-
-![Ví dụ hàm prompt tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-07-01-29.png)
-
-### Hàm prompt
-
-Hàm _prompt_ cũng lại tương tự như hàm _confirm_ nhưng cho phép người dùng nhập vào string.
-
-Ví dụ:
-
-```js
-prompt("Nhập vào tên của bạn:");
-```
-
-Kết quả:
-
-![Ví dụ hàm prompt tại completejavascript.com](../../../images/javascript/Screenshot-from-2017-05-07-07-03-21.png)
-
-Hai hàm _confirm_ và _prompt_ thường không được sử dụng ở trên trình duyệt hiện đại. Bởi bạn không thể quyết định được giao diện của nó sẽ như thế nào. Tuy nhiên, với mục đích để kiểm tra hay trong một vài chương trình đơn giản thì bạn vẫn có thể sử dụng chúng.
+Tham khảo bài viết [tương tác người dùng với: alert, confirm và prompt](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt) để hiểu về các hàm `alert`, `confirm` và `prompt`.
 
 ## Luồng điều khiển (control flow)
 

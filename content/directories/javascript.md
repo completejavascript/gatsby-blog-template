@@ -29,6 +29,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Hằng là gì? Hằng trong JS](/hang-la-gi-hang-trong-javascript)
 - [Các kiểu dữ liệu trong JavaScript](/kieu-du-lieu-trong-javascript)
 - [Chuyển đổi kiểu dữ liệu trong JS](/chuyen-doi-kieu-du-lieu-trong-javascript)
+- [Hàm: alert, confirm, prompt](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt)
 - [Toán tử là gì? Toán tử trong JS](/toan-tu-la-gi-toan-tu-trong-javascript)
 - [Toán tử so sánh trong JavaScript](/toan-tu-so-sanh-trong-javascript)
 - [Toán tử logic trong JavaScript](/toan-tu-logic-trong-javascript)

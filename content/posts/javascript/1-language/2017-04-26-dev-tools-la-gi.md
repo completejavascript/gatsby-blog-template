@@ -12,6 +12,7 @@ series: "JavaScript: Kiến thức tổng quan"
 tags:
   - Console
   - Debug
+  - Trình duyệt
 ---
 
 Trong lập trình, việc code lỗi là không thể tránh khỏi. Nhưng trên trình duyệt, bạn thường sẽ không nhìn thấy những lỗi này. Mà thay vào đó, bạn cần xem thông qua một công cụ. Đó chính là Dev Tools.
