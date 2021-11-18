@@ -284,3 +284,80 @@ Câu lệnh `if(...)` sẽ kiểm tra điều kiện biểu thức bên trong c�
 - Nếu kết quả là `false` thì bạn có thể dùng mệnh đề `else` để thực thi một khối lệnh tương ứng khác.
 
 Toán tử `?` thường chỉ dùng để gán giá trị cho một biến dựa trên một điều kiện. Bạn nên sử dụng đúng mục đích của toán tử `?` để code rõ ràng và dễ hiểu hơn.
+
+## Thực hành
+
+### Bài 1
+
+Sử dụng [hàm `prompt`](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt), hiển thị nội dung yêu cầu người dùng nhập vào một số nguyên dương chẵn.
+
+Nếu người dùng nhập vào đúng số chẵn thì hiển thị **Bạn đã nhập đúng!**. Ngược lại, hiển thị **Bạn đã nhập sai!**.
+
+_Giả sử, người dùng luôn nhập vào số nguyên dương._
+
+<div class="wrap-collapsible margin-bottom">
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle">Xem đáp án</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+
+```html
+<html>
+  <body>
+    <script>
+      const value = prompt("Nhập vào số nguyên dương chẵn:", 0);
+      if (value % 2 === 0) {
+        alert("Bạn đã nhập đúng!");
+      } else {
+        alert("Bạn đã nhập sai!");
+      }
+    </script>
+  </body>
+</html>
+```
+
+👉 [Xem demo đáp án bài 1](https://blogpost-demo.pages.dev/conditional-branching/task1)
+
+</div>
+
+  </div>
+</div>
+
+### Bài 2
+
+Sử dụng toán tử `?` thay cho câu lệnh `if`:
+
+```js
+let a = 10;
+let b = 20;
+let result;
+
+if (a + b < 10) {
+  result = "Small";
+} else {
+  result = "Big";
+}
+
+console.log(result);
+```
+
+<div class="wrap-collapsible margin-bottom">
+  <input id="collapsible2" class="toggle" type="checkbox">
+  <label for="collapsible2" class="lbl-toggle">Xem đáp án</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+
+```js{5}
+let a = 10;
+let b = 20;
+let result;
+
+result = a + b < 10 ? "Small" : "Big";
+
+console.log(result);
+```
+
+</div>
+
+  </div>
+</div>
