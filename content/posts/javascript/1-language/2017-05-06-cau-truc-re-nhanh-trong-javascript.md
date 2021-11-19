@@ -12,6 +12,7 @@ shortTitle: "Cấu trúc rẽ nhánh trong JS"
 series: "JavaScript: JavaScript cơ bản"
 tags:
   - Toán tử
+  - Cấu trúc rẽ nhánh
 ---
 
 Khi lập trình, bạn sẽ thường xuyên gặp tình huống là **chỉ thực hiện một hành động nếu một hoặc nhiều điều kiện thỏa mãn**. Để giải quyết vấn đề này, bạn cần phải biết về cấu trúc rẽ nhánh trong JavaScript.

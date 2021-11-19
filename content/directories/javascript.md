@@ -35,6 +35,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Toán tử logic trong JavaScript](/toan-tu-logic-trong-javascript)
 - [Cấu trúc rẽ nhánh trong JS](/cau-truc-re-nhanh-trong-javascript)
 - [Toán tử Nullish Coalescing (??) trong JS](/toan-tu-nullish-coalescing-trong-javascript)
+- [Lệnh Switch - Case trong JavaScript](/cau-lenh-switch-case-trong-javascript)
 - [Biểu thức, switch, vòng lặp](/cau-truc-chuong-trinh-trong-javascript)
 - [Cơ bản về hàm trong JavaScript](/tim-hieu-function-javascript)
 - [Một số lỗi ở Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript)
