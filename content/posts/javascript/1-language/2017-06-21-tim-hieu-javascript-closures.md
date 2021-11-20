@@ -17,7 +17,7 @@ Như đã nói trong bài [tìm hiểu function JavaScipt](/tim-hieu-function-ja
 
 Closures là tập hợp bao gồm một hàm và _môi trường_ nơi hàm số đó được khai báo. Ở đây, môi trường bao gồm tất cả những biến cục bộ trong phạm vi hàm số được khai báo (để đơn giản, từ nay mình sẽ sử dụng _hàm closures_ khi nói về JavaScript closures).
 
-Hàm closures có thể truy cập [biến số](/cau-truc-chuong-trinh-trong-javascript) ở **3 phạm vi** khác nhau là:
+Hàm closures có thể truy cập [biến số](/bien-la-gi-bien-trong-javascript) ở **3 phạm vi** khác nhau là:
 
 - Biến toàn cục (global)
 - Biến được khai báo ở hàm số chứa hàm closures (outer function)

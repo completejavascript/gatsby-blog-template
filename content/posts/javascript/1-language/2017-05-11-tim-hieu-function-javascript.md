@@ -12,7 +12,7 @@ shortTitle: "Hàm trong JavaScript"
 series: "JavaScript: JavaScript cơ bản"
 ---
 
-Function JavaScript (hàm trong JavaScript) là một thành phần không thể thiếu trong [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript). Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm. Nhờ vậy mà việc bảo trì phần mềm cũng dễ dàng hơn.
+Function JavaScript (hàm trong JavaScript) là một thành phần không thể thiếu trong cấu trúc chương trình. Function giúp cho chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp những đoạn code lặp lại thành một hàm. Nhờ vậy mà việc bảo trì phần mềm cũng dễ dàng hơn.
 
 Ngoài ra, khi đã xây dựng được một hàm tốt (độc lập và thực hiện một chức năng nhất định), bạn có thể tái sử dụng nó trong các project khác nhau. Điều này làm nâng cao hiệu suất công việc của bạn.
 

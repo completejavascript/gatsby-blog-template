@@ -35,7 +35,7 @@ Mình có theo dõi blog của anh John Sonmez – founder của SimpleProgramme
 
 Thực ra, không chỉ giúp mọi người làm chủ JavaScript mà còn cả bản thân mình nữa. Mình sẽ giới thiệu với bạn những kiến thức sau:
 
-- [Javascript cơ bản](/javascript): [kiểu dữ liệu](/kieu-du-lieu-trong-javascript), [cú pháp](/cau-truc-chuong-trinh-trong-javascript), [hàm](/tim-hieu-function-javascript), [đối tượng](/javascript-object-last-but-not-least), [mảng](/javascript-array-co-ban), lỗi và quản lý lỗi… JavaScript với trình duyệt.
+- [Javascript cơ bản](/javascript): [kiểu dữ liệu](/kieu-du-lieu-trong-javascript), [toán tử](/toan-tu-la-gi-toan-tu-trong-javascript), [hàm](/tim-hieu-function-javascript), [đối tượng](/javascript-object-last-but-not-least), [mảng](/javascript-array-co-ban), lỗi và quản lý lỗi… JavaScript với trình duyệt.
 - [Design pattern](/tag/design-pattern): cấu trúc design pattern, các loại design pattern,…
 - Cách viết các ứng dụng, game sử dụng JavaScript
 - Các thư viện và Frameworks JavaScript: [JQuery](/tag/jquery), [ReactJS](/react), AngularJS, [NodeJS](/tag/nodejs),…

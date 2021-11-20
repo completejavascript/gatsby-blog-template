@@ -178,7 +178,7 @@ doAsync("https://something.com")
   });
 ```
 
-Rõ ràng, [cấu trúc chương trình](/cau-truc-chuong-trinh-trong-javascript) đã trở nên rõ ràng hơn. Không còn hiện tượng nhiều mức lồng nhau như khi sử dụng callback nữa rồi.
+Rõ ràng, cấu trúc chương trình đã trở nên rõ ràng hơn. Không còn hiện tượng nhiều mức lồng nhau như khi sử dụng callback nữa rồi.
 
 ## Sử dụng Async/await để xử lý bất đồng bộ
 

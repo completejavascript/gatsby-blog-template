@@ -119,7 +119,7 @@ console.log(myComputer["operating system"]); // => Ubuntu
 
 ## Cách duyệt tất cả các thuộc tính của object
 
-Đối với array, bạn có thể sử dụng vòng lặp [_for, while, do/while_](/cau-truc-chuong-trinh-trong-javascript) với chỉ số là number để duyệt từng phần tử của mảng. Nhưng với object thì hơi khác một chút.
+Đối với array, bạn có thể sử dụng vòng lặp [for, while, do/while](/vong-lap-trong-javascript) với chỉ số là number để duyệt từng phần tử của mảng. Nhưng với object thì hơi khác một chút.
 
 Để duyệt các thuộc tính của object, bạn có thể sử dụng vòng lặp _for_ với từ khoá _in_ như ví dụ sau:
 
