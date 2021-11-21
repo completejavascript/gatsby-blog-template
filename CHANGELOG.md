@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/completejavascript/completejavascript.com/compare/v1.13.0...v1.14.0) (2021-11-21)
+
+
+### Features
+
+* use trailing slash for URL ([55968ba](https://github.com/completejavascript/completejavascript.com/commit/55968baf58bc7d987ef6a59d593a7a5e8b4c05e0))
+
+
+### Bug Fixes
+
+* **post:** add trailing slash for url in markdown post ([3762d93](https://github.com/completejavascript/completejavascript.com/commit/3762d93cd02d3a3b78c6ddfb2e08e74766c3de24))
+* update useSlash for canonical ([c7f6140](https://github.com/completejavascript/completejavascript.com/commit/c7f6140a219a0a7cddca1d450a0c839b16c05793))
+* **post:** add javascript post - tuong-tac-nguoi dung ([8761e1f](https://github.com/completejavascript/completejavascript.com/commit/8761e1f11062e3b56dcc0d7e512e1efc854b63ae))
+* **post:** javascript - add post lenh-switch-case ([a1ee9ed](https://github.com/completejavascript/completejavascript.com/commit/a1ee9edddeb9f142d43c237643d6f6dbc4f4e1cd))
+* **post:** javascript - update thuc-hanh post cau-truc-re-nhanh ([a7a265d](https://github.com/completejavascript/completejavascript.com/commit/a7a265d3de957261c95fccd86d74a120ca7bcf58))
+* **post:** javascript add arrow-function ([dc61500](https://github.com/completejavascript/completejavascript.com/commit/dc615001c652f936d06a24c5c118735ed109acbb))
+* **post:** javascript add post vong-lap-trong-javascript, remove cau-truc-chuong-trinh ([361738a](https://github.com/completejavascript/completejavascript.com/commit/361738aa4698563ef69deedaddad156ae7cc6387))
+* **post:** javascript cau-truc-re-nhanh ([7b91651](https://github.com/completejavascript/completejavascript.com/commit/7b91651ca2f24e5d78e418803830607067b496b0))
+* **post:** javascript change series for const es5-es6 ([1bd29ff](https://github.com/completejavascript/completejavascript.com/commit/1bd29ff033940c253ef730958d3bbf99c41ebda9))
+* **post:** javascript function expression ([1a80195](https://github.com/completejavascript/completejavascript.com/commit/1a80195e35cdb6c673e39164816793f3af6afcfd))
+* **post:** javascript toan-tu-nullish-coalescing ([4787414](https://github.com/completejavascript/completejavascript.com/commit/478741466b919ba865080bf62e3c0a3cbf80a89a))
+* **post:** javascript update ham-la-gi ([5097a79](https://github.com/completejavascript/completejavascript.com/commit/5097a79cb3b1e47496b5cbfee4b7df897c253876))
+* **post:** remove links with old page ([ccf6a86](https://github.com/completejavascript/completejavascript.com/commit/ccf6a866522c0d7e698774d3dc873730b33bdf47))
+* **post:** update backlink toan-tu-la-gi ([2610e71](https://github.com/completejavascript/completejavascript.com/commit/2610e71243289d12fc44866846ccb966510f77bd))
+
 ## [1.13.0](https://github.com/completejavascript/completejavascript.com/compare/v1.12.6...v1.13.0) (2021-11-15)
 
 
