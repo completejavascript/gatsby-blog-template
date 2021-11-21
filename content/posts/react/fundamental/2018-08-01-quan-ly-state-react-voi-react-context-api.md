@@ -124,7 +124,7 @@ Trên đây là những thông tin cơ bản về các API của React Context. 
 
 ### Khởi tạo Project
 
-Ở đây mình sử dụng [CodeSanbox.io](https://codesandbox.io) để làm Demo. Tuy nhiên, bạn cũng có thể sử dụng [Create-react-app](/tag/create-react-app) để làm ví dụ ngay trên máy tính.
+Ở đây mình sử dụng [CodeSanbox.io](https://codesandbox.io) để làm Demo. Tuy nhiên, bạn cũng có thể sử dụng [Create-react-app](/tag/create-react-app/) để làm ví dụ ngay trên máy tính.
 
 Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 

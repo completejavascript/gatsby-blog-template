@@ -33,7 +33,7 @@ Nếu chúng ta không có thông tin phản hồi và sự chắc chắn thì b
 
 Khi bộ não nhận được thông tin phản hồi, những điều không chắc chắn sẽ giảm bớt tính không chắc chắn. Đồng thời, những sự lo âu cũng sẽ giảm bớt.
 
-Tốt hơn nữa, khi bạn tập trung vào những thông tin phản hồi tích cực mỗi ngày, bạn không chỉ làm giảm bớt điều không chắc chắn, mà bạn còn tạo ra động lực và niềm [hạnh phúc](/tag/anh-che) cho bản thân.
+Tốt hơn nữa, khi bạn tập trung vào những thông tin phản hồi tích cực mỗi ngày, bạn không chỉ làm giảm bớt điều không chắc chắn, mà bạn còn tạo ra động lực và niềm [hạnh phúc](/tag/anh-che/) cho bản thân.
 
 ![Loại bỏ lo lắng để thành công nhỏ mỗi ngày](../../images/cuoc-song-it/small-success-everyday-loai-bo-lo-lang-completejavascript.com_.png)
 

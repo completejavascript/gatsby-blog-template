@@ -185,7 +185,7 @@ server.listen(port, hostname, () => {
 
 ### Chạy thử server và kiểm tra kết quả
 
-Để chạy server, bạn mở **CMD** lên tại vị trí file nguồn vừa tạo và chạy [câu lệnh](/tag/command-line):
+Để chạy server, bạn mở **CMD** lên tại vị trí file nguồn vừa tạo và chạy [câu lệnh](/tag/command-line/):
 
 ```bash
 $ node hello-world.js

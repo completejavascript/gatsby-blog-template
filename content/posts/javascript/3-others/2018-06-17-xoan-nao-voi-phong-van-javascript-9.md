@@ -171,7 +171,7 @@ const f = (param) => {
 f();
 ```
 
-Khi bạn gọi hàm **f()** mà không có tham số truyền vào, giá trị của **param** sẽ là **undefined**. Do đó, khi thực hiện [Destructuring Assignment](/tag/destructuring-assignment), bạn sẽ gặp lỗi như trên **Cannot destructure property 'x' of 'undefined' or 'null'**.
+Khi bạn gọi hàm **f()** mà không có tham số truyền vào, giá trị của **param** sẽ là **undefined**. Do đó, khi thực hiện [Destructuring Assignment](/tag/destructuring-assignment/), bạn sẽ gặp lỗi như trên **Cannot destructure property 'x' of 'undefined' or 'null'**.
 
 Để tránh lỗi trên, bạn có thể sửa lại function ban đầu như sau:
 

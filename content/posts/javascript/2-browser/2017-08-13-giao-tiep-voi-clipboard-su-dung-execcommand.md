@@ -15,7 +15,7 @@ tags:
 
 Khi nói đến việc copy dữ liệu vào clipboard thì không thể không kể đến thư viện [clipboard.js](https://clipboardjs.com/) - với hơn [24000 star trên Github](https://github.com/zenorocha/clipboard.js/), dung lượng sau nén khoảng 3kb, không phụ thuộc vào Flash và bất kỳ một [framework](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) nào, thì đây đúng là một thư viện rất đáng để sử dụng. Tuy nhiên, bạn cũng vẫn có thể trực tiếp giao tiếp với clipboard sử dụng execCommand một cách đơn giản.
 
-Thực tế, [Document.execCommand()](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) hỗ trợ rất nhiều các [command](/tag/command-line) khác nhau như: _copy, cut, paste, bold, italic, createLink, fontName, fontSize,..._ Tuy nhiên, bài viết này mình sẽ chỉ đề cập vào 2 phương thức chính giao tiếp với clipboard là: _copy, cut_ (phương thức _paste_ hiện tại không support trên web nên mình sẽ không trình bày).
+Thực tế, [Document.execCommand()](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) hỗ trợ rất nhiều các [command](/tag/command-line/) khác nhau như: _copy, cut, paste, bold, italic, createLink, fontName, fontSize,..._ Tuy nhiên, bài viết này mình sẽ chỉ đề cập vào 2 phương thức chính giao tiếp với clipboard là: _copy, cut_ (phương thức _paste_ hiện tại không support trên web nên mình sẽ không trình bày).
 
 ## Ví dụ giao tiếp với clipboard sử dụng execCommand
 

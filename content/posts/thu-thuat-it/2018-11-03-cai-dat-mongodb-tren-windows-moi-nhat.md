@@ -125,7 +125,7 @@ Nếu nhìn vào thư mục đó, bạn sẽ thấy file **mongo.exe**. Đây ch
 
 ### Các câu lệnh cơ bản
 
-Đầu tiên bạn mở **CMD** lên và gõ [câu lệnh](/tag/command-line):
+Đầu tiên bạn mở **CMD** lên và gõ [câu lệnh](/tag/command-line/):
 
 ```shell
 mongo

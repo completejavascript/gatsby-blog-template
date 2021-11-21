@@ -20,7 +20,7 @@ Khi mọi người cố gắng học lập trình Javascript, hay bất kỳ kĩ
 - Một khi bạn đã hiểu một vài thứ, nó là rất dễ để bạn quên nó một lần nữa.
 - Những công cụ là rất nhiều và luôn luôn thay đổi, rất khó để biết được nên bắt đầu học từ đâu.
 
-May mắn là, những thử thách này có thể được nhận ra và cuối cùng được chinh phục. Trong bài viết này, tôi sẽ trình bày sáu mẹo đơn giản giúp học lập trình [Javascript](/javascript/) nhanh hơn và giúp bạn trở thành một lập trình viên [hạnh phúc hơn](/tag/anh-che), hiệu quả hơn.
+May mắn là, những thử thách này có thể được nhận ra và cuối cùng được chinh phục. Trong bài viết này, tôi sẽ trình bày sáu mẹo đơn giản giúp học lập trình [Javascript](/javascript/) nhanh hơn và giúp bạn trở thành một lập trình viên [hạnh phúc hơn](/tag/anh-che/), hiệu quả hơn.
 
 ## Đừng để những quyết định tương lai làm bạn dừng bước từ những tiến bộ hôm nay
 

@@ -73,7 +73,7 @@ Git cũng là một thành phần không thể thiếu. Mình cần cài đặt 
 
 ### Cài đặt Gatsby CLI
 
-Gatsby CLI là công cụ cần thiết để tạo mới một trang blog với Gatsby.js, cũng như là chạy các câu lệnh phục vụ cho việc phát triển, [deploy](/deploy-ung-dung-react-len-github-pages/) trang web. Để cài đặt Gatsby CLI bạn có thể sử dụng npm bằng [câu lệnh](/tag/command-line):
+Gatsby CLI là công cụ cần thiết để tạo mới một trang blog với Gatsby.js, cũng như là chạy các câu lệnh phục vụ cho việc phát triển, [deploy](/deploy-ung-dung-react-len-github-pages/) trang web. Để cài đặt Gatsby CLI bạn có thể sử dụng npm bằng [câu lệnh](/tag/command-line/):
 
 ```bash
 $ npm install --global gatsby-cli

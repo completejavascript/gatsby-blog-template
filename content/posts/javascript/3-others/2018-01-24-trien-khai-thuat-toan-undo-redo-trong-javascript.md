@@ -13,7 +13,7 @@ tags:
   - Thuật toán
 ---
 
-Đối với hầu hết các ứng dụng (text editor, chỉnh sửa ảnh,...), việc triển khai [thuật toán](/tag/thuat-toan) Undo-Redo là thật sự cần thiết. Tuy nhiên, để hiểu và triển khai thuật toán này thì không hề đơn giản chút nào. Vì vậy, bài viết này mình sẽ cố gắng chia sẻ với các bạn những kiến thức mà mình rút ra sau khi đọc và tìm hiểu rất nhiều hướng dẫn trên mạng. Qua đó, bạn có thể dễ dàng triển khai thuật toán Undo-Redo với bất kì ngôn ngữ nào, chứ không chỉ giới hạn ở JavaScript.
+Đối với hầu hết các ứng dụng (text editor, chỉnh sửa ảnh,...), việc triển khai [thuật toán](/tag/thuat-toan/) Undo-Redo là thật sự cần thiết. Tuy nhiên, để hiểu và triển khai thuật toán này thì không hề đơn giản chút nào. Vì vậy, bài viết này mình sẽ cố gắng chia sẻ với các bạn những kiến thức mà mình rút ra sau khi đọc và tìm hiểu rất nhiều hướng dẫn trên mạng. Qua đó, bạn có thể dễ dàng triển khai thuật toán Undo-Redo với bất kì ngôn ngữ nào, chứ không chỉ giới hạn ở JavaScript.
 
 ## Vai trò của việc triển khai thuật toán Undo-Redo
 

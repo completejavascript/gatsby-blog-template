@@ -17,7 +17,7 @@ tags:
 
 ## People
 
-who work every monday to friday and [**relax**](/tag/anh-che) at the weekend.
+who work every monday to friday and [**relax**](/tag/anh-che/) at the weekend.
 
 ## Programmers
 

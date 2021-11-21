@@ -234,7 +234,7 @@ https://codepen.io/completejavascript/pen/ExxPENE
 
 Từ nãy giờ, mình mới chỉ tạo số ngẫu nhiên trong JavaScript. Tuy nhiên, nếu mình muốn tạo chuỗi string ngẫu nhiên thì sao?
 
-Đơn giản lắm! Dưới đây là [thuật toán](/tag/thuat-toan) của mình.
+Đơn giản lắm! Dưới đây là [thuật toán](/tag/thuat-toan/) của mình.
 
 Giả sử mình muốn tạo chuỗi string ngẫu nhiên độ dài L với các ký tự thuộc tập hợp cho trước. Khi đó, các bước làm sẽ như sau:
 

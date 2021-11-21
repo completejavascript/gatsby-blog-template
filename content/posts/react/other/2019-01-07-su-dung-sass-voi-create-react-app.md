@@ -29,7 +29,7 @@ Và còn nhiều tính năng thú vị khác của SASS nữa mà bạn có th�
 
 Tiếp theo là **create-react-app**.
 
-Đúng vậy, nếu bạn đã theo dõi blog của mình thì sẽ thấy các ứng dụng, ví dụ đều sử dụng [create-react-app](/tag/create-react-app). Bởi lẽ, create-react-app có ưu điểm là cài đặt đơn giản và nhanh chóng.
+Đúng vậy, nếu bạn đã theo dõi blog của mình thì sẽ thấy các ứng dụng, ví dụ đều sử dụng [create-react-app](/tag/create-react-app/). Bởi lẽ, create-react-app có ưu điểm là cài đặt đơn giản và nhanh chóng.
 
 Chỉ cần một câu lệnh <code>npx create-react-app app-name</code> mà không cần phải cấu hình gì thêm, bạn đã có đầy đủ các công cụ mới nhất để tập trung vào việc coding rồi.
 

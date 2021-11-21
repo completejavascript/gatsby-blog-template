@@ -16,7 +16,7 @@ tags:
   - Promise
 ---
 
-Có thể bạn đã quen với việc [xử lý bất đồng bộ](/xu-ly-bat-dong-bo-callback-promise-async-await/) trong JavaScript với [Promise](/tag/promise/) hoặc [Async/await](/tag/async-await) rồi. Tuy nhiên, khi bạn có một chuỗi các hành động thì câu hỏi đặt ra là: bạn sẽ xử lý chúng như thế nào? Bạn quyết định xử lý bất đồng bộ song song hay tuần tự?
+Có thể bạn đã quen với việc [xử lý bất đồng bộ](/xu-ly-bat-dong-bo-callback-promise-async-await/) trong JavaScript với [Promise](/tag/promise/) hoặc [Async/await](/tag/async-await/) rồi. Tuy nhiên, khi bạn có một chuỗi các hành động thì câu hỏi đặt ra là: bạn sẽ xử lý chúng như thế nào? Bạn quyết định xử lý bất đồng bộ song song hay tuần tự?
 
 Câu trả lời có lẽ sẽ phụ thuộc vào từng trường hợp. Tuy nhiên, để biết được nên lựa chọn cách nào thì bạn cần phải biết ý nghĩa và cách triển khai của từng trường hợp.
 

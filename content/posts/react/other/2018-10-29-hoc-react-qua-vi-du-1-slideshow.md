@@ -31,7 +31,7 @@ Nếu không có vấn đề gì thì mình bắt đầu học React qua ví d�
 
 ## Khởi tạo Project
 
-Có nhiều cách để thực hiện demo Slideshow. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #1 ngay trên máy tính của mình.
+Có nhiều cách để thực hiện demo Slideshow. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #1 ngay trên máy tính của mình.
 
 Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
