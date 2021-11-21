@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/completejavascript/gatsby-blog-template/compare/v1.2.1...v1.3.0) (2021-11-21)
+
+
+### Features
+
+* add canonical ([63633d4](https://github.com/completejavascript/gatsby-blog-template/commit/63633d4bd1fcbee1842d4580bae88bcd6910c14c))
+* add google-site-verification for google search console ([fbe070e](https://github.com/completejavascript/gatsby-blog-template/commit/fbe070eb9ab351ba93e801bb0d3d7252f43d3c5e))
+* use trailing slash for URL ([9b14fd6](https://github.com/completejavascript/gatsby-blog-template/commit/9b14fd68b5d51a22ad17e61da8ea8ba4b2aee01a))
+
+
+### Bug Fixes
+
+* remove option for gatsby-plugin-netlify leaves default ([46b5f8e](https://github.com/completejavascript/gatsby-blog-template/commit/46b5f8e7bb788109928ff8c5216e218241e35ba7))
+
 ### [1.2.1](https://github.com/completejavascript/gatsby-blog-template/compare/v1.2.0...v1.2.1) (2021-11-09)
 
 
