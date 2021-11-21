@@ -3,6 +3,7 @@ import { getSrc } from "gatsby-plugin-image";
 import Helmet from "react-helmet";
 import urljoin from "url-join";
 import config from "../../../data/SiteConfig";
+import { useSlash } from "../../utils/helpers";
 
 class SEO extends Component {
   render() {
@@ -81,6 +82,7 @@ class SEO extends Component {
         <meta name="description" content={description} />
         <meta name="image" content={image} />
         {keywords && <meta name="keywords" content={keywords} />}
+        <link rel="canonical" href={useSlash(postURL || config.siteUrl)} />
 
         {/* Schema.org tags */}
         <script type="application/ld+json">
