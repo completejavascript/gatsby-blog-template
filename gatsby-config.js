@@ -66,13 +66,6 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {
-          "/*.js": ["cache-control: public, max-age=31536000, immutable"],
-          "/*.css": ["cache-control: public, max-age=31536000, immutable"],
-          "/sw.js": ["cache-control: public, max-age=0, must-revalidate"],
-        },
-      },
     },
     {
       resolve: "gatsby-plugin-google-analytics",
