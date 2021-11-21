@@ -2,7 +2,14 @@ const path = require("path");
 const slug = require("slug");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
+
 const slugify = (text) => slug(text).toLowerCase();
+
+const useSlash = (slug) => {
+  if (!slug) return "/";
+  if (slug.charAt(slug.length - 1) !== "/") return `${slug}/`;
+  return slug;
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -14,7 +21,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
     ) {
-      slug = `/${slugify(node.frontmatter.title)}`;
+      slug = `/${slugify(node.frontmatter.title)}/`;
     } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
     } else if (parsedFilePath.dir === "") {
@@ -25,7 +32,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     if (Object.prototype.hasOwnProperty.call(node, "frontmatter")) {
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, "slug"))
-        slug = `/${slugify(node.frontmatter.slug)}`;
+        slug = `/${slugify(node.frontmatter.slug)}/`;
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, "date")) {
         const date = moment(node.frontmatter.date, siteConfig.dateFromFormat);
         if (!date.isValid)
@@ -38,7 +45,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         });
       }
     }
-    createNodeField({ node, name: "slug", value: slug });
+    createNodeField({ node, name: "slug", value: useSlash(slug) });
   }
 };
 
@@ -232,17 +239,17 @@ exports.createPages = async ({ graphql, actions }) => {
       const prevEdge = postEdges[prevID];
 
       createPage({
-        path: edge.node.fields.slug,
+        path: useSlash(edge.node.fields.slug),
         component: postPageTemplate,
         context: {
-          slug: edge.node.fields.slug,
+          slug: useSlash(edge.node.fields.slug),
           template: edge.node.frontmatter.template,
           tags: edge.node.frontmatter.tags || [],
           series: edge.node.frontmatter.series || "__IGNORED__",
           nextTitle: nextEdge.node.frontmatter.title,
-          nextSlug: nextEdge.node.fields.slug,
+          nextSlug: useSlash(nextEdge.node.fields.slug),
           prevTitle: prevEdge.node.frontmatter.title,
-          prevSlug: prevEdge.node.fields.slug,
+          prevSlug: useSlash(prevEdge.node.fields.slug),
           latestPostEdges,
           latestFreebieEdges,
         },
@@ -258,17 +265,17 @@ exports.createPages = async ({ graphql, actions }) => {
     const prevEdge = freebieEdges[prevID];
 
     createPage({
-      path: edge.node.fields.slug,
+      path: useSlash(edge.node.fields.slug),
       component: postPageTemplate,
       context: {
-        slug: edge.node.fields.slug,
+        slug: useSlash(edge.node.fields.slug),
         template: edge.node.frontmatter.template,
         tags: edge.node.frontmatter.tags || [],
         series: edge.node.frontmatter.series || "__IGNORED__",
         nextTitle: nextEdge.node.frontmatter.title,
-        nextSlug: nextEdge.node.fields.slug,
+        nextSlug: useSlash(nextEdge.node.fields.slug),
         prevTitle: prevEdge.node.frontmatter.title,
-        prevSlug: prevEdge.node.fields.slug,
+        prevSlug: useSlash(prevEdge.node.fields.slug),
         tagList,
         latestPostEdges,
         latestFreebieEdges,
@@ -279,10 +286,10 @@ exports.createPages = async ({ graphql, actions }) => {
   // create page page
   pageEdges.forEach((edge) => {
     createPage({
-      path: edge.node.fields.slug,
+      path: useSlash(edge.node.fields.slug),
       component: pagePageTemplate,
       context: {
-        slug: edge.node.fields.slug,
+        slug: useSlash(edge.node.fields.slug),
         latestPostEdges,
         latestFreebieEdges,
       },
@@ -292,17 +299,17 @@ exports.createPages = async ({ graphql, actions }) => {
   // create directory page
   directoryEdges.forEach((edge) => {
     createPage({
-      path: edge.node.fields.slug,
+      path: useSlash(edge.node.fields.slug),
       component: directoryPageTemplate,
       context: {
-        slug: edge.node.fields.slug,
+        slug: useSlash(edge.node.fields.slug),
       },
     });
   });
 
   // create page contains list of all tags
   createPage({
-    path: siteConfig.pathPrefixTags,
+    path: useSlash(siteConfig.pathPrefixTags),
     component: tagsPageTemplate,
     context: {
       tagList: [...tagList].sort((a, b) => a.localeCompare(b)),
@@ -325,10 +332,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
     for (let i = 0; i < numTagPages; i++) {
       createPage({
-        path:
+        path: useSlash(
           i === 0
             ? `${basePath}`
-            : `${basePath}${pathPrefixPagination}/${i + 1}`,
+            : `${basePath}${pathPrefixPagination}/${i + 1}`
+        ),
         component: tagPageTemplate,
         context: {
           tag,
@@ -351,10 +359,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
     for (let i = 0; i < numBlogPages; i++) {
       createPage({
-        path:
+        path: useSlash(
           i === 0
             ? `${basePath}`
-            : `${basePath}${pathPrefixPagination}/${i + 1}`,
+            : `${basePath}${pathPrefixPagination}/${i + 1}`
+        ),
         component: blogPageTemplate,
         context: {
           tagList,
@@ -376,10 +385,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
     for (let i = 0; i < numFreebiePages; i++) {
       createPage({
-        path:
+        path: useSlash(
           i === 0
             ? `${basePath}`
-            : `${basePath}${pathPrefixPagination}/${i + 1}`,
+            : `${basePath}${pathPrefixPagination}/${i + 1}`
+        ),
         component: freebiePageTemplate,
         context: {
           tagList,
