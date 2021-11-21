@@ -138,7 +138,7 @@ console.log(new_arr); // => (3) ["a", "d", "e"]
 
 ### Loại bỏ phần tử trong mảng dựa vào giá trị với filter()
 
-Trong trường hợp bạn biết giá trị của phần tử muốn loại bỏ khỏi mảng thì có thể sử dụng phương thức [filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter). Phương thức này sẽ tạo ra một mảng mới chứa tất cả những phần tử thỏa mãn testing [function](/tim-hieu-function-javascript).
+Trong trường hợp bạn biết giá trị của phần tử muốn loại bỏ khỏi mảng thì có thể sử dụng phương thức [filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter). Phương thức này sẽ tạo ra một mảng mới chứa tất cả những phần tử thỏa mãn testing [function](/ham-la-gi-ham-trong-javascript).
 
 Ví dụ:
 

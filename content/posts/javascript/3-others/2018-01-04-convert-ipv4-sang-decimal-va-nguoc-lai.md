@@ -104,7 +104,7 @@ console.log(decimal); // => 3221226219
 
 ### Triển khai convert IPv4 sang Decimal đầy đủ
 
-Đoạn code trên đã giải quyết khá tốt việc convert IPv4 sang Decimal. Tuy nhiên, mình vẫn chưa xử lý việc kiểm tra đầu vào có hợp lệ hay không và cũng chưa viết nó thành một [function](/tim-hieu-function-javascript) riêng biệt để dễ dàng tái sử dụng sau này. Và sau đây chính là đoạn code khá đầy đủ mà mình đã viết:
+Đoạn code trên đã giải quyết khá tốt việc convert IPv4 sang Decimal. Tuy nhiên, mình vẫn chưa xử lý việc kiểm tra đầu vào có hợp lệ hay không và cũng chưa viết nó thành một [function](/ham-la-gi-ham-trong-javascript) riêng biệt để dễ dàng tái sử dụng sau này. Và sau đây chính là đoạn code khá đầy đủ mà mình đã viết:
 
 ```js
 /**

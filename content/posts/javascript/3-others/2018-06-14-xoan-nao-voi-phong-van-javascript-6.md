@@ -39,7 +39,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Cách khai báo [hàm số](/tim-hieu-function-javascript) như trên được gọi là **Named function expression**, tức là bạn đặt tên cho function expression. Khi đó, bạn có thể sử dụng hàm số ngay bên trong nội dung của hàm.
+Cách khai báo [hàm số](/ham-la-gi-ham-trong-javascript) như trên được gọi là **Named function expression**, tức là bạn đặt tên cho function expression. Khi đó, bạn có thể sử dụng hàm số ngay bên trong nội dung của hàm.
 
 Ví dụ:
 

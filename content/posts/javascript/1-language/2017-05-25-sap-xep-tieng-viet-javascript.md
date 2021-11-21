@@ -30,7 +30,7 @@ arr.sort(compareFunction);
 
 ### Tham số
 
-Tham số **compareFunction** là [hàm](/tim-hieu-function-javascript/) dùng để xác định thứ tự sắp xếp. Nếu bạn bỏ qua tham số này thì mặc định JavaScript sẽ sắp xếp theo thứ tự tăng dần trong bảng mã Unicode (hay đơn giản thì cứ gọi là thứ tự tăng dần bảng chữ cái).
+Tham số **compareFunction** là [hàm](/ham-la-gi-ham-trong-javascript/) dùng để xác định thứ tự sắp xếp. Nếu bạn bỏ qua tham số này thì mặc định JavaScript sẽ sắp xếp theo thứ tự tăng dần trong bảng mã Unicode (hay đơn giản thì cứ gọi là thứ tự tăng dần bảng chữ cái).
 
 ### Giá trị trả về
 

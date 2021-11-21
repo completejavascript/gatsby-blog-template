@@ -37,7 +37,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Toán tử Nullish Coalescing (??) trong JS](/toan-tu-nullish-coalescing-trong-javascript)
 - [Lệnh Switch - Case trong JavaScript](/cau-lenh-switch-case-trong-javascript)
 - [Vòng lặp trong JavaScript](/vong-lap-trong-javascript)
-- [Cơ bản về hàm trong JavaScript](/tim-hieu-function-javascript)
+- [Hàm là gì? Hàm trong JavaScript](/ham-la-gi-ham-trong-javascript)
 - [Một số lỗi ở Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript)
 - [Phân biệt var và let](/phan-biet-var-va-let-trong-javascript)
 - [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6)
@@ -69,6 +69,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 ### Kiến thức nâng cao về hàm
 
+- [Bắt buộc truyền tham số vào hàm](/lam-sao-bat-buoc-truyen-tham-so-vao-ham)
 - [Phân biệt call, apply và bind](/phan-biet-call-apply-va-bind-trong-javascript)
 - [Closures](/tim-hieu-javascript-closures)
 - [Phân biệt arrow function và function](/phan-biet-arrow-function-va-function-trong-javascript)
@@ -144,7 +145,6 @@ Phần này bao gồm những thủ thuật, tips & tricks, design pattern, nh�
 - [Remove item in Array](/remove-item-in-array-javascript)
 - [Convert IPv4 sang Decimal và ngược lại](/convert-ipv4-sang-decimal-va-nguoc-lai)
 - [Tạo số ngẫu nhiên và ứng dụng](/tao-so-ngau-nhien-trong-javascript)
-- [Bắt buộc truyền tham số vào hàm](/lam-sao-bat-buoc-truyen-tham-so-vao-ham)
 
 ### Bài toán thực tế
 

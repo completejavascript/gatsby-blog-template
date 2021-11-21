@@ -48,7 +48,7 @@ class App extends React.Component {
 
 Trong đoạn code trên, mỗi hàm **React.createElement** sẽ trả về một React Element. Nghĩa là hàm **render()** của class _App_ sẽ trả về đồng thời về 2 element.
 
-Điều này là hoàn toàn không thể với [hàm](/tim-hieu-function-javascript) trong JavaScript nói riêng và bất kỳ một ngôn ngữ lập trình nào khác nói chung, chứ không phải chỉ có React.
+Điều này là hoàn toàn không thể với [hàm](/ham-la-gi-ham-trong-javascript) trong JavaScript nói riêng và bất kỳ một ngôn ngữ lập trình nào khác nói chung, chứ không phải chỉ có React.
 
 Ví dụ như mình viết một hàm bằng JavaScript thuần sau:
 

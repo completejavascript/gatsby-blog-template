@@ -51,7 +51,7 @@ Cơ chế giúp bạn thực hiện việc này trong JavaScript có thể là s
 
 ## Sử dụng Callback để xử lý bất đồng bộ
 
-**Sử dụng Callback** có thể nói là cách đầu tiên và dễ nhất giúp bạn xử lý bất đồng bộ. Khi định nghĩa một [function](/tim-hieu-function-javascript) thực hiện một nhiệm vụ tốn thời gian, bạn cần truyền thêm tham số vào hàm - đóng vai trò là **hàm callback**.
+**Sử dụng Callback** có thể nói là cách đầu tiên và dễ nhất giúp bạn xử lý bất đồng bộ. Khi định nghĩa một [function](/ham-la-gi-ham-trong-javascript) thực hiện một nhiệm vụ tốn thời gian, bạn cần truyền thêm tham số vào hàm - đóng vai trò là **hàm callback**.
 
 Khi hành động bắt đầu, rồi khi nó kết thúc, hàm callback sẽ được gọi ngay sau đó.
 

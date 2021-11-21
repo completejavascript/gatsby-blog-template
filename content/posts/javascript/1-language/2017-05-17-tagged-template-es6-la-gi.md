@@ -24,7 +24,7 @@ Cú pháp:
 func`template string with ${expression}`;
 ```
 
-Tagged template ES6 cho phép bạn parse [template](/tag/template) string với một [function](/tim-hieu-function-javascript/).
+Tagged template ES6 cho phép bạn parse [template](/tag/template) string với một [function](/ham-la-gi-ham-trong-javascript/).
 
 Trong đó, **func** chính là function mà bạn tự định nghĩa. Tiếp sau là một đoạn template string có chứa các expression (hoặc không).
 

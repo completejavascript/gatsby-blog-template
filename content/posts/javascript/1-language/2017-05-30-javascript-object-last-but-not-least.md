@@ -49,7 +49,7 @@ JavaScript sử dụng cặp dấu ngoặc nhọn {} để biểu diễn object:
 }
 ```
 
-Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị tương ứng là *value1, value2, value3,...* Nếu value là một [function](/tim-hieu-function-javascript) thì đó chính là phương thức của object JS.
+Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị tương ứng là *value1, value2, value3,...* Nếu value là một [function](/ham-la-gi-ham-trong-javascript) thì đó chính là phương thức của object JS.
 
 Áp dụng cho ví dụ trên:
 

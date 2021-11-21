@@ -9,9 +9,11 @@ description: "Bài viết này sẽ giúp bạn hiểu về JavaScript closure. 
 slug: tim-hieu-javascript-closures
 title: "Tìm hiểu JavaScript Closure - Closure là gì?"
 series: "JavaScript: Kiến thức nâng cao về hàm"
+tags:
+  - Hàm
 ---
 
-Như đã nói trong bài [tìm hiểu function JavaScipt](/tim-hieu-function-javascript), bài viết này mình sẽ giới thiệu với bạn về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closure trong JavaScript, chúng ta sẽ xem closure là gì và cách sử dụng nó như thế nào.
+Như đã nói trong bài [tìm hiểu function JavaScipt](/ham-la-gi-ham-trong-javascript), bài viết này mình sẽ giới thiệu với bạn về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closure trong JavaScript, chúng ta sẽ xem closure là gì và cách sử dụng nó như thế nào.
 
 ## Khái niệm JavaScript closure
 

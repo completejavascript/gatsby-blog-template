@@ -149,7 +149,7 @@ console.log(y);
 
 Biến _y_ viết như vậy sẽ có phạm vi global, tức nó trở thành một thuộc tính của window. Do đó, **console.log(y) = 10**.
 
-Trong khi đó, nếu bạn in ra giá trị của x bằng console.log(x) thì kết quả báo lỗi **ReferenceError: x is not defined**. Bởi vì, biến _x_ kiểu [var sẽ có phạm vi là block](/phan-biet-var-va-let-trong-javascript), tức là chỉ nó chỉ tồn tại trong [function](/tim-hieu-function-javascript) trên.
+Trong khi đó, nếu bạn in ra giá trị của x bằng console.log(x) thì kết quả báo lỗi **ReferenceError: x is not defined**. Bởi vì, biến _x_ kiểu [var sẽ có phạm vi là block](/phan-biet-var-va-let-trong-javascript), tức là chỉ nó chỉ tồn tại trong [function](/ham-la-gi-ham-trong-javascript) trên.
 
 </div>
 

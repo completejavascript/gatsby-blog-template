@@ -291,7 +291,7 @@ Tham khảo:
 
 ## Intermediate Algorithm Scripting - Sorted Union
 
-Viết một [function](/tim-hieu-function-javascript) nhận đầu vào là 2 hay nhiều array. Trả về một array mới bao gồm các phần tử duy nhất, theo đúng thứ tự ban đầu.
+Viết một [function](/ham-la-gi-ham-trong-javascript) nhận đầu vào là 2 hay nhiều array. Trả về một array mới bao gồm các phần tử duy nhất, theo đúng thứ tự ban đầu.
 
 ```js
 function uniteUnique(arr) {

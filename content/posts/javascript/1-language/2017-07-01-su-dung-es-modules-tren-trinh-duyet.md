@@ -21,7 +21,7 @@ Sau đây, mình sẽ tìm hiểu về ES Modules và cách sử dụng nó tr�
 
 ES Modules (hay còn gọi là "JavaScript Modules", "JS Modules" hay "ECMAScript modules") là một tính năng mới của trình duyệt cho phép bạn làm việc với modules. Nhờ vậy, bạn có thể chia nhỏ chương trình ra thành các modules, với mỗi module có một chức năng riêng biệt.
 
-Trong một module, bạn có thể sử dụng từ khoá [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) để export bất kỳ kiểu dữ liệu nào như: biến số với [var, let](/phan-biet-var-va-let-trong-javascript) hay const, class, [function](/tim-hieu-function-javascript),... Sau đó, bạn sử dụng từ khoá [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) để sử dụng chúng ở một file khác.
+Trong một module, bạn có thể sử dụng từ khoá [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) để export bất kỳ kiểu dữ liệu nào như: biến số với [var, let](/phan-biet-var-va-let-trong-javascript) hay const, class, [function](/ham-la-gi-ham-trong-javascript),... Sau đó, bạn sử dụng từ khoá [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) để sử dụng chúng ở một file khác.
 
 Sử dụng ES Modules có một số lợi ích như:
 

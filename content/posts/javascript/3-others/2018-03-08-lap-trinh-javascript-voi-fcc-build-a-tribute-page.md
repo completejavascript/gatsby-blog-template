@@ -187,7 +187,7 @@ if (timer) {
 
 #### Xử lý sự kiện scroll
 
-Có một vấn đề phát sinh là khi người dùng click vào menu item, trang web được scroll đến một mục khác. Lúc này, **\$(window).scroll** cũng sẽ được gọi tới. Để tránh xung đột giữa hai trường hợp (người dùng kéo trang và người dùng click vào menu), mình đã sử dụng một biến [Boolean](/kieu-du-lieu-trong-javascript) là **menuClicked** để phân biệt. Trường hợp, click menu item thì `menuClicked = true` và mình sẽ không xử lý gì trong [function](/tim-hieu-function-javascript) _handleScrollEvent_.
+Có một vấn đề phát sinh là khi người dùng click vào menu item, trang web được scroll đến một mục khác. Lúc này, **\$(window).scroll** cũng sẽ được gọi tới. Để tránh xung đột giữa hai trường hợp (người dùng kéo trang và người dùng click vào menu), mình đã sử dụng một biến [Boolean](/kieu-du-lieu-trong-javascript) là **menuClicked** để phân biệt. Trường hợp, click menu item thì `menuClicked = true` và mình sẽ không xử lý gì trong [function](/ham-la-gi-ham-trong-javascript) _handleScrollEvent_.
 
 ```js
 function handleScrollEvent() {

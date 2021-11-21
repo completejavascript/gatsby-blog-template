@@ -340,7 +340,7 @@ Hỏi console in ra kết quả như thế nào, tại sao?
 
 Phương thức [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) sẽ convert mỗi giá trị JavaScript thành dạng [JSON string](/tim-hieu-ve-json-trong-javascript).
 
-Và giá trị JavaScript thường dùng nhất chính là object. Tuy nhiên, nếu giá trị của một thuộc tính là [function](/tim-hieu-function-javascript) thì **JSON.stringify** sẽ bỏ qua thuộc tính này.
+Và giá trị JavaScript thường dùng nhất chính là object. Tuy nhiên, nếu giá trị của một thuộc tính là [function](/ham-la-gi-ham-trong-javascript) thì **JSON.stringify** sẽ bỏ qua thuộc tính này.
 
 Đó là lý do tại sao bạn không thấy thuộc tính z trong kết quả.
 

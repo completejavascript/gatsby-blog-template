@@ -159,7 +159,7 @@ console.log(trim(str)); // => Hello World!
 
 ## Chuyển đối tượng arguments thành array
 
-[Hàm số](/tim-hieu-function-javascript) trong JavaScript luôn có một đối tượng mặc định là [arguments](/javascript-object-last-but-not-least) để quản lý tham số của hàm. Tuy nhiên, đối tượng này không phải là [array](/javascript-array-co-ban) nên bạn không thể sử dụng các phương thức như [forEach](/javascript-foreach-la-cai-quai-gi), map,...
+[Hàm số](/ham-la-gi-ham-trong-javascript) trong JavaScript luôn có một đối tượng mặc định là [arguments](/javascript-object-last-but-not-least) để quản lý tham số của hàm. Tuy nhiên, đối tượng này không phải là [array](/javascript-array-co-ban) nên bạn không thể sử dụng các phương thức như [forEach](/javascript-foreach-la-cai-quai-gi), map,...
 
 Để chuyển đối tượng này thành array, bạn có thể sử dụng một trong các cách sau:
 

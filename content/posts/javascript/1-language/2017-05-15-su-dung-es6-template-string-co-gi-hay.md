@@ -302,7 +302,7 @@ btnAdd.addEventListener("click", () => {
 });
 ```
 
-Với mảng **data**, mình sử dụng [forEach](/javascript-foreach-la-cai-quai-gi) để duyệt từng phần tử một - **item** và gọi [hàm](/tim-hieu-function-javascript):
+Với mảng **data**, mình sử dụng [forEach](/javascript-foreach-la-cai-quai-gi) để duyệt từng phần tử một - **item** và gọi [hàm](/ham-la-gi-ham-trong-javascript):
 
 ```js
 let tmpl = itemTemplate(item);

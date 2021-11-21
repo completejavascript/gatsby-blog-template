@@ -94,7 +94,7 @@ Như vậy đoạn code 3 là đoạn code in ra kết quả như mong muốn.
 
 **Giải thích:**
 
-Để giải quyết bài toán này bạn cần nắm được sự khác biệt giữa [function](/tim-hieu-function-javascript) và [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). Cụ thể là về **[this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)**.
+Để giải quyết bài toán này bạn cần nắm được sự khác biệt giữa [function](/ham-la-gi-ham-trong-javascript) và [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). Cụ thể là về **[this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)**.
 
 ➤ Đối với function:
 

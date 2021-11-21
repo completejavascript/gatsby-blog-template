@@ -9,13 +9,15 @@ description: "Mình có đọc được cách sử dụng ba hàm call, apply v�
 slug: phan-biet-call-apply-va-bind-trong-javascript
 title: "Phân biệt call, apply và bind trong JavaScript"
 series: "JavaScript: Kiến thức nâng cao về hàm"
+tags:
+  - Hàm
 ---
 
 Gần đây, mình có đọc được cách sử dụng ba hàm **call**, **apply** và **bind** trong JavaScript. Đọc xong thấy khó hiểu quá nên mình quyết định viết một bài so sánh về ba hàm này, cũng như là cách sử dụng chúng. Hy vọng bài viết sẽ giúp bạn phân biệt được call, apply và bind trong JavaScript.
 
 ## Prototype của function
 
-Đúng vậy, ba hàm **call**, **apply** và **bind** là các [prototype](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript) của [Function](/tim-hieu-function-javascript). Nên chỉ có Function mới có thể gọi được 3 hàm này.
+Đúng vậy, ba hàm **call**, **apply** và **bind** là các [prototype](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript) của [Function](/ham-la-gi-ham-trong-javascript). Nên chỉ có Function mới có thể gọi được 3 hàm này.
 
 Sở dĩ, một Function có thể gọi function khác vì trong JavaScript, Function cũng là một loại [Object](/javascript-object-last-but-not-least), mà đã là Object thì sẽ có prototype, hay nói cách khác là gọi được phương thức của nó.
 

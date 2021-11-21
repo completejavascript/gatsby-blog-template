@@ -125,7 +125,7 @@ Kết quả lần này lại đúng như mong đợi.
 
 ### Tổng hợp cách kiểm tra empty object trong JavaScript
 
-Kết hợp 2 đoạn kiểm tra trên, mình suy ra [hàm](/tim-hieu-function-javascript) để kiểm tra empty object trong JavaScript là:
+Kết hợp 2 đoạn kiểm tra trên, mình suy ra [hàm](/ham-la-gi-ham-trong-javascript) để kiểm tra empty object trong JavaScript là:
 
 ```js
 const isEmptyObject = (v) => {

@@ -59,7 +59,7 @@ Rõ ràng, XML phức tạp hơn ở chỗ là XML cần phải có 2 thành ph�
 Mặc dù JSON rất giống JavaScript Object nhưng vẫn có một số giới hạn khác như:
 
 - **Key**: luôn luôn phải được đóng gói trong cặp dấu ngoặc kép, không phải ngoặc đơn, cũng không được phép là biến số (variable)
-- **Value**: Chỉ được phép là những dữ liệu cơ bản như [numbers, strings, boolean](/kieu-du-lieu-trong-javascript), [array](/javascript-array-co-ban), object, null, không được phép là [function](/tim-hieu-function-javascript), date, undefined hoặc là một biểu thức tính toán.
+- **Value**: Chỉ được phép là những dữ liệu cơ bản như [numbers, strings, boolean](/kieu-du-lieu-trong-javascript), [array](/javascript-array-co-ban), object, null, không được phép là [function](/ham-la-gi-ham-trong-javascript), date, undefined hoặc là một biểu thức tính toán.
 - Không được phép tồn tại **dấu phẩy cuối cùng** như JavaScript Object.
 - Đối với **number** thì không được phép có chữ số 0 ở đầu. Ngoài ra, nếu đó là chữ số thập phân thì phải có ít nhất 1 chữ số sau dấu chấm **(.)**.
 

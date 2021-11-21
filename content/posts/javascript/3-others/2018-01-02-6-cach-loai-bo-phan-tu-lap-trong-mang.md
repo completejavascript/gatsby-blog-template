@@ -88,7 +88,7 @@ function deduplicate(arr) {
 }
 ```
 
-Cái mà bạn cần quan tâm ở đây là [function](/tim-hieu-function-javascript) **deduplicate**. Vậy cách triển khai function này tương ứng với thuật toán sẽ như thế nào?
+Cái mà bạn cần quan tâm ở đây là [function](/ham-la-gi-ham-trong-javascript) **deduplicate**. Vậy cách triển khai function này tương ứng với thuật toán sẽ như thế nào?
 
 **B1:** Khai báo mảng chứa kết quả, ví dụ: dst = []
 

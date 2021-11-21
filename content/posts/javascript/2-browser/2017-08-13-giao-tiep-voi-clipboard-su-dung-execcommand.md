@@ -49,7 +49,7 @@ const contentCopyElm = $("#content-copy"),
   buttonCopyElm = $("#button-copy");
 ```
 
-Sau đó, định nghĩa một [hàm số](/tim-hieu-function-javascript) để kiểm tra xem command mình sử dụng có được support hay không, thông qua phương thức [document.queryCommandSupported()](https://developer.mozilla.org/en-US/docs/Web/API/Document/queryCommandSupported):
+Sau đó, định nghĩa một [hàm số](/ham-la-gi-ham-trong-javascript) để kiểm tra xem command mình sử dụng có được support hay không, thông qua phương thức [document.queryCommandSupported()](https://developer.mozilla.org/en-US/docs/Web/API/Document/queryCommandSupported):
 
 ```js
 const isSupported = (cmd) => {

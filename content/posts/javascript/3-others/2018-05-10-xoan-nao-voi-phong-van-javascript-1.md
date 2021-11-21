@@ -286,7 +286,7 @@ Hỏi console in ra kết quả như thế nào?
 Câu này có vẻ dễ hơn phải không? Bạn chỉ cần biết những điều sau thì sẽ trả lời được câu hỏi:
 
 - Cú pháp **(function() {/\* code here \*/})()**: gọi là **[IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)** (Immediately Invoked Function Expression) – tức là hàm số thực thi ngay sau khi nó được khai báo.
-- Biến x có phạm vi **block**, nên nó chỉ được tìm thấy ở bên trong [function](/tim-hieu-function-javascript) trên. Ra ngoài function thì biến x sẽ không được định nghĩa.
+- Biến x có phạm vi **block**, nên nó chỉ được tìm thấy ở bên trong [function](/ham-la-gi-ham-trong-javascript) trên. Ra ngoài function thì biến x sẽ không được định nghĩa.
 </div>
   </div>
 </div>

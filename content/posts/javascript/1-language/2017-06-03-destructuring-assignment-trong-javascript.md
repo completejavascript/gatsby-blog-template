@@ -360,7 +360,7 @@ drawCicle(1, "red");
 
 Cách gọi hàm trên không sai về cú pháp nhưng sai về mặt ý nghĩa vì JavaScript sẽ hiểu **x = 1, y = "red", radius = 1 (default), color = "black"(default)**.
 
-Để tránh việc phải ghi nhớ thứ tự các biến, bạn có thể gộp chúng vào một Object và chỉ cần truyền 1 tham số vào [function](/tim-hieu-function-javascript) như dưới đây.
+Để tránh việc phải ghi nhớ thứ tự các biến, bạn có thể gộp chúng vào một Object và chỉ cần truyền 1 tham số vào [function](/ham-la-gi-ham-trong-javascript) như dưới đây.
 
 #### Gộp các tham số vào thành một Object
 

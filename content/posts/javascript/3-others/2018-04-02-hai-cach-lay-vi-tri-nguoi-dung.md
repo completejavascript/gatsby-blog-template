@@ -58,7 +58,7 @@ let options = {
 geolocation.getCurrentPosition(onGeoSuccess, onGeoError, options);
 ```
 
-[Hàm](/tim-hieu-function-javascript) này có 3 tham số đầu vào:
+[Hàm](/ham-la-gi-ham-trong-javascript) này có 3 tham số đầu vào:
 
 - **onGeoSuccess**: hàm callback được gọi khi việc lấy vị trí thành công
 - **onGeoError**: hàm callback được gọi khi việc lấy vị trí bị lỗi

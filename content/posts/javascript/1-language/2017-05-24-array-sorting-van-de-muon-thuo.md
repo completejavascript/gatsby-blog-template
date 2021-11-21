@@ -21,7 +21,7 @@ Về sắp xếp nói chung, chúng ta có rất nhiều thuật toán với đ�
 
 _(Xem thêm hai bài tổng hợp về thuật toán sắp xếp trong C/C++: [phần 1](http://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-1), [phần 2](http://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-2))_
 
-Tuy nhiên, bạn không cần thiết phải implement lại những thuật toán sắp xếp này. Vì JavaScript hỗ trợ sẵn cho chúng ta một [function](/tim-hieu-function-javascript) để sắp xếp.
+Tuy nhiên, bạn không cần thiết phải implement lại những thuật toán sắp xếp này. Vì JavaScript hỗ trợ sẵn cho chúng ta một [function](/ham-la-gi-ham-trong-javascript) để sắp xếp.
 
 ## Cú pháp hàm sắp xếp mảng trong JavaScript
 

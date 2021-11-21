@@ -27,7 +27,7 @@ Mỗi thành phần nhỏ ở đây chính là [**object**](/javascript-object-l
 
 Method là một thành phần vô cùng quan trọng trong object. Đối với C++ hay Java, chúng ta chỉ có thể sử dụng được những method dạng public. Chúng ta sẽ sử dụng những method này để lấy giá trị hay thay đổi thông tin các thuộc tính của object.
 
-Trong JavaScript, method chính là một thuộc tính mà giá trị của nó là [function](/tim-hieu-function-javascript). Sau đây là một phương thức đơn giản:
+Trong JavaScript, method chính là một thuộc tính mà giá trị của nó là [function](/ham-la-gi-ham-trong-javascript). Sau đây là một phương thức đơn giản:
 
 ```js
 var rabbit = {};

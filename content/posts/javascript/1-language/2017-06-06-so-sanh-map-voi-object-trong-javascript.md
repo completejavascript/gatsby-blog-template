@@ -55,7 +55,7 @@ console.log(obj);
 // => {x: 1, a b: 2, symbol1: 3}
 ```
 
-Trong khi đó, Map cho phép **mọi kiểu dữ liệu** có thể làm key, kể cả [Number](/kieu-du-lieu-trong-javascript), NaN, [Function](/tim-hieu-function-javascript), Object,...
+Trong khi đó, Map cho phép **mọi kiểu dữ liệu** có thể làm key, kể cả [Number](/kieu-du-lieu-trong-javascript), NaN, [Function](/ham-la-gi-ham-trong-javascript), Object,...
 
 ```js
 const fun = function () {};

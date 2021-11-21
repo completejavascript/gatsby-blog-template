@@ -18,7 +18,7 @@ tags:
 Module pattern là một loại pattern khá mạnh và được sử dụng rất phổ biến, với một số các đặc điểm sau:
 
 - Sử dụng Object Literals ({})
-- Cung cấp khả năng đóng gói dữ liệu với cả thuộc tính và phương thức dạng **public/private**, giúp tránh xung đột về tên đối với các [function](/tim-hieu-function-javascript) ở các script khác trên trang web.
+- Cung cấp khả năng đóng gói dữ liệu với cả thuộc tính và phương thức dạng **public/private**, giúp tránh xung đột về tên đối với các [function](/ham-la-gi-ham-trong-javascript) ở các script khác trên trang web.
 
 ## Ví dụ sử dụng Module Pattern
 

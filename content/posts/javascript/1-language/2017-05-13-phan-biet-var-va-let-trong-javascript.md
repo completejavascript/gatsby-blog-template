@@ -23,7 +23,7 @@ Từ trước tới giờ, có thể bạn đã quen dùng **var** để khai b�
 
 ## Khác nhau
 
-- Phạm vi của biến số sử dụng **var** là phạm vi hàm hoặc bên ngoài [hàm](/tim-hieu-function-javascript), toàn cục.
+- Phạm vi của biến số sử dụng **var** là phạm vi hàm hoặc bên ngoài [hàm](/ham-la-gi-ham-trong-javascript), toàn cục.
 - Phạm vi của biến số sử dụng **let** là phạm vi một khối, xác định bởi cặp {}
 
 ### Ví dụ phân biệt var và let

@@ -15,7 +15,7 @@ tags:
   - Design Pattern
 ---
 
-Đối với [lập trình hướng đối tượng trong JavaScript](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript), cách đơn giản nhất để tạo mới một object là sử dụng function kết hợp với từ khoá **new**. Bên trong hàm khởi tạo này, từ khoá **this** dùng để chỉ tới đối tượng mới. Thông thường, hàm khởi tạo được viết hoa chữ cái đầu tiên, dùng để phân biệt với các [hàm số](/tim-hieu-function-javascript) thông thường. Sau đây, chúng ta sẽ cùng nhau tìm hiểu về một vài Constructor Pattern trong JavaScript.
+Đối với [lập trình hướng đối tượng trong JavaScript](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript), cách đơn giản nhất để tạo mới một object là sử dụng function kết hợp với từ khoá **new**. Bên trong hàm khởi tạo này, từ khoá **this** dùng để chỉ tới đối tượng mới. Thông thường, hàm khởi tạo được viết hoa chữ cái đầu tiên, dùng để phân biệt với các [hàm số](/ham-la-gi-ham-trong-javascript) thông thường. Sau đây, chúng ta sẽ cùng nhau tìm hiểu về một vài Constructor Pattern trong JavaScript.
 
 ## Constructor Pattern cơ bản
 

@@ -35,7 +35,7 @@ Những giá trị mà khi chuyển về kiểu dữ liệu boolean ra giá tr�
 
 Tương tự, những giá trị mà khi chuyển về kiểu dữ liệu boolean ra giá trị `false` gọi là **falsy**.
 
-> Để chuyển một giá trị về kiểu dữ liệu boolean, bạn có thể dùng [hàm](/tim-hieu-function-javascript) `Boolean()`.
+> Để chuyển một giá trị về kiểu dữ liệu boolean, bạn có thể dùng [hàm](/ham-la-gi-ham-trong-javascript) `Boolean()`.
 
 Ví dụ các giá trị **truthy**:
 

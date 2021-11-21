@@ -1,5 +1,5 @@
 ---
-date: "2018-01-06T12:00:00Z"
+date: "2017-06-20T00:15:00Z"
 update: "2019-10-18T12:00:00Z"
 template: "post"
 directory: "JavaScript"
@@ -8,9 +8,10 @@ slug: lam-sao-bat-buoc-truyen-tham-so-vao-ham
 keywords: "bắt buộc truyền tham số"
 description: "Khi lập trình, nhiều hàm phải bắt buộc truyền tham số vào. Ngược lại thì hàm sẽ không có ý nghĩa gì cả. Bài viết này sẽ giới thiệu với bạn cách để làm được điều đó."
 cover: "../../../images/javascript/bat-buoc-truyen-tham-so-vao-ham-1-completejavascript.com.png"
-series: "JavaScript: Thủ thuật JavaScript"
+series: "JavaScript: Kiến thức nâng cao về hàm"
 tags:
   - ES6
+  - Hàm
 ---
 
 Khi lập trình, nhiều hàm phải bắt buộc truyền tham số vào. Ngược lại thì hàm sẽ không có ý nghĩa gì cả. Do đó, bài viết này sẽ giới thiệu với bạn cách để làm được điều đó.
@@ -19,7 +20,7 @@ Tuy nhiên, trước khi bắt đầu, mình sẽ tìm hiểu về tham số m�
 
 ## Tham số mặc định của hàm
 
-Trong JavaScript, khi bạn không truyền tham số vào [hàm](/tim-hieu-function-javascript) thì giá trị của nó trong hàm sẽ là **undefined**.
+Trong JavaScript, khi bạn không truyền tham số vào [hàm](/ham-la-gi-ham-trong-javascript) thì giá trị của nó trong hàm sẽ là **undefined**.
 
 Ví dụ:
 

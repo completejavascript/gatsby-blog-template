@@ -76,7 +76,7 @@ function startWorker() {
 }
 ```
 
-Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/tim-hieu-function-javascript) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban).
+Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/ham-la-gi-ham-trong-javascript) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban).
 
 Trong đó, **Worker.onerror** được gọi khi có lỗi với Web Worker sau khi khởi tạo. Và **Worker.onmessage** được gọi khi có message từ Worker Thread lên giao diện chính.
 

@@ -105,7 +105,7 @@ myDog.sayType(); // => type: Dog
 myDog.sayName(); // => name: Rex
 ```
 
-Trong đó, mình có định nghĩa một [hàm số](/tim-hieu-function-javascript) là **inherits**, với hai tham số đầu vào là child và parent, lần lượt là 2 hàm khởi tạo của lớp con và lớp cha. Ở đây, child là Dog và parent là Animal.
+Trong đó, mình có định nghĩa một [hàm số](/ham-la-gi-ham-trong-javascript) là **inherits**, với hai tham số đầu vào là child và parent, lần lượt là 2 hàm khởi tạo của lớp con và lớp cha. Ở đây, child là Dog và parent là Animal.
 
 Hàm này có nhiệm vụ là tạo ra một đối tượng mới từ prototype của lớp cha và gán nó cho prototype của lớp con. Vì vậy mà các đối tượng thuộc lớp con đã có thể truy cập đến các phương thức trong prototype của lớp cha (ví dụ: **sayName**).
 

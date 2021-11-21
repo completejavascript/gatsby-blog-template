@@ -17,7 +17,7 @@ tags:
 
 ## Giống nhau
 
-Arrow function và function đều là [function](/tim-hieu-function-javascript).
+Arrow function và function đều là [function](/ham-la-gi-ham-trong-javascript).
 
 ## Khác nhau cơ bản
 

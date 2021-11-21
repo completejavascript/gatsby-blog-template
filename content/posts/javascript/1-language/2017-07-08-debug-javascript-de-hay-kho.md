@@ -63,7 +63,7 @@ Như vậy, việc sử dụng strict mode trong lập trình JavaScript sẽ l�
 
 Khi mà việc sử dụng strict mode hay trình duyệt không thể giúp bạn tìm ra lỗi thì đây là lúc mà bạn cần phải testing - kiểm thử chương trình.
 
-Và để tránh phát sinh lỗi khi chương trình mở rộng ra, bạn nên kiểm tra kĩ mỗi khi viết thêm một module, hay một [function](/tim-hieu-function-javascript).
+Và để tránh phát sinh lỗi khi chương trình mở rộng ra, bạn nên kiểm tra kĩ mỗi khi viết thêm một module, hay một [function](/ham-la-gi-ham-trong-javascript).
 
 Giả sử mình có đoạn chương trình sau:
 

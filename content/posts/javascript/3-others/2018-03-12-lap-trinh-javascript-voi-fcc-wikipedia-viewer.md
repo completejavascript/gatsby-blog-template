@@ -222,7 +222,7 @@ Trong đó:
 - Hàm _itemHTMLTemplate_ tạo ra HTML template tương ứng với mỗi kết quả tìm kiếm
 - Hàm _htmlToElement_ dùng để tạo ra phần tử DOM tương ứng.
 
-Qua đó, mình có thể sử dụng 2 [hàm số](/tim-hieu-function-javascript) này để hiển thị kết quả tìm kiếm:
+Qua đó, mình có thể sử dụng 2 [hàm số](/ham-la-gi-ham-trong-javascript) này để hiển thị kết quả tìm kiếm:
 
 ```js
 function viewResult(result) {

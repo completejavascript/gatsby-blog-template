@@ -37,7 +37,7 @@ Ví dụ:
 
 Ngoài đặt ở đầu của file JS, `"use strict"` còn có thể đặt ở đầu mỗi hàm. Khi đó, toàn bộ code trong hàm đó phải tuân theo strict mode.
 
-> Hàm là một cách để tập hợp các câu lệnh nhằm thực hiện một nhiệm vụ nào đó. Hàm sẽ được giới thiệu ở bài [cơ bản về hàm - functions](/tim-hieu-function-javascript).
+> Hàm là một cách để tập hợp các câu lệnh nhằm thực hiện một nhiệm vụ nào đó. Hàm sẽ được giới thiệu ở bài [cơ bản về hàm - functions](/ham-la-gi-ham-trong-javascript).
 
 ## Một số câu hỏi về use strict trong JS
 

@@ -138,7 +138,7 @@ constructor(type) {
 }
 ```
 
-Với _type_ có thể là: "localStorage" hoặc "sessionStorage". Và hàm _\_storageAvailable_ đơn giản là sẽ sử dụng thử một số API của nó. Nếu không có lỗi gì xảy ra thì [hàm](/tim-hieu-function-javascript) này sẽ trả về true, ngược lại kết quả sẽ là false.
+Với _type_ có thể là: "localStorage" hoặc "sessionStorage". Và hàm _\_storageAvailable_ đơn giản là sẽ sử dụng thử một số API của nó. Nếu không có lỗi gì xảy ra thì [hàm](/ham-la-gi-ham-trong-javascript) này sẽ trả về true, ngược lại kết quả sẽ là false.
 
 Bạn có thể xem thêm bài này để hiểu rõ hơn: [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API).
 

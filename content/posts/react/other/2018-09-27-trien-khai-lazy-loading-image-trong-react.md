@@ -147,7 +147,7 @@ this.state = {
 };
 ```
 
-[Bind](/phan-biet-call-apply-va-bind-trong-javascript) function _handleScroll_ với _this_. [Function](/tim-hieu-function-javascript) này dùng để xử lý [event](/xu-ly-mot-event-javascript-co-ban) khi scroll màn hình.
+[Bind](/phan-biet-call-apply-va-bind-trong-javascript) function _handleScroll_ với _this_. [Function](/ham-la-gi-ham-trong-javascript) này dùng để xử lý [event](/xu-ly-mot-event-javascript-co-ban) khi scroll màn hình.
 
 ```jsx
 this.handleScroll = this.handleScroll.bind(this);

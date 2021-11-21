@@ -14,7 +14,7 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Bài viết trước bạn đã biết về [8 kiểu dữ liệu cơ bản](/kieu-du-lieu-trong-javascript) trong JavaScript. Và khi học về [toán tử](/toan-tu-la-gi-toan-tu-trong-javascript) hay [hàm](/tim-hieu-function-javascript), bạn sẽ thấy là các kiểu dữ liệu này có thể được chuyển đổi cho nhau. Đó gọi là "chuyển đổi kiểu dữ liệu".
+Bài viết trước bạn đã biết về [8 kiểu dữ liệu cơ bản](/kieu-du-lieu-trong-javascript) trong JavaScript. Và khi học về [toán tử](/toan-tu-la-gi-toan-tu-trong-javascript) hay [hàm](/ham-la-gi-ham-trong-javascript), bạn sẽ thấy là các kiểu dữ liệu này có thể được chuyển đổi cho nhau. Đó gọi là "chuyển đổi kiểu dữ liệu".
 
 > Sau đây, mình chỉ tập trung vào những chuyển đổi kiểu dữ liệu thường dùng nhất là: **string, number và boolean**.
 
