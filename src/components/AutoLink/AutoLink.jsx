@@ -1,14 +1,14 @@
 import React from "react";
 import ExternalLink from "./ExternalLink";
 import { Link } from "gatsby";
-import { isInteralLink } from "../../utils/helpers";
+import { isInteralLink, useSlash } from "../../utils/helpers";
 
 const AutoLink = (props) => (
   <>
     {isInteralLink(props.to) ? (
       <Link
         key={props.label}
-        to={props.to}
+        to={useSlash(props.to)}
         activeClassName={props.activeClassName}
         className={props.className}
         style={{ ...props.style }}

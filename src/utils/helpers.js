@@ -2,21 +2,33 @@ import config from "../../data/SiteConfig";
 import moment from "moment";
 import slug from "slug";
 
+export const useSlash = (slug) => {
+  if (!slug) return "/";
+  if (slug.charAt(slug.length - 1) !== "/") return `${slug}/`;
+  return slug;
+};
+
 export const slugify = (text) => slug(text).toLowerCase();
+
 export const isInteralLink = (link) => link && link[0] === "/";
+
 export const formatDate = (date) => moment(date).format(config.dateFormat);
-export const getTagPath = (tag) => `${config.pathPrefixTag}/${slugify(tag)}`;
+
+export const getTagPath = (tag) =>
+  useSlash(`${config.pathPrefixTag}/${slugify(tag)}`);
+
 export const getCategoryPath = (category) =>
-  `${config.pathPrefixCategory}/${slugify(category)}`;
+  useSlash(`${config.pathPrefixCategory}/${slugify(category)}`);
+
 export const getPostList = (postEdges) =>
   postEdges.map((postEdge) => ({
-    path: postEdge.node.fields.slug,
+    path: useSlash(postEdge.node.fields.slug),
     tags: postEdge.node.frontmatter.tags,
     categories: postEdge.node.frontmatter.categories,
     cover: postEdge.node.frontmatter.cover,
     title: postEdge.node.frontmatter.title,
     date: postEdge.node.fields.date,
-    slug: postEdge.node.fields.slug,
+    slug: useSlash(postEdge.node.fields.slug),
     excerpt: postEdge.node.excerpt,
     timeToRead: postEdge.node.timeToRead,
   }));
