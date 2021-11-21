@@ -49,7 +49,7 @@ true
 
 **Giải thích:**
 
-Nếu bạn đã đọc bài viết [Tìm hiểu về Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript), mình chắc chắn bạn sẽ trả lời được câu hỏi này.
+Nếu bạn đã đọc bài viết [Tìm hiểu về Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript/), mình chắc chắn bạn sẽ trả lời được câu hỏi này.
 
 Phương thức <code>Symbol("id")</code> sẽ tạo mới một biến kiểu **Symbol** với **description** là "id". Mà một đặc điểm quan trọng của Symbol là tính duy nhất. Nghĩa là bạn tạo ra bao nhiêu Symbol với cùng description thì nó vẫn khác nhau:
 
@@ -97,11 +97,11 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Trước tiên, mình nói về hàm [filter](/javascript-foreach-la-cai-quai-gi#arrayprototypefilter). Phương thức này lọc lấy các phần tử trong [mảng](/javascript-array-co-ban) thoả mãn một điều kiện cho trước và trả về một mảng mới chứa những phần tử đó.
+Trước tiên, mình nói về hàm [filter](/javascript-foreach-la-cai-quai-gi/#arrayprototypefilter). Phương thức này lọc lấy các phần tử trong [mảng](/javascript-array-co-ban/) thoả mãn một điều kiện cho trước và trả về một mảng mới chứa những phần tử đó.
 
-Nói cách khác, phương thức **filter** nhận tham số đầu tiên là một [hàm](/ham-la-gi-ham-trong-javascript) và trả về một mảng các phần tử làm cho hàm trên **return true**.
+Nói cách khác, phương thức **filter** nhận tham số đầu tiên là một [hàm](/ham-la-gi-ham-trong-javascript/) và trả về một mảng các phần tử làm cho hàm trên **return true**.
 
-Cái này chắc nhiều bạn đã biết rồi. Tuy nhiên, vấn đề chính ở đây là tham số đầu tiên truyền vào là [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). Đây là một built-in [object](/javascript-object-last-but-not-least) trong JavaScript.
+Cái này chắc nhiều bạn đã biết rồi. Tuy nhiên, vấn đề chính ở đây là tham số đầu tiên truyền vào là [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). Đây là một built-in [object](/javascript-object-last-but-not-least/) trong JavaScript.
 
 Nhưng thú vị ở chỗ, bạn có thể sử dụng Boolean như một function để convert một giá trị bất kỳ về kiểu Boolean. Cụ thể trong câu hỏi trên:
 

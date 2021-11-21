@@ -16,7 +16,7 @@ tags:
   - Promise
 ---
 
-Có thể bạn đã quen với việc [xử lý bất đồng bộ](/xu-ly-bat-dong-bo-callback-promise-async-await) trong JavaScript với [Promise](/tag/promise) hoặc [Async/await](/tag/async-await) rồi. Tuy nhiên, khi bạn có một chuỗi các hành động thì câu hỏi đặt ra là: bạn sẽ xử lý chúng như thế nào? Bạn quyết định xử lý bất đồng bộ song song hay tuần tự?
+Có thể bạn đã quen với việc [xử lý bất đồng bộ](/xu-ly-bat-dong-bo-callback-promise-async-await/) trong JavaScript với [Promise](/tag/promise/) hoặc [Async/await](/tag/async-await) rồi. Tuy nhiên, khi bạn có một chuỗi các hành động thì câu hỏi đặt ra là: bạn sẽ xử lý chúng như thế nào? Bạn quyết định xử lý bất đồng bộ song song hay tuần tự?
 
 Câu trả lời có lẽ sẽ phụ thuộc vào từng trường hợp. Tuy nhiên, để biết được nên lựa chọn cách nào thì bạn cần phải biết ý nghĩa và cách triển khai của từng trường hợp.
 
@@ -85,7 +85,7 @@ time: 4504.9638671875ms
 */
 ```
 
-Trong ví dụ trên, mình sử dụng [console.time và console.timeEnd](/thu-thuat-su-dung-console-hieu-qua) để tính toán thời gian thực hiện. Kết quả thu được cỡ **4500 ms**.  Đó chính là **tổng thời gian thực hiện của 3 hành động**.
+Trong ví dụ trên, mình sử dụng [console.time và console.timeEnd](/thu-thuat-su-dung-console-hieu-qua/) để tính toán thời gian thực hiện. Kết quả thu được cỡ **4500 ms**.  Đó chính là **tổng thời gian thực hiện của 3 hành động**.
 
 **Cụ thể:**
 
@@ -124,9 +124,9 @@ time: 2001.398193359375ms
 */
 ```
 
-Trong ví dụ trên, mình đưa 3 hành động bất đồng bộ vào một [mảng](/javascript-array-co-ban), rồi truyền nó vào Promise.all. Tiếp theo, mình thực hiện **await** với phương thức này để đợi kết quả trả về.
+Trong ví dụ trên, mình đưa 3 hành động bất đồng bộ vào một [mảng](/javascript-array-co-ban/), rồi truyền nó vào Promise.all. Tiếp theo, mình thực hiện **await** với phương thức này để đợi kết quả trả về.
 
-Sau khi hàm trên kết thúc, mình dùng [Destructuring Assignment](/destructuring-assignment-trong-javascript) để lấy ra kết quả như mong muốn, theo đúng thứ tự truyền vào của các hành động bên trong Promise.all.
+Sau khi hàm trên kết thúc, mình dùng [Destructuring Assignment](/destructuring-assignment-trong-javascript/) để lấy ra kết quả như mong muốn, theo đúng thứ tự truyền vào của các hành động bên trong Promise.all.
 
 Với cách này, thời gian thực hiện cỡ **2000 ms**. Đó chính là **thời gian thực hiện lớn nhất của 3 hành động**.
 

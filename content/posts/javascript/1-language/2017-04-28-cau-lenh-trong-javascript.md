@@ -17,9 +17,9 @@ Chương trình là tập hợp của các câu lệnh. Hay nói cách khác, c�
 
 Câu lệnh là đơn vị cơ bản của một ngôn ngữ lập trình, đưa ra hướng dẫn cho máy tính để thực hiện một hành động.
 
-Trong bài viết về [chương trình JavaScript đầu tiên](/chuong-trinh-javascript-dau-tien), bạn đã thấy mình sử dụng hai câu lệnh:
+Trong bài viết về [chương trình JavaScript đầu tiên](/chuong-trinh-javascript-dau-tien/), bạn đã thấy mình sử dụng hai câu lệnh:
 
-- `console.log("Hello World")`: in ra tab console của [Dev Tools](/dev-tools-la-gi) trên trình duyệt dòng chữ "Hello World".
+- `console.log("Hello World")`: in ra tab console của [Dev Tools](/dev-tools-la-gi/) trên trình duyệt dòng chữ "Hello World".
 - `alert("Hello World")`: hiển thị dạng hộp thoại (dialog) dòng chữ "Hello World".
 
 Đó là những câu lệnh rất cơ bản.
@@ -155,7 +155,7 @@ nhiều dòng nhưng ở cuối câu lệnh */
  * /
 ```
 
-Khi chạy chương trình, [JavaScript engine](/javascript-la-gi#javascript-engine-là-gì) sẽ bỏ qua thành phần chú thích này.
+Khi chạy chương trình, [JavaScript engine](/javascript-la-gi/#javascript-engine-là-gì) sẽ bỏ qua thành phần chú thích này.
 
 > 📝 Có nhiều quan điểm về việc có nên viết chú thích hay không. Theo suy nghĩ cá nhân, mình sẽ chỉ viết chú thích khi cần thiết.
 >

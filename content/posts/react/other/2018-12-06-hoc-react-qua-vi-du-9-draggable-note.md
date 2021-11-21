@@ -20,7 +20,7 @@ Xin chào bạn đến với Học React qua ví dụ #9. Bài này mình sẽ t
   Xem Demo
 </a>
 
-Thực tế, Draggable Note được phát triển lên từ [Draggable Element](/hoc-react-qua-vi-du-8-draggable-element). Nghĩa là React Component này cũng có thể di chuyển, thay đổi vị trí được. Ngoài ra, vì là **note**, nên bạn có thể viết text lên đó.
+Thực tế, Draggable Note được phát triển lên từ [Draggable Element](/hoc-react-qua-vi-du-8-draggable-element/). Nghĩa là React Component này cũng có thể di chuyển, thay đổi vị trí được. Ngoài ra, vì là **note**, nên bạn có thể viết text lên đó.
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
@@ -30,7 +30,7 @@ Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
 Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #9 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
@@ -65,8 +65,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_mousedown, mouseup, mousemove_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_mousedown, mouseup, mousemove_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
@@ -474,8 +474,8 @@ export default class App extends React.Component {
 
 Trong đó, Draggable Note Component có các thuộc tính là:
 
-- **title ([String](/kieu-du-lieu-trong-javascript)):** là title của component.
-- **width, height (String hoặc [Number](/kieu-du-lieu-trong-javascript)):** lần lượt là chiều rộng và chiều cao của phần tử.
+- **title ([String](/kieu-du-lieu-trong-javascript/)):** là title của component.
+- **width, height (String hoặc [Number](/kieu-du-lieu-trong-javascript/)):** lần lượt là chiều rộng và chiều cao của phần tử.
 - **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
 - **content (String)**: nội dung mặc định của Draggable Note.
 

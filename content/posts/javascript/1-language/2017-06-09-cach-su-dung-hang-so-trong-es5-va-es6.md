@@ -29,7 +29,7 @@ Object.defineProperties(obj, props);
 
 Phương thức này có 2 tham số là:
 
-- **obj**: là [object](/javascript-object-last-but-not-least) chứa hằng số cần khai báo. Nếu bạn muốn sử dụng hằng số cho toàn bộ chương trình thì có thể sử dụng obj là **window**.
+- **obj**: là [object](/javascript-object-last-but-not-least/) chứa hằng số cần khai báo. Nếu bạn muốn sử dụng hằng số cho toàn bộ chương trình thì có thể sử dụng obj là **window**.
 - **props**: là thuộc tính được định nghĩa. Mặc định, thuộc tính này có giá trị **writable = false**, tức là giá trị của nó không thể thay đổi
 
 Ví dụ:
@@ -51,7 +51,7 @@ Trong ví dụ trên, mình định nghĩa **myconst** là một hằng số c�
 
 Tuy nhiên, bạn cũng thấy là dù việc thay đổi giá trị **myconst = 99** không có ý nghĩa, nhưng vẫn không có hề có thông báo lỗi khi bạn cố tình thay đổi giá trị của hằng số.
 
-Để có thể nhận được thông báo lỗi này, bạn cần sử dụng ở [strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript).
+Để có thể nhận được thông báo lỗi này, bạn cần sử dụng ở [strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript/).
 
 ```js
 "use strict";
@@ -110,7 +110,7 @@ myconst = 99;
 console.log(myconst);
 ```
 
-Ngoài ra, const có phạm vi sử dụng theo **block**, giống như [let](/phan-biet-var-va-let-trong-javascript). Ví dụ:
+Ngoài ra, const có phạm vi sử dụng theo **block**, giống như [let](/phan-biet-var-va-let-trong-javascript/). Ví dụ:
 
 ```js
 function test() {
@@ -127,4 +127,4 @@ Bạn thấy đó, ở ngoài hàm **test**, myconst chưa được định ngh�
 
 Trên đây là cách sử dụng hằng số trong ES5 và ES6. Rõ ràng, việc sử dụng ES6 giúp code ngắn gọn hơn rất nhiều. Vì vậy, trong các bài viết tiếp theo mình sẽ tiếp tục giới thiệu với các bạn các đặc điểm hay và nổi bật của ES6.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-google-analytics-plugin-cho-wordpress), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tao-google-analytics-plugin-cho-wordpress/), thân ái!

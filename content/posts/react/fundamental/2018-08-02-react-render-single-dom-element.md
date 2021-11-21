@@ -10,9 +10,9 @@ slug: react-render-single-dom-element
 title: "Tại sao React yêu cầu render single DOM element?"
 ---
 
-Khi viết code [React](/react), chắc hẳn đã ít nhất một lần bạn gặp phải lỗi liên quan đến việc React yêu cầu render single [DOM](/co-ban-ve-dom-javascript) element. Lúc này, cách giải quyết đơn giản nhất là bạn đóng gói các element bởi một cặp thẻ **div** bên ngoài.
+Khi viết code [React](/react/), chắc hẳn đã ít nhất một lần bạn gặp phải lỗi liên quan đến việc React yêu cầu render single [DOM](/co-ban-ve-dom-javascript/) element. Lúc này, cách giải quyết đơn giản nhất là bạn đóng gói các element bởi một cặp thẻ **div** bên ngoài.
 
-Tuy nhiên, đã bao giờ bạn tự hỏi lý do thực sự là do đâu? Liệu đây có phải đây là [bug](/debug-javascript-de-hay-kho) của React? Cách giải quyết lỗi này như thế nào? Và việc đóng gói các element vào thẻ **div** như trên có ưu, nhược điểm gì?
+Tuy nhiên, đã bao giờ bạn tự hỏi lý do thực sự là do đâu? Liệu đây có phải đây là [bug](/debug-javascript-de-hay-kho/) của React? Cách giải quyết lỗi này như thế nào? Và việc đóng gói các element vào thẻ **div** như trên có ưu, nhược điểm gì?
 
 Bài viết này mình sẽ cố gắng giúp bạn giải đáp những thắc mắc trên. Mời bạn theo dõi bài viết!
 
@@ -48,7 +48,7 @@ class App extends React.Component {
 
 Trong đoạn code trên, mỗi hàm **React.createElement** sẽ trả về một React Element. Nghĩa là hàm **render()** của class _App_ sẽ trả về đồng thời về 2 element.
 
-Điều này là hoàn toàn không thể với [hàm](/ham-la-gi-ham-trong-javascript) trong JavaScript nói riêng và bất kỳ một ngôn ngữ lập trình nào khác nói chung, chứ không phải chỉ có React.
+Điều này là hoàn toàn không thể với [hàm](/ham-la-gi-ham-trong-javascript/) trong JavaScript nói riêng và bất kỳ một ngôn ngữ lập trình nào khác nói chung, chứ không phải chỉ có React.
 
 Ví dụ như mình viết một hàm bằng JavaScript thuần sau:
 
@@ -58,7 +58,7 @@ const func = (x, y) => {
 };
 ```
 
-Hàm _func_ trên là một [arrow function](/phan-biet-arrow-function-va-function-trong-javascript) - return đồng thời _(x + y)_ và _(x - y)_. Và dĩ nhiên là nó sẽ bị thông báo lỗi.
+Hàm _func_ trên là một [arrow function](/phan-biet-arrow-function-va-function-trong-javascript/) - return đồng thời _(x + y)_ và _(x - y)_. Và dĩ nhiên là nó sẽ bị thông báo lỗi.
 
 Nói tóm lại, việc React yêu cầu render single DOM element là bắt buộc, chứ không phải do bug của React.
 
@@ -220,7 +220,7 @@ class App extends React.Component {
 
 ### Render một mảng các Elements
 
-Ngoài cách làm trên ra, mình mới biết thêm một cách làm khác có vẻ ít dùng hơn. Đó là hàm render sẽ trả về một [mảng](/javascript-array-co-ban) các Elements như sau:
+Ngoài cách làm trên ra, mình mới biết thêm một cách làm khác có vẻ ít dùng hơn. Đó là hàm render sẽ trả về một [mảng](/javascript-array-co-ban/) các Elements như sau:
 
 ```jsx
 const Animals = () => {

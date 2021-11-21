@@ -53,7 +53,7 @@ Hỏi console in ra kết quả như thế nào, tại sao?
 
 **Giải thích:**
 
-Trước tiên, mình muốn nhấn mạnh rằng: về bản chất [Array](/javascript-array-co-ban) được [kế thừa từ prototype](/ke-thua-co-ban-trong-javascript) của [Object](/javascript-object-last-but-not-least). Đoạn code sau có thể chứng minh điều đó.
+Trước tiên, mình muốn nhấn mạnh rằng: về bản chất [Array](/javascript-array-co-ban/) được [kế thừa từ prototype](/ke-thua-co-ban-trong-javascript/) của [Object](/javascript-object-last-but-not-least/). Đoạn code sau có thể chứng minh điều đó.
 
 ```js
 let a = [];
@@ -97,7 +97,7 @@ Nghĩa là các phần tử của **mảng** a vẫn chỉ là: 3, 5, 7.
 
 **Mở rộng:**
 
-Thoạt nhìn, bạn có thể thấy rằng **for of** chả khác gì [forEach](/javascript-foreach-la-cai-quai-gi).
+Thoạt nhìn, bạn có thể thấy rằng **for of** chả khác gì [forEach](/javascript-foreach-la-cai-quai-gi/).
 
 ```js
 a.forEach((item) => {
@@ -338,9 +338,9 @@ Hỏi console in ra kết quả như thế nào, tại sao?
 
 **Giải thích:**
 
-Phương thức [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) sẽ convert mỗi giá trị JavaScript thành dạng [JSON string](/tim-hieu-ve-json-trong-javascript).
+Phương thức [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) sẽ convert mỗi giá trị JavaScript thành dạng [JSON string](/tim-hieu-ve-json-trong-javascript/).
 
-Và giá trị JavaScript thường dùng nhất chính là object. Tuy nhiên, nếu giá trị của một thuộc tính là [function](/ham-la-gi-ham-trong-javascript) thì **JSON.stringify** sẽ bỏ qua thuộc tính này.
+Và giá trị JavaScript thường dùng nhất chính là object. Tuy nhiên, nếu giá trị của một thuộc tính là [function](/ham-la-gi-ham-trong-javascript/) thì **JSON.stringify** sẽ bỏ qua thuộc tính này.
 
 Đó là lý do tại sao bạn không thấy thuộc tính z trong kết quả.
 
@@ -390,4 +390,4 @@ Xem thêm: [Issue with JSON.stringify() when serializing circular references](<h
 
 Trên đây là 6 câu hỏi phỏng vấn JavaScript cũng rất hay. Nếu bạn có cùng nhận xét với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-5), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-5/), thân ái!

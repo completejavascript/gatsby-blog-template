@@ -47,7 +47,7 @@ Tiếp theo là thanh menu (hay navigation), cho phép người dùng lựa ch�
 
 ## Smooth Scrolling trang web với jQuery
 
-Mặc định, khi người dùng nhấn vào thẻ a thì trang web sẽ nhảy đến vị trí có địa chỉ xác định trong thẻ href. Vì vậy, để có thể smooth scrolling trang web, bạn cần phải bắt sự kiện khi người dùng nhấn thẻ a vào và chặn lại [event](/xu-ly-mot-event-javascript-co-ban) mặc định.
+Mặc định, khi người dùng nhấn vào thẻ a thì trang web sẽ nhảy đến vị trí có địa chỉ xác định trong thẻ href. Vì vậy, để có thể smooth scrolling trang web, bạn cần phải bắt sự kiện khi người dùng nhấn thẻ a vào và chặn lại [event](/xu-ly-mot-event-javascript-co-ban/) mặc định.
 
 ```js
 $("a[href*='#']:not([href='#])").click(function () {
@@ -84,7 +84,7 @@ Như vậy, phần thêm animation trên có thể diễn giải thành lời l�
 
 Trên đây là cách mà mình sử dụng để triển khai smooth scrolling trên trang web. Hy vọng nó hữu ích với bạn.
 
-Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/xmlhttprequest-voi-promise-javascript), thân ái!
+Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/xmlhttprequest-voi-promise-javascript/), thân ái!
 
 ## Tham khảo
 

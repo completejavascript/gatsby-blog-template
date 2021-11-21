@@ -114,7 +114,7 @@ constructor(currentstate) {
 }
 ```
 
-Thực chất, [array trong JavaScript](/javascript-array-co-ban) có thể đóng vai trò là Stack, với sự hỗ trợ của các phương thức _push_, _pop_. Do đó, mình khởi tạo Undo Stack - _this.\_undoStack_ và Redo Stack - _this.\_redoStack_ là các mảng rỗng. Sau đó, _push_ trạng thái hiện tại của ứng dụng _currentstate_ vào _this.\_redoStack_.
+Thực chất, [array trong JavaScript](/javascript-array-co-ban/) có thể đóng vai trò là Stack, với sự hỗ trợ của các phương thức _push_, _pop_. Do đó, mình khởi tạo Undo Stack - _this.\_undoStack_ và Redo Stack - _this.\_redoStack_ là các mảng rỗng. Sau đó, _push_ trạng thái hiện tại của ứng dụng _currentstate_ vào _this.\_redoStack_.
 
 ![Khởi tạo Undo, Redo Stack](../../../images/javascript/khoi-tao-completejavascript.com_.png)
 
@@ -274,7 +274,7 @@ https://codepen.io/completejavascript/pen/EpoKZo
 
 Đây là một ứng dụng demo đơn giản sử dụng thuật toán Undo-Redo. Ứng dụng này có khả năng thay đổi **nội dung** và **màu sắc** của chữ _UNDO-REDO_.
 
-Nghĩa là mình có thể lưu trạng thái của ứng dụng bằng một [object](/javascript-object-last-but-not-least) với 2 trường thông tin là: **text** và **color**.
+Nghĩa là mình có thể lưu trạng thái của ứng dụng bằng một [object](/javascript-object-last-but-not-least/) với 2 trường thông tin là: **text** và **color**.
 
 Cụ thể:
 
@@ -330,7 +330,7 @@ Trên đây là cách thức triển khai thuật toán Undo-Redo, cũng như c�
 
 Nếu có phần nào chưa hiểu, cần góp ý hoặc sự giúp đỡ của mình thì bạn có thể để lại dưới phần bình luận phía dưới.
 
-Còn bây giờ thì xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/trien-khai-lazy-loading-image-voi-es6-va-css), thân ái!
+Còn bây giờ thì xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/trien-khai-lazy-loading-image-voi-es6-va-css/), thân ái!
 
 ## Tham khảo
 

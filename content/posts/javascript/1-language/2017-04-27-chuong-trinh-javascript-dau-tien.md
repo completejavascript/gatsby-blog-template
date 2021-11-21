@@ -15,9 +15,9 @@ Trong những bài viết trước, bạn đã biết các kiến thức tổng 
 
 > Trường hợp bạn chưa đọc qua thì đây là những kiến thức tổng quan:
 >
-> - [JavaScript là gì?](/javascript-la-gi)
-> - [IDE là gì?](/ide-la-gi)
-> - [Dev Tools là gì?](/dev-tools-la-gi)
+> - [JavaScript là gì?](/javascript-la-gi/)
+> - [IDE là gì?](/ide-la-gi/)
+> - [Dev Tools là gì?](/dev-tools-la-gi/)
 
 ## Hello World JavaScript Console
 
@@ -35,11 +35,11 @@ Bạn sẽ thấy kết quả hiển thị:
 
 Console.log trong JavaScript là một hàm được sử dụng để in ra bất kể thứ gì (với trình duyệt thì nơi hiển thị kết quả đó là tab console của Dev Tools).
 
-> Trong các bài viết sau, mình chủ yếu dùng hàm [console.log()](/thu-thuat-su-dung-console-hieu-qua) để in ra kết quả của biến, phép tính, đoạn chương trình,...
+> Trong các bài viết sau, mình chủ yếu dùng hàm [console.log()](/thu-thuat-su-dung-console-hieu-qua/) để in ra kết quả của biến, phép tính, đoạn chương trình,...
 
 Bạn sẽ không cần phải cài đặt thêm bất cứ phần mềm nào khác. Bạn chỉ cần mở trình duyệt, vừa đọc hướng dẫn và thực hành trên tab console của Dev Tools.
 
-Sau khi bạn đã nắm hết kiến thức cơ bản về ngôn ngữ JavaScript, mình sẽ bắt đầu học về trình duyệt, [HTML](/tag/html), và cách JavaScript giao tiếp với HTML,...
+Sau khi bạn đã nắm hết kiến thức cơ bản về ngôn ngữ JavaScript, mình sẽ bắt đầu học về trình duyệt, [HTML](/tag/html/), và cách JavaScript giao tiếp với HTML,...
 
 ## Chương trình JavaScript đầu tiên với HTML
 

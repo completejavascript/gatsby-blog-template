@@ -39,7 +39,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Cách khai báo [hàm số](/ham-la-gi-ham-trong-javascript) như trên được gọi là **Named function expression**, tức là bạn đặt tên cho function expression. Khi đó, bạn có thể sử dụng hàm số ngay bên trong nội dung của hàm.
+Cách khai báo [hàm số](/ham-la-gi-ham-trong-javascript/) như trên được gọi là **Named function expression**, tức là bạn đặt tên cho function expression. Khi đó, bạn có thể sử dụng hàm số ngay bên trong nội dung của hàm.
 
 Ví dụ:
 
@@ -125,11 +125,11 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-[Object.preventExtensions](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions) ngăn chặn việc thêm thuộc tính vào [object](/javascript-object-last-but-not-least).
+[Object.preventExtensions](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions) ngăn chặn việc thêm thuộc tính vào [object](/javascript-object-last-but-not-least/).
 
 Do đó, việc thêm thuộc tính **person.job = "teacher"** sẽ không có ý nghĩa. Vì vậy, kết quả của câu hỏi sẽ là: **{name: "bar"}**.
 
-Ngoài ra, nếu bạn sử dụng code trên ở chế độ [strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript) thì bạn sẽ nhận được thông báo lỗi: **TypeError: Cannot add property job, object is not extensible**.
+Ngoài ra, nếu bạn sử dụng code trên ở chế độ [strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript/) thì bạn sẽ nhận được thông báo lỗi: **TypeError: Cannot add property job, object is not extensible**.
 
 ```js
 "use strict";

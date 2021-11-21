@@ -18,7 +18,7 @@ tags:
 
 ## Vậy IcoMoon là gì?
 
-[IcoMoon](https://icomoon.io) thực chất là một ứng dụng cho phép bạn **tuỳ chỉnh icon font**, **import SVG để tạo ra font riêng, convert font sang SVG, PDF, XAML, CSH,**... Và IcoMoon cung cấp hơn 5000 [icon free](/icon-mien-phi-dan-it) bằng cách tối ưu các thư viện miễn phí như:
+[IcoMoon](https://icomoon.io) thực chất là một ứng dụng cho phép bạn **tuỳ chỉnh icon font**, **import SVG để tạo ra font riêng, convert font sang SVG, PDF, XAML, CSH,**... Và IcoMoon cung cấp hơn 5000 [icon free](/icon-mien-phi-dan-it/) bằng cách tối ưu các thư viện miễn phí như:
 
 - [IcoMoon - Free](https://icomoon.io/#icons)
 - [Brands](https://simpleicons.org/)
@@ -78,7 +78,7 @@ Trong đó:
   - **Include metadata in fonts**: thêm metadata vào fonts
   - **Encode & embed font in CSS**: chỉ hỗ trợ gói Premium
   - **Generate Sass, Less or Stylus variables**: sinh ra các biến số dành cho Sass, Less hoặc Stylus
-- **CSS Selector**: lựa chọn cách sử dụng font trong [CSS](/tag/css) với 3 loại CSS [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors).
+- **CSS Selector**: lựa chọn cách sử dụng font trong [CSS](/tag/css/) với 3 loại CSS [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors).
   - **Use i (for selecting <>)**: sử dụng thẻ _i_. Ví dụ: <code>&lt;i class="icon-asterisk"&gt;&lt;/i&gt;</code>
   - **Use attribute selectors**. Ví dụ: <code>&lt;span class="icon-asterisk"&gt;&lt;/span&gt;</code>
   - **Use a class**. Ví dụ: <code>&lt;span class="icon icon-asterisk"&gt;&lt;/span&gt;</code>
@@ -117,4 +117,4 @@ _Bình thường bạn sử dụng Font Awesome như thế nào? Có tối ưu h
 
 Xin chào và hẹn gặp lại, thân ái!
 
-_Có thể bạn quan tâm: [18 trang web tải free icon SVG cho cá nhân và thương mại](/web-tai-free-icon-svg)_
+_Có thể bạn quan tâm: [18 trang web tải free icon SVG cho cá nhân và thương mại](/web-tai-free-icon-svg/)_

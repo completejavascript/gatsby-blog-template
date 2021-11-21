@@ -18,7 +18,7 @@ tags:
 Module pattern là một loại pattern khá mạnh và được sử dụng rất phổ biến, với một số các đặc điểm sau:
 
 - Sử dụng Object Literals ({})
-- Cung cấp khả năng đóng gói dữ liệu với cả thuộc tính và phương thức dạng **public/private**, giúp tránh xung đột về tên đối với các [function](/ham-la-gi-ham-trong-javascript) ở các script khác trên trang web.
+- Cung cấp khả năng đóng gói dữ liệu với cả thuộc tính và phương thức dạng **public/private**, giúp tránh xung đột về tên đối với các [function](/ham-la-gi-ham-trong-javascript/) ở các script khác trên trang web.
 
 ## Ví dụ sử dụng Module Pattern
 
@@ -74,7 +74,7 @@ Do đó, nếu muốn truyền tham số vào function (chẳng hạn như **jQ
 var countModule = (function (jQ) {})(jQuery);
 ```
 
-Theo cách phân tích trên, thực chất **countModule** là thành phần **return** của function - dạng [object](/javascript-object-last-but-not-least) ({}). Do đó, ta chỉ có thể truy cập đến những thuộc tính bên trong object này là: **_increase, decrease, reset_**. Hay nói cách khác, những hàm số này thuộc dạng **public**.
+Theo cách phân tích trên, thực chất **countModule** là thành phần **return** của function - dạng [object](/javascript-object-last-but-not-least/) ({}). Do đó, ta chỉ có thể truy cập đến những thuộc tính bên trong object này là: **_increase, decrease, reset_**. Hay nói cách khác, những hàm số này thuộc dạng **public**.
 
 Ngược lại, biến số **count**, **log** chỉ truy cập được ở trong hàm số trên, nên thuộc dạng **private**.
 
@@ -118,7 +118,7 @@ Bây giờ, ta có thể dễ dàng thấy rằng **countModule** có 3 phươ
 
 Hy vọng với sự giải thích ngắn gọn trên, bạn có thể hiểu và áp dụng được Module Pattern.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/js-pattern-3-singleton-pattern), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/js-pattern-3-singleton-pattern/), thân ái!
 
 ## Tham khảo
 

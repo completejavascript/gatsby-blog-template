@@ -28,7 +28,7 @@ Bộ icon Flagpack này có trên **250 icon của các nước**, được tố
 
 Đối với designer, bạn có thể chọn tải về phiên bản Figma hoặc Sketch.
 
-Còn đối với lập trình viên (web), dĩ nhiên bạn cũng có thể tải về phiên bản Figma hoặc Sketch rồi xuất ra file ảnh. Hoặc bạn có thể cài đặt trực tiếp vào code (hỗ trợ [React](/react), Vue và Svelte).
+Còn đối với lập trình viên (web), dĩ nhiên bạn cũng có thể tải về phiên bản Figma hoặc Sketch rồi xuất ra file ảnh. Hoặc bạn có thể cài đặt trực tiếp vào code (hỗ trợ [React](/react/), Vue và Svelte).
 
 <a  href="https://flagpack.xyz/" class="btn btn-primary margin-bottom">
   Download
@@ -102,7 +102,7 @@ Bộ bioicons này có trên 1699 icons khác nhau. Và bạn có thể tải xu
 
 Weather Icons là bộ icon miễn phí về thời tiết (mưa, nắng, giông, bão, gió,...).
 
-Đây là icon dạng [CSS](/tag/css). Nghĩa là bạn cần phải tải về một file CSS để đưa vào project. Và sử dụng thì hoàn toàn tương tự như FontAwesome.
+Đây là icon dạng [CSS](/tag/css/). Nghĩa là bạn cần phải tải về một file CSS để đưa vào project. Và sử dụng thì hoàn toàn tương tự như FontAwesome.
 
 <a  href="https://erikflowers.github.io/weather-icons/" class="btn btn-primary margin-bottom">
   Download

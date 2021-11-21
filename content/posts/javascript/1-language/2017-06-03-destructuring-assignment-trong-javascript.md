@@ -16,7 +16,7 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Destructuring Assignment trong JavaScript là một cú pháp đặc biệt cho phép bạn **lấy ra dữ liệu** từ [Object](/javascript-object-last-but-not-least) hoặc [Array](/javascript-array-co-ban) và gán chúng vào các biến thông thường. Tuy nhiên, việc "lấy ra dữ liệu" này sẽ chỉ copy mà không làm thay đổi cấu trúc của Object hoặc Array. Dưới đây, mình sẽ tìm hiểu về cách sử dụng và ứng dụng của Destructuring Assignment trong JavaScript với hai kiểu dữ liệu cơ bản là Array và Object.
+Destructuring Assignment trong JavaScript là một cú pháp đặc biệt cho phép bạn **lấy ra dữ liệu** từ [Object](/javascript-object-last-but-not-least/) hoặc [Array](/javascript-array-co-ban/) và gán chúng vào các biến thông thường. Tuy nhiên, việc "lấy ra dữ liệu" này sẽ chỉ copy mà không làm thay đổi cấu trúc của Object hoặc Array. Dưới đây, mình sẽ tìm hiểu về cách sử dụng và ứng dụng của Destructuring Assignment trong JavaScript với hai kiểu dữ liệu cơ bản là Array và Object.
 
 ## Destructuring Assignment với Array
 
@@ -360,7 +360,7 @@ drawCicle(1, "red");
 
 Cách gọi hàm trên không sai về cú pháp nhưng sai về mặt ý nghĩa vì JavaScript sẽ hiểu **x = 1, y = "red", radius = 1 (default), color = "black"(default)**.
 
-Để tránh việc phải ghi nhớ thứ tự các biến, bạn có thể gộp chúng vào một Object và chỉ cần truyền 1 tham số vào [function](/ham-la-gi-ham-trong-javascript) như dưới đây.
+Để tránh việc phải ghi nhớ thứ tự các biến, bạn có thể gộp chúng vào một Object và chỉ cần truyền 1 tham số vào [function](/ham-la-gi-ham-trong-javascript/) như dưới đây.
 
 #### Gộp các tham số vào thành một Object
 

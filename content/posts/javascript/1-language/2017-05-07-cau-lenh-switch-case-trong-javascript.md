@@ -14,7 +14,7 @@ tags:
   - Cấu trúc rẽ nhánh
 ---
 
-Trong bài viết về [cấu trúc rẽ nhánh trong JavaScript](/cau-truc-re-nhanh-trong-javascript), mình đã tìm hiểu về câu lệnh `if` và toán tử `?`. Ngoài ra, mình cũng có thể sử dụng **lệnh switch case** làm cấu trúc rẽ nhánh thay thế cho câu lệnh `if`.
+Trong bài viết về [cấu trúc rẽ nhánh trong JavaScript](/cau-truc-re-nhanh-trong-javascript/), mình đã tìm hiểu về câu lệnh `if` và toán tử `?`. Ngoài ra, mình cũng có thể sử dụng **lệnh switch case** làm cấu trúc rẽ nhánh thay thế cho câu lệnh `if`.
 
 Sau đây, mình cùng tìm hiểu về cách sử dụng câu lệnh switch - case trong JavaScript và khi nào thì nên sử dụng cấu trúc rẽ nhánh switch - case.
 
@@ -107,7 +107,7 @@ switch (x) {
 // Don't know the answer
 ```
 
-> **Chú ý:** `switch` và `case` đều có thể chứa biểu thức - không chỉ là [biến](/bien-la-gi-bien-trong-javascript) hay [hằng](/hang-la-gi-hang-trong-javascript).
+> **Chú ý:** `switch` và `case` đều có thể chứa biểu thức - không chỉ là [biến](/bien-la-gi-bien-trong-javascript/) hay [hằng](/hang-la-gi-hang-trong-javascript/).
 
 Ví dụ lệnh switch case với biểu thức:
 
@@ -129,7 +129,7 @@ switch (x - 1) {
 // case 2
 ```
 
-Vì `x = "3"` nên ta có `x - 1` bằng `"3" - 1`. Trường hợp này là phép trừ hai giá trị khác kiểu dữ liệu, nên kí tự `"3"` được [chuyển đổi về dạng số](/chuyen-doi-kieu-du-lieu-trong-javascript) thành số `3`. Vì vậy, `x - 1` sẽ bằng `2`.
+Vì `x = "3"` nên ta có `x - 1` bằng `"3" - 1`. Trường hợp này là phép trừ hai giá trị khác kiểu dữ liệu, nên kí tự `"3"` được [chuyển đổi về dạng số](/chuyen-doi-kieu-du-lieu-trong-javascript/) thành số `3`. Vì vậy, `x - 1` sẽ bằng `2`.
 
 Mà ta có `v = 0`, nên `v + 1` bằng `1` và `v + 2` bằng `2`. Suy ra, trường hợp `case v + 2` thỏa mãn. Do đó, `case 2` được in ra.
 

@@ -37,7 +37,7 @@ Vì vậy, HTTP Cookie đã ra đời để giải quyết vấn đề này.
 Cụ thể, các tác dụng chính của cookie là:
 
 - **Quản lý session**: trạng thái đăng nhập, thông tin giỏ hàng,...
-- **Lưu thông tin cài đặt của người dùng**: theme ([dark mode](/tao-dark-theme-voi-css-variable) hay light mode), ngôn ngữ (tiếng việt, tiếng anh), thông tin username/email trong mục bình luận,...
+- **Lưu thông tin cài đặt của người dùng**: theme ([dark mode](/tao-dark-theme-voi-css-variable/) hay light mode), ngôn ngữ (tiếng việt, tiếng anh), thông tin username/email trong mục bình luận,...
 - **Theo dõi và phân tích hành vi người dùng**: các trang đã truy cập, truy cập bao nhiêu lần,...
 
 ### Một số giới hạn của cookie
@@ -175,7 +175,7 @@ document.cookie = "foo=; expires=Wed, 27 Feb 2019 07:41:28 GMT;";
 
 Bên trên, mình đã tìm hiểu về việc thao tác với HTTP Cookie phía client sử dụng JavaScript. Phần này, mình sẽ tìm hiểu cơ bản về cách làm việc với cookie từ phía server.
 
-Khi server nhận được một [HTTP request](/xmlhttprequest-tao-http-request-den-server-trong-javascript) từ client, response trả về sẽ sử dụng header **Set-Cookie** để xác định những cookie được trình duyệt lưu lại, với cấu trúc đơn giản:
+Khi server nhận được một [HTTP request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/) từ client, response trả về sẽ sử dụng header **Set-Cookie** để xác định những cookie được trình duyệt lưu lại, với cấu trúc đơn giản:
 
 ```
 HTTP/2.0 200 OK

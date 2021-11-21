@@ -17,7 +17,7 @@ tags:
   - Template
 ---
 
-Xin chào bạn! Trong bài viết [triển khai Lazy Loading Image trong React](/trien-khai-lazy-loading-image-trong-react) mình đã giới thiệu với bạn tư tưởng chính của phương pháp Lazy Loading Image và cách mình triển khai nó trong React. Còn trong bài này, mình sẽ không sử dụng React nữa. Thay vào đó mình sẽ chỉ sử dụng ES6 và CSS thôi. Mời bạn theo dõi bài viết, xem mình đã triển khai Lazy Loading Image với ES6 và CSS như thế nào nhé!
+Xin chào bạn! Trong bài viết [triển khai Lazy Loading Image trong React](/trien-khai-lazy-loading-image-trong-react/) mình đã giới thiệu với bạn tư tưởng chính của phương pháp Lazy Loading Image và cách mình triển khai nó trong React. Còn trong bài này, mình sẽ không sử dụng React nữa. Thay vào đó mình sẽ chỉ sử dụng ES6 và CSS thôi. Mời bạn theo dõi bài viết, xem mình đã triển khai Lazy Loading Image với ES6 và CSS như thế nào nhé!
 
 ## Triển khai Lazy Loading Image với ES6 và CSS
 
@@ -189,7 +189,7 @@ Do đó, mình sẽ phải tạo ra reference đến thẻ đó trước để l
 const gridContainer = document.querySelector(".grid");
 ```
 
-Sau đó, mình sẽ sử dụng [ES6 Template String](/su-dung-es6-template-string-co-gi-hay) để định nghĩa template cho mỗi cell (chứa ảnh và caption).
+Sau đó, mình sẽ sử dụng [ES6 Template String](/su-dung-es6-template-string-co-gi-hay/) để định nghĩa template cho mỗi cell (chứa ảnh và caption).
 
 ```js
 const cellTemplate = (id) => `
@@ -232,7 +232,7 @@ for (let i = 1; i <= NUMBER_IMAGE; i++) {
 
 Và id của mỗi ảnh lần lượt là: image-01, image-02, ..., image-18. Phần id này sẽ được dùng để xác định ảnh gốc được load ứng với mỗi _cell_.
 
-Như vậy là đến đây mình đã xây dựng được [cấu trúc DOM Tree](/co-ban-ve-dom-javascript). Tiếp theo mình sẽ xử lý việc load ảnh khi scroll màn hình.
+Như vậy là đến đây mình đã xây dựng được [cấu trúc DOM Tree](/co-ban-ve-dom-javascript/). Tiếp theo mình sẽ xử lý việc load ảnh khi scroll màn hình.
 
 #### Xử lý việc load ảnh khi scroll màn hình
 
@@ -242,7 +242,7 @@ Trước tiên, mình sẽ query để lưu lại các phần tử DOM cần Laz
 let arrayImages = [].slice.call(document.querySelectorAll(".lazy-image"));
 ```
 
-Ở đây phương thức [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) trả về [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) chứ không phải [Array](/javascript-array-co-ban). Nên mình sẽ phải convert NodeList sang Array. Bạn có thể tham khảo bài viết [Convert NodeList to Array](https://davidwalsh.name/nodelist-array) để biết thêm chi tiết.
+Ở đây phương thức [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) trả về [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) chứ không phải [Array](/javascript-array-co-ban/). Nên mình sẽ phải convert NodeList sang Array. Bạn có thể tham khảo bài viết [Convert NodeList to Array](https://davidwalsh.name/nodelist-array) để biết thêm chi tiết.
 
 **Mục đích của mình khi lưu các phần tử DOM này vào Array là gì?**
 
@@ -378,4 +378,4 @@ Bạn có thể xem code đầy đủ và demo tại đây:
 
 Trên đây là cách mình triển khai Lazy Loading Image với ES6 và CSS. Nhìn chung, mình thấy cách này không khác nhiều so với cách sử dụng React. Nếu bạn có thắc mắc hay góp ý gì thì có thể hỏi mình bằng cách để lại trong phần bình luận phía dưới.
 
-Còn bây giờ thì xin chào và hẹn gặp lại trong [bài viết tiếp theo](/chuyen-anh-dong-gif-thanh-video), thân ái!
+Còn bây giờ thì xin chào và hẹn gặp lại trong [bài viết tiếp theo](/chuyen-anh-dong-gif-thanh-video/), thân ái!

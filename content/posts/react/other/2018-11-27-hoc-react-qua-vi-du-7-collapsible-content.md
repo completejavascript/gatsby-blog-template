@@ -30,7 +30,7 @@ Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
 Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #7 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
@@ -64,8 +64,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_resize_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
@@ -268,7 +268,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 }
 ```
 
-Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow), [Modal Image](/hoc-react-qua-vi-du-3-modal-image) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox).
+Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow/), [Modal Image](/hoc-react-qua-vi-du-3-modal-image/) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox/).
 
 ```jsx:title=./src/App.js
 import React from "react";
@@ -347,7 +347,7 @@ export default class App extends React.Component {
 
 Trong đó, Collapsible Content Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
-- **title ([String](/kieu-du-lieu-trong-javascript)):** là title của component
+- **title ([String](/kieu-du-lieu-trong-javascript/)):** là title của component
 - **isActive** (**Boolean**): là biến để xác định xem Component có được active hay không. Nếu **isActive** có giá trị **true** thì Component sẽ hiển thị nội dung dạng mở rộng.
 
 ## Lời kết

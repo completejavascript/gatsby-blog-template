@@ -35,7 +35,7 @@ Họ cố gắng ăn cắp password, email và những thông tin liên quan đ�
 
 Sau đó, chính phủ sẽ sử dụng những thông tin này để hack vào một cơ quan hay một nhóm tội phạm hình sự.
 
-Họ có thể là cá nhân hay những nhà nghiên cứu theo đuổi việc tìm kiếm [bugs](/debug-javascript-de-hay-kho) và những sai sót có thể hữu ích cho chính phủ.
+Họ có thể là cá nhân hay những nhà nghiên cứu theo đuổi việc tìm kiếm [bugs](/debug-javascript-de-hay-kho/) và những sai sót có thể hữu ích cho chính phủ.
 
 ## White hat hacker
 

@@ -11,7 +11,7 @@ title: "5 lợi ích của việc thức dậy sớm"
 series: "Cuộc sống IT: Cuộc sống dân IT"
 ---
 
-Xin chào các bạn, bài viết trước tôi có viết về cách để [thức dậy sớm](/thuc-day-som-khong-cam-thay-met-moi) mà không cảm thấy mệt mỏi. Nhiều bạn sẽ hỏi là thức dậy sớm để làm gì? Tại sao phải thức dậy sớm? Trong bài viết này, tôi sẽ chỉ cho các bạn thấy 5 lợi ích của việc thức dậy sớm.
+Xin chào các bạn, bài viết trước tôi có viết về cách để [thức dậy sớm](/thuc-day-som-khong-cam-thay-met-moi/) mà không cảm thấy mệt mỏi. Nhiều bạn sẽ hỏi là thức dậy sớm để làm gì? Tại sao phải thức dậy sớm? Trong bài viết này, tôi sẽ chỉ cho các bạn thấy 5 lợi ích của việc thức dậy sớm.
 
 ## Tinh thần sảng khoái, năng lượng tràn trề
 

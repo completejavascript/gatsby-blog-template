@@ -19,7 +19,7 @@ Trong bài viết này, mình sẽ chia sẻ với các bạn 21 thủ thuật J
 
 ## Tạo hàm query DOM ngắn gọn hơn với bind
 
-Có thể bạn thừa biết, JavaScript cung cấp phương thức [document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) cho phép bạn query [DOM](/co-ban-ve-dom-javascript) dựa trên selector. Tuy nhiên, việc sử dụng phương thức này khá dài dòng. Ví dụ:
+Có thể bạn thừa biết, JavaScript cung cấp phương thức [document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) cho phép bạn query [DOM](/co-ban-ve-dom-javascript/) dựa trên selector. Tuy nhiên, việc sử dụng phương thức này khá dài dòng. Ví dụ:
 
 ```js
 let ele1 = document.querySelector("#id1");
@@ -27,7 +27,7 @@ let ele2 = document.querySelector(".class2");
 let ele3 = document.querySelector("div.user-panel.main input[name='login']");
 ```
 
-Bạn có thể lợi dụng phương thức [bind](/phan-biet-call-apply-va-bind-trong-javascript) để rút gọn phương thức này:
+Bạn có thể lợi dụng phương thức [bind](/phan-biet-call-apply-va-bind-trong-javascript/) để rút gọn phương thức này:
 
 ```js
 let $ = document.querySelector.bind(document);
@@ -145,7 +145,7 @@ console.log(str); // =>        Hello World!
 console.log(str.trim()); // => Hello World!
 ```
 
-Trong trường hợp trình duyệt không hỗ trợ phương thức trên, bạn có thể sử dụng [Regex](/tim-hieu-regular-expression-javascript):
+Trong trường hợp trình duyệt không hỗ trợ phương thức trên, bạn có thể sử dụng [Regex](/tim-hieu-regular-expression-javascript/):
 
 ```js
 function trim(x) {
@@ -159,7 +159,7 @@ console.log(trim(str)); // => Hello World!
 
 ## Chuyển đối tượng arguments thành array
 
-[Hàm số](/ham-la-gi-ham-trong-javascript) trong JavaScript luôn có một đối tượng mặc định là [arguments](/javascript-object-last-but-not-least) để quản lý tham số của hàm. Tuy nhiên, đối tượng này không phải là [array](/javascript-array-co-ban) nên bạn không thể sử dụng các phương thức như [forEach](/javascript-foreach-la-cai-quai-gi), map,...
+[Hàm số](/ham-la-gi-ham-trong-javascript/) trong JavaScript luôn có một đối tượng mặc định là [arguments](/javascript-object-last-but-not-least/) để quản lý tham số của hàm. Tuy nhiên, đối tượng này không phải là [array](/javascript-array-co-ban/) nên bạn không thể sử dụng các phương thức như [forEach](/javascript-foreach-la-cai-quai-gi/), map,...
 
 Để chuyển đối tượng này thành array, bạn có thể sử dụng một trong các cách sau:
 
@@ -432,4 +432,4 @@ console.log(obj); // => {key1: "One", key2: "Two", variableKey: "Three"}
 
 Trên đây là 21 thủ thuật JavaScript hữu ích mà mình đã sưu tầm được. Hy vọng nó có thể giúp ích cho bạn. Ngoài ra, nếu bạn biết thêm các thủ thuật khác hay có góp ý gì thì vui lòng để lại bình luận cho mình.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/su-dung-es6-template-string-co-gi-hay), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/su-dung-es6-template-string-co-gi-hay/), thân ái!

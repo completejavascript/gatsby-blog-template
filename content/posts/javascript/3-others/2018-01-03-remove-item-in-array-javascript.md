@@ -13,7 +13,7 @@ tags:
   - Array
 ---
 
-**Remove item in Array JavaScript** là một bài toán mà hầu hết mọi người đều gặp phải khi lập trình JavaScript. Để giải quyết bài toán này, JavaScript cung cấp rất nhiều giải pháp khác nhau. Mỗi giải pháp lại có một ưu, nhược điểm riêng và phù hợp với từng bài toán cụ thể. Vì vậy, bài viết này sẽ tổng hợp lại các cách để loại bỏ một hoặc nhiều phần tử ra khỏi [Array](/javascript-array-co-ban) trong JavaScript.
+**Remove item in Array JavaScript** là một bài toán mà hầu hết mọi người đều gặp phải khi lập trình JavaScript. Để giải quyết bài toán này, JavaScript cung cấp rất nhiều giải pháp khác nhau. Mỗi giải pháp lại có một ưu, nhược điểm riêng và phù hợp với từng bài toán cụ thể. Vì vậy, bài viết này sẽ tổng hợp lại các cách để loại bỏ một hoặc nhiều phần tử ra khỏi [Array](/javascript-array-co-ban/) trong JavaScript.
 
 Về cơ bản, các cách mà mình trình bày sau đây sẽ được chia ra làm 2 loại:
 
@@ -138,7 +138,7 @@ console.log(new_arr); // => (3) ["a", "d", "e"]
 
 ### Loại bỏ phần tử trong mảng dựa vào giá trị với filter()
 
-Trong trường hợp bạn biết giá trị của phần tử muốn loại bỏ khỏi mảng thì có thể sử dụng phương thức [filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter). Phương thức này sẽ tạo ra một mảng mới chứa tất cả những phần tử thỏa mãn testing [function](/ham-la-gi-ham-trong-javascript).
+Trong trường hợp bạn biết giá trị của phần tử muốn loại bỏ khỏi mảng thì có thể sử dụng phương thức [filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter). Phương thức này sẽ tạo ra một mảng mới chứa tất cả những phần tử thỏa mãn testing [function](/ham-la-gi-ham-trong-javascript/).
 
 Ví dụ:
 

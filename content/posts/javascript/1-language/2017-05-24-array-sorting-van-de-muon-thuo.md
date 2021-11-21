@@ -15,13 +15,13 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Từ xưa đến nay, sắp xếp giữ một vai trò vô cùng quan trọng. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc này giúp cho người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn. Do đó, trong bài viết này, mình sẽ cùng với bạn tìm hiểu về vấn đề [Array](/javascript-array-co-ban) Sorting - sắp xếp mảng trong JavaScript.
+Từ xưa đến nay, sắp xếp giữ một vai trò vô cùng quan trọng. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc này giúp cho người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn. Do đó, trong bài viết này, mình sẽ cùng với bạn tìm hiểu về vấn đề [Array](/javascript-array-co-ban/) Sorting - sắp xếp mảng trong JavaScript.
 
 Về sắp xếp nói chung, chúng ta có rất nhiều thuật toán với độ phức tạp khác nhau, có thể kể đến là: selection sort, insertion sort, binary insertion sort, interchange sort, bubble sort, shaker sort, quick sort, merge sort, heap sort,...
 
 _(Xem thêm hai bài tổng hợp về thuật toán sắp xếp trong C/C++: [phần 1](http://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-1), [phần 2](http://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-2))_
 
-Tuy nhiên, bạn không cần thiết phải implement lại những thuật toán sắp xếp này. Vì JavaScript hỗ trợ sẵn cho chúng ta một [function](/ham-la-gi-ham-trong-javascript) để sắp xếp.
+Tuy nhiên, bạn không cần thiết phải implement lại những thuật toán sắp xếp này. Vì JavaScript hỗ trợ sẵn cho chúng ta một [function](/ham-la-gi-ham-trong-javascript/) để sắp xếp.
 
 ## Cú pháp hàm sắp xếp mảng trong JavaScript
 
@@ -57,7 +57,7 @@ Hàm _compareFunction_ dùng để xác định thứ tự sắp xếp mảng. N
 
 ## Array sorting với numbers
 
-JavaScript hỗ trợ sắp xếp nhiều kiểu dữ liệu. Tuy nhiên, phổ biến nhất vẫn là [numbers](/kieu-du-lieu-trong-javascript). Và như mình đã nói ở trên, mặc định hàm _sort_ sẽ so sánh theo kiểu string. Do đó, kết quả sẽ như thế này:
+JavaScript hỗ trợ sắp xếp nhiều kiểu dữ liệu. Tuy nhiên, phổ biến nhất vẫn là [numbers](/kieu-du-lieu-trong-javascript/). Và như mình đã nói ở trên, mặc định hàm _sort_ sẽ so sánh theo kiểu string. Do đó, kết quả sẽ như thế này:
 
 ```js
 var a = [9, 100, 45, 33];
@@ -80,7 +80,7 @@ console.log(a.sort(compareNumbers));
 
 Theo đúng mô tả của hàm _compareFunction_, khi a &lt; b => a - b &lt; 0 => a sẽ đứng trước b. Nghĩa là số bé hơn sẽ đứng trước. Áp dụng quy tắc này, ta được mảng các số sắp xếp theo thứ tự tăng dần.
 
-Ngoài cách viết hàm riêng như trên, bạn có thể áp dụng [JavaScript closures](/tim-hieu-javascript-closures):
+Ngoài cách viết hàm riêng như trên, bạn có thể áp dụng [JavaScript closures](/tim-hieu-javascript-closures/):
 
 ```js
 var a = [9, 100, 45, 33];
@@ -345,7 +345,7 @@ function heapSort(array) {
 
 Trên đây là những vấn đề cơ bản về Array Sorting, cùng với một số thuật toán sắp xếp mảng 1 chiều. Theo mình, đây là những kiến thức cơ bản và có thể được áp dụng rất nhiều.
 
-Xin chào và hẹn gặp lại ở [bài viết sau](/javascript-object-last-but-not-least), thân ái!
+Xin chào và hẹn gặp lại ở [bài viết sau](/javascript-object-last-but-not-least/), thân ái!
 
 ## Tham Khảo
 

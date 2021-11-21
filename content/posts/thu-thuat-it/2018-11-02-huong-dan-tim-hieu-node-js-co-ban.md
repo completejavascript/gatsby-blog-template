@@ -32,7 +32,7 @@ Node.js là một môi trường thực thi JavaScript bên ngoài trình duyệ
 
 _Chrome's V8 JavaScript engine được viết bằng C++, giúp biên dịch code JavaScript thành mã máy một cách nhanh chóng._
 
-Hơn nữa, Node.js là [mã nguồn mở](https://github.com/nodejs/node), miễn phí và có thể chạy trên nhiều nền tảng: Windows, [Linux](/tag/ubuntu), Unix, Mac OS X, Embedded system,...
+Hơn nữa, Node.js là [mã nguồn mở](https://github.com/nodejs/node), miễn phí và có thể chạy trên nhiều nền tảng: Windows, [Linux](/tag/ubuntu/), Unix, Mac OS X, Embedded system,...
 
 ### Node.js có khả năng xử lý bất đồng bộ
 
@@ -46,7 +46,7 @@ Nghĩa là bạn chỉ cần gửi request, viết hàm xử lý khi có kết q
 
 Theo mình biết, đối với PHP (Java, ASP.NET,...) mỗi request gửi lên sẽ được đưa vào một thread riêng để thực thi. Điều này dẫn đến tiêu tốn nhiều bộ nhớ.
 
-Ngược lại, Node.js lại chạy **single-threaded**. Nghĩa là mỗi request gửi lên sẽ được cho vào một **event-queue**. Node.js sẽ chạy một **vòng lặp** để duyệt event-queue này và **lần lượt xử lý** các request theo [kiểu bất đồng bộ](/tag/ajax).
+Ngược lại, Node.js lại chạy **single-threaded**. Nghĩa là mỗi request gửi lên sẽ được cho vào một **event-queue**. Node.js sẽ chạy một **vòng lặp** để duyệt event-queue này và **lần lượt xử lý** các request theo [kiểu bất đồng bộ](/tag/ajax/).
 
 [![Cách single-threaded chạy](../../images/thu-thuat-it/nodejs-overview-single-threaded-architecture-gaurav-mittal.jpg)](https://www.linkedin.com/pulse/nodejs-overview-single-threaded-architecture-gaurav-mittal)
 
@@ -110,7 +110,7 @@ Khi cài đặt xong, bạn nhấn **Finish** để kết thúc.
 
 Sau khi đã thực hiện xong các bước trên, bạn cần kiểm tra xem mình đã có thể làm việc bình thường với Node.js hay chưa.
 
-Bạn mở [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows) trên Windows lên rồi gõ các câu lệnh sau:
+Bạn mở [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows/) trên Windows lên rồi gõ các câu lệnh sau:
 
 ```bash
 $ node -v

@@ -23,8 +23,8 @@ Mời bạn theo dõi bài viết!
 Trước khi bắt đầu tạo trang blog với Gatsby.js, có một số kiến thức cơ bản mà bạn cần phải nắm vững như:
 
 - [HTML](https://www.tutorialspoint.com/html/) và [CSS](https://www.tutorialspoint.com/css/).
-- [JavaScript cơ bản](/javascript).
-- Một số đặc điểm cơ bản của [ES6](/tag/es6).
+- [JavaScript cơ bản](/javascript/).
+- Một số đặc điểm cơ bản của [ES6](/tag/es6/).
 - Những tư tưởng chính của [React](https://www.taniarascia.com/getting-started-with-react/).
 - Cú pháp [Markdown](https://guides.github.com/features/mastering-markdown/) cơ bản
 - [Node.js và npm](https://www.taniarascia.com/how-to-install-and-use-node-js-and-npm-mac-and-windows/).
@@ -54,7 +54,7 @@ Bài viết này giúp bạn:
 
 - Gatsby.js là một framework khá nổi tiếng với hơn [25.000 stars trên Github](https://github.com/gatsbyjs/gatsby).
 - Gatsby.js là một [site generator](https://www.staticgen.com/) tương tự như [Jekyll](https://jekyllrb.com/), [Next.js](https://nextjs.org/), [Hugo](https://gohugo.io/),...
-- Gatsby.js sử dụng [ngôn ngữ JavaScript](/javascript-la-gi) với template là [React](/lam-tuong-tai-hai-ve-react).
+- Gatsby.js sử dụng [ngôn ngữ JavaScript](/javascript-la-gi/) với template là [React](/lam-tuong-tai-hai-ve-react/).
 - Gatsby.js có thể được sử dụng để xây dựng trang blog, [portfolio](https://about.phamvanlam.com/), trang thương mại điện tử, Static PWA (Progressive Web Apps),...
 - Gatsby.js hỗ trợ nhiều plugins giúp bạn xây dựng và deploy trang web một cách nhanh chóng mà không cần phải triển khai database, cài đặt server.
 - Gatsby.js có thể load dữ liệu từ nhiều nơi như: các file dạng Markdown, các CMS ([Contentful](https://www.contentful.com/), Wordpress), REST hay GraphQL API,...
@@ -65,7 +65,7 @@ Mục đích của Gatsby.js là build ra trang web dưới dạng các file tĩ
 
 ### Cài đặt Node.js
 
-Node.js là thứ không thể thiếu vì Gatsby được xây dựng dựa trên Node.js. Để cài đặt Node.js trên Windows, bạn có thể tham khảo bài viết [hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban).
+Node.js là thứ không thể thiếu vì Gatsby được xây dựng dựa trên Node.js. Để cài đặt Node.js trên Windows, bạn có thể tham khảo bài viết [hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban/).
 
 ### Cài đặt Git
 
@@ -73,7 +73,7 @@ Git cũng là một thành phần không thể thiếu. Mình cần cài đặt 
 
 ### Cài đặt Gatsby CLI
 
-Gatsby CLI là công cụ cần thiết để tạo mới một trang blog với Gatsby.js, cũng như là chạy các câu lệnh phục vụ cho việc phát triển, [deploy](/deploy-ung-dung-react-len-github-pages) trang web. Để cài đặt Gatsby CLI bạn có thể sử dụng npm bằng [câu lệnh](/tag/command-line):
+Gatsby CLI là công cụ cần thiết để tạo mới một trang blog với Gatsby.js, cũng như là chạy các câu lệnh phục vụ cho việc phát triển, [deploy](/deploy-ung-dung-react-len-github-pages/) trang web. Để cài đặt Gatsby CLI bạn có thể sử dụng npm bằng [câu lệnh](/tag/command-line):
 
 ```bash
 $ npm install --global gatsby-cli
@@ -108,7 +108,7 @@ Như mình đã nói ở phần trên, Gatsby hỗ trợ bạn tạo mới Gatsb
 $ gatsby new [rootPath] [starter]
 ```
 
-Trong đó, _starter_ là các project mẫu mà bạn có thể tham khảo tại [Gatsby Starters](https://www.gatsbyjs.org/starters). Với khoảng trên 60 starters khác nhau bao gồm các loại như: blog cơ bản đến nâng cao, portfolio, hỗ trợ Contentful, [Wordpress](/tag/wordpress), Firebase,... Nhờ vậy, bạn có thể dễ dàng lựa chọn một mẫu starter phù hợp, sau đó nhanh chóng tuỳ chỉnh nó theo sở thích và yêu cầu của mình, tương tự như _theme_ của Wordpress hay _template_ của Blogger.
+Trong đó, _starter_ là các project mẫu mà bạn có thể tham khảo tại [Gatsby Starters](https://www.gatsbyjs.org/starters). Với khoảng trên 60 starters khác nhau bao gồm các loại như: blog cơ bản đến nâng cao, portfolio, hỗ trợ Contentful, [Wordpress](/tag/wordpress/), Firebase,... Nhờ vậy, bạn có thể dễ dàng lựa chọn một mẫu starter phù hợp, sau đó nhanh chóng tuỳ chỉnh nó theo sở thích và yêu cầu của mình, tương tự như _theme_ của Wordpress hay _template_ của Blogger.
 
 #### Tạo Gatsby project từ Hello-world starter
 
@@ -1538,7 +1538,7 @@ const tagEdges = data.allMarkdownRemark.edges.filter(({ node }) =>
 );
 ```
 
-Khi đã có được giá trị *category* hay *tag* hiện tại rồi, thì mình chỉ cần sử dụng phương thức [filter](/javascript-foreach-la-cai-quai-gi) để lọc lấy những bài viết chứa *category* và những bài viết chứa *tag* hiện tại. Vì mục đích của mình là phân loại các bài viết theo chuyên mục và thẻ mà.
+Khi đã có được giá trị *category* hay *tag* hiện tại rồi, thì mình chỉ cần sử dụng phương thức [filter](/javascript-foreach-la-cai-quai-gi/) để lọc lấy những bài viết chứa *category* và những bài viết chứa *tag* hiện tại. Vì mục đích của mình là phân loại các bài viết theo chuyên mục và thẻ mà.
 
 Bây giờ, bạn lưu lại và restart server thì sẽ thấy mọi thứ hoạt động khá ổn định và đúng như mong đợi rồi. Công việc tiếp theo sẽ là deploy trang blog lên Netlify nữa là xong.
 

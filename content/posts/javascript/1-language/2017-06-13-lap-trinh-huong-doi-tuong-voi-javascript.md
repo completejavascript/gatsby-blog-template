@@ -13,7 +13,7 @@ tags:
   - OOP
 ---
 
-Thực ra, nếu nói là "lập trình hướng đối tượng" (object-oriented) thì không chính xác lắm. Như mình đã nói, JavaScript là ngôn ngữ lập trình dựa trên đối tượng ([object-based](/javascript-la-gi)). Nếu vậy thì ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng giống và khác nhau như thế nào?
+Thực ra, nếu nói là "lập trình hướng đối tượng" (object-oriented) thì không chính xác lắm. Như mình đã nói, JavaScript là ngôn ngữ lập trình dựa trên đối tượng ([object-based](/javascript-la-gi/)). Nếu vậy thì ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng giống và khác nhau như thế nào?
 
 ## Ngôn ngữ lập trình hướng đối tượng
 
@@ -24,12 +24,12 @@ Thực ra, nếu nói là "lập trình hướng đối tượng" (object-orient
 ## Ngôn ngữ lập trình dựa trên đối tượng
 
 - Không hỗ trợ đầy đủ các đặc điểm của OOP như đa hình và kế thừa
-- Có sẵn kiểu dữ liệu [đối tượng](/javascript-object-last-but-not-least). Ví dụ: JavaScript có sẵn đối tượng window
+- Có sẵn kiểu dữ liệu [đối tượng](/javascript-object-last-but-not-least/). Ví dụ: JavaScript có sẵn đối tượng window
 - Một số ngôn ngữ lập trình: JavaScript, VB,...
 
 Trên đây là một số những điểm khác nhau giữa ngôn ngữ lập trình hướng đối tượng và ngôn ngữ lập trình dựa trên đối tượng. Hy vọng qua đây, bạn có thể phân biệt được hai loại ngôn ngữ lập trình này.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết sau](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết sau](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/), thân ái!
 
 ## Tham khảo
 

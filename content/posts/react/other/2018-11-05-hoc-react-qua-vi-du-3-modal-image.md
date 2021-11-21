@@ -34,7 +34,7 @@ Mời bạn theo dõi bài viết!
 
 Có nhiều cách để thực hiện demo Modal Image. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #3 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
@@ -58,7 +58,7 @@ learn-react-by-example/
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về Modal Image nên mình tạo thêm thư mục **modal-image** bên trong với 2 file **modal-image.js** và **modal-image.css** để định nghĩa cho component **Modal Image** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao) mình sử dụng cho Demo.
+- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao/) mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component Modal Image ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
@@ -68,8 +68,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_resize_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
 
 Và ý tưởng chung để xây dựng Modal Image Component là:
 
@@ -364,9 +364,9 @@ export default class App extends React.Component {
 
 Trong đó, Modal Image Component có các thuộc tính là:
 
-- **src ([String](/kieu-du-lieu-trong-javascript)):** string biểu diễn đường dẫn ảnh sử dụng.
+- **src ([String](/kieu-du-lieu-trong-javascript/)):** string biểu diễn đường dẫn ảnh sử dụng.
 - **alt (String):** string để gán cho thuộc tính [alt](https://www.w3schools.com/tags/att_img_alt.asp) - được hiển thị thay thế cho ảnh, khi ảnh không được tải thành công (vì một lý do nào đó) hoặc không thể hiển thị.
-- **ratio ([String](/kieu-du-lieu-trong-javascript)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **ratio ([String](/kieu-du-lieu-trong-javascript/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 
 ## Lời kết
 

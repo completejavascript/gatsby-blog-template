@@ -13,13 +13,13 @@ tags:
   - Hàm
 ---
 
-Như đã nói trong bài [tìm hiểu function JavaScipt](/ham-la-gi-ham-trong-javascript), bài viết này mình sẽ giới thiệu với bạn về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closure trong JavaScript, chúng ta sẽ xem closure là gì và cách sử dụng nó như thế nào.
+Như đã nói trong bài [tìm hiểu function JavaScipt](/ham-la-gi-ham-trong-javascript/), bài viết này mình sẽ giới thiệu với bạn về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closure trong JavaScript, chúng ta sẽ xem closure là gì và cách sử dụng nó như thế nào.
 
 ## Khái niệm JavaScript closure
 
 Closures là tập hợp bao gồm một hàm và _môi trường_ nơi hàm số đó được khai báo. Ở đây, môi trường bao gồm tất cả những biến cục bộ trong phạm vi hàm số được khai báo (để đơn giản, từ nay mình sẽ sử dụng _hàm closures_ khi nói về JavaScript closures).
 
-Hàm closures có thể truy cập [biến số](/bien-la-gi-bien-trong-javascript) ở **3 phạm vi** khác nhau là:
+Hàm closures có thể truy cập [biến số](/bien-la-gi-bien-trong-javascript/) ở **3 phạm vi** khác nhau là:
 
 - Biến toàn cục (global)
 - Biến được khai báo ở hàm số chứa hàm closures (outer function)
@@ -96,7 +96,7 @@ Hàm _objId_ trả về một đối tượng bao gồm 2 hàm closures là _get
 
 Ban đầu, mình gọi _myObject.getId()_ thì kết quả trả về là 1 (giá trị của biến cục bộ). Sau đó, mình gọi _myObject.setId(10)_. Nếu hàm closures chỉ lưu biến cục bộ theo giá trị thì nghĩa là giá trị của biến cục bộ id sẽ không thay đổi. Nhưng khi mình gọi tiếp _myObject.getId()_ thì giá trị trả về là 10. Chứng tỏ, hàm closures phải lưu biến cục bộ theo kiểu tham chiếu.
 
-Bây giờ đọc lại ví dụ trên một lần nữa, bạn có thấy nó giống với cách sử dụng class (lớp) trong C++ hay Java không? Mình thì thấy có giống. Thực ra đây là một trong những cách tạo đối tượng ([object](/lap-trinh-huong-doi-tuong-voi-javascript)) trong JavaScript mà mình sẽ giới thiệu trong những bài viết tiếp theo.
+Bây giờ đọc lại ví dụ trên một lần nữa, bạn có thấy nó giống với cách sử dụng class (lớp) trong C++ hay Java không? Mình thì thấy có giống. Thực ra đây là một trong những cách tạo đối tượng ([object](/lap-trinh-huong-doi-tuong-voi-javascript/)) trong JavaScript mà mình sẽ giới thiệu trong những bài viết tiếp theo.
 
 ## So sánh hiệu năng giữa việc sử dụng closures và prototype
 
@@ -133,7 +133,7 @@ Một cách khách quan, việc sử dụng prototype sẽ nhanh hơn và tiết
 
 Bài viết trên là khá ngắn gọn. Hy vọng nó phần nào giúp bạn hiểu được JavaScript closure là gì và cách sử dụng closure trong JavaScript.
 
-Cuối cùng, hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-array-co-ban), thân ái!
+Cuối cùng, hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-array-co-ban/), thân ái!
 
 ## Tham khảo
 

@@ -33,7 +33,7 @@ result = a ?? b;
 
 Nếu a khác `null` và `undefined` thì `r` sẽ bằng `a`. Ngược lại, `r` bằng `b`.
 
-Đọc đến đây chắc bạn có liên tưởng đến [toán tử `?`](/cau-truc-re-nhanh-trong-javascript). Vì mình có thể viết lại `result = a ?? b` bằng cách sử dụng toán tử `?` như sau:
+Đọc đến đây chắc bạn có liên tưởng đến [toán tử `?`](/cau-truc-re-nhanh-trong-javascript/). Vì mình có thể viết lại `result = a ?? b` bằng cách sử dụng toán tử `?` như sau:
 
 ```js
 result = a !== null && a !== undefined ? a : b;
@@ -73,7 +73,7 @@ console.log(displayName); // jsDev
 
 ## So sánh toán tử `??` và toán tử `||`
 
-Trong bài viết [toán tử logic trong JavaScript](/toan-tu-logic-trong-javascript), mình cũng đã giới thiệu về toán tử `||` với ứng dụng tương tự như ví dụ trên:
+Trong bài viết [toán tử logic trong JavaScript](/toan-tu-logic-trong-javascript/), mình cũng đã giới thiệu về toán tử `||` với ứng dụng tương tự như ví dụ trên:
 
 ```js
 let fullName;

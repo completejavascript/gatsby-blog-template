@@ -16,7 +16,7 @@ tags:
   - Template
 ---
 
-Như đã nói trong [bài viết trước](/html-string-sang-dom-node-voi-domparser), bài này mình sẽ hướng dẫn các bạn chuyển HTML Template sang DOM Node. Với phương pháp này, bạn không cần phải sử dụng [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) nữa, mà sẽ sử dụng trực tiếp thẻ template của HTML.
+Như đã nói trong [bài viết trước](/html-string-sang-dom-node-voi-domparser/), bài này mình sẽ hướng dẫn các bạn chuyển HTML Template sang DOM Node. Với phương pháp này, bạn không cần phải sử dụng [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) nữa, mà sẽ sử dụng trực tiếp thẻ template của HTML.
 
 ## HTML Template
 
@@ -62,7 +62,7 @@ Khi trình duyệt có hỗ trợ template rồi. Bạn có thể tiếp tục v
 
 ### Lấy nội dung của HTML Template
 
-HTML template đã có sẵn ID. Vì vậy, bạn có thể sử dụng phương thức [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) (hoặc [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)) để lấy ra phần tử [DOM](/co-ban-ve-dom-javascript) của template đó, đồng thời trích xuất ra content - dạng [DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment).
+HTML template đã có sẵn ID. Vì vậy, bạn có thể sử dụng phương thức [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) (hoặc [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)) để lấy ra phần tử [DOM](/co-ban-ve-dom-javascript/) của template đó, đồng thời trích xuất ra content - dạng [DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment).
 
 ```js
 let templateFrag = document.querySelector("#my-temp").content;
@@ -72,7 +72,7 @@ DocumentFragment là một dạng document tối giản - không có parent. Vì
 
 ### Render HTML Template lên giao diện
 
-Trong bước này, mình muốn mô phỏng lại việc render các bình luận trên một bài viết. Nội dung các bình luận là một [mảng](/javascript-array-co-ban) của các [object](/javascript-object-last-but-not-least) - bao gồm 2 thuộc tính là name và comment.
+Trong bước này, mình muốn mô phỏng lại việc render các bình luận trên một bài viết. Nội dung các bình luận là một [mảng](/javascript-array-co-ban/) của các [object](/javascript-object-last-but-not-least/) - bao gồm 2 thuộc tính là name và comment.
 
 ```js
 let data = [
@@ -82,7 +82,7 @@ let data = [
 ];
 ```
 
-Khi người dùng nhấn vào button **Add**, mình sẽ sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi) để duyệt mảng trên. Với mỗi phần tử của mảng, ta [clone](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) lại template DocumentFragment trên để dùng lại sau này.
+Khi người dùng nhấn vào button **Add**, mình sẽ sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi/) để duyệt mảng trên. Với mỗi phần tử của mảng, ta [clone](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) lại template DocumentFragment trên để dùng lại sau này.
 
 Tiếp theo, để apply nội dung của bình luận vào template, bạn có thể tiếp tục sử dụng phương thức querySelector để thay đổi nội dung trong span với class là name, content tương ứng với nội dung trong mảng, rồi thêm nó vào bên trong thẻ div với **id="container"**.
 
@@ -97,7 +97,7 @@ btnAdd.addEventListener("click", () => {
 });
 ```
 
-Cuối cùng, để xóa đi các thành phần [DOM](/co-ban-ve-dom-javascript) mới thêm vào. Bạn có thể sử dụng vòng lặp, liên tục xóa đi phần tử con đầu tiên của container, cho đến khi container không còn node con nào nữa là hoàn thành nhiệm vụ.
+Cuối cùng, để xóa đi các thành phần [DOM](/co-ban-ve-dom-javascript/) mới thêm vào. Bạn có thể sử dụng vòng lặp, liên tục xóa đi phần tử con đầu tiên của container, cho đến khi container không còn node con nào nữa là hoàn thành nhiệm vụ.
 
 ```js
 btnRm.addEventListener("click", () => {
@@ -113,4 +113,4 @@ btnRm.addEventListener("click", () => {
 
 Trên đây, mình đã giới thiệu với các bạn cách chuyển HTML Template sang DOM Node, đồng thời thay đổi nội dung của template ứng với data - lưu trong JavaScript. Hy vọng với phương pháp này, bạn có thể áp dụng template cho các project của mình. Bài viết sau, mình sẽ giới thiệu với các bạn một thư viện rất hay - chuyên dùng để render HTML template.
 
-Hẹn gặp lại bạn ở [bài viết tiếp theo](/mustache-template-voi-jquery), thân ái!
+Hẹn gặp lại bạn ở [bài viết tiếp theo](/mustache-template-voi-jquery/), thân ái!

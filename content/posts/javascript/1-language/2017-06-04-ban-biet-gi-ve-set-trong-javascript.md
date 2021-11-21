@@ -44,7 +44,7 @@ console.log(typeof set1);
 // => object
 ```
 
-Xem thêm:[JavaScript Object – last but not least](/javascript-object-last-but-not-least)
+Xem thêm:[JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
 
 ### Dữ liệu trong Set là duy nhất, không trùng lặp
 
@@ -54,7 +54,7 @@ Nói nôm na thì nghĩa là "giá trị" của các phần tử không được
 
 Thuật toán này cũng tương tự như việc sử dụng toán tử "===" để so sánh giá trị giữa chúng. Chỉ khác ở chỗ nó coi **NaN** là giống nhau (mặc dù **_NaN !== NaN_**)
 
-Vì vậy, cái mà mình nói ở trên chỉ đúng với [number và string](/kieu-du-lieu-trong-javascript). Còn đối với Object thì khác. Bởi 2 object nhìn giống nhau nhưng rõ ràng chúng không bằng nhau:
+Vì vậy, cái mà mình nói ở trên chỉ đúng với [number và string](/kieu-du-lieu-trong-javascript/). Còn đối với Object thì khác. Bởi 2 object nhìn giống nhau nhưng rõ ràng chúng không bằng nhau:
 
 ```js
 const obj1 = { x: 1, y: 2 };
@@ -99,7 +99,7 @@ Trong đó:
 
 Có một điều mình nhấn mạnh ở đây là: **Bạn có thể truyền vào iterable object, chứ không chỉ có Array**.
 
-Mình đọc rất nhiều bài viết trên mạng về Set thì chỉ thấy họ khởi tạo Set bằng [Array](/javascript-array-co-ban).
+Mình đọc rất nhiều bài viết trên mạng về Set thì chỉ thấy họ khởi tạo Set bằng [Array](/javascript-array-co-ban/).
 
 Sẽ là rất thiếu sót nếu như không kể đến String, Array-like objects ([arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments), [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)), [TypedArray](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray), [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map), và cả Set luôn - vì chúng đều là iterable object mà.
 
@@ -234,7 +234,7 @@ console.log(set1);
 
 Rõ ràng, việc trả về chính đối tượng Set sau khi _add_ giúp code trở trên ngắn gọn hơn nhiều.
 
-Xem thêm: [Tìm hiểu kĩ thuật Method Chaining cơ bản](/tim-hieu-ki-thuat-method-chaining-co-ban)
+Xem thêm: [Tìm hiểu kĩ thuật Method Chaining cơ bản](/tim-hieu-ki-thuat-method-chaining-co-ban/)
 
 ### Lấy số lượng phần tử trong Set
 
@@ -323,7 +323,7 @@ for (const x of set1) {
 
 #### Sử dụng forEach
 
-Sử dụng _forEach_ trong Set cũng tương tự như [forEach trong Array](/javascript-foreach-la-cai-quai-gi).
+Sử dụng _forEach_ trong Set cũng tương tự như [forEach trong Array](/javascript-foreach-la-cai-quai-gi/).
 
 ```js
 const set1 = new Set(["a", "b", "c"]);
@@ -442,11 +442,11 @@ console.log(set2);
 // => Set(2) {2, 4}
 ```
 
-Dĩ nhiên, khi đã chuyển Set thành Array rồi thì bạn có thể sử dụng bất kể [phương thức](/javascript-foreach-la-cai-quai-gi) nào mà Array hỗ trợ, tùy thích!
+Dĩ nhiên, khi đã chuyển Set thành Array rồi thì bạn có thể sử dụng bất kể [phương thức](/javascript-foreach-la-cai-quai-gi/) nào mà Array hỗ trợ, tùy thích!
 
 ## Một ví dụ thực tế sử dụng Set
 
-Trong bài viết về [Tạo blog với Gatsby.js](/tao-trang-blog-voi-gatsby-js), mình đã nói về vấn đề tạo danh sách các thẻ, chuyên mục cho tất cả các bài viết.
+Trong bài viết về [Tạo blog với Gatsby.js](/tao-trang-blog-voi-gatsby-js/), mình đã nói về vấn đề tạo danh sách các thẻ, chuyên mục cho tất cả các bài viết.
 
 Đó chính là một ví dụ thực tế sử dụng Set. Vì mình cần phải lưu lại danh sách các thẻ, chuyên mục với các phần tử là duy nhất, rồi sau đó hiển thị danh sách này lên sidebar.
 

@@ -17,7 +17,7 @@ tags:
 
 Map trong JavaScript là một loại object cho phép lưu trữ dữ liệu theo kiểu key-value.
 
-Nghe thì có vẻ giống với [object](/javascript-object-last-but-not-least) bình thường nhỉ? Vì object cũng cho phép bạn làm điều này mà.
+Nghe thì có vẻ giống với [object](/javascript-object-last-but-not-least/) bình thường nhỉ? Vì object cũng cho phép bạn làm điều này mà.
 
 Nhưng mọi thứ trên đời này đều có ý nghĩa của riêng nó. Map cũng không ngoại lệ. Map có **những đặc điểm riêng biệt** so với object thông thường.
 
@@ -29,7 +29,7 @@ Nói một cách đầy đủ thì Map trong JavaScript là một cấu trúc d�
 
 Nhưng khác ở chỗ là:
 
-- Object chỉ cho phép sử dụng [String](/kieu-du-lieu-trong-javascript) hay [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) làm key
+- Object chỉ cho phép sử dụng [String](/kieu-du-lieu-trong-javascript/) hay [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) làm key
 - Map cho phép mọi kiểu dữ liệu (String, Number, Boolean, NaN, Object,...) có thể làm key
 
 > **Chú ý:** về cơ bản thì Map cũng là Object, tuy nhiên, để tránh hiểu lầm, từ nay mỗi khi mình dùng từ object thì bạn hiểu đó là object thông thường mà từ trước đến giờ bạn vẫn sử dụng, không phải Map.
@@ -169,7 +169,7 @@ map7.set(NaN, 6);
 
 Bạn nhớ là khi sử dụng toán tử "===" để so sánh thì <code>[1] !== [1]</code>. Nên trong Map sẽ tồn tại 2 cặp phần tử với key là <code>[1]</code> với value lần lượt là 3 và 5 như trên.
 
-Ngoài ra, phương thức _set_ còn trả về chính đối tượng Map. Nên mình có thể áp dụng [kỹ thuật Method Chaining](/tim-hieu-ki-thuat-method-chaining-co-ban) ở đây, sẽ giúp cho code trở nên ngắn gọn hơn.
+Ngoài ra, phương thức _set_ còn trả về chính đối tượng Map. Nên mình có thể áp dụng [kỹ thuật Method Chaining](/tim-hieu-ki-thuat-method-chaining-co-ban/) ở đây, sẽ giúp cho code trở nên ngắn gọn hơn.
 
 Đoạn code trên có thể trở nên gọn hơn bằng cách:
 

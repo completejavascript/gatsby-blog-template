@@ -14,7 +14,7 @@ tags:
   - Object
 ---
 
-Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number, string, boolean](/kieu-du-lieu-trong-javascript) và [array](/javascript-array-co-ban). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object trong Javascript (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](/javascript-la-gi)), nên việc hiểu rõ về JavaScript Object sẽ giúp bạn dễ dàng chinh phục ngôn ngữ lập trình JavaScript.
+Nếu bạn theo dõi các bài viết của mình từ đầu tới giờ thì có thể thấy mình đã giới thiệu với bạn về [number, string, boolean](/kieu-du-lieu-trong-javascript/) và [array](/javascript-array-co-ban/). Hôm nay, mình sẽ tiếp tục với thành phần cơ bản cuối cùng, đó là object trong Javascript (đối tượng). Tiêu đề của bài viết: _last but not least_, tức là _cuối cùng nhưng không kém phần quan trọng_. Thực tế, JavaScript là ngôn ngữ dựa trên đối tượng ([object-based](/javascript-la-gi/)), nên việc hiểu rõ về JavaScript Object sẽ giúp bạn dễ dàng chinh phục ngôn ngữ lập trình JavaScript.
 
 Để hiểu JavaScript object là gì, mình xin đưa ra một ví dụ. Máy tính của mình có những đặc điểm sau:
 
@@ -49,7 +49,7 @@ JavaScript sử dụng cặp dấu ngoặc nhọn {} để biểu diễn object:
 }
 ```
 
-Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị tương ứng là *value1, value2, value3,...* Nếu value là một [function](/ham-la-gi-ham-trong-javascript) thì đó chính là phương thức của object JS.
+Trong đó: _key1, key2, key3,..._ là tên thuộc tính với các giá trị tương ứng là *value1, value2, value3,...* Nếu value là một [function](/ham-la-gi-ham-trong-javascript/) thì đó chính là phương thức của object JS.
 
 Áp dụng cho ví dụ trên:
 
@@ -119,7 +119,7 @@ console.log(myComputer["operating system"]); // => Ubuntu
 
 ## Cách duyệt tất cả các thuộc tính của object
 
-Đối với array, bạn có thể sử dụng vòng lặp [for, while, do/while](/vong-lap-trong-javascript) với chỉ số là number để duyệt từng phần tử của mảng. Nhưng với object thì hơi khác một chút.
+Đối với array, bạn có thể sử dụng vòng lặp [for, while, do/while](/vong-lap-trong-javascript/) với chỉ số là number để duyệt từng phần tử của mảng. Nhưng với object thì hơi khác một chút.
 
 Để duyệt các thuộc tính của object, bạn có thể sử dụng vòng lặp _for_ với từ khoá _in_ như ví dụ sau:
 
@@ -300,7 +300,7 @@ Cho mảng array = [1, 2, 3, 4, 5, 6].
 - Viết hàm **arrayToList(array)** trả về một object dạng list như trên. ([tham khảo](https://github.com/completejavascript/practical-javascript/blob/master/object/arrayToList.js))
 - Từ object dạng list trên, viết hàm **listToArray(list)** trả về array ban đầu. ([tham khảo](https://github.com/completejavascript/practical-javascript/blob/master/object/listToArray.js))
 
-Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết tiếp theo](/javascript-foreach-la-cai-quai-gi), thân ái!
+Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết tiếp theo](/javascript-foreach-la-cai-quai-gi/), thân ái!
 
 ## Tham khảo
 

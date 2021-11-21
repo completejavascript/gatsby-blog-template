@@ -57,7 +57,7 @@ Theo quan niệm thông thường, khi bạn khai báo một biến là hằng s
 
 **Nghĩa là sao?**
 
-Nghĩa là chỉ có **địa chỉ** của biến số là không thay đổi. Còn **giá trị** của biến số vẫn có thể thay đổi. Bây giờ, mình sẽ xét 3 kiểu dữ liệu chính của biến số là: [Number](/kieu-du-lieu-trong-javascript), [Object](/javascript-object-last-but-not-least) và [Array](/javascript-array-co-ban) (chú ý: String và Boolean sẽ giống với trường hợp của Number).
+Nghĩa là chỉ có **địa chỉ** của biến số là không thay đổi. Còn **giá trị** của biến số vẫn có thể thay đổi. Bây giờ, mình sẽ xét 3 kiểu dữ liệu chính của biến số là: [Number](/kieu-du-lieu-trong-javascript/), [Object](/javascript-object-last-but-not-least/) và [Array](/javascript-array-co-ban/) (chú ý: String và Boolean sẽ giống với trường hợp của Number).
 
 **Number**
 
@@ -286,7 +286,7 @@ Hỏi console in ra kết quả như thế nào?
 Câu này có vẻ dễ hơn phải không? Bạn chỉ cần biết những điều sau thì sẽ trả lời được câu hỏi:
 
 - Cú pháp **(function() {/\* code here \*/})()**: gọi là **[IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)** (Immediately Invoked Function Expression) – tức là hàm số thực thi ngay sau khi nó được khai báo.
-- Biến x có phạm vi **block**, nên nó chỉ được tìm thấy ở bên trong [function](/ham-la-gi-ham-trong-javascript) trên. Ra ngoài function thì biến x sẽ không được định nghĩa.
+- Biến x có phạm vi **block**, nên nó chỉ được tìm thấy ở bên trong [function](/ham-la-gi-ham-trong-javascript/) trên. Ra ngoài function thì biến x sẽ không được định nghĩa.
 </div>
   </div>
 </div>
@@ -298,6 +298,6 @@ Trên đây là 4 câu hỏi phỏng vấn JavaScript rất hóc búa. Hy vọng
 
 Nếu bạn thích những bài viết kiểu như này và mong muốn được thử sức với những câu hỏi JavaScript khó hơn thì vui lòng bình luận **tôi muốn** xuống phía dưới.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-2), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-2/), thân ái!
 
 _Nguồn: [Top Tricky JavaScript Interview Questions and Answers](https://www.youtube.com/watch?v=3qnrouysbG8)_

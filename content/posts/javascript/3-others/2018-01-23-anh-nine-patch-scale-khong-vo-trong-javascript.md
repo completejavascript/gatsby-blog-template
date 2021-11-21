@@ -14,7 +14,7 @@ tags:
   - DOM
 ---
 
-Có thể bạn đã từng nghe đến ảnh Vector rồi. Ảnh Vector có một ưu điểm lớn nhất là có thể kéo to, nhỏ tùy ý mà không bị vỡ ảnh. Bên cạnh đó, có một loại ảnh khác cũng có ưu điểm tương tự, chính là ảnh nine-patch (hay 9patch). Vậy ảnh nine-patch là gì? Cách sử dụng ảnh nine-patch trong [JavaScript](/javascript) như thế nào? Bài viết này sẽ giúp bạn tìm hiểu về xử lý ảnh nine-patch trong JavaScript.
+Có thể bạn đã từng nghe đến ảnh Vector rồi. Ảnh Vector có một ưu điểm lớn nhất là có thể kéo to, nhỏ tùy ý mà không bị vỡ ảnh. Bên cạnh đó, có một loại ảnh khác cũng có ưu điểm tương tự, chính là ảnh nine-patch (hay 9patch). Vậy ảnh nine-patch là gì? Cách sử dụng ảnh nine-patch trong [JavaScript](/javascript/) như thế nào? Bài viết này sẽ giúp bạn tìm hiểu về xử lý ảnh nine-patch trong JavaScript.
 
 ## Ảnh nine-patch là gì?
 
@@ -80,7 +80,7 @@ Các API mà bạn có thể áp dụng:
 
 ### Hàm getSize
 
-Hàm này trả về một Promise. Trong trường hợp thành công thì kết quả là một [object](/javascript-object-last-but-not-least) với 3 thông số là url, width, height của bức ảnh gốc, như sau:
+Hàm này trả về một Promise. Trong trường hợp thành công thì kết quả là một [object](/javascript-object-last-but-not-least/) với 3 thông số là url, width, height của bức ảnh gốc, như sau:
 
 ```js
 {url: dataUrl, width: image.width, height: image.height}
@@ -107,7 +107,7 @@ new NinePatch()
   .catch((error) => console.log(error));
 ```
 
-Hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
+Hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript/) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
 
 ```js
 function setImage(divElement, srcURL, width, height) {
@@ -129,7 +129,7 @@ new NinePatch()
 
 Trên đây là những kiến thức cơ bản về ảnh nine-path, cũng như cách xử lý ảnh nine-patch trong JavaScript. Tuy nhiên, còn rất nhiều thứ cần phải cải tiến. Vì vậy, mình rất mong nhận được sự góp ý từ bạn.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-indexeddb-tai-sao-khong), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-indexeddb-tai-sao-khong/), thân ái!
 
 ## Tham khảo
 
@@ -137,4 +137,4 @@ Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript
 - [Create Resizable Bitmaps (9-Patch files)](https://developer.android.com/studio/write/draw9patch.html)
 - [What are 9-patch images ?](https://viblo.asia/p/what-are-9-patch-images-MLzkObPoepq)
 - [Android Bài 21: Sử Dụng Drawable – Ảnh 9-Patch & Ảnh Vector](https://yellowcodebooks.com/2017/06/21/android-bai-21-su-dung-drawable-anh-9-patch-anh-vector)
-- [JavaScript Tint Color – thay đổi màu sắc bức ảnh](/javascript-tint-color-thay-doi-mau-sac-buc-anh)
+- [JavaScript Tint Color – thay đổi màu sắc bức ảnh](/javascript-tint-color-thay-doi-mau-sac-buc-anh/)

@@ -15,7 +15,7 @@ tags:
   - Design Pattern
 ---
 
-Đối với [lập trình hướng đối tượng trong JavaScript](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript), cách đơn giản nhất để tạo mới một object là sử dụng function kết hợp với từ khoá **new**. Bên trong hàm khởi tạo này, từ khoá **this** dùng để chỉ tới đối tượng mới. Thông thường, hàm khởi tạo được viết hoa chữ cái đầu tiên, dùng để phân biệt với các [hàm số](/ham-la-gi-ham-trong-javascript) thông thường. Sau đây, chúng ta sẽ cùng nhau tìm hiểu về một vài Constructor Pattern trong JavaScript.
+Đối với [lập trình hướng đối tượng trong JavaScript](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/), cách đơn giản nhất để tạo mới một object là sử dụng function kết hợp với từ khoá **new**. Bên trong hàm khởi tạo này, từ khoá **this** dùng để chỉ tới đối tượng mới. Thông thường, hàm khởi tạo được viết hoa chữ cái đầu tiên, dùng để phân biệt với các [hàm số](/ham-la-gi-ham-trong-javascript/) thông thường. Sau đây, chúng ta sẽ cùng nhau tìm hiểu về một vài Constructor Pattern trong JavaScript.
 
 ## Constructor Pattern cơ bản
 
@@ -35,11 +35,11 @@ console.log(dog.about()); // => Dog has 4 legs
 console.log(bird.about()); // => Bird has 2 legs
 ```
 
-Trong ví dụ trên, [đối tượng](/javascript-object-last-but-not-least) sử dụng hàm khởi tạo **Animal** sẽ có 2 thuộc tính (_name_, _leg_) và 1 phương thức (_about_). Tuy nhiên, cách trên có nhược điểm là khó để kế thừa và phương thức _about_ sẽ phải định nghĩa lại đối với mỗi đối tượng. Để khắc phục nhược điểm trên, ta có cách thứ hai là sử dụng **Prototypes**.
+Trong ví dụ trên, [đối tượng](/javascript-object-last-but-not-least/) sử dụng hàm khởi tạo **Animal** sẽ có 2 thuộc tính (_name_, _leg_) và 1 phương thức (_about_). Tuy nhiên, cách trên có nhược điểm là khó để kế thừa và phương thức _about_ sẽ phải định nghĩa lại đối với mỗi đối tượng. Để khắc phục nhược điểm trên, ta có cách thứ hai là sử dụng **Prototypes**.
 
 ## Constructor Pattern với Prototypes
 
-Trong JavaScript, mọi object (bao gồm **function**) đều tồn tại thuộc tính **prototype** - cũng là một object. Khi sử dụng hàm khởi tạo để tạo mới một object, mọi thuộc tính trong **prototype** đều được [kế thừa](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript) cho các đối tượng mới.
+Trong JavaScript, mọi object (bao gồm **function**) đều tồn tại thuộc tính **prototype** - cũng là một object. Khi sử dụng hàm khởi tạo để tạo mới một object, mọi thuộc tính trong **prototype** đều được [kế thừa](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/) cho các đối tượng mới.
 
 ```js
 function Animal(name, leg) {
@@ -61,7 +61,7 @@ console.log(bird.about()); // => Bird has 2 legs
 
 Từ khoá **class** thực chất là một hàm số đặc biệt. Sử dụng **class** cho phép khởi tạo đối tượng mới một cách trực quan, và gần với khái niệm _class_ trong các ngôn ngữ lập trình khác như C++, Java,...
 
-Một điểm khác giữa **class** và **function** là **function** thuộc dạng **hoisting**, còn **class** thì không. Nghĩa là bạn có thể sử dụng hàm số trước khi khai báo hàm. Trong khi nếu bạn sử dụng class trước khi khai báo class thì bạn sẽ nhận được [thông báo lỗi](/mot-so-loi-khi-su-dung-strict-mode-javascript) **ReferenceError**.
+Một điểm khác giữa **class** và **function** là **function** thuộc dạng **hoisting**, còn **class** thì không. Nghĩa là bạn có thể sử dụng hàm số trước khi khai báo hàm. Trong khi nếu bạn sử dụng class trước khi khai báo class thì bạn sẽ nhận được [thông báo lỗi](/mot-so-loi-khi-su-dung-strict-mode-javascript/) **ReferenceError**.
 
 ```js
 class Animal {
@@ -86,7 +86,7 @@ Trong class, có một hàm duy nhất và đặc biệt là **constructor**, đ
 
 Trên đây là một số Constructor Pattern cơ bản. Tiếp theo, mình sẽ giới thiệu với các bạn về Module Pattern.
 
-Xin chào và hẹn gặp lại ở [bài viết tiếp theo](/js-pattern-2-module-pattern), thân ái!
+Xin chào và hẹn gặp lại ở [bài viết tiếp theo](/js-pattern-2-module-pattern/), thân ái!
 
 ## Tham khảo
 

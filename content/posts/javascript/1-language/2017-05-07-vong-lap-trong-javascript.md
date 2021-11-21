@@ -32,7 +32,7 @@ while (condition) {
 Trong đó:
 
 - **Condition** là điều kiện thực hiện vòng lặp.
-- Khi **condition** có giá trị [truthy](/toan-tu-logic-trong-javascript) thì **code** được thực thi. Ngược lại, khi **condition** là **falsy** thì vòng lặp kết thúc.
+- Khi **condition** có giá trị [truthy](/toan-tu-logic-trong-javascript/) thì **code** được thực thi. Ngược lại, khi **condition** là **falsy** thì vòng lặp kết thúc.
 
 Ví dụ **vòng lặp while** sau đây in ra các số từ 1 đến 3:
 
@@ -223,7 +223,7 @@ Các ví dụ trên luôn có điều kiện để thoát khỏi vòng lặp. Ng
 
 Tuy nhiên, bạn có thể chủ động dừng vòng lặp bất cứ khi nào bằng cách sử dụng từ khóa **break**.
 
-> 💡 Bài viết trước mình có giới thiệu về tứ khóa **break** sử dụng trong [lệnh switch case](/cau-lenh-switch-case-trong-javascript).
+> 💡 Bài viết trước mình có giới thiệu về tứ khóa **break** sử dụng trong [lệnh switch case](/cau-lenh-switch-case-trong-javascript/).
 
 Ví dụ in ra [bội số](https://vi.wikipedia.org/wiki/B%E1%BB%99i_s%E1%BB%91) nhỏ nhất của 7 bắt đầu từ 8 (hay số nhỏ nhất chia hết cho 7 bắt đầu từ số 8):
 
@@ -404,7 +404,7 @@ Từ khóa `break` và từ khóa `continue` có hỗ trợ label, giúp thoát 
 
 ### Bài 1:
 
-Sử dụng [`console.log`](/dev-tools-la-gi) để in ra hình tam giác như sau:
+Sử dụng [`console.log`](/dev-tools-la-gi/) để in ra hình tam giác như sau:
 
 ```
 #
@@ -436,7 +436,7 @@ for (var i = 1; i <= 7; i++) {
 
 ### Bài 2:
 
-Sử dụng [`prompt`](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt) để yêu cầu người dùng nhập vào một số.
+Sử dụng [`prompt`](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt/) để yêu cầu người dùng nhập vào một số.
 
 - Nếu người dùng nhập vào không phải là số thì hiển thị ra thông báo: "Bạn nhập vào không phải là số".
 - Nếu người dùng nhập vào là số thì hiển thị ra thông báo: "Số bạn nhập vào quá nhỏ" khi số đó nhỏ hơn 10, ngược lại thì dừng thông báo.

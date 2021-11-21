@@ -20,7 +20,7 @@ tags:
 
 ### Đăng ký Event JavaScript
 
-Ở bài viết trước về [DOM](/co-ban-ve-dom-javascript), bạn biết rằng mỗi phần tử trên trang web là một node. Và chúng ta có thể đăng ký nhận sự kiện cho mỗi node này bằng cách sử dụng phương thức **addEventListener** như sau:
+Ở bài viết trước về [DOM](/co-ban-ve-dom-javascript/), bạn biết rằng mỗi phần tử trên trang web là một node. Và chúng ta có thể đăng ký nhận sự kiện cho mỗi node này bằng cách sử dụng phương thức **addEventListener** như sau:
 
 ```js
 Node.addEventListener('tên sự kiện', hàm xử lý);
@@ -82,7 +82,7 @@ Thì bây giờ, mỗi khi bạn click chuột trái vào trang web, chỉ có h
 
 ### Đăng ký event cho nhiều node dựa trên đối tượng event
 
-Bình thường để đăng ký event trong JavaScript cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/javascript-object-last-but-not-least) event để phân biệt node được gọi.
+Bình thường để đăng ký event trong JavaScript cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/javascript-object-last-but-not-least/) event để phân biệt node được gọi.
 
 Hãy xem ví dụ sau:
 
@@ -201,7 +201,7 @@ Trên đây là một số cách xử lý Event JavaScript cơ bản. Mình có 
 
 Hy vọng bạn có thể nắm được những kiến thức cơ bản về JS event.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xmlhttprequest-tao-http-request-den-server-trong-javascript), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xmlhttprequest-tao-http-request-den-server-trong-javascript/), thân ái!
 
 ## Tham khảo
 

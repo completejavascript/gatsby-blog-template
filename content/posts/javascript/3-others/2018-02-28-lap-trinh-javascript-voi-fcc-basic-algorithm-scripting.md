@@ -18,18 +18,18 @@ Trong lập trình nói chung và lập trình JavaScript nói riêng, việc h�
 
 Ngoài ra, khi thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn.
 
-Vì vậy, tiếp theo trong loạt bài [**Lập trình JavaScript với FCC**](/tag/fcc), hôm nay, mình sẽ tổng hợp lại những bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp để các bạn tiện theo dõi và có thể tham khảo khi cần.
+Vì vậy, tiếp theo trong loạt bài [**Lập trình JavaScript với FCC**](/tag/fcc/), hôm nay, mình sẽ tổng hợp lại những bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp để các bạn tiện theo dõi và có thể tham khảo khi cần.
 
 Tuy nhiên, những bài toán này khá đơn giản nên mình sẽ không giải thích cách làm. Nếu các bạn có thắc mắc hay góp ý thì có thể để lại ở phần bình luận phía dưới.
 
 Trước khi đi vào tìm hiểu các bài toán, các bạn có thể đọc trước các bài viết sau. Chúng khá hữu ích vì các thuật toán sau đây sẽ sử dụng đến những kiến thức trong đó.
 
-- [Các kiểu dữ liệu trong JavaScript](/kieu-du-lieu-trong-javascript)
-- [JavaScript Array cơ bản](/javascript-array-co-ban)
-- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo)
-- [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi)
-- [JavaScript Object – last but not least](/javascript-object-last-but-not-least)
-- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript)
+- [Các kiểu dữ liệu trong JavaScript](/kieu-du-lieu-trong-javascript/)
+- [JavaScript Array cơ bản](/javascript-array-co-ban/)
+- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
+- [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
+- [JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
+- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
 ## Basic Algorithm Scripting - Reverse a String
 
@@ -86,7 +86,7 @@ palindrome("eye");
 
 Tham khảo:
 
-- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript)
+- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 - [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 - [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 
@@ -361,7 +361,7 @@ getIndexToIns([40, 60], 50);
 
 Tham khảo:
 
-- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo)
+- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
 - [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 ## Basic Algorithm Scripting - Caesars Cipher
@@ -400,4 +400,4 @@ Tham khảo:
 
 Trên đây là tổng hợp các bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp. Theo cá nhân mình thấy thì các bài toán trên khá dễ. Nhưng lại rất hay ở chỗ, nó giúp ta áp dụng được kiến thức lý thuyết. Nếu các bạn có gì thắc mắc, góp ý hay cải tiến các thuật toán trên. Vui lòng để lại bình luận phía dưới nhé.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting/), thân ái!

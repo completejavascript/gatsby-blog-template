@@ -52,7 +52,7 @@ false
 
 **Giải thích:**
 
-Trước tiên, bạn nhận thấy biến **a** là một [mảng](/javascript-array-co-ban) gồm 2 phần tử <code>{x : 1}</code> và <code>{y : 2}</code>. Trong đó, mỗi phần tử lại là một [object](/javascript-object-last-but-not-least).
+Trước tiên, bạn nhận thấy biến **a** là một [mảng](/javascript-array-co-ban/) gồm 2 phần tử <code>{x : 1}</code> và <code>{y : 2}</code>. Trong đó, mỗi phần tử lại là một [object](/javascript-object-last-but-not-least/).
 
 Tiếp theo, trong câu lệnh <code>const clone_a = [...a]</code>, mình sử dụng [spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) để copy array a sang một biến mới là **clone_a**.
 
@@ -112,7 +112,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Khi thực hiện [forEach](/javascript-foreach-la-cai-quai-gi), hiểu đơn giản là nó sẽ thực hiện một hành động đối với từng phần tử của mảng.
+Khi thực hiện [forEach](/javascript-foreach-la-cai-quai-gi/), hiểu đơn giản là nó sẽ thực hiện một hành động đối với từng phần tử của mảng.
 
 Đối với câu lệnh <code>numbers.forEach(n => n++)</code>, **n** sẽ tương ứng với các phần tử trong mảng là: **1, 2, 3**. Tuy nhiên, đây là các **primitive value**. Do đó, khi thực hiện <code>n++</code> thì giá trị của n sẽ thay đổi nhưng các giá trị 1, 2, 3 trong mảng _numbers_ trên vẫn thay đổi (kết quả dòng 1).
 
@@ -158,7 +158,7 @@ Uncaught ReferenceError: z is not defined
 
 **Giải thích:**
 
-Mấu chốt của câu hỏi này liên quan đến cách hoạt động của [Destructuring Assignment](/destructuring-assignment-trong-javascript) trên [ES6](/tag/es6). Destructuring Assignment có thể áp dụng cho Object hoặc Array.
+Mấu chốt của câu hỏi này liên quan đến cách hoạt động của [Destructuring Assignment](/destructuring-assignment-trong-javascript/) trên [ES6](/tag/es6/). Destructuring Assignment có thể áp dụng cho Object hoặc Array.
 
 Ở đây, mình có biến x - là một object với rất nhiều lớp bên trong. Nếu như không áp dụng ES6 thì để lấy ra giá trị của a, b, z, y thì mình phải làm như sau:
 
@@ -262,7 +262,7 @@ Khi mới nhìn câu hỏi này, rất nhiều bạn sẽ nghĩ ngay là: "câu 
 Window undefined 300 400
 ```
 
-Nhưng thực tế thì không phải như vậy. Vì khi bạn viết dạng gần giống như Destructuring Assignment mà lại không có khai báo kiểu (const, [var và let](/phan-biet-var-va-let-trong-javascript)) ở đầu, thì JS sẽ hiểu đây là một block. Do đó, nó sẽ không hiểu cú pháp dạng <code>site : [width, height]</code> nghĩa là gì.
+Nhưng thực tế thì không phải như vậy. Vì khi bạn viết dạng gần giống như Destructuring Assignment mà lại không có khai báo kiểu (const, [var và let](/phan-biet-var-va-let-trong-javascript/)) ở đầu, thì JS sẽ hiểu đây là một block. Do đó, nó sẽ không hiểu cú pháp dạng <code>site : [width, height]</code> nghĩa là gì.
 
 Để tránh bị lỗi trên, bạn có thể đặt Destructuring Assignment bên trong cặp dấu ngoặc đơn như sau:
 

@@ -23,7 +23,7 @@ Service Worker là một script mà trình duyệt chạy ở dưới background
 Service Worker có một số đặc điểm quan trọng là:
 
 - Không liên kết với một trang cụ thể
-- Không truy cập đến [DOM](/co-ban-ve-dom-javascript)
+- Không truy cập đến [DOM](/co-ban-ve-dom-javascript/)
 - Có thể dừng khi không sử dụng và chạy khi cần thiết.
 - Chỉ hỗ trợ HTTPS
 
@@ -173,7 +173,7 @@ self.addEventListener("install", (event) => {
 });
 ```
 
-Mục đích của của việc **install** là để lưu một số resources được định nghĩa ở [array](/javascript-array-co-ban) **PRECACHE_URLS** vào bộ nhớ đệm **cache** với tên định nghĩa bởi **PRECACHE**.
+Mục đích của của việc **install** là để lưu một số resources được định nghĩa ở [array](/javascript-array-co-ban/) **PRECACHE_URLS** vào bộ nhớ đệm **cache** với tên định nghĩa bởi **PRECACHE**.
 
 Sau khi lưu xong hết tất cả các resources cần thiết, hàm [self.skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) dùng để dừng công việc hiện tại lại và chuyển ngay sang công việc tiếp theo.
 
@@ -289,7 +289,7 @@ Trên đây là những kiến thức cơ bản về JavaScript Service Worker m
 
 Nếu bạn có **thắc mắc** gì, vui lòng để lại bình luận để mọi người có thể cùng trao đổi. Mình không hứa là sẽ giải đáp ngay cho bạn. Nhưng mình hứa sẽ tìm hiểu để giải quyết cùng bạn.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/anh-nine-patch-scale-khong-vo-trong-javascript), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/anh-nine-patch-scale-khong-vo-trong-javascript/), thân ái!
 
 ## Tham khảo
 

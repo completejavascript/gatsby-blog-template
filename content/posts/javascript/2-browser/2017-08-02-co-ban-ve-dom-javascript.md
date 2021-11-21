@@ -15,7 +15,7 @@ tags:
   - HTML
 ---
 
-Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/javascript-la-gi). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời.
+Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/javascript-la-gi/). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời.
 
 ## DOM là gì?
 
@@ -76,11 +76,11 @@ Ví dụ: với mỗi node _p_ và _h1_ thì _parentNode_ là _body_.
 
 ### [Node.childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
 
-trỏ đến một [đối tượng](/javascript-object-last-but-not-least) gần giống với [array](/javascript-array-co-ban), chứa những node con của một node.
+trỏ đến một [đối tượng](/javascript-object-last-but-not-least/) gần giống với [array](/javascript-array-co-ban/), chứa những node con của một node.
 
 Tại sao lại là "gần giống với array" ?
 
-Vì đối tượng này không chứa các method như _slice, [forEach](/javascript-foreach-la-cai-quai-gi)_.
+Vì đối tượng này không chứa các method như _slice, [forEach](/javascript-foreach-la-cai-quai-gi/)_.
 
 Ví dụ: với node _body_, _childNodes_ là một danh sách với các node con là _h1, p, p_.
 
@@ -174,7 +174,7 @@ Tham khảo code tại [đây](https://github.com/completejavascript/practical-j
 
 Tham khảo code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/DOM_basic/cat_hat.completejavascript.com.js).
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xu-ly-mot-event-javascript-co-ban), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xu-ly-mot-event-javascript-co-ban/), thân ái!
 
 ## Tham khảo
 

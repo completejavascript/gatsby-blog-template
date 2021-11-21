@@ -33,10 +33,10 @@ Nếu chia theo chức năng thì JavaScript có các loại toán tử cơ bả
 - Toán tử gán
 - Toán tử bitwise
 - Toán tử dấu phẩy
-- [Toán tử so sánh](/toan-tu-so-sanh-trong-javascript)
-- [Toán tử logic](/toan-tu-so-sanh-trong-javascript)
-- [Toán tử điều kiện rẽ nhánh `?:`](/cau-truc-re-nhanh-trong-javascript)
-- [Toán tử "Nullish Coalescing" `??`](/toan-tu-nullish-coalescing-trong-javascript)
+- [Toán tử so sánh](/toan-tu-so-sanh-trong-javascript/)
+- [Toán tử logic](/toan-tu-logic-trong-javascript/)
+- [Toán tử điều kiện rẽ nhánh `?:`](/cau-truc-re-nhanh-trong-javascript/)
+- [Toán tử "Nullish Coalescing" `??`](/toan-tu-nullish-coalescing-trong-javascript/)
 
 Để tìm hiểu hết về những loại toán tử này, mình sẽ chia thành các bài viết khác nhau. Bài này chủ yếu tập trung vào các toán tử dùng cho việc tính toán như: **toán tử số học, toán tử gán, toán tử bitwise và toán tử dấu phẩy**.
 
@@ -51,7 +51,7 @@ Toán tử số học là toán tử dùng để thực hiện các phép toán 
 - Toán tử chia lấy dư (`%`)
 - Toán tử lũy thừa (`**`)
 
-Vì là toán tử số học, nên toán hạng ứng với các toán tử này **thường** là [số](/kieu-du-lieu-trong-javascript):
+Vì là toán tử số học, nên toán hạng ứng với các toán tử này **thường** là [số](/kieu-du-lieu-trong-javascript/):
 
 ```js
 console.log(5 + 2); // 7
@@ -77,7 +77,7 @@ console.log("5a" % "2"); // NaN
 console.log("5b" ** "2"); // NaN
 ```
 
-> Chuyển đổi kiểu dữ liệu là một thứ **khá xoắn não** khi học lập trình JavaScript. Bạn có thể đọc bài viết [chuyển đổi kiểu dữ liệu trong JavaScript](/chuyen-doi-kieu-du-lieu-trong-javascript) để hiểu kỹ hơn về vấn đề chuyển đổi kiểu dữ liệu.
+> Chuyển đổi kiểu dữ liệu là một thứ **khá xoắn não** khi học lập trình JavaScript. Bạn có thể đọc bài viết [chuyển đổi kiểu dữ liệu trong JavaScript](/chuyen-doi-kieu-du-lieu-trong-javascript/) để hiểu kỹ hơn về vấn đề chuyển đổi kiểu dữ liệu.
 
 Trong ví dụ `"5" + 2` trên, bạn thấy kết quả là `52`. Lúc này, `+` không còn là toán tử số học nữa mà nó trở thành toán tử ghép string.
 
@@ -123,7 +123,7 @@ console.log(+{ x: 1 }); // NaN
 
 ### Toán tử gán
 
-**Toán tử gán** dùng để gán giá trị cho một [biến](/bien-la-gi-bien-trong-javascript) (hoặc [hằng](/hang-la-gi-hang-trong-javascript)).
+**Toán tử gán** dùng để gán giá trị cho một [biến](/bien-la-gi-bien-trong-javascript/) (hoặc [hằng](/hang-la-gi-hang-trong-javascript/)).
 
 ```js
 let x = 1; // gán giá trị cho biến

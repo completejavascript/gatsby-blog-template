@@ -41,7 +41,7 @@ Tốt hơn nữa, khi bạn tập trung vào những thông tin phản hồi tí
 
 Một cách khác để giảm bớt sự lo lắng là dịch chuyển sự tập trung từ vấn đề dài hạn đến những hoạt động hằng ngày. Việc tập trung vào những vấn đề dài hạn, giống như nỗi sợ về việc dậy sớm, hay nỗi sợ về cái chết, nó chỉ gây ra những thứ không chắc chắn không cần thiết.
 
-Sau tất cả, không ai có thể dự đoán được tương lai. Thay vào đó, bạn nên tập trung vào những vấn đề rõ ràng trong những [hoạt động hàng ngày](/anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay), như việc nấu ăn cho bữa tối hay việc tưới nước cho cây.
+Sau tất cả, không ai có thể dự đoán được tương lai. Thay vào đó, bạn nên tập trung vào những vấn đề rõ ràng trong những [hoạt động hàng ngày](/anh-che-vui-1-cach-lap-trinh-vien-chay-hang-ngay/), như việc nấu ăn cho bữa tối hay việc tưới nước cho cây.
 
 Bằng việc giải quyết những vấn đề nhỏ, bạn giảm thiểu những thứ không chắc chắn và giành được một chút hương vị của thành công, đem tới sự phấn khởi mà bạn cần mang theo trong cuộc sống.
 

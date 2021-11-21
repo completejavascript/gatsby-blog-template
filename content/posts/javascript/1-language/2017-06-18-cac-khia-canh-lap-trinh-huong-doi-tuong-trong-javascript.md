@@ -13,7 +13,7 @@ tags:
   - OOP
 ---
 
-Trong bài viết [Lập trình hướng đối tượng với JavaScript?](/lap-trinh-huong-doi-tuong-voi-javascript), mình đã so sánh ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu sâu hơn về các khía cạnh liên quan đến lập trình hướng đối tượng của ngôn ngữ lập trình JavaScript.
+Trong bài viết [Lập trình hướng đối tượng với JavaScript?](/lap-trinh-huong-doi-tuong-voi-javascript/), mình đã so sánh ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu sâu hơn về các khía cạnh liên quan đến lập trình hướng đối tượng của ngôn ngữ lập trình JavaScript.
 
 ## Lịch sử object
 
@@ -21,13 +21,13 @@ Có một câu nói mang đầy tính triết học như này:
 
 > Một vấn đề phức tạp có thể được quản lý bằng cách chia nó thành những phần nhỏ độc lập với nhau.
 
-Mỗi thành phần nhỏ ở đây chính là [**object**](/javascript-object-last-but-not-least). Object cung cấp cho chúng ta những phương thức để gọi mà không cần biết nội dung bên trong nó như thế nào. Sau khi xây dựng được những object hoạt động theo đúng yêu cầu, ta sẽ sử dụng chúng để giải quyết những bài toán lớn hơn một cách đơn giản. Đây cũng chính là tư tưởng **chia để trị**.
+Mỗi thành phần nhỏ ở đây chính là [**object**](/javascript-object-last-but-not-least/). Object cung cấp cho chúng ta những phương thức để gọi mà không cần biết nội dung bên trong nó như thế nào. Sau khi xây dựng được những object hoạt động theo đúng yêu cầu, ta sẽ sử dụng chúng để giải quyết những bài toán lớn hơn một cách đơn giản. Đây cũng chính là tư tưởng **chia để trị**.
 
 ## Method (phương thức)
 
 Method là một thành phần vô cùng quan trọng trong object. Đối với C++ hay Java, chúng ta chỉ có thể sử dụng được những method dạng public. Chúng ta sẽ sử dụng những method này để lấy giá trị hay thay đổi thông tin các thuộc tính của object.
 
-Trong JavaScript, method chính là một thuộc tính mà giá trị của nó là [function](/ham-la-gi-ham-trong-javascript). Sau đây là một phương thức đơn giản:
+Trong JavaScript, method chính là một thuộc tính mà giá trị của nó là [function](/ham-la-gi-ham-trong-javascript/). Sau đây là một phương thức đơn giản:
 
 ```js
 var rabbit = {};
@@ -60,7 +60,7 @@ Tư tưởng sử dụng từ khoá **this** này cũng được áp dụng tron
 
 ### Sự tương quan với bind, call, apply
 
-Nếu bạn chưa biết **bind**, **call** hay **apply** là gì thì bạn có thể tham khảo tại [đây](/phan-biet-call-apply-va-bind-trong-javascript). Khi gọi 3 hàm này, tham số đầu tiên chính là giá trị của con trỏ **this**.
+Nếu bạn chưa biết **bind**, **call** hay **apply** là gì thì bạn có thể tham khảo tại [đây](/phan-biet-call-apply-va-bind-trong-javascript/). Khi gọi 3 hàm này, tham số đầu tiên chính là giá trị của con trỏ **this**.
 
 ```js
 function speak(line) {
@@ -300,7 +300,7 @@ logFive(new RangeSeq(100, 1000));
 
 Tham khảo code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/OOP_javascript/interface_completejavascript.com.js).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết sau](/debug-javascript-de-hay-kho), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết sau](/debug-javascript-de-hay-kho/), thân ái!
 
 ## Tham khảo
 

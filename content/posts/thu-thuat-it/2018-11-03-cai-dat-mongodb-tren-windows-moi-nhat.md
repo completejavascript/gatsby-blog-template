@@ -103,7 +103,7 @@ Và cuối cùng là nhấn **Finish** để kết thúc.
 
 ### Kiểm tra cài đặt thành công
 
-Tương như như bài viết về [hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban), mình cũng cần phải kiểm tra xem việc cài đặt MongoDB đã thực sự thành công hay chưa.
+Tương như như bài viết về [hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban/), mình cũng cần phải kiểm tra xem việc cài đặt MongoDB đã thực sự thành công hay chưa.
 
 Như phần trên, mình đã chọn **cài đặt MongoDB như một service** rồi. Nên bây giờ mình sẽ xem thử nó đã chạy hay chưa bằng cách mở **Windows Task Manager** và chọn tab **Services** (_tham khảo thêm bài viết [6 cách để mở Windows Task Manager)](https://ictnews.vn/the-gioi-so/thu-thuat/6-cach-de-mo-windows-task-manager-97595.ict)_.
 
@@ -119,7 +119,7 @@ Trước tiên bạn cần phải tìm đến vị trí thư mục cài đặt M
 
 Mặc định, vị trí đó là: **C:\Program Files\MongoDB\Server\4.0\bin**
 
-Nếu nhìn vào thư mục đó, bạn sẽ thấy file **mongo.exe**. Đây chính là chương trình dùng để tương tác với MongoDB thông qua [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows).
+Nếu nhìn vào thư mục đó, bạn sẽ thấy file **mongo.exe**. Đây chính là chương trình dùng để tương tác với MongoDB thông qua [CMD](/cac-cau-lenh-thuong-dung-tren-cmd-windows/).
 
 Để biết cách cài đặt biến môi trường, bạn có thể tham khảo thêm tại bài viết [hướng dẫn tìm hiểu FFmpeg cơ bản](/huong-dan-tim-hieu-ffmpeg-co-ban/#Cai_dat_phan_mem) để biết thêm chi tiết.
 

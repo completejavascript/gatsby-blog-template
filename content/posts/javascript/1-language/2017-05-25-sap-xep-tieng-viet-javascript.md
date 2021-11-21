@@ -18,7 +18,7 @@ Sắp xếp là một bài toán không thể thiếu trong lập trình. Tuy nh
 
 ## Cơ bản về hàm sort() trong JavaScript
 
-Trong bài viết [Array Sorting - vấn đề muôn thuở](/array-sorting-van-de-muon-thuo), mình đã giới thiệu với bạn khá chi tiết về hàm [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), cũng như cách implement một số [thuật toán](/tag/thuat-toan) sắp xếp cơ bản. Bạn có thể đọc bài viết đó để hiểu rõ hơn về chúng.
+Trong bài viết [Array Sorting - vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/), mình đã giới thiệu với bạn khá chi tiết về hàm [sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), cũng như cách implement một số [thuật toán](/tag/thuat-toan) sắp xếp cơ bản. Bạn có thể đọc bài viết đó để hiểu rõ hơn về chúng.
 
 Còn bây giờ, mình sẽ nhắc lại hàm sort() một chút cho bạn tiện theo dõi. Vì mình sẽ sử dụng hàm này để sắp xếp Tiếng Việt trong JavaScript.
 

@@ -25,7 +25,7 @@ Với bài toán này, yêu cầu là loại bỏ phần tử lặp trong mảng
 
 Hiểu đơn giản: khi hai phần tử a, b trong mảng mà (a === b) là true thì gọi đó là phần tử lặp.
 
-Tiếp theo, mình cần quan tâm đến kiểu dữ liệu của các phần tử trong mảng. JavaScript có 7 kiểu dữ liệu là: [number, string, boolean](/kieu-du-lieu-trong-javascript), [array](/javascript-array-co-ban), [object](/javascript-object-last-but-not-least), null và undefined. Tuy nhiên, mình tạm thời bỏ qua trường hợp phần tử trong mảng có kiểu dữ liệu là: array và object. Vì xử lý 2 trường hợp này sẽ khá phức tạp.
+Tiếp theo, mình cần quan tâm đến kiểu dữ liệu của các phần tử trong mảng. JavaScript có 7 kiểu dữ liệu là: [number, string, boolean](/kieu-du-lieu-trong-javascript/), [array](/javascript-array-co-ban/), [object](/javascript-object-last-but-not-least/), null và undefined. Tuy nhiên, mình tạm thời bỏ qua trường hợp phần tử trong mảng có kiểu dữ liệu là: array và object. Vì xử lý 2 trường hợp này sẽ khá phức tạp.
 
 Ví dụ phần tử trong mảng có kiểu dữ liệu là object:
 
@@ -88,7 +88,7 @@ function deduplicate(arr) {
 }
 ```
 
-Cái mà bạn cần quan tâm ở đây là [function](/ham-la-gi-ham-trong-javascript) **deduplicate**. Vậy cách triển khai function này tương ứng với thuật toán sẽ như thế nào?
+Cái mà bạn cần quan tâm ở đây là [function](/ham-la-gi-ham-trong-javascript/) **deduplicate**. Vậy cách triển khai function này tương ứng với thuật toán sẽ như thế nào?
 
 **B1:** Khai báo mảng chứa kết quả, ví dụ: dst = []
 
@@ -280,4 +280,4 @@ Trên đây là 6 cách loại bỏ phần tử lặp trong mảng:
 
 Nếu bạn có thắc mắc hay góp ý gì thì có thể để lại cho mình trong phần bình luận. Ngoài ra, nếu bạn có cách làm khác nữa thì mong bạn chia sẻ lại với mình nhé!
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/2-cach-tao-immutable-object-javascript), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/2-cach-tao-immutable-object-javascript/), thân ái!

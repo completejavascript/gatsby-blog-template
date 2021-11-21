@@ -35,7 +35,7 @@ Trong một vài trường hợp, có nhiều người sẽ cảm thấy bị x�
 
 Programmer là người có chuyên môn hơn một chút. Họ có thể tạo ra phần mềm máy tính ở bất kỳ ngôn ngữ lập trình máy tính cơ bản nào, như Java, Python, Lisp,...
 
-Programmer được cho là vượt xa Coder, họ có thể chỉ [chuyên môn trong một lĩnh vực](/anh-che-vui-5-specialist-vs-generalist-winner) hay thậm chí là viết hướng dẫn cho nhiều loại hệ thống khác nhau.
+Programmer được cho là vượt xa Coder, họ có thể chỉ [chuyên môn trong một lĩnh vực](/anh-che-vui-5-specialist-vs-generalist-winner/) hay thậm chí là viết hướng dẫn cho nhiều loại hệ thống khác nhau.
 
 Programmer cũng am hiểu khá tốt về thuật toán. Họ cũng khá giống với Developer nhưng khác ở chỗ là Programmer chủ yếu chỉ triển khai hệ thống, trong khi Developer có thể thiết kế hoặc xây dựng một cấu trúc dữ liệu tốt trong phần mềm.
 

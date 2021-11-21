@@ -13,7 +13,7 @@ tags:
   - Toán tử
 ---
 
-Qua bài viết trước, bạn đã biết [toán tử là gì](/toan-tu-la-gi-toan-tu-trong-javascript), cũng như các loại toán tử trong JavaScript giúp cho việc tính toán. Tiếp theo, mình sẽ tìm hiểu về **toán tử so sánh** trong JavaScript.
+Qua bài viết trước, bạn đã biết [toán tử là gì](/toan-tu-la-gi-toan-tu-trong-javascript/), cũng như các loại toán tử trong JavaScript giúp cho việc tính toán. Tiếp theo, mình sẽ tìm hiểu về **toán tử so sánh** trong JavaScript.
 
 Cụ thể, bài viết này tập trung vào tìm hiểu toán tử so sánh là gì, các loại toán tử so sánh trong JS, kết quả của phép so sánh và một số trường hợp đặc biệt (dễ nhầm lẫn) khi so sánh.
 
@@ -52,7 +52,7 @@ a !== b; // so sánh khác nghiêm ngặt
 
 ## Kết quả của phép so sánh
 
-Kết quả của phép so sánh luôn là một giá trị kiểu [boolean](/kieu-du-lieu-trong-javascript).
+Kết quả của phép so sánh luôn là một giá trị kiểu [boolean](/kieu-du-lieu-trong-javascript/).
 
 - `true`: đúng, chính xác
 - `false`: sai, không chính xác

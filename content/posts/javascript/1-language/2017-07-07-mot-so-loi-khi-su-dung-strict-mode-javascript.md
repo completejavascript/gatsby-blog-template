@@ -15,7 +15,7 @@ tags:
   - Strict Mode
 ---
 
-Trong [bài viết trước](/debug-javascript-de-hay-kho), mình có đề cập tới việc sử dụng Strict mode trong JavaScript để giảm thiểu những lỗi ngớ ngẩn của lập trình viên khi lập trình JavaScript. Như đã hứa, mình sẽ đưa ra một số lỗi phổ biến khi sử dụng chế độ này.
+Trong [bài viết trước](/debug-javascript-de-hay-kho/), mình có đề cập tới việc sử dụng Strict mode trong JavaScript để giảm thiểu những lỗi ngớ ngẩn của lập trình viên khi lập trình JavaScript. Như đã hứa, mình sẽ đưa ra một số lỗi phổ biến khi sử dụng chế độ này.
 
 ## Sử dụng biến không khai báo
 
@@ -154,7 +154,7 @@ function sum(a, a, c) {
 
 ## Thêm thuộc tính cho những giá trị nguyên thuỷ
 
-Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number, string, boolean](/kieu-du-lieu-trong-javascript). Ngược lại, bạn sẽ bị lỗi như:
+Như bạn đã biết, giá trị nguyên thuỷ bao gồm: [number, string, boolean](/kieu-du-lieu-trong-javascript/). Ngược lại, bạn sẽ bị lỗi như:
 
 - Uncaught TypeError: Cannot create property 'true' on boolean 'false'
 - Uncaught TypeError: Cannot create property 'sailing' on number '14'
@@ -192,7 +192,7 @@ delete x;
 
 ## Đặt tên biến trùng với từ dự trữ
 
-Ngoài từ khoá, [JavaScript](/javascript-la-gi) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.
+Ngoài từ khoá, [JavaScript](/javascript-la-gi/) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.
 
 Do đó, strict mode nghiêm cấm bạn đặt tên biến số trùng với những từ này. Nếu bạn đặt tên biến trùng với từ dự trữ thì bạn sẽ bị lỗi như sau:
 
@@ -206,11 +206,11 @@ var implements = 10;
 
 ## Kết luận
 
-Trên đây là một số lỗi thường gặp phải khi bạn sử dụng JavaScript strict mode. Nói vậy, không có nghĩa là mình khuyên bạn tránh sử dụng strict mode. Ngược lại, chế độ này giúp bạn dễ dàng [phát hiện lỗi](/debug-javascript-de-hay-kho). Và đây là sự đảm bảo cho code bạn không bị xung đột với những phiên bản JavaScript mới hơn sau này.
+Trên đây là một số lỗi thường gặp phải khi bạn sử dụng JavaScript strict mode. Nói vậy, không có nghĩa là mình khuyên bạn tránh sử dụng strict mode. Ngược lại, chế độ này giúp bạn dễ dàng [phát hiện lỗi](/debug-javascript-de-hay-kho/). Và đây là sự đảm bảo cho code bạn không bị xung đột với những phiên bản JavaScript mới hơn sau này.
 
 Bài viết này sẽ dừng lại ở đây.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-regular-expression-javascript), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-regular-expression-javascript/), thân ái!
 
 ## Tham khảo
 

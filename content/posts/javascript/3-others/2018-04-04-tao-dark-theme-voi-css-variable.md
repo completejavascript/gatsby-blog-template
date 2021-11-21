@@ -51,7 +51,7 @@ element {
 }
 ```
 
-Ngoài ra, nếu bạn muốn sử dụng CSS variable ở mọi nơi trên trang web, bạn có thể khai báo chúng ở <code>:root</code> - phần tử cấp cao nhất trong [DOM tree](/co-ban-ve-dom-javascript).
+Ngoài ra, nếu bạn muốn sử dụng CSS variable ở mọi nơi trên trang web, bạn có thể khai báo chúng ở <code>:root</code> - phần tử cấp cao nhất trong [DOM tree](/co-ban-ve-dom-javascript/).
 
 Để biết thêm về các tính chất của CSS variable bạn có thể tham khảo thêm tại các bài viết sau:
 

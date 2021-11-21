@@ -18,7 +18,7 @@ tags:
 
 Giả sử bạn đang muốn kiểm tra empty object đối với một giá trị cho trước. Với empty object được hiểu như sau:
 
-- Đó là một [object](/javascript-object-last-but-not-least).
+- Đó là một [object](/javascript-object-last-but-not-least/).
 - Và nó không có một thuộc tính [enumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) nào cả.
 
 Tức là nó được biểu diễn như sau:
@@ -85,7 +85,7 @@ Kết quả hiện thị bên trên là đúng với yêu cầu. Tiếp theo mì
 
 ### Kiểm tra object là empty
 
-Để kiểm tra object là empty trong [ES6](/tag/es6), mình sẽ sử dụng phương thức [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys). Phương thức này trả về một mảng chứa tất cả các thuộc tính **enumerable** của object.
+Để kiểm tra object là empty trong [ES6](/tag/es6/), mình sẽ sử dụng phương thức [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys). Phương thức này trả về một mảng chứa tất cả các thuộc tính **enumerable** của object.
 
 Vì vậy, nếu kết quả trả về là mảng rỗng thì suy ra object đó không chứa thuộc tính enumerable nào.
 
@@ -125,7 +125,7 @@ Kết quả lần này lại đúng như mong đợi.
 
 ### Tổng hợp cách kiểm tra empty object trong JavaScript
 
-Kết hợp 2 đoạn kiểm tra trên, mình suy ra [hàm](/ham-la-gi-ham-trong-javascript) để kiểm tra empty object trong JavaScript là:
+Kết hợp 2 đoạn kiểm tra trên, mình suy ra [hàm](/ham-la-gi-ham-trong-javascript/) để kiểm tra empty object trong JavaScript là:
 
 ```js
 const isEmptyObject = (v) => {

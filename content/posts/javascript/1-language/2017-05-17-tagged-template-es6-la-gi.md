@@ -14,7 +14,7 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Trong bài viết [Sử dụng ES6 Template String có gì hay?](/su-dung-es6-template-string-co-gi-hay), mình đã giới thiệu với bạn về ES6 Template String là gì, cũng như cách dùng và ứng dụng của nó. Tuy nhiên, có một tính năng mà mình chưa đề cập đến, đó là: Tagged template. Vì vậy, bài viết này mình sẽ cùng tìm hiểu xem rốt cuộc Tagged template ES6 là như thế nào nhé.
+Trong bài viết [Sử dụng ES6 Template String có gì hay?](/su-dung-es6-template-string-co-gi-hay/), mình đã giới thiệu với bạn về ES6 Template String là gì, cũng như cách dùng và ứng dụng của nó. Tuy nhiên, có một tính năng mà mình chưa đề cập đến, đó là: Tagged template. Vì vậy, bài viết này mình sẽ cùng tìm hiểu xem rốt cuộc Tagged template ES6 là như thế nào nhé.
 
 ## Cú pháp cơ bản của Tagged template ES6
 
@@ -24,7 +24,7 @@ Cú pháp:
 func`template string with ${expression}`;
 ```
 
-Tagged template ES6 cho phép bạn parse [template](/tag/template) string với một [function](/ham-la-gi-ham-trong-javascript/).
+Tagged template ES6 cho phép bạn parse [template](/tag/template/) string với một [function](/ham-la-gi-ham-trong-javascript/).
 
 Trong đó, **func** chính là function mà bạn tự định nghĩa. Tiếp sau là một đoạn template string có chứa các expression (hoặc không).
 

@@ -34,7 +34,7 @@ Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
 Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #8 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
@@ -68,8 +68,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_mousedown, mouseup, mousemove_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_mousedown, mouseup, mousemove_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
@@ -350,7 +350,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 }
 ```
 
-Trong đây mình có kết hợp Draggable Element với các React Component khác mà mình đã làm như: [Modal Image](/hoc-react-qua-vi-du-3-modal-image), [Slideshow](/hoc-react-qua-vi-du-1-slideshow).
+Trong đây mình có kết hợp Draggable Element với các React Component khác mà mình đã làm như: [Modal Image](/hoc-react-qua-vi-du-3-modal-image/), [Slideshow](/hoc-react-qua-vi-du-1-slideshow/).
 
 ```jsx:title=./src/App.js
 import React from "react";
@@ -438,8 +438,8 @@ export default class App extends React.Component {
 
 Trong đó, Draggable Element Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
-- **title ([String](/kieu-du-lieu-trong-javascript)):** là title của component.
-- **width, height (String hoặc [Number](/kieu-du-lieu-trong-javascript)):** lần lượt là chiều rộng và chiều cao của phần tử.
+- **title ([String](/kieu-du-lieu-trong-javascript/)):** là title của component.
+- **width, height (String hoặc [Number](/kieu-du-lieu-trong-javascript/)):** lần lượt là chiều rộng và chiều cao của phần tử.
 - **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
 
 ## Lời kết

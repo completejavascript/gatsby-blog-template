@@ -165,7 +165,7 @@ console.log(x, y, z);
 // => ReferenceError: y is not defined
 ```
 
-_Xem thêm: [Phân biệt var và let trong JavaScript](/phan-biet-var-va-let-trong-javascript)_
+_Xem thêm: [Phân biệt var và let trong JavaScript](/phan-biet-var-va-let-trong-javascript/)_
 
 </div>
 
@@ -195,7 +195,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Vì trong [chế độ strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript), **this** sẽ không được bind với đối tượng **window**.
+Vì trong [chế độ strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript/), **this** sẽ không được bind với đối tượng **window**.
 
 _Xem thêm bài viết sau để hiểu thêm về chế độ strict mode: [Strict mode – JavaScript | MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Strict_mode)._
 
@@ -287,4 +287,4 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 Trên đây là 6 câu hỏi phỏng vấn JavaScript cũng rất hay. Nếu bạn có cùng nhận xét với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-6), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-6/), thân ái!

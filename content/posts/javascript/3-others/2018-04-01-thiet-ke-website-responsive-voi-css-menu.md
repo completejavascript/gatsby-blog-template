@@ -309,6 +309,6 @@ Kết quả khi nhấn vào icon:
 
 Trên đây là hướng dẫn thiết kế website responsive. Hy vọng bài viết này có thể giúp ích cho bạn.
 
-Ngoài ra, bạn có thể thực hành thêm với các [mẫu website có sẵn](/figma-templates-cho-web-va-di-dong) để thành thạo hơn trong việc chuyển hóa một bản thiết kế thành code hoàn chỉnh.
+Ngoài ra, bạn có thể thực hành thêm với các [mẫu website có sẵn](/figma-templates-cho-web-va-di-dong/) để thành thạo hơn trong việc chuyển hóa một bản thiết kế thành code hoàn chỉnh.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/ma-mau-logo-cac-thuong-hieu-noi-tieng), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/ma-mau-logo-cac-thuong-hieu-noi-tieng/), thân ái!

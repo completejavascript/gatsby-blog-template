@@ -20,17 +20,17 @@ Khi mọi người cố gắng học lập trình Javascript, hay bất kỳ kĩ
 - Một khi bạn đã hiểu một vài thứ, nó là rất dễ để bạn quên nó một lần nữa.
 - Những công cụ là rất nhiều và luôn luôn thay đổi, rất khó để biết được nên bắt đầu học từ đâu.
 
-May mắn là, những thử thách này có thể được nhận ra và cuối cùng được chinh phục. Trong bài viết này, tôi sẽ trình bày sáu mẹo đơn giản giúp học lập trình [Javascript](/javascript) nhanh hơn và giúp bạn trở thành một lập trình viên [hạnh phúc hơn](/tag/anh-che), hiệu quả hơn.
+May mắn là, những thử thách này có thể được nhận ra và cuối cùng được chinh phục. Trong bài viết này, tôi sẽ trình bày sáu mẹo đơn giản giúp học lập trình [Javascript](/javascript/) nhanh hơn và giúp bạn trở thành một lập trình viên [hạnh phúc hơn](/tag/anh-che), hiệu quả hơn.
 
 ## Đừng để những quyết định tương lai làm bạn dừng bước từ những tiến bộ hôm nay
 
-Với nhiều người học lập trình Javascript, một trong những câu hỏi đầu tiên họ hỏi đó là: nên sử dụng Framework nào (và công bằng mà nói thì có rất nhiều). Nhưng nếu như bạn chưa thành thạo với [Javascript nguyên thuỷ](/kieu-du-lieu-trong-javascript), đó sẽ là một câu hỏi sai. Bạn sẽ dành tất cả thời gian của mình để tìm kiếm những Framework khác nhau. Và thực sự, bạn không hề tiến bộ.
+Với nhiều người học lập trình Javascript, một trong những câu hỏi đầu tiên họ hỏi đó là: nên sử dụng Framework nào (và công bằng mà nói thì có rất nhiều). Nhưng nếu như bạn chưa thành thạo với [Javascript nguyên thuỷ](/kieu-du-lieu-trong-javascript/), đó sẽ là một câu hỏi sai. Bạn sẽ dành tất cả thời gian của mình để tìm kiếm những Framework khác nhau. Và thực sự, bạn không hề tiến bộ.
 
 Một cách để giúp bạn thoát khỏi cái bẫy của sự do dự, đó là việc có một bản đồ về những gì bạn cần phải học. Ví dụ, để trở thành một lập trình viên front-end, tấm bản đồ của bạn có thể như sau:
 
 ![road maps để học javascript nhanh hơn tại completejavascript.com](../../images/cuoc-song-it/sau-meo-hoc-javascript-nhanh-hon-frontend-dev-roadmap-completejavascript.com_.png)
 
-Cụ thể hơn nữa, bạn có thể làm một trang web với [HTML](/tag/html) và [CSS](/tag/css). Hãy xem xét từng bước riêng rẽ như này. Nó sẽ giúp bạn thấy được những gì bạn cần tập trung vào, và bạn sẽ không phải mất thời gian lo lắng về những thứ sẽ đến sau này.
+Cụ thể hơn nữa, bạn có thể làm một trang web với [HTML](/tag/html/) và [CSS](/tag/css/). Hãy xem xét từng bước riêng rẽ như này. Nó sẽ giúp bạn thấy được những gì bạn cần tập trung vào, và bạn sẽ không phải mất thời gian lo lắng về những thứ sẽ đến sau này.
 
 ## Đừng để sự tự tin làm bạn quên đi những thứ đã học
 
@@ -51,15 +51,15 @@ Quá trình này có cảm giác sẽ lâu hơn việc đọc lướt qua mọi 
 
 _Có thể bạn quan tâm:_
 
-- _[Xoắn não với phỏng vấn JavaScript 1](/xoan-nao-voi-phong-van-javascript-1)_
-- _[Xoắn não với phỏng vấn JavaScript 2](/xoan-nao-voi-phong-van-javascript-2)_
-- _[Xoắn não với phỏng vấn JavaScript 3](/xoan-nao-voi-phong-van-javascript-3)_
-- _[Xoắn não với phỏng vấn JavaScript 4](/xoan-nao-voi-phong-van-javascript-4)_
-- _[Xoắn não với phỏng vấn JavaScript 5](/xoan-nao-voi-phong-van-javascript-5)_
-- _[Xoắn não với phỏng vấn JavaScript 6](/xoan-nao-voi-phong-van-javascript-6)_
-- _[Xoắn não với phỏng vấn JavaScript 7](/xoan-nao-voi-phong-van-javascript-7)_
-- _[Xoắn não với phỏng vấn JavaScript 8](/xoan-nao-voi-phong-van-javascript-8)_
-- _[Xoắn não với phỏng vấn JavaScript 9](/xoan-nao-voi-phong-van-javascript-9)_
+- _[Xoắn não với phỏng vấn JavaScript 1](/xoan-nao-voi-phong-van-javascript-1/)_
+- _[Xoắn não với phỏng vấn JavaScript 2](/xoan-nao-voi-phong-van-javascript-2/)_
+- _[Xoắn não với phỏng vấn JavaScript 3](/xoan-nao-voi-phong-van-javascript-3/)_
+- _[Xoắn não với phỏng vấn JavaScript 4](/xoan-nao-voi-phong-van-javascript-4/)_
+- _[Xoắn não với phỏng vấn JavaScript 5](/xoan-nao-voi-phong-van-javascript-5/)_
+- _[Xoắn não với phỏng vấn JavaScript 6](/xoan-nao-voi-phong-van-javascript-6/)_
+- _[Xoắn não với phỏng vấn JavaScript 7](/xoan-nao-voi-phong-van-javascript-7/)_
+- _[Xoắn não với phỏng vấn JavaScript 8](/xoan-nao-voi-phong-van-javascript-8/)_
+- _[Xoắn não với phỏng vấn JavaScript 9](/xoan-nao-voi-phong-van-javascript-9/)_
 
 ## Tiếp cận việc thực hành với tư duy đúng đắn
 

@@ -25,7 +25,7 @@ https://codepen.io/completejavascript/pen/baOYpa
 
 ### Các thư viện sử dụng
 
-Ngoài HTML, CSS, [JavaScript](/javascript-la-gi), mình sử dụng thêm 2 thư viện khác là: Bootstrap (CSS) và jQuery (js). Để thêm chúng vào project trên codepen, bạn làm như sau:
+Ngoài HTML, CSS, [JavaScript](/javascript-la-gi/), mình sử dụng thêm 2 thư viện khác là: Bootstrap (CSS) và jQuery (js). Để thêm chúng vào project trên codepen, bạn làm như sau:
 
 - Bootstrap CSS: **Setting / CSS / Quick-add / Bootstrap 3**
 
@@ -89,7 +89,7 @@ Ngoài ra, menu còn trỏ đến các mục tương ứng trên trang là: **Ab
 
 ### Bắt đầu với \$(document).ready()
 
-Hàm này dùng để phát hiện trạng thái khi toàn bộ các phần tử [DOM](/co-ban-ve-dom-javascript) đã được load.
+Hàm này dùng để phát hiện trạng thái khi toàn bộ các phần tử [DOM](/co-ban-ve-dom-javascript/) đã được load.
 
 ```js
 // A $( document ).ready() block.
@@ -165,7 +165,7 @@ Trong đó, sau khi đã xác định được _target_, sử dụng [.animate()
 
 #### Bắt sự kiện scroll
 
-Để [xử lý sự kiện](/xu-ly-mot-event-javascript-co-ban) này, mình sử dụng hàm [.scroll()](https://api.jquery.com/scroll/) của jQuery.
+Để [xử lý sự kiện](/xu-ly-mot-event-javascript-co-ban/) này, mình sử dụng hàm [.scroll()](https://api.jquery.com/scroll/) của jQuery.
 
 ```js
 // Update menu while scrolling
@@ -187,7 +187,7 @@ if (timer) {
 
 #### Xử lý sự kiện scroll
 
-Có một vấn đề phát sinh là khi người dùng click vào menu item, trang web được scroll đến một mục khác. Lúc này, **\$(window).scroll** cũng sẽ được gọi tới. Để tránh xung đột giữa hai trường hợp (người dùng kéo trang và người dùng click vào menu), mình đã sử dụng một biến [Boolean](/kieu-du-lieu-trong-javascript) là **menuClicked** để phân biệt. Trường hợp, click menu item thì `menuClicked = true` và mình sẽ không xử lý gì trong [function](/ham-la-gi-ham-trong-javascript) _handleScrollEvent_.
+Có một vấn đề phát sinh là khi người dùng click vào menu item, trang web được scroll đến một mục khác. Lúc này, **\$(window).scroll** cũng sẽ được gọi tới. Để tránh xung đột giữa hai trường hợp (người dùng kéo trang và người dùng click vào menu), mình đã sử dụng một biến [Boolean](/kieu-du-lieu-trong-javascript/) là **menuClicked** để phân biệt. Trường hợp, click menu item thì `menuClicked = true` và mình sẽ không xử lý gì trong [function](/ham-la-gi-ham-trong-javascript/) _handleScrollEvent_.
 
 ```js
 function handleScrollEvent() {
@@ -260,7 +260,7 @@ Trên đây là toàn bộ những điều mình rút ra được từ project *
 
 Không biết bạn đánh giá như thế nào? Vui lòng để lại bình luận phía dưới để mọi người cùng trao đổi nhé!
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-personal-portfolio), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-personal-portfolio/), thân ái!
 
 ## Tham khảo
 

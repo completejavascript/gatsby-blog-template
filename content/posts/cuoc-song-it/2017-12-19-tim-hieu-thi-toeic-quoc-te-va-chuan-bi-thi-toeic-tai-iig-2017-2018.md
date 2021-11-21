@@ -12,7 +12,7 @@ shortTitle: "Thi TOEIC quốc tế tại IIG"
 series: "Cuộc sống IT: Cuộc sống dân IT"
 ---
 
-Xin chào tất cả mọi người. Kể ra thì cũng lâu rồi mình chưa ra một bài viết nào. Bài viết mới gần đây nhất là [PHÂN BIỆT VAR VÀ LET TRONG JAVASCRIPT,](/phan-biet-var-va-let-trong-javascript) cách đây cũng hơn hai tháng.
+Xin chào tất cả mọi người. Kể ra thì cũng lâu rồi mình chưa ra một bài viết nào. Bài viết mới gần đây nhất là [PHÂN BIỆT VAR VÀ LET TRONG JAVASCRIPT](/phan-biet-var-va-let-trong-javascript/), cách đây cũng hơn hai tháng.
 
 Vậy thì bắt đầu từ hôm nay, mình sẽ quyết tâm một tuần xuất bản 3 đến 4 bài viết, nghĩa là 2 ngày một bài từ thứ 2 đến thứ 7. Mặc dù thời tiết bây giờ đang rất lạnh, nhiệt độ từ 9 đến 19 độ C, tại Hà Nội.
 
@@ -28,7 +28,7 @@ Xin chân thành cám ơn.
 
 ![Baby](../../images/cuoc-song-it/baby-completejavascript-com.jpg)
 
-Quay lại chủ đề bài viết ngày hôm nay. Đó là: **Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 – 2018**. Có thể, bạn đang thắc mắc là tại sao mình lại viết chủ đề này và TOEIC thì liên quan quái gì đến [JavaScript](/javascript)? Chúng ta sẽ cùng nhau tìm hiểu qua những câu hỏi sau đây.
+Quay lại chủ đề bài viết ngày hôm nay. Đó là: **Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 – 2018**. Có thể, bạn đang thắc mắc là tại sao mình lại viết chủ đề này và TOEIC thì liên quan quái gì đến [JavaScript](/javascript/)? Chúng ta sẽ cùng nhau tìm hiểu qua những câu hỏi sau đây.
 
 ## TOEIC là gì?
 

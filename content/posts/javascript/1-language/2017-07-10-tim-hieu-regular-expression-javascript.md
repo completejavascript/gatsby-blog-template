@@ -23,7 +23,7 @@ Sau đây, chúng ta sẽ cùng tìm hiểu về Regular Expression trong JavaSc
 
 Có hai cách để tạo ra một Regex JavaScript là:
 
-- Sử dụng hàm khởi tạo của [đối tượng](/javascript-object-last-but-not-least) RegExp
+- Sử dụng hàm khởi tạo của [đối tượng](/javascript-object-last-but-not-least/) RegExp
 - Viết trực tiếp sử dụng cặp dấu "/ /"
 
 ```js
@@ -329,7 +329,7 @@ Trong đó:
 - tham số g: chỉ ra rằng khuôn mẫu áp dụng Global, nghĩa là nó áp dụng cho tất cả thành phần trùng khớp.
 - tham số i: chỉ ra rằng khuôn mẫu không phân biệt chữ hoa và chữ thường.
 
-Ngoài ra, ở đây mình có sử dụng phương thức _replace_ của [string](/kieu-du-lieu-trong-javascript) - dùng để thay thế tất cả những thành phần trùng khớp với khuôn mẫu với "_\$1_".
+Ngoài ra, ở đây mình có sử dụng phương thức _replace_ của [string](/kieu-du-lieu-trong-javascript/) - dùng để thay thế tất cả những thành phần trùng khớp với khuôn mẫu với "_\$1_".
 
 Ở đây \$1 chính là nội dung của group thứ nhất.
 
@@ -357,7 +357,7 @@ Tóm tắt một số khuôn mẫu cơ bản của Regex trong JavaScript:
 - /^/: bắt đầu string
 - /\$/: kết thúc string
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/co-ban-ve-dom-javascript), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/co-ban-ve-dom-javascript/), thân ái!
 
 ## Tham khảo
 

@@ -17,7 +17,7 @@ Có thể bạn đã biết hoặc chưa biết về các cách tạo số ngẫ
 
 ## Các phương thức tạo số ngẫu nhiên trong JavaScript
 
-Trước khi bắt đầu, mình cùng điểm qua một số [phương thức](/ham-la-gi-ham-trong-javascript) tạo số ngẫu nhiên trong JavaScript.
+Trước khi bắt đầu, mình cùng điểm qua một số [phương thức](/ham-la-gi-ham-trong-javascript/) tạo số ngẫu nhiên trong JavaScript.
 
 Theo mình biết, JavaScript có hai phương thức tạo số ngẫu nhiên là: [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) và [window.crypto.getRandomValues()](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues).
 

@@ -15,11 +15,11 @@ tags:
   - Promise
 ---
 
-Nếu các bạn đã đọc qua bài viết của mình về [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript), thì sẽ biết rằng có 2 cách sử dụng đối tượng này là: **đồng bộ** và **bất đồng bộ**. Với xử lý đồng bộ, bạn quản lý chương trình dễ hơn, nhưng thường nó sẽ chạy chậm. Trong khi xử lý bất đồng bộ, chương trình chạy nhanh hơn nhưng code sẽ khó khăn hơn. Vì vậy, bài viết này sẽ hướng dẫn các bạn kết hợp XMLHttpRequest với **Promise JavaScript** trong xử lý bất đồng bộ.
+Nếu các bạn đã đọc qua bài viết của mình về [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/), thì sẽ biết rằng có 2 cách sử dụng đối tượng này là: **đồng bộ** và **bất đồng bộ**. Với xử lý đồng bộ, bạn quản lý chương trình dễ hơn, nhưng thường nó sẽ chạy chậm. Trong khi xử lý bất đồng bộ, chương trình chạy nhanh hơn nhưng code sẽ khó khăn hơn. Vì vậy, bài viết này sẽ hướng dẫn các bạn kết hợp XMLHttpRequest với **Promise JavaScript** trong xử lý bất đồng bộ.
 
 ## Promise JavaScript là gì?
 
-Promise JavaScript là một [đối tượng](/javascript-object-last-but-not-least) cho phép bạn thực hiện những tác vụ bất đồng bộ. Sau đây là cách sử dụng cơ bản của Promise (sử dụng ES6):
+Promise JavaScript là một [đối tượng](/javascript-object-last-but-not-least/) cho phép bạn thực hiện những tác vụ bất đồng bộ. Sau đây là cách sử dụng cơ bản của Promise (sử dụng ES6):
 
 ```js
 let p = new Promise((resolve, reject) => {
@@ -140,7 +140,7 @@ Khi thành công, kết quả data sẽ được ghi ra console và đổi giá 
 
 Trên đây là cách mà mình kết hợp XMLHttpRequest với Promise JavaScript. Bạn cũng hoàn toàn có thể sử dụng cách trên để áp dụng cho bất kì phương thức bất đồng bộ nào khác.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/js-pattern-constructor-pattern), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/js-pattern-constructor-pattern/), thân ái!
 
 ## Tham khảo
 

@@ -19,9 +19,9 @@ Vì vậy, bài viết này sẽ tập trung vào tìm hiểu về ba toán tử
 
 ## Toán tử logic là gì?
 
-**Toán tử logic** là [toán tử](/toan-tu-la-gi-toan-tu-trong-javascript) kết nối hai hay nhiều biểu thức, dùng để kiểm tra mối quan hệ logic giữa các biểu thức. Kết quả cuối cùng phụ thuộc vào giá trị của từng biểu thức và loại toán tử logic.
+**Toán tử logic** là [toán tử](/toan-tu-la-gi-toan-tu-trong-javascript/) kết nối hai hay nhiều biểu thức, dùng để kiểm tra mối quan hệ logic giữa các biểu thức. Kết quả cuối cùng phụ thuộc vào giá trị của từng biểu thức và loại toán tử logic.
 
-Theo định nghĩa thông thường, toán tử logic chỉ áp dụng cho [kiểu dữ liệu boolean](/kieu-du-lieu-trong-javascript) và kết quả trả về cũng là giá trị **boolean**.
+Theo định nghĩa thông thường, toán tử logic chỉ áp dụng cho [kiểu dữ liệu boolean](/kieu-du-lieu-trong-javascript/) và kết quả trả về cũng là giá trị **boolean**.
 
 Nhưng với JavaScript thì khác, toán tử logic áp dụng cho **bất kỳ kiểu dữ liệu nào** và kết quả trả về cũng là **bất kỳ kiểu dữ liệu nào**. Để làm được điều này, các toán hạng tham gia đều được chuyển về kiểu dữ liệu boolean để kiểm tra tính logic.
 
@@ -35,7 +35,7 @@ Những giá trị mà khi chuyển về kiểu dữ liệu boolean ra giá tr�
 
 Tương tự, những giá trị mà khi chuyển về kiểu dữ liệu boolean ra giá trị `false` gọi là **falsy**.
 
-> Để chuyển một giá trị về kiểu dữ liệu boolean, bạn có thể dùng [hàm](/ham-la-gi-ham-trong-javascript) `Boolean()`.
+> Để chuyển một giá trị về kiểu dữ liệu boolean, bạn có thể dùng [hàm](/ham-la-gi-ham-trong-javascript/) `Boolean()`.
 
 Ví dụ các giá trị **truthy**:
 
@@ -139,7 +139,7 @@ if (a || b) {
 }
 ```
 
-Ví dụ kết hợp [toán tử so sánh](/toan-tu-so-sanh-trong-javascript):
+Ví dụ kết hợp [toán tử so sánh](/toan-tu-so-sanh-trong-javascript/):
 
 ```js
 const hour = 20;
@@ -256,7 +256,7 @@ if (a && b) {
 }
 ```
 
-Ví dụ kết hợp [toán tử so sánh](/toan-tu-so-sanh-trong-javascript):
+Ví dụ kết hợp [toán tử so sánh](/toan-tu-so-sanh-trong-javascript/):
 
 ```js
 const hour = 12;
@@ -337,7 +337,7 @@ console.log(!undefined); // true (undefined là falsy)
 
 ### Thứ tự ưu tiên của các toán tử logic
 
-Nếu so sánh với các toán tử đã học như [toán tử số học](/toan-tu-la-gi-toan-tu-trong-javascript) và [toán tử so sánh](/toan-tu-so-sanh-trong-javascript) thì toán tử logic trong JavaScript có độ ưu tiên thấp hơn.
+Nếu so sánh với các toán tử đã học như [toán tử số học](/toan-tu-la-gi-toan-tu-trong-javascript/) và [toán tử so sánh](/toan-tu-so-sanh-trong-javascript/) thì toán tử logic trong JavaScript có độ ưu tiên thấp hơn.
 
 Nếu so sánh thứ tự ưu tiên của các toán tử logic trong JavaScript với nhau thì toán tử NOT (`!`) có độ ưu tiên cao nhất. Xếp thứ hai là toán tử AND (`&&`). Và cuối cùng là toán tử OR (`||`).
 

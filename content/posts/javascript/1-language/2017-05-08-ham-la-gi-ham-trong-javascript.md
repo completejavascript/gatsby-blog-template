@@ -19,7 +19,7 @@ Hàm giúp chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp 
 
 Ngoài ra, một hàm tốt (độc lập và thực hiện một chức năng nhất định) có thể tái sử dụng trong nhiều dự án khác nhau. Điều này giúp nâng cao hiệu suất công việc của lập trình viên.
 
-> Trong bài viết về [tương tác người dùng với: alert, confirm và prompt](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt) bạn đã biết về các hàm có sẵn như: `alert()`, `confirm()` và `prompt()`.
+> Trong bài viết về [tương tác người dùng với: alert, confirm và prompt](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt/) bạn đã biết về các hàm có sẵn như: `alert()`, `confirm()` và `prompt()`.
 
 Sau đây, mình sẽ giới thiệu những thành phần cơ bản của hàm trong JavaScript. Qua đó, bạn sẽ hiểu hàm là gì, cách xây dựng hàm và ứng dụng hàm vào các dự án.
 
@@ -72,7 +72,7 @@ Bạn có thể thấy rằng, hàm giúp tránh lặp lại code. Giả sử b�
 
 ## Biến cục bộ trong hàm
 
-Một [biến](/bien-la-gi-bien-trong-javascript) được khai báo bên trong hàm, chỉ sử dụng được bên trong thân hàm đó. Biến này gọi là **biến cục bộ** (hay **biến địa phương**).
+Một [biến](/bien-la-gi-bien-trong-javascript/) được khai báo bên trong hàm, chỉ sử dụng được bên trong thân hàm đó. Biến này gọi là **biến cục bộ** (hay **biến địa phương**).
 
 Ví dụ về biến cục bộ trong JavaScript:
 
@@ -158,9 +158,9 @@ sayHello("Hello!"); // Hello!
 sayHello("Hi!"); // Hi!
 ```
 
-Khi hàm `sayHello` được gọi, giá trị [string](/kieu-du-lieu-trong-javascript) được sao chép (copy) vào biến cục bộ `message`. Trong thân hàm sẽ sử dụng biến cục bộ đó.
+Khi hàm `sayHello` được gọi, giá trị [string](/kieu-du-lieu-trong-javascript/) được sao chép (copy) vào biến cục bộ `message`. Trong thân hàm sẽ sử dụng biến cục bộ đó.
 
-> **Chú ý**: khi truyền tham số vào hàm (ngoại trừ [object](/javascript-object-last-but-not-least) là kiểu dữ liệu tham chiếu), hàm trong JavaScript luôn thực hiện sao chép dữ liệu mà không làm thay đổi giá trị biến bên ngoài.
+> **Chú ý**: khi truyền tham số vào hàm (ngoại trừ [object](/javascript-object-last-but-not-least/) là kiểu dữ liệu tham chiếu), hàm trong JavaScript luôn thực hiện sao chép dữ liệu mà không làm thay đổi giá trị biến bên ngoài.
 
 Ví dụ:
 
@@ -204,7 +204,7 @@ function sayHello(message, site) {
 sayHello("Hello"); // Hello from undefined
 ```
 
-Trong trường hợp này, bạn có thể định nghĩa "giá trị mặc định" cho tham số bằng cách sử dụng [toán tử](/toan-tu-la-gi-toan-tu-trong-javascript) gán `=` như sau:
+Trong trường hợp này, bạn có thể định nghĩa "giá trị mặc định" cho tham số bằng cách sử dụng [toán tử](/toan-tu-la-gi-toan-tu-trong-javascript/) gán `=` như sau:
 
 ```js{1,5}
 function sayHello(message, site = "completejavascript.com") {
@@ -230,7 +230,7 @@ function sayHello(message, site = aFunction()) {
 
 Trong ví trên, hàm `aFunction()` chỉ được gọi khi bạn không truyền giá trị cho tham số `site`.
 
-> Có thể bạn quan tâm: [Làm sao để bắt buộc truyền tham số vào hàm?](/lam-sao-bat-buoc-truyen-tham-so-vao-ham)
+> Có thể bạn quan tâm: [Làm sao để bắt buộc truyền tham số vào hàm?](/lam-sao-bat-buoc-truyen-tham-so-vao-ham/).
 
 ## Return trong JavaScript
 

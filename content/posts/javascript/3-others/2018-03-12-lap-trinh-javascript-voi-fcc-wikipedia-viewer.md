@@ -20,13 +20,13 @@ tags:
   - FCC
 ---
 
-Tiếp tục với chủ đề Lập trình JavaScript với FCC, bài viết này mình sẽ tổng hợp lại những bài học kinh nghiệm, [thủ thuật](/21-thu-thuat-javascript-huu-ich) rút ra được từ project **Wikipedia Viewer**.
+Tiếp tục với chủ đề Lập trình JavaScript với FCC, bài viết này mình sẽ tổng hợp lại những bài học kinh nghiệm, [thủ thuật](/21-thu-thuat-javascript-huu-ich/) rút ra được từ project **Wikipedia Viewer**.
 
 Tuy nhiên, trước khi bắt đầu, mình muốn **nhấn mạnh** rằng bài viết này sẽ không đi vào giải thích chi tiết từng bước để làm được project (theo kiểu tutorials, step-by-step,...).
 
 Do đó, nếu bạn mới bắt đầu học JavaScript thì có thể bạn sẽ không hiểu nhiều chỗ. Lúc này, mình có hai giải pháp dành cho bạn. Đó là:
 
-1. Bạn nên đọc trước series bài viết về [JavaScript cơ bản](/javascript) và nhớ thực hành thật kỹ, rồi quay lại bài viết này sau.
+1. Bạn nên đọc trước series bài viết về [JavaScript cơ bản](/javascript/) và nhớ thực hành thật kỹ, rồi quay lại bài viết này sau.
 2. Bạn có thể tiếp tục đọc bài viết này và đặt câu hỏi cho mình trong phần bình luận phía dưới về những phần chưa hiểu rõ.
 
 Nếu đọc đến đây, nghĩa là bạn đã có kiến thức về JavaScript rồi phải không! Vậy thì bắt đầu nhé!
@@ -59,11 +59,11 @@ _Chú ý: project này mình không sử dụng jQuery như các project trướ
 
 ### Sử dụng event DOMContentLoaded hay load?
 
-Đây là 2 [sự kiện](/xu-ly-mot-event-javascript-co-ban) quan trọng khi bắt đầu một trang web. Tuy nhiên, chúng khác nhau như thế nào và bạn nên sử dụng cái nào?
+Đây là 2 [sự kiện](/xu-ly-mot-event-javascript-co-ban/) quan trọng khi bắt đầu một trang web. Tuy nhiên, chúng khác nhau như thế nào và bạn nên sử dụng cái nào?
 
 Mình có thể tóm tắt sự khác nhau như thế này:
 
-- [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) được gọi khi toàn bộ HTML được load và [DOM](/co-ban-ve-dom-javascript) tree đã được xây dựng, tuy nhiên, stylesheets, ảnh hay subframes có thể vẫn chưa được load xong. Và sự kiện này gắn liền với đối tượng [document](https://developer.mozilla.org/en/docs/Web/API/Document).
+- [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) được gọi khi toàn bộ HTML được load và [DOM](/co-ban-ve-dom-javascript/) tree đã được xây dựng, tuy nhiên, stylesheets, ảnh hay subframes có thể vẫn chưa được load xong. Và sự kiện này gắn liền với đối tượng [document](https://developer.mozilla.org/en/docs/Web/API/Document).
 - [load](https://developer.mozilla.org/en-US/docs/Web/Events/load) được gọi sau DOMContentLoaded, cộng với stylesheets, ảnh hay subframes đã được load hết. Và đối tượng này gắn liền với [window](https://developer.mozilla.org/en-US/docs/Web/API/Window).
 
 Do đó, sự kiện **DOMContentLoaded** sẽ được sử dụng khi bạn muốn truy vấn DOM, khởi tạo dữ liệu, chỉnh sửa giao diện,... Trường hợp bạn cần lấy kích thước ảnh, thì bạn phải xử lý việc này sau sự kiện **load**, vì lúc đó toàn bộ ảnh mới được tải xong.
@@ -85,7 +85,7 @@ Vì khi sử dụng phương thức này, bạn không chỉ lấy được Elem
 **Chú ý:**
 
 - Phương thức này chỉ trả về 1 element đầu tiên thỏa mãn truy vấn. Nếu bạn muốn trả về một mảng của các element thỏa mãn thì có thể sử dụng [document.querySelectorAll()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll).
-- Ngoài ra, bạn có thể sử dụng [bind](/phan-biet-call-apply-va-bind-trong-javascript) để rút gọn phương thức này:
+- Ngoài ra, bạn có thể sử dụng [bind](/phan-biet-call-apply-va-bind-trong-javascript/) để rút gọn phương thức này:
 
 Thay vì:
 
@@ -157,7 +157,7 @@ _input.addEventListener("input", (event) => {
 
 ### Sử dụng Fetch API thay vì XMLHttpRequest
 
-Trong project này mình không sử dụng thằng [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript). Thay vào đó, mình sử dụng [Fetch API](https://davidwalsh.name/fetch). Bởi vì, Fetch API được implement dưới dạng [Promises](https://davidwalsh.name/promises) nên sử dụng rất gọn.
+Trong project này mình không sử dụng thằng [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/). Thay vào đó, mình sử dụng [Fetch API](https://davidwalsh.name/fetch). Bởi vì, Fetch API được implement dưới dạng [Promises](https://davidwalsh.name/promises) nên sử dụng rất gọn.
 
 ```js
 let api =
@@ -179,7 +179,7 @@ function search(text) {
 Trong đó:
 
 - _cors + api + text_ : chính là địa chỉ URL để request (kiểu mặc định là GET).
-- Khi có kết quả trả về thành công, mình sẽ xử lý tiếp _.then(response => response.json())_ - tức là parse response thành [JSON](/tim-hieu-ve-json-trong-javascript).
+- Khi có kết quả trả về thành công, mình sẽ xử lý tiếp _.then(response => response.json())_ - tức là parse response thành [JSON](/tim-hieu-ve-json-trong-javascript/).
 - May mắn thay, hàm _json()_ cũng trả về Promises nên mình có thể xử lý tiếp _.then(json => viewResult(json))_ - tức là hiển thị kết quả tìm kiếm. Hàm _viewResult_ là do mình tự định nghĩa.
 - Cuối cùng là xử lý khi có bất kì lỗi nào xảy ra với _.catch(error => onSearchError())_.
 
@@ -191,7 +191,7 @@ _Ảnh tham khảo: ANTONIO GUILLEM/SHUTTERSTOCK_
 
 ### Sử dụng ES6 Template String để tạo HTML Template
 
-Trong bài viết [Sử dụng ES6 Template String có gì hay?](/su-dung-es6-template-string-co-gi-hay), mình cũng đã giới thiệu với các bạn về cách sử dụng Template String để tạo HTML Template rồi. Các bạn có thể đọc bài viết đó để nắm được cách làm.
+Trong bài viết [Sử dụng ES6 Template String có gì hay?](/su-dung-es6-template-string-co-gi-hay/), mình cũng đã giới thiệu với các bạn về cách sử dụng Template String để tạo HTML Template rồi. Các bạn có thể đọc bài viết đó để nắm được cách làm.
 
 Ở đây mình thực hiện như sau:
 
@@ -222,7 +222,7 @@ Trong đó:
 - Hàm _itemHTMLTemplate_ tạo ra HTML template tương ứng với mỗi kết quả tìm kiếm
 - Hàm _htmlToElement_ dùng để tạo ra phần tử DOM tương ứng.
 
-Qua đó, mình có thể sử dụng 2 [hàm số](/ham-la-gi-ham-trong-javascript) này để hiển thị kết quả tìm kiếm:
+Qua đó, mình có thể sử dụng 2 [hàm số](/ham-la-gi-ham-trong-javascript/) này để hiển thị kết quả tìm kiếm:
 
 ```js
 function viewResult(result) {
@@ -301,4 +301,4 @@ Trên đây là những bài học mà mình rút ra được sau khi hoàn thà
 
 Hy vọng bạn có thể tìm thấy được 1 chút hữu ích từ đây. Nếu có thắc mắc cần giải đáp hay góp ý gì với mình thì bạn có thể để lại trong phần bình luận phía dưới.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-twitch-tv-json-api), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-twitch-tv-json-api/), thân ái!

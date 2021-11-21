@@ -76,7 +76,7 @@ function startWorker() {
 }
 ```
 
-Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/ham-la-gi-ham-trong-javascript) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban).
+Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/ham-la-gi-ham-trong-javascript/) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban/).
 
 Trong đó, **Worker.onerror** được gọi khi có lỗi với Web Worker sau khi khởi tạo. Và **Worker.onmessage** được gọi khi có message từ Worker Thread lên giao diện chính.
 
@@ -99,7 +99,7 @@ w.terminate();
 
 #### Truyền Message thông thường
 
-Trong phương pháp này, tham số truyền vào sẽ là một [object](/javascript-object-last-but-not-least). Dữ liệu sẽ được copy từ phía gửi sang phía nhận.
+Trong phương pháp này, tham số truyền vào sẽ là một [object](/javascript-object-last-but-not-least/). Dữ liệu sẽ được copy từ phía gửi sang phía nhận.
 
 Ví dụ như sau:
 
@@ -113,7 +113,7 @@ function startWorker() {
 }
 ```
 
-Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number, String, Boolean](/kieu-du-lieu-trong-javascript), [Array](/javascript-array-co-ban).
+Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number, String, Boolean](/kieu-du-lieu-trong-javascript/), [Array](/javascript-array-co-ban/).
 
 Và ở Worker Thread, hàm **onmessage** sẽ được gọi:
 
@@ -241,7 +241,7 @@ Kết quả:
 
 Bài viết hôm nay dừng lại tại đây. Để tìm hiểu thêm về JavaScript Web Worker thì bạn có thể tìm hiểu thêm ở những link phía dưới đây.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo,](/javascript-service-worker-co-ban) thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-service-worker-co-ban/), thân ái!
 
 ## Xem thêm
 

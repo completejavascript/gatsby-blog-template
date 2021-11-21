@@ -41,7 +41,7 @@ $.animate($myClass, {
 
 Bạn có thể thấy rằng, khi sử dụng Method Chaining, bạn hầu như chỉ cần viết các đoạn code trên cùng 1 dòng.
 
-Thực tế, kĩ thuật này đã và đang được sử dụng rất nhiều trong hầu hết các thư viện, [Framework JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app).
+Thực tế, kĩ thuật này đã và đang được sử dụng rất nhiều trong hầu hết các thư viện, [Framework JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/).
 
 ## Cách sử dụng kĩ thuật Method Chaining cơ bản
 
@@ -116,7 +116,7 @@ Trong đoạn code trên, mình đã triển khai các phương thức theo Meth
 
 Cách thực hiện ở đây rất đơn giản là: mình chỉ cần thêm _**return this**_ vào cuối mỗi phương thức.
 
-_This_ ở đây đại diện cho [object](/javascript-object-last-but-not-least) được tạo ra (_num_) sau khi sử dụng từ khóa _new_.
+_This_ ở đây đại diện cho [object](/javascript-object-last-but-not-least/) được tạo ra (_num_) sau khi sử dụng từ khóa _new_.
 
 Rất dễ hiểu phải không bạn?
 
@@ -124,7 +124,7 @@ Rất dễ hiểu phải không bạn?
 
 Trên đây là những thông tin cơ bản về kĩ thuật Method Chaining. Để hiểu thêm về kĩ thuật này, bạn có thể đọc thêm trong các bài viết ở phần tham khảo dưới đây.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lam-sach-website-wordpress-nhu-the-nao), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lam-sach-website-wordpress-nhu-the-nao/), thân ái!
 
 ## Tham khảo
 

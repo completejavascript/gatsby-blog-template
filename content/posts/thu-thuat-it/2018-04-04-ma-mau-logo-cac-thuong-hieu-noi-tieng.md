@@ -262,6 +262,6 @@ tags:
 
 Trên đây là mã màu của một số thương hiệu nổi tiếng. Nếu bạn muốn cập nhật thêm mã màu logo của thương hiệu nào thì vui lòng để lại bình luận nhé.
 
-Ngoài ra, nếu bạn muốn tự tìm kiếm các palette màu mới, cập nhật xu hướng thì có thể tham khảo các trang [web tạo palette màu](/trang-web-tao-palette-mau-cuc-tot).
+Ngoài ra, nếu bạn muốn tự tìm kiếm các palette màu mới, cập nhật xu hướng thì có thể tham khảo các trang [web tạo palette màu](/trang-web-tao-palette-mau-cuc-tot/).
 
 Xin chào và hẹn gặp bạn ở bài viết tiếp theo, thân ái!

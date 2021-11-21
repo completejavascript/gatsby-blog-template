@@ -60,7 +60,7 @@ done!
 
 > 💡 Theo mình, dù khối code sau câu lệnh `if` là một hay nhiều câu lệnh thì bạn cũng nên dùng cặp dấu `{}` để code dễ đọc hơn.
 >
-> Ngoài ra, mình cũng nhắc lại quy luật [chuyển đổi kiểu dữ liệu](/chuyen-doi-kieu-du-lieu-trong-javascript) sang boolean như sau:
+> Ngoài ra, mình cũng nhắc lại quy luật [chuyển đổi kiểu dữ liệu](/chuyen-doi-kieu-du-lieu-trong-javascript/) sang boolean như sau:
 >
 > - Những giá trị "empty" như: số `0`, string rỗng `""`, `null`, `undefined` và `NaN` sẽ trở thành `false`.
 > - Những giá trị còn lại sẽ trở thành `true`.
@@ -96,7 +96,7 @@ if (result) {
 
 ### Mệnh đề `else`
 
-Đi theo câu lệnh `if` còn có mệnh đề `else` - dùng để thực hiện một khối lệnh khi điều kiện trong `if` là giá trị [falsy](/toan-tu-logic-trong-javascript#truthy-và-falsy-trong-javascript-là-gì).
+Đi theo câu lệnh `if` còn có mệnh đề `else` - dùng để thực hiện một khối lệnh khi điều kiện trong `if` là giá trị [falsy](/toan-tu-logic-trong-javascript/#truthy-và-falsy-trong-javascript-là-gì).
 
 Tiếp theo ví dụ trên:
 
@@ -290,7 +290,7 @@ Toán tử `?` thường chỉ dùng để gán giá trị cho một biến dự
 
 ### Bài 1
 
-Sử dụng [hàm `prompt`](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt), hiển thị nội dung yêu cầu người dùng nhập vào một số nguyên dương chẵn.
+Sử dụng [hàm `prompt`](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt/), hiển thị nội dung yêu cầu người dùng nhập vào một số nguyên dương chẵn.
 
 Nếu người dùng nhập vào đúng số chẵn thì hiển thị **Bạn đã nhập đúng!**. Ngược lại, hiển thị **Bạn đã nhập sai!**.
 

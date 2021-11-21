@@ -94,7 +94,7 @@ Như vậy đoạn code 3 là đoạn code in ra kết quả như mong muốn.
 
 **Giải thích:**
 
-Để giải quyết bài toán này bạn cần nắm được sự khác biệt giữa [function](/ham-la-gi-ham-trong-javascript) và [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). Cụ thể là về **[this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)**.
+Để giải quyết bài toán này bạn cần nắm được sự khác biệt giữa [function](/ham-la-gi-ham-trong-javascript/) và [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). Cụ thể là về **[this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)**.
 
 ➤ Đối với function:
 
@@ -132,7 +132,7 @@ func2.bind(obj)();
 // => function 2:  {x: 1}
 ```
 
-Ở đây, mình dùng phương thức [bind](/phan-biet-call-apply-va-bind-trong-javascript) để bind _this_ với đối tượng _obj_. Vì vậy, _this_ sẽ là tương ứng với đối tượng _obj_.
+Ở đây, mình dùng phương thức [bind](/phan-biet-call-apply-va-bind-trong-javascript/) để bind _this_ với đối tượng _obj_. Vì vậy, _this_ sẽ là tương ứng với đối tượng _obj_.
 
 **Ví dụ 3:**
 
@@ -333,7 +333,7 @@ Với câu hỏi này, bạn cần quan tâm đến 2 vấn đề:
 (function (p) {})(parameter);
 ```
 
-Trong đó, _parameter_ sẽ tương ứng với _p_.Quay lại với câu hỏi, _foo_ chính là [array](/javascript-array-co-ban) [1, 2, 3].
+Trong đó, _parameter_ sẽ tương ứng với _p_.Quay lại với câu hỏi, _foo_ chính là [array](/javascript-array-co-ban/) [1, 2, 3].
 
 **Toán tử [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)** sẽ trả về string biểu diễn kiểu dữ liệu của toán hạng tương ứng. Tuy nhiên, bạn cần chú ý là **typeof (array)** luôn trả về "object" chứ không phải "array".
 
@@ -555,4 +555,4 @@ Với các toán tử còn lại (-, \*, /), JavaScript sẽ convert về number
 
 Trên đây là 6 câu hỏi phỏng vấn JavaScript cũng rất hay. Nếu bạn có cùng nhận xét với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-3), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-3/), thân ái!

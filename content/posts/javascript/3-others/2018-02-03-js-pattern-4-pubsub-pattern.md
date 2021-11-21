@@ -50,7 +50,7 @@ let Events = (() => {
 })();
 ```
 
-Trước tiên, bạn thấy rằng cách triển khai pattern này sử dụng [Revealing Module Pattern](/js-pattern-2-module-pattern), với 3 [function](/ham-la-gi-ham-trong-javascript) được public là: **on**, **off** và **emit**.
+Trước tiên, bạn thấy rằng cách triển khai pattern này sử dụng [Revealing Module Pattern](/js-pattern-2-module-pattern/), với 3 [function](/ham-la-gi-ham-trong-javascript/) được public là: **on**, **off** và **emit**.
 
 ### Đăng ký sự kiện với hàm on
 
@@ -77,7 +77,7 @@ function on(eventName, fn) {
 }
 ```
 
-Bạn có thể thấy rằng, **events** là một [object](/javascript-object-last-but-not-least) rỗng. Sau này, mỗi thuộc tính (key) của events sẽ là tên của event được đăng ký. Giá trị của thuộc tính (value) là một [mảng](/javascript-array-co-ban) của các function.
+Bạn có thể thấy rằng, **events** là một [object](/javascript-object-last-but-not-least/) rỗng. Sau này, mỗi thuộc tính (key) của events sẽ là tên của event được đăng ký. Giá trị của thuộc tính (value) là một [mảng](/javascript-array-co-ban/) của các function.
 
 Ban đầu events[eventName] sẽ là **undefined**, nên ta sẽ khởi tạoevents[eventName] = [] - là một mảng rỗng. Ngược lại, khi thành phần này đã tồn tại thì chỉ cần [push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) hàm số mới vào mảng.
 
@@ -131,7 +131,7 @@ Hàm số này sẽ duyệt mảng ứng với **eventName** và kiểm tra tấ
 Hàm **emit** có 2 tham số:
 
 - **eventName**: tên sự kiện
-- **data**: dữ liệu truyền cho các hàm đã đăng ký sự kiện, trong đó, data có thể là tất cả các kiểu dữ liệu: [number](/kieu-du-lieu-trong-javascript), array, string hay object,...
+- **data**: dữ liệu truyền cho các hàm đã đăng ký sự kiện, trong đó, data có thể là tất cả các kiểu dữ liệu: [number](/kieu-du-lieu-trong-javascript/), array, string hay object,...
 
 Ví dụ:
 
@@ -154,7 +154,7 @@ function emit(eventName, data) {
 }
 ```
 
-Hàm này sẽ duyệt toàn bộ mảng ứng với **eventName** sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi). Sau đó, mỗi hàm số trong mảng sẽ được gọi và truyền vào đối số là data.
+Hàm này sẽ duyệt toàn bộ mảng ứng với **eventName** sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi/). Sau đó, mỗi hàm số trong mảng sẽ được gọi và truyền vào đối số là data.
 
 Trong ví dụ trên, events["addItem"] = [updateItem1, updateItem2]. Do đó, khi event addItem được kích hoạt, hàm số updateItem1({ name : "apple", quantity: 2 }) và updateItem2({ name : "apple", quantity: 2 }) sẽ được thực hiện.
 

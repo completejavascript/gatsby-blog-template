@@ -22,7 +22,7 @@ Có thể bạn thừa biết, phiên bản ES6 của JavaScript đã giới thi
 
 ## ES6 Template String là gì?
 
-ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong [string](/kieu-du-lieu-trong-javascript). Trong đó, thay vì sử dụng cặp dấu ngoặc đơn ('') hay ngoặc kép (""), bạn sử dụng cặp dấu **backtick** hay **backqoute**, để biểu diễn string.
+ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong [string](/kieu-du-lieu-trong-javascript/). Trong đó, thay vì sử dụng cặp dấu ngoặc đơn ('') hay ngoặc kép (""), bạn sử dụng cặp dấu **backtick** hay **backqoute**, để biểu diễn string.
 
 Xin lỗi vì mình chưa tìm ra cách để hiển thị cặp dấu này ở wordpress, nên dùng tạm cái này:
 
@@ -199,9 +199,9 @@ Trên đây là một số những tính năng mà mình thấy rất hữu ích
 
 Nghe tên có **Template** là mình nghĩ ngay đến việc sử dụng thằng này vào xây dựng HTML template. Vì mấy bài viết gần đây mình cũng có đề cập đến chủ đề này:
 
-- [HTML String sang DOM Node với DOMParser](/html-string-sang-dom-node-voi-domparser)
-- [HTML Template sang DOM Node](/chuyen-html-template-sang-dom-node)
-- [Mustache Template với jQuery](/mustache-template-voi-jquery)
+- [HTML String sang DOM Node với DOMParser](/html-string-sang-dom-node-voi-domparser/)
+- [HTML Template sang DOM Node](/chuyen-html-template-sang-dom-node/)
+- [Mustache Template với jQuery](/mustache-template-voi-jquery/)
 
 **Liệu mình có thể xây dựng một thư viện tương đương như [Mustache.js](https://github.com/janl/mustache.js/) hay [Handlebars.js](https://handlebarsjs.com/)?**
 
@@ -222,11 +222,11 @@ Nhưng dù sao thì cứ thử làm xem nó ra cái gì nào.
 
 Trước khi bắt đầu, mình nghĩ nên đưa ra một bài toán ví dụ để áp dụng cái này. Và như đã nói ở trên, mình có viết 3 bài về chủ đề này rồi, do đó, tốt nhất là lấy lại một ví dụ trong đấy.
 
-Mình quyết định sử dụng ví dụ trong bài viết **[HTML Template sang DOM Node](/chuyen-html-template-sang-dom-node):**
+Mình quyết định sử dụng ví dụ trong bài viết **[HTML Template sang DOM Node](/chuyen-html-template-sang-dom-node/):**
 
 https://codepen.io/completejavascript/pen/MVyXyp
 
-Bạn có thể đọc lại bài viết đó để hiểu rõ hơn. Nhưng túm gọn lại, bài toán này nhằm xây dựng template để hiển thị mục bình luận với dữ liệu được cung cấp dưới dạng [mảng](/javascript-array-co-ban).
+Bạn có thể đọc lại bài viết đó để hiểu rõ hơn. Nhưng túm gọn lại, bài toán này nhằm xây dựng template để hiển thị mục bình luận với dữ liệu được cung cấp dưới dạng [mảng](/javascript-array-co-ban/).
 
 Trong bài đó, mình sử dụng thẻ [template](https://developer.mozilla.org/en/docs/Web/HTML/Element/template) của HTML để khai báo html template:
 
@@ -290,7 +290,7 @@ Bạn có thể thấy là cách định nghĩa này rất giống với Mustach
 
 #### Render template thành html
 
-Dưới đây là đoạn code [xử lý sự kiện](/xu-ly-mot-event-javascript-co-ban) khi người dùng click vào button **Add**:
+Dưới đây là đoạn code [xử lý sự kiện](/xu-ly-mot-event-javascript-co-ban/) khi người dùng click vào button **Add**:
 
 ```js
 btnAdd.addEventListener("click", () => {
@@ -302,13 +302,13 @@ btnAdd.addEventListener("click", () => {
 });
 ```
 
-Với mảng **data**, mình sử dụng [forEach](/javascript-foreach-la-cai-quai-gi) để duyệt từng phần tử một - **item** và gọi [hàm](/ham-la-gi-ham-trong-javascript):
+Với mảng **data**, mình sử dụng [forEach](/javascript-foreach-la-cai-quai-gi/) để duyệt từng phần tử một - **item** và gọi [hàm](/ham-la-gi-ham-trong-javascript/):
 
 ```js
 let tmpl = itemTemplate(item);
 ```
 
-Kết quả của câu lệnh trên là một html string. Tiếp theo, mình cần tạo ra [DOM](/co-ban-ve-dom-javascript) để chèn vào html.
+Kết quả của câu lệnh trên là một html string. Tiếp theo, mình cần tạo ra [DOM](/co-ban-ve-dom-javascript/) để chèn vào html.
 
 Cách đơn giản nhất là sử dụng DocumentFragment bằng cách:
 
@@ -376,7 +376,7 @@ Ngoài ra, nếu bạn biết ES6 Template String có thể ứng dụng vào đ
 
 Và nếu bạn có thắc mắc hay góp ý gì với bài viết của mình thì cũng vui lòng để lại dưới phần bình luận. Mình mong muốn nhận được góp ý của bạn để có thể viết được những bài viết chất lượng hơn sau này.
 
-Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/6-cach-loai-bo-phan-tu-lap-trong-mang), thân ái!
+Cuối cùng, xin chào và hẹn gặp lại ở [bài viết tiếp theo](/6-cach-loai-bo-phan-tu-lap-trong-mang/), thân ái!
 
 **Tham khảo:**
 

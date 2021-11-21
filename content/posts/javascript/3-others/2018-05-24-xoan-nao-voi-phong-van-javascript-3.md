@@ -52,7 +52,7 @@ Theo định nghĩa của [Object.create()](https://developer.mozilla.org/en-US/
 
 Tức là Object.create sẽ tạo ra một object mới, sử dụng object cho trước làm **proto** cho object mới tạo ra.
 
-Trong câu hỏi này, [object](/javascript-object-last-but-not-least) a sẽ được dùng làm **proto** cho object b.
+Trong câu hỏi này, [object](/javascript-object-last-but-not-least/) a sẽ được dùng làm **proto** cho object b.
 
 Giả sử không có câu lệnh _delete b.x_ thì bạn có thể đoán được kết quả sẽ trả về của phương thức _getX()_ là **this.x = b.x = 10**. Nhưng nếu _delete b.x_ thì JavaScript sẽ tìm đến thằng cha gần nhất của b, thông qua **proto**, và đó chính là object a. Vì vậy, kết quả **this.x = a.x = 1**.
 
@@ -149,7 +149,7 @@ console.log(y);
 
 Biến _y_ viết như vậy sẽ có phạm vi global, tức nó trở thành một thuộc tính của window. Do đó, **console.log(y) = 10**.
 
-Trong khi đó, nếu bạn in ra giá trị của x bằng console.log(x) thì kết quả báo lỗi **ReferenceError: x is not defined**. Bởi vì, biến _x_ kiểu [var sẽ có phạm vi là block](/phan-biet-var-va-let-trong-javascript), tức là chỉ nó chỉ tồn tại trong [function](/ham-la-gi-ham-trong-javascript) trên.
+Trong khi đó, nếu bạn in ra giá trị của x bằng console.log(x) thì kết quả báo lỗi **ReferenceError: x is not defined**. Bởi vì, biến _x_ kiểu [var sẽ có phạm vi là block](/phan-biet-var-va-let-trong-javascript/), tức là chỉ nó chỉ tồn tại trong [function](/ham-la-gi-ham-trong-javascript/) trên.
 
 </div>
 
@@ -230,7 +230,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Ở đây, mình sử dụng object b, array c và object d làm giá trị key cho object a. Và đối với object trong JavaScript, vì key luôn luôn có [kiểu string](/kieu-du-lieu-trong-javascript) nên object b, array c và object d sẽ được convert sang kiểu string. Khi đó, sẽ có một số trường hợp đặc biệt sau:
+Ở đây, mình sử dụng object b, array c và object d làm giá trị key cho object a. Và đối với object trong JavaScript, vì key luôn luôn có [kiểu string](/kieu-du-lieu-trong-javascript/) nên object b, array c và object d sẽ được convert sang kiểu string. Khi đó, sẽ có một số trường hợp đặc biệt sau:
 
 Với mọi object khi convert sang kiểu string ta đều thu được string có dạng **[object Object]**;
 
@@ -328,4 +328,4 @@ Lần này, biến y được khai báo sử dụng let, nên nó sẽ không đ
 
 Trên đây là 6 câu hỏi phỏng vấn JavaScript cũng rất hay. Nếu bạn có cùng nhận xét với mình thì vui lòng để lại bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-4), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/xoan-nao-voi-phong-van-javascript-4/), thân ái!

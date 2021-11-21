@@ -17,7 +17,7 @@ tags:
 
 ## Giống nhau
 
-Arrow function và function đều là [function](/ham-la-gi-ham-trong-javascript).
+Arrow function và function đều là [function](/ham-la-gi-ham-trong-javascript/).
 
 ## Khác nhau cơ bản
 
@@ -83,7 +83,7 @@ let double = function (x) {
 double(1); // 2
 ```
 
-Ví dụ sử dụng arrow function với các [higher-order functions](https://eloquentjavascript.net/05_higher_order.html), như: [forEach](/javascript-foreach-la-cai-quai-gi), map, filter,...
+Ví dụ sử dụng arrow function với các [higher-order functions](https://eloquentjavascript.net/05_higher_order.html), như: [forEach](/javascript-foreach-la-cai-quai-gi/), map, filter,...
 
 Sử dụng map với function:
 
@@ -233,7 +233,7 @@ Vì vậy, nếu muốn định nghĩa _method_ cho object thì bạn nên sử 
 
 ### Arrow function không thể sử dụng làm hàm constructor
 
-Trước khi ES6 ra đời, người ta có thể sử dụng function làm [hàm khởi tạo](/js-pattern-constructor-pattern) cho object.
+Trước khi ES6 ra đời, người ta có thể sử dụng function làm [hàm khởi tạo](/js-pattern-constructor-pattern/) cho object.
 
 ```js
 function Dog(name, color) {
@@ -261,7 +261,7 @@ console.log(myDog.name, myDog.color);
 
 ### Arrow function không có thuộc tính prototype
 
-Về cơ bản, mọi [đối tượng](/javascript-object-last-but-not-least) trong JavaScript đều có thuộc tính prototype và [kế thừa](/ke-thua-co-ban-trong-javascript) cũng theo prototype.
+Về cơ bản, mọi [đối tượng](/javascript-object-last-but-not-least/) trong JavaScript đều có thuộc tính prototype và [kế thừa](/ke-thua-co-ban-trong-javascript/) cũng theo prototype.
 
 Tuy nhiên, nếu _arrow function_ không thể sử dụng làm constructor thì mình cho rằng điều này cũng hợp lý.
 
@@ -308,4 +308,4 @@ Trên đây là một số điểm giúp bạn phân biệt arrow function và f
 
 Nếu bạn thấy arrow function khác với function ở điểm nào nữa thì có thể chia sẻ lại với mình và mọi người bằng cách bình luận xuống phía dưới nhé!
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tim-hieu-ki-thuat-method-chaining-co-ban), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/tim-hieu-ki-thuat-method-chaining-co-ban/), thân ái!

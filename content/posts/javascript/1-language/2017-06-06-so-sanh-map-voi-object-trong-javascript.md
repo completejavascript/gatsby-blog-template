@@ -23,9 +23,9 @@ Mời bạn theo dõi bài viết!
 
 ## Nhắc lại khái niệm
 
-**[Object](/javascript-object-last-but-not-least)** là một khái niệm trừu tượng dùng để biểu diễn một vật thể (cụ thể). Trong đó, các thuộc tính dùng để miêu tả đặc điểm, tính chất của đối tượng. Và các phương thức dùng để chỉ các hoạt động của đối tượng.
+**[Object](/javascript-object-last-but-not-least/)** là một khái niệm trừu tượng dùng để biểu diễn một vật thể (cụ thể). Trong đó, các thuộc tính dùng để miêu tả đặc điểm, tính chất của đối tượng. Và các phương thức dùng để chỉ các hoạt động của đối tượng.
 
-**[Map](/map-trong-javascript-thi-sao)** là một cấu trúc dữ liệu cho phép lưu trữ dữ liệu theo kiểu **key-value**, tương tự như object.
+**[Map](/map-trong-javascript-thi-sao/)** là một cấu trúc dữ liệu cho phép lưu trữ dữ liệu theo kiểu **key-value**, tương tự như object.
 
 ## So sánh Map với Object trong JavaScript
 
@@ -42,7 +42,7 @@ Trước khi Map xuất hiện, người ta vẫn thường sử dụng Object c
 
 #### Kiểu dữ liệu của key
 
-Object chỉ cho phép lưu trữ **key** kiểu [String](/kieu-du-lieu-trong-javascript) hoặc [Symbol](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
+Object chỉ cho phép lưu trữ **key** kiểu [String](/kieu-du-lieu-trong-javascript/) hoặc [Symbol](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Symbol).
 
 ```js
 const symbol1 = Symbol(1);
@@ -55,7 +55,7 @@ console.log(obj);
 // => {x: 1, a b: 2, symbol1: 3}
 ```
 
-Trong khi đó, Map cho phép **mọi kiểu dữ liệu** có thể làm key, kể cả [Number](/kieu-du-lieu-trong-javascript), NaN, [Function](/ham-la-gi-ham-trong-javascript), Object,...
+Trong khi đó, Map cho phép **mọi kiểu dữ liệu** có thể làm key, kể cả [Number](/kieu-du-lieu-trong-javascript/), NaN, [Function](/ham-la-gi-ham-trong-javascript/), Object,...
 
 ```js
 const fun = function () {};
@@ -127,7 +127,7 @@ console.log(map.size);
 
 Đối với Object, bạn phải đếm số lượng các thuộc tính thủ công. Hoặc bạn cũng có thể tính được số lượng này thông qua phương thức [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys).
 
-Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tính của Object. Lúc này, bạn chỉ cần sử dụng thuộc tính _length_ của [Array](/javascript-array-co-ban) là được.
+Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tính của Object. Lúc này, bạn chỉ cần sử dụng thuộc tính _length_ của [Array](/javascript-array-co-ban/) là được.
 
 ```js
 const obj = { xyz: 1 };

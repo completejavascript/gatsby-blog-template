@@ -13,7 +13,7 @@ tags:
   - RegExp
 ---
 
-Trong bài viết [tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript), mình có giới thiệu với bạn về Regular Expression trong JavaScript rồi. Hy vọng qua bài viết đó, bạn đã biết và hiểu về các cú pháp cơ bản của RegExp. Còn trong trường hợp bạn vẫn chưa biết gì về nó, mình khuyên bạn nên quay lại bài viết kia để tìm hiểu về RegExp thật kỹ trước đã. Vì trong bài viết này, mình sẽ chỉ tổng hợp lại một số biểu thức chính quy RegExp hay mà mình sưu tầm được và sẽ không giải thích gì nhiều.
+Trong bài viết [tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/), mình có giới thiệu với bạn về Regular Expression trong JavaScript rồi. Hy vọng qua bài viết đó, bạn đã biết và hiểu về các cú pháp cơ bản của RegExp. Còn trong trường hợp bạn vẫn chưa biết gì về nó, mình khuyên bạn nên quay lại bài viết kia để tìm hiểu về RegExp thật kỹ trước đã. Vì trong bài viết này, mình sẽ chỉ tổng hợp lại một số biểu thức chính quy RegExp hay mà mình sưu tầm được và sẽ không giải thích gì nhiều.
 
 Trước khi đi vào nội dung chính của bài viết, mình sẽ tóm tắt lại một số kiến thức cơ bản về biểu thức chính quy RegExp để bạn tiện theo dõi:
 

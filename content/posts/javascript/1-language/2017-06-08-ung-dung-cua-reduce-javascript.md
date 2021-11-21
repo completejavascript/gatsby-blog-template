@@ -22,7 +22,7 @@ Dĩ nhiên, đây chỉ là quan điểm cá nhân của mình thôi. Nếu bạ
 
 ## Cú pháp
 
-JavaScript Reduce là một phương thức có sẵn của Array, được sử dụng để thực thi một [hàm](/ham-la-gi-ham-trong-javascript) lên các phần tử của [mảng](/javascript-array-co-ban) (từ trái sang phải) với một biến tích lũy để thu về một giá trị duy nhất.
+JavaScript Reduce là một phương thức có sẵn của Array, được sử dụng để thực thi một [hàm](/ham-la-gi-ham-trong-javascript/) lên các phần tử của [mảng](/javascript-array-co-ban/) (từ trái sang phải) với một biến tích lũy để thu về một giá trị duy nhất.
 
 **Cú pháp:**
 
@@ -98,7 +98,7 @@ console.log(allPosts);
 */
 ```
 
-Thậm chí lúc đó, mình còn không biết cách sử dụng mấy phương thức của array như: [forEach](/javascript-foreach-la-cai-quai-gi), map, filter,... nữa cơ. Nên bài toán nào mình cũng sử dụng vòng lặp for kiểu như trên.
+Thậm chí lúc đó, mình còn không biết cách sử dụng mấy phương thức của array như: [forEach](/javascript-foreach-la-cai-quai-gi/), map, filter,... nữa cơ. Nên bài toán nào mình cũng sử dụng vòng lặp for kiểu như trên.
 
 Tuy nhiên, sau một khoảng thời gian học hành, thực hành nhiều và tiếp cận với tư tưởng lập trình hàm, mình sẽ sử dụng phương thức Reduce để giải quyết bài toán trên:
 
@@ -195,7 +195,7 @@ const getPost = (postID, posts) => {
 
 Theo mình thấy, đây cũng là một cách làm hay và dễ hiểu bởi cách suy nghĩ trực tiếp vào bài toán. Tuy nhiên, cách làm này có một vấn đề là: nếu mảng các bài viết không phải 4 phần tử mà là hàng nghìn, hàng triệu phần tử thì việc dùng vòng lặp for để duyệt mảng với mỗi lần truy vấn thật sự rất tốn thời gian - độ phức tạp thuật toán là O(N).
 
-Cách giải quyết cho vấn đề trên là mình sẽ xây dựng một [object](/javascript-object-last-but-not-least) để map mỗi **postID** với giá trị tương ứng của bài viết. Và khi đã có một object như vậy thì việc tìm kiếm sẽ vô cùng đơn giản - độ phức tạp thuật toán là O(1).
+Cách giải quyết cho vấn đề trên là mình sẽ xây dựng một [object](/javascript-object-last-but-not-least/) để map mỗi **postID** với giá trị tương ứng của bài viết. Và khi đã có một object như vậy thì việc tìm kiếm sẽ vô cùng đơn giản - độ phức tạp thuật toán là O(1).
 
 ```js
 // Object để map mỗi postID với mỗi post tương ứng

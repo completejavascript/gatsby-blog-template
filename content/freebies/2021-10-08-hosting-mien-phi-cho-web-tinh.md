@@ -18,9 +18,9 @@ Nhưng trước khi đi vào danh sách chi tiết 10 hosting miễn phí này, 
 
 Web tĩnh hiểu một cách đơn giản là trang web mà nội dung của nó không thể thay đổi được khi đã deploy code lên hosting. Bất cứ một thay đổi nào về nội dung bài viết thì đều phải chỉnh sửa lại code, build và deploy lại lên hosting.
 
-Với web tĩnh, bạn có thể sử dụng HTML, CSS và JavaScript. Hoặc sử dụng một Static Site Generator (ví dụ [Gatsby.js](/tag/gatsbyjs)) để hỗ trợ xây dựng website nhanh chóng, đơn giản hơn.
+Với web tĩnh, bạn có thể sử dụng HTML, CSS và JavaScript. Hoặc sử dụng một Static Site Generator (ví dụ [Gatsby.js](/tag/gatsbyjs/)) để hỗ trợ xây dựng website nhanh chóng, đơn giản hơn.
 
-Chính vì web tĩnh không có những yêu cầu về server như quản lý database, tạo nội dung động với CMS như [Wordpress](/tag/wordpress) nên các dịch vụ dưới đây đều cung cấp hosting miễn phí cho web tĩnh. Và thậm chí là các website này còn cho phép thay đổi tên miền, miễn phí SSL và hỗ trợ CI (Continuous Integration).
+Chính vì web tĩnh không có những yêu cầu về server như quản lý database, tạo nội dung động với CMS như [Wordpress](/tag/wordpress/) nên các dịch vụ dưới đây đều cung cấp hosting miễn phí cho web tĩnh. Và thậm chí là các website này còn cho phép thay đổi tên miền, miễn phí SSL và hỗ trợ CI (Continuous Integration).
 
 Bạn hãy đọc và xem dịch vụ nào phù hợp với dự án cá nhân của bạn nhé!
 
@@ -32,7 +32,7 @@ Dưới đây là danh sách các hosting miễn phí cho phép bạn thay đổ
 
 ![netlify](../images/freebies/hosting-mien-phi-netlify.png)
 
-Bản thân blog **Complete JavaScript** của mình cũng là web tĩnh được [deploy lên Netlify](/tao-trang-blog-voi-gatsby-js#deploy-lên-netlify). Và mình rất ưng ý với dịch vụ hosting này nên sẽ tiếp tục sử dụng nó dài dài.
+Bản thân blog **Complete JavaScript** của mình cũng là web tĩnh được [deploy lên Netlify](/tao-trang-blog-voi-gatsby-js/#deploy-lên-netlify). Và mình rất ưng ý với dịch vụ hosting này nên sẽ tiếp tục sử dụng nó dài dài.
 
 Với Netlify bạn không chỉ deploy được web tĩnh mà còn cả single-page application và website thương mại điện tử phức tạp.
 
@@ -53,7 +53,7 @@ Github Pages cho phép bạn deploy web tĩnh trực tiếp từ repo trên Gith
 
 Github đặc biệt hỗ trợ Jekyll (vì đơn giản nó là hàng của Github mà). Tuy nhiên, bạn cũng có thể dụng các Static Site Generator khác một cách bình thường.
 
-Bản thân mình thì thường hay deploy single-page application [viết bằng React lên Github](/deploy-ung-dung-react-len-github-pages). Vì nó nhanh, tiện và đơn giản.
+Bản thân mình thì thường hay deploy single-page application [viết bằng React lên Github](/deploy-ung-dung-react-len-github-pages/). Vì nó nhanh, tiện và đơn giản.
 
 **Giá**: miễn phí  
 **Giới hạn**: kích thước 1GB, băng thông 100GB/tháng, 10 lần build/giờ  

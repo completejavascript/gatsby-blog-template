@@ -13,7 +13,7 @@ tags:
   - Modules
 ---
 
-Hiện tại, **ES Modules** đã được [support bởi khá nhiều các trình duyệt](https://caniuse.com/#feat=es6-module). Điều đó nghĩa là bạn có thể sử dụng ES Modules trực tiếp trên trình duyệt mà không cần phải [cài đặt Node.js](/huong-dan-tim-hieu-node-js-co-ban) cùng với các công cụ như [Browserify](http://browserify.org/), [RequireJS](https://requirejs.org/), [Webpack](https://webpack.js.org/),...
+Hiện tại, **ES Modules** đã được [support bởi khá nhiều các trình duyệt](https://caniuse.com/#feat=es6-module). Điều đó nghĩa là bạn có thể sử dụng ES Modules trực tiếp trên trình duyệt mà không cần phải [cài đặt Node.js](/huong-dan-tim-hieu-node-js-co-ban/) cùng với các công cụ như [Browserify](http://browserify.org/), [RequireJS](https://requirejs.org/), [Webpack](https://webpack.js.org/),...
 
 Sau đây, mình sẽ tìm hiểu về ES Modules và cách sử dụng nó trực tiếp trên trình duyệt. Mời bạn theo dõi bài viết!
 
@@ -21,7 +21,7 @@ Sau đây, mình sẽ tìm hiểu về ES Modules và cách sử dụng nó tr�
 
 ES Modules (hay còn gọi là "JavaScript Modules", "JS Modules" hay "ECMAScript modules") là một tính năng mới của trình duyệt cho phép bạn làm việc với modules. Nhờ vậy, bạn có thể chia nhỏ chương trình ra thành các modules, với mỗi module có một chức năng riêng biệt.
 
-Trong một module, bạn có thể sử dụng từ khoá [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) để export bất kỳ kiểu dữ liệu nào như: biến số với [var, let](/phan-biet-var-va-let-trong-javascript) hay const, class, [function](/ham-la-gi-ham-trong-javascript),... Sau đó, bạn sử dụng từ khoá [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) để sử dụng chúng ở một file khác.
+Trong một module, bạn có thể sử dụng từ khoá [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) để export bất kỳ kiểu dữ liệu nào như: biến số với [var, let](/phan-biet-var-va-let-trong-javascript/) hay const, class, [function](/ham-la-gi-ham-trong-javascript/),... Sau đó, bạn sử dụng từ khoá [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) để sử dụng chúng ở một file khác.
 
 Sử dụng ES Modules có một số lợi ích như:
 
@@ -32,7 +32,7 @@ Nói vậy thì cách sử dụng ES Modules có gì khác với JavaScript thô
 
 ## ES Modules với JavaScript thông thường
 
-Bởi vì, ES Modules là một tính năng mới (từ ES6) dành cho các trình duyệt hiện đại. Do đó, nó luôn luôn được sử dụng ở chế độ [Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript).
+Bởi vì, ES Modules là một tính năng mới (từ ES6) dành cho các trình duyệt hiện đại. Do đó, nó luôn luôn được sử dụng ở chế độ [Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript/).
 
 Tiếp theo, comment code theo kiểu HTML không được support ở modules, mặc dù nó vẫn hợp lệ ở JS thông thường. Ví dụ:
 
@@ -160,7 +160,7 @@ export class Utils {
 }
 ```
 
-Hoặc gộp chúng vào thành 1 [object](/javascript-object-last-but-not-least) với một từ khoá _export_:
+Hoặc gộp chúng vào thành 1 [object](/javascript-object-last-but-not-least/) với một từ khoá _export_:
 
 ```js
 let x = 1;

@@ -13,11 +13,11 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Trong hai bài viết về [biến](/bien-la-gi-bien-trong-javascript) và [hằng](/hang-la-gi-hang-trong-javascript) trong JavaScript, mình có đề cập đến việc **gán giá trị** cho biến và hằng. Ở đó, mỗi giá trị đều có một kiểu dữ liệu nhất định. Vậy bạn có biết kiểu dữ liệu là gì và các kiểu dữ liệu trong JavaScript là gì không?
+Trong hai bài viết về [biến](/bien-la-gi-bien-trong-javascript/) và [hằng](/hang-la-gi-hang-trong-javascript/) trong JavaScript, mình có đề cập đến việc **gán giá trị** cho biến và hằng. Ở đó, mỗi giá trị đều có một kiểu dữ liệu nhất định. Vậy bạn có biết kiểu dữ liệu là gì và các kiểu dữ liệu trong JavaScript là gì không?
 
 Sau đây mình sẽ cùng tìm hiểu về các kiểu dữ liệu cơ bản trong JavaScript. Còn về chi tiết của từng kiểu dữ liệu thì mình sẽ giới thiệu ở các bài tiếp theo.
 
-Bạn nhớ theo dõi chuyên mục [JavaScript](/javascript) để không bỏ lỡ bài viết mới nhất.
+Bạn nhớ theo dõi chuyên mục [JavaScript](/javascript/) để không bỏ lỡ bài viết mới nhất.
 
 ## Kiểu dữ liệu là gì?
 
@@ -215,7 +215,7 @@ console.log(`1 + 2 = ${1 + 2}`); // 1 + 2 = 3
 
 Symbol là một kiểu dữ liệu nguyên thủy dùng để tạo ra các giá trị duy nhất (**unique value**) và bất biến (**immutable**). Symbol thường được dùng làm **key** cho kiểu dữ liệu **object** sau đây.
 
-> Mình đã viết một bài chi tiết về Symbol. Bạn có thể [tìm hiểu về Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript) để hiểu nhiều hơn về kiểu dữ liệu này.
+> Mình đã viết một bài chi tiết về Symbol. Bạn có thể [tìm hiểu về Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript/) để hiểu nhiều hơn về kiểu dữ liệu này.
 
 ### Kiểu dữ liệu object
 
@@ -223,7 +223,7 @@ Object là kiểu dữ liệu tham chiếu. Có thể hiểu **object** là mộ
 
 Trong đó, kiểu dữ liệu của **key** có thể là **string** hoặc **symbol**. Và **value** ứng với **key** có thể là bất kỳ kiểu dữ liệu nào.
 
-> Mình sẽ tìm hiểu sâu hơn về **object** trong bài viết [JavaScript Object - last but not least](/javascript-object-last-but-not-least).
+> Mình sẽ tìm hiểu sâu hơn về **object** trong bài viết [JavaScript Object - last but not least](/javascript-object-last-but-not-least/).
 
 ## Cách xác định kiểu dữ liệu của biến
 
@@ -265,9 +265,9 @@ console.log(typeof x); // object
 
 > Cần nói thêm về ba trường hợp (1), (2), (3).
 >
-> (1): Cách khởi tạo **symbol** sẽ trình bày chi tiết ở bài [tìm hiểu về Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript).
+> (1): Cách khởi tạo **symbol** sẽ trình bày chi tiết ở bài [tìm hiểu về Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript/).
 >
-> (2): Cách tạo **object** sẽ trình bày chi tiết ở bài [JavaScript Object - last but not least](/javascript-object-last-but-not-least).
+> (2): Cách tạo **object** sẽ trình bày chi tiết ở bài [JavaScript Object - last but not least](/javascript-object-last-but-not-least/).
 >
 > (3): Đây có thể coi là một lỗi của `typeof` được tạo ra khi JavaScript mới xuất hiện. Nhưng vì tính tương thích ngược, nên đặc điểm này của `typeof` vẫn được giữ đến bây giờ.
 

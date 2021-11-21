@@ -14,11 +14,11 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Trong JavaScript, để duyệt [array](/javascript-array-co-ban) thì **forEach** là một hàm rất hay. Vậy hàm forEach trong JavaScript cụ thể là như thế nào? Cách sử dụng forEach JavaScript ra sao? Chúng ta hãy cùng tìm hiểu để làm chủ forEach js nhé!
+Trong JavaScript, để duyệt [array](/javascript-array-co-ban/) thì **forEach** là một hàm rất hay. Vậy hàm forEach trong JavaScript cụ thể là như thế nào? Cách sử dụng forEach JavaScript ra sao? Chúng ta hãy cùng tìm hiểu để làm chủ forEach js nhé!
 
 ## Đặt vấn đề
 
-Cho một mảng [numbers](/kieu-du-lieu-trong-javascript) = [1, 2, 3, 4, 5, 6,7, 8, 9, 10]. Hãy tính tổng các số trong mảng và hiển thị ra console.
+Cho một mảng [numbers](/kieu-du-lieu-trong-javascript/) = [1, 2, 3, 4, 5, 6,7, 8, 9, 10]. Hãy tính tổng các số trong mảng và hiển thị ra console.
 
 Thông thường, chúng ta sẽ giải bài toán này như sau:
 
@@ -76,7 +76,7 @@ Theo quan điểm cá nhân mình thì việc sử dụng hàm **forEach** giú
 
 Hàm forEach là gì? Hay vòng lặp forEach trong JavaScript là gì?
 
-Trả lời: **forEach** là một phương thức có sẵn của [array](/array-sorting-van-de-muon-thuo), để duyệt qua mỗi phần tử của mảng và thực hiện một hành động nào đó.
+Trả lời: **forEach** là một phương thức có sẵn của [array](/array-sorting-van-de-muon-thuo/), để duyệt qua mỗi phần tử của mảng và thực hiện một hành động nào đó.
 
 ### Cú pháp
 
@@ -419,7 +419,7 @@ var var1 = arr.find(callback[, thisArg])
 
 Tham số truyền vào cũng giống hệt như hàm forEach.
 
-Ví dụ sau tìm ra một [object](/javascript-object-last-but-not-least) với tên của nó thoả mãn điều kiện cho trước:
+Ví dụ sau tìm ra một [object](/javascript-object-last-but-not-least/) với tên của nó thoả mãn điều kiện cho trước:
 
 ```js
 const inventory = [
@@ -530,7 +530,7 @@ Trên đây là một số kiến thức cơ bản về forEach trong JavaScript
 
 Nếu bạn có thắc mắc thì hãy để lại bình luận xuống phía dưới. Mình sẽ cố gắng giải đáp khi có thể.
 
-Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết sau](/phan-biet-call-apply-va-bind-trong-javascript), thân ái!
+Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết sau](/phan-biet-call-apply-va-bind-trong-javascript/), thân ái!
 
 **Tham khảo:**
 

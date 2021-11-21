@@ -14,7 +14,7 @@ tags:
   - Storage
 ---
 
-[IndexedDB](/javascript-indexeddb-tai-sao-khong) là một local database dạng NoSQL cho phép lưu trữ dữ liệu ngay trên trình duyệt. Nó cho phép lưu trữ một lượng dữ liệu lớn với các kiểu dữ liệu khác nhau (bao gồm cả file/blob); hỗ trợ trên nhiều trình duyệt và cung cấp khả năng truy cập nhanh. Qua đó, IndexedDB giúp cho web app có khả năng hoạt động offline một cách mượt mà.
+[IndexedDB](/javascript-indexeddb-tai-sao-khong/) là một local database dạng NoSQL cho phép lưu trữ dữ liệu ngay trên trình duyệt. Nó cho phép lưu trữ một lượng dữ liệu lớn với các kiểu dữ liệu khác nhau (bao gồm cả file/blob); hỗ trợ trên nhiều trình duyệt và cung cấp khả năng truy cập nhanh. Qua đó, IndexedDB giúp cho web app có khả năng hoạt động offline một cách mượt mà.
 
 Tuy nhiên, IndexedDB lại có nhược điểm lớn là nó chỉ cung cấp API cấp thấp. Khi sử dụng IndexedDB bạn phải quan tâm đến những thứ như: transaction, objectStore, cursor,... và nó còn không hỗ trợ [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise). Điều này làm cho việc sử dụng IndexedDB trở nên khá khó khăn và phức tạp.
 
@@ -25,7 +25,7 @@ May mắn thay, [localForage](https://localforage.github.io/localForage) đã ra
 LocalForage là một thư viện JavaScript mã nguồn mở, giúp cho việc giao tiếp với database trên trình duyệt (đặc biệt là IndexedDB) trở nên đơn giản hơn và tiện lợi hơn với những đặc điểm:
 
 - API gần giống với [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) bao gồm: _setItem()_, _getItem()_, _removeItem()_, _clear()_ và thêm một số API khác nữa.
-- Hỗ trợ [ES6](/tag/es6) Promise API
+- Hỗ trợ [ES6](/tag/es6/) Promise API
 - Hỗ trợ sử dụng IndexedDB và [Web SQL](https://en.wikipedia.org/wiki/Web_SQL_Database). Tuy nhiên, nếu browser không hỗ trợ thì localForage sẽ quay về sử dụng localStorage.
 - [Hỗ trợ trên nhiều trình duyệt khác nhau](https://caniuse.com/#feat=indexeddb) như: Chrome, Firefox, IE, và Safari (bao gồm cả Safari Mobile).
 
@@ -93,7 +93,7 @@ localforage
 Trong đó:
 
 - **key**: là string, phân biệt hoa-thường và được sử dụng để lấy giá trị ra sau này.
-- **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number, string](/kieu-du-lieu-trong-javascript), [array](/javascript-array-co-ban), [object](/javascript-object-last-but-not-least), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
+- **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number, string](/kieu-du-lieu-trong-javascript/), [array](/javascript-array-co-ban/), [object](/javascript-object-last-but-not-least/), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
 
 Ví dụ:
 
@@ -242,7 +242,7 @@ Ngoài 4 API giống với localStorage như trên ra, localForage còn hỗ tr�
 
 - length(successCallback): trả về số lượng cặp key-value trong database.
 - keys(successCallback): trả về một mảng chứa các key trong database.
-- iterate(iteratorCallback, successCallback): dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](/javascript-foreach-la-cai-quai-gi).
+- iterate(iteratorCallback, successCallback): dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](/javascript-foreach-la-cai-quai-gi/).
 - key(keyIndex, successCallback): trả về tên của key tương ứng với ID của nó.
 
 ## Cấu hình localForage

@@ -58,11 +58,11 @@ let options = {
 geolocation.getCurrentPosition(onGeoSuccess, onGeoError, options);
 ```
 
-[Hàm](/ham-la-gi-ham-trong-javascript) này có 3 tham số đầu vào:
+[Hàm](/ham-la-gi-ham-trong-javascript/) này có 3 tham số đầu vào:
 
 - **onGeoSuccess**: hàm callback được gọi khi việc lấy vị trí thành công
 - **onGeoError**: hàm callback được gọi khi việc lấy vị trí bị lỗi
-- **options**: là một [object](/javascript-object-last-but-not-least), chứa một số cài đặt kèm theo, như độ chính xác, timeout, thời gian position được cached (giá trị này = 0 nghĩa là không bao giờ cache position). Bạn có thể đọc thêm về các option trên tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions).
+- **options**: là một [object](/javascript-object-last-but-not-least/), chứa một số cài đặt kèm theo, như độ chính xác, timeout, thời gian position được cached (giá trị này = 0 nghĩa là không bao giờ cache position). Bạn có thể đọc thêm về các option trên tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions).
 
 #### Xử lý khi lấy vị trí người dùng thành công
 
@@ -112,7 +112,7 @@ https://codepen.io/completejavascript/pen/Ovaajp
 
 ### Cách sử dụng ipinfo.io API
 
-Bạn chỉ cần gửi một [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript) dạng GET với kiểu dữ liệu là [JSON](/tim-hieu-ve-json-trong-javascript). Trong ví dụ trên, mình sử dụng jQuery, nên chỉ cần sử dụng phương thức [\$.getJSON](http://api.jquery.com/jquery.getjson/) là được.
+Bạn chỉ cần gửi một [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/) dạng GET với kiểu dữ liệu là [JSON](/tim-hieu-ve-json-trong-javascript/). Trong ví dụ trên, mình sử dụng jQuery, nên chỉ cần sử dụng phương thức [\$.getJSON](http://api.jquery.com/jquery.getjson/) là được.
 
 ```js
 $.getJSON("https://ipinfo.io/", onLocationGot);
@@ -139,4 +139,4 @@ Như vậy là mình đã giới thiệu xong với các bạn hai cách để l
   - Luôn luôn có thể lấy được vị trí người dùng
   - Có hỗ trợ http, có thể test trên localhost.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/21-thu-thuat-javascript-huu-ich), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/21-thu-thuat-javascript-huu-ich/), thân ái!

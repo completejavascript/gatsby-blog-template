@@ -17,9 +17,9 @@ Gần đây, mình có đọc được cách sử dụng ba hàm **call**, **app
 
 ## Prototype của function
 
-Đúng vậy, ba hàm **call**, **apply** và **bind** là các [prototype](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript) của [Function](/ham-la-gi-ham-trong-javascript). Nên chỉ có Function mới có thể gọi được 3 hàm này.
+Đúng vậy, ba hàm **call**, **apply** và **bind** là các [prototype](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/) của [Function](/ham-la-gi-ham-trong-javascript/). Nên chỉ có Function mới có thể gọi được 3 hàm này.
 
-Sở dĩ, một Function có thể gọi function khác vì trong JavaScript, Function cũng là một loại [Object](/javascript-object-last-but-not-least), mà đã là Object thì sẽ có prototype, hay nói cách khác là gọi được phương thức của nó.
+Sở dĩ, một Function có thể gọi function khác vì trong JavaScript, Function cũng là một loại [Object](/javascript-object-last-but-not-least/), mà đã là Object thì sẽ có prototype, hay nói cách khác là gọi được phương thức của nó.
 
 Bạn có thể tham khảo về 3 hàm **call**, **apply** và **bind** tại: [Function.prototype.call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call),  [Function.prototype.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)  và [Function.prototype.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
 
@@ -117,7 +117,7 @@ sayHelloKelly(); // => Hello,Good morning Kelly King
 
 Trên đây là một số sự khác nhau giữa **call**, **apply** và **bind** trong JavaScript. Mình nghĩ đến đây là đã đủ để bạn phân biệt được **call**, **apply** và **bind** trong JavaScript và biết cách sử dụng chúng.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-ve-json-trong-javascript), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/tim-hieu-ve-json-trong-javascript/), thân ái!
 
 ## Tham khảo
 

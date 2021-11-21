@@ -18,7 +18,7 @@ tags:
   - FCC
 ---
 
-Tiếp tục series[ lập trình JavaScript với FCC](/tag/fcc), hôm nay mình sẽ giới thiệu một project là **Show the Local Weather**. Dưới đây là demo trên codepen. Ngoài ra, bạn có thể xem bản đầy đủ tại [đây](http://about.phamvanlam.com/fcc-local-weather).
+Tiếp tục series[ lập trình JavaScript với FCC](/tag/fcc/), hôm nay mình sẽ giới thiệu một project là **Show the Local Weather**. Dưới đây là demo trên codepen. Ngoài ra, bạn có thể xem bản đầy đủ tại [đây](http://about.phamvanlam.com/fcc-local-weather).
 
 https://codepen.io/completejavascript/pen/JLeEao
 
@@ -30,13 +30,13 @@ https://codepen.io/completejavascript/pen/JLeEao
 - Có những hình ảnh khác nhau biểu thị trạng thái thời tiết (mưa, nắng, tuyết,...).
 - Có thể chuyển đổi đơn vị nhiệt độ giữa độ F và độ C.
 
-Về cách thiết kế UX/UI cho ứng dụng, bạn có thể xem tại [đây](/lap-trinh-javascript-voi-fcc-random-quote-machine). Còn trong bài viết này, mình sẽ giới thiệu một số thủ thuật JavaScript cần thiết để giải quyết bài toán.
+Về cách thiết kế UX/UI cho ứng dụng, bạn có thể xem tại [đây](/lap-trinh-javascript-voi-fcc-random-quote-machine/). Còn trong bài viết này, mình sẽ giới thiệu một số thủ thuật JavaScript cần thiết để giải quyết bài toán.
 
 ## Giải quyết bài toán
 
 ### Lấy vị trí người dùng
 
-Đúng vậy, để lấy được thông tin thời tiết ở vị trí hiện tại của người dùng, bạn phải lấy được tọa độ (kinh độ, vĩ độ) của họ. Trong bài viết [Hai cách lấy vị trí người dùng với JavaScript](/hai-cach-lay-vi-tri-nguoi-dung), mình đã hướng dẫn các bạn rồi đó. Còn cụ thể trong project này, mình sử dụng phương pháp thứ hai, đó là dùng **ipinfo.io API**.
+Đúng vậy, để lấy được thông tin thời tiết ở vị trí hiện tại của người dùng, bạn phải lấy được tọa độ (kinh độ, vĩ độ) của họ. Trong bài viết [Hai cách lấy vị trí người dùng với JavaScript](/hai-cach-lay-vi-tri-nguoi-dung/), mình đã hướng dẫn các bạn rồi đó. Còn cụ thể trong project này, mình sử dụng phương pháp thứ hai, đó là dùng **ipinfo.io API**.
 
 ### Lấy thông tin thời tiết tại một vị trí xác định
 
@@ -51,7 +51,7 @@ $.getJSON(requestURL, (info) => {
 });
 ```
 
-Kết quả trả về sẽ là [object](/javascript-object-last-but-not-least) **info**, với đầy đủ những thông tin cần thiết như nhiệt độ, độ ẩm, tốc độ gió,... ứng với thời điểm hiện tại, 48 giờ tới và 7 ngày tới.
+Kết quả trả về sẽ là [object](/javascript-object-last-but-not-least/) **info**, với đầy đủ những thông tin cần thiết như nhiệt độ, độ ẩm, tốc độ gió,... ứng với thời điểm hiện tại, 48 giờ tới và 7 ngày tới.
 
 Về lý thuyết thì đến đây là xong, vì bạn đã có được thông tin thời tiết rồi. Nhưng thực tế thì khi bạn chỉ làm như trên bạn sẽ bị lỗi:
 
@@ -61,7 +61,7 @@ No 'Access-Control-Allow-Origin' header is present on the requested resource. Or
 
 Đó là vì domain thực hiện request và domain của server là khác nhau. Để khắc phục tình trạng này, mình sử dụng [CORS Anywhere](https://github.com/Rob--W/cors-anywhere), đóng vai trò như là một proxy cho phép thực hiện **request cross-origin**.
 
-Theo mình hiểu, **cơ chế hoạt động** sẽ là: thay vì bạn gửi [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript) trực tiếp lên server Darksky từ ứng dụng web, bạn sẽ gửi request lên server CORS Anywhere. Server này sẽ thực hiện request giúp bạn. Sau khi có kết quả trả về từ Darksky thì CORS Anywhere sẽ trả lại cho bạn.
+Theo mình hiểu, **cơ chế hoạt động** sẽ là: thay vì bạn gửi [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/) trực tiếp lên server Darksky từ ứng dụng web, bạn sẽ gửi request lên server CORS Anywhere. Server này sẽ thực hiện request giúp bạn. Sau khi có kết quả trả về từ Darksky thì CORS Anywhere sẽ trả lại cho bạn.
 
 Mình mới chỉ hiểu đơn giản vậy thôi. Còn sâu xa hơn thì nhờ bạn nào có kinh nghiệm giải thích hộ nhé. Còn cách code thì đơn giản là bạn sẽ ghép thêm vào đầu request trên địa chỉ server của CORS Anywhere như sau:
 
@@ -79,7 +79,7 @@ Có nhiều thư viện để bạn có thể thực hiện việc này như sau
 
 https://codepen.io/joshbader/pen/EjXgqr
 
-Hoặc **[weather-icon](/icon-mien-phi-dan-it#b%E1%BB%99-icon-v%E1%BB%81-th%E1%BB%9Di-ti%E1%BA%BFt)** với cách này sử dụng gần giống với **font-awesome**.
+Hoặc **[weather-icon](/icon-mien-phi-dan-it/#b%E1%BB%99-icon-v%E1%BB%81-th%E1%BB%9Di-ti%E1%BA%BFt)** với cách này sử dụng gần giống với **font-awesome**.
 
 Còn với project này, mình sử dụng [Skycons](https://darkskyapp.github.io/skycons/) - vẽ icon dựa trên canvas.
 
@@ -105,7 +105,7 @@ Trong file script, bạn khai báo đối tượng Skycons, với thuộc tính 
 let skycons = new Skycons({ color: "#3da4ab" });
 ```
 
-Để add icon vào một canvas bạn có thể sử dụng một trong hai cách: id hoặc [DOM](/co-ban-ve-dom-javascript).
+Để add icon vào một canvas bạn có thể sử dụng một trong hai cách: id hoặc [DOM](/co-ban-ve-dom-javascript/).
 
 ```js
 // Thêm icon theo id
@@ -157,4 +157,4 @@ let C2F = (C) => ((C * 9) / 5 + 32).toFixed();
 
 Trên đây là cách giải quyết bài toán Show the Local Weather. Nếu có phần nào mình giải thích chưa rõ, thì bạn có thể đặt câu hỏi ở phần bình luận.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-wikipedia-viewer), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-wikipedia-viewer/), thân ái!

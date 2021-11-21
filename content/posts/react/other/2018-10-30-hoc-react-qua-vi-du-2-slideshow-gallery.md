@@ -15,7 +15,7 @@ tags:
   - React Component
 ---
 
-Xin chào bạn đến với Học React qua ví dụ #2. Bài trước mình đã thực hành React với [Slideshow](/hoc-react-qua-vi-du-1-slideshow) rồi. Vì vậy, bài viết này mình sẽ cải tiến nó một chút, trở thành Slideshow Gallery.
+Xin chào bạn đến với Học React qua ví dụ #2. Bài trước mình đã thực hành React với [Slideshow](/hoc-react-qua-vi-du-1-slidesho/w) rồi. Vì vậy, bài viết này mình sẽ cải tiến nó một chút, trở thành Slideshow Gallery.
 
 Tuy nhiên, **Slideshow Gallery** lại tương đối giống với Slideshow. Do đó, nếu bạn đã hiểu cách tạo Slideshow rồi thì bài này sẽ vô cùng dễ hiểu.
 
@@ -35,7 +35,7 @@ Nếu không có vấn đề gì thì mình bắt đầu học React qua ví d�
 
 Có nhiều cách để thực hiện demo Slideshow Gallery. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #2 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
@@ -61,7 +61,7 @@ learn-react-by-example/
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về Slideshow Gallery nên mình tạo thêm thư mục **slideshow-gallery** bên trong với 2 file **slideshow-gallery.js** và **slideshow-gallery.css** để định nghĩa cho component Slideshow Gallery (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao) mình sử dụng cho Demo.
+- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao/) mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component Slideshow Gallery ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
@@ -71,8 +71,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (_resize_).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (_resize_).
 - Cách sử dụng [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) để xây dựng vòng lặp.
 
 Còn nội dung chi tiết mình giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
@@ -478,8 +478,8 @@ export default class App extends React.Component {
 
 Trong đó, component Slideshow Gallery có các thuộc tính là:
 
-- **input ([Array](/javascript-array-co-ban)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least) gồm src – đường dẫn ảnh và caption – tiêu đề ảnh.
-- **ratio ([String](/kieu-du-lieu-trong-javascript)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/) gồm src – đường dẫn ảnh và caption – tiêu đề ảnh.
+- **ratio ([String](/kieu-du-lieu-trong-javascript/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 - **mode (String):** kiểu chạy, có 2 giá trị là "manual" – thủ công và "automatic" – tự động. Riêng với trường hợp, chạy tự động thì bạn cần truyền thêm giá trị "timeout" – thời gian giữa các ảnh, mặc định là 5000 ms.
 
 ## Lời kết

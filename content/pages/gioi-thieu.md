@@ -21,7 +21,7 @@ Khi vào đại học, chuyên ngành của mình là Điện tử – Viễn th
 
 Ngoài ra, mình còn có thời gian học C#, Java và lập trình Android. Tính đến nay, mình cũng đã có 4 ứng dụng Android trên Google Play.
 
-Sau khi tốt nghiệp, mình làm việc như một lập trình viên phần mềm cho một công ty. Ở đây, mình được đào tạo nhiều về [cơ sở dữ liệu và giải thuật](https://thuattoan.phamvanlam.com/). Project đầu tiên mà mình làm là về web. Nhờ project này, mình biết nhiều hơn về [HTML](/tag/html), [CSS](/tag/css), [JavaScript](/javascript), [Nodejs](/huong-dan-tim-hieu-node-js-co-ban), Expressjs, [MongoDB](/cai-dat-mongodb-tren-windows-moi-nhat)…
+Sau khi tốt nghiệp, mình làm việc như một lập trình viên phần mềm cho một công ty. Ở đây, mình được đào tạo nhiều về [cơ sở dữ liệu và giải thuật](https://thuattoan.phamvanlam.com/). Project đầu tiên mà mình làm là về web. Nhờ project này, mình biết nhiều hơn về [HTML](/tag/html/), [CSS](/tag/css/), [JavaScript](/javascript/), [Nodejs](/huong-dan-tim-hieu-node-js-co-ban/), Expressjs, [MongoDB](/cai-dat-mongodb-tren-windows-moi-nhat/)…
 
 Sau đó, mình cũng tự học thêm rất nhiều thứ khác nữa như Bootstrap, React-native,… Mình viết một [blog](http://phamvanlam.com/) với mục đích chia sẻ tất cả những kiến thức mình đã học, cùng với những project mình đã làm. Tuy nhiên, không lâu sau đó mình đã dừng việc viết blog đó.
 
@@ -35,10 +35,10 @@ Mình có theo dõi blog của anh John Sonmez – founder của SimpleProgramme
 
 Thực ra, không chỉ giúp mọi người làm chủ JavaScript mà còn cả bản thân mình nữa. Mình sẽ giới thiệu với bạn những kiến thức sau:
 
-- [Javascript cơ bản](/javascript): [kiểu dữ liệu](/kieu-du-lieu-trong-javascript), [toán tử](/toan-tu-la-gi-toan-tu-trong-javascript), [hàm](/ham-la-gi-ham-trong-javascript), [đối tượng](/javascript-object-last-but-not-least), [mảng](/javascript-array-co-ban), lỗi và quản lý lỗi… JavaScript với trình duyệt.
+- [Javascript cơ bản](/javascript/): [kiểu dữ liệu](/kieu-du-lieu-trong-javascript/), [toán tử](/toan-tu-la-gi-toan-tu-trong-javascript/), [hàm](/ham-la-gi-ham-trong-javascript/), [đối tượng](/javascript-object-last-but-not-least/), [mảng](/javascript-array-co-ban/), lỗi và quản lý lỗi… JavaScript với trình duyệt.
 - [Design pattern](/tag/design-pattern): cấu trúc design pattern, các loại design pattern,…
 - Cách viết các ứng dụng, game sử dụng JavaScript
-- Các thư viện và Frameworks JavaScript: [JQuery](/tag/jquery), [ReactJS](/react), AngularJS, [NodeJS](/tag/nodejs),…
+- Các thư viện và Frameworks JavaScript: [JQuery](/tag/jquery/), [ReactJS](/react/), AngularJS, [NodeJS](/tag/nodejs/),…
 - Các cuốn sách mà mình đã đọc để có thể làm chủ JavaScript, lập trình JavaScript.
 
 ## Cộng đồng JavaScript lành mạnh

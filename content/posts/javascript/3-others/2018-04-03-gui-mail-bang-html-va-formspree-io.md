@@ -14,7 +14,7 @@ tags:
   - HTML
 ---
 
-Xin chào bạn! Gần đây, mình có làm một số website static (chỉ gồm HTML5, CSS3 và [JavaScript](/javascript)). Trong đó, website có một phần là contact form (liên hệ). Sau một hồi tìm kiếm google, mình đã tìm ra một phương pháp rất hay giúp bạn gửi email bằng HTML bằng cách sử dụng [Formspree.io](https://formspree.io/). Vậy cách này có những ưu điểm gì?
+Xin chào bạn! Gần đây, mình có làm một số website static (chỉ gồm HTML5, CSS3 và [JavaScript](/javascript/)). Trong đó, website có một phần là contact form (liên hệ). Sau một hồi tìm kiếm google, mình đã tìm ra một phương pháp rất hay giúp bạn gửi email bằng HTML bằng cách sử dụng [Formspree.io](https://formspree.io/). Vậy cách này có những ưu điểm gì?
 
 ## Ưu điểm khi gửi email bằng HTML và Formspree
 
@@ -170,4 +170,4 @@ Trước khi kết thúc bài viết, mình muốn nhấn mạnh lại là: **�
 
 Hy vọng bài viết này có thể giúp bạn biết cách gửi email bằng HTML để có thể triển khai trên các website của mình.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thiet-ke-website-responsive-voi-css-menu), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/thiet-ke-website-responsive-voi-css-menu/), thân ái!

@@ -20,7 +20,7 @@ Xin chào bạn đến với Học React qua ví dụ #6. Bài này mình sẽ t
   Xem Demo Tab Content
 </a>
 
-Về cơ bản thì phần này khá giống với Tab Gallery, chỉ khác ở chỗ là nội dung ứng với mỗi tab là bất kỳ chứ không phải chỉ mỗi ảnh. Vì vậy, nếu bạn đã theo dõi bài viết về [Tab Gallery](/hoc-react-qua-vi-du-5-tab-gallery) thì bài này sẽ rất đơn giản. Vì nó hoàn toàn tương tự.
+Về cơ bản thì phần này khá giống với Tab Gallery, chỉ khác ở chỗ là nội dung ứng với mỗi tab là bất kỳ chứ không phải chỉ mỗi ảnh. Vì vậy, nếu bạn đã theo dõi bài viết về [Tab Gallery](/hoc-react-qua-vi-du-5-tab-gallery/) thì bài này sẽ rất đơn giản. Vì nó hoàn toàn tương tự.
 
 Sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
@@ -30,7 +30,7 @@ Sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
 Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #6 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
@@ -65,8 +65,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_resize_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
@@ -295,7 +295,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 }
 ```
 
-Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow), [Modal Image](/hoc-react-qua-vi-du-3-modal-image) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox).
+Trong đây, mình kết hợp Tab Content với các React Component khác mà mình đã làm như: [Slideshow](/hoc-react-qua-vi-du-1-slideshow/), [Modal Image](/hoc-react-qua-vi-du-3-modal-image/) và [Lightbox](/hoc-react-qua-vi-du-4-lightbox/).
 
 ```jsx:title=./src/App.js
 import React from "react";
@@ -390,7 +390,7 @@ export default class App extends React.Component {
 
 Trong đó, Tab Content Component có các thuộc tính là:
 
-- **input ([Array](/javascript-array-co-ban)):** mảng chứa thông tin các tab, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least) gồm **title** - tên của tab và **content** - là một react element được viết theo JSX để miêu tả nội dung phần content.
+- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các tab, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/) gồm **title** - tên của tab và **content** - là một react element được viết theo JSX để miêu tả nội dung phần content.
 
 ## Lời kết
 

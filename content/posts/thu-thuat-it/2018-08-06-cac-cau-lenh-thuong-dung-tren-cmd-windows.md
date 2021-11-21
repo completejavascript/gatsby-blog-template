@@ -15,7 +15,7 @@ tags:
   - Windows
 ---
 
-Trong bài viết [các câu lệnh thường dùng trên Ubuntu – Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux), mình đã giới thiệu với bạn những câu lệnh thường hay được sử dụng trên Terminal của Ubuntu. Việc thành thạo những câu lệnh này giúp bạn sử dụng Ubuntu một cách nhanh chóng và hiệu quả. Tuy nhiên, nếu bạn là người dùng Windows thì sao? Yên tâm đi, bạn cũng vẫn có thể sử dụng những câu lệnh tương đương trên CMD của Windows. Bạn sẽ sử dụng Windows theo cách "like a boss" và dễ dàng nhận được "sự ngưỡng mộ" từ những người xung quanh. Vì vậy, bài viết này mình sẽ giúp bạn tổng hợp lại những câu lệnh thường dùng trên CMD - Windows.
+Trong bài viết [các câu lệnh thường dùng trên Ubuntu – Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux/), mình đã giới thiệu với bạn những câu lệnh thường hay được sử dụng trên Terminal của Ubuntu. Việc thành thạo những câu lệnh này giúp bạn sử dụng Ubuntu một cách nhanh chóng và hiệu quả. Tuy nhiên, nếu bạn là người dùng Windows thì sao? Yên tâm đi, bạn cũng vẫn có thể sử dụng những câu lệnh tương đương trên CMD của Windows. Bạn sẽ sử dụng Windows theo cách "like a boss" và dễ dàng nhận được "sự ngưỡng mộ" từ những người xung quanh. Vì vậy, bài viết này mình sẽ giúp bạn tổng hợp lại những câu lệnh thường dùng trên CMD - Windows.
 
 Mời bạn theo dõi bài viết!
 

@@ -14,7 +14,7 @@ tags:
   - React Component
 ---
 
-Xin chào bạn đến với Học React qua ví dụ #4. Bài viết này mình sẽ thực hành React thông qua cách tạo Lightbox. Trong đó, Lightbox chính là sự kết hợp giữa [Slideshow Gallery](/hoc-react-qua-vi-du-2-slideshow-gallery) và [Modal Image](/hoc-react-qua-vi-du-3-modal-image).
+Xin chào bạn đến với Học React qua ví dụ #4. Bài viết này mình sẽ thực hành React thông qua cách tạo Lightbox. Trong đó, Lightbox chính là sự kết hợp giữa [Slideshow Gallery](/hoc-react-qua-vi-du-2-slideshow-gallery/) và [Modal Image](/hoc-react-qua-vi-du-3-modal-image/).
 
 Cụ thể là: thay vì click vào 1 ảnh nhỏ để hiển thị 1 ảnh lớn (giống Modal Image) thì mình sẽ hiển thị 1 Slideshow Gallery. Để dễ hiểu hơn, mời bạn theo dõi **demo**:
 
@@ -26,7 +26,7 @@ Trong ví dụ trên, ban đầu mình để demo 3 bức ảnh nhỏ. Và khi b
 
 Và vì Lightbox kế thừa ý tưởng từ Modal Image, nên nếu bạn đã theo dõi bài viết về Modal Image rồi thì bài này sẽ rất đơn giản.
 
-Bạn chỉ cần triển khai tương tự như Modal Image, rồi trong phần nội dung của Modal, mình không đưa vào một phần tử **[DOM](/co-ban-ve-dom-javascript)** chứa ảnh nữa, mà thay vào đó là một **Slideshow Gallery Component**.
+Bạn chỉ cần triển khai tương tự như Modal Image, rồi trong phần nội dung của Modal, mình không đưa vào một phần tử **[DOM](/co-ban-ve-dom-javascript/)** chứa ảnh nữa, mà thay vào đó là một **Slideshow Gallery Component**.
 
 Chi tiết thế nào, mời bạn theo dõi bài viết!
 
@@ -36,7 +36,7 @@ Chi tiết thế nào, mời bạn theo dõi bài viết!
 
 Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #4 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
@@ -60,7 +60,7 @@ learn-react-by-example/
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về **Lightbox** nên mình tạo thêm thư mục **lightbox** bên trong với 2 file **lightbox.js** và **lightbox.css** để định nghĩa cho component **Lightbox** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao) mình sử dụng cho Demo.
+- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao/) mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Lightbox** ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
@@ -70,8 +70,8 @@ Trong đó:
 
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
-- [React Component Lifecycle](/tim-hieu-react-component-lifecycle)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban) (**_resize_**).
+- [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
 
 Và ý tưởng chung để xây dựng Lightbox Component là:
 
@@ -377,8 +377,8 @@ export default class App extends React.Component {
 
 Trong đó, Lightbox Component có các thuộc tính là:
 
-- **input ([Array](/javascript-array-co-ban)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least)gồm _src_ – đường dẫn ảnh và _caption_ – tiêu đề ảnh.
-- **ratio ([String](/kieu-du-lieu-trong-javascript)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/)gồm _src_ – đường dẫn ảnh và _caption_ – tiêu đề ảnh.
+- **ratio ([String](/kieu-du-lieu-trong-javascript/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 
 ## Lời kết
 

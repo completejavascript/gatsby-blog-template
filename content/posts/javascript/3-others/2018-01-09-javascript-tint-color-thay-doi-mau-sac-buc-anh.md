@@ -20,7 +20,7 @@ Xin chào bạn. Hình như là đã lâu rồi mình chưa viết bài nào v�
 
 ## JavaScript Tint Color là gì?
 
-JavaScript Tint Color là việc sử dụng [JavaScript](/javascript-la-gi) ([Canvas](https://www.tutorialspoint.com/html5/html5_canvas.htm)) để thay đổi màu sắc của một bức ảnh.
+JavaScript Tint Color là việc sử dụng [JavaScript](/javascript-la-gi/) ([Canvas](https://www.tutorialspoint.com/html5/html5_canvas.htm)) để thay đổi màu sắc của một bức ảnh.
 
 ![demo tint color](../../../images/javascript/tint-color-demo.png)
 
@@ -115,7 +115,7 @@ class TintColor {
 
 Trong đó:
 
-- **srcImage**: ([string](/kieu-du-lieu-trong-javascript)) là đường dẫn đến bức ảnh, có thể là đường dẫn tương đối đến một vị trí trên server hoặc đường dẫn tuyệt đối đến một host (cdn) lưu trữ ảnh.
+- **srcImage**: ([string](/kieu-du-lieu-trong-javascript/)) là đường dẫn đến bức ảnh, có thể là đường dẫn tương đối đến một vị trí trên server hoặc đường dẫn tuyệt đối đến một host (cdn) lưu trữ ảnh.
 
 - **tintColor**: (string) là mã màu mới dạng HEX hoặc RGB hay RGBA. Ví dụ: *#ff00ff* hoặc _rgb(255, 0, 255)_ hay _rgba(255, 0, 255, 0.5)_.
 
@@ -148,7 +148,7 @@ function setImage(divElement, srcURL, width, height) {
 }
 ```
 
-Trong đó, hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
+Trong đó, hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript/) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
 
 Tiếp theo, mình sẽ sử dụng **TintColor.js** để thay đổi màu sắc của bức ảnh. Ở đây, mình thử với cả 3 loại mã màu khác nhau là: HEX, RGB và RGBA.
 
@@ -173,4 +173,4 @@ Bạn có thể thấy là cách sử dụng TintColor.js rất là đơn giản
 
 Tuy nhiên, mình rất mong muốn nhận được phản hồi của bạn đọc để có thể cải tiến và hoàn thiện thư viện này. Vì vậy, mình sẽ vui khi nhận được phản hồi của bạn.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-web-worker-javascript-o-background), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-web-worker-javascript-o-background/), thân ái!

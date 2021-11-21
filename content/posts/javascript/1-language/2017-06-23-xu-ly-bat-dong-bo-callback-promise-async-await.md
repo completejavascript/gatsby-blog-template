@@ -15,7 +15,7 @@ tags:
   - Promise
 ---
 
-Khi lập trình JavaScript, bạn sẽ thường xuyên phải thực hiện các công việc mất thời gian như: request lên server, lấy dữ liệu từ [database](/cai-dat-mongodb-tren-windows-moi-nhat), đọc/ghi file,... Nếu bạn chỉ xử lý đồng bộ thôi thì chắc chắn sẽ rất mất thời gian. Để giải quyết vấn đề này, JavaScript cung cấp một số công cụ hỗ trợ bạn **xử lý bất đồng bộ** rất tốt như sử dụng **callback**, [**promise**](/tag/promise) hay **async/await**.
+Khi lập trình JavaScript, bạn sẽ thường xuyên phải thực hiện các công việc mất thời gian như: request lên server, lấy dữ liệu từ [database](/cai-dat-mongodb-tren-windows-moi-nhat/), đọc/ghi file,... Nếu bạn chỉ xử lý đồng bộ thôi thì chắc chắn sẽ rất mất thời gian. Để giải quyết vấn đề này, JavaScript cung cấp một số công cụ hỗ trợ bạn **xử lý bất đồng bộ** rất tốt như sử dụng **callback**, [**promise**](/tag/promise/) hay **async/await**.
 
 Trong bài viết này, mình sẽ cùng nhau tìm hiểu xem xử lý bất đồng bộ là gì? Tại sao phải xử lý bất đồng bộ? Và các cách để xử lý bất đồng bộ trong JavaScript. Mời bạn theo dõi bài viết!
 
@@ -29,7 +29,7 @@ Giả sử bạn có một nhiệm vụ bao gồm 2 công việc tốn thời gi
 
 ![Xử lý đồng bộ trong javascript](../../../images/javascript/xu-ly-dong-bo-completejavascript.com_.png)
 
-Nghĩa là thời gian để hoàn thành nhiệm vụ là tổng của thời gian hoàn thành A và B. Hơn nữa, trong khoảng thời gian này bạn sẽ không thể thực hiện thêm 1 hành động nào khác (như bắt các [sự kiện](/xu-ly-mot-event-javascript-co-ban) với chuột và bàn phím của người dùng...). Điều này rõ ràng làm giảm hiệu năng và trải nghiệm người dùng đối với chương trình.
+Nghĩa là thời gian để hoàn thành nhiệm vụ là tổng của thời gian hoàn thành A và B. Hơn nữa, trong khoảng thời gian này bạn sẽ không thể thực hiện thêm 1 hành động nào khác (như bắt các [sự kiện](/xu-ly-mot-event-javascript-co-ban/) với chuột và bàn phím của người dùng...). Điều này rõ ràng làm giảm hiệu năng và trải nghiệm người dùng đối với chương trình.
 
 ### Xử lý đa luồng
 
@@ -41,7 +41,7 @@ Với ví dụ trên, thời gian để hoàn thành nhiệm vụ sẽ chỉ b�
 
 ### Xử lý bất đồng bộ
 
-Tuy nhiên, JavaScript lại là một câu chuyện khác. Hai nền tảng quan trọng với JavaScript (trình duyệt và [Nodejs](/huong-dan-tim-hieu-node-js-co-ban)) đều là **single-thread**. Chính vì vậy, bạn không thể xử lý đa luồng với JavaScript được mà phải sử dụng cơ chế **xử lý bất đồng bộ**.
+Tuy nhiên, JavaScript lại là một câu chuyện khác. Hai nền tảng quan trọng với JavaScript (trình duyệt và [Nodejs](/huong-dan-tim-hieu-node-js-co-ban/)) đều là **single-thread**. Chính vì vậy, bạn không thể xử lý đa luồng với JavaScript được mà phải sử dụng cơ chế **xử lý bất đồng bộ**.
 
 ![Xử lý bất đồng bộ trong javascript](../../../images/javascript/xu-ly-bat-dong-bo-don-luong-completejavascript.com_.png)
 
@@ -51,11 +51,11 @@ Cơ chế giúp bạn thực hiện việc này trong JavaScript có thể là s
 
 ## Sử dụng Callback để xử lý bất đồng bộ
 
-**Sử dụng Callback** có thể nói là cách đầu tiên và dễ nhất giúp bạn xử lý bất đồng bộ. Khi định nghĩa một [function](/ham-la-gi-ham-trong-javascript) thực hiện một nhiệm vụ tốn thời gian, bạn cần truyền thêm tham số vào hàm - đóng vai trò là **hàm callback**.
+**Sử dụng Callback** có thể nói là cách đầu tiên và dễ nhất giúp bạn xử lý bất đồng bộ. Khi định nghĩa một [function](/ham-la-gi-ham-trong-javascript/) thực hiện một nhiệm vụ tốn thời gian, bạn cần truyền thêm tham số vào hàm - đóng vai trò là **hàm callback**.
 
 Khi hành động bắt đầu, rồi khi nó kết thúc, hàm callback sẽ được gọi ngay sau đó.
 
-Ví dụ dưới đây sẽ thực hiện một **GET** [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript). Thông thường, việc này sẽ tốn thời gian (ít hay nhiều tuỳ thuộc vào tốc độ mạng):
+Ví dụ dưới đây sẽ thực hiện một **GET** [request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/). Thông thường, việc này sẽ tốn thời gian (ít hay nhiều tuỳ thuộc vào tốc độ mạng):
 
 ```js
 function doAsync(url, onSuccess, onError) {

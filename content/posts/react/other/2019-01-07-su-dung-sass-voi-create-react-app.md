@@ -39,7 +39,7 @@ Thêm nữa, create-react-app v2 trở đi đã hỗ trợ việc cấu hình ch
 
 Dĩ nhiên, để có thể bắt đầu code được với React thì bạn phải cài đặt môi trường với Node.js, yarn hoặc npm và một editor (khuyên dùng) như Visual Studio Code.
 
-Bạn có thể xem lại bài viết [tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages) của mình để biết cách cài đặt đầy đủ môi trường trước khi bắt đầu sử dụng SASS với create-react-app nhé.
+Bạn có thể xem lại bài viết [tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/) của mình để biết cách cài đặt đầy đủ môi trường trước khi bắt đầu sử dụng SASS với create-react-app nhé.
 
 Sau khi cài đặt xong, bạn tạo mới React app bằng câu lệnh:
 

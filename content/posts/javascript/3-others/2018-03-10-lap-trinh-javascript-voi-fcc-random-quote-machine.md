@@ -111,11 +111,11 @@ let requestURL =
   "https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?";
 ```
 
-Request này kiểu GET, với các tham số là phần phía sau dấu hỏi (?). Và kết quả trả về sẽ là một [JSON](/tim-hieu-ve-json-trong-javascript), với ngôn ngữ là tiếng anh.
+Request này kiểu GET, với các tham số là phần phía sau dấu hỏi (?). Và kết quả trả về sẽ là một [JSON](/tim-hieu-ve-json-trong-javascript/), với ngôn ngữ là tiếng anh.
 
 **Tiến hành request**
 
-Để thực hiện request lên server, bạn có thể sử dụng [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript). Tuy nhiên, trong project này mình sử dụng jQuery, nên sử dụng luôn phương thức [getJSON](http://api.jquery.com/jquery.getjson/) của nó.
+Để thực hiện request lên server, bạn có thể sử dụng [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/). Tuy nhiên, trong project này mình sử dụng jQuery, nên sử dụng luôn phương thức [getJSON](http://api.jquery.com/jquery.getjson/) của nó.
 
 ```js
 function requestRandomQoute() {
@@ -171,4 +171,4 @@ $("#share-tumblr").attr("href", tumblrShareURL);
 
 Trên đây là quy trình các bước mình thực hiện để hoàn thành project Random Quote Machine. Hy vọng quy trình này có thể giúp bạn áp dụng vào các project của mình. Ngoài ra, nếu bạn có góp ý gì vui lòng để lại phần bình luận nhé.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-local-weather), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-local-weather/), thân ái!

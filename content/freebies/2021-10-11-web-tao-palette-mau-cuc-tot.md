@@ -10,7 +10,7 @@ slug: trang-web-tao-palette-mau-cuc-tot
 title: "10 trang web tạo palette màu cực tốt"
 ---
 
-Đối với lập trình viên web, việc lựa chọn [tổ hợp mã màu](/ma-mau-logo-cac-thuong-hieu-noi-tieng) sao cho phù hợp với project của mình thật sự khó khăn. Vì vậy, bài viết này mình sẽ tổng hợp lại 10 trang web tạo palette màu cực tốt, màu sắc hiện đại và tươi mới.
+Đối với lập trình viên web, việc lựa chọn [tổ hợp mã màu](/ma-mau-logo-cac-thuong-hieu-noi-tieng/) sao cho phù hợp với project của mình thật sự khó khăn. Vì vậy, bài viết này mình sẽ tổng hợp lại 10 trang web tạo palette màu cực tốt, màu sắc hiện đại và tươi mới.
 
 ## Palette màu là gì?
 

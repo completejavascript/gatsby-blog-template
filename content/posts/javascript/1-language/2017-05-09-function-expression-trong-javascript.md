@@ -13,7 +13,7 @@ tags:
   - Hàm
 ---
 
-Trong bài viết trước, mình đã tìm hiểu về [hàm trong JavaScript](/ham-la-gi-ham-trong-javascript). Cách khai báo hàm đó gọi là "function declaration". Bài viết này mình sẽ tìm hiểu về một khái niệm khác gọi là "function expression" hay dịch ra là "biểu thức hàm".
+Trong bài viết trước, mình đã tìm hiểu về [hàm trong JavaScript](/ham-la-gi-ham-trong-javascript/). Cách khai báo hàm đó gọi là "function declaration". Bài viết này mình sẽ tìm hiểu về một khái niệm khác gọi là "function expression" hay dịch ra là "biểu thức hàm".
 
 ## Function expression là gì?
 
@@ -117,7 +117,7 @@ function handleNo() {
 ask("Bạn muốn tiếp tục thực hiện chương trình không?", handleYes, handleNo);
 ```
 
-Trong ví dụ trên, [hàm confirm](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt) bật ra một hộp thoại hỏi người dùng "Bạn muốn tiếp tục thực hiện chương trình không?".
+Trong ví dụ trên, [hàm confirm](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt/) bật ra một hộp thoại hỏi người dùng "Bạn muốn tiếp tục thực hiện chương trình không?".
 
 Nếu người dùng chọn **OK** thì giá trị của `answer` là `true`. Khi đó, hàm `handleYes` được gọi. Ngược lại, khi `answer` là `false` thì hàm `handleNo` được gọi.
 
@@ -129,7 +129,7 @@ Nếu người dùng chọn **OK** thì giá trị của `answer` là `true`. Kh
 >
 > Vì vậy, bạn để lại lời nhắn, kèm số điện thoại để khi nào người đó về sẽ gọi lại cho bạn.
 >
-> _Có thể bạn quan tâm: [Xử lý bất đồng bộ với callback, promise, async/await](/xu-ly-bat-dong-bo-callback-promise-async-await#sử-dụng-callback-để-xử-lý-bất-đồng-bộ)_
+> _Có thể bạn quan tâm: [Xử lý bất đồng bộ với callback, promise, async/await](/xu-ly-bat-dong-bo-callback-promise-async-await/#sử-dụng-callback-để-xử-lý-bất-đồng-bộ)_
 
 Trong ví dụ trên, mình viết định nghĩa hai hàm `handleYes` và `handleNo` sử dụng "function declaration". Nhưng bạn có thể thay thế bằng biểu thức hàm như sau:
 
@@ -174,7 +174,7 @@ function sayHello() {
 }
 ```
 
-**Function expression**: là hàm được định nghĩa với một biểu thức, sử dụng [toán tử gán](/toan-tu-la-gi-toan-tu-trong-javascript) `=`.
+**Function expression**: là hàm được định nghĩa với một biểu thức, sử dụng [toán tử gán](/toan-tu-la-gi-toan-tu-trong-javascript/) `=`.
 
 ```js
 let sayHello = function () {
@@ -208,7 +208,7 @@ let sayHello = function () {
 
 **► Phạm vi của function declaration và function expression:**
 
-Khi sử dụng [strict mode](/use-strict-trong-js), function declaration có phạm vi trong **block**. Bạn có thể gọi hàm ở bất kỳ đâu trong block đó, nhưng không sử dụng được ở bên ngoài.
+Khi sử dụng [strict mode](/use-strict-trong-js/), function declaration có phạm vi trong **block**. Bạn có thể gọi hàm ở bất kỳ đâu trong block đó, nhưng không sử dụng được ở bên ngoài.
 
 Ví dụ sau bị lỗi cú pháp:
 

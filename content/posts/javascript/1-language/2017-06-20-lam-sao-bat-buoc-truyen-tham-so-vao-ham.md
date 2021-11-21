@@ -20,7 +20,7 @@ Tuy nhiên, trước khi bắt đầu, mình sẽ tìm hiểu về tham số m�
 
 ## Tham số mặc định của hàm
 
-Trong JavaScript, khi bạn không truyền tham số vào [hàm](/ham-la-gi-ham-trong-javascript) thì giá trị của nó trong hàm sẽ là **undefined**.
+Trong JavaScript, khi bạn không truyền tham số vào [hàm](/ham-la-gi-ham-trong-javascript/) thì giá trị của nó trong hàm sẽ là **undefined**.
 
 Ví dụ:
 
@@ -73,7 +73,7 @@ sayHello(null); // Hello World!
 
 ### Set giá trị mặc định cho tham số hàm với ES6
 
-Với [ES6](/tag/es6), mình có thể khởi tạo giá trị mặc định cho tham số hàm như sau:
+Với [ES6](/tag/es6/), mình có thể khởi tạo giá trị mặc định cho tham số hàm như sau:
 
 ```js
 const sayHello = (name = "World") => {

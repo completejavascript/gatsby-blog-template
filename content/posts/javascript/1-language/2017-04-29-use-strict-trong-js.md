@@ -37,7 +37,7 @@ Ví dụ:
 
 Ngoài đặt ở đầu của file JS, `"use strict"` còn có thể đặt ở đầu mỗi hàm. Khi đó, toàn bộ code trong hàm đó phải tuân theo strict mode.
 
-> Hàm là một cách để tập hợp các câu lệnh nhằm thực hiện một nhiệm vụ nào đó. Hàm sẽ được giới thiệu ở bài [cơ bản về hàm - functions](/ham-la-gi-ham-trong-javascript).
+> Hàm là một cách để tập hợp các câu lệnh nhằm thực hiện một nhiệm vụ nào đó. Hàm sẽ được giới thiệu ở bài [cơ bản về hàm - functions](/ham-la-gi-ham-trong-javascript/).
 
 ## Một số câu hỏi về use strict trong JS
 
@@ -60,7 +60,7 @@ console.log("Hello world!");
 
 > 📝 **Chú ý**: bạn có thể viết chú thích code trước `"use strict"` thì strict mode vẫn sẽ được kích hoạt.
 >
-> Vì thực chất là [JavaScript engine](/javascript-la-gi) bỏ qua không xử lý phần chú thích code.
+> Vì thực chất là [JavaScript engine](/javascript-la-gi/) bỏ qua không xử lý phần chú thích code.
 >
 > Nên trường hợp này, ta vẫn hiểu là `"use strict"` được đặt ở đầu.
 
@@ -78,11 +78,11 @@ Câu trả lời là **CÓ**.
 >
 > Nhưng chắc chắn, khi sử dụng `"use strict"` bạn sẽ tránh được rất nhiều lỗi không đoán trước được. Code JavaScript sẽ chặt chẽ và rõ ràng hơn.
 >
-> Bạn có thể tham khảo bài viết [một số lỗi khi sử dụng Strict mode JavaScript](/mot-so-loi-khi-su-dung-strict-mode-javascript) sau khi đã học cơ bản về JavaScript.
+> Bạn có thể tham khảo bài viết [một số lỗi khi sử dụng Strict mode JavaScript](/mot-so-loi-khi-su-dung-strict-mode-javascript/) sau khi đã học cơ bản về JavaScript.
 
 ## Use strict với console
 
-Trước tiên, bạn cần biết rằng console ở [Dev Tools](/dev-tools-la-gi) cũng không mặc định sử dụng strict mode. Vì vậy, bạn cần phải đặt `"use strict"` ở đầu trước khi gõ bất kỳ lệnh gì.
+Trước tiên, bạn cần biết rằng console ở [Dev Tools](/dev-tools-la-gi/) cũng không mặc định sử dụng strict mode. Vì vậy, bạn cần phải đặt `"use strict"` ở đầu trước khi gõ bất kỳ lệnh gì.
 
 Nhưng nhớ rằng, `"use strict"` chỉ có tác dụng trong một lần chạy. Nghĩa là sau khi bạn nhấn **Enter** thì lần khai báo `"use strict"` trước đó không còn tác dụng.
 

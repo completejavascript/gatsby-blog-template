@@ -24,7 +24,7 @@ Mình sẽ rất vui nếu bạn dùng thử chúng và cho mình xin một vài
 - **Create-react-app**: là một toolchain giúp bạn lập trình React một cách đơn giản và thoải mái mà không cần quan tâm đến việc cấu hình môi trường. Cái này của Facebook nên bạn cứ an tâm mà dùng.
 - **Github Pages**: cho phép bạn deploy static website (trang web tĩnh) lên đó với source code chính là Github repository.
 
-Vì vậy, bài viết này chỉ phù hợp khi bạn muốn [deploy các trang web tĩnh](/hosting-mien-phi-cho-web-tinh) đơn giản hoặc Single Page Application. Nếu bạn muốn deploy một trang web dạng blog, hay cần phải xử lý phía server, tương tác với database,... thì hẹn gặp bạn trong một bài viết khác phù hợp hơn nhé!
+Vì vậy, bài viết này chỉ phù hợp khi bạn muốn [deploy các trang web tĩnh](/hosting-mien-phi-cho-web-tinh/) đơn giản hoặc Single Page Application. Nếu bạn muốn deploy một trang web dạng blog, hay cần phải xử lý phía server, tương tác với database,... thì hẹn gặp bạn trong một bài viết khác phù hợp hơn nhé!
 
 Nếu đọc đến đây, nghĩa là bài viết này phù hợp với bạn. Vậy thì bắt đầu thôi nào!
 
@@ -54,7 +54,7 @@ Ngoài ra, bạn cũng có 2 lựa chọn là tải bản Windows Installer (.ms
 
 ![Tải nodejs](../../../images/react/download-nodejs.png)
 
-Các bước để cài đặt Node.js bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban)
+Các bước để cài đặt Node.js bạn có thể làm theo hướng dẫn trong bài viết: [Hướng dẫn tìm hiểu Node.js cơ bản](/huong-dan-tim-hieu-node-js-co-ban/)
 
 _Xem thêm về Node.js tại: [SERIES LƯỢC SỬ LẬP TRÌNH WEB PHẦN 3.2 – NODEJS LÀM LOẠN GIỚI FRONT-END](https://toidicodedao.com/2018/08/07/series-luoc-su-lap-trinh-web-phan-3-2-nodejs-lam-loan-gioi-front-end/)_
 
@@ -98,7 +98,7 @@ Tiếp theo, mở Terminal trên Visual Studio Code bằng cách chọn **View**
 
 ![Màn hình Visual Studio Code sau khi mở Terminal](../../../images/react/visual-studio-code-open-terminal.png)
 
-Đến đây, bạn đã có thể sử dụng [câu lệnh](/cac-cau-lenh-thuong-dung-tren-cmd-windows) ngay trên Visual Studio Code.
+Đến đây, bạn đã có thể sử dụng [câu lệnh](/cac-cau-lenh-thuong-dung-tren-cmd-windows/) ngay trên Visual Studio Code.
 
 ### Khởi tạo project
 
@@ -132,7 +132,7 @@ Sau đó, bạn vào địa chỉ `http://127.0.0.1:3000` trên trình duyệt �
 
 - File **package.json**: chứa thông tin cấu hình project, dependencies, scripts,...
 - Thư mục **src**: chứa các file mã nguồn của project mà bạn sẽ thao tác trực tiếp lên các file trong thư mục này.
-- Thư mục **public**: chứa file [html với template định sẵn](/chuyen-html-template-sang-dom-node), **favicon.ico** và **manifest.json**
+- Thư mục **public**: chứa file [html với template định sẵn](/chuyen-html-template-sang-dom-node/), **favicon.ico** và **manifest.json**
 
 Về lý thuyết, mọi thay đổi của ứng dụng, bạn sẽ thực hiện trong thư mục _src_. Và bạn không nên thay đổi nội dung trong thư mục _public_.
 

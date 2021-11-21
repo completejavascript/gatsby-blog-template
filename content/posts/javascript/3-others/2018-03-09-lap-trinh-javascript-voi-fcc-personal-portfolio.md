@@ -26,14 +26,14 @@ https://codepen.io/completejavascript/pen/QmwLQY
 
 ### Các thư viện sử dụng
 
-Đối với cách config thư viện sử dụng trên codepen, mình đã giới thiệu trong bài viết [Lập trình JavaScript với FCC - Build a Tribute Page](/lap-trinh-javascript-voi-fcc-build-a-tribute-page). Bạn có thể tham khảo lại để biết cách sử dụng.
+Đối với cách config thư viện sử dụng trên codepen, mình đã giới thiệu trong bài viết [Lập trình JavaScript với FCC - Build a Tribute Page](/lap-trinh-javascript-voi-fcc-build-a-tribute-page/). Bạn có thể tham khảo lại để biết cách sử dụng.
 
 Trong project này, mình sử dụng các công cụ như sau:
 
-- [HTML5](/tag/html)
-- [CSS3](/tag/css)
-- [JQuery](/tag/jquery)
-- [Mustache.js](/tag/mustachejs)
+- [HTML5](/tag/html/)
+- [CSS3](/tag/css/)
+- [JQuery](/tag/jquery/)
+- [Mustache.js](/tag/mustachejs/)
 
 Như vậy, so với project, mình đã không sử dụng Bootstrap nữa mà thay vào đó, mình tự triển khai **design website responsive** trong main.css. Ngoài ra, mình còn sử dụng thêm thư viện Mustache.js để xử lý **template** trong HTML.
 

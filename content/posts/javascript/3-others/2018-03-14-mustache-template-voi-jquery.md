@@ -15,7 +15,7 @@ tags:
   - Template
 ---
 
-Đến hẹn lại lên, hôm nay mình sẽ chia sẻ với các bạn cách sử dụng Mustache Template với jQuery trong [lập trình JavaScript](/javascript). Việc sử dụng Mustache.js sẽ giúp bạn hạn chế việc xử lý logic trong JavaScript. Qua đó, giúp code bạn trở nên ngắn gọn và sáng sủa hơn.
+Đến hẹn lại lên, hôm nay mình sẽ chia sẻ với các bạn cách sử dụng Mustache Template với jQuery trong [lập trình JavaScript](/javascript/). Việc sử dụng Mustache.js sẽ giúp bạn hạn chế việc xử lý logic trong JavaScript. Qua đó, giúp code bạn trở nên ngắn gọn và sáng sủa hơn.
 
 ## Mustache Template trong HTML
 
@@ -62,7 +62,7 @@ let tmpl = $("#my-template").html();
 Mustache.parse(tmpl);
 ```
 
-Tương tự như [bài viết trước](/chuyen-html-template-sang-dom-node), bài này mình cũng mô phỏng lại việc render các bình luận cho một bài viết. Dữ liệu được lưu trong mảng các [object](/javascript-object-last-but-not-least) với 2 thuộc tính là name và comment.
+Tương tự như [bài viết trước](/chuyen-html-template-sang-dom-node/), bài này mình cũng mô phỏng lại việc render các bình luận cho một bài viết. Dữ liệu được lưu trong mảng các [object](/javascript-object-last-but-not-least/) với 2 thuộc tính là name và comment.
 
 ```js
 let data = [
@@ -83,9 +83,9 @@ $("#btn-add").click(() => {
 });
 ```
 
-Trong phương thức render, thành phần đầu tiên là Mustache Template đã được lấy ra từ trước; thành phần thứ hai là mỗi phần tử của [mảng](/javascript-array-co-ban) sau khi sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi).
+Trong phương thức render, thành phần đầu tiên là Mustache Template đã được lấy ra từ trước; thành phần thứ hai là mỗi phần tử của [mảng](/javascript-array-co-ban/) sau khi sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi/).
 
-Kết quả thu được là [DOM,](/co-ban-ve-dom-javascript) có cấu trúc như template với tham số đã được thay thế bằng dữ liệu data trên. Bây giờ, bạn chỉ cần sử dụng phương thức [append](http://api.jquery.com/append/) để đưa nó vào bên trong của thẻ div - với **id="container"**.
+Kết quả thu được là [DOM,](/co-ban-ve-dom-javascript/) có cấu trúc như template với tham số đã được thay thế bằng dữ liệu data trên. Bây giờ, bạn chỉ cần sử dụng phương thức [append](http://api.jquery.com/append/) để đưa nó vào bên trong của thẻ div - với **id="container"**.
 
 Ngoài ra, để bỏ đi thành phần HTML mới thêm vào, bạn có thể đơn giản sử dụng phương thức [empty](https://api.jquery.com/empty) để xóa nó khỏi HTML.
 
@@ -99,4 +99,4 @@ $("#btn-rm").click(() => {
 
 Trên đây là cách mình sử dụng Mustache Template với jQuery. Rõ ràng, việc sử dụng kết hợp 2 thư viện JavaScript này giúp code trở nên ngắn gọn và khá rõ ràng. Hy vọng với những hướng dẫn đơn giản trên, bạn có thể biết cách sử dụng Mustache.js.
 
-Xin chào và hẹn gặp lại ở [bài viết tiếp theo](/smooth-scrolling-trang-web-voi-jquery), thân ái!
+Xin chào và hẹn gặp lại ở [bài viết tiếp theo](/smooth-scrolling-trang-web-voi-jquery/), thân ái!

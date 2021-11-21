@@ -62,7 +62,7 @@ Do đó, key **1** và **"a"** coi như đã tồn tại, nên giá trị của 
 
 Trong khi đó, key **[1]** coi như chưa tồn tại. Và dĩ nhiên, khi lấy ra giá trị của nó thì kết quả sẽ là **undefined**.
 
-Để biết thêm về Map, mời bạn theo dõi bài viết: [Map trong JavaScript thì sao?](/map-trong-javascript-thi-sao)
+Để biết thêm về Map, mời bạn theo dõi bài viết: [Map trong JavaScript thì sao?](/map-trong-javascript-thi-sao/)
 
 </div>
 
@@ -144,7 +144,7 @@ Hỏi console in ra kết quả theo thứ tự như thế nào?
 
 **Giải thích:**
 
-Khi [function](/ham-la-gi-ham-trong-javascript) **d()** được gọi, dĩ nhiên _d_ sẽ được in ra đầu tiên. Ngoài ra, function **b()** và **c()** là hàm xử lý đồng bộ nên chắc chắn _b_ sẽ in ra trước _c_. Vấn đề ở đây chỉ là _a_ mà thôi.
+Khi [function](/ham-la-gi-ham-trong-javascript/) **d()** được gọi, dĩ nhiên _d_ sẽ được in ra đầu tiên. Ngoài ra, function **b()** và **c()** là hàm xử lý đồng bộ nên chắc chắn _b_ sẽ in ra trước _c_. Vấn đề ở đây chỉ là _a_ mà thôi.
 
 Ở đây, hàm **a()** được đặt trong hàm [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout). Mà khi được đặt trong hàm này, hàm _a()_ sẽ được thực hiện ngay sau một khoảng thời gian *timeout* cho trước.
 

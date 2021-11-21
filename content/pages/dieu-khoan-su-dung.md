@@ -9,7 +9,7 @@ Vui lòng đọc kỹ "điều khoản sử dụng" này nếu bạn đang xem x
 
 ## Tổng quan
 
-Website này và các trang phụ liên quan (gọi chung là "Trang") được xuất bản và duy trì bởi [Complete JavaScript](/). Khi sử dụng Trang, bạn đồng ý với các điều khoản và điều kiện được nêu rõ trong thông báo pháp lý này, trong [Chính sách bảo mật](/chinh-sach-bao-mat) và mọi luật và quy định hiện hành, bao gồm nhưng không giới hạn ở các quy định kiểm soát xuất khẩu (gọi chung là "Điều khoản sử dụng"). Bạn tuyên bố mình có quyền hợp pháp để chấp nhận Điều khoản sử dụng này thay mặt cho chính bạn cũng như cho bất cứ bên nào mà bạn đại diện. Nếu bạn không đồng ý với Điều khoản sử dụng của chúng tôi, vui lòng không sử dụng Trang.
+Website này và các trang phụ liên quan (gọi chung là "Trang") được xuất bản và duy trì bởi [Complete JavaScript](/). Khi sử dụng Trang, bạn đồng ý với các điều khoản và điều kiện được nêu rõ trong thông báo pháp lý này, trong [Chính sách bảo mật](/chinh-sach-bao-mat/) và mọi luật và quy định hiện hành, bao gồm nhưng không giới hạn ở các quy định kiểm soát xuất khẩu (gọi chung là "Điều khoản sử dụng"). Bạn tuyên bố mình có quyền hợp pháp để chấp nhận Điều khoản sử dụng này thay mặt cho chính bạn cũng như cho bất cứ bên nào mà bạn đại diện. Nếu bạn không đồng ý với Điều khoản sử dụng của chúng tôi, vui lòng không sử dụng Trang.
 
 ## Thay đổi hoặc chỉnh sửa
 

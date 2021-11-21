@@ -33,7 +33,7 @@ Nếu không có vấn đề gì thì mình bắt đầu học React qua ví d�
 
 Có nhiều cách để thực hiện demo Slideshow. Tuy nhiên, mình khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app) để thực hành học React qua ví dụ #1 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
@@ -57,7 +57,7 @@ learn-react-by-example/
 Trong đó:
 
 - Thư mục **components**: để chứa code của các Component. Bài này mình thực hành về Slideshow nên mình tạo thêm thư mục **slideshow** bên trong với 2 file **slideshow.js** và **slideshow.css** để định nghĩa cho component Slideshow (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao) mình sử dụng cho Demo.
+- Thư mục **images**: để chứa tất cả những [ảnh](/web-tai-anh-mien-phi-chat-luong-cao/) mình sử dụng cho Demo.
 - Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component Slideshow ở trên.
 - Các file **index.css**, **index.js** và **serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
@@ -453,8 +453,8 @@ export default class App extends React.Component {
 
 Trong đó, component Slideshow có các thuộc tính là:
 
-- **input ([Array](/javascript-array-co-ban)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least)gồm src - đường dẫn ảnh và caption - tiêu đề ảnh.
-- **ratio ([String](/kieu-du-lieu-trong-javascript)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
+- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các ảnh, với mỗi phần tử là một [object ](/javascript-object-last-but-not-least/)gồm src - đường dẫn ảnh và caption - tiêu đề ảnh.
+- **ratio ([String](/kieu-du-lieu-trong-javascript/)):** string biểu diễn tỉ lệ **width : height**, ví dụ là "3:2". Chú ý là chiều rộng, mình luôn luôn để 100% nên mình chỉ cần truyền vào tỉ lệ này là OK.
 - **mode (String):** kiểu chạy, có 2 giá trị là "manual" - thủ công và "automatic" - tự động. Riêng với trường hợp, chạy tự động thì bạn cần truyền thêm giá trị "timeout" - thời gian giữa các ảnh, mặc định là 5000 ms.
 
 ## Lời kết

@@ -35,7 +35,7 @@ _Sau đây là cách để học lập trình mà không có tutorials. Hãy xem
 
 Giả sử bạn đang định học một Framework mới trên Github. Đầu tiên, hãy tìm đến cơ sở dữ liệu về các bugs, bắt đầu với những bugs đơn giản như UI,...
 
-Sau đó bắt tay vào [fix bugs](/debug-javascript-de-hay-kho). Khi fix bugs, bạn sẽ phải lần theo mọi ngõ ngách trong code. Bạn sẽ hiểu về flow code. Dần dần bạn sẽ hiểu cách mà Framework này hoạt động.
+Sau đó bắt tay vào [fix bugs](/debug-javascript-de-hay-kho/). Khi fix bugs, bạn sẽ phải lần theo mọi ngõ ngách trong code. Bạn sẽ hiểu về flow code. Dần dần bạn sẽ hiểu cách mà Framework này hoạt động.
 
 ### Phát triển những tính năng nhỏ
 
@@ -45,7 +45,7 @@ Bạn có thể chỉ cần tạo ra một vài thứ giống với những cái
 
 Ví dụ, có một form trên UI, bạn cũng sẽ tạo ra một cái form tương tự, sau đó có thể là một vài sự thay đổi nhỏ. Như vậy là bạn đã có một ví dụ về cách tạo form trên UI rồi phải không nào.
 
-Cứ tiếp tục [thực hành](/hoc-lap-trinh-javascript-nhanh-hon) như vậy với những tính năng khác, bạn sẽ dần hiểu hết những thứ căn bản trong Framework này.
+Cứ tiếp tục [thực hành](/hoc-lap-trinh-javascript-nhanh-hon/) như vậy với những tính năng khác, bạn sẽ dần hiểu hết những thứ căn bản trong Framework này.
 
 Ý tưởng này khiến tôi nhớ đến có lần xem một bộ phim võ thuật. Người ta nói rằng: "Để học võ thuật thì đầu tiên phải bắt chước theo những động tác, chiêu thức cơ bản thật tốt.
 

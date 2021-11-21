@@ -67,7 +67,7 @@ const run = (x) => {
 
 Trong đó:
 
-- [Hàm](/ham-la-gi-ham-trong-javascript) _increase_ sẽ trả về giá trị của đầu vào + 1.
+- [Hàm](/ham-la-gi-ham-trong-javascript/) _increase_ sẽ trả về giá trị của đầu vào + 1.
 - Hàm _run_ sẽ thực hiện một Promise chaining, với mỗi mắt xích sẽ gọi hàm _increase_.
 
 Với hàm _run_ như trên thì với mọi giá trị của x, 3 cái _then_ trên luôn được thực hiện. Ví dụ với x = 4 thì kết quả thu được là:

@@ -15,7 +15,7 @@ tags:
   - Ubuntu
 ---
 
-Trong bài viết [các câu lệnh thường dùng đến trong Ubuntu - Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux), mình đã giới thiệu với bạn những câu lệnh cơ bản thường dùng trong Ubuntu để làm việc với file, folder, thông tin hệ thống,... Tiếp tục, bài viết này sẽ hướng dẫn bạn cách cài đặt và gỡ một gói phần mềm trên Ubuntu.
+Trong bài viết [các câu lệnh thường dùng đến trong Ubuntu - Linux](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux/), mình đã giới thiệu với bạn những câu lệnh cơ bản thường dùng trong Ubuntu để làm việc với file, folder, thông tin hệ thống,... Tiếp tục, bài viết này sẽ hướng dẫn bạn cách cài đặt và gỡ một gói phần mềm trên Ubuntu.
 
 ## Dùng Ubuntu Software Center
 

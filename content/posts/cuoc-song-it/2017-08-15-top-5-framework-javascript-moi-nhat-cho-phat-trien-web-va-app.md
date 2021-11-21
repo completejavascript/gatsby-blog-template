@@ -15,7 +15,7 @@ tags:
 
 Bài viết được dịch từ website [Technotification](https://www.technotification.com/2017/06/best-modern-javascript-frameworks.html) của tác giả [Vicky Singh Rao](https://www.technotification.com/author/vicky) về top 5 Framework JavaScript mới nhất cho phát triển web và app.
 
-Những năm gần đây, sự phổ biến của [JavaScript](/javascript) đã được gia tăng rất nhiều. Có một bằng chứng để chứng tỏ sự thay đổi đó. Vào đầu năm nay, IBM đã công nhận JavaScript là một trong [những ngôn ngữ lập trình tốt nhất](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017) của năm.
+Những năm gần đây, sự phổ biến của [JavaScript](/javascript/) đã được gia tăng rất nhiều. Có một bằng chứng để chứng tỏ sự thay đổi đó. Vào đầu năm nay, IBM đã công nhận JavaScript là một trong [những ngôn ngữ lập trình tốt nhất](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017/) của năm.
 
 Họ lập luận rằng bí mật sự thành công của một chương trình là nằm ở cả hai phía client và server được thiết kế tốt và cũng như trang web được tuỳ biến hợp lý. Và có nhiều ưu điểm khi sử dụng các Framework JavaScript là an toàn, hiệu quả cao, chi phí giữa các lợi thế khác.
 
@@ -35,7 +35,7 @@ Ngoài ra, Framework JavaScript này cũng được hỗ trợ từ một cộng
 
 Framework JavaScript này dựa trên thư viện nhiều hơn. Nó thường cho thấy hiệu quả cao ở những chương trình động - nhiều tương tác như Facebooks và Instagram.
 
-Đây cũng là một trong những framework phát triển mạnh trên thị trường hiện nay. Người ta ước tính là có khoảng 1000 thành viên tích cực tham gia vào nó. Nếu so sánh với AngularJS thì ReactJS chính xác hơn và cung cấp hiệu suất cao hơn vì nó sử dụng [DOM](/co-ban-ve-dom-javascript) ảo.
+Đây cũng là một trong những framework phát triển mạnh trên thị trường hiện nay. Người ta ước tính là có khoảng 1000 thành viên tích cực tham gia vào nó. Nếu so sánh với AngularJS thì ReactJS chính xác hơn và cung cấp hiệu suất cao hơn vì nó sử dụng [DOM](/co-ban-ve-dom-javascript/) ảo.
 
 ## Vue.js
 

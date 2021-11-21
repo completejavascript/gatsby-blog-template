@@ -14,7 +14,7 @@ tags:
   - Git
 ---
 
-Trong bài viết [hướng dẫn các câu lệnh Git cơ bản](/huong-dan-cac-cau-lenh-git-co-ban), mình đã giới thiệu với bạn về Git, cũng như những câu lệnh thường dùng với Git. Tuy nhiên, khi làm việc với project thực tế bạn sẽ gặp phải nhiều trường hợp oái oăm hơn rất nhiều. Vì vậy, bài viết này mình sẽ tổng hợp lại một số trường hợp với Git mà mình gặp phải và cách mình giải quyết chúng.
+Trong bài viết [hướng dẫn các câu lệnh Git cơ bản](/huong-dan-cac-cau-lenh-git-co-ban/), mình đã giới thiệu với bạn về Git, cũng như những câu lệnh thường dùng với Git. Tuy nhiên, khi làm việc với project thực tế bạn sẽ gặp phải nhiều trường hợp oái oăm hơn rất nhiều. Vì vậy, bài viết này mình sẽ tổng hợp lại một số trường hợp với Git mà mình gặp phải và cách mình giải quyết chúng.
 
 ## Đổi tên nhánh ở Local và Remote trong Git
 

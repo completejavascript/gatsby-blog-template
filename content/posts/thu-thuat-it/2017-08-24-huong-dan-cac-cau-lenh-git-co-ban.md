@@ -33,7 +33,7 @@ Git hỗ trợ Windows, Macs và Linux. Đối với Macs, mình chưa dùng bao
 - Windows: bạn có thể cài [Git for windows](https://git-scm.com/download) hoặc [Tortoisegit](https://tortoisegit.org/download/) (giao diện đồ hoạ).
 - Linux: xem hướng dẫn tại [đây](https://git-scm.com/download/linux).
 
-Nếu bạn không quen sử dụng các câu lệnh thì có thể sử dụng TortoiseGit. Còn cá nhân, mình sử dụng Git trên [Ubuntu](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux).
+Nếu bạn không quen sử dụng các câu lệnh thì có thể sử dụng TortoiseGit. Còn cá nhân, mình sử dụng Git trên [Ubuntu](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux/).
 
 Sau khi cài đặt Git xong, chúng ta bắt đầu tìm hiểu về Git.
 
