@@ -8,6 +8,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import Page from "../components/Page/Page";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+import { useSlash } from "../utils/helpers";
 
 const PageTemplate = ({ data, pageContext }) => {
   const { slug, latestPostEdges, latestFreebieEdges } = pageContext;
@@ -32,7 +33,7 @@ const PageTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <Helmet title={`${title} - ${config.siteTitle}`}>
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
       <MainContainer content={content} sidebarRight={sidebarRight} />

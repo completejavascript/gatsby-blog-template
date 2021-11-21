@@ -7,7 +7,7 @@ import MainContainer from "../components/MainContainer/MainContainer";
 import Sidebar from "../components/Sidebar/Sidebar";
 import PostListing from "../components/PostListing/PostListing";
 import Pagination from "../components/Pagination/Pagination";
-import { getPostList, getTagPath } from "../utils/helpers";
+import { getPostList, getTagPath, useSlash } from "../utils/helpers";
 import config from "../../data/SiteConfig";
 
 const TagTemplate = ({ data, pageContext }) => {
@@ -59,7 +59,7 @@ const TagTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <Helmet title={`${config.tagHeader} ${tag} - ${config.siteTitle}`}>
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <MainContainer
         content={content}

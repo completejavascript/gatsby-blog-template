@@ -7,7 +7,7 @@ import MainContainer from "../components/MainContainer/MainContainer";
 import Sidebar from "../components/Sidebar/Sidebar";
 import PostListing from "../components/PostListing/PostListing";
 import Pagination from "../components/Pagination/Pagination";
-import { getPostList } from "../utils/helpers";
+import { getPostList, useSlash } from "../utils/helpers";
 import config from "../../data/SiteConfig";
 
 const FreeBieTemplate = ({ data, pageContext }) => {
@@ -57,7 +57,7 @@ const FreeBieTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <Helmet title={`${config.freebieHeader} - ${config.siteTitle}`}>
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <MainContainer
         content={content}

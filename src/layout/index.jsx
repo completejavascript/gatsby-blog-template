@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation/Navigation";
 import Footer2 from "../components/Footer2/Footer2";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import siteConfig from "../../data/SiteConfig";
+import { useSlash } from "../utils/helpers";
 import brand from "../../content/images/brand.png";
 import "shiba-css/docs/css/shiba.min.css";
 import "../../content/styles/customize.scss";
@@ -19,7 +20,7 @@ const MainLayout = ({
     <Helmet htmlAttributes={{ lang: siteConfig.siteLang }}>
       <meta name="description" content={siteConfig.siteDescription} />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-      <link rel="canonical" href={siteConfig.siteUrl} />
+      <link rel="canonical" href={useSlash(siteConfig.siteUrl)} />
     </Helmet>
     <Navigation
       brand={brand}

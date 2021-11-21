@@ -8,6 +8,7 @@ import SEO from "../components/SEO/SEO";
 import MainContainer from "../components/MainContainer/MainContainer";
 import GithubComment from "../components/Comment/GithubComment";
 import config from "../../data/SiteConfig";
+import { useSlash } from "../utils/helpers";
 import AdSense from "react-adsense";
 
 const DirectoryTemplate = ({ data, pageContext }) => {
@@ -39,7 +40,7 @@ const DirectoryTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <Helmet title={`${title} - ${config.siteTitle}`}>
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
 

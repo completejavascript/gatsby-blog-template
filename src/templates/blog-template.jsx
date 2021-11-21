@@ -9,6 +9,7 @@ import PostListing from "../components/PostListing/PostListing";
 import Pagination from "../components/Pagination/Pagination";
 import { getPostList } from "../utils/helpers";
 import config from "../../data/SiteConfig";
+import { useSlash } from "../utils/helpers";
 
 const BlogTemplate = ({ data, pageContext }) => {
   const {
@@ -57,7 +58,7 @@ const BlogTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <Helmet title={`${config.blogHeader} - ${config.siteTitle}`}>
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <MainContainer
         content={content}

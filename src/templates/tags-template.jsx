@@ -7,6 +7,7 @@ import Tag from "../components/Tag/Tag";
 import MainContainer from "../components/MainContainer/MainContainer";
 import GithubComment from "../components/Comment/GithubComment";
 import config from "../../data/SiteConfig";
+import { useSlash } from "../utils/helpers";
 
 const TagsTemplate = ({ pageContext }) => {
   const { tagList } = pageContext;
@@ -37,7 +38,7 @@ const TagsTemplate = ({ pageContext }) => {
   return (
     <Layout>
       <Helmet title={`${title} - ${config.siteTitle}`}>
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
 
       <MainContainer content={content} />

@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import MainLayout from "../layout/index";
 import config from "../../data/SiteConfig";
+import { useSlash } from "../utils/helpers";
 import "./index.scss";
 
 const ServiceSection = () => {
@@ -90,7 +91,7 @@ function Service() {
   return (
     <MainLayout hasFooter={true} hideOnScroll={true} adaptiveBoxShadow={true}>
       <Helmet title={`Dịch vụ - ${config.siteTitle}`}>
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <main className="index-container">
         <ServiceSection />

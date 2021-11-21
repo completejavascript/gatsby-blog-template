@@ -6,6 +6,7 @@ import SEO from "../components/SEO/SEO";
 import AutoLink from "../components/AutoLink/AutoLink";
 import MainContainerWrapper from "../components/MainContainer/MainContainerWrapper";
 import config from "../../data/SiteConfig";
+import { useSlash } from "../utils/helpers";
 
 const PageNotFound = () => {
   const canonical = config.siteUrl;
@@ -13,7 +14,7 @@ const PageNotFound = () => {
   return (
     <Layout hasFooter={true}>
       <Helmet title={`${config.pageNotFoundTitle} - ${config.siteTitle}`}>
-        <link rel="canonical" href={canonical} />
+        <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <SEO />
 

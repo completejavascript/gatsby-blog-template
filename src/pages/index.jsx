@@ -11,6 +11,7 @@ import MainLayout from "../layout/index";
 
 import { getPostList, getTagPath } from "../utils/helpers";
 import config from "../../data/SiteConfig";
+import { useSlash } from "../utils/helpers";
 import "./index.scss";
 
 const WelcomeSection = () => (
@@ -153,7 +154,7 @@ function Index({ data }) {
   return (
     <MainLayout hasFooter={true} hideOnScroll={true} adaptiveBoxShadow={true}>
       <Helmet title={config.siteTitle}>
-        <link rel="canonical" href={config.siteUrl} />
+        <link rel="canonical" href={useSlash(config.siteUrl)} />
       </Helmet>
       <main className="index-container background-color-white">
         <WelcomeSection />
