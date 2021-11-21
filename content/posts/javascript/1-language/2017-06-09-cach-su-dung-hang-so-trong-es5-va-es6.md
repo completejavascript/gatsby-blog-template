@@ -1,5 +1,5 @@
 ---
-date: "2017-05-14T00:00:05Z"
+date: "2017-06-09T00:00:05Z"
 update: "2018-04-11T00:00:05Z"
 template: "post"
 directory: "JavaScript"
@@ -9,11 +9,12 @@ description: "Mình thường thấy nhiều bạn khi lập trình JavaScript s
 slug: cach-su-dung-hang-so-trong-es5-va-es6
 title: "Cách sử dụng hằng số trong ES5 và ES6"
 shortTitle: "Sử dụng hằng số trong ES5 và ES6"
-series: "JavaScript: JavaScript cơ bản"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Strict Mode
   - Hằng
+  - Object
 ---
 
 Mình thường thấy nhiều bạn khi lập trình JavaScript sử dụng **var** trong mọi trường hợp, kể cả với hằng số. Tuy nhiên, nếu sử dụng như vậy, bạn sẽ không phản ánh được đúng tính chất của hằng số. Đó là **tính bất biến** - không bao giờ thay đổi giá trị. Bài viết này mình sẽ giúp bạn khai báo và sử dụng hằng số trong ES5 và ES6.

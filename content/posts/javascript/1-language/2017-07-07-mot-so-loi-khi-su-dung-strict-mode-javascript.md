@@ -1,5 +1,5 @@
 ---
-date: "2017-05-12T13:16:19Z"
+date: "2017-07-07T13:16:19Z"
 update: "2021-10-17T13:16:19Z"
 template: "post"
 directory: "JavaScript"
@@ -9,7 +9,7 @@ description: "Strict mode giúp giảm thiểu những lỗi ngớ ngẩn của 
 slug: mot-so-loi-khi-su-dung-strict-mode-javascript
 title: "Một số lỗi khi sử dụng Strict mode JavaScript"
 shortTitle: "Một số lỗi với Strict mode JavaScript"
-series: "JavaScript: JavaScript cơ bản"
+series: "JavaScript: Kiểm thử và đảm bảo chất lượng code"
 tags:
   - Debug
   - Strict Mode

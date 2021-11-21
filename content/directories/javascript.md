@@ -40,9 +40,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Hàm là gì? Hàm trong JavaScript](/ham-la-gi-ham-trong-javascript)
 - [Function expression trong JavaScript](/function-expression-trong-javascript)
 - [Arrow function là gì? Arrow function trong JS](/arrow-function-la-gi-arrow-function-trong-js)
-- [Một số lỗi ở Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript)
 - [Phân biệt var và let](/phan-biet-var-va-let-trong-javascript)
-- [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6)
 
 ### Các kiểu dữ liệu
 
@@ -62,6 +60,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [So sánh Map và Object](/so-sanh-map-voi-object-trong-javascript)
 - [Symbol](/tim-hieu-ve-symbol-trong-javascript)
 - [Ứng dụng reduce trong mảng](/ung-dung-cua-reduce-javascript)
+- [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6)
 
 ### Lập trình hướng đối tượng
 
@@ -88,7 +87,8 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 ### Kiểm thử và đảm bảo chất lượng code
 
-- [Bug và debug](/debug-javascript-de-hay-kho)
+- [Debug JavaScript dễ hay khó](/debug-javascript-de-hay-kho)
+- [Một số lỗi ở Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript)
 - [Sử dụng console hiệu quả](/thu-thuat-su-dung-console-hieu-qua)
 
 ### Regular Expression
