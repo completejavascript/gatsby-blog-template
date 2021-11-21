@@ -39,6 +39,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Vòng lặp trong JavaScript](/vong-lap-trong-javascript)
 - [Hàm là gì? Hàm trong JavaScript](/ham-la-gi-ham-trong-javascript)
 - [Function expression trong JavaScript](/function-expression-trong-javascript)
+- [Arrow function là gì? Arrow function trong JS](/arrow-function-la-gi-arrow-function-trong-js)
 - [Một số lỗi ở Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript)
 - [Phân biệt var và let](/phan-biet-var-va-let-trong-javascript)
 - [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6)
