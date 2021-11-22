@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.14.2](https://github.com/completejavascript/completejavascript.com/compare/v1.14.1...v1.14.2) (2021-11-22)
+
+
+### Bug Fixes
+
+* add image to 404 page and custom image for lien-he, gioi-thieu page ([4d80a00](https://github.com/completejavascript/completejavascript.com/commit/4d80a00aa7862b08c71df191f35f9df27495ef67))
+* change tip&trick windows by image illustration ([d16697a](https://github.com/completejavascript/completejavascript.com/commit/d16697a15dd0fcd1f4e29040c7b5cb67ff91fc56))
+* landing page - add link to service ([608865f](https://github.com/completejavascript/completejavascript.com/commit/608865f742ec51446d7cdd64fa900b248ad6d9d3))
+* lien-he page - add image ([7464de4](https://github.com/completejavascript/completejavascript.com/commit/7464de425f71fc37f6680bc5ddf19ac5b5dddab9))
+
 ### [1.14.1](https://github.com/completejavascript/completejavascript.com/compare/v1.14.0...v1.14.1) (2021-11-21)
 
 
