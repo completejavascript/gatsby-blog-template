@@ -9,8 +9,8 @@ Xin chào bạn!
 
 Mình là Lâm Phạm (Lam Pham) – lập trình viên và đồng thời là Blogger. Mình lập nên website completejavascript.com vào ngày 22/04/2017 với mục đích giới thiệu, chia sẻ tất cả những kiến thức của mình về lập trình JavaScript. Tại sao, mình lại chọn JavaScript mà không phải bất kỳ ngôn ngữ lập trình nào khác?
 
-<div style="width: 300px; max-width: 100%; margin: 0px auto 20px;">
-  <img src="../images/lampham-profile.jpg" alt="lam pham profile">
+<div className="padding-top padding-bottom">
+  <img src="../images/lampham-profile.jpg" alt="lam pham profile" style="width: 300px; max-width: 100%;"/>
 </div>
 
 ## Câu chuyện của mình
