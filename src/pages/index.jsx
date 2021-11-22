@@ -6,12 +6,12 @@ import MacWindow from "../components/MacWindow/MacWindow";
 import AutoLink from "../components/AutoLink/AutoLink";
 import Thumbnail from "../components/PostListing/Thumbnail";
 import AskAnswerAnimation from "../components/MacWindow/AskAnswerAnimation";
-import TipTrickWindow from "../components/MacWindow/TipTrickWindow";
 import MainLayout from "../layout/index";
 
-import { getPostList, getTagPath } from "../utils/helpers";
+import { getPostList, getTagPath, useSlash } from "../utils/helpers";
 import config from "../../data/SiteConfig";
-import { useSlash } from "../utils/helpers";
+import welcomeSectionImage from "../../content/images/illustration-pair-programming.svg";
+
 import "./index.scss";
 
 const WelcomeSection = () => (
@@ -39,9 +39,7 @@ const WelcomeSection = () => (
         </div>
       </div>
       <div className="right col-xs-12 col-lg-6">
-        <MacWindow dark>
-          <TipTrickWindow />
-        </MacWindow>
+        <img src={welcomeSectionImage} alt="" className="illustration" />
       </div>
     </div>
   </section>
