@@ -123,9 +123,7 @@ const CommunitySection = () => (
         </MacWindow>
       </div>
       <div className="right color-white col-xs-12 col-lg-6">
-        <h3>
-          <b className="color-dark-grey">👨🏻‍💻👩🏻‍💻</b> Hỏi đáp JavaScript VN
-        </h3>
+        <h3>👨🏻‍💻👩🏻‍💻 Hỏi đáp JavaScript VN</h3>
         <blockquote>
           The best way to learn is to ask.
           <cite>- Anonymous</cite>
