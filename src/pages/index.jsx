@@ -39,7 +39,9 @@ const WelcomeSection = () => (
         </div>
       </div>
       <div className="right col-xs-12 col-lg-6">
-        <img src={welcomeSectionImage} alt="" className="illustration" />
+        <AutoLink to={config.servicePageUrl}>
+          <img src={welcomeSectionImage} alt="" className="illustration" />
+        </AutoLink>
       </div>
     </div>
   </section>

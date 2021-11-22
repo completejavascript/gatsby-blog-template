@@ -50,6 +50,7 @@ const config = {
   freebiePageUrl: "/freebie",
   javaScriptPageUrl: "/javascript",
   reactPageUrl: "/react",
+  servicePageUrl: "/dich-vu",
   serviceEmail: "completejavascript.super@gmail.com",
   freeLancerLink: "https://www.upwork.com/freelancers/~015218a85e68b18cf6",
   // Use for page
