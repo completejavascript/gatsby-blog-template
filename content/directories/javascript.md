@@ -45,9 +45,9 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 ### Đối tượng (object)
 
 - [Objects](/javascript-object-last-but-not-least/)
-- [JSON](/tim-hieu-ve-json-trong-javascript/)
 - [Kiểm tra empty object](/kiem-tra-empty-object-trong-javascript/)
 - [Immutable object - đối tượng bất biến](/2-cach-tao-immutable-object-javascript/)
+- [Symbol](/tim-hieu-ve-symbol-trong-javascript/)
 
 ### Các kiểu dữ liệu
 
@@ -61,9 +61,9 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Set](/ban-biet-gi-ve-set-trong-javascript/)
 - [Map](/map-trong-javascript-thi-sao/)
 - [So sánh Map và Object](/so-sanh-map-voi-object-trong-javascript/)
-- [Symbol](/tim-hieu-ve-symbol-trong-javascript/)
 - [Ứng dụng reduce trong mảng](/ung-dung-cua-reduce-javascript/)
 - [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6/)
+- [JSON](/tim-hieu-ve-json-trong-javascript/)
 
 ### Lập trình hướng đối tượng
 

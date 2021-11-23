@@ -1,5 +1,5 @@
 ---
-date: "2017-06-07T23:00:14Z"
+date: "2017-05-18T23:00:14Z"
 update: "2019-03-06T23:00:14Z"
 template: "post"
 directory: "JavaScript"
@@ -8,7 +8,7 @@ keywords: "symbol trong JavaScript"
 description: "Symbol là một kiểu dữ liệu mới được giới thiệu từ phiên bản ES6. Bài này mình sẽ tìm hiểu cơ bản về Symbol trong JavaScript với các ứng dụng của nó."
 slug: tim-hieu-ve-symbol-trong-javascript
 title: "Tìm hiểu về Symbol trong JavaScript"
-series: "JavaScript: Các kiểu dữ liệu"
+series: "JavaScript: Object"
 tags:
   - ES6
   - Symbol

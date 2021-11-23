@@ -1,5 +1,5 @@
 ---
-date: "2017-05-15T00:21:47Z"
+date: "2017-06-10T00:21:47Z"
 update: "2021-10-17T00:21:47Z"
 template: "post"
 directory: "JavaScript"
@@ -8,7 +8,7 @@ keywords: "json"
 description: "Bài viết này mình sẽ tìm hiểu tổng quan về JSON, ứng dụng và cách sử dụng JSON trong JavaScript. Ngoài ra, mình cũng so sánh JSON với JavaScript Object."
 slug: tim-hieu-ve-json-trong-javascript
 title: "Tìm hiểu về JSON trong JavaScript"
-series: "JavaScript: Object"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - JSON
   - Kiểu dữ liệu
