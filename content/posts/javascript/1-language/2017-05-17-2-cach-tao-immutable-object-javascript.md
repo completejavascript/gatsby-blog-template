@@ -1,5 +1,5 @@
 ---
-date: "2017-06-03T02:57:04Z"
+date: "2017-05-17T02:57:04Z"
 update: "2018-07-21T02:57:04Z"
 template: "post"
 directory: "JavaScript"
@@ -9,7 +9,7 @@ description: "Có nhiều trường hợp bạn mong muốn object là immutable
 slug: 2-cach-tao-immutable-object-javascript
 title: "2 cách tạo immutable object trong JavaScript"
 shortTitle: "2 cách tạo immutable object trong JS"
-series: "JavaScript: Các kiểu dữ liệu"
+series: "JavaScript: Object"
 tags:
   - ES6
   - Object

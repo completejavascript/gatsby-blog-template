@@ -1,5 +1,5 @@
 ---
-date: "2017-05-30T00:10:29Z"
+date: "2017-05-14T00:10:29Z"
 update: "2021-10-16T00:10:29Z"
 template: "post"
 directory: "JavaScript"
@@ -8,7 +8,7 @@ keywords: "JavaScript Object"
 description: "JavaScript là ngôn ngữ dựa trên đối tượng, nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn trở thành master trên con đường JavaScript học. Hãy tìm hiểu thật kỹ về Object trong JavaScript nhé!"
 slug: javascript-object-last-but-not-least
 title: "JavaScript Object - last but not least"
-series: "JavaScript: Các kiểu dữ liệu"
+series: "JavaScript: Object"
 tags:
   - Kiểu dữ liệu
   - Object

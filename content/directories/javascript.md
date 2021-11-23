@@ -42,6 +42,13 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Arrow function là gì? Arrow function trong JS](/arrow-function-la-gi-arrow-function-trong-js/)
 - [Phân biệt var và let](/phan-biet-var-va-let-trong-javascript/)
 
+### Đối tượng (object)
+
+- [Objects](/javascript-object-last-but-not-least/)
+- [JSON](/tim-hieu-ve-json-trong-javascript/)
+- [Kiểm tra empty object](/kiem-tra-empty-object-trong-javascript/)
+- [Immutable object - đối tượng bất biến](/2-cach-tao-immutable-object-javascript/)
+
 ### Các kiểu dữ liệu
 
 - [ES6 template string](/su-dung-es6-template-string-co-gi-hay/)
@@ -50,10 +57,6 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Sắp xếp mảng](/array-sorting-van-de-muon-thuo/)
 - [Sắp xếp mảng Tiếng Việt](/sap-xep-tieng-viet-javascript/)
 - [forEach và các phương thức duyệt mảng](/javascript-foreach-la-cai-quai-gi/)
-- [Objects](/javascript-object-last-but-not-least/)
-- [JSON](/tim-hieu-ve-json-trong-javascript/)
-- [Kiểm tra empty object](/kiem-tra-empty-object-trong-javascript/)
-- [Immutable object - đối tượng bất biến](/2-cach-tao-immutable-object-javascript/)
 - [Destructuring Assignment](/destructuring-assignment-trong-javascript/)
 - [Set](/ban-biet-gi-ve-set-trong-javascript/)
 - [Map](/map-trong-javascript-thi-sao/)
