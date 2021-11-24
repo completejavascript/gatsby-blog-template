@@ -22,7 +22,7 @@ Cũng như bài viết trước, mình chia sẻ với bạn các link bài vi�
 - [JavaScript Array cơ bản](/javascript-array-co-ban/)
 - [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
 - [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
-- [JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
+- [JavaScript Object – last but not least](/object-la-gi-object-trong-javascript/)
 - [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
 ## Intermediate Algorithm Scripting - Sum All Numbers in a Range
@@ -125,7 +125,7 @@ Tham khảo:
 
 ## Intermediate Algorithm Scripting - Wherefore art thou
 
-Duyệt mảng của các [object](/javascript-object-last-but-not-least/) và trả về một mảng bao gồm các object chứa thuộc tính trùng khớp với thành phần cho trước.
+Duyệt mảng của các [object](/object-la-gi-object-trong-javascript/) và trả về một mảng bao gồm các object chứa thuộc tính trùng khớp với thành phần cho trước.
 
 ```js
 function whatIsInAName(collection, source) {

@@ -24,7 +24,7 @@ Thực ra, nếu nói là "lập trình hướng đối tượng" (object-orient
 ## Ngôn ngữ lập trình dựa trên đối tượng
 
 - Không hỗ trợ đầy đủ các đặc điểm của OOP như đa hình và kế thừa
-- Có sẵn kiểu dữ liệu [đối tượng](/javascript-object-last-but-not-least/). Ví dụ: JavaScript có sẵn đối tượng window
+- Có sẵn kiểu dữ liệu [đối tượng](/object-la-gi-object-trong-javascript/). Ví dụ: JavaScript có sẵn đối tượng window
 - Một số ngôn ngữ lập trình: JavaScript, VB,...
 
 Trên đây là một số những điểm khác nhau giữa ngôn ngữ lập trình hướng đối tượng và ngôn ngữ lập trình dựa trên đối tượng. Hy vọng qua đây, bạn có thể phân biệt được hai loại ngôn ngữ lập trình này.

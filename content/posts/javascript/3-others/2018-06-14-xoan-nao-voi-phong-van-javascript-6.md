@@ -125,7 +125,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-[Object.preventExtensions](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions) ngăn chặn việc thêm thuộc tính vào [object](/javascript-object-last-but-not-least/).
+[Object.preventExtensions](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions) ngăn chặn việc thêm thuộc tính vào [object](/object-la-gi-object-trong-javascript/).
 
 Do đó, việc thêm thuộc tính **person.job = "teacher"** sẽ không có ý nghĩa. Vì vậy, kết quả của câu hỏi sẽ là: **{name: "bar"}**.
 

@@ -21,7 +21,7 @@ Có một câu nói mang đầy tính triết học như này:
 
 > Một vấn đề phức tạp có thể được quản lý bằng cách chia nó thành những phần nhỏ độc lập với nhau.
 
-Mỗi thành phần nhỏ ở đây chính là [**object**](/javascript-object-last-but-not-least/). Object cung cấp cho chúng ta những phương thức để gọi mà không cần biết nội dung bên trong nó như thế nào. Sau khi xây dựng được những object hoạt động theo đúng yêu cầu, ta sẽ sử dụng chúng để giải quyết những bài toán lớn hơn một cách đơn giản. Đây cũng chính là tư tưởng **chia để trị**.
+Mỗi thành phần nhỏ ở đây chính là [**object**](/object-la-gi-object-trong-javascript/). Object cung cấp cho chúng ta những phương thức để gọi mà không cần biết nội dung bên trong nó như thế nào. Sau khi xây dựng được những object hoạt động theo đúng yêu cầu, ta sẽ sử dụng chúng để giải quyết những bài toán lớn hơn một cách đơn giản. Đây cũng chính là tư tưởng **chia để trị**.
 
 ## Method (phương thức)
 

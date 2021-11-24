@@ -261,7 +261,7 @@ console.log(myDog.name, myDog.color);
 
 ### Arrow function không có thuộc tính prototype
 
-Về cơ bản, mọi [đối tượng](/javascript-object-last-but-not-least/) trong JavaScript đều có thuộc tính prototype và [kế thừa](/ke-thua-co-ban-trong-javascript/) cũng theo prototype.
+Về cơ bản, mọi [đối tượng](/object-la-gi-object-trong-javascript/) trong JavaScript đều có thuộc tính prototype và [kế thừa](/ke-thua-co-ban-trong-javascript/) cũng theo prototype.
 
 Tuy nhiên, nếu _arrow function_ không thể sử dụng làm constructor thì mình cho rằng điều này cũng hợp lý.
 

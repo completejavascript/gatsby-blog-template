@@ -19,7 +19,7 @@ Nếu các bạn đã đọc qua bài viết của mình về [XMLHttpRequest](/
 
 ## Promise JavaScript là gì?
 
-Promise JavaScript là một [đối tượng](/javascript-object-last-but-not-least/) cho phép bạn thực hiện những tác vụ bất đồng bộ. Sau đây là cách sử dụng cơ bản của Promise (sử dụng ES6):
+Promise JavaScript là một [đối tượng](/object-la-gi-object-trong-javascript/) cho phép bạn thực hiện những tác vụ bất đồng bộ. Sau đây là cách sử dụng cơ bản của Promise (sử dụng ES6):
 
 ```js
 let p = new Promise((resolve, reject) => {

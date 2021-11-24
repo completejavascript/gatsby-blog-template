@@ -52,7 +52,7 @@ false
 
 **Giải thích:**
 
-Trước tiên, bạn nhận thấy biến **a** là một [mảng](/javascript-array-co-ban/) gồm 2 phần tử <code>{x : 1}</code> và <code>{y : 2}</code>. Trong đó, mỗi phần tử lại là một [object](/javascript-object-last-but-not-least/).
+Trước tiên, bạn nhận thấy biến **a** là một [mảng](/javascript-array-co-ban/) gồm 2 phần tử <code>{x : 1}</code> và <code>{y : 2}</code>. Trong đó, mỗi phần tử lại là một [object](/object-la-gi-object-trong-javascript/).
 
 Tiếp theo, trong câu lệnh <code>const clone_a = [...a]</code>, mình sử dụng [spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) để copy array a sang một biến mới là **clone_a**.
 

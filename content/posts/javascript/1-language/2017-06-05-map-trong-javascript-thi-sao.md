@@ -17,7 +17,7 @@ tags:
 
 Map trong JavaScript là một loại object cho phép lưu trữ dữ liệu theo kiểu key-value.
 
-Nghe thì có vẻ giống với [object](/javascript-object-last-but-not-least/) bình thường nhỉ? Vì object cũng cho phép bạn làm điều này mà.
+Nghe thì có vẻ giống với [object](/object-la-gi-object-trong-javascript/) bình thường nhỉ? Vì object cũng cho phép bạn làm điều này mà.
 
 Nhưng mọi thứ trên đời này đều có ý nghĩa của riêng nó. Map cũng không ngoại lệ. Map có **những đặc điểm riêng biệt** so với object thông thường.
 

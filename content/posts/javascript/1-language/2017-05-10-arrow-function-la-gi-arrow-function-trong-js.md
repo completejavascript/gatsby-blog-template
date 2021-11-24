@@ -17,7 +17,7 @@ tags:
 
 Ngoài [function declaration](/ham-la-gi-ham-trong-javascript/) và [function expression](/function-expression-trong-javascript/), JavaScript còn có **arrow function**. Trong bài viết này, mình sẽ trình bày về arrow function là gì và cách sử dụng arrow function cơ bản.
 
-> 📝 Ngoài ra, mình có bài viết về [phân biệt arrow function và function](/phan-biet-arrow-function-va-function-trong-javascript/). Để hiểu bài viết này, bạn cần biết thêm nhiều kiến thức như [object trong JavaScript](/javascript-object-last-but-not-least/).
+> 📝 Ngoài ra, mình có bài viết về [phân biệt arrow function và function](/phan-biet-arrow-function-va-function-trong-javascript/). Để hiểu bài viết này, bạn cần biết thêm nhiều kiến thức như [object trong JavaScript](/object-la-gi-object-trong-javascript/).
 >
 > Đó là lý do mình tách riêng ra bài viết khác.
 

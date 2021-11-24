@@ -61,7 +61,7 @@ Như vậy là mình đã tìm hiểu về cơ chế làm việc của React Con
 const MyContext = React.createContext(defaultValue);
 ```
 
-Đây là API đầu tiên **bắt buộc** phải sử dụng. API này sẽ tạo mới một [object](/javascript-object-last-but-not-least/) đóng vai trò là Context. Và khi một component đăng ký sử dụng Context này thì nó sẽ đọc giá trị context từ **Provider** gần nhất.
+Đây là API đầu tiên **bắt buộc** phải sử dụng. API này sẽ tạo mới một [object](/object-la-gi-object-trong-javascript/) đóng vai trò là Context. Và khi một component đăng ký sử dụng Context này thì nó sẽ đọc giá trị context từ **Provider** gần nhất.
 
 Ngược lại, khi bên ngoài nó không có một **Provider** nào thì giá trị của context sẽ ứng với giá trị **defaultValue** bên trên.
 

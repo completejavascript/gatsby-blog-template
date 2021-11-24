@@ -23,7 +23,7 @@ Mời bạn theo dõi bài viết!
 
 ## Nhắc lại khái niệm
 
-**[Object](/javascript-object-last-but-not-least/)** là một khái niệm trừu tượng dùng để biểu diễn một vật thể (cụ thể). Trong đó, các thuộc tính dùng để miêu tả đặc điểm, tính chất của đối tượng. Và các phương thức dùng để chỉ các hoạt động của đối tượng.
+**[Object](/object-la-gi-object-trong-javascript/)** là một khái niệm trừu tượng dùng để biểu diễn một vật thể (cụ thể). Trong đó, các thuộc tính dùng để miêu tả đặc điểm, tính chất của đối tượng. Và các phương thức dùng để chỉ các hoạt động của đối tượng.
 
 **[Map](/map-trong-javascript-thi-sao/)** là một cấu trúc dữ liệu cho phép lưu trữ dữ liệu theo kiểu **key-value**, tương tự như object.
 

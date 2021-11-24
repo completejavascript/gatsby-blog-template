@@ -1,6 +1,6 @@
 ---
 date: "2017-05-16T06:00:00Z"
-update: "2019-10-16T06:00:00Z"
+update: "2021-11-16T06:00:00Z"
 template: "post"
 directory: "JavaScript"
 title: "Cách kiểm tra empty object trong JavaScript"
@@ -18,7 +18,7 @@ tags:
 
 Giả sử bạn đang muốn kiểm tra empty object đối với một giá trị cho trước. Với empty object được hiểu như sau:
 
-- Đó là một [object](/javascript-object-last-but-not-least/).
+- Đó là một [object](/object-la-gi-object-trong-javascript/).
 - Và nó không có một thuộc tính [enumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) nào cả.
 
 Tức là nó được biểu diễn như sau:

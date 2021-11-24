@@ -345,7 +345,7 @@ function heapSort(array) {
 
 Trên đây là những vấn đề cơ bản về Array Sorting, cùng với một số thuật toán sắp xếp mảng 1 chiều. Theo mình, đây là những kiến thức cơ bản và có thể được áp dụng rất nhiều.
 
-Xin chào và hẹn gặp lại ở [bài viết sau](/javascript-object-last-but-not-least/), thân ái!
+Xin chào và hẹn gặp lại ở [bài viết sau](/object-la-gi-object-trong-javascript/), thân ái!
 
 ## Tham Khảo
 

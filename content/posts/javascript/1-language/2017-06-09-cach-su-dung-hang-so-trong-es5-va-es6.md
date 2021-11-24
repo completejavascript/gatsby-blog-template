@@ -29,7 +29,7 @@ Object.defineProperties(obj, props);
 
 Phương thức này có 2 tham số là:
 
-- **obj**: là [object](/javascript-object-last-but-not-least/) chứa hằng số cần khai báo. Nếu bạn muốn sử dụng hằng số cho toàn bộ chương trình thì có thể sử dụng obj là **window**.
+- **obj**: là [object](/object-la-gi-object-trong-javascript/) chứa hằng số cần khai báo. Nếu bạn muốn sử dụng hằng số cho toàn bộ chương trình thì có thể sử dụng obj là **window**.
 - **props**: là thuộc tính được định nghĩa. Mặc định, thuộc tính này có giá trị **writable = false**, tức là giá trị của nó không thể thay đổi
 
 Ví dụ:

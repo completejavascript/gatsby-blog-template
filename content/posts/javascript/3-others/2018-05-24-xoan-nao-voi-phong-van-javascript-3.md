@@ -52,7 +52,7 @@ Theo định nghĩa của [Object.create()](https://developer.mozilla.org/en-US/
 
 Tức là Object.create sẽ tạo ra một object mới, sử dụng object cho trước làm **proto** cho object mới tạo ra.
 
-Trong câu hỏi này, [object](/javascript-object-last-but-not-least/) a sẽ được dùng làm **proto** cho object b.
+Trong câu hỏi này, [object](/object-la-gi-object-trong-javascript/) a sẽ được dùng làm **proto** cho object b.
 
 Giả sử không có câu lệnh _delete b.x_ thì bạn có thể đoán được kết quả sẽ trả về của phương thức _getX()_ là **this.x = b.x = 10**. Nhưng nếu _delete b.x_ thì JavaScript sẽ tìm đến thằng cha gần nhất của b, thông qua **proto**, và đó chính là object a. Vì vậy, kết quả **this.x = a.x = 1**.
 

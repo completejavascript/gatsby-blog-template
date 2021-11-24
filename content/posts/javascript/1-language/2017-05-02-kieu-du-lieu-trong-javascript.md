@@ -223,7 +223,7 @@ Object là kiểu dữ liệu tham chiếu. Có thể hiểu **object** là mộ
 
 Trong đó, kiểu dữ liệu của **key** có thể là **string** hoặc **symbol**. Và **value** ứng với **key** có thể là bất kỳ kiểu dữ liệu nào.
 
-> Mình sẽ tìm hiểu sâu hơn về **object** trong bài viết [JavaScript Object - last but not least](/javascript-object-last-but-not-least/).
+> Mình sẽ tìm hiểu sâu hơn về **object** trong bài viết [JavaScript Object - last but not least](/object-la-gi-object-trong-javascript/).
 
 ## Cách xác định kiểu dữ liệu của biến
 
@@ -267,7 +267,7 @@ console.log(typeof x); // object
 >
 > (1): Cách khởi tạo **symbol** sẽ trình bày chi tiết ở bài [tìm hiểu về Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript/).
 >
-> (2): Cách tạo **object** sẽ trình bày chi tiết ở bài [JavaScript Object - last but not least](/javascript-object-last-but-not-least/).
+> (2): Cách tạo **object** sẽ trình bày chi tiết ở bài [JavaScript Object - last but not least](/object-la-gi-object-trong-javascript/).
 >
 > (3): Đây có thể coi là một lỗi của `typeof` được tạo ra khi JavaScript mới xuất hiện. Nhưng vì tính tương thích ngược, nên đặc điểm này của `typeof` vẫn được giữ đến bây giờ.
 

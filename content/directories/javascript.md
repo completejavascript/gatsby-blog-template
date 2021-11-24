@@ -44,7 +44,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 ### Đối tượng (object)
 
-- [Object là gì? Object trong JavaScript](/object-la-gi-object-trong-javascript)
+- [Object là gì? Object trong JavaScript](/object-la-gi-object-trong-javascript/)
 - [Kiểm tra empty object](/kiem-tra-empty-object-trong-javascript/)
 - [Immutable object - đối tượng bất biến](/2-cach-tao-immutable-object-javascript/)
 - [Symbol](/tim-hieu-ve-symbol-trong-javascript/)

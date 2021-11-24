@@ -99,7 +99,7 @@ w.terminate();
 
 #### Truyền Message thông thường
 
-Trong phương pháp này, tham số truyền vào sẽ là một [object](/javascript-object-last-but-not-least/). Dữ liệu sẽ được copy từ phía gửi sang phía nhận.
+Trong phương pháp này, tham số truyền vào sẽ là một [object](/object-la-gi-object-trong-javascript/). Dữ liệu sẽ được copy từ phía gửi sang phía nhận.
 
 Ví dụ như sau:
 

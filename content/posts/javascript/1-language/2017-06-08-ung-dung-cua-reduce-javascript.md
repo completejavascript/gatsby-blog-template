@@ -195,7 +195,7 @@ const getPost = (postID, posts) => {
 
 Theo mình thấy, đây cũng là một cách làm hay và dễ hiểu bởi cách suy nghĩ trực tiếp vào bài toán. Tuy nhiên, cách làm này có một vấn đề là: nếu mảng các bài viết không phải 4 phần tử mà là hàng nghìn, hàng triệu phần tử thì việc dùng vòng lặp for để duyệt mảng với mỗi lần truy vấn thật sự rất tốn thời gian - độ phức tạp thuật toán là O(N).
 
-Cách giải quyết cho vấn đề trên là mình sẽ xây dựng một [object](/javascript-object-last-but-not-least/) để map mỗi **postID** với giá trị tương ứng của bài viết. Và khi đã có một object như vậy thì việc tìm kiếm sẽ vô cùng đơn giản - độ phức tạp thuật toán là O(1).
+Cách giải quyết cho vấn đề trên là mình sẽ xây dựng một [object](/object-la-gi-object-trong-javascript/) để map mỗi **postID** với giá trị tương ứng của bài viết. Và khi đã có một object như vậy thì việc tìm kiếm sẽ vô cùng đơn giản - độ phức tạp thuật toán là O(1).
 
 ```js
 // Object để map mỗi postID với mỗi post tương ứng

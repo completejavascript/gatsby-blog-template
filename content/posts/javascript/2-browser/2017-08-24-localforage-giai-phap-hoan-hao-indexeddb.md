@@ -93,7 +93,7 @@ localforage
 Trong đó:
 
 - **key**: là string, phân biệt hoa-thường và được sử dụng để lấy giá trị ra sau này.
-- **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number, string](/kieu-du-lieu-trong-javascript/), [array](/javascript-array-co-ban/), [object](/javascript-object-last-but-not-least/), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
+- **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number, string](/kieu-du-lieu-trong-javascript/), [array](/javascript-array-co-ban/), [object](/object-la-gi-object-trong-javascript/), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
 
 Ví dụ:
 

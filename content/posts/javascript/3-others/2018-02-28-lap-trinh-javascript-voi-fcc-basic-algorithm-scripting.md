@@ -28,7 +28,7 @@ Trước khi đi vào tìm hiểu các bài toán, các bạn có thể đọc t
 - [JavaScript Array cơ bản](/javascript-array-co-ban/)
 - [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
 - [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
-- [JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
+- [JavaScript Object – last but not least](/object-la-gi-object-trong-javascript/)
 - [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
 ## Basic Algorithm Scripting - Reverse a String

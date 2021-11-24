@@ -122,7 +122,7 @@ console.log("key2: ", key2); // => name
 
 ### Symbol có thể làm key cho thuộc tính của Object
 
-Đối với [Object](/javascript-object-last-but-not-least/) thì ngoài String, Symbol cũng có thể làm key cho thuộc tính của Object. Ví dụ:
+Đối với [Object](/object-la-gi-object-trong-javascript/) thì ngoài String, Symbol cũng có thể làm key cho thuộc tính của Object. Ví dụ:
 
 ```js
 const id = Symbol("id");

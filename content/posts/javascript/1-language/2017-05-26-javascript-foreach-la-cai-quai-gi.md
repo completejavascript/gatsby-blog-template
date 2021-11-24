@@ -419,7 +419,7 @@ var var1 = arr.find(callback[, thisArg])
 
 Tham số truyền vào cũng giống hệt như hàm forEach.
 
-Ví dụ sau tìm ra một [object](/javascript-object-last-but-not-least/) với tên của nó thoả mãn điều kiện cho trước:
+Ví dụ sau tìm ra một [object](/object-la-gi-object-trong-javascript/) với tên của nó thoả mãn điều kiện cho trước:
 
 ```js
 const inventory = [

@@ -16,7 +16,7 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Thông thường, [object](/javascript-object-last-but-not-least/) trong JavaScript là **mutable** - nghĩa là trạng thái của object có thể thay đổi được. Tuy nhiên, có nhiều trường hợp bạn mong muốn object đó là **immutable** - trạng thái không thể thay đổi được. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript.
+Thông thường, [object](/object-la-gi-object-trong-javascript/) trong JavaScript là **mutable** - nghĩa là trạng thái của object có thể thay đổi được. Tuy nhiên, có nhiều trường hợp bạn mong muốn object đó là **immutable** - trạng thái không thể thay đổi được. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript.
 
 ## Tạo immutable object sử dụng Object.defineProperty
 

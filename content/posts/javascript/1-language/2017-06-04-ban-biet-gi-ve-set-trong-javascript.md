@@ -44,7 +44,7 @@ console.log(typeof set1);
 // => object
 ```
 
-Xem thêm:[JavaScript Object – last but not least](/javascript-object-last-but-not-least/)
+Xem thêm:[JavaScript Object – last but not least](/object-la-gi-object-trong-javascript/)
 
 ### Dữ liệu trong Set là duy nhất, không trùng lặp
 

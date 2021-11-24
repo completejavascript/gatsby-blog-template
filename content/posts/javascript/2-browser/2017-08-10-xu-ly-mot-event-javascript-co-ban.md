@@ -82,7 +82,7 @@ Thì bây giờ, mỗi khi bạn click chuột trái vào trang web, chỉ có h
 
 ### Đăng ký event cho nhiều node dựa trên đối tượng event
 
-Bình thường để đăng ký event trong JavaScript cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/javascript-object-last-but-not-least/) event để phân biệt node được gọi.
+Bình thường để đăng ký event trong JavaScript cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/object-la-gi-object-trong-javascript/) event để phân biệt node được gọi.
 
 Hãy xem ví dụ sau:
 

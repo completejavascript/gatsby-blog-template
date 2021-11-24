@@ -160,7 +160,7 @@ sayHello("Hi!"); // Hi!
 
 Khi hàm `sayHello` được gọi, giá trị [string](/kieu-du-lieu-trong-javascript/) được sao chép (copy) vào biến cục bộ `message`. Trong thân hàm sẽ sử dụng biến cục bộ đó.
 
-> **Chú ý**: khi truyền tham số vào hàm (ngoại trừ [object](/javascript-object-last-but-not-least/) là kiểu dữ liệu tham chiếu), hàm trong JavaScript luôn thực hiện sao chép dữ liệu mà không làm thay đổi giá trị biến bên ngoài.
+> **Chú ý**: khi truyền tham số vào hàm (ngoại trừ [object](/object-la-gi-object-trong-javascript/) là kiểu dữ liệu tham chiếu), hàm trong JavaScript luôn thực hiện sao chép dữ liệu mà không làm thay đổi giá trị biến bên ngoài.
 
 Ví dụ:
 

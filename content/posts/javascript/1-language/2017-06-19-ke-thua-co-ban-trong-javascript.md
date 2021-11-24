@@ -55,7 +55,7 @@ Lớp con **Dog** kế thừa lớp cha Animal. Trong đó, mình gán **this.su
 
 Việc tiếp theo là ghi đè thuộc tính type của lớp cha **this.type = "Dog"**, và định nghĩa thêm một phương thức khác là **shout**.
 
-Cuối cùng, để test thử, mình có tạo mới một [object](/javascript-object-last-but-not-least/) _myDog_ kiểu Dog và gọi ra các phương thức của nó với các phương thức của lớp cha Animal. Bạn có thể thấy rằng việc gọi ra phương thức _shout()_ và _sayType()_ đã thành công. Tuy nhiên, phương thức _sayName()_ thì bị lỗi:
+Cuối cùng, để test thử, mình có tạo mới một [object](/object-la-gi-object-trong-javascript/) _myDog_ kiểu Dog và gọi ra các phương thức của nó với các phương thức của lớp cha Animal. Bạn có thể thấy rằng việc gọi ra phương thức _shout()_ và _sayType()_ đã thành công. Tuy nhiên, phương thức _sayName()_ thì bị lỗi:
 
 **TypeError: myDog.sayName is not a function**
 

@@ -62,7 +62,7 @@ geolocation.getCurrentPosition(onGeoSuccess, onGeoError, options);
 
 - **onGeoSuccess**: hàm callback được gọi khi việc lấy vị trí thành công
 - **onGeoError**: hàm callback được gọi khi việc lấy vị trí bị lỗi
-- **options**: là một [object](/javascript-object-last-but-not-least/), chứa một số cài đặt kèm theo, như độ chính xác, timeout, thời gian position được cached (giá trị này = 0 nghĩa là không bao giờ cache position). Bạn có thể đọc thêm về các option trên tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions).
+- **options**: là một [object](/object-la-gi-object-trong-javascript/), chứa một số cài đặt kèm theo, như độ chính xác, timeout, thời gian position được cached (giá trị này = 0 nghĩa là không bao giờ cache position). Bạn có thể đọc thêm về các option trên tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions).
 
 #### Xử lý khi lấy vị trí người dùng thành công
 

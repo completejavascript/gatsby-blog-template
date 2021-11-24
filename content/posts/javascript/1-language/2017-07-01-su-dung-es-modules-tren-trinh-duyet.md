@@ -160,7 +160,7 @@ export class Utils {
 }
 ```
 
-Hoặc gộp chúng vào thành 1 [object](/javascript-object-last-but-not-least/) với một từ khoá _export_:
+Hoặc gộp chúng vào thành 1 [object](/object-la-gi-object-trong-javascript/) với một từ khoá _export_:
 
 ```js
 let x = 1;

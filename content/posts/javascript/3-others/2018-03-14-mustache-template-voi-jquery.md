@@ -62,7 +62,7 @@ let tmpl = $("#my-template").html();
 Mustache.parse(tmpl);
 ```
 
-Tương tự như [bài viết trước](/chuyen-html-template-sang-dom-node/), bài này mình cũng mô phỏng lại việc render các bình luận cho một bài viết. Dữ liệu được lưu trong mảng các [object](/javascript-object-last-but-not-least/) với 2 thuộc tính là name và comment.
+Tương tự như [bài viết trước](/chuyen-html-template-sang-dom-node/), bài này mình cũng mô phỏng lại việc render các bình luận cho một bài viết. Dữ liệu được lưu trong mảng các [object](/object-la-gi-object-trong-javascript/) với 2 thuộc tính là name và comment.
 
 ```js
 let data = [

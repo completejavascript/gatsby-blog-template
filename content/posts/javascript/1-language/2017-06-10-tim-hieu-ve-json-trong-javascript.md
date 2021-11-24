@@ -30,7 +30,7 @@ JSON viết tắt bởi **JavaScript Object Notation**. Dịch nôm na thì nó 
 }
 ```
 
-Nếu bạn đã biết về [JavaScript Object](/javascript-object-last-but-not-least/) thì bạn có thể thấy rằng ví dụ trên cũng chính là biểu diễn cho một Object trong JavaScript. Trong đó, gồm có hai thành phần:
+Nếu bạn đã biết về [JavaScript Object](/object-la-gi-object-trong-javascript/) thì bạn có thể thấy rằng ví dụ trên cũng chính là biểu diễn cho một Object trong JavaScript. Trong đó, gồm có hai thành phần:
 
 - **keys**: _type, brand, operating system, graphic card_
 - **values**: _laptop, Sony, Windows 7, NVIDIA_

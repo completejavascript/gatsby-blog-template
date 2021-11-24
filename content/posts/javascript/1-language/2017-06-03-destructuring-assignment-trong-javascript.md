@@ -16,7 +16,7 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Destructuring Assignment trong JavaScript là một cú pháp đặc biệt cho phép bạn **lấy ra dữ liệu** từ [Object](/javascript-object-last-but-not-least/) hoặc [Array](/javascript-array-co-ban/) và gán chúng vào các biến thông thường. Tuy nhiên, việc "lấy ra dữ liệu" này sẽ chỉ copy mà không làm thay đổi cấu trúc của Object hoặc Array. Dưới đây, mình sẽ tìm hiểu về cách sử dụng và ứng dụng của Destructuring Assignment trong JavaScript với hai kiểu dữ liệu cơ bản là Array và Object.
+Destructuring Assignment trong JavaScript là một cú pháp đặc biệt cho phép bạn **lấy ra dữ liệu** từ [Object](/object-la-gi-object-trong-javascript/) hoặc [Array](/javascript-array-co-ban/) và gán chúng vào các biến thông thường. Tuy nhiên, việc "lấy ra dữ liệu" này sẽ chỉ copy mà không làm thay đổi cấu trúc của Object hoặc Array. Dưới đây, mình sẽ tìm hiểu về cách sử dụng và ứng dụng của Destructuring Assignment trong JavaScript với hai kiểu dữ liệu cơ bản là Array và Object.
 
 ## Destructuring Assignment với Array
 

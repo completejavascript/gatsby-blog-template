@@ -51,7 +51,7 @@ $.getJSON(requestURL, (info) => {
 });
 ```
 
-Kết quả trả về sẽ là [object](/javascript-object-last-but-not-least/) **info**, với đầy đủ những thông tin cần thiết như nhiệt độ, độ ẩm, tốc độ gió,... ứng với thời điểm hiện tại, 48 giờ tới và 7 ngày tới.
+Kết quả trả về sẽ là [object](/object-la-gi-object-trong-javascript/) **info**, với đầy đủ những thông tin cần thiết như nhiệt độ, độ ẩm, tốc độ gió,... ứng với thời điểm hiện tại, 48 giờ tới và 7 ngày tới.
 
 Về lý thuyết thì đến đây là xong, vì bạn đã có được thông tin thời tiết rồi. Nhưng thực tế thì khi bạn chỉ làm như trên bạn sẽ bị lỗi:
 

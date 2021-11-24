@@ -23,7 +23,7 @@ Sau đây, chúng ta sẽ cùng tìm hiểu về Regular Expression trong JavaSc
 
 Có hai cách để tạo ra một Regex JavaScript là:
 
-- Sử dụng hàm khởi tạo của [đối tượng](/javascript-object-last-but-not-least/) RegExp
+- Sử dụng hàm khởi tạo của [đối tượng](/object-la-gi-object-trong-javascript/) RegExp
 - Viết trực tiếp sử dụng cặp dấu "/ /"
 
 ```js

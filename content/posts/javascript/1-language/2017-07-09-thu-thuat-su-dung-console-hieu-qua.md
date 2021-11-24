@@ -28,7 +28,7 @@ Có thể nói, sử dụng **console.log** để [debug](/debug-javascript-de-h
 console.log(obj1 [, obj2, ..., objN]);
 ```
 
-Đối với cách 1, bạn liệt kê các giá trị, [object](/javascript-object-last-but-not-least/) cách nhau bởi dấu phẩy, ví dụ:
+Đối với cách 1, bạn liệt kê các giá trị, [object](/object-la-gi-object-trong-javascript/) cách nhau bởi dấu phẩy, ví dụ:
 
 ```js
 const foo = 1;

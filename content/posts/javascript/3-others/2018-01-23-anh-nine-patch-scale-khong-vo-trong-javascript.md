@@ -80,7 +80,7 @@ Các API mà bạn có thể áp dụng:
 
 ### Hàm getSize
 
-Hàm này trả về một Promise. Trong trường hợp thành công thì kết quả là một [object](/javascript-object-last-but-not-least/) với 3 thông số là url, width, height của bức ảnh gốc, như sau:
+Hàm này trả về một Promise. Trong trường hợp thành công thì kết quả là một [object](/object-la-gi-object-trong-javascript/) với 3 thông số là url, width, height của bức ảnh gốc, như sau:
 
 ```js
 {url: dataUrl, width: image.width, height: image.height}

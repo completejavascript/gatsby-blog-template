@@ -77,7 +77,7 @@ function on(eventName, fn) {
 }
 ```
 
-Bạn có thể thấy rằng, **events** là một [object](/javascript-object-last-but-not-least/) rỗng. Sau này, mỗi thuộc tính (key) của events sẽ là tên của event được đăng ký. Giá trị của thuộc tính (value) là một [mảng](/javascript-array-co-ban/) của các function.
+Bạn có thể thấy rằng, **events** là một [object](/object-la-gi-object-trong-javascript/) rỗng. Sau này, mỗi thuộc tính (key) của events sẽ là tên của event được đăng ký. Giá trị của thuộc tính (value) là một [mảng](/javascript-array-co-ban/) của các function.
 
 Ban đầu events[eventName] sẽ là **undefined**, nên ta sẽ khởi tạoevents[eventName] = [] - là một mảng rỗng. Ngược lại, khi thành phần này đã tồn tại thì chỉ cần [push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) hàm số mới vào mảng.
 

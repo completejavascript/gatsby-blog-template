@@ -274,7 +274,7 @@ https://codepen.io/completejavascript/pen/EpoKZo
 
 Đây là một ứng dụng demo đơn giản sử dụng thuật toán Undo-Redo. Ứng dụng này có khả năng thay đổi **nội dung** và **màu sắc** của chữ _UNDO-REDO_.
 
-Nghĩa là mình có thể lưu trạng thái của ứng dụng bằng một [object](/javascript-object-last-but-not-least/) với 2 trường thông tin là: **text** và **color**.
+Nghĩa là mình có thể lưu trạng thái của ứng dụng bằng một [object](/object-la-gi-object-trong-javascript/) với 2 trường thông tin là: **text** và **color**.
 
 Cụ thể:
 

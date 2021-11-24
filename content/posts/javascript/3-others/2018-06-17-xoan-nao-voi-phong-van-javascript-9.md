@@ -101,7 +101,7 @@ Trước tiên, mình nói về hàm [filter](/javascript-foreach-la-cai-quai-gi
 
 Nói cách khác, phương thức **filter** nhận tham số đầu tiên là một [hàm](/ham-la-gi-ham-trong-javascript/) và trả về một mảng các phần tử làm cho hàm trên **return true**.
 
-Cái này chắc nhiều bạn đã biết rồi. Tuy nhiên, vấn đề chính ở đây là tham số đầu tiên truyền vào là [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). Đây là một built-in [object](/javascript-object-last-but-not-least/) trong JavaScript.
+Cái này chắc nhiều bạn đã biết rồi. Tuy nhiên, vấn đề chính ở đây là tham số đầu tiên truyền vào là [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). Đây là một built-in [object](/object-la-gi-object-trong-javascript/) trong JavaScript.
 
 Nhưng thú vị ở chỗ, bạn có thể sử dụng Boolean như một function để convert một giá trị bất kỳ về kiểu Boolean. Cụ thể trong câu hỏi trên:
 

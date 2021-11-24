@@ -35,7 +35,7 @@ console.log(dog.about()); // => Dog has 4 legs
 console.log(bird.about()); // => Bird has 2 legs
 ```
 
-Trong ví dụ trên, [đối tượng](/javascript-object-last-but-not-least/) sử dụng hàm khởi tạo **Animal** sẽ có 2 thuộc tính (_name_, _leg_) và 1 phương thức (_about_). Tuy nhiên, cách trên có nhược điểm là khó để kế thừa và phương thức _about_ sẽ phải định nghĩa lại đối với mỗi đối tượng. Để khắc phục nhược điểm trên, ta có cách thứ hai là sử dụng **Prototypes**.
+Trong ví dụ trên, [đối tượng](/object-la-gi-object-trong-javascript/) sử dụng hàm khởi tạo **Animal** sẽ có 2 thuộc tính (_name_, _leg_) và 1 phương thức (_about_). Tuy nhiên, cách trên có nhược điểm là khó để kế thừa và phương thức _about_ sẽ phải định nghĩa lại đối với mỗi đối tượng. Để khắc phục nhược điểm trên, ta có cách thứ hai là sử dụng **Prototypes**.
 
 ## Constructor Pattern với Prototypes
 
