@@ -1,5 +1,5 @@
 ---
-date: "2017-05-16T06:00:00Z"
+date: "2017-06-11T06:00:00Z"
 update: "2021-11-16T06:00:00Z"
 template: "post"
 directory: "JavaScript"
@@ -9,7 +9,7 @@ slug: kiem-tra-empty-object-trong-javascript
 keywords: "kiểm tra empty object"
 description: "Bạn đã biết cách kiểm tra empty object trong JavaScript hay chưa? Bài viết này sẽ giới thiệu với bạn cách đơn giản để kiểm tra empty object."
 cover: "../../../images/javascript/kiem-tra-empty-object-trong-javascript-completejavascript.com.png"
-series: "JavaScript: Object"
+series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Object

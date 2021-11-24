@@ -45,7 +45,6 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 ### Đối tượng (object)
 
 - [Object là gì? Object trong JavaScript](/object-la-gi-object-trong-javascript/)
-- [Kiểm tra empty object](/kiem-tra-empty-object-trong-javascript/)
 - [Immutable object - đối tượng bất biến](/2-cach-tao-immutable-object-javascript/)
 - [Symbol](/tim-hieu-ve-symbol-trong-javascript/)
 
@@ -64,6 +63,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Ứng dụng reduce trong mảng](/ung-dung-cua-reduce-javascript/)
 - [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6/)
 - [JSON](/tim-hieu-ve-json-trong-javascript/)
+- [Kiểm tra empty object](/kiem-tra-empty-object-trong-javascript/)
 
 ### Lập trình hướng đối tượng
 
