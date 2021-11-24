@@ -262,6 +262,50 @@ console.log(myComputer["operating system"]); // Windows 7
 console.log(myComputer["graphic card"]); // NVIDIA
 ```
 
+## Cú pháp rút gọn thuộc tính khi khởi tạo object
+
+Khi lập trình, bạn sẽ gặp trường hợp là: bạn muốn sử dụng tên biến làm thuộc tính cho object, ví dụ:
+
+```js
+function makeComputer(type, brand, os, graphicCard) {
+  return {
+    type: type,
+    brand: brand,
+    os: os,
+    graphicCard: graphicCard,
+  };
+}
+
+// Ví dụ
+let myComputer = makeComputer("laptop", "Sony", "Windows 7", "NVIDIA");
+console.log(myComputer.type); // laptop
+console.log(myComputer.brand); // Sony
+console.log(myComputer.os); // Windows 7
+console.log(myComputer.graphicCard); // NVIDIA
+```
+
+Trong ví dụ trên, bạn thấy rằng các thuộc tính trùng với tên của tham số truyền vào hàm: `type: type`, `brand: brand`, `os: os` và `graphicCard: graphicCard`.
+
+Để tránh phải viết lặp lại như vậy, JavaScript cung cấp cú pháp rút gọn như sau:
+
+```js{3-6}
+function makeComputer(type, brand, os, graphicCard) {
+  return {
+    type,
+    brand,
+    os,
+    graphicCard,
+  };
+}
+
+// Ví dụ
+let myComputer = makeComputer("laptop", "Sony", "Windows 7", "NVIDIA");
+console.log(myComputer.type); // laptop
+console.log(myComputer.brand); // Sony
+console.log(myComputer.os); // Windows 7
+console.log(myComputer.graphicCard); // NVIDIA
+```
+
 ## Giới hạn về tên thuộc tính của object trong JS
 
 Như bạn đã biết, bạn không được phép sử dụng **từ khóa và từ dữ trữ** để đặt tên biến trong JavaScript, ví dụ như: "var", "const", "let", "for", "while",...
