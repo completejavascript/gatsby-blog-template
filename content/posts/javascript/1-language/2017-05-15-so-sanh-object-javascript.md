@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/so-sanh-object-javascript.png"
 keywords: "so sánh 2 object trong JavaScript"
-description: ""
+description: "Object khác các kiểu dữ liệu nguyên thủy là object lưu dữ liệu theo tham chiếu. Vì vậy, việc so sánh 2 object trong JavaScript cũng dựa theo địa chỉ."
 slug: so-sanh-object-trong-javascript
 title: "So sánh 2 object trong JavaScript"
 series: "JavaScript: Object"
