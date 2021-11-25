@@ -271,7 +271,7 @@ console.log(isDeepEqual(point1, point2)); // true
 
 Trên đây là thuật toán để so sánh sâu. Bạn có thể tham khảo để rèn luyện tư duy logic.
 
-Còn trong dự án thực tế, bạn có thể sử dụng hàm thư viện [\_.isEqual](https://docs-lodash.com/v4/is-equal/) để giải quyết bài toán nhanh hơn, tránh mất công sinh ra lỗi sau này.
+Còn trong dự án thực tế, bạn có thể sử dụng hàm thư viện [`_.isEqual`](https://docs-lodash.com/v4/is-equal/) để giải quyết bài toán nhanh hơn, tránh mất công sinh ra lỗi sau này.
 
 ## Tổng kết
 

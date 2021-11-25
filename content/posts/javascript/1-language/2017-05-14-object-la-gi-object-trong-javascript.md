@@ -135,6 +135,21 @@ console.log(myComputer.operating system); // ERROR -> lỗi cú pháp
 
 > 📝 Khi **key** chứa dấu cách hoặc các ký tự đặc biệt (khác `_` và `$`), bạn cần phải để **key** bên trong cặp dấu nháy kép `""` hoặc nháy đơn `''`.
 
+**Chú ý:** Trong các ví dụ trên, mình in ra giá trị từng thuộc tính của object để minh họa. Thực tế, bạn có thể dùng [`console.log`](/thu-thuat-su-dung-console-hieu-qua/) để in ra toàn bộ object.
+
+```js
+let myComputer = {
+  type: "laptop",
+  brand: "Sony",
+  os: "Windows 7",
+  graphicCard: "NVIDIA",
+};
+
+console.log(myComputer);
+```
+
+Kiểm tra trên [Dev Tools](/dev-tools-la-gi/), bạn sẽ thấy toàn bộ object được in ra.
+
 ## Cập nhật JavaScript object
 
 Để **thay đổi giá trị thuộc tính** của object, bạn chỉ cần sử dụng cách truy cập ở trên và gán giá trị mới cho thuộc tính đó.
