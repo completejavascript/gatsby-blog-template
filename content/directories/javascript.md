@@ -47,6 +47,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Object là gì? Object trong JavaScript](/object-la-gi-object-trong-javascript/)
 - [So sánh hai object trong JS](/so-sanh-object-trong-javascript/)
 - [Copy object trong JavaScript](/copy-object-trong-javascript/)
+- [Garbage collection trong JavaScript](/garbage-collection-trong-javascript/)
 - [Immutable object - đối tượng bất biến](/2-cach-tao-immutable-object-javascript/)
 - [Symbol](/tim-hieu-ve-symbol-trong-javascript/)
 
