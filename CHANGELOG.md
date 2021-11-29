@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.14.4](https://github.com/completejavascript/completejavascript.com/compare/v1.14.3...v1.14.4) (2021-11-29)
+
+
+### Bug Fixes
+
+* incorrect paginagion for tag page ([e2b9393](https://github.com/completejavascript/completejavascript.com/commit/e2b939373cd6eae07f6631b7d5bfb7f4365512dd))
+* **post:** javascript add post immutable-object ([cb937a4](https://github.com/completejavascript/completejavascript.com/commit/cb937a45f03a0b44cf24276828917ef01019e262))
+* **post:** javascript change post date ([b89543b](https://github.com/completejavascript/completejavascript.com/commit/b89543be83bdef8012acfa2135ceca564ceee90d))
+* **post:** javascript update tags for post ([c123508](https://github.com/completejavascript/completejavascript.com/commit/c123508e029a18ad1c1c32d1436288ff1245dd87))
+
 ### [1.14.3](https://github.com/completejavascript/completejavascript.com/compare/v1.14.2...v1.14.3) (2021-11-29)
 
 
