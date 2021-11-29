@@ -1,9 +1,9 @@
 ---
 date: "2017-05-20T02:57:04Z"
-update: "2018-07-21T02:57:04Z"
+update: "2021-11-30T05:30:00Z"
 template: "post"
 directory: "JavaScript"
-cover: "../../../images/javascript/2-cach-tao-immutable-object-javascript-completejavascript.com_.png"
+cover: "../../../images/javascript/2-cach-tao-immutable-object-javascript.png"
 keywords: "tạo immutable object"
 description: "Có nhiều trường hợp bạn mong muốn object là immutable. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript."
 slug: 2-cach-tao-immutable-object-javascript
@@ -16,88 +16,168 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Thông thường, [object](/object-la-gi-object-trong-javascript/) trong JavaScript là **mutable** - nghĩa là trạng thái của object có thể thay đổi được. Tuy nhiên, có nhiều trường hợp bạn mong muốn object đó là **immutable** - trạng thái không thể thay đổi được. Bài viết này sẽ giới thiệu với bạn 2 cách tạo immutable object trong JavaScript.
-
-## Tạo immutable object sử dụng Object.defineProperty
-
-Phương thức [Object.defineProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) định nghĩa một thuộc tính mới trên object hoặc sửa đổi thuộc tính có sẵn trên object.
-
-Để tạo immutable object sử dụng Object.defineProperty, bạn chỉ cần định nghĩa property với **writable** là false.
+Thông thường, [object](/object-la-gi-object-trong-javascript/) trong JavaScript là **mutable** - nghĩa là trạng thái của object có thể thay đổi được. Nói cách khác là **giá trị các thuộc tính trong Object có thể thay đổi được**, ví dụ:
 
 ```js
-let obj = {};
-Object.defineProperty(obj, "a", { value: 1, writable: false });
-obj.a = 2;
-console.log(obj.a); // => 1
+let obj = {}; // khởi tạo object rỗng
+
+obj.a = 1; // thêm thuộc tính a và gán giá trị 1
+obj["a"] = 2; // cập nhật giá trị thuộc tính a bằng 2
+
+console.log(obj.a); // 2
 ```
 
-Bạn có thể thấy giá trị của _obj.a_ vẫn không thay đổi so với giá trị ban đầu, là 1.
+Có nhiều trường hợp bạn muốn object đó là **immutable** - trạng thái không thể thay đổi được. Sau đây, mình sẽ giới thiệu với bạn **2 cách tạo immutable object** trong JavaScript.
 
-Thực tế, giá trị mặc định của writable là false, nên bạn có thể bỏ qua thuộc tính này:
+## Tạo immutable object sử dụng `Object.defineProperty`
 
-```js
+[`Object.defineProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) **định nghĩa một thuộc tính mới** hoặc **cập nhật thuộc tính có sẵn** trên object.
+
+### Cách sử dụng `Object.defineProperty`
+
+Để tạo immutable object sử dụng `Object.defineProperty`, bạn chỉ cần định nghĩa property với thuộc tính `writable` (có thể ghi đè) là `false`, ví dụ:
+
+```js{6}
+let obj = {};
+
+// định nghĩa thuộc tính a trong obj
+Object.defineProperty(obj, "a", {
+  value: 1, // giá trị là 1
+  writable: false, // writable: false - nghĩa là không thể ghi đè
+});
+
+obj.a = 2; // thử ghi đè giá trị khác vào a
+console.log(obj.a); // 1 - kết quả giá trị của a vẫn không đổi
+```
+
+Bạn thấy rằng giá trị của `obj.a` không thay đổi so với giá trị ban đầu, vẫn là `1`. Đó chính là **tính bất biến**.
+
+Nếu sử dụng ở [strict mode](/use-strict-trong-js/) thì đoạn code trên sẽ sinh ra lỗi:
+
+```js{1,12,13}
+"use strict";
+
+let obj = {};
+
+// định nghĩa thuộc tính a trong obj
+Object.defineProperty(obj, "a", {
+  value: 1, // giá trị là 1
+  writable: false, // writable: false - nghĩa là không thể ghi đè
+});
+
+obj.a = 2;
+// Uncaught TypeError:
+// Cannot assign to read only property 'a' of object '#<Object>'
+
+console.log(obj.a);
+```
+
+Đúng vậy, nếu `writable` bằng `false` thì thuộc tính gọi là **read only** (thuộc tính chỉ đọc).
+
+Thực tế, giá trị mặc định của thuộc tính `writable` là `false`, nên bạn có thể bỏ qua thuộc tính này:
+
+```js{2}
 let obj = {};
 Object.defineProperty(obj, "a", { value: 1 });
 obj.a = 2;
-console.log(obj.a); // => 1
+console.log(obj.a); // 1
 ```
 
-**Bây giờ, mình muốn thay đổi writable thành true có được không?**
+### Thay đổi giá trị `writable` với `Object.defineProperty`
 
-Câu trả lời là **KHÔNG**.
+Câu hỏi đặt ra là: **nếu mình muốn thay đổi giá trị của `writable` từ `false` thành `true` có được không?**
 
-Vì theo mặc định, giá trị của **configurable** là false, nên bạn sẽ nhận được lỗi: **TypeError: Cannot redefine property: a**
+Câu trả lời: **mặc định là KHÔNG**.
 
-```js
+Khi định nghĩa thuộc tính bằng `Object.defineProperty`, ngoài `writable` ra thì còn có `configurable` (có thể chỉnh sửa).
+
+Mặc định, giá trị của `configurable` là `false`, nên đoạn code sau sẽ bị lỗi: **TypeError: Cannot redefine property: a** (không thể định nghĩa lại thuộc tính a).
+
+```js{2,3}
 let obj = {};
 Object.defineProperty(obj, "a", { value: 1, writable: false });
 Object.defineProperty(obj, "a", { writable: true });
 // => TypeError: Cannot redefine property: a
 ```
 
-Để làm được điều này, bạn cần phải sửa _configurable_ thành true:
+Để giải quyết vấn đề này, bạn phải sửa `configurable` thành `true`:
 
-```js
+```js{5,6,9}
 let obj = {};
+
 Object.defineProperty(obj, "a", {
   value: 1,
   writable: false,
   configurable: true,
 });
+
 Object.defineProperty(obj, "a", { writable: true });
+
 obj.a = 2;
-console.log(obj.a); // => 2
+console.log(obj.a); // 2 - giá trị của thuộc tính a đã thay đổi
 ```
 
-Như vậy nghĩa là bạn có thể biến _immutable object_ thành _mutable object_ được bằng cách sử dụng phương thức này.
+Nghĩa là bạn có thể biến **immutable object** thành **mutable object** được bằng cách này.
 
-## Tạo immutable object sử dụng Object.freeze
+## Tạo immutable object sử dụng `Object.freeze`
 
-Phương thức [Object.freeze()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) làm cho object không thể thay đổi, bao gồm: không thể thêm thuộc tính mới vào object, thuộc tính đã có thì không thể bị xoá bỏ,...
+Phương thức [Object.freeze()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) làm cho object không thể thay đổi, bao gồm:
 
-Chính vì vậy, phương thức này rất phù hợp để tạo immutable object:
+- **Không thể thêm thuộc tính mới** vào object.
+- Thuộc tính đã có thì **không thể cập nhật** và **không thể bị xoá bỏ**.
 
-```js
-let obj = {
-  a: 1,
-};
+> `Object.freeze()` có thể dịch ra là "đóng băng object".
 
-Object.freeze(obj);
-obj.a = 2;
-obj.b = 3;
-console.log(obj); // => {a: 1}
+### Cách sử dụng `Object.freeze`
+
+Ví dụ sử dụng `Object.freeze()` để tạo immutable object:
+
+```js{3}
+let obj = { a: 1 };
+
+Object.freeze(obj); // đóng băng object
+
+obj.a = 2; // cập nhật thuộc tính đã có
+obj.b = 3; // thêm thuộc tính mới
+
+console.log(obj); // { a: 1 }
 ```
 
-Bạn cũng có thể thấy rằng _obj_ vẫn không hề thay đổi.
+Bạn thấy rằng `obj` vẫn không hề thay đổi.
 
-**Tuy nhiên, nếu mình muốn unfreeze object trên, để biến nó thành mutable object thì có được không?**
+Nếu sử dụng ở **strict mode** thì đoạn code sau sẽ bị lỗi:
 
-Câu trả lời là **KHÔNG**. Bạn không thể _unfreeze_ object một khi nó đã freeze.
+```js{1}
+"use strict";
 
-## Kết luận
+let obj = { a: 1 };
 
-Trên đây là 2 cách tạo immutable object trong JavaScript. Mỗi cách đều có những ưu, nhược điểm riêng. Tuỳ vào từng yêu cầu cụ thể mà bạn có thể lựa chọn cách làm hợp lý. Liên quan đến chủ đề immutable object, có một bài viết khá hay mà bạn có thể tham khảo thêm: [Tuyệt chiêu đảm bảo tính bất biến trong JavaScript](https://ehkoo.com/bai-viet/array-object-immutability-javascript).
+Object.freeze(obj); // đóng băng object
 
-Nếu có thắc mắc hay góp ý gì thì bạn có thể để lại cho mình trong phần bình luận phía dưới nhé!
+obj.a = 2;
+// Uncaught TypeError:
+// Cannot assign to read only property 'a' of object '#<Object>'
+```
 
-Xin chào và hẹn gặp lại trong [bài viết tiếp theo](/trien-khai-thuat-toan-undo-redo-trong-javascript/), thân ái!
+Vì khi sử dụng `Object.freeze()`, tất cả các thuộc tính trong object đều trở thành **read-only**.
+
+### Cách để unfreeze object
+
+Tương tự như câu hỏi ở trên.
+
+**Nếu mình muốn unfreeze object, để biến immutable object thành mutable object thì có được không?**
+
+Câu trả lời là **KHÔNG**.
+
+Bạn **không thể unfreeze object** một khi nó đã freeze.
+
+## Tổng kết
+
+Trên đây là 2 cách tạo immutable object trong JavaScript.
+
+- Sử dụng `Object.defineProperty` bằng cách set `writable` thành `false`.
+- Sử dụng `Object.freeze`.
+
+Mỗi cách đều có những ưu, nhược điểm riêng. Tuỳ vào từng yêu cầu cụ thể mà bạn lựa chọn cách làm hợp lý.
+
+Liên quan đến chủ đề immutable object, có một bài viết khá hay mà bạn có thể tham khảo thêm: [Tuyệt chiêu đảm bảo tính bất biến trong JavaScript](https://ehkoo.com/bai-viet/array-object-immutability-javascript).
