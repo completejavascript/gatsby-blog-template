@@ -169,17 +169,17 @@
   }
 }
 
-// Blockquote
+// custom for content-wrapper in main-container
 .main-container {
   .content-wrapper {
     blockquote {
       font-size: 1.7rem;
-      padding: 1.5rem;
+      padding: 1.5rem 1.5rem 0;
       border: 0.1rem solid #cdcdcd;
       border-left-width: 1rem;
-      *:last-child {
-        margin-bottom: 0;
-      }
+    }
+    img {
+      max-width: 100%;
     }
   }
 }
