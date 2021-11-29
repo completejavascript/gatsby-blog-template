@@ -11,6 +11,7 @@ title: "Phương thức của Object và this trong JavaScript"
 series: "JavaScript: Object"
 tags:
   - Object
+  - Kiểu dữ liệu
 ---
 
 Như mình đã đề cập trong bài viết đầu tiên về [object](/object-la-gi-object-trong-javascript/), object trong JavaScript dùng để biểu diễn một đối tượng cụ thể. Mà đối tượng không chỉ có các thuộc tính, đối tượng còn có **hành động**.

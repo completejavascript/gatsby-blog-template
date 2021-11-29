@@ -11,6 +11,7 @@ title: "Khởi tạo object với new trong JavaScript"
 series: "JavaScript: Object"
 tags:
   - Object
+  - Kiểu dữ liệu
 ---
 
 Trong các bài viết trước, mình chủ yếu dùng cú pháp `{...}` để [khởi tạo object](/object-la-gi-object-trong-javascript/). Tuy nhiên, cách này chỉ dùng để **khởi tạo một object riêng lẻ**.
