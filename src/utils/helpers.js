@@ -21,8 +21,14 @@ export const formatDate = (date) =>
 export const getTagPath = (tag) =>
   useSlash(`${config.pathPrefixTag}/${slugify(tag)}`);
 
+export const getTagPathWithoutTrailingSlash = (tag) =>
+  `${config.pathPrefixTag}/${slugify(tag)}`;
+
 export const getCategoryPath = (category) =>
   useSlash(`${config.pathPrefixCategory}/${slugify(category)}`);
+
+export const getCategoryPathWithoutTrailingSlash = (category) =>
+  `${config.pathPrefixCategory}/${slugify(category)}`;
 
 export const getDirectoryPath = (directory) =>
   useSlash(`${config.pathPrefixDirectory}/${slugify(directory)}`);
