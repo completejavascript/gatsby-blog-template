@@ -7,7 +7,10 @@ import MainContainer from "../components/MainContainer/MainContainer";
 import Sidebar from "../components/Sidebar/Sidebar";
 import PostListing from "../components/PostListing/PostListing";
 import Pagination from "../components/Pagination/Pagination";
-import { getPostList, getCategoryPath } from "../utils/helpers";
+import {
+  getPostList,
+  getCategoryPathWithoutTrailingSlash,
+} from "../utils/helpers";
 import config from "../../data/SiteConfig";
 
 const CategoryTemplate = ({ data, pageContext }) => {
@@ -32,7 +35,7 @@ const CategoryTemplate = ({ data, pageContext }) => {
         extraClass="margin-top padding-top-half"
         currentPage={currentPage}
         totalPages={totalPages}
-        pathPrefix={getCategoryPath(category)}
+        pathPrefix={getCategoryPathWithoutTrailingSlash(category)}
         pathPrefixPagination={config.pathPrefixPagination}
       />
     </>
@@ -62,34 +65,40 @@ const CategoryTemplate = ({ data, pageContext }) => {
 export default CategoryTemplate;
 
 /* eslint no-undef: "off" */
-export const pageQuery = graphql`query CategoryPage($category: String, $skip: Int!, $limit: Int!) {
-  allMarkdownRemark(
-    limit: $limit
-    skip: $skip
-    sort: {fields: [frontmatter___date], order: DESC}
-    filter: {frontmatter: {categories: {in: [$category]}, template: {eq: "post"}}}
-  ) {
-    totalCount
-    edges {
-      node {
-        fields {
-          slug
-          date
+export const pageQuery = graphql`
+  query CategoryPage($category: String, $skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      limit: $limit
+      skip: $skip
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {
+        frontmatter: {
+          categories: { in: [$category] }
+          template: { eq: "post" }
         }
-        excerpt
-        timeToRead
-        frontmatter {
-          title
-          tags
-          cover {
-            childImageSharp {
-              gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
-            }
+      }
+    ) {
+      totalCount
+      edges {
+        node {
+          fields {
+            slug
+            date
           }
-          date
+          excerpt
+          timeToRead
+          frontmatter {
+            title
+            tags
+            cover {
+              childImageSharp {
+                gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
+              }
+            }
+            date
+          }
         }
       }
     }
   }
-}
 `;

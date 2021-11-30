@@ -17,8 +17,14 @@ export const formatDate = (date) => moment(date).format(config.dateFormat);
 export const getTagPath = (tag) =>
   useSlash(`${config.pathPrefixTag}/${slugify(tag)}`);
 
+export const getTagPathWithoutTrailingSlash = (tag) =>
+  `${config.pathPrefixTag}/${slugify(tag)}`;
+
 export const getCategoryPath = (category) =>
   useSlash(`${config.pathPrefixCategory}/${slugify(category)}`);
+
+export const getCategoryPathWithoutTrailingSlash = (category) =>
+  `${config.pathPrefixCategory}/${slugify(category)}`;
 
 export const getPostList = (postEdges) =>
   postEdges.map((postEdge) => ({
