@@ -52,7 +52,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Khởi tạo object với new trong JavaScript](/khoi-tao-object-new-trong-javascript/)
 - [Immutable object - đối tượng bất biến](/2-cach-tao-immutable-object-javascript/)
 - [Optional chaining trong JavaScript](/optional-chaining-trong-javascript/)
-- [Symbol](/tim-hieu-ve-symbol-trong-javascript/)
+- [Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript/)
 
 ### Các kiểu dữ liệu
 
