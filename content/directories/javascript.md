@@ -53,6 +53,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Immutable object - đối tượng bất biến](/2-cach-tao-immutable-object-javascript/)
 - [Optional chaining trong JavaScript](/optional-chaining-trong-javascript/)
 - [Symbol trong JavaScript](/tim-hieu-ve-symbol-trong-javascript/)
+- [Chuyển đổi object về kiểu nguyên thủy](/chuyen-object-ve-kieu-nguyen-thuy/)
 
 ### Các kiểu dữ liệu
 

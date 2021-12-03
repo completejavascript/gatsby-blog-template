@@ -99,3 +99,5 @@ console.log(Boolean(undefined)); // false
 ```
 
 Trên đây là một số kiến thức cơ bản cần nhớ về chuyển đổi kiểu dữ liệu trong JavaScript. Hy vọng bạn nắm được những kiến thức cơ bản. Vì đến những bài viết sau, mình sẽ gặp vấn đề chuyển đổi kiểu dữ liệu này khá nhiều.
+
+> Có thể bạn quan tâm: [Chuyển đổi object về kiểu nguyên thủy](/chuyen-object-ve-kieu-nguyen-thuy/).
