@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/phuong-thuc-kieu-nguyen-thuy.png"
 keywords: "phương thức của kiểu nguyên thủy"
-description: ""
+description: "JavaScript cho phép bạn sử dụng kiểu nguyên thủy giống như object. Nghĩa là bạn có thể gọi các phương thức của kiểu nguyên thủy giống như gọi với object."
 slug: phuong-thuc-cua-kieu-nguyen-thuy
 title: "Các phương thức của kiểu nguyên thủy"
 shortTitle: "Phương thức của kiểu nguyên thủy"
