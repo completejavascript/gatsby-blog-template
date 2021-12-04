@@ -57,19 +57,20 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 ### Các kiểu dữ liệu
 
+- [Phương thức của kiểu nguyên thủy](/phuong-thuc-cua-kieu-nguyen-thuy/)
 - [ES6 template string](/su-dung-es6-template-string-co-gi-hay/)
 - [Tagged template ES6](/tagged-template-es6-la-gi/)
-- [Arrays](/javascript-array-co-ban/)
+- [JavaScript array cơ bản](/javascript-array-co-ban/)
 - [Sắp xếp mảng](/array-sorting-van-de-muon-thuo/)
 - [Sắp xếp mảng Tiếng Việt](/sap-xep-tieng-viet-javascript/)
 - [forEach và các phương thức duyệt mảng](/javascript-foreach-la-cai-quai-gi/)
 - [Destructuring Assignment](/destructuring-assignment-trong-javascript/)
-- [Set](/ban-biet-gi-ve-set-trong-javascript/)
-- [Map](/map-trong-javascript-thi-sao/)
+- [Set trong JavaScript](/ban-biet-gi-ve-set-trong-javascript/)
+- [Map trong JavaScript](/map-trong-javascript-thi-sao/)
 - [So sánh Map và Object](/so-sanh-map-voi-object-trong-javascript/)
 - [Ứng dụng reduce trong mảng](/ung-dung-cua-reduce-javascript/)
 - [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6/)
-- [JSON](/tim-hieu-ve-json-trong-javascript/)
+- [JSON trong JavaScript](/tim-hieu-ve-json-trong-javascript/)
 - [Kiểm tra empty object](/kiem-tra-empty-object-trong-javascript/)
 
 ### Lập trình hướng đối tượng
