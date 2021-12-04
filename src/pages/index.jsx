@@ -130,7 +130,7 @@ const CommunitySection = () => (
         </blockquote>
         <p>
           Tham gia ngay để học JavaScript và tiến bộ mỗi ngày cùng với hơn{" "}
-          <b>14K lập trình viên!</b>
+          <b>15K lập trình viên!</b>
         </p>
         <div>
           <AutoLink className="color-yellow" to={config.jsGroupUrl}>
