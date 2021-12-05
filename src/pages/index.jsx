@@ -58,13 +58,13 @@ const PostArticle = ({ post }) => (
     <div className="tag-container">
       {post.tags?.map((tag, index) => (
         <React.Fragment key={tag}>
-          {index <= 2 ? (
+          {index <= 3 ? (
             <span>
               <AutoLink to={getTagPath(tag)} label={tag}>
                 <small>{tag}</small>
               </AutoLink>
-              {index < post.tags.length - 1 && (
-                <span className="color-grey"> | </span>
+              {index < post.tags.length - 1 && index < 3 && (
+                <span className="color-light-grey"> | </span>
               )}
             </span>
           ) : null}
