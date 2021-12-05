@@ -1,11 +1,11 @@
 ---
 date: "2018-03-15T08:00:00Z"
-update: "2021-12-05T19:00:00Z"
+update: "2021-12-05T20:00:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/mustache-template-voi-jquery-completejavascript.com_.png"
 keywords: "html template với template string"
-description: ""
+description: "Như bạn đã biết, ES6 template string có rất nhiều tính năng hay ho. Một trong số đó là việc xây dựng html template với template string."
 slug: html-template-voi-template-string
 title: "HTML template với template string"
 series: "JavaScript: Tutorials"

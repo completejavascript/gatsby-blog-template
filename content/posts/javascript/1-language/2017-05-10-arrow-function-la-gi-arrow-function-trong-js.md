@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/arrow-function-la-gi-arrow-function-trong-js.png"
 keywords: "arrow function là gì"
-description: ""
+description: "Ngoài function, JavaScript còn có arrow function. Sau đây, mình trình bày về arrow function là gì và cách sử dụng arrow function cơ bản."
 slug: arrow-function-la-gi-arrow-function-trong-js
 title: "Arrow function là gì? Arrow function trong JavaScript"
 shortTitle: "Arrow function là gì?"
