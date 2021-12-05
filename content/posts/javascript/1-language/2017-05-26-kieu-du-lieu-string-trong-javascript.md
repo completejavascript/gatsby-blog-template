@@ -11,6 +11,7 @@ title: "Kiểu dữ liệu string trong JavaScript"
 series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Kiểu dữ liệu
+  - String
 ---
 
 Kiểu dữ liệu string trong JavaScript dùng để **lưu trữ giá trị dạng text**. Và không có kiểu dữ liệu đặc biệt nào cho một ký tự.

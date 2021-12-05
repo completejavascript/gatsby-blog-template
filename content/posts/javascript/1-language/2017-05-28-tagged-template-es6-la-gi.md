@@ -12,6 +12,7 @@ series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Kiểu dữ liệu
+  - String
 ---
 
 Trong bài viết [Sử dụng ES6 Template String có gì hay?](/su-dung-es6-template-string-co-gi-hay/), mình đã giới thiệu với bạn về ES6 Template String là gì, cũng như cách dùng và ứng dụng của nó. Tuy nhiên, có một tính năng mà mình chưa đề cập đến, đó là: Tagged template. Vì vậy, bài viết này mình sẽ cùng tìm hiểu xem rốt cuộc Tagged template ES6 là như thế nào nhé.

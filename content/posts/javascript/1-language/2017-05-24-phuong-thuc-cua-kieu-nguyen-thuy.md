@@ -12,6 +12,7 @@ shortTitle: "Phương thức của kiểu nguyên thủy"
 series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Kiểu dữ liệu
+  - String
 ---
 
 JavaScript cho phép bạn sử dụng kiểu nguyên thủy giống như object. Nghĩa là bạn có thể **gọi các phương thức của kiểu nguyên thủy** giống như gọi với object.

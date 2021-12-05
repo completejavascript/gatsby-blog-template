@@ -13,6 +13,7 @@ series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Kiểu dữ liệu
+  - String
 ---
 
 Có thể bạn thừa biết, phiên bản ES6 của JavaScript đã giới thiệu rất nhiều những [tính năng hay hấp dẫn](https://webapplog.com/es6/) của ngôn ngữ lập trình này. Một trong số đó là **Template literals** hay **Template String**. Nếu vậy thì sử dụng ES6 Template String có gì hay hơn so với string thông thường? Sau đây, mình và bạn sẽ cùng nhau tìm hiểu.
