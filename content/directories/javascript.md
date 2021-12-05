@@ -59,6 +59,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 - [Phương thức của kiểu nguyên thủy](/phuong-thuc-cua-kieu-nguyen-thuy/)
 - [Kiểu dữ liệu number trong JavaScript](/kieu-du-lieu-number-trong-javascript/)
+- [Kiểu dữ liệu string trong JavaScript](/kieu-du-lieu-string-trong-javascript/)
 - [ES6 template string](/su-dung-es6-template-string-co-gi-hay/)
 - [Tagged template ES6](/tagged-template-es6-la-gi/)
 - [JavaScript array cơ bản](/javascript-array-co-ban/)
