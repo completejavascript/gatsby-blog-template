@@ -1,6 +1,6 @@
 ---
-date: "2018-03-15T00:00:21Z"
-update: "2018-03-22T00:00:21Z"
+date: "2018-03-16T08:00:21Z"
+update: "2018-03-22T08:00:21Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/smooth-scolling-trang-web-voi-jquery-completejavascript.com_.png"

@@ -1,6 +1,6 @@
 ---
-date: "2018-03-14T00:00:21Z"
-update: "2018-03-21T00:00:21Z"
+date: "2018-03-14T08:00:21Z"
+update: "2018-03-21T08:00:21Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/mustache-template-voi-jquery-completejavascript.com_.png"

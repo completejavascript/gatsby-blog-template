@@ -191,6 +191,7 @@ Phần này bao gồm những thủ thuật, tips & tricks, design pattern, nh�
 ### Tutorials
 
 - [Mustache Template với jQuery](/mustache-template-voi-jquery/)
+- [HTML template với template string](/html-template-voi-template-string/)
 - [Smooth Scrolling với jQuery](/smooth-scrolling-trang-web-voi-jquery/)
 - [Lazy Loading Image với ES6 và CSS](/trien-khai-lazy-loading-image-voi-es6-va-css/)
 - [Menu Responsive](/thiet-ke-website-responsive-voi-css-menu/)
