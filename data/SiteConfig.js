@@ -16,7 +16,7 @@ const config = {
   // Common for tag, category pages and widget
   numberLatestPost: 8,
   numberLatestFreebie: 6,
-  numberLatestRelatedPost: 4,
+  numberLatestRelatedPost: 6,
   postsPerPage: 10,
   // Use for post
   txtShare: "Chia sẻ: ",
