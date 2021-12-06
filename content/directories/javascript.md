@@ -62,6 +62,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Kiểu dữ liệu string trong JavaScript](/kieu-du-lieu-string-trong-javascript/)
 - [ES6 template string](/su-dung-es6-template-string-co-gi-hay/)
 - [Tagged template ES6](/tagged-template-es6-la-gi/)
+- [Array là gì? Array trong JavaScript](/array-la-gi-array-trong-javascript/)
 - [JavaScript array cơ bản](/javascript-array-co-ban/)
 - [Sắp xếp mảng](/array-sorting-van-de-muon-thuo/)
 - [Sắp xếp mảng Tiếng Việt](/sap-xep-tieng-viet-javascript/)
