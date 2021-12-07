@@ -176,14 +176,16 @@ let str = "hello";
 for (let i = 0; i < str.length; i++) {
   console.log(str[i]);
 }
+```
 
-/*
+Kết quả:
+
+```
 h
 e
 l
 l
 o
-*/
 ```
 
 Hoặc sử dụng vòng lặp `for...of` để ngắn gọn hơn:
@@ -491,3 +493,63 @@ Ngoài ra, string còn nhiều phương thức khác nữa. Bạn có thể tham
 
 - [MDN String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [Strings](https://javascript.info/string)
+
+## Thực hành
+
+### Bài 1
+
+Viết hàm `upperFirst(str)` nhận vào tham số là string `str` và trả về string mới với kí tự đầu tiên được viết hoa, ví dụ:
+
+```js
+let s = upperFirst("hello");
+console.log(s); // Hello
+```
+
+<div class="wrap-collapsible margin-bottom">
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle">Xem đáp án</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+
+```js
+// định nghĩa hàm
+function upperFirst(str) {
+  // nếu tham số truyền vào là empty thì trả về chính nó
+  if (!str) return str;
+
+  return str[0].toUpperCase() + str.slice(1);
+}
+
+let s = upperFirst("hello");
+console.log(s); // Hello
+```
+
+</div>
+  </div>
+</div>
+
+### Bài 2
+
+Viết hàm `extractMoney(value)` nhận vào `value` là string biểu diễn tiền với đơn vị đô la `$` ở đầu (ví dụ `"$1000"`) và trả về số tiền (ví dụ `1000`).
+
+<div class="wrap-collapsible margin-bottom">
+  <input id="collapsible2" class="toggle" type="checkbox">
+  <label for="collapsible2" class="lbl-toggle">Xem đáp án</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+
+```js
+// định nghĩa hàm
+function extractMoney(str) {
+  if (!str) return 0;
+
+  return +str.slice(1);
+}
+
+let money = extractMoney("$1000");
+console.log(money); // 1000
+```
+
+</div>
+  </div>
+</div>

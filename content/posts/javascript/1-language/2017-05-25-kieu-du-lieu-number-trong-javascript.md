@@ -455,6 +455,73 @@ JavaScript hỗ trợ biểu diễn số ở hệ cơ số khác:
 - Tính lũy thừa: `Math.pow`.
 - ...
 
+## Thực hành
+
+### Bài 1
+
+Viết code thực hiện yêu cầu sau:
+
+1. Dùng hàm [`prompt`](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt/) yêu cầu người dùng nhập vào hai số.
+2. Tính và hiển thị tổng hai số.
+
+<div class="wrap-collapsible margin-bottom">
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle">Xem đáp án</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+
+```js
+// 1. Dùng hàm `prompt` yêu cầu người dùng nhập vào hai số.
+let a = +prompt("Nhập vào số thứ nhất:", 0);
+let b = +prompt("Nhập vào số thứ hai:", 0);
+
+// 2. Tính và hiển thị tổng hai số.
+console.log(a + b);
+```
+
+</div>
+  </div>
+</div>
+
+### Bài 2
+
+Viết hàm `readNumber` thực hiện yêu cầu sau:
+
+1. Dùng hàm `prompt` hỏi người dùng để nhập vào số.
+2. Nếu người dùng nhập vào số bình thường thì dừng lại và trả về số đó.
+3. Ngược lại, nếu người dùng không nhập vào số bình thường thì tiếp tục hỏi.
+
+<div class="wrap-collapsible margin-bottom">
+  <input id="collapsible2" class="toggle" type="checkbox">
+  <label for="collapsible2" class="lbl-toggle">Xem đáp án</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+
+```js
+// định nghĩa hàm
+function readNumber() {
+  while (true) {
+    // yêu cầu người dùng nhập vào số
+    let n = prompt("Nhập vào số:", 0);
+
+    // kiểm tra điều kiện không phải số bình thường
+    if (n === "" || n === null || n === undefined || !isFinite(n)) {
+      continue;
+    }
+
+    return +n;
+  }
+}
+
+// gọi hàm
+let n = readNumber();
+console.log(n);
+```
+
+</div>
+  </div>
+</div>
+
 Tham khảo:
 
 - [Numbers](https://javascript.info/number)

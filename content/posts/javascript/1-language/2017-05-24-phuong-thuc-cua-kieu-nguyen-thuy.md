@@ -148,4 +148,40 @@ Cơ chế hoạt động là: JavaScript tạo ra một "wrapper object" chứa 
 
 Các bài viết sau mình sẽ đi vào chi tiết các phương thức hữu ích của: `Number()` và `String()`.
 
+## Thực hành
+
+Cho đoạn code sau:
+
+```js
+let str = "Hello";
+
+str.prop = 1;
+
+console.log(str.prop);
+```
+
+Kết quả hiển thị là gì?
+
+<div class="wrap-collapsible margin-bottom">
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle">Xem đáp án</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+
+Kết quả là: `undefined`.
+
+Giải thích:
+
+- Khi gọi `str.prop = 1`, JavaScript tạo ra một "wrapper object" chứa giá trị `str` và thuộc tính mới thêm vào `prop`.
+- Nhưng sau câu lệnh đó, "wrapper object" bị hủy và chỉ còn lại giá trị nguyên thủy `str`.
+- Vì vậy, kết quả là `undefined`.
+
+**Chú ý:**
+
+Nếu sử dụng [strict mode](/use-strict-trong-js/) thì bạn sẽ bị lỗi **Uncaught TypeError: Cannot create property 'prop' on string 'Hello'**
+
+</div>
+  </div>
+</div>
+
 Tham khảo: [Methods of primitives](https://javascript.info/primitives-methods).
