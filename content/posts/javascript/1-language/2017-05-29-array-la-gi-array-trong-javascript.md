@@ -441,7 +441,7 @@ Thuộc tính `length` có giá trị là độ dài của mảng, chính xác h
 
 Nhưng bạn cũng có thể thay đổi trực tiếp giá trị của `length`. Nếu giá trị của `length` giảm đi thì mảng cũng bị cắt ngắn đi. Và khi `length` bằng 0, đồng nghĩa với mảng bị xóa.
 
-Một số phương thức phổ biến trong mảng là:
+Một số [phương thức phổ biến trong mảng](/phuong-thuc-cua-mang-trong-javascript/) là:
 
 - `arr.push(item1, item2,...)`: thêm một hoặc nhiều phần tử vào cuối mảng.
 - `arr.pop()`: lấy ra và trả về phần tử cuối cùng của mảng.

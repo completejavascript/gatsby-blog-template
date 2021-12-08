@@ -14,7 +14,7 @@ tags:
   - Thuật toán
 ---
 
-Tiếp tục ý tưởng từ bài viết [Triển khai Stack trong JavaScript với Array, Object hay Map](/trien-khai-stack-trong-javascript-voi-array-object-hay-map/), bài viết này sẽ tiếp tục triển khai Queue trong JavaScript. Tuy nhiên, mình sẽ chỉ triển khai Queue với [Array](/javascript-array-co-ban/) mà bỏ qua [Object](/object-la-gi-object-trong-javascript/) và [Map](/map-trong-javascript-thi-sao/). Thay vào đó, mình sẽ triển khai Queue theo hai cách là: **queue thông thường** và **queue vòng** (thực ra còn có cả **queue ưu tiên** nữa, nhưng cách triển khai khá phức tạp, nên mình sẽ không trình bày ở đây).
+Tiếp tục ý tưởng từ bài viết [Triển khai Stack trong JavaScript với Array, Object hay Map](/trien-khai-stack-trong-javascript-voi-array-object-hay-map/), bài viết này sẽ tiếp tục triển khai Queue trong JavaScript. Tuy nhiên, mình sẽ chỉ triển khai Queue với [Array](/array-la-gi-array-trong-javascript/) mà bỏ qua [Object](/object-la-gi-object-trong-javascript/) và [Map](/map-trong-javascript-thi-sao/). Thay vào đó, mình sẽ triển khai Queue theo hai cách là: **queue thông thường** và **queue vòng** (thực ra còn có cả **queue ưu tiên** nữa, nhưng cách triển khai khá phức tạp, nên mình sẽ không trình bày ở đây).
 
 Trước khi bắt tay vào triển khai code, mình cần phải tìm hiểu xem nó là cái gì, ứng dụng và các phép toán cơ bản trước. Khi đó, bạn không những triển khai Queue trong JavaScript được, mà còn có thể triển khai nó với các ngôn ngữ khác.
 

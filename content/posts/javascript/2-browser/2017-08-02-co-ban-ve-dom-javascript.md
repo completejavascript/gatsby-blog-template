@@ -76,7 +76,7 @@ Ví dụ: với mỗi node _p_ và _h1_ thì _parentNode_ là _body_.
 
 ### [Node.childNodes](https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes)
 
-trỏ đến một [đối tượng](/object-la-gi-object-trong-javascript/) gần giống với [array](/javascript-array-co-ban/), chứa những node con của một node.
+trỏ đến một [đối tượng](/object-la-gi-object-trong-javascript/) gần giống với [array](/array-la-gi-array-trong-javascript/), chứa những node con của một node.
 
 Tại sao lại là "gần giống với array" ?
 

@@ -127,7 +127,7 @@ console.log(map.size);
 
 Đối với Object, bạn phải đếm số lượng các thuộc tính thủ công. Hoặc bạn cũng có thể tính được số lượng này thông qua phương thức [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys).
 
-Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tính của Object. Lúc này, bạn chỉ cần sử dụng thuộc tính _length_ của [Array](/javascript-array-co-ban/) là được.
+Bởi lẽ, phương thức này trả về một mảng chứa các thuộc tính của Object. Lúc này, bạn chỉ cần sử dụng thuộc tính _length_ của [Array](/array-la-gi-array-trong-javascript/) là được.
 
 ```js
 const obj = { xyz: 1 };

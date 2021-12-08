@@ -390,7 +390,7 @@ export default class App extends React.Component {
 
 Trong đó, Tab Content Component có các thuộc tính là:
 
-- **input ([Array](/javascript-array-co-ban/)):** mảng chứa thông tin các tab, với mỗi phần tử là một [object ](/object-la-gi-object-trong-javascript/) gồm **title** - tên của tab và **content** - là một react element được viết theo JSX để miêu tả nội dung phần content.
+- **input ([Array](/array-la-gi-array-trong-javascript/)):** mảng chứa thông tin các tab, với mỗi phần tử là một [object ](/object-la-gi-object-trong-javascript/) gồm **title** - tên của tab và **content** - là một react element được viết theo JSX để miêu tả nội dung phần content.
 
 ## Lời kết
 

@@ -34,7 +34,7 @@ Tham số **compareFunction** là [hàm](/ham-la-gi-ham-trong-javascript/) dùng
 
 ### Giá trị trả về
 
-[Mảng](/javascript-array-co-ban/) đã được sắp xếp (mảng ban đầu có bị thay đổi).
+[Mảng](/array-la-gi-array-trong-javascript/) đã được sắp xếp (mảng ban đầu có bị thay đổi).
 
 Ví dụ:
 

@@ -99,7 +99,7 @@ Trong đó:
 
 Có một điều mình nhấn mạnh ở đây là: **Bạn có thể truyền vào iterable object, chứ không chỉ có Array**.
 
-Mình đọc rất nhiều bài viết trên mạng về Set thì chỉ thấy họ khởi tạo Set bằng [Array](/javascript-array-co-ban/).
+Mình đọc rất nhiều bài viết trên mạng về Set thì chỉ thấy họ khởi tạo Set bằng [Array](/array-la-gi-array-trong-javascript/).
 
 Sẽ là rất thiếu sót nếu như không kể đến String, Array-like objects ([arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments), [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)), [TypedArray](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray), [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map), và cả Set luôn - vì chúng đều là iterable object mà.
 

@@ -133,7 +133,7 @@ Một cách khách quan, việc sử dụng prototype sẽ nhanh hơn và tiết
 
 Bài viết trên là khá ngắn gọn. Hy vọng nó phần nào giúp bạn hiểu được JavaScript closure là gì và cách sử dụng closure trong JavaScript.
 
-Cuối cùng, hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-array-co-ban/), thân ái!
+Cuối cùng, hẹn gặp lại bạn ở [bài viết tiếp theo](/array-la-gi-array-trong-javascript/), thân ái!
 
 ## Tham khảo
 

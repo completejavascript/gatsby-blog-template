@@ -31,7 +31,7 @@ Tagged template ES6 cho phép bạn **xử lý template string** với một [h�
 
 Trong đó, `func` chính là function mà bạn tự định nghĩa. Tiếp sau là một đoạn template string có thể chứa một hoặc nhiều `expression` (biểu thức).
 
-Ở đây, `func` nhận tham số đầu tiên là [mảng](/javascript-array-co-ban/) các string (sử dụng trong template string). Các tham số tiếp theo là các biểu thức trong template string.
+Ở đây, `func` nhận tham số đầu tiên là [mảng](/array-la-gi-array-trong-javascript/) các string (sử dụng trong template string). Các tham số tiếp theo là các biểu thức trong template string.
 
 Kết quả trả về của Tagged template là kết quả của hàm `func`. Đó có thể là bất cứ kiểu dữ liệu nào tùy thích. Chứ không phải luôn luôn là string!
 

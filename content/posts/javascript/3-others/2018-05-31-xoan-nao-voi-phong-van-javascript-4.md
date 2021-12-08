@@ -53,7 +53,7 @@ Hỏi console in ra kết quả như thế nào, tại sao?
 
 **Giải thích:**
 
-Trước tiên, mình muốn nhấn mạnh rằng: về bản chất [Array](/javascript-array-co-ban/) được [kế thừa từ prototype](/ke-thua-co-ban-trong-javascript/) của [Object](/object-la-gi-object-trong-javascript/). Đoạn code sau có thể chứng minh điều đó.
+Trước tiên, mình muốn nhấn mạnh rằng: về bản chất [Array](/array-la-gi-array-trong-javascript/) được [kế thừa từ prototype](/ke-thua-co-ban-trong-javascript/) của [Object](/object-la-gi-object-trong-javascript/). Đoạn code sau có thể chứng minh điều đó.
 
 ```js
 let a = [];

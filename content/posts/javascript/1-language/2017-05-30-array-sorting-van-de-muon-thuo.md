@@ -15,7 +15,7 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Từ xưa đến nay, sắp xếp giữ một vai trò vô cùng quan trọng. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc này giúp cho người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn. Do đó, trong bài viết này, mình sẽ cùng với bạn tìm hiểu về vấn đề [Array](/javascript-array-co-ban/) Sorting - sắp xếp mảng trong JavaScript.
+Từ xưa đến nay, sắp xếp giữ một vai trò vô cùng quan trọng. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc này giúp cho người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn. Do đó, trong bài viết này, mình sẽ cùng với bạn tìm hiểu về vấn đề [Array](/array-la-gi-array-trong-javascript/) Sorting - sắp xếp mảng trong JavaScript.
 
 Về sắp xếp nói chung, chúng ta có rất nhiều thuật toán với độ phức tạp khác nhau, có thể kể đến là: selection sort, insertion sort, binary insertion sort, interchange sort, bubble sort, shaker sort, quick sort, merge sort, heap sort,...
 

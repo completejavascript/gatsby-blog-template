@@ -57,7 +57,7 @@ Theo quan niệm thông thường, khi bạn khai báo một biến là hằng s
 
 **Nghĩa là sao?**
 
-Nghĩa là chỉ có **địa chỉ** của biến số là không thay đổi. Còn **giá trị** của biến số vẫn có thể thay đổi. Bây giờ, mình sẽ xét 3 kiểu dữ liệu chính của biến số là: [Number](/kieu-du-lieu-trong-javascript/), [Object](/object-la-gi-object-trong-javascript/) và [Array](/javascript-array-co-ban/) (chú ý: String và Boolean sẽ giống với trường hợp của Number).
+Nghĩa là chỉ có **địa chỉ** của biến số là không thay đổi. Còn **giá trị** của biến số vẫn có thể thay đổi. Bây giờ, mình sẽ xét 3 kiểu dữ liệu chính của biến số là: [Number](/kieu-du-lieu-trong-javascript/), [Object](/object-la-gi-object-trong-javascript/) và [Array](/array-la-gi-array-trong-javascript/) (chú ý: String và Boolean sẽ giống với trường hợp của Number).
 
 **Number**
 

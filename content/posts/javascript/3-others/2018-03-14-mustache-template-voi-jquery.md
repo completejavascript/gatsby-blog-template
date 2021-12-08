@@ -83,7 +83,7 @@ $("#btn-add").click(() => {
 });
 ```
 
-Trong phương thức render, thành phần đầu tiên là Mustache Template đã được lấy ra từ trước; thành phần thứ hai là mỗi phần tử của [mảng](/javascript-array-co-ban/) sau khi sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi/).
+Trong phương thức render, thành phần đầu tiên là Mustache Template đã được lấy ra từ trước; thành phần thứ hai là mỗi phần tử của [mảng](/array-la-gi-array-trong-javascript/) sau khi sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi/).
 
 Kết quả thu được là [DOM,](/co-ban-ve-dom-javascript/) có cấu trúc như template với tham số đã được thay thế bằng dữ liệu data trên. Bây giờ, bạn chỉ cần sử dụng phương thức [append](http://api.jquery.com/append/) để đưa nó vào bên trong của thẻ div - với **id="container"**.
 

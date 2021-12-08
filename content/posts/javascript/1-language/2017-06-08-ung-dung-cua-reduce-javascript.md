@@ -22,7 +22,7 @@ Dĩ nhiên, đây chỉ là quan điểm cá nhân của mình thôi. Nếu bạ
 
 ## Cú pháp
 
-JavaScript Reduce là một phương thức có sẵn của Array, được sử dụng để thực thi một [hàm](/ham-la-gi-ham-trong-javascript/) lên các phần tử của [mảng](/javascript-array-co-ban/) (từ trái sang phải) với một biến tích lũy để thu về một giá trị duy nhất.
+JavaScript Reduce là một phương thức có sẵn của Array, được sử dụng để thực thi một [hàm](/ham-la-gi-ham-trong-javascript/) lên các phần tử của [mảng](/array-la-gi-array-trong-javascript/) (từ trái sang phải) với một biến tích lũy để thu về một giá trị duy nhất.
 
 **Cú pháp:**
 

@@ -114,7 +114,7 @@ constructor(currentstate) {
 }
 ```
 
-Thực chất, [array trong JavaScript](/javascript-array-co-ban/) có thể đóng vai trò là Stack, với sự hỗ trợ của các phương thức _push_, _pop_. Do đó, mình khởi tạo Undo Stack - _this.\_undoStack_ và Redo Stack - _this.\_redoStack_ là các mảng rỗng. Sau đó, _push_ trạng thái hiện tại của ứng dụng _currentstate_ vào _this.\_redoStack_.
+Thực chất, [array trong JavaScript](/array-la-gi-array-trong-javascript/) có thể đóng vai trò là Stack, với sự hỗ trợ của các phương thức _push_, _pop_. Do đó, mình khởi tạo Undo Stack - _this.\_undoStack_ và Redo Stack - _this.\_redoStack_ là các mảng rỗng. Sau đó, _push_ trạng thái hiện tại của ứng dụng _currentstate_ vào _this.\_redoStack_.
 
 ![Khởi tạo Undo, Redo Stack](../../../images/javascript/khoi-tao-completejavascript.com_.png)
 

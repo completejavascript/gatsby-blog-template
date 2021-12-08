@@ -333,7 +333,7 @@ Với câu hỏi này, bạn cần quan tâm đến 2 vấn đề:
 (function (p) {})(parameter);
 ```
 
-Trong đó, _parameter_ sẽ tương ứng với _p_.Quay lại với câu hỏi, _foo_ chính là [array](/javascript-array-co-ban/) [1, 2, 3].
+Trong đó, _parameter_ sẽ tương ứng với _p_.Quay lại với câu hỏi, _foo_ chính là [array](/array-la-gi-array-trong-javascript/) [1, 2, 3].
 
 **Toán tử [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)** sẽ trả về string biểu diễn kiểu dữ liệu của toán hạng tương ứng. Tuy nhiên, bạn cần chú ý là **typeof (array)** luôn trả về "object" chứ không phải "array".
 

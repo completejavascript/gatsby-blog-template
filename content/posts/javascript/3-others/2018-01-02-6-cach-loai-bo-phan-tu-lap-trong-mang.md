@@ -25,7 +25,7 @@ Với bài toán này, yêu cầu là loại bỏ phần tử lặp trong mảng
 
 Hiểu đơn giản: khi hai phần tử a, b trong mảng mà (a === b) là true thì gọi đó là phần tử lặp.
 
-Tiếp theo, mình cần quan tâm đến kiểu dữ liệu của các phần tử trong mảng. JavaScript có 7 kiểu dữ liệu là: [number, string, boolean](/kieu-du-lieu-trong-javascript/), [array](/javascript-array-co-ban/), [object](/object-la-gi-object-trong-javascript/), null và undefined. Tuy nhiên, mình tạm thời bỏ qua trường hợp phần tử trong mảng có kiểu dữ liệu là: array và object. Vì xử lý 2 trường hợp này sẽ khá phức tạp.
+Tiếp theo, mình cần quan tâm đến kiểu dữ liệu của các phần tử trong mảng. JavaScript có 7 kiểu dữ liệu là: [number, string, boolean](/kieu-du-lieu-trong-javascript/), [array](/array-la-gi-array-trong-javascript/), [object](/object-la-gi-object-trong-javascript/), null và undefined. Tuy nhiên, mình tạm thời bỏ qua trường hợp phần tử trong mảng có kiểu dữ liệu là: array và object. Vì xử lý 2 trường hợp này sẽ khá phức tạp.
 
 Ví dụ phần tử trong mảng có kiểu dữ liệu là object:
 

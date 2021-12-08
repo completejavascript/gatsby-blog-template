@@ -97,7 +97,7 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 **Giải thích:**
 
-Trước tiên, mình nói về hàm [filter](/javascript-foreach-la-cai-quai-gi/#arrayprototypefilter). Phương thức này lọc lấy các phần tử trong [mảng](/javascript-array-co-ban/) thoả mãn một điều kiện cho trước và trả về một mảng mới chứa những phần tử đó.
+Trước tiên, mình nói về hàm [filter](/javascript-foreach-la-cai-quai-gi/#arrayprototypefilter). Phương thức này lọc lấy các phần tử trong [mảng](/array-la-gi-array-trong-javascript/) thoả mãn một điều kiện cho trước và trả về một mảng mới chứa những phần tử đó.
 
 Nói cách khác, phương thức **filter** nhận tham số đầu tiên là một [hàm](/ham-la-gi-ham-trong-javascript/) và trả về một mảng các phần tử làm cho hàm trên **return true**.
 

@@ -28,7 +28,7 @@ Trước khi bắt đầu bài viết mình muốn nhấn mạnh về mục đí
 
 Và những kiến thức cơ bản mà bạn cần phải nắm vững:
 
-- [Array](/javascript-array-co-ban/)
+- [Array](/array-la-gi-array-trong-javascript/)
 - [Object](/object-la-gi-object-trong-javascript/)
 - [Map](/map-trong-javascript-thi-sao/)
 

@@ -72,7 +72,7 @@ DocumentFragment là một dạng document tối giản - không có parent. Vì
 
 ### Render HTML Template lên giao diện
 
-Trong bước này, mình muốn mô phỏng lại việc render các bình luận trên một bài viết. Nội dung các bình luận là một [mảng](/javascript-array-co-ban/) của các [object](/object-la-gi-object-trong-javascript/) - bao gồm 2 thuộc tính là name và comment.
+Trong bước này, mình muốn mô phỏng lại việc render các bình luận trên một bài viết. Nội dung các bình luận là một [mảng](/array-la-gi-array-trong-javascript/) của các [object](/object-la-gi-object-trong-javascript/) - bao gồm 2 thuộc tính là name và comment.
 
 ```js
 let data = [

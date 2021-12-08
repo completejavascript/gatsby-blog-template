@@ -19,7 +19,7 @@ Bài viết trước mình đã chia sẻ với bạn các bài toán thuộc ch
 Cũng như bài viết trước, mình chia sẻ với bạn các link bài viết hữu ích nên đọc trước khi đi vào lời giải các bài toán:
 
 - [Các kiểu dữ liệu trong JavaScript](/kieu-du-lieu-trong-javascript/)
-- [JavaScript Array cơ bản](/javascript-array-co-ban/)
+- [JavaScript Array cơ bản](/array-la-gi-array-trong-javascript/)
 - [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
 - [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
 - [JavaScript Object – last but not least](/object-la-gi-object-trong-javascript/)

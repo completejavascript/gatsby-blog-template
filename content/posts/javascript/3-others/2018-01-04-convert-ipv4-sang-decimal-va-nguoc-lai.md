@@ -140,7 +140,7 @@ function convertIPv4toDecimal(ip) {
 
 Trong đoạn code trên, mình sử dụng [Regex](/tim-hieu-regular-expression-javascript/) để xác định một cách cơ bản đầu vào là địa chỉ IPv4. Tức là địa chỉ IP phải có 4 nhóm, phân tách nhau bởi dấu chấm (**.**) và mỗi nhóm sẽ có số kí tự từ 1 đến 3 (tương ứng giá trị từ 0 đến 255).
 
-Sau đó, mình tách 4 cụm của địa chỉ IP thành [mảng](/javascript-array-co-ban/) để duyệt. Mỗi phần phải đảm bảo có giá trị từ 0 đến 255 thì mới hợp lệ. Nếu địa chỉ IPv4 đầu vào là hợp lệ thì mình sẽ trả về giá trị Decimal của nó. Ngược lại, mình trả về giá trị -1.
+Sau đó, mình tách 4 cụm của địa chỉ IP thành [mảng](/array-la-gi-array-trong-javascript/) để duyệt. Mỗi phần phải đảm bảo có giá trị từ 0 đến 255 thì mới hợp lệ. Nếu địa chỉ IPv4 đầu vào là hợp lệ thì mình sẽ trả về giá trị Decimal của nó. Ngược lại, mình trả về giá trị -1.
 
 Bạn thử tìm hiểu kỹ hơn xem nó hoạt động thế nào nhé! Nếu có gì khó hiểu thì để lại bình luận xuống phía dưới, mình sẽ cố gắng giải đáp.
 

@@ -47,7 +47,7 @@ Do đó, mình sẽ lấy lại một ví dụ trong đấy để bạn dễ dà
 
 https://codepen.io/completejavascript/pen/MVyXyp
 
-Bạn có thể đọc lại bài viết đó để hiểu rõ hơn. Nhưng tóm gọn lại, bài toán này nhằm **xây dựng template để hiển thị mục bình luận** với dữ liệu được cung cấp dưới dạng [mảng](/javascript-array-co-ban/).
+Bạn có thể đọc lại bài viết đó để hiểu rõ hơn. Nhưng tóm gọn lại, bài toán này nhằm **xây dựng template để hiển thị mục bình luận** với dữ liệu được cung cấp dưới dạng [mảng](/array-la-gi-array-trong-javascript/).
 
 Trong bài đó, mình sử dụng thẻ [`template`](https://developer.mozilla.org/en/docs/Web/HTML/Element/template) của HTML để khai báo **HTML template**:
 

@@ -124,7 +124,7 @@ time: 2001.398193359375ms
 */
 ```
 
-Trong ví dụ trên, mình đưa 3 hành động bất đồng bộ vào một [mảng](/javascript-array-co-ban/), rồi truyền nó vào Promise.all. Tiếp theo, mình thực hiện **await** với phương thức này để đợi kết quả trả về.
+Trong ví dụ trên, mình đưa 3 hành động bất đồng bộ vào một [mảng](/array-la-gi-array-trong-javascript/), rồi truyền nó vào Promise.all. Tiếp theo, mình thực hiện **await** với phương thức này để đợi kết quả trả về.
 
 Sau khi hàm trên kết thúc, mình dùng [Destructuring Assignment](/destructuring-assignment-trong-javascript/) để lấy ra kết quả như mong muốn, theo đúng thứ tự truyền vào của các hành động bên trong Promise.all.
 

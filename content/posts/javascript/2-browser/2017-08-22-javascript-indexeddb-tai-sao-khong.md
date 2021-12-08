@@ -81,7 +81,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 ### Key path
 
 - Key path xác định nơi mà trình duyệt lấy ra key ở trong một object store hay index.
-- Key path hợp lệ có thể là: một string rỗng, một định danh JavaScript, nhiều định danh JavaScript phân cách bởi dấu chấm hay là một [mảng](/javascript-array-co-ban/) chứa các phần tử là một trong các kiểu kia. Và key path thì không được bao gồm dấu cách.
+- Key path hợp lệ có thể là: một string rỗng, một định danh JavaScript, nhiều định danh JavaScript phân cách bởi dấu chấm hay là một [mảng](/array-la-gi-array-trong-javascript/) chứa các phần tử là một trong các kiểu kia. Và key path thì không được bao gồm dấu cách.
 
 ## Cách sử dụng JavaScript IndexedDB
 

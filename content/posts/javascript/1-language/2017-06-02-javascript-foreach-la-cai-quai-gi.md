@@ -14,7 +14,7 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Trong JavaScript, để duyệt [array](/javascript-array-co-ban/) thì **forEach** là một hàm rất hay. Vậy hàm forEach trong JavaScript cụ thể là như thế nào? Cách sử dụng forEach JavaScript ra sao? Chúng ta hãy cùng tìm hiểu để làm chủ forEach js nhé!
+Trong JavaScript, để duyệt [array](/array-la-gi-array-trong-javascript/) thì **forEach** là một hàm rất hay. Vậy hàm forEach trong JavaScript cụ thể là như thế nào? Cách sử dụng forEach JavaScript ra sao? Chúng ta hãy cùng tìm hiểu để làm chủ forEach js nhé!
 
 ## Đặt vấn đề
 

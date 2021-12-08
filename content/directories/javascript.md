@@ -64,7 +64,6 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Tagged template ES6](/tagged-template-es6-la-gi/)
 - [Array là gì? Array trong JavaScript](/array-la-gi-array-trong-javascript/)
 - [Các phương thức của mảng trong JS](/phuong-thuc-cua-mang-trong-javascript/)
-- [JavaScript array cơ bản](/javascript-array-co-ban/)
 - [Sắp xếp mảng](/array-sorting-van-de-muon-thuo/)
 - [Sắp xếp mảng Tiếng Việt](/sap-xep-tieng-viet-javascript/)
 - [forEach và các phương thức duyệt mảng](/javascript-foreach-la-cai-quai-gi/)

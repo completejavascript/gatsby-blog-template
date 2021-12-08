@@ -220,7 +220,7 @@ class App extends React.Component {
 
 ### Render một mảng các Elements
 
-Ngoài cách làm trên ra, mình mới biết thêm một cách làm khác có vẻ ít dùng hơn. Đó là hàm render sẽ trả về một [mảng](/javascript-array-co-ban/) các Elements như sau:
+Ngoài cách làm trên ra, mình mới biết thêm một cách làm khác có vẻ ít dùng hơn. Đó là hàm render sẽ trả về một [mảng](/array-la-gi-array-trong-javascript/) các Elements như sau:
 
 ```jsx
 const Animals = () => {

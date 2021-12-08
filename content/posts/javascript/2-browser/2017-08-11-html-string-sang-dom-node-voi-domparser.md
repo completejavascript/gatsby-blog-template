@@ -59,7 +59,7 @@ console.log(nodes);
 // => NodeList [div]
 ```
 
-Đến đây, bạn sẽ thu được một [mảng](/javascript-array-co-ban/) các node - NodeList. Và bây giờ, bạn hoàn toàn tự do sử dụng NodeList này để chèn vào bất cứ đâu trên trang HTML.
+Đến đây, bạn sẽ thu được một [mảng](/array-la-gi-array-trong-javascript/) các node - NodeList. Và bây giờ, bạn hoàn toàn tự do sử dụng NodeList này để chèn vào bất cứ đâu trên trang HTML.
 
 ## Chuyển HTML String thành DOM và vẽ lên HTML
 

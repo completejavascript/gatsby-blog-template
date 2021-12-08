@@ -173,7 +173,7 @@ self.addEventListener("install", (event) => {
 });
 ```
 
-Mục đích của của việc **install** là để lưu một số resources được định nghĩa ở [array](/javascript-array-co-ban/) **PRECACHE_URLS** vào bộ nhớ đệm **cache** với tên định nghĩa bởi **PRECACHE**.
+Mục đích của của việc **install** là để lưu một số resources được định nghĩa ở [array](/array-la-gi-array-trong-javascript/) **PRECACHE_URLS** vào bộ nhớ đệm **cache** với tên định nghĩa bởi **PRECACHE**.
 
 Sau khi lưu xong hết tất cả các resources cần thiết, hàm [self.skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) dùng để dừng công việc hiện tại lại và chuyển ngay sang công việc tiếp theo.
 

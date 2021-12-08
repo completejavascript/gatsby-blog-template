@@ -242,7 +242,7 @@ Trước tiên, mình sẽ query để lưu lại các phần tử DOM cần Laz
 let arrayImages = [].slice.call(document.querySelectorAll(".lazy-image"));
 ```
 
-Ở đây phương thức [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) trả về [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) chứ không phải [Array](/javascript-array-co-ban/). Nên mình sẽ phải convert NodeList sang Array. Bạn có thể tham khảo bài viết [Convert NodeList to Array](https://davidwalsh.name/nodelist-array) để biết thêm chi tiết.
+Ở đây phương thức [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) trả về [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) chứ không phải [Array](/array-la-gi-array-trong-javascript/). Nên mình sẽ phải convert NodeList sang Array. Bạn có thể tham khảo bài viết [Convert NodeList to Array](https://davidwalsh.name/nodelist-array) để biết thêm chi tiết.
 
 **Mục đích của mình khi lưu các phần tử DOM này vào Array là gì?**
 

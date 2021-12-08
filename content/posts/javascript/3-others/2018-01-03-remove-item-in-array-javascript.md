@@ -13,7 +13,7 @@ tags:
   - Array
 ---
 
-**Remove item in Array JavaScript** là một bài toán mà hầu hết mọi người đều gặp phải khi lập trình JavaScript. Để giải quyết bài toán này, JavaScript cung cấp rất nhiều giải pháp khác nhau. Mỗi giải pháp lại có một ưu, nhược điểm riêng và phù hợp với từng bài toán cụ thể. Vì vậy, bài viết này sẽ tổng hợp lại các cách để loại bỏ một hoặc nhiều phần tử ra khỏi [Array](/javascript-array-co-ban/) trong JavaScript.
+**Remove item in Array JavaScript** là một bài toán mà hầu hết mọi người đều gặp phải khi lập trình JavaScript. Để giải quyết bài toán này, JavaScript cung cấp rất nhiều giải pháp khác nhau. Mỗi giải pháp lại có một ưu, nhược điểm riêng và phù hợp với từng bài toán cụ thể. Vì vậy, bài viết này sẽ tổng hợp lại các cách để loại bỏ một hoặc nhiều phần tử ra khỏi [Array](/array-la-gi-array-trong-javascript/) trong JavaScript.
 
 Về cơ bản, các cách mà mình trình bày sau đây sẽ được chia ra làm 2 loại:
 
