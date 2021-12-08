@@ -1,13 +1,13 @@
 ---
 date: "2017-05-30T14:39:44Z"
-update: "2021-10-16T14:39:44Z"
+update: "2021-12-08T21:15:00Z"
 template: "post"
 directory: "JavaScript"
-cover: "../../../images/javascript/Array-sorting-van-de-muon-thuo-completejavascript.com_.png"
-keywords: "Array sorting"
+cover: "../../../images/javascript/sap-xep-mang-trong-javascript.png"
+keywords: "sắp xếp mảng trong javascript"
 description: "Array sorting (sắp xếp mảng) là một bài toán vô cùng quen thuộc. Bài viết này sẽ tìm hiểu về một số cách để thực hiện sắp xếp mảng trong trong JavaScript"
-slug: array-sorting-van-de-muon-thuo
-title: "Array Sorting - vấn đề muôn thuở"
+slug: sap-xep-mang-trong-javascript
+title: "Sắp xếp mảng trong JavaScript"
 series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - Array
@@ -15,106 +15,126 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Từ xưa đến nay, sắp xếp giữ một vai trò vô cùng quan trọng. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc này giúp cho người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn. Do đó, trong bài viết này, mình sẽ cùng với bạn tìm hiểu về vấn đề [Array](/array-la-gi-array-trong-javascript/) Sorting - sắp xếp mảng trong JavaScript.
+Bài viết sau đây tập trung tìm hiểu về **phương thức sắp xếp mảng trong JavaScript**. Và cách triển khai một số **thuật toán sắp xếp mảng cơ bản**.
 
-Về sắp xếp nói chung, chúng ta có rất nhiều thuật toán với độ phức tạp khác nhau, có thể kể đến là: selection sort, insertion sort, binary insertion sort, interchange sort, bubble sort, shaker sort, quick sort, merge sort, heap sort,...
+Nói về sắp xếp mảng thì đây là một vấn đề vô cùng phổ biến trong các chương trình. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc sắp xếp giúp người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn.
 
-_(Xem thêm hai bài tổng hợp về thuật toán sắp xếp trong C/C++: [phần 1](http://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-1), [phần 2](http://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-2))_
+> Hiện tại có rất nhiều thuật toán sắp xếp với độ phức tạp khác nhau.
+>
+> Ví dụ các thuật toán sắp xếp mảng là: selection sort, insertion sort, binary insertion sort, interchange sort, bubble sort, shaker sort, quick sort, merge sort, heap sort,...
+>
+> Có thể bạn quan tâm:
+>
+> - [Tổng hợp một số thuật toán cơ bản về sắp xếp - Phần 1](http://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-1)
+> - [Tổng hợp một số thuật toán cơ bản về sắp xếp - Phần 2](http://thuattoan.phamvanlam.com/tong-hop-mot-so-thuat-toan-co-ban-ve-sap-xep-phan-2)
 
-Tuy nhiên, bạn không cần thiết phải implement lại những thuật toán sắp xếp này. Vì JavaScript hỗ trợ sẵn cho chúng ta một [function](/ham-la-gi-ham-trong-javascript/) để sắp xếp.
+Bạn không cần thiết phải viết lại lại những thuật toán sắp xếp này. Vì JavaScript hỗ trợ sẵn một [function](/ham-la-gi-ham-trong-javascript/) để sắp xếp.
 
 ## Cú pháp hàm sắp xếp mảng trong JavaScript
 
-Hàm **sort()**:
+Hàm sắp xếp mảng trong JavaScript là `sort()`:
 
 ```js
 arr.sort();
 arr.sort(compareFunction);
 ```
 
-### Tham số
+► Tham số `compareFunction`:
 
-**compareFunction**: dùng để xác định thứ tự sắp xếp. Nếu bạn bỏ qua tham số này thì mặc định JavaScript sẽ sắp xếp mảng theo thứ tự tăng dần trong bảng mã Unicode (hay đơn giản thì cứ gọi là thứ tự tăng dần bảng chữ cái).
+- Dùng để xác định thứ tự sắp xếp.
+- Nếu bạn bỏ qua tham số này, mặc định JavaScript sẽ sắp xếp mảng theo thứ tự tăng dần trong bảng mã Unicode (hay đơn giản là thứ tự tăng dần bảng chữ cái).
 
-### Giá trị trả về
+► Giá trị trả về:
 
-Mảng đã được sắp xếp (mảng ban đầu có bị thay đổi).
+- Là mảng đã được sắp xếp.
+- Mảng ban đầu có bị thay đổi.
 
 ```js
-var a = ["c", "g", "w", "a"];
-var b = a.sort();
-console.log(a); // => ["a", "c", "g", "w"]
-console.log(b); // => ["a", "c", "g", "w"]
+let a = ["c", "g", "w", "a"];
+let b = a.sort();
+
+console.log(a); // ["a", "c", "g", "w"]
+console.log(b); // ["a", "c", "g", "w"]
 ```
 
 ## Tìm hiểu compareFunction
 
-Hàm _compareFunction_ dùng để xác định thứ tự sắp xếp mảng. Nếu a và b là hai phần tử dùng để so sánh thì:
+Hàm `compareFunction` dùng để xác định **thứ tự sắp xếp mảng**.
 
-- Nếu compareFunction(a, b) trả về < 0 thì a sẽ đứng trước b.
-- Nếu compareFunction(a, b) trả về > 0 thì a sẽ đứng sau b.
-- Nếu compareFunction(a, b) trả về = 0 thì không sắp xếp (giữ nguyên thứ tự).
+Giả sử, `a` và `b` là hai phần tử dùng để so sánh:
 
-## Array sorting với numbers
+- Nếu hàm `compareFunction(a, b)` trả về giá trị nhỏ hơn `0` thì `a` sẽ đứng trước `b`.
+- Nếu hàm `compareFunction(a, b)` trả về giá trị lớn hơn `0` thì `a` sẽ đứng sau `b`.
+- Nếu hàm `compareFunction(a, b)` trả về giá trị bằng `0` thì giữ nguyên thứ tự `a`, `b`.
 
-JavaScript hỗ trợ sắp xếp nhiều kiểu dữ liệu. Tuy nhiên, phổ biến nhất vẫn là [numbers](/kieu-du-lieu-trong-javascript/). Và như mình đã nói ở trên, mặc định hàm _sort_ sẽ so sánh theo kiểu string. Do đó, kết quả sẽ như thế này:
+## Sắp xếp mảng number
+
+JavaScript hỗ trợ **sắp xếp nhiều kiểu dữ liệu**. Tuy nhiên, phổ biến nhất vẫn là [numbers](/kieu-du-lieu-trong-javascript/).
+
+Và như mình đã nói ở trên, mặc định hàm `sort()` sẽ so sánh theo kiểu string để sắp xếp. Do đó, kết quả sẽ như sau:
 
 ```js
-var a = [9, 100, 45, 33];
+let a = [9, 100, 45, 33];
+
 console.log(a.sort());
-// => [100, 33, 45, 9]
+// [100, 33, 45, 9]
 ```
 
-Bạn không nhìn lầm đâu. Kết quả trên là hoàn toàn chính xác. Vì khi so sánh theo kiểu string thì '1' &lt; '3' &lt; '4' &lt; '9'. Vì vậy, để sắp xếp chúng theo kiểu numbers thì bạn cần phải sử dụng hàm _compareFunction_.
+Kết quả trên là **hoàn toàn chính xác**. Vì khi so sánh theo kiểu string thì thứ tự là: `'1' < '3' < '4' < '9'`.
 
-### Sử dụng hàm compareNumbers sắp xếp numbers theo thứ tự tăng dần
+Vì vậy, để sắp xếp chúng theo kiểu **numbers** thì bạn cần phải sử dụng hàm `compareFunction`.
+
+### Sử dụng hàm `compareNumbers` sắp xếp theo thứ tự tăng dần
 
 ```js
 function compareNumbers(a, b) {
   return a - b;
 }
-var a = [9, 100, 45, 33];
+
+let a = [9, 100, 45, 33];
 console.log(a.sort(compareNumbers));
-// => [9, 33, 45, 100]
+// [9, 33, 45, 100]
 ```
 
-Theo đúng mô tả của hàm _compareFunction_, khi a &lt; b => a - b &lt; 0 => a sẽ đứng trước b. Nghĩa là số bé hơn sẽ đứng trước. Áp dụng quy tắc này, ta được mảng các số sắp xếp theo thứ tự tăng dần.
+Khi `a` nhỏ hơn `b` thì `a - b < 0` là `true`. Theo đúng mô tả của hàm `compareFunction` thì suy ra `a` sẽ đứng trước `b`.
 
-Ngoài cách viết hàm riêng như trên, bạn có thể áp dụng [JavaScript closures](/tim-hieu-javascript-closures/):
+Nghĩa là số nhỏ hơn sẽ đứng trước. Áp dụng quy tắc này, ta được mảng các số **sắp xếp theo thứ tự tăng dần**.
+
+Ngoài cách viết **hàm độc lập** như trên, bạn có thể áp dụng [arrow function](/arrow-function-la-gi-arrow-function-trong-js/) cho ngắn gọn:
 
 ```js
-var a = [9, 100, 45, 33];
-console.log(
-  a.sort(function (a, b) {
-    return a - b;
-  })
-);
-// => [9, 33, 45, 100]
+let a = [9, 100, 45, 33];
+
+a.sort((a, b) => a - b);
+
+console.log(a);
+// [9, 33, 45, 100]
 ```
 
 ### Sắp xếp mảng numbers theo thứ tự giảm dần
 
-Để sắp xếp mảng numbers theo thứ tự giảm dần thì bạn chỉ cần thay đổi nội dung hàm _compareNumbers_. Thay vì return a - b thì bây giờ mình sẽ return b - a.
+Để sắp xếp mảng numbers **theo thứ tự giảm dần**, bạn chỉ cần thay đổi nội dung hàm `compareNumbers`. Thay vì trả về `a - b` thì bây giờ trả về `b - a`.
 
-```js
-var a = [9, 100, 45, 33];
-console.log(
-  a.sort(function (a, b) {
-    return b - a;
-  })
-);
-// => [100, 45, 33, 9]
+```js{3}
+let a = [9, 100, 45, 33];
+
+a.sort((a, b) => b - a);
+
+console.log(a);
+// [100, 45, 33, 9]
 ```
 
-Bây giờ, khi a &lt; b =&gt; b - a &gt; 0 =&gt; a sẽ đứng sau b. Nghĩa là số nhỏ hơn sẽ đứng sau. Do đó, kết quả thu được là dãy số giảm dần như trên.
+Bây giờ, khi `a` nhỏ hơn `b` thì `b - a > 0`. Suy ra, `a` sẽ đứng sau `b`. Nói cách khác, số nhỏ hơn sẽ đứng sau. Do đó, kết quả thu được là **dãy số giảm dần** như trên.
 
-Trên đây là cách sử dụng hàm _sort_ (mặc định) của JavaScript để sắp xếp mảng. Tuy nhiên, nếu như bạn không muốn sử dụng hàm mặc định này thì bạn vẫn có thể tự implement sử dụng một số thuật toán sắp xếp cơ bản.
+Trên đây là cách sử dụng hàm `sort()` để sắp xếp mảng trong JavaScript.
 
-## Array sorting trong JavaScript sử dụng thuật toán
+Nhưng nếu bạn không muốn sử dụng hàm mặc định này, bạn vẫn có thể tự viết lại hàm sắp xếp sử dụng một số thuật toán sắp xếp cơ bản.
 
-Nếu bạn từng học ít nhất một ngôn ngữ lập trình như C/C++, Java,... thì mình dám chắc là bạn đã implement thuật toán sắp xếp rồi.
+## Sắp xếp mảng trong JavaScript sử dụng thuật toán
 
-Một số thuật toán cơ bản là:
+Nếu bạn từng học ít nhất một ngôn ngữ lập trình như C/C++, Java,... thì mình dám chắc là bạn đã **từng triển khai thuật toán sắp xếp** rồi.
+
+Một số thuật toán cơ bản như:
 
 - Thuật toán sắp xếp chọn trực tiếp - Selection Sort
 - Sắp xếp chèn trực tiếp - Insertion Sort
@@ -125,6 +145,8 @@ Một số thuật toán cơ bản là:
 - Sắp xếp nhanh - Quick Sort
 - Sắp xếp trộn - Merge Sort
 - Sắp xếp vun đống - Heap Sort
+
+Sau đây, mình chia sẻ cách triển khai các thuật toán sắp xếp mảng trong JavaScript.
 
 ### Array sorting với sắp xếp chọn trực tiếp - Selection Sort
 
@@ -343,10 +365,4 @@ function heapSort(array) {
 }
 ```
 
-Trên đây là những vấn đề cơ bản về Array Sorting, cùng với một số thuật toán sắp xếp mảng 1 chiều. Theo mình, đây là những kiến thức cơ bản và có thể được áp dụng rất nhiều.
-
-Xin chào và hẹn gặp lại ở [bài viết sau](/object-la-gi-object-trong-javascript/), thân ái!
-
-## Tham Khảo
-
-- [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort?v=control)
+Trên đây là những vấn đề cơ bản về sắp xếp mảng trong JavaScript, cùng với một số thuật toán sắp xếp mảng 1 chiều. Theo mình, đây là những kiến thức cơ bản và có thể được áp dụng rất nhiều.

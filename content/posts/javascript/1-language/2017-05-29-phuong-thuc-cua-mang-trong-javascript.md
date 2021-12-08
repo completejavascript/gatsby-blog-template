@@ -429,7 +429,7 @@ console.log(arr); // (3) [1, 2, 15]
 
 Kết quả bây giờ đã đúng như mong muốn. Để biết thêm về sắp xếp mảng, mời bạn tham khảo hai bài viết:
 
-- [Array sorting - vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
+- [Sắp xếp mảng](/sap-xep-mang-trong-javascript/)
 - [Sắp xếp mảng Tiếng Việt](/sap-xep-tieng-viet-javascript/)
 
 ### Phương thức `reverse`

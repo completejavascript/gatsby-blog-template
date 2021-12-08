@@ -26,7 +26,7 @@ Trước khi đi vào tìm hiểu các bài toán, các bạn có thể đọc t
 
 - [Các kiểu dữ liệu trong JavaScript](/kieu-du-lieu-trong-javascript/)
 - [JavaScript Array cơ bản](/array-la-gi-array-trong-javascript/)
-- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
+- [Array Sorting – vấn đề muôn thuở](/sap-xep-mang-trong-javascript/)
 - [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
 - [JavaScript Object – last but not least](/object-la-gi-object-trong-javascript/)
 - [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
@@ -361,7 +361,7 @@ getIndexToIns([40, 60], 50);
 
 Tham khảo:
 
-- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
+- [Array Sorting – vấn đề muôn thuở](/sap-xep-mang-trong-javascript/)
 - [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 ## Basic Algorithm Scripting - Caesars Cipher

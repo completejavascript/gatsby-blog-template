@@ -76,7 +76,7 @@ Theo quan điểm cá nhân mình thì việc sử dụng hàm **forEach** giú
 
 Hàm forEach là gì? Hay vòng lặp forEach trong JavaScript là gì?
 
-Trả lời: **forEach** là một phương thức có sẵn của [array](/array-sorting-van-de-muon-thuo/), để duyệt qua mỗi phần tử của mảng và thực hiện một hành động nào đó.
+Trả lời: **forEach** là một phương thức có sẵn của [array](/sap-xep-mang-trong-javascript/), để duyệt qua mỗi phần tử của mảng và thực hiện một hành động nào đó.
 
 ### Cú pháp
 

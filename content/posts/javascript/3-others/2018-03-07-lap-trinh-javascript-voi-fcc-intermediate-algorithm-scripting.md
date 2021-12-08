@@ -21,7 +21,7 @@ Cũng như bài viết trước, mình chia sẻ với bạn các link bài vi�
 - [Các kiểu dữ liệu trong JavaScript](/kieu-du-lieu-trong-javascript/)
 - [JavaScript Array cơ bản](/array-la-gi-array-trong-javascript/)
 - [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
-- [Array Sorting – vấn đề muôn thuở](/array-sorting-van-de-muon-thuo/)
+- [Array Sorting – vấn đề muôn thuở](/sap-xep-mang-trong-javascript/)
 - [JavaScript Object – last but not least](/object-la-gi-object-trong-javascript/)
 - [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
