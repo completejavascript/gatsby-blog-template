@@ -1,6 +1,6 @@
 ---
-date: "2017-06-09T00:00:05Z"
-update: "2018-04-11T00:00:05Z"
+date: "2017-06-10T08:00:00Z"
+update: "2018-04-11T08:00:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/cach-su-dung-hang-so-trong-es5-va-es6-completejavascript.com_.png"
