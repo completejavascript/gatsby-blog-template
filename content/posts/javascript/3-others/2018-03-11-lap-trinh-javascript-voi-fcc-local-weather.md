@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/lap-trinh-javascript-voi-fcc-local-weather-completejavascript.com_.png"
 keywords: "local weather"
-description: "Tiếp tục series lập trình JavaScript với FCC, hôm nay mình sẽ giới thiệu một project thuộc chủ đề Intermediate Front-End là Show the Local Weather. Dưới đây là demo trên codepen. Ngoài ra, bạn có thể xem bản đầy đủ tại đây."
+description: "Tiếp tục series lập trình JavaScript với FCC, hôm nay mình sẽ giới thiệu một project thuộc chủ đề Intermediate Front-End là Show the Local Weather. Dưới đây là demo trên codepen. Ngoài ra, bạn có thể xem bản đầy đủ tại đây."
 slug: lap-trinh-javascript-voi-fcc-local-weather
 title: "Lập trình JavaScript với FCC - Local Weather"
 series: "Lập trình JavaScript với FCC"

@@ -301,7 +301,7 @@ localforage.config({
 
 ## Sử dụng nhiều database
 
-Mặc định như trên, localForage sẽ lưu dữ liệu ở một nơi gọi là **global store** (toàn cục). Tuy nhiên, nhiều khi bạn muốn lưu trữ dữ liệu thành nhiều store khác nhau để quản lý cho dễ, lúc này bạn có thể sử dụng phương thức _createInstance()_.
+Mặc định như trên, localForage sẽ lưu dữ liệu ở một nơi gọi là **global store** (toàn cục). Tuy nhiên, nhiều khi bạn muốn lưu trữ dữ liệu thành nhiều store khác nhau để quản lý cho dễ, lúc này bạn có thể sử dụng phương thức _createInstance()_.
 
 Ví dụ mình tạo ra 2 instance của localForage để lưu trữ toạ độ điểm ở không gian 2 chiều và 3 chiều:
 

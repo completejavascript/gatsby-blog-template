@@ -12,7 +12,7 @@ shortTitle: "Thi TOEIC quốc tế tại IIG"
 series: "Cuộc sống IT: Cuộc sống dân IT"
 ---
 
-Xin chào tất cả mọi người. Kể ra thì cũng lâu rồi mình chưa ra một bài viết nào. Bài viết mới gần đây nhất là [PHÂN BIỆT VAR VÀ LET TRONG JAVASCRIPT](/phan-biet-var-va-let-trong-javascript/), cách đây cũng hơn hai tháng.
+Xin chào tất cả mọi người. Kể ra thì cũng lâu rồi mình chưa ra một bài viết nào. Bài viết mới gần đây nhất là [PHÂN BIỆT VAR VÀ LET TRONG JAVASCRIPT](/phan-biet-var-va-let-trong-javascript/), cách đây cũng hơn hai tháng.
 
 Vậy thì bắt đầu từ hôm nay, mình sẽ quyết tâm một tuần xuất bản 3 đến 4 bài viết, nghĩa là 2 ngày một bài từ thứ 2 đến thứ 7. Mặc dù thời tiết bây giờ đang rất lạnh, nhiệt độ từ 9 đến 19 độ C, tại Hà Nội.
 
@@ -28,11 +28,11 @@ Xin chân thành cám ơn.
 
 ![Baby](../../images/cuoc-song-it/baby-completejavascript-com.jpg)
 
-Quay lại chủ đề bài viết ngày hôm nay. Đó là: **Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 – 2018**. Có thể, bạn đang thắc mắc là tại sao mình lại viết chủ đề này và TOEIC thì liên quan quái gì đến [JavaScript](/javascript/)? Chúng ta sẽ cùng nhau tìm hiểu qua những câu hỏi sau đây.
+Quay lại chủ đề bài viết ngày hôm nay. Đó là: **Tìm hiểu thi TOEIC quốc tế và chuẩn bị thi TOEIC tại IIG 2017 – 2018**. Có thể, bạn đang thắc mắc là tại sao mình lại viết chủ đề này và TOEIC thì liên quan quái gì đến [JavaScript](/javascript/)? Chúng ta sẽ cùng nhau tìm hiểu qua những câu hỏi sau đây.
 
 ## TOEIC là gì?
 
-TOEIC viết tắt của **Test of English for International Communication.** Đây là một bài thi đánh giá khả năng sử dụng tiếng anh trong môi trường làm việc quốc tế.
+TOEIC viết tắt của **Test of English for International Communication.** Đây là một bài thi đánh giá khả năng sử dụng tiếng anh trong môi trường làm việc quốc tế.
 
 ## Tại sao lại thi TOEIC mà không phải các bài thi khác như TOEFL hay IELTS?
 
@@ -64,7 +64,7 @@ Về bài thi nói và viết này, mình chưa có kinh nghiệm thi lần nào
 
 ## Cấu trúc đề thi TOEIC như thế nào?
 
-Trước khi trả lời câu hỏi này, mình và bạn phải trả lời câu hỏi này trước: **mình sẽ thi bài thi nào?** Với mình, câu trả lời là: **TOEIC Listening & Reading Test**. Do đó, từ phần này trở đi, mình sẽ chỉ tập trung vào bài thi Nghe và Đọc.
+Trước khi trả lời câu hỏi này, mình và bạn phải trả lời câu hỏi này trước: **mình sẽ thi bài thi nào?** Với mình, câu trả lời là: **TOEIC Listening & Reading Test**. Do đó, từ phần này trở đi, mình sẽ chỉ tập trung vào bài thi Nghe và Đọc.
 
 ### Phần thi Listening
 
@@ -87,7 +87,7 @@ Trên đây là kinh nghiệm thi TOEIC của mình từ năm nhất Đại họ
 
 Mục tiêu của mình trong lần thi TOEIC sắp tới tại IIG vào 31/1/2018 là `>=` 735 điểm. Lúc đó, mình sẽ viết một bài review về quá trình chuẩn bị và thi TOEIC của mình.
 
-Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
 
 ## Tham khảo
 

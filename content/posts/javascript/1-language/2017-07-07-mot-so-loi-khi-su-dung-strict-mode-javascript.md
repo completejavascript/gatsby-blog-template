@@ -27,7 +27,7 @@ console.log(window.x);
 // => 10
 ```
 
-Ở strict mode, bạn sẽ bị lỗi _x chưa được định nghĩa_: **Uncaught ReferenceError: x is not defined**
+Ở strict mode, bạn sẽ bị lỗi _x chưa được định nghĩa_: **Uncaught ReferenceError: x is not defined**
 
 ```js
 x = 10;
@@ -128,7 +128,7 @@ console.log(fixed.x);
 
 Bình thường, bạn sẽ không thể xoá thuộc tính của một đối tượng Global, mặc dù không có thông báo lỗi nào. Khi ở strict mode, bạn sẽ bị lỗi nếu cố gắng xoá một thuộc tính của đối tượng Global:
 
-Ví dụ: Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
+Ví dụ: Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
 
 ```js
 "use strict";
@@ -192,9 +192,9 @@ delete x;
 
 ## Đặt tên biến trùng với từ dự trữ
 
-Ngoài từ khoá, [JavaScript](/javascript-la-gi/) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.
+Ngoài từ khoá, [JavaScript](/javascript-la-gi/) quy định danh sách những từ dự trữ - những từ sẽ được sử dụng làm từ khoá ở những phiên bản tiếp theo, như: implements, interface, let, package, private, protected, public, static, và yield.
 
-Do đó, strict mode nghiêm cấm bạn đặt tên biến số trùng với những từ này. Nếu bạn đặt tên biến trùng với từ dự trữ thì bạn sẽ bị lỗi như sau:
+Do đó, strict mode nghiêm cấm bạn đặt tên biến số trùng với những từ này. Nếu bạn đặt tên biến trùng với từ dự trữ thì bạn sẽ bị lỗi như sau:
 
 Uncaught SyntaxError: Unexpected strict mode reserved word
 

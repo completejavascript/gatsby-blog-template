@@ -95,7 +95,7 @@ console.log(empty.toString());
 // => [object Object]
 ```
 
-Rõ ràng, mình chỉ khai báo **empty** là một object mà không định nghĩa thêm thuộc tính nào. Tuy nhiên, ví dụ trên chỉ ra rằng thuộc tính **toString** tồn tại trong object **empty**. Đó là vì: **toString** là một thuộc tính của **prototype** mà một **object** thì luôn chứa thuộc tính **prototype**.
+Rõ ràng, mình chỉ khai báo **empty** là một object mà không định nghĩa thêm thuộc tính nào. Tuy nhiên, ví dụ trên chỉ ra rằng thuộc tính **toString** tồn tại trong object **empty**. Đó là vì: **toString** là một thuộc tính của **prototype** mà một **object** thì luôn chứa thuộc tính **prototype**.
 
 ```js
 var empty = {};
@@ -254,8 +254,8 @@ Trên đây là những khía cạnh cơ bản của lập trình hướng đố
 - Method: chúng ta sẽ sử dụng method để lấy giá trị và sửa đổi giá trị thuộc tính của object.
 - Prototype: mọi object đều chứa thuộc tính prototype. Chúng ta có thể thay đổi, thêm thuộc tính của object dựa vào prototype.
 - Constructor: Có thể tạo mới một object từ một hàm khởi tạo constructor sử dụng từ khoá **new**.
-- Tính đóng gói: che giấu dữ liệu; không cho phép truy cập dữ liệu trực tiếp từ bên ngoài, mà phải thông qua các method được cung cấp.
-- Tính kế thừa: đối tượng con sẽ kế thừa những thuộc tính của đối tượng cha mà không cần phải định nghĩa lại.
+- Tính đóng gói: che giấu dữ liệu; không cho phép truy cập dữ liệu trực tiếp từ bên ngoài, mà phải thông qua các method được cung cấp.
+- Tính kế thừa: đối tượng con sẽ kế thừa những thuộc tính của đối tượng cha mà không cần phải định nghĩa lại.
 
 Việc áp dụng lập trình hướng đối tượng vào JavaScript là tương đối khó. Tuy nhiên, nếu bạn nắm vững những kiến thức cơ bản mà mình đã trình bày trên đây, thì mình tin chắc rằng bạn sẽ dễ dàng tìm hiểu thêm và áp dụng lập trình hướng đối tượng trong JavaScript.
 
@@ -300,7 +300,7 @@ logFive(new RangeSeq(100, 1000));
 
 Tham khảo code tại [đây](https://github.com/completejavascript/practical-javascript/blob/master/OOP_javascript/interface_completejavascript.com.js).
 
-Xin chào và hẹn gặp lại bạn ở [bài viết sau](/debug-javascript-de-hay-kho/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết sau](/debug-javascript-de-hay-kho/), thân ái!
 
 ## Tham khảo
 

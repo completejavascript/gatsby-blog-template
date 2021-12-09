@@ -242,7 +242,7 @@ Trong vòng lặp for trên, mình bỏ qua phần điều kiện. Nghĩa là kh
 
 Trong mỗi vòng lặp, mình kiểm tra xem nếu giá trị `number` chia hết cho 7 (tức số dư của `number` khi chia cho 7 bằng 0) thì đó chính là số cần tìm.
 
-Cuối cùng, mình dùng từ khóa `break` để thoát khỏi vòng lặp.
+Cuối cùng, mình dùng từ khóa `break` để thoát khỏi vòng lặp.
 
 > 💡 Tương tự, bạn cũng có thể sử dụng từ khoá `break` đối với vòng lặp while và vòng lặp do...while.
 

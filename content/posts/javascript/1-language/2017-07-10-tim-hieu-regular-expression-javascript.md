@@ -52,7 +52,7 @@ Trong ví dụ trên, 2 string "abcde" và "12abcde" đều chứa "abc" nên k�
 
 #### Kiểm tra trùng khớp với tập hợp các kí tự
 
-Nếu chỉ kiểm tra như ví dụ trên thì bạn hoàn toàn có thể sử dụng phương thức *indexOf* của string thay vì sử dụng JavaScript Regular Expression.
+Nếu chỉ kiểm tra như ví dụ trên thì bạn hoàn toàn có thể sử dụng phương thức _indexOf_ của string thay vì sử dụng JavaScript Regular Expression.
 
 Tuy nhiên, với RegExp JavaScript thì bạn có thể kiểm tra những mẫu string phức tạp hơn.
 
@@ -205,7 +205,7 @@ console.log(animalCount.test("15 pigchickens"));
 
 ### Phương thức Exec
 
-Nếu như phương thức **test** chỉ kiểm tra xem có tồn tại khuôn mẫu hay không thì phương thức **exec** sẽ trả về một đối tượng chứa thông tin thành phần trùng khớp với khuôn mẫu, ngược lại thì trả về null.
+Nếu như phương thức **test** chỉ kiểm tra xem có tồn tại khuôn mẫu hay không thì phương thức **exec** sẽ trả về một đối tượng chứa thông tin thành phần trùng khớp với khuôn mẫu, ngược lại thì trả về null.
 
 ```js
 var match = /\d+/.exec("one two 100 200");
@@ -231,7 +231,7 @@ console.log(/(\d)+/.exec("123"));
 // => ["123", "3", index: 0, input: "123"]
 ```
 
-Đặc biệt nếu một group có nhiều thành phần trùng khớp thì chỉ lấy thành phần trùng khớp cuối cùng. Trong ví dụ trên, group **(\d)** có 3 thành phần trùng khớp là **1**, **2**, **3**. Nhưng chỉ thành phần trùng khớp cuối cùng là **3** xuất hiện trong kết quả.
+Đặc biệt nếu một group có nhiều thành phần trùng khớp thì chỉ lấy thành phần trùng khớp cuối cùng. Trong ví dụ trên, group **(\d)** có 3 thành phần trùng khớp là **1**, **2**, **3**. Nhưng chỉ thành phần trùng khớp cuối cùng là **3** xuất hiện trong kết quả.
 
 #### Trích xuất dữ liệu từ string
 
@@ -357,7 +357,7 @@ Tóm tắt một số khuôn mẫu cơ bản của Regex trong JavaScript:
 - /^/: bắt đầu string
 - /\$/: kết thúc string
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/co-ban-ve-dom-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/co-ban-ve-dom-javascript/), thân ái!
 
 ## Tham khảo
 

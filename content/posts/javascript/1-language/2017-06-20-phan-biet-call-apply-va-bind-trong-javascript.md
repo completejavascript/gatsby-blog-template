@@ -21,7 +21,7 @@ Gần đây, mình có đọc được cách sử dụng ba hàm **call**, **app
 
 Sở dĩ, một Function có thể gọi function khác vì trong JavaScript, Function cũng là một loại [Object](/object-la-gi-object-trong-javascript/), mà đã là Object thì sẽ có prototype, hay nói cách khác là gọi được phương thức của nó.
 
-Bạn có thể tham khảo về 3 hàm **call**, **apply** và **bind** tại: [Function.prototype.call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call),  [Function.prototype.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)  và [Function.prototype.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
+Bạn có thể tham khảo về 3 hàm **call**, **apply** và **bind** tại: [Function.prototype.call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call), [Function.prototype.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) và [Function.prototype.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind).
 
 ## Tóm tắt nội dung của 3 hàm
 
@@ -112,7 +112,7 @@ sayHelloKelly(); // => Hello,Good morning Kelly King
 
 ## Kết luận
 
-- Nhìn chung, hàm **call** và **apply** là gần giống nhau. Chúng đều gọi hàm trực tiếp. Chỉ khác ở cách truyền tham số vào (với **c**all thì đối số phân cách bởi dấu phẩy **c**omma và với **a**pply thì đối số cho bởi mảng **a**rray)
+- Nhìn chung, hàm **call** và **apply** là gần giống nhau. Chúng đều gọi hàm trực tiếp. Chỉ khác ở cách truyền tham số vào (với **c**all thì đối số phân cách bởi dấu phẩy **c**omma và với **a**pply thì đối số cho bởi mảng **a**rray)
 - Hàm **bind** thì hơi khác hơn một chút. Hàm này không gọi hàm trực tiếp mà nó sẽ trả về một hàm mới. Và bạn có thể sử dụng hàm mới này sau. Về cách truyền tham số vào thì nó giống với hàm **call**.
 
 Trên đây là một số sự khác nhau giữa **call**, **apply** và **bind** trong JavaScript. Mình nghĩ đến đây là đã đủ để bạn phân biệt được **call**, **apply** và **bind** trong JavaScript và biết cách sử dụng chúng.

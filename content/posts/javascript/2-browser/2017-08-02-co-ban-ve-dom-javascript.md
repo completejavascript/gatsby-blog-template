@@ -15,7 +15,7 @@ tags:
   - HTML
 ---
 
-Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/javascript-la-gi/). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời.
+Những bài viết trước, mình đã giới thiệu với bạn kiến thức cơ bản về mặt _ngôn ngữ_ của [JavaScript](/javascript-la-gi/). Bài viết này mình sẽ giới thiệu sự liên kết của JavaScript với trình duyệt. Và cái đầu tiên mà mình muốn nói đến, chính là **DOM**. Vậy DOM là gì? Cách sử dụng DOM trong JavaScript thế nào? Sau đây là câu trả lời.
 
 ## DOM là gì?
 
@@ -50,7 +50,7 @@ Hãy xem xét một ví dụ đơn giản sau:
 
 Thực tế, cấu trúc dữ liệu của một trang web được biểu diễn dạng cây (tree). Trong đó, mỗi node sẽ tương ứng với một DOM.
 
-Mỗi DOM node sẽ có thuộc tính *nodeType* - là một số nguyên - để biểu diễn kiểu của node, với giá trị như sau:
+Mỗi DOM node sẽ có thuộc tính _nodeType_ - là một số nguyên - để biểu diễn kiểu của node, với giá trị như sau:
 
 - document.ELEMENT_NODE (1) : node thông thường như **html, head, body, title, h1, p,...**
 - document.TEXT_NODE (3) : thành phần text trên trang web
@@ -106,7 +106,7 @@ Ví dụ: với node _p_ (thứ nhất), _previousSibling_ là _h1_.
 
 trỏ đến node liền kề phía sau (có cùng _parentNode_).
 
-Ví dụ: với node _p_ (thứ nhất), *nextSibling* là _p _(thứ 2).
+Ví dụ: với node _p_ (thứ nhất), _nextSibling_ là _p _(thứ 2).
 
 ## Một số phương thức phổ biến khi sử dụng DOM
 
@@ -114,11 +114,11 @@ Ví dụ: với node _p_ (thứ nhất), *nextSibling* là _p _(thứ 2).
 
 trả về một danh sách các node con, cháu của một node với tag là 'tagName'.
 
-Ở đây, *tagName* có thể là _body, h1, p, img, ..._
+Ở đây, _tagName_ có thể là _body, h1, p, img, ..._
 
 ### [Node.getElementsByClassName('className')](https://developer.mozilla.org/en/docs/Web/API/Document/getElementsByClassName)
 
-Tương tự như phương thức trên, phương phức này trả về một danh sách các node con, cháu của một node với thuộc tính class = 'className'.
+Tương tự như phương thức trên, phương phức này trả về một danh sách các node con, cháu của một node với thuộc tính class = 'className'.
 
 ### [Node.getElementById('id')](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
@@ -146,7 +146,7 @@ Tạo ra một node kiểu text với giá trị text là _data_.
 
 ### [Document.createElement(tagName)](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 
-Tạo ra một node mới có kiểu là *tagName* (_h1, h2, p, img, div,..._)
+Tạo ra một node mới có kiểu là _tagName_ (_h1, h2, p, img, div,..._)
 
 ### [Document.querySelector(selectors)](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 

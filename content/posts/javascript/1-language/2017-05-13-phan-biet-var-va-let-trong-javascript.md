@@ -14,7 +14,7 @@ tags:
   - Biến
 ---
 
-Trước đây, có thể nhiều bạn đã quen dùng `var` để khai báo [biến](/kieu-du-lieu-trong-javascript/) trong JavaScript. Tuy nhiên, từ phiên bản ES6, mình khuyên bạn **chỉ** nên dùng từ khóa `let`. Vậy `let` giống và khác `var` như thế nào? Bài viết này sẽ giúp bạn phân biệt `var` và `let` trong JavaScript.
+Trước đây, có thể nhiều bạn đã quen dùng `var` để khai báo [biến](/kieu-du-lieu-trong-javascript/) trong JavaScript. Tuy nhiên, từ phiên bản ES6, mình khuyên bạn **chỉ** nên dùng từ khóa `let`. Vậy `let` giống và khác `var` như thế nào? Bài viết này sẽ giúp bạn phân biệt `var` và `let` trong JavaScript.
 
 Qua đó, bạn biết cách sử dụng `var` và `let` sao cho phù hợp nhất. Cũng như, bạn có thể chuyển đổi mã nguồn từ `var` sang `let` mà không làm ảnh hưởng tới logic của chương trình hiện tại (những chương trình có mã nguồn từ trước khi `let` xuất hiện).
 
@@ -50,7 +50,7 @@ useLet();
 
 Biến `j` ở trên được khai báo sử dụng từ khóa `let`. Nên biến `j` chỉ được phép sử dụng trong vòng lặp for.
 
-Nếu bạn truy cập biến `j` ngoài vòng lặp for thì đều bị lỗi **ReferenceError: j is not defined**.
+Nếu bạn truy cập biến `j` ngoài vòng lặp for thì đều bị lỗi **ReferenceError: j is not defined**.
 
 **Ví dụ sử dụng `var`:**
 
@@ -72,7 +72,7 @@ Phạm vi của biến sử dụng `var` là phạm vi của hàm chứa phần 
 
 Mặc dù biến `i` được khai báo trong vòng lặp for, nhưng bạn vẫn có thể truy cập biến `i` ở mọi vị trí trong hàm.
 
-Lúc đầu, giá trị của biến `i` là `undefined`, nên khi gọi `console.log(i)` lần đầu tiên, giá trị in ra là `undefined` chứ không phải là lỗi **ReferenceError: i is not defined**.
+Lúc đầu, giá trị của biến `i` là `undefined`, nên khi gọi `console.log(i)` lần đầu tiên, giá trị in ra là `undefined` chứ không phải là lỗi **ReferenceError: i is not defined**.
 
 Và sau vòng lặp for, giá trị của biến `i` vẫn giữ nguyên là `3` thay vì `undefined`.
 

@@ -47,7 +47,7 @@ Ngoài ra, bạn cũng có thể bỏ qua phần reject ở đây mà xử lý s
 
 ## XMLHttpRequest với Promise JavaScript
 
-Phần này mình đã làm một ví dụ sử dụng XMLHttpRequest để thực hiện phương thức **GET** với API cung cấp bởi [https://fcc-weather-api.glitch.me](https://fcc-weather-api.glitch.me), để lấy thông tin thời tiết tại một điểm có kinh độ và vĩ độ xác định.
+Phần này mình đã làm một ví dụ sử dụng XMLHttpRequest để thực hiện phương thức **GET** với API cung cấp bởi [https://fcc-weather-api.glitch.me](https://fcc-weather-api.glitch.me), để lấy thông tin thời tiết tại một điểm có kinh độ và vĩ độ xác định.
 
 https://codepen.io/completejavascript/pen/vRxWdQ
 
@@ -57,7 +57,7 @@ Ngoài ra, bạn cũng có thể nhấn **Ctrl Shift I** hoặc **F12** (tùy tr
 
 ### Khởi tạo đối tượng XMLHttpRequest support IE
 
-Đối với hầu hết các trình duyệt, bạn có thể sử dụng trực tiếp đối tượng XMLHttpRequest của window. Nhưng đối với trình duyệt IE, bạn cần phải sử dụng **ActiveXObject("Microsoft.XMLHTTP")** thay thế. Do đó, bạn cần định nghĩa lại XMLHttpRequest.
+Đối với hầu hết các trình duyệt, bạn có thể sử dụng trực tiếp đối tượng XMLHttpRequest của window. Nhưng đối với trình duyệt IE, bạn cần phải sử dụng **ActiveXObject("Microsoft.XMLHTTP")** thay thế. Do đó, bạn cần định nghĩa lại XMLHttpRequest.
 
 ```js
 let XMLHttpRequest =
@@ -134,7 +134,7 @@ get(request)
   });
 ```
 
-Khi thành công, kết quả data sẽ được ghi ra console và đổi giá trị **textContent** của **#result** với data vừa nhận được trong phần **.then**. Ngược lại, khi có lỗi thì in ra kết quả error trên console trong phần **.catch**.
+Khi thành công, kết quả data sẽ được ghi ra console và đổi giá trị **textContent** của **#result** với data vừa nhận được trong phần **.then**. Ngược lại, khi có lỗi thì in ra kết quả error trên console trong phần **.catch**.
 
 ## Kết luận
 
@@ -144,5 +144,5 @@ Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/js-patter
 
 ## Tham khảo
 
-- [JavaScript Promise API](https://davidwalsh.name/promises)
+- [JavaScript Promise API](https://davidwalsh.name/promises)
 - [Promise MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)

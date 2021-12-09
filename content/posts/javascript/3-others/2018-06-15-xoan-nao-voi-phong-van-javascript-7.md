@@ -15,7 +15,7 @@ tags:
   - Quiz
 ---
 
-Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 7**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay.
+Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 7**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay.
 
 Mời bạn theo dõi bài viết!
 
@@ -46,9 +46,9 @@ Hỏi console in ra kết quả như thế nào? Tại sao?
 
 Mấu chốt để giải quyết câu hỏi này là: bạn phải hiểu được cơ chế thêm phần tử vào Map khi sử dụng **Map.prototype.set(key, value)**. Phương thức này sẽ gán giá trị _value_ cho _key_ bên trong Map.
 
-Nếu *key* chưa tồn tại thì Map sẽ tạo mới phần tử với *key* tương ứng. Ngược lại, nếu *key* đã tồn tại thì Map sẽ gán giá trị mới cho nó.
+Nếu _key_ chưa tồn tại thì Map sẽ tạo mới phần tử với _key_ tương ứng. Ngược lại, nếu _key_ đã tồn tại thì Map sẽ gán giá trị mới cho nó.
 
-**Và quan trọng là**: Map sử dụng thuật toán [SameValueZero](https://tc39.github.io/ecma262/#sec-samevaluezero) để so sánh giá trị của các key với nhau. Về cơ bản, thuật toán này sẽ tương đương với việc sử dụng toán tử "===" để so sánh.
+**Và quan trọng là**: Map sử dụng thuật toán [SameValueZero](https://tc39.github.io/ecma262/#sec-samevaluezero) để so sánh giá trị của các key với nhau. Về cơ bản, thuật toán này sẽ tương đương với việc sử dụng toán tử "===" để so sánh.
 
 Mà ở đây, các _key_ lần lượt là: **1, "a" và [1]** và ta có:
 
@@ -100,7 +100,7 @@ Cụ thể convert như thế nào thì mình không dám chắc. Mình chỉ d�
 
 Đối với **0 == "0"** và **0 == []**, JavaScript sẽ convert string **"0"** và array rỗng **[]** về dạng số, nên giá trị của chúng đều là 0. Do đó, kết quả của 2 phép so sánh này là **true**.
 
-Đối với các phép so sánh (1), (2), (3) và (4), JavaScript sẽ convert thành phần thứ 2 (kiểu array) về thành phần thứ nhất (kiểu string). Mà để convert array sang kiểu string thì JavaScript sẽ sử dụng phương thức [Array.prototype.toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString).
+Đối với các phép so sánh (1), (2), (3) và (4), JavaScript sẽ convert thành phần thứ 2 (kiểu array) về thành phần thứ nhất (kiểu string). Mà để convert array sang kiểu string thì JavaScript sẽ sử dụng phương thức [Array.prototype.toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString).
 
 Và ta có:
 
@@ -146,9 +146,9 @@ Hỏi console in ra kết quả theo thứ tự như thế nào?
 
 Khi [function](/ham-la-gi-ham-trong-javascript/) **d()** được gọi, dĩ nhiên _d_ sẽ được in ra đầu tiên. Ngoài ra, function **b()** và **c()** là hàm xử lý đồng bộ nên chắc chắn _b_ sẽ in ra trước _c_. Vấn đề ở đây chỉ là _a_ mà thôi.
 
-Ở đây, hàm **a()** được đặt trong hàm [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout). Mà khi được đặt trong hàm này, hàm _a()_ sẽ được thực hiện ngay sau một khoảng thời gian *timeout* cho trước.
+Ở đây, hàm **a()** được đặt trong hàm [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout). Mà khi được đặt trong hàm này, hàm _a()_ sẽ được thực hiện ngay sau một khoảng thời gian _timeout_ cho trước.
 
-Ở đây, mình truyền vào thời gian _timeout_ là 0. Nhưng thực tế, thời gian này tối thiểu phải là **4ms**. Về chi tiết bạn có thể tham khảo tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout#Reasons_for_delays_longer_than_specified). Do vậy, _a_ sẽ được in ra sau _b_ và _c_. Và dĩ nhiên, kết quả cuối cùng phải là: **d b c a**.
+Ở đây, mình truyền vào thời gian _timeout_ là 0. Nhưng thực tế, thời gian này tối thiểu phải là **4ms**. Về chi tiết bạn có thể tham khảo tại [đây](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout#Reasons_for_delays_longer_than_specified). Do vậy, _a_ sẽ được in ra sau _b_ và _c_. Và dĩ nhiên, kết quả cuối cùng phải là: **d b c a**.
 
 </div>
 

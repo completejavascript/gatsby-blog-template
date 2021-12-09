@@ -74,7 +74,7 @@ document.cookie = "foo2=bar2";
 
 Lúc này, bạn sẽ có 2 cookie là: <code>'foo1=bar1; foo2=bar2'</code>.
 
-Ngoài ra, giá trị của cookie nên được encode với phương thức [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) để tránh các kí tự không hợp lệ như: dấu cách, dấu phẩy và dấu chấm phẩy. Ví dụ, nếu mình muốn thêm cookie với key là _name_ và value là _Lam Pham_, thì có thể làm như sau:
+Ngoài ra, giá trị của cookie nên được encode với phương thức [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) để tránh các kí tự không hợp lệ như: dấu cách, dấu phẩy và dấu chấm phẩy. Ví dụ, nếu mình muốn thêm cookie với key là _name_ và value là _Lam Pham_, thì có thể làm như sau:
 
 ```js
 const value = encodeURIComponent("Lam Pham");
@@ -215,7 +215,7 @@ Hoặc cũng trong DevTools, bạn vào tab _Application -> Storage -> Cookies_.
 
 ## Lời kết
 
-Trên đây là những kiến thức cơ bản về HTTP Cookie. Hy vọng bạn có thể hiểu được về cookie và cách sử dụng nó phía client và server. Nếu có gì thắc mắc hay góp ý, bạn vui lòng để lại trong phần bình luận phía dưới. Mình sẽ cố gắng giải đáp.
+Trên đây là những kiến thức cơ bản về HTTP Cookie. Hy vọng bạn có thể hiểu được về cookie và cách sử dụng nó phía client và server. Nếu có gì thắc mắc hay góp ý, bạn vui lòng để lại trong phần bình luận phía dưới. Mình sẽ cố gắng giải đáp.
 
 Xin chào và hẹn gặp lại, thân ái!
 

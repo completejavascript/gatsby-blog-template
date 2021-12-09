@@ -47,7 +47,7 @@ Bạn sẽ thu được ảnh sau:
 
 Với cách này bạn sẽ thu được ảnh thumbnail của video trên youtube với các độ phân giải khác nhau.
 
-**Ảnh thumbnail kích thước 480x360**
+**Ảnh thumbnail kích thước 480x360**
 
 - img.youtube.com/vi/id_video/0.jpg
 
@@ -63,4 +63,4 @@ Trên đây là 2 cách để lấy ảnh thumbnail của video trên youtube. H
 
 **Lưu ý**: cách này chỉ lấy được ảnh thumbnail của video. Nếu bạn muốn lấy ảnh từ video youtube (bất kỳ tại mọi thời điểm) thì có thể tải video đó về rồi sử dụng [code FFmpeg để chuyển video thành ảnh](/huong-dan-tim-hieu-ffmpeg-co-ban/#Code_ffmpeg_chuyen_doi_video_thanh_anh).
 
-Xin chào và hẹn gặp bạn ở bài viết tiếp theo, thân ái!
+Xin chào và hẹn gặp bạn ở bài viết tiếp theo, thân ái!

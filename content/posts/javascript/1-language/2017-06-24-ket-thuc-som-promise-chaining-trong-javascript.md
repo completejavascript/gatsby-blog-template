@@ -87,7 +87,7 @@ Có 2 cách để giải quyết bài toán này, đó là: **không thực hi�
 
 ### Kết thúc sớm Promise chaining bằng cách không return
 
-Bình thường, khi thực hiện _return_, giá trị _return_ sẽ được đưa đến mắt xích tiếp theo của chuỗi Promise để xử lý. Và nếu bạn không _return_ thì giá trị đó sẽ được hiểu là **undefined**. Dựa vào đặc điểm này, mình sẽ thay đổi đoạn code trên như sau:
+Bình thường, khi thực hiện _return_, giá trị _return_ sẽ được đưa đến mắt xích tiếp theo của chuỗi Promise để xử lý. Và nếu bạn không _return_ thì giá trị đó sẽ được hiểu là **undefined**. Dựa vào đặc điểm này, mình sẽ thay đổi đoạn code trên như sau:
 
 ```js
 const increase = (x) => {
@@ -124,7 +124,7 @@ run(4);
 
 Với **x = 3**: giá trị của _res_ tại _then_ đầu tiên là 3, thoả mãn <code>res <= 3</code> nên đoạn code đó trả về <code>increase(res)</code>. Dẫn đến, giá trị của _res_ tại các _then_ tiếp theo lần lượt là 4, 5.
 
-Với **x = 4**: ngay tại _then_ đầu tiên _res_ sẽ bằng 4, không thoả mãn <code>res <= 3</code> nên đoạn code <code>return increase(res)</code> sẽ không được thực hiện. Dẫn đến, đoạn _then_ này sẽ trả về **undefined**. Do đó các _then_ tiếp theo, giá trị của _res_ sẽ là _undefined_. Mà mình đã kiểm tra nếu <code>res !== undefined</code> thì mới thực hiện. Tóm lại, mình đã kết thúc sớm Promise chaining ngay tại _then_ đầu tiên rồi.
+Với **x = 4**: ngay tại _then_ đầu tiên _res_ sẽ bằng 4, không thoả mãn <code>res <= 3</code> nên đoạn code <code>return increase(res)</code> sẽ không được thực hiện. Dẫn đến, đoạn _then_ này sẽ trả về **undefined**. Do đó các _then_ tiếp theo, giá trị của _res_ sẽ là _undefined_. Mà mình đã kiểm tra nếu <code>res !== undefined</code> thì mới thực hiện. Tóm lại, mình đã kết thúc sớm Promise chaining ngay tại _then_ đầu tiên rồi.
 
 Tuy nhiên, nếu để ý kĩ thì bạn sẽ thấy cách này chỉ giải quyết được về mặt kết quả. Còn về hình thức thì các mắt xích của chuỗi Promise vẫn được nhảy đến. Điều này có thể tiềm ẩn nhiều **Bug** sau này. Vì vậy, cái mà mình mong muốn thực sự là việc kết thúc sớm Promise chaining sẽ giúp thoát khỏi chuỗi Promise một cách hoàn toàn.
 

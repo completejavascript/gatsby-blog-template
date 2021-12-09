@@ -13,11 +13,11 @@ tags:
   - Hàm
 ---
 
-Như đã nói trong bài [tìm hiểu function JavaScipt](/ham-la-gi-ham-trong-javascript/), bài viết này mình sẽ giới thiệu với bạn về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closure trong JavaScript, chúng ta sẽ xem closure là gì và cách sử dụng nó như thế nào.
+Như đã nói trong bài [tìm hiểu function JavaScipt](/ham-la-gi-ham-trong-javascript/), bài viết này mình sẽ giới thiệu với bạn về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Tuy nhiên, trước khi đi vào những ưu, nhược điểm của việc sử dụng closure trong JavaScript, chúng ta sẽ xem closure là gì và cách sử dụng nó như thế nào.
 
-## Khái niệm JavaScript closure
+## Khái niệm JavaScript closure
 
-Closures là tập hợp bao gồm một hàm và _môi trường_ nơi hàm số đó được khai báo. Ở đây, môi trường bao gồm tất cả những biến cục bộ trong phạm vi hàm số được khai báo (để đơn giản, từ nay mình sẽ sử dụng _hàm closures_ khi nói về JavaScript closures).
+Closures là tập hợp bao gồm một hàm và _môi trường_ nơi hàm số đó được khai báo. Ở đây, môi trường bao gồm tất cả những biến cục bộ trong phạm vi hàm số được khai báo (để đơn giản, từ nay mình sẽ sử dụng _hàm closures_ khi nói về JavaScript closures).
 
 Hàm closures có thể truy cập [biến số](/bien-la-gi-bien-trong-javascript/) ở **3 phạm vi** khác nhau là:
 
@@ -65,7 +65,7 @@ adder2(10);
 // => This answer is 12
 ```
 
-Trong ví dụ trên, hàm closures là một hàm số không tên _function(number)_. Hàm closures này sử dụng biến cục bộ của outer function là _intro_ và _local_.
+Trong ví dụ trên, hàm closures là một hàm số không tên _function(number)_. Hàm closures này sử dụng biến cục bộ của outer function là _intro_ và _local_.
 
 Khi mình gọi hàm _adder(2)_, hàm số này thực hiện và kết quả trả về được gán vào biến _adder2_. Khi gọi _adder2(10)_, kết quả trả về là _12_, chứng tỏ hàm closures vẫn có thể truy cập tới biến cục bộ của outer function khi hàm đó thực hiện xong.
 
@@ -123,7 +123,7 @@ console.log(myObject.getId()); // => 10
 
 Kết quả trả về vẫn giống y hệt như trên. Tuy nhiên, cách nào sẽ chạy nhanh hơn? **Closures** hay **Prototype?**
 
-Dựa theo kết quả so sánh tại bài viết [_Performance of prototype vs closure code in JavaScript_](https://ssobczak.wordpress.com/2014/02/16/prototype-vs-closure-js/), mình tóm tắt lại như sau:
+Dựa theo kết quả so sánh tại bài viết [_Performance of prototype vs closure code in JavaScript_](https://ssobczak.wordpress.com/2014/02/16/prototype-vs-closure-js/), mình tóm tắt lại như sau:
 
 - Định nghĩa đối tượng: JavaScript closures nhanh hơn.
 - Khả năng tiết kiệm bộ nhớ và khởi tạo đối tượng mới: Prototype nhanh hơn.

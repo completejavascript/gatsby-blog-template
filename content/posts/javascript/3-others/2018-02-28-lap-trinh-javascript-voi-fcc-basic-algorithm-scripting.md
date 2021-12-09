@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/lap-trinh-javascript-voi-basic-algorithm-scripting-completejavascript-completejavascript.com_.png"
 keywords: "basic algorithm scripting"
-description: "Thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn. Vì vậy, tiếp theo trong loạt bài Lập trình JavaScript với FCC, hôm nay, mình sẽ tổng hợp lại những bài toán thuộc chủ đề Basic Algorithm Scripting trên freeCodeCamp."
+description: "Thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn. Vì vậy, tiếp theo trong loạt bài Lập trình JavaScript với FCC, hôm nay, mình sẽ tổng hợp lại những bài toán thuộc chủ đề Basic Algorithm Scripting trên freeCodeCamp."
 slug: lap-trinh-javascript-voi-fcc-basic-algorithm-scripting
 title: "Lập trình JavaScript với FCC - Basic Algorithm Scripting"
 series: "Lập trình JavaScript với FCC"
@@ -18,7 +18,7 @@ Trong lập trình nói chung và lập trình JavaScript nói riêng, việc h�
 
 Ngoài ra, khi thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn.
 
-Vì vậy, tiếp theo trong loạt bài [**Lập trình JavaScript với FCC**](/tag/fcc/), hôm nay, mình sẽ tổng hợp lại những bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp để các bạn tiện theo dõi và có thể tham khảo khi cần.
+Vì vậy, tiếp theo trong loạt bài [**Lập trình JavaScript với FCC**](/tag/fcc/), hôm nay, mình sẽ tổng hợp lại những bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp để các bạn tiện theo dõi và có thể tham khảo khi cần.
 
 Tuy nhiên, những bài toán này khá đơn giản nên mình sẽ không giải thích cách làm. Nếu các bạn có thắc mắc hay góp ý thì có thể để lại ở phần bình luận phía dưới.
 
@@ -31,7 +31,7 @@ Trước khi đi vào tìm hiểu các bài toán, các bạn có thể đọc t
 - [JavaScript Object – last but not least](/object-la-gi-object-trong-javascript/)
 - [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
-## Basic Algorithm Scripting - Reverse a String
+## Basic Algorithm Scripting - Reverse a String
 
 Cho một string, nhiệm vụ của bạn là phải đảo ngược lại string đó. Ví dụ: **Hello** => **olleH.**
 
@@ -72,7 +72,7 @@ Tham khảo:
 
 ## Basic Algorithm Scripting - Check for Palindromes
 
-Kiểm tra xem một string có phải là **palindrome** hay không? (Một string được gọi là **palindrome** khi và chỉ khi đọc ngược và đọc xuôi đều giống nhau, với điều kiện bỏ qua các dấu câu, kí tự đặc biệt, dấu cách). Ví dụ: **boob, eye,...**
+Kiểm tra xem một string có phải là **palindrome** hay không? (Một string được gọi là **palindrome** khi và chỉ khi đọc ngược và đọc xuôi đều giống nhau, với điều kiện bỏ qua các dấu câu, kí tự đặc biệt, dấu cách). Ví dụ: **boob, eye,...**
 
 ```js
 function palindrome(str) {
@@ -112,9 +112,9 @@ Tham khảo:
 - [String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 - [Array.prototype.reduce()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
-## Basic Algorithm Scripting - Title Case a Sentence
+## Basic Algorithm Scripting - Title Case a Sentence
 
-Trả về string với các từ có chữ cái đầu tiên viết hoa. Ví dụ: **I'm a little tea pot** => **I'm A Little Tea Pot**.
+Trả về string với các từ có chữ cái đầu tiên viết hoa. Ví dụ: **I'm a little tea pot** => **I'm A Little Tea Pot**.
 
 ```js
 function titleCase(str) {
@@ -398,6 +398,6 @@ Tham khảo:
 
 ## Kết luận
 
-Trên đây là tổng hợp các bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp. Theo cá nhân mình thấy thì các bài toán trên khá dễ. Nhưng lại rất hay ở chỗ, nó giúp ta áp dụng được kiến thức lý thuyết. Nếu các bạn có gì thắc mắc, góp ý hay cải tiến các thuật toán trên. Vui lòng để lại bình luận phía dưới nhé.
+Trên đây là tổng hợp các bài toán thuộc chủ đề **Basic Algorithm Scripting** trên freeCodeCamp. Theo cá nhân mình thấy thì các bài toán trên khá dễ. Nhưng lại rất hay ở chỗ, nó giúp ta áp dụng được kiến thức lý thuyết. Nếu các bạn có gì thắc mắc, góp ý hay cải tiến các thuật toán trên. Vui lòng để lại bình luận phía dưới nhé.
 
-Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting/), thân ái!
+Xin chào và hẹn gặp lại bạn trong [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-intermediate-algorithm-scripting/), thân ái!

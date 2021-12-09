@@ -62,7 +62,7 @@ if ("serviceWorker" in navigator) {
 
 Có một số lưu ý quan trọng khi đăng ký Service Worker là:
 
-- Vị trí của file **service_worker.js** quyết định đến URL của các trang mà nó điều khiển. Ở đây, mình đặt file **service_worker.js** cùng thư mục với **index.html**. Có nghĩa là Service Worker sẽ quản lý URL của toàn bộ trang web. Ngược lại, nếu mình đặt nó ở một thư mục khác, giả sử là: **/apps/service_worker.js** thì Service Worker sẽ chỉ quản lý các URL bắt đầu từ **/apps/**.
+- Vị trí của file **service_worker.js** quyết định đến URL của các trang mà nó điều khiển. Ở đây, mình đặt file **service_worker.js** cùng thư mục với **index.html**. Có nghĩa là Service Worker sẽ quản lý URL của toàn bộ trang web. Ngược lại, nếu mình đặt nó ở một thư mục khác, giả sử là: **/apps/service_worker.js** thì Service Worker sẽ chỉ quản lý các URL bắt đầu từ **/apps/**.
 - Hàm đăng ký **.register** trả về một [Promise](https://www.tutorialspoint.com/es6/es6_promises.htm).
 - Trang đăng ký Service Worker phải là HTTPS.
 - Service Worker phải nằm trên cùng trang web đăng ký nó (same origin). Vì vậy, bạn không thể đặt file **service_worker.js** ở một nơi khác, rồi sử dụng [importScripts()](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/importScripts) được.
@@ -173,7 +173,7 @@ self.addEventListener("install", (event) => {
 });
 ```
 
-Mục đích của của việc **install** là để lưu một số resources được định nghĩa ở [array](/array-la-gi-array-trong-javascript/) **PRECACHE_URLS** vào bộ nhớ đệm **cache** với tên định nghĩa bởi **PRECACHE**.
+Mục đích của của việc **install** là để lưu một số resources được định nghĩa ở [array](/array-la-gi-array-trong-javascript/) **PRECACHE_URLS** vào bộ nhớ đệm **cache** với tên định nghĩa bởi **PRECACHE**.
 
 Sau khi lưu xong hết tất cả các resources cần thiết, hàm [self.skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) dùng để dừng công việc hiện tại lại và chuyển ngay sang công việc tiếp theo.
 
@@ -207,17 +207,17 @@ self.addEventListener("activate", (event) => {
 
 Mục đích của công việc **activate** này là để xóa đi bộ nhớ đệm **cache** cũ, và giữ lại **cache** mới nhất, cuối cùng là kích hoạt Service Worker.
 
-Giả sử ban đầu bạn có hai cache là: **PRECACHE = my-precache-v1** và **RUNTIME**. Bây giờ, bạn muốn thay đổi resources.
+Giả sử ban đầu bạn có hai cache là: **PRECACHE = my-precache-v1** và **RUNTIME**. Bây giờ, bạn muốn thay đổi resources.
 
 **Làm sao để cập nhật được những resources mới này vào cache?**
 
-Bạn cần thay đổi tên của **PRECACHE**, ví dụ là: **my-precache-v2**. Lúc này **currentCaches = ['my-precache-v2', RUNTIME]**. Bây giờ chỉ cần dùng [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) để lọc ra tên của cache không có trong **currentCaches**:
+Bạn cần thay đổi tên của **PRECACHE**, ví dụ là: **my-precache-v2**. Lúc này **currentCaches = ['my-precache-v2', RUNTIME]**. Bây giờ chỉ cần dùng [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) để lọc ra tên của cache không có trong **currentCaches**:
 
 ```js
 cacheNames.filter((cacheName) => !currentCaches.includes(cacheName));
 ```
 
-Đó chính là **my-precache-v1**. Tiếp theo, xóa cache này đi:
+Đó chính là **my-precache-v1**. Tiếp theo, xóa cache này đi:
 
 ```js
 .then(cachesToDelete => {

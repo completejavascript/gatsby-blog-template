@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/javascript-indexeddb-tai-sao-khong-completejavascript-completejavascript.com_.png"
 keywords: "javascript indexeddb"
-description: "Có 3 loại database cơ bản là: LocalStorage, Web SQL, IndexedDB. Việc tìm hiểu các database gốc sẽ giúp bạn hiểu rõ được bản chất của các cơ sở dữ liệu đó. Qua đó, bạn có thể tự xây dựng những thư viện của riêng mình. Tuy nhiên, bài viết này sẽ chỉ tập chung vào JavaScript IndexedDB."
+description: "Có 3 loại database cơ bản là: LocalStorage, Web SQL, IndexedDB. Việc tìm hiểu các database gốc sẽ giúp bạn hiểu rõ được bản chất của các cơ sở dữ liệu đó. Qua đó, bạn có thể tự xây dựng những thư viện của riêng mình. Tuy nhiên, bài viết này sẽ chỉ tập chung vào JavaScript IndexedDB."
 slug: javascript-indexeddb-tai-sao-khong
 title: "JavaScript IndexedDB - tại sao không?"
 series: "JavaScript: Lưu trữ dữ liệu"
@@ -14,7 +14,7 @@ tags:
   - IndexedDB
 ---
 
-Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) trên trình duyệt như [PouchDB](http://pouchdb.com/), [LocalForage](https://localforage.github.io/localForage/), [Dexie](http://dexie.org/), [Lovefield](https://google.github.io/lovefield/), [LokiJS](http://lokijs.org/), [AlaSQL](http://alasql.org/), [ForerunnerDB](http://forerunnerdb.com/), [YDN-DB](http://dev.yathit.com/ydn-db/index.html)... Thực tế thì các database đó chỉ là những thư viện đóng gói (wrapping) lại 3 loại database trên trình duyệt. Đó là: [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage), [Web SQL](http://www.w3.org/TR/webdatabase/), [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API). Việc tìm hiểu các database gốc sẽ giúp bạn hiểu rõ được bản chất của các cơ sở dữ liệu đó. Qua đó, bạn có thể tự xây dựng những thư viện của riêng mình. Tuy nhiên, bài viết này sẽ chỉ tập chung vào **JavaScript IndexedDB**. Tại sao vậy? Chúng ta sẽ cùng nhau tìm hiểu sau đây.
+Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) trên trình duyệt như [PouchDB](http://pouchdb.com/), [LocalForage](https://localforage.github.io/localForage/), [Dexie](http://dexie.org/), [Lovefield](https://google.github.io/lovefield/), [LokiJS](http://lokijs.org/), [AlaSQL](http://alasql.org/), [ForerunnerDB](http://forerunnerdb.com/), [YDN-DB](http://dev.yathit.com/ydn-db/index.html)... Thực tế thì các database đó chỉ là những thư viện đóng gói (wrapping) lại 3 loại database trên trình duyệt. Đó là: [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage), [Web SQL](http://www.w3.org/TR/webdatabase/), [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API). Việc tìm hiểu các database gốc sẽ giúp bạn hiểu rõ được bản chất của các cơ sở dữ liệu đó. Qua đó, bạn có thể tự xây dựng những thư viện của riêng mình. Tuy nhiên, bài viết này sẽ chỉ tập chung vào **JavaScript IndexedDB**. Tại sao vậy? Chúng ta sẽ cùng nhau tìm hiểu sau đây.
 
 ## IndexedDB là gì?
 
@@ -23,19 +23,19 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 
 ## Tại sao lại tìm hiểu JavaScript IndexedDB?
 
-- IndexedDB sử dụng công nghệ [index db](https://en.wikipedia.org/wiki/Database_index) để nâng cao hiệu quả tìm kiếm, giúp tìm kiếm dữ liệu nhanh hơn.
-- IndexedDB hoạt động theo kiểu bất đồng bộ (asynchronous) và còn hỗ trợ sử dụng trong [Web Worker](/javascript-web-worker-javascript-o-background/), giúp tránh việc block [DOM](/co-ban-ve-dom-javascript/). Qua đó, trình duyệt chạy sẽ mượt hơn.
-- Trong khi LocalStorage chỉ hỗ trợ dung lượng tối đa là 5MB thì IndexedDB hỗ trợ lên đến 50MB. Và khi dùng [quá 50MB này](https://support.mozilla.org/en-US/questions/818987#answer-180011), trình duyệt sẽ yêu cầu permission từ người dùng để có thể tăng thêm dung lượng lưu trữ.
+- IndexedDB sử dụng công nghệ [index db](https://en.wikipedia.org/wiki/Database_index) để nâng cao hiệu quả tìm kiếm, giúp tìm kiếm dữ liệu nhanh hơn.
+- IndexedDB hoạt động theo kiểu bất đồng bộ (asynchronous) và còn hỗ trợ sử dụng trong [Web Worker](/javascript-web-worker-javascript-o-background/), giúp tránh việc block [DOM](/co-ban-ve-dom-javascript/). Qua đó, trình duyệt chạy sẽ mượt hơn.
+- Trong khi LocalStorage chỉ hỗ trợ dung lượng tối đa là 5MB thì IndexedDB hỗ trợ lên đến 50MB. Và khi dùng [quá 50MB này](https://support.mozilla.org/en-US/questions/818987#answer-180011), trình duyệt sẽ yêu cầu permission từ người dùng để có thể tăng thêm dung lượng lưu trữ.
 
 ## Những khái niệm cơ bản trong JavaScript IndexedDB
 
-- IndexedDB lưu trữ dữ liệu theo kiểu **key-value**. Trong đó, value có thể là những object có cấu trúc phức tạp và key có thể là thuộc tính của object. Bạn có thể áp dụng **Indexes**, sử dụng bất kỳ thuộc tính nào của object để tìm kiếm nhanh hơn, cũng như là việc [sắp xếp](/sap-xep-mang-trong-javascript/).
-- IndexedDB được xây dựng dựa trên [Transaction](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_transaction). IndexedDB API cung cấp nhiều [object](/object-la-gi-object-trong-javascript/) như indexes, tables, cursors,... nhưng mỗi object phải được gắn liền với một transaction.
-- IndexedDB API hầu hết là **bất đồng bộ (asynchronous)**. Các API không cung cấp dữ liệu bởi việc **return**, do đó, bạn cần phải truyền vào một hàm callback. Và việc của bạn cần làm là gửi đi request. Khi request được xử lý xong, IndexedDB sẽ trả lại kết quả thông qua hàm callback kia. Bạn sẽ biết được là request thành công hay thất bại. Và thành công thì dữ liệu nhận được là gì. Cơ chế hoạt động tương tự như [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/).
-- IndexedDB sử dụng nhiều **requests**. Requests là những đối tượng nhận sự kiện thành công hay thất bại của DOM. Chúng có các thuộc tính **onsuccess**, **onerror**. Bạn có thể gọi hàm **addEventListener()** và **removeEventListener()** với chúng.
-- IndexedDB là **[hướng đối tượng](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/)**. Vì vậy, IndexedDB không phải là dạng cơ sở dữ liệu quan hệ với bảng, dòng, cột,...
-- IndexedDB là cơ sở dữ liệu dạng [NoSQL](https://en.wikipedia.org/wiki/NoSQL).
-- IndexedDB cũng dựa trên chính sách **same-orgin**. Nghĩa là file script thực thi phải nằm trên cùng tên miền, protocol (**http** hay **https**), và cổng (**port**).
+- IndexedDB lưu trữ dữ liệu theo kiểu **key-value**. Trong đó, value có thể là những object có cấu trúc phức tạp và key có thể là thuộc tính của object. Bạn có thể áp dụng **Indexes**, sử dụng bất kỳ thuộc tính nào của object để tìm kiếm nhanh hơn, cũng như là việc [sắp xếp](/sap-xep-mang-trong-javascript/).
+- IndexedDB được xây dựng dựa trên [Transaction](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_transaction). IndexedDB API cung cấp nhiều [object](/object-la-gi-object-trong-javascript/) như indexes, tables, cursors,... nhưng mỗi object phải được gắn liền với một transaction.
+- IndexedDB API hầu hết là **bất đồng bộ (asynchronous)**. Các API không cung cấp dữ liệu bởi việc **return**, do đó, bạn cần phải truyền vào một hàm callback. Và việc của bạn cần làm là gửi đi request. Khi request được xử lý xong, IndexedDB sẽ trả lại kết quả thông qua hàm callback kia. Bạn sẽ biết được là request thành công hay thất bại. Và thành công thì dữ liệu nhận được là gì. Cơ chế hoạt động tương tự như [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/).
+- IndexedDB sử dụng nhiều **requests**. Requests là những đối tượng nhận sự kiện thành công hay thất bại của DOM. Chúng có các thuộc tính **onsuccess**, **onerror**. Bạn có thể gọi hàm **addEventListener()** và **removeEventListener()** với chúng.
+- IndexedDB là **[hướng đối tượng](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/)**. Vì vậy, IndexedDB không phải là dạng cơ sở dữ liệu quan hệ với bảng, dòng, cột,...
+- IndexedDB là cơ sở dữ liệu dạng [NoSQL](https://en.wikipedia.org/wiki/NoSQL).
+- IndexedDB cũng dựa trên chính sách **same-orgin**. Nghĩa là file script thực thi phải nằm trên cùng tên miền, protocol (**http** hay **https**), và cổng (**port**).
 
 ## Một số định nghĩa quan trọng khi dùng IndexedDB
 
@@ -43,7 +43,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 
 - Database là một kho chứa thông tin, bao gồm một hay nhiều object stores.
 - Mỗi database bắt buộc phải có 2 thông số là:
-  - Name (tên): xác định database ứng với mỗi origin. Name có thể là bất kỳ string nào, kể cả [string](/kieu-du-lieu-trong-javascript/) rỗng.
+  - Name (tên): xác định database ứng với mỗi origin. Name có thể là bất kỳ string nào, kể cả [string](/kieu-du-lieu-trong-javascript/) rỗng.
   - Current verion (phiên bản hiện tại): Khi database được tạo ra, nếu không chỉ rõ thì giá trị current version sẽ là 1. Và tại mỗi thời điểm, database version sẽ chỉ có một giá trị.
 
 ### Object store
@@ -55,7 +55,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 ### Version
 
 - Khi một database được tạo ra, version của nó là 1.
-- Mỗi database sẽ chỉ có một version ở một thời điểm. Vì vậy, khi muốn nâng cấp database, thì bạn cần phải thay đổi giá trị của version bởi một số tự nhiên lớn hơn. Khi đó, transaction **versionchange** bắt đầu và [event](/xu-ly-mot-event-javascript-co-ban/) **upgradeneeded** sẽ được gọi.
+- Mỗi database sẽ chỉ có một version ở một thời điểm. Vì vậy, khi muốn nâng cấp database, thì bạn cần phải thay đổi giá trị của version bởi một số tự nhiên lớn hơn. Khi đó, transaction **versionchange** bắt đầu và [event](/xu-ly-mot-event-javascript-co-ban/) **upgradeneeded** sẽ được gọi.
 
 ### Database connection
 
@@ -85,7 +85,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 
 ## Cách sử dụng JavaScript IndexedDB
 
-- Tham khảo code [SimpleIndexedDB.js](https://github.com/completejavascript/simple-indexdb-js/blob/master/SimpleIndexedDB.js) - một bản wrapper đơn giản của IndexedDB.
+- Tham khảo code [SimpleIndexedDB.js](https://github.com/completejavascript/simple-indexdb-js/blob/master/SimpleIndexedDB.js) - một bản wrapper đơn giản của IndexedDB.
 
 ### Kiểm tra trình duyệt hỗ trợ hay không?
 
@@ -126,7 +126,7 @@ var IDBOpenDBRequest = indexedDB.open(name);
 var IDBOpenDBRequest = indexedDB.open(name, version);
 ```
 
-Sau đó, implement 3 hàm **onsuccess**, **onerror** và **onupgradeneeded** của IDBOpenDBRequest để lắng nghe các sự kiện tương ứng là **success** (mở database thành công), **error** (mở database bị lỗi),  **upgradeneeded** (mở database thành công nhưng cần phải cập nhật lại với version mới nhất hiện tại).
+Sau đó, implement 3 hàm **onsuccess**, **onerror** và **onupgradeneeded** của IDBOpenDBRequest để lắng nghe các sự kiện tương ứng là **success** (mở database thành công), **error** (mở database bị lỗi), **upgradeneeded** (mở database thành công nhưng cần phải cập nhật lại với version mới nhất hiện tại).
 
 Ví dụ:
 
@@ -210,7 +210,7 @@ function openDBUpgradeNeeded() {
 
 ### Quét toàn bộ dữ liệu một object store trong database
 
-Để quét toàn bộ dữ liệu trong một object store, sử dụng **[cursor](https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor)**.
+Để quét toàn bộ dữ liệu trong một object store, sử dụng **[cursor](https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor)**.
 
 Ví dụ:
 
@@ -240,7 +240,7 @@ function showAll() {
 
 ### Lấy ra một bản ghi dựa vào key trong JavaScript IndexedDB
 
-Để lấy ra một bản ghi trong object store của database, sử dụng phương thức **[get](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/get)**.
+Để lấy ra một bản ghi trong object store của database, sử dụng phương thức **[get](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/get)**.
 
 Ví dụ:
 
@@ -273,7 +273,7 @@ function read() {
 
 ### Thêm một bản ghi vào object store database
 
-Để thêm vào một bản ghi cho object store của database, sử dụng phương thức **[add](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add)**.
+Để thêm vào một bản ghi cho object store của database, sử dụng phương thức **[add](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/add)**.
 
 Ví dụ:
 
@@ -313,7 +313,7 @@ function save() {
 
 ### Xoá đi một bản ghi trong object store database dựa vào key
 
-Để xoá đi một bản ghi tỏng object store database, sử dụng phương thức **[delete](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/delete)**.
+Để xoá đi một bản ghi tỏng object store database, sử dụng phương thức **[delete](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/delete)**.
 
 Ví dụ:
 
@@ -350,11 +350,11 @@ Trên đây, mình đã giới thiệu với bạn những kiến thức cơ b�
 
 Vì vậy, nếu có phần nào bạn cảm thấy không hiểu thì có thể đặt câu hỏi trong phần bình luận.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/ke-thua-co-ban-trong-javascript/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/ke-thua-co-ban-trong-javascript/), thân ái!
 
 ## Tham khảo
 
-- Ví dụ trên [github](https://github.com/completejavascript/simple-indexdb-js), [codepen](https://codepen.io/completejavascript/full/LeBzyb).
+- Ví dụ trên [github](https://github.com/completejavascript/simple-indexdb-js), [codepen](https://codepen.io/completejavascript/full/LeBzyb).
 - [IndexedDB, WebSQL, LocalStorage – what blocks the DOM?](https://nolanlawson.com/2015/09/29/indexeddb-websql-localstorage-what-blocks-the-dom/)
 - [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
 - [Basic concepts behind IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB)

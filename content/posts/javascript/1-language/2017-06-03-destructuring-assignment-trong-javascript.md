@@ -68,7 +68,7 @@ let [firstName, lastName] = ["David"];
  */
 ```
 
-Để tránh trường hợp này, bạn có thể khai báo giá trị **default** cho biến như dưới đây.
+Để tránh trường hợp này, bạn có thể khai báo giá trị **default** cho biến như dưới đây.
 
 ### Khai báo giá trị default
 

@@ -69,7 +69,7 @@ Giả sử, `a` và `b` là hai phần tử dùng để so sánh:
 
 ## Sắp xếp mảng number
 
-JavaScript hỗ trợ **sắp xếp nhiều kiểu dữ liệu**. Tuy nhiên, phổ biến nhất vẫn là [numbers](/kieu-du-lieu-trong-javascript/).
+JavaScript hỗ trợ **sắp xếp nhiều kiểu dữ liệu**. Tuy nhiên, phổ biến nhất vẫn là [numbers](/kieu-du-lieu-trong-javascript/).
 
 Và như mình đã nói ở trên, mặc định hàm `sort()` sẽ so sánh theo kiểu string để sắp xếp. Do đó, kết quả sẽ như sau:
 
@@ -141,7 +141,7 @@ Một số thuật toán cơ bản như:
 - Sắp xếp chèn trực tiếp dựa trên tìm kiếm nhị phân - Binary Insertion Sort
 - Thuật toán sắp xếp đổi chỗ trực tiếp - Interchange Sort
 - Sắp xếp nổi bọt - Bubble Sort
-- Thuật toán Shaker Sort
+- Thuật toán Shaker Sort
 - Sắp xếp nhanh - Quick Sort
 - Sắp xếp trộn - Merge Sort
 - Sắp xếp vun đống - Heap Sort
@@ -183,7 +183,7 @@ function insertionSort(array) {
 }
 ```
 
-### Sắp xếp chèn trực tiếp dựa trên tìm kiếm nhị phân - Binary Insertion Sort
+### Sắp xếp chèn trực tiếp dựa trên tìm kiếm nhị phân - Binary Insertion Sort
 
 ```js
 function binaryInsertionSort(array) {

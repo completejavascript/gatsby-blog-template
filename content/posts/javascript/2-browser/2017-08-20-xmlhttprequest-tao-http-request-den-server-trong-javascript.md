@@ -15,7 +15,7 @@ tags:
   - JSON
 ---
 
-Có bao giờ bạn thắc mắc, chuyện gì thực sự diễn ra khi chúng ta gõ một địa chỉ trang web (ví dụ: [completejavascript.com](/)) lên trình duyệt và nhấn **Enter**?
+Có bao giờ bạn thắc mắc, chuyện gì thực sự diễn ra khi chúng ta gõ một địa chỉ trang web (ví dụ: [completejavascript.com](/)) lên trình duyệt và nhấn **Enter**?
 
 Đầu tiên, trình duyệt sẽ tìm kiếm địa chỉ IP của server ứng với tên miền, sau đó là mở kết nối TCP đến server thông qua cổng 80 - cổng mặc định của giao thức HTTP. Nếu server tồn tại và chấp nhận kết nối, trình duyệt sẽ gửi yêu cầu dạng GET đến server để lấy thông tin trang web. Tiếp theo, server phản hồi lại trình duyệt theo đúng kết nối đó. Và cuối cùng, trình duyệt xử lý thông tin phản hồi và hiển thị nó lên trang web.
 
@@ -52,9 +52,9 @@ Cụ thể về từng status-code, bạn có thể tìm hiểu thêm tại [đ�
 
 ## Gửi HTTP request sử dụng XMLHttpRequest
 
-Thông thường, vì lý do an toàn nên server sẽ chặn các request từ các tên miền khác với "tên miền của server". Do đó, bạn sẽ không thể thực hiện gửi HTTP request đến server sử dụng XMLHttpRequest từ localhost. Sau đây, mình sẽ sử dụng server chuyên dùng để test HTTP request tại: [https://httpbin.org/](https://httpbin.org)
+Thông thường, vì lý do an toàn nên server sẽ chặn các request từ các tên miền khác với "tên miền của server". Do đó, bạn sẽ không thể thực hiện gửi HTTP request đến server sử dụng XMLHttpRequest từ localhost. Sau đây, mình sẽ sử dụng server chuyên dùng để test HTTP request tại: [https://httpbin.org/](https://httpbin.org)
 
-Ví dụ sau gửi phương thức request dạng GET đến [https://httpbin.org/get](https://httpbin.org/get):
+Ví dụ sau gửi phương thức request dạng GET đến [https://httpbin.org/get](https://httpbin.org/get):
 
 ```js
 var req = new XMLHttpRequest();
@@ -86,13 +86,13 @@ Kết quả trả về là:
 
 ### Giải thích
 
-Trong JavaScript, câu lệnh để tạo mới một đối tượng XMLHttpRequest: **var req = new XMLHttpRequest();**.
+Trong JavaScript, câu lệnh để tạo mới một đối tượng XMLHttpRequest: **var req = new XMLHttpRequest();**.
 
 Sau khi đã có đối tượng req, mình sử dụng phương thức **open** để cấu hình cho request. Trong đó:
 
 - Thuộc tính đầu tiên là tên kiểu request: **GET, HEAD, POST, PUT, DELETE,**...
 - Thuộc tính tiếp theo là địa chỉ URL mà mình muốn gửi request đến.
-- Thuộc tính cuối cùng là đối số [kiểu bool](/kieu-du-lieu-trong-javascript/), với giá trị **false** ý nghĩa là request kiểu đồng bộ (đợi cho đến khi nhận được kết quả phản hồi response) và giá trị **true** ý nghĩa là request kiểu bất đồng bộ (không đợi kết quả trả về mà sẽ tiếp tục thực hiện lệnh phía dưới, kết quả trả về sẽ được xử lý trong [hàm](/ham-la-gi-ham-trong-javascript/) callback).
+- Thuộc tính cuối cùng là đối số [kiểu bool](/kieu-du-lieu-trong-javascript/), với giá trị **false** ý nghĩa là request kiểu đồng bộ (đợi cho đến khi nhận được kết quả phản hồi response) và giá trị **true** ý nghĩa là request kiểu bất đồng bộ (không đợi kết quả trả về mà sẽ tiếp tục thực hiện lệnh phía dưới, kết quả trả về sẽ được xử lý trong [hàm](/ham-la-gi-ham-trong-javascript/) callback).
 
 Lúc này, request mới được cấu hình. Để gửi request này đến server, mình sẽ sử dụng phương thức **send** với đối số là **body** của request. Trong ví dụ này, mình gửi request kiểu **GET** nên body chỉ cần là **null**.
 
@@ -101,7 +101,7 @@ Kết quả trả về có nhiều thuộc tính, nhưng quan trọng nhất là
 - **status**: chính là status-code. Kết quả trả về là 200, chứng tỏ request thành công.
 - **responseText**: là nội dung phản hồi từ server. Trong trường hợp này, kết quả trả về là một chuỗi [JSON](/tim-hieu-ve-json-trong-javascript/).
 
-Ngoài ra, nhiều trường hợp bạn phải chèn thêm header cho request thì server mới chấp nhận. Để làm được việc này, bạn có thể sử dụng phương thức [setRequestHeader](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/setRequestHeader) đơn giản như sau:
+Ngoài ra, nhiều trường hợp bạn phải chèn thêm header cho request thì server mới chấp nhận. Để làm được việc này, bạn có thể sử dụng phương thức [setRequestHeader](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/setRequestHeader) đơn giản như sau:
 
 ```js
 XMLHttpRequest.setRequestHeader(header, value);
@@ -168,9 +168,9 @@ Trong các ví dụ trên, mình mới chỉ sử dụng request đồng bộ. V
 
 Nếu như server bị lỗi, hoặc việc xử lý request mất nhiều thời gian, điều này dẫn đến chương trình sẽ bị dừng hoạt động, trang web sẽ bị **đơ**.
 
-Do đó, chỉ nên sử dụng request đồng bộ với những yêu cầu có thể xử lý nhanh. Nhìn chung, bạn nên sử dụng request bất đồng bộ.
+Do đó, chỉ nên sử dụng request đồng bộ với những yêu cầu có thể xử lý nhanh. Nhìn chung, bạn nên sử dụng request bất đồng bộ.
 
-Như mình đã nói ở trên, để cấu hình request là bất đồng bộ, bạn chỉ cần truyền vào **true** ở thuộc tính thứ 3 của phương thức **open**. Ngoài ra, bạn cần phải [đăng ký sự kiện](/xu-ly-mot-event-javascript-co-ban/) **load** và truyền vào hàm callback - hàm này được thực hiện khi có thông tin phản hồi từ server.
+Như mình đã nói ở trên, để cấu hình request là bất đồng bộ, bạn chỉ cần truyền vào **true** ở thuộc tính thứ 3 của phương thức **open**. Ngoài ra, bạn cần phải [đăng ký sự kiện](/xu-ly-mot-event-javascript-co-ban/) **load** và truyền vào hàm callback - hàm này được thực hiện khi có thông tin phản hồi từ server.
 
 ```js
 var req = new XMLHttpRequest();
@@ -204,7 +204,7 @@ Sent
 }
 ```
 
-Kết quả cho thấy, dòng lệnh **console.log('Sent')** được thực hiện ngay sau lệnh **req.send(null)**. Và 2 câu lệnh **console.log(req.status); console.log(req.responseText);** chỉ được thực hiện khi có thông tin phản hồi về từ server. Đó chính là cách thức hoạt động của XMLHttpRequest bất đồng bộ.
+Kết quả cho thấy, dòng lệnh **console.log('Sent')** được thực hiện ngay sau lệnh **req.send(null)**. Và 2 câu lệnh **console.log(req.status); console.log(req.responseText);** chỉ được thực hiện khi có thông tin phản hồi về từ server. Đó chính là cách thức hoạt động của XMLHttpRequest bất đồng bộ.
 
 Ngoài ra, bạn có thể đăng ký sự kiện **error** để xử lý trường hợp request bị lỗi:
 

@@ -166,9 +166,9 @@ Giải thích chi tiết từng đoạn code:
 }
 ```
 
-- **topnav**: chính là class  ứng với thẻ &lt;div&gt; - chính là thanh menu
+- **topnav**: chính là class ứng với thẻ &lt;div&gt; - chính là thanh menu
 - **background-color: #333**: cài đặt màu nền cho thanh menu. Bạn có thể thay đổi tuỳ thích.
-- **overflow: hidden**: Thực tế, thuộc tính **overflow** sẽ có các giá trị là: visible, hidden, scroll, auto, inherit (bạn có thể tham khảo về overflow tại [đây](http://hocwebchuan.com/reference/cssSection/pr_overflow.php)). Còn ở đây, khi mình đặt giá trị của overflow là hidden thì chiều cao của thanh menu sẽ được xác định bằng với phần tử trong nó - là các link. (Mình không đặt giá trị cho thuộc tính height).
+- **overflow: hidden**: Thực tế, thuộc tính **overflow** sẽ có các giá trị là: visible, hidden, scroll, auto, inherit (bạn có thể tham khảo về overflow tại [đây](http://hocwebchuan.com/reference/cssSection/pr_overflow.php)). Còn ở đây, khi mình đặt giá trị của overflow là hidden thì chiều cao của thanh menu sẽ được xác định bằng với phần tử trong nó - là các link. (Mình không đặt giá trị cho thuộc tính height).
 
 #### Cấu hình các mục (link) trên thanh menu
 

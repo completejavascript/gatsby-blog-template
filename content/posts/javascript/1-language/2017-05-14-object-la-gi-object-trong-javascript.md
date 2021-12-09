@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/object-la-gi-object-trong-javascript.png"
 keywords: "object trong javascript"
-description: "JavaScript là ngôn ngữ dựa trên đối tượng, nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn làm chủ JavaScript. Hãy tìm hiểu thật kỹ về Object trong JavaScript nhé!"
+description: "JavaScript là ngôn ngữ dựa trên đối tượng, nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn làm chủ JavaScript. Hãy tìm hiểu thật kỹ về Object trong JavaScript nhé!"
 slug: object-la-gi-object-trong-javascript
 title: "Object là gì? Object trong JavaScript"
 series: "JavaScript: Object"
@@ -24,7 +24,7 @@ Như mình đã nói trong bài [các kiểu dữ liệu trong JavaScript](/kieu
 - Card đồ hoạ: NVIDIA
 - ...
 
-Ở đây, _máy tính của mình_: chính là một **JavaScript object**. Đối tượng này có các **thuộc tính** (properties): _loại, hãng, hệ điều hành, card đồ hoạ_ với các giá trị tương ứng là _laptop, Sony, Windows 7, NVIDIA_.
+Ở đây, _máy tính của mình_: chính là một **JavaScript object**. Đối tượng này có các **thuộc tính** (properties): _loại, hãng, hệ điều hành, card đồ hoạ_ với các giá trị tương ứng là _laptop, Sony, Windows 7, NVIDIA_.
 
 ## Vậy object trong JavaScript là gì?
 

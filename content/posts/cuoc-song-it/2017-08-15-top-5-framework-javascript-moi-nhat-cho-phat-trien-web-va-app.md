@@ -5,7 +5,7 @@ template: "post"
 directory: "Cuộc sống IT"
 cover: "../../images/cuoc-song-it/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app-completejavascript.com_.png"
 keywords: "framework javascript"
-description: "Bài viết được dịch từ website Technotification của tác giả Vicky Singh Rao về top 5 Framework JavaScript mới nhất cho phát triển web và app."
+description: "Bài viết được dịch từ website Technotification của tác giả Vicky Singh Rao về top 5 Framework JavaScript mới nhất cho phát triển web và app."
 slug: top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app
 title: "Top 5 Framework JavaScript mới nhất cho phát triển web và app"
 series: "Cuộc sống IT: Kinh nghiệm học lập trình"
@@ -13,7 +13,7 @@ tags:
   - Dịch blog
 ---
 
-Bài viết được dịch từ website [Technotification](https://www.technotification.com/2017/06/best-modern-javascript-frameworks.html) của tác giả [Vicky Singh Rao](https://www.technotification.com/author/vicky) về top 5 Framework JavaScript mới nhất cho phát triển web và app.
+Bài viết được dịch từ website [Technotification](https://www.technotification.com/2017/06/best-modern-javascript-frameworks.html) của tác giả [Vicky Singh Rao](https://www.technotification.com/author/vicky) về top 5 Framework JavaScript mới nhất cho phát triển web và app.
 
 Những năm gần đây, sự phổ biến của [JavaScript](/javascript/) đã được gia tăng rất nhiều. Có một bằng chứng để chứng tỏ sự thay đổi đó. Vào đầu năm nay, IBM đã công nhận JavaScript là một trong [những ngôn ngữ lập trình tốt nhất](/nhung-ngon-ngu-lap-trinh-nen-hoc-nam-2017/) của năm.
 

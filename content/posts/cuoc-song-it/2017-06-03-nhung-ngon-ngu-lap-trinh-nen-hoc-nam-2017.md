@@ -13,13 +13,13 @@ tags:
   - Dịch blog
 ---
 
-Bài viết sau được dịch từ [simpleprogrammer.com](http://simpleprogrammer.com/) bởi tác giả [John Sonmez](https://simpleprogrammer.com/about-simple-programmer/) về top những ngôn ngữ lập trình nên học năm 2017. Bạn có thể đọc bản gốc bài viết bằng tiếng anh tại [đây](https://simpleprogrammer.com/top-programming-languages-learn-2017/). Trong trường hợp, tiếng anh của bạn chưa đủ hoặc đơn giản là bạn ngại mở máy tính để tra từ điển thì xin mời đọc bản dịch của tôi sau đây.
+Bài viết sau được dịch từ [simpleprogrammer.com](http://simpleprogrammer.com/) bởi tác giả [John Sonmez](https://simpleprogrammer.com/about-simple-programmer/) về top những ngôn ngữ lập trình nên học năm 2017. Bạn có thể đọc bản gốc bài viết bằng tiếng anh tại [đây](https://simpleprogrammer.com/top-programming-languages-learn-2017/). Trong trường hợp, tiếng anh của bạn chưa đủ hoặc đơn giản là bạn ngại mở máy tính để tra từ điển thì xin mời đọc bản dịch của tôi sau đây.
 
 **Chú ý**: Sau đây, "tôi" chính là John Sonmez, không phải [tác giả](/gioi-thieu/) blog [Complete JavaScript](/).
 
 Rất nhiều người hỏi tôi về ngôn ngữ lập trình mà họ nên học. Tôi cảm thấy hơi bí vì đây là một câu hỏi rất khó để trả lời. Có nhiều thứ quan trọng cần phải cân nhắc trước khi đưa ra quyết định. Đặc biệt là liên quan đến ngôn ngữ lập trình mà bạn nên học.
 
-Một trong những cách dễ nhất để quyết định xem ngôn ngữ lập trình mà bạn nên học năm 2017 là tìm hiểu và lắng nghe thị trường. Thị trường chắc chắn sẽ nói cho bạn biết về ngôn ngữ lập trình nào sẽ là xu hướng cho tương lai.
+Một trong những cách dễ nhất để quyết định xem ngôn ngữ lập trình mà bạn nên học năm 2017 là tìm hiểu và lắng nghe thị trường. Thị trường chắc chắn sẽ nói cho bạn biết về ngôn ngữ lập trình nào sẽ là xu hướng cho tương lai.
 
 Vậy, bạn biết như thế nào về ngôn ngữ lập trình được mong muốn nhất trong năm 2017?
 
@@ -61,7 +61,7 @@ Rõ ràng, Java là sự lựa chọn tốt cho ngôn ngữ lập trình nên h�
 
 C# cũng gần giống như Java. Nó khá cơ bản, dễ học. Nếu bạn từng biết về hai ngôn ngữ này thì chắc hẳn bạn sẽ thấy chúng có nhiều nét tương đồng về cấu trúc, cú pháp.
 
-C# là ngôn ngữ lập trình được sáng tạo ra bởi Microsoft - một trong những ông trùm trong giới công nghệ. Gần đây, Microsoft đã mua lại Xamarin. Với việc sử dụng Xamarin, bạn có thể viết ứng dụng cho Android, iOS,... chỉ với một ngôn ngữ là C#.
+C# là ngôn ngữ lập trình được sáng tạo ra bởi Microsoft - một trong những ông trùm trong giới công nghệ. Gần đây, Microsoft đã mua lại Xamarin. Với việc sử dụng Xamarin, bạn có thể viết ứng dụng cho Android, iOS,... chỉ với một ngôn ngữ là C#.
 
 Tôi chưa có cơ hội làm việc nhiều với C#. Không nhầm thì tôi từng làm đồ án với C# - một ứng dụng trên desktop. Nhìn chung, việc viết code khá nhanh và đơn giản.
 
@@ -71,7 +71,7 @@ Nếu như bạn chọn C# là ngôn ngữ lập trình đầu tiên để học
 
 Nếu so sánh với Java và C# thì rõ ràng C++ khó hơn. Hay nói cách khác thì C++ "cơ bản hơn". Đúng vậy, "cơ bản hơn" nghĩa là khó hơn. Vì bạn sẽ phải viết nhiều hơn, bạn cần có nhiều kĩ năng hơn, thậm chí là phải có kiến thức về khoa học máy tính nữa.
 
-Đặc biệt, có rất nhiều ứng dụng, hệ thống được viết bằng C++ và hiện tại chúng chạy rất ổn định và nhanh. Vì vậy, gần đây xuất hiện một xu hướng là viết code native (C++) cho các ứng dụng Android, IOS.
+Đặc biệt, có rất nhiều ứng dụng, hệ thống được viết bằng C++ và hiện tại chúng chạy rất ổn định và nhanh. Vì vậy, gần đây xuất hiện một xu hướng là viết code native (C++) cho các ứng dụng Android, IOS.
 
 Tiếp theo, có rất nhiều thư viện về xử lý hình ảnh, âm thanh, video như OpenCV, OpenCL, OpenGL, FFMPEG, BOOST,... Chúng đều là mã nguồn mở và chạy cực kì nhanh.
 

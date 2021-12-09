@@ -373,7 +373,7 @@ Nhìn chung, có hai loại hàm trong JavaScript là **pure** function (hàm th
 
 **Hàm thuần khiết** là hàm không phụ thuộc vào yếu tố bên ngoài (biến toàn cục, môi trường thực thi,...). Bất cứ khi nào bạn gọi hàm thuần khiết với cùng một đối số thì kết quả trả về luôn giống nhau.
 
-Do đó, pure function rất dễ để sử dụng, tái sử dụng hay bảo trì,... Theo mình, hàm thuần khiết là một hàm tốt.
+Do đó, pure function rất dễ để sử dụng, tái sử dụng hay bảo trì,... Theo mình, hàm thuần khiết là một hàm tốt.
 
 Ví dụ hàm thuần khiết:
 

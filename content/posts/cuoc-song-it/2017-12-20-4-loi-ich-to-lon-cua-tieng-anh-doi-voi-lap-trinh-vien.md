@@ -14,11 +14,11 @@ series: "Cuộc sống IT: Cuộc sống dân IT"
 
 Khi nhắc đến tiếng anh thì ai cũng phải công nhận rằng nó có rất nhiều lợi ích. Đặc biệt đối với lập trình viên, tiếng anh lại càng quan trọng. Sau đây là 4 lợi ích to lớn của Tiếng Anh đối với lập trình viên mà tôi đúc kết lại được trong quá trình học tập và làm việc.
 
-## Đọc hiểu tài liệu, hướng dẫn, example, tutorials bằng Tiếng Anh
+## Đọc hiểu tài liệu, hướng dẫn, example, tutorials bằng Tiếng Anh
 
-Khi bạn lên mạng tìm tài liệu để học về một ngôn ngữ lập trình mới, một framework mới, một thư viện mới hay bất kỳ một tutorials nào... thì đa phần các tài liệu gốc đều bằng Tiếng Anh. Nếu có hướng dẫn bằng Tiếng Việt thì hầu hết chúng đã được dịch hoặc biên tập lại từ Tiếng Anh.
+Khi bạn lên mạng tìm tài liệu để học về một ngôn ngữ lập trình mới, một framework mới, một thư viện mới hay bất kỳ một tutorials nào... thì đa phần các tài liệu gốc đều bằng Tiếng Anh. Nếu có hướng dẫn bằng Tiếng Việt thì hầu hết chúng đã được dịch hoặc biên tập lại từ Tiếng Anh.
 
-Bởi lẽ, thế giới phát triển trước chúng ta rất nhiều. Những gì chúng ta biết ngày hôm nay thì người khác đã tìm hiểu từ rất lâu rồi. Do đó, việc học từ tài liệu Tiếng Anh sẽ giúp bạn tiếp cận kiến thức sớm hơn.
+Bởi lẽ, thế giới phát triển trước chúng ta rất nhiều. Những gì chúng ta biết ngày hôm nay thì người khác đã tìm hiểu từ rất lâu rồi. Do đó, việc học từ tài liệu Tiếng Anh sẽ giúp bạn tiếp cận kiến thức sớm hơn.
 
 Ngoài ra, việc dịch tài liệu sang Tiếng Việt có thể gây hiểu lầm, hiểu sai ý của tác giả. Vì không phải thuật ngữ Tiếng Anh nào cũng có thể dịch sang Tiếng Việt được. Vì vậy, bạn nên học bằng tài liệu Tiếng Anh để hiểu rõ nhất về những thứ mình đang học.
 

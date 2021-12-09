@@ -5,7 +5,7 @@ template: "post"
 directory: "Cuộc sống IT"
 cover: "../../images/cuoc-song-it/phan-biet-cac-loai-hacker-black-hat-grey-hat-white-hat-completejavascript.com_.png"
 keywords: "hacker"
-description: "Bài viết được dịch từ Technotification của Jagadesh siddhartha về cách phân biệt giữa các loại hacker như hacker mũ đen, hacker mũ xám và hacker mũ trắng."
+description: "Bài viết được dịch từ Technotification của Jagadesh siddhartha về cách phân biệt giữa các loại hacker như hacker mũ đen, hacker mũ xám và hacker mũ trắng."
 slug: phan-biet-cac-loai-hacker-black-hat-grey-hat-va-white-hat
 title: "Phân biệt các loại hacker - black hat, grey hat và white hat"
 series: "Cuộc sống IT: Cuộc sống dân IT"
@@ -13,7 +13,7 @@ tags:
   - Dịch blog
 ---
 
-Bài viết được dịch từ website [Technotification](https://www.technotification.com/2017/08/black-hat-grey-hat-and-white-hat-hackers.html) của tác giả [Jagadesh siddhartha](https://www.technotification.com/author/sid) về cách phân biệt giữa các loại hacker như hacker mũ đen (black hat), hacker mũ xám (grey hat) và hacker mũ trắng (white hat).
+Bài viết được dịch từ website [Technotification](https://www.technotification.com/2017/08/black-hat-grey-hat-and-white-hat-hackers.html) của tác giả [Jagadesh siddhartha](https://www.technotification.com/author/sid) về cách phân biệt giữa các loại hacker như hacker mũ đen (black hat), hacker mũ xám (grey hat) và hacker mũ trắng (white hat).
 
 Từ hacker có rất nhiều ý nghĩa và trong thế giới của máy tính, nó ám chỉ "những người làm cho thiết bị chạy theo cách mà nó không được mong muốn để hoạt động". Nói chung, đây là một trong những từ dễ gây hiểu lầm nhất trong tiếng anh.
 

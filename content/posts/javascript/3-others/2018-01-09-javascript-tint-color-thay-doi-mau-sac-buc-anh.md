@@ -117,7 +117,7 @@ Trong đó:
 
 - **srcImage**: ([string](/kieu-du-lieu-trong-javascript/)) là đường dẫn đến bức ảnh, có thể là đường dẫn tương đối đến một vị trí trên server hoặc đường dẫn tuyệt đối đến một host (cdn) lưu trữ ảnh.
 
-- **tintColor**: (string) là mã màu mới dạng HEX hoặc RGB hay RGBA. Ví dụ: *#ff00ff* hoặc _rgb(255, 0, 255)_ hay _rgba(255, 0, 255, 0.5)_.
+- **tintColor**: (string) là mã màu mới dạng HEX hoặc RGB hay RGBA. Ví dụ: _#ff00ff_ hoặc _rgb(255, 0, 255)_ hay _rgba(255, 0, 255, 0.5)_.
 
 #### Các hàm setter
 
@@ -128,7 +128,7 @@ Mục đích của những hàm này là để set lại các thông số url c�
 
 ### Hàm run()
 
-Hàm này là hàm quan trọng nhất. Nó sẽ load ảnh lên, sau đó thay thế tất cả các điểm ảnh khác transparent thành mã màu mới. Kết quả trả về sẽ là **dataURL** của bức ảnh mới và kích thước (width, height) của bức ảnh.
+Hàm này là hàm quan trọng nhất. Nó sẽ load ảnh lên, sau đó thay thế tất cả các điểm ảnh khác transparent thành mã màu mới. Kết quả trả về sẽ là **dataURL** của bức ảnh mới và kích thước (width, height) của bức ảnh.
 
 ### Cách sử dụng TintColor.js
 

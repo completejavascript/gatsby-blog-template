@@ -24,7 +24,7 @@ May mắn là, những thử thách này có thể được nhận ra và cuối
 
 ## Đừng để những quyết định tương lai làm bạn dừng bước từ những tiến bộ hôm nay
 
-Với nhiều người học lập trình Javascript, một trong những câu hỏi đầu tiên họ hỏi đó là: nên sử dụng Framework nào (và công bằng mà nói thì có rất nhiều). Nhưng nếu như bạn chưa thành thạo với [Javascript nguyên thuỷ](/kieu-du-lieu-trong-javascript/), đó sẽ là một câu hỏi sai. Bạn sẽ dành tất cả thời gian của mình để tìm kiếm những Framework khác nhau. Và thực sự, bạn không hề tiến bộ.
+Với nhiều người học lập trình Javascript, một trong những câu hỏi đầu tiên họ hỏi đó là: nên sử dụng Framework nào (và công bằng mà nói thì có rất nhiều). Nhưng nếu như bạn chưa thành thạo với [Javascript nguyên thuỷ](/kieu-du-lieu-trong-javascript/), đó sẽ là một câu hỏi sai. Bạn sẽ dành tất cả thời gian của mình để tìm kiếm những Framework khác nhau. Và thực sự, bạn không hề tiến bộ.
 
 Một cách để giúp bạn thoát khỏi cái bẫy của sự do dự, đó là việc có một bản đồ về những gì bạn cần phải học. Ví dụ, để trở thành một lập trình viên front-end, tấm bản đồ của bạn có thể như sau:
 
@@ -36,7 +36,7 @@ Cụ thể hơn nữa, bạn có thể làm một trang web với [HTML](/tag/ht
 
 Hiểu một ý tưởng nhanh có thể là một trong những thứ có hại nhất đến sự tiến bộ của bạn trong việc học lập trình Javascript. Hãy để tôi giải thích.
 
-Khi bạn đọc vài thứ và hoàn toàn hiểu ý nghĩa. Nó sẽ xúi giục bạn tiếp tục với những thứ tiếp theo ngay lập tức. Có thể bạn sẽ lại hiểu và lại tiếp tục với những thứ tiếp theo một lần nữa. Nhưng chẳng bao lâu, bạn sẽ đến một điểm mà bạn nhận ra rằng mình đã quên những thứ đã học trước đó. Vì vậy bạn quay lại. Bạn xem qua những thứ đã học để nhớ lại chúng. Rồi bạn lại tiếp tục học những thứ mới. Nhưng bây giờ, bạn lại quên một vài thứ khác. Cứ như thế cho đến khi bạn nhận ra rằng mình đã hoàn toàn quên hết những gì đã học. Bạn thất vọng, nghỉ ngơi, rồi sau đó cố gắng quay lại. Cuối cùng bạn thật sự đã quên hết tất cả.
+Khi bạn đọc vài thứ và hoàn toàn hiểu ý nghĩa. Nó sẽ xúi giục bạn tiếp tục với những thứ tiếp theo ngay lập tức. Có thể bạn sẽ lại hiểu và lại tiếp tục với những thứ tiếp theo một lần nữa. Nhưng chẳng bao lâu, bạn sẽ đến một điểm mà bạn nhận ra rằng mình đã quên những thứ đã học trước đó. Vì vậy bạn quay lại. Bạn xem qua những thứ đã học để nhớ lại chúng. Rồi bạn lại tiếp tục học những thứ mới. Nhưng bây giờ, bạn lại quên một vài thứ khác. Cứ như thế cho đến khi bạn nhận ra rằng mình đã hoàn toàn quên hết những gì đã học. Bạn thất vọng, nghỉ ngơi, rồi sau đó cố gắng quay lại. Cuối cùng bạn thật sự đã quên hết tất cả.
 
 ![thực hành đúng giúp học lập trình javascript nhanh hơn](../../images/cuoc-song-it/only-perfect-practice-makes-perfect-completejavascript.com_.png)
 

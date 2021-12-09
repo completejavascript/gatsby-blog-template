@@ -15,7 +15,7 @@ tags:
   - Object
 ---
 
-Cách đây khoảng 3 - 4 năm, khi đang học về lập trình Android, mình đã bắt đầu được tiếp xúc với JSON. Gần đây, mình mới biết nguồn gốc của nó lại liên quan đến JavaScript - khi mình bắt đầu học ngôn ngữ này. Vậy JSON là gì? JSON trong JavaScript có tác dụng gì? Và cách sử dụng JSON như thế nào? Sau đây, chúng ta sẽ cùng tìm hiểu.
+Cách đây khoảng 3 - 4 năm, khi đang học về lập trình Android, mình đã bắt đầu được tiếp xúc với JSON. Gần đây, mình mới biết nguồn gốc của nó lại liên quan đến JavaScript - khi mình bắt đầu học ngôn ngữ này. Vậy JSON là gì? JSON trong JavaScript có tác dụng gì? Và cách sử dụng JSON như thế nào? Sau đây, chúng ta sẽ cùng tìm hiểu.
 
 ## Tổng quan về JSON trong JavaScript
 
@@ -61,7 +61,7 @@ Mặc dù JSON rất giống JavaScript Object nhưng vẫn có một số giớ
 - **Key**: luôn luôn phải được đóng gói trong cặp dấu ngoặc kép, không phải ngoặc đơn, cũng không được phép là biến số (variable)
 - **Value**: Chỉ được phép là những dữ liệu cơ bản như [numbers, strings, boolean](/kieu-du-lieu-trong-javascript/), [array](/array-la-gi-array-trong-javascript/), object, null, không được phép là [function](/ham-la-gi-ham-trong-javascript/), date, undefined hoặc là một biểu thức tính toán.
 - Không được phép tồn tại **dấu phẩy cuối cùng** như JavaScript Object.
-- Đối với **number** thì không được phép có chữ số 0 ở đầu. Ngoài ra, nếu đó là chữ số thập phân thì phải có ít nhất 1 chữ số sau dấu chấm **(.)**.
+- Đối với **number** thì không được phép có chữ số 0 ở đầu. Ngoài ra, nếu đó là chữ số thập phân thì phải có ít nhất 1 chữ số sau dấu chấm **(.)**.
 
 Sau đây là ví dụ minh họa.
 
@@ -124,7 +124,7 @@ const str5 = `{"text": "X", "number": [1, 2] }`;
 
 JavaScript cung cấp sẵn cho chúng ta hai hàm số là: [JSON.stringify](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) và [JSON.parse](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse):
 
-- **JSON.stringify** dùng để convert một JavaScript Object thành JSON string.
+- **JSON.stringify** dùng để convert một JavaScript Object thành JSON string.
 - **JSON.parse** dùng để convert string biểu diễn JSON thành JavaScript Object.
 
 Hãy xem ví dụ sau:

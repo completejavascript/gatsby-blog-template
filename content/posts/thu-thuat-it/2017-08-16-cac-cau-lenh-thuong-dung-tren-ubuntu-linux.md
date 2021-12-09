@@ -156,4 +156,4 @@ Nhiều câu lệnh trong Terminal cần phải có **sudo** phía trước. Khi
 
 Trên đây là một số câu lệnh cơ bản trong Ubuntu - Linux mà mình thấy đơn giản, hiệu quả và hay được sử dụng. Dù bạn lập trình [JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) hay một ngôn ngữ lập trình khác, hoặc thậm chí bạn chỉ sử dụng Ubuntu như là một hệ điều hành thay thế [Windows](/cac-cau-lenh-thuong-dung-tren-cmd-windows/) thì những câu lệnh trên luôn vô cùng hữu ích.
 
-Bài viết này sẽ dừng lại tại đây. Xin chào và hẹn gặp lại bạn ở bài viết sau, thân ái!
+Bài viết này sẽ dừng lại tại đây. Xin chào và hẹn gặp lại bạn ở bài viết sau, thân ái!

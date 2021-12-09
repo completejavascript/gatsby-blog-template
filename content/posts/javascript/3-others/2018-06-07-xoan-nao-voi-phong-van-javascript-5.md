@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/xoan-nao-voi-phong-van-javascript-5-completejavascript.com_.png"
 keywords: "xoắn não với phỏng vấn javascript 5"
-description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 5, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!"
+description: "Xin chào bạn đến bài viết Xoắn não với phỏng vấn JavaScript 5, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay. Mời bạn theo dõi bài viết!"
 slug: xoan-nao-voi-phong-van-javascript-5
 title: "Xoắn não với phỏng vấn JavaScript 5"
 series: "JavaScript Quiz"

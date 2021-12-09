@@ -19,7 +19,7 @@ Ngày nay, Github đã trở nên vô cùng phổ biến đối với lập trì
 
 ## Git là gì?
 
-Git là một hệ thống quản lý phiên bản phân tán (_Distributed Version Control System_ – **DVCS**). Tức là khi sử dụng Git, bạn phải lấy toàn bộ source code về máy, gọi là **clone**.
+Git là một hệ thống quản lý phiên bản phân tán (_Distributed Version Control System_ – **DVCS**). Tức là khi sử dụng Git, bạn phải lấy toàn bộ source code về máy, gọi là **clone**.
 
 Lúc này, trên máy bạn sẽ có hai thành phần chính là: **Local Repository** và **Working Space**.
 
@@ -30,7 +30,7 @@ Lúc này, trên máy bạn sẽ có hai thành phần chính là: **Local Repos
 
 Git hỗ trợ Windows, Macs và Linux. Đối với Macs, mình chưa dùng bao giờ nên không dám chia sẻ.
 
-- Windows: bạn có thể cài [Git for windows](https://git-scm.com/download) hoặc [Tortoisegit](https://tortoisegit.org/download/) (giao diện đồ hoạ).
+- Windows: bạn có thể cài [Git for windows](https://git-scm.com/download) hoặc [Tortoisegit](https://tortoisegit.org/download/) (giao diện đồ hoạ).
 - Linux: xem hướng dẫn tại [đây](https://git-scm.com/download/linux).
 
 Nếu bạn không quen sử dụng các câu lệnh thì có thể sử dụng TortoiseGit. Còn cá nhân, mình sử dụng Git trên [Ubuntu](/cac-cau-lenh-thuong-dung-tren-ubuntu-linux/).
@@ -187,7 +187,7 @@ $ git remote add origin <remote_url>
 $ git push origin <name_branch>
 ```
 
-**Chú ý**: **remote_url** ở đây cũng chính là link đến project trên server, ví dụ: `https://github.com/user/repo.git`
+**Chú ý**: **remote_url** ở đây cũng chính là link đến project trên server, ví dụ: `https://github.com/user/repo.git`
 
 ### Fetch
 

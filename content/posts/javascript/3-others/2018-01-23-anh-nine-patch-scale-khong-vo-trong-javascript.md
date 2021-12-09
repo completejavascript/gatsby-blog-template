@@ -80,7 +80,7 @@ Các API mà bạn có thể áp dụng:
 
 ### Hàm getSize
 
-Hàm này trả về một Promise. Trong trường hợp thành công thì kết quả là một [object](/object-la-gi-object-trong-javascript/) với 3 thông số là url, width, height của bức ảnh gốc, như sau:
+Hàm này trả về một Promise. Trong trường hợp thành công thì kết quả là một [object](/object-la-gi-object-trong-javascript/) với 3 thông số là url, width, height của bức ảnh gốc, như sau:
 
 ```js
 {url: dataUrl, width: image.width, height: image.height}
@@ -107,7 +107,7 @@ new NinePatch()
   .catch((error) => console.log(error));
 ```
 
-Hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript/) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
+Hàm setImage() áp dụng [DOM](/co-ban-ve-dom-javascript/) để set lại giá trị width, height, url cho thẻ div hiển thị bức ảnh.
 
 ```js
 function setImage(divElement, srcURL, width, height) {
@@ -129,7 +129,7 @@ new NinePatch()
 
 Trên đây là những kiến thức cơ bản về ảnh nine-path, cũng như cách xử lý ảnh nine-patch trong JavaScript. Tuy nhiên, còn rất nhiều thứ cần phải cải tiến. Vì vậy, mình rất mong nhận được sự góp ý từ bạn.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-indexeddb-tai-sao-khong/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-indexeddb-tai-sao-khong/), thân ái!
 
 ## Tham khảo
 

@@ -74,22 +74,22 @@ Cài đặt loại này cực kì đơn giản, bạn chỉ cần click vào là
 Mình sẽ chuyển file **.rpm** thành file **.deb** để làm giống như trên:
 
 - Mở Terminal
-- Cài đặt gói **alien** với câu lệnh: **sudo apt-get install alien**
-- Convert file từ **.rpm** thành **.deb** với câu lệnh: `sudo alien -k filename.rpm`
+- Cài đặt gói **alien** với câu lệnh: **sudo apt-get install alien**
+- Convert file từ **.rpm** thành **.deb** với câu lệnh: `sudo alien -k filename.rpm`
 - Sau bước trên bạn đã có một tệp tin là **filename.deb**, tiếp tục click vào để cài đặt.
 
 #### Cài đặt file .bin
 
 Đầu tiên lưu file **.bin** tới Desktop. Mở Terminal:
 
-- Di chuyển đến thư mục chứa file: `cd Desktop` (đây chỉ là ví dụ, thực tế bạn có thể đặt file ở thư mục khác)
+- Di chuyển đến thư mục chứa file: `cd Desktop` (đây chỉ là ví dụ, thực tế bạn có thể đặt file ở thư mục khác)
 - Thêm quyền cho file: `sudo chmod +x filename.bin`
 - Cài đặt: `./filename.bin`
 - Sau đó chương trình sẽ cài đặt trong Terminal!
 
 #### Cài đặt phần mềm từ tarball
 
-Một tarball (thường là các file .tar , .tar.gz , .tgz , .tar.bz2 , .tbz2 ) gồm có mã nguồn cho chương trình mà ta phải tự biên dịch, trình biên dịch (compile) như GCC... thì thường có sẵn trong Linux . Các bước cài đặt Tarball về cơ bản như sau:
+Một tarball (thường là các file .tar , .tar.gz , .tgz , .tar.bz2 , .tbz2 ) gồm có mã nguồn cho chương trình mà ta phải tự biên dịch, trình biên dịch (compile) như GCC... thì thường có sẵn trong Linux . Các bước cài đặt Tarball về cơ bản như sau:
 
 ##### Giải nén tarball
 
@@ -107,7 +107,7 @@ $ tar jxf file.tbz2
 
 Các tùy chọn chúng ta cung cấp cho **tar** được mô tả bên dưới:
 
-- `-z` để lệnh cho tar chạy file này thông qua gzip để giải nén (sử dụng `–j` cho các file bzip)
+- `-z` để lệnh cho tar chạy file này thông qua gzip để giải nén (sử dụng `–j` cho các file bzip)
 - `-x` để bung các file
 - `-v` cho "verbose", để chúng ta có thể thấy danh sách các file đang bung
 - `-f` để lệnh cho tar rằng chúng ta đang làm việc với một file
@@ -116,14 +116,14 @@ Các tùy chọn chúng ta cung cấp cho **tar** được mô tả bên dưới
 
 - Mở terminal lên, dùng lệnh cd để di chuyển tới nơi đã bung file ở bước trước
 - Gõ lệnh `./configure`: mục đích là để kiểm tra xem hệ thống có đầy đủ các phần mềm để cài đặt chưa, nếu thiếu thì ta phải cài đặt các phần mềm đó trước
-- Gõ lệnh `make`: chờ cho tới khi hoàn thành rồi đến bước tiếp theo
-- Gõ lệnh `sudo make install`: đợi cho tới khi kết thúc là hoàn thành cài đặt.
+- Gõ lệnh `make`: chờ cho tới khi hoàn thành rồi đến bước tiếp theo
+- Gõ lệnh `sudo make install`: đợi cho tới khi kết thúc là hoàn thành cài đặt.
 
 ##### Gỡ phần mềm
 
-- Dùng lệnh cd di chuyển tới thư mục chứa file nguồn của phần mềm vừa bung ra.
-- Gõ lệnh: `make uninstall`
+- Dùng lệnh cd di chuyển tới thư mục chứa file nguồn của phần mềm vừa bung ra.
+- Gõ lệnh: `make uninstall`
 
-Trên đây là một số cách để cài đặt và gỡ một gói phần mềm trên Ubuntu. Nếu bạn có thắc mắc hay góp ý gì, vui lòng để lại dưới phần bình luận.
+Trên đây là một số cách để cài đặt và gỡ một gói phần mềm trên Ubuntu. Nếu bạn có thắc mắc hay góp ý gì, vui lòng để lại dưới phần bình luận.
 
 Xin chào và hẹn gặp lại bạn ở bài viết sau, thân ái!

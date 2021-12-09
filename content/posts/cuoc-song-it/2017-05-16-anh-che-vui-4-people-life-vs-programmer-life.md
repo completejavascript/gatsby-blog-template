@@ -21,12 +21,12 @@ who work every monday to friday and [**relax**](/tag/anh-che/) at the weekend.
 
 ## Programmers
 
-who work every monday to friday and **work** **hard** at the weekend.
+who work every monday to friday and **work** **hard** at the weekend.
 
 - Programmers aren't people, they are **heroes**.
 - That's programmer life.
 
-See you in the next post, thank you!
+See you in the next post, thank you!
 
 ## Similar posts
 

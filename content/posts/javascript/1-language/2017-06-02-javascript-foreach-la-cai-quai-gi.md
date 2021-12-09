@@ -14,7 +14,7 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Trong JavaScript, để duyệt [array](/array-la-gi-array-trong-javascript/) thì **forEach** là một hàm rất hay. Vậy hàm forEach trong JavaScript cụ thể là như thế nào? Cách sử dụng forEach JavaScript ra sao? Mình hãy cùng tìm hiểu để làm chủ forEach js nhé!
+Trong JavaScript, để duyệt [array](/array-la-gi-array-trong-javascript/) thì **forEach** là một hàm rất hay. Vậy hàm forEach trong JavaScript cụ thể là như thế nào? Cách sử dụng forEach JavaScript ra sao? Mình hãy cùng tìm hiểu để làm chủ forEach js nhé!
 
 ## Đặt bài toán
 
@@ -38,7 +38,7 @@ Cách giải trên khá dễ hiểu. Mình duyệt tất cả các phần tử m
 
 Có một vấn đề với cách này, đó là việc sử dụng chỉ số `i` có thể khiến bạn bị nhầm với một biến trước đó. Dẫn đến những lỗi sai không đoán trước được.
 
-Lúc này, **forEach** JavaScript xuất hiện giúp bạn giải quyết vấn đề trên.
+Lúc này, **forEach** JavaScript xuất hiện giúp bạn giải quyết vấn đề trên.
 
 ### Cách triển khai hàm forEach JavaScript
 
@@ -52,7 +52,7 @@ function forEach(array, action) {
 }
 ```
 
-Hàm `forEach` trên nhận đầu vào là một mảng `array` và một hàm `action` - thực hiện hành động với mỗi phần tử của mảng `array[i]`.
+Hàm `forEach` trên nhận đầu vào là một mảng `array` và một hàm `action` - thực hiện hành động với mỗi phần tử của mảng `array[i]`.
 
 ### Áp dụng hàm forEach để giải quyết bài toán trên
 
@@ -74,7 +74,7 @@ Nếu so sánh với cách làm trước thì cách này rõ ràng là dài hơn
 
 Vấn đề nên quan tâm trước tiên đó là: **code-đọc-dễ-hiểu**.
 
-Theo quan điểm cá nhân mình, việc sử dụng hàm **forEach** giúp code gần giống với ngôn ngữ tự nhiên hơn. Quan điểm của bạn về vấn đề này thế nào?
+Theo quan điểm cá nhân mình, việc sử dụng hàm **forEach** giúp code gần giống với ngôn ngữ tự nhiên hơn. Quan điểm của bạn về vấn đề này thế nào?
 
 ## Giới thiệu hàm forEach trong JavaScript
 
@@ -153,7 +153,7 @@ console.log(obj.sum); // 16
 
 ## Ưu, nhược điểm của việc sử dụng forEach
 
-Bất cứ thứ gì cũng có hai mặt, **forEach** JavaScript cũng không ngoại lệ. Sau đây là một số ưu, nhược điểm của phương thức `forEach`:
+Bất cứ thứ gì cũng có hai mặt, **forEach** JavaScript cũng không ngoại lệ. Sau đây là một số ưu, nhược điểm của phương thức `forEach`:
 
 ### Ưu điểm
 

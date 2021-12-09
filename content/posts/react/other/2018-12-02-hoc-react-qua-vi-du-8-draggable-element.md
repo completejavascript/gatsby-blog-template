@@ -20,7 +20,7 @@ Xin chào bạn đến với Học React qua ví dụ #8. Bài này mình sẽ t
   Xem Demo Draggable Element
 </a>
 
-Như bạn thấy đó, Draggable Element nghĩa là **phần tử có thể kéo đi, thay đổi vị trí được**. Như vậy, ý tưởng để giải quyết bài toán này rất đơn giản, đó là:
+Như bạn thấy đó, Draggable Element nghĩa là **phần tử có thể kéo đi, thay đổi vị trí được**. Như vậy, ý tưởng để giải quyết bài toán này rất đơn giản, đó là:
 
 - Bắt sự kiện click chuột vào phần tử
 - Tính toán khoảng cách khi người dùng di chuột
@@ -28,17 +28,17 @@ Như bạn thấy đó, Draggable Element nghĩa là **phần tử có thể k
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/react-component/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/react-component/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #8 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #8 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
-Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
+Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
 
 ```
 learn-react-by-example/
@@ -57,10 +57,10 @@ learn-react-by-example/
 
 Trong đó:
 
-- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về  **Draggable Element** nên mình tạo thêm thư mục **draggable-element** bên trong với 2 file **draggable-element.js** và **draggable-element.css** để định nghĩa cho component **Draggable Element** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
-- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Draggable Element** ở trên.
-- Các file **index.css, index.js và serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
+- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Draggable Element** nên mình tạo thêm thư mục **draggable-element** bên trong với 2 file **draggable-element.js** và **draggable-element.css** để định nghĩa cho component **Draggable Element** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
+- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
+- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Draggable Element** ở trên.
+- Các file **index.css, index.js và serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
 ## Xây dựng Draggable Element Component
 
@@ -69,7 +69,7 @@ Trong đó:
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
 - [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_mousedown, mouseup, mousemove_**).
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_mousedown, mouseup, mousemove_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
@@ -290,9 +290,9 @@ export default class DraggableElement extends React.Component {
 
 ### Nội dung file draggable-element.css
 
-File này dùng để xác định style cho Draggable Element Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-draggable-element** để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
+File này dùng để xác định style cho Draggable Element Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-draggable-element** để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
 
-Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
+Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
 ````css:title=draggable-element.css
 .lp-draggable-element,
@@ -350,7 +350,7 @@ Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/cs
 }
 ```
 
-Trong đây mình có kết hợp Draggable Element với các React Component khác mà mình đã làm như: [Modal Image](/hoc-react-qua-vi-du-3-modal-image/), [Slideshow](/hoc-react-qua-vi-du-1-slideshow/).
+Trong đây mình có kết hợp Draggable Element với các React Component khác mà mình đã làm như: [Modal Image](/hoc-react-qua-vi-du-3-modal-image/), [Slideshow](/hoc-react-qua-vi-du-1-slideshow/).
 
 ```jsx:title=./src/App.js
 import React from "react";
@@ -438,9 +438,9 @@ export default class App extends React.Component {
 
 Trong đó, Draggable Element Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
-- **title ([String](/kieu-du-lieu-trong-javascript/)):** là title của component.
-- **width, height (String hoặc [Number](/kieu-du-lieu-trong-javascript/)):** lần lượt là chiều rộng và chiều cao của phần tử.
-- **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
+- **title ([String](/kieu-du-lieu-trong-javascript/)):** là title của component.
+- **width, height (String hoặc [Number](/kieu-du-lieu-trong-javascript/)):** lần lượt là chiều rộng và chiều cao của phần tử.
+- **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
 
 ## Lời kết
 
@@ -450,6 +450,6 @@ Trên đây là kết quả sau khi mình học React qua ví dụ #8 – Dragga
   Xem Demo
 </a>
 
-Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
+Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
 
 Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!

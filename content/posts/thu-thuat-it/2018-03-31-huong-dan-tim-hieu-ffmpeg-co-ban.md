@@ -337,7 +337,7 @@ Trên đây là những gì mình tìm hiểu được về FFmpeg và những c
 
 Hy vọng, bài viết trên đây có thể giúp ích cho bạn. Nếu có gì thắc mắc bạn có thể để lại comment phía dưới hoặc gửi lại email cho mình.
 
-Xin chào và hẹn gặp bạn ở bài viết tiếp theo, thân ái!
+Xin chào và hẹn gặp bạn ở bài viết tiếp theo, thân ái!
 
 **Có thể bạn quan tâm:**
 

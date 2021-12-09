@@ -68,4 +68,4 @@ Những việc bạn làm khi thức dậy sớm là rất quan trọng. Nó quy
 
 Trên đây là những cách để giúp bạn thức dậy sớm mà không cảm thấy mệt mỏi. Mình rất vui nếu bạn đọc chia sẻ các phương pháp của bạn ở dưới phần bình luận.
 
-Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!

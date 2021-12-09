@@ -89,7 +89,7 @@ Ngoài ra, menu còn trỏ đến các mục tương ứng trên trang là: **Ab
 
 ### Bắt đầu với \$(document).ready()
 
-Hàm này dùng để phát hiện trạng thái khi toàn bộ các phần tử [DOM](/co-ban-ve-dom-javascript/) đã được load.
+Hàm này dùng để phát hiện trạng thái khi toàn bộ các phần tử [DOM](/co-ban-ve-dom-javascript/) đã được load.
 
 ```js
 // A $( document ).ready() block.
@@ -157,7 +157,7 @@ $("a[href*='#']:not([href='#'])").click(function () {
 });
 ```
 
-Phần <code>$("a[href*='#']:not([href='#'])")</code> được hiểu là: lựa chọn tất cả các thẻ &lt;a&gt; bắt đầu bằng _#_ và không phải là chỉ *#*, cụ thể là *#about, #career, #qoute* - 3 mục chính trên trang web.
+Phần <code>$("a[href*='#']:not([href='#'])")</code> được hiểu là: lựa chọn tất cả các thẻ &lt;a&gt; bắt đầu bằng _#_ và không phải là chỉ _#_, cụ thể là _#about, #career, #qoute_ - 3 mục chính trên trang web.
 
 Trong đó, sau khi đã xác định được _target_, sử dụng [.animate()](http://api.jquery.com/animate/) để tạo ra animation lúc chuyển động đến vị trí đích (code trên mình tham khảo tại [đây](https://css-tricks.com/snippets/jquery/smooth-scrolling/)).
 
@@ -260,7 +260,7 @@ Trên đây là toàn bộ những điều mình rút ra được từ project *
 
 Không biết bạn đánh giá như thế nào? Vui lòng để lại bình luận phía dưới để mọi người cùng trao đổi nhé!
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-personal-portfolio/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/lap-trinh-javascript-voi-fcc-personal-portfolio/), thân ái!
 
 ## Tham khảo
 

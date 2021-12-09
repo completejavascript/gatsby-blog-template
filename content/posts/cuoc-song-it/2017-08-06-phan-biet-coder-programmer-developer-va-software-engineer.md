@@ -5,7 +5,7 @@ template: "post"
 directory: "Cuộc sống IT"
 cover: "../../images/cuoc-song-it/phan-biet-coder-developer-programmer-va-software-engineer-completejavascript.com_.png"
 keywords: "programmer"
-description: "Bài viết được dịch từ website Technotification của tác giả Vicky Singh Rao về cách phân biệt giữa Coder, Programmer, Developer và Software Engineer."
+description: "Bài viết được dịch từ website Technotification của tác giả Vicky Singh Rao về cách phân biệt giữa Coder, Programmer, Developer và Software Engineer."
 slug: phan-biet-coder-programmer-developer-va-software-engineer
 title: "Phân biệt coder, programmer, developer và software engineer"
 series: "Cuộc sống IT: Cuộc sống dân IT"
@@ -13,7 +13,7 @@ tags:
   - Dịch blog
 ---
 
-Bài viết được dịch từ website [Technotification](https://www.technotification.com/2017/06/coder-programmer-developer-difference.html) của tác giả [Vicky Singh Rao](https://www.technotification.com/author/vicky) về cách phân biệt giữa Coder, Programmer, Developer và Software Engineer.
+Bài viết được dịch từ website [Technotification](https://www.technotification.com/2017/06/coder-programmer-developer-difference.html) của tác giả [Vicky Singh Rao](https://www.technotification.com/author/vicky) về cách phân biệt giữa Coder, Programmer, Developer và Software Engineer.
 
 Có thể bạn đã được nghe về những chức danh công việc này trước đây rồi, nhưng chính xác thì sự khác nhau giữa chúng là gì?
 

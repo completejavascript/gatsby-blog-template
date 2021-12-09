@@ -146,7 +146,7 @@ Quy tắc đặt tên biến trong JavaScript như sau:
 >
 > Mỗi từ khoá và từ dự trữ mang một ý nghĩa khác nhau. Và mình sẽ giới thiệu chúng trong những bài viết sau.
 
-Ví dụ những tên biến hợp lệ:
+Ví dụ những tên biến hợp lệ:
 
 ```js
 let temp = 100;
@@ -156,7 +156,7 @@ let I_AM_HUNGRY = true;
 let dientichao = 999;
 ```
 
-Ví dụ những tên biến không hợp lệ:
+Ví dụ những tên biến không hợp lệ:
 
 ```js
 let point% = 50;       // sử dụng kí tự đặc biệt %

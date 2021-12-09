@@ -12,7 +12,7 @@ tags:
   - React Lifecycle
 ---
 
-Khi học và tìm hiểu về React Component, có lẽ bạn đã đôi lần nhìn thấy các phương thức như _componentDidMount(), componentDidUpdate(), componentWillUnmount(),..._ Chúng được gọi là các "React lifecycle methods" - các phương thức trong vòng đời của React Component. Chúng cho phép bạn **override** để thực hiện một số nhiệm vụ nhất định. Do đó, việc hiểu và biết cách sử dụng các phương thức này là vô cùng quan trọng. Vì vậy, bài viết này mình sẽ đi vào tìm hiểu về React Component Lifecycle. Hay nói ngắn gọn hơn là "React Lifecycle".
+Khi học và tìm hiểu về React Component, có lẽ bạn đã đôi lần nhìn thấy các phương thức như _componentDidMount(), componentDidUpdate(), componentWillUnmount(),..._ Chúng được gọi là các "React lifecycle methods" - các phương thức trong vòng đời của React Component. Chúng cho phép bạn **override** để thực hiện một số nhiệm vụ nhất định. Do đó, việc hiểu và biết cách sử dụng các phương thức này là vô cùng quan trọng. Vì vậy, bài viết này mình sẽ đi vào tìm hiểu về React Component Lifecycle. Hay nói ngắn gọn hơn là "React Lifecycle".
 
 **Mục đích của bài viết:**
 
@@ -28,7 +28,7 @@ Các phương thức trong React Component Lifecycle có thể chia ra làm 3 ph
 
 ### Các phương thức trong pha Mounting
 
-Mounting là giai đoạn khi React Component được tạo ra và render lên trên [DOM](/co-ban-ve-dom-javascript/) tree.
+Mounting là giai đoạn khi React Component được tạo ra và render lên trên [DOM](/co-ban-ve-dom-javascript/) tree.
 
 Các React lifecycle methods được gọi trong giai đoạn này lần lượt là:
 
@@ -37,17 +37,17 @@ Các React lifecycle methods được gọi trong giai đoạn này lần lượ
 - render()
 - componentDidMount()
 
-Trong đó, phương thức *render()* **BẮT BUỘC** phải có; phương thức  [getDerivedStateFromProps()](https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops) ít khi sử dụng; phương thức _constructor()_ và _componentDidMount()_ thường xuyên được sử dụng - nhưng không bắt buộc.
+Trong đó, phương thức _render()_ **BẮT BUỘC** phải có; phương thức [getDerivedStateFromProps()](https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops) ít khi sử dụng; phương thức _constructor()_ và _componentDidMount()_ thường xuyên được sử dụng - nhưng không bắt buộc.
 
 Vì vậy, dưới đây mình sẽ chỉ trình bày về các React lifecycle methods quan trọng và hay sử dụng.
 
 #### Phương thức constructor()
 
-Đối với class nói chung, **constructor()** luôn là phương thức được gọi đến **ĐẦU TIÊN** mỗi khi [khởi tạo](/js-pattern-constructor-pattern/). Tuy nhiên, bạn chỉ nên sử dụng phương thức này với 2 mục đích:
+Đối với class nói chung, **constructor()** luôn là phương thức được gọi đến **ĐẦU TIÊN** mỗi khi [khởi tạo](/js-pattern-constructor-pattern/). Tuy nhiên, bạn chỉ nên sử dụng phương thức này với 2 mục đích:
 
 - Khởi tạo state cho React Component.
 
-* [Bind](/phan-biet-call-apply-va-bind-trong-javascript/) method (xử lý event, sử dụng trong [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) hoặc [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)) với **this**.
+* [Bind](/phan-biet-call-apply-va-bind-trong-javascript/) method (xử lý event, sử dụng trong [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) hoặc [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)) với **this**.
 
 Ngược lại thì bạn có thể bỏ qua phương thức này, ví dụ:
 
@@ -61,9 +61,9 @@ constructor(props) {
 
 Trong đó:
 
-- Component bạn khai báo [kế thừa](/ke-thua-co-ban-trong-javascript/) từ React.Component, nên bạn cần phải gọi hàm *super(props)* để gọi đến hàm khởi tạo của thằng cha React.Component. Nếu thiếu thì *this.props* sẽ là **undefined**.
-- `this.state = { count: 0 }`: khởi tạo biến thuộc state là: **count = 0**.
-- Cuối cùng, *this.updateCounter* là hàm được sử dụng trong _setInterval_ mà mình sẽ sử dụng trong ví dụ dưới. Mình cần phải **bind** phương thức này với **this** - là tham chiếu đến đối tượng Component hiện tại.
+- Component bạn khai báo [kế thừa](/ke-thua-co-ban-trong-javascript/) từ React.Component, nên bạn cần phải gọi hàm _super(props)_ để gọi đến hàm khởi tạo của thằng cha React.Component. Nếu thiếu thì _this.props_ sẽ là **undefined**.
+- `this.state = { count: 0 }`: khởi tạo biến thuộc state là: **count = 0**.
+- Cuối cùng, _this.updateCounter_ là hàm được sử dụng trong _setInterval_ mà mình sẽ sử dụng trong ví dụ dưới. Mình cần phải **bind** phương thức này với **this** - là tham chiếu đến đối tượng Component hiện tại.
 
 #### Phương thức render()
 
@@ -77,7 +77,7 @@ render() {
 }
 ```
 
-Phương thức này dùng để miêu tả cấu trúc của Component sau khi nó được chèn vào DOM tree. Nó bắt buộc được gọi lần đầu tiên để chèn Component vào [HTML](/tag/html/), và có thể được gọi lại để cập nhật giao diện mỗi khi state của Component thay đổi.
+Phương thức này dùng để miêu tả cấu trúc của Component sau khi nó được chèn vào DOM tree. Nó bắt buộc được gọi lần đầu tiên để chèn Component vào [HTML](/tag/html/), và có thể được gọi lại để cập nhật giao diện mỗi khi state của Component thay đổi.
 
 Đặc biệt, bạn nên để phương thức này là **Pure Function** - nghĩa là nó không làm thay đổi state của Component, không tương tác với trình duyệt, không lấy dữ liệu từ server,...
 
@@ -85,14 +85,14 @@ Chỉ đơn giản là nó lấy data từ **this.props** và **this.state** đ�
 
 #### Phương thức componentDidMount()
 
-Phương thức *componentDidMount()* được gọi **một lần duy nhất** ngay sau khi Component được render xong. Và nếu để so sánh với [JavaScript thuần](/javascript/) thì mình thấy phương thức này khá giống với việc bạn đăng ký sự kiện [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
+Phương thức _componentDidMount()_ được gọi **một lần duy nhất** ngay sau khi Component được render xong. Và nếu để so sánh với [JavaScript thuần](/javascript/) thì mình thấy phương thức này khá giống với việc bạn đăng ký sự kiện [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded).
 
 Chính vì tính chỉ được gọi **một lần duy nhất** nên bên trong phương thức này, mình có thể:
 
 - Lấy dữ liệu từ server để cập lại state cho Component.
-- Định nghĩa interval thông qua *setInterval* để thực hiện một số nhiệm vụ lặp lại.
+- Định nghĩa interval thông qua _setInterval_ để thực hiện một số nhiệm vụ lặp lại.
 - Lấy thông tin liên quan đến DOM node như kích thước thực tế (width, height) - vì lúc này chúng đã được hiển thị lên màn hình.
-- Đăng ký [sự kiện](/xu-ly-mot-event-javascript-co-ban/): *resize, scroll,...*
+- Đăng ký [sự kiện](/xu-ly-mot-event-javascript-co-ban/): _resize, scroll,..._
 
 Hết phương thức này, nghĩa là mình đã xử lý xong trong pha Mounting. Có 3 phương thức **quan trọng** mà bạn cần nhớ là:
 
@@ -360,7 +360,7 @@ main.js:44 componentDidUpdate: count from 4 to 5
 main.js:51 componentWillUnmount
 ```
 
-Trong đó, pha Mounting ứng với 3 dòng đầu tiên. Suy ra, thứ tự các React lifecycle methods là:
+Trong đó, pha Mounting ứng với 3 dòng đầu tiên. Suy ra, thứ tự các React lifecycle methods là:
 
 ```
 main.js:19 constructor                           # constructor()

@@ -68,7 +68,7 @@ Dựa trên những đặc điểm nêu trên, mình có thể khởi tạo Map 
 ```js
 const map1 = new Map();
 console.log(map1);
-// => Map(0) {}
+// => Map(0) {}
 ```
 
 #### Khởi tạo Map từ Array
@@ -79,7 +79,7 @@ const map2 = new Map([
   [2, "b"],
 ]);
 console.log(map2);
-// => Map(2) {1 => "a", 2 => "b"}
+// => Map(2) {1 => "a", 2 => "b"}
 
 const map3 = new Map([1, "a", 2, "b"]);
 // => Uncaught TypeError: Iterator value 1 is not an entry object
@@ -93,7 +93,7 @@ function func4() {
   console.log(map4);
 }
 func4(["one", 1], ["two", 2], ["three", 3]);
-// => Map(3) {"one" => 1, "two" => 2, "three" => 3}
+// => Map(3) {"one" => 1, "two" => 2, "three" => 3}
 ```
 
 #### Khởi tạo Map từ Set
@@ -104,11 +104,11 @@ const set5 = new Set([
   ["b", 2],
 ]);
 console.log(set5);
-// => Set(2) {Array(2), Array(2)}
+// => Set(2) {Array(2), Array(2)}
 
 const map5 = new Map(set5);
 console.log(map5);
-// => Map(2) {"a" => 1, "b" => 2}
+// => Map(2) {"a" => 1, "b" => 2}
 ```
 
 #### Khởi tạo Map từ Map
@@ -119,11 +119,11 @@ const map6 = new Map([
   ["b", 2],
 ]);
 console.log(map6);
-// => Map(2) {"a" => 1, "b" => 2}
+// => Map(2) {"a" => 1, "b" => 2}
 
 const map6_clone = new Map(map6);
 console.log(map6_clone);
-// => Map(2) {"a" => 1, "b" => 2}
+// => Map(2) {"a" => 1, "b" => 2}
 ```
 
 **Chú ý:** Ngoài các kiểu iterable object trên thì còn có String, [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), TypedArray. Nhưng tiếc là mình chưa tìm thấy cách nào có thể tạo ra những iterable object kiểu này mà mỗi phần tử của nó là một mảng chứa 2 phần tử dạng (<code>["key", "value"]</code>).
@@ -149,22 +149,22 @@ Ví dụ:
 ```js
 const map7 = new Map();
 map7.set("a", 1);
-// => Map(1) {"a" => 1}
+// => Map(1) {"a" => 1}
 
 map7.set("b", 2);
-// => Map(2) {"a" => 1, "b" => 2}
+// => Map(2) {"a" => 1, "b" => 2}
 
 map7.set([1], 3);
-// => Map(3) {"a" => 1, "b" => 2, [1] => 3}
+// => Map(3) {"a" => 1, "b" => 2, [1] => 3}
 
 map7.set("a", 4);
-// => Map(3) {"a" => 4, "b" => 2, [1] => 3}
+// => Map(3) {"a" => 4, "b" => 2, [1] => 3}
 
 map7.set([1], 5);
-// => Map(4) {"a" => 4, "b" => 2, [1] => 3, [1] => 5}
+// => Map(4) {"a" => 4, "b" => 2, [1] => 3, [1] => 5}
 
 map7.set(NaN, 6);
-// => Map(5) {"a" => 4, "b" => 2, [1] => 3, [1] => 5, NaN => 6}
+// => Map(5) {"a" => 4, "b" => 2, [1] => 3, [1] => 5, NaN => 6}
 ```
 
 Bạn nhớ là khi sử dụng toán tử "===" để so sánh thì <code>[1] !== [1]</code>. Nên trong Map sẽ tồn tại 2 cặp phần tử với key là <code>[1]</code> với value lần lượt là 3 và 5 như trên.
@@ -176,7 +176,7 @@ Ngoài ra, phương thức _set_ còn trả về chính đối tượng Map. Nê
 ```js
 const map7 = new Map();
 map7.set("a", 1).set("b", 2).set([1], 3).set("a", 4).set([1], 5).set(NaN, 6);
-// => Map(5) {"a" => 4, "b" => 2, [1] => 3, [1] => 5, NaN => 6}
+// => Map(5) {"a" => 4, "b" => 2, [1] => 3, [1] => 5, NaN => 6}
 ```
 
 ### Lấy giá trị của phần tử trong Map
@@ -251,7 +251,7 @@ const map10 = new Map([
   ["three", 3],
 ]);
 console.log(map10);
-// Map(3) {"one" => 1, "two" => 2, "three" => 3}
+// Map(3) {"one" => 1, "two" => 2, "three" => 3}
 
 console.log(map10.delete("two"));
 // true
@@ -271,11 +271,11 @@ const map11 = new Map([
   ["c", 3],
 ]);
 console.log(map11);
-// Map(3) {"a" => 1, "b" => 2, "c" => 3}
+// Map(3) {"a" => 1, "b" => 2, "c" => 3}
 
 map11.clear();
 console.log(map11);
-// Map(0) {}
+// Map(0) {}
 ```
 
 ### Duyệt qua các phần tử trong Map
@@ -314,9 +314,9 @@ map13.forEach((value, key, map) => {
   console.log(value, key, map);
 });
 /*
- * a 1 Map(3) {1 => "a", 2 => "b", 3 => "c"}
- * b 2 Map(3) {1 => "a", 2 => "b", 3 => "c"}
- * c 3 Map(3) {1 => "a", 2 => "b", 3 => "c"}
+ * a 1 Map(3) {1 => "a", 2 => "b", 3 => "c"}
+ * b 2 Map(3) {1 => "a", 2 => "b", 3 => "c"}
+ * c 3 Map(3) {1 => "a", 2 => "b", 3 => "c"}
  */
 ```
 

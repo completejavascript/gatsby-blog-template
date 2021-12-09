@@ -16,7 +16,7 @@ tags:
   - Quiz
 ---
 
-Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 8**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay.
+Xin chào bạn đến bài viết **Xoắn não với phỏng vấn JavaScript 8**, hôm nay mình lại tiếp tục chia sẻ với bạn những câu hỏi phỏng vấn JavaScript rất hay.
 
 Mời bạn theo dõi bài viết!
 

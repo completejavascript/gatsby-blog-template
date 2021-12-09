@@ -152,7 +152,7 @@ Vậy tóm lại, vấn đề đặt ra là: làm sao thay thế hoàn toàn cod
 
 **Giải pháp:**
 
-**Bước 1:** Đổi tên nhánh _master_ thành *temp-master* và đổi tên nhánh _deploy-zeit_ thành _master_.
+**Bước 1:** Đổi tên nhánh _master_ thành _temp-master_ và đổi tên nhánh _deploy-zeit_ thành _master_.
 
 ```bash
 # Đổi tên nhánh master thành temp-master
@@ -169,7 +169,7 @@ $ git branch -m deploy-zeit master
 $ git push origin master -f
 ```
 
-**Bước 3:** Tiếp theo, mình đổi lại tên nhánh như ban đầu trước khi thực hiện bước 1
+**Bước 3:** Tiếp theo, mình đổi lại tên nhánh như ban đầu trước khi thực hiện bước 1
 
 ```bash
 # Đổi tên nhánh master hiện tại thành deploy-zeit

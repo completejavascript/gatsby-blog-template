@@ -105,7 +105,7 @@ const I_AM_STRONG = true;
 const dientichhinhvuong = 6996;
 ```
 
-Ví dụ những tên hằng không hợp lệ:
+Ví dụ những tên hằng không hợp lệ:
 
 ```js
 const vertex% = 50;     // sử dụng kí tự đặc biệt %

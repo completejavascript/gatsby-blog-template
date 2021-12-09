@@ -17,24 +17,24 @@ tags:
 Xin chào bạn đến với Học React qua ví dụ #7. Bài này mình sẽ thực hành React thông qua việc tạo Collapsible Content. Trước khi bắt đầu, mời bạn theo dõi ví dụ minh họa:
 
 <a href="https://about.phamvanlam.com/learn-react-by-example/#/collapsible-content/" class="btn btn-primary margin-bottom">
-  Xem Demo Collapsible Content
+  Xem Demo Collapsible Content
 </a>
 
 Theo như từ điển anh việt thì Collapsible nghĩa là: **có thể gập lại, xếp lại được**. Do đó, Collapsible Content Component là một phần tử cho phép mình hiển thị mở rộng hoặc thu nhỏ nội dung, tùy thuộc vào lựa chọn của người dùng.
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/react-component/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/react-component/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #7 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #7 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
-Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
+Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
 
 ```
 learn-react-by-example/
@@ -53,10 +53,10 @@ learn-react-by-example/
 
 Trong đó:
 
-- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về  **Collapsible Content** nên mình tạo thêm thư mục **collapsible-content** bên trong với 2 file **collapsible-content.js** và **collapsible-content.css** để định nghĩa cho component **Collapsible Content** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
-- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Collapsible Content** ở trên.
-- Các file **index.css, index.js và serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
+- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Collapsible Content** nên mình tạo thêm thư mục **collapsible-content** bên trong với 2 file **collapsible-content.js** và **collapsible-content.css** để định nghĩa cho component **Collapsible Content** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
+- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
+- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Collapsible Content** ở trên.
+- Các file **index.css, index.js và serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
 ## Xây dựng Collapsible Content Component
 
@@ -65,7 +65,7 @@ Trong đó:
 Trong phần này bạn cần phải chú ý đến một số kiến thức như:
 
 - [React Component Lifecycle](/tim-hieu-react-component-lifecycle/)
-- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
+- [Đăng ký và hủy bỏ event](/xu-ly-mot-event-javascript-co-ban/) (**_resize_**).
 
 Về nội dung chi tiết mình sẽ giải thích trong phần comment code dưới đây. Bạn chịu khó đọc nhé! Có phần nào chưa hiểu thì có thể để lại bình luận phía dưới.
 
@@ -175,9 +175,9 @@ export default class CollapsibleContent extends React.Component {
 
 ### Nội dung file collapsible-content.css
 
-File này dùng để xác định style cho Collapsible Content Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-collapsible-content** để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
+File này dùng để xác định style cho Collapsible Content Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-collapsible-content** để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
 
-Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
+Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
 ```css:title=collapsible-content.css
 .lp-collapsible-content,
@@ -347,7 +347,7 @@ export default class App extends React.Component {
 
 Trong đó, Collapsible Content Component là một [**Higher-Order Components**](https://reactjs.org/docs/higher-order-components.html) với các thuộc tính là:
 
-- **title ([String](/kieu-du-lieu-trong-javascript/)):** là title của component
+- **title ([String](/kieu-du-lieu-trong-javascript/)):** là title của component
 - **isActive** (**Boolean**): là biến để xác định xem Component có được active hay không. Nếu **isActive** có giá trị **true** thì Component sẽ hiển thị nội dung dạng mở rộng.
 
 ## Lời kết
@@ -358,6 +358,6 @@ Trên đây là kết quả sau khi mình học React qua ví dụ #7 – Collap
   Xem Demo
 </a>
 
-Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
+Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
 
 Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!

@@ -188,7 +188,7 @@ import React from "react";
 export default () => <div>Liên hệ</div>;
 ```
 
-Sau khi lưu lại, bạn có thể vào 2 địa chỉ `http://localhost:8000/gioi-thieu/` và `http://localhost:8000/lien-he/` sẽ thấy kết quả 2 trang lần lượt là:
+Sau khi lưu lại, bạn có thể vào 2 địa chỉ `http://localhost:8000/gioi-thieu/` và `http://localhost:8000/lien-he/` sẽ thấy kết quả 2 trang lần lượt là:
 
 Kết quả trang giới thiệu:
 
@@ -200,9 +200,9 @@ Kết quả trang liên hệ:
 
 #### Cách xem các trang đang tồn tại từ trang 404 mặc định
 
-Ngoài ra, nếu bạn chưa biết chắc trang blog với Gatsby.js hiện tại gồm những trang nào thì bạn có thể vào 1 địa chỉ bất kì, ví dụ `http://localhost:8000/abc/` (*abc* là giá trị bất kỳ nhé).
+Ngoài ra, nếu bạn chưa biết chắc trang blog với Gatsby.js hiện tại gồm những trang nào thì bạn có thể vào 1 địa chỉ bất kì, ví dụ `http://localhost:8000/abc/` (_abc_ là giá trị bất kỳ nhé).
 
-Ở chế độ phát triển, khi bạn vào một trang bất kỳ mà trang này không tồn tại thì Gatsby sẽ hiển thị ra một trang **404** mặc định, trong đó sẽ có thông tin về những trang đang tồn tại:
+Ở chế độ phát triển, khi bạn vào một trang bất kỳ mà trang này không tồn tại thì Gatsby sẽ hiển thị ra một trang **404** mặc định, trong đó sẽ có thông tin về những trang đang tồn tại:
 
 ![Trang 404 mặc định ở chế độ phát triển](../../../images/react/gatsby-404-default.png)
 
@@ -212,23 +212,23 @@ Hình trên cho thấy blog của mình đang có 3 trang là:
 - _/gioi-thieu/_: trang giới thiệu
 - _/lien-he/_: trang liên hệ
 
-> **Chú ý:** Trang này chỉ tồn tại ở chế độ phát triển, khi deploy ra thực tế, bạn cần phải implement trang này. Hay nói cách khác là bạn phải tạo thêm 1 file *404.js* trong thư mục */src/pages/*. Tạm thời mình chưa quan tâm đến trang này vội.
+> **Chú ý:** Trang này chỉ tồn tại ở chế độ phát triển, khi deploy ra thực tế, bạn cần phải implement trang này. Hay nói cách khác là bạn phải tạo thêm 1 file _404.js_ trong thư mục _/src/pages/_. Tạm thời mình chưa quan tâm đến trang này vội.
 
-Tóm lại, để tạo thêm một trang bất kì, bạn cần định nghĩa nó trong thư mục `/scs/pages/`. Trong đó, mỗi trang sẽ là một file *.js* được *export default* React Component. Tiếp theo, mình sẽ bất đầu xây dựng layout cho trang blog với Gatsby.js.
+Tóm lại, để tạo thêm một trang bất kì, bạn cần định nghĩa nó trong thư mục `/scs/pages/`. Trong đó, mỗi trang sẽ là một file _.js_ được _export default_ React Component. Tiếp theo, mình sẽ bất đầu xây dựng layout cho trang blog với Gatsby.js.
 
 ### Thiết kế layout
 
-Thông thường, một trang blog nào cũng sẽ có các thành phần như: menu (đường dẫn tới các trang), sidebar (chứa danh sách các chuyên mục, thẻ, bài viết mới nhất,...),... Nếu làm theo cách thông thường, nghĩa là mình phải copy-paste code liên quan đến menu, sidebar,... vào các file _/src/pages/index.js_, */src/pages/gioi-thieu.js* và */src/pages/lien-he.js*. Như vậy, thật là thừa code và còn khó maintain nếu như mình muốn thay đổi Layout của blog.
+Thông thường, một trang blog nào cũng sẽ có các thành phần như: menu (đường dẫn tới các trang), sidebar (chứa danh sách các chuyên mục, thẻ, bài viết mới nhất,...),... Nếu làm theo cách thông thường, nghĩa là mình phải copy-paste code liên quan đến menu, sidebar,... vào các file _/src/pages/index.js_, _/src/pages/gioi-thieu.js_ và _/src/pages/lien-he.js_. Như vậy, thật là thừa code và còn khó maintain nếu như mình muốn thay đổi Layout của blog.
 
 Nhưng không, với Gatsby v2, bạn có thể định nghĩa Layout dạng React Component. Khi đó bạn chỉ cần định nghĩa Layout ở một nơi và sử dụng nó ở bất kỳ trang nào bạn muốn.
 
-_Xem thêm: [Migrating from v1 to v2](https://www.gatsbyjs.org/docs/migrating-from-v1-to-v2/) - nếu trước đây bạn sử dụng Gatsby v1 và cần chuyển sang Gatsby v2_.
+_Xem thêm: [Migrating from v1 to v2](https://www.gatsbyjs.org/docs/migrating-from-v1-to-v2/) - nếu trước đây bạn sử dụng Gatsby v1 và cần chuyển sang Gatsby v2_.
 
 Dĩ nhiên, bạn có thể định nghĩa nhiều loại Layout khác nhau để sử dụng cho các trang khác nhau (vì có thể Layout trang chủ khác với Layout trang giới thiệu, liên hệ). Nhưng để đơn giản, mình sẽ chỉ sử dụng 1 loại Layout chung cho tất cả các trang.
 
 #### Tạo layout chính
 
-Để dễ dàng quản lý các Component, mình sẽ tạo mới thư mục _components_ trong thư mục */src*. Và trong đó, tạo thêm file *layout.js* để định nghĩa Layout Component và file *layout.css* để định nghĩa style cho layout.
+Để dễ dàng quản lý các Component, mình sẽ tạo mới thư mục _components_ trong thư mục _/src_. Và trong đó, tạo thêm file _layout.js_ để định nghĩa Layout Component và file _layout.css_ để định nghĩa style cho layout.
 
 ```jsx:title=/src/components/layout.js
 import React from "react";
@@ -265,7 +265,7 @@ body {
 }
 ```
 
-**Có thể bạn đang thắc mắc đối tượng *children* ở trên là cái gì?**
+**Có thể bạn đang thắc mắc đối tượng _children_ ở trên là cái gì?**
 
 Nếu đúng ra, mình cần phải viết code như này thì có thể bạn sẽ dễ hiểu hơn:
 
@@ -280,7 +280,7 @@ export default (props) => {
 };
 ```
 
-Thực ra, đối tượng *children* là mặc định, được truyền vào *props* khi bạn sử dụng component Layout. Giả sử bạn sử dụng Layout như sau:
+Thực ra, đối tượng _children_ là mặc định, được truyền vào _props_ khi bạn sử dụng component Layout. Giả sử bạn sử dụng Layout như sau:
 
 ```jsx
 <Layout>
@@ -288,13 +288,13 @@ Thực ra, đối tượng *children* là mặc định, được truyền và
 </Layout>
 ```
 
-Khi đó giá trị *children* là:
+Khi đó giá trị _children_ là:
 
 ```jsx
 <div>This is children</div>
 ```
 
-Bây giờ, mình sẽ sử dụng Layout Component trong 3 trang mà mình đã định nghĩa (đồng thời sửa thẻ *div* thành *h1* cho nổi bật).
+Bây giờ, mình sẽ sử dụng Layout Component trong 3 trang mà mình đã định nghĩa (đồng thời sửa thẻ _div_ thành _h1_ cho nổi bật).
 
 ```jsx:title=/src/pages/index.js
 import React from "react";
@@ -341,7 +341,7 @@ Như vậy là mình đã thiết lập Layout cơ bản cho các trang. Tiếp 
 
 #### Tạo menu
 
-Mình sẽ tạo Menu dạng React Component. Trước tiên, mình tạo mới 2 file **/src/components/menu.js** và **/src/components/menu.css**.
+Mình sẽ tạo Menu dạng React Component. Trước tiên, mình tạo mới 2 file **/src/components/menu.js** và **/src/components/menu.css**.
 
 ```jsx:title=/src/components/menu.js
 import React from "react";
@@ -423,11 +423,11 @@ Lưu lại, bạn sẽ thấy kết quả:
 
 Bạn có thể thử nhấn vào mỗi Menu item thì sẽ thấy trang web có chuyển hướng đến các trang tương ứng.
 
-Tuy nhiên, bạn cũng thấy là khi chuyển sang các trang khác (giới thiệu, liên hệ) thì trang blog bị reload. Dĩ nhiên, đây là điều bình thường đối với các trang web thông thường. Nhưng Gatsby thì khác, Gatsby.js cho phép bạn chuyển qua lại giữa các trang (thuộc blog) mà trình duyệt không cần phải reload - theo kiểu Single Page Application. Vì vậy mà các trang web viết bằng Gatsby thường tải rất nhanh. Để làm được việc này, bạn cần phải thay thế thẻ *a* bằng component *Link* của Gatsby.js.
+Tuy nhiên, bạn cũng thấy là khi chuyển sang các trang khác (giới thiệu, liên hệ) thì trang blog bị reload. Dĩ nhiên, đây là điều bình thường đối với các trang web thông thường. Nhưng Gatsby thì khác, Gatsby.js cho phép bạn chuyển qua lại giữa các trang (thuộc blog) mà trình duyệt không cần phải reload - theo kiểu Single Page Application. Vì vậy mà các trang web viết bằng Gatsby thường tải rất nhanh. Để làm được việc này, bạn cần phải thay thế thẻ _a_ bằng component _Link_ của Gatsby.js.
 
 #### Tạo liên kết giữa các trang thông qua Link component
 
-Bạn mở file */src/components/menu.js* và sửa lại thành:
+Bạn mở file _/src/components/menu.js_ và sửa lại thành:
 
 ```jsx:title=/src/components/menu.js
 import React from "react";
@@ -456,7 +456,7 @@ export default () => {
 };
 ```
 
-Trong đó, tất cả thẻ *a* đã được thay bằng *Link* component và thuộc tính _href_ được thay bằng *to*.
+Trong đó, tất cả thẻ _a_ đã được thay bằng _Link_ component và thuộc tính _href_ được thay bằng _to_.
 
 Bạn thử lưu lại và kiểm tra thì sẽ thấy giao diện trang blog không hề thay đổi. Nhưng khi mình nhấn vào các Menu item để di chuyển giữa các trang thì trang blog không bị reload lại. Thậm chí là khi bạn dừng server lại thì trang blog vẫn hoạt động bình thường (trừ khi bạn nhấn F5).
 
@@ -464,7 +464,7 @@ Bạn thử lưu lại và kiểm tra thì sẽ thấy giao diện trang blog kh
 
 Hiện tại, mình chưa thêm bài viết nào, nên cũng chưa có chuyên mục hay thẻ nào hết. Do đó, sidebar nếu có thì cũng trống rống. Tuy nhiên, mình cứ thiết kế layout để đấy trước, rồi sẽ thêm nội dung sau.
 
-Để tạo sidebar mình tạo thêm 2 file là: */src/components/sidebar.js* và  _/src/components/sidebar.css_.
+Để tạo sidebar mình tạo thêm 2 file là: _/src/components/sidebar.js_ và _/src/components/sidebar.css_.
 
 ```jsx:title=/src/components/sidebar.js
 import React from "react";
@@ -537,17 +537,17 @@ Mình nghĩ bạn có thể tưởng tượng được giao diện sau khi hoàn
 
 ### Thêm bài viết vào blog
 
-Trước khi đến các phần tiếp phía dưới, mình sẽ thêm 3 bài viết minh hoạ vào blog. Nội dung mình sẽ tham khải tại [đây](https://github.com/gatsbyjs/gatsby-starter-blog).
+Trước khi đến các phần tiếp phía dưới, mình sẽ thêm 3 bài viết minh hoạ vào blog. Nội dung mình sẽ tham khải tại [đây](https://github.com/gatsbyjs/gatsby-starter-blog).
 
-Đầu tiên, mình sẽ tạo mới một thư mục */posts* bên trong thư mục */src*. Thư mục này sẽ được sử dụng để lưu trữ nội dung các bài viết.
+Đầu tiên, mình sẽ tạo mới một thư mục _/posts_ bên trong thư mục _/src_. Thư mục này sẽ được sử dụng để lưu trữ nội dung các bài viết.
 
-Tiếp theo, mình tải starter kia trên Github về, rồi vào thư mục *\gatsby-starter-blog-master\src\pages*, copy-paste 3 thư mục (_hello-world_, *hi-folks*, *my-second-post*) vào thư mục */posts* mới tạo. Rồi sau đó, mình sẽ đổi tên 3 thư mục này thành: *2015-05-01---hello-world*, *2015-05-28---hi-folks*, *2015-05-06---my-second-post*. Mục đích của mình khi đổi tên như vậy là để dễ dàng theo dõi thứ tự bài viết theo trình tự thời gian.
+Tiếp theo, mình tải starter kia trên Github về, rồi vào thư mục _\gatsby-starter-blog-master\src\pages_, copy-paste 3 thư mục (_hello-world_, _hi-folks_, _my-second-post_) vào thư mục _/posts_ mới tạo. Rồi sau đó, mình sẽ đổi tên 3 thư mục này thành: _2015-05-01---hello-world_, _2015-05-28---hi-folks_, _2015-05-06---my-second-post_. Mục đích của mình khi đổi tên như vậy là để dễ dàng theo dõi thứ tự bài viết theo trình tự thời gian.
 
-Nếu xem qua các thư mục mình vừa copy-paste xong thì bạn sẽ thấy mỗi thư mục tương ứng với một bài viết. Tên thư mục sẽ sử dụng làm **slug** cho bài viết đó. Bên trong thư mục có một file `index.md` chứa nội dung bài viết và có thể có **ảnh** (tuỳ thuộc nội dung từng bài).
+Nếu xem qua các thư mục mình vừa copy-paste xong thì bạn sẽ thấy mỗi thư mục tương ứng với một bài viết. Tên thư mục sẽ sử dụng làm **slug** cho bài viết đó. Bên trong thư mục có một file `index.md` chứa nội dung bài viết và có thể có **ảnh** (tuỳ thuộc nội dung từng bài).
 
 Còn nội dung từng bài viết thì sao?
 
-Ví dụ bài */src/posts/2015-05-01---hello-world*:
+Ví dụ bài _/src/posts/2015-05-01---hello-world_:
 
 ```md:title=/src/posts/2015-05-01---hello-world
 ---
@@ -577,7 +577,7 @@ Oh, and here's a great quote from this Wikipedia on
 
 Mỗi bài viết trong blog với Gatsby.js sẽ có 2 phần.
 
-- Phần 1 nằm ở đầu bài viết, bên trong cặp dấu (---), gọi là *frontmatter*. Phần này chứa thông tin liên quan đến bài viết, như: tiêu đề, thời gian, chuyên mục, thẻ,... Những thông tin này hoàn toàn do mình định nghĩa. Mình cần cái gì thì thêm cái đó.
+- Phần 1 nằm ở đầu bài viết, bên trong cặp dấu (---), gọi là _frontmatter_. Phần này chứa thông tin liên quan đến bài viết, như: tiêu đề, thời gian, chuyên mục, thẻ,... Những thông tin này hoàn toàn do mình định nghĩa. Mình cần cái gì thì thêm cái đó.
 - Phần 2 nằm kế tiếp, chứa nội dung của bài viết, được viết bằng cú pháp Markdown.
 
 À mà, bài viết này chưa có thông tin về chuyên mục và thẻ. Mà mình cần 2 thông tin này cho các phần sau nên mình sẽ thêm 2 thông tin này vào mỗi bài viết.
@@ -613,13 +613,13 @@ Vì chuyên mục và thẻ có thể có nhiều nên mình để chúng vào m
 
 ### Tạo template hiển thị danh sách bài viết tại trang chủ
 
-Như mình đã nói ở trên, file */src/pages/index.js* được sử dụng làm trang chủ. Do đó, để hiển thị danh sách bài viết tại trang chủ thì mình phải sửa file này. Nhưng trước tiên mình cần phải tìm hiểu cơ chế lấy dữ liệu của Gatsby.js trước đã. Cụ thể, Gatsby.js sẽ sử dụng GraphQL (Graph Query Language).
+Như mình đã nói ở trên, file _/src/pages/index.js_ được sử dụng làm trang chủ. Do đó, để hiển thị danh sách bài viết tại trang chủ thì mình phải sửa file này. Nhưng trước tiên mình cần phải tìm hiểu cơ chế lấy dữ liệu của Gatsby.js trước đã. Cụ thể, Gatsby.js sẽ sử dụng GraphQL (Graph Query Language).
 
 Hiện tại, mình nghĩ bạn chưa cần tìm hiểu kỹ về GraphQL, vì mình chỉ sử dụng nó một cách cơ bản thôi. Bản thân mình cũng không rành về GraphQL lắm, chỉ đủ dùng thôi. Chỗ nào không biết thì lại Google (dĩ nhiên, nếu bạn master GraphQL rồi thì quá tốt).
 
 #### Thử query đầu tiên với GraphQL
 
-Trước tiên, thử một query đơn của GraphQL xem cách sử dụng nó như thế nào nhé! Bây giờ, bạn tạo mới một file *gatsby-config.js* - ngay tại thư mục gốc, ngang hàng với *package.json* ấy. Rồi sửa nội dung file đó thành:
+Trước tiên, thử một query đơn của GraphQL xem cách sử dụng nó như thế nào nhé! Bây giờ, bạn tạo mới một file _gatsby-config.js_ - ngay tại thư mục gốc, ngang hàng với _package.json_ ấy. Rồi sửa nội dung file đó thành:
 
 ```js:title=/gatsby-config.js
 module.exports = {
@@ -629,13 +629,13 @@ module.exports = {
 };
 ```
 
-Trong đó, mình thêm thuộc tính *siteMetadata* vào để lưu những thông tin cần thiết của trang blog. Tiếp theo, mình định nghĩa *title* là tên của blog. Vì hiện tại tên blog đang là *Gatsby Blog Demo* nên mình sửa nó thành *Gatsby Blog Tutorial Demo* xem thế nào.
+Trong đó, mình thêm thuộc tính _siteMetadata_ vào để lưu những thông tin cần thiết của trang blog. Tiếp theo, mình định nghĩa _title_ là tên của blog. Vì hiện tại tên blog đang là _Gatsby Blog Demo_ nên mình sửa nó thành _Gatsby Blog Tutorial Demo_ xem thế nào.
 
-Dĩ nhiên, bây giờ trang blog vẫn chưa có gì thay đổi. Để áp dụng *title* mới này cho toàn bộ trang blog mình sẽ thêm nó vào */src/components/layout.js*. Tuy nhiên, Layout không phải là một Page nên sẽ không thể query bình thường được, mà phải dùng [StaticQuery](https://www.gatsbyjs.org/docs/static-query/) - đây là API mới có ở Gatsby v2.
+Dĩ nhiên, bây giờ trang blog vẫn chưa có gì thay đổi. Để áp dụng _title_ mới này cho toàn bộ trang blog mình sẽ thêm nó vào _/src/components/layout.js_. Tuy nhiên, Layout không phải là một Page nên sẽ không thể query bình thường được, mà phải dùng [StaticQuery](https://www.gatsbyjs.org/docs/static-query/) - đây là API mới có ở Gatsby v2.
 
 #### Cách sử dụng query GraphQL thông thường
 
-Nếu không dùng StaticQuery, mình sẽ phải query data trong 3 file  _/src/pages/index.js_, */src/pages/gioi-thieu.js*, */src/pages/lien-he.js*, tương ứng với 3 trang (sử dụng cách này sẽ dễ tiếp cận hơn nhưng code sẽ bị lặp lại). Mà bạn đừng vội thay đổi code giống 3 đoạn phía dưới nhé, mình chỉ nói nếu dùng cách này thì mới sửa thôi. Nên 3 đoạn sau chỉ dùng để tham khảo.
+Nếu không dùng StaticQuery, mình sẽ phải query data trong 3 file _/src/pages/index.js_, _/src/pages/gioi-thieu.js_, _/src/pages/lien-he.js_, tương ứng với 3 trang (sử dụng cách này sẽ dễ tiếp cận hơn nhưng code sẽ bị lặp lại). Mà bạn đừng vội thay đổi code giống 3 đoạn phía dưới nhé, mình chỉ nói nếu dùng cách này thì mới sửa thôi. Nên 3 đoạn sau chỉ dùng để tham khảo.
 
 ```jsx:title=/src/pages/index.js
 import React from "react";
@@ -709,13 +709,13 @@ export const query = graphql`
 `;
 ```
 
-Trong đó, mình đã import thêm *graphql* từ *gatsby*. Rồi viết câu lệnh query *title* ở phía dưới cùng. Ngoài ra, trong phần định nghĩa React Component, mình bổ sung thêm thuộc tính *data*. Thuộc tính này tương ứng với dữ liệu đã query ở phía dưới.
+Trong đó, mình đã import thêm _graphql_ từ _gatsby_. Rồi viết câu lệnh query _title_ ở phía dưới cùng. Ngoài ra, trong phần định nghĩa React Component, mình bổ sung thêm thuộc tính _data_. Thuộc tính này tương ứng với dữ liệu đã query ở phía dưới.
 
 Bạn thấy đó, code bị lặp lại ở cả 3 file. Điều này là không nên. Vì vậy, mình sẽ sử dụng StaticQuery.
 
 #### Query GraphQL sử dụng StaticQuery
 
-Mình sẽ sửa lại file */src/components/layout.js*:
+Mình sẽ sửa lại file _/src/components/layout.js_:
 
 ```jsx:title=/src/components/layout.js
 import React from "react";
@@ -754,9 +754,9 @@ export default (props) => {
 };
 ```
 
-Tương tự như bên trên, nhưng bây giờ mình viết thẳng query của GraphQL bên trong StaticQuery luôn. Để truy cập đến giá trị *title* mình sử dụng  _data.site.siteMetadata.title_.
+Tương tự như bên trên, nhưng bây giờ mình viết thẳng query của GraphQL bên trong StaticQuery luôn. Để truy cập đến giá trị _title_ mình sử dụng _data.site.siteMetadata.title_.
 
-Rồi trong đó, mình lại truyền *title* đến Menu. Và để hiển thị *title* mới này trong Menu, mình sửa file */src/components/menu.js* như sau.
+Rồi trong đó, mình lại truyền _title_ đến Menu. Và để hiển thị _title_ mới này trong Menu, mình sửa file _/src/components/menu.js_ như sau.
 
 ```jsx:title=/src/components/menu.js
 import React from "react";
@@ -787,13 +787,13 @@ export default (props) => {
 };
 ```
 
-Để xem kết quả như nào, lần này bạn phải **Restart** lại server. Nhớ là mỗi khi thay đổi file ngoài thư mục */src* như */gatsby-config.js* hay thay đổi cú pháp query trong phần *graphql* thì bạn phải **Restart** lại server. Kết quả là *title* mới đã được áp dụng:
+Để xem kết quả như nào, lần này bạn phải **Restart** lại server. Nhớ là mỗi khi thay đổi file ngoài thư mục _/src_ như _/gatsby-config.js_ hay thay đổi cú pháp query trong phần _graphql_ thì bạn phải **Restart** lại server. Kết quả là _title_ mới đã được áp dụng:
 
 ![Thay đổi title sử dụng GraphQL](../../../images/react/gatsby-thay-doi-title.png)
 
 #### Sử dụng công cụ đồ hoạ GraphiQL
 
-Ngoài ra, để biết kết quả câu lệnh query graphQL kia như thế nào, bạn có thể sử dụng công cụ GraphiQL bằng cách vào địa chỉ `http://localhost:8000/___graphql` và copy-paste đoạn query trên vào:
+Ngoài ra, để biết kết quả câu lệnh query graphQL kia như thế nào, bạn có thể sử dụng công cụ GraphiQL bằng cách vào địa chỉ `http://localhost:8000/___graphql` và copy-paste đoạn query trên vào:
 
 ```jsx
 {
@@ -823,11 +823,11 @@ Kết quả trả về là một Object:
 }
 ```
 
-Điều này giải thích tại sao mình lại truy cập đến *title* bằng cách  *data.site.siteMetadata.title* như trên.
+Điều này giải thích tại sao mình lại truy cập đến _title_ bằng cách _data.site.siteMetadata.title_ như trên.
 
 #### Query danh sách các bài viết để hiển thị lên trang chủ
 
-Như mình đã nói ở trên, Gatsby có thể lấy dữ liệu từ các file Markdown hoặc từ CMS (Contentful, Wordpress) hay REST API,... Nhưng ở đây, mình sẽ lấy dữ liệu bài viết từ các file Markdown trên hệ thống. Để làm được việc này, mình cần sử dụng một plugin của Gatsby là *gatsby-source-filesystem*.
+Như mình đã nói ở trên, Gatsby có thể lấy dữ liệu từ các file Markdown hoặc từ CMS (Contentful, Wordpress) hay REST API,... Nhưng ở đây, mình sẽ lấy dữ liệu bài viết từ các file Markdown trên hệ thống. Để làm được việc này, mình cần sử dụng một plugin của Gatsby là _gatsby-source-filesystem_.
 
 Trước tiên, cài đặt plugin này bằng câu lệnh:
 
@@ -835,7 +835,7 @@ Trước tiên, cài đặt plugin này bằng câu lệnh:
 $ npm install --save gatsby-source-filesystem
 ```
 
-Sau khi cài đặt xong, bạn khai báo plugin này trong file */gatsby-config.js*:
+Sau khi cài đặt xong, bạn khai báo plugin này trong file _/gatsby-config.js_:
 
 ```js:title=/gatsby-config.js
 module.exports = {
@@ -854,15 +854,15 @@ module.exports = {
 };
 ```
 
-Trong đó, phần *options.path*, mình khai báo giá trị của nó đến thư mục `/src` hay `${__dirname}/src/`. Vì các page, post của mình chỉ nằm trong thư mục này.
+Trong đó, phần _options.path_, mình khai báo giá trị của nó đến thư mục `/src` hay `${__dirname}/src/`. Vì các page, post của mình chỉ nằm trong thư mục này.
 
-Tuy nhiên, đến đây mình mới chỉ quét được hết các file trong thư mục */src*. Cái mình cần phải cụ thể hơn, đó là quét được các file Markdown. Vì các bài viết của mình được viết dưới dạng Markdown. Vì vậy, mình cài tiếp plugin *gatsby-transformer-remark* bằng câu lệnh:
+Tuy nhiên, đến đây mình mới chỉ quét được hết các file trong thư mục _/src_. Cái mình cần phải cụ thể hơn, đó là quét được các file Markdown. Vì các bài viết của mình được viết dưới dạng Markdown. Vì vậy, mình cài tiếp plugin _gatsby-transformer-remark_ bằng câu lệnh:
 
 ```bash
 $ npm install --save gatsby-transformer-remark
 ```
 
-Rồi lại add nó vào file */gatsby-config.js*:
+Rồi lại add nó vào file _/gatsby-config.js_:
 
 ```js:title=/gatsby-config.js
 module.exports = {
@@ -888,7 +888,7 @@ Lưu lại và restart server rồi thử query các file Markdown trên GraphiQ
 
 Kết quả là mình tìm thấy 3 file Markdown - tương ứng với 3 bài viết mà mình đã copy-paste vào phía trên.
 
-Bây giờ, mình sẽ sửa file */src/pages/index.js* để hiển thị danh sách các bài viết lên trang chủ:
+Bây giờ, mình sẽ sửa file _/src/pages/index.js_ để hiển thị danh sách các bài viết lên trang chủ:
 
 ```jsx:title=/src/pages/index.js
 import React from "react";
@@ -937,11 +937,11 @@ Kết quả là mình đã thu được một danh sách các bài viết trên 
 
 ![Thêm bài viết lên trang chủ Gatsby](../../../images/react/gatsby-list-homepage.png)
 
-Tuy nhiên, hiện tại mình muốn click vào mỗi bài viết thì phải nhảy đến nội dung bài viết tương ứng thì lại chưa làm được. Vì vậy, mình cần phải tạo thêm *slug* cho mỗi bài viết.
+Tuy nhiên, hiện tại mình muốn click vào mỗi bài viết thì phải nhảy đến nội dung bài viết tương ứng thì lại chưa làm được. Vì vậy, mình cần phải tạo thêm _slug_ cho mỗi bài viết.
 
 #### Tạo slug cho mỗi bài viết
 
-Mình cần phải tạo slug cho mỗi bài viết để có thể link đến chúng. Để làm việc này, đầu tiên mình phải tạo mới file */gatsby-node.js* và sửa file:
+Mình cần phải tạo slug cho mỗi bài viết để có thể link đến chúng. Để làm việc này, đầu tiên mình phải tạo mới file _/gatsby-node.js_ và sửa file:
 
 ```js:title=/gatsby-node.js
 const path = require(`path`);
@@ -967,13 +967,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 };
 ```
 
-Trong đó, *onCreateNode* là một Gatsby API được gọi mỗi khi có một node mới thêm vào hay chỉnh sửa (mỗi node chính là một file). Mục đích của hàm này là mình sẽ tạo thêm trường *slug* cho mỗi node với *slug* có được bằng cách lấy tên thư mục và tách lấy phần bên phải của dấu (---).
+Trong đó, _onCreateNode_ là một Gatsby API được gọi mỗi khi có một node mới thêm vào hay chỉnh sửa (mỗi node chính là một file). Mục đích của hàm này là mình sẽ tạo thêm trường _slug_ cho mỗi node với _slug_ có được bằng cách lấy tên thư mục và tách lấy phần bên phải của dấu (---).
 
-Ví dụ bài viết ứng với thư mục *2015-05-01---hello-world*, mình sẽ lấy thành phần bên phải dấu (---) làm *slug* cho bài viết.
+Ví dụ bài viết ứng với thư mục _2015-05-01---hello-world_, mình sẽ lấy thành phần bên phải dấu (---) làm _slug_ cho bài viết.
 
-Do đó, bài viết ứng với thư mục này sẽ có địa chỉ là `http://localhost:8000/hello-world/` (tương tự với các bài viết khác).
+Do đó, bài viết ứng với thư mục này sẽ có địa chỉ là `http://localhost:8000/hello-world/` (tương tự với các bài viết khác).
 
-Bây giờ mình sẽ sửa file */src/pages/index.js* thành:
+Bây giờ mình sẽ sửa file _/src/pages/index.js_ thành:
 
 ```jsx:title=/src/pages/index.js
 import React from "react";
@@ -1021,11 +1021,11 @@ export const query = graphql`
 `;
 ```
 
-Bây giờ, *title* của mỗi bài viết đã được đặt trong *Link* component.
+Bây giờ, _title_ của mỗi bài viết đã được đặt trong _Link_ component.
 
 ![Tạo slug liên kết đến mỗi bài viết từ trang chủ](../../../images/react/gatsby-create-page-slug.png)
 
-Lưu lại và restart server. Rồi sau đó bạn có thể nhấn thử vào *title* của mỗi bài viết để xem nó có nhảy đến đúng địa chỉ của mỗi bài viết không.
+Lưu lại và restart server. Rồi sau đó bạn có thể nhấn thử vào _title_ của mỗi bài viết để xem nó có nhảy đến đúng địa chỉ của mỗi bài viết không.
 
 ![Nội dung bài viết chưa tồn tại](../../../images/react/gatsby-post-404.png)
 
@@ -1035,7 +1035,7 @@ Lưu lại và restart server. Rồi sau đó bạn có thể nhấn thử vào�
 
 #### Tạo ra trang tương ứng với mỗi bài viết
 
-Để làm việc này, mình cần phải sử dụng một Gatsby API khác là _createPages_. Mình tiếp tục sửa file */gatsby-node.js*.
+Để làm việc này, mình cần phải sử dụng một Gatsby API khác là _createPages_. Mình tiếp tục sửa file _/gatsby-node.js_.
 
 ```js:title=/gatsby-node.js
 /*
@@ -1073,13 +1073,13 @@ exports.createPages = ({ graphql, actions }) => {
 };
 ```
 
-Đoạn này có ý nghĩa là mình sẽ tạo ra các trang tương ứng với mỗi file Markdown, với đường dẫn *path* chính là *slug* của mỗi node, và nội dung được sử dụng dựa trên một template ở file */src/templates/blog-post.js*.
+Đoạn này có ý nghĩa là mình sẽ tạo ra các trang tương ứng với mỗi file Markdown, với đường dẫn _path_ chính là _slug_ của mỗi node, và nội dung được sử dụng dựa trên một template ở file _/src/templates/blog-post.js_.
 
 Dĩ nhiên, đến đây thì mọi thứ vẫn chưa có gì thay đổi. Vì mình chưa tạo file template kia.
 
 #### Tạo template cho mỗi bài viết
 
-Đầu tiên, tạo file */src/templates/blog-post.js* và sửa nội dung nó thành:
+Đầu tiên, tạo file _/src/templates/blog-post.js_ và sửa nội dung nó thành:
 
 ```jsx:title=/src/templates/blog-post.js
 import React from "react";
@@ -1110,11 +1110,11 @@ export const query = graphql`
 `;
 ```
 
-Câu lệnh query phần này có vẻ hơi khác so với phần trước. Đó là nó chứa tham số *\$slug*. Cũng đúng thôi, vì với mỗi bài viết khác nhau thì *slug* cũng khác. Vì vậy, mình cần thông tin này để query đúng bài viết tương ứng.
+Câu lệnh query phần này có vẻ hơi khác so với phần trước. Đó là nó chứa tham số _\$slug_. Cũng đúng thôi, vì với mỗi bài viết khác nhau thì _slug_ cũng khác. Vì vậy, mình cần thông tin này để query đúng bài viết tương ứng.
 
-Vấn đề là giá trị *\$slug* ở đây lấy ở đâu ra?
+Vấn đề là giá trị _\$slug_ ở đây lấy ở đâu ra?
 
-Xem lại phần trước, chỗ *createPage*:
+Xem lại phần trước, chỗ _createPage_:
 
 ```js
 createPage({
@@ -1126,7 +1126,7 @@ createPage({
 });
 ```
 
-Ở đây, thuộc tính *slug* bên trong phần *context* sẽ được truyền sang template kia và đóng vai trò là *\$slug* trong câu lệnh GraphQL phía trên.
+Ở đây, thuộc tính _slug_ bên trong phần _context_ sẽ được truyền sang template kia và đóng vai trò là _\$slug_ trong câu lệnh GraphQL phía trên.
 
 Bây giờ, bạn lưu lại và restart server thì sẽ thấy kết quả:
 
@@ -1138,15 +1138,15 @@ Bây giờ, bạn lưu lại và restart server thì sẽ thấy kết quả:
 
 Trong demo này, mình sẽ chỉ xử lý thêm trường hợp nội dung bài viết chứa ảnh. Các trường hợp khác bạn có thể tự tìm kiếm plugin của Gatsby có hỗ trợ để làm.
 
-Để xử lý phần hiển thị ảnh trong Markdown, mình cần cài thêm plugin *gatsby-remark-images* bằng câu lệnh:
+Để xử lý phần hiển thị ảnh trong Markdown, mình cần cài thêm plugin _gatsby-remark-images_ bằng câu lệnh:
 
 ```bash
 $ npm install --save gatsby-remark-images gatsby-plugin-sharp
 ```
 
-_Ở đây mình có cài thêm plugin gatsby-plugin-sharp vì gatsby-remark-images cần sử dụng plugin này._
+_Ở đây mình có cài thêm plugin gatsby-plugin-sharp vì gatsby-remark-images cần sử dụng plugin này._
 
-Tiếp theo mình sửa lại file */gatsby-config.js*:
+Tiếp theo mình sửa lại file _/gatsby-config.js_:
 
 ```js:title=/gatsby-config.js
 module.exports = {
@@ -1178,7 +1178,7 @@ module.exports = {
 };
 ```
 
-Vì plugin *gatsby-remark-images* để xử lý ảnh sử dụng trong Markdown nên mình phải đặt nó trong phần *plugins* của *gatsby-transformer-remark*.
+Vì plugin _gatsby-remark-images_ để xử lý ảnh sử dụng trong Markdown nên mình phải đặt nó trong phần _plugins_ của _gatsby-transformer-remark_.
 
 Bây giờ, chạy lại server và bạn sẽ thấy kết quả như mong đợi:
 
@@ -1192,9 +1192,9 @@ Như vậy là đã gần xong rồi. Tiếp theo mình sẽ chia sẻ phần ph
 
 #### Liệt kê các chuyên mục và thẻ lên sidebar
 
-Trước khi hiển thị danh sách các bài viết theo chuyên mục hay thẻ thì mình cần phải liệt kê chúng và cho lên sidebar trước đã. Để làm được việc này, mình sẽ sửa trong file */src/components/layout.js*.
+Trước khi hiển thị danh sách các bài viết theo chuyên mục hay thẻ thì mình cần phải liệt kê chúng và cho lên sidebar trước đã. Để làm được việc này, mình sẽ sửa trong file _/src/components/layout.js_.
 
-Ý tưởng của mình là sẽ duyệt hết tất cả các bài viết và lấy ra mảng các chuyên mục và thẻ ở mỗi bài, rồi sử dụng chúng để liệt kê chúng lên sidebar. Nhưng trước tiên mình sẽ cài đặt một node module tên là *slug* - để chuyển tên chuyên mục, thẻ thành *slug*.
+Ý tưởng của mình là sẽ duyệt hết tất cả các bài viết và lấy ra mảng các chuyên mục và thẻ ở mỗi bài, rồi sử dụng chúng để liệt kê chúng lên sidebar. Nhưng trước tiên mình sẽ cài đặt một node module tên là _slug_ - để chuyển tên chuyên mục, thẻ thành _slug_.
 
 Module này có hỗ trợ tiếng việt. Ví dụ: chuyên mục "Lập trình JavaScript" sẽ chuyển thành "lap-trinh-javascript".
 
@@ -1204,7 +1204,7 @@ Câu lệnh cài đặt như sau:
 $ npm install --save slug
 ```
 
-Sau đó mình bắt đầu sửa file */src/components/layout.js*.
+Sau đó mình bắt đầu sửa file _/src/components/layout.js_.
 
 ```js:title=/src/components/layout.js
 import React from "react";
@@ -1309,7 +1309,7 @@ aside {
 }
 ```
 
-Có một điều cần chú ý ở đây là các chuyên mục và thẻ có thể xuất hiện ở nhiều bài viết. Vì vậy, mình cần phải sử dụng kiểu dữ liệu [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) để tạo ra mảng các chuyên mục và thẻ với các phần tử là duy nhất.
+Có một điều cần chú ý ở đây là các chuyên mục và thẻ có thể xuất hiện ở nhiều bài viết. Vì vậy, mình cần phải sử dụng kiểu dữ liệu [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) để tạo ra mảng các chuyên mục và thẻ với các phần tử là duy nhất.
 
 ```js
 let tags = [];
@@ -1327,11 +1327,11 @@ Sau khi đã có mảng các chuyên mục và thẻ với các phần tử là 
 
 ![Liệt kê thẻ, chuyên mục lên sidebar](../../../images/react/gatsby-liet-ke-chuyen-muc-the.png)
 
-Cũng tương tự như phần liệt kê danh sách cách bài viết tại trang chủ, lúc này mình mới chỉ liệt kê ra các thẻ với *Link* đến trang tương ứng mà chưa định nghĩa các trang đó. Phần tiếp theo mình sẽ thực hiện việc này.
+Cũng tương tự như phần liệt kê danh sách cách bài viết tại trang chủ, lúc này mình mới chỉ liệt kê ra các thẻ với _Link_ đến trang tương ứng mà chưa định nghĩa các trang đó. Phần tiếp theo mình sẽ thực hiện việc này.
 
 #### Tạo các trang tương ứng với chuyên mục và thẻ
 
-Để tạo ra các trang tương ứng với chuyên mục và thẻ mình cần phải thực hiện trong Gatsby API *createPages* ở file */gatsby-node.js*.
+Để tạo ra các trang tương ứng với chuyên mục và thẻ mình cần phải thực hiện trong Gatsby API _createPages_ ở file _/gatsby-node.js_.
 
 ```js:title=/gatsby-node.js
 const path = require(`path`);
@@ -1412,9 +1412,9 @@ exports.createPages = ({ graphql, actions }) => {
 };
 ```
 
-Trong phần query GraphQL mình cũng thêm phần query _categories_ và _tags_ để sử dụng trong phần *then*. Trong phần *then*, đầu tiên mình cũng thêm phần duyệt để tạo ra mảng các chuyên mục và thẻ với các phần tử là duy nhất bên trên.
+Trong phần query GraphQL mình cũng thêm phần query _categories_ và _tags_ để sử dụng trong phần _then_. Trong phần _then_, đầu tiên mình cũng thêm phần duyệt để tạo ra mảng các chuyên mục và thẻ với các phần tử là duy nhất bên trên.
 
-Phần tạo ra các trang với thẻ và chuyên mục cũng tương tự như phần tạo ra các trang với mỗi bài viết. Trong đó mình định nghĩa lại phần đường dẫn *path* tương ứng. Trang để hiển thị các chuyên mục sử dụng template tại file *./src/templates/categories.js* và trang hiển thị các thẻ sử dụng template tại file _./src/templates/tags.js_. Và mình cũng không quên truyền tham số trong phần *context* để có thể sử dụng trong các file template.
+Phần tạo ra các trang với thẻ và chuyên mục cũng tương tự như phần tạo ra các trang với mỗi bài viết. Trong đó mình định nghĩa lại phần đường dẫn _path_ tương ứng. Trang để hiển thị các chuyên mục sử dụng template tại file _./src/templates/categories.js_ và trang hiển thị các thẻ sử dụng template tại file _./src/templates/tags.js_. Và mình cũng không quên truyền tham số trong phần _context_ để có thể sử dụng trong các file template.
 
 Khi đó, các file template sẽ được triển khai như sau đây:
 
@@ -1522,9 +1522,9 @@ export const query = graphql`
 `;
 ```
 
-Thực ra, nội dung của 2 file này gần giống như */src/pages/index.js*, chỉ khác ở chỗ là mình không sử dụng tham số được truyền từ */gatsby-node.js* vào phần query GraphQL như phần *\$slug* ở phía trên. Lần này mình sử dụng nó trong phần React Component.
+Thực ra, nội dung của 2 file này gần giống như _/src/pages/index.js_, chỉ khác ở chỗ là mình không sử dụng tham số được truyền từ _/gatsby-node.js_ vào phần query GraphQL như phần _\$slug_ ở phía trên. Lần này mình sử dụng nó trong phần React Component.
 
-Giá trị của các tham số *category* và *tag* được lấy từ đối tượng *pageContext*:
+Giá trị của các tham số _category_ và _tag_ được lấy từ đối tượng _pageContext_:
 
 ```js
 const { category } = pageContext;
@@ -1538,39 +1538,39 @@ const tagEdges = data.allMarkdownRemark.edges.filter(({ node }) =>
 );
 ```
 
-Khi đã có được giá trị *category* hay *tag* hiện tại rồi, thì mình chỉ cần sử dụng phương thức [filter](/javascript-foreach-la-cai-quai-gi/) để lọc lấy những bài viết chứa *category* và những bài viết chứa *tag* hiện tại. Vì mục đích của mình là phân loại các bài viết theo chuyên mục và thẻ mà.
+Khi đã có được giá trị _category_ hay _tag_ hiện tại rồi, thì mình chỉ cần sử dụng phương thức [filter](/javascript-foreach-la-cai-quai-gi/) để lọc lấy những bài viết chứa _category_ và những bài viết chứa _tag_ hiện tại. Vì mục đích của mình là phân loại các bài viết theo chuyên mục và thẻ mà.
 
 Bây giờ, bạn lưu lại và restart server thì sẽ thấy mọi thứ hoạt động khá ổn định và đúng như mong đợi rồi. Công việc tiếp theo sẽ là deploy trang blog lên Netlify nữa là xong.
 
 ## Deploy trang blog lên Netlify
 
-Trước khi đi vào phần chính mình muốn trả lời câu hỏi: *tại sao mình lựa chọn Netlify mà không phải Github Pages hay một số nền tảng khác?*
+Trước khi đi vào phần chính mình muốn trả lời câu hỏi: _tại sao mình lựa chọn Netlify mà không phải Github Pages hay một số nền tảng khác?_
 
-Theo như tài liệu, Gatsby hỗ trợ deploy sản phẩm lên: [Netlify](https://v1.gatsbyjs.org/docs/deploy-gatsby/#netlify), [S3/Cloudfront](https://v1.gatsbyjs.org/docs/deploy-gatsby/#amazon-s3-and-cloudfront), [GitHub Pages](https://v1.gatsbyjs.org/docs/deploy-gatsby/#github-pages), [GitLab Pages](https://v1.gatsbyjs.org/docs/deploy-gatsby/#gitlab-pages), [Heroku](https://v1.gatsbyjs.org/docs/deploy-gatsby/#heroku), [Now](https://v1.gatsbyjs.org/docs/deploy-gatsby/#now).
+Theo như tài liệu, Gatsby hỗ trợ deploy sản phẩm lên: [Netlify](https://v1.gatsbyjs.org/docs/deploy-gatsby/#netlify), [S3/Cloudfront](https://v1.gatsbyjs.org/docs/deploy-gatsby/#amazon-s3-and-cloudfront), [GitHub Pages](https://v1.gatsbyjs.org/docs/deploy-gatsby/#github-pages), [GitLab Pages](https://v1.gatsbyjs.org/docs/deploy-gatsby/#gitlab-pages), [Heroku](https://v1.gatsbyjs.org/docs/deploy-gatsby/#heroku), [Now](https://v1.gatsbyjs.org/docs/deploy-gatsby/#now).
 
 Tuy nhiên, sau khi đọc qua thì mình thấy chỉ có Netlify và Github Pages là đơn giản nhất. Trong đó, Github Pages thì mình đã sử dụng khá nhiều nên rất quen thuộc.
 
 ### Nhược điểm khi deploy Gatsby lên Github Pages
 
-Nhưng bạn biết đấy, với mỗi tài khoản Github thì mình chỉ có thể tạo ra một trang chính thôi. Ví dụ: tài khoản của mình là *username*. Khi đó, trang chính của mình sẽ là **_username.github.io_**.
+Nhưng bạn biết đấy, với mỗi tài khoản Github thì mình chỉ có thể tạo ra một trang chính thôi. Ví dụ: tài khoản của mình là _username_. Khi đó, trang chính của mình sẽ là **_username.github.io_**.
 
-Bây giờ, nếu mình deploy một project *gatsby-tutorial* lên thì địa chỉ trang web tương ứng với nó sẽ là `username.github.io/gatsby-tutorial/`. Tuy nhiên, nếu mình muốn custom domain thành *gatsby-tutorial.phamvanlam.com* (vì [phamvanlam.com](https://phamvanlam.com) là tên miền của mình), thì lại không được.
+Bây giờ, nếu mình deploy một project _gatsby-tutorial_ lên thì địa chỉ trang web tương ứng với nó sẽ là `username.github.io/gatsby-tutorial/`. Tuy nhiên, nếu mình muốn custom domain thành _gatsby-tutorial.phamvanlam.com_ (vì [phamvanlam.com](https://phamvanlam.com) là tên miền của mình), thì lại không được.
 
-Không lẽ mình phải tạo mới một tài khoản Github với tên *gatsby-tutorial*. Khi đó, địa chỉ trang blog là *gatsby-tutorial.github.io*. Lúc này, mình có thể custom domain được. Nhưng làm như vậy thì quá mất công.
+Không lẽ mình phải tạo mới một tài khoản Github với tên _gatsby-tutorial_. Khi đó, địa chỉ trang blog là _gatsby-tutorial.github.io_. Lúc này, mình có thể custom domain được. Nhưng làm như vậy thì quá mất công.
 
 ### Netlify có ưu điểm gì nổi bật?
 
-Đó là lý do mình chuyển sang sử dụng Netlify. Khi deploy lên Netlify thì tên miền của blog dự định sẽ là **_gatsby-tutorial.netlify.com_** (nếu như tên miền này còn tồn tại). Nghĩa là mình có thể custom domain được.
+Đó là lý do mình chuyển sang sử dụng Netlify. Khi deploy lên Netlify thì tên miền của blog dự định sẽ là **_gatsby-tutorial.netlify.com_** (nếu như tên miền này còn tồn tại). Nghĩa là mình có thể custom domain được.
 
 Không những thế, Netlify còn hỗ trợ cài đặt SSL miễn phí, tốc độ cũng khá nhanh, ổn định và mỗi khi bạn commit code lên Github thì Netlify sẽ tự động build lại trang blog cho bạn. Như vậy thì còn gì bằng phải không.
 
 ### Submit project lên Github
 
-Trước tiên, mình sẽ tạo mới một respository trên Github với tên là *gatsby-tutorial*.
+Trước tiên, mình sẽ tạo mới một respository trên Github với tên là _gatsby-tutorial_.
 
 ![Tạo mới repository trên Github](../../../images/react/github-tao-moi-repository.png)
 
-Sau khi nhấn vào button *Create repository* thì bạn sẽ được dẫn đến một gợi ý:
+Sau khi nhấn vào button _Create repository_ thì bạn sẽ được dẫn đến một gợi ý:
 
 ![Commit project lên Github](../../../images/react/github-commit-project.png)
 
@@ -1591,7 +1591,7 @@ Sau khi việc upload code lên Github thành công. Mình bắt đầu deploy n
 
 #### Tạo trang Netlify mới và deploy
 
-Đầu tiên, bạn vào trang [create a new site](https://app.netlify.com/start).
+Đầu tiên, bạn vào trang [create a new site](https://app.netlify.com/start).
 
 ![Đăng nhập vào Netlify](../../../images/react/netlify-create-new-site.png)
 
@@ -1603,7 +1603,7 @@ Sau khi đăng nhập thành công, bạn bắt đầu được chuyển đến 
 
 ![Bắt đầu tạo trang mới](../../../images/react/netlify-create-new-site-start.png)
 
-Mình sẽ chọn mục *GitHub*. Sau đó, Netlify sẽ yêu cầu Authorize Github.
+Mình sẽ chọn mục _GitHub_. Sau đó, Netlify sẽ yêu cầu Authorize Github.
 
 ![Netlify sẽ yêu cầu Authorize Github](../../../images/react/netlify-authorize-github.png)
 
@@ -1611,11 +1611,11 @@ Bạn nhấn vào button màu xanh để đồng ý là OK.
 
 ![Chọn repository để install](../../../images/react/netlify-choose-project-1.png)
 
-Tiếp theo, mình chọn repository vừa upload lên github, rồi nhấn *Install*.
+Tiếp theo, mình chọn repository vừa upload lên github, rồi nhấn _Install_.
 
 ![Bắt đầu deploy](../../../images/react/netlify-bat-dau-cai-dat.png)
 
-Tiếp theo, mình chọn vào phần gạch vàng như trong hình trên, rồi nhấn vào *Deploy Site*.
+Tiếp theo, mình chọn vào phần gạch vàng như trong hình trên, rồi nhấn vào _Deploy Site_.
 
 ![Chọn nhánh để deploy](../../../images/react/netlify-deploy-site.png)
 
@@ -1629,11 +1629,11 @@ Trong lúc chờ cài đặt thành công, mình sẽ thay đổi tên của blo
 
 ![Tên mặc định của Netlify khá xấu](../../../images/react/netlify-ten-mac-dinh.png)
 
-Mình sẽ nhấn vào *Site settings* để thay đổi *Site name*. Phần tiếp theo khá đơn giản, bạn cứ làm theo hướng dẫn như trên giao diện là được.
+Mình sẽ nhấn vào _Site settings_ để thay đổi _Site name_. Phần tiếp theo khá đơn giản, bạn cứ làm theo hướng dẫn như trên giao diện là được.
 
-Lúc đầu mình định lấy tên *gatsby-tutorial* nhưng tiếc là tên này đã tồn tại, nên mình lấy tên *gatsby-tutorial-demo*.
+Lúc đầu mình định lấy tên _gatsby-tutorial_ nhưng tiếc là tên này đã tồn tại, nên mình lấy tên _gatsby-tutorial-demo_.
 
-Kết quả trang blog của mình bây giờ có địa chỉ: *[https://gatsby-tutorial-demo.netlify.com](https://gatsby-tutorial-demo.netlify.com)*.
+Kết quả trang blog của mình bây giờ có địa chỉ: _[https://gatsby-tutorial-demo.netlify.com](https://gatsby-tutorial-demo.netlify.com)_.
 
 ![Kết quả Gatsby blog sau khi deploy lên Netlify khá ngon lành](../../../images/react/netlify-live.png)
 

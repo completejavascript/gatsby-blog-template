@@ -16,7 +16,7 @@ tags:
 
 Trước khi bắt đầu, mình muốn bạn hiểu tại sao mình lại viết về phương thức Reduce trong JavaScript mà không phải là một cái nào khác.
 
-Bởi lẽ, Reduce là một trong 3 phương thức quan trọng hay sử dụng trong lập trình hàm, đó là [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) và [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce). Việc sử dụng Reduce sẽ giúp cho code của bạn trở nên sáng sủa và ngắn gọn hơn rất nhiều.
+Bởi lẽ, Reduce là một trong 3 phương thức quan trọng hay sử dụng trong lập trình hàm, đó là [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) và [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce). Việc sử dụng Reduce sẽ giúp cho code của bạn trở nên sáng sủa và ngắn gọn hơn rất nhiều.
 
 Dĩ nhiên, đây chỉ là quan điểm cá nhân của mình thôi. Nếu bạn có ý kiến đóng góp, thảo luận, vui lòng để lại dưới phần bình luận nhé. Còn bây giờ thì mời bạn theo dõi bài viết!
 
@@ -32,7 +32,7 @@ arr.reduce(callback[, initialValue])
 
 Trong đó:
 
-- **callback**: là hàm thực thi với từng phần tử của hàm, với 4 tham số là: accumulator, currentValue, currentIndex và array.
+- **callback**: là hàm thực thi với từng phần tử của hàm, với 4 tham số là: accumulator, currentValue, currentIndex và array.
   - **accumulator**: biến tích lũy, được trả về sau mỗi lần gọi hàm callback.
   - **currentValue**: phần tử của mảng đang được xử lý.
   - **currentIndex**: chỉ số của phần tử trong mảng đang được xử lý.

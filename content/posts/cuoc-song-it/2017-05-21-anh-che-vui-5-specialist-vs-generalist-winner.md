@@ -21,7 +21,7 @@ a person who devotes himself or herself to one subject or to one particular bran
 
 ## Generalist
 
-a person whose knowledge, aptitudes, and skills are applied to a field as a whole or to a variety of different fields.
+a person whose knowledge, aptitudes, and skills are applied to a field as a whole or to a variety of different fields.
 
 ## Comment
 
@@ -29,7 +29,7 @@ This picture is just [funny](/tag/anh-che/). It's hard to choose who is the winn
 
 What do you think about this? I would like to know your opinion.
 
-See you in the next post, thank you!
+See you in the next post, thank you!
 
 ## Similar posts
 

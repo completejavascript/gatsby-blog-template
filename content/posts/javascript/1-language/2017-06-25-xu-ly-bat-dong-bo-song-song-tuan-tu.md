@@ -85,7 +85,7 @@ time: 4504.9638671875ms
 */
 ```
 
-Trong ví dụ trên, mình sử dụng [console.time và console.timeEnd](/thu-thuat-su-dung-console-hieu-qua/) để tính toán thời gian thực hiện. Kết quả thu được cỡ **4500 ms**.  Đó chính là **tổng thời gian thực hiện của 3 hành động**.
+Trong ví dụ trên, mình sử dụng [console.time và console.timeEnd](/thu-thuat-su-dung-console-hieu-qua/) để tính toán thời gian thực hiện. Kết quả thu được cỡ **4500 ms**. Đó chính là **tổng thời gian thực hiện của 3 hành động**.
 
 **Cụ thể:**
 

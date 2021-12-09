@@ -20,21 +20,21 @@ Xin chào bạn đến với Học React qua ví dụ #10. Bài này mình sẽ 
   Xem Demo
 </a>
 
-Bạn thấy cái này quen không ạ? Nó chính là phần mềm Sticky Notes trên hệ điều hành Windows 7. Thực tế, mình đã xây dựng nó dựa trên [Draggable Note](/hoc-react-qua-vi-du-9-draggable-note/), bằng cách thêm chức năng tạo note mới.
+Bạn thấy cái này quen không ạ? Nó chính là phần mềm Sticky Notes trên hệ điều hành Windows 7. Thực tế, mình đã xây dựng nó dựa trên [Draggable Note](/hoc-react-qua-vi-du-9-draggable-note/), bằng cách thêm chức năng tạo note mới.
 
 Và sau đây sẽ là cách triển khai, mời bạn theo dõi bài viết!
 
-> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/react-component/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
+> **Bạn chú ý:** Trong series [học React qua ví dụ](/tag/react-component/) này, mình sẽ thực hành xây dựng các Component trên cùng một Project. Vì vậy, sẽ có những phần mình lặp lại trong các bài viết. Mục đích của mình là dù bạn có bắt đầu đọc từ bài nào (bài số 1 hay bài số N) thì bạn cũng có thể làm theo được.
 
 ## Khởi tạo Project
 
-Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #10 ngay trên máy tính của mình.
+Trong bài học này, mình vẫn khuyến khích bạn sử dụng [Create-react-app](/tag/create-react-app/) để thực hành học React qua ví dụ #10 ngay trên máy tính của mình.
 
-Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
+Để tạo mới một project React với Creat-react-app, bạn có thể tham khảo thêm bài viết: [Tạo và deploy ứng dụng React lên Github Pages](/deploy-ung-dung-react-len-github-pages/).
 
 ## Cấu trúc Project
 
-Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
+Đầu tiên, bạn tạo ra các thư mục và file như sau (bạn chỉ cần quan tâm tới thư mục **/src**):
 
 ```
 learn-react-by-example/
@@ -53,10 +53,10 @@ learn-react-by-example/
 
 Trong đó:
 
-- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Sticky Notes** nên mình tạo thêm thư mục **sticky-notes** bên trong với 2 file **sticky-notes.js** và **sticky-notes.css** để định nghĩa cho component **Sticky Notes** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
-- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
-- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Sticky Notes** ở trên.
-- Các file **index.css, index.js và serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
+- Thư mục **components**: chứa code của các Component. Bài này mình thực hành về **Sticky Notes** nên mình tạo thêm thư mục **sticky-notes** bên trong với 2 file **sticky-notes.js** và **sticky-notes.css** để định nghĩa cho component **Sticky Notes** (bài viết sau thực hành về cái khác thì mình sẽ tạo thêm thư mục vào bên trong **components** như này).
+- Thư mục **images**: để chứa tất cả những ảnh mình sử dụng cho Demo.
+- Các file **App.css** và **App.js** dùng để demo chính. Bên trong **App.js** mình sẽ sử dụng component **Sticky Notes** ở trên.
+- Các file **index.css, index.js và serviceWorker.js** thì **KHÔNG THAY ĐỔI** với mọi bài thực hành.
 
 ## Xây dựng Sticky Note Component
 
@@ -290,9 +290,9 @@ export default class StickyNotes extends React.Component {
 
 ### Nội dung file sticky-notes.css
 
-File này dùng để xác định style cho Sticky Notes Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-sticky-notes** để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
+File này dùng để xác định style cho Sticky Notes Component. Bạn chú ý là mọi thành phần mình đều để trong class **.lp-sticky-notes** để đảm bảo không bị xung đột với các component khác (khi kết hợp các component lại với nhau).
 
-Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
+Ngoài ra, mình sử dụng [CSS selector](https://www.w3schools.com/cssref/css_selectors.asp) là **>**. Với ý nghĩa, ví dụ khi mình dùng **element1 > element2** thì sẽ hiểu style này được áp dụng cho **element2** là con trực tiếp của **element1** mà không phải cháu, chắt,…
 
 ```css:title=sticky-notes.css
 .lp-sticky-notes-header,
@@ -385,9 +385,9 @@ export default class App extends React.Component {
 
 Trong đó, Sticky Notes Component có các thuộc tính là:
 
-- **title ([String](/kieu-du-lieu-trong-javascript/)):** là title của component.
-- **width, height (String hoặc [Number](/kieu-du-lieu-trong-javascript/)):** lần lượt là chiều rộng và chiều cao của phần tử.
-- **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
+- **title ([String](/kieu-du-lieu-trong-javascript/)):** là title của component.
+- **width, height (String hoặc [Number](/kieu-du-lieu-trong-javascript/)):** lần lượt là chiều rộng và chiều cao của phần tử.
+- **top, left (String hoặc Number):** lần lượt là vị trí top và left của phần tử so với window.
 - **content (String)**: nội dung mặc định của Sticky Notes đầu tiên.
 
 ## Lời kết
@@ -398,6 +398,6 @@ Trên đây là kết quả sau khi mình học React qua ví dụ #10 – Stick
   Xem Demo
 </a>
 
-Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
+Sắp tới mình sẽ tiếp tục chia sẻ với bạn các bài thực hành của mình. Nếu bạn thấy hay hoặc muốn tìm hiểu về **LOẠI COMPONENT** nào thì có thể để lại bình luận phía dưới nhé!
 
 Còn bây giờ thì xin chào và hẹn gặp lại, thân ái!

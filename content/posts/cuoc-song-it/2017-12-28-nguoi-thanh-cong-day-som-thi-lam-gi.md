@@ -5,7 +5,7 @@ template: "post"
 directory: "Cuộc sống IT"
 cover: "../../images/cuoc-song-it/nhung-nguoi-thanh-cong-day-som-thi-lam-gi-lap-trinh-vien-lap-trinh-javascript-completejavascript-com.png"
 keywords: "người thành công dậy sớm"
-description: 'Để trả lời được câu hỏi: "Người thành công dậy sớm thì làm gì?", sau đây tôi sẽ đưa ra 10 thói quen buổi sáng của những nhà khởi nghiệp cực kì thành công, được dịch từ 10 Morning Routines of Wildly Successful Entrepreneurs. Qua đó, bạn có thể chọn ra những thói quen phù hợp để áp dụng cho bản thân mình.'
+description: 'Để trả lời được câu hỏi: "Người thành công dậy sớm thì làm gì?", sau đây tôi sẽ đưa ra 10 thói quen buổi sáng của những nhà khởi nghiệp cực kì thành công, được dịch từ 10 Morning Routines of Wildly Successful Entrepreneurs. Qua đó, bạn có thể chọn ra những thói quen phù hợp để áp dụng cho bản thân mình.'
 slug: nguoi-thanh-cong-day-som-thi-lam-gi
 title: "Người thành công dậy sớm thì làm gì?"
 series: "Cuộc sống IT: Cuộc sống dân IT"
@@ -19,7 +19,7 @@ Tôi luân phiên giữa việc tập thể dục khoảng một giờ và việ
 
 Tôi tìm ra những thứ mà mình ưu tiên và làm chúng đầu tiên. Bạn không thể kiểm soát được những thứ xảy ra trong ngày. Vì vậy, đây là cách để đảm bảo rằng những việc quan trọng nhất được hoàn thành.
 
-_— [Barbara Corcoran](http://www.barbaracorcoran.com/about/), founder of The Corcoran Group and shark on Shark Tank_
+_— [Barbara Corcoran](http://www.barbaracorcoran.com/about/), founder of The Corcoran Group and shark on Shark Tank_
 
 ## Tạo năng lượng ngay lập tức
 
@@ -29,13 +29,13 @@ Tôi xóa hết inbox của mình với hai mục đích là: bỏ đi tất c�
 
 Tôi suy nghĩ về những gì cần thiết để đạt được trong thời gian đi làm và đối mặt trong ngày.
 
-_— Tim Draper, founding partner of legendary VC firm [DFJ](http://dfj.com/about/index.php)_
+_— Tim Draper, founding partner of legendary VC firm [DFJ](http://dfj.com/about/index.php)_
 
 ## Tính cách quyết định thói quen lý tưởng của bạn
 
 Hầu hết mọi người đều có một tính cách vượt trội - thực dụng, hành động, xã hội hoặc cảm xúc. Biết được tính cách của mình có thể giúp bạn xác định được thói quen tốt nhất.
 
-Kiểu người thực dụng muốn một thói quen buổi sáng có cấu trúc cao. Những người hành động như tôi thích sự đa dạng. Tôi sẽ chạy bộ hoặc đi tập jujitsu. Hoặc tôi đọc những loại sách khác nhau, không chỉ về kinh doanh. Kiểu người xã hội lại thích một thói quen buổi sáng được xây dựng xung quanh mọi người.
+Kiểu người thực dụng muốn một thói quen buổi sáng có cấu trúc cao. Những người hành động như tôi thích sự đa dạng. Tôi sẽ chạy bộ hoặc đi tập jujitsu. Hoặc tôi đọc những loại sách khác nhau, không chỉ về kinh doanh. Kiểu người xã hội lại thích một thói quen buổi sáng được xây dựng xung quanh mọi người.
 
 Bạn sẽ thường xuyên thấy tôi trên Snapchat, tập luyện tại phòng gym với 10 đến 20 người ở đó. Những người cảm xúc là rất nhạy cảm và hướng tới sự nội tâm, vì vậy thói quen của họ nên có nhiều sự yên tĩnh và hướng tới bản thân.
 
@@ -49,19 +49,19 @@ _— [Tai Lopez](http://www.tailopez.com/blog/about-tai-lopezwww.tailopez.com), 
 
 Trước khi tôi bước vào một ngày bận rộn và không thể đoán trước được. Tôi sẽ lao vào nước lạnh tại bể bơi của mình, dành ra vài phút để mài dũa kĩ năng cân bằng và sửa chữa bản thân với một cốc cà phê.
 
-Tôi sẽ kích hoạt bộ não của mình bằng cách giải quyết trò chơi crossword trong tờ báo *Los Angeles Times* với thời gian ít hơn 20 phút. Chỉ đến khi tôi sẵn sàng để đi tới văn phòng và bắt đầu công việc.
+Tôi sẽ kích hoạt bộ não của mình bằng cách giải quyết trò chơi crossword trong tờ báo _Los Angeles Times_ với thời gian ít hơn 20 phút. Chỉ đến khi tôi sẵn sàng để đi tới văn phòng và bắt đầu công việc.
 
-_— Mark Sisson, founder of [Primal Blueprint](https://www.primalblueprint.com/what-we-do/), best-selling author of [The New Primal Blueprint](https://www.amazon.com/gp/product/1939563305), and publisher of [MarksDailyApple.com](https://www.marksdailyapple.com/), the world's most visited blog on paleo, primal and ancestral health_
+_— Mark Sisson, founder of [Primal Blueprint](https://www.primalblueprint.com/what-we-do/), best-selling author of [The New Primal Blueprint](https://www.amazon.com/gp/product/1939563305), and publisher of [MarksDailyApple.com](https://www.marksdailyapple.com/), the world's most visited blog on paleo, primal and ancestral health_
 
 ## Bổ sung dinh dưỡng cho não bộ khi bạn thức dậy
 
 Tôi uống một chất khoáng được làm sạch trong một "ounce" nước (1 ounce = 28.3 g), uống một phần tư nước tinh khiết có cấu trúc để thanh lọc cơ thể, sau đó tập 20 phút với bài tập "getups" của Thổ Nhĩ Kì với 45 pound tạ để đánh thức cơ bắp.
 
-Tôi có 36 phút trên Seqex và lấy 3 ml thực vật phù du Oceans Alive, và cuối cùng là chất dinh dưỡng cho não bộ. Tôi sử dụng 30 lần xà phòng EASE Magnesium trên bụng và dưới lưng sau khi tắm, sau đó sử dụng thực phẩm chức năng để phục hồi cơ bắp.
+Tôi có 36 phút trên Seqex và lấy 3 ml thực vật phù du Oceans Alive, và cuối cùng là chất dinh dưỡng cho não bộ. Tôi sử dụng 30 lần xà phòng EASE Magnesium trên bụng và dưới lưng sau khi tắm, sau đó sử dụng thực phẩm chức năng để phục hồi cơ bắp.
 
 Đối với bữa sáng, tôi ăn ba loại hoa quả khác nhau, hai trứng gà hữu cơ tươi được thụ tinh. Cuối cùng, tôi sẽ uống một cốc sinh tố hoa quả.
 
-— _**Ian Clark**, founder and CEO of [Activation Products](http://www.activationproducts.com/our-story/)_
+— _**Ian Clark**, founder and CEO of [Activation Products](http://www.activationproducts.com/our-story/)_
 
 ## Lập kế hoạch trong ngày có mục đích
 
@@ -71,7 +71,7 @@ Tôi uống một cốc nước đầy, pha cà phê hoặc trà, thắp sáng m
 
 Tôi chuyển một cách dần dần sang kiểm tra Email, hoàn thành càng nhiều việc càng tốt trước khi rời khỏi nhà cho việc tập thể dục.
 
-— _Elle Russ, best-selling author [The Paleo Thyroid Solution](https://www.amazon.com/Paleo-Thyroid-Solution-Fatigued-Uninformed/dp/1939563240)_
+— _Elle Russ, best-selling author [The Paleo Thyroid Solution](https://www.amazon.com/Paleo-Thyroid-Solution-Fatigued-Uninformed/dp/1939563240)_
 
 ## Xác định một hoặc hai sự ưu tiên lớn nhất
 
@@ -79,7 +79,7 @@ Tôi thức dậy lúc 5 giờ 30 phút. Tôi uống 20 ounce nước, cái kíc
 
 Tôi thiết lập mục đích của ngày hôm đó, xác định ra một hoặc hai thứ lớn nhất mà tôi phải đạt được để cảm thấy rằng tôi đang tiến tới mục tiêu của mình và có một ngày tuyệt vời.
 
-_— Jon Braddock, founder and CEO of [My Life & Wishes](http://www.mylifeandwishes.com/)_
+_— Jon Braddock, founder and CEO of [My Life & Wishes](http://www.mylifeandwishes.com/)_
 
 ## Những thứ tuyệt vời nhất xảy ra trước 8 giờ sáng
 
@@ -91,9 +91,9 @@ _— [Adèle McLay](http://www.adelemclay.com/about-adele-business-growth-coach/
 
 ## Làm việc cho bản thân, những người khác, sáng tạo và sứ mệnh
 
-Đầu tiên là chăm lo cho chính mình. Tôi thiền, sử dụng [_Five Minute Journal_](https://www.intelligentchange.com/pages/our-story) của tôi, di chuyển, và tập thể dục, và uống Protein.
+Đầu tiên là chăm lo cho chính mình. Tôi thiền, sử dụng [_Five Minute Journal_](https://www.intelligentchange.com/pages/our-story) của tôi, di chuyển, và tập thể dục, và uống Protein.
 
-Sau đó, tôi quan tâm đến những người khác, bởi việc giúp đỡ một số người bằng một vài cách: tôi post một [#PloughShare](https://chrisplough.com/cps-40th-ploughshare-birthday/) online, gửi đi một bài viết về sự biết ơn hay tạo ra một bài giới thiệu ý nghĩa.
+Sau đó, tôi quan tâm đến những người khác, bởi việc giúp đỡ một số người bằng một vài cách: tôi post một [#PloughShare](https://chrisplough.com/cps-40th-ploughshare-birthday/) online, gửi đi một bài viết về sự biết ơn hay tạo ra một bài giới thiệu ý nghĩa.
 
 Tôi tạo ra, thường xuyên qua việc viết lách, mặc dù thỉnh thoảng tôi vẽ tranh hay tạo ra những bức ảnh. Cuối cùng, tôi thực hiện một bước đáng giá để tiến gần hơn với sứ mệnh của mình.
 
@@ -109,8 +109,8 @@ Suy nghĩ tích cực nuôi dưỡng sức mạnh to lớn trong tâm trí bạn
 
 Nếu tôi không thực hành việc ăn chay liên tục, tôi sẽ ăn sáng nhẹ, uống một ít thực phẩm bổ sung dinh dưỡng dựa trên các xét nghiệm máu mới nhất trong phòng thí nghiệm. Sau đó, tôi bắt đầu công việc với ngọn lửa đam mê và năng lượng để chiếm hữu ngày đó.
 
-_— Dr. Nick Zyrowski, founder of [NuVision Health Center](http://nuvisionexcel.com/)_
+_— Dr. Nick Zyrowski, founder of [NuVision Health Center](http://nuvisionexcel.com/)_
 
 Trên đây là những chia sẽ hữu ích của một số những người thành công trên thế giới. Mặc dù, việc dịch của tôi vẫn chưa được tốt lắm, nhưng mong rằng nó vẫn truyền tải được đầy đủ ý nghĩa của bài viết gốc. Hy vọng, bạn đọc phần nào biết được những người thành công dậy sớm thì làm gì.
 
-Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
+Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!

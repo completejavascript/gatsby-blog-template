@@ -326,7 +326,7 @@ console.log(new Tools().print("hi")); // hi
 
 ### Dynamic import
 
-Thực tế, cách import bên trên là **static**. Nghĩa là đoạn code liên quan đến module luôn luôn load ngay từ thời điểm đầu. Tuy nhiên, bạn cũng có thể import theo kiểu **dynamic**. Tức là bạn sẽ chỉ load script khi nào cần thiết.
+Thực tế, cách import bên trên là **static**. Nghĩa là đoạn code liên quan đến module luôn luôn load ngay từ thời điểm đầu. Tuy nhiên, bạn cũng có thể import theo kiểu **dynamic**. Tức là bạn sẽ chỉ load script khi nào cần thiết.
 
 Ví dụ export:
 
@@ -358,7 +358,7 @@ setTimeout(async () => {
 }, 2000);
 ```
 
-**Chú ý**: hàm **setTimeout** trên chỉ là ví dụ để thể hiện việc delay khi load module.
+**Chú ý**: hàm **setTimeout** trên chỉ là ví dụ để thể hiện việc delay khi load module.
 
 Với cách **dynamic import** này, **import** sẽ trả về một Promise. Do đó, bạn có thể sử dụng kết hợp với **async/await** như trên.
 

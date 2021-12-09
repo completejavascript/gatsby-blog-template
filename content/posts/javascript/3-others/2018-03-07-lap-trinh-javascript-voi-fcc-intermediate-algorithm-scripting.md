@@ -25,7 +25,7 @@ Cũng như bài viết trước, mình chia sẻ với bạn các link bài vi�
 - [JavaScript Object – last but not least](/object-la-gi-object-trong-javascript/)
 - [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 
-## Intermediate Algorithm Scripting - Sum All Numbers in a Range
+## Intermediate Algorithm Scripting - Sum All Numbers in a Range
 
 Tính tổng các số trong một khoảng cho trước.
 
@@ -48,7 +48,7 @@ Tham khảo:
 - [Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
 - [Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
 
-## Intermediate Algorithm Scripting - Diff Two Arrays 
+## Intermediate Algorithm Scripting - Diff Two Arrays 
 
 Kiểm tra hai mảng cho trước và trả về mảng mới chứa những phần tử thuộc chỉ một trong hai mảng đó.
 
@@ -78,7 +78,7 @@ Tham khảo:
 
 - [Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-## Intermediate Algorithm Scripting - Roman Numeral Converter
+## Intermediate Algorithm Scripting - Roman Numeral Converter
 
 Convert số cho trước sang số La Mã.
 
@@ -123,7 +123,7 @@ Tham khảo:
 - [Array.prototype.sort()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 - [Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-## Intermediate Algorithm Scripting - Wherefore art thou
+## Intermediate Algorithm Scripting - Wherefore art thou
 
 Duyệt mảng của các [object](/object-la-gi-object-trong-javascript/) và trả về một mảng bao gồm các object chứa thuộc tính trùng khớp với thành phần cho trước.
 
@@ -155,7 +155,7 @@ Tham khảo:
 - [Object.prototype.hasOwnProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
 - [Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
-## Intermediate Algorithm Scripting - Search and Replace
+## Intermediate Algorithm Scripting - Search and Replace
 
 Thực hiện tìm và thay thế trên một string sử dụng tham số cho trước, sau đó trả về một string mới.
 
@@ -193,7 +193,7 @@ Tham khảo:
 - [String.prototype.toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
 - [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 
-## Intermediate Algorithm Scripting - Pig Latin
+## Intermediate Algorithm Scripting - Pig Latin
 
 Dịch string cho trước sang ngôn ngữ **Latin Lợn**.
 
@@ -216,7 +216,7 @@ Tham khảo:
 - [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
 - [String.prototype.substr()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
 
-## Intermediate Algorithm Scripting - DNA Pairing
+## Intermediate Algorithm Scripting - DNA Pairing
 
 Các DNA đang thiếu các thành phần tương ứng. Hãy tìm các kí tự tương ứng với thành phần cho trước rồi trả về kết quả là một mảng 2 chiều.
 
@@ -252,7 +252,7 @@ Tham khảo:
 - [Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 - [Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
-## Intermediate Algorithm Scripting - Missing letters
+## Intermediate Algorithm Scripting - Missing letters
 
 Tìm kí tự thiếu ở một chuỗi các kí tự cho trước. Nếu tất cả các kí tự đầy đủ thì trả về **undefined**.
 
@@ -273,7 +273,7 @@ Tham khảo:
 - [String.prototype.charCodeAt()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
 - [String.fromCharCode()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
 
-## Intermediate Algorithm Scripting - Boo who
+## Intermediate Algorithm Scripting - Boo who
 
 Kiểm tra xem nếu một giá trị cho trước là kiểu boolean, rồi trả về kết quả là **true** hoặc **false**.
 
@@ -289,9 +289,9 @@ Tham khảo:
 
 - [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
-## Intermediate Algorithm Scripting - Sorted Union
+## Intermediate Algorithm Scripting - Sorted Union
 
-Viết một [function](/ham-la-gi-ham-trong-javascript/) nhận đầu vào là 2 hay nhiều array. Trả về một array mới bao gồm các phần tử duy nhất, theo đúng thứ tự ban đầu.
+Viết một [function](/ham-la-gi-ham-trong-javascript/) nhận đầu vào là 2 hay nhiều array. Trả về một array mới bao gồm các phần tử duy nhất, theo đúng thứ tự ban đầu.
 
 ```js
 function uniteUnique(arr) {
@@ -317,9 +317,9 @@ Tham khảo:
 - [Arguments object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 - [Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
-## Intermediate Algorithm Scripting - Convert HTML Entities
+## Intermediate Algorithm Scripting - Convert HTML Entities
 
-Chuyển các kí tự &, &lt;, &gt;, " và ' ở một string cho trước sang dạng [HTML Entities](http://dev.w3.org/html5/html-author/charref).
+Chuyển các kí tự &, &lt;, &gt;, " và ' ở một string cho trước sang dạng [HTML Entities](http://dev.w3.org/html5/html-author/charref).
 
 ```js
 function convertHTML(str) {
@@ -342,9 +342,9 @@ convertHTML("Hamburgers < Pizza < Tacos");
 Tham khảo:
 
 - [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
-- [String.prototype.replace() ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+- [String.prototype.replace() ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
-## Intermediate Algorithm Scripting - Spinal Tap Case
+## Intermediate Algorithm Scripting - Spinal Tap Case
 
 Convert một string sang dạng **spinal case** - bao gồm các chữ cái thường phân cách nhau bởi dấu -.
 
@@ -367,11 +367,11 @@ Tham khảo:
 
 - [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 - [Array.prototype.map()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [String.prototype.replace() ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+- [String.prototype.replace() ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 - [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 - [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
-## Intermediate Algorithm Scripting - Sum All Odd Fibonacci Numbers
+## Intermediate Algorithm Scripting - Sum All Odd Fibonacci Numbers
 
 Cho trước một số nguyên dương, tính tổng các số Fibonacci lẻ nhỏ hơn hoặc bằng số cho trước.
 
@@ -399,7 +399,7 @@ function sumFibs(num) {
 sumFibs(75025);
 ```
 
-## Intermediate Algorithm Scripting - Sum All Primes
+## Intermediate Algorithm Scripting - Sum All Primes
 
 Tính tổng các số nguyên tố nhỏ hơn hoặc bằng số cho trước.
 
@@ -424,7 +424,7 @@ function sumPrimes(num) {
 sumPrimes(10);
 ```
 
-## Intermediate Algorithm Scripting - Smallest Common Multiple
+## Intermediate Algorithm Scripting - Smallest Common Multiple
 
 Tìm bội số chung nhỏ nhất của các số trong một khoảng cho trước.
 
@@ -455,7 +455,7 @@ Tham khảo:
 - [Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
 - [Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
 
-## Intermediate Algorithm Scripting - Finders Keepers
+## Intermediate Algorithm Scripting - Finders Keepers
 
 Duyệt một mảng các số và tìm ra số đầu tiên thỏa mãn test.
 
@@ -472,7 +472,7 @@ findElement([1, 3, 5, 8, 9, 10], function (num) {
 });
 ```
 
-## Intermediate Algorithm Scripting - Drop it
+## Intermediate Algorithm Scripting - Drop it
 
 Bỏ đi các số của một mảng, từ trái sang phải, cho đến khi thỏa mãn test.
 
@@ -494,7 +494,7 @@ Tham khảo:
 
 - [Array.prototype.shift()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 
-## Intermediate Algorithm Scripting - Steamroller
+## Intermediate Algorithm Scripting - Steamroller
 
 San phẳng (chuyển về mảng một chiều) một mảng nhiều chiều cho trước.
 
@@ -520,7 +520,7 @@ Tham khảo:
 - [Array.isArray()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
 - [Array.prototype.concat()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 
-## Intermediate Algorithm Scripting - Binary Agents
+## Intermediate Algorithm Scripting - Binary Agents
 
 Trả về một string bao gồm các kí tự tiếng anh từ chuỗi nhị phân cho trước.
 
@@ -551,7 +551,7 @@ Tham khảo:
 - [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 - [String.fromCharCode()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
 
-## Intermediate Algorithm Scripting - Everything Be True
+## Intermediate Algorithm Scripting - Everything Be True
 
 Kiểm tra xem tham số thứ 2 đưa vào hàm có tồn tại trong tất cả các phần tử thuộc tham số thứ nhất.
 
@@ -610,7 +610,7 @@ Tham khảo:
 
 ## Kết luận
 
-Trên đây là tổng hợp các bài toán thuộc chủ đề **Intermediate Algorithm Scripting** trên freeCodeCamp.
+Trên đây là tổng hợp các bài toán thuộc chủ đề **Intermediate Algorithm Scripting** trên freeCodeCamp.
 
 Nếu bạn có gì thắc mắc, góp ý hay cải tiến các thuật toán trên. Vui lòng để lại bình luận phía dưới nhé.
 

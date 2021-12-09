@@ -92,7 +92,7 @@ Bạn có thể in ra toàn bộ giá trị của mảng:
 ```js
 let letters = ["a", "b", "c"];
 
-console.log(letters); // (3) ['a', 'b', 'c']
+console.log(letters); // (3) ['a', 'b', 'c']
 ```
 
 Giá trị các phần tử trong mảng có thể thuộc bất kỳ [kiểu dữ liệu](/kieu-du-lieu-trong-javascript/) nào:

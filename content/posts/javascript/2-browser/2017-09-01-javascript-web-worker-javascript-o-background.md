@@ -51,7 +51,7 @@ self.onmessage = function (msg) {
 
 ### Khởi tạo Web Worker
 
-Giả sử bạn đã tạo một file **web_worker.js**. Để khởi tạo Web Worker, bạn làm như sau:
+Giả sử bạn đã tạo một file **web_worker.js**. Để khởi tạo Web Worker, bạn làm như sau:
 
 ```js
 var w;
@@ -76,7 +76,7 @@ function startWorker() {
 }
 ```
 
-Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/ham-la-gi-ham-trong-javascript/) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban/).
+Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/ham-la-gi-ham-trong-javascript/) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban/).
 
 Trong đó, **Worker.onerror** được gọi khi có lỗi với Web Worker sau khi khởi tạo. Và **Worker.onmessage** được gọi khi có message từ Worker Thread lên giao diện chính.
 
@@ -241,7 +241,7 @@ Kết quả:
 
 Bài viết hôm nay dừng lại tại đây. Để tìm hiểu thêm về JavaScript Web Worker thì bạn có thể tìm hiểu thêm ở những link phía dưới đây.
 
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-service-worker-co-ban/), thân ái!
+Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/javascript-service-worker-co-ban/), thân ái!
 
 ## Xem thêm
 

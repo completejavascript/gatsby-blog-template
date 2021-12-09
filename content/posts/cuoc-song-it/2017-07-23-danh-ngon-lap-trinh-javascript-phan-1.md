@@ -12,7 +12,7 @@ shortTitle: "Danh ngôn lập trình JavaScript #1"
 series: "Cuộc sống IT: Cuộc sống dân IT"
 ---
 
-Danh ngôn *là những tinh hoa trí tuệ chắt lọc, đúc kết lâu đời; những trải nghiệm cuộc sống phong phú, sâu sắc tích lũy qua bao thế hệ được diễn đạt bằng những câu ngắn gọn, ý nghĩa hàm súc, đan kết với nhau thành những "chuỗi hạt giống tâm hồn" quý hiếm như đang chờ bạn chọn lựa, gieo trồng cho "mảnh vườn trí tuệ" của chính mình*.
+Danh ngôn _là những tinh hoa trí tuệ chắt lọc, đúc kết lâu đời; những trải nghiệm cuộc sống phong phú, sâu sắc tích lũy qua bao thế hệ được diễn đạt bằng những câu ngắn gọn, ý nghĩa hàm súc, đan kết với nhau thành những "chuỗi hạt giống tâm hồn" quý hiếm như đang chờ bạn chọn lựa, gieo trồng cho "mảnh vườn trí tuệ" của chính mình_.
 
 Đọc nghe có vẻ hơi **sến sẩm**. Theo tôi, danh ngôn đơn giản là "phát ngôn" của những danh nhân (người nổi tiếng) - là những kinh nghiệm được đúc kết qua quá trình học tập, lao động,...
 
@@ -42,7 +42,7 @@ Theo tôi hiểu thì Jeff Atwood muốn đề cập tới vấn đề tốc đ�
 
 ![DOUGLAS CROCKFORD qoute javascript](../../images/cuoc-song-it/DOUGLAS-CROCKFORD-quoute-about-javascript-completejavascript.com_.png)
 
-[Douglas Crockford](https://en.wikipedia.org/wiki/Douglas_Crockford) là một nhà phát triển phần mềm. Ông chính là người phát triển nên kiểu dữ liệu rất phổ biến là [JSON](/tim-hieu-ve-json-trong-javascript/), và nhiều công cụ khác liên quan đến JavaScript như [JSLint](https://en.wikipedia.org/wiki/JSLint) and [JSMin](<https://en.wikipedia.org/wiki/Minification_(programming)>). Hiện tại, ông đang là kiến trúc sư trưởng về JavaScript tại PayPal.
+[Douglas Crockford](https://en.wikipedia.org/wiki/Douglas_Crockford) là một nhà phát triển phần mềm. Ông chính là người phát triển nên kiểu dữ liệu rất phổ biến là [JSON](/tim-hieu-ve-json-trong-javascript/), và nhiều công cụ khác liên quan đến JavaScript như [JSLint](https://en.wikipedia.org/wiki/JSLint) and [JSMin](<https://en.wikipedia.org/wiki/Minification_(programming)>). Hiện tại, ông đang là kiến trúc sư trưởng về JavaScript tại PayPal.
 
 Câu danh ngôn trên dịch ra là: "JavaScript là thứ ngôn ngữ duy nhất mà tôi thấy rằng người ta cảm thấy họ không cần phải học trước khi bắt đầu sử dụng nó".
 
@@ -50,6 +50,6 @@ Câu danh ngôn trên dịch ra là: "JavaScript là thứ ngôn ngữ duy nhấ
 
 ## Kết luận
 
-Trên đây là những danh ngôn lập trình của những lập trình viên "huyền thoại": Brendan Eich, Jeff Atwood, Douglas Crockford. Nếu bạn biết danh ngôn nào khác, vui lòng chia sẻ ở phần bình luận phía dưới. Tôi rất vui và cám ơn bạn.
+Trên đây là những danh ngôn lập trình của những lập trình viên "huyền thoại": Brendan Eich, Jeff Atwood, Douglas Crockford. Nếu bạn biết danh ngôn nào khác, vui lòng chia sẻ ở phần bình luận phía dưới. Tôi rất vui và cám ơn bạn.
 
 Xin chào và hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!
