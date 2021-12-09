@@ -1,11 +1,11 @@
 ---
 date: "2017-06-02T09:49:44Z"
-update: "2021-10-14T16:25:00Z"
+update: "2021-12-09T08:00:00Z"
 template: "post"
 directory: "JavaScript"
-cover: "../../../images/javascript/javascript-foreach-la-cai-quai-gi-completejavascript.com_.png"
+cover: "../../../images/javascript/javascript-foreach-la-cai-quai-gi.png"
 keywords: "forEach"
-description: "Trong JavaScript, để duyệt array thì forEach là một hàm rất hay. Vậy hàm forEach trong JavaScript là như thế nào và cách sử dụng forEach JavaScript ra sao? Chúng ta hãy cùng tìm hiểu để làm chủ forEach js nhé!"
+description: "Trong JavaScript, để duyệt array thì forEach là một hàm rất hay. Vậy hàm forEach trong JavaScript là như thế nào và cách sử dụng forEach JavaScript ra sao?"
 slug: javascript-foreach-la-cai-quai-gi
 title: "JavaScript forEach là cái quái gì?"
 series: "JavaScript: Các kiểu dữ liệu"
@@ -14,29 +14,29 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Trong JavaScript, để duyệt [array](/array-la-gi-array-trong-javascript/) thì **forEach** là một hàm rất hay. Vậy hàm forEach trong JavaScript cụ thể là như thế nào? Cách sử dụng forEach JavaScript ra sao? Chúng ta hãy cùng tìm hiểu để làm chủ forEach js nhé!
+Trong JavaScript, để duyệt [array](/array-la-gi-array-trong-javascript/) thì **forEach** là một hàm rất hay. Vậy hàm forEach trong JavaScript cụ thể là như thế nào? Cách sử dụng forEach JavaScript ra sao? Mình hãy cùng tìm hiểu để làm chủ forEach js nhé!
 
-## Đặt vấn đề
+## Đặt bài toán
 
-Cho một mảng [numbers](/kieu-du-lieu-trong-javascript/) = [1, 2, 3, 4, 5, 6,7, 8, 9, 10]. Hãy tính tổng các số trong mảng và hiển thị ra console.
+Cho một mảng `numbers= [1, 2, 3, 4, 5, 6,7, 8, 9, 10]`. Hãy tính tổng các số trong mảng và hiển thị ra **console**.
 
-Thông thường, chúng ta sẽ giải bài toán này như sau:
+Khi mới học JavaScript, mình giải bài toán này như sau:
 
 ```js
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum = 0;
 
+// duyệt từng phần tử của mảng để cộng dồn vào biến sum
 for (let i = 0; i < numbers.length; i++) {
   sum += numbers[i];
 }
 
-console.log(sum);
-// => 55
+console.log(sum); // 55
 ```
 
-Cách giải trên là khá dễ hiểu. Chúng ta lấy từng phần tử trong mảng ra theo chỉ số, rồi cộng với biến _sum_.
+Cách giải trên khá dễ hiểu. Mình duyệt tất cả các phần tử mảng bằng [vòng lặp for với chỉ số](/vong-lap-trong-javascript/). Tại mỗi lượt lặp, mình lấy phần tử đang duyệt cộng dồn với biến `sum`.
 
-Tuy nhiên có một vấn đề với cách này, đó là việc sử dụng chỉ số **i** có thể khiến bạn bị nhầm với một biến số trước đó. Dẫn đến những sai lầm không thể đoán trước.
+Có một vấn đề với cách này, đó là việc sử dụng chỉ số `i` có thể khiến bạn bị nhầm với một biến trước đó. Dẫn đến những lỗi sai không đoán trước được.
 
 Lúc này, **forEach** JavaScript xuất hiện giúp bạn giải quyết vấn đề trên.
 
@@ -46,15 +46,17 @@ Một cách đơn giản để triển khai hàm forEach như sau:
 
 ```js
 function forEach(array, action) {
-  for (let i = 0; i < array.length; i++) action(array[i]);
+  for (let i = 0; i < array.length; i++) {
+    action(array[i]);
+  }
 }
 ```
 
-Hàm *forEach* trên nhận đầu vào là một mảng _array_ và một hàm _action_ - thực hiện hành động đối với mỗi phần tử của mảng (_array[i]_).
+Hàm `forEach` trên nhận đầu vào là một mảng `array` và một hàm `action` - thực hiện hành động với mỗi phần tử của mảng `array[i]`.
 
 ### Áp dụng hàm forEach để giải quyết bài toán trên
 
-```js
+```js{4-6}
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum = 0;
 
@@ -63,14 +65,16 @@ forEach(numbers, function (element) {
 });
 
 console.log(sum);
-// => 55
+// 55
 ```
 
-Ta có thể diễn giải thuật toán trên bằng lới như sau: _Với mỗi phần tử trong mảng numbers, ta sẽ lấy nó ra và cộng dồn với biến sum. Kết quả thu được, sẽ ghi ra console._
+Mình có thể diễn giải thuật toán trên bằng lới như sau: _Với mỗi phần tử trong mảng `numbers`, mình lấy nó ra và cộng dồn với biến sum. Kết quả thu được, sẽ ghi ra console._
 
-Nếu so sánh với cách trình bày ở trên thì cách này rõ ràng sẽ dài hơn. Tuy nhiên, đây chỉ là một ví dụ cơ bản, nên ta sẽ không bàn về độ dài, ngắn của code. Vấn đề mình và bạn quan tâm trước tiên đó là: **code-đọc-dễ-hiểu**.
+Nếu so sánh với cách làm trước thì cách này rõ ràng là dài hơn. Tuy nhiên, đây chỉ là một ví dụ cơ bản, nên mình sẽ không bàn về **độ dài, ngắn** của code.
 
-Theo quan điểm cá nhân mình thì việc sử dụng hàm **forEach** giúp code gần giống với ngôn ngữ tự nhiên hơn. Không biết quan điểm của bạn về vấn đề này thế nào?
+Vấn đề nên quan tâm trước tiên đó là: **code-đọc-dễ-hiểu**.
+
+Theo quan điểm cá nhân mình, việc sử dụng hàm **forEach** giúp code gần giống với ngôn ngữ tự nhiên hơn. Quan điểm của bạn về vấn đề này thế nào?
 
 ## Giới thiệu hàm forEach trong JavaScript
 
@@ -82,23 +86,32 @@ Trả lời: **forEach** là một phương thức có sẵn của [array](/sap-
 
 ```js
 arr.forEach(function callback(currentValue, index, array) {
-    // your iterator
+    // code xử lý
 }[, thisArg]);
 ```
 
 ### Giải thích
 
-- **callback**: Hàm callback là hàm để thực hiện với mỗi phần tử của mảng, bao gồm 3 tham số:
-  - **currentValue**: phần tử hiện tại đang được xử lý của array.
-  - **index**: chỉ số của phần tử hiện tại đang được xử lý của array.
-  - **array**: mảng hiện tại đang gọi hàm forEach.
-- **thisArg**: giá trị được sử dụng như là **this**, là tham chiếu tới đối tượng khi thực hiện hàm callback.
+- `callback`: Hàm callback là hàm để thực hiện với mỗi phần tử của mảng, bao gồm 3 tham số:
+  - `currentValue`: phần tử hiện tại đang được xử lý của array.
+  - `index`: chỉ số của phần tử hiện tại đang được xử lý của array.
+  - `array`: mảng hiện tại đang gọi hàm forEach.
+- `thisArg`: giá trị được sử dụng như là [`this`](/phuong-thuc-object-va-this-trong-javascript/) - tham chiếu tới đối tượng khi thực hiện hàm `callback`.
 
-**Chú ý**: Nếu _thisArg_ bị bỏ qua thì mặc định giá trị đó là **undefined**.
+**Chú ý**:
+
+- Nếu `thisArg` bị bỏ qua thì mặc định giá trị đó là `undefined`.
+- Bạn có thể bỏ qua tên hàm `callback`.
+
+```js{1}
+arr.forEach(function(currentValue, index, array) {
+    // code xử lý
+}[, thisArg]);
+```
 
 ### Ví dụ in ra nội dung của mảng
 
-```js
+```js{2-4}
 function printContentArray(array) {
   array.forEach(function print(element) {
     console.log(element);
@@ -106,56 +119,61 @@ function printContentArray(array) {
 }
 
 printContentArray([1, 3, 5]);
-/*
- * 1
- * 3
- * 5
- */
 ```
 
-### Ví dụ sử dụng _thisArg_
+Kết quả:
 
-```js
+```
+1
+3
+5
+```
+
+### Ví dụ sử dụng `thisArg`
+
+```js{9}
 function Counter() {
   this.sum = 0;
   this.count = 0;
-}
 
-Counter.prototype.add = function (array) {
-  array.forEach(function (entry) {
-    this.sum += entry;
-    ++this.count;
-  }, this);
-  // ^---- Note
-};
+  this.add = function(array) {
+    array.forEach(function(item) {
+      this.sum += item;
+      ++this.count;
+    }, this); // this chính là đối tượng tạo new Counter
+  }
+}
 
 const obj = new Counter();
 obj.add([2, 5, 9]);
-console.log(obj.count); // => 3
-console.log(obj.sum); // => 16
+
+console.log(obj.count); // 3
+console.log(obj.sum); // 16
 ```
 
 ## Ưu, nhược điểm của việc sử dụng forEach
 
-Bất cứ thứ gì cũng có hai mặt của nó, **forEach** JavaScript cũng không ngoại lệ. Sau đây là một số ưu, nhược điểm của nó:
+Bất cứ thứ gì cũng có hai mặt, **forEach** JavaScript cũng không ngoại lệ. Sau đây là một số ưu, nhược điểm của phương thức `forEach`:
 
 ### Ưu điểm
 
-- Code rõ ràng, gần với ngôn ngữ tự nhiên
-- Trong nhiều trường hợp sẽ ngắn gọn hơn việc sử dụng _for_, _while_.
+- Code rõ ràng, gần với ngôn ngữ tự nhiên.
+- Trong nhiều trường hợp sẽ ngắn gọn hơn việc sử dụng vòng lặp `for` hay `while`.
 
 ### Nhược điểm
 
-- Chắc chắn code sẽ chạy chậm hơn so với việc sử dụng vòng lặp (tuy nhiên không đáng kể)
-- Không giống các ngôn ngữ lập trình khác như C/C++, Java (hầu như chỉ sử dụng vòng lặp)
+- Code thường sẽ chạy chậm hơn so với việc sử dụng vòng lặp (tuy nhiên không đáng kể).
+- Không giống các ngôn ngữ lập trình khác như C/C++, Java (hầu như chỉ sử dụng vòng lặp).
 
-Trên đây là một số ưu, nhược điểm của việc sử dụng forEach. Mình không khuyên bạn nên sử dụng phương thức này. Đây chỉ đơn giản là một cách thức duyệt mảng, bạn có thể sử dụng nó hoặc bạn chỉ cần sử dụng vòng lặp for, while.
+Trên đây là một số ưu, nhược điểm của việc sử dụng `forEach`. Mình không khuyên bạn **nên hay không nên** sử dụng phương thức này.
+
+Đây chỉ đơn giản là một cách thức để duyệt mảng, bạn có thể sử dụng nó hoặc bạn chỉ cần sử dụng vòng lặp.
 
 > It's the choice.
 
 ## Một số từ khóa trong vòng lặp forEach JS
 
-Khi so sánh với các vòng lặp khác, ngôn ngữ lập trình khác, bạn sẽ thấy một số từ khóa hay sử dụng trong vòng lặp như: **return**, **break** và **continue**.
+Khi so sánh với các **vòng lặp khác, ngôn ngữ lập trình khác**, bạn sẽ thấy một số từ khóa hay sử dụng trong vòng lặp như: `return`, `break` và `continue`.
 
 Câu hỏi đặt ra là liệu những từ khóa này có sử dụng được trong vòng lặp forEach JavaScript hay không? Cách sử dụng của chúng có giống hay không?
 
@@ -163,11 +181,11 @@ Sau đây là câu trả lời.
 
 ### Từ khóa return trong forEach
 
-Từ khóa **return** dùng để dừng lại một hàm và trả về giá trị từ hàm đó.
+Từ khóa `return` dùng để dừng lại một hàm và trả về giá trị từ hàm đó.
 
-Giả sử, bạn cần viết một hàm tìm vị trí của số chẵn đầu tiên trong một mảng. Nếu không tìm thấy thì trả về giá trị -1.
+Giả sử, bạn cần viết một hàm tìm **vị trí của số chẵn đầu tiên** trong một mảng. Nếu không tìm thấy thì trả về giá trị `-1`.
 
-Sau đây là code sử dụng vòng lặp for thông thường:
+Sau đây là code sử dụng **vòng lặp for** thông thường:
 
 ```js
 function findFirstEvenIndex(arr) {
@@ -178,16 +196,17 @@ function findFirstEvenIndex(arr) {
   return -1;
 }
 
-// Example:
+// Ví dụ
 const arr = [1, 2, 3, 4, 5];
 const ret = findFirstEvenIndex(arr);
+
 console.log("ret=", ret);
 // ret= 1
 ```
 
-Nếu chuyển đoạn code trên sang forEach thì sẽ thế này:
+Chuyển đoạn code trên sang forEach như sau:
 
-```js
+```js{6}
 function findFirstEvenIndex(arr) {
   arr.forEach(function (item, i) {
     if (arr[i] % 2 === 0) return i;
@@ -196,18 +215,19 @@ function findFirstEvenIndex(arr) {
   return -1;
 }
 
-// Example:
+// Ví dụ
 const arr = [1, 2, 3, 4, 5];
 const ret = findFirstEvenIndex(arr);
+
 console.log("ret=", -1);
 // ret= -1
 ```
 
 Tại sao kết quả lại là **-1**?
 
-Tại vì từ khóa **return** trong forEach chỉ có tác dụng để thoát khỏi hàm callback bên trong forEach mà thôi. Do đó, kết quả của hàm trên sẽ là giá trị của cái **return -1**.
+Tại vì từ khóa `return` trong forEach chỉ có tác dụng để **thoát khỏi hàm callback** bên trong forEach mà thôi. Do đó, kết quả của hàm trên là giá trị của câu lệnh `return -1` cuối cùng.
 
-Vì vậy, để giải quyết bài toán này mình khuyên bạn không nên dùng forEach. Thay vào đó bạn có thể dùng vòng lặp for thông thường như trên, hoặc sử dụng vòng lặp **for...in** như sau:
+Dể giải quyết bài toán này, mình khuyên bạn không nên dùng `forEach`. Thay vào đó bạn có thể dùng vòng lặp for thông thường như trên, hoặc sử dụng vòng lặp **for...in** như sau:
 
 ```js
 function findFirstEvenIndex(arr) {
@@ -218,18 +238,21 @@ function findFirstEvenIndex(arr) {
   return -1;
 }
 
-// Example:
+// Ví dụ
 const arr = [1, 2, 3, 4, 5];
 const ret = findFirstEvenIndex(arr);
+
 console.log("ret=", ret);
 // ret= 1
 ```
 
+**Chú ý:** vòng lặp `for...in` chỉ nên dùng với **array**, không nên sử dụng với đối tượng `array-like`.
+
 ### Từ khóa break trong forEach
 
-Từ khóa **break** thường được dùng để thoát khỏi câu lệnh **switch** hoặc thoát khỏi vòng lặp (for, while, do ... while, for ... in).
+Từ khóa `break` thường dùng để thoát khỏi [câu lệnh `switch`](/cau-lenh-switch-case-trong-javascript/) hoặc thoát khỏi vòng lặp (`for`, `while`, `do...while`, `for...in`).
 
-Ví dụ đoạn code sau dùng để thoát khỏi vòng lặp for khi **i bằng 3**:
+Ví dụ đoạn code sau dùng để thoát khỏi vòng lặp for khi `i` bằng `3`:
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -246,7 +269,7 @@ i= 2
 */
 ```
 
-Nếu sử dụng từ khóa break với forEach thì sao?
+Nếu sử dụng từ khóa `break` với forEach thì sao?
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -263,7 +286,7 @@ Uncaught SyntaxError: Illegal break statement
 
 Đúng vậy, bạn sẽ bị lỗi cú pháp **Illegal break statement** vì từ khóa break là không hợp lệ với forEach JS.
 
-Nghĩa là bạn không thể sử dụng từ khóa break với forEach. Thay vào đó bạn có thể sử dụng vòng lặp **for** như trên hoặc dùng phương thức **Array.prototype.some()** để thay thế:
+Nghĩa là bạn không thể sử dụng từ khóa break với forEach. Thay vào đó bạn có thể sử dụng vòng lặp **for** như trên hoặc dùng phương thức [`arr.some()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) để thay thế:
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -282,9 +305,9 @@ i= 2
 
 ### Từ khóa continue trong forEach
 
-Từ khóa **continue** thường được dùng để bỏ qua một lượt lặp trong vòng lặp.
+Từ khóa `continue` thường dùng để **bỏ qua một lượt lặp** trong vòng lặp.
 
-Ví dụ đoạn code sau dùng để bỏ qua lượt lặp khi **i bằng 3**:
+Ví dụ đoạn code sau dùng để bỏ qua lượt lặp khi `i` bằng `3`:
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -302,7 +325,7 @@ i= 4
 */
 ```
 
-Nếu chuyển sang dùng với forEach:
+Nếu chuyển sang dùng với `forEach`:
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -318,9 +341,9 @@ Illegal continue statement: no surrounding iteration statement
 */
 ```
 
-Đúng vậy, bạn sẽ bị lỗi **Illegal continue statement: no surrounding iteration statement**. Vì từ khóa **continue** không hợp lệ trong forEach JavaScript.
+Bạn sẽ bị lỗi **Illegal continue statement: no surrounding iteration statement**. Vì từ khóa `continue` không hợp lệ với forEach JavaScript.
 
-Nghĩa là bạn cũng không thể dùng continue bên trong forEach được. Thay vào đó bạn có thể dùng vòng lặp for như trên hoặc sử dụng từ khóa **return** như sau:
+Nghĩa là bạn cũng không thể dùng `continue` bên trong `forEach` được. Thay vào đó, bạn có thể dùng **vòng lặp for** như trên hoặc sử dụng từ khóa `return` như sau:
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -342,7 +365,7 @@ i= 4
 
 Ngoài forEach, JavaScript còn cung cấp một số phương thức khác, tương tự dành cho array. Đó là: _entries, every, filter, find, findIndex, keys, map, reduce, reduceRight, some, values._
 
-### Hàm [array.prototype.entries()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)
+### Hàm [`arr.entries()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)
 
 Trả về một mảng đối tượng mới, chứa **key/value** cho mỗi phần tử trong array.
 
@@ -350,7 +373,7 @@ Trả về một mảng đối tượng mới, chứa **key/value** cho mỗi ph
 a.entries();
 ```
 
-Để duyệt mảng đối tượng mới này, ta sử dụng vòng lặp **for...of**
+Để duyệt mảng đối tượng mới này, mình sử dụng vòng lặp `for...of`:
 
 ```js
 const a = ["a", "b", "c"];
@@ -366,38 +389,38 @@ for (let e of iterator) {
  */
 ```
 
-### Hàm [array.prototype.every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+### Hàm [`arr.every()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
-Trả về true nếu như tất cả các phần tử trong mảng thoả mãn 1 hàm kiểm tra, ngược lại trả về false.
+Trả về `true` nếu như tất cả các phần tử trong mảng thoả mãn 1 hàm kiểm tra, ngược lại trả về `false`.
 
 ```js
 arr.every(callback[, thisArg])
 ```
 
-Tham số truyền vào giống hệt với hàm forEach.
+Tham số truyền vào giống với hàm `forEach`.
 
-Ví dụ sau trả về true nếu tất cả các phần tử trong mảng thoả mãn đều >= 10:
+Ví dụ sau trả về `true` nếu tất cả các phần tử trong mảng thoả mãn đều lớn hơn hoặc bằng 10:
 
 ```js
 function isBigEnough(element, index, array) {
   return element >= 10;
 }
 
-console.log([12, 5, 8, 130, 44].every(isBigEnough)); // => false
-console.log([12, 54, 18, 130, 44].every(isBigEnough)); // => true
+console.log([12, 5, 8, 130, 44].every(isBigEnough)); // false
+console.log([12, 54, 18, 130, 44].every(isBigEnough)); // true
 ```
 
-### Hàm [array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+### Hàm [`arr.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
-Giống như cái tên của nó, phương thức này dùng để lọc ra các phần tử trong mảng thoả mãn một điều kiện cho trước. Và trả về một mảng mới chứa những phần tử đó.
+Giống như cái tên của nó, phương thức này dùng để **lọc ra các phần tử trong mảng thoả mãn một điều kiện** cho trước và trả về một mảng mới chứa những phần tử đó.
 
 ```js
-var newArray = arr.filter(callback[, thisArg])
+let newArray = arr.filter(callback[, thisArg])
 ```
 
-Tham số truyền vào giống hệt với hàm forEach.
+Tham số truyền vào giống với hàm `forEach`.
 
-Ví dụ sau lọc ra những phần tử trong mảng có giá trị >= 10:
+Ví dụ sau lọc ra những phần tử trong mảng có giá trị lớn hơn hoặc bằng 10:
 
 ```js
 function isBigEnough(value) {
@@ -409,17 +432,17 @@ console.log(filtered);
 // [12, 130, 44]
 ```
 
-### Hàm [array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+### Hàm [`arr.find()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
-Trả về giá trị của phần tử đầu tiên trong mảng thoả mãn điều kiện cho trước, nếu không tìm thấy thì trả về **undefined**.
+Trả về giá trị của **phần tử đầu tiên** trong mảng thoả mãn điều kiện cho trước, nếu không tìm thấy thì trả về `undefined`.
 
 ```js
-var var1 = arr.find(callback[, thisArg])
+let var1 = arr.find(callback[, thisArg])
 ```
 
-Tham số truyền vào cũng giống hệt như hàm forEach.
+Tham số truyền vào cũng giống như hàm `forEach`.
 
-Ví dụ sau tìm ra một [object](/object-la-gi-object-trong-javascript/) với tên của nó thoả mãn điều kiện cho trước:
+Ví dụ sau tìm ra một [object](/object-la-gi-object-trong-javascript/) với `name` thoả mãn điều kiện cho trước:
 
 ```js
 const inventory = [
@@ -437,17 +460,17 @@ console.log(inventory.find(findCherries));
 // {name: 'cherries', from: 'usa'}
 ```
 
-### Hàm [array.prototype.findIndex()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
+### Hàm [`arr.findIndex()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)
 
-Trả về chỉ số đầu tiên của phần tử thoả mãn điều kiện cho trước, ngược lại trả về -1.
+Trả về **chỉ số đầu tiên** của phần tử thoả mãn điều kiện cho trước, ngược lại trả về `-1`.
 
 ```js
-var id = arr.findIndex(callback[, thisArg])
+let id = arr.findIndex(callback[, thisArg])
 ```
 
-Tham số truyền vào cũng giống hệt như hàm forEach.
+Tham số truyền vào cũng giống như hàm `forEach`.
 
-Ví dụ sau tìm ra chỉ số object với tên của nó thoả mãn điều kiện cho trước:
+Ví dụ sau tìm ra chỉ số object với `name` thoả mãn điều kiện cho trước:
 
 ```js
 const inventory = [
@@ -462,76 +485,81 @@ function findCherries(fruit) {
 }
 
 console.log(inventory.findIndex(findCherries));
-// => 2
+// 2
 ```
 
-### Hàm [array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+### Hàm [`arr.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-Trả về mảng mới với mỗi phần tử là kết quả của việc gọi hàm callback ứng với mỗi phần tử của mảng ban đầu.
+Trả về mảng mới với mỗi phần tử là kết quả của việc gọi hàm callback với mỗi phần tử của mảng ban đầu.
 
 ```js
-var new_array = arr.map(callback[, thisArg])
+let new_array = arr.map(callback[, thisArg])
 ```
 
-Tham số truyền vào cũng giống hệt như hàm forEach JavaScript.
+Tham số truyền vào cũng giống như hàm `forEach` JavaScript.
 
-Ví dụ sau trả về mảng mới mà mỗi phần tử của mảng mới là căn bậc hai của phần tử tương ứng trong mảng ban đầu:
+Ví dụ sau trả về mảng mới, mà mỗi phần tử của mảng mới là **căn bậc hai** của phần tử tương ứng trong mảng ban đầu:
 
 ```js
 const numbers = [1, 4, 9];
 const roots = numbers.map(Math.sqrt);
-console.log(roots);
-// => [1, 2, 3]
-console.log(numbers);
-// => [1, 4, 9]
+
+console.log(roots); // [1, 2, 3]
+console.log(numbers); // [1, 4, 9]
 ```
 
-Những phương thức còn lại bạn có thể tham khảo thêm tại [đây](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array). Mình sẽ không trình bày thêm vì bài viết sẽ quá dài.
+Những phương thức còn lại bạn có thể tham khảo thêm tại bài viết: [Các phương thức của mảng trong JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
 ## Thực hành
 
 ### 1. Flattening
 
-Cho một mảng hai chiều. Hãy chuyển mảng đó thành mảng một chiều:
-
-- Sử dụng phương thức [array.prototype.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) và concat(). ([tham khảo](https://github.com/completejavascript/practical-javascript/blob/master/iteration/iteration-flattening-completejavascript.com.js))
-- Sử dụng vòng lặp for, while thông thường. ([tham khảo](https://github.com/completejavascript/practical-javascript/blob/master/iteration/loop-flattening-completejavascript.com.js))
-
-Ví dụ:
+Cho một mảng hai chiều, hãy chuyển mảng đó thành mảng một chiều, ví dụ:
 
 ```js
-var arrays = [[1, 2, 3], [4, 5], [6]];
+let arrays = [[1, 2, 3], [4, 5], [6]];
 /*
- * Your code here.
- * // => [1, 2, 3, 4, 5, 6]
+ * Code xử lý
+ *
+ * Đáp án: [1, 2, 3, 4, 5, 6]
  */
 ```
 
+► Sử dụng phương thức `arr.reduce()` và `arr.concat()`.
+
+[Xem đáp án](https://github.com/completejavascript/practical-javascript/blob/master/iteration/iteration-flattening-completejavascript.com.js)
+
+► Sử dụng [vòng lặp for, while](/vong-lap-trong-javascript/) thông thường.
+
+[Xem đáp án](https://github.com/completejavascript/practical-javascript/blob/master/iteration/loop-flattening-completejavascript.com.js)
+
 ### 2. Every and some
 
-Hãy viết hàm every() và some() thoả mãn:
+Hãy viết hàm `every()` và `some()` thoả mãn:
+
+- `every(arr, func)`: trả về `true` khi **tất cả** các phần tử của mảng `arr` làm hàm `func` trả về `true`, ngược lại thì trả về `false`.
+- `some(arr, func)`: trả về `true` khi **ít nhất một** phần tử của mảng `arr` làm hàm `func` trả về `true`, ngược lại thì trả về `false`.
 
 ```js
 console.log(every([NaN, NaN, NaN], isNaN));
-// => true
+// true
 console.log(every([NaN, NaN, 4], isNaN));
-// => false
+// false
 console.log(some([NaN, 3, 4], isNaN));
-// => true
+// true
 console.log(some([2, 3, 4], isNaN));
-// => false
+// false
 ```
 
-(tham khảo [every](https://github.com/completejavascript/practical-javascript/blob/master/iteration/every-prototype-completejavascript.com.js), [some](https://github.com/completejavascript/practical-javascript/blob/master/iteration/some-prototype-completejavascript.com.js)).
+Xem đáp án:
 
-## Kết luận
+- Hàm [`every`](https://github.com/completejavascript/practical-javascript/blob/master/iteration/every-prototype-completejavascript.com.js)
+- Hàm [`some`](https://github.com/completejavascript/practical-javascript/blob/master/iteration/some-prototype-completejavascript.com.js)
 
-Trên đây là một số kiến thức cơ bản về forEach trong JavaScript. Hy vọng qua bài viết này bạn hiểu được forEach JavaScript là gì? Cách sử dụng forEach và khi nào nên sử dụng forEach JS.
+## Tổng kết
 
-Nếu bạn có thắc mắc thì hãy để lại bình luận xuống phía dưới. Mình sẽ cố gắng giải đáp khi có thể.
+Trên đây là một số kiến thức cơ bản về forEach trong JavaScript.
 
-Chúc bạn thực hành vui vẻ và hẹn gặp lại ở [bài viết sau](/phan-biet-call-apply-va-bind-trong-javascript/), thân ái!
+Hy vọng qua bài viết này bạn hiểu được forEach JavaScript là gì? Cách sử dụng forEach và khi nào nên sử dụng forEach JS.
 
-**Tham khảo:**
-
-[Higher-Order Functions](http://eloquentjavascript.net/05_higher_order.html)
+Tham khảo: [Higher-Order Functions](http://eloquentjavascript.net/05_higher_order.html)
