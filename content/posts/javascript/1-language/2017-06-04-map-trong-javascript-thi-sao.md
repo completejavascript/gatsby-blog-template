@@ -1,9 +1,9 @@
 ---
 date: "2017-06-04T22:30:56Z"
-update: "2018-10-17T22:30:56Z"
+update: "2021-12-11T22:30:56Z"
 template: "post"
 directory: "JavaScript"
-cover: "../../../images/javascript/map-trong-javascript-thi-sao-completejavascript.com_.png"
+cover: "../../../images/javascript/map-trong-javascript-thi-sao.png"
 keywords: "map trong javascript"
 description: "Map trong JavaScript là một loại object cho phép lưu trữ dữ liệu theo kiểu key-value, tương tự như object. Sau đây mình sẽ cùng nhau tìm hiểu về nó nhé!"
 slug: map-trong-javascript-thi-sao
@@ -15,34 +15,27 @@ tags:
   - Kiểu dữ liệu
 ---
 
-Map trong JavaScript là một loại object cho phép lưu trữ dữ liệu theo kiểu key-value.
+**Map trong JavaScript** là một loại object cho phép lưu trữ dữ liệu theo kiểu **key-value**.
 
-Nghe thì có vẻ giống với [object](/object-la-gi-object-trong-javascript/) bình thường nhỉ? Vì object cũng cho phép bạn làm điều này mà.
+Nghe qua thì Map có vẻ giống với [object](/object-la-gi-object-trong-javascript/) bình thường. Nhưng không phải tự nhiên mà người ta **tạo thêm kiểu dữ liệu Map**.
 
-Nhưng mọi thứ trên đời này đều có ý nghĩa của riêng nó. Map cũng không ngoại lệ. Map có **những đặc điểm riêng biệt** so với object thông thường.
-
-Sau đây mình sẽ cùng tìm hiểu về Map trong JavaScript nhé!
+Thực tế, Map có **những đặc điểm riêng biệt** so với object thông thường. Sau đây, mình cùng tìm hiểu về Map trong JavaScript nhé!
 
 ## Map trong JavaScript là gì?
 
-Nói một cách đầy đủ thì Map trong JavaScript là một cấu trúc dữ liệu cho phép lưu trữ dữ liệu theo kiểu key-value, tương tự như object.
+Nói một cách đầy đủ, Map trong JavaScript là một **cấu trúc dữ liệu** cho phép lưu trữ dữ liệu theo kiểu **key-value**, tương tự như object. Tuy nhiên, chúng khác nhau ở chỗ là:
 
-Nhưng khác ở chỗ là:
+- Object chỉ cho phép sử dụng [String](/kieu-du-lieu-trong-javascript/) hay [Symbol](http://localhost:8000/tim-hieu-ve-symbol-trong-javascript/) làm key.
+- Map cho phép mọi kiểu dữ liệu (String, Number, Boolean, NaN, Object,...) có thể làm key.
 
-- Object chỉ cho phép sử dụng [String](/kieu-du-lieu-trong-javascript/) hay [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) làm key
-- Map cho phép mọi kiểu dữ liệu (String, Number, Boolean, NaN, Object,...) có thể làm key
-
-> **Chú ý:** về cơ bản thì Map cũng là Object, tuy nhiên, để tránh hiểu lầm, từ nay mỗi khi mình dùng từ object thì bạn hiểu đó là object thông thường mà từ trước đến giờ bạn vẫn sử dụng, không phải Map.
+> **Chú ý:** để tránh hiểu lầm, mỗi khi mình dùng từ **object** thì bạn hiểu đó là **object thông thường** mà từ trước đến giờ bạn vẫn sử dụng, không phải **Map**.
 
 ```js
 const map1 = new Map();
-console.log(typeof map1);
-// => object
+console.log(typeof map1); // object
 ```
 
-## Các hoạt động có thể làm với Map trong JavaScript
-
-### Khởi tạo Map
+## Khởi tạo Map trong JavaScript
 
 Cú pháp khởi tạo Map trong JavaScript là:
 
@@ -50,70 +43,71 @@ Cú pháp khởi tạo Map trong JavaScript là:
 new Map([iterable]);
 ```
 
-Cũng tương tự như Set, bạn có thể truyền vào một [iterable object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) để khởi tạo Map. Khi đó, mỗi phần tử của iterable object sẽ tương ứng với một phần tử của Map.
+Bạn có thể truyền vào một [iterable object](/iterable-la-gi-iterable-trong-javascript/) để khởi tạo Map. Khi đó, mỗi phần tử của iterable object sẽ tương ứng với một phần tử của Map.
 
-Dĩ nhiên, bạn cũng có thể không truyền tham số vào, khi đó Map sẽ rỗng và không có phần tử nào.
+Dĩ nhiên, tham số `iterable` là **không bắt buộc**. Khi bạn không truyền vào `iterable`, Map sẽ rỗng và không có phần tử nào.
 
-Một điều cần lưu ý ở đây: vì Map lưu trữ dữ liệu theo kiểu **key-value** nên mỗi phần tử của iterable object phải là một mảng gồm 2 phần tử có dạng: <code>[key, value]</code>.
+> **Chú ý**: vì Map lưu trữ dữ liệu theo kiểu **key-value** nên mỗi phần tử của iterable object phải là một **[mảng](/array-la-gi-array-trong-javascript/) gồm 2 phần tử** có dạng: `[key, value]`.
 
-Ví dụ:
+Một số ví dụ:
 
-- <code>[1, 2, 3, 4]</code>: là một iterable object, nhưng mỗi phần tử của nó là Number (1, 2, 3, 4). Suy ra, đây **không phải là tham số hợp lệ**.
-- <code>[[1, 2], [3, 4]]</code>: là một **tham số hợp lệ**, vì nó là iterable object mà mỗi phần tử là mảng 2 phần tử ([1, 2] và [3, 4]). Khi đó, "1" là key - "2" là value và "3" là key - "4" là value.
+- `[1, 2, 3, 4]`: là một iterable object, nhưng mỗi phần tử của nó là **number** (1, 2, 3, 4). Suy ra, đây **không phải là tham số hợp lệ** để khởi tạo map.
+- `[[1, 2], [3, 4]]`: là một **tham số hợp lệ**. Vì nó là iterable object mà mỗi phần tử lại là một mảng 2 phần tử - `[1, 2]` và `[3, 4]`. Khi đó:
+  - `1` là key - `2` là value
+  - `3` là key - `4` là value.
 
-Dựa trên những đặc điểm nêu trên, mình có thể khởi tạo Map theo những cách sau đây.
+Dựa vào những đặc điểm nêu trên, mình có thể khởi tạo Map trong JavaScript theo những cách sau đây.
 
-#### Khởi tạo Map rỗng
+### Khởi tạo Map rỗng
+
+Để khởi tạo Map rỗng, bạn chỉ cần **không truyền vào tham số** cho hàm khởi tạo:
 
 ```js
 const map1 = new Map();
 console.log(map1);
-// => Map(0) {}
+// Map(0) {}
 ```
 
-#### Khởi tạo Map từ Array
+### Khởi tạo Map từ array
+
+Array hợp lệ để khởi tạo Map là các phần tử của array phải là **một mảng hai phần tử**.
 
 ```js
+// Trường hợp hợp lệ:
+// Mỗi phần tử của mảng đầu vào là một mảng hai phần tử
 const map2 = new Map([
   [1, "a"],
   [2, "b"],
 ]);
 console.log(map2);
-// => Map(2) {1 => "a", 2 => "b"}
+// Map(2) {1 => "a", 2 => "b"}
 
+// Trường hợp KHÔNG hợp lệ:
+// Mỗi phần tử của mảng đầu vào không phải mảng hai phần tử
 const map3 = new Map([1, "a", 2, "b"]);
-// => Uncaught TypeError: Iterator value 1 is not an entry object
+// Uncaught TypeError: Iterator value 1 is not an entry object
 ```
 
-#### Khởi tạo Map từ arguments
+### Khởi tạo Map từ `arguments`
+
+Đối tượng [`arguments`](/object-la-gi-object-trong-javascript/#đối-tượng-arguments) là đối tượng có sẵn trong hàm, dùng để lưu trữ mảng các tham số truyền vào.
 
 ```js
 function func4() {
   const map4 = new Map(arguments);
   console.log(map4);
 }
+
 func4(["one", 1], ["two", 2], ["three", 3]);
-// => Map(3) {"one" => 1, "two" => 2, "three" => 3}
+// Map(3) {"one" => 1, "two" => 2, "three" => 3}
 ```
 
-#### Khởi tạo Map từ Set
+### Khởi tạo Map từ Map
+
+Bạn có thể khởi tạo Map từ một Map khác:
 
 ```js
-const set5 = new Set([
-  ["a", 1],
-  ["b", 2],
-]);
-console.log(set5);
-// => Set(2) {Array(2), Array(2)}
-
-const map5 = new Map(set5);
-console.log(map5);
-// => Map(2) {"a" => 1, "b" => 2}
-```
-
-#### Khởi tạo Map từ Map
-
-```js
+// Khởi tạo map thứ nhất
 const map6 = new Map([
   ["a", 1],
   ["b", 2],
@@ -121,102 +115,136 @@ const map6 = new Map([
 console.log(map6);
 // => Map(2) {"a" => 1, "b" => 2}
 
+// Khởi tạo map thứ hai từ map thứ nhất
 const map6_clone = new Map(map6);
 console.log(map6_clone);
-// => Map(2) {"a" => 1, "b" => 2}
+// Map(2) {"a" => 1, "b" => 2}
 ```
 
-**Chú ý:** Ngoài các kiểu iterable object trên thì còn có String, [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), TypedArray. Nhưng tiếc là mình chưa tìm thấy cách nào có thể tạo ra những iterable object kiểu này mà mỗi phần tử của nó là một mảng chứa 2 phần tử dạng (<code>["key", "value"]</code>).
+### Khởi tạo Map từ Set
 
-Nếu bạn tìm ra cách cho vấn đề này, vui lòng chia sẻ lại với mình nhé, **thank you!**
-
-### Thêm phần tử vào Map
-
-Để thêm phần tử vào Map, bạn có thể sử dụng phương thức _set_, với cú pháp:
+Ngoài ra, bạn có thể khởi tạo Map từ [Set](/ban-biet-gi-ve-set-trong-javascript/):
 
 ```js
-Map.prototype.set(key, value);
+// Khởi tạo Set
+const set5 = new Set([
+  ["a", 1],
+  ["b", 2],
+]);
+console.log(set5);
+// Set(2) {Array(2), Array(2)}
+
+const map5 = new Map(set5);
+console.log(map5);
+// Map(2) {"a" => 1, "b" => 2}
 ```
 
-Phương thức này sẽ gán giá trị _value_ cho khoá _key_ bên trong Map. Nói vậy nghĩa là, nếu _key_ chưa tồn tại thì Map sẽ tạo mới phần tử với _key_ tương ứng. Ngược lại, nếu _key_ đã tồn tại thì Map sẽ gán giá trị mới cho nó.
+Trên đây là một số cách để khởi tạo Map trong JavaScript. Tiếp theo, mình sẽ tìm hiểu về cách để thêm phần tử vào Map.
 
-**Vấn đề làm sao biết được _key_ đã tồn tại hay chưa?**
+## Thêm phần tử vào Map
 
-Map sử dụng thuật toán [SameValueZero](https://tc39.github.io/ecma262/#sec-samevaluezero) để so sánh giá trị của các key với nhau. Thuật toán _SameValueZero_ về cơ bản là giống với việc sử dụng toán tử "===" để so sánh. Chỉ khác là nó coi NaN là giống nhau (mặc dù <code>NaN !== NaN</code>);
+Để thêm phần tử vào Map trong JavaScript, bạn có thể sử dụng phương thức `set`, với cú pháp:
+
+```js
+map.set(key, value);
+```
+
+Phương thức này gán giá trị `value` cho khoá `key` bên trong Map.
+
+Nếu **`key` chưa tồn tại** thì Map tạo mới phần tử với `key` tương ứng. Ngược lại, nếu **`key` đã tồn tại** thì Map sẽ gán giá trị mới cho nó.
+
+**Vấn đề làm sao biết được `key` đã tồn tại hay chưa?**
+
+Map sử dụng thuật toán [SameValueZero](https://tc39.github.io/ecma262/#sec-samevaluezero) để **so sánh giá trị** của các key với nhau.
+
+Thuật toán **SameValueZero** về cơ bản là giống với việc sử dụng toán tử `===` để so sánh. Chỉ khác là **SameValueZero** coi `NaN` là giống nhau, mặc dù `NaN !== NaN` là `true`.
 
 Ví dụ:
 
 ```js
+// Khởi tạo Map rỗng.
 const map7 = new Map();
+
+// Thêm phần tử "a" -> 1 vào map.
 map7.set("a", 1);
-// => Map(1) {"a" => 1}
+// Map(1) {"a" => 1}
 
+// Thêm phần tử "b" -> 2 vào map, "b" !== "a" nên Map tạo phần tử mới.
 map7.set("b", 2);
-// => Map(2) {"a" => 1, "b" => 2}
+// Map(2) {"a" => 1, "b" => 2}
 
+// Thêm phần tử [1] -> 3 vào map, [1] đều khác "a" và "b".
 map7.set([1], 3);
-// => Map(3) {"a" => 1, "b" => 2, [1] => 3}
+// Map(3) {"a" => 1, "b" => 2, [1] => 3}
 
+// Thêm phần tử "a" -> 4 vào map, tuy nhiên key "a" đã tồn tại.
+// => cập nhật vào phần tử cũ - số lượng phần tử không đổi
 map7.set("a", 4);
-// => Map(3) {"a" => 4, "b" => 2, [1] => 3}
+// Map(3) {"a" => 4, "b" => 2, [1] => 3}
 
+// Thêm phần tử [1] -> 5 vào map.
+// Trong map đã có phần tử với key [1], tuy nhiên mảng là kiểu tham chiếu.
+// Vì vậy [1] !== [1]. Do đó, phần tử mới được thêm vào map.
 map7.set([1], 5);
-// => Map(4) {"a" => 4, "b" => 2, [1] => 3, [1] => 5}
+// Map(4) {"a" => 4, "b" => 2, [1] => 3, [1] => 5}
 
+// Thêm phần tử NaN -> 6 vào map.
+// NaN khác các giá trị key đã có, nên phần tử mới được thêm vào map.
 map7.set(NaN, 6);
-// => Map(5) {"a" => 4, "b" => 2, [1] => 3, [1] => 5, NaN => 6}
+// Map(5) {"a" => 4, "b" => 2, [1] => 3, [1] => 5, NaN => 6}
 ```
 
-Bạn nhớ là khi sử dụng toán tử "===" để so sánh thì <code>[1] !== [1]</code>. Nên trong Map sẽ tồn tại 2 cặp phần tử với key là <code>[1]</code> với value lần lượt là 3 và 5 như trên.
+Khi sử dụng [toán tử so sánh](/toan-tu-so-sanh-trong-javascript/) bằng nghiêm ngặt `===` thì `[1] === [1]` là `false`. Vì vậy, Map trên tồn tại 2 cặp phần tử với key là `[1]` với value lần lượt là `3` và `5`.
 
-Ngoài ra, phương thức _set_ còn trả về chính đối tượng Map. Nên mình có thể áp dụng [kỹ thuật Method Chaining](/tim-hieu-ki-thuat-method-chaining-co-ban/) ở đây, sẽ giúp cho code trở nên ngắn gọn hơn.
+Ngoài ra, phương thức `set` còn trả về chính đối tượng Map. Nên mình có thể áp dụng [kỹ thuật Method Chaining](/tim-hieu-ki-thuat-method-chaining-co-ban/) ở đây, sẽ giúp cho code trở nên ngắn gọn hơn.
 
 Đoạn code trên có thể trở nên gọn hơn bằng cách:
 
 ```js
 const map7 = new Map();
 map7.set("a", 1).set("b", 2).set([1], 3).set("a", 4).set([1], 5).set(NaN, 6);
-// => Map(5) {"a" => 4, "b" => 2, [1] => 3, [1] => 5, NaN => 6}
+// Map(5) {"a" => 4, "b" => 2, [1] => 3, [1] => 5, NaN => 6}
 ```
 
-### Lấy giá trị của phần tử trong Map
+## Lấy giá trị của phần tử trong Map
 
-Để lấy _value_ của phần tử tương ứng với _key_, bạn có thể sử dụng phương thức _Map.prototype.get(key)_.
+Để lấy `value` tương ứng với `key` của map trong JavaScript, bạn có thể sử dụng phương thức `map.get(key)` như sau:
 
 ```js
 const map7 = new Map([
   ["a", 1],
   ["b", 1],
 ]);
-console.log(map7.get("a")); // => 1
-console.log(map7.get("c")); // => undefined
+
+console.log(map7.get("a")); // 1
+console.log(map7.get("c")); // undefined
 ```
 
-Nếu _key_ tồn tại trong Map thì phương thức này trả về _value_ tương ứng. Ngược lại, nó sẽ trả về **undefined**.
+Nếu `key` tồn tại trong Map thì phương thức `map.get(key)` trả về `value` tương ứng, ngược lại thì trả về `undefined`.
 
-### Lấy số lượng phần tử trong Map
+## Lấy số lượng phần tử trong Map
 
-Tương tự như Set, bạn có thể sử dụng phương thức <code>Map.prototype.size</code> để lấy ra kích thước của Map.
+Để lấy ra **số lượng các phần tử** của Map trong JavaScript, bạn sử dụng phương thức `map.size`, ví dụ:
 
 ```js
 const map8 = new Map();
 console.log(map8.size);
-// => 0
+// 0 - mảng rỗng
 
 map8.set("a", 1).set("b", 2);
 console.log(map8.size);
-// => 2
+// 2 - mảng có 2 phần tử
 ```
 
-### Kiểm tra phần tử tồn tại trong Map
+## Kiểm tra phần tử tồn tại trong Map
 
-Để kiểm tra xem một phần tử đã tồn tại trong Map hay chưa - thực chất là kiểm tra xem một giá trị _key_ đã tồn tại hay chưa, bạn có thể dùng phương thức _has_ như sau:
+Để kiểm tra xem **một phần tử đã tồn tại** trong Map hay chưa - thực chất là kiểm tra xem một giá trị `key` đã tồn tại hay chưa, bạn có thể dùng phương thức `has` như sau:
 
 ```js
-Map.prototype.has(key);
+map.has(key);
 ```
 
-Nếu trong Map tồn tại _key_ thì phương thức này trả về **true** và ngược lại, nó sẽ trả về **false**.
+Nếu trong Map tồn tại `key` thì phương thức `map.has(key)` trả về `true`, ngược lại thì trả về `false`.
 
 ```js
 const map9 = new Map([
@@ -225,24 +253,25 @@ const map9 = new Map([
   [[2], 3],
   [NaN, 4],
 ]);
-console.log(map9.has("a")); // => true
-console.log(map9.has("1")); // => false
-console.log(map9.has(1)); // => true
-console.log(map9.has([2])); // => false
-console.log(map9.has(NaN)); // => true
+
+console.log(map9.has("a")); // true
+console.log(map9.has("1")); // false
+console.log(map9.has(1)); // true
+console.log(map9.has([2])); // false - vì [2] !== [2]
+console.log(map9.has(NaN)); // true
 ```
 
-**Nhớ là Map sử dụng thuật toán _SameValueZero_ để so sánh nhé!**
+> Bạn nhớ là Map sử dụng thuật toán **SameValueZero** để so sánh nhé!
 
-### Xoá một phần tử trong Map
+## Xoá một phần tử trong Map
 
-Để xóa một phần tử trong Map, bạn có thể sử dụng phương thức _delete_:
+Để **xóa một phần tử** trong Map, bạn sử dụng phương thức `delete`:
 
 ```js
-Map.prototype.delete(key);
+map.delete(key);
 ```
 
-Nếu trong Map tồn tại _key_ thì phần tử ứng với _key_ sẽ bị xóa khỏi Map và phương thức này trả về **true**. Ngược lại, phương thức này sẽ trả về **false**.
+Nếu trong Map tồn tại `key` thì phần tử ứng với `key` sẽ bị xóa khỏi Map. Phương thức `map.delete(key)` trả về `true` nếu `key` tồn tại, ngược lại thì trả về `false`.
 
 ```js
 const map10 = new Map([
@@ -253,16 +282,18 @@ const map10 = new Map([
 console.log(map10);
 // Map(3) {"one" => 1, "two" => 2, "three" => 3}
 
+// xóa phần tử với key là "two" - tồn tại
 console.log(map10.delete("two"));
 // true
 
+// sau khi xóa, map còn lại 2 phần tử
 console.log(map10);
 // {"one" => 1, "three" => 3}
 ```
 
-### Xoá tất cả phần tử trong Map
+## Xoá tất cả phần tử trong Map
 
-Bên trên là xóa **một** phần tử khỏi Map. Còn để xóa hết **tất cả** các phần tử khỏi Map, bạn sử dụng phương thức _clear_:
+Phía trên là cách xóa **một phần tử** khỏi Map. Để xóa hết **tất cả các phần tử** khỏi Map, bạn sử dụng phương thức `clear`:
 
 ```js
 const map11 = new Map([
@@ -273,16 +304,21 @@ const map11 = new Map([
 console.log(map11);
 // Map(3) {"a" => 1, "b" => 2, "c" => 3}
 
+// xóa hết các phần tử
 map11.clear();
+
+// map trở thành empty
 console.log(map11);
 // Map(0) {}
 ```
 
-### Duyệt qua các phần tử trong Map
+## Duyệt qua các phần tử trong Map
 
-Tương tự như Set, bạn cũng có thể duyệt qua các phần tử trong Map thông qua các cách sau đây.
+Sau đây là các cách để duyệt qua các phần tử của Map trong JavaScript.
 
-#### Sử dụng for...of
+### Sử dụng `for...of`
+
+Map là [iterable object](/iterable-la-gi-iterable-trong-javascript/). Do đó, bạn có thể sử dụng `for...of` để duyệt qua các phần tử của Map.
 
 ```js
 const map12 = new Map([
@@ -301,7 +337,9 @@ for (const item of map12) {
  */
 ```
 
-#### Sử dụng phương thức forEach
+### Sử dụng phương thức `forEach`
+
+Bạn cũng có thể sử dụng `forEach` duyệt qua các phần tử của map như sau:
 
 ```js
 const map13 = new Map([
@@ -320,9 +358,21 @@ map13.forEach((value, key, map) => {
  */
 ```
 
-Trong đó, bạn chú ý trong hàm callback, tham số đầu tiên là **value**, tiếp theo mới là **key**. Chứ không phải theo thứ tự thông thương là **key-value**.
+Bạn chú ý **hàm callback**:
 
-#### Sử dụng phương thức keys(), values(), entries()
+- Tham số đầu tiên là `value` ứng với phần tử đang duyệt.
+- Tiếp theo mới là `key` của phần tử đang duyệt.
+- Cuối cùng là `map` đang duyệt.
+
+Cú pháp này tương tự với của [forEach khi duyệt mảng](/javascript-foreach-la-cai-quai-gi/):
+
+```js
+arr.forEach(function (value, index, arr) {
+  // code xử lý
+});
+```
+
+### Sử dụng phương thức `keys()`, `values()`, `entries()`
 
 Phương thức <code>Map.prototype.keys()</code> trả về một iterable object chứa giá trị **key** của các phần tử theo thứ tự chèn vào.
 
@@ -365,9 +415,9 @@ for (const item of map14.entries()) {
  */
 ```
 
-### Chuyển Map thành Array
+## Chuyển Map thành Array
 
-#### Chuyển Map Keys thành Array
+### Chuyển Map Keys thành Array
 
 ```js
 const map15 = new Map([
@@ -380,7 +430,7 @@ console.log(keys);
 // => [1, "b", 3]
 ```
 
-#### Chuyển Map Values thành Array
+### Chuyển Map Values thành Array
 
 ```js
 const map16 = new Map([
@@ -393,7 +443,7 @@ console.log(values);
 // => ["a", 2, "c"]
 ```
 
-## Lời kết
+## Tổng kết
 
 Trên đây là những kiến thức cơ bản về Map trong JavaScript. Hy vọng nó có thể giúp bạn hiểu hơn về kiểu dữ liệu này và có thể áp dụng vào các project thực tế của mình.
 
@@ -404,5 +454,5 @@ Xin chào và hẹn gặp lại trong bài viết tiếp theo, thân ái!
 **Tham khảo**:
 
 - [Map - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
-- [Map, Map, WeakMap and WeakSet](https://javascript.info/map-set-weakmap-weakset)
+- [Map and Set](https://javascript.info/map-set)
 - [The Map JavaScript Data Structure](https://flaviocopes.com/javascript-data-structures-map/)
