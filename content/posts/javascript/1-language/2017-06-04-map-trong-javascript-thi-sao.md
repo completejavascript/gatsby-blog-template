@@ -374,11 +374,9 @@ arr.forEach(function (value, index, arr) {
 
 ### Sử dụng phương thức `keys()`, `values()`, `entries()`
 
-Phương thức <code>Map.prototype.keys()</code> trả về một iterable object chứa giá trị **key** của các phần tử theo thứ tự chèn vào.
+► Phương thức `map.keys()`
 
-Phương thức <code>Map.prototype.values()</code> trả về một iterable object chứa giá trị **value** của các phần tử theo thứ tự chèn vào.
-
-Phương thức <code>Map.prototype.entries()</code> trả về một iterable object mà mỗi phần tử tương ứng là một mảng <code>[key, value]</code>.
+Trả về một iterable object chứa giá trị `key` của các phần tử theo thứ tự chèn vào.
 
 ```js
 const map14 = new Map([
@@ -395,6 +393,16 @@ for (const key of map14.keys()) {
  * b
  * 3
  */
+```
+
+► Phương thức `map.values()` trả về một iterable object chứa giá trị `value` của các phần tử theo thứ tự chèn vào.
+
+```js
+const map14 = new Map([
+  [1, "a"],
+  ["b", 2],
+  [3, "c"],
+]);
 
 for (const value of map14.values()) {
   console.log(value);
@@ -404,6 +412,16 @@ for (const value of map14.values()) {
  * 2
  * c
  */
+```
+
+► Phương thức `map.entries()` trả về một iterable object mà mỗi phần tử tương ứng là một mảng `[key, value]`.
+
+```js
+const map14 = new Map([
+  [1, "a"],
+  ["b", 2],
+  [3, "c"],
+]);
 
 for (const item of map14.entries()) {
   console.log(item);
@@ -417,7 +435,9 @@ for (const item of map14.entries()) {
 
 ## Chuyển Map thành Array
 
-### Chuyển Map Keys thành Array
+Sau đây là một số cách chuyển map trong JavaScript thành array sử dụng [cú pháp spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
+
+### Chuyển Map keys thành Array
 
 ```js
 const map15 = new Map([
@@ -425,12 +445,13 @@ const map15 = new Map([
   ["b", 2],
   [3, "c"],
 ]);
+
 const keys = [...map15.keys()];
 console.log(keys);
-// => [1, "b", 3]
+// [1, "b", 3]
 ```
 
-### Chuyển Map Values thành Array
+### Chuyển Map values thành Array
 
 ```js
 const map16 = new Map([
@@ -438,18 +459,28 @@ const map16 = new Map([
   ["b", 2],
   [3, "c"],
 ]);
+
 const values = [...map16.values()];
 console.log(values);
-// => ["a", 2, "c"]
+// ["a", 2, "c"]
 ```
 
 ## Tổng kết
 
-Trên đây là những kiến thức cơ bản về Map trong JavaScript. Hy vọng nó có thể giúp bạn hiểu hơn về kiểu dữ liệu này và có thể áp dụng vào các project thực tế của mình.
+Map trong JavaScript là một loại object dùng để lưu trữ dữ liệu theo kiểu **key-value**, nhưng Map khác object ở một số điểm sau:
 
-Nếu có gì thắc mắc, đừng ngại hỏi mình bằng cách bình luận phía dưới nhé!
+- Map cho phép **key** thuộc bất kỳ kiểu dữ liệu nào.
+- Map có thuộc tính **size** và một số phương thức đặc trưng.
 
-Xin chào và hẹn gặp lại trong bài viết tiếp theo, thân ái!
+Một số phương thức và thuộc tính của Map:
+
+- `new Map([iterable])`: khởi tạo Map với tham số là một iterable object (không bắt buộc) với mỗi phần tử có dạng `[key, value]`.
+- `map.set(key, value)`: lưu `value` bởi `key` và trả về `map`.
+- `map.get(key)`: trả về `value` bởi `key`, nếu `key` không tồn tại thì trả về `undefined`.
+- `map.has(key)`: trả về `true` nếu `key` tồn tại, ngược lại thì trả về `false`.
+- `map.delete(key)`: xóa giá trị ứng với `key` và trả về `true` nếu `key` tồn tại, ngược lại thì trả về `false`.
+- `map.clear()`: xóa tất cả các phần tử trong `map`.
+- `map.size`: trả về số phần tử hiện tại có trong `map`.
 
 **Tham khảo**:
 
