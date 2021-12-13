@@ -71,6 +71,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Map trong JavaScript](/map-trong-javascript-thi-sao/)
 - [So sánh Map và Object](/so-sanh-map-voi-object-trong-javascript/)
 - [Set trong JavaScript](/ban-biet-gi-ve-set-trong-javascript/)
+- [Weakmap trong JavaScript](/weakmap-trong-javascript/)
 - [Destructuring Assignment](/destructuring-assignment-trong-javascript/)
 - [Ứng dụng reduce trong mảng](/ung-dung-cua-reduce-javascript/)
 - [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6/)
