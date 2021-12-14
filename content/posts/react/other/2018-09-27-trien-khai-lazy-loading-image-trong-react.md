@@ -8,6 +8,7 @@ keywords: "triển khai Lazy Loading Image trong React"
 description: "Lazy Loading Image là một phương pháp rất hay. Vì vậy, bài viết này sẽ giúp bạn hiểu được tư tưởng chính và cách triển khai Lazy Loading Image trong React."
 slug: trien-khai-lazy-loading-image-trong-react
 title: "Triển khai Lazy Loading Image trong React"
+series: "React: Học react qua ví dụ"
 tags:
   - Create-react-app
   - Performance

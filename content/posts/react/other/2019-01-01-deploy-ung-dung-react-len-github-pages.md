@@ -8,6 +8,7 @@ keywords: "deploy ứng dụng react"
 description: "Các bước cơ bản và đơn giản để tạo và deploy ứng dụng React lên Github Pages. Bạn chỉ cần làm theo đảm bảo sẽ deploy ứng dụng React thành công."
 slug: deploy-ung-dung-react-len-github-pages
 title: "Tạo và deploy ứng dụng React lên Github Pages"
+series: "React: Deploy"
 tags:
   - Create-react-app
   - Git

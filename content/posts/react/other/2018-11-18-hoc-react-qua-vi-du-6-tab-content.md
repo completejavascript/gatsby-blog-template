@@ -8,7 +8,7 @@ keywords: "tab content"
 description: "Xin chào bạn đến với Học React qua ví dụ #6. Bài này mình sẽ thực hành React thông qua việc tạo Tab Content. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-6-tab-content
 title: "Học React qua ví dụ #6: Tab Content"
-series: "Học React qua ví dụ"
+series: "React: Học react qua ví dụ"
 tags:
   - Create-react-app
   - React Component

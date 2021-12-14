@@ -8,6 +8,7 @@ keywords: "react component lifecycle"
 description: "Bạn có biết các phương thức trong React Component Lifecycle hay chưa? Chúng được gọi khi nào và chúng được sử dụng để làm gì?"
 slug: tim-hieu-react-component-lifecycle
 title: "Tìm hiểu React Component Lifecycle"
+series: "React: Các thành phần cơ bản"
 tags:
   - React Lifecycle
 ---

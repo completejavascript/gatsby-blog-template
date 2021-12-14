@@ -8,6 +8,7 @@ keywords: "một số plugin gatsby.js"
 description: "Gatsby.js hỗ trợ rất nhiều plugin, nhưng chỉ có một số plugin Gatsby.js hay dùng. Vì vậy, bài viết này mình sẽ liệt kê những plugin đó."
 slug: mot-so-plugin-gatsby-js-hay-dung
 title: "Một số plugin Gatsby.js hay dùng"
+series: "React: Thư viện"
 tags:
   - Command Line
   - Gatsby.js

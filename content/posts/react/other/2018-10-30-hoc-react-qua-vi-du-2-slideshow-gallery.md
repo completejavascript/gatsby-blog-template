@@ -8,7 +8,7 @@ keywords: "Slideshow Gallery"
 description: "Xin chào bạn đến với Học React qua ví dụ #2. Bài trước mình đã thực hành Slideshow rồi. Bài viết này mình sẽ cải tiến nó trở thành Slideshow Gallery."
 slug: hoc-react-qua-vi-du-2-slideshow-gallery
 title: "Học React qua ví dụ #2: Slideshow Gallery"
-series: "Học React qua ví dụ"
+series: "React: Học react qua ví dụ"
 tags:
   - Create-react-app
   - Event

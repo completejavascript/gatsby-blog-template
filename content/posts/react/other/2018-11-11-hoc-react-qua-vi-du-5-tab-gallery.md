@@ -8,7 +8,7 @@ keywords: "tab gallery"
 description: "Xin chào bạn đến với Học React qua ví dụ #5. Bài này mình sẽ thực hành React thông qua việc tạo Tab Gallery. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-5-tab-gallery
 title: "Học React qua ví dụ #5: Tab Gallery"
-series: "Học React qua ví dụ"
+series: "React: Học react qua ví dụ"
 tags:
   - Create-react-app
   - React Component

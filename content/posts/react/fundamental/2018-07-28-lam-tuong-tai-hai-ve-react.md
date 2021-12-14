@@ -8,6 +8,7 @@ keywords: "lầm tưởng tai hại về React"
 description: "Một lầm tưởng tai hại về React là: trước khi học React phải biết về Nodejs và muốn deploy ứng dụng sử dụng React thì phải kiếm server hỗ trợ Nodejs."
 slug: lam-tuong-tai-hai-ve-react
 title: "Lầm tưởng tai hại về React"
+series: "React: Kiến thức tổng quan"
 ---
 
 Xin chào bạn đến với bài viết **Lầm tưởng tai hại về React**. Nếu bạn theo dõi blog này từ lâu thì sẽ thấy rằng mình chủ yếu viết về [JavaScript thuần](/javascript/). Ngoài ra, thư viện JavaScript mình dùng chủ yếu cũng chỉ là [jQuery](/tag/jquery/). Tuy nhiên, sau một thời gian suy nghĩ, mình quyết định sẽ học sâu một [framework hoặc thư viện JavaScript](/top-5-framework-javascript-moi-nhat-cho-phat-trien-web-va-app/) (về front-end) để khỏi bị lạc hậu so với thế giới.

@@ -8,7 +8,7 @@ keywords: "draggable note"
 description: "Xin chào bạn đến với Học React qua ví dụ #9. Bài này mình sẽ thực hành React thông qua việc tạo Draggable Note. Mời bạn theo dõi bài viết."
 slug: hoc-react-qua-vi-du-9-draggable-note
 title: "Học React qua ví dụ #9: Draggable Note"
-series: "Học React qua ví dụ"
+series: "React: Học react qua ví dụ"
 tags:
   - Create-react-app
   - React Component

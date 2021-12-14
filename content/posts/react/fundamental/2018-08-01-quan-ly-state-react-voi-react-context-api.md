@@ -8,6 +8,7 @@ keywords: "react context api"
 description: "React Context API có thể thay thế Redux để quản lý State của ứng dụng React một cách dễ dàng. Cụ thể thế nào, mời bạn theo dõi bài viết!"
 slug: quan-ly-state-react-voi-react-context-api
 title: "Quản lý state trong React với React Context API"
+series: "React: Các thành phần cơ bản"
 tags:
   - React State
 ---
