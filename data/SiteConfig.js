@@ -14,9 +14,8 @@ const config = {
   googleAnalyticsID: "UA-96543695-5", // GA tracking ID.
   postDefaultCategoryID: "", // Default category for posts.
   // Common for tag, category pages and widget
-  numberLatestPost: 8,
-  numberLatestFreebie: 6,
-  numberLatestRelatedPost: 6,
+  numberLatestPost: 10,
+  numberLatestFreebie: 10,
   postsPerPage: 10,
   // Use for post
   txtShare: "Chia sẻ: ",
