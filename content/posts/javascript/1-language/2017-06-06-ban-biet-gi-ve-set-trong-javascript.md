@@ -12,6 +12,7 @@ series: "JavaScript: Các kiểu dữ liệu"
 tags:
   - ES6
   - Kiểu dữ liệu
+  - Set
 ---
 
 Mình đã tìm hiểu về [Map](/map-trong-javascript-thi-sao/) trong JavaScript rồi. Bài viết này mình tiếp tục tìm hiểu về một loại **object đặc biệt** nữa. Đó là Set trong Javascript
