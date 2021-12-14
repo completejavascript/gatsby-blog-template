@@ -4,12 +4,10 @@ import config from "../../../data/SiteConfig";
 import AdSense from "react-adsense";
 import "./Sidebar.scss";
 
-const MIN_POST_FOR_ADS = 3;
-
 const Sidebar = ({
   postSlug,
-  latestPostEdges,
-  latestFreebieEdges,
+  latestPostEdges = [],
+  latestFreebieEdges = [],
   sameSeriesPosts = [],
   isLeft = false,
 }) => {
@@ -21,13 +19,11 @@ const Sidebar = ({
     >
       {sameSeriesPosts && sameSeriesPosts.length > 0 && (
         <>
-          {config.hasAdsense &&
-            config.adsenseUnits?.sidebarTop &&
-            sameSeriesPosts.length > MIN_POST_FOR_ADS && (
-              <div className="width-full flex justify-content-center padding-top">
-                <AdSense.Google {...config.adsenseUnits?.sidebarTop} />
-              </div>
-            )}
+          {config.hasAdsense && config.adsenseUnits?.sidebarTop && (
+            <div className="width-full flex justify-content-center padding-top">
+              <AdSense.Google {...config.adsenseUnits?.sidebarTop} />
+            </div>
+          )}
           <WidgetLatestPosts
             postSlug={postSlug}
             postEdges={sameSeriesPosts}
@@ -36,33 +32,29 @@ const Sidebar = ({
         </>
       )}
 
-      {latestPostEdges &&
-        latestPostEdges.length > 0 &&
-        latestPostEdges.length > MIN_POST_FOR_ADS && (
-          <>
-            {config.hasAdsense && config.adsenseUnits?.sidebarMiddle && (
-              <div className="width-full flex justify-content-center padding-top">
-                <AdSense.Google {...config.adsenseUnits?.sidebarMiddle} />
-              </div>
+      {latestPostEdges && latestPostEdges.length > 0 && (
+        <>
+          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle && (
+            <div className="width-full flex justify-content-center padding-top">
+              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle} />
+            </div>
+          )}
+          <WidgetLatestPosts
+            postEdges={latestPostEdges.filter(
+              (item) => item.node.fields.slug !== postSlug
             )}
-            <WidgetLatestPosts
-              postEdges={latestPostEdges.filter(
-                (item) => item.node.fields.slug !== postSlug
-              )}
-              title={config.latestPostsWidgetTitle}
-            />
-          </>
-        )}
+            title={config.latestPostsWidgetTitle}
+          />
+        </>
+      )}
 
       {latestFreebieEdges && latestFreebieEdges.length > 0 && (
         <>
-          {config.hasAdsense &&
-            config.adsenseUnits?.sidebarMiddle2 &&
-            latestFreebieEdges.length > MIN_POST_FOR_ADS && (
-              <div className="width-full flex justify-content-center padding-top">
-                <AdSense.Google {...config.adsenseUnits?.sidebarMiddle2} />
-              </div>
-            )}
+          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle2 && (
+            <div className="width-full flex justify-content-center padding-top">
+              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle2} />
+            </div>
+          )}
           <WidgetLatestPosts
             postEdges={latestFreebieEdges.filter(
               (item) => item.node.fields.slug !== postSlug

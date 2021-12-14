@@ -12,8 +12,7 @@ import config from "../../data/SiteConfig";
 import { useSlash } from "../utils/helpers";
 
 const BlogTemplate = ({ data, pageContext }) => {
-  const { latestPostEdges, latestFreebieEdges, currentPage, totalPages } =
-    pageContext;
+  const { latestPostEdges, currentPage, totalPages } = pageContext;
 
   const postEdges = data.allMarkdownRemark?.edges || [];
   const postList = getPostList(postEdges);
@@ -43,12 +42,7 @@ const BlogTemplate = ({ data, pageContext }) => {
 
   const sidebarLeft = <Sidebar isLeft={true} />;
 
-  const sidebarRight = (
-    <Sidebar
-      latestPostEdges={latestPostEdges}
-      latestFreebieEdges={latestFreebieEdges}
-    />
-  );
+  const sidebarRight = <Sidebar latestPostEdges={latestPostEdges} />;
 
   return (
     <Layout>

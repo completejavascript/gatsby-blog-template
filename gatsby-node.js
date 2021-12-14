@@ -318,7 +318,6 @@ exports.createPages = async ({ graphql, actions }) => {
         context: {
           tag,
           latestPostEdges,
-          latestFreebieEdges,
           limit: postsPerPage,
           skip: i * postsPerPage,
           currentPage: i + 1,
@@ -343,7 +342,6 @@ exports.createPages = async ({ graphql, actions }) => {
         component: blogPageTemplate,
         context: {
           latestPostEdges,
-          latestFreebieEdges,
           limit: postsPerPage,
           skip: i * postsPerPage,
           currentPage: i + 1,
@@ -367,7 +365,6 @@ exports.createPages = async ({ graphql, actions }) => {
         ),
         component: freebiePageTemplate,
         context: {
-          latestPostEdges,
           latestFreebieEdges,
           limit: postsPerPage,
           skip: i * postsPerPage,

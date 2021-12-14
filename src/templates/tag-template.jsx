@@ -15,8 +15,7 @@ import {
 import config from "../../data/SiteConfig";
 
 const TagTemplate = ({ data, pageContext }) => {
-  const { tag, latestPostEdges, latestFreebieEdges, currentPage, totalPages } =
-    pageContext;
+  const { tag, latestPostEdges, currentPage, totalPages } = pageContext;
 
   const postEdges = data.allMarkdownRemark?.edges || [];
   const postList = getPostList(postEdges);
@@ -47,12 +46,7 @@ const TagTemplate = ({ data, pageContext }) => {
 
   const sidebarLeft = <Sidebar isLeft={true} />;
 
-  const sidebarRight = (
-    <Sidebar
-      latestPostEdges={latestPostEdges}
-      latestFreebieEdges={latestFreebieEdges}
-    />
-  );
+  const sidebarRight = <Sidebar latestPostEdges={latestPostEdges} />;
 
   return (
     <Layout>
