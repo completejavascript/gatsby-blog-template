@@ -12,7 +12,6 @@ const Sidebar = ({
   tagList,
   latestPostEdges,
   latestFreebieEdges,
-  latestRelatedEdges,
   postSlug,
   sameSeriesPosts = [],
   isLeft = false,
@@ -86,22 +85,6 @@ const Sidebar = ({
               </div>
             )}
           <WidgetTag tagList={tagList} />
-        </>
-      )}
-
-      {latestRelatedEdges && latestRelatedEdges.length > 0 && (
-        <>
-          {config.hasAdsense &&
-            config.adsenseUnits?.sidebarMiddle4 &&
-            latestRelatedEdges.length > MIN_POST_FOR_ADS && (
-              <div className="width-full flex justify-content-center padding-top">
-                <AdSense.Google {...config.adsenseUnits?.sidebarMiddle4} />
-              </div>
-            )}
-          <WidgetLatestPosts
-            postEdges={latestRelatedEdges}
-            title={config.latestRelatedWidgetTitle}
-          />
         </>
       )}
 

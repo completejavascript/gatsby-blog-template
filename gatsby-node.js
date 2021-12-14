@@ -243,8 +243,6 @@ exports.createPages = async ({ graphql, actions }) => {
         component: postPageTemplate,
         context: {
           slug: useSlash(edge.node.fields.slug),
-          template: edge.node.frontmatter.template,
-          tags: edge.node.frontmatter.tags || [],
           series: edge.node.frontmatter.series || "__IGNORED__",
           nextTitle: nextEdge.node.frontmatter.title,
           nextSlug: useSlash(nextEdge.node.fields.slug),
@@ -269,8 +267,6 @@ exports.createPages = async ({ graphql, actions }) => {
       component: postPageTemplate,
       context: {
         slug: useSlash(edge.node.fields.slug),
-        template: edge.node.frontmatter.template,
-        tags: edge.node.frontmatter.tags || [],
         series: edge.node.frontmatter.series || "__IGNORED__",
         nextTitle: nextEdge.node.frontmatter.title,
         nextSlug: useSlash(nextEdge.node.fields.slug),

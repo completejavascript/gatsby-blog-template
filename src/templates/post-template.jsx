@@ -25,20 +25,6 @@ const PostTemplate = ({ data, pageContext }) => {
 
   const postNode = data.markdownRemark;
 
-  // Get the 5 random related posts
-  const uniqueRelatedPosts = {};
-  (data.relatedTags?.edges || [])
-    .filter((item) => item.node?.fields?.slug !== postNode?.fields?.slug)
-    .forEach((item) => {
-      if (!uniqueRelatedPosts[item.node?.fields?.slug]) {
-        uniqueRelatedPosts[item.node?.fields?.slug] = item;
-      }
-    });
-  const latestRelatedEdges = Object.values(uniqueRelatedPosts)
-    .sort((a, b) => 0.5 - Math.random())
-    .slice(0, config.numberLatestRelatedPost);
-  //
-
   // Get posts in the same series
   const sameSeriesPosts = data.sameSeries?.edges || [];
 
@@ -88,7 +74,6 @@ const PostTemplate = ({ data, pageContext }) => {
     <Sidebar
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
-      latestRelatedEdges={latestRelatedEdges}
       sameSeriesPosts={size?.width < 1440 ? sameSeriesPosts : []}
       postSlug={slug}
     />
@@ -113,12 +98,7 @@ export default PostTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $slug: String!
-    $template: String!
-    $tags: [String!]
-    $series: String
-  ) {
+  query BlogPostBySlug($slug: String!, $series: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
@@ -140,37 +120,6 @@ export const pageQuery = graphql`
       fields {
         slug
         date
-      }
-    }
-    relatedTags: allMarkdownRemark(
-      limit: 8
-      sort: { fields: [frontmatter___update], order: DESC }
-      filter: {
-        frontmatter: { tags: { in: $tags }, template: { eq: $template } }
-      }
-    ) {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            shortTitle
-            tags
-            cover {
-              childImageSharp {
-                gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
-              }
-            }
-            date
-            update
-          }
-        }
       }
     }
     sameSeries: allMarkdownRemark(
