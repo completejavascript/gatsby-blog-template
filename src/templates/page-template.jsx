@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import Header from "../components/Header/Header";
 import MainContainer from "../components/MainContainer/MainContainer";
-import Sidebar from "../components/Sidebar/Sidebar";
+import { SidebarRight } from "../components/Sidebar/Sidebar";
 import Page from "../components/Page/Page";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
@@ -24,7 +24,7 @@ const PageTemplate = ({ data, pageContext }) => {
   );
 
   const sidebarRight = (
-    <Sidebar
+    <SidebarRight
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
     />

@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import Header from "../components/Header/Header";
 import MainContainer from "../components/MainContainer/MainContainer";
-import Sidebar from "../components/Sidebar/Sidebar";
+import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
 import PostListing from "../components/PostListing/PostListing";
 import Pagination from "../components/Pagination/Pagination";
 import { getPostList, useSlash } from "../utils/helpers";
@@ -39,9 +39,9 @@ const FreeBieTemplate = ({ data, pageContext }) => {
     </>
   );
 
-  const sidebarLeft = <Sidebar isLeft={true} />;
+  const sidebarLeft = <SidebarLeft />;
 
-  const sidebarRight = <Sidebar latestFreebieEdges={latestFreebieEdges} />;
+  const sidebarRight = <SidebarRight latestFreebieEdges={latestFreebieEdges} />;
 
   return (
     <Layout>

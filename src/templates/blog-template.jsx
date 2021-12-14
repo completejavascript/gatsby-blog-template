@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import Header from "../components/Header/Header";
 import MainContainer from "../components/MainContainer/MainContainer";
-import Sidebar from "../components/Sidebar/Sidebar";
+import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
 import PostListing from "../components/PostListing/PostListing";
 import Pagination from "../components/Pagination/Pagination";
 import { getPostList } from "../utils/helpers";
@@ -40,9 +40,9 @@ const BlogTemplate = ({ data, pageContext }) => {
     </>
   );
 
-  const sidebarLeft = <Sidebar isLeft={true} />;
+  const sidebarLeft = <SidebarLeft />;
 
-  const sidebarRight = <Sidebar latestPostEdges={latestPostEdges} />;
+  const sidebarRight = <SidebarRight latestPostEdges={latestPostEdges} />;
 
   return (
     <Layout>

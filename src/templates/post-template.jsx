@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import Header from "../components/Header/Header";
 import MainContainer from "../components/MainContainer/MainContainer";
-import Sidebar from "../components/Sidebar/Sidebar";
+import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
 import Post from "../components/Post/Post";
 import SEO from "../components/SEO/SEO";
 import BreadCrumb from "../components/Breadcrumb/Breadcrumb";
@@ -63,15 +63,14 @@ const PostTemplate = ({ data, pageContext }) => {
   const size = useWindowSize();
 
   const sidebarLeft = (
-    <Sidebar
+    <SidebarLeft
       postSlug={slug}
       sameSeriesPosts={size?.width >= 1440 ? sameSeriesPosts : []}
-      isLeft={true}
     />
   );
 
   const sidebarRight = (
-    <Sidebar
+    <SidebarRight
       latestPostEdges={latestPostEdges}
       latestFreebieEdges={latestFreebieEdges}
       sameSeriesPosts={size?.width < 1440 ? sameSeriesPosts : []}
