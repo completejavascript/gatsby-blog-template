@@ -8,45 +8,50 @@ import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
 import PostListing from "../components/PostListing/PostListing";
 import Pagination from "../components/Pagination/Pagination";
 import { getPostList } from "../utils/helpers";
-import config from "../../data/SiteConfig";
+import siteConfig from "../../data/SiteConfig";
 import { useSlash } from "../utils/helpers";
 
 const BlogTemplate = ({ data, pageContext }) => {
-  const { latestPostEdges, currentPage, totalPages } = pageContext;
+  const { latestEdges, currentPage, totalPages, templateConfig } = pageContext;
 
   const postEdges = data.allMarkdownRemark?.edges || [];
   const postList = getPostList(postEdges);
 
   const canonical =
     currentPage === 1
-      ? `${config.siteUrl}${config.pathPrefixBlog}`
-      : `${config.siteUrl}${config.pathPrefixBlog}${config.pathPrefixPagination}/${currentPage}`;
+      ? `${siteConfig.siteUrl}${templateConfig.pathPrefix}`
+      : `${siteConfig.siteUrl}${templateConfig.pathPrefix}${templateConfig.paginationPrefix}/${currentPage}`;
 
   const content = (
     <>
-      <Header title={config.blogHeader} />
+      <Header title={templateConfig.blogHeader} />
       <PostListing
         postList={postList}
-        hasThumbnail={config.blogHasThumbnail}
+        hasThumbnail={templateConfig.postListingHasThumbnail}
         hasLoadmore={false}
       />
       <Pagination
         extraClass="padding-top-2 border-top border-color-light-grey"
         currentPage={currentPage}
         totalPages={totalPages}
-        pathPrefix={config.pathPrefixBlog}
-        pathPrefixPagination={config.pathPrefixPagination}
+        pathPrefix={templateConfig.pathPrefix}
+        pathPrefixPagination={templateConfig.paginationPrefix}
       />
     </>
   );
 
   const sidebarLeft = <SidebarLeft />;
 
-  const sidebarRight = <SidebarRight latestPostEdges={latestPostEdges} />;
+  const sidebarRight = (
+    <SidebarRight
+      latestEdges={latestEdges}
+      latestEdgesTitle={templateConfig.sidebarLatestPostsTitle}
+    />
+  );
 
   return (
     <Layout>
-      <Helmet title={`${config.blogHeader} - ${config.siteTitle}`}>
+      <Helmet title={`${templateConfig.header} - ${siteConfig.siteTitle}`}>
         <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <MainContainer
@@ -62,12 +67,12 @@ export default BlogTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query BlogPage($skip: Int!, $limit: Int!) {
+  query BlogPage($skip: Int!, $limit: Int!, $template: String!) {
     allMarkdownRemark(
       limit: $limit
       skip: $skip
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { template: { eq: "post" } } }
+      filter: { frontmatter: { template: { eq: $template } } }
     ) {
       totalCount
       edges {

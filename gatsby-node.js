@@ -1,7 +1,9 @@
 const path = require("path");
 const slug = require("slug");
 const moment = require("moment");
+
 const siteConfig = require("./data/SiteConfig");
+const { blogTemplateConfig, freebieTemplateConfig } = require("./data/config");
 
 const slugify = (text) => slug(text).toLowerCase();
 
@@ -327,51 +329,52 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   });
 
-  // Create blog page
-  {
-    const numBlogPages = Math.ceil(postEdges.length / postsPerPage);
-    const basePath = siteConfig.pathPrefixBlog;
+  // Create blog pages
+  createBlogPages({
+    createPage,
+    latestEdges: latestPostEdges,
+    totalEdges: postEdges,
+    pageTemplate: blogPageTemplate,
+    templateConfig: blogTemplateConfig,
+  });
 
-    for (let i = 0; i < numBlogPages; i++) {
-      createPage({
-        path: useSlash(
-          i === 0
-            ? `${basePath}`
-            : `${basePath}${pathPrefixPagination}/${i + 1}`
-        ),
-        component: blogPageTemplate,
-        context: {
-          latestPostEdges,
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          currentPage: i + 1,
-          totalPages: numBlogPages,
-        },
-      });
-    }
-  }
-
-  // Create freebie page
-  {
-    const numFreebiePages = Math.ceil(freebieEdges.length / postsPerPage);
-    const basePath = siteConfig.pathPrefixFreebie;
-
-    for (let i = 0; i < numFreebiePages; i++) {
-      createPage({
-        path: useSlash(
-          i === 0
-            ? `${basePath}`
-            : `${basePath}${pathPrefixPagination}/${i + 1}`
-        ),
-        component: freebiePageTemplate,
-        context: {
-          latestFreebieEdges,
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          currentPage: i + 1,
-          totalPages: numFreebiePages,
-        },
-      });
-    }
-  }
+  // Create freebie pages
+  createBlogPages({
+    createPage,
+    latestEdges: latestFreebieEdges,
+    totalEdges: freebieEdges,
+    pageTemplate: blogPageTemplate,
+    templateConfig: freebieTemplateConfig,
+  });
 };
+
+function createBlogPages({
+  createPage,
+  latestEdges = [],
+  totalEdges = [],
+  pageTemplate,
+  templateConfig,
+}) {
+  const itemsPerPage = templateConfig.paginationItemsPerPage;
+  const paginationPrefix = templateConfig.paginationPrefix;
+  const numBlogPages = Math.ceil(totalEdges.length / itemsPerPage);
+  const basePath = templateConfig.pathPrefix;
+
+  for (let i = 0; i < numBlogPages; i++) {
+    createPage({
+      path: useSlash(
+        i === 0 ? `${basePath}` : `${basePath}${paginationPrefix}/${i + 1}`
+      ),
+      component: pageTemplate,
+      context: {
+        template: templateConfig.frontmatterTemplate,
+        limit: itemsPerPage,
+        skip: i * itemsPerPage,
+        currentPage: i + 1,
+        totalPages: numBlogPages,
+        templateConfig,
+        latestEdges,
+      },
+    });
+  }
+}

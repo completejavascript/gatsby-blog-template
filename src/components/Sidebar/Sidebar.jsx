@@ -1,6 +1,6 @@
 import React from "react";
 import WidgetLatestPosts from "./WidgetLatestPosts";
-import config from "../../../data/SiteConfig";
+import siteConfig from "../../../data/SiteConfig";
 import AdSense from "react-adsense";
 import "./Sidebar.scss";
 
@@ -8,7 +8,7 @@ function SidebarContainer({ children }) {
   return (
     <aside
       className={`sidebar-container width-full ${
-        config.sidebarSticky ? "height-full" : ""
+        siteConfig.sidebarSticky ? "height-full" : ""
       }`}
     >
       {children}
@@ -16,28 +16,28 @@ function SidebarContainer({ children }) {
   );
 }
 
-function SidebarLeft(postSlug, sameSeriesPosts = []) {
+function SidebarLeft({ postSlug, sameSeriesPosts = [] }) {
   return (
     <SidebarContainer>
       {sameSeriesPosts && sameSeriesPosts.length > 0 && (
         <>
-          {config.hasAdsense && config.adsenseUnits?.sidebarTop && (
+          {siteConfig.hasAdsense && siteConfig.adsenseUnits?.sidebarTop && (
             <div className="width-full flex justify-content-center padding-top">
-              <AdSense.Google {...config.adsenseUnits?.sidebarTop} />
+              <AdSense.Google {...siteConfig.adsenseUnits?.sidebarTop} />
             </div>
           )}
           <WidgetLatestPosts
             postSlug={postSlug}
             postEdges={sameSeriesPosts}
-            title={config.sameSeriesPostsWidgetTitle}
+            title={siteConfig.sameSeriesPostsWidgetTitle}
           />
         </>
       )}
 
-      {config.hasAdsense && config.adsenseUnits?.sidebarBottomLeft && (
+      {siteConfig.hasAdsense && siteConfig.adsenseUnits?.sidebarBottomLeft && (
         <div className="position-sticky last-item">
           <div className="padding-top padding-bottom">
-            <AdSense.Google {...config.adsenseUnits?.sidebarBottomLeft} />
+            <AdSense.Google {...siteConfig.adsenseUnits?.sidebarBottomLeft} />
           </div>
         </div>
       )}
@@ -45,64 +45,48 @@ function SidebarLeft(postSlug, sameSeriesPosts = []) {
   );
 }
 
-function SidebarRight(
+function SidebarRight({
   postSlug,
-  latestPostEdges = [],
-  latestFreebieEdges = [],
-  sameSeriesPosts = []
-) {
+  latestEdgesTitle,
+  latestEdges = [],
+  sameSeriesPosts = [],
+}) {
   return (
     <SidebarContainer>
       {sameSeriesPosts && sameSeriesPosts.length > 0 && (
         <>
-          {config.hasAdsense && config.adsenseUnits?.sidebarTop && (
+          {siteConfig.hasAdsense && siteConfig.adsenseUnits?.sidebarTop && (
             <div className="width-full flex justify-content-center padding-top">
-              <AdSense.Google {...config.adsenseUnits?.sidebarTop} />
+              <AdSense.Google {...siteConfig.adsenseUnits?.sidebarTop} />
             </div>
           )}
           <WidgetLatestPosts
             postSlug={postSlug}
             postEdges={sameSeriesPosts}
-            title={config.sameSeriesPostsWidgetTitle}
+            title={siteConfig.sameSeriesPostsWidgetTitle}
           />
         </>
       )}
 
-      {latestPostEdges && latestPostEdges.length > 0 && (
+      {latestEdges && latestEdges.length > 0 && (
         <>
-          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle && (
+          {siteConfig.hasAdsense && siteConfig.adsenseUnits?.sidebarMiddle && (
             <div className="width-full flex justify-content-center padding-top">
-              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle} />
+              <AdSense.Google {...siteConfig.adsenseUnits?.sidebarMiddle} />
             </div>
           )}
           <WidgetLatestPosts
-            postEdges={latestPostEdges.filter(
+            postEdges={latestEdges.filter(
               (item) => item.node.fields.slug !== postSlug
             )}
-            title={config.latestPostsWidgetTitle}
+            title={latestEdgesTitle}
           />
         </>
       )}
 
-      {latestFreebieEdges && latestFreebieEdges.length > 0 && (
-        <>
-          {config.hasAdsense && config.adsenseUnits?.sidebarMiddle2 && (
-            <div className="width-full flex justify-content-center padding-top">
-              <AdSense.Google {...config.adsenseUnits?.sidebarMiddle2} />
-            </div>
-          )}
-          <WidgetLatestPosts
-            postEdges={latestFreebieEdges.filter(
-              (item) => item.node.fields.slug !== postSlug
-            )}
-            title={config.latestFreebiesWidgetTitle}
-          />
-        </>
-      )}
-
-      {config.hasAdsense && config.adsenseUnits?.sidebarBottomRight && (
+      {siteConfig.hasAdsense && siteConfig.adsenseUnits?.sidebarBottomRight && (
         <div className="position-sticky last-item padding-top padding-bottom">
-          <AdSense.Google {...config.adsenseUnits?.sidebarBottomRight} />
+          <AdSense.Google {...siteConfig.adsenseUnits?.sidebarBottomRight} />
         </div>
       )}
     </SidebarContainer>
