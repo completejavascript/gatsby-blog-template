@@ -11,13 +11,8 @@ import { getPostList, useSlash } from "../utils/helpers";
 import config from "../../data/SiteConfig";
 
 const FreeBieTemplate = ({ data, pageContext }) => {
-  const {
-    tagList,
-    latestPostEdges,
-    latestFreebieEdges,
-    currentPage,
-    totalPages,
-  } = pageContext;
+  const { latestPostEdges, latestFreebieEdges, currentPage, totalPages } =
+    pageContext;
 
   const postEdges = data.allMarkdownRemark?.edges || [];
   const postList = getPostList(postEdges);
@@ -45,7 +40,7 @@ const FreeBieTemplate = ({ data, pageContext }) => {
     </>
   );
 
-  const sidebarLeft = <Sidebar tagList={tagList} isLeft={true} />;
+  const sidebarLeft = <Sidebar isLeft={true} />;
 
   const sidebarRight = (
     <Sidebar

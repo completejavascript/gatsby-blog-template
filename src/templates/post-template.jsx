@@ -15,8 +15,8 @@ import useWindowSize from "../hooks/useWindowSize";
 const PostTemplate = ({ data, pageContext }) => {
   const {
     slug,
-    latestPostEdges,
-    latestFreebieEdges,
+    latestPostEdges = [],
+    latestFreebieEdges = [],
     nextTitle,
     nextSlug,
     prevTitle,

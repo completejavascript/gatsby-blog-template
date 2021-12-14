@@ -198,22 +198,6 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create tagList
   const tagList = Array.from(tagSet);
 
-  // // Get latest posts
-  // const latestPostEdges = [];
-  // postEdges.forEach((edge) => {
-  //   if (latestPostEdges.length < siteConfig.numberLatestPost) {
-  //     latestPostEdges.push(edge);
-  //   }
-  // });
-
-  // // Get latest freebie posts
-  // const latestFreebieEdges = [];
-  // freebieEdges.forEach((edge) => {
-  //   if (latestFreebieEdges.length < siteConfig.numberLatestFreebie) {
-  //     latestFreebieEdges.push(edge);
-  //   }
-  // });
-
   // Map posts by directory
   const mapPostsByDirectory = {};
   postEdges.forEach((edge) => {
@@ -249,7 +233,6 @@ exports.createPages = async ({ graphql, actions }) => {
           prevTitle: prevEdge.node.frontmatter.title,
           prevSlug: useSlash(prevEdge.node.fields.slug),
           latestPostEdges,
-          latestFreebieEdges,
         },
       });
     });
@@ -272,8 +255,6 @@ exports.createPages = async ({ graphql, actions }) => {
         nextSlug: useSlash(nextEdge.node.fields.slug),
         prevTitle: prevEdge.node.frontmatter.title,
         prevSlug: useSlash(prevEdge.node.fields.slug),
-        tagList,
-        latestPostEdges,
         latestFreebieEdges,
       },
     });
@@ -336,7 +317,6 @@ exports.createPages = async ({ graphql, actions }) => {
         component: tagPageTemplate,
         context: {
           tag,
-          tagList,
           latestPostEdges,
           latestFreebieEdges,
           limit: postsPerPage,
@@ -362,7 +342,6 @@ exports.createPages = async ({ graphql, actions }) => {
         ),
         component: blogPageTemplate,
         context: {
-          tagList,
           latestPostEdges,
           latestFreebieEdges,
           limit: postsPerPage,
@@ -388,7 +367,6 @@ exports.createPages = async ({ graphql, actions }) => {
         ),
         component: freebiePageTemplate,
         context: {
-          tagList,
           latestPostEdges,
           latestFreebieEdges,
           limit: postsPerPage,
