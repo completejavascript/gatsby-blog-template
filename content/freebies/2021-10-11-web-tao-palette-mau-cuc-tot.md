@@ -8,6 +8,8 @@ keywords: "trang web tạo palette màu"
 description: "Đối với lập trình viên web, việc lựa chọn tổ hợp mã màu sao cho hợp với project của mình thật sự khó khăn. Vì vậy, bài viết này tổng hợp 10 trang web tạo palette màu cực tốt, màu sắc hiện đại và tươi mới."
 slug: trang-web-tao-palette-mau-cuc-tot
 title: "10 trang web tạo palette màu cực tốt"
+tags:
+  - Resources
 ---
 
 Đối với lập trình viên web, việc lựa chọn [tổ hợp mã màu](/ma-mau-logo-cac-thuong-hieu-noi-tieng/) sao cho phù hợp với project của mình thật sự khó khăn. Vì vậy, bài viết này mình sẽ tổng hợp lại 10 trang web tạo palette màu cực tốt, màu sắc hiện đại và tươi mới.

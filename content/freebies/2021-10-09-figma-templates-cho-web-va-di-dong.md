@@ -8,6 +8,8 @@ keywords: "figma templates cho web"
 description: "Đây là 10 Figma templates cho web và di động hoàn toàn miễn phí. Bạn có thể tùy ý sao chép, chỉnh sửa cho các dự án cá nhân hoặc thương mại."
 slug: figma-templates-cho-web-va-di-dong
 title: "10 Figma templates cho web và di động miễn phí"
+tags:
+  - Figma
 ---
 
 Đối với lập trình viên web frontend, bạn chắc chắn phải biết chuyển từ design sang code với [HTML](/tag/html/) và [CSS](/tag/css/) (thường gọi là **cắt HTML**). Để làm được điều này, bạn cần phải có một bản thiết kế sẵn. Đáp ứng nhu cầu này, mình sẽ chia sẻ với bạn 10 Figma templates cho web và ứng dụng di động hoàn miễn phí mà mình sưu tầm được.

@@ -8,6 +8,8 @@ keywords: "tải ảnh miễn phí"
 description: "Tổng hợp 10 trang web tải ảnh miễn phí chất lượng cao. Bạn thoải mái sử dụng mà không lo vi phạm bản quyền hình ảnh."
 slug: web-tai-anh-mien-phi-chat-luong-cao
 title: "10 trang web tải ảnh miễn phí chất lượng cao"
+tags:
+  - Resources
 ---
 
 Để có một bài viết tốt thì nội dung thôi là chưa đủ. Bạn nên sử dụng thêm hình ảnh để minh họa phù hợp. Tuy nhiên, nếu bạn tải ảnh trực tiếp từ Google thì rất có thể bạn sẽ bị dính lỗi bản quyền hình ảnh.

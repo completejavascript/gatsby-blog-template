@@ -8,6 +8,8 @@ keywords: "hosting miễn phí cho web tĩnh"
 description: "Bài viết này sẽ tổng hợp 10 hosting miễn phí cho web tĩnh - cho phép thay đổi tên miền, hỗ trợ SSL và miễn phí CI... Qua bài viết, bạn sẽ tìm ra được hosting miễn phí phù hợp với dự án cá nhân của mình."
 slug: hosting-mien-phi-cho-web-tinh
 title: "10 hosting miễn phí cho web tĩnh"
+tags:
+  - Hosting
 ---
 
 Cùng với sự phát triển nhanh đến chóng mặt của các Static Site Generator (trình sinh web tĩnh) và kiến trúc website JAMstack, rất nhiều các trang web đã hỗ trợ deploy web tĩnh miễn phí. Tuy nhiên, không phải dịch vụ nào cũng cho phép thay đổi tên miền. Vì vậy, bài viết này mình sẽ tổng hợp lại 10 hosting miễn phí cho web tĩnh mà bạn có thể áp dụng ngay cho các dự án của mình.
