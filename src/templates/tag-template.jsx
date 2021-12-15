@@ -12,10 +12,17 @@ import {
   getTagPathWithoutTrailingSlash,
   useSlash,
 } from "../utils/helpers";
-import config from "../../data/SiteConfig";
+import siteConfig from "../../data/SiteConfig";
 
 const TagTemplate = ({ data, pageContext }) => {
-  const { tag, latestPostEdges, currentPage, totalPages } = pageContext;
+  const {
+    tag,
+    latestEdges,
+    currentPage,
+    totalPages,
+    tagConfig,
+    latestEdgesTitle,
+  } = pageContext;
 
   const postEdges = data.allMarkdownRemark?.edges || [];
   const postList = getPostList(postEdges);
@@ -23,15 +30,15 @@ const TagTemplate = ({ data, pageContext }) => {
   const tagPath = getTagPathWithoutTrailingSlash(tag);
   const canonical =
     currentPage === 1
-      ? `${config.siteUrl}${tagPath}`
-      : `${config.siteUrl}${tagPath}${config.pathPrefixPagination}/${currentPage}`;
+      ? `${siteConfig.siteUrl}${tagPath}`
+      : `${siteConfig.siteUrl}${tagPath}${tagConfig.paginationPrefix}/${currentPage}`;
 
   const content = (
     <>
-      <Header title={`${config.tagHeader} ${tag}`} />
+      <Header title={`${tagConfig.header} ${tag}`} />
       <PostListing
         postList={postList}
-        hasThumbnail={config.tagHasThumbnail}
+        hasThumbnail={tagConfig.postListingHasThumbnail}
         hasLoadmore={false}
       />
       <Pagination
@@ -39,18 +46,23 @@ const TagTemplate = ({ data, pageContext }) => {
         currentPage={currentPage}
         totalPages={totalPages}
         pathPrefix={tagPath}
-        pathPrefixPagination={config.pathPrefixPagination}
+        pathPrefixPagination={tagConfig.paginationPrefix}
       />
     </>
   );
 
   const sidebarLeft = <SidebarLeft />;
 
-  const sidebarRight = <SidebarRight latestPostEdges={latestPostEdges} />;
+  const sidebarRight = (
+    <SidebarRight
+      latestEdges={latestEdges}
+      latestEdgesTitle={latestEdgesTitle}
+    />
+  );
 
   return (
     <Layout>
-      <Helmet title={`${config.tagHeader} ${tag} - ${config.siteTitle}`}>
+      <Helmet title={`${tagConfig.header} ${tag} - ${siteConfig.siteTitle}`}>
         <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <MainContainer
@@ -66,13 +78,13 @@ export default TagTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query TagPage($tag: String, $skip: Int!, $limit: Int!) {
+  query TagPage($tag: String, $skip: Int!, $limit: Int!, $template: String!) {
     allMarkdownRemark(
       limit: $limit
       skip: $skip
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        frontmatter: { tags: { in: [$tag] }, template: { eq: "post" } }
+        frontmatter: { tags: { in: [$tag] }, template: { eq: $template } }
       }
     ) {
       totalCount

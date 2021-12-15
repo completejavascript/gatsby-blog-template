@@ -3,7 +3,13 @@ const slug = require("slug");
 const moment = require("moment");
 
 const siteConfig = require("./data/SiteConfig");
-const { blogTemplateConfig, freebieTemplateConfig } = require("./data/config");
+const {
+  latestEdgesTitleConfig,
+  tagTemplateConfig,
+  blogTemplateConfig,
+  freebieTemplateConfig,
+  frontmatterTemplateConfig,
+} = require("./data/config");
 
 const slugify = (text) => slug(text).toLowerCase();
 
@@ -164,7 +170,8 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Filter data
-  const tagSet = new Set();
+  const postTagSet = new Set();
+  const freebieTagSet = new Set();
   const postEdges = [];
   const pageEdges = [];
   const freebieEdges = [];
@@ -173,32 +180,44 @@ exports.createPages = async ({ graphql, actions }) => {
   markdownQueryResult.data.allMarkdownRemark.edges.forEach((edge) => {
     if (
       edge.node.frontmatter.tags &&
-      edge.node.frontmatter.template === "post"
+      edge.node.frontmatter.template === frontmatterTemplateConfig.post
     ) {
       edge.node.frontmatter.tags.forEach((tag) => {
-        tagSet.add(tag);
+        postTagSet.add(tag);
       });
     }
 
-    if (edge.node.frontmatter.template === "post") {
+    if (
+      edge.node.frontmatter.tags &&
+      edge.node.frontmatter.template === frontmatterTemplateConfig.freebie
+    ) {
+      edge.node.frontmatter.tags.forEach((tag) => {
+        freebieTagSet.add(tag);
+      });
+    }
+
+    if (edge.node.frontmatter.template === frontmatterTemplateConfig.post) {
       postEdges.push(edge);
     }
 
-    if (edge.node.frontmatter.template === "page") {
+    if (edge.node.frontmatter.template === frontmatterTemplateConfig.page) {
       pageEdges.push(edge);
     }
 
-    if (edge.node.frontmatter.template === "freebie") {
+    if (edge.node.frontmatter.template === frontmatterTemplateConfig.freebie) {
       freebieEdges.push(edge);
     }
 
-    if (edge.node.frontmatter.template === "directory") {
+    if (
+      edge.node.frontmatter.template === frontmatterTemplateConfig.directory
+    ) {
       directoryEdges.push(edge);
     }
   });
 
   // Create tagList
-  const tagList = Array.from(tagSet);
+  const postTagList = Array.from(postTagSet);
+  const freebieTagList = Array.from(freebieTagSet);
 
   // Map posts by directory
   const mapPostsByDirectory = {};
@@ -291,42 +310,34 @@ exports.createPages = async ({ graphql, actions }) => {
     path: useSlash(siteConfig.pathPrefixTags),
     component: tagsPageTemplate,
     context: {
-      tagList: [...tagList].sort((a, b) => a.localeCompare(b)),
+      tagList: [...postTagList, ...freebieTagList].sort((a, b) =>
+        a.localeCompare(b)
+      ),
     },
   });
 
-  // common config for pagination
-  const postsPerPage = siteConfig.postsPerPage;
-  const pathPrefixPagination = siteConfig.pathPrefixPagination;
+  // create tag pages for blog posts
+  createTagPages({
+    createPage,
+    tagList: postTagList,
+    latestEdges: latestPostEdges,
+    totalEdges: postEdges,
+    pageTemplate: tagPageTemplate,
+    tagConfig: tagTemplateConfig,
+    template: frontmatterTemplateConfig.post,
+    latestEdgesTitle: latestEdgesTitleConfig.post,
+  });
 
-  // create tag page
-  tagList.forEach((tag) => {
-    const tagPosts = postEdges.filter((edge) => {
-      const tags = edge.node.frontmatter.tags;
-      return tags && tags.includes(tag);
-    });
-
-    const numTagPages = Math.ceil(tagPosts.length / postsPerPage);
-    const basePath = `${siteConfig.pathPrefixTag}/${slugify(tag)}`;
-
-    for (let i = 0; i < numTagPages; i++) {
-      createPage({
-        path: useSlash(
-          i === 0
-            ? `${basePath}`
-            : `${basePath}${pathPrefixPagination}/${i + 1}`
-        ),
-        component: tagPageTemplate,
-        context: {
-          tag,
-          latestPostEdges,
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          currentPage: i + 1,
-          totalPages: numTagPages,
-        },
-      });
-    }
+  // create tag pages for freebie posts
+  createTagPages({
+    createPage,
+    tagList: freebieTagList,
+    latestEdges: latestFreebieEdges,
+    totalEdges: freebieEdges,
+    pageTemplate: tagPageTemplate,
+    tagConfig: tagTemplateConfig,
+    template: frontmatterTemplateConfig.freebie,
+    latestEdgesTitle: latestEdgesTitleConfig.freebie,
   });
 
   // Create blog pages
@@ -347,6 +358,51 @@ exports.createPages = async ({ graphql, actions }) => {
     templateConfig: freebieTemplateConfig,
   });
 };
+
+function createTagPages({
+  createPage,
+  tagList = [],
+  latestEdges = [],
+  totalEdges = [],
+  pageTemplate,
+  tagConfig,
+  template,
+  latestEdgesTitle,
+}) {
+  const itemsPerPage = tagConfig.paginationItemsPerPage;
+
+  tagList.forEach((tag) => {
+    const tagEdges = totalEdges.filter((edge) => {
+      const tags = edge.node.frontmatter.tags;
+      return tags && tags.includes(tag);
+    });
+
+    const numTagPages = Math.ceil(tagEdges.length / itemsPerPage);
+    const basePath = `${tagConfig.pathPrefix}/${slugify(tag)}`;
+
+    for (let i = 0; i < numTagPages; i++) {
+      createPage({
+        path: useSlash(
+          i === 0
+            ? `${basePath}`
+            : `${basePath}${tagConfig.paginationPrefix}/${i + 1}`
+        ),
+        component: pageTemplate,
+        context: {
+          template,
+          tag,
+          limit: itemsPerPage,
+          skip: i * itemsPerPage,
+          currentPage: i + 1,
+          totalPages: numTagPages,
+          latestEdges,
+          latestEdgesTitle,
+          tagConfig,
+        },
+      });
+    }
+  });
+}
 
 function createBlogPages({
   createPage,

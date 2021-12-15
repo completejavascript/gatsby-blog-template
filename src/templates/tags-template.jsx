@@ -6,13 +6,13 @@ import Header from "../components/Header/Header";
 import Tag from "../components/Tag/Tag";
 import MainContainer from "../components/MainContainer/MainContainer";
 import GithubComment from "../components/Comment/GithubComment";
-import config from "../../data/SiteConfig";
+import siteConfig from "../../data/SiteConfig";
 import { useSlash } from "../utils/helpers";
 
 const TagsTemplate = ({ pageContext }) => {
   const { tagList } = pageContext;
-  const title = config.tagsHeader;
-  const canonical = `${config.siteUrl}${config.pathPrefixTags}`;
+  const title = siteConfig.tagsHeader;
+  const canonical = `${siteConfig.siteUrl}${siteConfig.pathPrefixTags}`;
 
   const content = (
     <>
@@ -27,8 +27,8 @@ const TagsTemplate = ({ pageContext }) => {
         {tagList && tagList.map((tag) => <Tag key={tag} content={tag} />)}
       </section>
 
-      {config.hasAdsense && config.adsenseUnits?.postBottom && (
-        <AdSense.Google {...config.adsenseUnits?.postBottom} />
+      {siteConfig.hasAdsense && siteConfig.adsenseUnits?.postBottom && (
+        <AdSense.Google {...siteConfig.adsenseUnits?.postBottom} />
       )}
 
       {process.env.NODE_ENV === "production" && <GithubComment />}
@@ -37,7 +37,7 @@ const TagsTemplate = ({ pageContext }) => {
 
   return (
     <Layout>
-      <Helmet title={`${title} - ${config.siteTitle}`}>
+      <Helmet title={`${title} - ${siteConfig.siteTitle}`}>
         <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
 

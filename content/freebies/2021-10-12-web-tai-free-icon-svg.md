@@ -8,6 +8,8 @@ keywords: "tải free icon svg"
 description: "Ảnh SVG là gì? Tại sao nên dùng ảnh SVG? Bài viết này sẽ giải đáp lý do tại sao và tổng hợp 18 trang tải free icon SVG cho các dự án cá nhân và thương mại."
 slug: web-tai-free-icon-svg
 title: "18 trang web tải free icon SVG cho cá nhân và thương mại"
+tags:
+  - Icon
 ---
 
 Như bạn đã biết, hiện tại có rất nhiều loại thiết bị điện tử khác nhau, kích thước khác nhau, độ phân giải khác nhau. Nếu chỉ sử dụng ảnh độ phân giải nhỏ thì khi đưa lên màn hình độ phân giải cao, ảnh đó sẽ bị vỡ và mờ. Ngược lại, nếu chỉ sử dụng ảnh chất lượng cao thì dung lượng trang lại lớn. Để giải quyết vấn đề này, ta có thể sử dụng ảnh SVG. Vậy ảnh SVG là gì? Tại sao nên dùng ảnh SVG? Bài viết này sẽ giải đáp lý do tại sao và tổng hợp 18 trang tải free icon SVG cho các dự án cá nhân và thương mại.

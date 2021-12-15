@@ -8,6 +8,8 @@ keywords: "icon miễn phí"
 description: "Tổng hợp 10 bộ icon miễn phí dành cho dân IT. Bạn có thể tải về miễn phí và thoải mái sử dụng cho các dự án cá nhân và dự án thương mại."
 slug: icon-mien-phi-dan-it
 title: "10 bộ icon miễn phí dành cho dân IT"
+tags:
+  - Icon
 ---
 
 Đối với dân IT, khi lập trình web hay các ứng dụng điện thoại, máy tính thì việc tìm kiếm và tải icon miễn phí tốn khá nhiều thời gian. Vì vậy, bài viết này sẽ tổng hợp lại 10 bộ icon miễn phí, chất lượng cao mà bạn có thể sử dụng cho các sản phẩm của mình.
