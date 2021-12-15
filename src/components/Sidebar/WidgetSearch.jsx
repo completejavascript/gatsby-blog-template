@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import WidgetContainer from "./WidgetContainer";
 import WidgetTitle from "./WidgetTitle";
-import config from "../../../data/SiteConfig";
+import { searchConfig } from "../../../data/config";
 import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
 
 class WidgetSearch extends Component {
   render() {
     return (
       <>
-        {config.hasSearch && (
+        {searchConfig.hasSearch && (
           <WidgetContainer extraClass="search-container sidebar-widget">
-            <WidgetTitle title={config.searchWidgetTitle} />
+            <WidgetTitle title={searchConfig.searchWidgetTitle} />
             <form className="margin-bottom-none" action="/search/" method="get">
               <div className="container-full row padding-none margin-bottom-none">
                 <div className="padding-none padding-right-half col-xs-10">
@@ -18,7 +18,7 @@ class WidgetSearch extends Component {
                     className="margin-bottom-none"
                     type="text"
                     name="q"
-                    placeholder={config.searchWidgetPlaceHolder}
+                    placeholder={searchConfig.searchWidgetPlaceHolder}
                     required
                     spellCheck="false"
                   />

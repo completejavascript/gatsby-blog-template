@@ -2,18 +2,10 @@ import React from "react";
 import AutoLink from "../AutoLink/AutoLink";
 import NavBrand from "../Navigation/NavBrand";
 import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
-import {
-  networkLinks,
-  aboutLinks,
-  siteTitle,
-  siteUrl,
-  projectLinks,
-  socialLinks,
-  footerLinks,
-} from "../../../data/SiteConfig";
+import { siteConfig, footerConfig } from "../../../data/config";
 import { getCurrentYear } from "../../utils/helpers";
-import "./Footer2.scss";
 import brand from "../../../content/images/brand.png";
+import "./Footer2.scss";
 
 function FooterLinks({ header, links, className = "" }) {
   return (
@@ -32,9 +24,9 @@ function FooterCopyright() {
   return (
     <div className="container-full footer">
       <div className="footer-copyright-links container text-center padding-top-2">
-        {footerLinks &&
-          footerLinks.length > 0 &&
-          footerLinks.map((link) => (
+        {footerConfig.footerLinks &&
+          footerConfig.footerLinks.length > 0 &&
+          footerConfig.footerLinks.map((link) => (
             <AutoLink
               key={link.label}
               to={link.url}
@@ -47,7 +39,7 @@ function FooterCopyright() {
 
       <div className="footer-copyright container text-center">
         {`© 2017-${getCurrentYear()} `}
-        <AutoLink to={siteUrl}>{siteTitle}</AutoLink>
+        <AutoLink to={siteConfig.siteUrl}>{siteConfig.siteTitle}</AutoLink>
         {`. Unless otherwise noted, all code MIT license.`}
       </div>
     </div>
@@ -90,9 +82,10 @@ function FooterSiteInfo() {
       </div>
 
       <p className="content">
-        {siteTitle} là trang blog về lập trình - chuyên chia sẻ kiến thức về lập
-        trình <AutoLink to="/javascript">JavaScript</AutoLink>, một số thư
-        viện/framework Javascript (<AutoLink to="/react">React.js</AutoLink>,{" "}
+        {siteConfig.siteTitle} là trang blog về lập trình - chuyên chia sẻ kiến
+        thức về lập trình <AutoLink to="/javascript">JavaScript</AutoLink>, một
+        số thư viện/framework Javascript (
+        <AutoLink to="/react">React.js</AutoLink>,{" "}
         <AutoLink to="/tag/gatsbyjs">Gatsby.js</AutoLink>,...) và những kiến
         thức khác liên quan đến lập trình web (
         <AutoLink to="/tag/html">HTML</AutoLink>,{" "}
@@ -100,7 +93,7 @@ function FooterSiteInfo() {
       </p>
 
       <FooterSocialLinks
-        socials={socialLinks}
+        socials={footerConfig.socialLinks}
         color="#606060"
         header="Mạng xã hội"
       />
@@ -118,19 +111,19 @@ function Footer2() {
           <FooterLinks
             className="project-links"
             header="Dự án cá nhân"
-            links={projectLinks}
+            links={footerConfig.projectLinks}
           />
 
           <FooterLinks
             className="network-links"
             header="Các trang web"
-            links={networkLinks}
+            links={footerConfig.networkLinks}
           />
 
           <FooterLinks
             className="site-links"
             header="Tài nguyên"
-            links={aboutLinks}
+            links={footerConfig.aboutLinks}
           />
         </div>
       </div>

@@ -12,7 +12,7 @@ import {
   LinkedinIcon,
 } from "react-share";
 import urljoin from "url-join";
-import config from "../../../data/SiteConfig";
+import { siteConfig } from "../../../data/config";
 
 const PostShare2 = ({
   postNode,
@@ -22,7 +22,7 @@ const PostShare2 = ({
   iconSize = 40,
 }) => {
   const post = postNode.frontmatter;
-  const url = urljoin(config.siteUrl, config.pathPrefix, postPath);
+  const url = urljoin(siteConfig.siteUrl, siteConfig.pathPrefix, postPath);
 
   return (
     <div className={`flex ${extraClass}`}>
@@ -55,7 +55,7 @@ const PostShare2 = ({
         url={url}
         title={postNode.title}
         summary={postNode.excerpt}
-        source={config.siteUrl}
+        source={siteConfig.siteUrl}
       >
         <LinkedinIcon round={round} size={iconSize} />
       </LinkedinShareButton>

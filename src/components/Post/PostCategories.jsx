@@ -1,7 +1,7 @@
 import React from "react";
 import AutoLink from "../AutoLink/AutoLink";
 import { getCategoryPath } from "../../utils/helpers";
-import config from "../../../data/SiteConfig";
+import { postConfig } from "../../../data/config";
 import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
 
 const PostCategories = ({
@@ -19,9 +19,11 @@ const PostCategories = ({
     <>
       {categories && (
         <div className={`post-categories-container ${extraClass}`}>
-          {config.postInCategories && <span>{config.postInCategories} </span>}
+          {postConfig.postInCategories && (
+            <span>{postConfig.postInCategories} </span>
+          )}
 
-          {!config.postInCategories && (
+          {!postConfig.postInCategories && (
             <>
               <FontAwesomeIcon
                 className="icon-folder-open"

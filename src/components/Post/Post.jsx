@@ -9,25 +9,17 @@ import PostFollow from "./PostFollow";
 import AdSense from "react-adsense";
 import GithubComment from "../Comment/GithubComment";
 import useWindowSize from "../../hooks/useWindowSize";
-import { txtShare } from "../../../data/SiteConfig";
+import { postConfig, adsConfig } from "../../../data/config";
 import "./Post.scss";
 import "../../../content/styles/code-highlight.scss";
 
-const Post = ({
-  postNode,
-  config,
-  slug,
-  nextTitle,
-  nextSlug,
-  prevTitle,
-  prevSlug,
-}) => {
+const Post = ({ postNode, slug, nextTitle, nextSlug, prevTitle, prevSlug }) => {
   const post = postNode.frontmatter;
   if (!post.id) {
     post.id = slug;
   }
   if (!post.category_id) {
-    post.category_id = config.postDefaultCategoryID;
+    post.category_id = postConfig.postDefaultCategoryID;
   }
 
   const size = useWindowSize();
@@ -47,22 +39,22 @@ const Post = ({
       <PostDivider />
 
       {size?.width < 1000 &&
-        config.hasAdsense &&
-        config.adsenseUnits.postTop && (
-          <AdSense.Google {...config.adsenseUnits.postTop} />
+        adsConfig.hasAdsense &&
+        adsConfig.adsenseUnits.postTop && (
+          <AdSense.Google {...adsConfig.adsenseUnits.postTop} />
         )}
 
       {size?.width >= 1000 &&
         size?.width < 1200 &&
-        config.hasAdsense &&
-        config.adsenseUnits.postTopSmall && (
-          <AdSense.Google {...config.adsenseUnits.postTopSmall} />
+        adsConfig.hasAdsense &&
+        adsConfig.adsenseUnits.postTopSmall && (
+          <AdSense.Google {...adsConfig.adsenseUnits.postTopSmall} />
         )}
 
       {size?.width >= 1200 &&
-        config.hasAdsense &&
-        config.adsenseUnits.postTopSmall2 && (
-          <AdSense.Google {...config.adsenseUnits.postTopSmall2} />
+        adsConfig.hasAdsense &&
+        adsConfig.adsenseUnits.postTopSmall2 && (
+          <AdSense.Google {...adsConfig.adsenseUnits.postTopSmall2} />
         )}
 
       <div
@@ -70,8 +62,8 @@ const Post = ({
         dangerouslySetInnerHTML={{ __html: postNode.html }}
       />
 
-      {config.hasAdsense && config.adsenseUnits?.postBottom && (
-        <AdSense.Google {...config.adsenseUnits?.postBottom} />
+      {adsConfig.hasAdsense && adsConfig.adsenseUnits?.postBottom && (
+        <AdSense.Google {...adsConfig.adsenseUnits?.postBottom} />
       )}
 
       <PostDivider />
@@ -109,7 +101,7 @@ const Post = ({
       )}
 
       <div className="padding-top padding-bottom flex align-items-center">
-        <span className="text-description">{txtShare}</span>
+        <span className="text-description">{postConfig.txtShare}</span>
         <PostShare2
           postPath={slug}
           postNode={postNode}
@@ -118,8 +110,8 @@ const Post = ({
       </div>
       <PostDivider />
 
-      {config.hasAdsense && config.adsenseUnits?.matchedPostBottom && (
-        <AdSense.Google {...config.adsenseUnits?.matchedPostBottom} />
+      {adsConfig.hasAdsense && adsConfig.adsenseUnits?.matchedPostBottom && (
+        <AdSense.Google {...adsConfig.adsenseUnits?.matchedPostBottom} />
       )}
 
       {process.env.NODE_ENV === "production" && <GithubComment />}

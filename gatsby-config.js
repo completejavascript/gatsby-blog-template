@@ -1,21 +1,28 @@
 const urljoin = require("url-join");
-const config = require("./data/SiteConfig");
-const { frontmatterTemplateConfig } = require("./data/config");
+const {
+  siteConfig,
+  authorConfig,
+  frontmatterTemplateConfig,
+} = require("./data/config");
 
 module.exports = {
-  pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
+  pathPrefix: siteConfig.pathPrefix === "" ? "/" : siteConfig.pathPrefix,
   siteMetadata: {
-    siteUrl: urljoin(config.siteUrl, config.pathPrefix),
+    siteUrl: urljoin(siteConfig.siteUrl, siteConfig.pathPrefix),
     rssMetadata: {
-      site_url: urljoin(config.siteUrl, config.pathPrefix),
-      feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
-      title: config.siteTitle,
-      description: config.siteDescription,
+      site_url: urljoin(siteConfig.siteUrl, siteConfig.pathPrefix),
+      feed_url: urljoin(
+        siteConfig.siteUrl,
+        siteConfig.pathPrefix,
+        siteConfig.siteRss
+      ),
+      title: siteConfig.siteTitle,
+      description: siteConfig.siteDescription,
       image_url: `${urljoin(
-        config.siteUrl,
-        config.pathPrefix
+        siteConfig.siteUrl,
+        siteConfig.pathPrefix
       )}/logos/logo-512x512.png`,
-      copyright: config.copyright,
+      copyright: siteConfig.copyright,
     },
   },
   plugins: [
@@ -99,31 +106,30 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: config.googleAnalyticsID,
+        trackingId: siteConfig.googleAnalyticsID,
       },
     },
     {
       resolve: "gatsby-plugin-nprogress",
       options: {
-        color: config.themeColor,
+        color: siteConfig.themeColor,
       },
     },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-catch-links",
-    "gatsby-plugin-twitter",
     "gatsby-plugin-sass",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleShort,
-        description: config.siteDescription,
-        start_url: config.pathPrefix + "/",
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
+        name: siteConfig.siteTitle,
+        short_name: siteConfig.siteTitleShort,
+        description: siteConfig.siteDescription,
+        start_url: siteConfig.pathPrefix + "/",
+        background_color: siteConfig.backgroundColor,
+        theme_color: siteConfig.themeColor,
         display: "minimal-ui",
         icons: [
           {
@@ -178,7 +184,7 @@ module.exports = {
                 guid: rssMetadata.site_url + edge.node.fields.slug,
                 custom_elements: [
                   { "content:encoded": edge.node.html },
-                  { author: config.userEmail },
+                  { author: authorConfig.userEmail },
                 ],
               }));
             },
@@ -212,7 +218,7 @@ module.exports = {
               }
             }
           `,
-            output: config.siteRss,
+            output: siteConfig.siteRss,
           },
         ],
       },

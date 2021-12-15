@@ -1,9 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import {
-  githubCommentRepo,
-  githubCommentTheme,
-  githubCommentTitle,
-} from "../../../data/SiteConfig";
+import { githubCommentConfig } from "../../../data/config";
 import "./GithubComment.scss";
 
 function GithubComment() {
@@ -13,10 +9,10 @@ function GithubComment() {
     const commentScript = document.createElement("script");
     commentScript.async = true;
     commentScript.src = "https://utteranc.es/client.js";
-    commentScript.setAttribute("repo", githubCommentRepo);
+    commentScript.setAttribute("repo", githubCommentConfig.repo);
     commentScript.setAttribute("issue-term", "pathname");
     commentScript.setAttribute("id", "utterances");
-    commentScript.setAttribute("theme", githubCommentTheme);
+    commentScript.setAttribute("theme", githubCommentConfig.theme);
     commentScript.setAttribute("crossorigin", "anonymous");
     if (commentBox && commentBox.current) {
       commentBox.current.appendChild(commentScript);
@@ -27,7 +23,7 @@ function GithubComment() {
 
   return (
     <div className="github-comment-wrapper" id="comments">
-      <h2>{githubCommentTitle}</h2>
+      <h3>{githubCommentConfig.title}</h3>
       <div ref={commentBox} className="comments" />
     </div>
   );

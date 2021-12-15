@@ -3,11 +3,11 @@ import AutoLink from "../AutoLink/AutoLink";
 import WidgetContainer from "./WidgetContainer";
 import WidgetTitle from "./WidgetTitle";
 import { getCategoryPath } from "../../utils/helpers";
-import config from "../../../data/SiteConfig";
+import { sidebarConfig } from "../../../data/config";
 
 const WidgetCategory = ({ categoryList }) => (
   <WidgetContainer extraClass="categories-container sidebar-widget">
-    <WidgetTitle title={config.categoryWidgetTitle} />
+    <WidgetTitle title={sidebarConfig.categoryTitle} />
     <div>
       {categoryList.map((category) => (
         <AutoLink

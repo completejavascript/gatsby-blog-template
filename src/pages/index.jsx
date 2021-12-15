@@ -9,7 +9,7 @@ import AskAnswerAnimation from "../components/MacWindow/AskAnswerAnimation";
 import MainLayout from "../layout/index";
 
 import { getPostList, getTagPath, useSlash } from "../utils/helpers";
-import config from "../../data/SiteConfig";
+import { siteConfig, pathPrefixConfig } from "../../data/config";
 import welcomeSectionImage from "../../content/images/illustration-pair-programming.svg";
 
 import "./index.scss";
@@ -21,25 +21,30 @@ const WelcomeSection = () => (
         <h1 className="txt-welcome color-black">
           Welcome to
           <br />
-          <span className="txt-highlight color-blue">{config.siteTitle}</span>
+          <span className="txt-highlight color-blue">
+            {siteConfig.siteTitle}
+          </span>
         </h1>
         <p>
           Chia sẻ về JavaScript, lập trình JavaScript từ cơ bản đến nâng cao.
         </p>
         <div className="btn-group">
-          <AutoLink className="btn btn-primary" to={config.javaScriptPageUrl}>
+          <AutoLink
+            className="btn btn-primary"
+            to={pathPrefixConfig.javascript}
+          >
             JavaScript
           </AutoLink>
           <AutoLink
             className="btn btn-primary-inverse"
-            to={config.reactPageUrl}
+            to={pathPrefixConfig.react}
           >
             React
           </AutoLink>
         </div>
       </div>
       <div className="right col-xs-12 col-lg-6">
-        <AutoLink to={config.servicePageUrl}>
+        <AutoLink to={pathPrefixConfig.service}>
           <img src={welcomeSectionImage} alt="" className="illustration" />
         </AutoLink>
       </div>
@@ -86,7 +91,7 @@ const LatestPostsSection = ({ postList = [] }) => (
         ))}
       </div>
       <div className="text-center margin-top-3 margin-bottom-2">
-        <AutoLink className="btn btn-primary" to={config.blogPageUrl}>
+        <AutoLink className="btn btn-primary" to={pathPrefixConfig.blog}>
           Xem thêm
         </AutoLink>
       </div>
@@ -106,7 +111,7 @@ const LatestFreebiesSection = ({ postList = [] }) => (
         ))}
       </div>
       <div className="text-center margin-top-3 margin-bottom-2">
-        <AutoLink className="btn btn-primary" to={config.freebiePageUrl}>
+        <AutoLink className="btn btn-primary" to={pathPrefixConfig.freebie}>
           Xem thêm
         </AutoLink>
       </div>
@@ -133,7 +138,7 @@ const CommunitySection = () => (
           <b>15K lập trình viên!</b>
         </p>
         <div>
-          <AutoLink className="color-yellow" to={config.jsGroupUrl}>
+          <AutoLink className="color-yellow" to={siteConfig.jsGroupUrl}>
             ⚡ Tham gia cộng đồng JavaScript 🚀
           </AutoLink>
         </div>
@@ -151,8 +156,8 @@ function Index({ data }) {
 
   return (
     <MainLayout hasFooter={true} hideOnScroll={true} adaptiveBoxShadow={true}>
-      <Helmet title={config.siteTitle}>
-        <link rel="canonical" href={useSlash(config.siteUrl)} />
+      <Helmet title={siteConfig.siteTitle}>
+        <link rel="canonical" href={useSlash(siteConfig.siteUrl)} />
       </Helmet>
       <main className="index-container background-color-white">
         <WelcomeSection />

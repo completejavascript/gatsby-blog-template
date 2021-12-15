@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { getSrc } from "gatsby-plugin-image";
 import Helmet from "react-helmet";
 import urljoin from "url-join";
-import config from "../../../data/SiteConfig";
+import { siteConfig, authorConfig } from "../../../data/config";
 
 class SEO extends Component {
   render() {
@@ -25,22 +25,22 @@ class SEO extends Component {
         image = getSrc(postMeta.cover);
       }
 
-      postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
+      postURL = urljoin(siteConfig.siteUrl, siteConfig.pathPrefix, postPath);
     } else {
-      title = config.siteTitle;
-      description = config.siteDescription;
-      image = config.siteLogo;
+      title = siteConfig.siteTitle;
+      description = siteConfig.siteDescription;
+      image = siteConfig.siteLogo;
     }
 
-    image = urljoin(config.siteUrl, config.pathPrefix, image);
-    const blogURL = urljoin(config.siteUrl, config.pathPrefix);
+    image = urljoin(siteConfig.siteUrl, siteConfig.pathPrefix, image);
+    const blogURL = urljoin(siteConfig.siteUrl, siteConfig.pathPrefix);
     const schemaOrgJSONLD = [
       {
         "@context": "http://schema.org",
         "@type": "WebSite",
         url: blogURL,
         name: title,
-        alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
+        alternateName: siteConfig.siteTitleAlt ? siteConfig.siteTitleAlt : "",
       },
     ];
     if (postSEO) {
@@ -65,7 +65,7 @@ class SEO extends Component {
           "@type": "BlogPosting",
           url: blogURL,
           name: title,
-          alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
+          alternateName: siteConfig.siteTitleAlt ? siteConfig.siteTitleAlt : "",
           headline: title,
           image: {
             "@type": "ImageObject",
@@ -95,14 +95,14 @@ class SEO extends Component {
         <meta property="og:image" content={image} />
         <meta
           property="fb:app_id"
-          content={config.siteFBAppID ? config.siteFBAppID : ""}
+          content={siteConfig.siteFBAppID ? siteConfig.siteFBAppID : ""}
         />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:creator"
-          content={config.userTwitter ? config.userTwitter : ""}
+          content={authorConfig.userTwitter ? authorConfig.userTwitter : ""}
         />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />

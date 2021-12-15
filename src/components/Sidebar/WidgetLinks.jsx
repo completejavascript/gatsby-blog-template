@@ -2,13 +2,13 @@ import React from "react";
 import AutoLink from "../AutoLink/AutoLink";
 import WidgetContainer from "./WidgetContainer";
 import WidgetTitle from "./WidgetTitle";
-import config from "../../../data/SiteConfig";
+import { sidebarConfig } from "../../../data/config";
 
 const WidgetLinks = ({ links }) => (
   <>
     {links && links.length > 0 && (
       <WidgetContainer extraClass="categories-container sidebar-widget">
-        <WidgetTitle title={config.linksWidgetTitle} />
+        <WidgetTitle title={sidebarConfig.linksTitle} />
         <div>
           {links.map((link) => (
             <AutoLink

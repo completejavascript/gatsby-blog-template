@@ -1,7 +1,7 @@
 import React from "react";
 import AutoLink from "../AutoLink/AutoLink";
 import { getTagPath } from "../../utils/helpers";
-import config from "../../../data/SiteConfig";
+import { postConfig } from "../../../data/config";
 import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
 
 const tagLink = (tag) => (
@@ -15,9 +15,9 @@ const PostTags = ({ tags, extraClass = "", iconColor = "#444" }) => {
     <>
       {tags && (
         <div className={`post-tags-container ${extraClass}`}>
-          {config.postTagged && <span>{config.postTagged} </span>}
+          {postConfig.postTagged && <span>{postConfig.postTagged} </span>}
 
-          {!config.postTagged && (
+          {!postConfig.postTagged && (
             <>
               <FontAwesomeIcon
                 className="icon-tags"

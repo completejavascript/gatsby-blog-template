@@ -12,11 +12,11 @@ import {
   RedditIcon,
 } from "react-share";
 import urljoin from "url-join";
-import config from "../../../data/SiteConfig";
+import { siteConfig } from "../../../data/config";
 
 const PostShare = ({ postNode, postPath, extraClass = "" }) => {
   const post = postNode.frontmatter;
-  const url = urljoin(config.siteUrl, config.pathPrefix, postPath);
+  const url = urljoin(siteConfig.siteUrl, siteConfig.pathPrefix, postPath);
   const iconSize = 26;
   const filter = (count) => (count > 0 ? count : "");
   const renderShareCount = (count) => (

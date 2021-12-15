@@ -12,7 +12,7 @@ import {
   getTagPathWithoutTrailingSlash,
   useSlash,
 } from "../utils/helpers";
-import siteConfig from "../../data/SiteConfig";
+import { siteConfig } from "../../data/config";
 
 const TagTemplate = ({ data, pageContext }) => {
   const {

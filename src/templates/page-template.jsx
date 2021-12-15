@@ -7,14 +7,14 @@ import MainContainer from "../components/MainContainer/MainContainer";
 import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
 import Page from "../components/Page/Page";
 import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
+import { siteConfig } from "../../data/config";
 import { useSlash } from "../utils/helpers";
 
 const PageTemplate = ({ data, pageContext }) => {
   const { slug } = pageContext;
   const postNode = data.markdownRemark;
   const title = postNode?.frontmatter?.title;
-  const canonical = `${config.siteUrl}${slug}`;
+  const canonical = `${siteConfig.siteUrl}${slug}`;
 
   const content = (
     <>
@@ -28,7 +28,7 @@ const PageTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Helmet title={`${title} - ${config.siteTitle}`}>
+      <Helmet title={`${title} - ${siteConfig.siteTitle}`}>
         <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />

@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { adsClient } from "../data/SiteConfig";
+import { adsConfig } from "../data/config";
 
 export default function HTML(props) {
-  const ads = process.env.NODE_ENV === "production" && (
+  const ads = process.env.NODE_ENV === "production" && adsConfig?.adsClient && (
     <script
       async
-      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsClient}`}
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsConfig?.adsClient}`}
       crossorigin="anonymous"
     />
   );

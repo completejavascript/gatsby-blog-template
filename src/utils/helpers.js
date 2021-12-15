@@ -1,4 +1,4 @@
-import config from "../../data/SiteConfig";
+import { pathPrefixConfig, postConfig } from "../../data/config";
 import slug from "slug";
 
 export const useSlash = (slug) => {
@@ -12,26 +12,26 @@ export const slugify = (text) => slug(text || "").toLowerCase();
 export const isInteralLink = (link) => link && link[0] === "/";
 
 export const formatDate = (date) =>
-  new Date(date).toLocaleDateString(config.dateLocale, {
+  new Date(date).toLocaleDateString(postConfig.dateLocale, {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
   });
 
 export const getTagPath = (tag) =>
-  useSlash(`${config.pathPrefixTag}/${slugify(tag)}`);
+  useSlash(`${pathPrefixConfig.tag}/${slugify(tag)}`);
 
 export const getTagPathWithoutTrailingSlash = (tag) =>
-  `${config.pathPrefixTag}/${slugify(tag)}`;
+  `${pathPrefixConfig.tag}/${slugify(tag)}`;
 
 export const getCategoryPath = (category) =>
-  useSlash(`${config.pathPrefixCategory}/${slugify(category)}`);
+  useSlash(`${pathPrefixConfig.category}/${slugify(category)}`);
 
 export const getCategoryPathWithoutTrailingSlash = (category) =>
-  `${config.pathPrefixCategory}/${slugify(category)}`;
+  `${pathPrefixConfig.category}/${slugify(category)}`;
 
 export const getDirectoryPath = (directory) =>
-  useSlash(`${config.pathPrefixDirectory}/${slugify(directory)}`);
+  useSlash(`${pathPrefixConfig.directory}/${slugify(directory)}`);
 
 export const getPostList = (postEdges) =>
   postEdges.map((postEdge) => ({

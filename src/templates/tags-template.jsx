@@ -7,13 +7,13 @@ import Tag from "../components/Tag/Tag";
 import MainContainer from "../components/MainContainer/MainContainer";
 import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
 import GithubComment from "../components/Comment/GithubComment";
-import siteConfig from "../../data/SiteConfig";
+import { siteConfig, adsConfig, pathPrefixConfig } from "../../data/config";
 import { useSlash } from "../utils/helpers";
 
 const TagsTemplate = ({ pageContext }) => {
   const { tagList } = pageContext;
   const title = siteConfig.tagsHeader;
-  const canonical = `${siteConfig.siteUrl}${siteConfig.pathPrefixTags}`;
+  const canonical = `${siteConfig.siteUrl}${pathPrefixConfig.tags}`;
 
   const content = (
     <>
@@ -28,8 +28,8 @@ const TagsTemplate = ({ pageContext }) => {
         {tagList && tagList.map((tag) => <Tag key={tag} content={tag} />)}
       </section>
 
-      {siteConfig.hasAdsense && siteConfig.adsenseUnits?.postBottom && (
-        <AdSense.Google {...siteConfig.adsenseUnits?.postBottom} />
+      {adsConfig.hasAdsense && adsConfig.adsenseUnits?.postBottom && (
+        <AdSense.Google {...adsConfig.adsenseUnits?.postBottom} />
       )}
 
       {process.env.NODE_ENV === "production" && <GithubComment />}

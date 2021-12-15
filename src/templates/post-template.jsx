@@ -8,7 +8,7 @@ import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
 import Post from "../components/Post/Post";
 import SEO from "../components/SEO/SEO";
 import BreadCrumb from "../components/Breadcrumb/Breadcrumb";
-import config from "../../data/SiteConfig";
+import { siteConfig } from "../../data/config";
 import { getDirectoryPath, useSlash } from "../utils/helpers";
 import useWindowSize from "../hooks/useWindowSize";
 
@@ -29,7 +29,7 @@ const PostTemplate = ({ data, pageContext }) => {
   const sameSeriesPosts = data.sameSeries?.edges || [];
 
   const title = postNode?.frontmatter?.title;
-  const canonical = `${config.siteUrl}${slug}`;
+  const canonical = `${siteConfig.siteUrl}${slug}`;
   const breadcrumb = [
     {
       title: "Trang chủ",
@@ -50,7 +50,6 @@ const PostTemplate = ({ data, pageContext }) => {
       <Header title={title} />
       <Post
         postNode={postNode}
-        config={config}
         slug={slug}
         nextTitle={nextTitle}
         nextSlug={nextSlug}
@@ -80,7 +79,7 @@ const PostTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Helmet title={`${title} - ${config.siteTitle}`}>
+      <Helmet title={`${title} - ${siteConfig.siteTitle}`}>
         <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />

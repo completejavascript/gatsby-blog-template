@@ -3,20 +3,20 @@ import NavBrand from "./NavBrand";
 import NavLinks from "./NavLinks";
 import NavBars from "./NavBars";
 import { FontAwesomeIcon } from "../Icons/FontAwesomeIcon";
-import config from "../../../data/SiteConfig";
+import { pathPrefixConfig, searchConfig } from "../../../data/config";
 import "./Navigation.scss";
 
 const SearchForm = ({ className }) => (
   <form
     className={`margin-bottom-none form-search ${className}`}
-    action="/search/"
+    action={`${pathPrefixConfig.search}/`}
     method="get"
   >
     <input
       className="margin-bottom-none input-search"
       type="text"
       name="q"
-      placeholder={config.searchWidgetPlaceHolder}
+      placeholder={searchConfig.searchWidgetPlaceHolder}
       required
       spellCheck="false"
       autoFocus={true}

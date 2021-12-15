@@ -8,7 +8,7 @@ import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
 import PostListing from "../components/PostListing/PostListing";
 import Pagination from "../components/Pagination/Pagination";
 import { getPostList } from "../utils/helpers";
-import siteConfig from "../../data/SiteConfig";
+import { siteConfig } from "../../data/config";
 import { useSlash } from "../utils/helpers";
 
 const BlogTemplate = ({ data, pageContext }) => {

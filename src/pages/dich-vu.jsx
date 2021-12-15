@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import MainLayout from "../layout/index";
-import config from "../../data/SiteConfig";
+import { siteConfig, authorConfig } from "../../data/config";
 import { useSlash } from "../utils/helpers";
 import "./index.scss";
 
@@ -62,7 +62,7 @@ const ServiceSection = () => {
           với mình qua{" "}
           <b>
             <a
-              href={`mailto:${config.serviceEmail}`}
+              href={`mailto:${authorConfig.serviceEmail}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,7 +72,7 @@ const ServiceSection = () => {
           hoặc hợp tác với mình trên{" "}
           <b>
             <a
-              href={config.freeLancerLink}
+              href={authorConfig.freeLancerLink}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -87,10 +87,10 @@ const ServiceSection = () => {
 };
 
 function Service() {
-  const canonical = `${config.siteUrl}/dich-vu`;
+  const canonical = `${siteConfig.siteUrl}/dich-vu`;
   return (
     <MainLayout hasFooter={true} hideOnScroll={true} adaptiveBoxShadow={true}>
-      <Helmet title={`Dịch vụ - ${config.siteTitle}`}>
+      <Helmet title={`Dịch vụ - ${siteConfig.siteTitle}`}>
         <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <main className="index-container">

@@ -7,7 +7,7 @@ import Page from "../components/Page/Page";
 import SEO from "../components/SEO/SEO";
 import MainContainer from "../components/MainContainer/MainContainer";
 import GithubComment from "../components/Comment/GithubComment";
-import config from "../../data/SiteConfig";
+import { siteConfig, adsConfig } from "../../data/config";
 import { useSlash } from "../utils/helpers";
 import AdSense from "react-adsense";
 
@@ -15,22 +15,22 @@ const DirectoryTemplate = ({ data, pageContext }) => {
   const { slug } = pageContext;
   const postNode = data.markdownRemark;
   const title = postNode?.frontmatter?.title;
-  const canonical = `${config.siteUrl}${slug}`;
+  const canonical = `${siteConfig.siteUrl}${slug}`;
 
   const content = (
     <>
       <Header title={title} />
-      {config.hasAdsense && config.adsenseUnits?.postTop && (
-        <AdSense.Google {...config.adsenseUnits?.postTop} />
+      {adsConfig.hasAdsense && adsConfig.adsenseUnits?.postTop && (
+        <AdSense.Google {...adsConfig.adsenseUnits?.postTop} />
       )}
 
       <div className="directory-content-wrapper padding-top-half padding-bottom-2">
         {<Page postNode={postNode} slug={slug} />}
       </div>
 
-      {config.hasAdsense && config.adsenseUnits?.postBottom && (
+      {adsConfig.hasAdsense && adsConfig.adsenseUnits?.postBottom && (
         <>
-          <AdSense.Google {...config.adsenseUnits?.postBottom} />
+          <AdSense.Google {...adsConfig.adsenseUnits?.postBottom} />
           {process.env.NODE_ENV === "production" && <GithubComment />}
         </>
       )}
@@ -39,7 +39,7 @@ const DirectoryTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Helmet title={`${title} - ${config.siteTitle}`}>
+      <Helmet title={`${title} - ${siteConfig.siteTitle}`}>
         <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />

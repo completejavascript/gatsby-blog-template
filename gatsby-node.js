@@ -2,13 +2,15 @@ const path = require("path");
 const slug = require("slug");
 const moment = require("moment");
 
-const siteConfig = require("./data/SiteConfig");
 const {
-  latestEdgesTitleConfig,
+  siteConfig,
+  postConfig,
+  sidebarConfig,
   tagTemplateConfig,
   blogTemplateConfig,
   freebieTemplateConfig,
   frontmatterTemplateConfig,
+  pathPrefixConfig,
 } = require("./data/config");
 
 const slugify = (text) => slug(text).toLowerCase();
@@ -42,7 +44,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, "slug"))
         slug = `/${slugify(node.frontmatter.slug)}/`;
       if (Object.prototype.hasOwnProperty.call(node.frontmatter, "date")) {
-        const date = moment(node.frontmatter.date, siteConfig.dateFromFormat);
+        const date = moment(node.frontmatter.date, postConfig.dateFromFormat);
         if (!date.isValid)
           console.warn(`WARNING: Invalid date.`, node.frontmatter);
 
@@ -251,7 +253,7 @@ exports.createPages = async ({ graphql, actions }) => {
           prevTitle: prevEdge.node.frontmatter.title,
           prevSlug: useSlash(prevEdge.node.fields.slug),
           latestEdges: latestPostEdges,
-          latestEdgesTitle: latestEdgesTitleConfig.post,
+          latestEdgesTitle: sidebarConfig.latestPostsTitle,
         },
       });
     });
@@ -275,7 +277,7 @@ exports.createPages = async ({ graphql, actions }) => {
         prevTitle: prevEdge.node.frontmatter.title,
         prevSlug: useSlash(prevEdge.node.fields.slug),
         latestEdges: latestFreebieEdges,
-        latestEdgesTitle: latestEdgesTitleConfig.freebie,
+        latestEdgesTitle: sidebarConfig.latestFreebieTitle,
       },
     });
   });
@@ -304,7 +306,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // create page contains list of all tags
   createPage({
-    path: useSlash(siteConfig.pathPrefixTags),
+    path: useSlash(pathPrefixConfig.tags),
     component: tagsPageTemplate,
     context: {
       tagList: [...postTagList, ...freebieTagList].sort((a, b) =>
@@ -322,7 +324,7 @@ exports.createPages = async ({ graphql, actions }) => {
     pageTemplate: tagPageTemplate,
     tagConfig: tagTemplateConfig,
     template: frontmatterTemplateConfig.post,
-    latestEdgesTitle: latestEdgesTitleConfig.post,
+    latestEdgesTitle: sidebarConfig.latestPostsTitle,
   });
 
   // create tag pages for freebie posts
@@ -334,7 +336,7 @@ exports.createPages = async ({ graphql, actions }) => {
     pageTemplate: tagPageTemplate,
     tagConfig: tagTemplateConfig,
     template: frontmatterTemplateConfig.freebie,
-    latestEdgesTitle: latestEdgesTitleConfig.freebie,
+    latestEdgesTitle: sidebarConfig.latestFreebieTitle,
   });
 
   // Create blog pages
