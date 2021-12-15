@@ -1,5 +1,6 @@
 const urljoin = require("url-join");
 const config = require("./data/SiteConfig");
+const { frontmatterTemplateConfig } = require("./data/config");
 
 module.exports = {
   pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
@@ -188,7 +189,7 @@ module.exports = {
                 sort: { order: DESC, fields: [frontmatter___date] },
                 filter: { 
                   frontmatter: { 
-                    template: { in: ["post", "freebie"] } 
+                    template: { in: ["${frontmatterTemplateConfig.post}", "${frontmatterTemplateConfig.freebie}"] } 
                   } 
                 }
               ) {

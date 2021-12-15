@@ -4,14 +4,14 @@ import { graphql } from "gatsby";
 import Layout from "../layout";
 import Header from "../components/Header/Header";
 import MainContainer from "../components/MainContainer/MainContainer";
-import { SidebarRight } from "../components/Sidebar/Sidebar";
+import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
 import Page from "../components/Page/Page";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import { useSlash } from "../utils/helpers";
 
 const PageTemplate = ({ data, pageContext }) => {
-  const { slug, latestPostEdges, latestFreebieEdges } = pageContext;
+  const { slug } = pageContext;
   const postNode = data.markdownRemark;
   const title = postNode?.frontmatter?.title;
   const canonical = `${config.siteUrl}${slug}`;
@@ -23,12 +23,8 @@ const PageTemplate = ({ data, pageContext }) => {
     </>
   );
 
-  const sidebarRight = (
-    <SidebarRight
-      latestPostEdges={latestPostEdges}
-      latestFreebieEdges={latestFreebieEdges}
-    />
-  );
+  const sidebarLeft = <SidebarLeft />;
+  const sidebarRight = <SidebarRight />;
 
   return (
     <Layout>
@@ -36,7 +32,11 @@ const PageTemplate = ({ data, pageContext }) => {
         <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
-      <MainContainer content={content} sidebarRight={sidebarRight} />
+      <MainContainer
+        content={content}
+        sidebarLeft={sidebarLeft}
+        sidebarRight={sidebarRight}
+      />
     </Layout>
   );
 };

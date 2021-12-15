@@ -15,8 +15,8 @@ import useWindowSize from "../hooks/useWindowSize";
 const PostTemplate = ({ data, pageContext }) => {
   const {
     slug,
-    latestPostEdges = [],
-    latestFreebieEdges = [],
+    latestEdgesTitle,
+    latestEdges = [],
     nextTitle,
     nextSlug,
     prevTitle,
@@ -71,8 +71,8 @@ const PostTemplate = ({ data, pageContext }) => {
 
   const sidebarRight = (
     <SidebarRight
-      latestPostEdges={latestPostEdges}
-      latestFreebieEdges={latestFreebieEdges}
+      latestEdges={latestEdges}
+      latestEdgesTitle={latestEdgesTitle}
       sameSeriesPosts={size?.width < 1440 ? sameSeriesPosts : []}
       postSlug={slug}
     />

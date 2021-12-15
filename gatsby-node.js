@@ -63,9 +63,6 @@ exports.createPages = async ({ graphql, actions }) => {
   const pagePageTemplate = path.resolve("src/templates/page-template.jsx");
   const tagPageTemplate = path.resolve("src/templates/tag-template.jsx");
   const blogPageTemplate = path.resolve("src/templates/blog-template.jsx");
-  const freebiePageTemplate = path.resolve(
-    "src/templates/freebie-template.jsx"
-  );
   const directoryPageTemplate = path.resolve(
     "src/templates/directory-template.jsx"
   );
@@ -77,7 +74,7 @@ exports.createPages = async ({ graphql, actions }) => {
       {
         allMarkdownRemark(
           limit: ${siteConfig.numberLatestPost}
-          filter: { frontmatter: { template: { eq: "post" } } }
+          filter: { frontmatter: { template: { eq: "${frontmatterTemplateConfig.post}" } } }
           sort: { fields: [frontmatter___update], order: DESC }
         ) {
           edges {
@@ -110,7 +107,7 @@ exports.createPages = async ({ graphql, actions }) => {
       {
         allMarkdownRemark(
           limit: ${siteConfig.numberLatestFreebie}
-          filter: { frontmatter: { template: { eq: "freebie" } } }
+          filter: { frontmatter: { template: { eq: "${frontmatterTemplateConfig.freebie}" } } }
           sort: { fields: [frontmatter___update], order: DESC }
         ) {
           edges {
@@ -253,7 +250,8 @@ exports.createPages = async ({ graphql, actions }) => {
           nextSlug: useSlash(nextEdge.node.fields.slug),
           prevTitle: prevEdge.node.frontmatter.title,
           prevSlug: useSlash(prevEdge.node.fields.slug),
-          latestPostEdges,
+          latestEdges: latestPostEdges,
+          latestEdgesTitle: latestEdgesTitleConfig.post,
         },
       });
     });
@@ -276,7 +274,8 @@ exports.createPages = async ({ graphql, actions }) => {
         nextSlug: useSlash(nextEdge.node.fields.slug),
         prevTitle: prevEdge.node.frontmatter.title,
         prevSlug: useSlash(prevEdge.node.fields.slug),
-        latestFreebieEdges,
+        latestEdges: latestFreebieEdges,
+        latestEdgesTitle: latestEdgesTitleConfig.freebie,
       },
     });
   });
@@ -288,8 +287,6 @@ exports.createPages = async ({ graphql, actions }) => {
       component: pagePageTemplate,
       context: {
         slug: useSlash(edge.node.fields.slug),
-        latestPostEdges,
-        latestFreebieEdges,
       },
     });
   });

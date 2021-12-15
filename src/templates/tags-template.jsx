@@ -5,6 +5,7 @@ import Layout from "../layout";
 import Header from "../components/Header/Header";
 import Tag from "../components/Tag/Tag";
 import MainContainer from "../components/MainContainer/MainContainer";
+import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
 import GithubComment from "../components/Comment/GithubComment";
 import siteConfig from "../../data/SiteConfig";
 import { useSlash } from "../utils/helpers";
@@ -35,13 +36,20 @@ const TagsTemplate = ({ pageContext }) => {
     </>
   );
 
+  const sidebarLeft = <SidebarLeft />;
+  const sidebarRight = <SidebarRight />;
+
   return (
     <Layout>
       <Helmet title={`${title} - ${siteConfig.siteTitle}`}>
         <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
 
-      <MainContainer content={content} />
+      <MainContainer
+        content={content}
+        sidebarLeft={sidebarLeft}
+        sidebarRight={sidebarRight}
+      />
     </Layout>
   );
 };
