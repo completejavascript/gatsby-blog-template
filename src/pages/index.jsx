@@ -281,7 +281,7 @@ export const pageQuery = graphql`
       }
     }
     questions: allMarkdownRemark(
-      limit: 6
+      limit: 12
       sort: { fields: [frontmatter___update], order: DESC }
       filter: { frontmatter: { template: { eq: "question" } } }
     ) {
