@@ -3,7 +3,7 @@ date: "2021-12-16T06:00:00Z"
 update: "2021-12-16T06:00:00Z"
 template: "question"
 directory: "Question"
-cover: "../images/questions/javascript-question.png"
+cover: "../images/questions/javascript-question-dom.png"
 keywords: "xóa hết các phần tử con của DOM node"
 description: "Để xóa hết các phần tử con của DOM node trong JavaScript, bạn có thể sử dụng một trong những cách sau đây: vòng lặp với removeChild, innerHTML hoặc textContent."
 slug: xoa-het-phan-tu-con-dom-node-trong-javascript
