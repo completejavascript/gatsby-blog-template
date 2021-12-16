@@ -24,7 +24,7 @@ const BlogTemplate = ({ data, pageContext }) => {
 
   const content = (
     <>
-      <Header title={templateConfig.blogHeader} />
+      <Header title={templateConfig.header} />
       <PostListing
         postList={postList}
         hasThumbnail={templateConfig.postListingHasThumbnail}
