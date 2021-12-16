@@ -43,10 +43,11 @@ const WelcomeSection = () => (
           </AutoLink>
         </div>
       </div>
-      <div className="right col-xs-12 col-lg-6">
+      <div className="right col-xs-12 col-lg-6 text-center">
         <AutoLink to={pathPrefixConfig.service}>
           <img src={welcomeSectionImage} alt="" className="illustration" />
         </AutoLink>
+        <p className="text-description">Learning together, growing together</p>
       </div>
     </div>
   </section>
