@@ -22,6 +22,7 @@ const siteConfig = {
   // Common for tag, category pages and widget
   numberLatestPost: 10,
   numberLatestFreebie: 10,
+  numberLatestQuestion: 10,
   // 404
   pageNotFoundTitle: "Trang không tồn tại", //
   pageNotFoundBtn: "Quay về trang chủ",
@@ -57,6 +58,7 @@ const authorConfig = {
 const pathPrefixConfig = {
   blog: "/blog",
   freebie: "/freebie",
+  question: "/question",
   pagination: "/page",
   directory: "",
   category: "/category",
@@ -73,12 +75,14 @@ const frontmatterTemplateConfig = {
   page: "page",
   freebie: "freebie",
   directory: "directory",
+  question: "question",
 };
 
 const sidebarConfig = {
   sidebarSticky: true,
   latestPostsTitle: "Bài viết mới cập nhật",
   latestFreebieTitle: "Freebie mới cập nhật",
+  latestQuestionTitle: "Câu hỏi mới cập nhật",
   sameSeriesPostsTitle: "Bài viết cùng series",
   categoryTitle: "Chuyên mục",
   tagTitle: "Chủ đề",
@@ -94,7 +98,7 @@ const tagTemplateConfig = {
   paginationItemsPerPage: 10,
 };
 
-/** BLOG/FREEBIE TEMPLATE CONFIG **/
+/** BLOG/FREEBIE/QUESTION TEMPLATE CONFIG **/
 const blogTemplateConfig = {
   frontmatterTemplate: frontmatterTemplateConfig.post,
   pathPrefix: pathPrefixConfig.blog,
@@ -111,6 +115,16 @@ const freebieTemplateConfig = {
   header: "Freebie",
   postListingHasThumbnail: true,
   sidebarLatestPostsTitle: sidebarConfig.latestFreebieTitle,
+  paginationPrefix: pathPrefixConfig.pagination,
+  paginationItemsPerPage: 10,
+};
+
+const questionTemplateConfig = {
+  frontmatterTemplate: frontmatterTemplateConfig.question,
+  pathPrefix: pathPrefixConfig.question,
+  header: "Question",
+  postListingHasThumbnail: true,
+  sidebarLatestPostsTitle: sidebarConfig.latestQuestionTitle,
   paginationPrefix: pathPrefixConfig.pagination,
   paginationItemsPerPage: 10,
 };
@@ -209,12 +223,13 @@ const adsConfig = {
 };
 
 const navConfig = {
-  navTitle: "Complete JavaScript",
+  navTitle: siteConfig.siteTitle,
   navLinks: [
-    { label: "JavaScript", url: "/javascript" },
-    { label: "React", url: "/react" },
-    { label: "Freebie", url: "/freebie" },
-    { label: "Blog", url: "/blog" },
+    { label: "JavaScript", url: pathPrefixConfig.javascript },
+    { label: "React", url: pathPrefixConfig.react },
+    { label: "Question", url: pathPrefixConfig.question },
+    { label: "Freebie", url: pathPrefixConfig.freebie },
+    { label: "Blog", url: pathPrefixConfig.blog },
   ],
 };
 
@@ -380,5 +395,6 @@ module.exports = {
   tagTemplateConfig,
   blogTemplateConfig,
   freebieTemplateConfig,
+  questionTemplateConfig,
   adsConfig,
 };

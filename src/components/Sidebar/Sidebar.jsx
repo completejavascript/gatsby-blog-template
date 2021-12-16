@@ -51,6 +51,10 @@ function SidebarRight({
   latestEdges = [],
   sameSeriesPosts = [],
 }) {
+  const latestEdgesFilter = latestEdges.filter(
+    (item) => item.node.fields.slug !== postSlug
+  );
+
   return (
     <SidebarContainer>
       {sameSeriesPosts && sameSeriesPosts.length > 0 && (
@@ -68,7 +72,7 @@ function SidebarRight({
         </>
       )}
 
-      {latestEdges && latestEdges.length > 0 && (
+      {latestEdgesFilter && latestEdgesFilter.length > 0 && (
         <>
           {adsConfig.hasAdsense && adsConfig.adsenseUnits?.sidebarMiddle && (
             <div className="width-full flex justify-content-center padding-top">
@@ -76,9 +80,7 @@ function SidebarRight({
             </div>
           )}
           <WidgetLatestPosts
-            postEdges={latestEdges.filter(
-              (item) => item.node.fields.slug !== postSlug
-            )}
+            postEdges={latestEdgesFilter}
             title={latestEdgesTitle}
           />
         </>

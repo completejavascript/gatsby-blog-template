@@ -9,6 +9,7 @@ const {
   tagTemplateConfig,
   blogTemplateConfig,
   freebieTemplateConfig,
+  questionTemplateConfig,
   frontmatterTemplateConfig,
   pathPrefixConfig,
 } = require("./data/config");
@@ -136,6 +137,39 @@ exports.createPages = async ({ graphql, actions }) => {
   const latestFreebieEdges =
     latestUpdatedFreebieQueryResult.data.allMarkdownRemark.edges;
 
+  // Get latest question posts by the updated date
+  const latestUpdatedQuestionQueryResult = await graphql(
+    `
+      {
+        allMarkdownRemark(
+          limit: ${siteConfig.numberLatestQuestion}
+          filter: { frontmatter: { template: { eq: "${frontmatterTemplateConfig.question}" } } }
+          sort: { fields: [frontmatter___update], order: DESC }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                directory
+                template
+                title
+                shortTitle
+                tags
+                date
+                update
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
+  const latestQuestionEdges =
+    latestUpdatedQuestionQueryResult.data.allMarkdownRemark.edges;
+
   // Get all markdown remarks
   const markdownQueryResult = await graphql(
     `
@@ -171,9 +205,11 @@ exports.createPages = async ({ graphql, actions }) => {
   // Filter data
   const postTagSet = new Set();
   const freebieTagSet = new Set();
+  const questionTagSet = new Set();
   const postEdges = [];
   const pageEdges = [];
   const freebieEdges = [];
+  const questionEdges = [];
   const directoryEdges = [];
 
   markdownQueryResult.data.allMarkdownRemark.edges.forEach((edge) => {
@@ -195,6 +231,15 @@ exports.createPages = async ({ graphql, actions }) => {
       });
     }
 
+    if (
+      edge.node.frontmatter.tags &&
+      edge.node.frontmatter.template === frontmatterTemplateConfig.question
+    ) {
+      edge.node.frontmatter.tags.forEach((tag) => {
+        questionTagSet.add(tag);
+      });
+    }
+
     if (edge.node.frontmatter.template === frontmatterTemplateConfig.post) {
       postEdges.push(edge);
     }
@@ -207,6 +252,10 @@ exports.createPages = async ({ graphql, actions }) => {
       freebieEdges.push(edge);
     }
 
+    if (edge.node.frontmatter.template === frontmatterTemplateConfig.question) {
+      questionEdges.push(edge);
+    }
+
     if (
       edge.node.frontmatter.template === frontmatterTemplateConfig.directory
     ) {
@@ -217,6 +266,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create tagList
   const postTagList = Array.from(postTagSet);
   const freebieTagList = Array.from(freebieTagSet);
+  const questionTagList = Array.from(questionTagSet);
 
   // Map posts by directory
   const mapPostsByDirectory = {};
@@ -235,51 +285,32 @@ exports.createPages = async ({ graphql, actions }) => {
   for (let directory in mapPostsByDirectory) {
     const postEdges = mapPostsByDirectory[directory];
 
-    // Create post page
-    postEdges.forEach((edge, index) => {
-      const nextID = index + 1 < postEdges.length ? index + 1 : 0;
-      const prevID = index - 1 >= 0 ? index - 1 : postEdges.length - 1;
-      const nextEdge = postEdges[nextID];
-      const prevEdge = postEdges[prevID];
-
-      createPage({
-        path: useSlash(edge.node.fields.slug),
-        component: postPageTemplate,
-        context: {
-          slug: useSlash(edge.node.fields.slug),
-          series: edge.node.frontmatter.series || "__IGNORED__",
-          nextTitle: nextEdge.node.frontmatter.title,
-          nextSlug: useSlash(nextEdge.node.fields.slug),
-          prevTitle: prevEdge.node.frontmatter.title,
-          prevSlug: useSlash(prevEdge.node.fields.slug),
-          latestEdges: latestPostEdges,
-          latestEdgesTitle: sidebarConfig.latestPostsTitle,
-        },
-      });
+    // Create post pages
+    createPostPages({
+      createPage,
+      totalEdges: postEdges,
+      latestEdges: latestPostEdges,
+      latestEdgesTitle: sidebarConfig.latestPostsTitle,
+      postTemplate: postPageTemplate,
     });
   }
 
-  // Create freebie page
-  freebieEdges.forEach((edge, index) => {
-    const nextID = index + 1 < freebieEdges.length ? index + 1 : 0;
-    const prevID = index - 1 >= 0 ? index - 1 : freebieEdges.length - 1;
-    const nextEdge = freebieEdges[nextID];
-    const prevEdge = freebieEdges[prevID];
+  // Create freebie pages
+  createPostPages({
+    createPage,
+    totalEdges: freebieEdges,
+    latestEdges: latestFreebieEdges,
+    latestEdgesTitle: sidebarConfig.latestFreebieTitle,
+    postTemplate: postPageTemplate,
+  });
 
-    createPage({
-      path: useSlash(edge.node.fields.slug),
-      component: postPageTemplate,
-      context: {
-        slug: useSlash(edge.node.fields.slug),
-        series: edge.node.frontmatter.series || "__IGNORED__",
-        nextTitle: nextEdge.node.frontmatter.title,
-        nextSlug: useSlash(nextEdge.node.fields.slug),
-        prevTitle: prevEdge.node.frontmatter.title,
-        prevSlug: useSlash(prevEdge.node.fields.slug),
-        latestEdges: latestFreebieEdges,
-        latestEdgesTitle: sidebarConfig.latestFreebieTitle,
-      },
-    });
+  // Create question pages
+  createPostPages({
+    createPage,
+    totalEdges: questionEdges,
+    latestEdges: latestQuestionEdges,
+    latestEdgesTitle: sidebarConfig.latestQuestionTitle,
+    postTemplate: postPageTemplate,
   });
 
   // create page page
@@ -309,8 +340,8 @@ exports.createPages = async ({ graphql, actions }) => {
     path: useSlash(pathPrefixConfig.tags),
     component: tagsPageTemplate,
     context: {
-      tagList: [...postTagList, ...freebieTagList].sort((a, b) =>
-        a.localeCompare(b)
+      tagList: [...postTagList, ...freebieTagList, ...questionTagList].sort(
+        (a, b) => a.localeCompare(b)
       ),
     },
   });
@@ -339,6 +370,18 @@ exports.createPages = async ({ graphql, actions }) => {
     latestEdgesTitle: sidebarConfig.latestFreebieTitle,
   });
 
+  // create tag pages for question posts
+  createTagPages({
+    createPage,
+    tagList: questionTagList,
+    latestEdges: latestQuestionEdges,
+    totalEdges: questionEdges,
+    pageTemplate: tagPageTemplate,
+    tagConfig: tagTemplateConfig,
+    template: frontmatterTemplateConfig.question,
+    latestEdgesTitle: sidebarConfig.latestQuestionTitle,
+  });
+
   // Create blog pages
   createBlogPages({
     createPage,
@@ -355,6 +398,15 @@ exports.createPages = async ({ graphql, actions }) => {
     totalEdges: freebieEdges,
     pageTemplate: blogPageTemplate,
     templateConfig: freebieTemplateConfig,
+  });
+
+  // Create question pages
+  createBlogPages({
+    createPage,
+    latestEdges: latestQuestionEdges,
+    totalEdges: questionEdges,
+    pageTemplate: blogPageTemplate,
+    templateConfig: questionTemplateConfig,
   });
 };
 
@@ -432,4 +484,34 @@ function createBlogPages({
       },
     });
   }
+}
+
+function createPostPages({
+  createPage,
+  totalEdges = [],
+  latestEdges = [],
+  latestEdgesTitle,
+  postTemplate,
+}) {
+  totalEdges.forEach((edge, index) => {
+    const nextID = index + 1 < totalEdges.length ? index + 1 : 0;
+    const prevID = index - 1 >= 0 ? index - 1 : totalEdges.length - 1;
+    const nextEdge = totalEdges[nextID];
+    const prevEdge = totalEdges[prevID];
+
+    createPage({
+      path: useSlash(edge.node.fields.slug),
+      component: postTemplate,
+      context: {
+        slug: useSlash(edge.node.fields.slug),
+        series: edge.node.frontmatter.series || "__IGNORED__",
+        nextTitle: nextEdge.node.frontmatter.title,
+        nextSlug: useSlash(nextEdge.node.fields.slug),
+        prevTitle: prevEdge.node.frontmatter.title,
+        prevSlug: useSlash(prevEdge.node.fields.slug),
+        latestEdges,
+        latestEdgesTitle,
+      },
+    });
+  });
 }

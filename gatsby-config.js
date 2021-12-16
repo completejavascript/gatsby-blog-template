@@ -195,7 +195,7 @@ module.exports = {
                 sort: { order: DESC, fields: [frontmatter___date] },
                 filter: { 
                   frontmatter: { 
-                    template: { in: ["${frontmatterTemplateConfig.post}", "${frontmatterTemplateConfig.freebie}"] } 
+                    template: { in: ["${frontmatterTemplateConfig.post}", "${frontmatterTemplateConfig.freebie}", "${frontmatterTemplateConfig.question}"] } 
                   } 
                 }
               ) {
