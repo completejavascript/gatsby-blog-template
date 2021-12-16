@@ -54,10 +54,14 @@
   .latestposts-section {
     background-color: #e1e9f2;
   }
-  .latestfreebies-section {
+  .latestquestion-section {
     background-color: #ffffff;
   }
+  .latestfreebies-section {
+    background-color: #c4d7ee;
+  }
   .latestposts-section,
+  .latestquestion-section,
   .latestfreebies-section {
     min-height: 120vh;
     display: flex;
@@ -71,45 +75,46 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         grid-gap: 2rem;
+      }
+      .latestquestions-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 2rem;
         article {
-          position: relative;
-          background-color: white;
-          box-shadow: 0 0 0 1px rgba($color: #000000, $alpha: 0.05);
-          transition: all 0.15s ease-in;
-          &:hover {
-            //transform: translateY(-10px);
-            //box-shadow: 0 25px 50px -12px rgba($color: #000000, $alpha: 0.25);
-            transform: none;
-            box-shadow: 0 8px 12px 5px rgba(0, 0, 0, 0.08);
-          }
-          h3 {
-            margin: 1rem 2rem 5rem;
-            line-height: 0.85;
-            a {
-              color: #444444;
-              font-weight: 400;
-              font-size: 1.7rem;
-            }
-          }
-          .tag-container {
-            margin: 1rem 2rem;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-          }
+          border-radius: 5px;
         }
       }
-    }
-  }
-  .latestfreebies-section {
-    .container {
-      .latestposts-container {
-        article {
+      article {
+        position: relative;
+        background-color: white;
+        transition: all 0.15s ease-in;
+        &.post-article-1 {
+          box-shadow: 0 0 0 1px rgba($color: #000000, $alpha: 0.05);
+        }
+        &.post-article-2 {
+          border-radius: 4px;
           box-shadow: 0 0 0 1px #e2e9ed;
-          &:hover {
-            transform: none;
-            box-shadow: 0 8px 12px 5px rgba(0, 0, 0, 0.08);
+        }
+        &:hover {
+          //transform: translateY(-10px);
+          //box-shadow: 0 25px 50px -12px rgba($color: #000000, $alpha: 0.25);
+          transform: none;
+          box-shadow: 0 8px 12px 5px rgba(0, 0, 0, 0.08);
+        }
+        h3 {
+          margin: 1rem 2rem 5rem;
+          line-height: 0.85;
+          a {
+            color: #444444;
+            font-weight: 400;
+            font-size: 1.7rem;
           }
+        }
+        .tag-container {
+          margin: 1rem 2rem;
+          position: absolute;
+          left: 0;
+          bottom: 0;
         }
       }
     }
@@ -236,9 +241,14 @@
       }
     }
     .latestposts-section,
+    .latestquestion-section,
     .latestfreebies-section {
       .container {
         .latestposts-container {
+          grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+          grid-gap: 2.6rem;
+        }
+        .latestquestions-container {
           grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
           grid-gap: 2.6rem;
         }
@@ -256,6 +266,7 @@
 @media (min-width: 1500px) {
   .index-container {
     .latestposts-section,
+    .latestquestion-section,
     .latestfreebies-section {
       .container {
         .latestposts-container {

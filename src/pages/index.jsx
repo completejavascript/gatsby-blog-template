@@ -9,7 +9,7 @@ import AskAnswerAnimation from "../components/MacWindow/AskAnswerAnimation";
 import MainLayout from "../layout/index";
 
 import { getPostList, getTagPath, useSlash } from "../utils/helpers";
-import { siteConfig, pathPrefixConfig } from "../../data/config";
+import { siteConfig, pathPrefixConfig, sidebarConfig } from "../../data/config";
 import welcomeSectionImage from "../../content/images/illustration-pair-programming.svg";
 
 import "./index.scss";
@@ -52,9 +52,35 @@ const WelcomeSection = () => (
   </section>
 );
 
-const PostArticle = ({ post }) => (
-  <article>
+const PostArticle1 = ({ post }) => (
+  <article className="post-article-1">
     <Thumbnail post={post} />
+    <h3>
+      <AutoLink to={post.slug} key={post.title}>
+        {post.title}
+      </AutoLink>
+    </h3>
+    <div className="tag-container">
+      {post.tags?.map((tag, index) => (
+        <React.Fragment key={tag}>
+          {index <= 3 ? (
+            <span>
+              <AutoLink to={getTagPath(tag)} label={tag}>
+                <small>{tag}</small>
+              </AutoLink>
+              {index < post.tags.length - 1 && index < 3 && (
+                <span className="color-light-grey"> | </span>
+              )}
+            </span>
+          ) : null}
+        </React.Fragment>
+      ))}
+    </div>
+  </article>
+);
+
+const PostArticle2 = ({ post }) => (
+  <article className="post-article-2">
     <h3>
       <AutoLink to={post.slug} key={post.title}>
         {post.title}
@@ -83,11 +109,11 @@ const LatestPostsSection = ({ postList = [] }) => (
   <section className="latestposts-section">
     <div className="container padding margin-top-3 margin-bottom-3">
       <div className="text-center margin-bottom-3 margin-top-2">
-        <h2 className="section-title">Bài viết mới cập nhật</h2>
+        <h2 className="section-title">{sidebarConfig.latestPostsTitle}</h2>
       </div>
       <div className="latestposts-container">
         {postList.map((post) => (
-          <PostArticle post={post} key={post.title} />
+          <PostArticle1 post={post} key={post.title} />
         ))}
       </div>
       <div className="text-center margin-top-3 margin-bottom-2">
@@ -103,15 +129,35 @@ const LatestFreebiesSection = ({ postList = [] }) => (
   <section className="latestfreebies-section">
     <div className="container padding margin-top-3 margin-bottom-3">
       <div className="text-center margin-bottom-3 margin-top-2">
-        <h2 className="section-title">Freebie mới cập nhật</h2>
+        <h2 className="section-title">{sidebarConfig.latestFreebieTitle}</h2>
       </div>
       <div className="latestposts-container">
         {postList.map((post) => (
-          <PostArticle post={post} key={post.title} />
+          <PostArticle1 post={post} key={post.title} />
         ))}
       </div>
       <div className="text-center margin-top-3 margin-bottom-2">
         <AutoLink className="btn btn-primary" to={pathPrefixConfig.freebie}>
+          Xem thêm
+        </AutoLink>
+      </div>
+    </div>
+  </section>
+);
+
+const LatestQuestionSection = ({ postList = [] }) => (
+  <section className="latestquestion-section">
+    <div className="container padding margin-top-3 margin-bottom-3">
+      <div className="text-center margin-bottom-3 margin-top-2">
+        <h2 className="section-title">{sidebarConfig.latestQuestionTitle}</h2>
+      </div>
+      <div className="latestquestions-container">
+        {postList.map((post) => (
+          <PostArticle2 post={post} key={post.title} />
+        ))}
+      </div>
+      <div className="text-center margin-top-3 margin-bottom-2">
+        <AutoLink className="btn btn-primary" to={pathPrefixConfig.question}>
           Xem thêm
         </AutoLink>
       </div>
@@ -150,9 +196,11 @@ const CommunitySection = () => (
 function Index({ data }) {
   const postEdges = data?.posts?.edges || [];
   const freebieEdges = data?.freebies?.edges || [];
+  const questionEdges = data?.questions?.edges || [];
 
   const postList = getPostList(postEdges);
   const freebieList = getPostList(freebieEdges);
+  const questionList = getPostList(questionEdges);
 
   return (
     <MainLayout hasFooter={true} hideOnScroll={true} adaptiveBoxShadow={true}>
@@ -163,6 +211,7 @@ function Index({ data }) {
         <WelcomeSection />
         <LatestPostsSection postList={postList} />
         <LatestFreebiesSection postList={freebieList} />
+        <LatestQuestionSection postList={questionList} />
         <CommunitySection />
       </main>
     </MainLayout>
@@ -206,6 +255,34 @@ export const pageQuery = graphql`
       limit: 6
       sort: { fields: [frontmatter___update], order: DESC }
       filter: { frontmatter: { template: { eq: "freebie" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            date
+          }
+          excerpt
+          timeToRead
+          frontmatter {
+            template
+            title
+            tags
+            date
+            update
+            cover {
+              childImageSharp {
+                gatsbyImageData(width: 660, quality: 100, layout: CONSTRAINED)
+              }
+            }
+          }
+        }
+      }
+    }
+    questions: allMarkdownRemark(
+      limit: 6
+      sort: { fields: [frontmatter___update], order: DESC }
+      filter: { frontmatter: { template: { eq: "question" } } }
     ) {
       edges {
         node {
