@@ -92,7 +92,7 @@ const sidebarConfig = {
 /** TAG TEMPLATE CONFIG */
 const tagTemplateConfig = {
   pathPrefix: pathPrefixConfig.tag,
-  header: "Chủ đề",
+  header: "",
   postListingHasThumbnail: true,
   paginationPrefix: pathPrefixConfig.pagination,
   paginationItemsPerPage: 10,
