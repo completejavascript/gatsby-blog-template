@@ -19,8 +19,7 @@ const WelcomeSection = () => (
     <div className="container padding">
       <div className="left col-xs-12 col-lg-6">
         <h1 className="txt-welcome color-black">
-          Welcome to
-          <br />
+          Welcome to <br />
           <span className="txt-highlight color-blue">
             {siteConfig.siteTitle}
           </span>
@@ -158,7 +157,10 @@ const LatestQuestionSection = ({ postList = [] }) => (
         ))}
       </div>
       <div className="text-center margin-top-3 margin-bottom-2">
-        <AutoLink className="btn btn-primary" to={pathPrefixConfig.question}>
+        <AutoLink
+          className="btn btn-primary-inverse"
+          to={pathPrefixConfig.question}
+        >
           Xem thêm
         </AutoLink>
       </div>

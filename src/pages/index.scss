@@ -88,12 +88,24 @@
         position: relative;
         background-color: white;
         transition: all 0.15s ease-in;
+        h3 {
+          margin: 1rem 2rem 5rem;
+          line-height: 0.85;
+        }
         &.post-article-1 {
           box-shadow: 0 0 0 1px rgba($color: #000000, $alpha: 0.05);
+          h3 > a {
+            color: #444444;
+            font-weight: 400;
+            font-size: 1.7rem;
+          }
         }
         &.post-article-2 {
           border-radius: 4px;
           box-shadow: 0 0 0 1px #e2e9ed;
+          h3 > a {
+            color: #333333;
+          }
           a {
             color: #444444;
             font-weight: 400;
@@ -105,15 +117,6 @@
           //box-shadow: 0 25px 50px -12px rgba($color: #000000, $alpha: 0.25);
           transform: none;
           box-shadow: 0 8px 12px 5px rgba(0, 0, 0, 0.08);
-        }
-        h3 {
-          margin: 1rem 2rem 5rem;
-          line-height: 0.85;
-          a {
-            color: #444444;
-            font-weight: 400;
-            font-size: 1.7rem;
-          }
         }
         .tag-container {
           margin: 1rem 2rem;
@@ -219,8 +222,6 @@
         }
       }
     }
-  }
-  .index-container {
     .community-section {
       .container {
         .right {
@@ -235,6 +236,21 @@
 
 @media (min-width: 1200px) {
   .index-container {
+    .latestquestion-section {
+      .container {
+        max-width: 70%;
+        article.post-article-2 {
+          h3 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            a {
+              font-weight: 500;
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
     .welcome-section,
     .community-section {
       .container {
@@ -270,6 +286,27 @@
 
 @media (min-width: 1500px) {
   .index-container {
+    .welcome-section,
+    .latestposts-section,
+    .latestfreebies-section,
+    .community-section,
+    .service-section {
+      & > .container {
+        max-width: 90%;
+      }
+    }
+    .welcome-section {
+      .container {
+        .left {
+          h1 {
+            font-size: 5.2rem;
+          }
+          p {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
     .latestposts-section,
     .latestquestion-section,
     .latestfreebies-section {
