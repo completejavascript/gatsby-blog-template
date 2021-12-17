@@ -84,7 +84,7 @@ Bạn chỉ cần kiểm tra giá trị của thuộc tính `display` là biết
 
 Ví dụ tương tự với cấu trúc DOM trên:
 
-```js
+```js:title=main.js
 function isElementVisible(element) {
   let style = window.getComputedStyle(element);
   return style.display !== "none";
