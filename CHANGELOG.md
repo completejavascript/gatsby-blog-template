@@ -2,6 +2,74 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/completejavascript/completejavascript.com/compare/v1.14.4...v1.15.0) (2021-12-17)
+
+
+### Features
+
+* implement frontmatter question template ([2a745e7](https://github.com/completejavascript/completejavascript.com/commit/2a745e7d6514cc8f588ac12d3e533789de860e11))
+
+
+### Bug Fixes
+
+* update config ([3730c0a](https://github.com/completejavascript/completejavascript.com/commit/3730c0a93323c0bd019c894f169212c97fa8c455))
+* update layout question in homepage ([5e29cae](https://github.com/completejavascript/completejavascript.com/commit/5e29cae24226c8aee053ea4c6a9e343b0212157a))
+* **post:** question update image ([e4e81db](https://github.com/completejavascript/completejavascript.com/commit/e4e81dbde8257779746fe9135bd405365361df8c))
+* **post:** question update post and image ([d1c33b1](https://github.com/completejavascript/completejavascript.com/commit/d1c33b11f686b02ebb17b4200d1cd1e6c612aabe))
+* **post:** update post ([0c4c4e5](https://github.com/completejavascript/completejavascript.com/commit/0c4c4e5116e24c198579548c8958d1d6c5bfe3c8))
+* add description for image in homepage ([4ca9e37](https://github.com/completejavascript/completejavascript.com/commit/4ca9e37dd2825816449a8fb1183a4f5ecc188dd4))
+* add latest question to home page ([068975a](https://github.com/completejavascript/completejavascript.com/commit/068975ae02565a3a0f0c70b7c638804e5a3f74d9))
+* blog template header ([9da24df](https://github.com/completejavascript/completejavascript.com/commit/9da24df4869f573c92a3454bbe9221f2cdb94b1f))
+* comment unused code ([40708fd](https://github.com/completejavascript/completejavascript.com/commit/40708fd95c7a658cfe8f1b59b8ef786ab6ab964a))
+* create SidebarLeft, SidebarRight ([6bf90b4](https://github.com/completejavascript/completejavascript.com/commit/6bf90b47bc4755034fe31b8bbe72d675b09170d2))
+* increase numberLatestPost and numberLatestFreebie ([1ad2c97](https://github.com/completejavascript/completejavascript.com/commit/1ad2c97c0faec4123c8ff9e4279fb5cb1327be66))
+* limit 12 post for questions in home page ([1529c1a](https://github.com/completejavascript/completejavascript.com/commit/1529c1a32d80296cbf86c2af5ff72989dad61edb))
+* remove freebie-template - reuse blog-template ([4bbd66f](https://github.com/completejavascript/completejavascript.com/commit/4bbd66f60ac773281f9fbd7e4913e1bf57b88659))
+* update header for tag template ([896ab22](https://github.com/completejavascript/completejavascript.com/commit/896ab220e28d95ae09e31f4ed5028670ab34bd3c))
+* update style for question item in homepage ([2003df8](https://github.com/completejavascript/completejavascript.com/commit/2003df865b73ad7211b69fb650ced57876ebddfa))
+* **post:** javascript add kieu-du-lieu-number ([e087b4f](https://github.com/completejavascript/completejavascript.com/commit/e087b4f006f99f02a308f9840b52c4823165ece0))
+* **post:** javascript add optional-chaining ([efa3887](https://github.com/completejavascript/completejavascript.com/commit/efa388788d96037624b68d79118cfcd7627f9786))
+* **post:** javascript add post phuong-thuc-kieu-nguyen-thuy ([2ae423c](https://github.com/completejavascript/completejavascript.com/commit/2ae423cb786aaf4b00386e923bc01854801eb763))
+* **post:** javascript add tag string ([4313dec](https://github.com/completejavascript/completejavascript.com/commit/4313deca7296bfdf060e385be79693f7ce7c1336))
+* **post:** javascript add thuc-hanh ([df47f3a](https://github.com/completejavascript/completejavascript.com/commit/df47f3a3c77279669e0bf023bac219ed29318a31))
+* **post:** javascript array-methods ([d6f6710](https://github.com/completejavascript/completejavascript.com/commit/d6f6710f6e8e2dd7998e4f368b9ace87ba810acb))
+* **post:** javascript array-trong-javascript ([d50c8b7](https://github.com/completejavascript/completejavascript.com/commit/d50c8b7bc91a04679f110d536d5ac23551140e9f))
+* **post:** javascript chang post date symbol ([4801682](https://github.com/completejavascript/completejavascript.com/commit/480168209f3356f1081d86312f03fdf10a4ccd9b))
+* **post:** javascript es6-template-string ([c91a985](https://github.com/completejavascript/completejavascript.com/commit/c91a985b4f6e66ed7f12cb338755467c79a126fd))
+* **post:** javascript foreach ([0d29882](https://github.com/completejavascript/completejavascript.com/commit/0d29882da49dc899f9ac6e3e62b8af9a8f0346aa))
+* **post:** javascript html-template-template-string ([014c0fc](https://github.com/completejavascript/completejavascript.com/commit/014c0fc0a3528ca633a4df34c220acbdeddfd5c3))
+* **post:** javascript iterable object ([d415302](https://github.com/completejavascript/completejavascript.com/commit/d4153025bcccd788b00ed2cffd0aa6c23b53d179))
+* **post:** javascript map-trong-js ([d0a3467](https://github.com/completejavascript/completejavascript.com/commit/d0a34676b8432d46f0ce6aa0eb830ea6f9a7461b))
+* **post:** javascript map-vs-object ([3de1c34](https://github.com/completejavascript/completejavascript.com/commit/3de1c3462b88987746d81fcc5cb7191bf8d4da6b))
+* **post:** javascript remove javascript-array-co-ban & update redirect ([bbdf179](https://github.com/completejavascript/completejavascript.com/commit/bbdf1791da2e11f312ab23ec65492b80a4ca0307))
+* **post:** javascript update post array sap xep ([f550c96](https://github.com/completejavascript/completejavascript.com/commit/f550c96a4350f2839e275e7d8776cca5c4fe5ed2))
+* **post:** question update post series ([c667569](https://github.com/completejavascript/completejavascript.com/commit/c6675693a90877ef226e74cfd983037b979faab1))
+* **post:** question update shorttitle ([1cbc0a7](https://github.com/completejavascript/completejavascript.com/commit/1cbc0a7f6da95ef65840bb031e0d5dec5902ab3c))
+* **post:** update post tags ([28d7790](https://github.com/completejavascript/completejavascript.com/commit/28d779094c29c3503412086153700114d1dc939e))
+* freebies tag hosting ([f58b6b8](https://github.com/completejavascript/completejavascript.com/commit/f58b6b8080dbbafb8829c765b7ee9f96837109f3))
+* javascript post string-trong-js ([59d4494](https://github.com/completejavascript/completejavascript.com/commit/59d44940d0eca166bacce2a0a469c0d5aa13c11d))
+* page, post template ([396ca16](https://github.com/completejavascript/completejavascript.com/commit/396ca16e58624354e736b9cdd8653d84c35aea06))
+* remove related post by tag ([e0edf37](https://github.com/completejavascript/completejavascript.com/commit/e0edf37f789708c4ea27ba8f0826893ccd8470b9))
+* remove tagList ([9b64f02](https://github.com/completejavascript/completejavascript.com/commit/9b64f025055cc3c4998b30353e7aaec511f47b3d))
+* update and add tags for freebies ([83fe0d0](https://github.com/completejavascript/completejavascript.com/commit/83fe0d07488b272853b2a5c0afb93347606401dc))
+* update concept to show latest posts, latest freebie ([101353b](https://github.com/completejavascript/completejavascript.com/commit/101353b28604dc3ef2f5187894decab62f02d240))
+* update config and remove unused code ([760f1ba](https://github.com/completejavascript/completejavascript.com/commit/760f1ba8e388a3c5c76e3f206bb03e2bf9b12f6c))
+* update tag-template, tags-template ([5303dc3](https://github.com/completejavascript/completejavascript.com/commit/5303dc34d92c328fbe6be4fc6fb1d76fef6e0634))
+* **post:** javascript phuong-thuc-kieu-nguyen-thuy missing description in frontmatter ([39b8c52](https://github.com/completejavascript/completejavascript.com/commit/39b8c52a1e13a61bec7cb32dd05732df010a9214))
+* **post:** javascript set-trong-js ([c557948](https://github.com/completejavascript/completejavascript.com/commit/c557948579c3cc2ed583be5cf1e460be3f3e20a2))
+* **post:** javascript update post date ([0b2c0f8](https://github.com/completejavascript/completejavascript.com/commit/0b2c0f893d6fcefa891a63416f26d2e2de7e16e6))
+* **post:** javascript update post object-to-primitive ([44e839a](https://github.com/completejavascript/completejavascript.com/commit/44e839a5f6a1daffe3ce99a9155e51a753f09fb5))
+* **post:** javascript update post symbol ([603b774](https://github.com/completejavascript/completejavascript.com/commit/603b77472549579438f8923838440b4fbcd1e4bd))
+* **post:** javascript update post symbol in javascript directory ([536ba25](https://github.com/completejavascript/completejavascript.com/commit/536ba251ecc83ba9138211380798e9bb2f2b7898))
+* **post:** javascript update post tagged-template-string ([03a5d30](https://github.com/completejavascript/completejavascript.com/commit/03a5d300902890a9ed208e2da04be494a1f56591))
+* **post:** javascript update posts date ([e2151e1](https://github.com/completejavascript/completejavascript.com/commit/e2151e1ba5bb11f04b027e64b5a0ab2781aeb30d))
+* **post:** javascript weakmap ([302fb57](https://github.com/completejavascript/completejavascript.com/commit/302fb5768181198058e2f6b080bc5d5505aded4d))
+* **post:** javascript weakset ([2f78812](https://github.com/completejavascript/completejavascript.com/commit/2f788129a21990a6e1e58eabbe2597e1c1c3ceb0))
+* **post:** map trong javascript (wip) ([3e054b0](https://github.com/completejavascript/completejavascript.com/commit/3e054b0e54fca4b4fecda4af421eee0f907092e8))
+* **post:** react update series ([4b85153](https://github.com/completejavascript/completejavascript.com/commit/4b85153b8d32135db73eec6c14026255f3e7beca))
+* **post:** remove none breaking space ([cd8236a](https://github.com/completejavascript/completejavascript.com/commit/cd8236a1300e676e6226ac06673da8ac79bb0e1d))
+* **post:** update cover image and update post descriptions ([bbf0fde](https://github.com/completejavascript/completejavascript.com/commit/bbf0fde7d2bd0ee99e8a689165b75ea800bce69d))
+
 ### [1.14.4](https://github.com/completejavascript/completejavascript.com/compare/v1.14.3...v1.14.4) (2021-11-29)
 
 
