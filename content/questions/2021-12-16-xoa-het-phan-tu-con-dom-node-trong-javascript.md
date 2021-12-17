@@ -7,28 +7,28 @@ cover: "../images/questions/javascript-question-dom.png"
 keywords: "xóa hết các phần tử con của DOM node"
 description: "Để xóa hết các phần tử con của DOM node trong JavaScript, bạn có thể sử dụng một trong những cách sau đây: vòng lặp với removeChild, innerHTML hoặc textContent."
 slug: xoa-het-phan-tu-con-dom-node-trong-javascript
-title: "Cách để xóa hết các phần tử con của DOM node trong JavaScript?"
-shortTitle: "Xóa hết các phần tử con của DOM node"
+title: "Cách xóa hết các phần tử con của DOM node trong JavaScript?"
+shortTitle: "Xóa hết các phần tử con của DOM node?"
 series: "JavaScript Question: DOM"
 tags:
   - Câu hỏi JavaScript
 ---
 
-Để xóa hết các phần tử con của DOM node trong JavaScript, bạn có thể sử dụng một trong những cách sau đây.
+Để xóa hết các phần tử con của DOM node trong JavaScript, bạn có thể sử dụng vòng lặp kết hợp với phương thức `removeChild()`, `innerHTML` hoặc `textContent`.
 
 Ví dụ các DOM node có cấu trúc như sau:
 
 ```html:title=index.html
 <ul>
-    <li>Get Up in Morning</li>
-    <li>Do some exercise</li>
-    <li>Get Ready for school</li>
-    <li>Study Daily</li>
-    <li>Do homework</li>
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Banana</li>
+    <li>Coconut</li>
+    <li>Mango</li>
 </ul>
 ```
 
-## Sử dụng `removeChild()`
+## Sử dụng phương thức `removeChild()`
 
 Các bước để xóa hết các phần tử con của DOM node trong JavaScript như sau:
 
