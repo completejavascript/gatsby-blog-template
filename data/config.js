@@ -56,6 +56,7 @@ const authorConfig = {
 };
 
 const pathPrefixConfig = {
+  home: "/",
   blog: "/blog",
   freebie: "/freebie",
   question: "/question",
@@ -68,6 +69,12 @@ const pathPrefixConfig = {
   javascript: "/javascript",
   react: "/react",
   service: "/dich-vu",
+  itTricks: "/thu-thuat-it",
+  itLife: "/cuoc-song-it",
+  introduction: "/gioi-thieu",
+  contact: "/lien-he",
+  term: "/dieu-khoan-su-dung",
+  policy: "/chinh-sach-bao-mat",
 };
 
 const frontmatterTemplateConfig = {
@@ -130,54 +137,54 @@ const questionTemplateConfig = {
 };
 
 /** ADSENSE CONFIG */
+const adsClient = "ca-pub-7260245524211186";
 const adsConfig = {
   hasAdsense: true,
-  adsClient: "ca-pub-7260245524211186",
   adsenseUnits: {
     sidebarTop: {
-      client: "ca-pub-7260245524211186",
+      client: adsClient,
       slot: "6206746745",
       style: { display: "inline-block", width: "300px", height: "250px" },
       format: "",
     },
     sidebarMiddle: {
-      client: "ca-pub-7260245524211186",
+      client: adsClient,
       slot: "3126009259",
       style: { display: "inline-block", width: "300px", height: "250px" },
       format: "",
     },
     // sidebarMiddle2: {
-    //   client: "ca-pub-7260245524211186",
+    //   client: adsClient,
     //   slot: "6458569398",
     //   style: { display: "inline-block", width: "300px", height: "250px" },
     //   format: "",
     // },
     // sidebarMiddle3: {
-    //   client: "ca-pub-7260245524211186",
+    //   client: adsClient,
     //   slot: "7764616475",
     //   style: { display: "inline-block", width: "300px", height: "250px" },
     //   format: "",
     // },
     // sidebarMiddle4: {
-    //   client: "ca-pub-7260245524211186",
+    //   client: adsClient,
     //   slot: "4098185274",
     //   style: { display: "inline-block", width: "300px", height: "250px" },
     //   format: "",
     // },
     sidebarBottomRight: {
-      client: "ca-pub-7260245524211186",
+      client: adsClient,
       slot: "4957801764",
       style: { display: "inline-block", width: "300px", height: "250px" },
       format: "",
     },
     sidebarBottomLeft: {
-      client: "ca-pub-7260245524211186",
+      client: adsClient,
       slot: "1883935539",
       style: { display: "inline-block", width: "300px", height: "600px" },
       format: "",
     },
     postTopSmall: {
-      client: "ca-pub-7260245524211186",
+      client: adsClient,
       slot: "9521138000",
       style: {
         display: "block",
@@ -188,7 +195,7 @@ const adsConfig = {
       format: "",
     },
     postTopSmall2: {
-      client: "ca-pub-7260245524211186",
+      client: adsClient,
       slot: "4608039900",
       style: {
         display: "block",
@@ -199,21 +206,21 @@ const adsConfig = {
       format: "",
     },
     postTop: {
-      client: "ca-pub-7260245524211186",
+      client: adsClient,
       slot: "5797848941",
       style: { display: "block" },
       format: "auto",
       responsive: "true",
     },
     postBottom: {
-      client: "ca-pub-7260245524211186",
+      client: adsClient,
       slot: "5905660151",
       style: { display: "block" },
       format: "auto",
       responsive: "true",
     },
     matchedPostBottom: {
-      client: "ca-pub-7260245524211186",
+      client: adsClient,
       slot: "2249007243",
       style: { display: "block" },
       format: "autorelaxed",
@@ -272,25 +279,26 @@ const footerConfig = {
     },
   ],
   aboutLinks: [
-    { label: "JavaScript", url: "/javascript" },
-    { label: "React", url: "/react" },
-    { label: "Thủ thuật IT", url: "/thu-thuat-it" },
-    { label: "Cuộc sống IT", url: "/cuoc-song-it" },
-    { label: "Freebie", url: "/freebie" },
-    { label: "Blog", url: "/blog" },
-    { label: "Tags", url: "/tags" },
+    { label: "JavaScript", url: pathPrefixConfig.javascript },
+    { label: "React", url: pathPrefixConfig.react },
+    { label: "Thủ thuật IT", url: pathPrefixConfig.itTricks },
+    { label: "Cuộc sống IT", url: pathPrefixConfig.itLife },
+    { label: "Question", url: pathPrefixConfig.question },
+    { label: "Freebie", url: pathPrefixConfig.freebie },
+    { label: "Blog", url: pathPrefixConfig.blog },
+    { label: "Tags", url: pathPrefixConfig.tags },
   ],
   footerLinks: [
-    { label: "Trang chủ", url: "/" },
-    { label: "Giới thiệu", url: "/gioi-thieu" },
-    { label: "Liên hệ", url: "/lien-he" },
-    { label: "Dịch vụ", url: "/dich-vu" },
+    { label: "Trang chủ", url: pathPrefixConfig.home },
+    { label: "Giới thiệu", url: pathPrefixConfig.introduction },
+    { label: "Liên hệ", url: pathPrefixConfig.contact },
+    { label: "Dịch vụ", url: pathPrefixConfig.service },
     {
       label: "Hire me on Upwork",
       url: "https://www.upwork.com/freelancers/~015218a85e68b18cf6",
     },
-    { label: "Điều khoản", url: "/dieu-khoan-su-dung" },
-    { label: "Chính sách", url: "/chinh-sach-bao-mat" },
+    { label: "Điều khoản", url: pathPrefixConfig.term },
+    { label: "Chính sách", url: pathPrefixConfig.policy },
   ],
   networkLinks: [
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
@@ -396,5 +404,6 @@ module.exports = {
   blogTemplateConfig,
   freebieTemplateConfig,
   questionTemplateConfig,
+  adsClient,
   adsConfig,
 };
