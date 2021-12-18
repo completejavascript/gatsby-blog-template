@@ -18,16 +18,16 @@ const WelcomeSection = () => (
   <section className="welcome-section background-color-white">
     <div className="container padding">
       <div className="left col-xs-12 col-lg-6">
-        <h1 className="txt-welcome color-black">
+        <h1 className="row txt-welcome color-black">
           Welcome to <br />
           <span className="txt-highlight color-blue">
             {siteConfig.siteTitle}
           </span>
         </h1>
-        <p>
+        <p className="row">
           Chia sẻ về JavaScript, lập trình JavaScript từ cơ bản đến nâng cao.
         </p>
-        <div className="btn-group">
+        <div className="row btn-group">
           <AutoLink
             className="btn btn-primary"
             to={pathPrefixConfig.javascript}
@@ -177,16 +177,16 @@ const CommunitySection = () => (
         </MacWindow>
       </div>
       <div className="right color-white col-xs-12 col-lg-6">
-        <h3>👨🏻‍💻👩🏻‍💻 Hỏi đáp JavaScript VN</h3>
-        <blockquote>
+        <h3 className="row">👨🏻‍💻👩🏻‍💻 Hỏi đáp JavaScript VN</h3>
+        <blockquote className="row">
           The best way to learn is to ask.
           <cite>- Anonymous</cite>
         </blockquote>
-        <p>
+        <p className="row">
           Tham gia ngay để học JavaScript và tiến bộ mỗi ngày cùng với hơn{" "}
           <b>15K lập trình viên!</b>
         </p>
-        <div>
+        <div className="row">
           <AutoLink className="color-yellow" to={siteConfig.jsGroupUrl}>
             ⚡ Tham gia cộng đồng JavaScript 🚀
           </AutoLink>

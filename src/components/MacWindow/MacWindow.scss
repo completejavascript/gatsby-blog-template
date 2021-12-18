@@ -24,11 +24,13 @@
       height: 40px;
       display: flex;
       align-items: center;
-      gap: 10px;
       padding-left: 15px;
       background-color: #2a373a;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
+      & > div:not(:first-child) {
+        margin-left: 10px;
+      }
       .mac-btn {
         width: 12px;
         height: 12px;
