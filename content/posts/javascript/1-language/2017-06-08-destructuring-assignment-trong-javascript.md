@@ -1,54 +1,62 @@
 ---
-date: "2017-06-08T03:00:10Z"
-update: "2019-02-18T23:00:10Z"
+date: "2017-06-08T03:00:00Z"
+update: "2021-12-18T06:30:00Z"
 template: "post"
 directory: "JavaScript"
-cover: "../../../images/javascript/destructuring-assignment-trong-javascript-completejavascript.com_.png"
-keywords: "destructuring assignment"
-description: "Bài viết trình bày về cách sử dụng cơ bản và một số ứng dụng của Destructuring Assignment với Object và Array trong JavaScript."
+cover: "../../../images/javascript/destructuring-assignment-trong-javascript.png"
+keywords: "destructuring assignment trong JavaScript"
+description: "Bài viết sau đây trình bày về cách sử dụng cơ bản và một số ứng dụng của Destructuring Assignment trong JavaScript với Object và Array."
 slug: destructuring-assignment-trong-javascript
 title: "Destructuring Assignment trong JavaScript"
 shortTitle: "Destructuring Assignment trong JS"
 series: "JavaScript: Các kiểu dữ liệu"
 tags:
-  - Destructuring Assignment
   - ES6
+  - Array
+  - Object
   - Kiểu dữ liệu
+  - Destructuring Assignment
 ---
 
-Destructuring Assignment trong JavaScript là một cú pháp đặc biệt cho phép bạn **lấy ra dữ liệu** từ [Object](/object-la-gi-object-trong-javascript/) hoặc [Array](/array-la-gi-array-trong-javascript/) và gán chúng vào các biến thông thường. Tuy nhiên, việc "lấy ra dữ liệu" này sẽ chỉ copy mà không làm thay đổi cấu trúc của Object hoặc Array. Dưới đây, mình sẽ tìm hiểu về cách sử dụng và ứng dụng của Destructuring Assignment trong JavaScript với hai kiểu dữ liệu cơ bản là Array và Object.
+**Destructuring Assignment trong JavaScript** là một cú pháp đặc biệt cho phép bạn **lấy ra dữ liệu** từ [Object](/object-la-gi-object-trong-javascript/) hoặc [Array](/array-la-gi-array-trong-javascript/) và gán chúng vào các biến thông thường.
+
+Tuy nhiên, việc "lấy ra dữ liệu" này **chỉ copy mà không làm thay đổi cấu trúc** của Object hoặc Array.
+
+Dưới đây, mình sẽ tìm hiểu về cách sử dụng và ứng dụng của Destructuring Assignment trong JavaScript với **Array và Object**.
 
 ## Destructuring Assignment với Array
 
+Sau đây là những kiến thức cơ bản và ứng dụng của Destructuring Assignment trong JavaScript với Array.
+
 ### Cách sử dụng cơ bản
 
-Ví dụ:
+Ví dụ về destructuring assignment với array:
 
 ```js
 let [firstName, lastName] = ["David", "Walsh"];
 /*
- * => firstName = David
- * => lastName = Walsh
+ * firstName = David
+ * lastName = Walsh
  */
 ```
 
-Ví dụ trên thực hiện khai báo và gán luôn giá trị cho các biến _firstName_ và _lastName_. Ngoài ra, bạn có thể tách biệt việc khai báo và gán giá trị như sau:
+Ví dụ trên thực hiện **khai báo và gán** luôn giá trị cho các biến `firstName` và `lastName`. Ngoài ra, bạn có thể tách biệt việc khai báo và gán giá trị như sau:
 
 ```js
 let firstName, lastName;
 
 [firstName, lastName] = ["David", "Walsh"];
 /*
- * => firstName = David
- * => lastName = Walsh
+ * firstName = David
+ * lastName = Walsh
  */
 ```
 
-Ở đây, JavaScript sẽ thực hiện việc gán giá trị ở **vế phải** cho biến số ở **vế trái** theo đúng thứ tự chỉ số xuất hiện trong mảng.
+Ở đây, JavaScript thực hiện việc gán giá trị ở **vế phải** cho biến ở **vế trái** theo đúng thứ tự chỉ số xuất hiện trong mảng.
 
 ![Array destructuring assignment](../../../images/javascript/array-destructuring-assignment-completejavascript.com_.png)
 
-Khi đó, đoạn code trên sẽ tương đương với:
+Đoạn code trên sẽ tương đương với:
 
 ```js
 let arr = ["David", "Walsh"];
@@ -58,13 +66,13 @@ firstName = arr[0];
 lastName = arr[1];
 ```
 
-**Chú ý**: Trong trường hợp, số lượng phần tử vế trái nhiều hơn vế phải thì thành phần thừa ra sẽ có giá trị là **undefined**.
+> **Chú ý**: trong trường hợp **số lượng phần tử vế trái nhiều hơn vế phải** thì thành phần thừa ra có giá trị là **undefined**.
 
 ```js
 let [firstName, lastName] = ["David"];
 /*
- * => firstName = David
- * => lastName = undefined
+ * firstName = David
+ * lastName = undefined - vế phải có 1 phần tử nên lastName là undefined
  */
 ```
 
@@ -72,166 +80,198 @@ let [firstName, lastName] = ["David"];
 
 ### Khai báo giá trị default
 
-Ví dụ:
+Để khai báo giá trị default (mặc định), bạn sử dụng toán tử gán `=` như sau:
 
 ```js
 let [firstName, lastName = "Anonymous"] = ["David"];
 /*
- * => firstName = David
- * => lastName = Anonymous
+ * firstName = David
+ * lastName = Anonymous
  */
 ```
 
+Vế phải có một phần tử nên `lastName` nhận giá trị mặc định bằng `Anonymous`.
+
 ### Bỏ qua một số phần tử trong mảng
 
-Trong mảng có thể chứa nhiều phần tử, mình chỉ muốn lấy ra một vài giá trị trong đó thì có thể làm như sau:
+Trong mảng có thể chứa nhiều phần tử và bạn chỉ muốn lấy ra **một vài giá trị trong đó** thì có thể sử dụng toán tử dấu phẩy `,` như sau:
 
 ```js
 let [title, , , color] = ["window", 300, 400, "#000"];
 /*
- * => title = "window"
- * => color = "#000"
+ * title = "window"
+ * color = "#000"
  */
 ```
 
-Lúc này, phần tử ứng chỉ số 1 (_300_) và 2 (_400_) bị bỏ qua.
+Lúc này, phần tử ứng chỉ số `1` (bằng `300`) và `2` (bằng `400`) bị bỏ qua.
 
 ### Gán các giá trị còn lại của mảng cho một biến khác
 
-Ví dụ:
+Khác với trường hợp trên, ở đây mình lấy ra một phần tử và các phần tử còn lại được gán vào một biến khác, bằng cách sử dụng cú pháp **spread** `...`:
 
 ```js
 let [title, ...others] = ["window", 300, 400, "#000"];
 /*
- * => title = "window"
- * => others = [300, 400, "#000"]
+ * title = "window"
+ * others = [300, 400, "#000"]
  */
 ```
 
-### Một số ứng dụng khác
+Khi đó, biến `others` có giá trị là một mảng các phần tử còn lại.
 
-#### Hoán đổi giá trị của biến
+### Hoán đổi giá trị của biến
 
-Trước khi có Destructuring Assignment, bạn có thể hoán đổi giá trị của hai biến bằng một số cách như sau.
+Trước khi có destructuring assignment trong JavaScript, bạn có thể **hoán đổi giá trị của hai biến** bằng một số cách sau đây.
 
-**Sử dụng biến trung gian:**
+► **Sử dụng biến trung gian**
 
 ```js
-let a = 1,
-  b = 2;
+// khai báo hai biến a, b
+let a = 1;
+let b = 2;
+
+// sử dụng biến trung gian c, gán bằng a
 let c = a;
 
+// hoán đổi giá trị của a, b thông qua c
 a = b;
 b = c;
 /*
- * => a = 2
- * => b = 1
+ * a = 2
+ * b = 1
  */
 ```
 
-**Hoặc sử dụng cách này** (mình chưa biết gọi tên thế nào cho đúng):
+► **Sử dụng tính toán số học**
 
 ```js
-let a = 1,
-  b = 2;
+// khai báo hai biến a, b
+let a = 1;
+let b = 2;
+
+// cộng dồn b vào a
+// khi đó giá trị mới của a là tổng của a + b
 a = a + b;
 
+// thực hiện phép trừ để được kết quả
 b = a - b;
 a = a - b;
 /*
- * => a = 2
- * => b = 1
+ * a = 2
+ * b = 1
  */
 ```
 
-Khi **áp dụng Destructuring Assignment**, mọi việc trở nên vô cùng đơn giản:
+Khi **áp dụng destructuring assignment** trong JavaScript, việc hoán đổi giá trị hai biến trở nên vô cùng đơn giản:
 
 ```js
-let a = 1,
-  b = 2;
+let a = 1;
+let b = 2;
 
 [a, b] = [b, a];
 /*
- * => a = 2
- * => b = 1
+ * a = 2
+ * b = 1
  */
 ```
 
-#### Sao chép mảng
+Ở đây, mình tạo ra một mảng tạm `[b, a]` ở vế phải. Sau đó, mình sử dụng destructuring assignment để đảo lại giá trị hai biến.
 
-Trong JavaScript, bạn không thể sử dụng toán tử "=" để sao chép mảng được.
+> **Chú ý:** cách hoán đổi trên có thể áp dụng được với nhiều biến (lớn hơn 2).
 
-Ví dụ:
+### Sao chép mảng
+
+Mảng trong JavaScript là **kiểu dữ liệu tham chiếu**, nên việc sử dụng toán tử gán `=` thực chất là **copy địa chỉ**, ví dụ:
 
 ```js
 const a = [1, 2];
 const b = a;
 
-console.log(b); // => [1, 2]
-console.log(b === a); // => true
+console.log(b); // [1, 2]
+console.log(b === a); // true
 ```
 
-Nếu mình muốn **b** vẫn có giá trị như trên nhưng <code>b === a</code> có giá trị **false**, thì mình phải làm như sau:
+Nếu bạn muốn `b` vẫn có giá trị giống `a` nhưng `b === a` là `false` thì có thể sử dụng destructuring assignment trong JavaScript với cú pháp spread `...` như sau:
 
 ```js
 const a = [1, 2];
-const b = [...a];
+const [...b] = a;
 
-console.log(b); // => [1, 2]
-console.log(b === a); // => false
+console.log(b); // [1, 2]
+console.log(b === a); // false
 ```
 
 ## Destructuring Assignment với Object
 
+Sau đây là những kiến thức cơ bản và ứng dụng của Destructuring Assignment trong JavaScript với Object.
+
 ### Cách sử dụng cơ bản
 
-Ví dụ:
+Ví dụ destructuring assignment với object:
 
 ```js
 let { firstName, lastName } = { firstName: "David", lastName: "Walsh" };
 /*
- * => firstName = David
- * => lastName = Walsh
+ * firstName = David
+ * lastName = Walsh
  */
 ```
 
-Ví dụ trên thực hiện khai báo và gán luôn giá trị cho các biến _firstName_ và _lastName_. Ngoài ra, bạn có thể tách biệt việc khai báo và gán như sau:
+Ví dụ trên thực hiện **khai báo và gán** luôn giá trị cho các biến `firstName` và `lastName`. Ngoài ra, bạn có thể **tách biệt** việc khai báo và gán như sau:
 
 ```js
 let firstName, lastName;
 ({ firstName, lastName } = { firstName: "David", lastName: "Walsh" });
 /*
- * => firstName = David
- * => lastName = Walsh
+ * firstName = David
+ * lastName = Walsh
  */
 ```
 
-Có thể hiểu đơn giản là: JavaScript sẽ thực hiện việc gán giá trị ở **vế phải** cho biến số ở **vế trái** tương ứng với giá trị của **key** trong Object mà không phân biệt thứ tự.
+Ở đây, JavaScript thực hiện việc gán giá trị ở **vế phải** cho biến ở **vế trái** tương ứng với giá trị của **key** trong Object mà không phân biệt thứ tự.
 
 ![Object destructuring assignment](../../../images/javascript/object-destructuring-assignment-completejavascript.com_.png)
 
-Giả sử mình đổi thứ tự của _firstName_ và _lastName_ như sau:
+Giả sử, mình đổi thứ tự của `firstName` và `lastName` như sau thì kết quả vẫn không đổi:
 
 ```js
 let firstName, lastName;
 ({ lastName, firstName } = { firstName: "David", lastName: "Walsh" });
 /*
- * => firstName = David
- * => lastName = Walsh
+ * firstName = David
+ * lastName = Walsh
  */
 ```
 
-Đọc đến đây có thể bạn sẽ thắc mắc: _**tại sao đoạn code thực hiện Destructuring Assignment bên trên phải đặt trong cặp dấu ngoặc đơn**_. Vì nếu thiếu nó, bạn sẽ bị lỗi.
+Không biết bạn có thắc mắc **tại sao đoạn code thực hiện Destructuring Assignment bên trên phải đặt trong cặp dấu ngoặc đơn** hay không.
+
+Vì nếu thiếu cặp dấu `()` thì sẽ bị lỗi cú pháp.
 
 ```js
 let firstName, lastName;
 { lastName, firstName } = { firstName: "David", lastName: "Walsh" };
-// => Uncaught SyntaxError: Unexpected token =
+// Lỗi: Uncaught SyntaxError: Unexpected token =
 ```
 
-Bởi lúc này, JavaScript sẽ hiểu cặp dấu ngoặc kép đầu tiên là một **block**, chứ không phải đang thực hiện Destructuring Assignment.
+JavaScript hiểu rằng **cặp dấu ngoặc** đầu tiên là một **block code** (khối code), chứ không phải destructuring assignment.
 
-Ngoài ra, đoạn code phía trên sẽ tương đương với cách làm thông thường như sau:
+> Ví dụ về khối code như sau:
+>
+> ```js
+> let firstName = "David";
+> let lastName = "Walsh";
+>
+> // bắt đầu một block code
+> {
+>   // biến bên trong trùng tên với bên ngoài nhưng có giá trị khác.
+>   // vì chúng ở các phạm vi khác nhau.
+>   let firstName, lastName;
+>   console.log(firstName, lastName); // undefined undefined
+> }
+> ```
+
+Ngoài ra, đoạn code phía trên tương đương với cách làm thông thường như sau:
 
 ```js
 let obj = { firstName: "David", lastName: "Walsh" };
@@ -240,70 +280,77 @@ let firstName = obj.firstName;
 let lastName = obj.lastName;
 ```
 
-**Chú ý**: Trong trường hợp, object thiếu thành phần mà bạn muốn lấy ra giá trị thì dĩ nhiên giá trị của nó sẽ là **undefined**.
+> **Chú ý**: trong trường hợp object **thiếu thuộc tính** mà bạn muốn lấy ra giá trị thì giá trị đó là **undefined**.
 
 ```js
 let { firstName, lastName } = { firstName: "David" };
 /*
- * => firstName = David
- * => lastName = undefined
+ * firstName = David
+ * lastName = undefined - về phải không có thuộc tính lastName
  */
 ```
 
-Để giải quyết trường hợp này, bạn có thể khai báo giá trị **default** như dưới đây.
+Để giải quyết vấn đề này, bạn có thể khai báo giá trị **default** (mặc định) như dưới đây.
 
 ### Khai báo giá trị default
 
-Ví dụ:
+Để khai báo giá trị default (mặc định), bạn có thể sử dụng toán tử gán `=`, ví dụ:
 
 ```js
 let { firstName, lastName = "Anonymous" } = { firstName: "David" };
 /*
- * => firstName = David
- * => lastName = Anonymous
+ * firstName = David
+ * lastName = Anonymous - lastName bằng Anonymous vì vế phải không có lastName
  */
 ```
 
 ### Gán tên mới cho biến
 
-Nhiều khi thành phần bạn muốn thực hiện Destructuring Assignment ở Object quá dài hoặc tên của nó trùng với một biến khác, lúc này bạn có thể đặt tên mới cho biến khi destructure như sau:
+Nhiều khi thuộc tính mà bạn muốn thực hiện destructuring assignment ở object **quá dài hoặc tên trùng với một biến khác**.
+
+Để ngắn gọn, bạn có thể **đặt tên mới cho biến** khi thực hiện destructuring như sau:
 
 ```js
 let { firstName: fn, lastName: ln } = { firstName: "David", lastName: "Walsh" };
 /*
- * => fn = David
- * => ln = Walsh
+ * fn = David
+ * ln = Walsh
  */
 ```
 
-Đoạn code trên có thể hiểu: bạn lấy ra giá trị của _firstName_ rồi gán giá trị đó vào biến _fn_ và giá trị của _lastName_ gán cho _ln_. Lúc này, bạn chỉ có thể sử dụng 2 biến _fn_ và _ln_ vì chúng đã được định nghĩa. Ngược lại, 2 biến _firstName_ và _lastName_ không được định nghĩa nên có giá trị là **undefined**.
+Ý nghĩa đoạn code trên là:
 
-Ngoài ra, để set giá trị **default** cho biến trong trường hợp này, bạn có thể thực hiện theo cách:
+- Lấy giá trị của `firstName` rồi gán giá trị đó vào biến `fn`.
+- Lấy giá trị của `lastName` rồi gán giá trị đó vào biến `ln`.
+
+Để gán giá trị **mặc định** cho biến trong trường hợp này, bạn có thể thực hiện theo cách:
 
 ```js
 let { firstName: fn, lastName: ln = "Anonymous" } = { firstName: "David" };
 /*
- * => fn = David
- * => ln = Anonymous
+ * fn = David
+ * ln = Anonymous
  */
 ```
 
 ### Gán các giá trị còn lại của Object cho một biến khác
 
-Ví dụ:
+Tương tự như mảng, bạn có thể sử dụng **cú pháp spread** `...` để gán các thuộc tính còn lại cho object khi thực hiện destructuring.
 
 ```js
 let { a, b, ...rest } = { a: 10, b: 20, c: 30, d: 40 };
 /*
- * => a = 10
- * => b = 20
- * => rest = { c: 30, d: 40 }
+ * a = 10
+ * b = 20
+ * rest = { c: 30, d: 40 }
  */
 ```
 
-### Destructuring với Object và Array lồng nhau nhiều tầng
+Trong ví dụ trên, bạn lấy ra hai thuộc tính `a` và `b`. Các thuộc tính còn lại được sao chép vào đối tượng `rest`.
 
-Ví dụ:
+### Destructuring với Object và Array lồng nhau
+
+Bạn cũng có thể sử dụng destructuring assignment trong JavaScript với **object và array lồng nhau nhiều tầng**, ví dụ:
 
 ```js
 let options = {
@@ -323,48 +370,57 @@ let {
 } = options;
 
 /*
- * Kết quả các biến thu được sau khi destructure assignment:
- * => title = "Menu"
- * => width = 100
- * => height = 200
- * => item1 = "Cake"
- * => item2 = "Donut"
+ * Kết quả các biến thu được sau khi destructuring:
+ * title = "Menu" - giá trị mặc định, vì vế phải không có thuộc tính title
+ * width = 100
+ * height = 200
+ * item1 = "Cake"
+ * item2 = "Donut"
  */
 ```
 
 ### Cài đặt giá trị default cho các tham số của hàm
 
+Bạn có thể áp dụng destructuring assignment trong JavaScript để **cài đặt giá trị mặc định cho các tham số** khi truyền vào hàm.
+
+Sau đây, mình so sánh cách làm thông thường và cách dùng destructuring assignment để thấy sự khác biệt.
+
 #### Cách làm thông thường
 
-Thông thường để cài đặt giá trị **default** cho các tham số của hàm, bạn có thể làm như sau:
+Sau đây là cách bình thường để cài đặt **giá trị mặc định** cho các tham số của hàm:
 
 ```js
 function drawCicle(x = 0, y = 0, radius = 1, color = "black") {
-  // code here
+  // code xử lý
 }
-// Usage:
-drawCicle(); // valid
-drawCicle(1, 2, 3); // valid
-drawCicle(1, 2, 3, "red"); // valid
-drawCicle("red"); // invalid !!!
-drawCicle("red", 1, 2, 3); // invalid !!!
+
+// Sử dụng
+drawCicle(); // hợp lệ
+drawCicle(1, 2, 3); // hợp lệ
+drawCicle(1, 2, 3, "red"); // hợp lệ
+drawCicle("red"); // không hợp lệ
+drawCicle("red", 1, 2, 3); // không hợp lệ
 ```
 
-Tuy nhiên, làm theo cách trên có **một số nhược điểm** là bạn phải **ghi nhớ vị trí** của các tham số. Hơn nữa nếu muốn áp dụng giá trị **default** thì bạn chỉ có thể áp dụng đối với tất cả các tham số bên phải, ngoài cùng. Không có cách nào để áp dụng giá trị default cho 1, 2 tham số ở giữa.
+Cách trên có **một số nhược điểm** là:
 
-Giả sử bạn muốn áp dụng giá trị default cho _y_ và _radius_ bằng cách gọi hàm:
+- Bạn phải **ghi nhớ vị trí** của các tham số.
+- Nếu muốn cài đặt giá trị mặc định cho tham số, bạn **chỉ có thể** áp dụng với các tham số bên phải, ngoài cùng.
+- Không có cách nào để áp dụng giá trị default cho các tham số ở giữa.
+
+Giả sử, bạn muốn áp dụng giá trị default cho `y` và `radius` bằng cách gọi hàm:
 
 ```js
 drawCicle(1, "red");
 ```
 
-Cách gọi hàm trên không sai về cú pháp nhưng sai về mặt ý nghĩa vì JavaScript sẽ hiểu **x = 1, y = "red", radius = 1 (default), color = "black"(default)**.
+Cách gọi hàm trên **không sai về cú pháp** nhưng sai về mặt ý nghĩa. Vì JavaScript sẽ hiểu `x = 1`, `y = "red"`, `radius = 1` và `color = "black"`.
 
-Để tránh việc phải ghi nhớ thứ tự các biến, bạn có thể gộp chúng vào một Object và chỉ cần truyền 1 tham số vào [function](/ham-la-gi-ham-trong-javascript/) như dưới đây.
+Để tránh việc **phải ghi nhớ thứ tự các tham số**, bạn có thể gộp chúng vào một object. Sau đó, bạn chỉ cần truyền 1 tham số vào [function](/ham-la-gi-ham-trong-javascript/) như dưới đây.
 
 #### Gộp các tham số vào thành một Object
 
-Ví dụ:
+Tương tự như ví dụ trên, nhưng giờ chỉ còn một tham số là object:
 
 ```js
 function drawCicle(options) {
@@ -372,58 +428,186 @@ function drawCicle(options) {
   let y = options.y || 0;
   let radius = options.radius || 1;
   let color = options.color || "black";
-  // code here
+  // code xử lý
 }
-// Usage:
-drawCicle({}); // valid
-drawCicle({ x: 1, y: 2, radius: 3 }); // valid
-drawCicle({ x: 1, y: 2, radius: 3, color: "red" }); // valid
-drawCicle({ color: "red", y: 2, x: 1, radius: 3 }); // valid !!!
+
+// Sử dụng:
+drawCicle({}); // hợp lệ
+drawCicle({ x: 1, y: 2, radius: 3 }); // hợp lệ
+drawCicle({ x: 1, y: 2, radius: 3, color: "red" }); // hợp lệ
+drawCicle({ color: "red", y: 2, x: 1, radius: 3 }); // hợp lệ
 ```
 
-Rõ ràng, khi các tham số trên được gộp vào một Object _options_ thì việc bạn viết nó vào theo thứ nào cũng không còn quan trọng. Tuy nhiên, cách cài đặt giá trị default như trên vẫn còn khá dài dòng và phức tạp.
+Khi các tham số được gộp vào thành một object `options` thì bạn viết chúng theo thứ nào cũng không quan trọng (vì object không phân biệt thứ tự các thuộc tính).
 
-Bây giờ mình thử áp dụng Destructuring Assigment vào xem sao nhé!
+Tuy nhiên, cách cài đặt giá trị default như trên (dùng toán tử OR `||` ) vẫn còn khá dài dòng và phức tạp.
 
-#### Gộp các tham số vào thành một Object kết hợp Destructuring Assignment
+Sau đây, mình thử áp dụng destructuring assigment trong JavaScript để thấy sự khác biệt.
 
-Ví dụ:
+#### Gộp các tham số thành object kết hợp destructuring assignment
+
+Ví dụ trên có thể thay đổi như sau:
 
 ```js
 function drawCicle({ x = 0, y = 0, radius = 1, color = "black" }) {
-  // code here
+  // code xử lý
 }
-// Usage:
-drawCicle({}); // valid
-drawCicle({ x: 1, y: 2, radius: 3 }); // valid
-drawCicle({ x: 1, y: 2, radius: 3, color: "red" }); // valid
-drawCicle({ color: "red", y: 2, x: 1, radius: 3 }); // valid !!!
+
+// Sử dụng
+drawCicle({}); // hợp lệ
+drawCicle({ x: 1, y: 2, radius: 3 }); // hợp lệ
+drawCicle({ x: 1, y: 2, radius: 3, color: "red" }); // hợp lệ
+drawCicle({ color: "red", y: 2, x: 1, radius: 3 }); // hợp lệ
 ```
 
-Với cách làm trên bạn đã **khắc phục được 2 nhược điểm** mà mình đã đề cập bên trên. Tuy nhiên, cách làm này vẫn chưa thật hoàn thiện.
+Bây giờ, mình đã **khắc phục được hai nhược điểm** đề cập bên trên. Tuy nhiên, cách làm này vẫn chưa thật hoàn thiện.
 
 **Vì sao?**
 
-Trong trường hợp, bạn muốn sử dụng giá trị default cho tất cả các thành phần bên trong Object, bạn vẫn phải truyền vào một Object rỗng (**{}**). Để khắc phục vấn đề này, bạn có thể sửa lại đoạn code trên một chút:
+Giả sử, bạn muốn sử dụng giá trị default cho **tất cả các thuộc tính** bên trong object. Bạn vẫn phải truyền vào một object rỗng (`{}`).
+
+Để khắc phục vấn đề này, bạn có thể sửa lại đoạn code trên một chút:
 
 ```js
 function drawCicle({ x = 0, y = 0, radius = 1, color = "black" } = {}) {
-  // code here
+  // code xử lý
 }
 
-drawCicle({}); // valid
-drawCircle(); // still valid
+drawCicle({}); // hợp lệ
+drawCircle(); // vẫn hợp lệ
 ```
 
-Bây giờ bạn không cần truyền bất kỳ tham số nào vào hàm trên mà không bị lỗi. Vì lúc này giá trị _options_ sẽ lấy giá trị default của nó là một Object rỗng.
+Khi bạn **không truyền bất kỳ tham số nào** vào hàm trên, `options` sẽ lấy giá trị mặc định là object rỗng `{}`.
 
-## Lời kết
+## Tổng kết
 
-Trên đây là cách sử dụng cơ bản và một số ứng dụng của Destructuring Assignment trong JavaScript. Nếu có phần nào chưa hiểu hoặc muốn đóng góp, bạn vui lòng để lại trong phần bình luận phía dưới nhé.
+Destructuring assignment trong JavaScript cho phép bạn "mapping" object hoặc array vào các biến một cách đơn giản.
 
-Xin chào và hẹn gặp lại, thân ái!
+► Cú pháp destructuring assignment với array:
 
-Tham khảo:
+```js
+let [item1 = default, item2, ...rest] = array
+```
+
+Trong đó, phần tử đầu tiên được gán vào biến `item1`, phần tử thứ hai được gán vào biến `item2` và các phần tử còn lại được gán vào biến `rest` (mảng).
+
+► Cú pháp destructuring assignment với object:
+
+```js
+let {prop : varName = default, ...rest} = object
+```
+
+Trong đó, giá trị thuộc tính `prop` được gán vào biến `varName`. Nếu thuộc tính `prop` không tồn tại trong `object` thì biến `varName` có giá trị mặc định là `default`. Và các thuộc tính còn lại được copy vào đối tượng `rest`.
+
+Ngoài ra, bạn có thể áp dụng destructuring assignment trong JavaScript với object và mảng lồng nhau. Khi đó, cấu trúc ở vế trái phải tương đồng với cấu trúc vế phải.
+
+## Thực hành
+
+### Bài 1
+
+Cho object:
+
+```js
+let user = {
+  name: "Alex",
+  years: 28,
+};
+```
+
+Sử dụng destructuring assignment trong JavaScript thực hiện các yêu cầu sau:
+
+- Đọc giá trị thuộc tính `name` và gán vào biến `name`.
+- Đọc giá trị thuộc tính `years` và gán vào biến `age`.
+- Đọc giá trị thuộc tính `isAdmin` và gán vào biến `isAdmin` (nếu thuộc tính không tồn tại thì giá trị mặc định là `false`).
+
+<div class="wrap-collapsible margin-bottom">
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle">Xem đáp án</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+
+```js
+let user = {
+  name: "Alex",
+  years: 28,
+};
+
+let { name, years: age, isAdmin = false } = user;
+
+console.log(name, age, isAdmin); // Alex 28 false
+```
+
+</div>
+
+  </div>
+</div>
+
+### Bài 2
+
+Cho đối tượng sau:
+
+```js
+let people = {
+  Ana: 25,
+  Alex: 28,
+  John: 27,
+};
+```
+
+Viết hàm `topAge(people)` trả về tên của người nhiều tuổi nhất.
+
+- Nếu `people` là rỗng thì hàm trên trả về `null`.
+- Nếu có nhiều người có cùng tuổi nhiều nhất thì trả về một người bất kỳ.
+
+<div class="wrap-collapsible margin-bottom">
+  <input id="collapsible2" class="toggle" type="checkbox">
+  <label for="collapsible2" class="lbl-toggle">Xem đáp án</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+
+```js
+function topAge(people) {
+  // nếu people không tồn tại thì trả về null
+  if (!people) {
+    return null;
+  }
+
+  // khai báo biến để lưu thông tin lớn nhất
+  let nameOfLargest = "";
+  let ageOfLargest = -Infinity;
+
+  // sử dụng destructuring assignment với mỗi phần tử
+  // khi sử dụng for...of với Object.entries(people)
+  // chú ý: Object.entries(people) trả về iterable object
+  // với mỗi phần tử có dạng [key, value]
+  for (let [name, age] of Object.entries(people)) {
+    // nếu phần tử đang xét có age lớn hơn ageOfLargest thì cập nhật
+    if (age > ageOfLargest) {
+      ageOfLargest = age;
+      nameOfLargest = name;
+    }
+  }
+
+  // trả về tên của người lớn tuổi nhất
+  return nameOfLargest;
+}
+
+let people = {
+  Ana: 25,
+  Alex: 28,
+  John: 27,
+};
+
+let ret = topAge(people);
+console.log(ret); // Alex
+```
+
+</div>
+
+  </div>
+</div>
+
+**Tham khảo:**
 
 - [Destructuring assignment - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 - [Destructuring assignment - JavaScript.info](https://javascript.info/destructuring-assignment)
