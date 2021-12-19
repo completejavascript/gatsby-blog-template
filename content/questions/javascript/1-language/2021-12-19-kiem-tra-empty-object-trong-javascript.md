@@ -1,27 +1,25 @@
 ---
-date: "2017-06-13T06:00:00Z"
-update: "2021-11-16T06:00:00Z"
-template: "post"
-directory: "JavaScript"
-title: "Cách kiểm tra empty object trong JavaScript"
-shortTitle: "Kiểm tra empty object trong JS"
+date: "2021-12-19T06:00:00Z"
+update: "2021-12-19T21:30:00Z"
+template: "question"
+directory: "Question"
+title: "Cách kiểm tra empty object trong JavaScript?"
+shortTitle: "Kiểm tra empty object trong JS?"
 slug: kiem-tra-empty-object-trong-javascript
 keywords: "kiểm tra empty object"
 description: "Bạn đã biết cách kiểm tra empty object trong JavaScript hay chưa? Bài viết này sẽ giới thiệu với bạn cách đơn giản để kiểm tra empty object."
-cover: "../../../images/javascript/kiem-tra-empty-object-trong-javascript-completejavascript.com.png"
-series: "JavaScript: Các kiểu dữ liệu"
+cover: "../../../images/questions/javascript-question-basics.png"
+series: "JavaScript Question: cơ bản"
 tags:
-  - ES6
-  - Object
-  - Kiểu dữ liệu
+  - Câu hỏi JavaScript
 ---
 
-Giả sử bạn đang muốn kiểm tra empty object đối với một giá trị cho trước. Với empty object được hiểu như sau:
+Giả sử bạn đang muốn **kiểm tra empty object** đối với một giá trị cho trước, với empty object được hiểu như sau:
 
 - Đó là một [object](/object-la-gi-object-trong-javascript/).
-- Và nó không có một thuộc tính [enumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) nào cả.
+- Và object đó không có một thuộc tính [enumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties) nào cả.
 
-Tức là nó được biểu diễn như sau:
+Nói cách khác, **empty object** được biểu diễn như sau:
 
 ```js
 const emptyObject = {};
@@ -35,9 +33,12 @@ Như mình đã nói ở trên, empty object phải thỏa mãn cả 2 điều k
 
 ### Kiểm tra là object
 
-Để một giá trị là object thì điều kiện cần là nó phải khác **null** và khác **undefined**. Tiếp theo, điều kiện đủ là **constructor** của nó là **Object**.
+Để một giá trị là object:
 
-Ví dụ:
+- **Điều kiện cần:** khác `null` và khác `undefined`.
+- **Điều kiện đủ:** hàm khởi tạo `constructor` phải là `Object`.
+
+Một số ví dụ:
 
 ```js
 const a = 1,
@@ -53,7 +54,7 @@ console.log(d.constructor); // Object
 console.log(e.constructor); // Function
 ```
 
-Như vậy, mình sẽ viết hàm check object như sau:
+Như vậy, mình sẽ viết hàm để kiểm tra object như sau:
 
 ```js
 const isObject = (v) => {
@@ -61,7 +62,7 @@ const isObject = (v) => {
 };
 ```
 
-Thử kiểm tra lại xem sao:
+Thử kiểm tra lại:
 
 ```js
 const a = 1,
@@ -81,15 +82,15 @@ console.log(isObject(f)); // false
 console.log(isObject(g)); // false
 ```
 
-Kết quả hiện thị bên trên là đúng với yêu cầu. Tiếp theo mình sẽ triển khai phần kiểm tra object là empty.
+Kết quả hiện thị bên trên là **đúng với yêu cầu**. Tiếp theo, mình sẽ triển khai phần **kiểm tra object là empty**.
 
 ### Kiểm tra object là empty
 
-Để kiểm tra object là empty trong [ES6](/tag/es6/), mình sẽ sử dụng phương thức [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys). Phương thức này trả về một mảng chứa tất cả các thuộc tính **enumerable** của object.
+Để kiểm tra object là empty trong [ES6](/tag/es6/), mình sử dụng phương thức [`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys). Phương thức này trả về một mảng chứa tất cả các thuộc tính **enumerable** của object.
 
-Vì vậy, nếu kết quả trả về là mảng rỗng thì suy ra object đó không chứa thuộc tính enumerable nào.
+Nếu kết quả trả về là **mảng rỗng** thì suy ra object đó **không chứa thuộc tính enumerable** nào.
 
-Ví dụ:
+Ví dụ sử dụng `Object.keys()`:
 
 ```js
 const a = {},
@@ -101,7 +102,7 @@ console.log(Object.keys(b)); // ["x"]
 console.log(Object.keys(c)); // ["m", "n"]
 ```
 
-Bây giờ, mình sẽ viết hàm kiểm tra object có empty hay không như sau:
+Bây giờ, mình sẽ viết **hàm kiểm tra object có empty hay không** như sau:
 
 ```js
 const isEmpty = (v) => {
@@ -109,7 +110,7 @@ const isEmpty = (v) => {
 };
 ```
 
-Kiểm tra lại phương thức trên:
+Kiểm tra lại hàm `isEmpty()`:
 
 ```js
 const a = {},
@@ -133,7 +134,7 @@ const isEmptyObject = (v) => {
 };
 ```
 
-Ví dụ:
+Một số ví dụ:
 
 ```js
 const a = 1,
@@ -155,8 +156,7 @@ console.log(isEmptyObject(g)); // false
 console.log(isEmptyObject(h)); // false
 ```
 
-## Lời kết
+Tham khảo:
 
-Như vậy là mình đã giới thiệu với bạn cách để kiểm tra empty object trong JavaScript. Nếu có gì thắc mắc hay góp ý thì bạn có thể để lại bình luận xuống phía dưới nhé.
-
-Xin chào và hẹn gặp lại bạn trong bài viết tiếp theo, thân ái!
+- [Object là gì? Object trong JavaScript](/object-la-gi-object-trong-javascript/)
+- [Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
