@@ -74,9 +74,10 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Weakmap trong JavaScript](/weakmap-trong-javascript/)
 - [Weakset trong JavaScript](/weakset-trong-javascript/)
 - [Destructuring Assignment](/destructuring-assignment-trong-javascript/)
+- [Đối tượng Date trong JavaScript](/doi-tuong-date-trong-javascript/)
+- [JSON trong JavaScript](/tim-hieu-ve-json-trong-javascript/)
 - [Ứng dụng reduce trong mảng](/ung-dung-cua-reduce-javascript/)
 - [Hằng số trong ES5 và ES6](/cach-su-dung-hang-so-trong-es5-va-es6/)
-- [JSON trong JavaScript](/tim-hieu-ve-json-trong-javascript/)
 - [Kiểm tra empty object](/kiem-tra-empty-object-trong-javascript/)
 
 ### Lập trình hướng đối tượng
