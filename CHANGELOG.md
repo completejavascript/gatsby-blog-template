@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.15.1](https://github.com/completejavascript/completejavascript.com/compare/v1.15.0...v1.15.1) (2021-12-19)
+
+
+### Bug Fixes
+
+* limit number of question in homepage to 8 ([5a0a8b3](https://github.com/completejavascript/completejavascript.com/commit/5a0a8b3c474e196926a7d307f8ef1246a67c368a))
+* update tags-template ([5b0c47b](https://github.com/completejavascript/completejavascript.com/commit/5b0c47b20203c353a085e0b9497651d7be845f93))
+* **post:** javascript change post date ([d49f59e](https://github.com/completejavascript/completejavascript.com/commit/d49f59e2094e6b42bc3866073421febf81538cc4))
+* **post:** javascript date-js ([a7de2aa](https://github.com/completejavascript/completejavascript.com/commit/a7de2aa8448afd38b24e7d976197eeb5ef84a006))
+* **post:** javascript destructuring assignment ([cafd6ae](https://github.com/completejavascript/completejavascript.com/commit/cafd6ae22e834320f11f17a6f7bc3be94e458483))
+* **post:** javascript update post json ([d2b6d67](https://github.com/completejavascript/completejavascript.com/commit/d2b6d67754d2dc3fd760cd02fd5ec9d0b0112350))
+* **post:** move javascrip-es5-es6 to question directory ([9b389ac](https://github.com/completejavascript/completejavascript.com/commit/9b389aca0d9e3a7205ab247ca4762036a429eeba))
+* **post:** move javascript is-empty-obj to questions ([6d0f002](https://github.com/completejavascript/completejavascript.com/commit/6d0f002968ab6ebe156a2476f6429cf4e80cb23e))
+* **post:** question add missing title=main.js for snippet ([65b2439](https://github.com/completejavascript/completejavascript.com/commit/65b2439c2208133b4233f98df93e9660ca13e745))
+* **post:** update post array-reduce ([755a3d3](https://github.com/completejavascript/completejavascript.com/commit/755a3d394416ab537bfe53f7e0eb435725b4dea9))
+* max width of latest-question container ([ff6505f](https://github.com/completejavascript/completejavascript.com/commit/ff6505f2f4b9cc423b485a7549db4d89df721e25))
+* replace gap with margin since some browsers not support gap property ([7e2789f](https://github.com/completejavascript/completejavascript.com/commit/7e2789f195a09d094385bed98f73b6a37b949e41))
+
 ## [1.15.0](https://github.com/completejavascript/completejavascript.com/compare/v1.14.4...v1.15.0) (2021-12-17)
 
 
