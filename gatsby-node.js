@@ -268,6 +268,11 @@ exports.createPages = async ({ graphql, actions }) => {
   const freebieTagList = Array.from(freebieTagSet);
   const questionTagList = Array.from(questionTagSet);
 
+  // sort tagList by localCompare
+  postTagList.sort((a, b) => a.localeCompare(b));
+  freebieTagList.sort((a, b) => a.localeCompare(b));
+  questionTagList.sort((a, b) => a.localeCompare(b));
+
   // Map posts by directory
   const mapPostsByDirectory = {};
   postEdges.forEach((edge) => {
@@ -340,9 +345,9 @@ exports.createPages = async ({ graphql, actions }) => {
     path: useSlash(pathPrefixConfig.tags),
     component: tagsPageTemplate,
     context: {
-      tagList: [...postTagList, ...freebieTagList, ...questionTagList].sort(
-        (a, b) => a.localeCompare(b)
-      ),
+      postTagList,
+      freebieTagList,
+      questionTagList,
     },
   });
 

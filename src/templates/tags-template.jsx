@@ -11,7 +11,12 @@ import { siteConfig, adsConfig, pathPrefixConfig } from "../../data/config";
 import { useSlash } from "../utils/helpers";
 
 const TagsTemplate = ({ pageContext }) => {
-  const { tagList } = pageContext;
+  const {
+    postTagList = [],
+    freebieTagList = [],
+    questionTagList = [],
+  } = pageContext;
+
   const title = siteConfig.tagsHeader;
   const canonical = `${siteConfig.siteUrl}${pathPrefixConfig.tags}`;
 
@@ -24,8 +29,28 @@ const TagsTemplate = ({ pageContext }) => {
         viết.
       </p>
 
+      <p className="margin-top-2 text-center background-color-light-grey">
+        Blog
+      </p>
       <section className="margin-top">
-        {tagList && tagList.map((tag) => <Tag key={tag} content={tag} />)}
+        {postTagList &&
+          postTagList.map((tag) => <Tag key={tag} content={tag} />)}
+      </section>
+
+      <p className="margin-top-2 text-center background-color-light-grey">
+        Freebie
+      </p>
+      <section className="margin-top">
+        {freebieTagList &&
+          freebieTagList.map((tag) => <Tag key={tag} content={tag} />)}
+      </section>
+
+      <p className="margin-top-2 text-center background-color-light-grey">
+        Question
+      </p>
+      <section className="margin-top">
+        {questionTagList &&
+          questionTagList.map((tag) => <Tag key={tag} content={tag} />)}
       </section>
 
       {adsConfig.hasAdsense && adsConfig.adsenseUnits?.postBottom && (
