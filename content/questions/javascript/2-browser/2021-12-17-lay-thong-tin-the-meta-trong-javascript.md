@@ -3,7 +3,7 @@ date: "2021-12-17T07:00:00Z"
 update: "2021-12-17T07:00:00Z"
 template: "question"
 directory: "Question"
-cover: "../images/questions/javascript-question-dom.png"
+cover: "../../../images/questions/javascript-question-dom.png"
 keywords: "lấy thông tin thẻ meta"
 description: "Để lấy thông tin của thẻ meta trong JavaScript, bạn có thể sử dụng một trong hai phương thức sau để tìm thẻ meta: querySelectorAll('meta') hoặc querySelector('meta')."
 slug: lay-thong-tin-the-meta-trong-javascript

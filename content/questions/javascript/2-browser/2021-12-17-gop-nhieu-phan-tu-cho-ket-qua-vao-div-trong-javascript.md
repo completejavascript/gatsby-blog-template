@@ -3,7 +3,7 @@ date: "2021-12-17T06:45:00Z"
 update: "2021-12-17T06:45:00Z"
 template: "question"
 directory: "Question"
-cover: "../images/questions/javascript-question-dom.png"
+cover: "../../../images/questions/javascript-question-dom.png"
 keywords: "gộp nhiều phần tử rồi cho kết quả vào một thẻ div"
 description: "Sau đây là cách để gộp nhiều phần tử rồi cho kết quả vào một thẻ div trong JavaScript."
 slug: gop-nhieu-phan-tu-cho-ket-qua-vao-div-trong-javascript

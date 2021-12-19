@@ -3,7 +3,7 @@ date: "2021-12-17T06:15:00Z"
 update: "2021-12-17T06:15:00Z"
 template: "question"
 directory: "Question"
-cover: "../images/questions/javascript-question-dom.png"
+cover: "../../../images/questions/javascript-question-dom.png"
 keywords: "kiểm tra phần tử DOM chứa class"
 description: "Đôi khi bạn cần kiểm tra phần tử DOM chứa class cho trước 'X' hay không. Để giải quyết vấn đề này, bạn có thể sử dụng phương thức `contains(class-name)` của thuộc tính 'classList' trong phần tử DOM."
 slug: kiem-tra-phan-tu-dom-co-class-cho-truoc

@@ -3,7 +3,7 @@ date: "2021-12-17T06:00:00Z"
 update: "2021-12-17T06:00:00Z"
 template: "question"
 directory: "Question"
-cover: "../images/questions/javascript-question-dom.png"
+cover: "../../../images/questions/javascript-question-dom.png"
 keywords: "xóa phần tử dom"
 description: "Để xóa phần tử DOM trong JavaScript, bạn có thể sử dụng phương thức `remove()` hoặc `removeChild()`."
 slug: xoa-phan-tu-dom-node-trong-javascript

@@ -3,7 +3,7 @@ date: "2021-12-17T19:45:00Z"
 update: "2021-12-17T19:45:00Z"
 template: "question"
 directory: "Question"
-cover: "../images/questions/javascript-question-dom.png"
+cover: "../../../images/questions/javascript-question-dom.png"
 keywords: "kiểm tra phần tử là visible"
 description: "Hai cách để kiểm tra phần tử là visible trên DOM gồm: kiểm tra width, height, bounding rectangle và dùng phương thức getComputedStyle() kiểm tra thuộc tính display."
 slug: kiem-tra-phan-tu-la-visible-trên-dom
