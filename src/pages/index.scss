@@ -292,6 +292,11 @@
 
 @media (min-width: 1500px) {
   .index-container {
+    .latestquestion-section {
+      .container {
+        max-width: 1100px;
+      }
+    }
     .welcome-section,
     .latestposts-section,
     .latestfreebies-section,
