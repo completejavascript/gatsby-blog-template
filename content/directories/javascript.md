@@ -83,8 +83,8 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 - [Bắt buộc truyền tham số vào hàm](/lam-sao-bat-buoc-truyen-tham-so-vao-ham/)
 - [Phân biệt call, apply và bind](/phan-biet-call-apply-va-bind-trong-javascript/)
-- [Closures](/tim-hieu-javascript-closures/)
 - [Phân biệt arrow function và function](/phan-biet-arrow-function-va-function-trong-javascript/)
+- [Closures](/tim-hieu-javascript-closures/)
 
 ### Lập trình hướng đối tượng
 
