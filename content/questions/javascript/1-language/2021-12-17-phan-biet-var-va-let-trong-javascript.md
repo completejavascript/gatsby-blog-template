@@ -87,5 +87,6 @@ Như mình đã nói trong các bài viết trước, từ khóa `var` đã lỗ
 
 **Tham khảo:**
 
+- [Biến là gì? Biến trong JS](/bien-la-gi-bien-trong-javascript/)
 - [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 - [var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
