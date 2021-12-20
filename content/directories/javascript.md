@@ -40,7 +40,6 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Hàm là gì? Hàm trong JavaScript](/ham-la-gi-ham-trong-javascript/)
 - [Function expression trong JavaScript](/function-expression-trong-javascript/)
 - [Arrow function là gì? Arrow function trong JS](/arrow-function-la-gi-arrow-function-trong-js/)
-- [Phân biệt var và let](/phan-biet-var-va-let-trong-javascript/)
 
 ### Đối tượng (object)
 
@@ -80,8 +79,6 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 ### Kiến thức nâng cao về hàm
 
-- [Bắt buộc truyền tham số vào hàm](/lam-sao-bat-buoc-truyen-tham-so-vao-ham/)
-- [Phân biệt call, apply và bind](/phan-biet-call-apply-va-bind-trong-javascript/)
 - [Phân biệt arrow function và function](/phan-biet-arrow-function-va-function-trong-javascript/)
 - [Closures](/tim-hieu-javascript-closures/)
 

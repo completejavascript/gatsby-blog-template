@@ -1,16 +1,16 @@
 ---
-date: "2017-06-13T06:19:42Z"
-update: "2021-10-17T00:19:42Z"
-template: "post"
-directory: "JavaScript"
-cover: "../../../images/javascript/so-sanh-call-apply-va-bind-trong-javascript-completejavascript.com_.png"
+date: "2021-12-20T06:19:42Z"
+update: "2021-12-20T20:19:42Z"
+template: "question"
+directory: "Question"
+cover: "../../../images/questions/javascript-question-basics.png"
 keywords: "call apply và bind"
 description: "Mình có đọc được cách sử dụng ba hàm call, apply và bind trong JavaScript. Vì hơi khó hiểu nên mình quyết định so sánh ba hàm này. Hy vọng bài viết giúp bạn phân biệt được call, apply và bind trong JavaScript."
 slug: phan-biet-call-apply-va-bind-trong-javascript
 title: "Phân biệt call, apply và bind trong JavaScript"
-series: "JavaScript: Kiến thức nâng cao về hàm"
+series: "JavaScript Question: cơ bản"
 tags:
-  - Hàm
+  - Câu hỏi JavaScript
 ---
 
 Gần đây, mình có đọc được cách sử dụng ba hàm **call**, **apply** và **bind** trong JavaScript. Đọc xong thấy khó hiểu quá nên mình quyết định viết một bài so sánh về ba hàm này, cũng như là cách sử dụng chúng. Hy vọng bài viết sẽ giúp bạn phân biệt được call, apply và bind trong JavaScript.

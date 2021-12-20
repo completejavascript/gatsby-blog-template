@@ -1,6 +1,6 @@
 ---
-date: "2021-12-19T06:00:00Z"
-update: "2021-12-19T21:30:00Z"
+date: "2021-12-18T20:00:00Z"
+update: "2021-12-18T21:30:00Z"
 template: "question"
 directory: "Question"
 title: "Cách kiểm tra empty object trong JavaScript?"

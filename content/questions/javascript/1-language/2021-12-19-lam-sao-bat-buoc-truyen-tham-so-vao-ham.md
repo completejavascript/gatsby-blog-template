@@ -1,17 +1,17 @@
 ---
-date: "2017-06-12T06:15:00Z"
-update: "2019-10-18T12:00:00Z"
-template: "post"
-directory: "JavaScript"
+date: "2021-12-19T06:15:00Z"
+update: "2021-12-19T20:00:00Z"
+template: "question"
+directory: "Question"
 title: "Làm sao để bắt buộc truyền tham số vào hàm?"
+shortTitle: "Cách bắt buộc truyền tham số vào hàm?"
 slug: lam-sao-bat-buoc-truyen-tham-so-vao-ham
 keywords: "bắt buộc truyền tham số"
 description: "Khi lập trình, nhiều hàm phải bắt buộc truyền tham số vào. Ngược lại thì hàm sẽ không có ý nghĩa gì cả. Bài viết này sẽ giới thiệu với bạn cách để làm được điều đó."
-cover: "../../../images/javascript/bat-buoc-truyen-tham-so-vao-ham-1-completejavascript.com.png"
-series: "JavaScript: Kiến thức nâng cao về hàm"
+cover: "../../../images/questions/javascript-question-basics.png"
+series: "JavaScript Question: cơ bản"
 tags:
-  - ES6
-  - Hàm
+  - Câu hỏi JavaScript
 ---
 
 Khi lập trình, nhiều hàm phải bắt buộc truyền tham số vào. Ngược lại thì hàm sẽ không có ý nghĩa gì cả. Do đó, bài viết này sẽ giới thiệu với bạn cách để làm được điều đó.

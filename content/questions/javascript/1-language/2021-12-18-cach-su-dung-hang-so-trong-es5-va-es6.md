@@ -1,6 +1,6 @@
 ---
 date: "2021-12-18T08:00:00Z"
-update: "2021-12-19T21:00:00Z"
+update: "2021-12-18T21:00:00Z"
 template: "question"
 directory: "Question"
 cover: "../../../images/questions/javascript-question-basics.png"
