@@ -79,18 +79,18 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Ứng dụng reduce trong mảng](/ung-dung-cua-reduce-javascript/)
 - [Kiểm tra empty object](/kiem-tra-empty-object-trong-javascript/)
 
-### Lập trình hướng đối tượng
-
-- [Hướng đối tượng hay dựa trên đối tượng?](/lap-trinh-huong-doi-tuong-voi-javascript/)
-- [Các khía cạnh lập trình hướng đối tượng](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/)
-- [Các cách kế thừa cơ bản](/ke-thua-co-ban-trong-javascript/)
-
 ### Kiến thức nâng cao về hàm
 
 - [Bắt buộc truyền tham số vào hàm](/lam-sao-bat-buoc-truyen-tham-so-vao-ham/)
 - [Phân biệt call, apply và bind](/phan-biet-call-apply-va-bind-trong-javascript/)
 - [Closures](/tim-hieu-javascript-closures/)
 - [Phân biệt arrow function và function](/phan-biet-arrow-function-va-function-trong-javascript/)
+
+### Lập trình hướng đối tượng
+
+- [Hướng đối tượng hay dựa trên đối tượng?](/lap-trinh-huong-doi-tuong-voi-javascript/)
+- [Các khía cạnh lập trình hướng đối tượng](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/)
+- [Các cách kế thừa cơ bản](/ke-thua-co-ban-trong-javascript/)
 
 ### Callback, Promise, async/await
 
