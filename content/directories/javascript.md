@@ -79,7 +79,6 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 ### Kiến thức nâng cao về hàm
 
-- [Phân biệt arrow function và function](/phan-biet-arrow-function-va-function-trong-javascript/)
 - [Closures](/tim-hieu-javascript-closures/)
 
 ### Lập trình hướng đối tượng
