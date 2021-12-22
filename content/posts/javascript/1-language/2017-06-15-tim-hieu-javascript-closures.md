@@ -8,6 +8,7 @@ keywords: "JavaScript Closure"
 description: "Bài viết này sẽ giúp bạn hiểu về JavaScript closure. Việc hiểu closure là gì sẽ giúp bạn viết code tốt hơn (ngắn gọn, súc tích hơn và thậm chí dễ hiểu hơn). Hãy cùng tìm hiểu xem closure trong JavaScript là gì và cách dùng closure thế nào nhé!"
 slug: tim-hieu-javascript-closures
 title: "Tìm hiểu JavaScript Closure - Closure là gì?"
+shortTitle: "Tìm hiểu Closure trong JavaScript"
 series: "JavaScript: Kiến thức nâng cao về hàm"
 tags:
   - Hàm

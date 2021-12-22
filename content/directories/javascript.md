@@ -79,6 +79,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 ### Kiến thức nâng cao về hàm
 
+- [Hàm đệ quy trong JavaScript](/ham-de-quy-trong-javascript/)
 - [Closures](/tim-hieu-javascript-closures/)
 
 ### Lập trình hướng đối tượng
