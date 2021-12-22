@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/weakset-trong-javascript.png"
 keywords: "weakset trong javascript"
-description: ""
+description: "WeakSet trong JavaScript cũng là một loại object đặc biệt, dùng để lưu trữ dữ liệu một cách duy nhất, không trùng lặp - tương tự như Set. Sau đây là những kiến thức cơ bản về WeakSet"
 slug: weakset-trong-javascript
 title: "Weakset trong JavaScript"
 series: "JavaScript: Các kiểu dữ liệu"
