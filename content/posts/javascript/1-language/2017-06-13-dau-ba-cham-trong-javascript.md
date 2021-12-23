@@ -1,6 +1,6 @@
 ---
 date: "2017-06-13T20:30:00Z"
-update: "2021-12-23T7:15:00Z"
+update: "2021-12-23T07:15:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/dau-ba-cham-trong-javascript.png"
