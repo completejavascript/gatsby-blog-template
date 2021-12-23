@@ -56,4 +56,4 @@ toRemove.parentNode.removeChild(toRemove);
 Tham khảo:
 
 - [DOM là gì?](/co-ban-ve-dom-javascript/)
-- [How to remove an HTML element using JavaScript ?](https://www.geeksforgeeks.org/how-to-remove-an-html-element-using-javascript/)
+- [How to remove an HTML element using JavaScript?](https://www.geeksforgeeks.org/how-to-remove-an-html-element-using-javascript/)
