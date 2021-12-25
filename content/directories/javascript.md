@@ -81,7 +81,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 - [Hàm đệ quy trong JavaScript](/ham-de-quy-trong-javascript/)
 - [Dấu ba chấm trong JavaScript](/dau-ba-cham-trong-javascript/)
-- [Closures](/tim-hieu-javascript-closures/)
+- [Closure là gì? Tìm hiểu closure trong JS](/tim-hieu-javascript-closures/)
 
 ### Lập trình hướng đối tượng
 
