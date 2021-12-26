@@ -67,7 +67,7 @@ function SidebarRight({
           <WidgetLatestPosts
             postSlug={postSlug}
             postEdges={sameSeriesPosts}
-            title={adsConfig.sameSeriesPostsWidgetTitle}
+            title={sidebarConfig.sameSeriesPostsTitle}
           />
         </>
       )}
