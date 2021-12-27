@@ -83,6 +83,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Dấu ba chấm trong JavaScript](/dau-ba-cham-trong-javascript/)
 - [Closure là gì? Tìm hiểu closure trong JS](/tim-hieu-javascript-closures/)
 - [Var trong JS và cách sử dụng IIFE](/var-trong-javascript-va-cach-su-dung-iife/)
+- [Đối tượng global trong JavaScript](/doi-tuong-global-trong-javascript/)
 
 ### Lập trình hướng đối tượng
 
