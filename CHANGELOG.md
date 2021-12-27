@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.15.2](https://github.com/completejavascript/completejavascript.com/compare/v1.15.1...v1.15.2) (2021-12-27)
+
+
+### Bug Fixes
+
+* **post:** change post date ([c5b0cc8](https://github.com/completejavascript/completejavascript.com/commit/c5b0cc8523162f0e27bd9b2f08e70e304e9bb8b1))
+* **post:** javascript add post global-object ([353bcb5](https://github.com/completejavascript/completejavascript.com/commit/353bcb534507a4c56af792079422d46e9456fc1c))
+* **post:** javascript add post var ([59fa0c0](https://github.com/completejavascript/completejavascript.com/commit/59fa0c0231861d309be3de70c111264256147a37))
+* config same series post title sidebar ([4733a50](https://github.com/completejavascript/completejavascript.com/commit/4733a5029138c3e26a204045a35baff0fcd9c27e))
+* **post:** change post date ([3980165](https://github.com/completejavascript/completejavascript.com/commit/39801654d853f68ee0c8a92196837b1ea7b792b7))
+* **post:** change some posts from javascript to question ([59ce310](https://github.com/completejavascript/completejavascript.com/commit/59ce310bdc5e23ce1ad8324d4cafdee737a4a370))
+* **post:** javascript arrow-function-vs-function to question ([9072103](https://github.com/completejavascript/completejavascript.com/commit/907210307581a0c3de41c9b01d2cb5a99176f9fe))
+* **post:** javascript closure ([f30313a](https://github.com/completejavascript/completejavascript.com/commit/f30313abd6b1c452e19b0f7f463eaea3626f306a))
+* **post:** javascript dau-ba-cham ([28297b2](https://github.com/completejavascript/completejavascript.com/commit/28297b24fed345014bc2d1dccb4308dbcf2e1314))
+* **post:** javascript recursion ([e2d2434](https://github.com/completejavascript/completejavascript.com/commit/e2d2434d4412931f74c974834ed70e0f5b1c6d25))
+* **post:** javascript remove is-empty-object post in javascript directory ([7b2dbb6](https://github.com/completejavascript/completejavascript.com/commit/7b2dbb68fe474e1fb4ef2cba06a66e1ab56c7d42))
+* **post:** javascript update post date ([7749af9](https://github.com/completejavascript/completejavascript.com/commit/7749af9a35d235df8d103cd4b6582da751e0f793))
+* **post:** javascript weakset missing description ([85c105d](https://github.com/completejavascript/completejavascript.com/commit/85c105db3880eb8f73bc26018a4a780fc45da88d))
+* **post:** question replace-dom ([43f0b14](https://github.com/completejavascript/completejavascript.com/commit/43f0b1480c3bc9c5f92305c6c135fb894b3c7d00))
+* **post:** question update post ([d9cfae8](https://github.com/completejavascript/completejavascript.com/commit/d9cfae832d7996ebe8e5f997487035768b72df9b))
+
 ### [1.15.1](https://github.com/completejavascript/completejavascript.com/compare/v1.15.0...v1.15.1) (2021-12-19)
 
 
