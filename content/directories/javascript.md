@@ -85,6 +85,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Var trong JS và cách sử dụng IIFE](/var-trong-javascript-va-cach-su-dung-iife/)
 - [Đối tượng global trong JavaScript](/doi-tuong-global-trong-javascript/)
 - [Function object trong JavaScript](/function-object-trong-javascript/)
+- [Cú pháp new Function trong JavaScript](/cu-phap-new-function-trong-javascript/)
 
 ### Lập trình hướng đối tượng
 
