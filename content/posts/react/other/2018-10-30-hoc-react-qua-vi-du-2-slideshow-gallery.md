@@ -15,7 +15,7 @@ tags:
   - React Component
 ---
 
-Xin chào bạn đến với Học React qua ví dụ #2. Bài trước mình đã thực hành React với [Slideshow](/hoc-react-qua-vi-du-1-slidesho/w) rồi. Vì vậy, bài viết này mình sẽ cải tiến nó một chút, trở thành Slideshow Gallery.
+Xin chào bạn đến với Học React qua ví dụ #2. Bài trước mình đã thực hành React với [Slideshow](/hoc-react-qua-vi-du-1-slideshow/) rồi. Vì vậy, bài viết này mình sẽ cải tiến nó một chút, trở thành Slideshow Gallery.
 
 Tuy nhiên, **Slideshow Gallery** lại tương đối giống với Slideshow. Do đó, nếu bạn đã hiểu cách tạo Slideshow rồi thì bài này sẽ vô cùng dễ hiểu.
 
