@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/completejavascript/gatsby-blog-template/compare/v1.3.1...v1.3.2) (2021-12-30)
+
+
+### Bug Fixes
+
+* wrong pagination ([2fa8c0e](https://github.com/completejavascript/gatsby-blog-template/commit/2fa8c0e0e0a4f36c043fc511bd9cc71e4742f507))
+
 ### [1.3.1](https://github.com/completejavascript/gatsby-blog-template/compare/v1.3.0...v1.3.1) (2021-11-30)
 
 
