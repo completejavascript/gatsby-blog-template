@@ -5,16 +5,20 @@ import "./Pagination.scss";
 // condition: totalPages >= 2
 const MAX_PAGINATION_ITEMS = 7;
 
+const PAGINATION_LEFT = -1;
+const PAGINATION_RIGHT = -2;
+
 // For example: there is 9 pages
-// [1], 2, 3, 4, 5, 0, 9
-// 1, [2], 3, 4, 5, 0, 9
-// 1, 2, [3], 4, 5, 0, 9
-// 1, 2, 3, [4], 5, 0, 9
-// 1, 0, 4, [5], 6, 0, 9
-// 1, 0, 5, [6], 7, 8, 9
-// 1, 0, 5, 6, [7], 8, 9
-// 1, 0, 5, 6, 7, [8], 9
-// 1, 0, 5, 6, 7, 8, [9]
+// [1], 2,  3,  4,  5,  -2,  9
+//  1, [2], 3,  4,  5,  -2,  9
+//  1,  2, [3], 4,  5,  -2,  9
+//  1,  2,  3, [4], 5,  -2,  9
+//  1, -1,  4, [5], 6,  -2,  9
+//  1, -1,  5, [6], 7,  -2,  9
+//  1, -1,  5,  6, [7], -2,  9
+//  1, -1,  5,  6,  7,  [8], 9
+//  1, -1,  5,  6,  7,   8, [9]
+
 const Pagination = (props) => {
   const {
     currentPage,
@@ -33,20 +37,20 @@ const Pagination = (props) => {
     for (let i = 1; i <= MAX_PAGINATION_ITEMS - 2; i++) {
       respArr.push(i);
     }
-    respArr.push(0, totalPages);
+    respArr.push(PAGINATION_RIGHT, totalPages);
   } else if (totalPages - currentPage < 4) {
-    respArr.push(1, 0);
+    respArr.push(1, PAGINATION_LEFT);
     for (let i = totalPages - 4; i <= totalPages; i++) {
       respArr.push(i);
     }
   } else {
     respArr.push(
       1,
-      0,
+      PAGINATION_LEFT,
       currentPage - 1,
       currentPage,
       currentPage + 1,
-      0,
+      PAGINATION_RIGHT,
       totalPages
     );
   }
@@ -59,7 +63,6 @@ const Pagination = (props) => {
             <PaginationItem
               key={`${pathPrefix}-${index}`}
               value={value}
-              index={index}
               currentPage={currentPage}
               pathPrefix={pathPrefix}
               pathPrefixPagination={pathPrefixPagination}
