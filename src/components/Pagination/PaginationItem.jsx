@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AutoLink from "../AutoLink/AutoLink";
 
 const PaginationItem = (props) => {
-  const { value, index, currentPage, pathPrefix, pathPrefixPagination } = props;
-  const isLeft = value === 0 && index < currentPage / 2;
-  const isRight = value === 0 && index > currentPage / 2;
+  const { value, currentPage, pathPrefix, pathPrefixPagination } = props;
+  const isLeft = value === -1;
+  const isRight = value === -2;
 
   let to = pathPrefix;
 
@@ -27,7 +27,7 @@ const PaginationItem = (props) => {
         <FontAwesomeIcon icon={["fas", "angle-double-left"]} size="xs" />
       )}
 
-      {value != 0 && value}
+      {value > 0 && value}
 
       {isRight && (
         <FontAwesomeIcon icon={["fas", "angle-double-right"]} size="xs" />
