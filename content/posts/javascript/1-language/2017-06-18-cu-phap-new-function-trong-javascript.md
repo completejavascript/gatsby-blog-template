@@ -145,3 +145,5 @@ Hàm tạo bởi `new Function` không tham chiếu tới môi trường nơi h�
 Vì vậy, hàm này không thể đọc được giá trị của biến ngoài hàm. Điều này là tốt vì nó giúp tránh được nhiều lỗi.
 
 Để đọc giá trị của biến trong hàm `new Function`, hãy truyền giá trị của biến vào hàm thông qua tham số.
+
+Tham khảo: [The "new Function" syntax](https://javascript.info/new-function)
