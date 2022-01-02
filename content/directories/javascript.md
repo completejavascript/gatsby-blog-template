@@ -87,6 +87,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Function object trong JavaScript](/function-object-trong-javascript/)
 - [Cú pháp new Function trong JavaScript](/cu-phap-new-function-trong-javascript/)
 - [Hàm setTimeout trong JavaScript](/ham-settimeout-trong-javascript/)
+- [Decorator, forwarding của hàm trong JS](/decorator-forwarding-ham-trong-javascript/)
 
 ### Lập trình hướng đối tượng
 
