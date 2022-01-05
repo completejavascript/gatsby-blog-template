@@ -49,9 +49,9 @@ const githubCommentConfig = {
 };
 
 const authorConfig = {
-  userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed's author segment
+  userEmail: "admin@completejavascript.com", // Email used for RSS feed's author segment
   userTwitter: "CmpltJavaScript", // Optionally renders "Follow Me" in the UserInfo segment.
-  serviceEmail: "completejavascript.super@gmail.com",
+  serviceEmail: "admin@completejavascript.com",
   freeLancerLink: "https://www.upwork.com/freelancers/~015218a85e68b18cf6",
 };
 
