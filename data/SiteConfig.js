@@ -78,7 +78,7 @@ const config = {
   ],
   // Use for user info
   userName: "Lam Pham", // Username to display in the author segment.
-  userEmail: "completejavascript.super@gmail.com", // Email used for RSS feed"s author segment
+  userEmail: "dev@completejavascript.com", // Email used for RSS feed"s author segment
   userTwitter: "CmpltJavaScript", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Hanoi, Vietnam", // User location to display in the author segment.
   userAvatar:
@@ -89,7 +89,7 @@ const config = {
   userLinks: [
     {
       label: "Email",
-      url: "mailto:completejavascript.super@gmail.com",
+      url: "mailto:dev@completejavascript.com",
       iconClassName: "far envelope",
     },
     {
