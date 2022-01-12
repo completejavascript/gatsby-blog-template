@@ -1,5 +1,5 @@
 ---
-date: "2017-06-11T22:00:00Z"
+date: "2017-06-23T22:00:00Z"
 update: "2022-01-12T20:00:00Z"
 template: "post"
 directory: "JavaScript"
@@ -8,7 +8,7 @@ keywords: "getter trong javascript,setter trong javascript"
 description: "Ngoài thuộc tính và phương thức thông thường, JavaScript còn có getter và setter. Getter trong JavaScript và setter trong JavaScript thực chất là các phương thức. Tuy nhiên, cách sử dụng của chúng lại giống như thuộc tính."
 slug: getter-va-setter-trong-javascript
 title: "Getter và setter trong JavaScript"
-series: "JavaScript: Các kiểu dữ liệu"
+series: "JavaScript: Các cờ và cấu hình thuộc tính cho object"
 tags:
   - Object
   - Kiểu dữ liệu

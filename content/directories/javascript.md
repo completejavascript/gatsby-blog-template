@@ -75,8 +75,6 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Destructuring Assignment](/destructuring-assignment-trong-javascript/)
 - [Đối tượng Date trong JavaScript](/doi-tuong-date-trong-javascript/)
 - [JSON trong JavaScript](/tim-hieu-ve-json-trong-javascript/)
-- [Writable, enumerable, configurable của object](/writable-enumerable-configurable-object-trong-javascript/)
-- [Getter và setter trong JavaScript](/getter-va-setter-trong-javascript/)
 - [Ứng dụng reduce trong mảng](/ung-dung-cua-reduce-javascript/)
 
 ### Kiến thức nâng cao về hàm
@@ -91,6 +89,11 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Hàm setTimeout trong JavaScript](/ham-settimeout-trong-javascript/)
 - [Decorator, forwarding của hàm trong JS](/decorator-forwarding-ham-trong-javascript/)
 - [Function binding trong JavaScript](/function-binding-trong-javascript/)
+
+### Các cờ và cấu hình thuộc tính object
+
+- [Writable, enumerable, configurable của object](/writable-enumerable-configurable-object-trong-javascript/)
+- [Getter và setter trong JavaScript](/getter-va-setter-trong-javascript/)
 
 ### Lập trình hướng đối tượng
 

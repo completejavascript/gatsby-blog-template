@@ -1,5 +1,5 @@
 ---
-date: "2017-06-10T08:15:00Z"
+date: "2017-06-22T08:15:00Z"
 update: "2022-01-11T20:00:00Z"
 template: "post"
 directory: "JavaScript"
@@ -9,7 +9,7 @@ description: "Có thể bạn mới chỉ biết thuộc tính của object tron
 slug: writable-enumerable-configurable-object-trong-javascript
 title: "Thuộc tính writable, enumerable và configurable của object trong Javascript"
 shortTitle: "Writable, enumerable, configurable của object trong JS"
-series: "JavaScript: Các kiểu dữ liệu"
+series: "JavaScript: Các cờ và cấu hình thuộc tính cho object"
 tags:
   - Object
   - Kiểu dữ liệu
