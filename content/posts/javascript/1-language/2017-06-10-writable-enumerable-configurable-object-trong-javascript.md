@@ -1,10 +1,10 @@
 ---
 date: "2017-06-10T08:15:00Z"
-update: "2022-02-11T20:00:00Z"
+update: "2022-01-11T20:00:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/writable-enumerable-configurable-object-trong-javascript.png"
-keywords: "writable, enumberable, configurable"
+keywords: "writable,enumberable,configurable"
 description: "Có thể bạn mới chỉ biết thuộc tính của object trong JavaScript có dạng key-value. Thực tế, thuộc tính trong object có các tính chất khác như writable, enumerable và configurable."
 slug: writable-enumerable-configurable-object-trong-javascript
 title: "Thuộc tính writable, enumerable và configurable của object trong Javascript"
