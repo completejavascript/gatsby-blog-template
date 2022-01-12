@@ -76,6 +76,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Đối tượng Date trong JavaScript](/doi-tuong-date-trong-javascript/)
 - [JSON trong JavaScript](/tim-hieu-ve-json-trong-javascript/)
 - [Writable, enumerable, configurable của object](/writable-enumerable-configurable-object-trong-javascript/)
+- [Getter và setter trong JavaScript](/getter-va-setter-trong-javascript/)
 - [Ứng dụng reduce trong mảng](/ung-dung-cua-reduce-javascript/)
 
 ### Kiến thức nâng cao về hàm
