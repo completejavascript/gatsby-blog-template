@@ -4,7 +4,7 @@ update: "2021-11-01T21:00:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/bien-la-gi-bien-trong-javascript.png"
-keywords: "biến là gì"
+keywords: "biến là gì,biến trong javascript"
 description: "Biến là một thành phần không thể thiếu trong lập trình. Bài viết này mình sẽ tìm hiểu xem biến là gì, cách khai báo biến trong JavaScript và quy tắc đặt tên biến."
 slug: bien-la-gi-bien-trong-javascript
 title: "Biến là gì? Cơ bản về biến trong JavaScript"

@@ -4,7 +4,7 @@ update: "2021-12-06T20:00:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/array-trong-javascript.png"
-keywords: "array trong javascript"
+keywords: "array là gì,array trong javascript"
 description: "Array trong JavaScript là một loại object dùng để lưu trữ dữ liệu theo thứ tự. Sau đây là những kiến thức cơ bản về array trong JavaScript."
 slug: array-la-gi-array-trong-javascript
 title: "Array là gì? Array trong JavaScript"

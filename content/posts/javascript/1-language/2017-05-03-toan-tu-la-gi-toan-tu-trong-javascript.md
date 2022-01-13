@@ -4,7 +4,7 @@ update: "2021-11-06T21:00:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/toan-tu-la-gi-toan-tu-trong-javascript.png"
-keywords: "toán tử là gì"
+keywords: "toán tử là gì,toán tử trong javascript"
 description: "Có nhiều loại toán tử trong JavaScript. Sau đây, mình sẽ cùng tìm hiểu xem toán tử là gì, cơ bản các toán tử trong JavaScript và thứ tự ưu tiên của các toán tử trong JS."
 slug: toan-tu-la-gi-toan-tu-trong-javascript
 title: "Toán tử là gì? Các toán tử trong JavaScript"

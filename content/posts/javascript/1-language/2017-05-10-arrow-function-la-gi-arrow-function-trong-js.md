@@ -4,7 +4,7 @@ update: "2021-11-21T16:30:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/arrow-function-la-gi-arrow-function-trong-js.png"
-keywords: "arrow function là gì"
+keywords: "arrow function là gì,arrow function trong javascript"
 description: "Ngoài function, JavaScript còn có arrow function. Sau đây, mình trình bày về arrow function là gì và cách sử dụng arrow function cơ bản."
 slug: arrow-function-la-gi-arrow-function-trong-js
 title: "Arrow function là gì? Arrow function trong JavaScript"

@@ -4,7 +4,7 @@ update: "2021-11-03T21:00:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/hang-la-gi-hang-trong-javascript.png"
-keywords: "hằng là gì"
+keywords: "hằng là gì,hằng trong javascript"
 description: "Hằng cũng là thành phần không thể thiếu trong lập trình. Sau đây, mình sẽ tìm hiểu xem hằng là gì, cách khai báo hằng trong JavaScript và quy tắc đặt tên hằng."
 slug: hang-la-gi-hang-trong-javascript
 title: "Hằng là gì? Cơ bản về hằng trong JavaScript"

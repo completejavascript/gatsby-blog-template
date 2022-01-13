@@ -4,7 +4,7 @@ update: "2021-11-24T00:10:29Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/object-la-gi-object-trong-javascript.png"
-keywords: "object trong javascript"
+keywords: "object là gì,object trong javascript"
 description: "JavaScript là ngôn ngữ dựa trên đối tượng, nên việc hiểu rõ về JavaScript Object sẽ là chìa khoá giúp bạn làm chủ JavaScript. Hãy tìm hiểu thật kỹ về Object trong JavaScript nhé!"
 slug: object-la-gi-object-trong-javascript
 title: "Object là gì? Object trong JavaScript"

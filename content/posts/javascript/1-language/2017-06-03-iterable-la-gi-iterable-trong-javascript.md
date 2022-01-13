@@ -4,7 +4,7 @@ update: "2021-12-10T08:00:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/iterable-la-gi-iterable-trong-javascript.png"
-keywords: "iterable trong javascript"
+keywords: "iterable là gì,iterable trong javascript"
 description: "Iterable trong JavaScript là một khái niệm liên quan đến array. Một object gọi là iterable nếu object đó sử dụng được với vòng lặp for...of."
 slug: iterable-la-gi-iterable-trong-javascript
 title: "Iterable là gì? Iterable trong JavaScript"

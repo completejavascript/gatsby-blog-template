@@ -4,7 +4,7 @@ update: "2021-11-21T09:00:00Z"
 template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/ham-la-gi-ham-trong-javascript.png"
-keywords: "hàm là gì"
+keywords: "hàm là gì,hàm trong javascript"
 description: "Function JavaScript (hàm trong JavaScript) là một thành phần không thể thiếu. Hàm giúp chương trình trở nên rõ ràng, dễ hiểu. Vậy hàm là gì?"
 slug: ham-la-gi-ham-trong-javascript
 title: "Hàm là gì? Hàm trong JavaScript"
