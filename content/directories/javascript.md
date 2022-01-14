@@ -95,6 +95,10 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Writable, enumerable, configurable của object](/writable-enumerable-configurable-object-trong-javascript/)
 - [Getter và setter trong JavaScript](/getter-va-setter-trong-javascript/)
 
+### Prototype và kế thừa prototype
+
+- [Prototype là gì? Prototype trong JavaScript](/prototype-la-gi-prototype-trong-javascript/)
+
 ### Lập trình hướng đối tượng
 
 - [Hướng đối tượng hay dựa trên đối tượng?](/lap-trinh-huong-doi-tuong-voi-javascript/)
