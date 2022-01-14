@@ -99,12 +99,6 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 - [Prototype là gì? Prototype trong JavaScript](/prototype-la-gi-prototype-trong-javascript/)
 
-### Lập trình hướng đối tượng
-
-- [Hướng đối tượng hay dựa trên đối tượng?](/lap-trinh-huong-doi-tuong-voi-javascript/)
-- [Các khía cạnh lập trình hướng đối tượng](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/)
-- [Các cách kế thừa cơ bản](/ke-thua-co-ban-trong-javascript/)
-
 ### Callback, Promise, async/await
 
 - [Bất đồng bộ với callback, promise, async/await](/xu-ly-bat-dong-bo-callback-promise-async-await/)
