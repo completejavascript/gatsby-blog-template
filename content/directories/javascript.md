@@ -98,6 +98,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 ### Prototype và kế thừa prototype
 
 - [Prototype là gì? Prototype trong JavaScript](/prototype-la-gi-prototype-trong-javascript/)
+- [Tìm hiểu F.prototype trong JavaScript](/tim-hieu-f-prototype-trong-javascript/)
 
 ### Callback, Promise, async/await
 
