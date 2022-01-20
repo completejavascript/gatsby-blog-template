@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.3](https://github.com/completejavascript/gatsby-blog-template/compare/v1.3.2...v1.3.3) (2022-01-20)
+
+
+### Bug Fixes
+
+* update dependencies to latest versions ([6f70eb2](https://github.com/completejavascript/gatsby-blog-template/commit/6f70eb260472269f4f58a53ddab12de7be4314c5))
+* update email as dev@completejavascript.com ([0544a9e](https://github.com/completejavascript/gatsby-blog-template/commit/0544a9ea0879142cc1ed88524f566de0a895499e))
+
 ### [1.3.2](https://github.com/completejavascript/gatsby-blog-template/compare/v1.3.1...v1.3.2) (2021-12-30)
 
 
