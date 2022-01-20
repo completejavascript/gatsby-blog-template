@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.15.3](https://github.com/completejavascript/completejavascript.com/compare/v1.15.2...v1.15.3) (2022-01-20)
+
+
+### Bug Fixes
+
+* **post:** add javascript writable-enumerable-configurable ([fa218ed](https://github.com/completejavascript/completejavascript.com/commit/fa218eda13ae5ba4218c7ef7c6f65bb1176ad027))
+* **post:** add javascript-decorator ([a830b6e](https://github.com/completejavascript/completejavascript.com/commit/a830b6e7efad5de7cc53488309b0f8de21759281))
+* **post:** javascript add getter-setter ([90f4a93](https://github.com/completejavascript/completejavascript.com/commit/90f4a9343fac9b2f7a6396fa78db2f71ea8a7a60))
+* **post:** javascript add post f.prototype ([9ec9323](https://github.com/completejavascript/completejavascript.com/commit/9ec9323de05e73e7aadf041c02589d8ddb74db3d))
+* **post:** javascript add prototype ([4a8c38e](https://github.com/completejavascript/completejavascript.com/commit/4a8c38e1e13ea6f315b7a87607528bfdde33c0ea))
+* **post:** javascript add settimeout ([adae53c](https://github.com/completejavascript/completejavascript.com/commit/adae53ca8a75fd31a48a59c7d434b8d356a91ae6))
+* **post:** javascript function object ([f91f9d3](https://github.com/completejavascript/completejavascript.com/commit/f91f9d34dc683e39dd770973cbdbd507b6ff529f))
+* **post:** javascript function-binding ([7e57885](https://github.com/completejavascript/completejavascript.com/commit/7e57885cbd6673bf3bd181eeae638854832321aa))
+* **post:** javascript move some post to questions ([9ddf5f3](https://github.com/completejavascript/completejavascript.com/commit/9ddf5f3cd96b2eefd2c80352c7f6ef0514cefd33))
+* **post:** javascript post new-function ([d18f32f](https://github.com/completejavascript/completejavascript.com/commit/d18f32f91626862f31842419c14b91cfe184df03))
+* **post:** javascript update post keywords ([eb0575f](https://github.com/completejavascript/completejavascript.com/commit/eb0575f984f384d4af8a720587aed08610c6479d))
+* **post:** javascript update post series ([7b7e789](https://github.com/completejavascript/completejavascript.com/commit/7b7e78975db07d21c745444682471dc459dc30c2))
+* **post:** javascript writable-enumerable-configurable fix date ([31742f5](https://github.com/completejavascript/completejavascript.com/commit/31742f535f62349b3b31ea1308d9ddc86fa02be9))
+* **post:** question javascript check isDOM ([39579e3](https://github.com/completejavascript/completejavascript.com/commit/39579e3a49177244c15a8062a51b65a06112cc0f))
+* **post:** wrong link ([e2a5758](https://github.com/completejavascript/completejavascript.com/commit/e2a575877138341f2962c3b8b2ed0575778eac97))
+* update dependencies versions ([0ed12f8](https://github.com/completejavascript/completejavascript.com/commit/0ed12f801064a779c12631e1c7fe391d70fe8b72))
+* update email as admin@completejavascript.com ([b10977f](https://github.com/completejavascript/completejavascript.com/commit/b10977fee3b7724c56ce7b1282eae2c3f7cc28de))
+* wrong pagination ([761d493](https://github.com/completejavascript/completejavascript.com/commit/761d4935aa6c8132ae09d271c417cce792d157e5))
+
 ### [1.15.2](https://github.com/completejavascript/completejavascript.com/compare/v1.15.1...v1.15.2) (2021-12-27)
 
 
