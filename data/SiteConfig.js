@@ -166,7 +166,7 @@ const config = {
     { label: "Sitemap", url: "https://gb-template.netlify.com/sitemap.xml" },
   ],
   copyright:
-    "Copyright © 2019-2021 Lam Pham. Unless otherwise noted, all code MIT license.",
+    "Copyright © 2019-2022 Lam Pham. Unless otherwise noted, all code MIT license.",
   // Use for manifest
   themeColor: "#2196F3", // Used for setting manifest and progress theme colors.
   backgroundColor: "#FFF", // Used for setting manifest background color.
