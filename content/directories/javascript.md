@@ -99,6 +99,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 - [Prototype là gì? Prototype trong JavaScript](/prototype-la-gi-prototype-trong-javascript/)
 - [F.prototype - Prototype của hàm trong JavaScript](/f-prototype-prototype-ham-trong-javascript/)
+- [Native prototypes trong JavaScript](/native-prototypes-trong-javascript/)
 
 ### Callback, Promise, async/await
 
