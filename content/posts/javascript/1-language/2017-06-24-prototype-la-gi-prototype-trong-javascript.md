@@ -242,7 +242,7 @@ Nếu bạn chỉ muốn duyệt qua các thuộc tính trong object và **bỏ 
 
 ► **Sử dụng phương thức `Object.keys()`**
 
-Phương thức [`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) trả về mảng chứa tất cả các key quả object, bỏ qua các thuộc tính kế thừa.
+Phương thức [`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) trả về mảng chứa tất cả các key của object, bỏ qua các thuộc tính kế thừa.
 
 ```js{10}
 let animal = {
@@ -297,7 +297,7 @@ Sau đây là những kiến thức cơ bản cần nhớ về prototype trong J
 
 - Trong JavaScript, tất cả các object đều có thuộc tính ẩn `[[Prototype]]` với giá trị là `null` hoặc kiểu object.
 - Bạn có thể sử dụng `obj.__proto__` như là một **getter/setter** để truy cập vào `[[Prototype]]`.
-- Object ứng với`[[Prototype]]` được gọi là một prototype.
+- Object ứng với `[[Prototype]]` được gọi là một prototype.
 - Khi truy cập một thuộc tính hay phương thức trong object mà nó không tồn tại thì JavaScript sẽ tự động tìm kiếm trong prototype.
 - Prototype chỉ hỗ trợ việc đọc, không hỗ trợ ghi/xóa thuộc tính trực tiếp trên prototype.
 - Khi bạn gọi `obj.method()` và `method()` được lấy từ prototype, giá trị của `this` vẫn tham chiếu đến `obj` chứ không phải prototype.
