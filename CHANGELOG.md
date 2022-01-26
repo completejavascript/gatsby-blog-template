@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.15.4](https://github.com/completejavascript/completejavascript.com/compare/v1.15.3...v1.15.4) (2022-01-26)
+
+
+### Bug Fixes
+
+* **post:** javascript add native-prototypes ([29620d7](https://github.com/completejavascript/completejavascript.com/commit/29620d7e70fec190725e3c14e18d1a8fc70d0079))
+* **post:** javascript typo ([1ea64db](https://github.com/completejavascript/completejavascript.com/commit/1ea64db4b7397d2e66b5666f19b988fe4032b954))
+* **post:** update javascript directory - post's url ([bd25140](https://github.com/completejavascript/completejavascript.com/commit/bd25140722c350da0434575a9c4eff37837cf701))
+* remove comments in directory-template to prevent duplicate comments ([7f0dee5](https://github.com/completejavascript/completejavascript.com/commit/7f0dee5424681c621e00b64c77f7b32e58683c8d))
+
 ### [1.15.3](https://github.com/completejavascript/completejavascript.com/compare/v1.15.2...v1.15.3) (2022-01-20)
 
 
