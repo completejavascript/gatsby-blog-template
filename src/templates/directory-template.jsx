@@ -31,7 +31,7 @@ const DirectoryTemplate = ({ data, pageContext }) => {
       {adsConfig.hasAdsense && adsConfig.adsenseUnits?.postBottom && (
         <>
           <AdSense.Google {...adsConfig.adsenseUnits?.postBottom} />
-          {process.env.NODE_ENV === "production" && <GithubComment />}
+          {/* {process.env.NODE_ENV === "production" && <GithubComment />} */}
         </>
       )}
     </>
