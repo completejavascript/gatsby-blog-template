@@ -1,5 +1,5 @@
 ---
-date: "2017-07-01T23:00:56Z"
+date: "2017-07-25T23:00:56Z"
 update: "2019-02-25T23:00:56Z"
 template: "post"
 directory: "JavaScript"

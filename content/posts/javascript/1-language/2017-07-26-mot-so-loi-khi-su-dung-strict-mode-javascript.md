@@ -1,5 +1,5 @@
 ---
-date: "2017-07-07T13:16:19Z"
+date: "2017-07-26T13:16:19Z"
 update: "2021-10-17T13:16:19Z"
 template: "post"
 directory: "JavaScript"
@@ -182,7 +182,7 @@ Strict mode cấm bạn xoá tên biến. Ngược lại, bạn sẽ bị lỗi 
 Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.
 
 ```js
-'use strict';
+"use strict";
 
 var x = 10;
 delete x;
