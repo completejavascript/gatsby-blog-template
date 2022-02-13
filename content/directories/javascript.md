@@ -102,6 +102,10 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Native prototypes trong JavaScript](/native-prototypes-trong-javascript/)
 - [Các phương thức với prototype trong JavaScript](/phuong-thuc-voi-prototype-trong-javascript/)
 
+### ES6 class
+
+- [Cú pháp cơ bản của class trong JavaScript](/cu-phap-class-trong-javascript-co-ban/)
+
 ### Callback, Promise, async/await
 
 - [Bất đồng bộ với callback, promise, async/await](/xu-ly-bat-dong-bo-callback-promise-async-await/)
