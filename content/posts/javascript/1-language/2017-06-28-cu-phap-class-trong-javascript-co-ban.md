@@ -12,6 +12,7 @@ series: "JavaScript: class"
 tags:
   - Class
   - ES6
+  - Prototype
 ---
 
 Khi lập trình, chúng ta thường sẽ phải tạo ra nhiều [object](/object-la-gi-object-trong-javascript/) với cùng kiểu, ví dụ như: các đối tượng người dùng hay các đối tượng sản phẩm,...

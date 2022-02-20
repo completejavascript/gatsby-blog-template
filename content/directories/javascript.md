@@ -105,6 +105,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 ### ES6 class
 
 - [Cú pháp cơ bản của class trong JavaScript](/cu-phap-class-trong-javascript-co-ban/)
+- [Kế thừa class trong JavaScript](/ke-thua-class-trong-javascript/)
 
 ### Callback, Promise, async/await
 

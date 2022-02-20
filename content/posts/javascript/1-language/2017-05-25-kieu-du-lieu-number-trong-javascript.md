@@ -206,7 +206,7 @@ console.log(b); // "1.234500"
 
 ```js{4,5}
 let a = 1.2345;
-let b = a.toFixed(2); "1.23"
+let b = a.toFixed(2); // "1.23"
 
 let c = Number(b);
 console.log(c, typeof c); // 1.23 number
