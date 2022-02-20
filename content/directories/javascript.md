@@ -106,6 +106,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 
 - [Cú pháp cơ bản của class trong JavaScript](/cu-phap-class-trong-javascript-co-ban/)
 - [Kế thừa class trong JavaScript](/ke-thua-class-trong-javascript/)
+- [Thuộc tính và phương thức static của class trong JS](/thuoc-tinh-phuong-thuc-static-class-trong-javascript/)
 
 ### Callback, Promise, async/await
 
