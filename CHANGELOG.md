@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/completejavascript/completejavascript.com/compare/v1.15.4...v1.16.0) (2022-02-27)
+
+
+### Features
+
+* add tools.completejavascript.com to navigation and footer ([d38f781](https://github.com/completejavascript/completejavascript.com/commit/d38f78112fbed504efccd76654ee11fd27dc2bd0))
+
+
+### Bug Fixes
+
+* **post:** javascript add class-basic-syntax ([656ff7e](https://github.com/completejavascript/completejavascript.com/commit/656ff7e40360896ac6d63d485411f2b043da8e83))
+* **post:** javascript add class-method-static ([9341f77](https://github.com/completejavascript/completejavascript.com/commit/9341f773f7a7226063c63389e1deb94489167123))
+* **post:** javascript prototype-methods ([fd4b448](https://github.com/completejavascript/completejavascript.com/commit/fd4b4482751a795beafda11ccf787e6dcfa82442))
+* **post:** javascript update class-inheritance ([f94b78d](https://github.com/completejavascript/completejavascript.com/commit/f94b78d5804f61b998345cdfd743d5e87368da05))
+* **post:** javascript update posts date ([4282544](https://github.com/completejavascript/completejavascript.com/commit/428254486ea199e1fae8698e82aa135460ac3eb7))
+
 ### [1.15.4](https://github.com/completejavascript/completejavascript.com/compare/v1.15.3...v1.15.4) (2022-01-26)
 
 
