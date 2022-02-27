@@ -20,7 +20,7 @@ const NavLinks = ({ links, isDropdown = false }) => {
           key={link.label}
           to={link.url}
           activeClassName="active"
-          className={itemClass}
+          className={`${itemClass} ${link.isNew ? "new" : ""}`}
         >
           {link.label}
         </AutoLink>

@@ -51,6 +51,30 @@
         &.active {
           color: #707070;
         }
+        &.new {
+          background-color: #fd6584;
+          padding: 1rem 6.8rem 1rem 1.5rem;
+          color: #fff;
+          border-radius: 5rem;
+          position: relative;
+          &:hover,
+          &:active {
+            background-color: #2196f3;
+          }
+          &::after {
+            content: "NEW";
+            position: absolute;
+            font-weight: 600;
+            border-radius: 2rem;
+            color: #444;
+            border: 1px solid #444;
+            background-color: #fff;
+            margin-left: 0.75rem;
+            margin-top: 0.44rem;
+            font-size: 0.95rem;
+            padding: 0.075rem 1rem 0rem;
+          }
+        }
       }
     }
     .navbars {
@@ -65,9 +89,22 @@
         display: block;
         color: #303030;
         font-weight: 500;
+        position: relative;
         &:hover,
         &.active {
           color: #707070;
+        }
+        &.new {
+          &::after {
+            content: "NEW";
+            position: absolute;
+            font-weight: 600;
+            border-radius: 2rem;
+            color: #fd6584;
+            margin-left: 0.75rem;
+            margin-top: 0rem;
+            font-size: 1rem;
+          }
         }
       }
     }
@@ -87,7 +124,7 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .navigation-container {
     .navigation-main {
       .brand {

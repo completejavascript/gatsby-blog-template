@@ -77,6 +77,10 @@ const pathPrefixConfig = {
   policy: "/chinh-sach-bao-mat",
 };
 
+const subDomainSites = {
+  tools: "https://tools.completejavascript.com/",
+};
+
 const frontmatterTemplateConfig = {
   post: "post",
   page: "page",
@@ -237,6 +241,7 @@ const navConfig = {
     { label: "Question", url: pathPrefixConfig.question },
     { label: "Freebie", url: pathPrefixConfig.freebie },
     { label: "Blog", url: pathPrefixConfig.blog },
+    { label: "Tools", url: subDomainSites.tools, isNew: true },
   ],
 };
 
@@ -295,12 +300,13 @@ const footerConfig = {
     { label: "Dịch vụ", url: pathPrefixConfig.service },
     {
       label: "Hire me on Upwork",
-      url: "https://www.upwork.com/freelancers/~015218a85e68b18cf6",
+      url: authorConfig.freeLancerLink,
     },
     { label: "Điều khoản", url: pathPrefixConfig.term },
     { label: "Chính sách", url: pathPrefixConfig.policy },
   ],
   networkLinks: [
+    { label: "Complete Tools", url: subDomainSites.tools },
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
     { label: "Lam Dev Blog", url: "https://dev.phamvanlam.com/" },
     { label: "Lam Pham Blog", url: "https://phamvanlam.com/" },
