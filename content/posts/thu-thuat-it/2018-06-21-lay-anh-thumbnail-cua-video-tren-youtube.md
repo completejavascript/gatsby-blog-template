@@ -108,7 +108,7 @@ Trên đây là một số cách để lấy ảnh thumbnail của video trên y
 Nếu bạn thấy hay thì không ngại để chia sẻ cho mọi người cùng biết nhé. Còn nếu bạn có thắc mắc gì thì vui lòng để lại bình luận phía dưới hoặc gửi mail cho mình. Mình sẽ cố gắng giải đáp giúp bạn.
 
 <a 
-  href="https://tools.completejavascript.com/lay-anh-thumbnail-cua-video-tren-youtube/" 
+  href="https://tools.completejavascript.com/youtube-thumbnail-grabber/" 
   class="btn btn-primary margin-bottom" 
   target="_blank"
   rel="noopener noreferrer">
