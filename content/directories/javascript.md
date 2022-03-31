@@ -108,6 +108,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Kế thừa class trong JavaScript](/ke-thua-class-trong-javascript/)
 - [Thuộc tính và phương thức static của class trong JS](/thuoc-tinh-phuong-thuc-static-class-trong-javascript/)
 - [Thuộc tính và phương thức private của class trong JS](/thuoc-tinh-phuong-thuc-private-class-trong-javascript/)
+- [Kế thừa built-in class trong JavaScript](/ke-thua-built-in-class-trong-javascript/)
 
 ### Callback, Promise, async/await
 
