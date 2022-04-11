@@ -237,7 +237,7 @@ setTimeout(function run() {
 });
 
 // kết quả cuối cùng:
-// (22) [12,14,16,18,25,30,34,38,42,46,51,55,59,63,69,74,79,83,87,92,96,101]
+// (22) [12,14,16,18,25,30,34,38,42,46,51,55,59,63,69,74,79,83,87,92,96,101]
 ```
 
 Xem kết quả trên, bạn thấy rằng thời gian delay giữa mỗi lần gọi trong 5 lần đầu tiên là khoảng 2ms. Nhưng sau 5 lần thì thời gian delay tăng lên là khoảng 4ms.

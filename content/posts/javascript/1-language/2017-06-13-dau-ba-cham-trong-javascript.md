@@ -213,7 +213,7 @@ let arr1 = [3, 5, 1];
 let arr2 = [4, 6, 2];
 let arr = [...arr1, ...arr2];
 
-console.log(arr); // (6) [3, 5, 1, 4, 6, 2]
+console.log(arr); // (6) [3, 5, 1, 4, 6, 2]
 ```
 
 Trong các ví dụ trên, mình dùng mảng với cú pháp spread. Thực chất, bạn có thể sử dụng **bất kỳ iterable object** nào.
@@ -223,7 +223,7 @@ Ví dụ sử dụng cú pháp spread để biến string thành mảng các ký
 ```js
 let str = "Hello";
 
-console.log([...str]); // (5) ['H', 'e', 'l', 'l', 'o']
+console.log([...str]); // (5) ['H', 'e', 'l', 'l', 'o']
 ```
 
 > Cú pháp spread **sử dụng iterator** để lấy các phần tử, giống như cú pháp `for...of`.
@@ -243,7 +243,7 @@ Với bài toán này, bạn có thể dùng `Array.from(str)` cũng cho kết q
 ```js
 let str = "Hello";
 
-console.log(Array.from(str)); // (5) ['H', 'e', 'l', 'l', 'o']
+console.log(Array.from(str)); // (5) ['H', 'e', 'l', 'l', 'o']
 ```
 
 Tuy nhiên, `Array.from` và cú pháp spread có sự khác nhau là:
