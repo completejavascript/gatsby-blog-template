@@ -75,6 +75,7 @@ const pathPrefixConfig = {
   contact: "/lien-he",
   term: "/dieu-khoan-su-dung",
   policy: "/chinh-sach-bao-mat",
+  ebooks: "/ebooks",
 };
 
 const subDomainSites = {
@@ -241,6 +242,7 @@ const navConfig = {
     { label: "Question", url: pathPrefixConfig.question },
     { label: "Freebie", url: pathPrefixConfig.freebie },
     { label: "Blog", url: pathPrefixConfig.blog },
+    { label: "eBooks", url: pathPrefixConfig.ebooks },
     { label: "Tools", url: subDomainSites.tools, isNew: true },
   ],
 };
@@ -291,6 +293,7 @@ const footerConfig = {
     { label: "Question", url: pathPrefixConfig.question },
     { label: "Freebie", url: pathPrefixConfig.freebie },
     { label: "Blog", url: pathPrefixConfig.blog },
+    { label: "eBooks", url: pathPrefixConfig.ebooks },
     { label: "Tags", url: pathPrefixConfig.tags },
   ],
   footerLinks: [

@@ -80,3 +80,5 @@ export const getRandomExclude = (min, max, currentValue, numRetry = 10) => {
 };
 
 export const getCurrentYear = () => new Date().getFullYear();
+
+export const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));

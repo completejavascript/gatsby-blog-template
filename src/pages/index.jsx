@@ -41,6 +41,11 @@ const WelcomeSection = () => (
             React
           </AutoLink>
         </div>
+        <div className="row btn-group">
+          <AutoLink to={pathPrefixConfig.ebooks}>
+            <b>Complete free eBooks →</b>
+          </AutoLink>
+        </div>
       </div>
       <div className="right col-xs-12 col-lg-6 text-center">
         <AutoLink to={pathPrefixConfig.service}>
@@ -54,7 +59,7 @@ const WelcomeSection = () => (
 
 const PostArticle1 = ({ post }) => (
   <article className="post-article-1">
-    <Thumbnail post={post} />
+    {post && post.cover && <Thumbnail post={post} />}
     <h3>
       <AutoLink to={post.slug} key={post.title}>
         {post.title}

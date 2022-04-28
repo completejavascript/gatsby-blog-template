@@ -1,0 +1,162 @@
+---
+template: "directory"
+title: "Free Ebooks"
+description: "Chia sẻ tài liệu ebooks về JavaScript, các thư viện JavaScript và JavaScript frameworks như ReactJS, VueJS, AngularJS, GatsbyJS, NextJS, NodeJS..."
+slug: "ebooks"
+---
+
+Chia sẻ tài liệu eBooks về JavaScript, thư viện JavaScript và JavaScript frameworks như ReactJS, VueJS, AngularJS, GatsbyJS, NextJS, NodeJS...
+
+> 📝 **Chú ý:**
+>
+> Trang web này dùng để chia sẻ các tài liệu **hoàn toàn miễn phí và không lưu trữ bất kỳ tệp tin nào** trên máy chủ.
+>
+> Dưới đây là danh sách các eBooks và liên kết đến nội dung được cung cấp **bởi những trang web khác**.
+>
+> Vui lòng **liên hệ với các nhà cung cấp nội dung** để xóa nội dung bản quyền (nếu có).
+>
+> Để có được trải nghiệm tốt nhất, bạn **vui lòng mở link download ở tab mới**.
+
+**Mục Lục**
+
+- [JavaScript](#javascript)
+- [ReactJS](#reactjs)
+- [Vue.js](#vuejs)
+- [Angular](#angular)
+- [jQuery](#jquery)
+- [Next.js](#nextjs)
+- [Svelte](#svelte)
+- [Node.js](#nodejs)
+- [Express.js](#expressjs)
+
+<div class="section-wrapper">
+<section>
+
+## JavaScript
+
+Tổng hợp danh sách eBooks về ngôn ngữ lập trình JavaScript.
+
+### Sách JavaScript tổng hợp
+
+- [Eloquent JavaScript](https://eloquentjavascript.net/Eloquent_JavaScript.pdf)
+- [Learning JavaScript (RIP Tutorial)](https://riptutorial.com/Download/javascript.pdf)
+- [JavaScript Notes for Professionals](https://goalkicker.com/JavaScriptBook/JavaScriptNotesForProfessionals.pdf)
+- [A Smarter Way to Learn JavaScript](https://cdn.wccftech.com/wp-content/uploads/2014/10/JavaScript.pdf)
+- [JavaScript: The Good Parts](https://cdn.tc-library.org/Rhizr/Files/daaz74mzphKfnHsen/files/JavaScript-%20The%20Good%20Parts.pdf)
+- [JavaScript from ES5 to ESNext](https://flaviocopes.com/books/es5-to-next.pdf)
+- [The JavaScript Beginner's Handbook](https://flaviocopes.com/books/javascript-beginner-handbook.pdf)
+
+### You Don't Know JS - First Edition Series
+
+- [You Don't Know JS: Up & Going](https://xiaoguo.net/~books/Program/You_Dont_Know_JS_Up_and_Going.pdf)
+- [You Don't Know JS: Scope & Closures](https://drive.google.com/file/d/0B_u1rzdqYCnzcWFLNXd5WHVSUkU/view?resourcekey=0-i0e7RqJVdSjkoZWRLiAgDA)
+- [You Don't Know JS: this, Object & Prototypes](https://pepa.holla.cz/wp-content/uploads/2016/08/You-Don-t-Know-JS-this-Object-Prototypes.pdf)
+- [You Don't Know JS: Types & Grammar](https://drive.google.com/file/d/0B_u1rzdqYCnzWVpkWmI5Y0cxMDg/view?resourcekey=0-ZdH4P0oRSIOuYevPdE2zBw)
+- [You Don't Know JS: Async & Performance](https://prima-carta.com/wp-content/uploads/2020/12/You-Dont-Know-JS_-Async-Performance-PDFDrive-.pdf)
+- [You Don't Know JS: ES6 & Beyond](https://drive.google.com/file/d/0B_u1rzdqYCnzRUlHcV9sQVpTMFE/view?resourcekey=0-ddQaxhl0oWpCRsiAUfAomQ)
+
+### You Don't Know JS Yet - Second Edition Series
+
+- [You Don't Know JS Yet: Get Started](https://www.booksdrive.org/wp-content/uploads/2021/09/you-do-not-know.pdf)
+
+</section>
+</div>
+
+<div class="section-wrapper below">
+<section>
+
+## ReactJS
+
+Tổng hợp danh sách eBooks về thư viện ReactJS.
+
+- [The React Beginner's Handbook](https://flaviocopes.com/books/react-beginner-handbook.pdf)
+- [React JS Note for Professionals](https://goalkicker.com/ReactJSBook/ReactJSNotesForProfessionals.pdf)
+
+</section>
+</div>
+
+<div class="section-wrapper below">
+<section>
+
+## Vue.js
+
+Tổng hợp danh sách eBooks về Vue.js framework.
+
+- [The Vue.js 2 Handbook](https://flaviocopes.com/books/vue-handbook.pdf)
+
+</section>
+</div>
+
+<div class="section-wrapper below">
+<section>
+
+## Angular
+
+Tổng hợp danh sách eBooks về AngularJS and Angular framework.
+
+- [Angular JS Notes for Professionals](https://goalkicker.com/AngularJSBook/AngularJSNotesForProfessionals.pdf)
+- [Angular 2+ Notes for Professionals](https://goalkicker.com/Angular2Book/Angular2NotesForProfessionals.pdf)
+
+</section>
+</div>
+
+<div class="section-wrapper below">
+<section>
+
+## jQuery
+
+Tổng hợp danh sách eBooks về thư viện jQuery.
+
+- [jQuery Notes for Professionals](https://goalkicker.com/jQueryBook/jQueryNotesForProfessionals.pdf)
+
+</section>
+</div>
+
+<div class="section-wrapper below">
+<section>
+
+## Next.js
+
+Tổng hợp danh sách eBooks về Next.js framework.
+
+- [The Next.js Handbook](https://flaviocopes.com/books/nextjs-handbook.pdf)
+
+</section>
+</div>
+
+<div class="section-wrapper below">
+<section>
+
+## Svelte
+
+Tổng hợp danh sách eBooks về Svelte framework.
+
+- [The Svelte Handbook](https://flaviocopes.com/books/svelte-handbook.pdf)
+
+</section>
+</div>
+
+<div class="section-wrapper below">
+<section>
+
+## Node.js
+
+Tổng hợp danh sách eBooks về Node.js.
+
+- [The Node.js Handbook](https://flaviocopes.com/books/node-handbook.pdf)
+- [Node.js Note for Professionals](https://goalkicker.com/NodeJSBook/NodeJSNotesForProfessionals.pdf)
+
+</section>
+</div>
+
+<div class="section-wrapper below">
+<section>
+
+## Express.js
+
+Tổng hợp danh sách eBooks về Express.js framework.
+
+- [The Express Handbook](https://flaviocopes.com/books/express-handbook.pdf)
+
+</section>
+</div>
