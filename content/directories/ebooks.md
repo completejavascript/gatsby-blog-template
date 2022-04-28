@@ -1,6 +1,6 @@
 ---
 template: "directory"
-title: "Free Ebooks"
+title: "Free eBooks"
 description: "Chia sẻ tài liệu ebooks về JavaScript, các thư viện JavaScript và JavaScript frameworks như ReactJS, VueJS, AngularJS, GatsbyJS, NextJS, NodeJS..."
 slug: "ebooks"
 ---
@@ -20,7 +20,7 @@ Sau đây là danh sách các eBooks và liên kết đến nội dung được 
 **Mục Lục**
 
 - [JavaScript](#javascript)
-- [ReactJS](#reactjs)
+- [React](#react)
 - [Vue.js](#vuejs)
 - [Angular](#angular)
 - [jQuery](#jquery)
@@ -31,7 +31,7 @@ Sau đây là danh sách các eBooks và liên kết đến nội dung được 
 
 </div>
 
-<div class="section-wrapper">
+<div class="section-wrapper below">
 <section>
 
 ## JavaScript
@@ -41,7 +41,7 @@ Tổng hợp danh sách eBooks về ngôn ngữ lập trình JavaScript.
 ### Sách JavaScript tổng hợp
 
 - [Eloquent JavaScript](/download?c=ebooks&s=aHR0cHM6Ly&e=JpcHQucGRm&m=9lbG9xdWVudGphdmFzY3JpcHQubmV0L0Vsb3F1ZW50X0phdmFTY3)
-- [Learning JavaScript (RIP Tutorial)](/download?c=ebooks&s=aHR0cHM6Ly&e=lwdC5wZGY%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvamF2YXNjcm)
+- [Learning JavaScript](/download?c=ebooks&s=aHR0cHM6Ly&e=lwdC5wZGY%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvamF2YXNjcm)
 - [JavaScript Notes for Professionals](/download?c=ebooks&s=aHR0cHM6Ly&e=xzLnBkZg%3D%3D&m=9nb2Fsa2lja2VyLmNvbS9KYXZhU2NyaXB0Qm9vay9KYXZhU2NyaXB0Tm90ZXNGb3JQcm9mZXNzaW9uYW)
 - [A Smarter Way to Learn JavaScript](/download?c=ebooks&s=aHR0cHM6Ly&e=JpcHQucGRm&m=9jZG4ud2NjZnRlY2guY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE0LzEwL0phdmFTY3)
 - [JavaScript: The Good Parts](/download?c=ebooks&s=aHR0cHM6Ly&e=FydHMucGRm&m=9jZG4udGMtbGlicmFyeS5vcmcvUmhpenIvRmlsZXMvZGFhejc0bXpwaEtmbkhzZW4vZmlsZXMvSmF2YVNjcmlwdC0lMjBUaGUlMjBHb29kJTIwUG)
@@ -67,12 +67,27 @@ Tổng hợp danh sách eBooks về ngôn ngữ lập trình JavaScript.
 <div class="section-wrapper below">
 <section>
 
-## ReactJS
+## React
 
-Tổng hợp danh sách eBooks về thư viện ReactJS.
+Tổng hợp danh sách eBooks về thư viện React.js and React Native.
+
+### React.js
 
 - [The React Beginner's Handbook](/download?c=ebooks&s=aHR0cHM6Ly&e=Jvb2sucGRm&m=9mbGF2aW9jb3Blcy5jb20vYm9va3MvcmVhY3QtYmVnaW5uZXItaGFuZG)
 - [React JS Note for Professionals](/download?c=ebooks&s=aHR0cHM6Ly&e=xzLnBkZg%3D%3D&m=9nb2Fsa2lja2VyLmNvbS9SZWFjdEpTQm9vay9SZWFjdEpTTm90ZXNGb3JQcm9mZXNzaW9uYW)
+- [Learning React](/download?c=ebooks&s=aHR0cHM6Ly&e=N0LnBkZg%3D%3D&m=93d3cucmlwdHV0b3JpYWwuY29tL0Rvd25sb2FkL3JlYW)
+- [How to code in React.js](/download?c=ebooks&s=aHR0cDovL2&e=N0anMucGRm&m=Fzc2V0cy5kaWdpdGFsb2NlYW4uY29tL2Jvb2tzL2hvdy10by1jb2RlLWluLXJlYW)
+- [Fullstack React](/download?c=ebooks&s=aHR0cHM6Ly&e=Q3Nm8zWG5B&m=9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8wQjVfYllLU2FTeTNrTm1GbVNsRkpZWGhoVVhjL3ZpZXc%2FcmVzb3VyY2VrZXk9MC11SzI5RHkzZXo5S3oyM0)
+- [The Road to learn React](/download?c=ebooks&s=aHR0cDovL2&e=FjdC5wZGY%3D&m=dzbC1hcmNoaXZlLm1pdC5lZHUvbWVkaWEvcHJvZ3JhbXMvcndhbmRhLXN1bW1lci0yMDE4L21hdGVyaWFscy90aGUtcm9hZC10by1sZWFybi1yZW)
+
+### React Native
+
+- [React Native Notes for Professionals](/download?c=ebooks&s=aHR0cHM6Ly&e=5hbHMucGRm&m=9nb2Fsa2lja2VyLmNvbS9SZWFjdE5hdGl2ZUJvb2svUmVhY3ROYXRpdmVOb3Rlc0ZvclByb2Zlc3Npb2)
+- [Learning react-native](/download?c=ebooks&s=aHR0cHM6Ly&e=ZlLnBkZg%3D%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvcmVhY3QtbmF0aX)
+
+### React tổng hợp
+
+- [Learning React Router](/download?c=ebooks&s=aHR0cHM6Ly&e=VyLnBkZg%3D%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvcmVhY3Qtcm91dG)
 
 </section>
 </div>
@@ -85,6 +100,8 @@ Tổng hợp danh sách eBooks về thư viện ReactJS.
 Tổng hợp danh sách eBooks về Vue.js framework.
 
 - [The Vue.js 2 Handbook](/download?c=ebooks&s=aHR0cHM6Ly&e=9rLnBkZg%3D%3D&m=9mbGF2aW9jb3Blcy5jb20vYm9va3MvdnVlLWhhbmRib2)
+- [Learning Vue.js](/download?c=ebooks&s=aHR0cHM6Ly&e=pzLnBkZg%3D%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvdnVlLW)
+- [Learning Vue.js 2](/download?c=ebooks&s=aHR0cHM6Ly&e=MyLnBkZg%3D%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvdnVlan)
 
 </section>
 </div>
@@ -96,8 +113,26 @@ Tổng hợp danh sách eBooks về Vue.js framework.
 
 Tổng hợp danh sách eBooks về AngularJS and Angular framework.
 
+### AngularJS
+
 - [AngularJS Notes for Professionals](/download?c=ebooks&s=aHR0cHM6Ly&e=Fscy5wZGY%3D&m=9nb2Fsa2lja2VyLmNvbS9Bbmd1bGFySlNCb29rL0FuZ3VsYXJKU05vdGVzRm9yUHJvZmVzc2lvbm)
+- [Learning Angular JS](/download?c=ebooks&s=aHR0cHM6Ly&e=pzLnBkZg%3D%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvYW5ndWxhcm)
+
+### Angular
+
 - [Angular 2+ Notes for Professionals](/download?c=ebooks&s=aHR0cHM6Ly&e=5hbHMucGRm&m=9nb2Fsa2lja2VyLmNvbS9Bbmd1bGFyMkJvb2svQW5ndWxhcjJOb3Rlc0ZvclByb2Zlc3Npb2)
+- [Learning Angular](/download?c=ebooks&s=aHR0cHM6Ly&e=xhci5wZGY%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvYW5ndW)
+- [Learning Angular 2](/download?c=ebooks&s=aHR0cHM6Ly&e=0yLnBkZg%3D%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvYW5ndWxhci)
+
+### Angular tổng hợp
+
+- [Learning angular-cli](/download?c=ebooks&s=aHR0cHM6Ly&e=1jbGkucGRm&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvYW5ndWxhci)
+- [Learning angular-dart](/download?c=ebooks&s=aHR0cHM6Ly&e=J0LnBkZg%3D%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvYW5ndWxhci1kYX)
+- [Learning angularjs-directive](/download?c=ebooks&s=aHR0cHM6Ly&e=l2ZS5wZGY%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvYW5ndWxhcmpzLWRpcmVjdG)
+- [Learning angular-material](/download?c=ebooks&s=aHR0cHM6Ly&e=lhbC5wZGY%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvYW5ndWxhci1tYXRlcm)
+- [Learning angular-material2](/download?c=ebooks&s=aHR0cHM6Ly&e=lhbDIucGRm&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvYW5ndWxhci1tYXRlcm)
+- [Learning angular-ui-bootstrap](/download?c=ebooks&s=aHR0cHM6Ly&e=RyYXAucGRm&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvYW5ndWxhci11aS1ib290c3)
+- [Learning angular-ui-router](/download?c=ebooks&s=aHR0cHM6Ly&e=V0ZXIucGRm&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvYW5ndWxhci11aS1yb3)
 
 </section>
 </div>
@@ -110,6 +145,9 @@ Tổng hợp danh sách eBooks về AngularJS and Angular framework.
 Tổng hợp danh sách eBooks về thư viện jQuery.
 
 - [jQuery Notes for Professionals](/download?c=ebooks&s=aHR0cHM6Ly&e=Fscy5wZGY%3D&m=9nb2Fsa2lja2VyLmNvbS9qUXVlcnlCb29rL2pRdWVyeU5vdGVzRm9yUHJvZmVzc2lvbm)
+- [Learning jQuery](/download?c=ebooks&s=aHR0cHM6Ly&e=J5LnBkZg%3D%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvanF1ZX)
+- [Learning jQuery UI Library](/download?c=ebooks&s=aHR0cHM6Ly&e=JhcnkucGRm&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvanF1ZXJ5LXVpLWxpYn)
+- [Learning jquery-select2](/download?c=ebooks&s=aHR0cHM6Ly&e=VjdDIucGRm&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvanF1ZXJ5LXNlbG)
 
 </section>
 </div>
@@ -146,12 +184,13 @@ Tổng hợp danh sách eBooks về Svelte framework.
 Tổng hợp danh sách eBooks về Node.js.
 
 - [The Node.js Handbook](/download?c=ebooks&s=aHR0cHM6Ly&e=9vay5wZGY%3D&m=9mbGF2aW9jb3Blcy5jb20vYm9va3Mvbm9kZS1oYW5kYm)
-- [Node.js Note for Professionals](/download?c=ebooks&s=aHR0cHM6Ly&e=Fscy5wZGY%3D&m=9nb2Fsa2lja2VyLmNvbS9Ob2RlSlNCb29rL05vZGVKU05vdGVzRm9yUHJvZmVzc2lvbm)
+- [Node.js Notes for Professionals](/download?c=ebooks&s=aHR0cHM6Ly&e=Fscy5wZGY%3D&m=9nb2Fsa2lja2VyLmNvbS9Ob2RlSlNCb29rL05vZGVKU05vdGVzRm9yUHJvZmVzc2lvbm)
+- [Learning Node.js](/download?c=ebooks&s=aHR0cHM6Ly&e=1qcy5wZGY%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvbm9kZS)
 
 </section>
 </div>
 
-<div class="section-wrapper below">
+<div class="section-wrapper below margin-bottom">
 <section>
 
 ## Express.js
@@ -159,6 +198,9 @@ Tổng hợp danh sách eBooks về Node.js.
 Tổng hợp danh sách eBooks về Express.js framework.
 
 - [The Express Handbook](/download?c=ebooks&s=aHR0cHM6Ly&e=9vay5wZGY%3D&m=9mbGF2aW9jb3Blcy5jb20vYm9va3MvZXhwcmVzcy1oYW5kYm)
+- [Learning express](/download?c=ebooks&s=aHR0cHM6Ly&e=Vzcy5wZGY%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvZXhwcm)
 
 </section>
 </div>
+
+> 🔥🔥🔥 [**[VIDEO] Frontend Masters Web Development Courses [310.95 GB] PACK**](/download?c=ebooks&s=aHR0cHM6Ly&e=RBb0tJVUs3&m=9kcml2ZS5nb29nbGUuY29tL2RyaXZlL2ZvbGRlcnMvMVI1QlcxQzI3MXFlT2QyTGNHTzVfcGEzeG)

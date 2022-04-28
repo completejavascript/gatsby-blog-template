@@ -1,6 +1,6 @@
 ---
 template: "directory"
-title: "Free Ebooks"
+title: "Free eBooks"
 description: "Chia sẻ tài liệu ebooks về JavaScript, các thư viện JavaScript và JavaScript frameworks như ReactJS, VueJS, AngularJS, GatsbyJS, NextJS, NodeJS..."
 slug: "ebooks"
 ---
@@ -17,10 +17,12 @@ Chia sẻ tài liệu eBooks về JavaScript, thư viện JavaScript và JavaScr
 >
 > Để có được trải nghiệm tốt nhất, bạn **vui lòng mở link download ở tab mới**.
 
+<div class="table-contents ebooks">
+
 **Mục Lục**
 
 - [JavaScript](#javascript)
-- [ReactJS](#reactjs)
+- [React](#react)
 - [Vue.js](#vuejs)
 - [Angular](#angular)
 - [jQuery](#jquery)
@@ -29,7 +31,9 @@ Chia sẻ tài liệu eBooks về JavaScript, thư viện JavaScript và JavaScr
 - [Node.js](#nodejs)
 - [Express.js](#expressjs)
 
-<div class="section-wrapper">
+</div>
+
+<div class="section-wrapper below">
 <section>
 
 ## JavaScript
@@ -39,7 +43,7 @@ Tổng hợp danh sách eBooks về ngôn ngữ lập trình JavaScript.
 ### Sách JavaScript tổng hợp
 
 - [Eloquent JavaScript](https://eloquentjavascript.net/Eloquent_JavaScript.pdf)
-- [Learning JavaScript (RIP Tutorial)](https://riptutorial.com/Download/javascript.pdf)
+- [Learning JavaScript](https://riptutorial.com/Download/javascript.pdf)
 - [JavaScript Notes for Professionals](https://goalkicker.com/JavaScriptBook/JavaScriptNotesForProfessionals.pdf)
 - [A Smarter Way to Learn JavaScript](https://cdn.wccftech.com/wp-content/uploads/2014/10/JavaScript.pdf)
 - [JavaScript: The Good Parts](https://cdn.tc-library.org/Rhizr/Files/daaz74mzphKfnHsen/files/JavaScript-%20The%20Good%20Parts.pdf)
@@ -65,12 +69,27 @@ Tổng hợp danh sách eBooks về ngôn ngữ lập trình JavaScript.
 <div class="section-wrapper below">
 <section>
 
-## ReactJS
+## React
 
-Tổng hợp danh sách eBooks về thư viện ReactJS.
+Tổng hợp danh sách eBooks về thư viện React.js and React Native.
+
+### React.js
 
 - [The React Beginner's Handbook](https://flaviocopes.com/books/react-beginner-handbook.pdf)
-- [React JS Note for Professionals](https://goalkicker.com/ReactJSBook/ReactJSNotesForProfessionals.pdf)
+- [React JS Notes for Professionals](https://goalkicker.com/ReactJSBook/ReactJSNotesForProfessionals.pdf)
+- [Learning React](https://www.riptutorial.com/Download/react.pdf)
+- [How to code in React.js](http://assets.digitalocean.com/books/how-to-code-in-reactjs.pdf)
+- [Fullstack React](https://drive.google.com/file/d/0B5_bYKSaSy3kNmFmSlFJYXhhUXc/view?resourcekey=0-uK29Dy3ez9Kz23D76o3XnA)
+- [The Road to learn React](http://gsl-archive.mit.edu/media/programs/rwanda-summer-2018/materials/the-road-to-learn-react.pdf)
+
+### React Native
+
+- [React Native Notes for Professionals](https://goalkicker.com/ReactNativeBook/ReactNativeNotesForProfessionals.pdf)
+- [Learning react-native](https://riptutorial.com/Download/react-native.pdf)
+
+### React tổng hợp
+
+- [Learning React Router](https://riptutorial.com/Download/react-router.pdf)
 
 </section>
 </div>
@@ -83,6 +102,8 @@ Tổng hợp danh sách eBooks về thư viện ReactJS.
 Tổng hợp danh sách eBooks về Vue.js framework.
 
 - [The Vue.js 2 Handbook](https://flaviocopes.com/books/vue-handbook.pdf)
+- [Learning Vue.js](https://riptutorial.com/Download/vue-js.pdf)
+- [Learning Vue.js 2](https://riptutorial.com/Download/vuejs2.pdf)
 
 </section>
 </div>
@@ -94,8 +115,26 @@ Tổng hợp danh sách eBooks về Vue.js framework.
 
 Tổng hợp danh sách eBooks về AngularJS and Angular framework.
 
+### AngularJS
+
 - [Angular JS Notes for Professionals](https://goalkicker.com/AngularJSBook/AngularJSNotesForProfessionals.pdf)
+- [Learning Angular JS](https://riptutorial.com/Download/angularjs.pdf)
+
+### Angular
+
 - [Angular 2+ Notes for Professionals](https://goalkicker.com/Angular2Book/Angular2NotesForProfessionals.pdf)
+- [Learning Angular](https://riptutorial.com/Download/angular.pdf)
+- [Learning Angular 2](https://riptutorial.com/Download/angular-2.pdf)
+
+### Angular tổng hợp
+
+- [Learning angular-cli](https://riptutorial.com/Download/angular-cli.pdf)
+- [Learning angular-dart](https://riptutorial.com/Download/angular-dart.pdf)
+- [Learning angularjs-directive](https://riptutorial.com/Download/angularjs-directive.pdf)
+- [Learning angular-material](https://riptutorial.com/Download/angular-material.pdf)
+- [Learning angular-material2](https://riptutorial.com/Download/angular-material2.pdf)
+- [Learning angular-ui-bootstrap](https://riptutorial.com/Download/angular-ui-bootstrap.pdf)
+- [Learning angular-ui-router](https://riptutorial.com/Download/angular-ui-router.pdf)
 
 </section>
 </div>
@@ -108,6 +147,9 @@ Tổng hợp danh sách eBooks về AngularJS and Angular framework.
 Tổng hợp danh sách eBooks về thư viện jQuery.
 
 - [jQuery Notes for Professionals](https://goalkicker.com/jQueryBook/jQueryNotesForProfessionals.pdf)
+- [Learning jQuery](https://riptutorial.com/Download/jquery.pdf)
+- [Learning jQuery UI Library](https://riptutorial.com/Download/jquery-ui-library.pdf)
+- [Learning jquery-select2](https://riptutorial.com/Download/jquery-select2.pdf)
 
 </section>
 </div>
@@ -144,7 +186,8 @@ Tổng hợp danh sách eBooks về Svelte framework.
 Tổng hợp danh sách eBooks về Node.js.
 
 - [The Node.js Handbook](https://flaviocopes.com/books/node-handbook.pdf)
-- [Node.js Note for Professionals](https://goalkicker.com/NodeJSBook/NodeJSNotesForProfessionals.pdf)
+- [Node.js Notes for Professionals](https://goalkicker.com/NodeJSBook/NodeJSNotesForProfessionals.pdf)
+- [Learning Node.js](https://riptutorial.com/Download/node-js.pdf)
 
 </section>
 </div>
@@ -157,6 +200,9 @@ Tổng hợp danh sách eBooks về Node.js.
 Tổng hợp danh sách eBooks về Express.js framework.
 
 - [The Express Handbook](https://flaviocopes.com/books/express-handbook.pdf)
+- [Learning express](https://riptutorial.com/Download/express.pdf)
 
 </section>
 </div>
+
+> 🔥🔥🔥 [**Frontend Masters Web Development Courses [310.95 GB] PACK**](https://drive.google.com/drive/folders/1R5BW1C271qeOd2LcGO5_pa3xdAoKIUK7)
