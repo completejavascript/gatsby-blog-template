@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/completejavascript/completejavascript.com/compare/v1.16.0...v1.17.0) (2022-04-28)
+
+
+### Features
+
+* add ebooks download ([d1ab125](https://github.com/completejavascript/completejavascript.com/commit/d1ab12565880fdf2a458e479b2daf664778a789e))
+
+
+### Bug Fixes
+
+* **post:** add kế thừa built-in classes ([d9bb0a5](https://github.com/completejavascript/completejavascript.com/commit/d9bb0a593052b3ea8a19e4bb986a8c02b8b15886))
+* **post:** add post absolute-import ([3109ce1](https://github.com/completejavascript/completejavascript.com/commit/3109ce12a89dfdb348f7539f7345755122736a8f))
+* **post:** add private property and methods in class ([aa8a325](https://github.com/completejavascript/completejavascript.com/commit/aa8a3252b4d70af6d357c1a1b17a50908cb591f1))
+* **post:** replace none-break spaces with normal spaces ([06a9b71](https://github.com/completejavascript/completejavascript.com/commit/06a9b71d489808b8db39cbbec0f3d741ae9b7786))
+* **post:** update links to tools.completejavascript.com ([bfe64fc](https://github.com/completejavascript/completejavascript.com/commit/bfe64fc6fcaa717575eb0708d6ed4ab9ae2a1191))
+* **post:** update post create-react-app create & deploy github pages ([0dcb40d](https://github.com/completejavascript/completejavascript.com/commit/0dcb40d8afec73c12038db07db555ca5505d3829))
+* **post:** update post youtube thumbnail ([debeeea](https://github.com/completejavascript/completejavascript.com/commit/debeeea43cc0c6b2040c0c2ead15bb46f9b7ed1d))
+* update ebooks ([919aac2](https://github.com/completejavascript/completejavascript.com/commit/919aac23a82803d20100f2f8ea52ff7a93eebf43))
+* update layout directory-template and download page for ads ([884da62](https://github.com/completejavascript/completejavascript.com/commit/884da624634c150365edaa6e4370d1ae6d03c0ac))
+
 ## [1.16.0](https://github.com/completejavascript/completejavascript.com/compare/v1.15.4...v1.16.0) (2022-02-27)
 
 
