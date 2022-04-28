@@ -189,7 +189,7 @@ const CommunitySection = () => (
         </blockquote>
         <p className="row">
           Tham gia ngay để học JavaScript và tiến bộ mỗi ngày cùng với hơn{" "}
-          <b>15K lập trình viên!</b>
+          <b>17K lập trình viên!</b>
         </p>
         <div className="row">
           <AutoLink className="color-yellow" to={siteConfig.jsGroupUrl}>

@@ -4,7 +4,7 @@ import AdSense from "react-adsense";
 import MainLayout from "../layout/index";
 import MainContainer from "../components/MainContainer/MainContainer";
 import useWindowSize from "../hooks/useWindowSize";
-import { SidebarLeft, SidebarRight } from "../components/Sidebar/Sidebar";
+import { SidebarLeft, SidebarRightAds } from "../components/Sidebar/Sidebar";
 import { siteConfig, adsConfig } from "../../data/config";
 import { useSlash, delay } from "../utils/helpers";
 import { decodeDownloadUrl } from "../utils/downloadUrlHelper";
@@ -100,7 +100,7 @@ export default function DownloadPage({ location }) {
       <MainContainer
         content={<DownloadContent locationSearch={location.search} />}
         sidebarLeft={<SidebarLeft />}
-        sidebarRight={<SidebarRight />}
+        sidebarRight={<SidebarRightAds />}
       />
     </MainLayout>
   );

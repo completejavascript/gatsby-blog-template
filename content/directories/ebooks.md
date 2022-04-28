@@ -11,11 +11,11 @@ Chia sẻ tài liệu eBooks về JavaScript, thư viện JavaScript và JavaScr
 >
 > Trang web này dùng để chia sẻ các tài liệu **hoàn toàn miễn phí và không lưu trữ bất kỳ tệp tin nào** trên máy chủ.
 >
-> Dưới đây là danh sách các eBooks và liên kết đến nội dung được cung cấp **bởi những trang web khác**.
->
 > Vui lòng **liên hệ với các nhà cung cấp nội dung** để xóa nội dung bản quyền (nếu có).
->
-> Để có được trải nghiệm tốt nhất, bạn **vui lòng mở link download ở tab mới**.
+
+Sau đây là danh sách các eBooks và liên kết đến nội dung được cung cấp bởi những trang web khác.
+
+<div class="table-contents ebooks">
 
 **Mục Lục**
 
@@ -28,6 +28,8 @@ Chia sẻ tài liệu eBooks về JavaScript, thư viện JavaScript và JavaScr
 - [Svelte](#svelte)
 - [Node.js](#nodejs)
 - [Express.js](#expressjs)
+
+</div>
 
 <div class="section-wrapper">
 <section>

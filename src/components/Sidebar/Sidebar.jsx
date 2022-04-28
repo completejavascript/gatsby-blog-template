@@ -95,4 +95,28 @@ function SidebarRight({
   );
 }
 
-export { SidebarLeft, SidebarRight };
+function SidebarRightAds() {
+  return (
+    <SidebarContainer>
+      {adsConfig.hasAdsense && adsConfig.adsenseUnits?.sidebarTop && (
+        <div className="width-full flex justify-content-center padding-top">
+          <AdSense.Google {...adsConfig.adsenseUnits?.sidebarTop} />
+        </div>
+      )}
+
+      {adsConfig.hasAdsense && adsConfig.adsenseUnits?.sidebarMiddle && (
+        <div className="width-full flex justify-content-center padding-top">
+          <AdSense.Google {...adsConfig.adsenseUnits?.sidebarMiddle} />
+        </div>
+      )}
+
+      {adsConfig.hasAdsense && adsConfig.adsenseUnits?.sidebarBottomRight && (
+        <div className="position-sticky last-item padding-top padding-bottom">
+          <AdSense.Google {...adsConfig.adsenseUnits?.sidebarBottomRight} />
+        </div>
+      )}
+    </SidebarContainer>
+  );
+}
+
+export { SidebarLeft, SidebarRight, SidebarRightAds };

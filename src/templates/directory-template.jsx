@@ -2,14 +2,15 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
+import AdSense from "react-adsense";
 import Header from "../components/Header/Header";
 import Page from "../components/Page/Page";
 import SEO from "../components/SEO/SEO";
 import MainContainer from "../components/MainContainer/MainContainer";
-import GithubComment from "../components/Comment/GithubComment";
+// import GithubComment from "../components/Comment/GithubComment";
+import { SidebarLeft, SidebarRightAds } from "../components/Sidebar/Sidebar";
 import { siteConfig, adsConfig } from "../../data/config";
 import { useSlash } from "../utils/helpers";
-import AdSense from "react-adsense";
 
 const DirectoryTemplate = ({ data, pageContext }) => {
   const { slug } = pageContext;
@@ -44,7 +45,12 @@ const DirectoryTemplate = ({ data, pageContext }) => {
       </Helmet>
       <SEO postPath={slug} postNode={postNode} postSEO />
 
-      <MainContainer className="directory-container" content={content} />
+      <MainContainer
+        className="directory-container"
+        content={content}
+        sidebarLeft={<SidebarLeft />}
+        sidebarRight={<SidebarRightAds />}
+      />
     </Layout>
   );
 };

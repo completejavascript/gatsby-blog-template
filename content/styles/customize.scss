@@ -153,17 +153,45 @@
         color: #3f3f3f;
       }
     }
+    .table-contents.ebooks {
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .directory-container {
+    .directory-content-wrapper {
+      .table-contents.ebooks {
+        ul {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 900px) {
   .directory-container {
     .directory-content-wrapper {
-      ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 1.5rem;
-        grid-row-gap: 0.5rem;
+      .section-wrapper {
+        ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 1.5rem;
+          grid-row-gap: 0.5rem;
+        }
+      }
+      .table-contents.ebooks {
+        ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
       }
     }
   }
