@@ -28,6 +28,7 @@ Sau đây là danh sách các eBooks và liên kết đến nội dung được 
 - [Svelte](#svelte)
 - [Node.js](#nodejs)
 - [Express.js](#expressjs)
+- [Tài liệu khác](#tài-liệu-khác)
 
 </div>
 
@@ -102,6 +103,8 @@ Tổng hợp danh sách eBooks về Vue.js framework.
 - [The Vue.js 2 Handbook](/download?c=ebooks&s=aHR0cHM6Ly&e=9rLnBkZg%3D%3D&m=9mbGF2aW9jb3Blcy5jb20vYm9va3MvdnVlLWhhbmRib2)
 - [Learning Vue.js](/download?c=ebooks&s=aHR0cHM6Ly&e=pzLnBkZg%3D%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvdnVlLW)
 - [Learning Vue.js 2](/download?c=ebooks&s=aHR0cHM6Ly&e=MyLnBkZg%3D%3D&m=9yaXB0dXRvcmlhbC5jb20vRG93bmxvYWQvdnVlan)
+- [Vue.js Up & Running](/download?c=ebooks&s=aHR0cHM6Ly&e=5nLnBkZg%3D%3D&m=93d3cucHJvZ3JhbW1lci1ib29rcy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMTgvMTEvVnVlLWpzLVVwLWFuZC1SdW5uaW)
+- [Learning Vue.js 2 (Packt)](/download?c=ebooks&s=aHR0cHM6Ly&e=AxNikucGRm&m=9zZC5ibGFja2JhbGwubHYvbGlicmFyeS9MZWFybmluZ19WdWUuanNfMl8oMj)
 
 </section>
 </div>
@@ -203,4 +206,12 @@ Tổng hợp danh sách eBooks về Express.js framework.
 </section>
 </div>
 
-> 🔥🔥🔥 [**[VIDEO] Frontend Masters Web Development Courses [310.95 GB] PACK**](/download?c=ebooks&s=aHR0cHM6Ly&e=RBb0tJVUs3&m=9kcml2ZS5nb29nbGUuY29tL2RyaXZlL2ZvbGRlcnMvMVI1QlcxQzI3MXFlT2QyTGNHTzVfcGEzeG)
+<div class="section-wrapper below margin-bottom">
+<section>
+
+## Tài liệu khác
+
+- [[VIDEO] Frontend Masters Web Development Courses [310.95 GB] PACK](/download?c=ebooks&s=aHR0cHM6Ly&e=RBb0tJVUs3&m=9kcml2ZS5nb29nbGUuY29tL2RyaXZlL2ZvbGRlcnMvMVI1QlcxQzI3MXFlT2QyTGNHTzVfcGEzeG)
+
+</section>
+</div>
