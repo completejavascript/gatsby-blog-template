@@ -83,6 +83,25 @@ function DownloadContent({ locationSearch }) {
         )}
       </div>
 
+      <div className="margin-top-3 margin-bottom-3">
+        <blockquote>
+          <p>
+            📝 <strong>Chú ý:</strong>
+          </p>
+          <p>
+            Trang web này dùng để chia sẻ các tài liệu{" "}
+            <strong>
+              hoàn toàn miễn phí và không lưu trữ bất kỳ tệp tin nào
+            </strong>{" "}
+            trên máy chủ.
+          </p>
+          <p>
+            Vui lòng <strong>liên hệ với các nhà cung cấp nội dung</strong> để
+            xóa nội dung bản quyền (nếu có).
+          </p>
+        </blockquote>
+      </div>
+
       {adsConfig.hasAdsense && adsConfig.adsenseUnits?.postBottom && (
         <AdSense.Google {...adsConfig.adsenseUnits?.postBottom} />
       )}
@@ -94,7 +113,7 @@ export default function DownloadPage({ location }) {
   const canonical = `${siteConfig.siteUrl}/download`;
   return (
     <MainLayout>
-      <Helmet title={`Free PDF Download - ${siteConfig.siteTitle}`}>
+      <Helmet title={`Free Download - ${siteConfig.siteTitle}`}>
         <link rel="canonical" href={useSlash(canonical)} />
       </Helmet>
       <MainContainer
