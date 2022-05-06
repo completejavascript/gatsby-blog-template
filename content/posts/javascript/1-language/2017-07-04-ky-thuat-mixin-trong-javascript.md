@@ -11,6 +11,7 @@ title: "Kĩ thuật Mixin trong JavaScript"
 series: "JavaScript: class"
 tags:
   - Class
+  - ES6
 ---
 
 Trong JavaScript, bạn chỉ có thể [kế thừa](/ke-thua-class-trong-javascript/) từ một đối tượng duy nhất. Nghĩa là chỉ có một `[[Prototype]]` cho một đối tượng. Và mỗi lớp chỉ có thể mở rộng **duy nhất** - một lớp khác.

@@ -12,6 +12,7 @@ shortTitle: "Kiểm tra lớp với toán tử instanceof trong JS"
 series: "JavaScript: class"
 tags:
   - Class
+  - ES6
 ---
 
 Toán tử [`instanceof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) cho phép kiểm tra một đối tượng có thuộc [lớp](/cu-phap-class-trong-javascript-co-ban/) nào đó hay không. Và toán tử này cũng tính đến [kế thừa](/ke-thua-class-trong-javascript/).
