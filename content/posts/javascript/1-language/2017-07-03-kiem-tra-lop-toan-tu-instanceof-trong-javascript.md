@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/kiem-tra-lop-toan-tu-instanceof-trong-javascript.png"
 keywords: "kiểm tra lớp, toán tử instanceof"
-description: ""
+description: "Toán tử instanceof cho phép kiểm tra một đối tượng có thuộc lớp nào đó hay không. Và toán tử này cũng tính đến kế thừa. Sau đây là cách sử dụng instanceof trong JavaScript."
 slug: kiem-tra-lop-toan-tu-instanceof-trong-javascript
 title: "Kiểm tra lớp với toán tử instanceof trong JavaScript"
 shortTitle: "Kiểm tra lớp với toán tử instanceof trong JS"

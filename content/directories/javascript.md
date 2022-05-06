@@ -109,7 +109,8 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Thuộc tính và phương thức static của class trong JS](/thuoc-tinh-phuong-thuc-static-class-trong-javascript/)
 - [Thuộc tính và phương thức private của class trong JS](/thuoc-tinh-phuong-thuc-private-class-trong-javascript/)
 - [Kế thừa built-in class trong JavaScript](/ke-thua-built-in-class-trong-javascript/)
-- [Kiểm tra lớp với toán tử instanceof trong JS](/kiem-tra-lop-toan-tu-instanceof-trong-javascript/)
+- [Kiểm tra lớp với toán tử instanceof](/kiem-tra-lop-toan-tu-instanceof-trong-javascript/)
+- [Kĩ thuật mixin trong JavaScript](/ky-thuat-mixin-trong-javascript/)
 
 ### Callback, Promise, async/await
 
