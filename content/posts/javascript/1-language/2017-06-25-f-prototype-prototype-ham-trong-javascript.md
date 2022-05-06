@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/f-prototype-prototype-ham-trong-javascript.png"
 keywords: "f.prototype,f prototype,prototype của hàm"
-description: ""
+description: "Nếu F.prototype là một object thì toán tử new sẽ sử dụng thuộc tính đó để gán cho [[Prototype]] của đối tượng mới."
 slug: f-prototype-prototype-ham-trong-javascript
 title: "F.prototype - Prototype của hàm trong JavaScript"
 series: "JavaScript: prototype"

@@ -5,7 +5,7 @@ template: "post"
 directory: "JavaScript"
 cover: "../../../images/javascript/ke-thua-built-in-class-trong-javascript.png"
 keywords: "kế thừa built-in class"
-description: ""
+description: "Built-in class là các class được định nghĩa bởi JavaScript. Bạn có thể kế thừa built-in class trong JavaScript như Array, Map,..."
 slug: ke-thua-built-in-class-trong-javascript
 title: "Kế thừa built-in class trong JavaScript"
 series: "JavaScript: class"
