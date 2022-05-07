@@ -112,6 +112,10 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Kiểm tra lớp với toán tử instanceof](/kiem-tra-lop-toan-tu-instanceof-trong-javascript/)
 - [Kĩ thuật mixin trong JavaScript](/ky-thuat-mixin-trong-javascript/)
 
+### Quản lý lỗi
+
+- [Quản lý lỗi với try...catch trong JS](/quan-ly-loi-voi-try-catch-trong-javascript/)
+
 ### Callback, Promise, async/await
 
 - [Bất đồng bộ với callback, promise, async/await](/xu-ly-bat-dong-bo-callback-promise-async-await/)
