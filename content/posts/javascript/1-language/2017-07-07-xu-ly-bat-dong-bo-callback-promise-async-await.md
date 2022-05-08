@@ -1,5 +1,5 @@
 ---
-date: "2017-07-22T23:00:48Z"
+date: "2017-07-07T23:00:48Z"
 update: "2019-02-20T23:00:48Z"
 template: "post"
 directory: "JavaScript"
@@ -221,9 +221,13 @@ Và theo mình, đây có lẽ là cách tốt nhất để xử lý bất đồ
 
 ## Lời kết
 
-Trên đây là một số kiến thức cơ bản về xử lý bất đồng bộ trong JavaScript với callback, promise và async/await. Bài này không viết chi tiết về Promise hay async/await mà chỉ giúp bạn thấy được cách sử dụng cơ bản, cũng như ưu điểm của chúng so với việc sử dụng callback thông thường.
+Trên đây là một số kiến thức cơ bản về xử lý bất đồng bộ trong JavaScript với callback, promise và async/await.
 
-Để biết thêm về Promise và async/await, bạn có thể tham khảo thêm trong các bài viết dưới đây:
+Bài này không viết chi tiết về Promise hay async/await mà chỉ giúp bạn thấy được cách sử dụng cơ bản, cũng như ưu điểm của chúng so với việc sử dụng callback thông thường.
+
+Về chi tiết thì trong các bài viết sau mình sẽ giới thiệu về từng loại xử lý bất đồng bộ trên.
+
+Tham khảo:
 
 - [Asynchronous Programming](http://eloquentjavascript.net/11_async.html)
 - [Promise - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
@@ -231,5 +235,3 @@ Trên đây là một số kiến thức cơ bản về xử lý bất đồng b
 - [Async/await](https://javascript.info/async-await)
 - [Async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 - [Await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
-
-Xin chào và hẹn gặp lại, thân ái!
