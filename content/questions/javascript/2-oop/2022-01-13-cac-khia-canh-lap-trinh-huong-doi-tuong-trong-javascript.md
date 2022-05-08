@@ -10,7 +10,7 @@ slug: cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript
 title: "Các khía cạnh lập trình hướng đối tượng trong JavaScript"
 series: "JavaScript Question: object-oriented"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS OOP
 ---
 
 Trong bài viết về [lập trình hướng đối tượng với JavaScript](/lap-trinh-huong-doi-tuong-voi-javascript/), mình đã so sánh ngôn ngữ lập trình dựa trên đối tượng với ngôn ngữ lập trình hướng đối tượng.

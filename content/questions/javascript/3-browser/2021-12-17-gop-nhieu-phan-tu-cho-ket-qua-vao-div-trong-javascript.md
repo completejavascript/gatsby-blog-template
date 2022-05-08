@@ -11,7 +11,7 @@ title: "Cách gộp nhiều phần tử rồi cho kết quả vào một thẻ d
 shortTitle: "Gộp nhiều phần tử cho vào một thẻ div?"
 series: "JavaScript Question: DOM"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS DOM
 ---
 
 Sau đây là cách để gộp nhiều phần tử rồi cho kết quả vào một thẻ div trong JavaScript.

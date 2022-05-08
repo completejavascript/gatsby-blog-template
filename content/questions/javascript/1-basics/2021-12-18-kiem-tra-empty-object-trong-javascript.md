@@ -11,7 +11,7 @@ description: "Bạn đã biết cách kiểm tra empty object trong JavaScript h
 cover: "../../../images/questions/javascript-question-basics.png"
 series: "JavaScript Question: cơ bản"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS cơ bản
 ---
 
 Giả sử bạn đang muốn **kiểm tra empty object** đối với một giá trị cho trước, với empty object được hiểu như sau:

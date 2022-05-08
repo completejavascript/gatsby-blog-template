@@ -11,7 +11,7 @@ description: "Khi lập trình, nhiều hàm phải bắt buộc truyền tham s
 cover: "../../../images/questions/javascript-question-basics.png"
 series: "JavaScript Question: cơ bản"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS cơ bản
 ---
 
 Khi lập trình, nhiều hàm **phải bắt buộc truyền tham số vào**. Ngược lại thì hàm sẽ không có ý nghĩa gì cả. Vì vậy, bài viết này sẽ giới thiệu với bạn cách để làm được điều đó.

@@ -10,7 +10,7 @@ slug: lay-thong-tin-the-meta-trong-javascript
 title: "Lấy thông tin thẻ meta trong JavaScript?"
 series: "JavaScript Question: DOM"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS DOM
 ---
 
 Để lấy thông tin của thẻ meta trong JavaScript, bạn có thể sử dụng một trong hai phương thức sau để tìm thẻ meta:

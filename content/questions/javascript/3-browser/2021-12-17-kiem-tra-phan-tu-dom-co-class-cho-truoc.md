@@ -11,7 +11,7 @@ title: "Cách kiểm tra phần tử DOM chứa class cho trước trong JavaScr
 shortTitle: "Kiểm tra phần tử DOM chứa class 'X'?"
 series: "JavaScript Question: DOM"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS DOM
 ---
 
 Đôi khi bạn cần kiểm tra phần tử DOM chứa class cho trước "X" hay không.

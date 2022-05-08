@@ -11,7 +11,7 @@ title: "Cách sử dụng hằng số trong ES5 và ES6?"
 shortTitle: "Sử dụng hằng số trong ES5 và ES6?"
 series: "JavaScript Question: cơ bản"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS cơ bản
 ---
 
 Nhiều bạn khi lập trình JavaScript hay sử dụng `let` hoặc `var` trong mọi trường hợp, kể cả với **hằng số**.

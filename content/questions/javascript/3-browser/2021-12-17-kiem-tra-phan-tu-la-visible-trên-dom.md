@@ -11,7 +11,7 @@ title: "Cách kiểm tra phần tử là visible trên DOM?"
 shortTitle: "Kiểm tra phần tử là visible trên DOM?"
 series: "JavaScript Question: DOM"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS DOM
 ---
 
 Có hai cách để **kiểm tra phần tử là visible** trên DOM.

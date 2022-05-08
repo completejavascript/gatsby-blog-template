@@ -11,7 +11,7 @@ title: "Phân biệt call, apply và bind trong JavaScript"
 shortTitle: "Phân biệt call, apply và bind trong JS"
 series: "JavaScript Question: cơ bản"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS cơ bản
 ---
 
 Gần đây, mình có đọc được cách sử dụng ba hàm `call`, `apply` và `bind` trong JavaScript.

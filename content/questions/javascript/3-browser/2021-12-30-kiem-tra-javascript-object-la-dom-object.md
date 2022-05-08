@@ -11,7 +11,7 @@ title: "Cách kiểm tra JavaScript Object là DOM object?"
 shortTitle: "Kiểm tra JavaScript Object là DOM?"
 series: "JavaScript Question: DOM"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS DOM
 ---
 
 DOM (Document Object Model): là thành phần biểu diễn cấu trúc dữ liệu của một trang web, bao gồm các tag, phần tử, thuộc tính, class,...

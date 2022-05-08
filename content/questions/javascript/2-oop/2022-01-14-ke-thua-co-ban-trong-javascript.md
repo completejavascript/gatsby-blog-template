@@ -10,7 +10,7 @@ slug: ke-thua-co-ban-trong-javascript
 title: "Các cách kế thừa cơ bản trong JavaScript"
 series: "JavaScript Question: object-oriented"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS OOP
 ---
 
 Việc kế thừa trong lập trình là cần thiết nếu bạn muốn giảm lượng code phải viết và quản lý dễ dàng hơn. Vậy triển khai [kế thừa trong JavaScript](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/) như thế nào?

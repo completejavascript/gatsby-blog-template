@@ -11,7 +11,7 @@ title: "Cách thay thế phần tử DOM trong JavaScript?"
 shortTitle: "Thay thế phần tử DOM trong JavaScript?"
 series: "JavaScript Question: DOM"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS DOM
 ---
 
 Làm sao để thay thế phần tử DOM trong JavaScript bằng một phần tử khác?

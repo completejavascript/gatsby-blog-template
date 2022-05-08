@@ -10,7 +10,7 @@ slug: lap-trinh-huong-doi-tuong-voi-javascript
 title: "Lập trình hướng đối tượng với JavaScript?"
 series: "JavaScript Question: object-oriented"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS OOP
 ---
 
 Nếu nói là **lập trình hướng đối tượng** (object-oriented) với JavaScript thì không chính xác lắm. Thực chất, JavaScript là ngôn ngữ lập trình **dựa trên đối tượng** [object-based](/javascript-la-gi/).

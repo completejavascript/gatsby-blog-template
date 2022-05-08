@@ -10,7 +10,7 @@ slug: xoa-phan-tu-dom-node-trong-javascript
 title: "Cách xóa phần tử DOM trong JavaScript?"
 series: "JavaScript Question: DOM"
 tags:
-  - Câu hỏi JavaScript
+  - Câu hỏi JS DOM
 ---
 
 Để xóa phần tử DOM trong JavaScript, bạn có thể sử dụng phương thức `remove()` hoặc `removeChild()`.
