@@ -122,6 +122,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Bất đồng bộ với callback, promise, async/await](/xu-ly-bat-dong-bo-callback-promise-async-await/)
 - [Callback là gì? Callback trong JavaScript](/callback-la-gi-callback-trong-javascript/)
 - [Promise là gì? Promise trong JavaScript](/promise-la-gi-promise-trong-javascript/)
+- [Chuỗi promise trong JavaScript](/chuoi-promise-trong-javascript/)
 - [Kết thúc Promise chaining](/ket-thuc-som-promise-chaining-trong-javascript/)
 - [Bất đồng bộ song song hay tuần tự?](/xu-ly-bat-dong-bo-song-song-tuan-tu/)
 
