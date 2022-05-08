@@ -1,7 +1,7 @@
 {
   "name": "completejavascript.com",
   "description": "The source code for completejavascript.com blog.",
-  "version": "1.17.0",
+  "version": "1.18.0",
   "author": "Lam Pham <completejavascript.super@gmail.com>",
   "dependencies": {
     "@weknow/gatsby-remark-codepen": "^0.1.0",

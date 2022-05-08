@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.18.0](https://github.com/completejavascript/completejavascript.com/compare/v1.17.0...v1.18.0) (2022-05-08)
+
+
+### Features
+
+* add widgetTag into left sidebar ([832a63b](https://github.com/completejavascript/completejavascript.com/commit/832a63b992490b267621ac21bcef54561b98c2e3))
+
+
+### Bug Fixes
+
+* **post:** add javascript mixins ([94c6c75](https://github.com/completejavascript/completejavascript.com/commit/94c6c756a4211d04cad03bcc2302a3791ceeab99))
+* **post:** add javascript post - callback ([921a583](https://github.com/completejavascript/completejavascript.com/commit/921a5831009edaa63f07dd7dedb303dec7c39c6a))
+* **post:** add javascript post - promise api ([8d882a3](https://github.com/completejavascript/completejavascript.com/commit/8d882a30b686114f6beb54303728c30c5f21b70e))
+* **post:** add javascript post error-handling-promise ([bb70a4d](https://github.com/completejavascript/completejavascript.com/commit/bb70a4ddb719558a4c619d8f8c3d1848260c12d5))
+* **post:** add post exten-error ([e76f148](https://github.com/completejavascript/completejavascript.com/commit/e76f1486b59768568f266021ae050dea012e4bf6))
+* **post:** add post instanceof ([64b2de6](https://github.com/completejavascript/completejavascript.com/commit/64b2de6b2b14c642f1ecb4b10899618492cb417d))
+* **post:** add post javascript promise-chaining ([d076703](https://github.com/completejavascript/completejavascript.com/commit/d0767037181a1e7c79147fa1fdd0af9534a85727))
+* **post:** add post javascript-promise ([941e3eb](https://github.com/completejavascript/completejavascript.com/commit/941e3eb85654f06587d15c784727199de7fa3c85))
+* **post:** add post js-question - es6 vs typescript ([c7b328a](https://github.com/completejavascript/completejavascript.com/commit/c7b328aed6ffde229472d47df8d3240b43f2a577))
+* **post:** change folder for javascript questions ([c2c875d](https://github.com/completejavascript/completejavascript.com/commit/c2c875d240a94a64880cb25058f2af4aa5cf7ac9))
+* **post:** update javascript question - tags ([d954548](https://github.com/completejavascript/completejavascript.com/commit/d9545480f9e0762a87650aaea3118d50ab37719f))
+* **post:** update javascript question folder dom ([e962691](https://github.com/completejavascript/completejavascript.com/commit/e962691882e75944950f69cc69ba25447ebb4b47))
+* **post:** update post ([8943dfb](https://github.com/completejavascript/completejavascript.com/commit/8943dfba1b6d211d53a18f871d487b7067555cd1))
+* **post:** update post description ([f8d54ae](https://github.com/completejavascript/completejavascript.com/commit/f8d54ae387b2adeced5cd06510b9b3b75edb9f55))
+* **post:** update post finish promise-chaining ([5d91542](https://github.com/completejavascript/completejavascript.com/commit/5d915429603965983065d1929fdc21beede8bb29))
+* **post:** update post javascript async song-song-tuan-tu ([0d023b0](https://github.com/completejavascript/completejavascript.com/commit/0d023b0d12b552abaf019fa239337ce8c7d15c23))
+* **post:** update post javascript-question tags ([f94677e](https://github.com/completejavascript/completejavascript.com/commit/f94677e3c5925e1be8ed6a00c49ddbf4c0ba1fcc))
+* **post:** update post tags ([82a0fbc](https://github.com/completejavascript/completejavascript.com/commit/82a0fbc4a61ff5506b0f63e82a02bd0008a9e7dd))
+* **post:** update post try...catch ([e34b11a](https://github.com/completejavascript/completejavascript.com/commit/e34b11a64bd0d2d67387930bed2cb8662bf5b0dc))
+* update content for download page ([72d6263](https://github.com/completejavascript/completejavascript.com/commit/72d62637509d1c8c18d2204a51798c91ae92db3c))
+* update ebooks ([7222b9b](https://github.com/completejavascript/completejavascript.com/commit/7222b9b960a50c4f81347ad2227dd57af0c8a191))
+
 ## [1.17.0](https://github.com/completejavascript/completejavascript.com/compare/v1.16.0...v1.17.0) (2022-04-28)
 
 
