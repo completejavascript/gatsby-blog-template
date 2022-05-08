@@ -15,9 +15,9 @@ tags:
   - Promise
 ---
 
-Khi lập trình JavaScript, bạn sẽ thường xuyên phải thực hiện các công việc mất thời gian như: request lên server, lấy dữ liệu từ [database](/cai-dat-mongodb-tren-windows-moi-nhat/), đọc/ghi file,... Nếu bạn chỉ xử lý đồng bộ thôi thì chắc chắn sẽ rất mất thời gian. Để giải quyết vấn đề này, JavaScript cung cấp một số công cụ hỗ trợ bạn **xử lý bất đồng bộ** rất tốt như sử dụng **callback**, [**promise**](/tag/promise/) hay **async/await**.
+Khi lập trình JavaScript, bạn sẽ thường xuyên phải thực hiện các công việc mất thời gian như: request lên server, lấy dữ liệu từ [database](/cai-dat-mongodb-tren-windows-moi-nhat/), đọc/ghi file,... Nếu bạn chỉ xử lý đồng bộ thôi thì chắc chắn sẽ rất mất thời gian. Để giải quyết vấn đề này, JavaScript cung cấp một số công cụ hỗ trợ bạn **xử lý bất đồng bộ** rất tốt như sử dụng [callback](/callback-la-gi-callback-trong-javascript/), [**promise**](/tag/promise/) hay **async/await**.
 
-Trong bài viết này, mình sẽ cùng nhau tìm hiểu xem xử lý bất đồng bộ là gì? Tại sao phải xử lý bất đồng bộ? Và các cách để xử lý bất đồng bộ trong JavaScript. Mời bạn theo dõi bài viết!
+Trong bài viết này, mình sẽ cùng tìm hiểu xem xử lý bất đồng bộ là gì? Tại sao phải xử lý bất đồng bộ? Và các cách để xử lý bất đồng bộ trong JavaScript. Mời bạn theo dõi bài viết!
 
 ## Cơ bản về xử lý bất đồng bộ
 
@@ -77,7 +77,7 @@ doAsync(
 );
 ```
 
-Ở đây, hàm **doAsync** là một hàm bất đồng bộ với 2 hàm callback là: **onSuccess** và **onError**. Khi request trên thành công thì hàm _onSuccess_ sẽ được gọi, ngược lại hàm _onError_ sẽ được gọi. Khá dễ hiểu và dễ triển khai phải không?
+Ở đây, hàm `doAsync` là một hàm bất đồng bộ với 2 hàm callback là: `onSuccess` và `onError`. Khi request trên thành công thì hàm `onSuccess` sẽ được gọi, ngược lại hàm `onError` sẽ được gọi. Khá dễ hiểu và dễ triển khai phải không?
 
 Tuy nhiên, thử tưởng tượng bạn phải thực hiện 2 request liên tiếp, với request thứ 2 chỉ thực hiện khi request thứ nhất thực hiện xong:
 
@@ -118,16 +118,16 @@ let promise = new Promise(function (resolve, reject) {
 });
 ```
 
-Trong đó, hàm được truyền vào **new Promise** gọi là **executor**.
+Trong đó, hàm được truyền vào `new Promise` gọi là **executor**.
 
-Ban đầu, Promise có state là _pending_ và kết quả _value_ là **undefined**. Khi executor kết thúc công việc, nó sẽ gọi đến 1 trong 2 hàm được truyền vào:
+Ban đầu, Promise có state là `pending` và kết quả `value` là `undefined`. Khi executor kết thúc công việc, nó sẽ gọi đến 1 trong 2 hàm được truyền vào:
 
-- **resolve(value)**: để xác định rằng công việc đã thực hiện thành công
-  - state chuyển thành _fulfilled_
-  - kết quả là _value_
-- **reject(error)**: để xác định rằng đã có lỗi xảy ra
-  - state chuyển thành _rejected_
-  - kết quả là _error_
+- `resolve(value)`: để xác định rằng công việc đã thực hiện thành công
+  - state chuyển thành `fulfilled`
+  - kết quả là `value`
+- `reject(error)`: để xác định rằng đã có lỗi xảy ra
+  - state chuyển thành `rejected`
+  - kết quả là `error`
 
 Khi sử dụng Promise, ví dụ phía trên sẽ trở thành:
 
