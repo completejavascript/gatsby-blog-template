@@ -394,6 +394,7 @@ exports.createPages = async ({ graphql, actions }) => {
     totalEdges: postEdges,
     pageTemplate: blogPageTemplate,
     templateConfig: blogTemplateConfig,
+    tagList: postTagList,
   });
 
   // Create freebie pages
@@ -403,6 +404,7 @@ exports.createPages = async ({ graphql, actions }) => {
     totalEdges: freebieEdges,
     pageTemplate: blogPageTemplate,
     templateConfig: freebieTemplateConfig,
+    tagList: freebieTagList,
   });
 
   // Create question pages
@@ -412,6 +414,7 @@ exports.createPages = async ({ graphql, actions }) => {
     totalEdges: questionEdges,
     pageTemplate: blogPageTemplate,
     templateConfig: questionTemplateConfig,
+    tagList: questionTagList,
   });
 };
 
@@ -466,6 +469,7 @@ function createBlogPages({
   totalEdges = [],
   pageTemplate,
   templateConfig,
+  tagList = [],
 }) {
   const itemsPerPage = templateConfig.paginationItemsPerPage;
   const paginationPrefix = templateConfig.paginationPrefix;
@@ -486,6 +490,7 @@ function createBlogPages({
         totalPages: numBlogPages,
         templateConfig,
         latestEdges,
+        tagList,
       },
     });
   }

@@ -3,6 +3,7 @@ import WidgetLatestPosts from "./WidgetLatestPosts";
 import { adsConfig, sidebarConfig } from "../../../data/config";
 import AdSense from "react-adsense";
 import "./Sidebar.scss";
+import WidgetTag from "./WidgetTag";
 
 function SidebarContainer({ children }) {
   return (
@@ -16,23 +17,24 @@ function SidebarContainer({ children }) {
   );
 }
 
-function SidebarLeft({ postSlug, sameSeriesPosts = [] }) {
+function SidebarLeft({ postSlug, sameSeriesPosts = [], tagList = [] }) {
   return (
     <SidebarContainer>
-      {sameSeriesPosts && sameSeriesPosts.length > 0 && (
-        <>
-          {adsConfig.hasAdsense && adsConfig.adsenseUnits?.sidebarTop && (
-            <div className="width-full flex justify-content-center padding-top">
-              <AdSense.Google {...adsConfig.adsenseUnits?.sidebarTop} />
-            </div>
-          )}
-          <WidgetLatestPosts
-            postSlug={postSlug}
-            postEdges={sameSeriesPosts}
-            title={sidebarConfig.sameSeriesPostsTitle}
-          />
-        </>
+      {adsConfig.hasAdsense && adsConfig.adsenseUnits?.sidebarTop && (
+        <div className="width-full flex justify-content-center padding-top">
+          <AdSense.Google {...adsConfig.adsenseUnits?.sidebarTop} />
+        </div>
       )}
+
+      {sameSeriesPosts && sameSeriesPosts.length > 0 ? (
+        <WidgetLatestPosts
+          postSlug={postSlug}
+          postEdges={sameSeriesPosts}
+          title={sidebarConfig.sameSeriesPostsTitle}
+        />
+      ) : null}
+
+      {tagList && tagList.length > 0 ? <WidgetTag tagList={tagList} /> : null}
 
       {adsConfig.hasAdsense && adsConfig.adsenseUnits?.sidebarBottomLeft && (
         <div className="position-sticky last-item">
