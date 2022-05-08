@@ -1,5 +1,5 @@
 ---
-date: "2017-07-23T06:00:26Z"
+date: "2017-07-11T06:00:26Z"
 update: "2019-01-18T02:00:26Z"
 template: "post"
 directory: "JavaScript"
@@ -13,7 +13,7 @@ tags:
   - Promise
 ---
 
-Có thể bạn đã quen với việc sử dụng [Promise](https://developer.mozilla.org/vi/docs/Web/JavaScript/Reference/Global_Objects/Promise) để xử lý bất đồng bộ trong JavaScript. Tuy nhiên, trong trường hợp thực hiện nhiều Promise liên tiếp nhau ([Promise chaining](https://javascript.info/promise-chaining)) mà bạn muốn dừng giữa chừng thì sao? Hay nói cách khác là làm sao để kết thúc sớm Promise chaining trong JavaScript?
+Có thể bạn đã quen với việc sử dụng [Promise](/promise-la-gi-promise-trong-javascript/) để xử lý bất đồng bộ trong JavaScript. Tuy nhiên, trong trường hợp thực hiện nhiều Promise liên tiếp nhau ([Promise chaining](/chuoi-promise-trong-javascript/)) mà bạn muốn dừng giữa chừng thì sao? Hay nói cách khác là làm sao để kết thúc sớm Promise chaining trong JavaScript?
 
 ## Bài toán thực tế
 
@@ -36,13 +36,15 @@ Tìm kiếm User qua email
     )
 ```
 
-Bạn thấy đó, ngay tại bước _then_ đầu tiên, nếu email đã tồn tại thì mình sẽ kết thúc sớm Promise chaining. Có thể bạn sẽ triển khai API để đăng ký User qua Email theo cách khác của mình. Tuy nhiên, đây chỉ là một ví dụ dùng để minh hoạ mà thôi.
+Bạn thấy đó, ngay tại bước `then` đầu tiên, nếu email đã tồn tại thì mình sẽ kết thúc sớm chuỗi promise. Có thể bạn sẽ triển khai API để đăng ký User qua Email theo cách khác của mình. Tuy nhiên, đây chỉ là một ví dụ dùng để minh hoạ mà thôi.
 
 Vậy làm sao để kết thúc sớm Promise chaining trong JavaScript?
 
-Dưới đây, mình sẽ xem xét một bài phi thực tế để biết cách triển khai code như thế nào nhé!
+Dưới đây, mình sẽ xem xét một bài toán phi thực tế để biết cách triển khai code như thế nào nhé!
 
 ## Bài toán ví dụ
+
+Bài toán ví dụ về chuỗi promise.
 
 ### Giới thiệu bài toán
 
@@ -67,10 +69,12 @@ const run = (x) => {
 
 Trong đó:
 
-- [Hàm](/ham-la-gi-ham-trong-javascript/) _increase_ sẽ trả về giá trị của đầu vào + 1.
-- Hàm _run_ sẽ thực hiện một Promise chaining, với mỗi mắt xích sẽ gọi hàm _increase_.
+- [Hàm](/ham-la-gi-ham-trong-javascript/) `increase` sẽ trả về giá trị của đầu vào `+ 1`.
+- Hàm `run` thực hiện một promise chaining, với mỗi mắt xích sẽ gọi hàm `increase`.
 
-Với hàm _run_ như trên thì với mọi giá trị của x, 3 cái _then_ trên luôn được thực hiện. Ví dụ với x = 4 thì kết quả thu được là:
+Với hàm `run` như trên thì với mọi giá trị của `x`, ba cái `.then` trên luôn được thực hiện.
+
+Ví dụ với `x = 4` thì kết quả thu được là:
 
 ```js
 run(4);
@@ -81,13 +85,15 @@ run(4);
  */
 ```
 
-Nếu mình muốn kết thúc sớm Promise chaining ngay tại _then_ đầu tiên khi giá trị của _res_ lớn hơn 3 thì sao?
+Nếu mình muốn kết thúc sớm Promise chaining ngay tại `then` đầu tiên khi giá trị của `res` lớn hơn 3 thì sao?
 
 Có 2 cách để giải quyết bài toán này, đó là: **không thực hiện return** hoặc **sử dụng [Promise.reject()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject)**
 
 ### Kết thúc sớm Promise chaining bằng cách không return
 
-Bình thường, khi thực hiện _return_, giá trị _return_ sẽ được đưa đến mắt xích tiếp theo của chuỗi Promise để xử lý. Và nếu bạn không _return_ thì giá trị đó sẽ được hiểu là **undefined**. Dựa vào đặc điểm này, mình sẽ thay đổi đoạn code trên như sau:
+Bình thường, khi thực hiện `return`, giá trị `return` được đưa đến mắt xích tiếp theo của chuỗi Promise để xử lý.
+
+Và nếu bạn không `return` thì giá trị đó được hiểu là `undefined`. Dựa vào đặc điểm này, mình sẽ thay đổi đoạn code trên như sau:
 
 ```js
 const increase = (x) => {
@@ -122,15 +128,15 @@ run(4);
 // Nothing
 ```
 
-Với **x = 3**: giá trị của _res_ tại _then_ đầu tiên là 3, thoả mãn <code>res <= 3</code> nên đoạn code đó trả về <code>increase(res)</code>. Dẫn đến, giá trị của _res_ tại các _then_ tiếp theo lần lượt là 4, 5.
+Với `x = 3`: giá trị của `res` tại `then` đầu tiên là `3`, thoả mãn `res <= 3` nên đoạn code đó trả về `increase(res)`. Dẫn đến, giá trị của `res` tại các `then` tiếp theo lần lượt là `4` và `5`.
 
-Với **x = 4**: ngay tại _then_ đầu tiên _res_ sẽ bằng 4, không thoả mãn <code>res <= 3</code> nên đoạn code <code>return increase(res)</code> sẽ không được thực hiện. Dẫn đến, đoạn _then_ này sẽ trả về **undefined**. Do đó các _then_ tiếp theo, giá trị của _res_ sẽ là _undefined_. Mà mình đã kiểm tra nếu <code>res !== undefined</code> thì mới thực hiện. Tóm lại, mình đã kết thúc sớm Promise chaining ngay tại _then_ đầu tiên rồi.
+Với `x = 4`: ngay tại `then` đầu tiên `res` sẽ bằng `4`, không thoả mãn `res <= 3` nên đoạn code `return increase(res)` không được thực hiện. Dẫn đến, đoạn `then` này trả về `undefined`. Do đó các `then` tiếp theo, giá trị của `res` sẽ là `undefined`. Mà mình đã kiểm tra nếu `res !== undefined` thì mới thực hiện. Tóm lại, mình đã kết thúc sớm Promise chaining ngay tại `then` đầu tiên rồi.
 
 Tuy nhiên, nếu để ý kĩ thì bạn sẽ thấy cách này chỉ giải quyết được về mặt kết quả. Còn về hình thức thì các mắt xích của chuỗi Promise vẫn được nhảy đến. Điều này có thể tiềm ẩn nhiều **Bug** sau này. Vì vậy, cái mà mình mong muốn thực sự là việc kết thúc sớm Promise chaining sẽ giúp thoát khỏi chuỗi Promise một cách hoàn toàn.
 
 ### Kết thúc sớm Promise chaining sử dụng Promise.reject()
 
-Đúng vậy, việc sử dụng _Promise.reject()_ sẽ giúp bạn kết thúc sớm Promise chaining bằng cách nhảy thẳng đến phần _catch_. Khi đó, đoạn code trên sẽ trở thành:
+Đúng vậy, việc sử dụng [`Promise.reject()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject) giúp bạn kết thúc sớm Promise chaining bằng cách nhảy thẳng đến phần `catch`. Khi đó, đoạn code trên sẽ trở thành:
 
 ```js
 const increase = (x) => {
@@ -161,15 +167,15 @@ run(4);
 // Catched: 4
 ```
 
-Trong trường hợp này, mình chỉ cần thêm phần xử lý tại _then_ đầu tiên.
+Trong trường hợp này, mình chỉ cần thêm phần xử lý tại `then` đầu tiên.
 
-Với **x = 3**: Kết quả vẫn như phần trên.
+Với `x = 3`: Kết quả vẫn như phần trên.
 
-Với **x = 4**: Tại _then_ đầu tiên, _res_ bằng 4, không thoả mãn <code>res <= 3</code> nên đoạn đó sẽ thực hiện <code>return Promise.reject(res)</code>. Điều này dẫn đến các đoạn _then_ tiếp theo sẽ bị bỏ qua mà nhảy thẳng đến đoạn _catch_. Tại đây, giá trị của _err_ bằng giá trị của _res_ đã bị _reject_ bên trên, nên bằng 4.
+Với `x = 4`: Tại `then` đầu tiên, `res` bằng `4`, không thoả mãn `res <= 3` nên đoạn đó sẽ thực hiện `return Promise.reject(res)`. Điều này dẫn đến các đoạn `then` tiếp theo bị bỏ qua mà nhảy thẳng đến đoạn `catch`. Tại đây, giá trị của `err` bằng giá trị của `res` đã bị reject bên trên, nên bằng `4`.
 
-Rõ ràng, việc sử dụng _Promise.reject()_ đã giúp kết thúc sớm Promise chaining một cách hoàn toàn rồi.
+Rõ ràng, việc sử dụng `Promise.reject()` đã giúp kết thúc sớm Promise chaining một cách hoàn toàn rồi.
 
-## Lời kết
+## Tổng kết
 
 Như vậy là mình đã giới thiệu với bạn 2 cách để kết thúc sớm Promise chaining trong JavaScript. Nếu bạn biết thêm cách nào khác để thực hiện việc này thì hãy chia sẻ với mình trong phần bình luận phía dưới nhé!
 
