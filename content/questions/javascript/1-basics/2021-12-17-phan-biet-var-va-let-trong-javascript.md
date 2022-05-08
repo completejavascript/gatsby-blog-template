@@ -10,7 +10,7 @@ slug: phan-biet-var-va-let-trong-javascript
 title: "Phân biệt var và let trong JavaScript"
 series: "JavaScript Question: cơ bản"
 tags:
-  - Câu hỏi JS cơ bản
+  - Câu hỏi JS Cơ bản
 ---
 
 Trước đây, có thể nhiều bạn đã quen dùng `var` để khai báo [biến](/kieu-du-lieu-trong-javascript/) trong JavaScript. Tuy nhiên, từ phiên bản ES6, mình khuyên bạn **chỉ** nên dùng từ khóa `let`. Vậy `let` giống và khác `var` như thế nào? Bài viết này sẽ giúp bạn phân biệt `var` và `let` trong JavaScript.

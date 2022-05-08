@@ -11,7 +11,7 @@ title: "Phân biệt arrow function và function trong JavaScript"
 shortTitle: "Phân biệt arrow function và function"
 series: "JavaScript Question: cơ bản"
 tags:
-  - Câu hỏi JS cơ bản
+  - Câu hỏi JS Cơ bản
 ---
 
 [Arrow function](/arrow-function-la-gi-arrow-function-trong-js/) là một trong những tính năng mới rất hay của ES6. Việc sử dụng đúng cách arrow function giúp code trở nên ngắn gọn và dễ hiểu hơn. Tuy nhiên, arrow function không thể thay thế hoàn toàn function được.
