@@ -1,5 +1,5 @@
 ---
-date: "2017-07-24T23:00:52Z"
+date: "2017-07-17T23:00:52Z"
 update: "2019-05-12T23:00:52Z"
 template: "post"
 directory: "JavaScript"
@@ -16,7 +16,7 @@ tags:
   - Promise
 ---
 
-Có thể bạn đã quen với việc [xử lý bất đồng bộ](/xu-ly-bat-dong-bo-callback-promise-async-await/) trong JavaScript với [Promise](/tag/promise/) hoặc [Async/await](/tag/async-await/) rồi. Tuy nhiên, khi bạn có một chuỗi các hành động thì câu hỏi đặt ra là: bạn sẽ xử lý chúng như thế nào? Bạn quyết định xử lý bất đồng bộ song song hay tuần tự?
+Có thể bạn đã quen với việc [xử lý bất đồng bộ](/xu-ly-bat-dong-bo-callback-promise-async-await/) trong JavaScript với [Promise](/promise-la-gi-promise-trong-javascript/) hoặc [Async/await](/tag/async-await/) rồi. Tuy nhiên, khi bạn có một chuỗi các hành động thì câu hỏi đặt ra là: bạn sẽ xử lý chúng như thế nào? Bạn quyết định xử lý bất đồng bộ song song hay tuần tự?
 
 Câu trả lời có lẽ sẽ phụ thuộc vào từng trường hợp. Tuy nhiên, để biết được nên lựa chọn cách nào thì bạn cần phải biết ý nghĩa và cách triển khai của từng trường hợp.
 
@@ -31,31 +31,36 @@ Giả sử, mình có **một công việc** bất đồng bộ là: lấy thôn
 - Lấy danh sách các bài viết liên quan (**getRelatedPosts**)
 
 ```js
+// hàm đợi ms để mô phỏng các hoạt động bất đồng bộ
 const wait = (ms) => {
   return new Promise((res) => setTimeout(res, ms));
 };
 
+// hàm lấy nội dung bài viết
 const getContent = async () => {
   await wait(1000);
   return "This is content";
 };
 
+// hàm lấy comments
 const getComments = async () => {
   await wait(1500);
   return ["comment 1", "comment 2"];
 };
 
+// hàm lấy bài viết liên quan
 const getRelatedPosts = async () => {
   await wait(2000);
   return ["post 2", "post 3", "post 4"];
 };
 
+// hàm tổng để lấy bài viết
 const getPost = async () => {
   // TODO: Implement later
 };
 ```
 
-Với công việc như trên, mình sẽ thử triển khai theo cách xử lý bất đồng bộ tuần tự và cách xử lý bất đồng bộ song song, sau đó sẽ kiểm tra xem cách nào tốt hơn nhé!
+Với công việc như trên, mình sẽ thử triển khai theo cách xử lý bất đồng bộ tuần tự và cách xử lý bất đồng bộ song song, sau đó kiểm tra xem cách nào tốt hơn nhé!
 
 ## Xử lý bất đồng bộ tuần tự
 
@@ -124,17 +129,17 @@ time: 2001.398193359375ms
 */
 ```
 
-Trong ví dụ trên, mình đưa 3 hành động bất đồng bộ vào một [mảng](/array-la-gi-array-trong-javascript/), rồi truyền nó vào Promise.all. Tiếp theo, mình thực hiện **await** với phương thức này để đợi kết quả trả về.
+Trong ví dụ trên, mình đưa 3 hành động bất đồng bộ vào một [mảng](/array-la-gi-array-trong-javascript/), rồi truyền nó vào `Promise.all`. Tiếp theo, mình thực hiện `await` với phương thức này để đợi kết quả trả về.
 
-Sau khi hàm trên kết thúc, mình dùng [Destructuring Assignment](/destructuring-assignment-trong-javascript/) để lấy ra kết quả như mong muốn, theo đúng thứ tự truyền vào của các hành động bên trong Promise.all.
+Sau khi hàm trên kết thúc, mình dùng [Destructuring Assignment](/destructuring-assignment-trong-javascript/) để lấy ra kết quả như mong muốn, theo đúng thứ tự truyền vào của các hành động bên trong `Promise.all`.
 
 Với cách này, thời gian thực hiện cỡ **2000 ms**. Đó chính là **thời gian thực hiện lớn nhất của 3 hành động**.
 
 **Cụ thể:**
 
 ```
-time(getPost) = Max of [time(getContent), time(getComments), time(getRelatedPosts)]
-= Max of [1000, 1500, 2000]
+time(getPost) = Max [time(getContent), time(getComments), time(getRelatedPosts)]
+= Max [1000, 1500, 2000]
 = 2000
 ```
 
@@ -142,6 +147,6 @@ time(getPost) = Max of [time(getContent), time(getComments), time(getRelatedPost
 
 Trên đây mình đã giới thiệu với bạn 2 cách xử lý bất đồng bộ song song và tuần tự rồi. Trong bài toán trên, 3 hành động là hoàn toàn độc lập nhau. Do đó, nếu làm thực tế thì mình sẽ lựa chọn xử lý bất đồng bộ song song. Vì thời gian thực hiện là ngắn hơn đáng kể so với cách xử lý bất đồng bộ tuần tự. Ngược lại, chỉ khi nào các hành động phụ thuộc lẫn nhau thì mình mới sử dụng cách xử lý bất đồng bộ tuần tự mà thôi.
 
-_Bạn đã biết cách xử lý bất đồng bộ song song chưa? Và nếu bạn đã từng làm nó rồi thì cách thực hiện của bạn là gì? Ngoài cách sử dụng Promise.all như trên thì còn cách nào nữa không? Chia sẻ với mình và mọi người trong phần bình luận nhé!_
+_Bạn đã biết cách xử lý bất đồng bộ song song chưa? Và nếu bạn đã từng làm nó rồi thì cách thực hiện của bạn là gì? Ngoài cách sử dụng `Promise.all` như trên thì còn cách nào nữa không? Chia sẻ với mình và mọi người trong phần bình luận nhé!_
 
 Xin chào và hẹn gặp lại, thân ái!
