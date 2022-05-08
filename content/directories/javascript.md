@@ -115,6 +115,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 ### Quản lý lỗi
 
 - [Quản lý lỗi với try...catch trong JS](/quan-ly-loi-voi-try-catch-trong-javascript/)
+- [Tùy biến và mở rộng đối tượng Error trong JS](/tuy-bien-mo-rong-doi-tuong-error/)
 
 ### Callback, Promise, async/await
 

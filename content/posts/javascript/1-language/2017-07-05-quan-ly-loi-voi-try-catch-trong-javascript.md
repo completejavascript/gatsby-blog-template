@@ -575,4 +575,4 @@ Ngoài ra, bạn cũng có thể tạo ra lỗi của riêng mình bằng cách 
 
 Ngay cả khi bạn không có `try...catch`, hầu hết các môi trường (trình duyệt, Node.js,...) đều cho phép bạn thiết lập một hàm toàn cục để bắt các lỗi xảy ra. Với trình duyệt, đó là `window.onerror`.
 
-Tham khảo: [Error handling, "try...catch"](https://javascript.info/try-catch).
+Tham khảo: [Error handling, "try...catch"](https://javascript.info/try-catch)
