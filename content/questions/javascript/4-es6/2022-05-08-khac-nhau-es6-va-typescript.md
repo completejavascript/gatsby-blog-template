@@ -5,7 +5,7 @@ template: "question"
 directory: "Question"
 cover: "../../../images/questions/javascript-question-es6.png"
 keywords: "khác nhau giữa es6 và typescript, es6 và typescript, so sánh es6 và typscript"
-description: ""
+description: "Bạn có biết ES6 và TypeScript khác nhau thế nào? Bài viết sau sẽ giúp bạn so sánh ES6 và TypeScript để thấy sự khác biệt giữa ES6 và TypeScript."
 slug: khac-nhau-es6-va-typescript
 title: "Khác nhau giữa ES6 và TypeScript"
 series: "JavaScript Question: ES6"
@@ -73,4 +73,5 @@ TypeScript không trực tiếp chạy trên trình duyệt và cần phải bi�
 
 Tham khảo:
 
+- [Biến là gì? Biến trong JS](/bien-la-gi-bien-trong-javascript/)
 - [Difference between ES6 and TypeScript](https://www.geeksforgeeks.org/difference-between-es6-and-typescript/)
