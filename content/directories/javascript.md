@@ -128,6 +128,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Các promise API trong JavaScript](/promise-api-trong-javascript/)
 - [Chuyển callback thành promise trong JS](/chuyen-callback-thanh-promise-trong-javascript/)
 - [Microtasks là gì? Microtasks trong JS](/microtasks-la-gi-microtasks-trong-javascript/)
+- [Async/await là gì? Async/await trong JS](/async-await-la-gi-async-await-trong-javascript/)
 - [Bất đồng bộ song song hay tuần tự?](/xu-ly-bat-dong-bo-song-song-tuan-tu/)
 
 ### ES6 Modules
