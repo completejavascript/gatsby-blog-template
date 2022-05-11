@@ -126,6 +126,7 @@ Phần này bao gồm tất cả những thành phần liên quan đến ngôn n
 - [Kết thúc Promise chaining](/ket-thuc-som-promise-chaining-trong-javascript/)
 - [Xử lý lỗi với promise trong JavaScript](/xu-ly-loi-voi-promise-trong-javascript/)
 - [Các promise API trong JavaScript](/promise-api-trong-javascript/)
+- [Chuyển callback thành promise trong JS](/chuyen-callback-thanh-promise-trong-javascript/)
 - [Bất đồng bộ song song hay tuần tự?](/xu-ly-bat-dong-bo-song-song-tuan-tu/)
 
 ### ES6 Modules
