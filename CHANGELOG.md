@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.19.0](https://github.com/completejavascript/completejavascript.com/compare/v1.18.0...v1.19.0) (2022-05-12)
+
+
+### Features
+
+* add goto page ([f99cc16](https://github.com/completejavascript/completejavascript.com/commit/f99cc16109770147a77d4c00ddcd515e245ed8b4))
+
+
+### Bug Fixes
+
+* **post:** add freebie multi line fonts ([9d7ed6a](https://github.com/completejavascript/completejavascript.com/commit/9d7ed6a9e19ea129fbcfe90d21e17f8c98b8178c))
+* **post:** add javascript post async/await ([044ac7c](https://github.com/completejavascript/completejavascript.com/commit/044ac7c7a00065d256d9bfb0a8b00cc998aac68a))
+* **post:** add javascript post callback-to-promise ([ae56403](https://github.com/completejavascript/completejavascript.com/commit/ae56403cc3ce54d131a4a245d3b0cc4358bced68))
+* **post:** add javascript post microtasks ([3259747](https://github.com/completejavascript/completejavascript.com/commit/3259747be0aee60058f964a8760685f54ba9cf7f))
+* **post:** add javascript question es6-array-methods ([fa55468](https://github.com/completejavascript/completejavascript.com/commit/fa5546825663a48bf41ec51f6650ad68c85823a9))
+* **post:** add javascript-questions ([f99c09c](https://github.com/completejavascript/completejavascript.com/commit/f99c09cb304cb0011ed9e205da7dc1338eaba079))
+* **post:** add post javascript-question dynamic-load-javascript ([fe6efc6](https://github.com/completejavascript/completejavascript.com/commit/fe6efc6e8799fe4a5895c73fe481bdfbf9467906))
+* **post:** update javascript-question-es6 ([c78773e](https://github.com/completejavascript/completejavascript.com/commit/c78773eff8e99752b5219a52ba5011356ad846fe))
+* update goto pate to use navigate with option replace:true ([6a80079](https://github.com/completejavascript/completejavascript.com/commit/6a80079539afdb7cc3a80bd1257f91048bf845bc))
+
 ## [1.18.0](https://github.com/completejavascript/completejavascript.com/compare/v1.17.0...v1.18.0) (2022-05-08)
 
 
