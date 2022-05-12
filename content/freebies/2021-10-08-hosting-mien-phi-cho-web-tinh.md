@@ -103,9 +103,9 @@ Render.com cho phép bạn build và deploy web tĩnh trực tiếp từ Git rep
 **Miễn phí CI**: có  
 **Nâng cấp**: có, sau khi nâng cấp bạn có thể sử dụng một số dịch vụ background, dockers,...
 
-### 6. [DigitalOcean App Platform](https://m.do.co/c/6111d2704eb4)
+### 6. [DigitalOcean App Platform](/goto?t=digitalOcean)
 
-![digitalocean app platform pages](../images/freebies/hosting-mien-phi-cho-web-tinh-digitalocean.png)
+[![digitalocean app platform pages](../images/freebies/hosting-mien-phi-cho-web-tinh-digitalocean.png)](/goto?t=digitalOcean)
 
 DigitalOcean được biết đến nhiều nhất với VPS. Tuy nhiên, DigitalOcean App Platform đã ra đời - cung cấp dịch vụ hosting miễn phí cho web tĩnh cũng như web động.
 

@@ -6,18 +6,22 @@ import { affiliateProgram } from "../../data/affiliate";
 export default function GotoPage({ location }) {
   useEffect(() => {
     const target = decodeGotoUrl(location.search);
+    const options = {
+      replace: true,
+    };
+
     if (!target) {
-      navigate("/");
+      navigate("/", options);
       return;
     }
 
     const url = affiliateProgram[target];
     if (!url) {
-      navigate("/");
+      navigate("/", options);
       return;
     }
 
-    navigate(url);
+    navigate(url, options);
   }, []);
 
   return <div></div>;
