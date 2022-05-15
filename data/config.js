@@ -80,6 +80,8 @@ const pathPrefixConfig = {
 
 const subDomainSites = {
   tools: "https://tools.completejavascript.com/",
+  oneLOC: "https://1loc.completejavascript.com/",
+  appIdeas: "https://app-ideas.completejavascript.com/",
 };
 
 const frontmatterTemplateConfig = {
@@ -243,6 +245,7 @@ const navConfig = {
     { label: "Freebie", url: pathPrefixConfig.freebie },
     { label: "Blog", url: pathPrefixConfig.blog },
     { label: "eBooks", url: pathPrefixConfig.ebooks },
+    { label: "Snippets", url: subDomainSites.oneLOC },
     { label: "Tools", url: subDomainSites.tools, isNew: true },
   ],
 };
@@ -310,6 +313,8 @@ const footerConfig = {
   ],
   networkLinks: [
     { label: "Complete Tools", url: subDomainSites.tools },
+    { label: "Complete App Ideas", url: subDomainSites.appIdeas },
+    { label: "Complete 1LOC", url: subDomainSites.oneLOC },
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
     { label: "Lam Dev Blog", url: "https://dev.phamvanlam.com/" },
     { label: "Lam Pham Blog", url: "https://phamvanlam.com/" },
