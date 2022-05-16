@@ -311,10 +311,12 @@ const footerConfig = {
     { label: "Điều khoản", url: pathPrefixConfig.term },
     { label: "Chính sách", url: pathPrefixConfig.policy },
   ],
-  networkLinks: [
+  completeSiteLinks: [
     { label: "Complete Tools", url: subDomainSites.tools },
     { label: "Complete App Ideas", url: subDomainSites.appIdeas },
     { label: "Complete 1LOC", url: subDomainSites.oneLOC },
+  ],
+  networkLinks: [
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
     { label: "Lam Dev Blog", url: "https://dev.phamvanlam.com/" },
     { label: "Lam Pham Blog", url: "https://phamvanlam.com/" },

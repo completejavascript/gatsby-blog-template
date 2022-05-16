@@ -109,6 +109,12 @@ function Footer2() {
           <FooterSiteInfo />
 
           <FooterLinks
+            className="complete-sites-links"
+            header="Complete Sites"
+            links={footerConfig.completeSiteLinks}
+          />
+
+          <FooterLinks
             className="project-links"
             header="Dự án cá nhân"
             links={footerConfig.projectLinks}
