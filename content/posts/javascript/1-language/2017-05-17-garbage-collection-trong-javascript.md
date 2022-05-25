@@ -15,7 +15,7 @@ tags:
 
 Quản lý bộ nhớ trong JavaScript được thực hiện tự động và trong suốt với người dùng. Khi bạn khởi tạo [dữ liệu nguyên thủy](/kieu-du-lieu-trong-javascript/), [object](/object-la-gi-object-trong-javascript/) hay [hàm](/ham-la-gi-ham-trong-javascript/)... thì chúng đều chiếm bộ nhớ (RAM).
 
-Điều gì sẽ xảy ra nếu một vùng nhớ không còn sử dụng? [JavaScript engine](http://localhost:8000/javascript-la-gi/#javascript-engine-l%C3%A0-g%C3%AC) sẽ làm gì để phát hiện và giải phóng vùng nhớ đó?
+Điều gì sẽ xảy ra nếu một vùng nhớ không còn sử dụng? [JavaScript engine](/javascript-la-gi/#javascript-engine-l%C3%A0-g%C3%AC) sẽ làm gì để phát hiện và giải phóng vùng nhớ đó?
 
 > Bài viết này được dịch từ: [Garbage collection](https://javascript.info/garbage-collection). Bạn có thể tham khảo bài viết gốc nếu bạn thành thạo tiếng Anh.
 

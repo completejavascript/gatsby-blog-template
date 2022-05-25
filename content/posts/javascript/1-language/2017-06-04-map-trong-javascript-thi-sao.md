@@ -25,7 +25,7 @@ Thực tế, Map có **những đặc điểm riêng biệt** so với object th
 
 Nói một cách đầy đủ, Map trong JavaScript là một **cấu trúc dữ liệu** cho phép lưu trữ dữ liệu theo kiểu **key-value**, tương tự như object. Tuy nhiên, chúng khác nhau ở chỗ là:
 
-- Object chỉ cho phép sử dụng [String](/kieu-du-lieu-trong-javascript/) hay [Symbol](http://localhost:8000/tim-hieu-ve-symbol-trong-javascript/) làm key.
+- Object chỉ cho phép sử dụng [String](/kieu-du-lieu-trong-javascript/) hay [Symbol](/tim-hieu-ve-symbol-trong-javascript/) làm key.
 - Map cho phép mọi kiểu dữ liệu (String, Number, Boolean, NaN, Object,...) có thể làm key.
 
 > **Chú ý:** để tránh hiểu lầm, mỗi khi mình dùng từ **object** thì bạn hiểu đó là **object thông thường** mà từ trước đến giờ bạn vẫn sử dụng, không phải **Map**.
