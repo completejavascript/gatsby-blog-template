@@ -76,6 +76,7 @@ const pathPrefixConfig = {
   term: "/dieu-khoan-su-dung",
   policy: "/chinh-sach-bao-mat",
   ebooks: "/ebooks",
+  sponsors: "/bai-viet-duoc-tai-tro",
 };
 
 const subDomainSites = {
@@ -293,6 +294,7 @@ const footerConfig = {
     { label: "React", url: pathPrefixConfig.react },
     { label: "Thủ thuật IT", url: pathPrefixConfig.itTricks },
     { label: "Cuộc sống IT", url: pathPrefixConfig.itLife },
+    { label: "Bài viết được tài trợ", url: pathPrefixConfig.sponsors },
     { label: "Question", url: pathPrefixConfig.question },
     { label: "Freebie", url: pathPrefixConfig.freebie },
     { label: "Blog", url: pathPrefixConfig.blog },
