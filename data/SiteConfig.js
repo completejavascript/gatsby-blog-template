@@ -4,11 +4,11 @@ const config = {
   siteTitleShort: "Bilgi Mozaiği", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Gatsby Blog Template", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://gb-template.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://bilgimozaigi.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
-  siteLang: "en",
+  siteLang: "tr",
   siteFBAppID: "399626517562189", // FB Application ID for using app insights
   googleAnalyticsID: "UA-96543695-7", // GA tracking ID.
   postDefaultCategoryID: "", // Default category for posts.
@@ -27,17 +27,17 @@ const config = {
   btnLoadComments: "Load comments",
   // Use for home page
   numberLoadmore: 6,
-  btnLoadmore: "Load more",
+  btnLoadmore: "Devamını Oku",
   homeHasLoadmore: false,
   homeHasThumbnail: true,
-  homeHeader: "Home",
+  homeHeader: "Ana Sayfa",
   homeMoreArticles: "More articles",
   // Use for page
   pathPrefixPagination: "/page", // Prefix path for pagination
-  pageNotFoundTitle: "Page Not Found", //
-  pageNotFoundBtn: "Back to our site",
+  pageNotFoundTitle: "Sayfa Bulunamadı!", //
+  pageNotFoundBtn: "Siteye geri dön.",
   pageNotFoundContent:
-    "Looks like you've followed a broken link or entered a URL that doesn't exist on this site.",
+    "Bozuk bir bağlantıyı takip ettiğiniz veya bu sitede bulunmayan bir URL girdiğiniz anlaşılıyor.",
   // Use for tag
   pathPrefixTag: "/tag", // Prefix path for tags
   tagHeader: "Posts tagged as", // use in header of tag-template page
