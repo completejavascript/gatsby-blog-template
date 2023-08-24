@@ -2,11 +2,11 @@ const config = {
   // Site info
   siteTitle: "Bilgi Mozaiği", // Site title.
   siteTitleShort: "Bilgi Mozaiği", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Gatsby Blog Template", // Alternative site title for SEO.
+  siteTitleAlt: "Merak dolu yolculuğa çıkın! Bilgi Mozaiği, renkli içeriklerle dolu eğlenceli ve bilgilendirici bir platform.", // Alternative site title for SEO.
   siteLogo: "https://i.hizliresim.com/4puop8g.png", // Logo used for SEO and manifest.
   siteUrl: "https://bilgimozaigi.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Keşfetmeye hazır mısınız? Bilgi Mozaiği, merakla dolu bir yolculuğa çıkmak için kapılarını açıyor. Farklı türlerden, ilgi alanlarından ve bakış açılarından beslenen renkli içeriklerle dolu bu platformda, bilgi ve ilham dolu bir deneyim sizi bekliyor. Gelin, birlikte çeşitliliğin ve keşfin büyülü dünyasına dalalım!", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteLang: "tr",
   siteFBAppID: "399626517562189", // FB Application ID for using app insights
@@ -31,33 +31,33 @@ const config = {
   homeHasLoadmore: false,
   homeHasThumbnail: true,
   homeHeader: "Ana Sayfa",
-  homeMoreArticles: "More articles",
+  homeMoreArticles: "Daha fazla makale",
   // Use for page
   pathPrefixPagination: "/page", // Prefix path for pagination
   pageNotFoundTitle: "Sayfa Bulunamadı!", //
-  pageNotFoundBtn: "Siteye geri dön.",
+  pageNotFoundBtn: "Siteye geri dön",
   pageNotFoundContent:
     "Bozuk bir bağlantıyı takip ettiğiniz veya bu sitede bulunmayan bir URL girdiğiniz anlaşılıyor.",
   // Use for tag
   pathPrefixTag: "/tag", // Prefix path for tags
-  tagHeader: "Posts tagged as", // use in header of tag-template page
+  tagHeader: "olarak etiketlenen gönderiler", // use in header of tag-template page
   tagHasThumbnail: true,
   // Use for category
   pathPrefixCategory: "/category", // Prefix path for category
-  categoryHeader: "Posts in category", // use in header of category-template page
+  categoryHeader: "Kategorideki gönderiler", // use in header of category-template page
   categoryHasThumbnail: true,
   // Use for blog
   pathPrefixBlog: "/blog", // Prefix path for blog
   blogHeader: "Blog", // use in header of category-template page
   blogHasThumbnail: true,
   // Use for widget
-  categoryWidgetTitle: "Categories",
-  tagWidgetTitle: "Tags",
-  latestPostsWidgetTitle: "Latest posts",
-  linksWidgetTitle: "Links",
+  categoryWidgetTitle: "Kategoriler",
+  tagWidgetTitle: "Etiketler",
+  latestPostsWidgetTitle: "Son Gönderiler",
+  linksWidgetTitle: "Linkler",
   // Use for Google custom search
-  searchWidgetTitle: "Looking for?",
-  searchWidgetPlaceHolder: "Enter keyword",
+  searchWidgetTitle: "Ne arıyorsun?",
+  searchWidgetPlaceHolder: "Anahtar kelimeyi girin",
   searchEngineID: "008548374781244864787:9ybvtnkbt7o",
   hasSearch: true,
   // Use for links widget
@@ -77,10 +77,10 @@ const config = {
     },
   ],
   // Use for user info
-  userName: "Lam Pham", // Username to display in the author segment.
+  userName: "Mustafa Eren", // Username to display in the author segment.
   userEmail: "dev@completejavascript.com", // Email used for RSS feed"s author segment
   userTwitter: "CmpltJavaScript", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "Hanoi, Vietnam", // User location to display in the author segment.
+  userLocation: "Turkey", // User location to display in the author segment.
   userAvatar:
     "https://www.gravatar.com/avatar/42fd3d526fde1ef76d5002e4ebd303e9.jpg?s=300", // User avatar to display in the author segment.
   userDescription:
