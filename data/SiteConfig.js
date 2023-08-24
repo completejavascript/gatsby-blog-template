@@ -3,7 +3,7 @@ const config = {
   siteTitle: "Bilgi Mozaiği", // Site title.
   siteTitleShort: "Bilgi Mozaiği", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Gatsby Blog Template", // Alternative site title for SEO.
-  siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
+  siteLogo: "https://i.hizliresim.com/4puop8g.png", // Logo used for SEO and manifest.
   siteUrl: "https://bilgimozaigi.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A GatsbyJS Blog Template for blogging purpose.", // Website description used for RSS feeds/meta description tag.
