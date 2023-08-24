@@ -3,7 +3,7 @@ const config = {
   siteTitle: "Bilgi Mozaiği", // Site title.
   siteTitleShort: "Bilgi Mozaiği", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Merak dolu yolculuğa çıkın! Bilgi Mozaiği, renkli içeriklerle dolu eğlenceli ve bilgilendirici bir platform.", // Alternative site title for SEO.
-  siteLogo: "https://i.hizliresim.com/4puop8g.png", // Logo used for SEO and manifest.
+  siteLogo: "/logos/logo-1024x1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://bilgimozaigi.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "Keşfetmeye hazır mısınız? Bilgi Mozaiği, merakla dolu bir yolculuğa çıkmak için kapılarını açıyor. Farklı türlerden, ilgi alanlarından ve bakış açılarından beslenen renkli içeriklerle dolu bu platformda, bilgi ve ilham dolu bir deneyim sizi bekliyor. Gelin, birlikte çeşitliliğin ve keşfin büyülü dünyasına dalalım!", // Website description used for RSS feeds/meta description tag.
