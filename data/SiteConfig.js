@@ -64,7 +64,7 @@ const config = {
   sidebarSticky: true,
   sidebarLinks: [
     {
-      label: "Complete JavaScript",
+      label: "O kDara",
       url: "https://completejavascript.com/",
     },
     {
