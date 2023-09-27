@@ -322,7 +322,7 @@ const footerConfig = {
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
     { label: "Lam Dev Blog", url: "https://dev.phamvanlam.com/" },
     { label: "Lam Pham Blog", url: "https://phamvanlam.com/" },
-    { label: "Amazing CSS", url: "https://amazingcss.com/" },
+    { label: "Amazing CSS", url: "https://css.completejavascript.com/" },
     { label: "Portfolio", url: "http://about.phamvanlam.com/" },
     {
       label: "My Android Apps",
