@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.19.1](https://github.com/completejavascript/completejavascript.com/compare/v1.19.0...v1.19.1) (2023-09-27)
+
+
+### Bug Fixes
+
+* add sponsor-post ([0f9a2c7](https://github.com/completejavascript/completejavascript.com/commit/0f9a2c795bba05a16ea1d4d91c6b59e640ef1524))
+* change to css.completejavascript.com ([d4aee5d](https://github.com/completejavascript/completejavascript.com/commit/d4aee5dffe8bfca93dbb2fabc6d7251c4fce3371))
+* fix wrong links to localhost ([024400e](https://github.com/completejavascript/completejavascript.com/commit/024400e8f1fb02bc5c4ffdc26854a2c5becccc8b))
+* update footer links ([491dd7e](https://github.com/completejavascript/completejavascript.com/commit/491dd7e799f3f664852bd15eed4eb28e473858b4))
+* update links to complete app ideas/1loc ([f4b1cbf](https://github.com/completejavascript/completejavascript.com/commit/f4b1cbf8d50bb410728774402219a4d9a2bd2f2a))
+
 ## [1.19.0](https://github.com/completejavascript/completejavascript.com/compare/v1.18.0...v1.19.0) (2022-05-12)
 
 
