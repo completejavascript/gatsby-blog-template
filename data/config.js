@@ -83,6 +83,7 @@ const subDomainSites = {
   tools: "https://tools.completejavascript.com/",
   oneLOC: "https://1loc.completejavascript.com/",
   appIdeas: "https://app-ideas.completejavascript.com/",
+  css: "https://css.completejavascript.com/",
 };
 
 const frontmatterTemplateConfig = {
@@ -317,12 +318,12 @@ const footerConfig = {
     { label: "Complete Tools", url: subDomainSites.tools },
     { label: "Complete App Ideas", url: subDomainSites.appIdeas },
     { label: "Complete 1LOC", url: subDomainSites.oneLOC },
+    { label: "Complete CSS", url: subDomainSites.css },
   ],
   networkLinks: [
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
     { label: "Lam Dev Blog", url: "https://dev.phamvanlam.com/" },
     { label: "Lam Pham Blog", url: "https://phamvanlam.com/" },
-    { label: "Amazing CSS", url: "https://css.completejavascript.com/" },
     { label: "Portfolio", url: "http://about.phamvanlam.com/" },
     {
       label: "My Android Apps",
