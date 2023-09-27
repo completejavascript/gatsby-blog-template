@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.19.2](https://github.com/completejavascript/completejavascript.com/compare/v1.19.1...v1.19.2) (2023-09-27)
+
+
+### Bug Fixes
+
+* update footer ([c28928b](https://github.com/completejavascript/completejavascript.com/commit/c28928bbdd1e386c1d3c7c89b4090db16368c96c))
+
 ### [1.19.1](https://github.com/completejavascript/completejavascript.com/compare/v1.19.0...v1.19.1) (2023-09-27)
 
 
