@@ -86,7 +86,7 @@ All notable changes to this project will be documented in this file. See [standa
 * **post:** add post absolute-import ([3109ce1](https://github.com/completejavascript/completejavascript.com/commit/3109ce12a89dfdb348f7539f7345755122736a8f))
 * **post:** add private property and methods in class ([aa8a325](https://github.com/completejavascript/completejavascript.com/commit/aa8a3252b4d70af6d357c1a1b17a50908cb591f1))
 * **post:** replace none-break spaces with normal spaces ([06a9b71](https://github.com/completejavascript/completejavascript.com/commit/06a9b71d489808b8db39cbbec0f3d741ae9b7786))
-* **post:** update links to tools.completejavascript.com ([bfe64fc](https://github.com/completejavascript/completejavascript.com/commit/bfe64fc6fcaa717575eb0708d6ed4ab9ae2a1191))
+* **post:** update links to toolskitplus.com ([bfe64fc](https://github.com/completejavascript/completejavascript.com/commit/bfe64fc6fcaa717575eb0708d6ed4ab9ae2a1191))
 * **post:** update post create-react-app create & deploy github pages ([0dcb40d](https://github.com/completejavascript/completejavascript.com/commit/0dcb40d8afec73c12038db07db555ca5505d3829))
 * **post:** update post youtube thumbnail ([debeeea](https://github.com/completejavascript/completejavascript.com/commit/debeeea43cc0c6b2040c0c2ead15bb46f9b7ed1d))
 * update ebooks ([919aac2](https://github.com/completejavascript/completejavascript.com/commit/919aac23a82803d20100f2f8ea52ff7a93eebf43))
@@ -97,7 +97,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* add tools.completejavascript.com to navigation and footer ([d38f781](https://github.com/completejavascript/completejavascript.com/commit/d38f78112fbed504efccd76654ee11fd27dc2bd0))
+* add toolskitplus.com to navigation and footer ([d38f781](https://github.com/completejavascript/completejavascript.com/commit/d38f78112fbed504efccd76654ee11fd27dc2bd0))
 
 
 ### Bug Fixes

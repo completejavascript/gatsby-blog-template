@@ -26,7 +26,7 @@ Nếu bạn có năng khiếu về design hoặc biết kết hợp màu sắc t
 
 Nhưng ngược lại thì rất có thể, bạn sẽ tạo ra một sản phẩm mà màu sắc của các phần tử không thật sự đẹp. Hoặc các màu sắc khi kết hợp lại với nhau không thể hiện được sự tương phản, kém nổi bật.
 
-Khi đó, bạn có thể [extract palette màu](https://tools.completejavascript.com/color-palette-extractor/) từ một bức ảnh có sẵn. Nhưng đặc biệt hơn, bạn nên tham khảo 10 trang web tạo palette màu cực tốt sau đây.
+Khi đó, bạn có thể [extract palette màu](https://toolskitplus.com/color-palette-extractor/) từ một bức ảnh có sẵn. Nhưng đặc biệt hơn, bạn nên tham khảo 10 trang web tạo palette màu cực tốt sau đây.
 
 ## Trang web tạo palette màu cực tốt
 

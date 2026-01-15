@@ -80,7 +80,7 @@ const pathPrefixConfig = {
 };
 
 const subDomainSites = {
-  tools: "https://tools.completejavascript.com/",
+  tools: "https://toolskitplus.com/",
   oneLOC: "https://1loc.completejavascript.com/",
   appIdeas: "https://app-ideas.completejavascript.com/",
   css: "https://css.completejavascript.com/",
@@ -315,20 +315,20 @@ const footerConfig = {
     { label: "Chính sách", url: pathPrefixConfig.policy },
   ],
   completeSiteLinks: [
-    { label: "Complete Tools", url: subDomainSites.tools },
     { label: "Complete App Ideas", url: subDomainSites.appIdeas },
     { label: "Complete 1LOC", url: subDomainSites.oneLOC },
     { label: "Complete CSS", url: subDomainSites.css },
   ],
   networkLinks: [
+    { label: "TooksKit Plus", url: subDomainSites.tools },
     { label: "Blog Thuật toán", url: "https://thuattoan.phamvanlam.com/" },
     { label: "Lam Dev Blog", url: "https://dev.phamvanlam.com/" },
     { label: "Lam Pham Blog", url: "https://phamvanlam.com/" },
     { label: "Portfolio", url: "http://about.phamvanlam.com/" },
-    {
-      label: "My Android Apps",
-      url: "https://play.google.com/store/apps/developer?id=LamPV",
-    },
+    // {
+    //   label: "My Android Apps",
+    //   url: "https://play.google.com/store/apps/developer?id=LamPV",
+    // },
     {
       label: "Cộng đồng JavaScript",
       url: "https://www.facebook.com/groups/HoiDapJavascriptVN",

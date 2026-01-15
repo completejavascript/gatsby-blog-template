@@ -24,7 +24,7 @@ Hôm nay, mình sẽ chia sẻ với bạn một số cách để lấy được
 Để lấy được ảnh thumbnail của video youtube một cách nhanh chóng, bạn có thể sử dụng tool mà mình đã viết sau đây:
 
 <a 
-  href="https://tools.completejavascript.com/youtube-thumbnail-grabber/" 
+  href="https://toolskitplus.com/youtube-thumbnail-grabber/" 
   class="btn btn-primary margin-bottom" 
   target="_blank"
   rel="noopener noreferrer">
@@ -108,7 +108,7 @@ Trên đây là một số cách để lấy ảnh thumbnail của video trên y
 Nếu bạn thấy hay thì không ngại để chia sẻ cho mọi người cùng biết nhé. Còn nếu bạn có thắc mắc gì thì vui lòng để lại bình luận phía dưới hoặc gửi mail cho mình. Mình sẽ cố gắng giải đáp giúp bạn.
 
 <a 
-  href="https://tools.completejavascript.com/youtube-thumbnail-grabber/" 
+  href="https://toolskitplus.com/youtube-thumbnail-grabber/" 
   class="btn btn-primary margin-bottom" 
   target="_blank"
   rel="noopener noreferrer">
